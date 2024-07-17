@@ -164,7 +164,7 @@ sub_units = {
 		weight = 0.1
 		
 		maximum_speed = 3 #注意，这些属性是+的倍数，所以比真正的倍数减一
-
+		#这是沙
 		defense = 19
 		breakthrough = 1
 		hardness = -1
