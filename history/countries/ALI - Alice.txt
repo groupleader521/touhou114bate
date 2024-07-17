@@ -1,0 +1,83 @@
+﻿capital = 994
+
+oob = "ALI_1936"
+
+set_stability = 0.72 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.55
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	ALI_marionette_trait
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	disarmed_nation
+	low_economic_mobilisation
+	magic_first_research
+	alice_main_researcher
+	touhou_fiscal_society
+	ALI_suicide_puppet_little_trait
+	ALI_suicide_puppet_big_trait
+	ALI_goliath_trait
+}
+set_technology = {
+	touhou_magic_infantry_weapons = 1
+	touhou_magic_basic_light_tank = 1
+	touhou_magic_early_fighter = 1
+	touhou_magic_early_bomber = 1
+	tech_support = 1
+	transport = 1
+	basic_train = 1
+	suicide_puppet_craft_1 = 1
+	suicide_puppet_craft_2 = 1
+	goliath_0 = 1 
+	goliath_1 = 1 
+}
+add_dynamic_modifier = { modifier = touhou_dynamic_modifiers_alice_doll }
+give_guarantee = MLS
+
+
+set_convoys = 0
+set_popularities = {
+	neutrality = 100
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+recruit_character = TOUHOU_Alice_Margatroid
+recruit_character = TOUHOU_Shanghai_Ningyou
+recruit_character = TOUHOU_Hourai_Ningyou
+set_country_flag = touhou_country_flag_magic_first_research
+country_event = { id = alice.0 days = 3 random_days = 1  } 
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "谍报型上海人偶"
+		GFX = GFX_Shanghai_Ningyou
+		traits = { operative_commando operative_well_groomed operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { ALI OPP KAP VAM }
+	}
+
+	create_operative_leader = {
+		name = "谍报型蓬莱人偶"
+		GFX = GFX_Hourai_Ningyou
+		traits = { operative_commando operative_well_groomed operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { ALI MLS BLI HUM }
+	}
+}
+
+

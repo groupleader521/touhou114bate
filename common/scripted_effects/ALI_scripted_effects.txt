@@ -1,0 +1,146 @@
+#Add to scripted triggers if more levels of hyper inflation is added
+ALI_marionette_freedom_clear_all = {
+	custom_effect_tooltip = marionette_freedom_end
+	hidden_effect = {
+		remove_ideas = {
+			ALI_marionette_freedom_none
+			ALI_marionette_freedom_1
+			ALI_marionette_freedom_2
+			ALI_marionette_freedom_3
+			ALI_marionette_freedom_4
+			ALI_marionette_freedom_5
+		}
+	}
+}
+
+#Important to put HIGHEST first
+ALI_marionette_freedom_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = ALI_marionette_freedom_level_up_tt
+	if = {
+		limit = { has_idea = ALI_marionette_freedom_5 }
+		hidden_effect = {
+			country_event = { id = alice.34 }
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALI_marionette_freedom_4 }
+		swap_ideas = {
+			remove_idea = ALI_marionette_freedom_4
+			add_idea = ALI_marionette_freedom_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALI_marionette_freedom_3 }
+		swap_ideas = {
+			remove_idea = ALI_marionette_freedom_3
+			add_idea = ALI_marionette_freedom_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALI_marionette_freedom_2 }
+		swap_ideas = {
+			remove_idea = ALI_marionette_freedom_2
+			add_idea = ALI_marionette_freedom_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = ALI_marionette_freedom_1 }
+		swap_ideas = {
+			remove_idea = ALI_marionette_freedom_1
+			add_idea = ALI_marionette_freedom_2
+		}		
+	}
+	else_if = {
+		limit = { has_idea = ALI_marionette_freedom_none }
+		swap_ideas = {
+			remove_idea = ALI_marionette_freedom_none
+			add_idea = ALI_marionette_freedom_1
+		}		
+	}
+	else_if = {
+		limit = { NOT = { has_idea = ALI_marionette_freedom_none } }
+		add_ideas = ALI_marionette_freedom_none
+	}
+}
+
+#Important to put LOWEST first
+ALI_marionette_freedom_level_down = {
+	custom_effect_tooltip = ALI_marionette_freedom_level_down_tt
+	if = {
+		limit = { has_idea = ALI_marionette_freedom_none }
+		hidden_effect = {
+			country_event = { id = alice.34 }
+		}
+	}
+	if = {
+		limit = { has_idea = ALI_marionette_freedom_1 }
+		swap_ideas = {
+			remove_idea = ALI_marionette_freedom_1
+			add_idea = ALI_marionette_freedom_none
+		}
+	}
+	if = {
+		limit = { has_idea = ALI_marionette_freedom_2 }
+		swap_ideas = {
+			remove_idea = ALI_marionette_freedom_2
+			add_idea = ALI_marionette_freedom_1
+		}
+	}
+	if = {
+		limit = { has_idea = ALI_marionette_freedom_3 }
+		swap_ideas = {
+			remove_idea = ALI_marionette_freedom_3
+			add_idea = ALI_marionette_freedom_2
+		}
+	}
+	if = {
+		limit = { has_idea = ALI_marionette_freedom_4 }
+		swap_ideas = {
+			remove_idea = ALI_marionette_freedom_4
+			add_idea = ALI_marionette_freedom_3
+		}
+	}
+	if = {
+		limit = { has_idea = ALI_marionette_freedom_5 }
+		swap_ideas = {
+			remove_idea = ALI_marionette_freedom_5
+			add_idea = ALI_marionette_freedom_4
+		}
+	}
+}
+
+ALI_Alice_recover_effect = {
+	TOUHOU_Alice_Margatroid = {
+		swap_country_leader_traits = {
+			remove = marionette_bruise
+			add = marionette_dictator
+			ideology = centrism
+		}
+		hidden_effect = {
+			swap_country_leader_traits = {
+				remove = marionette_bruise
+				add = marionette_dictator
+				ideology = fascism_ideology
+			}
+			swap_country_leader_traits = {
+				remove = marionette_bruise
+				add = marionette_dictator
+				ideology = liberalism
+			}
+			swap_country_leader_traits = {
+				remove = marionette_bruise
+				add = marionette_dictator
+				ideology = marxism
+			}
+		}
+		add_skill_level = 1
+		add_attack = 2
+		add_defense = 2
+		add_planning = 2
+		add_logistics = 2
+	}
+	hidden_effect = {
+		set_country_flag = touhou_country_flag_ALI_Alice_recover_effect
+	}
+}

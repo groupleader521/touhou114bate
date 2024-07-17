@@ -1,0 +1,356 @@
+ALI_to_MlS = {
+	enable = {
+		tag = ALI
+		country_exists = MLS
+	}
+	abort = {
+		NOT = {
+			country_exists = MLS
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "MLS"
+		value = 50
+	}	
+}
+
+ALI_to_BLI = {
+	enable = {
+		tag = ALI
+		country_exists = BLI
+	}
+	abort = {
+		NOT = {
+			country_exists = BLI
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "BLI"
+		value = 50
+	}
+}
+
+ALI_to_KAP = {
+	enable = {
+		tag = ALI
+		country_exists = KAP
+	}
+	abort = {
+		NOT = {
+			country_exists = KAP
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "KAP"
+		value = 50
+	}
+}
+
+ALI_to_RAB = {
+	enable = {
+		tag = ALI
+		country_exists = RAB
+	}
+	abort = {
+		NOT = {
+			country_exists = RAB
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "RAB"
+		value = 50
+	}
+}
+
+MLS_to_ALI = {
+	enable = {
+		tag = MLS
+		country_exists = ALI
+	}
+	abort = {
+		NOT = {
+			country_exists = ALI
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "ALI"
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ALI"
+		value = 100
+	}
+}
+
+MLS_to_HUM = {
+	enable = {
+		tag = MLS
+		country_exists = HUM
+	}
+	abort = {
+		NOT = {
+			country_exists = HUM
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "HUM"
+		value = 150
+	}
+	ai_strategy = {
+		type = protect
+		id = "HUM"
+		value = 150
+	}
+}
+
+MLS_to_BLI = {
+	enable = {
+		tag = MLS
+		country_exists = BLI
+	}
+	abort = {
+		NOT = {
+			country_exists = BLI
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "BLI"
+		value = 100
+	}
+	ai_strategy = {
+		type = protect
+		id = "BLI"
+		value = 100
+	}
+}
+
+MLS_to_TEM = {
+	enable = {
+		tag = MLS
+		country_exists = TEM
+	}
+	abort = {
+		NOT = {
+			country_exists = TEM
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "TEM"
+		value = 50
+	}
+}
+
+MLS_to_DES = {
+	enable = {
+		tag = MLS
+		country_exists = DES
+	}
+	abort = {
+		NOT = {
+			country_exists = DES
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "DES"
+		value = 50
+	}
+}
+
+MLS_to_SSS = {
+	enable = {
+		tag = MLS
+		country_exists = SSS
+	}
+	abort = {
+		NOT = {
+			country_exists = SSS
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "SSS"
+		value = 50
+	}
+}
+
+MLS_to_HAK = {
+	enable = {
+		tag = MLS
+		country_exists = HAK
+	}
+	abort = {
+		NOT = {
+			country_exists = HAK
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "HAK"
+		value = 50
+	}
+}
+
+MLS_to_DLD = {
+	enable = {
+		tag = MLS
+		country_exists = DLD
+	}
+	abort = {
+		NOT = {
+			country_exists = DLD
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "DLD"
+		value = 50
+	}
+}
+
+MLS_to_VAM = {
+	enable = {
+		tag = MLS
+		country_exists = VAM
+	}
+	abort = {
+		NOT = {
+			country_exists = VAM
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "VAM"
+		value = 50
+	}
+}
+
+MLS_to_EVI = {
+	enable = {
+		tag = MLS
+		country_exists = EVI
+	}
+	abort = {
+		NOT = {
+			country_exists = EVI
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "EVI"
+		value = 50
+	}
+}
+
+HUM_to_MLS = {
+	enable = {
+		tag = HUM
+		country_exists = MLS
+	}
+	abort = {
+		NOT = {
+			country_exists = MLS
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "MLS"
+		value = 50
+	}
+}
+
+HUM_to_BLI = {
+	enable = {
+		tag = HUM
+		country_exists = BLI
+	}
+	abort = {
+		NOT = {
+			country_exists = BLI
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "BLI"
+		value = 50
+	}
+}
+
+HUM_to_TEM = {
+	enable = {
+		tag = HUM
+		country_exists = TEM
+	}
+	abort = {
+		NOT = {
+			country_exists = TEM
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "TEM"
+		value = 50
+	}
+}
+
+HUM_to_DES = {
+	enable = {
+		tag = HUM
+		country_exists = DES
+	}
+	abort = {
+		NOT = {
+			country_exists = DES
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "DES"
+		value = 50
+	}
+}
+
+HUM_to_SSS = {
+	enable = {
+		tag = HUM
+		country_exists = SSS
+	}
+	abort = {
+		NOT = {
+			country_exists = SSS
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "SSS"
+		value = 50
+	}
+}

@@ -1,0 +1,123 @@
+spriteTypes = {
+	##########星莲船##########	
+	#主要武器
+	spriteType = {#星莲船主要武器category
+		name = "GFX_SMI_ship_lotus_plus"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_plus.dds"
+	}
+	spriteType = {#战列主炮：超人「圣白莲」
+		name = "GFX_SMI_ship_lotus_heavy_battery_plus"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_heavy_battery_plus_icn.dds"
+	}
+	spriteType = {#重型炮组：「圣尼公之大空卷轴」
+		name = "GFX_SMI_ship_lotus_medium_light_battery"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_medium_light_battery_icn.dds"
+	}
+	spriteType = {#航母主炮：魔法「Magic Butterfly」（机库）
+		name = "GFX_SMI_ship_lotus_deck_space_plus"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_deck_space_plus_icn.dds"
+	}
+
+	#引擎
+	spriteType = {#星莲船引擎category
+		name = "GFX_SMI_ship_lotus_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_engine_icn.dds"
+	}
+	spriteType = {#作战引擎：「Angirasa Veda」
+		name = "GFX_SMI_ship_lotus_engine_BB"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_engine_BB_icn.dds"
+	}
+	spriteType = {#高速引擎：*以100迈驰骋天际*
+		name = "GFX_SMI_ship_lotus_engine_DD"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_engine_DD_icn.dds"
+	}
+	spriteType = {#远航引擎：「游行圣」
+		name = "GFX_SMI_ship_lotus_engine_CV"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_engine_CV_icn.dds"
+	}
+
+	#装甲
+	spriteType = {#星莲船装甲category
+		name = "GFX_SMI_ship_lotus_AM"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_AM.dds"
+	}
+	spriteType = {#高厚装甲：天符「三千大千世界之主」
+		name = "GFX_SMI_ship_lotus_armor"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_armor_icn.dds"
+	}
+	spriteType = {#隐蔽装甲：天符「大日如来的光辉」
+		name = "GFX_SMI_ship_lotus_armor_thin"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_armor_thin_icn.dds"
+	}
+	spriteType = {#批量装甲：天符「释迦牟尼的五行山」
+		name = "GFX_SMI_ship_lotus_armor_thick"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_armor_thick_icn.dds"
+	}
+
+	#火控
+	spriteType = {#火控category
+		name = "GFX_SMI_ship_lotus_FC"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_FC.dds"
+	}
+	spriteType = {#火控：大魔法「魔神复诵」
+		name = "GFX_SMI_ship_lotus_fire_control_system"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_fire_control_system_icn.dds"
+	}
+
+	#雷达
+	spriteType = {#雷达category
+		name = "GFX_SMI_ship_lotus_RA"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_RA.dds"
+	}
+	spriteType = {#雷达：光魔「魔法银河系」
+		name = "GFX_SMI_ship_lotus_radar"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_radar_icn.dds"
+	}
+
+	#信号弹
+	spriteType = {#副炮category
+		name = "GFX_SMI_ship_lotus_SB"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_SB.dds"
+	}
+	spriteType = {#对海信号弹：星之剑护法
+		name = "GFX_SMI_ship_lotus_secondary_battery"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_secondary_battery_icn.dds"
+	}
+	spriteType = {#照明信号弹：「焚天之瞳」
+		name = "GFX_SMI_ship_lotus_dp_light_battery"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_dp_light_battery_icn.dds"
+	}
+
+	#飞机设施
+	spriteType = {#飞机设施category
+		name = "GFX_SMI_ship_lotus_AL"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_AL.dds"
+	}
+	spriteType = {#飞机设施：飞钵「传说中的空中圆盘」
+		name = "GFX_SMI_ship_lotus_airplane_launcher"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_airplane_launcher_icn.dds"
+	}
+	spriteType = {#机库：魔法「Magic Butterfly」
+		name = "GFX_SMI_ship_lotus_deck_space"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_deck_space_icn.dds"
+	}
+
+	#轻型炮组
+	spriteType = {#轻型炮组category
+		name = "GFX_SMI_ship_lotus_DD"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_DD.dds"
+	}
+	spriteType = {#轻型炮组：因陀罗之雷
+		name = "GFX_SMI_ship_lotus_light_battery"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_light_battery_icn.dds"
+	}
+	spriteType = {#防空炮：广目天之眼
+		name = "GFX_SMI_ship_lotus_anti_air"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/lotus/lotus_anti_air_icn.dds"
+	}
+}
+
+
+
+
+

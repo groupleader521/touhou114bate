@@ -1,0 +1,125 @@
+characters = {
+	TOUHOU_Houraisan_Kaguya = {
+		name = TOUHOU_Houraisan_Kaguya
+		portraits = {
+			civilian = {
+				large = GFX_Houraisan_Kaguya
+			}
+			army = {
+				large = GFX_Houraisan_Kaguya
+				small = GFX_idea_huiye
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = centrism
+			traits = {
+				huiye
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Houraisan_Kaguya
+			slot = political_advisor
+			traits = { touhou_popular_figurehead }
+		}
+		field_marshal = {
+			traits = { units_rabbit trait_cautious jungle_rat ranger infantry_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	TOUHOU_Reisen_Udongein_Inaba = {
+		name = TOUHOU_Reisen_Udongein_Inaba
+		portraits = {
+			civilian = {
+				large = GFX_Reisen_Udongein_Inaba
+			}
+			army = {
+				large = GFX_Reisen_Udongein_Inaba
+				small = GFX_idea_lingxian
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+				linxian
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Reisen_Udongein_Inaba
+			slot = army_chief
+			traits = { touhou_army_commando_3 }
+		}
+		advisor = {
+			idea_token = TOUHOU_Reisen_Udongein_Inaba
+			slot = high_command
+			traits = { touhou_army_concealment_lingxian }
+		}
+		corps_commander = {
+			traits = { units_rabbit career_officer commando jungle_rat ranger urban_assault_specialist paratrooper }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	TOUHOU_Yagokoro_Eirin = {
+		name = TOUHOU_Yagokoro_Eirin
+		portraits = {
+			civilian = {
+				large = GFX_Eirin_Yagokoro
+			}
+			army = {
+				large = GFX_Eirin_Yagokoro
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {
+				yonglin
+			}
+		}
+		field_marshal = {
+			traits = {
+				units_rabbit brilliant_strategist commando organizer skilled_staffer jungle_rat ranger urban_assault_specialist expert_delegator paratrooper infantry_leader logistics_wizard
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 6
+		}
+	}
+	TOUHOU_Inaba_Tewi = {
+		name = TOUHOU_Inaba_Tewi
+		portraits = {
+			civilian = {
+				large = GFX_Tewi_Inaba
+			}
+			army = {
+				large = GFX_Tewi_Inaba
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = marxism
+			traits = {
+				yinpan
+			}
+		}
+		corps_commander = {
+			traits = { units_rabbit politically_connected jungle_rat ranger }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+}

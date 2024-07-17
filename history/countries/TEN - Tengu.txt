@@ -1,0 +1,80 @@
+﻿capital = 984
+
+oob = "TEN_1936"
+
+set_stability = 0.4 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.8
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	TEN_tengu_trait
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	limited_conscription
+	demonforce_first_research
+	touhou_fiscal_military
+    TEN_fighter_trait
+}
+
+set_technology = {
+	touhou_demonforce_infantry_weapons = 1
+	touhou_demonforce_early_fighter = 1
+	touhou_demonforce_interwar_antitank = 1
+	touhou_demonforce_heavy_fighter1 = 1
+	tech_support = 1
+	transport = 1
+	basic_train = 1
+	tengu_fighter = 1
+}
+
+
+
+set_convoys = 0
+set_popularities = {
+	fascism = 100
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_autonomy = {
+	target = KAP
+	autonomous_state =  autonomy_puppet
+}
+
+recruit_character = TOUHOU_Iizunamaru_Megumu
+recruit_character = TOUHOU_Shameimaru_Aya
+recruit_character = TOUHOU_Inubashiri_Momizi
+recruit_character = TOUHOU_Himekaidou_Hatate
+set_country_flag = touhou_country_flag_demonforce_first_research
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "鸦天狗密探"
+		GFX = GFX_Shameimaru_Aya
+		traits = { operative_escape_artist operative_safe_cracker operative_well_groomed operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { TEN BLI MLS HUM }
+	}
+
+	create_operative_leader = {
+		name = "白狼天狗密探"
+		GFX = GFX_Inubashiri_Momizi
+		traits = { operative_commando operative_master_interrogator operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { TEN KAP SSS TEM }
+	}
+}

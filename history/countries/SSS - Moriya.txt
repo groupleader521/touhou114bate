@@ -1,0 +1,79 @@
+﻿capital = 1007
+
+oob = "SSS_1936"
+
+set_stability = 0.6 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.2
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	human_trait
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	limited_conscription
+	wakan_first_research
+	touhou_fiscal_flexibility
+    wunv_trait
+}
+
+set_technology = {
+	touhou_wakan_infantry_weapons = 1
+	touhou_wakan_gw_artillery = 1
+	touhou_wakan_early_fighter = 1
+	touhou_wakan_motorised_infantry = 1
+	tech_support = 1
+	transport = 1
+	basic_train = 1
+	wunv = 1
+}
+
+give_guarantee = HUM
+give_guarantee = DES
+
+
+
+set_convoys = 0
+set_popularities = {
+	communism = 15
+	fascism = 10
+	democratic = 75
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = TOUHOU_Yasaka_Kanako
+recruit_character = TOUHOU_Moriya_Suwako
+recruit_character = TOUHOU_Kochiya_Sanae
+set_country_flag = touhou_country_flag_wakan_first_research
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "揭秘神使"
+		GFX = GFX_Moriya_Suwako
+		traits = { operative_master_interrogator operative_natural_orator operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { SSS HUM TEM DES }
+	}
+
+	create_operative_leader = {
+		name = "风祝巫女暗部"
+		GFX = GFX_Kotiya_Sanae
+		traits = { operative_seducer operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { SSS HUM TEN }
+	}
+}

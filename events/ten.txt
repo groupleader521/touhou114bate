@@ -1,0 +1,52 @@
+﻿add_namespace = tengu
+country_event = {
+	id = tengu.0
+	title = tengu.0.t
+	desc = tengu.0.d
+	picture = GFX_report_event_touhou_ten
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = tengu.0.a
+		ai_chance = { base = 5 }
+		diplomatic_relation = {
+			country = HUM
+			relation = guarantee
+			active = no
+		}
+	}
+	option = {
+		name = tengu.0.b
+		ai_chance = { base = 5 }
+	}
+}
+country_event = {
+	id = tengu.1
+	title = tengu.1.t
+	desc = tengu.1.d
+	picture = GFX_report_event_touhou_ten
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = tengu.1.a
+		ai_chance = { base = 1 }
+		TEN = {
+			set_state_owner = 1007
+			add_state_core = 1007
+		}
+		remove_state_core = 1007
+	}
+	option = {
+		name = tengu.1.b
+		ai_chance = { base = 9 }
+		every_owned_state = { add_core_of = TEN }
+		TEN = {
+			declare_war_on = {
+				target = PREV
+				type = annex_everything
+			}
+		}
+	}
+}

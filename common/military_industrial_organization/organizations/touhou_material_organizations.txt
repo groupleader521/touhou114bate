@@ -1,0 +1,208 @@
+touhou_uuz_materiel_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_uuz
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		FROM = {
+			OR = {
+				original_tag = HAK
+				HAK = { has_opinion = { target = FROM value > 24 } }
+				controls_state = 1000
+			}
+		}
+	}
+	equipment_type = {
+		motorized_equipment
+		mechanized_equipment
+		motorized_rocket_equipment
+		mio_cat_eq_touhou_all_motorized
+	}
+	override_trait = {
+		token = generic_mio_trait_composite_cargo_bed
+		limit_to_equipment_type = {
+			motorized_equipment
+			motorized_rocket_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_steel_cargo_bed
+		limit_to_equipment_type = {
+			motorized_equipment
+			motorized_rocket_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_all_wheel_drive
+		limit_to_equipment_type = {
+			motorized_equipment
+			motorized_rocket_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_attached_wood_gas_generator
+		limit_to_equipment_type = {
+			motorized_equipment
+			motorized_rocket_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_high_powered_engine
+		limit_to_equipment_type = {
+			motorized_equipment
+			motorized_rocket_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_advanced_artillery_racks
+		limit_to_equipment_type = {
+			motorized_rocket_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_heavy_machinegun_mount
+		limit_to_equipment_type = {
+			motorized_equipment
+			mechanized_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_mounted_light_anti_tank_gun
+		limit_to_equipment_type = {
+			mechanized_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_open_chassi
+		limit_to_equipment_type = {
+			mechanized_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_closed_chassi
+		limit_to_equipment_type = {
+			mechanized_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_bulletproof_panels
+		limit_to_equipment_type = {
+			mechanized_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_light_flame_projectors
+		limit_to_equipment_type = {
+			mechanized_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_land_mine_racks
+		limit_to_equipment_type = {
+			mechanized_equipment
+			mio_cat_eq_touhou_all_motorized
+		}
+	}
+}
+touhou_wunv_materiel_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_zaomiao
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		FROM = {
+			OR = {
+				original_tag = SSS
+				SSS = { has_opinion = { target = FROM value > 24 } }
+				controls_state = 1007
+			}
+		}
+	}
+	equipment_type = {
+		infantry_equipment
+		mio_cat_eq_touhou_all_infantry
+	}
+}
+touhou_molisha_materiel_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_molisha
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		FROM = {
+			OR = {
+				original_tag = MLS
+				MLS = { has_opinion = { target = FROM value > 24 } }
+				controls_state = 993
+			}
+		}
+	}
+	equipment_type = {
+		artillery_equipment
+		anti_tank_equipment
+		anti_air_equipment
+		rocket_artillery_equipment
+		mio_cat_eq_touhou_all_artillery
+	}
+	override_trait = {
+		token = generic_mio_trait_improved_direct_fire_targeting
+		limit_to_equipment_type = {
+			anti_tank_equipment
+			mio_cat_eq_touhou_all_artillery
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_advanced_anti_air_targeting
+		limit_to_equipment_type = {
+			anti_air_equipment
+			mio_cat_eq_touhou_all_artillery
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_advanced_trajectory_calculations
+		limit_to_equipment_type = {
+			artillery_equipment
+			rocket_artillery_equipment
+			mio_cat_eq_touhou_all_artillery
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_rapid_fire
+		limit_to_equipment_type = {
+			anti_tank_equipment
+			anti_air_equipment
+			mio_cat_eq_touhou_all_artillery
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_big_guns
+		limit_to_equipment_type = {
+			artillery_equipment
+			rocket_artillery_equipment
+			mio_cat_eq_touhou_all_artillery
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_super_charges
+		limit_to_equipment_type = {
+			artillery_equipment
+			rocket_artillery_equipment
+			mio_cat_eq_touhou_all_artillery
+		}
+	}
+}

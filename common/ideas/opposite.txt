@@ -1,0 +1,35 @@
+ideas = {
+	country = {
+		touhou_lord_of_hell = {
+			picture = generic_morale_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+			}
+			
+			removal_cost = -1
+			targeted_modifier = {
+				tag = HAK
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = HEL
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = DLD
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+	}
+}

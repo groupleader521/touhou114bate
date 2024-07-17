@@ -1,0 +1,52 @@
+﻿add_namespace = chireiden
+country_event = {
+	id = chireiden.0
+	title = chireiden.0.t
+	desc = chireiden.0.d
+	picture = GFX_report_event_touhou_dld
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = chireiden.0.a
+		ai_chance = { base = 9 }
+		diplomatic_relation = {
+			country = BLI
+			relation = guarantee
+			active = no
+		}
+	}
+	option = {
+		name = chireiden.0.b
+		ai_chance = { base = 1 }
+	}
+}
+country_event = {
+	id = chireiden.1
+	title = chireiden.1.t
+	desc = chireiden.1.d
+	picture = GFX_report_event_touhou_dld
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = chireiden.1.a
+		ai_chance = { base = 1 }
+		DLD = {
+			set_state_owner = 975
+			add_state_core = 975
+		}
+		remove_state_core = 975
+	}
+	option = {
+		name = chireiden.1.b
+		ai_chance = { base = 9 }
+		every_owned_state = { add_core_of = DLD }
+		DLD = {
+			declare_war_on = {
+				target = PREV
+				type = annex_everything
+			}
+		}
+	}
+}

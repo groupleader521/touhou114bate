@@ -1,0 +1,37 @@
+﻿add_namespace = boli
+country_event = {
+	id = boli.0
+	title = boli.0.t
+	desc = boli.0.d
+	picture = GFX_report_event_touhou_bli
+	is_triggered_only = yes
+	trigger = {
+		NOT = { is_subject_of = BLI }
+	}
+	option = {
+		name = boli.0.a
+		ai_chance = { base = 5 }
+		BLI = { puppet = PREV }
+	}
+	option = {
+		name = boli.0.b
+		ai_chance = { base = 5 }
+		if = {
+			limit = { is_ai = yes }
+			BLI = {
+				declare_war_on = {
+					type = annex_everything
+					target = PREV
+				}
+			}
+		}
+		else = {
+			BLI = {
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+				}
+			}
+		}
+	}
+}

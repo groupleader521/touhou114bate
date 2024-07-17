@@ -1,0 +1,1085 @@
+﻿news_event = {
+	id = news.994
+	title = news.994.t
+	desc = news.994.d
+	picture = GFX_news_event_touhou_has_open
+	
+	major = yes
+	
+	trigger = {
+		NOT = {
+				980 = { is_controlled_by = ALI }
+				980 = { is_controlled_by = DES }
+				980 = { is_controlled_by = HAK }
+				980 = { is_controlled_by = DLD }
+				980 = { is_controlled_by = HEL }
+				980 = { is_controlled_by = SSS }
+				980 = { is_controlled_by = OPP }
+				980 = { is_controlled_by = RAB }
+				980 = { is_controlled_by = TEM }
+				980 = { is_controlled_by = BLI }
+				980 = { is_controlled_by = KAP }
+				980 = { is_controlled_by = TEN }
+				980 = { is_controlled_by = HUM }
+				980 = { is_controlled_by = VAM }
+				980 = { is_controlled_by = MLS }
+				980 = { is_controlled_by = EVI }
+		}
+		NOT = { has_global_flag = RAB_has_been_open }
+	}
+	
+	immediate = {
+		set_global_flag = RAB_has_been_open
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.994.a
+		trigger = {
+			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+	}
+	option = {
+		name = news.994.b
+		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+	}
+}
+news_event = {
+	id = news.995
+	title = news.995.t
+	desc = news.995.d
+	picture = GFX_news_event_touhou_has_open
+	
+	major = yes
+	
+	trigger = {
+		NOT = {
+			OR = {
+				998 = { is_controlled_by = ALI }
+				998 = { is_controlled_by = DES }
+				998 = { is_controlled_by = HAK }
+				998 = { is_controlled_by = DLD }
+				998 = { is_controlled_by = HEL }
+				998 = { is_controlled_by = SSS }
+				998 = { is_controlled_by = OPP }
+				998 = { is_controlled_by = RAB }
+				998 = { is_controlled_by = TEM }
+				998 = { is_controlled_by = BLI }
+				998 = { is_controlled_by = KAP }
+				998 = { is_controlled_by = TEN }
+				998 = { is_controlled_by = HUM }
+				998 = { is_controlled_by = VAM }
+				998 = { is_controlled_by = MLS }
+				998 = { is_controlled_by = EVI }
+			}
+		}
+		NOT = { has_global_flag = RAB_has_been_open }
+	}
+	
+	immediate = {
+		set_global_flag = RAB_has_been_open
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.995.a
+		trigger = {
+			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+	}
+	option = {
+		name = news.995.b
+		trigger = { TAG = OPP }
+	}
+	option = {
+		name = news.995.c
+		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+	}
+}
+news_event = {
+	id = news.996
+	title = news.996.t
+	desc = news.996.d
+	picture = GFX_news_event_touhou_has_open
+	
+	major = yes
+	
+	trigger = {
+		NOT = {
+			OR = {
+				1004 = { is_controlled_by = ALI }
+				1004 = { is_controlled_by = DES }
+				1004 = { is_controlled_by = HAK }
+				1004 = { is_controlled_by = DLD }
+				1004 = { is_controlled_by = HEL }
+				1004 = { is_controlled_by = SSS }
+				1004 = { is_controlled_by = OPP }
+				1004 = { is_controlled_by = RAB }
+				1004 = { is_controlled_by = TEM }
+				1004 = { is_controlled_by = BLI }
+				1004 = { is_controlled_by = KAP }
+				1004 = { is_controlled_by = TEN }
+				1004 = { is_controlled_by = HUM }
+				1004 = { is_controlled_by = VAM }
+				1004 = { is_controlled_by = MLS }
+				1004 = { is_controlled_by = EVI }
+			}
+		}
+		NOT = { has_global_flag = RAB_has_been_open }
+	}
+	
+	immediate = {
+		set_global_flag = RAB_has_been_open
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.996.a
+		trigger = {
+			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+	}
+	option = {
+		name = news.996.b
+		trigger = { TAG = RAB }
+	}
+	option = {
+		name = news.996.c
+		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+	}
+}
+news_event = {
+	id = news.997
+	title = news.997.t
+	desc = news.997.d
+	picture = GFX_news_event_touhou_has_open
+	
+	major = yes
+	
+	trigger = {
+		NOT = {
+			OR = {
+				975 = { is_controlled_by = ALI }
+				975 = { is_controlled_by = DES }
+				975 = { is_controlled_by = HAK }
+				975 = { is_controlled_by = DLD }
+				975 = { is_controlled_by = HEL }
+				975 = { is_controlled_by = SSS }
+				975 = { is_controlled_by = OPP }
+				975 = { is_controlled_by = RAB }
+				975 = { is_controlled_by = TEM }
+				975 = { is_controlled_by = BLI }
+				975 = { is_controlled_by = KAP }
+				975 = { is_controlled_by = TEN }
+				975 = { is_controlled_by = HUM }
+				975 = { is_controlled_by = VAM }
+				975 = { is_controlled_by = MLS }
+				975 = { is_controlled_by = EVI }
+			}
+		}
+		NOT = { has_global_flag = BLI_has_been_open }
+	}
+	
+	immediate = {
+		set_global_flag = BLI_has_been_open
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = news.997.a
+		trigger = {
+			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+	}
+	option = {
+		name = news.997.b
+		trigger = { TAG = BLI }
+	}
+	option = {
+		name = news.997.c
+		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+	}
+}
+
+news_event = {#爱丽丝恢复
+	id = news.998
+	title = news.998.t
+	desc = news.998.d
+	picture = GFX_news_event_touhou_alice_has_reply
+	
+	is_triggered_only = yes
+	trigger = {
+		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+	}
+	option = {
+		name = news.998.a
+	}
+}
+news_event = {#爱丽丝胜新闻
+	id = news.999
+	title = news.999.t
+	desc = news.999.d
+	picture = GFX_news_event_touhou_alice_end_war_win
+	
+	is_triggered_only = yes
+	trigger = {
+		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+	}
+	option = {
+		name = news.999.a
+	}
+}
+news_event = {#爱丽丝败新闻
+	id = news.1000
+	title = news.1000.t
+	desc = news.1000.d
+	picture = GFX_news_event_touhou_alice_end_war_lose
+	
+	is_triggered_only = yes
+	trigger = {
+		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+	}
+	option = {
+		name = news.1000.a
+	}
+}
+news_event = {#幻想乡统一——对外
+	id = news.1001
+	title = news.1001.t
+	desc = news.1001.d
+	picture = GFX_news_event_touhou
+	
+	trigger = {
+		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1001.a
+	}
+}
+news_event = {#地狱新政
+	id = news.1002
+	title = news.1002.t
+	desc = news.1002.d
+	picture = GFX_news_event_touhou_opp
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1002.a
+	}
+}
+news_event = {#重申地狱所有权
+	id = news.1003
+	title = news.1003.t
+	desc = news.1003.d
+	picture = GFX_news_event_touhou_opp
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1003.a
+	}
+}
+news_event = {#旧都酿酒厂
+	id = news.1004
+	title = news.1004.t
+	desc = news.1004.d
+	picture = GFX_news_event_touhou_hel
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1004.a
+	}
+}
+news_event = {#要求天狗进贡
+	id = news.1005
+	title = news.1005.t
+	desc = news.1005.d
+	picture = GFX_news_event_touhou_hel
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1005.a
+	}
+}
+news_event = {#开放地狱炉
+	id = news.1006
+	title = news.1006.t
+	desc = news.1006.d
+	picture = GFX_news_event_touhou_dld
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1006.a
+	}
+}
+news_event = {#新天地
+	id = news.1007
+	title = news.1007.t
+	desc = news.1007.d
+	picture = GFX_news_event_touhou_dld
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1007.a
+	}
+}
+news_event = {#河童向天狗进贡
+	id = news.1008
+	title = news.1008.t
+	desc = news.1008.d
+	picture = GFX_news_event_touhou_kap
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1008.a
+	}
+}
+news_event = {#河童代表团
+	id = news.1009
+	title = news.1009.t
+	desc = news.1009.d
+	picture = GFX_news_event_touhou_kap
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1009.a
+	}
+}
+news_event = {#冥府门卫
+	id = news.1010
+	title = news.1010.t
+	desc = news.1010.d
+	picture = GFX_news_event_touhou_hak
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1010.a
+	}
+}
+news_event = {#贤者进驻
+	id = news.1011
+	title = news.1011.t
+	desc = news.1011.d
+	picture = GFX_news_event_touhou_hak
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1011.a
+	}
+}
+news_event = {#扩大乐园
+	id = news.1012
+	title = news.1012.t
+	desc = news.1012.d
+	picture = GFX_news_event_touhou_evi
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1012.a
+	}
+}
+news_event = {#妖精的团结
+	id = news.1013
+	title = news.1013.t
+	desc = news.1013.d
+	picture = GFX_news_event_touhou_evi
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1013.a
+	}
+}
+news_event = {#幻想乡会谈
+	id = news.1014
+	title = news.1014.t
+	desc = news.1014.d
+	picture = GFX_news_event_touhou_bli
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1014.a
+	}
+}
+news_event = {#平定纠纷
+	id = news.1015
+	title = news.1015.t
+	desc = news.1015.d
+	picture = GFX_news_event_touhou_bli
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1015.a
+	}
+}
+news_event = {#永远亭科技博览会
+	id = news.1016
+	title = news.1016.t
+	desc = news.1016.d
+	picture = GFX_news_event_touhou_rab
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1016.a
+		trigger = {
+			OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = TEM original_tag = BLI original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+	}
+	option = {
+		name = news.1016.b
+		trigger = {
+			OR = { original_tag = ALI original_tag = RAB original_tag = KAP }
+		}
+	}
+}
+news_event = {#幻想霸权
+	id = news.1017
+	title = news.1017.t
+	desc = news.1017.d
+	picture = GFX_news_event_touhou_rab
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1017.a
+	}
+}
+news_event = {#外界渗透计划
+	id = news.1018
+	title = news.1018.t
+	desc = news.1018.d
+	picture = GFX_news_event_touhou_rab
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1018.a
+	}
+}
+news_event = {#红魔大宴
+	id = news.1019
+	title = news.1019.t
+	desc = news.1019.d
+	picture = GFX_news_event_touhou_vam
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1019.a
+	}
+}
+news_event = {#宣称霸权
+	id = news.1020
+	title = news.1020.t
+	desc = news.1020.d
+	picture = GFX_news_event_touhou_vam
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1020.a
+	}
+}
+news_event = {#异教宽容
+	id = news.1021
+	title = news.1021.t
+	desc = news.1021.d
+	picture = GFX_news_event_touhou_sss
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1021.a
+	}
+}
+news_event = {#信徒宣誓
+	id = news.1022
+	title = news.1022.t
+	desc = news.1022.d
+	picture = GFX_news_event_touhou_sss
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1022.a
+	}
+}
+news_event = {#幻想乡观光团
+	id = news.1023
+	title = news.1023.t
+	desc = news.1023.d
+	picture = GFX_news_event_touhou_ten
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1023.a
+	}
+}
+news_event = {#全面戒严
+	id = news.1024
+	title = news.1024.t
+	desc = news.1024.d
+	picture = GFX_news_event_touhou_ten
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1024.a
+	}
+}
+news_event = {#联络好友
+	id = news.1025
+	title = news.1025.t
+	desc = news.1025.d
+	picture = GFX_news_event_touhou_mls
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1025.a
+	}
+}
+news_event = {#暗中行动
+	id = news.1026
+	title = news.1026.t
+	desc = news.1026.d
+	picture = GFX_news_event_touhou_mls
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1026.a
+	}
+}
+news_event = {#普渡众生
+	id = news.1027
+	title = news.1027.t
+	desc = news.1027.d
+	picture = GFX_news_event_touhou_tem
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1027.a
+	}
+}
+news_event = {#普渡众生（物理）
+	id = news.1028
+	title = news.1028.t
+	desc = news.1028.d
+	picture = GFX_news_event_touhou_tem
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1028.a
+	}
+}
+news_event = {#诸事兴于和
+	id = news.1029
+	title = news.1029.t
+	desc = news.1029.d
+	picture = GFX_news_event_touhou_tem
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1029.a
+	}
+}
+news_event = {#万物亡于怠
+	id = news.1030
+	title = news.1030.t
+	desc = news.1030.d
+	picture = GFX_news_event_touhou_tem
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1030.a
+	}
+}
+news_event = {#依附强者
+	id = news.1031
+	title = news.1031.t
+	desc = news.1031.d
+	picture = GFX_news_event_touhou_hum
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1031.a
+	}
+}
+news_event = {#独立自主
+	id = news.1032
+	title = news.1032.t
+	desc = news.1032.d
+	picture = GFX_news_event_touhou_hum
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1032.a
+	}
+}
+news_event = {#人偶献礼
+	id = news.1033
+	title = news.1033.t
+	desc = news.1033.d
+	picture = GFX_news_event_touhou_ali_gentle
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1033.a
+	}
+}
+news_event = {#人偶情报网
+	id = news.1034
+	title = news.1034.t
+	desc = news.1034.d
+	picture = GFX_news_event_touhou_ali_radicalness
+	
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1034.a
+	}
+}
+news_event = {#魔神降临
+	id = news.1035
+	title = news.1035.t
+	desc = news.1035.d
+	picture = GFX_news_event_touhou_ali_devildom
+	major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = news.1035.a
+	}
+}
+news_event = {#血族离开
+	id = news.1036
+	title = news.1036.t
+	desc = news.1036.d
+	picture = GFX_news_event_touhou_vam
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1036.a
+	}
+}
+news_event = {#血月病
+	id = news.1037
+	title = news.1037.t
+	desc = news.1037.d
+	picture = GFX_news_event_touhou_vam
+	trigger = {
+		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		NOT = { has_idea = ROM_fear_VAM }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1037.a
+	}
+}
+news_event = {#幻想乡统一——对内
+	id = news.1038
+	title = news.1038.t
+	desc = news.1038.d
+	picture = GFX_news_event_touhou
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1038.a
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {
+		name = news.1038.b
+		trigger = {
+			has_government = fascism
+		}
+	}
+	option = {
+		name = news.1038.c
+		trigger = {
+			has_government = communism
+		}
+	}
+	option = {
+		name = news.1038.d
+		trigger = {
+			has_government = neutrality
+		}
+	}
+}
+news_event = {#死之少女——对内
+	id = news.1039
+	title = news.1039.t
+	desc = news.1039.d
+	picture = GFX_news_event_touhou_alice_death's_girl
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1039.a
+		trigger = {
+			NOT = { original_tag = ALI }
+		}
+	}
+	option = {
+		name = news.1039.b
+		trigger = {
+			original_tag = ALI
+		}
+	}
+}
+news_event = {#死之少女——对外
+	id = news.1040
+	title = news.1040.t
+	desc = news.1040.d
+	picture = GFX_news_event_touhou_alice_death's_girl
+	trigger = {
+		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1040.a
+	}
+}
+news_event = {#魔界降临——对内
+	id = news.1041
+	title = news.1041.t
+	desc = news.1041.d
+	picture = GFX_news_event_touhou_alice_devildom
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1041.a
+		trigger = {
+			NOT = { original_tag = ALI }
+		}
+	}
+	option = {
+		name = news.1041.b
+		trigger = {
+			original_tag = ALI
+		}
+	}
+}
+news_event = {#魔界降临——对外
+	id = news.1042
+	title = news.1042.t
+	desc = news.1042.d
+	picture = GFX_news_event_touhou_alice_devildom
+	trigger = {
+		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1042.a
+	}
+}
+news_event = {#魔界降临——对手
+	id = news.1043
+	title = news.1043.t
+	desc = news.1043.d
+	picture = GFX_news_event_touhou_alice_devildom
+	trigger = {
+	}
+	is_triggered_only = yes
+	option = {
+		name = news.1043.a
+	}
+}
+news_event = {#试炼开始
+	id = news.1046
+	title = news.1046.t
+	desc = news.1046.d
+	picture = GFX_news_event_touhou_has_open
+	is_triggered_only = yes
+	immediate = {
+		FROM = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		name = news.1046.a
+	}
+}
+news_event = {#新绥靖
+	id = news.1047
+	title = news.1047.t
+	desc = news.1047.d
+	picture = GFX_news_event_009
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = FROM
+						is_subject_of = FROM
+						is_in_faction_with = FROM
+					}
+				}
+				white_peace = ROOT
+			}
+		}
+	}
+	option = {
+		name = news.1047.a
+	}
+}
+news_event = {#被遗忘者联盟
+	id = news.1045
+	title = news.1045.t
+	desc = news.1045.d
+	picture = GFX_news_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = news.1045.a
+	}
+}
+news_event = {#新战术
+	id = news.1049
+	title = news.1049.t
+	desc = news.1049.d
+	picture = GFX_news_event_003
+	is_triggered_only = yes
+	option = {
+		name = news.1049.a
+	}
+}
+news_event = {#不明所以的新思潮
+	id = news.1050
+	title = news.1050.t
+	desc = news.1050.d
+	picture = GFX_news_event_generic_sign_treaty3
+	is_triggered_only = yes
+	option = {
+		name = news.1050.a
+	}
+}
+news_event = {#各国恢复外交
+	id = news.1048
+	title = news.1048.t
+	desc = news.1048.d
+	picture = GFX_news_event_hitler_handshake
+	is_triggered_only = yes
+	option = {
+		name = news.1048.a
+	}
+}
+news_event = {#人类反抗军成立
+	id = news.1044
+	title = news.1044.t
+	desc = news.1044.d
+	picture = GFX_news_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = news.1044.a
+	}
+}
+news_event = {#来路不明的邀请函
+	id = news.1051
+	title = news.1051.t
+	desc = news.1051.d
+	picture = GFX_news_event_touhou_alice_devildom
+	is_triggered_only = yes
+	option = {
+		name = news.1051.a
+	}
+}
+news_event = {#此世联邦成立
+	id = news.1052
+	title = news.1052.t
+	desc = news.1052.d
+	picture = GFX_news_event_016
+	is_triggered_only = yes
+	option = {
+		name = news.1052.a
+		add_stability = 1
+		add_war_support = 1
+	}
+}
+news_event = {#决战时刻
+	id = news.1054
+	title = news.1054.t
+	desc = news.1054.d
+	picture = GFX_news_event_016
+	is_triggered_only = yes
+	option = {
+		name = news.1054.a
+	}
+}
+news_event = {#背叛
+	id = news.1056
+	title = news.1056.t
+	desc = news.1056.d
+	picture = GFX_news_event_gathering_protest
+	is_triggered_only = yes
+	option = {
+		name = news.1056.a
+		add_timed_idea = {
+			idea = touhou_ideas_god_of_makai_wrath
+			days = 180
+		}
+	}
+}
+news_event = {#背叛
+	id = news.10561
+	title = news.10561.t
+	desc = news.10561.d
+	picture = GFX_news_event_gathering_protest
+	is_triggered_only = yes
+	option = {
+		name = news.10561.a
+	}
+}
+news_event = {#正义
+	id = news.1057
+	title = news.1057.t
+	desc = news.1057.d
+	picture = GFX_news_event_006
+	is_triggered_only = yes
+	option = {
+		name = news.1057.a
+	}
+}
+news_event = {#正义
+	id = news.10571
+	title = news.10571.t
+	desc = news.10571.d
+	picture = GFX_news_event_006
+	is_triggered_only = yes
+	option = {
+		name = news.10571.a
+	}
+}
+news_event = {#神秘的葬礼
+	id = news.1053
+	title = news.1053.t
+	desc = news.1053.d
+	picture = GFX_news_event_gathering_protest
+	is_triggered_only = yes
+	option = {
+		name = news.1053.a
+	}
+}
+news_event = {#试炼结束
+	id = news.1055
+	title = news.1055.t
+	desc = news.1055.d
+	picture = GFX_news_event_touhou_has_open
+	is_triggered_only = yes
+	option = {
+		name = news.1055.a
+	}
+}

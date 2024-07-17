@@ -1,0 +1,291 @@
+#重建幻想乡
+touhou_unify = {
+	icon = power_struggle
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#人偶的特殊用途
+touhou_decisions_categories_doll = {
+	icon = GFX_idea_marionette_trait
+	allowed = {
+		original_tag = ALI
+	}
+}
+#重心迁移
+touhou_kappa = {
+	icon = GFX_idea_kappa_research
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#修复爆炸损伤
+touhou_kappa_repair = {
+	icon = GFX_idea_kappa_research
+	allowed = {
+		original_tag = KAP
+	}
+}
+#接受“援助”
+touhou_molisha = {
+	icon = GFX_idea_human_trait
+	allowed = {
+		original_tag = MLS
+	}
+}
+#幻想兵团
+touhou_trump_card = {
+	icon = generic_fortification
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#改革
+touhou_reform = {
+	icon = gre_paying_ifc_debt
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#宣传
+attitude_change = {
+	icon = generic_propaganda
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	visible = {
+		is_ai = no
+	}
+}
+#英雄集结
+touhou_Unit_leaders = {
+	icon = generic_foreign_policy
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#妖怪至上主义的崛起
+monster_on_the_rise = {
+	icon = generic_fascism
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#人类至上主义的崛起
+human_on_the_rise = {
+	icon = generic_democracy
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#平等共存主义的崛起
+balance_on_the_rise = {
+	icon = generic_communism
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#幻想乡外交部
+touhou_diplomacy = {
+	icon = generic_political_actions
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#陆军战技指导
+touhou_touhou_teach_unit_leader = {
+	icon = army_reform
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		
+	}
+	visible = {
+		has_completed_focus = touhou_army_leader_power
+	}
+}
+#海军战技指导
+touhou_touhou_teach_navy_leader = {
+	icon = ITA_cooperation_programs
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		
+	}
+	visible = {
+		has_completed_focus = touhou_army_leader_power
+	}
+}
+#魔神降临
+touhou_devildom = {
+	icon = ger_reichskommissariats
+	allowed = {
+		original_tag = ALI
+	}
+	visible = {
+		has_global_flag = touhou_devildom_come
+	}
+}
+#切换主导科技种类
+touhou_research_type = {
+	icon = SWI_absolute_neutrality
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		NOT = {	has_country_flag = touhou_country_flag_out_first_research	}
+	}
+	visible = {
+		NOT = {	has_country_flag = touhou_country_flag_out_first_research	}
+	}
+}
+#幻想乡资源开发计划
+touhou_mine_resources = {
+	icon = generic_prospect_for_resources
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		has_country_flag = touhou_industry_reform_finished_flag
+	}
+	visible = {
+		has_country_flag = touhou_industry_reform_finished_flag
+	}
+}
+#外界渗透计划
+touhou_rabbit_permeate = {
+	icon = GFX_idea_race_rabbit_trait
+	allowed = {
+		original_tag = RAB
+	}
+	visible = {
+		has_completed_focus = touhou_RAB_exchange_all
+	}
+}
+#妖精起义
+touhou_evil_rize_up = {
+	icon = GFX_trait_units_evil
+	visible_when_empty = no
+	allowed = {
+		original_tag = EVI
+	}
+	visible = {
+		has_completed_focus = touhou_EVI_campaign
+	}
+}
+#抗击魔界
+touhou_god_of_makai_decisions_categories = {
+	icon = generic_communism
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#菜单
+touhou_decisions_categories_option = {
+	icon = generic_crisis
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	visible = {
+		NOT = {
+			has_global_flag = touhou_global_flag_decisions_categories_option_closed
+		}
+		is_ai = no
+	}
+}
+#支部建到地方
+touhou_decisions_categories_everyone_communist = {
+	icon = SOV_civil_puppet_interaction
+	picture = GFX_decision_cat_picture_soviet_national_academy_of_sciences 
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	on_map_area = {
+		target_array = owned_states
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				not = { has_state_flag = touhou_state_flag_everyone_communist }
+			}
+		}
+		name = touhou_decisions_categories_name_everyone_communist
+		zoom = 150
+	}
+	visible = {
+		has_country_flag = touhou_country_flag_everyone_communist
+	}
+}
+#我们的未来
+touhou_decisions_categories_everyone_communist_core = {
+	icon = SOV_civil_puppet_interaction
+	picture = GFX_decision_cat_picture_soviet_comecon
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	on_map_area = {
+		target_array = owned_states
+		target_trigger = {
+			FROM = {
+				has_state_flag = touhou_state_flag_everyone_communist
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				not = { is_core_of = ROOT }
+				compliance > 50
+			}
+		}
+		name = touhou_decisions_categories_name_everyone_communist_core
+		zoom = 150
+	}
+	visible = {
+		has_country_flag = touhou_country_flag_everyone_communist
+	}
+}
+#支部工作重心
+touhou_decisions_categories_everyone_communist_focus = {
+	icon = SOV_civil_puppet_interaction
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	visible = {
+		has_country_flag = touhou_country_flag_everyone_communist
+	}
+}
+#幻想乡政府内阁
+touhou_decisions_categories_government = {
+	icon = generic_political_actions
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#AI
+touhou_decisions_categories_AI = {
+	icon = generic_political_actions
+	visible = {
+		is_ai = yes
+	}
+}
+#准备战争
+touhou_decisions_categories_touhou_fiscal_military = {
+	icon = army_reform
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+}
+#和平演变
+touhou_decisions_categories_touhou_fiscal_society = {
+	icon = usa_congress
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}	
+}
+#灵活支出
+touhou_decisions_categories_touhou_fiscal_flexibility = {
+	icon = generic_economy
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}	
+}
+#妖精军事学校
+touhou_decisions_categories_evi_military_academy = {
+	icon = GFX_trait_units_evil
+	allowed = { original_tag = EVI }
+}

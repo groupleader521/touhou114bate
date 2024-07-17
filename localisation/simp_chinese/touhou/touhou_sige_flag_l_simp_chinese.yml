@@ -1,0 +1,26 @@
+﻿l_simp_chinese:
+ remould_KAP_research:0 "正在改建中央研究所"
+ repair_KAP_research:0 "正在修复中央研究所"
+ remould_KAP_industry:0 "正在改建中心工厂"
+ repair_KAP_industry:0 "正在修复中心工厂"
+
+ alice_be_defeated:0 "人偶解放战线行动成功"
+ 
+ fantasy_industry_reform_ready_flag:0 "已经为工业改革做好准备"
+ fantasy_society_reform_ready_flag:0 "已经为社会改革做好准备"
+ fantasy_research_reform_ready_flag:0 "已经为科研改革做好准备"
+ fantasy_government_reform_ready_flag:0 "已经为政府改革做好准备"
+ fantasy_army_reform_ready_flag:0 "已经为军事改革做好准备"
+ 
+ outside_world_attitude_up_flag:0 "正在宣传外界威胁论"
+ outside_world_attitude_down_flag:0 "正在宣传外界联合论"
+ inside_fantasy_attitude_up_flag:0 "正在宣传幻想乡威胁论"
+ inside_fantasy_attitude_down_flag:0 "正在宣传幻想乡联合论"
+ 
+ touhou_all_country_unify:0 "幻想乡完成统一"
+ 
+ touhou_ask_for_aid:0 "正在申请援助"
+ touhou_can_ask_aid:0 "已经进行过援助协商"
+ 
+ politics_military_tendency_up_flag:0 "正在分配资源给军事"
+ politics_military_tendency_down_flag:0 "正在分配资源给政治经济"

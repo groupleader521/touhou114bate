@@ -1,0 +1,745 @@
+sub_units = {
+	#神风人偶
+	suicide_puppet_1 = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { suicide_puppet_equipment_1 = 1 }
+		land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+	suicide_puppet_2 = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { suicide_puppet_equipment_2 = 1 }
+		land_air_wing_size = 10
+	}
+	#歌利亚战团
+	goliath_brigade = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 2520
+		ai_priority = 2520
+		active = no
+		special_forces = yes
+		type = {
+			armor
+		}
+		
+		group = armor
+
+		categories = {
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_army
+			category_special_forces
+		}
+
+		combat_width = 2
+
+		need = {
+			goliath_equipment = 5
+		}
+
+		manpower = 500
+		max_organisation = 60
+		default_morale = 0.5
+		max_strength = 30
+		training_time = 180
+		weight = 3
+		
+		supply_consumption = 0.5
+
+		fort = {
+			attack = 1.5
+		}
+	}
+	#冠军鬼王
+	oni_brigade = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 1197
+		ai_priority = 100
+		active = no
+
+		type = {
+			infantry
+			armor
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_all_armor
+			category_army
+		}
+		
+		combat_width = 3
+		
+		#Size Definitions
+		manpower = 30
+		max_organisation = 20
+		default_morale = 0.5
+		max_strength = 15
+		training_time = 70
+		weight = 0.5
+		
+		supply_consumption = 0.06
+	
+		need = {
+			oni_champion_equipment = 30
+		}
+	}
+	#风神天狗
+	tengu_brigade = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { tengu_fighter_equipment = 1 }
+		categories = { category_fighter }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}	
+	#博丽巫女
+	cas_boli_fighter_brigade = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { cas_boli_equipment = 1 }
+		categories = { category_cas }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+	#天谴道士
+	desires_brigade = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { strategic_bomber }
+		need = { desires_equipment = 1 }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+	#妖精
+	evil_brigade = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 180
+		weight = 0.1
+		
+		maximum_speed = 3 #注意，这些属性是+的倍数，所以比真正的倍数减一
+
+		defence = 19
+		breakthrough = 1
+		hardness = -1
+		armor_value = -1
+	
+		soft_attack = 2
+		hard_attack = -0.5
+		ap_attack = 0
+		air_attack = -1
+
+		supply_consumption = 0.005
+	
+		need = {
+			evil_equipment = 10
+		}
+	}
+	evil_armor_brigade = {
+		sprite = light_armor
+		map_icon_category = armored
+		priority = 2501
+		ai_priority = 2000
+		active = no
+
+		type = {
+			armor
+		}
+		
+		group = armor
+		
+		categories = {
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 10
+		default_morale = 0.3
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 180
+		weight = 0.1
+		
+		maximum_speed = 9
+
+		defence = 3
+		breakthrough = 25
+		hardness = -0.2
+		armor_value = 9
+	
+		soft_attack = 12
+		hard_attack = 3
+		ap_attack = 9
+		air_attack = -1
+
+		supply_consumption = 0.005
+	
+		need = {
+			evil_equipment = 10
+		}
+	}
+	evil_artillery_brigade = {
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1198
+		ai_priority = 100
+		active = no
+
+		type = {
+			infantry
+			artillery
+		}
+
+		group = combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+		
+		combat_width = 3
+		
+		#Size Definitions
+		max_strength = 0.6
+		max_organisation = 0
+		default_morale = 0.1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 180
+		weight = 0.1
+				
+		forest = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+
+		maximum_speed = 3
+
+		defence = 14
+		breakthrough = 6
+		hardness = -1
+		armor_value = -1
+	
+		soft_attack = 29
+		hard_attack = 1
+		ap_attack = 4
+		air_attack = -1
+
+		supply_consumption = 0.005
+	
+		need = {
+			evil_equipment = 10
+		}
+	}
+	#人类卫队
+	human_brigade = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 3
+		
+		#Size Definitions
+		max_strength = 45
+		max_organisation = 200
+		default_morale = 1
+		manpower = 2500
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 2
+		weight = 0.8
+		
+		supply_consumption = 0.15
+		need = {
+			human_equipment = 250
+		}
+	}
+	#心灵引导者
+	animal_brigade = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 100
+		max_organisation = 10
+		default_morale = 1
+		manpower = 10
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 100
+		weight = 0.001
+		
+		supply_consumption = 0.001
+	
+		need = {
+			animal_equipment = 1
+		}
+	}
+	#龙虎卫
+	dragon_brigade = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+		special_forces = yes
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+			category_special_forces
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 35
+		max_organisation = 100
+		default_morale = 0.5
+		manpower = 500
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 2
+		weight = 0.5
+		
+		supply_consumption = 0.1
+	
+		need = {
+			dragon_equipment = 100
+		}
+	}
+	#死神
+	die_brigade = {
+		sprite = motorized
+		special_forces = yes
+		map_icon_category = infantry
+		
+		priority = 601
+		ai_priority = 200
+		active = no
+
+		type = {
+			motorized
+		}
+		
+		group = mobile
+		
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+			category_special_forces
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 15
+		max_organisation = 45
+		default_morale = 0.5
+		manpower = 100
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 0
+		weight = 0.5
+		
+		supply_consumption = 0.1
+		can_be_parachuted = yes
+
+		need = {
+			die_equipment = 100
+		}
+
+		fort = {
+			attack = 1
+			defence = 1
+		}
+	}
+	#月都式参谋连
+	rabbit_team_brigade = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 0
+		ai_priority = 0
+		active = no
+
+		type = {
+			infantry
+			support
+			flame
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+		
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 300
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.02
+		can_be_parachuted = yes
+
+		need = {
+			rabbit_team_equipment = 50
+		}
+		marsh = {
+			attack = 0.3
+		}
+		river = {
+			attack = 0.3
+		}
+		amphibious = {
+			attack = 0.3
+		}
+		hills = {
+			attack = 0.2
+			defence = 0.05
+			movement = 0.1
+		}
+		mountain = {
+			attack = 0.3
+			defence = 0.1
+			movement = 0.2
+		}
+		urban = {
+			attack = 0.5
+			defence = 0.5
+		}
+	}
+	#未来战地医院
+	wunv_brigade = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 301
+		ai_priority = 10
+		active = no
+		affects_speed = no
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+		
+		combat_width = 0
+		
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20	
+		default_morale = 0.3
+		manpower = 500
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.05
+		can_be_parachuted = yes
+		
+		# Important Ability
+		casualty_trickleback = 0.7
+
+		need = {
+			wunv_equipment = 50
+		}
+	}
+	#移动魔法巨炮
+	magician_brigade = {
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1198
+		ai_priority = 100
+		active = no
+		special_forces = yes
+
+		type = {
+			infantry
+			artillery
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+			category_special_forces
+		}		
+		
+		combat_width = 30
+		manpower = 1000
+		max_strength = -80
+		max_organisation = -200
+		default_morale = 0.1
+		training_time = 180
+		weight = 2
+		supply_consumption = 2
+
+		forest = {
+			attack = 0.1
+			movement = -0.2
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.8
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+
+		need = {
+			magician_equipment = 10
+		}
+	}
+	#庭师亲传弟子
+	soul_brigade = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 599
+		ai_priority = 200
+		active = no
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+		}
+		
+		combat_width = 0
+		
+		#Size Definitions
+		max_strength = 1
+		max_organisation = 10	
+		default_morale = 0.3
+		manpower = 500
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		can_be_parachuted = yes
+		
+		# Important Ability
+		supply_consumption_factor = -0.1
+		
+		need = {
+			soul_equipment = 50
+		}
+	}
+	#深海少女
+	deep_sea_brigade = {
+		sprite = submarine
+		map_icon_category = ship
+		priority = 2
+		active = yes
+		type = { submarine }
+		need = { deep_sea_equipment = 1 }
+		
+		max_organisation = 30
+		
+		supply_consumption = 0.01
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	#星莲船
+	lotus_brigade = {#星莲船战列型
+		sprite = carrier
+		map_icon_category = ship
+		priority = 10
+		active = yes
+		type = { carrier }#我说一下部署里的type有什么用，一是限制你部署下来的东西是什么，二是要求你的装备有同样的type
+		#海军由于巡洋舰、战巡等机制，设置了装备可以添加type的机制，而且这个type不是覆盖，而是累加的，我甚至可以让一艘船拥有所有type
+		#但是，由于部署机制，这种船只能部署成某种type，因为单位部署只有这一条“出路”。巡洋舰比较特殊，由于主力舰比屏卫舰的优先级高，所以有主力舰type会变成重巡
+		need_equipment = { lotus_equipment = 1 }
+		max_organisation = 50
+	
+		supply_consumption = 0.3
+		
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1 
+		
+		hit_profile_mult = 1.0
+	}
+}

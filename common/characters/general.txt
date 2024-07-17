@@ -1,0 +1,187 @@
+characters = {
+	TOUHOU_Yakumo_Yukari = {
+		name = TOUHOU_Yakumo_Yukari
+		portraits = {
+			civilian = {
+				large = GFX_Yakumo_Yukari
+			}
+			army = {
+				large = GFX_Yakumo_Yukari
+				small = GFX_idea_yukari
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {
+				yukari_oracle
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Yakumo_Yukari
+			slot = political_advisor
+			traits = { yukari_political_trait }
+		}
+		field_marshal = {
+			traits = {
+				units_human brilliant_strategist organizer cavalry_officer cavalry_leader skilled_staffer urban_assault_specialist expert_delegator combined_arms_expert logistics_wizard
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 6
+		}
+	}
+	TOUHOU_Matara_Okina = {
+		name = TOUHOU_Matara_Okina
+		portraits = {
+			army = {
+				small = GFX_idea_matara
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Matara_Okina
+			slot = political_advisor
+			traits = { matara_political_trait }
+		}
+	}
+	TOUHOU_Ibaraki_Kasen = {
+		name = TOUHOU_Ibaraki_Kasen
+		portraits = {
+			army = {
+				small = GFX_idea_huashan
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Ibaraki_Kasen
+			slot = political_advisor
+			traits = { huashan_political_trait }
+		}
+	}
+	TOUHOU_Usami_Renko = {
+		name = TOUHOU_Usami_Renko
+		portraits = {
+			army = {
+				small = GFX_idea_lianzi
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Usami_Renko
+			slot = theorist
+			traits = { touhou_military_theorist }
+		}
+	}
+	TOUHOU_Maribel_Hearn = {
+		name = TOUHOU_Maribel_Hearn
+		portraits = {
+			army = {
+				small = GFX_idea_meili
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Maribel_Hearn
+			slot = theorist
+			traits = { touhou_naval_theorist }
+		}
+	}
+	TOUHOU_Usami_Sumireko = {
+		name = TOUHOU_Usami_Sumireko
+		portraits = {
+			army = {
+				small = GFX_idea_jinzi
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Usami_Sumireko
+			slot = theorist
+			traits = { touhou_air_warfare_theorist }
+		}
+	}
+	TOUHOU_Wakasagihime = {
+		name = TOUHOU_Wakasagihime
+		portraits = {
+			army = {
+				large = GFX_navy_Wakasagihime
+			}
+		}
+		navy_leader = {
+			traits = { navy_career_officer navy_media_personality inshore_fighter fleet_protector blockade_runner superior_tactician spotter lancer loading_drill_master destroyer_leader hunter_killer concealment_expert }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 4
+			coordination_skill = 4
+		}
+	}
+	TOUHOU_Hinanawi_Tenshi = {
+		name = TOUHOU_Hinanawi_Tenshi
+		portraits = {
+			army = {
+				large = GFX_Hinanawi_Tenshi
+			}
+		}
+		field_marshal = {
+			traits = {
+				units_ghost trait_reckless urban_assault_specialist infantry_leader infantry_expert
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	Touhou_Nagae_Iku = {
+		name = Touhou_Nagae_Iku
+		portraits = {
+			army = {
+				large = GFX_Nagae_Iku
+			}
+		}
+		navy_leader = {
+			traits = { navy_career_officer blue_water_expert superior_tactician spotter mine_layer fleet_protector destroyer_leader hunter_killer fly_swatter cruiser_captain search_pattern_expert air_controller flight_deck_manager fighter_director dive_bomber torpedo_bomber }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 6
+			coordination_skill = 6
+		}
+	}
+	TOUHOU_Yakumo_Ran = {
+		name = TOUHOU_Yakumo_Ran
+		portraits = {
+			army = {
+				large = GFX_Yakumo_Ran
+			}
+		}
+		corps_commander = {
+			traits = {
+				units_human inflexible_strategist cavalry_officer cavalry_leader organizer urban_assault_specialist combined_arms_expert
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	TOUHOU_Chen = {
+		name = TOUHOU_Chen
+		portraits = {
+			army = {
+				large = GFX_Chen
+			}
+		}
+		corps_commander = {
+			traits = {
+				units_human cavalry_officer cavalry_leader urban_assault_specialist combined_arms_expert
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

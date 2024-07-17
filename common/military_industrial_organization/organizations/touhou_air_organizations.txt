@@ -1,0 +1,158 @@
+touhou_tengu_aircraft_organization = { # 天狗航空
+	include = generic_high_agility_fighter_aircraft_organization
+	icon = GFX_idea_tengu
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {#注意，这个trigger范围不是country，而是mio本身，所以下面会有“FROM”，并且ROOT也无法定位到本国
+		FROM = {
+			OR = {
+				original_tag = TEN
+				TEN = { has_opinion = { target = FROM value > 24 } }
+				controls_state = 984
+			}
+		}
+	}
+	research_categories = {
+		mio_cat_tech_touhou_aircraft
+		mio_cat_all_light_fighter_and_modules
+	}
+	initial_trait = {
+		name = touhou_tengu_aircraft_organization_trait
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		production_bonus = {
+			production_capacity_factor = 0.03 #产量
+		}
+		equipment_bonus = {
+			air_attack = 0.05 #对空攻击
+			maximum_speed = 0.05 #最大速度
+			air_agility = 0.05 #机动
+		}
+	}
+}
+
+touhou_boli_aircraft_organization = { # 博丽航空
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_boli
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		FROM = {
+			OR = {
+				original_tag = BLI
+				BLI = { has_opinion = { target = FROM value > 24 } }
+				controls_state = 1001
+			}
+		}
+	}
+	research_categories = {
+		mio_cat_tech_touhou_aircraft
+		mio_cat_all_light_fighter_and_modules
+		mio_cat_all_medium_aircraft_and_modules
+	}
+	initial_trait = {
+		name = touhou_boli_aircraft_organization_trait
+		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+		production_bonus = {
+			production_capacity_factor = 0.03 #产量
+		}
+		equipment_bonus = {
+			naval_strike_attack = 0.05 #对海攻击
+			air_ground_attack = 0.05 #对地攻击
+		}
+	}
+}
+
+touhou_miko_aircraft_organization = { # 神子航空
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_shenzi
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		FROM = {
+			OR = {
+				original_tag = DES
+				DES = { has_opinion = { target = FROM value > 24 } }
+				controls_state = 999
+			}
+		}
+	}
+	equipment_type = {
+		mio_cat_eq_all_large_plane
+		transport_plane_equipment
+	}
+	research_categories = {
+		mio_cat_tech_touhou_aircraft
+		mio_cat_all_heavy_aircraft_and_modules
+	}
+	initial_trait = {
+		name = touhou_miko_aircraft_organization_trait
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+		production_bonus = {
+			production_capacity_factor = 0.03 #产量
+		}
+		equipment_bonus = {
+			air_range = 0.08 
+			air_bombing = 0.08
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_reinforced_frames
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_transport_conversions
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_drop_hammer_alloy_straining
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_refined_secondary_aluminium
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_high_quality_aluminium_alloys
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_pressurized_cockpit
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_advanced_turbochargers
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_extended_rear_fuselage
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_auto_levelled_bombsights
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_air_deployed_sonobuoys
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_cockpit_controlled_remote_gun_turrets
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_flying_fortress
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+	override_trait = {
+		token = generic_mio_trait_advanced_instruments
+		limit_to_equipment_type = { mio_cat_eq_all_large_plane }
+	}
+}

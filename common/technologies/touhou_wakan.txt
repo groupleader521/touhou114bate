@@ -1,0 +1,2542 @@
+technologies = {#灵力科技树
+#防御及规模加成*1.5 其他正面加成*0.8 其他负面加成*1.2
+	
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+
+	touhou_wakan_infantry_weapons = {
+
+		enable_equipments = {
+			touhou_wakan_infantry_equipment_0
+		}
+		
+		enable_subunits = {
+			touhou_wakan_infantry
+			touhou_wakan_cavalry
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_infantry_weapons1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	touhou_wakan_infantry_weapons1 = {
+
+		enable_equipments = {
+			touhou_wakan_infantry_equipment_1
+		}
+				
+		path = {
+			leads_to_tech = touhou_wakan_infantry_weapons2
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1936.1.3"
+			}
+		}
+	}	
+	
+	touhou_wakan_infantry_weapons2 = {
+		category_all_infantry = {
+			soft_attack = 0.04
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_improved_infantry_weapons
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1938
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1938 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+	
+	touhou_wakan_improved_infantry_weapons = {
+
+		enable_equipments = {
+			touhou_wakan_infantry_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_improved_infantry_weapons_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = touhou_wakan_infantry_at
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 3
+						
+			modifier = {
+				factor = 10
+				date > "1939.1.1"
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+	touhou_wakan_improved_infantry_weapons_2 = {
+		category_all_infantry = {
+			soft_attack = 0.04
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_advanced_infantry_weapons
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+	
+	touhou_wakan_infantry_at = {
+		category_all_infantry = {
+			hard_attack = 0.04
+			ap_attack = 0.16
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_infantry_at2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1942 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+		}
+	}
+	
+	touhou_wakan_infantry_at2 = {
+		category_all_infantry = {
+			hard_attack = 0.04
+			ap_attack = 0.16
+		}
+		
+		research_cost = 1.5
+		start_year = 1943
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1943 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+	
+	touhou_wakan_advanced_infantry_weapons = {
+
+		enable_equipments = {
+			touhou_wakan_infantry_equipment_3
+		}	
+		
+		path = {
+			leads_to_tech = touhou_wakan_advanced_infantry_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 0.8
+			modifier = {
+				num_of_military_factories > 150
+				factor = 2.5
+			}
+			
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+	
+	touhou_wakan_advanced_infantry_weapons2 = {
+		category_all_infantry = {
+			soft_attack = 0.08
+		}		
+
+		research_cost = 1.5
+		start_year = 1944
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1944 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+		}
+	}
+	
+	touhou_wakan_paratroopers = {
+
+		enable_subunits = {
+			touhou_wakan_paratrooper
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_paratroopers2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_wakan
+			position = { x = 1 y = @1936 }
+		}
+		
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = touhou_wakan_paratrooper
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "touhou_wakan_unlock_paratroopers"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		categories = {
+			wakan
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+		}
+	}
+	
+	touhou_wakan_paratroopers2 = {
+		special_forces_no_supply_grace = 20
+		
+		path = {
+			leads_to_tech = touhou_wakan_paratroopers3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_wakan
+			position = { x = 1 y = @1939 }
+		}
+		
+		categories = {
+			wakan
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+
+	touhou_wakan_paratroopers3 = {
+		special_forces_no_supply_grace = 20
+		
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = touhou_wakan
+			position = { x = 1 y = @1943 }
+		}
+		
+		categories = {
+			wakan
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+		}
+	}
+	
+	touhou_wakan_marines = {
+
+		enable_subunits = {
+			touhou_wakan_marine
+		}
+		
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = touhou_wakan_marine
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "touhou_wakan_unlock_marines"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = touhou_wakan_marines2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_wakan
+			position = { x = 1 y = @1936 }
+		}
+		
+		categories = {
+			wakan
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+		}
+	}
+	
+	touhou_wakan_marines2 = {
+		category_special_forces = {
+			soft_attack = 0.04
+		}
+
+		path = {
+			leads_to_tech = touhou_wakan_marines3
+			research_cost_coeff = 1
+		}
+		
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_wakan
+			position = { x = 1 y = @1939 }
+		}
+		
+		categories = {
+			wakan
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+		}
+	}
+	
+	touhou_wakan_marines3 = {
+		category_special_forces = {
+			hard_attack = 0.04
+		}
+
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = touhou_wakan
+			position = { x = 1 y = @1943 }
+		}
+		
+		categories = {
+			wakan
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}	
+	
+	touhou_wakan_tech_mountaineers = {
+
+		enable_subunits = {
+			touhou_wakan_mountaineers
+		}
+
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = touhou_wakan_mountaineers
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "touhou_wakan_unlock_mountineers"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_tech_mountaineers2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_wakan
+			position = { x = 1 y = @1936 }
+		}
+		
+		categories = {
+			wakan
+			infantry_tech
+			mountaineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	touhou_wakan_tech_mountaineers2 = {
+		category_special_forces = {
+			max_organisation = 7
+		}
+		path = {
+			leads_to_tech = touhou_wakan_tech_mountaineers3
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_wakan
+			position = { x = 1 y = @1939 }
+		}
+		
+		categories = {
+			wakan
+			infantry_tech
+			mountaineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	touhou_wakan_tech_mountaineers3 = {	
+		category_special_forces = {
+			max_strength = 4
+		}
+
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = touhou_wakan
+			position = { x = 1 y = @1943 }
+		}
+		
+		categories = {
+			wakan
+			infantry_tech
+			mountaineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	touhou_wakan_tech_special_forces = {
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.04
+			acclimatization_cold_climate_gain_factor = 0.04
+		}
+
+		path = {
+			leads_to_tech = touhou_wakan_advanced_special_forces
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = touhou_wakan_improved_special_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1938 }
+		}
+		
+		categories = {
+			wakan
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	touhou_wakan_advanced_special_forces = {
+		xor={
+			touhou_wakan_improved_special_forces
+		}
+
+		category_special_forces = {
+			max_organisation = 7
+			defense = 0.07
+		}
+
+		special_forces_training_time_factor = 0.1
+		
+		path = {
+			leads_to_tech = touhou_wakan_extreme_environment_training
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_wakan
+			position = { x = 1 y = @1940 }
+		}
+		
+		categories = {
+			wakan
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	touhou_wakan_improved_special_forces = {
+		xor={
+			touhou_wakan_advanced_special_forces
+		}
+
+		special_forces_cap = 0.07
+		special_forces_training_time_factor = -0.15
+		
+		path = {
+			leads_to_tech = touhou_wakan_survival_training
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_wakan
+			position = { x = 3 y = @1940 }
+		}
+		
+		categories = {
+			wakan
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	touhou_wakan_extreme_environment_training = {
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.4
+			acclimatization_cold_climate_gain_factor = 0.4
+		}
+		
+		special_forces_no_supply_grace = 40
+		special_forces_training_time_factor = 0.8
+		
+		path = {
+			leads_to_tech = touhou_wakan_elite_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = touhou_wakan
+			position = { x = 1 y = @1942 }
+		}
+		
+		categories = {
+			wakan
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	touhou_wakan_survival_training = {
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.16
+			acclimatization_cold_climate_gain_factor = 0.16
+		}
+		
+		special_forces_out_of_supply_factor = -0.08
+		
+		path = {
+			leads_to_tech = touhou_wakan_elite_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = touhou_wakan
+			position = { x = 3 y = @1942 }
+		}
+		
+		categories = {
+			wakan
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	touhou_wakan_elite_forces = {
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.16
+			acclimatization_cold_climate_gain_factor = 0.16
+			max_organisation = 7
+			soft_attack = 0.04
+		}
+		
+		special_forces_no_supply_grace = 40
+
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1944 }
+		}
+		
+		categories = {
+			wakan
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	touhou_wakan_night_vision = {
+		land_night_attack = 0.08
+		
+		path = {
+			leads_to_tech = touhou_wakan_night_vision2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1943 }
+		}
+		
+		categories = {
+			wakan
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1946.1.1"
+			}
+		}
+	}
+	
+	touhou_wakan_night_vision2 = {
+		land_night_attack = 0.08	
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			wakan
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1946.1.6"
+			}
+		}
+	}
+	
+	touhou_wakan_support_weapons = {
+		category_all_infantry = {
+			defense = 0.07
+			breakthrough = 0.07
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_support_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1918 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	touhou_wakan_support_weapons2 = {
+		category_all_infantry = {
+			defense = 0.07
+			breakthrough = 0.07
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_support_weapons3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1938
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1938 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	touhou_wakan_support_weapons3 = {
+		category_all_infantry = {
+			defense = 0.07
+			breakthrough = 0.07
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_support_weapons4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	touhou_wakan_support_weapons4 = {
+		category_all_infantry = {
+			defense = 0.07
+			breakthrough = 0.07
+		}
+		
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			wakan
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	
+	touhou_wakan_gw_artillery = {
+
+		enable_equipments = {
+			touhou_wakan_artillery_equipment_1
+		}
+		enable_equipment_modules = { 
+			ship_anti_air_1
+		}
+		path = {
+			leads_to_tech = touhou_wakan_interwar_artillery 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = touhou_wakan_interwar_antiair 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+	touhou_wakan_interwar_artillery = {
+		category_army = {
+			soft_attack = 0.08
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_artillery1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+	touhou_wakan_artillery1 = {
+	
+		enable_equipments = {
+			touhou_wakan_artillery_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_artillery2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+	}
+	touhou_wakan_artillery2 = {
+		category_army = {
+			soft_attack = 0.08
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_artillery3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1940
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+	touhou_wakan_artillery3 = {
+		category_army = {
+			soft_attack = 0.08
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_artillery4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1941
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1941 }
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.6"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+	touhou_wakan_artillery4 = {
+	
+		enable_equipments = {
+			touhou_wakan_artillery_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_artillery5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+
+		start_year = 1942
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1942.1.6"
+			}
+		}
+	}
+	
+	touhou_wakan_artillery5 = {
+		category_army = {
+			soft_attack = 0.08
+		}
+		
+		research_cost = 1
+
+		start_year = 1943
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1943 }
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1945.1.1"
+			}
+		}
+	}
+	touhou_wakan_interwar_antiair = {
+
+		enable_equipments = {
+			touhou_wakan_anti_air_equipment_1
+		}
+		
+		enable_equipment_modules = { 
+			ship_anti_air_2
+		}
+
+		enable_building = {
+			building = anti_air_building
+			level = 5
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_antiair1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1936 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.5
+			}
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+	}
+	
+	touhou_wakan_antiair1 = {
+		category_army = {
+			air_attack = 0.15
+		}
+
+		tech_air_damage_factor = -0.03
+		
+		path = {
+			leads_to_tech = touhou_wakan_antiair2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1939 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+	}
+	
+	touhou_wakan_antiair2 = {
+	
+		enable_equipments = {
+			touhou_wakan_anti_air_equipment_2
+		}
+		enable_equipment_modules = { 
+			ship_anti_air_3
+		}
+		static_anti_air_damage_factor = 0.15
+
+		path = {
+			leads_to_tech = touhou_wakan_antiair3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1940
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1940 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+	}
+	
+	touhou_wakan_antiair3 = {
+		category_army = {
+			air_attack = 0.15
+		}
+		
+		tech_air_damage_factor = -0.03
+
+		path = {
+			leads_to_tech = touhou_wakan_antiair4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1941
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1941 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+	}
+	
+	touhou_wakan_antiair4 = {
+		category_army = {
+			air_attack = 0.15
+		}
+
+		tech_air_damage_factor = -0.03
+		
+		path = {
+			leads_to_tech = touhou_wakan_antiair5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1942
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1942 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+	}
+	
+	touhou_wakan_antiair5 = {
+
+		enable_equipments = {
+			touhou_wakan_anti_air_equipment_3
+		}
+		enable_equipment_modules = { 
+			ship_anti_air_4
+		}
+		static_anti_air_damage_factor = 0.15
+		
+		research_cost = 1
+
+		start_year = 1943
+		
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1943 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			wakan
+			artillery
+		}
+	}
+	touhou_wakan_motorised_infantry = {
+
+		enable_subunits = {
+			touhou_wakan_motorized
+		}
+
+		enable_equipments = {
+			touhou_wakan_motorized_equipment_1
+		}
+
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = touhou_wakan_motorized
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "touhou_wakan_unlock_motorized"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_mechanised_infantry
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1936 }
+		}
+		
+		sub_technologies = {
+			touhou_wakan_motorized_rocket_unit
+		}
+		
+		categories = {
+			wakan
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+	touhou_wakan_motorized_rocket_unit = {
+
+		enable_subunits = {
+			touhou_wakan_motorized_rocket_brigade
+		}
+		enable_equipments = {
+			touhou_wakan_motorized_rocket_equipment_1
+		}
+	
+		research_cost = 1.5
+		start_year = 1939
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			wakan
+			mot_rockets
+		}
+	}
+	
+	touhou_wakan_mechanised_infantry = {
+
+		enable_equipments = {
+			touhou_wakan_mechanized_equipment_1
+		}
+		
+		touhou_wakan_motorized = {
+			hardness = 1.0
+		}
+		touhou_wakan_mot_artillery_brigade = {
+			hardness = 1.0
+		}
+		touhou_wakan_mot_anti_air_brigade = {
+			hardness = 1.0
+		}
+
+		path = {
+			leads_to_tech = touhou_wakan_mechanised_infantry2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = touhou_wakan_amphibious_mechanized_infantry
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			wakan
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				tag = USA
+				factor = 2
+			}
+		}
+	}
+
+	touhou_wakan_amphibious_mechanized_infantry = {
+
+		enable_equipments = {
+			touhou_wakan_amphibious_mechanized_equipment_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		enable_subunits = {
+			touhou_wakan_amphibious_mechanized
+		}
+
+		path = {
+			leads_to_tech = touhou_wakan_amphibious_mechanized_infantry_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1941 }
+		}
+		
+		categories = {
+			wakan
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+			tp_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				tag = USA
+				factor = 2
+			}
+		}
+	}
+
+	touhou_wakan_amphibious_mechanized_infantry_2 = {
+
+		enable_equipments = {
+			touhou_wakan_amphibious_mechanized_equipment_2
+		}
+
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1943 }
+		}
+		
+		categories = {
+			wakan
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+			tp_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	touhou_wakan_mechanised_infantry2 = {
+
+		enable_equipments = {
+			touhou_wakan_mechanized_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_mechanised_infantry3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			wakan
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	touhou_wakan_mechanised_infantry3 = {
+
+		enable_equipments = {
+			touhou_wakan_mechanized_equipment_3
+		}
+
+		touhou_wakan_mechanized = {
+			soft_attack = 0.12
+			hard_attack = 0.12
+		}
+
+		research_cost = 3
+		start_year = 1944
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1944 }
+		}
+		
+		categories = {
+			wakan
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_wakan_early_fighter = {
+
+		enable_equipments = {
+			touhou_wakan_fighter_equipment_0
+		}
+	
+		path = {
+			leads_to_tech = touhou_wakan_fighter1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = touhou_wakan_CAS1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			wakan
+			light_air
+			light_fighter
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	touhou_wakan_fighter1 = {
+
+		enable_equipments = {
+			touhou_wakan_fighter_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = touhou_wakan_fighter2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			wakan
+			light_air
+			light_fighter
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1940.1.1"
+			}
+		}
+	}
+	touhou_wakan_fighter2 = {
+
+		enable_equipments = {
+			touhou_wakan_fighter_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = touhou_wakan_fighter3
+			research_cost_coeff = 1
+		}
+				
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			wakan
+			light_air
+			light_fighter
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1944.1.1"
+			}
+		}
+	}
+	touhou_wakan_fighter3 = {
+
+		enable_equipments = {
+			touhou_wakan_fighter_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_jet_fighter2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1944
+
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1944 }
+		}
+		
+		categories = {
+			wakan
+			light_air
+			light_fighter
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1948.1.1"
+			}
+		}
+	}
+	touhou_wakan_jet_fighter2 = {
+
+		enable_equipments = {
+			touhou_wakan_jet_fighter_equipment_2
+		}
+		
+		research_cost = 2
+		start_year = 1946
+
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			wakan
+			light_air
+			jet_technology
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_wakan_CAS1 = {
+
+		enable_equipments = {
+			touhou_wakan_CAS_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = touhou_wakan_CAS2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1936 }
+		}
+		
+		categories = {
+			wakan
+			light_air
+			cas_bomber
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = GER
+			}
+			
+			modifier = {
+				factor = 100
+				tag = SOV
+			}
+			modifier = {
+				has_war_with = GER
+				tag = SOV
+				factor = 2
+			}
+
+		}
+	}
+	
+	touhou_wakan_CAS2 = {
+
+		enable_equipments = {
+			touhou_wakan_CAS_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = touhou_wakan_CAS3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1940 }
+		}
+		
+		categories = {
+			wakan
+			light_air
+			cas_bomber
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = GER
+			}
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 400
+					type = cas
+				}
+				factor = 3
+			}
+
+			modifier = {
+				factor = 2
+				OR = {
+					has_war_with = GER
+					has_war_with = SOV
+				}
+			}
+			
+			modifier = {
+				factor = 3
+				tag = SOV
+			}
+		}
+	}
+	
+	touhou_wakan_CAS3 = {
+
+		enable_equipments = {
+			touhou_wakan_CAS_equipment_3
+		}
+		
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = touhou_wakan
+			position = { x = 2 y = @1944 }
+		}
+		
+		categories = {
+			wakan
+			light_air
+			cas_bomber
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = GER
+			}
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = cas
+				}
+				factor = 3
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					has_war_with = GER
+					has_war_with = SOV
+				}
+			}
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+	}
+	
+	touhou_wakan_early_bomber = {
+
+		enable_equipments = {
+			touhou_wakan_tac_bomber_equipment_0
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_tactical_bomber1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			wakan
+			medium_air
+			tactical_bomber
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_wakan_tactical_bomber1 = {
+
+		enable_equipments = {
+			touhou_wakan_tac_bomber_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = touhou_wakan_tactical_bomber2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			wakan
+			medium_air
+			tactical_bomber
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1936.1.1"
+			}
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = tactical_bomber
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				is_major = yes
+				date > "1940.1.1"
+			}
+		}
+	}
+	
+	touhou_wakan_tactical_bomber2 = {
+
+		enable_equipments = {
+			touhou_wakan_tac_bomber_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = touhou_wakan_tactical_bomber3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			wakan
+			medium_air
+			tactical_bomber
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1940.1.1"
+			}
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = tactical_bomber
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				is_major = yes
+				date > "1944.1.1"
+			}
+		}
+	}
+	
+	touhou_wakan_tactical_bomber3 = {
+
+		enable_equipments = {
+			touhou_wakan_tac_bomber_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = touhou_wakan_jet_tactical_bomber2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1944 }
+		}
+		
+		categories = {
+			wakan
+			medium_air
+			tactical_bomber
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1944.1.1"
+			}
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = tactical_bomber
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1945.1.1"
+			}
+		}
+	}
+	touhou_wakan_jet_tactical_bomber2 = {
+
+		enable_equipments = {
+			touhou_wakan_jet_tac_bomber_equipment_2
+		}
+		
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = touhou_wakan
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			wakan
+			medium_air
+			jet_technology
+			tactical_bomber
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

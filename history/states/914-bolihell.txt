@@ -1,0 +1,29 @@
+state={
+	id=975
+	name="STATE_BoLiShenSheHouShan"
+	provinces={
+		13465 13472 13478 13483 13485 13538 13539 13540
+	}
+	history={
+		add_core_of = BLI
+		add_core_of = DLD
+		owner = BLI
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			13485 20
+		}
+	}
+	resources = {
+		oil = 23
+		rubber = 15
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	#state_category=town
+	state_category=megalopolis
+	local_supplies=0.0 
+}

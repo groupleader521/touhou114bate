@@ -1,0 +1,81 @@
+ideas = {
+	country = {
+		not_recognized_trait = {
+		
+			picture = human_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		not_recognized_trait_2 = {
+		
+			picture = human_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				conscription = -0.01
+			}
+		}
+		not_recognized_more_trait = {
+		
+			picture = human_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				conscription = -0.01
+				MONTHLY_POPULATION = -0.02
+			}
+		}
+		not_recognized_brave_trait = {
+		
+			picture = human_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				conscription = 0.01
+				political_power_factor = 0.1
+			}
+		}
+	}
+}

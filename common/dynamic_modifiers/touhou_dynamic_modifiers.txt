@@ -1,0 +1,99 @@
+touhou_industrial_adviser = {#工业改革顾问
+	enable = { always = yes }			
+	icon = GFX_goal_generic_production
+	research_speed_factor = var_touhou_industrial_research #工业改革顾问科研速度变量
+	industrial_capacity_factory = var_touhou_industrial_industrial #工业改革顾问工业产出变量
+	production_speed_buildings_factor = var_touhou_industrial_buildings #工业改革顾问建筑速度
+	land_reinforce_rate = var_touhou_industrial_reinforce_rate #工业改革顾问增援率
+	coordination_bonus = var_touhou_industrial_coordination #工业改革顾问协同性
+	production_speed_supply_node_factor = var_touhou_industrial_supply_node #工业改革顾问补给中心建造速度
+	production_speed_rail_way_factor = var_touhou_industrial_rail #工业改革顾问铁路建造速度
+}
+touhou_dynamic_modifiers_everyone_communist_economy = {#党支部-生产建设
+	enable = { always = yes }			
+	icon = GFX_goal_generic_forceful_treaty
+	political_power_factor = 0.1
+	industrial_capacity_factory = touhou_var_everyone_communist_industrial_capacity_factory #党支部-生产建设工业产出变量
+	industrial_capacity_dockyard = touhou_var_everyone_communist_industrial_capacity_dockyard #党支部-生产建设船坞产出变量
+	training_time_army_factor = touhou_var_everyone_communist_training_time_army_factor #党支部-生产建设训练时间
+	war_support_weekly = touhou_var_everyone_communist_war_support_weekly #党支部-生产建设每周战争支持度变量
+	stability_weekly = touhou_var_everyone_communist_stability_weekly #党支部-生产建设每周稳定度变量
+}
+touhou_dynamic_modifiers_everyone_communist_army = {#党支部-军队建设
+	enable = { always = yes }			
+	icon = GFX_focus_SOV_builder_of_the_red_army
+	max_command_power_mult = 0.2	
+	army_attack_factor = touhou_var_everyone_communist_army_attack_factor #党支部-军队建设陆军攻击变量
+	army_org_factor = touhou_var_everyone_communist_army_org_factor #党支部-军队建设陆军组织度变量
+	command_power_gain_mult = touhou_var_everyone_communist_command_power_gain_mult #党支部-军队建设指挥点增速变量
+	war_support_weekly = touhou_var_everyone_communist_war_support_weekly_army #党支部-军队建设每周战争支持度变量
+	stability_weekly = touhou_var_everyone_communist_stability_weekly_army #党支部-军队建设每周稳定度变量
+	conscription_factor = touhou_var_everyone_communist_conscription_factor #党支部-军队建设征兵加成变量
+}
+touhou_dynamic_modifiers_everyone_communist_ideology = {#党支部-思想建设
+	enable = { always = yes }			
+	icon = GFX_focus_generic_join_comintern
+	compliance_growth = 0.05
+	compliance_gain = touhou_var_everyone_communist_compliance_gain #党支部-思想建设顺从度变量
+	communism_drift = touhou_var_everyone_communist_communism_drift #党支部-思想建设共产主义变量
+	resistance_growth = touhou_var_everyone_communist_resistance_growth #党支部-思想建设抵抗增长速度变量
+	required_garrison_factor = touhou_var_everyone_communist_required_garrison_factor #党支部-思想建设驻军需求变量
+	experience_gain_army_unit_factor = touhou_var_everyone_communist_experience_gain_army_unit_factor #党支部-思想建设士兵经验变量
+}
+touhou_dynamic_modifiers_everyone_communist_focus = {#改革阵痛
+	enable = { always = yes }			
+	icon = GFX_focus_ger_bulwark_against_bolshevism
+	drift_defence_factor = -0.3
+	war_support_weekly = touhou_var_everyone_communist_war_support_weekly_focus #改革阵痛每周战争支持度变量
+	stability_weekly = touhou_var_everyone_communist_stability_weekly_focus #改革阵痛每周稳定度变量
+	political_power_gain = touhou_var_everyone_communist_political_power_gain #改革阵痛每日政治点
+	surrender_limit = touhou_var_everyone_communist_surrender_limit #改革阵痛投降限度
+	communism_drift = touhou_var_everyone_communist_communism_drift_focus #改革阵痛共产主义变量
+}
+touhou_dynamic_modifiers_alice_doll = {#人偶作战网络
+	enable = { always = yes }
+	icon = GFX_idea_marionette_trait
+	conscription = -2
+	stability_weekly = 0.001
+	war_support_weekly = 0.001
+	training_time_factor = -0.5
+	minimum_training_level = 0.8	
+	army_attack_factor = touhou_var_alice_doll_army_attack_factor
+	army_defence_factor = touhou_var_alice_doll_army_defence_factor
+	army_org_factor = touhou_var_alice_doll_army_org_factor
+	army_strength_factor = touhou_var_alice_doll_army_strength_factor
+	naval_damage_factor = touhou_var_alice_doll_naval_damage_factor
+	naval_defense_factor = touhou_var_alice_doll_naval_defense_factor
+	navy_org_factor = touhou_var_alice_doll_navy_org_factor
+	air_attack_factor = touhou_var_alice_doll_air_attack_factor
+	air_defence_factor = touhou_var_alice_doll_air_defence_factor
+	air_agility_factor = touhou_var_alice_doll_air_agility_factor
+}
+touhou_dynamic_modifiers_navy = {#逐步探索的独立海军之路
+	enable = { always = yes }
+	icon = GFX_idea_generic_coastal_navy
+}
+touhou_dynamic_modifiers_character = {#幻想乡精英
+	enable = { always = yes }
+	icon = GFX_idea_DEN_flyvertroppernes_organization
+	political_power_factor = 0.05
+	command_power_gain_mult = 0.05
+	experience_gain_army_factor = 0.05
+	experience_gain_navy_factor = 0.05
+	experience_gain_air_factor = 0.05
+	political_power_gain = touhou_var_first_line
+	command_power_gain = touhou_var_first_line
+	experience_gain_army = touhou_var_first_line
+	experience_gain_navy = touhou_var_first_line
+	experience_gain_air = touhou_var_first_line
+}
+touhou_dynamic_modifiers_touhou_fiscal_society_0 = {#国际援助
+	enable = { always = yes }
+	icon = GFX_idea_SPR_seize_the_gold_reserves
+	consumer_goods_factor = -0.05
+	communism_drift = touhou_var_touhou_fiscal_society_communism_drift
+	democratic_drift = touhou_var_touhou_fiscal_society_democratic_drift
+	fascism_drift = touhou_var_touhou_fiscal_society_fascism_drift
+	neutrality_drift = touhou_var_touhou_fiscal_society_neutrality_drift
+	consumer_goods_factor = touhou_var_touhou_fiscal_society_consumer_goods_factor
+}

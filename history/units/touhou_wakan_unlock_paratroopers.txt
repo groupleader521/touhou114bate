@@ -1,0 +1,9 @@
+﻿division_template = {
+	name = "风精灵"
+
+	regiments = {
+		touhou_wakan_paratrooper = { x = 0 y = 0 }
+		touhou_wakan_paratrooper = { x = 0 y = 1 }
+        touhou_wakan_paratrooper = { x = 0 y = 2 }
+	}
+}

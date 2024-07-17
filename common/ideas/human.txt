@@ -1,0 +1,184 @@
+ideas = {
+	country = {
+		
+		human_HandC = {
+		
+			picture = saf_history_of_segregation_2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		human_HandF = {
+		
+			picture = saf_history_of_segregation_2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		human_CandF = {
+		
+			picture = saf_history_of_segregation_2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		confused_human = {
+		
+			picture = saf_history_of_segregation_2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.1
+				communism_drift = 0.1
+				fascism_drift = 0.1
+			}
+		}
+		human_think_win = {
+		
+			picture = saf_history_of_segregation_2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+		human_think_lose = {
+		
+			picture = saf_history_of_segregation_2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = -0.05
+			}
+		}
+		moster_think_win = {
+		
+			picture = saf_history_of_segregation_2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+		moster_think_lose = {
+		
+			picture = saf_history_of_segregation_2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.05
+			}
+		}
+		both_think_win = {
+		
+			picture = saf_history_of_segregation_2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		both_think_lose = {
+		
+			picture = saf_history_of_segregation_2
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.05
+			}
+		}
+	}
+}

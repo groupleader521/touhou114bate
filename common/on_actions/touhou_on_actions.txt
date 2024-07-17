@@ -1,0 +1,245 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ALI = {
+				set_variable = {
+					touhou_var_alice_doll_consumer_goods_expected_value = 0.1
+				}
+				set_variable = {#如果写进history里会导致“num_of_factories”为0
+					touhou_var_alice_trait_manpower = num_of_factories
+				}
+				multiply_variable = {
+					var = touhou_var_alice_trait_manpower
+					value = 1000
+				}				
+			}
+			if = {
+				limit = { 
+					original_tag = EVI
+					is_ai = yes
+				}
+				activate_mission = touhou_mission_ai_evi_military_academy_1
+			}
+			every_country = {
+				limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+				country_event = { id = touhou_communication.2 days = 5 random_days = 1 }
+				every_character = {
+					limit = {
+						OR = {
+							has_trait = communist_revolutionary
+							has_trait = democratic_reformer
+							has_trait = fascist_demagogue
+							has_trait = head_of_intelligence
+						}
+					}
+					retire = yes
+				}
+				every_owned_state = {
+					set_state_flag = is_gensokyo_state_flag
+				}
+				add_ideas = touhou_no_need_help  
+				if = {
+					limit = {
+						is_ai = no
+					}
+					country_event = { id = touhou_difficulty_select.1 } 
+				}
+				every_character = { set_character_flag = touhou_character_flag_character }
+			}		
+		}
+	}
+	on_puppet = {#傀儡，root是傀儡国，from是宗主国
+		effect = {
+			if = {#幻想乡国家傀儡幻想乡国家
+				limit = {
+					any_character = { has_character_flag = touhou_character_flag_character }
+					FROM = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = touhou_country_flag_a_player_capture_character }
+						FROM = { is_ai = no }	
+					}
+					set_country_flag = touhou_country_flag_a_player_capture_character
+					FROM = { country_event = { id = touhou_capture_character.11 } }
+				}
+				else_if = {
+					limit = { 						
+						NOT = { has_country_flag = touhou_country_flag_a_ai_capture_character }	
+						FROM = { is_ai = yes }				
+					}
+					set_country_flag = touhou_country_flag_a_ai_capture_character
+					FROM = { country_event = { id = touhou_capture_character.12 } }
+				}
+			}
+			else_if = {#外界傀儡幻想乡国家
+				limit = {
+					any_character = { has_character_flag = touhou_character_flag_character }
+					FROM = { NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = touhou_country_flag_a_player_capture_character }
+						any_country = {
+							is_ai = no
+							OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }								
+						}
+					}
+					set_country_flag = touhou_country_flag_a_player_capture_character
+					random_country = {
+						limit = { 
+							is_ai = no
+							OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						}
+						country_event = { id = touhou_capture_character.13 } 
+					}
+				}
+				else_if = {	
+					limit = {						
+						NOT = { has_country_flag = touhou_country_flag_a_ai_capture_character }
+						any_country = {
+							is_ai = yes
+							OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }								
+						}
+					}	
+					set_country_flag = touhou_country_flag_a_ai_capture_character
+					random_country = {
+						limit = { 
+							is_ai = yes
+							OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						}
+						country_event = { id = touhou_capture_character.14 } 
+					}
+				}
+			}
+		}
+	}
+	on_annex = {#吞并，root是吞并国，from是被吞并国，注意，只有把对方搞得一块地不剩才叫annex
+		effect = {
+			if = {#幻想乡吞并幻想乡国家
+				limit = {
+					OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+					FROM = { any_character = { has_character_flag = touhou_character_flag_character } }
+				}
+				if = {
+					limit = {
+						is_ai = no
+						FROM = { NOT = { has_country_flag = touhou_country_flag_a_player_capture_character } }		
+					}
+					FROM = { set_country_flag = touhou_country_flag_a_player_capture_character }
+					country_event = { id = touhou_capture_character.21 }
+				}
+				else_if = {
+					limit = {
+						is_ai = yes
+						FROM = { NOT = { has_country_flag = touhou_country_flag_a_ai_capture_character } }		
+					}
+					FROM = { set_country_flag = touhou_country_flag_a_ai_capture_character }
+					country_event = { id = touhou_capture_character.22 }
+				}
+			}
+			else_if = {#外界吞并幻想乡国家
+				limit = {
+					NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+					FROM = { any_character = { has_character_flag = touhou_character_flag_character } }
+				}
+				if = {
+					limit = {
+						FROM = { NOT = { has_country_flag = touhou_country_flag_a_player_capture_character } }	
+						any_country = {
+							is_ai = no
+							OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }								
+						}
+					}
+					FROM = { set_country_flag = touhou_country_flag_a_player_capture_character } 
+					random_country = {
+						limit = { 
+							is_ai = no
+							OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						}
+						country_event = { id = touhou_capture_character.23 } 
+					}
+				}
+				else_if = {	
+					limit = {						
+						FROM = { NOT = { has_country_flag = touhou_country_flag_a_ai_capture_character } }
+						any_country = {
+							is_ai = yes
+							OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }								
+						}
+					}	
+					FROM = { set_country_flag = touhou_country_flag_a_ai_capture_character }
+					random_country = {
+						limit = { 
+							is_ai = yes
+							OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						}
+						country_event = { id = touhou_capture_character.24 } 
+					}
+				}
+			}
+		}
+	}	
+	on_weekly = {
+		effect = {
+			if = {#侧重国防支出条件BUFF
+				limit = {
+					has_idea = touhou_fiscal_military
+				}
+				if = {#脱战状态
+					limit = { has_war = no }
+					add_war_support = 0.005
+					add_stability = -0.005
+				}
+				if = {#入战状态
+					limit = { has_war = yes }
+					add_war_support = 0.005
+					add_stability = 0.005
+				}
+				if = {#丢失领土
+					limit = {
+						any_owned_state = {
+							is_controlled_by_ROOT_or_ally = no
+						}
+					}
+					add_popularity = {
+						ideology = ROOT
+						popularity = -0.003
+					}
+				}
+				if = {#在不丢失领土的情况下获得领土
+					limit = {
+						all_owned_state = {
+							is_controlled_by_ROOT_or_ally = yes
+						}
+						any_controlled_state = {
+							NOT = { is_owned_by = ROOT }
+						}
+					}
+					add_popularity = {
+						ideology = ROOT
+						popularity = 0.003
+					}
+				}
+			}
+			if = {#投资科教文卫条件BUFF
+				limit = {
+					has_idea = touhou_fiscal_society
+				}
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.007
+				}
+			}
+			if = {#灵活支出-福利支出条件BUFF
+				limit = {
+					has_idea = touhou_fiscal_flexibility_2
+				}
+				add_popularity = {
+					ideology = ROOT
+					popularity = 0.01
+				}
+			}
+		}
+	}
+}

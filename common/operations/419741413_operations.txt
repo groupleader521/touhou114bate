@@ -1,0 +1,102 @@
+touhou_operation_evil_steal_intel_army = {
+	icon = GFX_operations_infiltrate_armed_forces
+	map_icon = GFX_operations_infiltrate_armed_forces_map
+	name = touhou_operation_evil_steal_intel_army
+	desc = touhou_operation_evil_steal_intel_army_desc
+	priority = 4
+
+	days = 30
+	network_strength = 50
+	operatives = 2
+
+	visible = {
+		has_idea = touhou_ideas_evil_uprising
+		FROM = {
+			original_tag = EVI
+		}
+		network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+		has_operation_token = {
+			tag = FROM
+			token = token_army
+		}
+	}
+	required_tokens = {
+		token_army
+	}
+	risk_chance = 0.1
+	risk_modifiers = { operation_infiltrate_risk operation_risk }
+	outcome_extra_chance = 0.25
+	outcome_modifiers = { operation_infiltrate_outcome operation_outcome }
+	cost_modifiers = { operation_infiltrate_cost operation_cost }
+	outcome_execute = {
+		custom_effect_tooltip = touhou_tooltip_evil_steal_intel_army
+		ROOT = {
+			remove_ideas = touhou_ideas_evil_uprising
+		}
+	}
+	outcome_extra_execute = {
+		custom_effect_tooltip = touhou_tooltip_evil_steal_intel_army
+		random_list = {
+			33 = {
+				ROOT = {
+					remove_ideas = touhou_ideas_evil_uprising
+					army_experience = 10
+					add_intel = {
+						target = FROM
+						army_intel = 10
+					}
+				}
+			}
+			67 = {
+				ROOT = {
+					remove_ideas = touhou_ideas_evil_uprising
+					army_experience = 10
+				}
+			}
+		}
+	}
+	outcome_potential = {
+		custom_effect_tooltip = touhou_tooltip_evil_steal_intel_army
+		ROOT = {
+			remove_ideas = touhou_ideas_evil_uprising
+		}
+	}
+	phases = {
+		infiltration_border = { base = 25 }
+		infiltration_diplomatic = {
+			base = 25
+			modifier = {
+				factor = 20
+				ROOT = { has_war = no }
+				FROM = {
+					has_war = no
+				}
+			}
+		}
+	}
+	phases = {
+		infiltrate_military_bribe = { base = 25 }
+		infiltrate_military_seduction = { base = 25 }
+		infiltrate_military_turned_pow = {
+			base = 25
+			modifier = {
+				FROM = { has_war = no }
+				factor = 0
+			}
+		}
+		infiltrate_military_ideological_supporter = {
+			base = 25
+			modifier = {
+				FROM = { has_government = ROOT }
+				factor = 0
+			}
+		}
+	}
+	phases = {
+		exfiltration_border = { base = 30 }
+		exfiltration_go_to_ground = { base = 30 }
+	}
+}

@@ -1,0 +1,604 @@
+spriteTypes = {	
+	#所有步兵小图标（为什么mod里会有这东西？）
+	spriteType = {
+		name = "GFX_nato_unit_category_all_infantry_icon_small"
+		texturefile = "gfx/texticons/nato_unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_all_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#所有坦克小图标
+	spriteType = {
+		name = "GFX_nato_unit_category_tanks_icon_small"
+		texturefile = "gfx/texticons/nato_unit_modern_armor_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_tanks_icon_small"
+		texturefile = "gfx/texticons/unit_modern_armor_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#所有装甲小图标
+	spriteType = {
+		name = "GFX_nato_unit_category_all_armor_icon_small"
+		texturefile = "gfx/texticons/nato_unit_modern_armor_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_all_armor_icon_small"
+		texturefile = "gfx/texticons/unit_modern_armor_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#航母小图标
+	spriteType = {
+		name = "GFX_unit_carrier_icon_small"
+		texturefile = "gfx/texticons/ship_carrier_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#战列舰小图标
+	spriteType = {
+		name = "GFX_unit_battleship_icon_small"
+		texturefile = "gfx/texticons/ship_sh_battleship_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#战巡小图标
+	spriteType = {
+		name = "GFX_unit_battle_cruiser_icon_small"
+		texturefile = "gfx/texticons/ship_battlecruiser_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#驱逐小图标
+	spriteType = {
+		name = "GFX_unit_destroyer_icon_small"
+		texturefile = "gfx/texticons/ship_destroyer_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#轻巡小图标
+	spriteType = {
+		name = "GFX_unit_light_cruiser_icon_small"
+		texturefile = "gfx/texticons/ship_light_cruiser_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#潜水艇小图标
+	spriteType = {
+		name = "GFX_unit_submarine_icon_small"
+		texturefile = "gfx/texticons/ship_submarine_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#重巡小图标
+	spriteType = {
+		name = "GFX_unit_heavy_cruiser_icon_small"
+		texturefile = "gfx/texticons/ship_heavy_cruiser_icon_small.dds"
+		legacy_lazy_load = no
+	}
+#####################################		
+	#龙虎卫小图标
+	spriteType = {
+		name = "GFX_nato_unit_dragon_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_dragon_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#冠军鬼王小图标
+	spriteType = {
+		name = "GFX_unit_oni_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_irregular_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#移动巨炮小图标
+	spriteType = {
+		name = "GFX_unit_magician_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	#庭师亲传弟子小图标
+	spriteType = {
+		name = "GFX_nato_unit_soul_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_motorized_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_soul_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_motorized_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#心灵引导者小图标
+	spriteType = {
+		name = "GFX_nato_unit_animal_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_animal_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#死神小图标
+	spriteType = {
+		name = "GFX_nato_unit_die_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_mountaineers_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_die_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_mountaineers_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#兔子小队小图标
+	spriteType = {
+		name = "GFX_nato_unit_rabbit_team_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_paratrooper_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_rabbit_team_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_paratrooper_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	#妖精小图标
+	spriteType = {
+		name = "GFX_nato_unit_evil_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_evil_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_nato_unit_evil_armor_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_light_armor_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_evil_armor_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_light_armor_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_nato_unit_evil_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_evil_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#人类卫队小图标
+	spriteType = {
+		name = "GFX_nato_unit_human_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_human_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#歌利亚小图标
+	spriteType = {
+		name = "GFX_nato_unit_goliath_brigade_icon_small"
+		texturefile = "gfx/texticons/nato_unit_modern_armor_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_goliath_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_modern_armor_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#博丽对地攻击联队小图标
+	spriteType = {
+		name = "GFX_unit_cas_boli_fighter_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_air_cas_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#风神天狗小图标
+	spriteType = {
+		name = "GFX_unit_tengu_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_air_jet_fighter_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#深海少女小图标
+	spriteType = {
+		name = "GFX_ship_deep_sea_brigade_icon_small"
+		texturefile = "gfx/texticons/ship_submarine_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_deep_sea_brigade_icon_small"
+		texturefile = "gfx/texticons/ship_submarine_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#星莲船小图标
+	spriteType = {
+		name = "GFX_unit_lotus_brigade_icon_small"
+		texturefile = "gfx/texticons/ship_carrier_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#未来战地医院小图标
+	spriteType = {
+		name = "GFX_unit_wunv_brigade_icon_small"
+		texturefile = "gfx/texticons/support_field_hospital_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	#神风人偶小图标
+	spriteType = {
+		name = "GFX_unit_suicide_puppet_1_icon_small"
+		texturefile = "gfx/texticons/unit_air_v2_rocket_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}	
+	#人偶战略导弹小图标
+	spriteType = {
+		name = "GFX_unit_suicide_puppet_2_icon_small"
+		texturefile = "gfx/texticons/unit_air_v2_rocket_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}	
+#####################################
+	#东方后勤连小图标
+	spriteType = {
+		name = "GFX_unit_touhou_logistics_company_icon_small"
+		texturefile = "gfx/texticons/support_logistics_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}	
+	#东方维修连小图标
+	spriteType = {
+		name = "GFX_unit_touhou_maintenance_company_icon_small"
+		texturefile = "gfx/texticons/support_maintenance_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}	
+	#东方通信连小图标
+	spriteType = {
+		name = "GFX_unit_touhou_signal_company_icon_small"
+		texturefile = "gfx/texticons/support_signal_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}	
+	#东方侦察连小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_recon_icon_small"
+		texturefile = "gfx/texticons/nato_unit_recon_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_recon_icon_small"
+		texturefile = "gfx/texticons/unit_recon_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#东方工兵连小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_engineer_icon_small"
+		texturefile = "gfx/texticons/nato_unit_engineer_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_engineer_icon_small"
+		texturefile = "gfx/texticons/support_engineer_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	#东方宪兵队小图标
+	spriteType = {
+		name = "GFX_unit_touhou_military_police_icon_small"
+		texturefile = "gfx/texticons/support_military_police_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	#东方战地医院小图标
+	spriteType = {
+		name = "GFX_unit_touhou_field_hospital_icon_small"
+		texturefile = "gfx/texticons/support_field_hospital_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+#####################################
+	#魔法步兵小图标		
+	spriteType = {
+		name = "GFX_unit_touhou_magic_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_nato_unit_touhou_magic_infantry_icon_small"
+		texturefile = "gfx/texticons/nato_unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}		
+	#魔法火炮兵小图标
+	spriteType = {
+		name = "GFX_unit_touhou_magic_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}	
+	#魔法火炮支援连小图标
+	spriteType = {
+		name = "GFX_unit_touhou_magic_artillery_icon_small"
+		texturefile = "gfx/texticons/support_art_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_touhou_magic_artillery_icon_small"
+		texturefile = "gfx/texticons/nato_unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	#魔法战斗机小图标
+	spriteType = {
+		name = "GFX_unit_touhou_magic_fighter_icon_small"
+		texturefile = "gfx/texticons/unit_air_fighter_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#魔法战术轰小图标
+	spriteType = {
+		name = "GFX_unit_touhou_magic_tac_bomber_icon_small"
+		texturefile = "gfx/texticons/unit_air_tac_bomber_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#魔法反坦克支援连小图标
+	spriteType = {
+		name = "GFX_unit_touhou_magic_anti_tank_icon_small"
+		texturefile = "gfx/texticons/support_AT_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	#魔法反坦克炮小图标
+	spriteType = {
+		name = "GFX_unit_touhou_magic_anti_tank_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	#魔法海军陆战队小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_magic_marine_icon_small"
+		texturefile = "gfx/texticons/nato_unit_marine_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_magic_marine_icon_small"
+		texturefile = "gfx/texticons/unit_marine_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#魔法骑兵小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_magic_cavalry_icon_small"
+		texturefile = "gfx/texticons/nato_unit_cavalry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_magic_cavalry_icon_small"
+		texturefile = "gfx/texticons/unit_cavalry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#魔法山地师小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_magic_mountaineers_icon_small"
+		texturefile = "gfx/texticons/nato_unit_mountaineers_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_magic_mountaineers_icon_small"
+		texturefile = "gfx/texticons/unit_mountaineers_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#魔法轻坦小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_magic_light_armor_icon_small"
+		texturefile = "gfx/texticons/nato_unit_light_armor_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_magic_light_armor_icon_small"
+		texturefile = "gfx/texticons/unit_light_armor_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#魔法伞兵小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_magic_paratrooper_icon_small"
+		texturefile = "gfx/texticons/nato_unit_paratrooper_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_magic_paratrooper_icon_small"
+		texturefile = "gfx/texticons/unit_paratrooper_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+#####################################
+	#妖力步兵小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_demonforce_infantry_icon_small"
+		texturefile = "gfx/texticons/nato_unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_unit_touhou_demonforce_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#妖力海军陆战队小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_demonforce_marine_icon_small"
+		texturefile = "gfx/texticons/nato_unit_marine_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_demonforce_marine_icon_small"
+		texturefile = "gfx/texticons/unit_marine_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#妖力山地师小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_demonforce_mountaineers_icon_small"
+		texturefile = "gfx/texticons/nato_unit_mountaineers_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_demonforce_mountaineers_icon_small"
+		texturefile = "gfx/texticons/unit_mountaineers_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#妖力伞兵小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_demonforce_paratrooper_icon_small"
+		texturefile = "gfx/texticons/nato_unit_paratrooper_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_demonforce_paratrooper_icon_small"
+		texturefile = "gfx/texticons/unit_paratrooper_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	#妖力骑兵小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_demonforce_cavalry_icon_small"
+		texturefile = "gfx/texticons/nato_unit_cavalry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_demonforce_cavalry_icon_small"
+		texturefile = "gfx/texticons/unit_cavalry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#妖力反坦克支援连小图标
+	spriteType = {
+		name = "GFX_unit_touhou_demonforce_anti_tank_icon_small"
+		texturefile = "gfx/texticons/support_AT_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	#妖力反坦克炮小图标
+	spriteType = {
+		name = "GFX_unit_touhou_demonforce_anti_tank_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}	
+#####################################
+	#灵力步兵小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_wakan_infantry_icon_small"
+		texturefile = "gfx/texticons/nato_unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_wakan_infantry_icon_small"
+		texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#灵力骑兵小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_wakan_cavalry_icon_small"
+		texturefile = "gfx/texticons/nato_unit_cavalry_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_wakan_cavalry_icon_small"
+		texturefile = "gfx/texticons/unit_cavalry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#灵力摩托化小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_wakan_motorized_icon_small"
+		texturefile = "gfx/texticons/nato_unit_motorized_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_touhou_wakan_motorized_icon_small"
+		texturefile = "gfx/texticons/unit_motorized_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#灵力机械化小图标
+	spriteType = {
+		name = "GFX_nato_unit_touhou_wakan_mechanized_icon_small"
+		texturefile = "gfx/texticons/nato_unit_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_unit_touhou_wakan_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#灵力两栖机械化小图标
+	spriteType = {
+		name = "GFX_unit_touhou_wakan_amphibious_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_amphibious_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#灵力火炮支援连小图标
+	spriteType = {
+		name = "GFX_unit_touhou_wakan_artillery_icon_small"
+		texturefile = "gfx/texticons/support_art_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	#灵力火炮小图标
+	spriteType = {
+		name = "GFX_unit_touhou_wakan_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	#灵力摩托化火炮小图标
+	spriteType = {
+		name = "GFX_unit_touhou_wakan_mot_artillery_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_mot_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	#灵力战斗机小图标
+	spriteType = {
+		name = "GFX_unit_touhou_wakan_fighter_icon_small"
+		texturefile = "gfx/texticons/unit_air_fighter_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+}

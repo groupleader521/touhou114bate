@@ -1,0 +1,25 @@
+﻿add_namespace = desires
+country_event = {
+	id = desires.0
+	title = desires.0.t
+	desc = desires.0.d
+	picture = GFX_report_event_touhou_des
+	
+	trigger = {
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = desires.0.a
+		ai_chance = { base = 9 }
+		diplomatic_relation = {
+			country = TEM
+			relation = guarantee
+			active = no
+		}
+	}
+	option = {
+		name = desires.0.b
+		ai_chance = { base = 1 }
+	}
+}

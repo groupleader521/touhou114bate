@@ -1,0 +1,24 @@
+state={
+	id=1016
+	name="STATE_WuMingQiu"
+	provinces={
+		13514 13364 13367 13448 13524
+	}
+	history={
+		add_core_of = ALI
+		add_core_of = OPP
+		owner = ALI
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	resources = {
+		steel = 12
+		aluminium = 8
+	}
+	manpower=1000000
+	#state_category=pastoral
+	state_category=megalopolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

@@ -1,0 +1,83 @@
+characters = {
+	TOUHOU_Shikieiki_Yamaxanadu = {
+		name = TOUHOU_Shikieiki_Yamaxanadu
+		portraits = {
+			civilian = {
+				large = GFX_Shikieiki_Yamaxanadu
+			}
+			army = {
+				large = GFX_Shikieiki_Yamaxanadu
+				small = GFX_idea_siji
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = centrism
+			traits = {
+				siji
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {
+				siji
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+				siji
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = marxism
+			traits = {
+				siji
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Shikieiki_Yamaxanadu
+			slot = political_advisor
+			traits = { touhou_ideological_crusader }
+		}
+		advisor = {
+			idea_token = TOUHOU_Shikieiki_Yamaxanadu
+			slot = navy_chief
+			traits = { touhou_navy_screen_3 }
+		}
+		advisor = {
+			idea_token = TOUHOU_Shikieiki_Yamaxanadu
+			slot = high_command
+			traits = { touhou_army_chief_old_guard_siji }
+		}
+		field_marshal = {
+			traits = {
+				units_ghost trait_cautious infantry_officer commando urban_assault_specialist skirmisher
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	TOUHOU_Onozuka_Komachi = {
+		name = TOUHOU_Onozuka_Komachi
+		portraits = {
+			army = {
+				large = GFX_Onozuka_Komachi
+			}
+		}
+		corps_commander = {
+			traits = { units_ghost infantry_officer commando urban_assault_specialist skirmisher }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}

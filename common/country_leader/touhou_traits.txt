@@ -1,0 +1,1014 @@
+leader_traits = {
+	touhou_no_need_help_traits = {
+		random = no
+		ai_get_ally_desire_factor = -100
+		join_faction_tension = 100
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	fantasy_magic_researcher_trait = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fantasy_demonforce_researcher_trait = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fantasy_wakan_researcher_trait = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	out_no_fantasy_researcher_trait = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	magic_researcher_trait = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	demonforce_researcher_trait = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	wakan_researcher_trait = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	touhou_god_of_makai = {#魔界特质
+		#不知道traits怎么样，反正ideas一次只能生效52个属性，1.12.10版本是这样的
+		random = no
+		political_power_factor = 1
+		army_org_Factor = 0.5
+		army_morale_factor = 0.5
+		conscription = 0.3
+		conscription_factor = 0.3
+		recon_factor = 0.3
+		resistance_damage_to_garrison = -1
+		decryption_factor = 0.4
+		encryption_factor = 0.4
+		army_speed_factor = 0.4
+		attrition = -0.4
+		experience_loss_factor = -0.4
+		weekly_manpower = 1000000
+		refit_speed = 0.4
+		refit_ic_cost = -0.4
+		fuel_gain_factor = 1
+		fuel_gain_factor_from_states = 1
+		max_fuel_factor = 1
+		stability_weekly = 5
+		war_support_weekly = 5
+		production_speed_buildings_factor = 1
+		industrial_capacity_factory = 1
+		industrial_capacity_dockyard = 1
+		consumer_goods_expected_value = -0.2
+		production_factory_start_efficiency_factor = 1
+		production_factory_max_efficiency_factor = 1
+		local_resources_factor = 1
+		industry_repair_factor = 1
+		research_speed_factor = 1
+		amphibious_invasion = 1
+		amphibious_invasion_defence = 1
+		operative_slot = 6
+		agency_upgrade_time = -0.6
+		crypto_strength = 10
+		intel_network_gain = 0.5
+		target_sabotage_factor = 1
+		boost_resistance_factor = 1
+		Intelligence_agency_defense = 10
+		army_intel_factor = 1
+		control_trade_mission_factor = 1
+		diplomatic_pressure_mission_factor = 1
+		operative_death_on_capture_chance = 1
+		own_operative_detection_chance = -0.5
+		enemy_operative_capture_chance_factor = 5
+		enemy_operative_intel_extraction_rate = 1
+		propaganda_mission_factor = 1
+		boost_ideology_mission_factor = 1
+		civilian_intel_factor = 1
+		decryption_power = 100
+		supply_consumption_factor = -0.4 #补给消耗
+		army_fuel_consumption_factor = -0.4 #陆军燃油消耗
+		navy_fuel_consumption_factor = -0.4 #海军燃油消耗
+		air_fuel_consumption_factor = -0.4 #空军燃油消耗
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	maiden_of_death = {
+		random = no
+		conscription = 0.1
+		conscription_factor = 0.1
+		recon_factor = 0.1
+		resistance_damage_to_garrison = -0.5
+		decryption_factor = 0.2
+		encryption_factor = 0.2
+		army_speed_factor = 0.2
+		attrition = -0.2
+		experience_loss_factor = -0.2
+		weekly_manpower = 100000
+		refit_speed = 0.2
+		refit_ic_cost = -0.2
+		fuel_gain_factor = 0.5
+		fuel_gain_factor_from_states = 0.5
+		max_fuel_factor = 0.5
+		stability_weekly = 1
+		war_support_weekly = 1
+		operative_slot = 3
+		agency_upgrade_time = -0.3
+		crypto_strength = 4
+		intel_network_gain = 0.2
+		target_sabotage_factor = 0.25
+		boost_resistance_factor = 0.25
+		Intelligence_agency_defense = 3
+		army_intel_factor = 0.5
+		control_trade_mission_factor = 0.5
+		diplomatic_pressure_mission_factor = 0.5
+		operative_death_on_capture_chance = 0.4
+		own_operative_detection_chance = -0.10
+		enemy_operative_capture_chance_factor = 2 # +100%
+		enemy_operative_intel_extraction_rate = 0.5 # +25%
+		propaganda_mission_factor = 0.5
+		boost_ideology_mission_factor = 0.5
+		civilian_intel_factor = 0.5
+		decryption_power = 50
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	focus_human = {
+		random = no
+		democratic_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	focus_balance = {
+		random = no
+		communism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	focus_monster = {
+		random = no
+		fascism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	kappa_research = {
+		random = no
+		research_speed_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tengu_consumer = {
+		random = no
+		consumer_goods_expected_value = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tengu_speed = {
+		random = no
+		army_speed_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tengu_defence = {
+		random = no
+		army_core_defence_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	marionette_dictator = {
+		random = no
+		political_power_factor = 0.3
+		army_org_Factor = 0.2
+		army_morale_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	marionette_freedom = {
+		random = no
+		stability_factor = 0.1
+		drift_defence_factor = 0.1
+		resistance_damage_to_garrison_on_our_occupied_states = 0.2
+		resistance_damage_to_garrison = -0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	marionette_bruise = {
+		random = no
+		political_power_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	scarlet_sister = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	meirin_defence = {
+		random = no
+		army_defence_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	patchouli_book = {
+		random = no
+		research_speed_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	yukari_oracle = {
+		random = no
+		drift_defence_factor = 0.3
+		political_power_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	keine_history = {
+		random = no
+		research_speed_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	akyuu_record = {
+		random = no
+		conscription = 0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	boli_defence = {
+		random = no
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	huiye = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	yonglin = {
+		random = no
+		planning_speed = 0.2
+		max_planning = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	yinpan = {
+		random = no
+		recon_factor = 0.05
+		resistance_damage_to_garrison_on_our_occupied_states = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	linxian = {
+		random = no
+		special_forces_attack_factor = 0.2
+		special_forces_defence_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	feng = {
+		random = no
+		encryption_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shengbailian = {
+		random = no
+		resistance_damage_to_garrison = -0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	siji = {
+		random = no
+		stability_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shennaizi = {
+		random = no
+		army_infantry_attack_factor = 0.05
+		army_infantry_defence_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	fangquzi = {
+		random = no
+		terrain_penalty_reduction = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	zaomiao = {
+		random = no
+		industry_air_damage_factor = -0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	jue = {
+		random = no
+		decryption_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shenzi = {
+		random = no
+		decryption_factor = 0.1
+		political_power_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	uuz = {
+		random = no
+		political_power_factor = 0.05
+		attrition = -0.04
+		supply_consumption_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	half_soul_half_human = {
+		random = no
+		communism_drift = 0.1
+		attrition = -0.04
+		supply_consumption_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	yongyi = {
+		random = no
+		army_defence_factor = -0.2
+		army_attack_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	cuixiang = {
+		random = no
+		army_defence_factor = -0.2
+		army_attack_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	qilunuo = {
+		random = no
+		global_building_slots_factor = -0.5
+		research_speed_factor = -0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	molisha = {
+		random = no
+		operative_slot = 1
+		agency_upgrade_time = -0.15
+		opinion_gain_monthly_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	yukari_political_trait = {
+		random = no
+		fascism_drift = 0.1
+		production_speed_arms_factory_factor = 0.1
+		operative_slot = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	matara_political_trait = {
+		random = no
+		communism_drift = 0.1
+		production_speed_arms_factory_factor = 0.05
+		production_speed_industrial_complex_factor = 0.05
+		operative_slot = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	huashan_political_trait = {
+		random = no
+		democratic_drift = 0.1
+		production_speed_industrial_complex_factor = 0.10
+		operative_slot = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	touhou_industrial_concern = {
+		random = no
+		
+		production_speed_industrial_complex_factor = 0.05
+		industrial_capacity_factory = 0.05
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	touhou_electronics_concern = {
+		random = no
+		
+		research_speed_factor = 0.1
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	alice_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.1 reliability = 0.1 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	kappa_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				reliability = -0.1 soft_attack = 0.1 armor_value = 0.1 hard_attack = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_silent_workhorse = {
+		random = yes
+		crypto_strength = 2
+		
+		political_power_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_financial_expert = {
+		random = yes
+		intel_network_gain = 0.1
+		consumer_goods_expected_value = -0.05
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	touhou_prince_of_terror = {
+		resistance_damage_to_garrison = -0.25
+		foreign_subversive_activites = -0.3
+		non_core_manpower = 0.02
+		target_sabotage_factor = 0.25
+		boost_resistance_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_fortification_engineer = {
+		random = yes
+		production_speed_bunker_factor = 0.2
+		production_speed_coastal_bunker_factor = 0.2
+		production_speed_anti_air_building_factor = 0.2
+		Intelligence_agency_defense = 1.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_war_industrialist = {
+		random = yes
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		army_intel_factor = 0.25
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	touhou_ideological_crusader = {
+		random = yes
+		opinion_gain_monthly_same_ideology_factor = 1.0
+		Intelligence_agency_defense = 1
+		
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	touhou_compassionate_gentleman = {
+		random = yes
+		stability_factor = 0.1
+		control_trade_mission_factor = 0.25
+		diplomatic_pressure_mission_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_popular_figurehead = {
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		operative_death_on_capture_chance = 0.1
+		own_operative_detection_chance = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_backroom_backstabber = {
+		political_power_factor = 0.05
+		war_support_factor = 0.05
+		enemy_operative_capture_chance_factor = 1 # +100%
+		enemy_operative_intel_extraction_rate = 0.25 # +25%
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_tengu_mobilize = {
+		production_factory_max_efficiency_factor = 0.05
+		new_operative_slot_bonus = 1
+		enemy_operative_recruitment_chance = 0.25
+		occupied_operative_recruitment_chance = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_quartermaster_general = {
+		random = yes
+		production_speed_air_base_factor = 0.15
+		production_speed_naval_base_factor = 0.15
+		production_speed_rocket_site_factor = 0.15
+		production_speed_radar_station_factor = 0.15
+		production_speed_nuclear_reactor_factor = 0.15
+		propaganda_mission_factor = 0.25
+		boost_ideology_mission_factor = 0.25
+		
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	touhou_smooth_talking_charmer = {
+		random = yes
+		trade_opinion_factor = 0.2
+		civilian_intel_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_armaments_organizer = {
+		random = yes
+		decryption_power = 25
+		conversion_cost_civ_to_mil_factor= -0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_army_armored_3 = { # +12 armor efficiency
+		army_armor_attack_factor = 0.15
+	    army_armor_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_chief_offensive_3 = { # +15 Offensive efficiency
+		army_attack_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_chief_old_guard = { # Rate at which field experience is gained decreases by 10%
+		experience_gain_army_factor = -0.1
+		political_power_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_army_infantry_3 = { # +12 infantry efficiency
+		army_infantry_attack_factor = 0.15
+		army_infantry_defence_factor = 0.2
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	touhou_army_chief_maneuver_3 = { # Ground units move 15% faster
+		army_speed_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
+		special_forces_attack_factor = 0.2
+	    special_forces_defence_factor = 0.2
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_artillery_3 = { # +12 artillery efficiency
+		army_artillery_attack_factor = 0.2
+		army_artillery_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_concealment_3 = { # Ground units take less damage from air attacks
+		enemy_army_bonus_air_superiority_factor = -0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_regrouping_3 = { # Org regenerates 12% faster
+		army_morale_factor = 0.12
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_navy_capital_ship_3 = {
+		navy_capital_ship_attack_factor = 0.15
+		navy_capital_ship_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_navy_screen_3 = {
+		navy_screen_attack_factor = 0.15
+		navy_screen_defence_factor = 0.2
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_navy_submarine_3 = {
+		navy_submarine_attack_factor = 0.2
+		navy_submarine_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_air_chief_ground_support_3 = {  # Air superiority impact on land units improved by 15%
+		army_bonus_air_superiority_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_air_air_superiority_3 = { # Air Superiority mission efficiency increased by 12%
+		air_air_superiority_attack_factor = 0.05
+		air_air_superiority_defence_factor = 0.05
+		air_air_superiority_agility_factor = 0.05
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_air_strategic_bombing_3 = { # Strategic Bombing mission efficiency increased by 12%
+		air_strategic_bomber_attack_factor = 0.03
+		air_strategic_bomber_defence_factor = 0.03
+		air_strategic_bomber_agility_factor = 0.03
+		air_strategic_bomber_bombing_factor = 0.09
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_chief_morale_3 = { # Ground units get 12 more Morale
+		army_morale_factor = 0.12
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_entrenchment_3 = { # Ground units entrench 12% faster
+		dig_in_speed_factor = 0.12
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_chief_reform_3 = { # Rate at which field experience is gained increases by 15%
+		experience_gain_army_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_logistics_3 = {  # Ground units suffer 12% less attrition
+		attrition = -0.12
+		
+		ai_will_do = {
+			factor = 6
+		}
+	}
+	touhou_air_strategic_bombing_mls = { # Strategic Bombing mission efficiency increased by 12%
+		air_strategic_bomber_attack_factor = 0.03
+		air_strategic_bomber_defence_factor = 0.03
+		air_strategic_bomber_agility_factor = 0.03
+		air_strategic_bomber_bombing_factor = 0.09
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_regrouping_shennaizi = { # Org regenerates 12% faster
+		army_morale_factor = 0.12
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_chief_old_guard_siji = { # Rate at which field experience is gained decreases by 10%
+		experience_gain_army_factor = -0.1
+		political_power_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_army_chief_defensive_3 = { # +15 Defensive efficiency
+		army_defence_factor = 0.2
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_concealment_lingxian = { # Ground units take less damage from air attacks
+		enemy_army_bonus_air_superiority_factor = -0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_air_chief_safety_3 = {  # Rate of air accidents reduced by 15%
+		air_accidents_factor = -0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_commando_scarlet = { # +12 paratrooper/marine/mountain efficiency
+		special_forces_attack_factor = 0.2
+	    special_forces_defence_factor = 0.2
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_chief_organizational_3 = { # Ground units get 12 more Organization
+		army_org_factor = 0.12
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_chief_reform_shenzi = { # Rate at which field experience is gained increases by 15%
+		experience_gain_army_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_army_cavalry_3 = { # +12 cavalry/motorized efficiency
+		cavalry_attack_factor = 0.15
+		cavalry_defence_factor = 0.15
+		motorized_attack_factor = 0.15
+		motorized_defence_factor = 0.15
+		mechanized_attack_factor = 0.15
+		mechanized_defence_factor = 0.15
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_military_theorist = {
+        sprite = 14
+        land_doctrine_cost_factor = -0.15
+		experience_gain_army = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	touhou_naval_theorist = {
+        sprite = 14
+		naval_doctrine_cost_factor = -0.15
+		experience_gain_navy = 0.05
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	touhou_air_warfare_theorist = {
+        sprite = 14
+		air_doctrine_cost_factor = -0.15
+		experience_gain_air = 0.05
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	touhou_trump_card_1 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	touhou_trump_card_2 = {
+		random = no
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	touhou_traits_nameless_political_advisor = {
+		research_speed_factor = 0.2
+		industrial_capacity_factory = 0.2
+		industrial_capacity_dockyard = 0.2
+		
+		custom_modifier_tooltip = touhou_modifier_tooltip_nameless_political_advisor
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_traits_nameless_army_chief = {
+		max_planning_factor = 0.3
+		land_reinforce_rate = 0.2
+
+		custom_modifier_tooltip = touhou_modifier_tooltip_nameless_army_chief
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_traits_bear_political_advisor = {
+		enemy_operative_capture_chance_factor = 0.5
+		enemy_operative_detection_chance = 0.5
+
+		custom_modifier_tooltip = touhou_modifier_tooltip_bear_political_advisor
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	touhou_traits_bear_high_command = {
+		army_attack_factor = 0.15
+		naval_damage_factor = 0.15
+		air_attack_factor = 0.15
+		conscription_factor = -0.3
+
+		custom_modifier_tooltip = touhou_modifier_tooltip_bear_high_command 
+		ai_will_do = {
+			factor = 3
+		}
+	}
+}

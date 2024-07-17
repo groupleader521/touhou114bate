@@ -1,0 +1,23 @@
+state={
+	id=989
+	name="STATE_MoFaSenLinEbiBu"
+	provinces={
+		13379 13381 13452 
+	}
+
+	history={
+		add_core_of = ALI
+		owner = ALI
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+
+	manpower=500000
+	buildings_max_level_factor=1.000
+	#state_category=rural
+	state_category=megalopolis
+	local_supplies=0.0 
+}

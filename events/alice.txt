@@ -1,0 +1,555 @@
+﻿add_namespace = alice
+country_event = {#启动最后的备用人偶
+	id = alice.0
+	title = alice.0.t
+	desc = alice.0.d
+	picture = GFX_report_event_touhou_alice_need_pop
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+	}
+	
+	option = {
+		name = alice.0.a
+		ai_chance = { base = 1 }
+		add_manpower = 10000
+		hidden_effect = {
+			capital_scope = {
+				create_unit = {
+					division = "name = \"试验中「歌利亚人偶」\" division_template = \"歌利亚战团\" start_experience_factor = 0.2" 
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"苍符「博爱的法兰西人偶」\" division_template = \"高速人偶卫队\" start_experience_factor = 0.5" 
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"苍符「博爱的奥尔良人偶\" division_template = \"高速人偶卫队\" start_experience_factor = 0.5" 
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"红符「红发的荷兰人偶」	\" division_template = \"高速人偶卫队\" start_experience_factor = 0.5" 
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"白符「白垩的俄罗斯人偶」\" division_template = \"高速人偶卫队\" start_experience_factor = 0.5" 
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"暗符「雾之伦敦人偶」\" division_template = \"高速人偶卫队\" start_experience_factor = 0.5" 
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"回符「轮回的西藏人偶」\" division_template = \"高速人偶卫队\" start_experience_factor = 0.5" 
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"雅符「春之京都人偶」\" division_template = \"高速人偶卫队\" start_experience_factor = 0.5" 
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"诅咒「魔彩光的上海人偶」\" division_template = \"高速人偶卫队\" start_experience_factor = 0.5" 
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"诅咒「上吊的蓬莱人偶」\" division_template = \"高速人偶卫队\" start_experience_factor = 0.5" 
+					owner = ALI
+				}
+			}
+			country_event = { id = alice.1 days = 30 random_days = 5 }
+		}
+	}
+}
+country_event = {#人偶解放战线崛起
+	id = alice.1
+	title = alice.1.t
+	desc = alice.1.d
+	picture = GFX_report_event_touhou_alice_turmoil
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		NOT = { has_country_flag = ali_no_pop_self }
+	}
+	
+	option = {
+		name = alice.1.a
+		ai_chance = { base = 1 }
+		ALI_marionette_freedom_level_up = yes
+		hidden_effect = {
+			country_event = { id = alice.2 days = 30 random_days = 5 }
+		}
+	}
+	option = {
+		name = alice.1.b
+		ai_chance = { base = 1 }
+		ALI_marionette_freedom_level_up = yes
+		hidden_effect = {
+			country_event = { id = alice.3 days = 7 random_days = 5 }
+		}
+	}
+}
+country_event = {#爱丽丝正在恢复
+	id = alice.2
+	title = alice.2.t
+	desc = alice.2.d
+	picture = GFX_report_event_touhou_alice_need_reply
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		NOT = { has_country_flag = ali_no_pop_self }
+		
+	}
+	option = {
+		name = alice.2.a
+		ai_chance = { base = 10 }
+		if = {
+			limit = { 
+				NOT = { has_idea = ALI_marionette_freedom_5 }
+			}
+			ALI_marionette_freedom_level_up = yes
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_idea = ALI_marionette_freedom_5 }
+				}
+				country_event = { id = alice.2 days = 60 random_days = 5 }
+			}
+			else = {
+				country_event = { id = alice.21 days = 60 random_days = 5 }
+				random_list = {
+					50 = { country_event = { id = alice.34 days = 7 random_days = 2 } }
+					50 = {  }
+				}
+			}
+		}
+	}
+	option = {
+		name = alice.2.b
+		ai_chance = { base = 1 }
+		hidden_effect = {
+			country_event = { id = alice.3 days = 7 random_days = 2 }
+		}
+	}
+}
+country_event = {#爱丽丝恢复了
+	id = alice.21
+	title = alice.21.t
+	desc = alice.21.d
+	picture = GFX_report_event_touhou_alice_has_reply
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		NOT = { has_country_flag = alice_be_defeated }
+		NOT = { has_country_flag = ali_no_pop_self }
+	}
+	
+	option = {
+		name = alice.21.a
+		ai_chance = { base = 10 }
+		ALI_Alice_recover_effect = yes
+		hidden_effect = {
+			every_country = {
+				limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+				news_event = { hours = 6 id = news.998 }
+			}
+		}
+		ALI_marionette_freedom_clear_all = yes
+	}
+}
+country_event = {#特别行动处成立
+	id = alice.3
+	title = alice.3.t
+	desc = alice.3.d
+	picture = GFX_report_event_touhou_alice_wait_do
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		NOT = { has_country_flag = ali_no_pop_self }
+	}
+	
+	option = {
+		name = alice.3.a
+		ai_chance = { base = 1 }
+		add_ideas = ALI_marionette_response
+		hidden_effect = {
+			country_event = { id = alice.31 days = 7 random_days = 1 }
+		}
+	}
+}
+country_event = {#特别行动
+	id = alice.31
+	title = alice.31.t
+	desc = alice.31.d
+	picture = GFX_report_event_touhou_alice_do
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		has_idea = ALI_marionette_response
+		NOT = { has_country_flag = ali_no_pop_self }
+	}
+	option = {
+		name = alice.31.a
+		ai_chance = { base = 1 }
+		hidden_effect = {
+			random_list = {
+					50 = { country_event = { id = alice.32 days = 7 random_days = 2 } }
+					40 = { country_event = { id = alice.33 days = 7 random_days = 2 } }
+					10 = { country_event = { id = alice.34 days = 7 random_days = 2 } }
+				}
+		}
+	}
+}
+country_event = {#特别行动成功了
+	id = alice.32
+	title = alice.32.t
+	desc = alice.32.d
+	picture = GFX_report_event_touhou_alice_do_win
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		has_idea = ALI_marionette_response
+		NOT = { has_country_flag = ali_no_pop_self }
+	}
+	
+	option = {
+		name = alice.32.a
+		ai_chance = { base = 1 }
+		ALI_marionette_freedom_level_down = yes
+		hidden_effect = {
+			country_event = { id = alice.31 days = 45 random_days = 5 }
+		}
+	}
+}
+country_event = {#特别行动失败了
+	id = alice.33
+	title = alice.33.t
+	desc = alice.33.d
+	picture = GFX_report_event_touhou_alice_do_lose
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		has_idea = ALI_marionette_response
+		NOT = { has_country_flag = ali_no_pop_self }
+	}
+	
+	option = {
+		name = alice.33.a
+		ai_chance = { base = 1 }
+		ALI_marionette_freedom_level_up = yes
+		hidden_effect = {
+			country_event = { id = alice.31 days = 45 random_days = 5 }
+		}
+	}
+}
+country_event = {#最终决战
+	id = alice.34
+	title = alice.34.t
+	desc = alice.34.d
+	picture = GFX_report_event_touhou_alice_end_war
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		NOT = { has_country_flag = ali_no_pop_self }
+	}
+	
+	option = {
+		name = alice.34.a
+		ai_chance = { base = 1 }
+		hidden_effect = {
+			if = {
+				limit = { has_idea = ALI_marionette_freedom_none }
+				random_list = {
+					0 = {
+						country_event = { id = alice.4 }
+					}
+					100 = {
+						country_event = { id = alice.5 }
+					}
+				}
+			}
+			else_if = {
+				limit = { has_idea = ALI_marionette_freedom_1 }
+				random_list = {
+					10 = {
+						country_event = { id = alice.4 }
+					}
+					90 = {
+						country_event = { id = alice.5 }
+					}
+				}
+			}
+			else_if = {
+				limit = { has_idea = ALI_marionette_freedom_2 }
+				random_list = {
+					20 = {
+						country_event = { id = alice.4 }
+					}
+					80 = {
+						country_event = { id = alice.5 }
+					}
+				}
+			}
+			else_if = {
+				limit = { has_idea = ALI_marionette_freedom_3 }
+				random_list = {
+					30 = {
+						country_event = { id = alice.4 }
+					}
+					70 = {
+						country_event = { id = alice.5 }
+					}
+				}
+			}
+			else_if = {
+				limit = { has_idea = ALI_marionette_freedom_4 }
+				random_list = {
+					40 = {
+						country_event = { id = alice.4 }
+					}
+					60 = {
+						country_event = { id = alice.5 }
+					}
+				}
+			}
+			else_if = {
+				limit = { has_idea = ALI_marionette_freedom_5 }
+				random_list = {
+					50 = {
+						country_event = { id = alice.4 }
+					}
+					50 = {
+						country_event = { id = alice.5 }
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {#梅蒂欣胜利了
+	id = alice.4
+	title = alice.4.t
+	desc = alice.4.d
+	picture = GFX_report_event_touhou_alice_end_war_lose
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		NOT = { has_country_flag = ali_no_pop_self }
+	}
+	
+	option = {
+		name = alice.4.a
+		ai_chance = { base = 1 }
+		recruit_character = TOUHOU_Medicine_Melancholy
+		ALI_marionette_freedom_clear_all = yes
+		hidden_effect = {
+			set_country_flag = alice_be_defeated
+			every_country = {
+				limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+				news_event = { hours = 6 id = news.1000 }
+			}
+		}
+		if = {
+			limit = { has_idea = ALI_marionette_response }
+			remove_ideas = ALI_marionette_response
+		}
+		TOUHOU_Alice_Margatroid = {
+			retire = yes
+		}
+		set_cosmetic_tag = touhou_cosmetic_tag_doll
+	}
+}
+country_event = {#主人胜利了
+	id = alice.5
+	title = alice.5.t
+	desc = alice.5.d
+	picture = GFX_report_event_touhou_alice_end_war_win
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		NOT = { has_country_flag = ali_no_pop_self }
+	}
+	
+	option = {
+		name = alice.5.a
+		ai_chance = { base = 1 }
+		ALI_marionette_freedom_clear_all = yes
+		hidden_effect = {
+			if = {
+				limit = { has_idea = ALI_marionette_response }
+				country_event = { id = alice.6 days = 7 random_days = 2 }
+			}
+			every_country = {
+				limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+				news_event = { hours = 6 id = news.999 }
+			}
+		}
+		
+	}
+}
+country_event = {#战后恢复
+	id = alice.6
+	title = alice.6.t
+	desc = alice.6.d
+	picture = GFX_report_event_touhou_alice_need_reply
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		NOT = { has_country_flag = ali_no_pop_self }
+	}
+	
+	option = {
+		name = alice.6.a
+		ai_chance = { base = 10 }
+		hidden_effect = {
+			remove_ideas = ALI_marionette_response
+			random_list = {
+				25 = { country_event = { id = alice.21 days = 120 random_days = 30 } }
+				75 = { country_event = { id = alice.61 days = 120 random_days = 30 } }
+			}
+		}
+	}
+}
+country_event = {#恢复失败
+	id = alice.61
+	title = alice.61.t
+	desc = alice.61.d
+	picture = GFX_report_event_touhou_alice_need_reply
+	is_triggered_only = yes
+	trigger = {
+		original_tag = ALI
+		NOT = { has_country_flag = ali_no_pop_self }
+	}
+	
+	option = {
+		name = alice.61.a
+		ai_chance = { base = 10 }
+		hidden_effect = {
+			country_event = { id = alice.6 }
+		}
+	}
+}
+country_event = {#AI爱丽丝不造兵不生产人口的补救措施
+	id = alice.7
+	hidden = yes
+	trigger = {
+		original_tag = ALI
+		is_ai = yes
+	}
+	mean_time_to_happen = {
+		days = 90
+	}
+	immediate = {
+		add_manpower = 10000
+		if = {
+			limit = { has_equipment = { touhou_magic_infantry_equipment > 2000 } }
+			add_equipment_to_stockpile = {
+				type = touhou_magic_infantry_equipment
+				amount = -2000
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+			}
+		}
+		else_if = {
+			limit = { has_equipment = { touhou_magic_infantry_equipment > 1600 } }
+			add_equipment_to_stockpile = {
+				type = touhou_magic_infantry_equipment
+				amount = -1600
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+			}
+		}
+		else_if = {
+			limit = { has_equipment = { touhou_magic_infantry_equipment > 1200 } }
+			add_equipment_to_stockpile = {
+				type = touhou_magic_infantry_equipment
+				amount = -1200
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+			}
+		}
+		else_if = {
+			limit = { has_equipment = { touhou_magic_infantry_equipment > 975 } }
+			add_equipment_to_stockpile = {
+				type = touhou_magic_infantry_equipment
+				amount = -975
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+			}
+		}
+		else_if = {
+			limit = { has_equipment = { touhou_magic_infantry_equipment > 400 } }
+			add_equipment_to_stockpile = {
+				type = touhou_magic_infantry_equipment
+				amount = -400
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"人偶卫队\" division_template = \"步战人偶大队\" start_experience_factor = 0.2"						
+					owner = ALI
+				}
+			}
+		}
+	}
+}

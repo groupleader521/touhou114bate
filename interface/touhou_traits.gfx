@@ -1,0 +1,54 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_trait_units_human"
+		texturefile = "gfx/interface/traits/units_human.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_units_marionette"
+		texturefile = "gfx/interface/traits/units_marionette.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_units_animal"
+		texturefile = "gfx/interface/traits/units_animal.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_units_evil"
+		texturefile = "gfx/interface/traits/units_evil.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_units_ghost"
+		texturefile = "gfx/interface/traits/units_ghost.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_units_oni"
+		texturefile = "gfx/interface/traits/units_oni.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_units_kappa"
+		texturefile = "gfx/interface/traits/units_kappa.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_units_rabbit"
+		texturefile = "gfx/interface/traits/units_rabbit.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_units_tengu"
+		texturefile = "gfx/interface/traits/units_tengu.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_units_vampire"
+		texturefile = "gfx/interface/traits/units_vampire.dds"
+	}	
+	spriteType = {
+		name = "GFX_trait_units_bear"
+		texturefile = "gfx/interface/traits/units_bear.dds"
+	}	
+	spriteType = {
+		name = "GFX_trait_units_TTTTBD"
+		texturefile = "gfx/interface/traits/units_TTTTBD.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_units_lightGod"
+		texturefile = "gfx/interface/traits/units_lightGod.dds"
+	}
+}

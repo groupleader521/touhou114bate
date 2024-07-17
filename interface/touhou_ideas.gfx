@@ -1,0 +1,338 @@
+spriteTypes = {	
+	spriteType = {#无名的祝福
+		name = "GFX_idea_nameless_blessing"
+		texturefile = "gfx/interface/ideas/nameless_blessing.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_bear"
+		texturefile = "gfx/interface/ideas/bear.dds"
+	}		
+	spriteType = {#魔法主导
+		name = "GFX_idea_touhou_magician_trait"
+		texturefile = "gfx/interface/ideas/touhou_magic.dds"
+	}
+	spriteType = {#灵力主导
+		name = "GFX_idea_touhou_wakan_trait"
+		texturefile = "gfx/interface/ideas/touhou_wakan.dds"
+	}
+	spriteType = {#妖力主导
+		name = "GFX_idea_touhou_demonforce_trait"
+		texturefile = "gfx/interface/ideas/touhou_demonforce.dds"
+	}
+	spriteType = {#魔法主导-老兵勋章
+		name = "GFX_idea_touhou_magician_veteran_trait"
+		texturefile = "gfx/interface/ideas/touhou_magic_veteran.dds"
+	}
+	spriteType = {#灵力主导-老兵勋章
+		name = "GFX_idea_touhou_wakan_veteran_trait"
+		texturefile = "gfx/interface/ideas/touhou_wakan_veteran.dds"
+	}
+	spriteType = {#妖力主导-老兵勋章
+		name = "GFX_idea_touhou_demonforce_veteran_trait"
+		texturefile = "gfx/interface/ideas/touhou_demonforce_veteran.dds"
+	}	
+	spriteType = {#外界主导-老兵勋章
+		name = "GFX_idea_research_bonus_veteran"
+		texturefile = "gfx/interface/ideas/research_bonus_veteran.dds"
+	}	
+	spriteType = {#神风人偶
+		name = "GFX_idea_suicide_puppet_trait"
+		texturefile = "gfx/interface/ideas/suicide_puppet.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_race_animal_trait"
+		texturefile = "gfx/interface/ideas/race_animal_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_race_ghost_trait"
+		texturefile = "gfx/interface/ideas/race_ghost_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_race_hell_trait"
+		texturefile = "gfx/interface/ideas/race_hell_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_race_rabbit_trait"
+		texturefile = "gfx/interface/ideas/race_rabbit_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fantasy_industry"
+		texturefile = "gfx/interface/ideas/fantasy_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_super_fantasy_industry"
+		texturefile = "gfx/interface/ideas/super_fantasy_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fantasy_live"
+		texturefile = "gfx/interface/ideas/fantasy_live.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_super_fantasy_live"
+		texturefile = "gfx/interface/ideas/super_fantasy_live.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fantasy_research"
+		texturefile = "gfx/interface/ideas/fantasy_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_super_fantasy_research"
+		texturefile = "gfx/interface/ideas/super_fantasy_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fantasy_government"
+		texturefile = "gfx/interface/ideas/fantasy_government.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_super_fantasy_government"
+		texturefile = "gfx/interface/ideas/super_fantasy_government.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fantasy_army"
+		texturefile = "gfx/interface/ideas/fantasy_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_super_fantasy_army"
+		texturefile = "gfx/interface/ideas/super_fantasy_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_good_fantasy_all"
+		texturefile = "gfx/interface/ideas/good_fantasy_all.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_human_trait"
+		texturefile = "gfx/interface/ideas/idea_human_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kappa_research"
+		texturefile = "gfx/interface/ideas/idea_kappa_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_marionette_trait"
+		texturefile = "gfx/interface/ideas/idea_marionette_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_goliath_trait"
+		texturefile = "gfx/interface/ideas/idea_goliath_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tengu_fighter_trait"
+		texturefile = "gfx/interface/ideas/tengu_fighter_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cas_boli_fighter"
+		texturefile = "gfx/interface/ideas/cas_boli_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DES_bomber_trait"
+		texturefile = "gfx/interface/ideas/desires_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HEL_oni_trait"
+		texturefile = "gfx/interface/ideas/oni_champion.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DLD_animal_trait"
+		texturefile = "gfx/interface/ideas/DLD_animal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_dragon_trait"
+		texturefile = "gfx/interface/ideas/dragon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_die_trait"
+		texturefile = "gfx/interface/ideas/die.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_rabbit_team_trait"
+		texturefile = "gfx/interface/ideas/rabbit_team.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_deep_sea_trait"
+		texturefile = "gfx/interface/ideas/deep_sea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_soul_trait"
+		texturefile = "gfx/interface/ideas/soul.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wunv_trait"
+		texturefile = "gfx/interface/ideas/wunv.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lotus_trait"
+		texturefile = "gfx/interface/ideas/lotus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_magician_trait"
+		texturefile = "gfx/interface/ideas/magic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tengu_trait"
+		texturefile = "gfx/interface/ideas/idea_tengu_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_vampire_trait"
+		texturefile = "gfx/interface/ideas/idea_vampire_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_alice"
+		texturefile = "gfx/interface/ideas/alice.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kappa"
+		texturefile = "gfx/interface/ideas/kappa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_siji"
+		texturefile = "gfx/interface/ideas/siji.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tengu"
+		texturefile = "gfx/interface/ideas/tengu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_shengbailian"
+		texturefile = "gfx/interface/ideas/shengbailian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_boli"
+		texturefile = "gfx/interface/ideas/boli.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_shenzi"
+		texturefile = "gfx/interface/ideas/shenzi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_uuz"
+		texturefile = "gfx/interface/ideas/uuz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_yongyi"
+		texturefile = "gfx/interface/ideas/yongyi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_huiyin"
+		texturefile = "gfx/interface/ideas/huiyin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_shennaizi"
+		texturefile = "gfx/interface/ideas/shennaizi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_huiye"
+		texturefile = "gfx/interface/ideas/huiye.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_scarlet"
+		texturefile = "gfx/interface/ideas/scarlet.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_jue"
+		texturefile = "gfx/interface/ideas/jue.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lingxian"
+		texturefile = "gfx/interface/ideas/lingxian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_molisha"
+		texturefile = "gfx/interface/ideas/molisha.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_jinzi"
+		texturefile = "gfx/interface/ideas/jinzi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lianzi"
+		texturefile = "gfx/interface/ideas/lianzi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_meili"
+		texturefile = "gfx/interface/ideas/meili.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_shuimi"
+		texturefile = "gfx/interface/ideas/shuimi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_feng"
+		texturefile = "gfx/interface/ideas/feng.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_yukari"
+		texturefile = "gfx/interface/ideas/yukari.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_akyuu"
+		texturefile = "gfx/interface/ideas/akyuu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_zaomiao"
+		texturefile = "gfx/interface/ideas/zaomiao.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fangquzi"
+		texturefile = "gfx/interface/ideas/fangquzi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_yonglin"
+		texturefile = "gfx/interface/ideas/yonglin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_yinpan"
+		texturefile = "gfx/interface/ideas/yinpan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_paqiuli"
+		texturefile = "gfx/interface/ideas/paqiuli.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cuixiang"
+		texturefile = "gfx/interface/ideas/cuixiang.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_meirin"
+		texturefile = "gfx/interface/ideas/meirin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_patchouli"
+		texturefile = "gfx/interface/ideas/patchouli.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_qilunuo"
+		texturefile = "gfx/interface/ideas/qilunuo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_evil_trait"
+		texturefile = "gfx/interface/ideas/evil_trait.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_matara"
+		texturefile = "gfx/interface/ideas/matara.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_huashan"
+		texturefile = "gfx/interface/ideas/huashan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_touhou_self_end"
+		texturefile = "gfx/interface/ideas/touhou_self_end.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_touhou_all_end"
+		texturefile = "gfx/interface/ideas/touhou_all_end.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_research_bonus"
+		texturefile = "gfx/interface/ideas/research_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_research_damage"
+		texturefile = "gfx/interface/ideas/research_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_production_damage"
+		texturefile = "gfx/interface/ideas/production_damage.dds"
+	}
+}

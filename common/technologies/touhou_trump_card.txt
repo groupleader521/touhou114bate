@@ -1,0 +1,436 @@
+technologies = {
+
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+	
+	#神风人偶
+	suicide_puppet_craft_1 = {#神风人偶
+		enable_equipments = {
+			suicide_puppet_equipment_1
+		}
+		research_cost = 1.5 #Carrier Variant
+		start_year = 1944
+		allow = {
+			always = no
+		}	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	suicide_puppet_craft_2 = {#人偶战略导弹
+		enable_equipments = {
+			suicide_puppet_equipment_2
+		}	
+		research_cost = 1.5 #Carrier Variant
+		start_year = 1944
+		allow = {
+			always = no
+		}	
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#歌利亚
+	goliath_0 = {
+		enable_equipments = {}
+		on_research_complete = {}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+		categories = {
+			magic
+			armor
+			goliath
+		}
+	}
+	goliath_1 = {
+		enable_equipments = {
+			goliath_equipment_1
+		}
+		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = goliath_brigade }
+		}
+		enable_subunits = {
+			goliath_brigade
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_goliath"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		dependencies = {
+			goliath_0 = 1
+		}
+		start_year = 1936
+		path = {
+			leads_to_tech = goliath_2
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1936 }
+		}
+		ai_will_do = {
+			factor = 0.01
+			modifier = {
+				factor = 1000
+				has_idea = ALI_goliath_trait
+			}
+			modifier = {
+				factor = 100
+				has_idea = ALI_goliath_other_trait
+			}
+		}
+		categories = {
+			magic
+			armor
+			goliath
+		}
+	}
+	goliath_2 = {
+		enable_equipments = {
+			goliath_equipment_2
+		}
+		path = {
+			leads_to_tech = goliath_3
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+				folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1939 }
+		}
+		ai_will_do = {
+			factor = 0.01
+			modifier = {
+				factor = 1000
+				has_idea = ALI_goliath_trait
+			}
+			modifier = {
+				factor = 100
+				has_idea = ALI_goliath_other_trait
+			}
+		}
+		start_year = 1939
+		categories = {
+			magic
+			armor
+			goliath
+		}
+	}
+	goliath_3 = {
+		enable_equipments = {
+			goliath_equipment_3
+		}
+		path = {
+			leads_to_tech = goliath_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = touhou_magic_main_battle_tank
+			research_cost_coeff = 1
+		}
+		research_cost = 2
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1941 }
+		}
+		start_year = 1941
+		ai_will_do = {
+			factor = 0.01
+			modifier = {
+				factor = 1000
+				has_idea = ALI_goliath_trait
+			}
+			modifier = {
+				factor = 100
+				has_idea = ALI_goliath_other_trait
+			}
+		}
+		categories = {
+			magic
+			armor
+			goliath
+		}
+	}
+	goliath_4 = {
+		enable_equipments = {
+			goliath_equipment_4
+		}
+		research_cost = 2
+		folder = {
+			name = touhou_magic
+			position = { x = -1 y = @1943 }
+		}
+		ai_will_do = {
+			factor = 0.01
+			modifier = {
+				factor = 1000
+				has_idea = ALI_goliath_trait
+			}
+			modifier = {
+				factor = 100
+				has_idea = ALI_goliath_other_trait
+			}
+		}
+		start_year = 1943
+		categories = {
+			magic
+			armor
+			goliath
+		}
+	}
+	#风神之翼
+	tengu_fighter = {
+		enable_equipments = {
+			tengu_fighter_equipment_0
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}	
+	}
+	#妖力复合装甲
+	oni_champion = {
+		enable_equipments = {
+			oni_champion_equipment_0
+		}
+		enable_subunits = {
+			oni_brigade
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+	}
+	#现世阴阳玉
+	cas_boli_fighter = {
+		enable_equipments = {
+			cas_boli_equipment_0
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+		categories = {
+			light_air
+			cas_bomber
+			air_equipment
+		}
+	}
+	#诡道符咒
+	desires_bomber = {
+		enable_equipments = {
+			desires_equipment_0
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+		categories = {
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+		}
+	}
+	#妖精武器
+	evil_army = {
+		enable_equipments = {
+			evil_equipment_0
+		}
+		enable_subunits = {
+			evil_brigade
+			evil_armor_brigade
+			evil_artillery_brigade
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+	}
+	#卫队装备
+	human_army = {
+		enable_equipments = {
+			human_equipment_0
+		}
+		enable_subunits = {
+			human_brigade
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+	}	
+	#心灵控制器
+	DLD_animal = {
+		enable_equipments = {
+			animal_equipment_0
+		}
+		enable_subunits = {
+			animal_brigade
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+	}
+	#龙虎卫装备
+	dragon = {
+		enable_equipments = {
+			dragon_equipment_0
+		}
+		enable_subunits = {
+			dragon_brigade
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+	}
+	#收割者
+	die = {
+		enable_equipments = {
+			die_equipment_0
+		}
+		enable_subunits = {
+			die_brigade
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+	}
+	#月都参谋连用车
+	rabbit_team = {
+		enable_equipments = {
+			rabbit_team_equipment_0
+		}
+		enable_subunits = {
+			rabbit_team_brigade
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+	}
+	#便携式淡化设备
+	deep_sea = {
+		enable_equipments = {
+			deep_sea_equipment_0
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	#白玉楼移动补给站
+	soul = {
+		enable_equipments = {
+			soul_equipment_0
+		}
+		enable_subunits = {
+			soul_brigade
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+	}
+	#未来医疗设备
+	wunv = {
+		enable_equipments = {
+			wunv_equipment_0
+		}
+		enable_subunits = {
+			wunv_brigade
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+	}
+	#星莲船
+	lotus = {
+		enable_equipments = {
+			lotus_equipment_0
+			lotus_equipment_1
+			lotus_equipment_2
+		}
+		enable_equipment_modules = { 
+			ship_lotus_heavy_battery_plus
+			ship_lotus_medium_light_battery
+			ship_lotus_deck_space_plus
+			ship_lotus_anti_air
+			ship_lotus_engine_BB
+			ship_lotus_engine_DD
+			ship_lotus_engine_CV
+			ship_lotus_armor
+			ship_lotus_armor_thin
+			ship_lotus_armor_thick
+			ship_lotus_fire_control_system
+			ship_lotus_radar
+			ship_lotus_secondary_battery
+			ship_lotus_dp_light_battery
+			ship_lotus_airplane_launcher
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}
+		categories = {
+			naval_equipment
+			bb_tech
+			cv_tech
+		}
+	}
+	#超·极限花火
+	magician = {
+		enable_equipments = {
+			magician_equipment_0
+		}
+		enable_subunits = {
+			magician_brigade
+		}
+		research_cost = 1000
+		start_year = 3000
+		allow = {
+			always = no
+		}	
+	}
+}

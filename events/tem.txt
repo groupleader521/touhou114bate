@@ -1,0 +1,25 @@
+﻿add_namespace = temple
+country_event = {
+	id = temple.0
+	title = temple.0.t
+	desc = temple.0.d
+	picture = GFX_report_event_touhou_tem
+	
+	trigger = {
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = temple.0.a
+		ai_chance = { base = 9 }
+		diplomatic_relation = {
+			country = TEM
+			relation = guarantee
+			active = no
+		}
+	}
+	option = {
+		name = temple.0.b
+		ai_chance = { base = 1 }
+	}
+}

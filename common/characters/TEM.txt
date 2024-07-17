@@ -1,0 +1,131 @@
+characters = {
+	TOUHOU_Hijiri_Byakuren = {
+		name = TOUHOU_Hijiri_Byakuren
+		portraits = {
+			civilian = {
+				large = GFX_Hiziri_Byakuren
+			}
+			army = {
+				large = GFX_Hiziri_Byakuren
+				small = GFX_idea_shengbailian
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = centrism
+			traits = {
+				shengbailian
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {
+				shengbailian
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+				shengbailian
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = marxism
+			traits = {
+				shengbailian
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Hijiri_Byakuren
+			slot = political_advisor
+			traits = { touhou_compassionate_gentleman }
+		}
+		advisor = {
+			idea_token = TOUHOU_Hijiri_Byakuren
+			slot = army_chief
+			traits = { touhou_army_chief_maneuver_3 }
+		}
+		advisor = {
+			idea_token = TOUHOU_Hijiri_Byakuren
+			slot = high_command
+			traits = { touhou_army_chief_defensive_3 }
+		}
+		field_marshal = {
+			traits = {
+				units_human infantry_leader urban_assault_specialist ambusher
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	TOUHOU_Murasa_Minamitu = {
+		name = TOUHOU_Murasa_Minamitu
+		portraits = {
+			civilian = {
+				large = GFX_Murasa_Minamitu
+			}
+			army = {
+				large = GFX_Murasa_Minamitu
+				small = GFX_idea_shuimi
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Murasa_Minamitu
+			slot = navy_chief
+			available = {
+				has_character = TOUHOU_Shameimaru_Aya
+			}
+			traits = { touhou_navy_capital_ship_3 }
+		}
+		navy_leader = {
+			traits = { battleship_adherent navy_career_officer bold gunnery_expert blue_water_expert superior_tactician spotter ironside lone_wolf big_guns_expert ground_pounder safety_first marksman crisis_magician }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 4
+			coordination_skill = 4
+		}
+	}
+	TOUHOU_Toramar_Shou = {
+		name = TOUHOU_Toramar_Shou
+		portraits = {
+			army = {
+				large = GFX_Toramaru_Shou
+			}
+		}
+		corps_commander = {
+			traits = {
+				units_human infantry_leader urban_assault_specialist ambusher
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	TOUHOU_Kumoi_Ichirin = {
+		name = TOUHOU_Kumoi_Ichirin
+		portraits = {
+			army = {
+				large = GFX_Kumoi_Ichirin
+			}
+		}
+		corps_commander = {
+			traits = {
+				units_human infantry_leader urban_assault_specialist ambusher
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

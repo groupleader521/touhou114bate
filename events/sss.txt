@@ -1,0 +1,119 @@
+﻿add_namespace = moriya
+country_event = {
+	id = moriya.0
+	title = moriya.0.t
+	desc = moriya.0.d
+	picture = GFX_report_event_touhou_sss
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = moriya.0.a
+		ai_chance = { 
+			base = 5
+			modifier = {
+				factor = 0.1
+				has_opinion = { target = TEM value < 0 }
+			}
+		}
+		add_stability = -0.2
+		add_war_support = -0.2
+		add_political_power = -200
+	}
+	option = {
+		name = moriya.0.b
+		ai_chance = { 
+			base = 5 
+			modifier = {
+				factor = 0.1
+				has_opinion = { target = TEM value > 0 }
+			}
+		}
+		declare_war_on = {
+			target = TEM
+			type = annex_everything
+		}
+	}
+}
+country_event = {
+	id = moriya.1
+	title = moriya.1.t
+	desc = moriya.1.d
+	picture = GFX_report_event_touhou_sss
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = moriya.1.a
+		ai_chance = { 
+			base = 1
+		}
+		add_stability = -0.2
+		add_war_support = -0.2
+		add_political_power = -200
+	}
+	option = {
+		name = moriya.1.b
+		ai_chance = { 
+			base = 9 
+		}
+		declare_war_on = {
+			target = SSS
+			type = annex_everything
+		}
+	}
+}
+country_event = {
+	id = moriya.2
+	title = moriya.2.t
+	desc = moriya.2.d
+	picture = GFX_report_event_touhou_sss
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = moriya.2.a
+		ai_chance = { 
+			base = 5
+			modifier = {
+				factor = 0.1
+				original_tag = DES
+				has_opinion = { target = TEM value < 0 }
+			}
+			modifier = {
+				factor = 0.1
+				original_tag = TEM
+				has_opinion = { target = DES value < 0 }
+			}
+		}
+		add_political_power = 100
+		if = {
+			limit = { has_war_with = FROM }
+			white_peace = FROM
+		}
+		if = {
+			limit = { has_war_with = TEM }
+			white_peace = TEM
+		}	
+		if = {
+			limit = { has_war_with = DES }
+			white_peace = DES
+		}		
+	}
+	option = {
+		name = moriya.2.b
+		ai_chance = { 
+			base = 5 
+			modifier = {
+				factor = 0.1
+				original_tag = DES
+				has_opinion = { target = TEM value > 0 }
+			}
+			modifier = {
+				factor = 0.1
+				original_tag = TEM
+				has_opinion = { target = DES value > 0 }
+			}
+		}
+	}
+}

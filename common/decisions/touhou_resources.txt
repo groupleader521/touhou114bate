@@ -1,0 +1,2993 @@
+touhou_mine_resources = {
+	mofasenlin_steel_1 = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 994
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			994 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				994 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			994 = {
+				NOT = {
+					has_state_flag = mofasenlin_steel_1_developed
+				}
+			}
+			OR = {
+				is_controlled_by_ROOT_or_subject = yes
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			994 = { set_state_flag = mofasenlin_steel_1_developed } 
+			994 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+			}
+		}
+	}
+	
+	mofasenlin_steel_2 = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 994
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 1
+			994 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				994 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			994 = {
+				has_state_flag = mofasenlin_steel_1_developed
+				NOT = {
+					has_state_flag = mofasenlin_steel_2_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_subject = yes
+					is_controlled_by_ROOT_or_ally = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			994 = { set_state_flag = mofasenlin_steel_2_developed } 
+			994 = {
+				add_resource = {
+					type = steel
+					amount = 40
+				}
+			}
+		}
+	}
+	
+	taiyanghuatian_rubber = { 
+		
+		icon = rubber
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1015
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			1015 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1015 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1015 = {
+				NOT = {
+					has_state_flag = taiyanghuatian_rubber_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_subject = yes
+					is_controlled_by_ROOT_or_ally = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			1015 = { set_state_flag = taiyanghuatian_rubber_developed } 
+			1015 = {
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+	}
+	
+	south_wuzhihu_oil = {
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 972
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			972 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				972 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			972 = {
+				NOT = {
+					has_state_flag = south_wuzhihu_oil_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_subject = yes
+					is_controlled_by_ROOT_or_ally = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			972 = { set_state_flag = south_wuzhihu_oil_developed } 
+			972 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
+	}
+	
+	east_mofasenlin_tungsten = {
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 988
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			988 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				988 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			988 = {
+				NOT = {
+					has_state_flag = east_mofasenlin_tungsten_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			988 = { set_state_flag = east_mofasenlin_tungsten_developed } 
+			988 = {
+				add_resource = {
+					type = tungsten
+					amount = 27
+				}
+			}
+		}
+	}
+	
+	wuminqiu_steel_tungsten = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1016
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			1016 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1016 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1016 = {
+				NOT = {
+					has_state_flag = wuminqiu_steel_tungsten_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			1016 = { set_state_flag = wuminqiu_steel_tungsten_developed } 
+			1016 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+		}
+	}
+	
+	zhulin_rubber = {
+		
+		icon = rubber
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1004
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			1004 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1004 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1004 = {
+				NOT = {
+					has_state_flag = zhulin_rubber_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			1004 = { set_state_flag = zhulin_rubber_developed } 
+			1004 = {
+				add_resource = {
+					type = rubber
+					amount = 33
+				}
+			}
+		}
+	}
+	
+	zhulin_rubber2 = {
+		
+		icon = rubber
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1004
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 1
+			1004 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1004 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1004 = {
+				has_state_flag = zhulin_rubber_developed
+				NOT = {
+					has_state_flag = zhulin_rubber2_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			1004 = { set_state_flag = zhulin_rubber2_developed } 
+			1004 = {
+				add_resource = {
+					type = rubber
+					amount = 79
+				}
+			}
+		}
+	}
+	
+	zhulin_steel = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1004
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			1004 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1004 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1004 = {
+				NOT = {
+					has_state_flag = zhulin_steel_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			1004 = { set_state_flag = zhulin_steel_developed } 
+			1004 = {
+				add_resource = {
+					type = steel
+					amount = 26
+				}
+			}
+		}
+	}
+	
+	zhulin_outside_aluminium = {
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 970
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 0
+			970 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				970 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			970 = {
+				NOT = {
+					has_state_flag = zhulin_outside_aluminium_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			970 = { set_state_flag = zhulin_outside_aluminium_developed } 
+			970 = {
+				add_resource = {
+					type = aluminium
+					amount = 50
+				}
+			}
+		}
+	}
+	
+	dead_yaojing_oil = {
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 982
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 1
+			982 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				982 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			982 = {
+				NOT = {
+					has_state_flag = dead_yaojing_oil_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			982 = { set_state_flag = dead_yaojing_oil_developed } 
+			982 = {
+				add_resource = {
+					type = oil
+					amount = 136
+				}
+			}
+		}
+	}
+
+	dead_yaojing_resources = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 982
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			982 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				982 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			982 = {
+				NOT = {
+					has_state_flag = dead_yaojing_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 20
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			982 = { set_state_flag = dead_yaojing_resources_developed } 
+			982 = {
+				add_resource = {
+					type = chromium
+					amount = 35
+				}
+				add_resource = {
+					type = tungsten
+					amount = 13
+				}
+				add_resource = {
+					type = rubber
+					amount = 5
+				}
+				add_resource = {
+					type = aluminium
+					amount = 15
+				}
+			}
+		}
+	}
+
+	xianglingtang_steel = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 993
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			993 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				993 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			993 = {
+				NOT = {
+					has_state_flag = xianglingtang_steel_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			993 = { set_state_flag = xianglingtang_steel_developed } 
+			993 = {
+				add_resource = {
+					type = steel
+					amount = 33
+				}
+			}
+		}
+	}
+
+	mofasenling_outside_chromium = {
+		
+		icon = chromium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 971
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			971 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				971 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			971 = {
+				NOT = {
+					has_state_flag = mofasenling_outside_chromium_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			971 = { set_state_flag = mofasenling_outside_chromium_developed } 
+			971 = {
+				add_resource = {
+					type = chromium
+					amount = 55
+				}
+			}
+		}
+	}
+
+	xuanwuze_resources = {
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 983
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			983 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				983 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			983 = {
+				NOT = {
+					has_state_flag = xuanwuze_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 20
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			983 = { set_state_flag = xuanwuze_resources_developed } 
+			983 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+				add_resource = {
+					type = aluminium
+					amount = 62
+				}
+				add_resource = {
+					type = oil
+					amount = 7
+				}
+			}
+		}
+	}
+	
+	pubu_resources = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 978
+			}
+		}
+
+		available = {
+			978 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				978 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			978 = {
+				NOT = {
+					has_state_flag = pubu_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 20
+		days_remove = 40
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			978 = { set_state_flag = pubu_resources_developed } 
+			978 = {
+				add_resource = {
+					type = steel
+					amount = 50
+				}
+			}
+		}
+	}
+
+	north_wuzhihu_oil = {
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 974
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			974 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				974 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			974 = {
+				NOT = {
+					has_state_flag = north_wuzhihu_oil_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			974 = { set_state_flag = north_wuzhihu_oil_developed } 
+			974 = {
+				add_resource = {
+					type = oil
+					amount = 45
+				}
+			}
+		}
+	}
+	
+	hongmoguan_resources = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1006
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			1006 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1006 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1006 = {
+				NOT = {
+					has_state_flag = hongmoguan_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			1006 = { set_state_flag = hongmoguan_resources_developed } 
+			1006 = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+				add_resource = {
+					type = chromium
+					amount = 15
+				}
+				add_resource = {
+					type = aluminium
+					amount = 10
+				}
+				add_resource = {
+					type = rubber
+					amount = 9
+				}
+			}
+		}
+	}
+	
+	hongmoguan_resources2 = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1006
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 2
+			1006 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1006 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1006 = {
+				has_state_flag = hongmoguan_resources_developed
+				NOT = {
+					has_state_flag = hongmoguan_resources2_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			1006 = { set_state_flag = hongmoguan_resources2_developed } 
+			1006 = {
+				add_resource = {
+					type = steel
+					amount = 35
+				}
+				add_resource = {
+					type = aluminium
+					amount = 20
+				}
+				add_resource = {
+					type = rubber
+					amount = 10
+				}
+			}
+		}
+	}
+	
+	yaoguaishan_steel = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 949
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			949 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				949 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			949 = {			
+				NOT = {
+					has_state_flag = yaoguaishan_steel_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			949 = { set_state_flag = yaoguaishan_steel_developed } 
+			949 = {
+				add_resource = {
+					type = steel
+					amount = 50
+				}
+			}
+		}
+	}
+	
+	yaoguaishan_steel2 = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 949
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 1
+			949 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				949 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+
+		visible = {
+			949 = {
+				has_state_flag = yaoguaishan_steel_developed				
+				NOT = {
+					has_state_flag = yaoguaishan_steel2_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 20
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = { 
+			949 = { set_state_flag = yaoguaishan_steel2_developed } 
+			949 = {
+				add_resource = {
+					type = steel
+					amount = 70
+				}
+			}
+		}
+	}
+	
+	yaoguaishan_steel3 = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 949
+			}
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 2
+			949 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				949 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			949 = {
+				has_state_flag = yaoguaishan_steel2_developed				
+				NOT = {
+					has_state_flag = yaoguaishan_steel3_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			949 = { set_state_flag = yaoguaishan_steel3_developed } 
+			949 = {
+				add_resource = {
+					type = steel
+					amount = 90
+				}
+			}
+		}
+	}
+	
+	hamachi_aluminium = {
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 986
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			986 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				986 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			986 = {								
+				NOT = {
+					has_state_flag = hamachi_aluminium_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			986 = { set_state_flag = hamachi_aluminium_developed } 
+			986 = {
+				add_resource = {
+					type = aluminium
+					amount = 20
+				}
+			}
+		}
+	}
+	
+	xuanyunhai_tungsten = {
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 990
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			990 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				990 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			990 = {				
+				NOT = {
+					has_state_flag = xuanyunhai_tungsten_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			990 = { set_state_flag = xuanyunhai_tungsten_developed } 
+			990 = {
+				add_resource = {
+					type = tungsten
+					amount = 25
+				}
+				add_resource = {
+					type = chromium
+					amount = 5
+				}
+			}
+		}
+	}
+	
+	bian_oil = {
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 998
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			998 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				998 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			998 = {							
+				NOT = {
+					has_state_flag = bian_oil_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			998 = { set_state_flag = bian_oil_developed } 
+			998 = {
+				add_resource = {
+					type = oil
+					amount = 35
+				}
+			}
+		}
+	}
+	
+	santuchuan_resources = {
+		
+		icon = chromium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 987
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			987 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				987 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			987 = {								
+				NOT = {
+					has_state_flag = santuchuan_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			987 = { set_state_flag = santuchuan_resources_developed } 
+			987 = {
+				add_resource = {
+					type = chromium
+					amount = 73
+				}
+				add_resource = {
+					type = tungsten
+					amount = 10
+				}
+			}
+		}
+	}
+	
+	wuyuanzhuo_resources = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 980
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			980 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				980 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			980 = {								
+				NOT = {
+					has_state_flag = wuyuanzhuo_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			980 = { set_state_flag = wuyuanzhuo_resources_developed } 
+			980 = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+			}
+		}
+	}
+	
+	wuyuanzhuo_resources2 = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 980
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 1
+			980 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				980 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			980 = {
+				has_state_flag = wuyuanzhuo_resources_developed
+				NOT = {
+					has_state_flag = wuyuanzhuo_resources2_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 20
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			980 = { set_state_flag = wuyuanzhuo_resources2_developed } 
+			980 = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+			}
+		}
+	}
+	
+	baiyulou_death = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1000
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			1000 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1000 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1000 = {								
+				NOT = {
+					has_state_flag = baiyulou_death_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 20
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			1000 = { set_state_flag = baiyulou_death_developed } 
+			1000 = {
+				add_resource = {
+					type = steel
+					amount = 40
+				}
+				add_resource = {
+					type = rubber
+					amount = 15
+				}
+			}
+		}
+	}
+	
+	youminjiejie_death = {
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1009
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			1009 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1009 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1009 = {
+				NOT = {
+					has_state_flag = youminjiejie_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			1009 = { set_state_flag = youminjiejie_developed } 
+			1009 = {
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+				add_resource = {
+					type = tungsten
+					amount = 10
+				}
+				add_resource = {
+					type = chromium
+					amount = 5
+				}
+			}
+		}
+	}
+	
+	renli_resources = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1005
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			1005 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1005 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1005 = {				
+				NOT = {
+					has_state_flag = renli_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			1005 = { set_state_flag = renli_resources_developed } 
+			1005 = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+				add_resource = {
+					type = aluminium
+					amount = 10
+				}
+				add_resource = {
+					type = chromium
+					amount = 18
+				}
+				add_resource = {
+					type = tungsten
+					amount = 10
+				}
+				add_resource = {
+					type = rubber
+					amount = 3
+				}
+			}
+		}
+	}
+	
+	renli_resources2 = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1005
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 1
+			1005 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1005 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1005 = {
+				has_state_flag = renli_resources_developed
+				NOT = {
+					has_state_flag = renli_resources2_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 20
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			1005 = { set_state_flag = renli_resources2_developed } 
+			1005 = {
+				add_resource = {
+					type = steel
+					amount = 15
+				}
+				add_resource = {
+					type = aluminium
+					amount = 5
+				}
+				add_resource = {
+					type = chromium
+					amount = 22
+				}
+				add_resource = {
+					type = tungsten
+					amount = 5
+				}
+				add_resource = {
+					type = rubber
+					amount = 5
+				}
+			}
+		}
+	}
+	
+	renli_resources3 = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1005
+			}
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 2
+			1005 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1005 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1005 = {				
+				has_state_flag = renli_resources2_developed
+				NOT = {
+					has_state_flag = renli_resources3_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			1005 = { set_state_flag = renli_resources3_developed } 
+			1005 = {
+				add_resource = {
+					type = steel
+					amount = 35
+				}
+				add_resource = {
+					type = aluminium
+					amount = 15
+				}
+				add_resource = {
+					type = chromium
+					amount = 9
+				}
+				add_resource = {
+					type = tungsten
+					amount = 7
+				}
+				add_resource = {
+					type = rubber
+					amount = 3
+				}
+			}
+		}
+	}
+	
+	boli_steel = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1001
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			1001 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1001 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1001 = {
+				NOT = {
+					has_state_flag = boli_steel_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			1001 = { set_state_flag = boli_steel_developed } 
+			1001 = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+			}
+		}
+	}
+	
+	boli_steel2 = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1001
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 1
+			1001 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1001 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1001 = {	
+				has_state_flag = boli_steel_developed
+				NOT = {
+					has_state_flag = boli_steel2_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 20
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			1001 = { set_state_flag = boli_steel2_developed } 
+			1001 = {
+				add_resource = {
+					type = steel
+					amount = 35
+				}
+			}
+		}
+	}
+	
+	jianxiequan_resources = {
+		
+		icon = oil
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 975
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			975 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				975 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			975 = {
+				NOT = {
+					has_state_flag = jianxiequan_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			975 = { set_state_flag = jianxiequan_resources_developed } 
+			975 = {
+				add_resource = {
+					type = oil
+					amount = 23
+				}
+				add_resource = {
+					type = rubber
+					amount = 15
+				}
+			}
+		}
+	}
+	
+	mingliansi_aluminium = {
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1002
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			1002 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1002 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1002 = {				
+				NOT = {
+					has_state_flag = mingliansi_aluminium_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			1002 = { set_state_flag = mingliansi_aluminium_developed } 
+			1002 = {
+				add_resource = {
+					type = aluminium
+					amount = 50
+				}
+			}
+		}
+	}
+	
+	mudi_steel = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1008
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			1008 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1008 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1008 = {
+				NOT = {
+					has_state_flag = mudi_steel_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			1008 = { set_state_flag = mudi_steel_developed } 
+			1008 = {
+				add_resource = {
+					type = steel
+					amount = 22
+				}
+			}
+		}
+	}
+	
+	yikongjian_resources = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 999
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			999 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				999 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			999 = {
+				NOT = {
+					has_state_flag = yikongjian_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			999 = { set_state_flag = yikongjian_resources_developed } 
+			999 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+				add_resource = {
+					type = chromium
+					amount = 15
+				}
+			}
+		}
+	}
+	
+	linmiao_tungsten = {
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 976
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			976 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				976 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			976 = {
+				NOT = {
+					has_state_flag = linmiao_tungsten_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			976 = { set_state_flag = linmiao_tungsten_developed } 
+			976 = {
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+			}
+		}
+	}
+	
+	shoushi_steel = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1007
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			1007 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1007 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1007 = {
+				NOT = {
+					has_state_flag = shoushi_steel_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			1007 = { set_state_flag = shoushi_steel_developed } 
+			1007 = {
+				add_resource = {
+					type = steel
+					amount = 26
+				}
+			}
+		}
+	}
+	
+	shoushi_resources = {
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1003
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			1003 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				1003 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			1003 = {
+				NOT = {
+					has_state_flag = shoushi_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			1003 = { set_state_flag = shoushi_resources_developed } 
+			1003 = {
+				add_resource = {
+					type = chromium
+					amount = 11
+				}
+				add_resource = {
+					type = tungsten
+					amount = 37
+				}
+			}
+		}
+	}
+	
+	dilindian_resources = {
+		
+		icon = aluminium
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 997
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			997 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				997 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			997 = {
+				NOT = {
+					has_state_flag = dilindian_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			997 = { set_state_flag = dilindian_resources_developed } 
+			997 = {
+				add_resource = {
+					type = aluminium
+					amount = 45
+				}
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	
+	jiudu_steel = {
+		
+		icon = steel
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 996
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			996 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				996 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			996 = {
+				NOT = {
+					has_state_flag = jiudu_steel_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			996 = { set_state_flag = jiudu_steel_developed } 
+			996 = {
+				add_resource = {
+					type = steel
+					amount = 40
+				}
+			}
+		}
+	}
+	
+	jiudiyu_resources = {
+		
+		icon = rubber
+
+		allowed = {
+			
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 991
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			991 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = touhou_tooltip_resources_cancel
+				991 = {
+					is_controlled_by_ROOT_or_subject = no
+				}
+			}
+		}
+		visible = {
+			991 = {
+				NOT = {
+					has_state_flag = jiudiyu_resources_developed
+				}
+				OR = {
+					is_controlled_by_ROOT_or_ally = yes
+					is_controlled_by_ROOT_or_subject = yes
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 10
+		days_remove = 40
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			991 = { set_state_flag = jiudiyu_resources_developed } 
+			991 = {
+				add_resource = {
+					type = rubber
+					amount = 18
+				}
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+				add_resource = {
+					type = chromium
+					amount = 4
+				}
+			}
+		}
+	}
+
+}

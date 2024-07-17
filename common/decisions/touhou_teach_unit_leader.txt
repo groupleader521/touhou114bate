@@ -1,0 +1,1038 @@
+touhou_touhou_teach_unit_leader = {
+	#陆军
+	#步兵
+	touhou_teach_infantry_leader = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { 
+				has_trait = infantry_leader 
+				NOT = { is_assigned = yes }
+			}
+			any_army_leader = { 
+				NOT = { has_trait = infantry_leader } 
+				NOT = { is_assigned = yes }
+			}
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = infantry_leader } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { 
+					NOT = { has_trait = infantry_leader } 
+					NOT = { is_assigned = yes }
+				}
+				add_unit_leader_trait = infantry_leader
+			}
+		}
+	}
+	#组织者
+	touhou_teach_organizer = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { 
+				has_trait = organizer 
+				NOT = { is_assigned = yes }
+			}
+			any_army_leader = { 
+				NOT = { has_trait = organizer } 
+				NOT = { is_assigned = yes }
+			}
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = organizer } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { 
+					NOT = { has_trait = organizer } 
+					NOT = { is_assigned = yes }
+				}
+				add_unit_leader_trait = organizer
+			}
+		}
+	}
+	#骑兵
+	touhou_teach_cavalry_leader = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = cavalry_leader }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = cavalry_leader } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = cavalry_leader } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = cavalry_leader } }
+				add_unit_leader_trait = cavalry_leader
+			}
+		}
+	}
+	#装甲
+	touhou_teach_panzer_leader = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = panzer_leader }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = panzer_leader } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = panzer_leader } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = panzer_leader } }
+				add_unit_leader_trait = panzer_leader
+			}
+		}
+	}
+	#工兵
+	touhou_teach_trait_engineer = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = trait_engineer }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = trait_engineer } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = trait_engineer } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = trait_engineer } }
+				add_unit_leader_trait = trait_engineer
+			}
+		}
+	}
+	#特种作战
+	touhou_teach_commando = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = commando }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = commando } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = commando } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = commando } }
+				add_unit_leader_trait = commando
+			}
+		}
+	}
+	#诡计
+	touhou_teach_trickster = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = trickster }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = trickster } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = trickster } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = trickster } }
+				add_unit_leader_trait = trickster
+			}
+		}
+	}
+	#熟练参谋
+	touhou_teach_skilled_staffer = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = skilled_staffer }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = skilled_staffer } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = skilled_staffer } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = skilled_staffer } }
+				add_unit_leader_trait = skilled_staffer
+			}
+		}
+	}
+	#海上登陆
+	touhou_teach_naval_invader = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = naval_invader }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = naval_invader } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = naval_invader } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = naval_invader } }
+				add_unit_leader_trait = naval_invader
+			}
+		}
+	}
+	#森林
+	touhou_teach_ranger = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = ranger }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = ranger } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = ranger } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = ranger } }
+				add_unit_leader_trait = ranger
+			}
+		}
+	}
+	#丛林
+	touhou_teach_jungle_rat = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = jungle_rat }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = jungle_rat } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = jungle_rat } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = jungle_rat } }
+				add_unit_leader_trait = jungle_rat
+			}
+		}
+	}
+	#丘陵
+	touhou_teach_hill_fighter = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = hill_fighter }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = hill_fighter } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = hill_fighter } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = hill_fighter } }
+				add_unit_leader_trait = hill_fighter
+			}
+		}
+	}
+	#山地
+	touhou_teach_trait_mountaineer = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = trait_mountaineer }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = trait_mountaineer } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = trait_mountaineer } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = trait_mountaineer } }
+				add_unit_leader_trait = trait_mountaineer
+			}
+		}
+	}
+	#沼泽
+	touhou_teach_swamp_fox = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = swamp_fox }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = swamp_fox } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = swamp_fox } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = swamp_fox } }
+				add_unit_leader_trait = swamp_fox
+			}
+		}
+	}
+	#沙漠
+	touhou_teach_desert_fox = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = desert_fox }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = desert_fox } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = desert_fox } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = desert_fox } }
+				add_unit_leader_trait = desert_fox
+			}
+		}
+	}
+	#冬季专家
+	touhou_teach_winter_specialist = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = winter_specialist }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = winter_specialist } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = winter_specialist } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = winter_specialist } }
+				add_unit_leader_trait = winter_specialist
+			}
+		}
+	}
+	#城市
+	touhou_teach_urban_assault_specialist = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_army_leader = { NOT = { is_assigned = yes } has_trait = urban_assault_specialist }
+			any_army_leader = { NOT = { is_assigned = yes } NOT = { has_trait = urban_assault_specialist } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_army_leader = { NOT = { has_trait = urban_assault_specialist } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_army_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = urban_assault_specialist } }
+				add_unit_leader_trait = urban_assault_specialist
+			}
+		}
+	}
+}
+touhou_touhou_teach_navy_leader = {
+	#海军
+	#海狼
+	touhou_teach_seawolf = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = seawolf }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = seawolf } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = seawolf } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = seawolf } }
+				add_unit_leader_trait = seawolf
+			}
+		}
+	}
+	#舰队保护者
+	touhou_teach_fleet_protector = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = fleet_protector }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = fleet_protector } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = fleet_protector } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = fleet_protector } }
+				add_unit_leader_trait = fleet_protector
+			}
+		}
+	}
+	#穿越封锁
+	touhou_teach_blockade_runner = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = blockade_runner }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = blockade_runner } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = blockade_runner } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = blockade_runner } }
+				add_unit_leader_trait = blockade_runner
+			}
+		}
+	}
+	#高级战术专家
+	touhou_teach_superior_tactician = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = superior_tactician }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = superior_tactician } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = superior_tactician } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = superior_tactician } }
+				add_unit_leader_trait = superior_tactician
+			}
+		}
+	}
+	#索敌专家
+	touhou_teach_spotter = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = spotter }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = spotter } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = spotter } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = spotter } }
+				add_unit_leader_trait = spotter
+			}
+		}
+	}
+	#火鸡射手
+	touhou_teach_fly_swatter = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = fly_swatter }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = fly_swatter } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = fly_swatter } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = fly_swatter } }
+				add_unit_leader_trait = fly_swatter
+			}
+		}
+	}
+	#铁人
+	touhou_teach_ironside = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = ironside }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = ironside } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = ironside } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = ironside } }
+				add_unit_leader_trait = ironside
+			}
+		}
+	}
+	#制空专家
+	touhou_teach_air_controller = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = air_controller }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = air_controller } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = air_controller } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = air_controller } }
+				add_unit_leader_trait = air_controller
+			}
+		}
+	}
+	#冷水海军专家
+	touhou_teach_arctic_water_expert = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = arctic_water_expert }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = arctic_water_expert } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = arctic_water_expert } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = arctic_water_expert } }
+				add_unit_leader_trait = arctic_water_expert
+			}
+		}
+	}
+	#近海战士
+	touhou_teach_inshore_fighter = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = inshore_fighter }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = inshore_fighter } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = inshore_fighter } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = inshore_fighter } }
+				add_unit_leader_trait = inshore_fighter
+			}
+		}
+	}
+	#蓝水海军专家
+	touhou_teach_blue_water_expert = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = blue_water_expert }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = blue_water_expert } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = blue_water_expert } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = blue_water_expert } }
+				add_unit_leader_trait = blue_water_expert
+			}
+		}
+	}
+	#绿水海军专家
+	touhou_teach_green_water_expert = {
+		icon = GFX_decision_generic_special_project
+		days_re_enable = 5
+		days_remove = 30
+		cost = 50
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_navy_leader = { NOT = { is_assigned = yes } has_trait = green_water_expert }
+			any_navy_leader = { NOT = { is_assigned = yes } NOT = { has_trait = green_water_expert } }
+			command_power > 15
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_navy_leader = { NOT = { has_trait = green_water_expert } }
+		}
+		
+		modifier = {
+		}
+		
+		remove_effect = {
+			random_navy_leader = {
+				limit = { NOT = { is_assigned = yes } NOT = { has_trait = green_water_expert } }
+				add_unit_leader_trait = green_water_expert
+			}
+		}
+	}
+}

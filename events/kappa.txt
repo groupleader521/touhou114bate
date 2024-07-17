@@ -1,0 +1,133 @@
+﻿add_namespace = kappa
+country_event = {
+	id = kappa.0
+	title = kappa.0.t
+	desc = kappa.0.d
+	picture = GFX_report_event_touhou_kap
+	
+	trigger = {
+		original_tag = KAP
+		OR = {
+			has_idea = KAP_research_concentrate
+			has_idea = KAP_research_disperse
+		}
+		NOT = { has_country_flag = KAP_is_ok }
+	}
+	
+	mean_time_to_happen = {
+		days = 120
+	}
+	
+	option = {
+		name = kappa.0.a
+		ai_chance = { base = 1 }
+		if = {
+				limit = { has_idea = KAP_research_concentrate }
+				swap_ideas = {
+					remove_idea = KAP_research_concentrate
+					add_idea = KAP_research_concentrate_damage
+				}
+			}
+			else_if = {
+				limit = { has_idea = KAP_research_disperse }
+				swap_ideas = {
+					remove_idea = KAP_research_disperse
+					add_idea = KAP_research_disperse_damage
+				}
+			}
+	}
+}
+country_event = {
+	id = kappa.1
+	title = kappa.1.t
+	desc = kappa.1.d
+	picture = GFX_report_event_touhou_kap
+	
+	trigger = {
+		original_tag = KAP
+		OR = {
+			has_idea = KAP_industrial_concentrate
+			has_idea = KAP_industrial_disperse
+		}
+		NOT = { has_country_flag = KAP_is_ok }
+	}
+	
+	mean_time_to_happen = {
+		days = 120
+	}
+	
+	option = {
+		name = kappa.1.a
+		ai_chance = { base = 1 }
+		if = {
+				limit = { has_idea = KAP_industrial_concentrate }
+				swap_ideas = {
+					remove_idea = KAP_industrial_concentrate
+					add_idea = KAP_industrial_concentrate_damage
+				}
+			}
+			else_if = {
+				limit = { has_idea = KAP_industrial_disperse }
+				swap_ideas = {
+					remove_idea = KAP_industrial_disperse
+					add_idea = KAP_industrial_disperse_damage
+				}
+			}
+	}
+}
+country_event = {
+	id = kappa.2
+	title = kappa.2.t
+	desc = kappa.2.d
+	picture = GFX_report_event_touhou_kap
+	
+	trigger = {
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = kappa.2.a
+		ai_chance = { base = 9 }
+		add_timed_idea = {
+			idea = KAP_research_disperse
+			days = 180
+		}
+		add_timed_idea = {
+			idea = KAP_industrial_disperse
+			days = 180
+		}
+		give_guarantee = KAP
+	}
+	option = {
+		name = kappa.2.b
+		ai_chance = { base = 1 }
+		
+	}
+}
+country_event = {
+	id = kappa.3
+	title = kappa.3.t
+	desc = kappa.3.d
+	picture = GFX_report_event_touhou_kap
+	
+	trigger = {
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = kappa.3.a
+		ai_chance = { base = 1 }
+		end_puppet = KAP
+		KAP = { inside_fantasy_attitude_level_up = yes }
+	}
+	option = {
+		name = kappa.3.b
+		ai_chance = { base = 9 }
+		end_puppet = KAP
+		KAP = { inside_fantasy_attitude_level_up = yes }
+		declare_war_on = {
+			target = KAP
+			type = annex_everything
+		}
+	}
+}

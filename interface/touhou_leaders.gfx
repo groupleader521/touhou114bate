@@ -1,0 +1,370 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_Alice_Margatroid"
+        texturefile = "gfx/leaders/ALI/Alice_Margatroid.dds"
+    }
+    spriteType = {
+        name = "GFX_bear"
+        texturefile = "gfx/leaders/ALI/bear.dds"
+    }
+    spriteType = {
+        name = "GFX_BNMJFJ"
+        texturefile = "gfx/leaders/ALI/BNMJFJ.dds"
+    }
+    spriteType = {
+        name = "GFX_Chen"
+        texturefile = "gfx/leaders/ALI/Chen.dds"
+    }
+    spriteType = {
+        name = "GFX_Cirno"
+        texturefile = "gfx/leaders/ALI/Cirno.dds"
+    }
+    spriteType = {
+        name = "GFX_Daiyousei"
+        texturefile = "gfx/leaders/ALI/Daiyousei.dds"
+    }
+    spriteType = {
+        name = "GFX_DLEZ"
+        texturefile = "gfx/leaders/ALI/DLEZ.dds"
+    }
+    spriteType = {
+        name = "GFX_Eirin_Yagokoro"
+        texturefile = "gfx/leaders/ALI/Eirin_Yagokoro.dds"
+    }
+    spriteType = {
+        name = "GFX_Flandre_Scarlet"
+        texturefile = "gfx/leaders/ALI/Flandre_Scarlet.dds"
+    }
+    spriteType = {
+        name = "GFX_GYFSJ"
+        texturefile = "gfx/leaders/ALI/GYFSJ.dds"
+    }
+    spriteType = {
+        name = "GFX_Hakurei_Reimu"
+        texturefile = "gfx/leaders/ALI/Hakurei_Reimu.dds"
+    }
+    spriteType = {
+        name = "GFX_Hieda_no_Akyuu"
+        texturefile = "gfx/leaders/ALI/Hieda_no_Akyuu.dds"
+    }
+    spriteType = {
+        name = "GFX_Himekaidou_Hatate"
+        texturefile = "gfx/leaders/ALI/Himekaidou_Hatate.dds"
+    }
+    spriteType = {
+        name = "GFX_Hinanawi_Tenshi"
+        texturefile = "gfx/leaders/ALI/Hinanawi_Tenshi.dds"
+    }
+    spriteType = {
+        name = "GFX_Hiziri_Byakuren"
+        texturefile = "gfx/leaders/ALI/Hiziri_Byakuren.dds"
+    }
+    spriteType = {
+        name = "GFX_Hon_Meirin"
+        texturefile = "gfx/leaders/ALI/Hon_Meirin.dds"
+    }
+    spriteType = {
+        name = "GFX_Hoshiguma_Yugi"
+        texturefile = "gfx/leaders/ALI/Hoshiguma_Yugi.dds"
+    }
+    spriteType = {
+        name = "GFX_Houjuu_Nue"
+        texturefile = "gfx/leaders/ALI/Houjuu_Nue.dds"
+    }
+    spriteType = {
+        name = "GFX_Houraisan_Kaguya"
+        texturefile = "gfx/leaders/ALI/Houraisan_Kaguya.dds"
+    }
+    spriteType = {
+        name = "GFX_Hourai_Ningyou"
+        texturefile = "gfx/leaders/ALI/Hourai_Ningyou.dds"
+    }
+    spriteType = {
+        name = "GFX_Huziwara_no_Mokou"
+        texturefile = "gfx/leaders/ALI/Huziwara_no_Mokou.dds"
+    }
+    spriteType = {
+        name = "GFX_Ibuki_Suika"
+        texturefile = "gfx/leaders/ALI/Ibuki_Suika.dds"
+    }
+    spriteType = {
+        name = "GFX_Iizunamaru_Megumu"
+        texturefile = "gfx/leaders/ALI/Iizunamaru_Megumu.dds"
+    }
+    spriteType = {
+        name = "GFX_Inubashiri_Momizi"
+        texturefile = "gfx/leaders/ALI/Inubashiri_Momizi.dds"
+    }
+    spriteType = {
+        name = "GFX_Izayoi_Sakuya"
+        texturefile = "gfx/leaders/ALI/Izayoi_Sakuya.dds"
+    }
+    spriteType = {
+        name = "GFX_Kaenbyou_Rin"
+        texturefile = "gfx/leaders/ALI/Kaenbyou_Rin.dds"
+    }
+    spriteType = {
+        name = "GFX_Kaku_Seiga"
+        texturefile = "gfx/leaders/ALI/Kaku_Seiga.dds"
+    }
+    spriteType = {
+        name = "GFX_Kamishirasawa_Keine"
+        texturefile = "gfx/leaders/ALI/Kamishirasawa_Keine.dds"
+    }
+    spriteType = {
+        name = "GFX_Kawasiro_Nitori"
+        texturefile = "gfx/leaders/ALI/Kawasiro_Nitori.dds"
+    }
+    spriteType = {
+        name = "GFX_Kazami_Yuka"
+        texturefile = "gfx/leaders/ALI/Kazami_Yuka.dds"
+    }
+    spriteType = {
+        name = "GFX_Kirisame_Marisa"
+        texturefile = "gfx/leaders/ALI/Kirisame_Marisa.dds"
+    }
+    spriteType = {
+        name = "GFX_Koakuma"
+        texturefile = "gfx/leaders/ALI/Koakuma.dds"
+    }
+    spriteType = {
+        name = "GFX_Komano_Aunn"
+        texturefile = "gfx/leaders/ALI/Komano_Aunn.dds"
+    }
+    spriteType = {
+        name = "GFX_Komeiji_Koishi"
+        texturefile = "gfx/leaders/ALI/Komeiji_Koishi.dds"
+    }
+    spriteType = {
+        name = "GFX_Komeiji_Satori"
+        texturefile = "gfx/leaders/ALI/Komeiji_Satori.dds"
+    }
+    spriteType = {
+        name = "GFX_Konpaku_Youmu"
+        texturefile = "gfx/leaders/ALI/Konpaku_Youmu.dds"
+    }
+    spriteType = {
+        name = "GFX_Kotiya_Sanae"
+        texturefile = "gfx/leaders/ALI/Kotiya_Sanae.dds"
+    }
+    spriteType = {
+        name = "GFX_Kumoi_Ichirin"
+        texturefile = "gfx/leaders/ALI/Kumoi_Ichirin.dds"
+    }
+    spriteType = {
+        name = "GFX_LLB"
+        texturefile = "gfx/leaders/ALI/LLB.dds"
+    }
+    spriteType = {
+        name = "GFX_Medicine_Melancholy"
+        texturefile = "gfx/leaders/ALI/Medicine_Melancholy.dds"
+    }
+    spriteType = {
+        name = "GFX_Mononobe_no_Futo"
+        texturefile = "gfx/leaders/ALI/Mononobe_no_Futo.dds"
+    }
+    spriteType = {
+        name = "GFX_Morichika_Rinnosuke"
+        texturefile = "gfx/leaders/ALI/Morichika_Rinnosuke.dds"
+    }
+    spriteType = {
+        name = "GFX_Moriya_Suwako"
+        texturefile = "gfx/leaders/ALI/Moriya_Suwako.dds"
+    }
+    spriteType = {
+        name = "GFX_Motoori_Kosuzu"
+        texturefile = "gfx/leaders/ALI/Motoori_Kosuzu.dds"
+    }
+    spriteType = {
+        name = "GFX_Murasa_Minamitu"
+        texturefile = "gfx/leaders/ALI/Murasa_Minamitu.dds"
+    }
+    spriteType = {
+        name = "GFX_Nagae_Iku"
+        texturefile = "gfx/leaders/ALI/Nagae_Iku.dds"
+    }
+    spriteType = {
+        name = "GFX_nameless"
+        texturefile = "gfx/leaders/ALI/nameless.dds"
+    }
+    spriteType = {
+        name = "GFX_navy_Kawasiro_Nitori"
+        texturefile = "gfx/leaders/ALI/navy_Kawasiro_Nitori.dds"
+    }
+    spriteType = {
+        name = "GFX_navy_Wakasagihime"
+        texturefile = "gfx/leaders/ALI/navy_Wakasagihime.dds"
+    }
+    spriteType = {
+        name = "GFX_Nazrin"
+        texturefile = "gfx/leaders/ALI/Nazrin.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Alice"
+        texturefile = "gfx/leaders/ALI/old_Alice.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Asakura_Rikako"
+        texturefile = "gfx/leaders/ALI/old_Asakura_Rikako.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Ellen"
+        texturefile = "gfx/leaders/ALI/old_Ellen.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Elly"
+        texturefile = "gfx/leaders/ALI/old_Elly.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Gengetsu"
+        texturefile = "gfx/leaders/ALI/old_Gengetsu.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Kana_Anaberal"
+        texturefile = "gfx/leaders/ALI/old_Kana_Anaberal.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Kitashirakawa_Chiyuri"
+        texturefile = "gfx/leaders/ALI/old_Kitashirakawa_Chiyuri.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Konngara"
+        texturefile = "gfx/leaders/ALI/old_Konngara.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Kotohime"
+        texturefile = "gfx/leaders/ALI/old_Kotohime.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Kurumi"
+        texturefile = "gfx/leaders/ALI/old_Kurumi.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Luize"
+        texturefile = "gfx/leaders/ALI/old_Luize.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Mai"
+        texturefile = "gfx/leaders/ALI/old_Mai.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Mima"
+        texturefile = "gfx/leaders/ALI/old_Mima.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Mugetsu"
+        texturefile = "gfx/leaders/ALI/old_Mugetsu.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Okazaki_Yumemi"
+        texturefile = "gfx/leaders/ALI/old_Okazaki_Yumemi.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Sara"
+        texturefile = "gfx/leaders/ALI/old_Sara.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Sariel"
+        texturefile = "gfx/leaders/ALI/old_Sariel.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Shinki"
+        texturefile = "gfx/leaders/ALI/old_Shinki.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Shinki_shadow"
+        texturefile = "gfx/leaders/ALI/old_Shinki_shadow.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Yuka"
+        texturefile = "gfx/leaders/ALI/old_Yuka.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Yuki"
+        texturefile = "gfx/leaders/ALI/old_Yuki.dds"
+    }
+    spriteType = {
+        name = "GFX_old_Yumeko"
+        texturefile = "gfx/leaders/ALI/old_Yumeko.dds"
+    }
+    spriteType = {
+        name = "GFX_Onozuka_Komachi"
+        texturefile = "gfx/leaders/ALI/Onozuka_Komachi.dds"
+    }
+    spriteType = {
+        name = "GFX_Patchouli_Knowledge"
+        texturefile = "gfx/leaders/ALI/Patchouli_Knowledge.dds"
+    }
+    spriteType = {
+        name = "GFX_Reisen_Udongein_Inaba"
+        texturefile = "gfx/leaders/ALI/Reisen_Udongein_Inaba.dds"
+    }
+    spriteType = {
+        name = "GFX_Reiuji_Utsuho"
+        texturefile = "gfx/leaders/ALI/Reiuji_Utsuho.dds"
+    }
+    spriteType = {
+        name = "GFX_Remilia_Scarlet"
+        texturefile = "gfx/leaders/ALI/Remilia_Scarlet.dds"
+    }
+    spriteType = {
+        name = "GFX_Saigyouji_Yuyuko"
+        texturefile = "gfx/leaders/ALI/Saigyouji_Yuyuko.dds"
+    }
+    spriteType = {
+        name = "GFX_Shameimaru_Aya"
+        texturefile = "gfx/leaders/ALI/Shameimaru_Aya.dds"
+    }
+    spriteType = {
+        name = "GFX_Shanghai_Ningyou"
+        texturefile = "gfx/leaders/ALI/Shanghai_Ningyou.dds"
+    }
+    spriteType = {
+        name = "GFX_Shikieiki_Yamaxanadu"
+        texturefile = "gfx/leaders/ALI/Shikieiki_Yamaxanadu.dds"
+    }
+    spriteType = {
+        name = "GFX_Soga_no_Toziko"
+        texturefile = "gfx/leaders/ALI/Soga_no_Toziko.dds"
+    }
+    spriteType = {
+        name = "GFX_Sukuna_Shinmyoumaru"
+        texturefile = "gfx/leaders/ALI/Sukuna_Shinmyoumaru.dds"
+    }
+    spriteType = {
+        name = "GFX_Tewi_Inaba"
+        texturefile = "gfx/leaders/ALI/Tewi_Inaba.dds"
+    }
+    spriteType = {
+        name = "GFX_Toramaru_Shou"
+        texturefile = "gfx/leaders/ALI/Toramaru_Shou.dds"
+    }
+    spriteType = {
+        name = "GFX_Toyosatomimi_no_Miko"
+        texturefile = "gfx/leaders/ALI/Toyosatomimi_no_Miko.dds"
+    }
+    spriteType = {
+        name = "GFX_Trino"
+        texturefile = "gfx/leaders/ALI/Trino.dds"
+    }
+    spriteType = {
+        name = "GFX_TTTTBD"
+        texturefile = "gfx/leaders/ALI/TTTTBD.dds"
+    }
+    spriteType = {
+        name = "GFX_lightGod"
+        texturefile = "gfx/leaders/ALI/lightGod.dds"
+    }
+    spriteType = {
+        name = "GFX_Yakumo_Ran"
+        texturefile = "gfx/leaders/ALI/Yakumo_Ran.dds"
+    }
+    spriteType = {
+        name = "GFX_Yakumo_Yukari"
+        texturefile = "gfx/leaders/ALI/Yakumo_Yukari.dds"
+    }
+    spriteType = {
+        name = "GFX_Yasaka_Kanako"
+        texturefile = "gfx/leaders/ALI/Yasaka_Kanako.dds"
+    }
+}

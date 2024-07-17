@@ -1,0 +1,92 @@
+sub_units = {
+	touhou_demonforce_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { touhou_demonforce_fighter_equipment = 1 }
+		categories = { category_fighter }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+	touhou_demonforce_heavy_fighter = {
+		sprite = medium_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { touhou_demonforce_heavy_fighter_equipment = 1 }
+		categories = { category_heavy_fighter }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+	touhou_demonforce_cas = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type = cas
+		need = { touhou_demonforce_CAS_equipment = 1 }
+		categories = { category_cas }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+	touhou_magic_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { touhou_magic_fighter_equipment = 1 }
+		categories = { category_fighter }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+	touhou_magic_tac_bomber = {
+		sprite = medium_plane
+		priority = 4
+		active = yes
+		type = tactical_bomber
+		need = { touhou_magic_tac_bomber_equipment = 1 }
+		categories = { category_tac_bomber }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+	touhou_magic_strat_bomber = {
+		sprite = heavy_plane
+		priority = 5
+		active = yes
+		type = strategic_bomber
+		need = { touhou_magic_strat_bomber_equipment = 1 }
+		categories = { category_strat_bomber }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+	touhou_wakan_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { touhou_wakan_fighter_equipment = 1 }
+		categories = { category_fighter }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+	touhou_wakan_tac_bomber = {
+		sprite = medium_plane
+		priority = 4
+		active = yes
+		type = tactical_bomber
+		need = { touhou_wakan_tac_bomber_equipment = 1 }
+		categories = { category_tac_bomber }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+	touhou_wakan_cas = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type =  cas
+		need = { touhou_wakan_CAS_equipment = 1 }
+		categories = { category_cas }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+}

@@ -1,0 +1,78 @@
+add_namespace = Touhou_cheating
+
+
+country_event = { #AI作弊加pp
+	id = Touhou_cheating.1
+	picture = GFX_report_event_chinese_soldiers
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		is_ai = yes
+		date > 1936.5.1
+		not = { has_country_flag = touhou_cheating_01 }
+	}
+	
+	option = {
+		add_political_power = 120
+		set_country_flag = touhou_cheating_01
+		
+		ai_chance = {
+		base = 50
+		}
+	}
+	
+}
+
+country_event = { #AI作弊加pp
+	id = Touhou_cheating.101
+	picture = GFX_report_event_chinese_soldiers
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		is_ai = yes
+		date > 1936.11.1
+		not = { has_country_flag = touhou_cheating_02 }
+	}
+	
+	option = {
+		add_political_power = 100
+		add_offsite_building = { type = industrial_complex level = 1 }
+		set_country_flag = touhou_cheating_02
+		
+		ai_chance = {
+		base = 50
+		}
+	}
+	
+}
+
+country_event = { #AI作弊加pp
+	id = Touhou_cheating.102
+	picture = GFX_report_event_chinese_soldiers
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		is_ai = yes
+		date > 1937.4.1
+		not = { has_country_flag = touhou_cheating_03 }
+	}
+	
+	option = {
+		add_political_power = 100
+		add_offsite_building = { type = arms_factory level = 1 }
+		set_country_flag = touhou_cheating_03
+		
+		ai_chance = {
+		base = 50
+		}
+	}
+}

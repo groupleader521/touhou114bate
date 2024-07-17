@@ -1,0 +1,1065 @@
+ideas = {
+	country = {
+		touhou_boli_wunv_idea = {
+		
+			picture = cas_boli_fighter
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.17
+			}
+		}
+		touhou_shousi_wunv_idea = {
+		
+			picture = wunv_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		touhou_mingliansi_move_idea = {
+		
+			picture = FRA_motorized_focus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		touhou_shenlingmiao_fu_idea = {
+		
+			picture = DES_bomber_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			equipment_bonus = {
+				artillery = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		touhou_human_publicity_idea = {
+		
+			picture = magician_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription = 0.05
+			}
+		}
+		touhou_xianglin_business_idea = {
+		
+			picture = generic_goods_red_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.3
+			}
+		}
+		touhou_doll_factory_idea = {
+		
+			picture = goliath_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			modifier = {
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+			}
+		}
+		touhou_sun_flower_idea = {
+		
+			picture = generic_manpower_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription = 0.05
+				MONTHLY_POPULATION = 0.4
+			}
+		}
+		touhou_vampire_infantry_idea = {
+		
+			picture = dragon_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				touhou_magic_infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				touhou_wakan_infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				touhou_demonforce_infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				touhou_support_equipment_1 = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+		}
+		touhou_vampire_big_book_idea = {
+		
+			picture = research_bonus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+		touhou_tengu_air_idea = {
+		
+			picture = tengu_fighter_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				air_ace_generation_chance_factor = 0.3
+				air_intercept_efficiency = 0.1
+				air_superiority_efficiency = 0.1
+			}
+		}
+		touhou_power_hell_stove_idea = {
+		
+			picture = DLD_animal_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+			}
+		}
+		touhou_ghost_extradite_idea = {
+		
+			picture = die_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				experience_loss_factor = -0.30
+			}
+		}
+		touhou_ghost_tech_idea = {
+		
+			picture = soul_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				attrition = -0.05
+				supply_consumption_factor = -0.1
+			}
+		}
+		touhou_special_forces_drill_idea = {
+		
+			picture = rabbit_team_trait
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_cap = 0.1
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
+			}
+		}
+		touhou_ministry_of_defence_idea = {
+
+			picture = HUN_secret_rearmament
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_start_defense_level = 1
+				army_leader_start_logistics_level = 1
+			}
+		}
+		touhou_ministry_of_attack_idea = {
+
+			picture = HUN_secret_rearmament
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_start_attack_level = 1
+				army_leader_start_logistics_level = 1
+			}
+		}
+		touhou_ministry_of_plan_idea = {
+
+			picture = HUN_secret_rearmament
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_start_planning_level = 1
+				army_leader_start_logistics_level = 1
+			}
+		}
+		touhou_army_leader_power_idea = {
+
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 25
+				command_power_gain_mult = 0.1
+				army_leader_cost_factor = -0.5
+				army_leader_start_level = 1
+			}
+		}
+		touhou_for_the_fantasy_idea = {
+
+			picture = generic_infantry_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+			}
+		}
+		touhou_terrors_unknown_idea = {
+
+			picture = generic_infantry_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		touhou_out_oracle_0 = {
+
+			picture = tfv_can_conscription_crisis
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.2
+			}
+		}
+		touhou_out_oracle_1 = {
+
+			picture = tfv_can_conscription_crisis
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.4
+			}
+		}
+		touhou_out_oracle_2 = {
+
+			picture = tfv_can_conscription_crisis
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.6
+			}
+		}
+		touhou_in_oracle_0 = {
+
+			picture = stiff_upper_lip
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		touhou_in_oracle_1 = {
+
+			picture = stiff_upper_lip
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.2
+			}
+		}
+		touhou_in_oracle_2 = {
+
+			picture = stiff_upper_lip
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.3
+			}
+		}
+		touhou_renew_oracle_0 = {
+
+			picture = general_staff
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.1
+				political_power_factor = 0.05
+			}
+		}
+		touhou_renew_oracle_1 = {
+
+			picture = general_staff
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.2
+				political_power_factor = 0.1
+			}
+		}
+		touhou_renew_oracle_2 = {
+
+			picture = general_staff
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.3
+				political_power_factor = 0.15
+			}
+		}
+		touhou_focus_intervene_0 = {
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -0.5
+			}
+		}
+		touhou_focus_intervene_1 = {
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -0.5
+				send_volunteer_size = 12
+			}
+		}
+		touhou_focus_intervene_2 = {
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -0.5
+				send_volunteer_size = 12
+				subversive_activites_upkeep = -0.75
+			}
+		}
+		touhou_mysterious_power_d = {#东方神秘力量 民主
+
+			picture = generic_democratic_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.2
+		}
+	}
+		touhou_mysterious_power_c = {#东方神秘力量 社会主义
+
+			picture = generic_communism_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.2
+			}
+		}
+		touhou_mysterious_power_f = {#东方神秘力量 法西斯
+
+			picture = generic_fascism_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.5
+			}
+		}
+		touhou_mysterious_power_n = {#东方神秘力量 中立主义
+
+			picture = generic_neutrality_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.5
+			}
+		}
+		touhou_deterrence = { #幻想乡威慑
+
+			picture = fantasy_army
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+		
+			modifier = {
+				conscription = -2
+			}
+		}
+		#烤熊
+		touhou_fighter = {#疾风「风神少女」
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			picture = tengu
+			modifier = {
+				air_attack_factor = 0.1 #对空攻击
+				air_defence_factor = 0.1 #对空防御
+			}
+		}
+		touhou_bomber = {#仙符「日出之处的天子」
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			picture = shenzi
+			modifier = {
+				air_range_factor = 0.1 #空军航程
+				strategic_bomb_visibility = -0.5 #战略轰炸可见度
+			}
+		}
+		touhou_CAS = {#神技「八方鬼缚阵」
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			picture = boli
+			modifier = {
+				air_bombing_targetting = 0.2 #对地攻击瞄准
+			}
+		}
+		touhou_NAV = {#审判「十王审判」
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			picture = siji
+			modifier = {
+				naval_strike_targetting_factor = 0.2 #对海攻击瞄准
+			}
+		}
+		touhou_doctrine = {#外界陆军顾问
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+				experience_gain_army = 0.5 #每日陆军经验增长
+				experience_gain_army_factor = -0.2 #陆军经验增长率
+				experience_gain_army_unit_factor = 0.1 #陆军师经验增长
+			}
+		}
+		touhou_aviation = {#外界空军顾问
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			modifier = {
+				experience_gain_air = 0.5 #每日空军经验增长
+				experience_gain_air_factor = -0.2 #空军经验增长率
+				air_training_xp_gain_factor = 0.1 #空军训练经验增长
+				air_mission_xp_gain_factor = 0.1 #空军任务经验增长
+			}
+		}
+		touhou_navy = {#外界海军顾问
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_sea_focused_navy
+			
+			modifier = {
+				experience_gain_navy = 0.5 #每日海军经验增长
+				experience_gain_navy_factor = -0.2 #海军经验增长率
+				experience_gain_navy_unit_factor = 0.1 #海军舰船经验增长
+			}
+		}
+		touhou_equipment = {#月球零食空投
+			allowed = {
+				always = no
+			}
+
+		allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+
+			picture = huiye
+		
+			modifier = {
+				supply_consumption_factor = -0.1 #补给消耗
+			}
+		}
+		touhou_armor = {#隙间罪袋发酵汁
+			allowed = {
+				always = no
+			}
+
+		allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+
+			picture = yukari
+		
+			modifier = {
+				army_fuel_consumption_factor = -0.1 #陆军燃油消耗
+			}
+		}
+		touhou_flexible = {#豪雨「河底大战争」
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+
+			picture = kappa
+		
+			equipment_bonus = {
+				screen_ship ={
+					lg_attack = 0.2 #轻型火炮攻击
+					instant = yes
+				}
+				submarine = {
+					torpedo_attack = 0.2 #鱼雷攻击
+					instant = yes
+				}
+			}
+		}
+		touhou_large = {#港符「幽灵船永久停泊」
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+
+			picture = shuimi
+		
+			equipment_bonus = {
+				capital_ship ={
+					hg_attack = 0.2 #重型火炮攻击
+					instant = yes
+				}
+				carrier  = {
+					carrier_size = 2 #搭载量
+					instant = yes
+				}
+			}
+		}
+	#工业国策树相关
+		touhou_education = {#开展教育
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+			
+			modifier = {
+				research_speed_factor = -0.2
+				political_power_cost = 0.5
+			}
+		}
+		touhou_train = {#培训经费
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = prc_low_popular_support
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+			}
+		}
+		touhou_factory = {#工厂化国家 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = SOV_second_five_year_plan
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				
+			}
+		}
+		touhou_panic = {#恐慌
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = SOV_second_five_year_plan
+			
+			modifier = {
+				stability_weekly = -0.003
+
+			}
+		}	
+		touhou_ideas_evil_uprising = {#躁动的妖精
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = evil_trait
+			modifier = {
+				stability_factor = -0.3
+			}
+			cancel = {
+				EVI = {
+					exists = no
+				}
+			}
+		}	
+		touhou_ideas_evil_angry = {#妖精的愤怒
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SPR_crush_the_revolution
+			targeted_modifier = {
+				tag = EVI
+				attack_bonus_against = -0.4
+				defense_bonus_against = -0.4
+			}
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		touhou_ideas_evil_compromise = {#对妖精的妥协
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SPR_disbanded_army
+			targeted_modifier = {
+				tag = EVI
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.1
+			}
+		}
+	}
+}

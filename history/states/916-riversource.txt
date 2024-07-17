@@ -1,0 +1,22 @@
+state={
+	id=977
+	name="STATE_SanTuHePan"
+	provinces={
+		13425 13517
+	}
+	history={
+		add_core_of = OPP
+		owner = OPP
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	#state_category=pastoral
+	state_category=megalopolis
+	local_supplies=0.0 
+}

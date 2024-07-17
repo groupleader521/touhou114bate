@@ -1,0 +1,25 @@
+ideas = {
+	country = {
+		touhou_RAB_new_explain = {
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				is_subject = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = 6
+			}
+		}
+		
+	}
+}

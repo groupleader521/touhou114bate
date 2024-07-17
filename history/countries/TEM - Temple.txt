@@ -1,0 +1,80 @@
+﻿capital = 1002
+
+oob = "TEM_1936"
+
+set_stability = 0.4 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.2
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	human_trait
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	limited_conscription
+	magic_first_research
+	touhou_fiscal_society
+    lotus_trait 
+}
+
+set_technology = {
+	touhou_magic_infantry_weapons = 1
+	touhou_magic_interwar_antitank = 1
+	touhou_magic_early_fighter = 1
+	touhou_magic_gw_artillery = 1
+	tech_support = 1
+	transport = 1
+	basic_train = 1
+	lotus = 1
+}
+
+give_guarantee = HUM
+give_guarantee = MLS
+
+
+
+set_convoys = 0
+set_popularities = {
+	communism = 60
+	fascism = 20
+	democratic = 20
+}
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = TOUHOU_Hijiri_Byakuren
+recruit_character = TOUHOU_Toramar_Shou
+recruit_character = TOUHOU_Murasa_Minamitu
+recruit_character = TOUHOU_Kumoi_Ichirin
+set_country_flag = touhou_country_flag_magic_first_research
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "正体不明"
+		GFX = GFX_Houjuu_Nue
+		traits = { operative_escape_artist operative_seducer operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { TEM DES SSS }
+	}
+
+	create_operative_leader = {
+		name = "寻宝鼠"
+		GFX = GFX_Nazrin
+		traits = { operative_safe_cracker operative_well_groomed operative_linguist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { TEM HUM MLS BLI }
+	}
+}

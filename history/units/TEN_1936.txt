@@ -1,0 +1,101 @@
+﻿division_template = {
+	name = "白狼天狗警卫队" 
+
+	regiments = {
+		touhou_demonforce_cavalry = { x = 0 y = 0 }
+		touhou_demonforce_cavalry = { x = 0 y = 1 }
+		touhou_demonforce_cavalry = { x = 0 y = 2 }
+		touhou_demonforce_cavalry = { x = 0 y = 3 }
+	}
+
+}
+division_template = {
+	name = "天狗小队" 
+
+	regiments = {
+		touhou_demonforce_infantry = { x = 0 y = 0 }
+		touhou_demonforce_infantry = { x = 0 y = 1 }
+		touhou_demonforce_infantry = { x = 0 y = 2 }
+		touhou_demonforce_infantry = { x = 0 y = 3 }
+	}
+
+}
+division_template = {
+	name = "天狗中队" 
+
+	regiments = {
+		touhou_demonforce_infantry = { x = 0 y = 0 }
+		touhou_demonforce_infantry = { x = 0 y = 1 }
+		touhou_demonforce_infantry = { x = 0 y = 2 }
+		touhou_demonforce_infantry = { x = 0 y = 3 }
+		
+		touhou_demonforce_infantry = { x = 1 y = 0 }
+		touhou_demonforce_infantry = { x = 1 y = 1 }
+		touhou_demonforce_infantry = { x = 1 y = 2 }
+		touhou_demonforce_infantry = { x = 1 y = 3 }
+	}
+
+}
+division_template = {
+	name = "天狗大队" 
+
+	regiments = {
+		touhou_demonforce_infantry = { x = 0 y = 0 }
+		touhou_demonforce_infantry = { x = 0 y = 1 }
+		touhou_demonforce_infantry = { x = 0 y = 2 }
+		touhou_demonforce_infantry = { x = 0 y = 3 }
+		
+		touhou_demonforce_infantry = { x = 1 y = 0 }
+		touhou_demonforce_infantry = { x = 1 y = 1 }
+		touhou_demonforce_infantry = { x = 1 y = 2 }
+		touhou_demonforce_infantry = { x = 1 y = 3 }
+		
+		touhou_demonforce_infantry = { x = 2 y = 0 }
+		touhou_demonforce_infantry = { x = 2 y = 1 }
+		touhou_demonforce_infantry = { x = 2 y = 2 }
+		touhou_demonforce_infantry = { x = 2 y = 3 }
+	}
+
+}
+
+##### OOB #####
+units = {
+	division = { 
+		name = "天狗村落守卫"
+		location = 13415 
+		division_template = "白狼天狗警卫队"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		name = "妖怪山守卫"
+		location = 13415 
+		division_template = "白狼天狗警卫队"
+		start_experience_factor = 0.3
+	}
+}
+
+air_wings = {
+	984 = { 
+		tengu_fighter_equipment_0 = {
+			owner = "TEN" 
+			amount = 100
+		}
+		tengu_fighter_equipment_0 = {
+			owner = "TEN" 
+			amount = 100
+		}
+	}
+}
+
+instant_effect = 
+{
+	add_equipment_production = {
+		equipment = {
+			type = touhou_demonforce_infantry_equipment_0
+			creator = "TEM"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+}

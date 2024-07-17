@@ -1,0 +1,25 @@
+state={
+	id=980
+	name="STATE_WuYuanZhong"
+	provinces={
+		13380 13395 13399 13462 13521 13522
+	}
+	history={
+		add_core_of = OPP
+		owner = OPP
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13380 20
+		}
+	}
+	resources = {
+		steel = 60
+	}
+	manpower=1000000
+	#state_category=town
+	state_category=megalopolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

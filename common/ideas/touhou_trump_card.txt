@@ -1,0 +1,728 @@
+ideas = {
+	country = {
+		touhou_ideas_trump_card = {#寻求技术支持
+			picture = raj_risk_of_famine
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				always = no
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			cost = 0
+			removal_cost = 0
+			equipment_bonus = {
+				suicide_puppet_little_equipment = {
+					build_cost_ic = 1 instant = yes
+				}
+				suicide_puppet_big_equipment = {
+					build_cost_ic = 10 instant = yes
+				}
+				goliath_equipment = {
+					build_cost_ic = 10 instant = yes
+				}
+				tengu_fighter_equipment = {
+					build_cost_ic = 10 instant = yes
+				}
+				oni_champion_equipment = {
+					build_cost_ic = 0.2 instant = yes
+				}
+				cas_boli_equipment = {
+					build_cost_ic = 10 instant = yes
+				}
+				desires_equipment = {
+					build_cost_ic = 10 instant = yes
+				}
+				animal_equipment = {
+					build_cost_ic = 0.2 instant = yes
+				}
+				dragon_equipment = {
+					build_cost_ic = 1 instant = yes
+				}
+				die_equipment = {
+					build_cost_ic = 10 instant = yes
+				}
+				rabbit_team_equipment = {
+					build_cost_ic = 1 instant = yes
+				}
+				deep_sea_equipment = {
+					build_cost_ic = 10 instant = yes
+				}
+				soul_equipment = {
+					build_cost_ic = 0.4 instant = yes
+				}
+				wunv_equipment = {
+					build_cost_ic = 0.2 instant = yes
+				}
+				lotus_equipment = {
+					build_cost_ic = 10 instant = yes
+				}
+				magician_equipment = {
+					build_cost_ic = 10 instant = yes
+				}
+			}
+			
+			cancel_if_invalid = no
+		}				
+	}
+	touhou_trump_card_tech = {#幻想兵团技术 
+		#注意，幻想兵团最初是无名等人设计的一个特色单位系统，是比较简洁高效的
+		#因为一开始也不涉及那么多东西，就起名很直接“human_army”（人类卫队）
+		#但是由于烤熊（不是我）人菜瘾大，让越来越多的东西和它勾连在一起
+		#而且烤熊不会变量命名，全是幻想兵团变量名加后缀之类的，“human_army_ideas”
+		#就导致幻想兵团在烤熊手里成为了屎山
+		#像human之类的名称，其实科幻、西幻、东幻、幻想mod都会有种族划分，就导致有时候会出现变量名冲突
+		#但是幻想兵团已经成为屎山了，改一个名称需要核对上百个变量，而总共16个
+		#所以烤熊不仅是罪魁祸首，并且为了更新，准备雪（意味深）上加霜
+		#所以说，你不要用现有的幻想兵团变量名简单加个后缀就当新变量名使用
+
+		#神风人偶
+		ALI_suicide_puppet_little_trait = {#神风人偶
+			picture = suicide_puppet_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = suicide_puppet_craft_1 
+				OR = {
+					original_tag = ALI
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			traits = { touhou_trump_card_2 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				suicide_puppet_little_equipment = {
+					build_cost_ic = -1 instant = yes
+				}
+			}
+			modifier = {
+				intel_from_combat_factor = 0.3
+				air_maximum_speed_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+		ALI_suicide_puppet_big_trait = {#人偶战略导弹
+			picture = suicide_puppet_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = suicide_puppet_craft_2 
+				OR = {
+					original_tag = ALI
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			traits = { touhou_trump_card_1 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				suicide_puppet_big_equipment = {
+					build_cost_ic = -10 instant = yes
+				}
+			}
+			modifier = {
+				air_range_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}				
+		#歌利亚
+		ALI_goliath_trait = {
+			picture = goliath_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = goliath_0 
+			}
+			cancel = {
+			}
+			visible = {
+				original_tag = ALI
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_1 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				goliath_equipment = {
+					build_cost_ic = -10 instant = yes
+				}
+			}
+			modifier = {
+				coordination_bonus = 0.15
+			}
+			
+			cancel_if_invalid = no
+		}
+		ALI_goliath_other_trait = {
+			picture = goliath_trait
+		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = goliath_0 
+				NOT = { has_country_flag = touhou_country_flag_out_first_research }
+			}
+			cancel = {
+			}
+			visible = {
+				NOT = { original_tag = ALI }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_1 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				goliath_equipment = {
+					build_cost_ic = -10 instant = yes
+				}
+			}
+			modifier = {
+				coordination_bonus = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		#风神天狗
+		TEN_fighter_trait = {
+			picture = tengu_fighter_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = tengu_fighter	
+				OR = {
+					original_tag = TEN
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_2 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				tengu_fighter_equipment = {
+					build_cost_ic = -10 instant = yes
+				}
+			}
+			modifier = {
+				air_mission_efficiency = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		#冠军鬼王
+		HEL_oni_trait = {
+			picture = HEL_oni_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = oni_champion	 
+				OR = {
+					original_tag = HEL
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_2 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				oni_champion_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+			modifier = {
+				army_attack_against_major_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		#博丽对地攻击联队
+		BLI_boli_trait = {
+			picture = cas_boli_fighter
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = cas_boli_fighter
+				OR = {
+					original_tag = BLI
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}	 
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_2 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				cas_boli_equipment = {
+					build_cost_ic = -10 instant = yes
+				}
+			}
+			modifier = {
+				air_close_air_support_org_damage_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		#天谴道士
+		DES_bomber_trait = {
+			picture = DES_bomber_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = desires_bomber	
+				OR = {
+					original_tag = DES
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_2 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				desires_equipment = {
+					build_cost_ic = -10 instant = yes
+				}
+			}
+			modifier = {
+				strategic_bomb_visibility = -0.2
+			}
+			
+			cancel_if_invalid = no
+		}
+		#心灵引导者
+		DLD_animal_trait = {
+			picture = DLD_animal_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = DLD_animal	
+				OR = {
+					original_tag = DLD
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				} 
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_2 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				animal_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+			modifier = {
+				compliance_gain = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		#龙虎卫
+		dragon_trait = {
+			picture = dragon_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = dragon	 
+				OR = {
+					original_tag = VAM
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_2 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				dragon_equipment = {
+					build_cost_ic = -1 instant = yes
+				}
+			}
+			modifier = {
+				special_forces_cap = 0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+		#死神
+		die_trait = {
+			picture = die_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = die	 
+				OR = {
+					original_tag = OPP
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_2 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				die_equipment = {
+					build_cost_ic = -10 instant = yes
+				}
+			}
+			modifier = {
+				army_speed_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+		#月都式参谋连
+		rabbit_team_trait = {
+			picture = rabbit_team_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = rabbit_team	 
+				OR = {
+					original_tag = RAB
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_2 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				rabbit_team_equipment = {
+					build_cost_ic = -1 instant = yes
+				}
+			}
+			modifier = {
+				max_planning = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		#深海少女
+		deep_sea_trait = {
+			picture = deep_sea_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = deep_sea	 
+				OR = {
+					original_tag = KAP
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_1 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				deep_sea_equipment = {
+					build_cost_ic = -10 instant = yes
+				}
+			}
+			modifier = {
+				navy_visibility = -0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		#庭师亲传弟子
+		soul_trait = {
+			picture = soul_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = soul	 
+				OR = {
+					original_tag = HAK
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_2 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				soul_equipment = {
+					build_cost_ic = -0.4 instant = yes
+				}
+			}
+			modifier = {
+				no_supply_grace = 240
+			}
+			
+			cancel_if_invalid = no
+		}
+		#未来战地医院
+		wunv_trait = {
+			picture = wunv_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = wunv	
+				OR = {
+					original_tag = SSS
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				} 
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_2 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				wunv_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+			modifier = {
+				conscription_factor = 0.3
+				weekly_casualties_war_support = 0.005
+			}
+			
+			cancel_if_invalid = no
+		}
+		#星莲船
+		lotus_trait = {
+			picture = lotus_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = lotus	
+				OR = {
+					original_tag = TEM
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_1 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				lotus_equipment = {
+					build_cost_ic = -10 instant = yes
+				}
+			}
+			modifier = {
+				spotting_chance = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		#移动魔法巨炮
+		magician_trait = {
+			picture = magician_trait
+			
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_tech = magician	 
+				OR = {
+					original_tag = MLS
+					NOT = { has_country_flag = touhou_country_flag_out_first_research }
+				}
+			}
+			cancel = {
+			}
+			visible = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			traits = { touhou_trump_card_1 }
+			cost = 10
+			removal_cost = 10
+			equipment_bonus = {
+				magician_equipment = {
+					build_cost_ic = -10 instant = yes
+				}
+			}
+			modifier = {
+				army_defence_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

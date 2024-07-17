@@ -1,0 +1,10 @@
+﻿division_template = {
+	name = "阿米特"
+
+	regiments = {
+		touhou_demonforce_heavy_armor = { x = 0 y = 0 }
+        touhou_demonforce_infantry = { x = 1 y = 0 }
+		touhou_demonforce_infantry = { x = 1 y = 1 }
+		touhou_demonforce_infantry = { x = 1 y = 2 }
+	}
+}

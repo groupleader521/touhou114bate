@@ -1,0 +1,85 @@
+characters = {
+	TOUHOU_Kirisame_Marisa = {
+		name = TOUHOU_Kirisame_Marisa
+		portraits = {
+			civilian = {
+				large = GFX_Kirisame_Marisa
+			}
+			army = {
+				large = GFX_Kirisame_Marisa
+				small = GFX_idea_molisha
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = centrism
+			traits = {
+				molisha
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {
+				molisha
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+				molisha
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = marxism
+			traits = {
+				molisha
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Kirisame_Marisa
+			slot = political_advisor
+			traits = { molisha }
+		}
+		advisor = {
+			idea_token = TOUHOU_Kirisame_Marisa
+			slot = army_chief
+			traits = { touhou_army_artillery_3 }
+		}
+		advisor = {
+			idea_token = TOUHOU_Kirisame_Marisa
+			slot = high_command
+			traits = { touhou_air_strategic_bombing_mls }
+		}
+		field_marshal = {
+			traits = {
+				units_human war_hero bearer_of_artillery trickster urban_assault_specialist
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	TOUHOU_Morichika_Rinnosuke = {
+		name = TOUHOU_Morichika_Rinnosuke
+		portraits = {
+			army = {
+				large = GFX_Morichika_Rinnosuke
+			}
+		}
+		field_marshal = {
+			traits = {
+				units_human infantry_leader urban_assault_specialist ambusher
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}

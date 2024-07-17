@@ -1,0 +1,4 @@
+focus_tree = {
+	id = touhou_devildom_focus
+	country = { factor = 0 }
+}

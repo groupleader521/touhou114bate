@@ -1,0 +1,78 @@
+﻿capital = 983
+
+oob = "KAP_1936"
+
+set_stability = 0.5 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.2
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	KAP_kappa_trait
+	KAP_research_concentrate
+	KAP_industrial_concentrate
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	limited_conscription
+	demonforce_first_research
+	kappa_main_researcher
+	touhou_fiscal_society
+    deep_sea_trait
+}
+
+set_technology = {
+	touhou_demonforce_infantry_weapons = 1
+	touhou_demonforce_marines = 1
+	touhou_demonforce_interwar_antiair = 1
+	touhou_demonforce_basic_heavy_tank = 1
+	tech_support = 1
+	transport = 1
+	basic_train = 1
+	deep_sea = 1
+}
+
+
+
+set_convoys = 0
+set_popularities = {
+	neutrality = 60
+	communism = 15
+	fascism = 15
+	democratic = 10
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = TOUHOU_Kawasiro_Nitori
+set_country_flag = touhou_country_flag_demonforce_first_research
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "河童"
+		GFX = GFX_navy_Kawasiro_Nitori
+		traits = { operative_master_interrogator operative_safe_cracker operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { KAP TEN MLS }
+	}
+
+	create_operative_leader = {
+		name = "技术观察者"
+		GFX = GFX_navy_Kawasiro_Nitori
+		traits = { operative_master_interrogator operative_safe_cracker operative_demolition_expert}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { KAP RAB ALI }
+	}
+}

@@ -1,0 +1,22 @@
+﻿# Names are based on equipment types (picking equipment with highest amount from the pool)
+# Generic are used for countries that are not scripted in.
+generic = {
+	goliath = {
+		prefix = ""
+		generic = { "歌利亚" }
+		unique = {
+		}
+	}
+	tengu = {
+		prefix = ""
+		generic = { "风神天狗" }
+		unique = {
+		}
+	}
+	oni = {
+		prefix = ""
+		generic = { "冠军鬼王" }
+		unique = {
+		}
+	}
+}

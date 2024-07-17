@@ -1,0 +1,261 @@
+#这个文档装了一些会在地图上显示的决议，因为都可以套用，所以放在一起
+
+
+
+touhou_decisions_categories_everyone_communist = {#支部建到地方
+	touhou_decisions_everyone_communist = {#在[FROM.GetName]成立党支部
+		icon = GFX_decision_SOV_the_workers_dictatorship
+		fire_only_once = no
+		
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+
+		available = {
+			is_ai = no
+			has_government = communism
+		}
+		visible = {  }
+		
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				NOT = { has_state_flag = touhou_state_flag_everyone_communist }
+			}
+        }
+		on_map_mode = map_and_decisions_view
+		cost = 10
+		days_remove = 50
+		modifier = {
+			political_power_cost = 0.1
+			compliance_gain = -0.05
+		}
+		remove_effect = {#幻想乡能成立47个党支部，以此为基础确定数值
+			hidden_effect = {
+				FROM = { 
+					set_state_flag = touhou_state_flag_everyone_communist 
+				}
+			}
+			#党支部-生产建设变量
+			add_to_variable = {
+				touhou_var_everyone_communist_industrial_capacity_factory = 0.003
+			}
+			add_to_variable = {
+				touhou_var_everyone_communist_industrial_capacity_dockyard = 0.003
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						touhou_var_everyone_communist_training_time_army_factor > -0.3
+					} 
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_training_time_army_factor = -0.002				
+				}
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						touhou_var_everyone_communist_war_support_weekly_5 < 5
+					}
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_war_support_weekly_5 = 1
+				}
+				else = {
+					add_to_variable = {
+						touhou_var_everyone_communist_war_support_weekly = 0.001
+					}
+					set_variable = {
+						touhou_var_everyone_communist_war_support_weekly_5 = 0
+					}
+				}
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						touhou_var_everyone_communist_stability_weekly_5 < 5
+					}
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_stability_weekly_5 = 1
+				}
+				else = {
+					add_to_variable = {
+						touhou_var_everyone_communist_stability_weekly = 0.001
+					}
+					set_variable = {
+						touhou_var_everyone_communist_stability_weekly_5 = 0
+					}
+				}
+			}
+			#党支部-军队建设变量
+			add_to_variable = {
+				touhou_var_everyone_communist_army_attack_factor = 0.007
+			}
+			add_to_variable = {
+				touhou_var_everyone_communist_army_org_factor = 0.006
+			}
+			add_to_variable = {
+				touhou_var_everyone_communist_command_power_gain_mult = 0.005				
+			}
+			if = {
+				limit = {  
+					check_variable = {
+						touhou_var_everyone_communist_war_support_weekly_army > -0.05
+					}
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_war_support_weekly_army = -0.001
+				}
+			}
+			if = {
+				limit = {  
+					check_variable = {
+						touhou_var_everyone_communist_stability_weekly_army > -0.05
+					}
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_stability_weekly_army = -0.001
+				}
+			}
+			add_to_variable = {
+				touhou_var_everyone_communist_conscription_factor = 0.002
+			}
+			#党支部-思想建设变量
+			if = {#虽然顺从度最大为1，但顺从度变化buff的基本单位是1%，也就是说顺从度有100
+				limit = { 
+					check_variable = {
+						touhou_var_everyone_communist_compliance_gain < 3
+					}
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_compliance_gain = 0.01
+				}
+			}
+			if = {#虽然意识形态值最大为1，但意识形态值变化buff的基本单位是1%
+				limit = { 
+					check_variable = {
+						touhou_var_everyone_communist_communism_drift < 1
+					}
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_communism_drift = 0.01
+				}
+			}
+			add_to_variable = {
+				touhou_var_everyone_communist_resistance_growth = -0.002				
+			}
+			add_to_variable = {
+				touhou_var_everyone_communist_required_garrison_factor = -0.002
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						touhou_var_everyone_communist_experience_gain_army_unit_factor > -0.5
+					}
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_experience_gain_army_unit_factor = -0.003
+				}
+			}
+			custom_effect_tooltip = touhou_tooltip_everyone_communist
+			#改革阵痛变量
+			if = {
+				limit = { 
+					check_variable = {
+						touhou_var_everyone_communist_war_support_weekly_focus > -0.02
+					}
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_war_support_weekly_focus = -0.003
+				}
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						touhou_var_everyone_communist_stability_weekly_focus > -0.02
+					}
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_stability_weekly_focus = -0.003
+				}
+			}
+			add_to_variable = {
+				touhou_var_everyone_communist_political_power_gain = -0.02				
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						touhou_var_everyone_communist_surrender_limit > -0.3
+					} 
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_surrender_limit = -0.003
+				}
+			}
+			if = {#虽然意识形态值最大为1，但意识形态值变化buff的基本单位是1%
+				limit = { 
+					check_variable = {
+						touhou_var_everyone_communist_communism_drift_focus > -1.5
+					} 
+				}
+				add_to_variable = {
+					touhou_var_everyone_communist_communism_drift_focus = -0.03
+				}
+			}
+
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+touhou_decisions_categories_everyone_communist_core = {#我们的未来
+	touhou_decisions_everyone_communist_core = {#接纳[FROM.GetName]的同志们
+		icon = generic_form_nation
+		fire_only_once = no
+		
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+
+		available = {
+			is_ai = no
+			has_government = communism
+			FROM = {
+				has_state_flag = touhou_state_flag_everyone_communist
+				compliance > 50
+			}
+		}
+		visible = {  }
+		
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				has_state_flag = touhou_state_flag_everyone_communist
+				is_owned_by = ROOT
+				is_fully_controlled_by = ROOT
+				NOT = { 
+					is_core_of = ROOT
+					has_state_flag = is_gensokyo_state_flag
+				}
+			}
+        }
+		on_map_mode = map_and_decisions_view
+		cost = 10
+		days_remove = 50
+		modifier = {
+			political_power_cost = 0.1
+			compliance_gain = 0.1
+		}
+		remove_effect = {
+			FROM = { add_core_of = ROOT }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,23 @@
+idea_categories = {#添加内阁槽
+	touhou_affairs = {#幻想乡内政
+		slot = touhou_racial_military
+		slot = touhou_racial_research
+		slot = touhou_racial_economy
+		slot = touhou_racial_politics
+		slot = touhou_ideology
+		slot = touhou_choose_future
+		
+		cost = 150
+		removal_cost = 0
+	}
+	touhou_special_research = {#幻想乡科技
+		slot = touhou_main_research
+		slot = touhou_fiscal
+		slot = touhou_main_researcher
+		slot = touhou_trump_card_tech
+		slot = touhou_trump_card_tech
+		slot = touhou_trump_card_tech		
+		cost = 150
+		removal_cost = 0
+	}
+}

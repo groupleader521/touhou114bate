@@ -1,0 +1,86 @@
+characters = {
+	TOUHOU_Saigyouji_Yuyuko = {
+		name = TOUHOU_Saigyouji_Yuyuko
+		portraits = {
+			civilian = {
+				large = GFX_Saigyouji_Yuyuko
+			}
+			army = {
+				large = GFX_Saigyouji_Yuyuko
+				small = GFX_idea_uuz
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = centrism
+			traits = {
+				uuz
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {
+				uuz
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+				uuz
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Saigyouji_Yuyuko
+			slot = political_advisor
+			traits = { touhou_financial_expert }
+		}
+		advisor = {
+			idea_token = TOUHOU_Saigyouji_Yuyuko
+			slot = army_chief
+			traits = { touhou_army_logistics_3 }
+		}
+		advisor = {
+			idea_token = TOUHOU_Saigyouji_Yuyuko
+			slot = high_command
+			traits = { touhou_army_entrenchment_3 }
+		}
+		field_marshal = {
+			traits = {
+				units_ghost cavalry_officer cavalry_leader urban_assault_specialist combined_arms_expert
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	TOUHOU_Konpaku_Youmu = {
+		name = TOUHOU_Konpaku_Youmu
+		portraits = {
+			civilian = {
+				large = GFX_Konpaku_Youmu
+			}
+			army = {
+				large = GFX_Konpaku_Youmu
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = marxism
+			traits = {
+				half_soul_half_human
+			}
+		}
+		corps_commander = {
+			traits = { units_ghost cavalry_officer cavalry_leader urban_assault_specialist combined_arms_expert }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}

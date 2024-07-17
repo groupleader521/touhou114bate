@@ -1,0 +1,739 @@
+focus_tree = {
+	id = touhou_BLI_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			tag = BLI
+		}
+		
+		modifier = {
+			add = 20
+			original_tag = BLI
+		}
+	}
+	
+	default = no
+	
+	shared_focus = touhou_army_effort
+	shared_focus = touhou_aviation_effort
+	shared_focus = touhou_naval_effort
+	shared_focus = touhou_industrial_effort
+	shared_focus = touhou_ALL_in
+	
+	
+	focus = {#幻想乡外交
+		id = touhou_BLI_out
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { }
+		available = {
+		}
+		x = 28
+		y = 0
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			add_ideas = touhou_ministry_of_foreign_affairs
+		}
+	}
+	focus = {#昭告天下
+		id = touhou_BLI_show_to_all
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = touhou_BLI_out }
+		available = { 
+			is_subject = no
+			has_government = fascism
+		}
+		bypass = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 9
+		}
+		x = 4
+		y = 4
+		relative_position_id = touhou_BLI_out
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			inside_fantasy_attitude_level_up = yes
+			every_country = {
+				limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } is_subject = no }
+				country_event = { id = boli.0 }
+			}
+			add_ideas = touhou_king_of_all
+		}
+	}
+	focus = {#幻想乡会谈
+		id = touhou_BLI_gentle
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = touhou_BLI_out }
+		mutually_exclusive = { focus = touhou_BLI_radicalness }
+		available = { 
+			is_subject = no
+			NOT = { has_government = fascism }
+		}
+		bypass = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 3
+				OR = {
+					has_idea = inside_fantasy_attitude_0
+					has_idea = inside_fantasy_attitude_1
+					has_idea = inside_fantasy_attitude_2
+					has_idea = inside_fantasy_attitude_3
+				}
+				
+			}
+		}
+		x = -2
+		y = 1
+		relative_position_id = touhou_BLI_out
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.1
+			inside_fantasy_attitude_level_down = yes
+			hidden_effect = {
+				every_country = {
+					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+					news_event = { hours = 6 id = news.1014 }
+				}
+			}
+		}
+	}
+	focus = {#拜访旧友
+		id = touhou_BLI_meet_ali
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = touhou_BLI_gentle }
+		available = { 
+			is_subject = no
+			NOT = { has_government = fascism }
+			ALI = { exists = yes }
+		}
+		bypass = {
+			ALI = { exists = no }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = -2
+		y = 1
+		relative_position_id = touhou_BLI_gentle
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_stability = 0.1
+			ALI = { 
+				add_tech_bonus = {
+					name = touhou_BLI_meet_ali
+					bonus = 2.0
+					uses = 1
+					category = infantry_weapons
+					category = artillery
+				}
+			}
+			add_tech_bonus = {
+				name = touhou_BLI_meet_ali
+				bonus = 2.0
+				uses = 1
+				category = armor
+			}
+			inside_fantasy_attitude_level_down = yes
+		}
+	}
+	focus = {#邀请旧友
+		id = touhou_BLI_Hades_unin
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = touhou_BLI_meet_ali }
+		available = { 
+			is_subject = no
+			NOT = { has_government = fascism }
+			ALI = { OR = { is_subject = no is_subject_of = ROOT } exists = yes is_in_faction = no NOT = { has_war_with = BLI } }
+		}
+		bypass = {
+			ALI = { OR = { exists = no is_in_faction = yes } }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_BLI_meet_ali
+		cost = 5
+		
+
+		completion_reward = {
+			add_stability = 0.1
+			add_threat = -1
+			if = {
+				limit = { is_in_faction = no }
+				set_rule = { can_create_factions = yes }
+				create_faction = touhou_BLI_unin
+			}
+			ALI = {
+				if = {
+					limit = { is_in_faction = no }
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 400
+					}
+					if = { 
+						limit = {is_ai = yes } 
+						country_event = touhou_ai.2
+					}
+					else = { country_event = generic.5 }
+				}
+			}
+			inside_fantasy_attitude_level_down = yes
+		}
+	}
+	focus = {#人里互助协定
+		id = touhou_BLI_help_human
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = touhou_BLI_gentle }
+		available = { 
+			is_subject = no
+			NOT = { has_government = fascism }
+			HUM = { exists = yes NOT = { has_war_with = BLI } }
+		}
+		bypass = {
+			HUM = { exists = no }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_BLI_gentle
+		cost = 5
+
+		
+
+		completion_reward = {
+			HUM = { 
+				add_tech_bonus = {
+					name = touhou_BLI_help_human
+					bonus = 2.0
+					uses = 1
+					category = infantry_weapons
+				}
+			}
+			add_tech_bonus = {
+				name = touhou_BLI_help_human
+				bonus = 2.0
+				uses = 1
+				category = infantry_weapons
+			}
+			inside_fantasy_attitude_level_down = yes
+		}
+	}
+	focus = {#香霖堂互助协定
+		id = touhou_BLI_help_mls
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = touhou_BLI_gentle }
+		available = { 
+			is_subject = no
+			NOT = { has_government = fascism }
+			MLS = { exists = yes NOT = { has_war_with = BLI } }
+		}
+		bypass = {
+			MLS = { exists = no }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 2
+		y = 1
+		relative_position_id = touhou_BLI_gentle
+		cost = 5
+
+		
+
+		completion_reward = {
+			MLS = { 
+				add_tech_bonus = {
+					name = touhou_BLI_help_mls
+					bonus = 2.0
+					uses = 1
+					category = infantry_weapons
+				}
+			}
+			add_tech_bonus = {
+				name = touhou_BLI_help_mls
+				bonus = 2.0
+				uses = 1
+				category = artillery
+			}
+			inside_fantasy_attitude_level_down = yes
+		}
+	}
+	focus = {#守卫幻想乡
+		id = touhou_BLI_guard
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = touhou_BLI_help_mls }
+		prerequisite = { focus = touhou_BLI_help_human }
+		available = { 
+			is_subject = no
+			NOT = { has_government = fascism }
+			OR = {
+				HUM = { OR = { is_subject = no is_subject_of = ROOT } exists = yes is_in_faction = no NOT = { has_war_with = BLI } }
+				MLS = { OR = { is_subject = no is_subject_of = ROOT } exists = yes is_in_faction = no NOT = { has_war_with = BLI } }
+			}
+		}
+		bypass = {
+			HUM = { OR = { exists = no is_in_faction = yes } }
+			MLS = { OR = { exists = no is_in_faction = yes } }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_BLI_help_human
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_stability = 0.1
+			add_threat = -1
+			if = {
+				limit = { is_in_faction = no }
+				set_rule = { can_create_factions = yes }
+				create_faction = touhou_BLI_unin
+			}
+			HUM = {
+				if = {
+					limit = { is_in_faction = no NOT = { has_war_with = BLI } }
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 400
+					}
+					if = { 
+						limit = {is_ai = yes } 
+						country_event = touhou_ai.2
+					}
+					else = { country_event = generic.5 }
+				}
+			}
+			MLS = {
+				if = {
+					limit = { is_in_faction = no NOT = { has_war_with = BLI } }
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 400
+					}
+					if = { 
+						limit = {is_ai = yes } 
+						country_event = touhou_ai.2
+					}
+					else = { country_event = generic.5 }
+				}
+			}
+			inside_fantasy_attitude_level_down = yes
+		}
+	}
+	focus = {#平定纠纷
+		id = touhou_BLI_radicalness
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		prerequisite = { focus = touhou_BLI_out }
+		mutually_exclusive = { focus = touhou_BLI_gentle }
+		available = { 
+			is_subject = no
+			NOT = { has_government = fascism }
+		}
+		bypass = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 3
+				OR = {
+					has_idea = inside_fantasy_attitude_6
+					has_idea = inside_fantasy_attitude_5
+					has_idea = inside_fantasy_attitude_4
+					has_idea = inside_fantasy_attitude_3
+				}
+				
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = touhou_BLI_out
+		cost = 5
+
+		
+
+		completion_reward = {
+			army_experience = 40
+			add_war_support = 0.1
+			inside_fantasy_attitude_level_up = yes
+			hidden_effect = {
+				every_country = {
+					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+					news_event = { hours = 6 id = news.1015 }
+				}
+			}
+		}
+	}
+	focus = {#守护人类
+		id = touhou_BLI_protect_human
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = touhou_BLI_radicalness }
+		available = { 
+			is_subject = no
+			NOT = { has_government = fascism }
+			OR = {
+				HUM = { exists = yes is_subject = no }
+				MLS = { exists = yes is_subject = no }
+				SSS = { exists = yes is_subject = no }
+				DES = { exists = yes is_subject = no }
+				TEM = { exists = yes is_subject = no }
+			}
+		}
+		bypass = {
+			HUM = { exists = no is_subject = yes }
+			MLS = { exists = no is_subject = yes }
+			SSS = { exists = no is_subject = yes }
+			DES = { exists = no is_subject = yes }
+			TEM = { exists = no is_subject = yes }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_BLI_radicalness
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			if = {
+				limit = { HUM = { exists = yes is_subject = no } }
+				give_guarantee = HUM
+			}
+			if = {
+				limit = { MLS = { exists = yes is_subject = no } }
+				give_guarantee = MLS
+			}
+			if = {
+				limit = { SSS = { exists = yes is_subject = no } }
+				give_guarantee = SSS
+			}
+			if = {
+				limit = { DES = { exists = yes is_subject = no } }
+				give_guarantee = DES
+			}
+			if = {
+				limit = { TEM = { exists = yes is_subject = no } }
+				give_guarantee = TEM
+			}
+			inside_fantasy_attitude_level_up = yes
+		}
+	}
+	focus = {#安定妖怪
+		id = touhou_BLI_pacify_moster
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = touhou_BLI_protect_human }
+		available = { 
+			is_subject = no
+			NOT = { has_government = fascism }
+			OR = {
+				ALI = { exists = yes is_subject = no }
+				RAB = { exists = yes is_subject = no }
+				VAM = { exists = yes is_subject = no }
+				EVI = { exists = yes is_subject = no }
+				KAP = { exists = yes is_subject = no }
+				TEN = { exists = yes is_subject = no }
+			}
+		}
+		bypass = {
+			ALI = { exists = no is_subject = yes }
+			RAB = { exists = no is_subject = yes }
+			VAM = { exists = no is_subject = yes }
+			EVI = { exists = no is_subject = yes }
+			KAP = { exists = no is_subject = yes }
+			TEN = { exists = no is_subject = yes }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = -1
+		y = 1
+		relative_position_id = touhou_BLI_protect_human
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			if = {
+				limit = { ALI = { exists = yes is_subject = no } }
+				give_guarantee = ALI
+			}
+			if = {
+				limit = { RAB = { exists = yes is_subject = no } }
+				give_guarantee = RAB
+			}
+			if = {
+				limit = { VAM = { exists = yes is_subject = no } }
+				give_guarantee = VAM
+			}
+			if = {
+				limit = { EVI = { exists = yes is_subject = no } }
+				give_guarantee = EVI
+			}
+			if = {
+				limit = { KAP = { exists = yes is_subject = no } }
+				give_guarantee = KAP
+			}
+			if = {
+				limit = { TEN = { exists = yes is_subject = no } }
+				give_guarantee = TEN
+			}
+			inside_fantasy_attitude_level_up = yes
+		}
+	}
+	focus = {#压制地狱
+		id = touhou_BLI_pacify_hell
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = touhou_BLI_protect_human }
+		available = { 
+			is_subject = no
+			NOT = { has_government = fascism }
+			OR = {
+				OPP = { exists = yes is_subject = no }
+				HEL = { exists = yes is_subject = no }
+				HAK = { exists = yes is_subject = no }
+				DLD = { exists = yes is_subject = no }
+			}
+		}
+		bypass = {
+			OPP = { exists = no is_subject = yes }
+			HEL = { exists = no is_subject = yes }
+			HAK = { exists = no is_subject = yes }
+			DLD = { exists = no is_subject = yes }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 1
+		y = 1
+		relative_position_id = touhou_BLI_protect_human
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			if = {
+				limit = { OPP = { exists = yes is_subject = no } }
+				give_guarantee = OPP
+			}
+			if = {
+				limit = { HEL = { exists = yes is_subject = no } }
+				give_guarantee = HEL
+			}
+			if = {
+				limit = { HAK = { exists = yes is_subject = no } }
+				give_guarantee = HAK
+			}
+			if = {
+				limit = { DLD = { exists = yes is_subject = no } }
+				give_guarantee = DLD
+			}
+			inside_fantasy_attitude_level_up = yes
+		}
+	}
+	focus = {#天下无事
+		id = touhou_BLI_no_trouble
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = touhou_BLI_pacify_hell }
+		prerequisite = { focus = touhou_BLI_pacify_moster }
+		available = { 
+			is_subject = no
+		}
+		bypass = {
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 2
+		relative_position_id = touhou_BLI_protect_human
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_ideas = touhou_king_of_all
+			inside_fantasy_attitude_level_up = yes
+		}
+	}
+	
+	focus = {#幻想乡共同结局
+		id = touhou_BLI_in_all
+		icon = touhou_in_all
+		prerequisite = { focus = touhou_BLI_no_trouble focus = touhou_BLI_guard focus = touhou_BLI_show_to_all }
+		bypass = {
+			all_other_country = {
+				OR = { 
+					NOT = {original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+					exists = no
+					is_in_faction = yes
+					has_war_with = PREV 
+				}
+			}
+		}
+		available = {
+			has_war = no
+			is_subject = no
+			date > 1937.6.1
+			threat > 0.3
+			any_other_country = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				OR = { is_subject = no is_subject_of = ROOT } exists = yes
+				is_in_faction = no
+				NOT = { has_war_with = PREV }
+			}
+		}
+		x = -2
+		y = 1
+		relative_position_id = touhou_BLI_no_trouble
+		cost = 5
+		
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			 
+			add_threat = -10
+			if = {
+				limit = { is_in_faction = no }
+				set_rule = { can_create_factions = yes }
+				create_faction = All_in_touhou
+				custom_effect_tooltip = touhou_in_all_union
+			}
+			hidden_effect = {
+				every_country = {
+					limit = { 
+						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						OR = { is_subject = no is_subject_of = ROOT } exists = yes
+						NOT = { original_tag = PREV }
+						NOT = { has_war_with = PREV }
+						is_in_faction = no
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 400
+					}
+					if = { 
+						limit = {is_ai = yes } 
+						country_event = touhou_ai.2
+					}
+					else = { country_event = generic.5 }
+				}
+			}
+		}
+	}
+	focus = {#幻想乡自立结局
+		id = touhou_BLI_in_self
+		icon = touhou_in_self
+		prerequisite = { focus = touhou_BLI_in_all }
+		available = {
+			has_war = no
+			is_subject = no
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+			any_other_country = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				exists = yes
+				NOT = { is_subject_of = PREV } 
+				NOT = { is_in_faction_with = PREV }
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_BLI_in_all
+		cost = 5
+		
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			add_threat = -5
+			custom_effect_tooltip = touhou_end_war
+			custom_effect_tooltip = touhou_in_self_war
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						exists = yes
+						NOT = { original_tag = PREV }
+						NOT = { is_subject_of = PREV } 
+						NOT = { is_in_faction_with = PREV }
+					}
+					if = {
+						limit = { is_ai = yes }
+						PREV = {
+							declare_war_on = {
+								type = annex_everything
+								target = PREV
+							}
+						}
+					}
+					else = {
+						PREV = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

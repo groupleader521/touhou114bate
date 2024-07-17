@@ -1,0 +1,84 @@
+﻿add_namespace = Hak_event
+
+country_event = {
+	id = Hak_event.1
+	title = Hak_event.1.t
+	desc = Hak_event.1.d
+	picture = GFX_report_event_touhou_meet_out_people
+	
+	trigger = {
+		has_government = fascism
+		NOT = { is_in_faction_with = HAK }
+		is_neighbor_of = HAK
+		HAK = {
+			has_completed_focus = touhou_HAK_clean_envoy
+		}
+		or = {
+			tag = BLI
+			tag = HUM
+		}
+		not = {
+			has_country_flag = war_to_HAK_betrayer
+		}
+	}
+	
+	option = {
+		name = Hak_event.1.a
+		declare_war_on = {
+			target = HAK
+			type = annex_everything
+		}
+		set_country_flag = war_to_HAK_betrayer
+		ai_chance = { base = 5 }
+	}
+	option = {
+		name = Hak_event.1.b
+		
+		set_country_flag = war_to_HAK_betrayer
+		ai_chance = { base = 2 }
+	}
+}
+
+country_event = {
+	id = Hak_event.2
+	title = Hak_event.2.t
+	desc = Hak_event.2.d
+	picture = GFX_report_event_touhou_meet_out_people
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HAK
+		has_completed_focus = touhou_HAK_be_independent
+	}
+	
+	option = {
+		name = Hak_event.2.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.2
+		}
+		ai_chance = { base = 5 }
+	}
+	option = {
+		name = Hak_event.2.b
+		add_popularity = {
+			ideology = communism
+			popularity = 0.2
+		}
+		ai_chance = { base = 5 }
+	}
+	option = {
+		name = Hak_event.2.c
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.2
+		}
+		ai_chance = { base = 5 }
+	}
+	option = {
+		name = Hak_event.2.e
+		add_political_power = 15
+		ai_chance = { base = 5 }
+	}
+}

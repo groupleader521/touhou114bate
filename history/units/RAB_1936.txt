@@ -1,0 +1,124 @@
+﻿division_template = {
+	name = "水兔" 
+
+	regiments = {
+		touhou_demonforce_marine = { x = 0 y = 0 }
+		touhou_demonforce_marine = { x = 0 y = 1 }
+		touhou_demonforce_marine = { x = 0 y = 2 }
+		touhou_demonforce_marine = { x = 0 y = 3 }
+	}
+	support = {
+		rabbit_team_brigade = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "山兔" 
+
+	regiments = {
+		touhou_demonforce_mountaineers = { x = 0 y = 0 }
+		touhou_demonforce_mountaineers = { x = 0 y = 1 }
+		touhou_demonforce_mountaineers = { x = 0 y = 2 }
+		touhou_demonforce_mountaineers = { x = 0 y = 3 }
+		
+		touhou_demonforce_mountaineers = { x = 1 y = 0 }
+		touhou_demonforce_mountaineers = { x = 1 y = 1 }
+		touhou_demonforce_mountaineers = { x = 1 y = 2 }
+		touhou_demonforce_mountaineers = { x = 1 y = 3 }
+	}
+	support = {
+		rabbit_team_brigade = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "妖怪兔小队" 
+
+	regiments = {
+		touhou_demonforce_infantry = { x = 0 y = 0 }
+		touhou_demonforce_infantry = { x = 0 y = 1 }
+		touhou_demonforce_infantry = { x = 0 y = 2 }
+		touhou_demonforce_infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "妖怪兔中队" 
+
+	regiments = {
+		touhou_demonforce_infantry = { x = 0 y = 0 }
+		touhou_demonforce_infantry = { x = 0 y = 1 }
+		touhou_demonforce_infantry = { x = 0 y = 2 }
+		touhou_demonforce_infantry = { x = 0 y = 3 }
+		
+		touhou_demonforce_infantry = { x = 1 y = 0 }
+		touhou_demonforce_infantry = { x = 1 y = 1 }
+		touhou_demonforce_infantry = { x = 1 y = 2 }
+		touhou_demonforce_infantry = { x = 1 y = 3 }
+	}
+}
+division_template = {
+	name = "妖怪兔大队" 
+
+	regiments = {
+		touhou_demonforce_infantry = { x = 0 y = 0 }
+		touhou_demonforce_infantry = { x = 0 y = 1 }
+		touhou_demonforce_infantry = { x = 0 y = 2 }
+		touhou_demonforce_infantry = { x = 0 y = 3 }
+		
+		touhou_demonforce_infantry = { x = 1 y = 0 }
+		touhou_demonforce_infantry = { x = 1 y = 1 }
+		touhou_demonforce_infantry = { x = 1 y = 2 }
+		touhou_demonforce_infantry = { x = 1 y = 3 }
+		
+		touhou_demonforce_infantry = { x = 2 y = 0 }
+		touhou_demonforce_infantry = { x = 2 y = 1 }
+		touhou_demonforce_infantry = { x = 2 y = 2 }
+		touhou_demonforce_infantry = { x = 2 y = 3 }
+	}
+}
+
+##### OOB #####
+units = {
+
+	division = { 
+		name = "水兔"
+		location = 13436 
+		division_template = "水兔"
+		start_experience_factor = 0.2
+	}
+	
+	division = { 
+		name = "山兔"
+		location = 13436 
+		division_template = "山兔"
+		start_experience_factor = 0.2
+	}
+}
+air_wings = {
+	1004 = { 
+		touhou_demonforce_fighter_equipment_0 = {
+			owner = "RAB" 
+			amount = 40
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = touhou_demonforce_infantry_equipment_0
+			creator = "RAB"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = rabbit_team_equipment_0
+			creator = "RAB"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}

@@ -1,0 +1,188 @@
+leader_traits = {
+	units_human = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+		   max_dig_in_factor = 0.30
+		   dig_in_speed_factor = 0.3
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	units_marionette = {
+		type = land
+		trait_type = personality_trait
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			army_org_Factor = 0.2
+			army_morale_factor = 0.2
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	units_animal = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			no_supply_grace = 48
+			out_of_supply_factor = -0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	units_evil = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			experience_loss_factor = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	units_ghost = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			attrition = -0.05
+			terrain_penalty_reduction = 0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	units_oni = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			offence = 0.1 #unit leader scope里offence是生效的
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	units_kappa = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			amphibious_invasion = 0.3
+			amphibious_invasion_defence = 0.3
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	units_rabbit = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			special_forces_attack_factor = 0.2
+			special_forces_defence_factor = 0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	units_tengu = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			enemy_army_bonus_air_superiority_factor = -0.1
+			army_bonus_air_superiority_factor = 0.1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	units_vampire = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			land_night_attack = 0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	units_bear = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			army_org_Factor = 1
+			army_defence_factor = -0.3
+			experience_loss_factor = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	units_TTTTBD = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			supply_consumption_factor = -0.5
+			army_fuel_capacity_factor = 0.5
+			equipment_capture_factor = 0.5
+			org_loss_when_moving = -0.5
+			max_planning = -1
+			defence = -0.5
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	units_lightGod = {
+		type = land
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			supply_consumption_factor = -0.25
+			experience_loss_factor = -0.25
+			wounded_chance_factor = -1.0
+			attrition =-0.15
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}

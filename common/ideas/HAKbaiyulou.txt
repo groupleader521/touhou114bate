@@ -1,0 +1,72 @@
+ideas = {
+	country = {
+		touhou_pop_self_HAK = {
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				is_subject = no
+			}
+			
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = 6
+			}
+		}
+		touhou_HAK_fascist_influence = {
+			picture = generic_fascism_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			modifier = {
+				fascism_drift = 0.5
+			}
+		}
+		touhou_HAK_war_to_free = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				army_core_defence_factor = 0.2
+			}
+		}
+		touhou_HAK_death_army = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				army_core_defence_factor = 0.2
+				army_org_factor = 0.1
+				army_speed_factor = 0.05
+			}
+		}
+	}
+}

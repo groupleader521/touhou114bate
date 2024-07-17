@@ -1,0 +1,54 @@
+﻿add_namespace = hell
+country_event = {
+	id = hell.0
+	title = hell.0.t
+	desc = hell.0.d
+	picture = GFX_report_event_touhou_hell
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = hell.0.a
+		ai_chance = { base = 9 }
+		end_puppet = HEL
+	}
+	option = {
+		name = hell.0.b
+		ai_chance = { base = 1 }
+		end_puppet = HEL
+		declare_war_on = {
+			target = HEL
+			type = annex_everything
+		}
+	}
+}
+country_event = {
+	id = hell.1
+	title = hell.1.t
+	desc = hell.1.d
+	picture = GFX_report_event_touhou_hell
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = hell.1.a
+		ai_chance = { base = 1 }
+		HEL = { puppet = PREV }
+		every_owned_state = { add_core_of = HEL }
+	}
+	option = {
+		name = hell.1.b
+		ai_chance = { base = 9 }
+		every_owned_state = { add_core_of = HEL }
+		HEL = { 
+			declare_war_on = {
+				target = PREV
+				type = annex_everything
+			}
+			swap_ideas = {
+				remove_idea = touhou_lord_of_mountain_0
+				add_idea = touhou_lord_of_mountain_1
+			}
+		}
+	}
+}

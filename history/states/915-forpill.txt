@@ -1,0 +1,25 @@
+state={
+	id=976
+	name="STATE_LingMiao"
+	provinces={
+		13418
+	}
+	history={
+		add_core_of = DES
+		owner = DES
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+	resources = {
+		tungsten = 8
+	}
+	manpower=1000000
+	#state_category=rural
+	state_category=megalopolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

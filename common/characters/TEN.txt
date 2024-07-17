@@ -1,0 +1,120 @@
+characters = {
+	TOUHOU_Iizunamaru_Megumu = {
+		name = TOUHOU_Iizunamaru_Megumu
+		portraits = {
+			civilian = {
+				large = GFX_Iizunamaru_Megumu
+			}
+			army = {
+				large = GFX_Iizunamaru_Megumu
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = centrism
+			traits = {
+				tengu_consumer
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {
+				tengu_consumer
+			}
+		}
+		field_marshal = {
+			traits = {
+				units_tengu harsh_leader trait_mountaineer hill_fighter
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	TOUHOU_Shameimaru_Aya = {
+		name = TOUHOU_Shameimaru_Aya
+		portraits = {
+			army = {
+				large = GFX_Shameimaru_Aya
+				small = GFX_idea_tengu
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = marxism
+			traits = {
+				tengu_speed
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Shameimaru_Aya
+			slot = political_advisor
+			traits = { touhou_tengu_mobilize }
+		}
+		advisor = {
+			idea_token = TOUHOU_Shameimaru_Aya
+			slot = air_chief
+			traits = { touhou_air_air_superiority_3 }
+		}
+		advisor = {
+			idea_token = TOUHOU_Shameimaru_Aya
+			slot = high_command
+			traits = { touhou_air_chief_safety_3 }
+		}
+		corps_commander = {
+			traits = {
+				units_tengu media_personality trait_mountaineer hill_fighter
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	TOUHOU_Inubashiri_Momizi = {
+		name = TOUHOU_Inubashiri_Momizi
+		portraits = {
+			civilian = {
+				large = GFX_Inubashiri_Momizi
+			}
+			army = {
+				large = GFX_Inubashiri_Momizi
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+				tengu_defence
+			}
+		}
+		corps_commander = {
+			traits = { units_tengu trait_cautious trait_mountaineer hill_fighter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	TOUHOU_Himekaidou_Hatate = {
+		name = TOUHOU_Himekaidou_Hatate
+		portraits = {
+			army = {
+				large = GFX_Himekaidou_Hatate
+			}
+		}
+		corps_commander = {
+			traits = { units_tengu media_personality trait_mountaineer hill_fighter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}

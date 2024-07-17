@@ -1,0 +1,77 @@
+﻿capital = 999
+
+oob = "DES_1936"
+
+set_stability = 0.4 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.6
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	human_trait
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	limited_conscription
+	wakan_first_research
+	touhou_fiscal_society
+	DES_bomber_trait
+}
+
+set_technology = {
+	touhou_wakan_infantry_weapons = 1
+	touhou_wakan_gw_artillery = 1
+	touhou_wakan_early_fighter = 1
+	touhou_wakan_motorised_infantry = 1
+	tech_support = 1
+	transport = 1
+	basic_train = 1
+	desires_bomber = 1
+}
+
+give_guarantee = HUM
+
+
+
+set_convoys = 0
+set_popularities = {
+	democratic = 100
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = TOUHOU_Toyosatomimi_no_Miko
+recruit_character = TOUHOU_Mononobe_no_Futo
+recruit_character = TOUHOU_Soga_no_Toziko
+recruit_character = TOUHOU_Kaku_Seiga
+set_country_flag = touhou_country_flag_wakan_first_research
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "倾听者"
+		GFX = GFX_Toyosatomimi_no_Miko
+		traits = { operative_seducer operative_master_interrogator operative_well_groomed operative_natural_orator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { DES TEM HUM BLI }
+	}
+
+	create_operative_leader = {
+		name = "纵火者"
+		GFX = GFX_Mononobe_no_Futo
+		traits = { operative_commando operative_demolition_expert operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { DES TEN VAM TEM }
+	}
+}

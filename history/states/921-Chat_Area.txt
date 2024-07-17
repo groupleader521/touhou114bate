@@ -1,0 +1,33 @@
+state={
+	id=982
+	name="STATE_WuZhiHu"
+	provinces={
+		13386 13428
+	}
+
+	history={
+		add_core_of = EVI
+		owner = EVI
+		buildings = {
+			infrastructure = 0
+			arms_factory = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			13428 50 
+		}
+
+	}
+	resources = {
+		oil = 136
+		chromium = 35
+		tungsten = 13
+		rubber = 5
+		aluminium = 15
+	}
+	manpower=4000000
+	buildings_max_level_factor=1.000
+	#state_category=city
+	state_category=megalopolis
+	local_supplies=0.0 
+}

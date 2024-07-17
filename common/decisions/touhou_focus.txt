@@ -1,0 +1,425 @@
+touhou_devildom = {#魔神降临
+	touhou_devildom_coming = {#魔神降临
+		icon = generic_form_nation
+		fire_only_once = yes
+		allowed = {
+			original_tag = ALI
+		}
+
+		cost = 100
+		days_remove = 180
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+		}
+		
+		visible = {
+		}
+		
+		remove_effect = {
+			recruit_character = TOUHOU_Shinki
+			recruit_character = TOUHOU_Shinki_navy
+			news_event = { id = news.1035 }
+		}
+	}
+}
+touhou_diplomacy = {#幻想乡外交部
+	touhou_diplomacy_war_stop = {#幻想乡威慑
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+		
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+
+		available = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			has_completed_focus = touhou_strategy_mediate
+			has_war = no
+			any_other_country = { has_war = yes }
+		}
+
+		cost = 300
+		days_remove = 90
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = touhou_end_war
+			every_country = {
+				limit = { has_war = yes }
+				add_timed_idea = {
+					idea = touhou_deterrence
+					days = 90
+				}
+			}
+		}
+		
+		visible = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			has_completed_focus = touhou_strategy_mediate
+		}
+		
+		remove_effect = {
+		}
+	}
+	touhou_decapitation = {#斩首行动
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+		available = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			has_completed_focus = touhou_war_world
+			any_other_country = { has_war_with = PREV }
+		}
+		visible = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			has_completed_focus = touhou_war_world
+		}
+		cost = 100
+		days_remove = 60
+		complete_effect = {
+			random_other_country = {
+				limit = { has_war_with = ROOT }
+				capital_scope = {
+					create_unit = {
+						division = "name = \"斩首小队\" division_template = \"斩首小队\" start_experience_factor = 1" 
+						allow_spawning_on_enemy_provs = yes
+						count = 4
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+	touhou_d_close_action = {#极密行动
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+		
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+
+		available = {
+			any_other_country = { has_country_flag = has_visit }
+		}
+
+		cost = 300
+		days_remove = 150
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		}
+		
+		visible = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			has_completed_focus = touhou_close_action
+		}
+		
+		remove_effect = {
+			if = {
+				limit = { has_government = neutrality }
+				every_country = {
+					limit = { has_country_flag = has_visit not = { is_in_faction_with = PREV is_subject_of = PREV } }
+					start_civil_war = {
+						ideology = neutrality
+						size = 0.3
+					}
+					clr_country_flag = has_visit
+				}
+			}
+			else_if = {
+				limit = { has_government = democratic }
+				every_country = {
+					limit = { has_country_flag = has_visit not = { is_in_faction_with = PREV is_subject_of = PREV } }
+					start_civil_war = {
+						ideology = democratic
+						size = 0.3
+					}
+					clr_country_flag = has_visit
+				}
+			}
+			else_if = {
+				limit = { has_government = communism }
+				every_country = {
+					limit = { has_country_flag = has_visit not = { is_in_faction_with = PREV is_subject_of = PREV } }
+					start_civil_war = {
+						ideology = communism
+						size = 0.3
+					}
+					clr_country_flag = has_visit
+				}
+			}
+			else_if = {
+				limit = { has_government = fascism }
+				every_country = {
+					limit = { has_country_flag = has_visit not = { is_in_faction_with = PREV is_subject_of = PREV } }
+					start_civil_war = {
+						ideology = fascism
+						size = 0.3
+					}
+					clr_country_flag = has_visit
+				}
+			}
+		}
+	}
+	touhou_d_east_mystical_power = {#东方神秘力量
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+		
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+
+		available = {
+			any_other_country = { has_country_flag = has_visit }
+		}
+
+		cost = 100
+		days_remove = 90
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+			if = {
+				limit = { has_government = neutrality }
+				every_country = {
+					limit = { has_country_flag = has_visit }
+					add_timed_idea = {
+						idea = touhou_mysterious_power_n
+						days = 90
+					}
+					clr_country_flag = has_visit
+				}
+			}
+			else_if = {
+				limit = { has_government = democratic }
+				every_country = {
+					limit = { has_country_flag = has_visit }
+					add_timed_idea = {
+						idea = touhou_mysterious_power_d
+						days = 90
+					}
+					clr_country_flag = has_visit
+				}
+			}
+			else_if = {
+				limit = { has_government = communism }
+				every_country = {
+					limit = { has_country_flag = has_visit }
+					add_timed_idea = {
+						idea = touhou_mysterious_power_c
+						days = 90
+					}
+					clr_country_flag = has_visit
+				}
+			}
+			else_if = {
+				limit = { has_government = fascism }
+				every_country = {
+					limit = { has_country_flag = has_visit }
+					add_timed_idea = {
+						idea = touhou_mysterious_power_f
+						days = 90
+					}
+					clr_country_flag = has_visit
+				}
+			}
+		}
+		
+		visible = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			has_completed_focus = touhou_east_mystical_power
+		}
+		
+		remove_effect = {
+			
+		}
+	}
+	touhou_visit_USA = {#美国访问(调查)
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+		available = {
+			USA = { not = { has_country_flag = has_visit } }
+		}
+		visible = {
+			USA = { exists = yes }
+			has_completed_focus = touhou_threat_assessment
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 100
+		days_remove = 30
+		remove_effect = {
+			USA = { set_country_flag = has_visit }
+		}
+	}
+	touhou_visit_JAP = {#日本访问(调查)
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+		available = {
+			JAP = { not = { has_country_flag = has_visit } }
+		}
+		visible = {
+			JAP = { exists = yes }
+			has_completed_focus = touhou_threat_assessment
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 100
+		days_remove = 30
+		remove_effect = {
+			JAP = { set_country_flag = has_visit }
+		}
+	}	
+	touhou_visit_ENG = {#英国访问(调查)
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+		available = {
+			ENG = { not = { has_country_flag = has_visit } }
+		}
+		visible = {
+			ENG = { exists = yes }
+			has_completed_focus = touhou_threat_assessment
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 100
+		days_remove = 30
+		remove_effect = {
+			ENG = { set_country_flag = has_visit }
+		}
+	}
+	touhou_visit_FRA = {#法国访问(调查)
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+		available = {
+			FRA = { not = { has_country_flag = has_visit } }
+		}
+		visible = {
+			FRA = { exists = yes }
+			has_completed_focus = touhou_threat_assessment
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 100
+		days_remove = 30
+		remove_effect = {
+			FRA = { set_country_flag = has_visit }
+		}
+	}
+	touhou_visit_GER = {#德国问(调查)
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+		available = {
+			GER = { not = { has_country_flag = has_visit } }
+		}
+		visible = {
+			GER = { exists = yes }
+			has_completed_focus = touhou_threat_assessment
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 100
+		days_remove = 30
+		remove_effect = {
+			GER = { set_country_flag = has_visit }
+		}
+	}
+	touhou_visit_ITA = {#意大利访问(调查)
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+		available = {
+			ITA = { not = { has_country_flag = has_visit } }
+		}
+		visible = {
+			ITA = { exists = yes }
+			has_completed_focus = touhou_threat_assessment
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 100
+		days_remove = 30
+		remove_effect = {
+			ITA = { set_country_flag = has_visit }
+		}
+	}
+	touhou_visit_SOV = {#苏联访问(调查)
+		icon = generic_prepare_civil_war
+		fire_only_once = no
+
+		allowed = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+		available = {
+			SOV = { not = { has_country_flag = has_visit } }
+		}
+		visible = {
+			SOV = { exists = yes }
+			has_completed_focus = touhou_threat_assessment
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 100
+		days_remove = 30
+		remove_effect = {
+			SOV = { set_country_flag = has_visit }
+		}
+	}						
+}

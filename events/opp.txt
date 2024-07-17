@@ -1,0 +1,20 @@
+﻿add_namespace = opposite
+country_event = {
+	id = opposite.0
+	title = opposite.0.t
+	desc = opposite.0.d
+	picture = GFX_report_event_touhou_opp
+	is_triggered_only = yes
+	trigger = {
+		NOT = { is_subject_of = OPP }
+	}
+	option = {
+		name = opposite.0.a
+		ai_chance = { base = 1 }
+		OPP = { puppet = PREV }
+	}
+	option = {
+		name = opposite.0.b
+		ai_chance = { base = 9 }
+	}
+}

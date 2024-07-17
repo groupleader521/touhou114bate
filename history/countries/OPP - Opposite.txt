@@ -1,0 +1,78 @@
+﻿capital = 998
+
+oob = "OPP_1936"
+
+set_stability = 0.7 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.2
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	ghost_trait
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	limited_conscription
+	demonforce_first_research
+	touhou_fiscal_flexibility
+    die_trait 
+}
+
+set_technology = {
+	touhou_demonforce_infantry_weapons = 1
+	touhou_demonforce_early_fighter = 1
+	touhou_demonforce_interwar_antitank = 1
+	touhou_demonforce_interwar_antiair = 1
+	tech_support = 1
+	transport = 1
+	basic_train = 1
+	die = 1
+}
+
+
+
+set_autonomy = {
+	target = HAK
+	autonomous_state =  autonomy_puppet
+}
+
+set_convoys = 0
+set_popularities = {
+	communism = 100
+}
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = TOUHOU_Shikieiki_Yamaxanadu
+recruit_character = TOUHOU_Onozuka_Komachi
+set_country_flag = touhou_country_flag_demonforce_first_research
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "业镜"
+		GFX = GFX_Shikieiki_Yamaxanadu
+		traits = { operative_escape_artist operative_master_interrogator operative_natural_orator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { OPP TEN HUM VAM }
+	}
+
+	create_operative_leader = {
+		name = "记录死神"
+		GFX = GFX_Shikieiki_Yamaxanadu
+		traits = { operative_escape_artist operative_infiltrator operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { OPP HEL DLD HAK }
+	}
+}

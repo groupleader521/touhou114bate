@@ -1,0 +1,256 @@
+ideas = {
+	country = {
+		touhou_difficult_problem_government = {#政府debuff
+			picture = fantasy_government
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.2
+				justify_war_goal_time = 0.2
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+
+		touhou_difficult_problem_produce = {#生产debuff
+			picture = fantasy_industry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = -0.2
+			}
+		}
+
+		touhou_difficult_problem_research = {#科研debuff
+			picture = fantasy_research
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.3
+			}
+		}
+		touhou_difficult_problem_army = {#陆军debuff
+			picture = fantasy_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				defence = -0.1
+				breakthrough = -0.1
+				offence = -0.1
+			}
+		}
+		touhou_difficult_problem_navy = {#海军debuff
+			picture = MTG_naval_treaty_adherent
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				positioning = -0.5
+			}
+		}
+		touhou_difficult_problem_air = {#空军debuff
+			picture = SOV_ground_based_training
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				air_mission_efficiency = -0.2
+			}
+		}
+		touhou_difficult_problem_jap = {#日本进攻幻想乡
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			on_remove = {
+				declare_war_on = {
+					target = ALI
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = DES
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = HAK
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = DLD
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = HEL
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = SSS
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = OPP
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = RAB
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = TEM
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = BLI
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = KAP
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = TEN
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = HUM
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = VAM
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = MLS
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = EVI
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+		touhou_difficult_problem_sov = {#苏联进攻幻想乡
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			on_remove = {
+				declare_war_on = {
+					target = ALI
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = DES
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = HAK
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = DLD
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = HEL
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = SSS
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = OPP
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = RAB
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = TEM
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = BLI
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = KAP
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = TEN
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = HUM
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = VAM
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = MLS
+					type = puppet_wargoal_focus
+				}
+				declare_war_on = {
+					target = EVI
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+		touhou_difficult_problem_jswar = {#全tm干爆口牙
+			picture = chi_war_of_resistance
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				defence = 0.2
+				breakthrough = 0.2
+				offence = 0.2
+			}
+		}
+	}
+}

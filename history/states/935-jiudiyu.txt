@@ -1,0 +1,29 @@
+state={
+	id=996
+	name="STATE_JiuDu"
+	provinces={
+		13509 13480 13470 13544 13545 
+	}
+
+	history={
+		add_core_of = HEL
+		owner = HEL
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = {
+			13470 50 
+		}
+	}
+	resources = {
+		steel = 40
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	#state_category=city
+	state_category=megalopolis
+	local_supplies=0.0 
+}

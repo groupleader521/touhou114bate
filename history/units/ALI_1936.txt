@@ -1,0 +1,94 @@
+﻿division_template = {
+	name = "步战人偶卫队" 
+
+	regiments = {
+		touhou_magic_infantry = { x = 0 y = 0 }
+		touhou_magic_infantry = { x = 0 y = 1 }
+		touhou_magic_infantry = { x = 0 y = 2 }
+		touhou_magic_infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "步战人偶中队" 
+
+	regiments = {
+		touhou_magic_infantry = { x = 0 y = 0 }
+		touhou_magic_infantry = { x = 0 y = 1 }
+		touhou_magic_infantry = { x = 0 y = 2 }
+		touhou_magic_infantry = { x = 0 y = 3 }
+
+		touhou_magic_infantry = { x = 1 y = 0 }
+		touhou_magic_infantry = { x = 1 y = 1 }
+		touhou_magic_infantry = { x = 1 y = 2 }
+		touhou_magic_infantry = { x = 1 y = 3 }
+	}
+}
+division_template = {
+	name = "步战人偶大队" 
+
+	regiments = {
+		touhou_magic_infantry = { x = 0 y = 0 }
+		touhou_magic_infantry = { x = 0 y = 1 }
+		touhou_magic_infantry = { x = 0 y = 2 }
+		touhou_magic_infantry = { x = 0 y = 3 }
+		
+		touhou_magic_infantry = { x = 1 y = 0 }
+		touhou_magic_infantry = { x = 1 y = 1 }
+		touhou_magic_infantry = { x = 1 y = 2 }
+		touhou_magic_infantry = { x = 1 y = 3 }
+		
+		touhou_magic_infantry = { x = 2 y = 0 }
+		touhou_magic_infantry = { x = 2 y = 1 }
+		touhou_magic_infantry = { x = 2 y = 2 }
+		touhou_magic_infantry = { x = 2 y = 3 }
+	}
+}
+division_template = {
+	name = "高速人偶卫队" 
+
+	regiments = {
+		touhou_magic_light_armor = { x = 0 y = 0 }
+		touhou_magic_light_armor = { x = 0 y = 1 }
+		touhou_magic_light_armor = { x = 0 y = 2 }
+		touhou_magic_light_armor = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "歌利亚战团"
+
+	regiments = {
+		goliath_brigade = { x = 0 y = 0 }
+		goliath_brigade = { x = 0 y = 1 }
+	}
+}
+##### OOB #####
+units = {
+    
+}
+
+air_wings = {
+	994 = { 
+		suicide_puppet_equipment_2 = {
+			owner = "ALI" 
+			amount = 10
+		}
+
+		suicide_puppet_equipment_2 =  {
+			owner = "ALI" 
+			amount = 10
+		}
+	}
+}
+
+instant_effect = 
+{
+	add_equipment_production = {
+		equipment = {
+			type = touhou_magic_light_tank_equipment_1
+			creator = "ALI"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+}

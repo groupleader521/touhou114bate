@@ -1,0 +1,307 @@
+﻿add_namespace = molisha
+country_event = {#开始
+	id = molisha.0
+	title = molisha.0.t
+	desc = molisha.0.d
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_mls
+	trigger = {
+		original_tag = MLS
+	}
+	
+	option = {
+		name = molisha.0.a
+		hidden_effect = {
+			country_event = { id = molisha.1 days = 30 random_days = 10 }
+		}
+	}
+}
+country_event = {#不被承认者
+	id = molisha.1
+	title = molisha.1.t
+	desc = molisha.1.d
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_mls
+	trigger = {
+		original_tag = MLS
+	}
+	option = {
+		name = molisha.1.a
+		add_ideas = not_recognized_trait
+		hidden_effect = {
+			country_event = { id = molisha.2 days = 90  random_days = 10 }
+		}
+	}
+}
+country_event = {#不被承认者扩大
+	id = molisha.2
+	title = molisha.2.t
+	desc = molisha.2.d
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_mls
+	trigger = {
+		original_tag = MLS
+	}
+	option = {
+		name = molisha.2.a
+		swap_ideas = {
+			remove_idea = not_recognized_trait
+			add_idea = not_recognized_trait_2
+		}
+		hidden_effect = {
+			country_event = { id = molisha.3 days = 90  random_days = 10 }
+		}
+	}
+}
+country_event = {#双方伸出“援手”
+	id = molisha.3
+	title = molisha.3.t
+	desc = molisha.3.d
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_mls
+	trigger = {
+		original_tag = MLS
+	}
+	immediate = {
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = not_recognized_trait_2
+				add_idea = not_recognized_more_trait
+			}
+		}
+	}
+	option = {
+		name = molisha.3.a
+		hidden_effect = {
+			set_country_flag = choice_human
+			country_event = { id = molisha.4 }
+		}
+	}
+	option = {
+		name = molisha.3.b
+		hidden_effect = {
+			set_country_flag = choice_monster
+			country_event = { id = molisha.5 }
+		}
+	}
+	option = {
+		name = molisha.3.c
+		hidden_effect = {
+			country_event = { id = molisha.6 days = 360 random_days = 30 }
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+	}
+}
+country_event = {#选择人类
+	id = molisha.4
+	title = molisha.4.t
+	desc = molisha.4.d
+	fire_only_once = yes
+	picture = GFX_report_event_touhou_politica_human
+	trigger = {
+		original_tag = MLS
+		has_idea = not_recognized_more_trait
+		OR = {
+			has_government = democratic
+			has_country_flag = choice_human
+		}
+	}
+	option = {
+		name = molisha.4.a
+		remove_ideas = not_recognized_more_trait
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.8
+		}
+		if = {
+			limit = { NOT = { has_government = democratic } }
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		}
+		add_ideas = touhou_democratic_influence
+		add_manpower = 50000
+		add_equipment_to_stockpile = { type = touhou_magic_light_tank_equipment_1 amount = 200 producer = ALI }
+		add_equipment_to_stockpile = { type = touhou_wakan_motorized_equipment_1 amount = 500 producer = TEM }
+		add_equipment_to_stockpile = { type = touhou_wakan_artillery_equipment_1 amount = 300 producer = DES }
+		add_equipment_to_stockpile = { type = touhou_wakan_infantry_equipment_0 amount = 3000 producer = BLI }
+		add_equipment_to_stockpile = { type = touhou_support_equipment_1 amount = 500 producer = SSS }
+		hidden_effect = {
+			country_event = { id = molisha.41 random_days = 5 }
+			country_event = { id = molisha.42 random_days = 5 }
+			country_event = { id = molisha.43 random_days = 5 }
+		}
+	}
+}
+country_event = {#选择人类，人类方
+	id = molisha.41
+	title = molisha.41.t
+	desc = molisha.41.d
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_politica_human
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		has_government = democratic
+	}
+	option = {
+		name = molisha.41.a
+		add_opinion_modifier = { target = MLS modifier = human_molisha_human }
+	}
+}
+country_event = {#选择人类，妖怪方
+	id = molisha.42
+	title = molisha.42.t
+	desc = molisha.42.d
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_politica_human
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		has_government = communism
+	}
+	option = {
+		name = molisha.42.a
+		add_opinion_modifier = { target = MLS modifier = moster_molisha_human }
+	}
+}
+country_event = {#平等方
+	id = molisha.43
+	title = molisha.43.t
+	desc = molisha.43.d
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_politica_monster
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		has_government = communism
+	}
+	option = {
+		name = molisha.43.a
+		add_opinion_modifier = { target = MLS modifier = equal_molisha }
+	}
+}
+country_event = {#选择妖怪
+	id = molisha.5
+	title = molisha.5.t
+	desc = molisha.5.d
+	picture = GFX_report_event_touhou_politica_monster
+	fire_only_once = yes
+	trigger = {
+		original_tag = MLS
+		has_idea = not_recognized_more_trait
+		OR = {
+			has_government = fascism
+			has_country_flag = choice_monster
+		}
+	}
+	option = {
+		name = molisha.5.a
+		remove_ideas = not_recognized_more_trait
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.8
+		}
+		if = {
+			limit = { NOT = { has_government = fascism } }
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+		add_ideas = touhou_fascist_influence
+		add_manpower = 50000
+		add_equipment_to_stockpile = { type = touhou_magic_light_tank_equipment_1 amount = 200 producer = ALI }
+		add_equipment_to_stockpile = { type = touhou_demonforce_heavy_tank_equipment_1 amount = 30 producer = KAP }
+		add_equipment_to_stockpile = { type = touhou_demonforce_fighter_equipment_0 amount = 100 producer = TEN }
+		add_equipment_to_stockpile = { type = touhou_magic_infantry_equipment_0 amount = 3000 producer = VAM }
+		add_equipment_to_stockpile = { type = touhou_support_equipment_1 amount = 500 producer = RAB }
+		hidden_effect = {
+			country_event = { id = molisha.51 random_days = 5 }
+			country_event = { id = molisha.52 random_days = 5 }
+			country_event = { id = molisha.43 random_days = 5 }
+		}
+	}
+}
+country_event = {#选择妖怪，人类方
+	id = molisha.51
+	title = molisha.51.t
+	desc = molisha.51.d
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_politica_monster
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		has_government = democratic
+	}
+	option = {
+		name = molisha.51.a
+		add_opinion_modifier = { target = MLS modifier = human_molisha_moster }
+	}
+}
+country_event = {#选择妖怪，妖怪方
+	id = molisha.52
+	title = molisha.52.t
+	desc = molisha.52.d
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_politica_monster
+	trigger = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		has_government = communism
+	}
+	option = {
+		name = molisha.52.a
+		add_opinion_modifier = { target = MLS modifier = moster_molisha_moster }
+	}
+}
+country_event = {#坚持到底
+	id = molisha.6
+	title = molisha.6.t
+	desc = molisha.6.d
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_mls
+	trigger = {
+		original_tag = MLS
+		has_government = communism
+		has_idea = not_recognized_more_trait
+	}
+	option = {
+		name = molisha.6.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.8
+		}
+		swap_ideas = {
+			remove_idea = not_recognized_more_trait
+			add_idea = not_recognized_brave_trait
+		}
+		add_ideas = touhou_communist_influence
+		add_manpower = 200000
+		add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 1000 producer = ALI }
+	}
+}
+country_event = {
+	id = molisha.7
+	title = molisha.7.t
+	desc = molisha.7.d
+	picture = GFX_report_event_touhou_mls_out
+	is_triggered_only = yes
+	trigger = {
+		NOT = { is_subject_of = MLS }
+	}
+	option = {
+		name = molisha.7.a
+		ai_chance = { base = 0 }
+		every_unit_leader = {
+			set_nationality = MLS
+		}
+	}
+	option = {
+		name = molisha.7.b
+		ai_chance = { base = 1 }
+		declare_war_on = {
+			type = annex_everything
+			target = MLS
+		}
+	}
+}

@@ -1,0 +1,78 @@
+﻿capital = 1004
+
+oob = "RAB_1936"
+
+set_stability = 0.4 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.8
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	RAB_rabbit_trait
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	limited_conscription
+	demonforce_first_research
+	touhou_fiscal_flexibility
+    rabbit_team_trait
+}
+
+set_technology = {
+	touhou_demonforce_infantry_weapons = 1
+	touhou_demonforce_early_fighter = 1
+	touhou_demonforce_marines = 1
+	touhou_demonforce_tech_mountaineers = 1
+	tech_support = 1
+	transport = 1
+	basic_train = 1
+	rabbit_team = 1
+}
+
+
+
+set_convoys = 0
+set_popularities = {
+	neutrality = 60
+	communism = 15
+	fascism = 15
+	democratic = 10
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = TOUHOU_Houraisan_Kaguya
+recruit_character = TOUHOU_Yagokoro_Eirin
+recruit_character = TOUHOU_Reisen_Udongein_Inaba
+recruit_character = TOUHOU_Inaba_Tewi
+set_country_flag = touhou_country_flag_demonforce_first_research
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "月兔先生"
+		GFX = GFX_Reisen_Udongein_Inaba
+		traits = { operative_escape_artist operative_commando operative_infiltrator operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { RAB }
+	}
+
+	create_operative_leader = {
+		name = "地兔先生"
+		GFX = GFX_Tewi_Inaba
+		traits = { operative_escape_artist operative_commando operative_safe_cracker operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { RAB ALI HUM MLS }
+	}
+}

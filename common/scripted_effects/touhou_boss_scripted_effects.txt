@@ -1,0 +1,591 @@
+#魔界先遣部队
+touhou_boss_effect_1 = {
+	hidden_effect = {
+		touhou_boss_get_tech_effect_1 = yes
+		touhou_boss_get_army_effect_1 = yes
+		#touhou_boss_get_industry_effect_1 = yes
+	}
+}
+
+touhou_boss_get_tech_effect_1 = {
+	set_technology = { infantry_weapons1 = 1 }
+	set_technology = { infantry_weapons2 = 1 }
+	set_technology = { support_weapons = 1 }
+	set_technology = { support_weapons2 = 1 }
+
+	set_technology = { gw_artillery = 1 }
+	set_technology = { interwar_artillery = 1 }
+	set_technology = { interwar_antiair = 1 }
+	set_technology = { interwar_antitank = 1 }
+
+	set_technology = { tech_support = 1 }
+	set_technology = { motorised_infantry = 1 }
+	set_technology = { tech_engineers = 1 }
+	set_technology = { tech_signal_company = 1 }
+	set_technology = { tech_field_hospital = 1 }
+	set_technology = { tech_logistics_company = 1 }
+	set_technology = { tech_maintenance_company = 1 }
+
+	set_technology = { fighter1 = 1 }
+	set_technology = { cv_fighter1 = 1 }
+	set_technology = { CAS1 = 1 }
+	set_technology = { cv_CAS1 = 1 }
+	set_technology = { naval_bomber1 = 1 }	
+	set_technology = { cv_naval_bomber1 = 1 }
+	set_technology = { heavy_fighter1 = 1 }
+	set_technology = { tactical_bomber1 = 1 }
+	set_technology = { strategic_bomber1 = 1 }
+
+	set_technology = { advanced_fire_control_system = 1 }
+	set_technology = { improved_sonar = 1 }
+	set_technology = { advanced_centimetric_radar = 1 }
+	set_technology = { improved_submarine_snorkel = 1 }
+	set_technology = { advanced_ship_hull_light = 1 }
+	set_technology = { advanced_ship_hull_cruiser = 1 }
+	set_technology = { advanced_ship_hull_heavy = 1 }
+	set_technology = { advanced_ship_hull_carrier = 1 }
+	set_technology = { advanced_ship_hull_submarine = 1 }
+	set_technology = { advanced_destroyer = 1 }
+	set_technology = { advanced_light_cruiser = 1 }
+	set_technology = { advanced_heavy_cruiser = 1 }
+	set_technology = { advanced_battleship = 1 }
+	set_technology = { advanced_carrier = 1 }
+	set_technology = { advanced_submarine = 1 }
+	set_technology = { transport = 1 }
+	set_technology = { landing_craft = 1 }	
+	set_technology = { tank_landing_craft = 1 }	
+}
+
+touhou_boss_get_army_effect_1 = {
+	division_template = {
+		name = "魔界先遣部队"
+		is_locked = yes
+		force_allow_recruiting = no #这个东西只有在“is_locked = yes”才有效
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 0 y = 3 }
+			infantry = { x = 0 y = 4 }
+
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 1 y = 3 }
+			infantry = { x = 1 y = 4 }
+
+			artillery_brigade = { x = 2 y = 0 }
+			artillery_brigade = { x = 2 y = 1 }
+			artillery_brigade = { x = 2 y = 2 }
+			artillery_brigade = { x = 2 y = 3 }
+			artillery_brigade = { x = 2 y = 4 }
+
+			artillery_brigade = { x = 3 y = 0 }
+			artillery_brigade = { x = 3 y = 1 }
+			anti_air_brigade = { x = 3 y = 2 }
+			anti_air_brigade = { x = 3 y = 3 }
+			anti_air_brigade = { x = 3 y = 4 }
+
+			anti_tank_brigade = { x = 4 y = 0 }
+			anti_tank_brigade = { x = 4 y = 1 }
+			anti_tank_brigade = { x = 4 y = 2 }
+			anti_tank_brigade = { x = 4 y = 3 }
+			anti_tank_brigade = { x = 4 y = 4 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			signal_company = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			logistics_company = { x = 0 y = 3 }
+			maintenance_company = { x = 0 y = 4 }
+		}
+	}
+
+	capital_scope = {
+		create_unit = {
+			division = "name = \"魔界先遣部队\" division_template = \"魔界先遣部队\" start_experience_factor = 0.5"
+			owner = ROOT
+			count = 200
+		}
+	}
+	every_state = {
+		limit = {
+			is_controlled_by_ROOT_or_subject = yes
+		}
+		create_unit = {
+			division = "name = \"魔界先遣部队\" division_template = \"魔界先遣部队\" start_experience_factor = 0.5"
+			owner = ROOT
+			count = 5
+		}
+	}
+	#土地有控制者和所有者两个属性。
+	#控制者表示当前是谁控制，此属性由战争中的进攻和撤退改变。比如，德国进攻波兰获胜，波兰土地的控制者就是德国。
+	#所有者表示土地原先的、按照协议的主人，由和平会议改变。比如，德国进攻波兰获胜，虽然波兰土地的所有者仍然是波兰。	
+}	
+
+#touhou_boss_get_industry_effect_1 = {
+	#modify_building_resources = {
+		#注意，这个功能是开启“金龙报喜”后才能生效的
+		#因为这个effect只能改变建筑原本就能改变的资源，比如炼油厂加橡胶
+		#原版炼油厂已经不加“oil”了，
+	#	building = synthetic_refinery
+	#	resource = oil
+	#	amount = 10
+	#}
+	#add_offsite_building = { type = synthetic_refinery level = 1000 }
+	#魔界油不够，本来我想加虚空石油，结果可以直接加虚空燃油，这里是加虚空资源的一个范例
+#}
+
+#魔界降临后的变身
+touhou_boss_initialize_effect = { 
+	hidden_effect = {
+		set_cosmetic_tag = TOUHOU_DEVILDOM
+		every_state = { add_core_of = ROOT }
+		touhou_boss_get_characters_effect = yes
+		touhou_boss_get_tech_effect = yes
+		touhou_boss_update_tech_effect = yes
+		touhou_boss_get_army_effect = yes
+		touhou_boss_get_industry_effect = yes
+		activate_mission = touhou_mission_god_of_makai_amry
+	}
+}
+
+touhou_boss_get_tech_effect = {
+	set_technology = { super_heavy_tank = 1 }
+	set_technology = { super_heavy_td = 1 }
+	set_technology = { super_heavy_art = 1 }
+	set_technology = { super_heavy_spaa = 1 }
+	set_technology = { tech_support = 1 }
+	set_technology = { motorised_infantry = 1 }
+	set_technology = { tech_engineers = 1 }
+	set_technology = { tech_signal_company = 1 }
+	set_technology = { tech_field_hospital = 1 }
+	set_technology = { tech_logistics_company = 1 }
+	set_technology = { tech_maintenance_company = 1 }
+
+	set_technology = { fighter2 = 1 }
+	set_technology = { cv_fighter2 = 1 }
+	set_technology = { CAS2 = 1 }
+	set_technology = { cv_CAS2 = 1 }
+	set_technology = { naval_bomber2 = 1 }	
+	set_technology = { cv_naval_bomber2 = 1 }
+	set_technology = { heavy_fighter2 = 1 }
+	set_technology = { tactical_bomber2 = 1 }
+	set_technology = { strategic_bomber2 = 1 }
+}
+
+touhou_boss_update_tech_effect = {
+	set_technology = { improved_infantry_weapons = 1 }
+	set_technology = { improved_infantry_weapons_2 = 1 }
+	set_technology = { support_weapons3 = 1 }
+
+	set_technology = { artillery1 = 1 }
+	set_technology = { artillery2 = 1 }
+	set_technology = { antiair1 = 1 }
+	set_technology = { antiair2 = 1 }
+	set_technology = { antitank1 = 1 }
+	set_technology = { antitank2 = 1 }	
+
+	set_technology = { tech_engineers2 = 1 }
+	set_technology = { tech_signal_company2 = 1 }
+	set_technology = { tech_field_hospital2 = 1 }
+	set_technology = { tech_logistics_company2 = 1 }
+	set_technology = { tech_maintenance_company2 = 1 }
+}
+
+touhou_boss_get_army_effect = {
+	division_template = {
+		name = "魔界突击部队"
+		is_locked = yes
+		force_allow_recruiting = no
+		regiments = {
+			touhou_boss_army = { x = 0 y = 0 }
+			touhou_boss_army = { x = 0 y = 1 }
+			touhou_boss_army = { x = 0 y = 2 }
+			touhou_boss_army = { x = 0 y = 3 }
+			touhou_boss_army = { x = 0 y = 4 }
+
+			touhou_boss_army = { x = 1 y = 0 }
+			touhou_boss_army = { x = 1 y = 1 }
+			touhou_boss_army = { x = 1 y = 2 }
+			touhou_boss_army = { x = 1 y = 3 }
+			touhou_boss_army = { x = 1 y = 4 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			signal_company = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			logistics_company = { x = 0 y = 3 }
+			maintenance_company = { x = 0 y = 4 }
+		}
+	}
+	
+	capital_scope = {
+		create_unit = {
+			division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
+			owner = ROOT
+			count = 80
+		}
+	}	
+	every_state = {
+		limit = {
+			is_controlled_by_ROOT_or_subject = yes
+		}
+		create_unit = {
+			division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
+			owner = ROOT
+			count = 3
+		}
+	}
+}
+
+touhou_boss_get_characters_effect = {
+	recruit_character = TOUHOU_boss_shinki_leader
+	add_country_leader_role = {#保证神琦可以成为黑色任何一个自意识形态的领导人,其他方法均不如此法高效
+		character = TOUHOU_boss_shinki_leader
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = rexism
+		}
+		promote_leader = yes
+	}
+	add_country_leader_role = {
+		character = TOUHOU_boss_shinki_leader
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = nazism
+		}
+		promote_leader = yes
+	}
+	add_country_leader_role = {
+		character = TOUHOU_boss_shinki_leader
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = gen_nazism
+		}
+		promote_leader = yes
+	}
+	add_country_leader_role = {
+		character = TOUHOU_boss_shinki_leader
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+		}
+		promote_leader = yes
+	}
+	add_country_leader_role = {
+		character = TOUHOU_boss_shinki_leader
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = falangism
+		}
+		promote_leader = yes
+	}
+	set_politics = {
+		ruling_party = fascism
+	}
+	add_popularity = {
+		ideology = fascism
+		popularity = 100
+	}
+	add_stability = 1
+	add_war_support = 1
+	#enable_subunits = { touhou_boss_army } 只能在科技中激活units
+	recruit_character = touhou_boss_shinki_commander_0
+	recruit_character = touhou_boss_shinki_commander_1
+	recruit_character = touhou_boss_shinki_commander_2
+	recruit_character = touhou_boss_shinki_commander_3
+	recruit_character = touhou_boss_shinki_commander_4
+	recruit_character = touhou_boss_shinki_commander_5
+	recruit_character = touhou_boss_shinki_commander_6
+	recruit_character = touhou_boss_shinki_commander_7
+	recruit_character = touhou_boss_shinki_commander_8
+	recruit_character = touhou_boss_shinki_commander_9
+	recruit_character = touhou_boss_shinki_commander_a
+	recruit_character = touhou_boss_shinki_commander_b
+	recruit_character = touhou_boss_shinki_commander_c
+	recruit_character = touhou_boss_shinki_commander_d
+	recruit_character = touhou_boss_shinki_commander_e
+	recruit_character = touhou_boss_shinki_commander_f
+	
+	recruit_character = touhou_boss_shinki_navy_0
+	recruit_character = touhou_boss_shinki_navy_1
+	recruit_character = touhou_boss_shinki_navy_2
+	recruit_character = touhou_boss_shinki_navy_3
+}
+
+touhou_boss_get_industry_effect = {
+	add_offsite_building = { type = arms_factory level = 2000 }
+	add_offsite_building = { type = dockyard level = 200 }	
+}
+
+#魔界第二阶段
+touhou_boss_effect_2 = {
+	hidden_effect = {
+		touhou_boss_get_tech_effect_2 = yes
+		touhou_boss_update_tech_effect_2 = yes
+		touhou_boss_get_army_effect_2 = yes
+		touhou_boss_get_characters_effect = yes
+	}
+}
+
+touhou_boss_get_tech_effect_2 = {
+	set_technology = { mechanised_infantry2 = 1 }
+	set_technology = { main_battle_tank = 1 }
+	set_technology = { modern_td = 1 }
+	set_technology = { modern_art = 1 }
+	set_technology = { modern_spaa = 1 }
+	set_technology = { tech_support = 1 }
+	set_technology = { motorised_infantry = 1 }
+	set_technology = { tech_engineers = 1 }
+	set_technology = { tech_signal_company = 1 }
+	set_technology = { tech_field_hospital = 1 }
+	set_technology = { tech_logistics_company = 1 }
+	set_technology = { tech_maintenance_company = 1 }
+
+	set_technology = { fighter3 = 1 }
+	set_technology = { cv_fighter3 = 1 }
+	set_technology = { CAS3 = 1 }
+	set_technology = { cv_CAS3 = 1 }
+	set_technology = { naval_bomber3 = 1 }	
+	set_technology = { cv_naval_bomber3 = 1 }
+	set_technology = { heavy_fighter3 = 1 }
+	set_technology = { tactical_bomber3 = 1 }
+	set_technology = { strategic_bomber3 = 1 }
+}
+
+touhou_boss_update_tech_effect_2 = {
+	set_technology = { advanced_infantry_weapons = 1 }
+	set_technology = { infantry_at = 1 }
+	set_technology = { support_weapons4 = 1 }
+
+	set_technology = { artillery3 = 1 }
+	set_technology = { artillery4 = 1 }
+	set_technology = { antiair3 = 1 }
+	set_technology = { antiair4 = 1 }
+	set_technology = { antitank3 = 1 }
+	set_technology = { antitank4 = 1 }
+
+	set_technology = { tech_engineers3 = 1 }
+	set_technology = { tech_signal_company3 = 1 }
+	set_technology = { tech_field_hospital3 = 1 }
+	set_technology = { tech_logistics_company3 = 1 }
+	set_technology = { tech_maintenance_company3 = 1 }
+}
+
+touhou_boss_get_army_effect_2 = {
+	division_template = {
+		name = "魔界主力部队"
+		is_locked = yes
+		force_allow_recruiting = no
+		regiments = {
+			mechanized = { x = 0 y = 0 }
+			mechanized = { x = 0 y = 1 }
+			mechanized = { x = 0 y = 2 }
+			mechanized = { x = 0 y = 3 }
+			mechanized = { x = 0 y = 4 }
+
+			modern_tank_destroyer_brigade = { x = 1 y = 0 }
+			modern_tank_destroyer_brigade = { x = 1 y = 1 }
+			modern_tank_destroyer_brigade = { x = 1 y = 2 }
+			modern_tank_destroyer_brigade = { x = 1 y = 3 }
+			modern_tank_destroyer_brigade = { x = 1 y = 4 }
+
+			modern_tank_destroyer_brigade = { x = 2 y = 0 }
+			modern_tank_destroyer_brigade = { x = 2 y = 1 }
+			modern_tank_destroyer_brigade = { x = 2 y = 2 }
+			modern_tank_destroyer_brigade = { x = 2 y = 3 }
+			modern_tank_destroyer_brigade = { x = 2 y = 4 }
+
+			modern_sp_artillery_brigade = { x = 3 y = 0 }
+			modern_sp_artillery_brigade = { x = 3 y = 1 }
+			modern_sp_artillery_brigade = { x = 3 y = 2 }
+			modern_sp_artillery_brigade = { x = 3 y = 3 }
+			modern_sp_artillery_brigade = { x = 3 y = 4 }
+
+			modern_sp_anti_air_brigade = { x = 4 y = 0 }
+			modern_sp_anti_air_brigade = { x = 4 y = 1 }
+			modern_sp_anti_air_brigade = { x = 4 y = 2 }
+			modern_sp_anti_air_brigade = { x = 4 y = 3 }
+			modern_sp_anti_air_brigade = { x = 4 y = 4 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			signal_company = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			logistics_company = { x = 0 y = 3 }
+			maintenance_company = { x = 0 y = 4 }
+		}
+	}
+	
+	capital_scope = {
+		create_unit = {
+			division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75"
+			owner = ROOT
+			count = 150
+		}
+	}		
+	every_state = {
+		limit = {
+			is_controlled_by_ROOT_or_subject = yes
+		}
+		create_unit = {
+			division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75"
+			owner = ROOT
+			count = 2
+		}
+	}
+}
+
+#魔界最终阶段
+touhou_boss_effect_3 = {
+	hidden_effect = {
+		touhou_boss_get_tech_effect_3 = yes
+		touhou_boss_update_tech_effect_3 = yes
+		touhou_boss_get_army_effect_3 = yes
+		touhou_boss_get_characters_effect = yes
+	}
+}
+
+touhou_boss_get_tech_effect_3 = {
+	set_technology = { super_heavy_tank = 1 }
+	set_technology = { super_heavy_td = 1 }
+	set_technology = { super_heavy_art = 1 }
+	set_technology = { super_heavy_spaa = 1 }
+	set_technology = { tech_support = 1 }
+	set_technology = { motorised_infantry = 1 }
+	set_technology = { tech_engineers = 1 }
+	set_technology = { tech_signal_company = 1 }
+	set_technology = { tech_field_hospital = 1 }
+	set_technology = { tech_logistics_company = 1 }
+	set_technology = { tech_maintenance_company = 1 }
+
+	set_technology = { jet_fighter2 = 1 }
+	set_technology = { jet_tactical_bomber2 = 1 }
+	set_technology = { jet_strategic_bomber1 = 1 }		
+}
+
+touhou_boss_update_tech_effect_3 = {
+	set_technology = { advanced_infantry_weapons2 = 1 }
+	set_technology = { infantry_at2 = 1 }
+	set_technology = { night_vision = 1 }
+	set_technology = { night_vision2 = 1 }
+
+	set_technology = { artillery5 = 1 }
+	set_technology = { antiair5 = 1 }
+	set_technology = { antitank5 = 1 }
+
+	set_technology = { tech_engineers4 = 1 }
+	set_technology = { tech_signal_company4 = 1 }
+	set_technology = { tech_field_hospital4 = 1 }
+	set_technology = { tech_logistics_company4 = 1 }
+	set_technology = { tech_maintenance_company4 = 1 }
+}
+
+touhou_boss_get_army_effect_3 = {
+	division_template = {
+		name = "魔界精英部队"
+		is_locked = yes
+		force_allow_recruiting = no
+		regiments = {
+			touhou_boss_army = { x = 0 y = 0 }
+			touhou_boss_army = { x = 0 y = 1 }
+			touhou_boss_army = { x = 0 y = 2 }
+			touhou_boss_army = { x = 0 y = 3 }
+			touhou_boss_army = { x = 0 y = 4 }
+
+			touhou_boss_army = { x = 1 y = 0 }
+			touhou_boss_army = { x = 1 y = 1 }
+			touhou_boss_army = { x = 1 y = 2 }
+			touhou_boss_army = { x = 1 y = 3 }
+			touhou_boss_army = { x = 1 y = 4 }
+
+			touhou_boss_army = { x = 2 y = 0 }
+			touhou_boss_army = { x = 2 y = 1 }
+			touhou_boss_army = { x = 2 y = 2 }
+			touhou_boss_army = { x = 2 y = 3 }
+			touhou_boss_army = { x = 2 y = 4 }
+
+			touhou_boss_army = { x = 3 y = 0 }
+			touhou_boss_army = { x = 3 y = 1 }
+			touhou_boss_army = { x = 3 y = 2 }
+			touhou_boss_army = { x = 3 y = 3 }
+			touhou_boss_army = { x = 3 y = 4 }
+
+			touhou_boss_army = { x = 4 y = 0 }
+			touhou_boss_army = { x = 4 y = 1 }
+			touhou_boss_army = { x = 4 y = 2 }
+			touhou_boss_army = { x = 4 y = 3 }
+			touhou_boss_army = { x = 4 y = 4 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			signal_company = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			logistics_company = { x = 0 y = 3 }
+			maintenance_company = { x = 0 y = 4 }
+		}
+	}
+	
+	capital_scope = {
+		create_unit = {
+			division = "name = \"魔界精英部队\" division_template = \"魔界精英部队\" start_experience_factor = 1"
+			owner = ROOT
+			count = 100
+		}
+	}
+}
+
+touhou_boss_player_get_army_effect = {#获得人类救赎军
+	division_template = {
+		name = "原魔界精英部队"
+		is_locked = yes
+		division_cap = 12 #使用数量限制函数会强制锁定编制
+		regiments = {
+			touhou_boss_army = { x = 0 y = 0 }
+			touhou_boss_army = { x = 0 y = 1 }
+			touhou_boss_army = { x = 0 y = 2 }
+			touhou_boss_army = { x = 0 y = 3 }
+			touhou_boss_army = { x = 0 y = 4 }
+
+			touhou_boss_army = { x = 1 y = 0 }
+			touhou_boss_army = { x = 1 y = 1 }
+			touhou_boss_army = { x = 1 y = 2 }
+			touhou_boss_army = { x = 1 y = 3 }
+			touhou_boss_army = { x = 1 y = 4 }
+
+			touhou_boss_army = { x = 2 y = 0 }
+			touhou_boss_army = { x = 2 y = 1 }
+			touhou_boss_army = { x = 2 y = 2 }
+			touhou_boss_army = { x = 2 y = 3 }
+			touhou_boss_army = { x = 2 y = 4 }
+
+			touhou_boss_army = { x = 3 y = 0 }
+			touhou_boss_army = { x = 3 y = 1 }
+			touhou_boss_army = { x = 3 y = 2 }
+			touhou_boss_army = { x = 3 y = 3 }
+			touhou_boss_army = { x = 3 y = 4 }
+
+			touhou_boss_army = { x = 4 y = 0 }
+			touhou_boss_army = { x = 4 y = 1 }
+			touhou_boss_army = { x = 4 y = 2 }
+			touhou_boss_army = { x = 4 y = 3 }
+			touhou_boss_army = { x = 4 y = 4 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			signal_company = { x = 0 y = 1 }
+			field_hospital = { x = 0 y = 2 }
+			logistics_company = { x = 0 y = 3 }
+			maintenance_company = { x = 0 y = 4 }
+		}
+	}
+	
+	capital_scope = {
+		create_unit = {
+			division = "name = \"人类救赎军\" division_template = \"原魔界精英部队\" start_experience_factor = 1"
+			owner = ROOT
+			count = 24
+		}
+	}
+}

@@ -1,0 +1,104 @@
+﻿division_template = {
+	name = "法师小队" 
+
+	regiments = {
+		touhou_magic_infantry = { x = 0 y = 0 }
+		touhou_magic_infantry = { x = 0 y = 1 }
+		touhou_magic_infantry = { x = 0 y = 2 }
+		touhou_magic_infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "香霖堂守卫" 
+
+	regiments = {
+		touhou_magic_infantry = { x = 0 y = 0 }
+		touhou_magic_infantry = { x = 0 y = 1 }
+		touhou_magic_infantry = { x = 0 y = 2 }
+		touhou_magic_infantry = { x = 0 y = 3 }
+		
+		touhou_magic_infantry = { x = 1 y = 0 }
+		touhou_magic_infantry = { x = 1 y = 1 }
+		touhou_magic_infantry = { x = 1 y = 2 }
+		touhou_magic_infantry = { x = 1 y = 3 }
+	}
+}
+division_template = {
+	name = "法师大队" 
+
+	regiments = {
+		touhou_magic_infantry = { x = 0 y = 0 }
+		touhou_magic_infantry = { x = 0 y = 1 }
+		touhou_magic_infantry = { x = 0 y = 2 }
+		touhou_magic_infantry = { x = 0 y = 3 }
+		
+		touhou_magic_infantry = { x = 1 y = 0 }
+		touhou_magic_infantry = { x = 1 y = 1 }
+		touhou_magic_infantry = { x = 1 y = 2 }
+		touhou_magic_infantry = { x = 1 y = 3 }
+		
+		touhou_magic_infantry = { x = 2 y = 0 }
+		touhou_magic_infantry = { x = 2 y = 1 }
+		touhou_magic_infantry = { x = 2 y = 2 }
+		touhou_magic_infantry = { x = 2 y = 3 }
+	}
+}
+division_template = {
+	name = "超·火力部队" 
+
+	regiments = {
+		touhou_magic_infantry = { x = 0 y = 0 }
+		touhou_magic_infantry = { x = 0 y = 1 }
+		touhou_magic_infantry = { x = 0 y = 2 }
+		touhou_magic_infantry = { x = 0 y = 3 }
+
+		touhou_magic_infantry = { x = 1 y = 0 }
+		touhou_magic_infantry = { x = 1 y = 1 }
+		touhou_magic_infantry = { x = 1 y = 2 }
+		touhou_magic_infantry = { x = 1 y = 3 }
+
+		magician_brigade = { x = 2 y = 0 }
+	}
+}
+
+##### OOB #####
+units = {
+
+	division = { 
+		name = "香霖堂守卫"
+		location = 13371
+		division_template = "香霖堂守卫"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		name = "魔法森林守卫"
+		location = 13371 
+		division_template = "香霖堂守卫"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		name = "极限火力军"
+		location = 13371 
+		division_template = "超·火力部队"
+		start_experience_factor = 0.8
+	}	
+}
+air_wings = {
+	993 = { 
+		touhou_magic_fighter_equipment_0 = {
+			owner = "MLS" 
+			amount = 40
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = touhou_magic_infantry_equipment_0
+			creator = "MLS"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+}

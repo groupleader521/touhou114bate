@@ -1,0 +1,56 @@
+touhou_alice_tank_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_alice
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		FROM = {
+			OR = {
+				original_tag = ALI
+				ALI = { has_opinion = { target = FROM value > 24 } }
+				controls_state = 994
+			}
+		}
+	}
+	equipment_type = {
+		armor
+	}
+	initial_trait = {
+		name = touhou_alice_tank_organization_trait
+		
+		equipment_bonus = {
+			armor_value = 0.05
+			reliability = 0.1
+			maximum_speed = 0.1
+		}
+	}
+}
+touhou_kappa_tank_organization = {
+	include = generic_tank_organization
+	icon = GFX_idea_kappa
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		FROM = {
+			OR = {
+				original_tag = KAP
+				KAP = { has_opinion = { target = FROM value > 24 } }
+				controls_state = 983
+			}
+		}
+	}
+	equipment_type = {
+		armor
+	}
+	initial_trait = {
+		name = touhou_kappa_tank_organization_trait
+		equipment_bonus = {
+			reliability = -0.1
+			soft_attack = 0.1
+			hard_attack = 0.1
+			armor_value = 0.1
+		}
+	}
+}

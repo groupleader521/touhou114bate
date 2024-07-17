@@ -1,0 +1,83 @@
+﻿capital = 997
+
+oob = "DLD_1936"
+
+set_stability = 0.5 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.5
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	DLD_chireiden_trait
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	limited_conscription
+	demonforce_first_research
+	jue_main_researcher
+	touhou_fiscal_flexibility
+    DLD_animal_trait
+}
+
+set_technology = {
+	touhou_demonforce_infantry_weapons = 1
+	touhou_demonforce_early_fighter = 1
+	touhou_demonforce_interwar_antitank = 1
+	touhou_demonforce_interwar_antiair = 1
+	tech_support = 1
+	transport = 1
+	basic_train = 1
+	DLD_animal = 1
+}
+
+
+
+set_autonomy = {
+	target = HEL
+	autonomous_state =  autonomy_puppet
+}
+
+set_convoys = 0
+set_popularities = {
+	communism = 20
+	fascism = 70
+	democratic = 10
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = TOUHOU_Komeiji_Satori
+recruit_character = TOUHOU_Kaenbyou_Rin
+recruit_character = TOUHOU_Reiuji_Utsuho
+recruit_character = TOUHOU_Komeiji_Koishi
+set_country_flag = touhou_country_flag_demonforce_first_research
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "读心者"
+		GFX = GFX_Komeiji_Satori
+		traits = { operative_seducer operative_master_interrogator operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { HEL DLD HAK OPP }
+	}
+
+	create_operative_leader = {
+		name = "不察者"
+		GFX = GFX_Komeiji_Koishi
+		traits = { operative_escape_artist operative_infiltrator operative_seducer }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { DLD HUM BLI MLS }
+	}
+}

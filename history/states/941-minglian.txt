@@ -1,0 +1,30 @@
+state={
+	id=1002
+	name="STATE_MingLianSi"
+	provinces={
+		13400 13401 13476 
+	}
+
+	history={
+		add_core_of = TEM
+		owner = TEM
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = {
+			13401 50 
+		}
+
+	}
+	resources = {
+		aluminium = 50
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	#state_category=city
+	state_category=megalopolis
+	local_supplies=0.0 
+}

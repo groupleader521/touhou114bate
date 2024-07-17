@@ -1,0 +1,30 @@
+﻿#Generic Operative list
+GENERIC_TOUHOU_OPERATIVE_CODENAME_HISTORICAL = {
+	name = NAME_THOUHOU_HISTORICAL_OPERATIVES
+
+	# for all touhou speaking countries
+	for_countries = {  ALI  DES  HAK  DLD  HEL  SSS  OPP  RAB  TEM  BLI  KAP  TEN  HUM  VAM  MLS  EVI }
+
+	type = codename
+
+	fallback_name = "Agent %d"
+
+	unique = {
+		"博丽氏密探"
+		"雾雨氏密探"
+		"八云氏密探"
+		"人偶谍报型"
+		"斯卡雷特家暗部"
+		"古明地家暗部"
+		"射命丸氏密探"
+		"八坂氏密探"
+		"丰聪耳氏密探"
+		"兔子先生"
+		"茨木氏密探"
+		"后户行者"
+		"历史观测者"
+		"影罗汉"
+		"幽鬼"
+		"阎罗业镜"
+	}
+}

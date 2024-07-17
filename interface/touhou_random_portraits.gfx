@@ -1,0 +1,482 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_1"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_1_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_1_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_2"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_2_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_2_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_3"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_3_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_3_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_4"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_4_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_4_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_5"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_5_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_5_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_6"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_6.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_6_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_6_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_7"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_7.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_7_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_7_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_8"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_8.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_8_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_8_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_9"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_9.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_9_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_9_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_10"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_10.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_10_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_10_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_11"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_11.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_11_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_11_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_12"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_12.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_12_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_12_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_13"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_13.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_13_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_13_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_14"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_14.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_14_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_14_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_15"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_15.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_15_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_15_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_16"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_16.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_16_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_16_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_17"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_17.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_17_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_17_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_18"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_18.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_18_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_18_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_19"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_19.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_19_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_19_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_20"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_20.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_20_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_20_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_21"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_21.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_21_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_21_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_22"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_22.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_22_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_22_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_23"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_23.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_23_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_23_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_24"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_24.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_24_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_24_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_25"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_25.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_25_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_25_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_26"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_26.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_26_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_26_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_27"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_27.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_27_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_27_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_28"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_28.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_28_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_28_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_29"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_29.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_29_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_29_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_30"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_30.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_30_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_30_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_31"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_31.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_31_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_31_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_32"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_32.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_32_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_32_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_33"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_33.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_33_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_33_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_34"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_34.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_34_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_34_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_35"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_35.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_35_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_35_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_36"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_36.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_36_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_36_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_37"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_37.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_37_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_37_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_38"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_38.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_38_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_38_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_39"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_39.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_39_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_39_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_40"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_40.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_40_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_40_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_41"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_41.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_41_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_41_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_42"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_42.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_42_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_42_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_43"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_43.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_43_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_43_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_44"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_44.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_44_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_44_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_45"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_45.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_45_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_45_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_46"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_46.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_46_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_46_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_47"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_47.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_47_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_47_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_48"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_48.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_48_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_48_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_49"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_49.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_49_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_49_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_50"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_50.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_50_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_50_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_51"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_51.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_51_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_51_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_52"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_52.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_52_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_52_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_53"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_53.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_53_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_53_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_54"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_54.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_54_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_54_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_55"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_55.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_55_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_55_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_56"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_56.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_56_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_land_56_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_navy_1"
+		texturefile = "gfx/leaders/Fantasy/Generic_navy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_navy_1_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_navy_1_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_navy_2"
+		texturefile = "gfx/leaders/Fantasy/Generic_navy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_navy_2_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_navy_2_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_navy_3"
+		texturefile = "gfx/leaders/Fantasy/Generic_navy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_navy_3_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_navy_3_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_navy_4"
+		texturefile = "gfx/leaders/Fantasy/Generic_navy_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Touhou_Generic_navy_4_small"
+		texturefile = "gfx/leaders/Fantasy/Generic_navy_4_small.dds"
+	}
+}

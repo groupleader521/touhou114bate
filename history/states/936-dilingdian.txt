@@ -1,0 +1,31 @@
+state={
+	id=997
+	name="STATE_JiuDiYuHeXin"
+	provinces={
+		13494 13498 13505 13541 13542
+	}
+
+	history={
+		add_core_of = DLD
+		owner = DLD
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = {
+			13498 50 
+		}
+
+	}
+	resources = {
+		aluminium = 45
+		steel = 20
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	#state_category=city
+	state_category=megalopolis
+	local_supplies=0.0 
+}

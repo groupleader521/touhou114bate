@@ -1,0 +1,90 @@
+﻿division_template = {
+	name = "龙虎卫小队" 
+
+	regiments = {
+		dragon_brigade = { x = 0 y = 0 }
+		dragon_brigade = { x = 0 y = 1 }
+		dragon_brigade = { x = 0 y = 2 }
+		dragon_brigade = { x = 0 y = 3 }
+	}
+
+}
+division_template = {
+	name = "红魔小队" 
+
+	regiments = {
+		touhou_magic_infantry = { x = 0 y = 0 }
+		touhou_magic_infantry = { x = 0 y = 1 }
+		touhou_magic_infantry = { x = 0 y = 2 }
+		touhou_magic_infantry = { x = 0 y = 3 }
+	}
+
+}
+division_template = {
+	name = "红魔大队" 
+
+	regiments = {
+		touhou_magic_infantry = { x = 0 y = 0 }
+		touhou_magic_infantry = { x = 0 y = 1 }
+		touhou_magic_infantry = { x = 0 y = 2 }
+		touhou_magic_infantry = { x = 0 y = 3 }
+		
+		touhou_magic_infantry = { x = 1 y = 0 }
+		touhou_magic_infantry = { x = 1 y = 1 }
+		touhou_magic_infantry = { x = 1 y = 2 }
+		touhou_magic_infantry = { x = 1 y = 3 }
+		
+		touhou_magic_infantry = { x = 2 y = 0 }
+		touhou_magic_infantry = { x = 2 y = 1 }
+		touhou_magic_infantry = { x = 2 y = 2 }
+		touhou_magic_infantry = { x = 2 y = 3 }
+	}
+
+}
+##### OOB #####
+units = {
+	division = { 
+		name = "红魔馆精锐一队"
+		location = 13407 
+		division_template = "龙虎卫小队"
+		start_experience_factor = 0.8
+	}
+	division = { 
+		name = "红魔馆精锐二队"
+		location = 13407 
+		division_template = "龙虎卫小队"
+		start_experience_factor = 0.8
+	}
+	division = { 
+		name = "红魔馆精锐三队"
+		location = 13407 
+		division_template = "龙虎卫小队"
+		start_experience_factor = 0.8
+	}
+	division = { 
+		name = "红魔馆精锐四队"
+		location = 13407 
+		division_template = "龙虎卫小队"
+		start_experience_factor = 0.8
+	}
+}
+air_wings = {
+	984 = { 
+		touhou_magic_fighter_equipment_0 = {
+			owner = "VAM" 
+			amount = 40
+		}
+	}
+}
+instant_effect = 
+{
+	add_equipment_production = {
+		equipment = {
+			type = dragon_equipment_0
+			creator = "VAM"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+}

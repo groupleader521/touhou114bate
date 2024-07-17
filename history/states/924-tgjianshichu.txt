@@ -1,0 +1,24 @@
+state={
+	id=985
+	name="STATE_YaoGuaiShanNanBu"
+	provinces={
+		13403 13406 
+	}
+
+	history={
+		add_core_of = KAP
+		add_core_of = TEN
+		owner = TEN
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+
+	manpower=500000
+	buildings_max_level_factor=1.000
+	#state_category=rural
+	state_category=megalopolis
+	local_supplies=0.0 
+}

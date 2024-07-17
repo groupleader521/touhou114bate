@@ -1,0 +1,25 @@
+ideas = {
+	country = {
+		touhou_for_defense = {
+			picture = generic_morale_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				HEL = { exists = no }
+			}
+			
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+	}
+}

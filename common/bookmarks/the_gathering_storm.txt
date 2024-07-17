@@ -1,0 +1,428 @@
+bookmarks = {
+	bookmark = {
+		name = "touhou_GATHERING_STORM_NAME"
+		desc = "touhou_GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "ALI"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { NOT = { has_dlc = "La Resistance" } }
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_form_the_popular_front
+				FRA_revive_the_national_bloc
+				FRA_france_leads
+			}
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "La Resistance" } 
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_invite_communist_ministers
+				FRA_utilize_the_leagues
+				FRA_je_suis_la_deluge
+			}
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_limited_intervention
+				USA_reestablish_the_gold_standard
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "Man the Guns" }
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+				ENG_imperial_federation
+				ENG_the_kings_party
+				ENG_organize_the_blackshirts
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { NOT = { has_dlc = "Man the Guns" } }
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+				tizard_mission_focus
+				ENG_war_with_germany
+				ENG_war_with_italy
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { has_dlc = "Waking the Tiger" }
+			ideas = {
+				sour_loser
+				general_staff
+				GER_mefo_bills_1
+			}
+			focuses = {
+				GER_anschluss
+				GER_danzig_or_war
+				GER_revive_the_kaiserreich
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "Waking the Tiger" } }
+			ideas = {
+				sour_loser
+				general_staff
+				GER_mefo_bills_1
+			}
+			focuses = {
+				GER_anschluss
+				GER_danzig_or_war
+				GER_ussr_war_goal
+			}
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { has_dlc = "By Blood Alone" }
+			ideas = {
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
+			}	
+			focuses = {
+				ITA_comandante_diavolo
+				ITA_il_sol_dell_avvenire
+				ITA_a_colonial_empire
+			}		
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "By Blood Alone" } }
+			ideas = {
+				vittorio_emanuele
+				ITA_iri_fake_ns
+				ITA_re_fake_ns
+			}	
+			focuses = {
+				ITA_comandante_diavolo
+				ITA_to_live_as_a_lion
+				ITA_a_colonial_empire
+			}		
+		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				state_shintoism
+				JAP_zaibatsus
+				JAP_militarism
+			}	
+			focuses = {
+				JAP_the_zero
+				JAP_warrior_spirit
+				JAP_strike_on_the_southern_resource_area
+			}			
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			available = { has_dlc = "No Step Back" }
+			ideas = {
+				trotskyite_plot_nsb
+				SOV_second_five_year_plan_fake_1936_ns
+				SOV_politicized_military
+			}
+			focuses = {
+				SOV_behead_the_snake
+				SOV_the_supreme_soviet
+				SOV_reconvene_the_zemsky_sobor
+			}	
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			available = { NOT = { has_dlc = "No Step Back" } }
+			ideas = {
+				trotskyite_plot_nsb
+				SOV_second_five_year_plan_fake_1936_ns
+				SOV_politicized_military
+			}
+			focuses = {
+				SOV_behead_the_snake
+				SOV_father_of_nations
+				SOV_the_supreme_soviet
+			}	
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		"ALI"={
+			minor = yes
+			history = "ALI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ALI_marionette_trait
+				magic_first_research
+				touhou_fiscal_society
+			}
+			focuses = {
+				touhou_ALI_gentle
+				touhou_ALI_radicalness
+				touhou_ALI_devildom
+			}
+		}
+		"VAM"={
+			minor = yes
+			history = "VAM_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				VAM_vampire_trait
+				magic_first_research
+				touhou_fiscal_military
+			}
+			focuses = {
+				touhou_VAM_gentle
+				touhou_VAM_radicalness
+				touhou_VAM_vampire_duke
+			}
+		}
+		"TEN"={
+			minor = yes
+			history = "TEN_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				TEN_tengu_trait
+				demonforce_first_research
+				touhou_fiscal_military
+			}
+			focuses = {
+				touhou_TEN_gentle
+				touhou_TEN_radicalness
+				touhou_TEN_defense
+			}
+		}
+		"TEM"={
+			minor = yes
+			history = "TEM_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				human_trait
+				magic_first_research
+				touhou_fiscal_society
+			}
+			focuses = {
+				touhou_TEM_gentle
+				touhou_TEM_radicalness
+			}
+		}
+		"RAB"={
+			minor = yes
+			history = "RAB_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				RAB_rabbit_trait
+				demonforce_first_research
+				touhou_fiscal_flexibility
+			}
+			focuses = {
+				touhou_RAB_gentle
+				touhou_RAB_radicalness
+				touhou_RAB_out_world
+			}
+		}
+		"OPP"={
+			minor = yes
+			history = "OPP_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				ghost_trait
+				demonforce_first_research
+				touhou_fiscal_flexibility
+			}
+			focuses = {
+				touhou_OPP_gentle
+				touhou_OPP_radicalness
+			}
+		}
+		"SSS"={
+			minor = yes
+			history = "SSS_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				human_trait
+				wakan_first_research
+				touhou_fiscal_flexibility
+			}
+			focuses = {
+				touhou_SSS_gentle
+				touhou_SSS_radicalness
+			}
+		}
+		"MLS"={
+			minor = yes
+			history = "MLS_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				human_trait
+				magic_first_research
+				touhou_fiscal_society
+			}
+			focuses = {
+				touhou_MLS_gentle
+				touhou_MLS_radicalness
+			}
+		}
+		"KAP"={
+			minor = yes
+			history = "KAP_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				KAP_kappa_trait
+				demonforce_first_research
+				touhou_fiscal_society
+			}
+			focuses = {
+				touhou_KAP_gentle
+				touhou_KAP_special_envoy
+			}
+		}
+		"HUM"={
+			minor = yes
+			history = "HUM_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				human_trait
+				wakan_first_research
+				touhou_fiscal_society
+			}
+			focuses = {
+				touhou_HUM_gentle
+				touhou_HUM_radicalness
+			}
+		}
+		"HEL"={
+			minor = yes
+			history = "HEL_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				HEL_hell_trait
+				demonforce_first_research
+				touhou_fiscal_military
+			}
+			focuses = {
+				touhou_HEL_gentle
+				touhou_HEL_radicalness
+			}
+		}
+		"HAK"={
+			minor = yes
+			history = "HAK_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				ghost_trait
+				demonforce_first_research
+				touhou_fiscal_flexibility
+			}
+			focuses = {
+				touhou_HAK_gentle
+				touhou_HAK_special_envoy
+			}
+		}
+		"EVI"={
+			minor = yes
+			history = "EVI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				evil_trait
+				wakan_first_research
+				touhou_fiscal_society
+			}
+			focuses = {
+				touhou_EVI_gentle
+				touhou_EVI_unity
+			}
+		}
+		"DLD"={
+			minor = yes
+			history = "DLD_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				DLD_chireiden_trait
+				demonforce_first_research
+				touhou_fiscal_flexibility
+			}
+			focuses = {
+				touhou_DLD_open_furnace
+				touhou_DLD_new_world
+				touhou_DLD_first_kill
+			}
+		}
+		"DES"={
+			minor = yes
+			history = "DES_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				human_trait
+				wakan_first_research
+				touhou_fiscal_society
+			}
+			focuses = {
+				touhou_DES_gentle
+				touhou_DES_radicalness
+			}
+		}
+		"BLI"={
+			minor = yes
+			history = "BLI_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				human_trait
+				wakan_first_research
+				touhou_fiscal_society
+			}
+			focuses = {
+				touhou_BLI_gentle
+				touhou_BLI_radicalness
+				touhou_BLI_show_to_all
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,352 @@
+﻿add_namespace = evil
+country_event = {
+	id = evil.0
+	title = evil.0.t
+	desc = evil.0.d
+	picture = GFX_report_event_touhou_evi
+	trigger = {
+		original_tag = EVI
+		is_ai = yes
+	}
+	mean_time_to_happen = {
+		days = 29
+	}
+	option = {
+		name = evil.0.a
+		random_list = {
+			30 = { random_country = { country_event = { id = evil.1 } } }
+			30 = { random_country = { country_event = { id = evil.2 } } }
+			40 = { random_country = { country_event = { id = evil.3 } } }
+		}
+	}
+}
+country_event = {
+	id = evil.1
+	title = evil.1.t
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_evi_other
+	desc = {
+		text = evil.1.d
+		trigger = {
+			NOT = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+		}
+	}
+	desc = {
+		text = evil.1.d_fantasy
+		trigger = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS }
+		}
+	}
+	desc = {
+		text = evil.d_evil
+		trigger = {
+			original_tag = EVI
+		}
+	}
+	option = {
+		if = { 
+			limit = { 
+				NOT = { original_tag = EVI } 
+			}    
+			add_opinion_modifier = { target = EVI modifier = evil_mischief }
+		}
+		name = evil.1.a
+		add_manpower = -500
+		
+	}
+}
+country_event = {
+	id = evil.2
+	title = evil.2.t
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_evi_other
+	desc = {
+		text = evil.2.d
+		trigger = {
+			NOT = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+		}
+	}
+	desc = {
+		text = evil.2.d_fantasy
+		trigger = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS }
+		}
+	}
+	desc = {
+		text = evil.d_evil
+		trigger = {
+			original_tag = EVI
+		}
+	}
+	option = {
+		if = { 
+			limit = { 
+				NOT = { original_tag = EVI } 
+			}    
+			add_opinion_modifier = { target = EVI modifier = evil_mischief }
+		}
+		name = evil.2.a
+		random_owned_controlled_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}			
+		}
+		
+	}
+}
+country_event = {
+	id = evil.3
+	title = evil.3.t
+	picture = GFX_report_event_touhou_evi_other
+	is_triggered_only = yes
+	desc = {
+		text = evil.3.d
+		trigger = {
+			NOT = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+		}
+	}
+	desc = {
+		text = evil.3.d_fantasy
+		trigger = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		}
+	}
+	desc = {
+		text = evil.3.d_fantasy
+		trigger = {
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS }
+		}
+	}
+	desc = {
+		text = evil.d_evil
+		trigger = {
+			original_tag = EVI
+		}
+	}
+	option = {
+		if = { 
+			limit = { 
+				NOT = { original_tag = EVI } 
+			}    
+			add_opinion_modifier = { target = EVI modifier = evil_mischief }
+		}
+		name = evil.3.a
+		add_political_power = -50
+		
+	}
+}	
+country_event = {
+	id = evil.4
+	title = evil.4.t
+	desc = evil.4.d
+	picture = GFX_report_event_touhou_evi_other
+	trigger = {
+		original_tag = EVI
+		OR = {
+			is_ai = yes
+			has_manpower < 100000
+		}
+	}
+	mean_time_to_happen = {
+		days = 31
+	}
+	option = {
+		name = evil.4.a
+		add_manpower = 100000
+	}
+}
+country_event = {
+	id = evil.5
+	title = evil.5.t
+	desc = evil.5.d
+	picture = GFX_report_event_touhou_evi
+	is_triggered_only = yes
+	trigger = {
+		EVI = { 
+			exists = yes 
+			is_subject_of = VAM
+		}
+	}
+	option = {
+		name = evil.5.a
+		ai_chance = { base = 4 }
+		end_puppet = EVI
+	}
+	option = {
+		name = evil.5.b
+		ai_chance = { base = 6 }
+		add_stability = -0.05
+		add_war_support = -0.05
+		country_event = { id = evil.5 days = 60 random_days = 10 }
+		EVI = { country_event = { id = evil.8 } }
+	}
+}
+country_event = {
+	id = evil.6
+	title = evil.6.t
+	desc = evil.6.d
+	picture = GFX_report_event_touhou_evi
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = evil.6.a
+		ai_chance = { base = 1 }
+		EVI = { set_state_owner = 974 set_state_controller = 974 }
+	}
+	option = {
+		name = evil.6.b
+		ai_chance = { base = 9 }
+		EVI = { set_state_owner = 974 set_state_controller = 974 }
+		declare_war_on = {
+			target = EVI
+			type = annex_everything
+		}
+	}
+}
+country_event = {
+	id = evil.7
+	title = evil.7.t
+	desc = evil.7.d
+	picture = GFX_report_event_touhou_evi
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = evil.7.a
+		ai_chance = { base = 1 }
+		EVI = { set_state_owner = 972 set_state_controller = 972 }
+	}
+	option = {
+		name = evil.7.b
+		ai_chance = { base = 9 }
+		if = {
+			limit = { is_in_faction_with = EVI }
+			add_political_power = -75
+		}
+		else = {
+			EVI = {
+				declare_war_on = {
+					target = ROOT
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = evil.8
+	title = evil.8.t
+	desc = evil.8.d
+	picture = GFX_report_event_touhou_evi
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = evil.8.a
+		ai_chance = { base = 1 }
+		VAM = { end_puppet = EVI }
+		EVI = {
+			declare_war_on = {
+				target = VAM
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		name = evil.8.b
+		ai_chance = { base = 0 }
+		unlock_decision_category_tooltip = touhou_evil_rize_up
+		hidden_effect = {
+			set_country_flag = touhou_country_flag_evil_rize_up
+		}
+	}
+}
+country_event = {
+	id = evil.9
+	title = evil.9.t
+	desc = evil.9.d
+	picture = GFX_report_event_touhou_evi
+	is_triggered_only = yes
+	trigger = {
+		EVI = { exists = yes }
+	}
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { NOT = { has_war_with = FROM } }
+				FROM = {
+					declare_war_on = {
+						target = ROOT
+						type = annex_everything
+					}		
+				}
+			}
+			if = {
+				limit = { is_ai = yes }
+				capital_scope = {
+					create_unit = {
+						division = "name = \"妖精起义军步兵师\" division_template = \"妖精步兵师\" start_experience_factor = 0.8"
+						owner = FROM
+						count = 1
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"妖精起义军突击师\" division_template = \"妖精突击师\" start_experience_factor = 0.8"
+						owner = FROM
+						count = 1
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"妖精起义军炮兵师\" division_template = \"妖精炮兵师\" start_experience_factor = 0.8"
+						owner = FROM
+						count = 1
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+			}
+			if = {
+				limit = { is_ai = no }
+				capital_scope = {
+					create_unit = {
+						division = "name = \"妖精起义军步兵师\" division_template = \"妖精步兵师\" start_experience_factor = 0.8"
+						owner = FROM
+						count = 2
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"妖精起义军突击师\" division_template = \"妖精突击师\" start_experience_factor = 0.8"
+						owner = FROM
+						count = 2
+						allow_spawning_on_enemy_provs = yes
+					}
+					create_unit = {
+						division = "name = \"妖精起义军炮兵师\" division_template = \"妖精炮兵师\" start_experience_factor = 0.8"
+						owner = FROM
+						count = 2
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = evil.9.a
+		ai_chance = { base = 1 }
+		add_timed_idea = {
+			idea = touhou_ideas_evil_angry
+			days = 365
+		}
+		remove_ideas = touhou_ideas_evil_uprising
+	}
+	option = {
+		name = evil.9.b
+		ai_chance = { base = 1 }
+		add_timed_idea = {
+			idea = touhou_ideas_evil_compromise
+			days = 730
+		}
+		remove_ideas = touhou_ideas_evil_uprising
+	}
+}

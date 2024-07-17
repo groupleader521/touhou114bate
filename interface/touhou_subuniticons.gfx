@@ -1,0 +1,188 @@
+spriteTypes = {	
+	##################################
+	### Large images for DIVISIONS ###
+	#幻想兵团
+	spriteType = { name = "GFX_unit_goliath_brigade_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/goliath.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_oni_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/oni.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_evil_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/evil.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_evil_armor_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/evil_armor.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_evil_artillery_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/evil_artillery.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_human_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/human.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_animal_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/animal.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_dragon_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/dragon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_die_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/die.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_rabbit_team_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/rabbit_team.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_soul_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/soul.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_wunv_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/wunv.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_magician_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/magic.dds" noOfFrames = 2 }
+	
+	#魔法体系
+	spriteType = { name = "GFX_group_touhou_magic_infantry_icon"							textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_group_touhou_magic_mobile_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_motorized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_group_touhou_magic_armor_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_infantry_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_marine_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_marine_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_mountaineers_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_mountain_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_paratrooper_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_paratroop_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_cavalry_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_cavalry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_artillery_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_magic_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_artillery_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_anti_tank_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_magic_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_anti_tank_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_light_armor_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_light_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_light_sp_artillery_brigade_icon_medium"	textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_light_tank_artillery_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_light_tank_destroyer_brigade_icon_medium"	textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_light_tank_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_light_sp_anti_air_brigade_icon_medium"		textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_light_tank_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_medium_armor_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_medium_sp_anti_air_brigade_icon_medium"	textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_medium_tank_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_medium_tank_destroyer_brigade_icon_medium"	textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_medium_tank_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_medium_sp_artillery_brigade_icon_medium"	textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_medium_tank_artillery_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_modern_armor_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_modern_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_modern_sp_artillery_brigade_icon_medium" 	textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_modern_armor_artillery_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_modern_tank_destroyer_brigade_icon_medium"	textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_modern_armor_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_modern_sp_anti_air_brigade_icon_medium"	textureFile = "gfx/interface/counters/divisions_large/unit_touhou_magic_modern_armor_antiair_icon.dds" noOfFrames = 2 }
+	
+	
+	#妖力体系
+	spriteType = { name = "GFX_group_touhou_demonforce_infantry_icon"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_group_touhou_demonforce_mobile_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_motorized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_group_touhou_demonforce_armor_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_infantry_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_marine_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_marine_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_mountaineers_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_mountain_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_paratrooper_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_paratroop_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_cavalry_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_cavalry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_anti_tank_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_demonforce_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_anti_tank_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_anti_air_icon_medium" 						textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_demonforce_anti_air_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_anti_air_brigade_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_anti_air_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_super_heavy_sp_artillery_brigade_icon_medium"	textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_super_heavy_armor_artillery_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_heavy_sp_artillery_brigade_icon_medium"		textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_heavy_armor_artillery_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_super_heavy_tank_destroyer_brigade_icon_medium"	textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_super_heavy_armor_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_heavy_tank_destroyer_brigade_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_heavy_armor_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_super_heavy_sp_anti_air_brigade_icon_medium"		textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_super_heavy_armor_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_heavy_sp_anti_air_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_heavy_armor_antiair_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_super_heavy_armor_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_super_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_heavy_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_touhou_demonforce_heavy_armor_icon.dds" noOfFrames = 2 }
+	
+	#灵力体系
+	spriteType = { name = "GFX_group_touhou_wakan_infantry_icon"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_group_touhou_wakan_mobile_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_motorized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_group_touhou_wakan_armor_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_infantry_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_marine_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_marine_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_mountaineers_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_mountain_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_paratrooper_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_paratroop_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_cavalry_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_cavalry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_artillery_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_wakan_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_artillery_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_anti_tank_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_wakan_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_anti_tank_brigade_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_at_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_anti_air_icon_medium" 						textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_wakan_anti_air_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_anti_air_brigade_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_anti_air_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_motorized_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_motorized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_motorized_rocket_brigade_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_motorized_rocket_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_mot_artillery_brigade_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_mot_art_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_mot_anti_air_brigade_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_mot_anti_air_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_amphibious_mechanized_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_amphibious_mechanized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_mechanized_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_touhou_wakan_mechanized_icon.dds" noOfFrames = 2 }
+	
+	#幻想支援
+	spriteType = { name = "GFX_unit_touhou_engineer_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_touhou_engineer_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_recon_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_touhou_recon_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_military_police_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_military_police_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_maintenance_company_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_maintenance_company_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_field_hospital_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_field_hospital_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_logistics_company_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_logistics_company_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_signal_company_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/support_unit_touhou_signal_company_icon.dds" noOfFrames = 2 }
+
+	#其他
+	spriteType = { name = "GFX_unit_touhou_boss_army_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_penal_infantry_icon.dds" noOfFrames = 2 }
+
+	####################################################
+	### Small images for DIVISIONS (On-map-counters) ###
+	#幻想兵团
+	spriteType = { name = "GFX_unit_goliath_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/goliath.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_oni_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/oni.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_evil_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/evil.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_evil_armor_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/evil_armor.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_evil_artillery_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/evil_artillery.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_human_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/human.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_animal_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/animal.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_dragon_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/dragon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_die_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/die.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_soul_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/soul.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_wunv_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/wunv.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_magician_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/magic.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_rabbit_team_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/rabbit_team.dds" noOfFrames = 2}
+	
+	
+	#魔法体系
+	spriteType = { name = "GFX_unit_touhou_magic_infantry_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_marine_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_marine_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_mountaineers_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mountain_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_paratrooper_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paratroop_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_cavalry_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cavalry_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_artillery_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_art_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_artillery_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_art_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_anti_tank_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_at_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_anti_tank_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_at_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_light_tank_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_light_armor_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_light_sp_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_light_tank_destroyer_brigade_icon_medium_white"	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_light_sp_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_touhou_magic_medium_tank_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_medium_armor_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_medium_sp_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_medium_tank_destroyer_brigade_icon_medium_white"	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_medium_sp_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_modern_armor_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_magic_modern_tank_destroyer_brigade_icon_medium_white"	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_modern_sp_artillery_brigade_icon_medium_white" 	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_magic_modern_sp_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2 }
+	
+	
+	#妖力体系
+	spriteType = { name = "GFX_unit_touhou_demonforce_infantry_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_marine_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_marine_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_demonforce_mountaineers_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mountain_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_demonforce_paratrooper_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paratroop_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_demonforce_cavalry_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cavalry_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_demonforce_anti_air_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_air_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_demonforce_anti_air_brigade_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_air_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_demonforce_super_heavy_armor_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_demonforce_heavy_armor_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_demonforce_super_heavy_sp_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_heavy_sp_artillery_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_super_heavy_tank_destroyer_brigade_icon_medium_white"	textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_heavy_tank_destroyer_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_super_heavy_sp_anti_air_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_demonforce_heavy_sp_anti_air_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	
+	#灵力体系
+	spriteType = { name = "GFX_unit_touhou_wakan_infantry_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_touhou_wakan_marine_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_marine_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_mountaineers_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mountain_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_paratrooper_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paratroop_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_cavalry_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_cavalry_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_artillery_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_art_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_artillery_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_art_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_anti_tank_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_at_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_anti_tank_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_at_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_anti_air_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_air_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_anti_air_brigade_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_air_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_motorized_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motorized_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_motorized_rocket_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motorized_rocket_brigade_icon.dds" noOfFrames = 2}	
+	spriteType = { name = "GFX_unit_touhou_wakan_mot_anti_air_brigade_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mot_anti_air_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_mechanized_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mechanized_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_wakan_amphibious_mechanized_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_amphibious_mechanized_icon.dds" noOfFrames = 2}
+	
+	#幻想支援
+	spriteType = { name = "GFX_unit_touhou_engineer_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_engineer_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_touhou_recon_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_recon_icon.dds" noOfFrames = 2}
+
+	#其他
+	spriteType = { name = "GFX_unit_touhou_boss_army_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_penal_infantry_icon.dds" noOfFrames = 2 }
+
+}

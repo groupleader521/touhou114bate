@@ -1,0 +1,4 @@
+TOUHOU_DEVILDOM = {
+	color = rgb { 10 0 0 }
+	color_ui = rgb { 10 0 0 }
+}

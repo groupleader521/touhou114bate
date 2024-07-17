@@ -1,0 +1,27 @@
+state={
+	id=1003
+	name="STATE_ShouShiCanBaiDao"
+	provinces={
+		13481 13486 13487 
+	}
+
+	history={
+		add_core_of = BLI
+		add_core_of = SSS
+		owner = SSS
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	resources = {
+		chromium = 11
+		tungsten = 37
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	#state_category=town
+	state_category=megalopolis
+	local_supplies=0.0 
+}

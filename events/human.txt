@@ -1,0 +1,552 @@
+﻿add_namespace = human
+country_event = {#迷茫的人们
+	id = human.0
+	title = human.0.t
+	desc = human.0.d
+	picture = GFX_report_event_touhou_human_confused
+	is_triggered_only = yes
+	trigger = {
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+		}
+
+	immediate = {
+	}
+
+	option = {
+		name = human.0.a
+		ai_chance = {
+			base = 1
+		}
+		add_ideas = confused_human
+	}
+}
+country_event = {#人类和共存论战
+	id = human.1
+	title = human.1.t
+	desc = human.1.d
+	picture = GFX_report_event_touhou_human_discussion
+	trigger = {
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			has_idea = confused_human
+			communism > 0.1
+			democratic > 0.1
+			NOT = {
+				AND = {
+					communism > 0.4
+					democratic > 0.4
+				}
+			}
+		}
+		
+	mean_time_to_happen = {
+		days = 270
+	}
+
+	immediate = {
+		add_ideas = human_HandC
+	}
+	
+	option = {
+		name = human.1.a
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			70 = { country_event = { id = human.4 } }
+			30 = { country_event = { id = human.5 } }
+		}
+	}
+	option = {
+		name = human.1.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			30 = { country_event = { id = human.4 } }
+			70 = { country_event = { id = human.5 } }
+		}
+	}
+	option = {
+		name = human.1.c
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			50 = { country_event = { id = human.4 } }
+			50 = { country_event = { id = human.5 } }
+		}
+	}
+}
+country_event = {#人类和妖怪论战
+	id = human.2
+	title = human.2.t
+	desc = human.2.d
+	picture = GFX_report_event_touhou_human_discussion
+	trigger = {
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			fascism > 0.1
+			democratic > 0.1
+			NOT = {
+				AND = {
+					fascism > 0.4
+					democratic > 0.4
+				}
+			}
+			has_idea = confused_human
+		}
+
+	mean_time_to_happen = {
+		days = 270
+	}
+	immediate = {
+		add_ideas = human_HandF
+	}
+	option = {
+		name = human.2.a
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			70 = { country_event = { id = human.4 } }
+			30 = { country_event = { id = human.5 } }
+		}
+	}
+	option = {
+		name = human.2.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			30 = { country_event = { id = human.4 } }
+			70 = { country_event = { id = human.5 } }
+		}
+	}
+	option = {
+		name = human.2.c
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			50 = { country_event = { id = human.4 } }
+			50 = { country_event = { id = human.5 } }
+		}
+	}
+}
+country_event = {#共存和妖怪论战
+	id = human.3
+	title = human.3.t
+	desc = human.3.d
+	picture = GFX_report_event_touhou_human_discussion
+	trigger = {
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			fascism > 0.1
+			communism > 0.1
+			NOT = {
+				AND = {
+					fascism > 0.4
+					communism > 0.4
+				}
+			}
+			has_idea = confused_human
+		}
+
+	mean_time_to_happen = {
+		days = 270
+	}
+	immediate = {
+		add_ideas = human_CandF
+	}
+	option = {
+		name = human.3.a
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			70 = { country_event = { id = human.4 } }
+			30 = { country_event = { id = human.5 } }
+		}
+	}
+	option = {
+		name = human.3.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			30 = { country_event = { id = human.4 } }
+			70 = { country_event = { id = human.5 } }
+		}
+	}
+	option = {
+		name = human.3.c
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			50 = { country_event = { id = human.4 } }
+			50 = { country_event = { id = human.5 } }
+		}
+	}
+}
+country_event = {#论战结果前胜
+	id = human.4
+	title = human.4.t
+	desc = { 
+		text = human.4.d_HandC
+		trigger = {
+			has_idea = human_HandC
+		}
+	}
+	desc = { 
+		text = human.4.d_HandF
+		trigger = {
+			has_idea = human_HandF
+		}
+	}
+	desc = { 
+		text = human.4.d_CandF
+		trigger = {
+			has_idea = human_CandF
+		}
+	}
+	picture = GFX_report_event_touhou_human_discussion_windanlose
+	is_triggered_only = yes
+	trigger = {
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+		}
+	
+	option = {
+		name = human.4.a
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = { has_idea = human_HandC }
+			add_timed_idea = { idea = human_think_win days = 30 }
+			add_timed_idea = { idea = both_think_lose days = 30 }
+			hidden_effect = {
+				remove_ideas = human_HandC
+			}
+		}
+		else_if = {
+			limit = { has_idea = human_HandF }
+			add_timed_idea = { idea = human_think_win days = 30 }
+			add_timed_idea = { idea = moster_think_lose days = 30 }
+			hidden_effect = {
+				remove_ideas = human_HandF
+			}
+		}
+		else_if = {
+			limit = { has_idea = human_CandF }
+			add_timed_idea = { idea = both_think_win days = 30 }
+			add_timed_idea = { idea = moster_think_lose days = 30 }
+			hidden_effect = {
+				remove_ideas = human_CandF
+			}
+		}
+		
+	}
+	option = {
+		name = human.4.b
+		ai_chance = {
+			base = 0
+		}
+		hidden_effect = {
+			remove_ideas = human_CandF
+			remove_ideas = human_HandF
+			remove_ideas = human_HandC
+		}
+		add_stability = -0.05
+	}
+}
+country_event = {#论战结果后胜
+	id = human.5
+	title = human.5.t
+	desc = { 
+		text = human.5.d_HandC
+		trigger = {
+			has_idea = human_HandC
+		}
+	}
+	desc = { 
+		text = human.5.d_HandF
+		trigger = {
+			has_idea = human_HandF
+		}
+	}
+	desc = { 
+		text = human.5.d_CandF
+		trigger = {
+			has_idea = human_CandF
+		}
+	}
+	picture = GFX_report_event_touhou_human_discussion_windanlose
+	is_triggered_only = yes
+	trigger = {
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+		}
+	
+	option = {
+		name = human.5.a
+		ai_chance = {
+			base = 1
+		}
+		if = {
+			limit = { has_idea = human_HandC }
+			add_timed_idea = { idea = both_think_win days = 30 }
+			add_timed_idea = { idea = human_think_lose days = 30 }
+			hidden_effect = {
+				remove_ideas = human_HandC
+			}
+		}
+		else_if = {
+			limit = { has_idea = human_HandF }
+			add_timed_idea = { idea = moster_think_win days = 30 }
+			add_timed_idea = { idea = human_think_lose days = 30 }
+			hidden_effect = {
+				remove_ideas = human_HandF
+			}
+		}
+		else_if = {
+			limit = { has_idea = human_CandF }
+			add_timed_idea = { idea = moster_think_win days = 30 }
+			add_timed_idea = { idea = both_think_lose days = 30 }
+			hidden_effect = {
+				remove_ideas = human_CandF
+			}
+		}
+		
+	}
+	option = {
+		name = human.5.b
+		ai_chance = {
+			base = 0
+		}
+		hidden_effect = {
+			remove_ideas = human_CandF
+			remove_ideas = human_HandF
+			remove_ideas = human_HandC
+		}
+		add_stability = -0.05
+	}
+}
+country_event = {#人类和共存激烈论战
+	id = human.6
+	title = human.6.t
+	desc = human.6.d
+	picture = GFX_report_event_touhou_human_discussion
+	trigger = {
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			has_idea = confused_human
+			communism > 0.4
+			democratic > 0.4
+		}
+		
+	mean_time_to_happen = {
+		days = 270
+	}
+
+	immediate = {
+		set_country_flag = HandC
+	}
+	
+	option = {
+		name = human.6.a
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			70 = { country_event = { id = human.4 } }
+			20 = { country_event = { id = human.5 } }
+			10 = { country_event = { id = human.9 } }
+		}
+	}
+	option = {
+		name = human.6.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			20 = { country_event = { id = human.4 } }
+			70 = { country_event = { id = human.5 } }
+			10 = { country_event = { id = human.9 } }
+		}
+	}
+	option = {
+		name = human.6.c
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			45 = { country_event = { id = human.4 } }
+			45 = { country_event = { id = human.5 } }
+			10 = { country_event = { id = human.9 } }
+		}
+	}
+}
+country_event = {#人类和妖怪激烈论战
+	id = human.7
+	title = human.7.t
+	desc = human.7.d
+	picture = GFX_report_event_touhou_human_discussion
+	trigger = {
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			fascism > 0.4
+			democratic > 0.4
+			has_idea = confused_human
+		}
+
+	mean_time_to_happen = {
+		days = 270
+	}
+	immediate = {
+		set_country_flag = HandF
+	}
+	option = {
+		name = human.7.a
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			70 = { country_event = { id = human.4 } }
+			20 = { country_event = { id = human.5 } }
+			10 = { country_event = { id = human.9 } }
+		}
+	}
+	option = {
+		name = human.7.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			20 = { country_event = { id = human.4 } }
+			70 = { country_event = { id = human.5 } }
+			10 = { country_event = { id = human.9 } }
+		}
+	}
+	option = {
+		name = human.7.c
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			45 = { country_event = { id = human.4 } }
+			45 = { country_event = { id = human.5 } }
+			10 = { country_event = { id = human.9 } }
+		}
+	}
+}
+country_event = {#共存和妖怪激烈论战
+	id = human.8
+	title = human.8.t
+	desc = human.8.d
+	picture = GFX_report_event_touhou_human_discussion
+	trigger = {
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			fascism > 0.4
+			communism > 0.4
+			has_idea = confused_human
+		}
+
+	mean_time_to_happen = {
+		days = 270
+	}
+	immediate = {
+		set_country_flag = CandF
+	}
+	option = {
+		name = human.8.a
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			70 = { country_event = { id = human.4 } }
+			20 = { country_event = { id = human.5 } }
+			10 = { country_event = { id = human.9 } }
+		}
+	}
+	option = {
+		name = human.8.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+		random_list = {
+			20 = { country_event = { id = human.4 } }
+			70 = { country_event = { id = human.5 } }
+			10 = { country_event = { id = human.9 } }
+		}
+	}
+	option = {
+		name = human.8.c
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			45 = { country_event = { id = human.4 } }
+			45 = { country_event = { id = human.5 } }
+			10 = { country_event = { id = human.9 } }
+		}
+	}
+}
+country_event = {#冲突
+	id = human.9
+	title = human.9.t
+	desc = human.9.d
+	is_triggered_only = yes
+	picture = GFX_report_event_touhou_human_conflict
+	trigger = {
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+		}
+	option = {
+		name = human.9.a
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			remove_ideas = human_CandF
+			remove_ideas = human_HandF
+			remove_ideas = human_HandC
+		}
+	}
+}
+country_event = {#一切尘埃落定
+	id = human.10
+	title = human.10.t
+	desc = human.10.d
+	picture = GFX_report_event_touhou_human_confused
+	trigger = {
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			has_idea = confused_human
+			has_global_flag = touhou_all_country_unify
+			date > 1939.1.1
+		}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 15
+	}
+	option = {
+		name = human.10.a
+		ai_chance = {
+			base = 1
+		}
+		hidden_effect = {
+			remove_ideas = human_CandF
+			remove_ideas = human_HandF
+			remove_ideas = human_HandC
+		}
+		remove_ideas = confused_human
+		add_stability = 0.2
+	}
+}

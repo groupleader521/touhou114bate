@@ -1,0 +1,80 @@
+﻿capital = 993
+
+oob = "MLS_1936"
+
+set_stability = 0.6 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.2
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	human_trait
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	limited_conscription
+	magic_first_research
+	touhou_fiscal_society
+    magician_trait
+}
+
+set_technology = {
+	touhou_magic_infantry_weapons = 1
+	touhou_magic_interwar_antitank = 1
+	touhou_magic_early_fighter = 1
+	touhou_magic_gw_artillery = 1
+	tech_support = 1
+	transport = 1
+	basic_train = 1
+	magician = 1
+}
+
+give_guarantee = HUM
+give_guarantee = BLI
+give_guarantee = TEM
+
+
+
+set_convoys = 0
+set_popularities = {
+	communism = 70
+	fascism = 15
+	democratic = 15
+}
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = TOUHOU_Kirisame_Marisa
+recruit_character = TOUHOU_Morichika_Rinnosuke
+set_country_flag = touhou_country_flag_magic_first_research
+country_event = { id = molisha.0 days = 3 random_days = 1 } 
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "怪盗"
+		GFX = GFX_Kirisame_Marisa
+		traits = { operative_escape_artist operative_seducer operative_safe_cracker operative_natural_orator operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { MLS HUM BLI ALI }
+	}
+
+	create_operative_leader = {
+		name = "商人密探"
+		GFX = GFX_Morichika_Rinnosuke
+		traits = { operative_well_groomed operative_linguist }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { MLS HUM }
+	}
+}

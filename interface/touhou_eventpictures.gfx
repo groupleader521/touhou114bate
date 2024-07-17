@@ -1,0 +1,299 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_news_event_touhou"
+		texturefile = "gfx/event_pictures/news_event_touhou.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_alice_death's_girl"
+		texturefile = "gfx/event_pictures/news_event_touhou_alice_death's_girl.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_alice_devildom"
+		texturefile = "gfx/event_pictures/news_event_touhou_alice_devildom.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_alice_end_war_lose"
+		texturefile = "gfx/event_pictures/news_event_touhou_alice_end_war_lose.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_alice_end_war_win"
+		texturefile = "gfx/event_pictures/news_event_touhou_alice_end_war_win.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_opp"
+		texturefile = "gfx/event_pictures/news_event_touhou_opp.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_alice_has_reply"
+		texturefile = "gfx/event_pictures/news_event_touhou_alice_has_reply.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_hel"
+		texturefile = "gfx/event_pictures/news_event_touhou_hel.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_dld"
+		texturefile = "gfx/event_pictures/news_event_touhou_dld.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_kap"
+		texturefile = "gfx/event_pictures/news_event_touhou_kap.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_hak"
+		texturefile = "gfx/event_pictures/news_event_touhou_hak.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_evi"
+		texturefile = "gfx/event_pictures/news_event_touhou_evi.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_bli"
+		texturefile = "gfx/event_pictures/news_event_touhou_bli.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_has_open"
+		texturefile = "gfx/event_pictures/news_event_touhou_has_open.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_rab"
+		texturefile = "gfx/event_pictures/news_event_touhou_rab.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_vam"
+		texturefile = "gfx/event_pictures/news_event_touhou_vam.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_sss"
+		texturefile = "gfx/event_pictures/news_event_touhou_sss.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_ten"
+		texturefile = "gfx/event_pictures/news_event_touhou_ten.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_mls"
+		texturefile = "gfx/event_pictures/news_event_touhou_mls.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_tem"
+		texturefile = "gfx/event_pictures/news_event_touhou_tem.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_des"
+		texturefile = "gfx/event_pictures/news_event_touhou_des.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_hum"
+		texturefile = "gfx/event_pictures/news_event_touhou_hum.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_ali_gentle"
+		texturefile = "gfx/event_pictures/news_event_touhou_ali_gentle.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_ali_radicalness"
+		texturefile = "gfx/event_pictures/news_event_touhou_ali_radicalness.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_touhou_ali_devildom"
+		texturefile = "gfx/event_pictures/news_event_touhou_ali_devildom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_touhou_plenary"
+		texturefile = "gfx/event_pictures/report_event_touhou_plenary.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_plenary_happy_end"
+		texturefile = "gfx/event_pictures/report_event_touhou_plenary_happy_end.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_plenary_nomal_end"
+		texturefile = "gfx/event_pictures/report_event_touhou_plenary_nomal_end.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_plenary_bad_end"
+		texturefile = "gfx/event_pictures/report_event_touhou_plenary_bad_end.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_meet_out_people"
+		texturefile = "gfx/event_pictures/report_event_touhou_meet_out_people.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_meet_out_people_happy_end"
+		texturefile = "gfx/event_pictures/report_event_touhou_meet_out_people_happy_end.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_meet_out_people_nomal_end"
+		texturefile = "gfx/event_pictures/report_event_touhou_meet_out_people_nomal_end.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_meet_out_people_bad_end"
+		texturefile = "gfx/event_pictures/report_event_touhou_meet_out_people_bad_end.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_meet_out_people_interflow"
+		texturefile = "gfx/event_pictures/report_event_touhou_meet_out_people_interflow.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_meet_out_people_interflow_end"
+		texturefile = "gfx/event_pictures/report_event_touhou_meet_out_people_interflow_end.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_meet_in_people_interflow"
+		texturefile = "gfx/event_pictures/report_event_touhou_meet_in_people_interflow.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_meet_in_people_interflow_end"
+		texturefile = "gfx/event_pictures/report_event_touhou_meet_in_people_interflow_end.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_politica_monster"
+		texturefile = "gfx/event_pictures/report_event_touhou_politica_monster.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_politica_human"
+		texturefile = "gfx/event_pictures/report_event_touhou_politica_human.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_politica_balance"
+		texturefile = "gfx/event_pictures/report_event_touhou_politica_balance.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_mls"
+		texturefile = "gfx/event_pictures/report_event_touhou_mls.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_evi"
+		texturefile = "gfx/event_pictures/report_event_touhou_evi.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_evi_other"
+		texturefile = "gfx/event_pictures/report_event_touhou_evi_other.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_alice_need_pop"
+		texturefile = "gfx/event_pictures/report_event_touhou_alice_need_pop.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_alice_turmoil"
+		texturefile = "gfx/event_pictures/report_event_touhou_alice_turmoil.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_alice_need_reply"
+		texturefile = "gfx/event_pictures/report_event_touhou_alice_need_reply.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_alice_has_reply"
+		texturefile = "gfx/event_pictures/report_event_touhou_alice_has_reply.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_alice_wait_do"
+		texturefile = "gfx/event_pictures/report_event_touhou_alice_wait_do.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_alice_do"
+		texturefile = "gfx/event_pictures/report_event_touhou_alice_do.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_alice_do_win"
+		texturefile = "gfx/event_pictures/report_event_touhou_alice_do_win.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_alice_do_lose"
+		texturefile = "gfx/event_pictures/report_event_touhou_alice_do_lose.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_alice_end_war"
+		texturefile = "gfx/event_pictures/report_event_touhou_alice_end_war.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_alice_end_war_lose"
+		texturefile = "gfx/event_pictures/report_event_touhou_alice_end_war_lose.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_alice_end_war_win"
+		texturefile = "gfx/event_pictures/report_event_touhou_alice_end_war_win.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_human_confused"
+		texturefile = "gfx/event_pictures/report_event_touhou_human_confused.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_human_discussion"
+		texturefile = "gfx/event_pictures/report_event_touhou_human_discussion.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_human_discussion_windanlose"
+		texturefile = "gfx/event_pictures/report_event_touhou_human_discussion_windanlose.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_human_conflict"
+		texturefile = "gfx/event_pictures/report_event_touhou_human_conflict.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_opp"
+		texturefile = "gfx/event_pictures/report_event_touhou_opp.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_hell"
+		texturefile = "gfx/event_pictures/report_event_touhou_hell.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_dld"
+		texturefile = "gfx/event_pictures/report_event_touhou_dld.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_kap"
+		texturefile = "gfx/event_pictures/report_event_touhou_kap.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_hak"
+		texturefile = "gfx/event_pictures/report_event_touhou_hak.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_bli"
+		texturefile = "gfx/event_pictures/report_event_touhou_bli.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_rab"
+		texturefile = "gfx/event_pictures/report_event_touhou_rab.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_vam"
+		texturefile = "gfx/event_pictures/report_event_touhou_vam.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_vam_fulan"
+		texturefile = "gfx/event_pictures/report_event_touhou_vam_fulan.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_vam_fulan_good"
+		texturefile = "gfx/event_pictures/report_event_touhou_vam_fulan_good.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_sss"
+		texturefile = "gfx/event_pictures/report_event_touhou_sss.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_ten"
+		texturefile = "gfx/event_pictures/report_event_touhou_ten.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_mls_out"
+		texturefile = "gfx/event_pictures/report_event_touhou_mls_out.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_tem"
+		texturefile = "gfx/event_pictures/report_event_touhou_tem.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_des"
+		texturefile = "gfx/event_pictures/report_event_touhou_des.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_touhou_makai_victory"
+		texturefile = "gfx/event_pictures/report_event_touhou_makai_victory.dds"
+	}
+}

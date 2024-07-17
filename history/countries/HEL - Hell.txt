@@ -1,0 +1,79 @@
+﻿capital = 996
+
+oob = "HEL_1936"
+
+set_stability = 0.4 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.7
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	HEL_hell_trait
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	limited_conscription
+	demonforce_first_research
+	touhou_fiscal_military
+    HEL_oni_trait
+}
+
+set_technology = {
+	touhou_demonforce_infantry_weapons = 1
+	touhou_demonforce_early_fighter = 1
+	touhou_demonforce_interwar_antitank = 1
+	touhou_demonforce_interwar_antiair = 1
+	tech_support = 1
+	transport = 1
+	basic_train = 1
+	oni_champion = 1
+}
+
+
+
+set_convoys = 0
+set_popularities = {
+	communism = 15
+	fascism = 75
+	democratic = 10
+}
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = TOUHOU_Hoshiguma_Yugi
+recruit_character = TOUHOU_Ibuki_Suika
+set_country_flag = touhou_country_flag_demonforce_first_research
+add_equipment_to_stockpile = {
+	type = oni_champion_equipment_0
+	amount = 100
+}
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "暗鬼"
+		GFX = GFX_Hoshiguma_Yugi
+		traits = { operative_commando operative_master_interrogator operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { HEL DLD HAK OPP }
+	}
+
+	create_operative_leader = {
+		name = "幽鬼"
+		GFX = GFX_Ibuki_Suika
+		traits = { operative_commando operative_master_interrogator operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { HEL BLI HUM TEN }
+	}
+}

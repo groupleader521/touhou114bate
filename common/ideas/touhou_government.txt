@@ -1,0 +1,1365 @@
+ideas = {
+	tank_manufacturer = {
+	
+		designer = yes
+
+		alice_tank = {
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Alice_Margatroid
+			}
+			picture = alice
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.3
+			}
+			
+			traits = { alice_tank_manufacturer }
+		}
+		
+		kappa_tank = {
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Kawasiro_Nitori
+			}
+			picture = kappa
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.3
+			}
+			
+			traits = { kappa_tank_manufacturer }
+		}
+	}
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		kappa_naval = {
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Kawasiro_Nitori
+			}
+			picture = kappa
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.3
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+		}
+		siji_naval = {
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Shikieiki_Yamaxanadu
+			}
+			picture = siji
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				naval_equipment = 0.3
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+		}
+		minglianshi_naval = {
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Murasa_Minamitu
+			}
+			picture = shuimi
+			cost = 150
+			removal_cost = 10
+			research_bonus = { naval_equipment = 0.3 }
+			traits = { atlantic_fleet_naval_manufacturer }
+		}
+	}
+	
+	aircraft_manufacturer = {#飞机设计商，由于幻想乡飞机很难辨别type，所以就取消了equipment_bonus加成
+	
+		designer = yes
+		boli_air = {#博丽航空
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Hakurei_Reimu
+			}
+			picture = boli
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.3
+			}
+			modifier = {
+				air_bombing_targetting = 0.1 #对地攻击瞄准
+				naval_strike_targetting_factor = 0.1 #对海攻击瞄准
+				air_superiority_detect_factor = 0.05 #战机侦测能力
+				mines_planting_by_air_factor = 0.05 #空中布雷效率
+				mines_sweeping_by_air_factor = 0.05 #空中扫雷效率
+			}
+		}
+		tengu_air = {#天狗航空
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Shameimaru_Aya
+			}
+			picture = tengu
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.3
+			}
+			modifier = {
+				air_attack_factor = 0.05 #对空攻击
+				air_defence_factor = 0.05 #对空防御
+				air_maximum_speed_factor = 0.05 #空军最大速度
+				air_agility_factor = 0.05 #机动
+				air_detection = 0.05 #对空探测
+			}
+		}
+		desires_air = {#神子航空
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Toyosatomimi_no_Miko
+			}
+			picture = shenzi
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				air_equipment = 0.3
+			}
+			modifier = {
+				air_range_factor = 0.3 #空军航程
+				air_mission_efficiency = 0.3 #空军任务效率
+				strategic_bomb_visibility = -0.5 #战略轰炸可见度
+			}
+		}
+	}
+	
+	materiel_manufacturer = {#军需品装备制造商
+		designer = yes
+		uuz_materiel = {
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Saigyouji_Yuyuko
+			}
+			picture = uuz
+			cost = 150
+			removal_cost = 10
+			research_bonus = { motorized_equipment = 0.3 }
+			traits = { motorized_equipment_manufacturer }
+		}
+		wunv_materiel = {
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Kochiya_Sanae
+			}
+			picture = zaomiao
+			cost = 150
+			removal_cost = 10
+			research_bonus = { infantry_weapons = 0.3 }
+			traits = { infantry_equipment_manufacturer }
+		}
+		molisha_materiel = {
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				OR = {
+					original_tag = MLS
+					MLS = { has_opinion = { target = ROOT value > 24 } }
+					controls_state = 993
+				}
+			}
+			picture = molisha
+			cost = 150
+			removal_cost = 10
+			research_bonus = { artillery = 0.3 }
+			traits = { artillery_manufacturer }
+		}
+	}
+	
+	industrial_concern = {#工业企业
+	#科研线
+		yonglin_industrial_1 = {#永远亭研究所
+
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_character = TOUHOU_Yagokoro_Eirin
+			}
+			visible = {
+				NOT = { has_country_flag = touhou_focus_research_2_flag }
+			}
+
+			picture = yonglin
+
+			cost = 75
+
+			removal_cost = -75
+
+			modifier = {
+			research_speed_factor = 0.15
+			custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
+			
+			}
+
+		}
+		yonglin_industrial_2 = {#永远亭科学院
+
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_character = TOUHOU_Yagokoro_Eirin
+			}
+			visible = {
+				has_country_flag = touhou_focus_research_2_flag
+			}
+
+			picture = yonglin
+
+			cost = 75
+
+			removal_cost = -75
+
+			modifier = { research_speed_factor = 0.25 }
+
+		}
+	#产出线
+		alice_industrial_1 = { #人偶工坊
+
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_character = TOUHOU_Alice_Margatroid
+			}
+			visible = {
+				NOT = { has_country_flag = touhou_focus_industrial_2_flag }
+				NOT = { has_country_flag = touhou_focus_industrial_4_flag }
+			}
+
+			picture = alice
+
+			cost = 75
+
+			removal_cost = -75
+
+			modifier = {
+			research_speed_factor = 0.1
+			industrial_capacity_factory = 0.1
+			custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
+			
+			}
+
+		}
+		alice_industrial_2 = { #人偶工厂
+
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_character = TOUHOU_Alice_Margatroid
+			}
+			visible = {
+				has_country_flag = touhou_focus_industrial_2_flag
+			}
+
+			picture = alice
+
+			cost = 75
+
+			removal_cost = -75
+
+			modifier = {
+			research_speed_factor = 0.1
+			industrial_capacity_factory = 0.4
+			custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
+			}
+
+		}
+		alice_industrial_3 = { #人偶网络
+
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_character = TOUHOU_Alice_Margatroid
+			}
+			visible = {
+				has_country_flag = touhou_focus_industrial_4_flag
+			}
+
+			picture = alice
+
+			cost = 75
+
+			removal_cost = -75
+
+			modifier = {
+			research_speed_factor = 0.1
+			industrial_capacity_factory = 0.4
+			supply_consumption_factor = -0.1
+			army_fuel_consumption_factor = -0.1
+			}
+
+		}
+	#建造线 
+		kappa_industrial_1 = { #河童重工
+
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_character = TOUHOU_Kawasiro_Nitori
+			}
+			visible = {
+				NOT = { has_country_flag = touhou_focus_buildings_2_flag }
+			}
+
+			picture = kappa
+
+			cost = 75
+
+			removal_cost = -75
+
+			modifier = {
+			production_speed_buildings_factor = 0.2
+			custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
+			
+			}
+
+		}
+		kappa_industrial_2 = { #河童工业体
+
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+
+			available = {
+				has_character = TOUHOU_Kawasiro_Nitori
+			}
+			visible = {
+				has_country_flag = touhou_focus_buildings_2_flag
+			}
+
+			picture = kappa
+
+			cost = 75
+
+			removal_cost = -75
+
+			modifier = {
+			production_speed_buildings_factor = 0.4
+			global_building_slots_factor = 0.2
+
+			}
+		}		
+	}
+
+	touhou_racial_military = {#军事主导种族
+		evil_trait = {
+			picture = evil_trait
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_country_flag = touhou_country_flag_evil_education
+				NOT = { has_idea = touhou_ideas_evil_angry }
+			}	
+			modifier = {
+				training_time_factor = 0.2
+				MONTHLY_POPULATION = 0.15
+				conscription = 0.15
+			}
+			removal_cost = 0	
+		}
+		TEN_tengu_trait = {		
+			picture = tengu_trait		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				OR = {
+					original_tag = TEN
+					AND = {
+						controls_state = 984
+						OR = {
+							has_government = communism
+							has_government = fascism
+						}
+					}
+				}
+			}
+			modifier = {
+				air_accidents_factor = -0.5
+				air_ace_generation_chance_factor = 0.1
+			}
+			removal_cost = 0			
+		}	
+		KAP_kappa_trait = {		
+			picture = kappa_research		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				OR = {
+					original_tag = KAP
+					controls_state = 983
+				}
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+				naval_equipment_upgrade_xp_cost = -0.2
+			}
+			removal_cost = 0
+		}	
+		ALI_marionette_trait = {
+			picture = marionette_trait
+			allowed = {
+				original_tag = ALI
+			}
+			removal_cost = 0
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_Factor = 0.25
+				army_morale_factor = 0.25
+			}	
+		}
+	}
+	touhou_racial_research = {#科研主导种族
+		RAB_rabbit_trait = {
+			picture = race_rabbit_trait
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				OR = {
+					original_tag = RAB
+					AND = {
+						controls_state = 1004
+						OR = {
+							has_government = communism
+							has_government = fascism
+						}
+					}
+				}
+			}
+			on_add = {
+				activate_mission = touhou_mission_RAB_rabbit_trait
+			}
+			on_remove = {
+				remove_mission = touhou_mission_RAB_rabbit_trait
+			}
+			removal_cost = 0			
+		}
+		marionette_trait = {
+		
+			picture = marionette_trait
+		
+			allowed = {
+				OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Alice_Margatroid
+			}
+			modifier = {
+				research_speed_factor = 0.2
+			}
+			removal_cost = 0
+		}
+	}	
+	touhou_racial_economy = {#经济主导种族
+		human_trait = {
+			picture = can_send_in_the_zombies
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				OR = {
+					original_tag = HUM
+					original_tag = BLI
+					original_tag = MLS
+					original_tag = SSS
+					original_tag = TEM
+					original_tag = DES
+					AND = {
+						OR = {
+							controls_state = 1005
+							controls_state = 1001
+							controls_state = 993
+							controls_state = 1007
+							controls_state = 1002
+							controls_state = 999
+						}
+						OR = {
+							has_government = communism
+							has_government = democratic
+						}
+					}
+				}
+			}
+			removal_cost = 0
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+			}
+		}		
+		DLD_chireiden_trait = {#觉妖怪		
+			picture = race_animal_trait		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				OR = {
+					original_tag = DLD
+					AND = {
+						controls_state = 997
+						OR = {
+							has_government = communism
+							has_government = fascism
+						}
+					}
+				}
+			}
+			removal_cost = 0
+			modifier = {
+				consumer_goods_expected_value = -0.1
+			}
+		}
+	}	
+	touhou_racial_politics = {#政治主导种族		
+		VAM_vampire_trait = {		
+			picture = vampire_trait		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				OR = {
+					original_tag = VAM
+					AND = {
+						controls_state = 1006
+						OR = {
+							has_government = communism
+							has_government = fascism
+						}
+					}
+				}
+			}
+			removal_cost = 0
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+			}			
+		}
+		ghost_trait = {		
+			picture = race_ghost_trait		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				OR = {
+					original_tag = HAK
+					original_tag = OPP
+					AND = {
+						OR = {
+							controls_state = 998
+							controls_state = 1000
+						}
+						OR = {
+							has_government = communism
+							has_government = fascism
+						}
+					}
+				}
+			}
+			removal_cost = 0
+			modifier = {
+				political_power_gain = 0.5
+			}			
+		}
+		HEL_hell_trait = {		
+			picture = race_hell_trait		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				OR = {
+					original_tag = HEL
+					AND = {
+						OR = {
+							controls_state = 996
+						}
+						OR = {
+							has_government = communism
+							has_government = fascism
+						}
+					}
+				}
+			}
+			removal_cost = 0
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
+			}
+		}
+	}
+
+	touhou_ideology = {#核心理念
+		touhou_monster_has_all = {#妖怪至上
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_global_flag = touhou_all_country_unify
+				has_government = fascism
+			}
+			
+			picture = ast_abandon_the_westminster_system_fascism
+			removal_cost = 0
+			modifier = {
+				army_attack_factor = 0.25
+				army_defence_factor = 0.25
+				attrition = -0.25
+				army_morale_factor = 0.25
+			}
+		}
+		touhou_human_has_all = {
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_global_flag = touhou_all_country_unify
+				has_government = democratic
+			}
+			
+			removal_cost = 0
+			picture = ast_abandon_the_westminster_system
+			
+			modifier = {
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.3
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		touhou_communism = {#携手共进
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_global_flag = touhou_all_country_unify
+				has_government = communism
+			}
+			
+			removal_cost = 0
+			picture = home_of_revolution
+			
+			modifier = {
+				supply_consumption_factor = -0.05 #补给消耗
+				army_fuel_consumption_factor = -0.05 #陆军燃油消耗
+				justify_war_goal_time = -1 #正当化战争目标所需时间
+				offensive_war_stability_factor = 0.1 #侵略战争惩罚
+				war_stability_factor = 0.1 #战争状态支持度惩罚
+			}
+		}
+	}	
+
+	touhou_fiscal = {#财政支出
+		touhou_fiscal_society = {#投资科教文卫
+			picture = generic_pp_unity_bonus
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			cost = 10
+			removal_cost = -1
+			modifier = {
+				global_building_slots_factor = 0.15
+				research_speed_factor = 0.15
+				war_support_weekly = 0.005
+				stability_weekly = 0.005
+				
+				political_power_factor = -0.3
+			}
+			on_add = {
+				unlock_decision_category_tooltip = touhou_decisions_categories_touhou_fiscal_society
+			}
+		}
+		touhou_fiscal_flexibility = {#灵活支出-无额外投资
+			picture = neutrality_idea
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			visible = {
+				OR = {
+					has_idea = touhou_fiscal_society
+					has_idea = touhou_fiscal_flexibility
+					has_idea = touhou_fiscal_military
+				}
+			}
+
+			cost = 10
+			removal_cost = -1
+			modifier = {
+				
+			}
+			on_add = {
+				unlock_decision_category_tooltip = touhou_decisions_categories_touhou_fiscal_flexibility
+			}
+		}
+		touhou_fiscal_flexibility_0 = {#灵活支出-工程投资
+			picture = neutrality_idea
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			visible = {
+				has_idea = touhou_fiscal_flexibility_0
+			}
+
+			cost = 10
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+				global_building_slots_factor = 0.2				
+			}
+			on_add = {
+				unlock_decision_category_tooltip = touhou_decisions_categories_touhou_fiscal_flexibility
+			}
+		}
+		touhou_fiscal_flexibility_1 = {#灵活支出-科研投资
+			picture = neutrality_idea
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			visible = {
+				has_idea = touhou_fiscal_flexibility_1
+			}
+
+			cost = 10
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+				research_speed_factor = 0.2
+			}
+			on_add = {
+				unlock_decision_category_tooltip = touhou_decisions_categories_touhou_fiscal_flexibility
+			}
+		}
+		touhou_fiscal_flexibility_2 = {#灵活支出-国安投资
+			picture = neutrality_idea
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			visible = {
+				has_idea = touhou_fiscal_flexibility_2
+			}
+
+			cost = 10
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+				war_support_weekly = 0.008
+				stability_weekly = 0.008
+			}
+			on_add = {
+				unlock_decision_category_tooltip = touhou_decisions_categories_touhou_fiscal_flexibility
+			}
+		}
+		touhou_fiscal_flexibility_3 = {#灵活支出-吸收社会资金
+			picture = neutrality_idea
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			visible = {
+				has_idea = touhou_fiscal_flexibility_3
+			}
+
+			cost = 10
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_factor = -0.2
+			}
+			on_add = {
+				unlock_decision_category_tooltip = touhou_decisions_categories_touhou_fiscal_flexibility
+			}
+		}
+		touhou_fiscal_flexibility_4 = {#灵活支出-宣传服役
+			picture = neutrality_idea
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			visible = {
+				has_idea = touhou_fiscal_flexibility_4
+			}
+
+			cost = 10
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+				conscription_factor = 0.15
+			}
+			on_add = {
+				unlock_decision_category_tooltip = touhou_decisions_categories_touhou_fiscal_flexibility
+			}
+		}
+		touhou_fiscal_flexibility_5 = {#灵活支出-军工投资
+			picture = neutrality_idea
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			visible = {
+				has_idea = touhou_fiscal_flexibility_5
+			}
+
+			cost = 10
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+			}
+			on_add = {
+				unlock_decision_category_tooltip = touhou_decisions_categories_touhou_fiscal_flexibility
+			}
+		}
+		touhou_fiscal_military = {#侧重国防支出
+			picture = generic_infantry_bonus
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			cost = 10
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.15
+				conscription_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				
+				political_power_factor = -0.3
+			}
+			on_add = {
+				unlock_decision_category_tooltip = touhou_decisions_categories_touhou_fiscal_military
+			}
+		}
+	}
+	touhou_choose_future = {
+		
+		super_fantasy_industry = {
+		
+			picture = super_fantasy_industry
+		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_completed_focus = touhou_future
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.5
+				production_speed_buildings_factor = 0.2
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		super_fantasy_live = {
+		
+			picture = super_fantasy_live
+		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_completed_focus = touhou_future
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				conscription = 0.05
+				stability_factor = 0.2
+				foreign_subversive_activites = -0.8
+				decryption_factor = 0.4
+				encryption_factor = 0.4
+			}
+		}
+		super_fantasy_research = {
+		
+			picture = super_fantasy_research
+		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_completed_focus = touhou_future
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.7
+			}
+		}
+		super_fantasy_government = {
+		
+			picture = super_fantasy_government
+		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_completed_focus = touhou_future
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.3
+				justify_war_goal_time = -0.9
+			}
+		}
+		super_fantasy_army = {
+		
+			picture = super_fantasy_army
+		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_completed_focus = touhou_future
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.1
+				planning_speed = 0.1
+				max_planning = 0.1
+				recon_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				attrition = -0.1
+				experience_gain_army_factor = 0.4
+			}
+		}
+		
+		good_fantasy_all = {
+		
+			picture = good_fantasy_all
+		
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_completed_focus = touhou_future
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_expected_value = -0.05
+				conscription = 0.001
+				stability_factor = 0.05
+				foreign_subversive_activites = -0.2
+				decryption_factor = 0.1
+				encryption_factor = 0.1
+				research_speed_factor = 0.12
+				political_power_factor = 0.1
+				justify_war_goal_time = -0.2
+				planning_speed = 0.05
+				max_planning = 0.05
+				recon_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+				attrition = -0.05
+				experience_gain_army_factor = 0.1
+			}
+		}
+	}
+
+	touhou_main_researcher = {#魔法研究主导者
+		alice_main_researcher = {#爱丽丝主导研究
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Alice_Margatroid	 
+			}
+			visible = {
+			}
+			picture = alice
+			cost = 250
+			removal_cost = 0
+			modifier = {
+				research_speed_factor = 0.1
+			}
+			research_bonus = {
+				magic = 0.4
+			}
+			traits = { magic_researcher_trait }
+		}
+		paqiuli_main_researcher = {#帕秋莉主导研究
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Patchouli_Knowledge
+			}
+			visible = {
+			}
+			picture = paqiuli
+			cost = 250
+			removal_cost = 0
+			
+			research_bonus = {
+				magic = 0.6
+			}
+			traits = { magic_researcher_trait }
+		}
+		kappa_main_researcher = {#河童主导研究
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				}
+			available = {
+				has_character = TOUHOU_Kawasiro_Nitori 
+			}
+			visible = {
+			}
+			picture = kappa
+			cost = 250
+			removal_cost = 0
+			modifier = {
+				research_speed_factor = 0.1
+			}
+			research_bonus = {
+				demonforce = 0.4
+			}
+			traits = { demonforce_researcher_trait }
+		}
+		jue_main_researcher = {#古明地觉主导研究
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				}
+			available = {
+				has_character = TOUHOU_Komeiji_Satori
+			}
+			visible = {
+			}
+			picture = jue
+			cost = 250
+			removal_cost = 0
+			
+			research_bonus = {
+				demonforce = 0.6
+			}
+			
+			traits = { demonforce_researcher_trait }
+		}
+		huiyin_main_researcher = {#上白泽慧音主导研究
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				}
+			available = {
+				has_character = TOUHOU_Kamishirasawa_Keine
+			}
+			visible = {
+			}
+			picture = huiyin
+			cost = 250
+			removal_cost = 0
+			modifier = {
+				research_speed_factor = 0.1
+			}
+			research_bonus = {
+				wakan = 0.4
+			}
+
+			traits = { wakan_researcher_trait }
+		}	
+		boli_main_researcher = {#博丽灵梦主导研究
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_character = TOUHOU_Hakurei_Reimu
+			}
+			visible = {
+			}
+			picture = boli
+			cost = 250
+			removal_cost = 0
+			
+			research_bonus = {
+				wakan = 0.6
+			}
+
+			traits = { wakan_researcher_trait }
+		}			
+	}
+
+	touhou_main_research = {#主导科技
+		wakan_first_research = {#灵力主导
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_country_flag = touhou_country_flag_wakan_first_research
+			}
+			visible = {
+				NOT = {
+					has_country_flag = touhou_country_flag_first_research_updated
+				}
+			}
+			picture = touhou_wakan_trait
+			cost = 0
+			removal_cost = -1
+			equipment_bonus = {
+			}
+			modifier = {
+				army_strength_factor = 0.2
+				army_org_factor = 0.2
+				industrial_capacity_factory = 0.1
+				land_reinforce_rate = 0.05 #增援率
+			}
+			traits = { fantasy_wakan_researcher_trait }
+		}
+		magic_first_research = {#魔法主导
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_country_flag = touhou_country_flag_magic_first_research
+			}
+			visible = {
+				NOT = {
+					has_country_flag = touhou_country_flag_first_research_updated
+				}
+			}
+			picture = touhou_magician_trait
+			cost = 0
+			removal_cost = -1
+			equipment_bonus = {		
+			}
+			modifier = {
+				army_attack_factor = 0.25
+				army_defence_factor = -0.3
+			}
+			traits = { fantasy_magic_researcher_trait }
+		}
+		demonforce_first_research = {#妖力主导
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_country_flag = touhou_country_flag_demonforce_first_research
+			}
+			visible = {
+				NOT = {
+					has_country_flag = touhou_country_flag_first_research_updated
+				}
+			}
+			picture = touhou_demonforce_trait
+			cost = 0
+			removal_cost = -1
+			equipment_bonus = {
+			}
+			modifier = {
+				supply_consumption_factor = -0.15 #补给消耗
+				out_of_supply_factor = -0.15 #补给耗尽惩罚
+				no_supply_grace = 96 #携行补给
+				army_fuel_consumption_factor = -0.15 #陆军燃油消耗
+			}
+			traits = { fantasy_demonforce_researcher_trait }
+		}
+		out_teach_first_research = {#外界主导
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			visible = {
+				NOT = {
+					has_country_flag = touhou_country_flag_first_research_updated
+				}
+			}
+			picture = research_bonus
+			cost = 0
+			removal_cost = -1
+			equipment_bonus = {
+			}
+			modifier = {
+				research_speed_factor = 0.3
+				equipment_upgrade_xp_cost = -0.4
+			}
+			traits = { out_no_fantasy_researcher_trait }
+		}
+		wakan_first_research_veteran = {#灵力主导-老兵勋章
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_country_flag = touhou_country_flag_wakan_first_research
+				has_country_flag = touhou_country_flag_first_research_updated
+			}
+			visible = {
+				has_country_flag = touhou_country_flag_first_research_updated
+			}
+			picture = touhou_wakan_veteran_trait
+			cost = 0
+			removal_cost = -1
+			equipment_bonus = {
+			}
+			modifier = {
+				army_strength_factor = 0.2
+				army_org_factor = 0.2
+				industrial_capacity_factory = 0.1
+				land_reinforce_rate = 0.05 #增援率
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.2
+				army_breakthrough_against_major_factor = 0.2
+			}
+			traits = { fantasy_wakan_researcher_trait }
+		}
+		magic_first_research_veteran = {#魔法主导-老兵勋章
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_country_flag = touhou_country_flag_magic_first_research
+				has_country_flag = touhou_country_flag_first_research_updated
+			}
+			visible = {
+				has_country_flag = touhou_country_flag_first_research_updated
+			}
+			picture = touhou_magician_veteran_trait
+			cost = 0
+			removal_cost = -1
+			equipment_bonus = {		
+			}
+			modifier = {
+				army_attack_factor = 0.25
+				army_defence_factor = -0.35
+				army_attack_against_major_factor = 0.15
+				land_night_attack = 0.15
+			}
+			traits = { fantasy_magic_researcher_trait }
+		}
+		demonforce_first_research_veteran = {#妖力主导-老兵勋章
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_country_flag = touhou_country_flag_demonforce_first_research
+				has_country_flag = touhou_country_flag_first_research_updated
+			}
+			visible = {
+				has_country_flag = touhou_country_flag_first_research_updated				
+			}
+			picture = touhou_demonforce_veteran_trait
+			cost = 0
+			removal_cost = -1
+			equipment_bonus = {
+			}
+			modifier = {
+				supply_consumption_factor = -0.15 #补给消耗
+				out_of_supply_factor = -0.15 #补给耗尽惩罚
+				no_supply_grace = 96 #携行补给
+				army_fuel_consumption_factor = -0.15 #陆军燃油消耗
+				army_fuel_capacity_factor = 0.5
+				army_speed_factor = 0.25
+			}
+			traits = { fantasy_demonforce_researcher_trait }
+		}
+		out_teach_first_research_veteran = {#外界主导-老兵勋章
+			allowed = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			}
+			available = {
+				has_country_flag = touhou_country_flag_out_first_research
+				has_country_flag = touhou_country_flag_first_research_updated
+			}
+			visible = {
+				has_country_flag = touhou_country_flag_first_research_updated				
+			}
+			picture = research_bonus_veteran
+			cost = 0
+			removal_cost = -1
+			equipment_bonus = {
+			}
+			modifier = {
+				research_speed_factor = 0.3
+				equipment_upgrade_xp_cost = -0.4
+				line_change_production_efficiency_factor = 0.5
+				production_factory_efficiency_gain_factor = 0.3
+			}
+			traits = { out_no_fantasy_researcher_trait }
+		}		
+	}	
+}

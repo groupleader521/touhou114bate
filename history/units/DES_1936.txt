@@ -1,0 +1,84 @@
+﻿division_template = {
+	name = "道士小队" 
+
+	regiments = {
+		touhou_wakan_infantry = { x = 0 y = 0 }
+		touhou_wakan_infantry = { x = 0 y = 1 }
+		touhou_wakan_infantry = { x = 0 y = 2 }
+		touhou_wakan_infantry = { x = 0 y = 3 }
+	}
+
+}
+division_template = {
+	name = "道士中队" 
+
+	regiments = {
+		touhou_wakan_infantry = { x = 0 y = 0 }
+		touhou_wakan_infantry = { x = 0 y = 1 }
+		touhou_wakan_infantry = { x = 0 y = 2 }
+		touhou_wakan_infantry = { x = 0 y = 3 }
+
+		touhou_wakan_infantry = { x = 1 y = 0 }
+		touhou_wakan_infantry = { x = 1 y = 1 }
+		touhou_wakan_infantry = { x = 1 y = 2 }
+		touhou_wakan_infantry = { x = 1 y = 3 }
+	}
+
+}
+division_template = {
+	name = "道士大队" 
+
+	regiments = {
+		touhou_wakan_infantry = { x = 0 y = 0 }
+		touhou_wakan_infantry = { x = 0 y = 1 }
+		touhou_wakan_infantry = { x = 0 y = 2 }
+		touhou_wakan_infantry = { x = 0 y = 3 }
+		
+		touhou_wakan_infantry = { x = 1 y = 0 }
+		touhou_wakan_infantry = { x = 1 y = 1 }
+		touhou_wakan_infantry = { x = 1 y = 2 }
+		touhou_wakan_infantry = { x = 1 y = 3 }
+		
+		touhou_wakan_infantry = { x = 2 y = 0 }
+		touhou_wakan_infantry = { x = 2 y = 1 }
+		touhou_wakan_infantry = { x = 2 y = 2 }
+		touhou_wakan_infantry = { x = 2 y = 3 }
+	}
+
+}
+
+##### OOB #####
+units = {
+
+	division = { 
+		name = "道士"
+		location = 13408 
+		division_template = "道士大队"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		name = "仙人"
+		location = 13408 
+		division_template = "道士大队"
+		start_experience_factor = 0.5
+	}
+}
+air_wings = {
+	999 = { 
+		desires_equipment_0 = {
+			owner = "DES" 
+			amount = 40
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = touhou_wakan_infantry_equipment_0
+			creator = "DES"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+}

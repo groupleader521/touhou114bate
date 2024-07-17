@@ -1,0 +1,120 @@
+﻿add_namespace = rabbit
+country_event = {#永远亭挑衅
+	id = rabbit.0
+	title = rabbit.0.t
+	desc = rabbit.0.d
+	picture = GFX_report_event_touhou_rab
+	
+	trigger = {
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = rabbit.0.a
+		ai_chance = { base = 1 }
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -50
+		country_event = { id = rabbit.0 days = 30 random_days = 5 }
+	}
+	option = {
+		name = rabbit.0.b
+		ai_chance = { base = 9 }
+		declare_war_on = {
+			target = RAB
+			type = annex_everything
+		}
+	}
+}
+country_event = {#偷天换日
+	id = rabbit.1
+	title = rabbit.1.t
+	desc = rabbit.1.d
+	picture = GFX_report_event_touhou_rab
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rabbit.1.a
+		ai_chance = { base = 999 }
+		random_list = {
+			1 = { 
+				JAP = {
+					declare_war_on = {
+						target = RAB
+						type = take_core_state
+					}
+				}
+				modifier = {
+					factor = -1
+					is_ai = yes
+				}
+				modifier = {
+					factor = 4
+					is_ai = no
+					controls_state = 529
+				}
+				modifier = {
+					factor = 4
+					is_ai = no
+					controls_state = 530
+				}
+				modifier = {
+					factor = 4
+					is_ai = no
+					controls_state = 528
+				}
+				modifier = {
+					factor = 4
+					is_ai = no
+					controls_state = 535
+				}
+				modifier = {
+					factor = 4
+					is_ai = no
+					controls_state = 532
+				}
+				modifier = {
+					factor = 4
+					is_ai = no
+					controls_state = 534
+				}
+				modifier = {
+					factor = 4
+					is_ai = no
+					controls_state = 282
+				}
+				modifier = {
+					factor = 4
+					is_ai = no
+					controls_state = 533
+				}
+				modifier = {
+					factor = 4
+					is_ai = no
+					controls_state = 536
+				}
+				modifier = {
+					factor = 4
+					is_ai = no
+					controls_state = 555
+				}
+			}
+			100 = {
+				random_owned_state = {
+					limit = { any_neighbor_state = { is_owned_by = JAP } }
+					random_neighbor_state = {
+						limit = { is_owned_by = JAP }
+						RAB = { set_state_owner = PREV set_state_controller = PREV }
+						add_core_of = RAB
+					}
+				}
+				country_event = { id = rabbit.1 days = 30 random_days = 7 } 
+			}
+		}
+	}
+	option = {
+		name = rabbit.1.b
+		ai_chance = { base = 0 }
+	}
+}

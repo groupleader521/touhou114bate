@@ -1,0 +1,70 @@
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	evil_mischief = {
+		value = -10
+		months = 6
+		decay = 1
+	}
+	
+	human_molisha_human = {
+		value = 30
+		months = 1000
+		decay = 1
+	}
+	moster_molisha_human = {
+		value = -30
+		months = 1000
+		decay = 1
+	}
+	human_molisha_moster = {
+		value = -30
+		months = 1000
+		decay = 1
+	}
+	moster_molisha_moster = {
+		value = 30
+		months = 1000
+		decay = 1
+	}
+	equal_molisha = {
+		value = -30
+		months = 1000
+		decay = 1
+	}
+	touhou_All = {
+		value = 100
+		months = 1000
+		decay = 1
+	}
+	has_help_touhou_0 = {
+		value = -20
+		months = 3
+		decay = 1
+	}
+	has_help_touhou_1 = {
+		value = -40
+		months = 3
+		decay = 1
+	}
+	has_help_touhou_2 = {
+		value = -60
+		months = 3
+		decay = 1
+	}
+	has_help_touhou_3 = {
+		value = -80
+		months = 3
+		decay = 1
+	}
+	has_help_touhou_4 = {
+		value = -100
+		months = 3
+		decay = 1
+	}
+}

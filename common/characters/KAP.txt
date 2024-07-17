@@ -1,0 +1,57 @@
+characters = {
+	TOUHOU_Kawasiro_Nitori = {
+		name = TOUHOU_Kawasiro_Nitori
+		portraits = {
+			civilian = {
+				large = GFX_navy_Kawasiro_Nitori
+			}
+			army = {
+				large = GFX_navy_Kawasiro_Nitori
+				small = GFX_idea_kappa
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = centrism
+			traits = {
+				kappa_research
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {
+				kappa_research
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+				kappa_research
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = marxism
+			traits = {
+				kappa_research
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Kawasiro_Nitori
+			slot = navy_chief
+			traits = { touhou_navy_submarine_3 }
+		}
+		field_marshal = {
+			traits = {
+				units_kappa trait_engineer naval_invader fortress_buster invader_ii naval_liason
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

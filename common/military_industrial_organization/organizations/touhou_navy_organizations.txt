@@ -1,0 +1,48 @@
+touhou_kappa_naval_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_kappa
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		FROM = {
+			OR = {
+				original_tag = KAP
+				KAP = { has_opinion = { target = FROM value > 24 } }
+				controls_state = 983
+			}
+		}
+	}
+}
+touhou_siji_naval_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_siji
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		FROM = {
+			OR = {
+				original_tag = OPP
+				OPP = { has_opinion = { target = FROM value > 24 } }
+				controls_state = 998
+			}
+		}
+	}
+}
+touhou_shuimi_naval_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_shuimi
+	allowed = {
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	}
+	available = {
+		FROM = {
+			OR = {
+				original_tag = TEM
+				TEM = { has_opinion = { target = FROM value > 24 } }
+				controls_state = 1002
+			}
+		}
+	}
+}

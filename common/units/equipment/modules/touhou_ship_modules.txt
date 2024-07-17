@@ -1,0 +1,253 @@
+equipment_modules = {
+#关于造价，我分为了属性造价和buff造价，属性造价在add_stats里，buff造价在multiply_stats里
+#航母比较特殊，因为海战空军具有明显的规模效应，所以我认为其天生自带buff造价。
+#属性=基础值*（1+加成之和）
+
+##############星莲船##########
+	#主炮
+	ship_lotus_heavy_battery_plus = {#对海榴弹炮：超人「圣白莲」
+		category = ship_lotus_plus
+		sfx = sfx_ui_sd_module_turret
+		gfx = ship_lotus_heavy_battery_plus
+		add_stats = {
+			lg_attack = 35
+			hg_attack = 50
+			build_cost_ic = 5000
+		}
+		add_average_stats = {
+			lg_armor_piercing = 12
+			hg_armor_piercing = 15
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+		}
+		build_cost_resources = {
+			steel = 2
+			chromium = 1
+		}
+		
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_lotus_medium_light_battery = {#对舰穿甲内爆弹：「圣尼公之大空卷轴」
+		category = ship_lotus_plus
+		sfx = sfx_ui_sd_module_turret
+		gfx = ship_lotus_medium_light_battery
+		
+		add_stats = {
+			hg_attack = 20
+			build_cost_ic = 2000
+		}
+		add_average_stats = {
+			hg_armor_piercing = 60
+		}
+		multiply_stats = {
+			naval_speed = -0.03
+		}
+		build_cost_resources = {
+			tungsten = 2
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+	ship_lotus_deck_space_plus = {#空间压缩机库：魔法「Magic Butterfly」
+		category = ship_lotus_plus
+		gfx = ship_lotus_deck_space_plus
+		add_stats = {
+			carrier_size = 8
+			build_cost_ic = 6000
+			reliability = -0.05
+		}
+		multiply_stats = {
+			build_cost_ic = 0.03 
+		}
+		build_cost_resources = {
+			steel = 4
+		}
+		manpower = 2000
+	}
+	ship_lotus_anti_air = {#防空炮：广目天之眼
+		category = ship_lotus_plus
+		gfx = ship_lotus_anti_air
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			anti_air_attack = 33
+			build_cost_ic = 1020
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+	}
+
+	#引擎	
+	ship_lotus_engine_BB = {#作战引擎：「Angirasa Veda」
+		category = ship_lotus_engine
+		sfx = sfx_ui_sd_module_engine
+		gfx = ship_lotus_engine_BB
+		add_stats = {
+			fuel_consumption = 50
+			reliability = 0.3
+		}
+		build_cost_resources = {
+			tungsten = 2
+		}		
+		multiply_stats = {
+			naval_range = 0.1
+			naval_speed = 0.1
+		}	
+	}
+	ship_lotus_engine_DD = {#高速引擎：*以100迈驰骋天际*
+		category = ship_lotus_engine
+		sfx = sfx_ui_sd_module_engine
+		gfx = ship_lotus_engine_DD
+		
+		add_stats = {
+			fuel_consumption = 10
+			reliability = -0.4
+		}
+		build_cost_resources = {
+			aluminium = 2
+		}
+		multiply_stats = {
+			naval_range = 0.3
+			naval_speed = 1
+		}
+	}
+	ship_lotus_engine_CV = {#远航引擎：「游行圣」
+		category = ship_lotus_engine
+		sfx = sfx_ui_sd_module_engine
+		gfx = ship_lotus_engine_CV
+		add_stats = {
+			fuel_consumption = 25
+		}
+		build_cost_resources = {
+			chromium = 2
+		}
+		multiply_stats = {
+			naval_range = 0.7
+			naval_speed = 0.2
+		}		
+	}
+
+	#装甲
+	ship_lotus_armor = {#高厚装甲：天符「三千大千世界之主」
+		category = ship_lotus_AM
+		gfx = ship_lotus_armor
+		add_equipment_type = capital_ship
+		multiply_stats = {
+			armor_value = 0.4
+			max_strength = 0.4
+			build_cost_ic = 0.05
+		}
+		build_cost_resources = {
+			tungsten = 2
+		}
+	}
+	ship_lotus_armor_thin = {#隐蔽装甲：天符「大日如来的光辉」
+		category = ship_lotus_AM
+		gfx = ship_lotus_armor_thin
+		add_equipment_type = screen_ship
+		multiply_stats = {
+			armor_value = -0.2
+			surface_visibility = -0.7
+			max_strength = -0.3
+			naval_torpedo_enemy_critical_chance_factor = -0.4
+			naval_torpedo_damage_reduction_factor = 0.4
+			build_cost_ic = 0.1
+		}
+		build_cost_resources = {
+			aluminium = 2
+		}
+	}
+	ship_lotus_armor_thick = {#批量装甲：天符「释迦牟尼的五行山」
+		category = ship_lotus_AM
+		gfx = ship_lotus_armor_thick
+		multiply_stats = {
+			armor_value = -0.9
+			surface_visibility = 0.5
+			max_strength = -0.7
+			build_cost_ic = -0.6
+		}
+		build_cost_resources = {
+			steel = 2
+		}
+	}
+
+	#火控
+	ship_lotus_fire_control_system = {#火控：大魔法「魔神复诵」
+		category = ship_lotus_FC
+		gfx = ship_lotus_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			build_cost_ic = 325
+			naval_light_gun_hit_chance_factor = 0.15
+			naval_heavy_gun_hit_chance_factor = 0.15
+		}
+		build_cost_resources = {
+			steel = 1
+			chromium = 1
+		}		
+		multiply_stats = {
+			build_cost_ic = 0.05
+			anti_air_attack = 0.3
+		}
+	}
+
+	#雷达
+	ship_lotus_radar = {#雷达：光魔「魔法银河系」
+		category = ship_lotus_RA
+		gfx = ship_lotus_radar
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			build_cost_ic = 325
+			naval_light_gun_hit_chance_factor = 0.15
+			naval_heavy_gun_hit_chance_factor = 0.15
+		}
+		build_cost_resources = {
+			chromium = 1
+			rubber = 1
+		}
+		multiply_stats = {
+			surface_detection = 1
+			sub_detection = 1
+			build_cost_ic = 0.05
+		}
+	}
+
+	#辅助装备
+	ship_lotus_airplane_launcher = {#飞机设施：飞钵「传说中的空中圆盘」
+		category = ship_lotus_AL
+		gfx = ship_lotus_airplane_launcher
+
+		add_stats = {
+			surface_detection = 12
+			sub_detection = 12
+			build_cost_ic = 400
+		}
+	}	
+	ship_lotus_secondary_battery = {#副炮组：星之剑护法
+		category = ship_lotus_AL
+		gfx = ship_lotus_secondary_battery
+		sfx = sfx_ui_sd_module_turret
+		multiply_stats = {
+			lg_armor_piercing = 0.3
+			hg_armor_piercing = 0.3
+			build_cost_ic = 0.02
+		}
+		build_cost_resources = {
+			steel = 1
+			rubber = 1
+		}
+	}
+	ship_lotus_dp_light_battery = {#高平两用副炮：「焚天之瞳」
+		category = ship_lotus_AL
+		gfx = ship_lotus_dp_light_battery
+		sfx = sfx_ui_sd_module_turret
+		multiply_stats = {
+			anti_air_attack = 0.5
+			build_cost_ic = 0.02
+		}
+		build_cost_resources = {
+			steel = 1
+			rubber = 1
+		}
+	}
+}	

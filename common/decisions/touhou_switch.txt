@@ -1,0 +1,1233 @@
+#这个文档主要放了一些会切来切去的决议，因为这些决议代码实际上都可以套用科技切换代码，所以就放在这里
+
+
+
+touhou_research_type = {#切换主导科技种类
+	touhou_research_type_change_to_magic = {#切换魔法科技
+		icon = eng_trade_unions_support
+		days_re_enable = 0
+
+		available = {
+			NOT = {	has_country_flag = touhou_country_flag_changing_first_research }
+		}
+		visible = {
+			NOT = {	has_country_flag = touhou_country_flag_out_first_research	}
+			NOT = {	has_country_flag = touhou_country_flag_magic_first_research	}
+		}
+
+		cost = 300
+		days_remove = 0
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+			clr_country_flag = touhou_country_flag_magic_first_research
+			clr_country_flag = touhou_country_flag_wakan_first_research
+			clr_country_flag = touhou_country_flag_demonforce_first_research
+			clr_country_flag = touhou_country_flag_out_first_research
+			set_country_flag = touhou_country_flag_magic_first_research
+
+			set_country_flag = touhou_country_flag_changing_first_research
+
+			if = {
+				limit = { NOT = { has_country_flag = touhou_country_flag_first_research_updated }}
+				if = {
+					limit = { has_idea = wakan_first_research }
+					swap_ideas = {
+						remove_idea = wakan_first_research
+						add_idea = magic_first_research
+					}
+				}
+				else_if = {
+					limit = { has_idea = demonforce_first_research }
+					swap_ideas = {
+						remove_idea = demonforce_first_research
+						add_idea = magic_first_research
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = { has_idea = wakan_first_research_veteran }
+					swap_ideas = {
+						remove_idea = wakan_first_research_veteran
+						add_idea =magic_first_research_veteran
+					}
+				}
+				else_if = {
+					limit = { has_idea = demonforce_first_research_veteran }
+					swap_ideas = {
+						remove_idea = demonforce_first_research_veteran
+						add_idea = magic_first_research_veteran
+					}
+				}
+			}
+
+			add_tech_bonus = {
+				name = touhou_research_type_change_to_magic
+				ahead_reduction = 2
+				bonus = 1
+				uses = 3
+				category = magic
+			}
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_changing_first_research
+		}
+	}
+	touhou_research_type_change_to_wakan = {#切换灵力科技
+		icon = eng_trade_unions_support
+		days_re_enable = 0
+
+		available = {
+			NOT = {	has_country_flag = touhou_country_flag_changing_first_research }
+		}
+		visible = {
+			NOT = {	has_country_flag = touhou_country_flag_out_first_research	}
+			NOT = {	has_country_flag = touhou_country_flag_wakan_first_research	}
+		}
+
+		cost = 300
+		days_remove = 0
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+			clr_country_flag = touhou_country_flag_magic_first_research
+			clr_country_flag = touhou_country_flag_wakan_first_research
+			clr_country_flag = touhou_country_flag_demonforce_first_research
+			clr_country_flag = touhou_country_flag_out_first_research
+			set_country_flag = touhou_country_flag_wakan_first_research
+
+			set_country_flag = touhou_country_flag_changing_first_research
+
+			if = {
+				limit = { NOT = { has_country_flag = touhou_country_flag_first_research_updated }}
+				if = {
+					limit = { has_idea = magic_first_research }
+					swap_ideas = {
+						remove_idea = magic_first_research
+						add_idea = wakan_first_research
+					}
+				}
+				else_if = {
+					limit = { has_idea = demonforce_first_research }
+					swap_ideas = {
+						remove_idea = demonforce_first_research
+						add_idea = wakan_first_research
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = { has_idea = magic_first_research_veteran }
+					swap_ideas = {
+						remove_idea = magic_first_research_veteran
+						add_idea = wakan_first_research_veteran
+					}
+				}
+				else_if = {
+					limit = { has_idea = demonforce_first_research_veteran }
+					swap_ideas = {
+						remove_idea = demonforce_first_research_veteran
+						add_idea = wakan_first_research_veteran
+					}
+				}
+			}
+
+			add_tech_bonus = {
+				name = touhou_research_type_change_to_wakan
+				ahead_reduction = 2
+				bonus = 1
+				uses = 3
+				category = wakan
+			}
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_changing_first_research
+		}
+	}
+	touhou_research_type_change_to_demonforce = {#切换妖力科技
+		icon = eng_trade_unions_support
+		days_re_enable = 0
+
+		available = {
+			NOT = {	has_country_flag = touhou_country_flag_changing_first_research }
+		}
+		visible = {
+			NOT = {	has_country_flag = touhou_country_flag_out_first_research }
+			NOT = {	has_country_flag = touhou_country_flag_demonforce_first_research }
+		}
+
+		cost = 300
+		days_remove = 0
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+			clr_country_flag = touhou_country_flag_magic_first_research
+			clr_country_flag = touhou_country_flag_wakan_first_research
+			clr_country_flag = touhou_country_flag_demonforce_first_research
+			clr_country_flag = touhou_country_flag_out_first_research
+			set_country_flag = touhou_country_flag_demonforce_first_research
+
+			set_country_flag = touhou_country_flag_changing_first_research
+
+			if = {
+				limit = { NOT = { has_country_flag = touhou_country_flag_first_research_updated }}
+				if = {
+					limit = { has_idea = magic_first_research }
+					swap_ideas = {
+						remove_idea = magic_first_research
+						add_idea = demonforce_first_research
+					}
+				}
+				else_if = {
+					limit = { has_idea = wakan_first_research }
+					swap_ideas = {
+						remove_idea = wakan_first_research
+						add_idea = demonforce_first_research
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = { has_idea = magic_first_research_veteran }
+					swap_ideas = {
+						remove_idea = magic_first_research_veteran
+						add_idea = demonforce_first_research_veteran
+					}
+				}
+				else_if = {
+					limit = { has_idea = wakan_first_research_veteran }
+					swap_ideas = {
+						remove_idea = wakan_first_research_veteran
+						add_idea = demonforce_first_research_veteran
+					}
+				}
+			}			
+
+			add_tech_bonus = {
+				name = touhou_research_type_change_to_demonforce
+				ahead_reduction = 2
+				bonus = 1
+				uses = 3
+				category = demonforce
+			}
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_changing_first_research
+		}
+	}
+	touhou_research_type_change_to_out = {#切换外界科技
+		icon = eng_trade_unions_support
+		fire_only_once = yes
+
+		available = {
+			NOT = {	has_country_flag = touhou_country_flag_changing_first_research }
+		}
+		visible = {
+			NOT = {	has_country_flag = touhou_country_flag_out_first_research }
+		}
+
+		cost = 0
+		days_remove = 0
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+			clr_country_flag = touhou_country_flag_magic_first_research
+			clr_country_flag = touhou_country_flag_wakan_first_research
+			clr_country_flag = touhou_country_flag_demonforce_first_research
+			clr_country_flag = touhou_country_flag_out_first_research
+			set_country_flag = touhou_country_flag_out_first_research
+
+			set_country_flag = touhou_country_flag_changing_first_research
+
+			if = {
+				limit = { NOT = { has_country_flag = touhou_country_flag_first_research_updated }}
+				if = {
+					limit = { has_idea = wakan_first_research }
+					swap_ideas = {
+						remove_idea = wakan_first_research
+						add_idea = out_teach_first_research
+					}
+				}
+				else_if = {
+					limit = { has_idea = magic_first_research }
+					swap_ideas = {
+						remove_idea = magic_first_research
+						add_idea = out_teach_first_research
+					}
+				}
+				else_if = {
+					limit = { has_idea = demonforce_first_research }
+					swap_ideas = {
+						remove_idea = demonforce_first_research
+						add_idea = out_teach_first_research
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = { has_idea = wakan_first_research_veteran }
+					swap_ideas = {
+						remove_idea = wakan_first_research_veteran
+						add_idea = out_teach_first_research_veteran
+					}
+				}
+				else_if = {
+					limit = { has_idea = magic_first_research_veteran }
+					swap_ideas = {
+						remove_idea = magic_first_research_veteran
+						add_idea = out_teach_first_research_veteran
+					}
+				}
+				else_if = {
+					limit = { has_idea = demonforce_first_research_veteran }
+					swap_ideas = {
+						remove_idea = demonforce_first_research_veteran
+						add_idea = out_teach_first_research_veteran
+					}
+				}
+			}
+
+			add_tech_bonus = {
+				name = touhou_research_type_change_to_out
+				bonus = 5.0
+				uses = 6
+				category = infantry_weapons
+				category = artillery
+				category = armor
+				category = air_equipment
+				category = industry
+				category = electronics
+			}
+		}
+		
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_changing_first_research
+		}
+	}
+	touhou_descison_research_type_update = {#升级科技
+		icon = gre_paying_ifc_debt
+		fire_only_once = yes
+
+		available = {
+			has_country_flag = touhou_country_flag_first_research_update
+		}
+		visible = {
+			has_country_flag = touhou_country_flag_first_research_update
+		}
+
+		cost = 0
+		days_remove = 0
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+			set_country_flag = touhou_country_flag_first_research_updated
+			if = {
+				limit = { has_idea = wakan_first_research }
+				swap_ideas = {
+					remove_idea = wakan_first_research
+					add_idea = wakan_first_research_veteran
+				}
+			}
+			else_if = {
+				limit = { has_idea = magic_first_research }
+				swap_ideas = {
+					remove_idea = magic_first_research
+					add_idea = magic_first_research_veteran
+				}
+			}
+			else_if = {
+				limit = { has_idea = demonforce_first_research }
+				swap_ideas = {
+					remove_idea = demonforce_first_research
+					add_idea = demonforce_first_research_veteran
+				}
+			}
+			else_if = {
+				limit = { has_idea = out_teach_first_research }
+				swap_ideas = {
+					remove_idea = out_teach_first_research
+					add_idea = out_teach_first_research_veteran
+				}
+			}
+		}
+	}	
+}
+touhou_decisions_categories_everyone_communist_focus = {#支部工作重心
+	touhou_decisions_everyone_communist_economy = {#以生产建设为重心
+		icon = GFX_decision_generic_wreckers
+		days_re_enable = 0
+
+		available = {
+			NOT = {	has_country_flag = touhou_country_flag_changing_everyone_communist_focus }
+			NOT = {	
+				has_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_economy
+				}
+			}			
+		}
+		visible = {
+			has_country_flag = touhou_country_flag_everyone_communist
+			has_government = communism
+		}
+
+		cost = 10
+		days_remove = 20
+	
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+		}
+	
+		complete_effect = {
+			if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = touhou_dynamic_modifiers_everyone_communist_economy
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_economy
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = touhou_dynamic_modifiers_everyone_communist_army
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_army
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = touhou_dynamic_modifiers_everyone_communist_ideology
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_ideology
+				}
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_focus
+				}
+			}
+			set_country_flag = touhou_country_flag_changing_everyone_communist_focus
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_changing_everyone_communist_focus
+			hidden_effect = {
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_focus
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = touhou_dynamic_modifiers_everyone_communist_economy
+			}
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	touhou_decisions_everyone_communist_army = {#以军队建设为重心
+		icon = GFX_decision_generic_tank
+		days_re_enable = 0
+
+		available = {
+			NOT = {	has_country_flag = touhou_country_flag_changing_everyone_communist_focus }
+			NOT = {	
+				has_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_army
+				}
+			}		
+		}
+		visible = {
+			has_country_flag = touhou_country_flag_everyone_communist
+			has_government = communism
+		}
+
+		cost = 10
+		days_remove = 20
+	
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+		}
+	
+		complete_effect = {
+			if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = touhou_dynamic_modifiers_everyone_communist_economy
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_economy
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = touhou_dynamic_modifiers_everyone_communist_army
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_army
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = touhou_dynamic_modifiers_everyone_communist_ideology
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_ideology
+				}
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_focus
+				}
+			}
+			set_country_flag = touhou_country_flag_changing_everyone_communist_focus
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_changing_everyone_communist_focus
+			hidden_effect = {
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_focus
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = touhou_dynamic_modifiers_everyone_communist_army
+			}
+			add_command_power = 50
+		}
+	}
+	touhou_decisions_everyone_communist_ideology = {#以思想建设为重心
+		icon = GFX_decision_generic_military
+		days_re_enable = 0
+
+		available = {
+			NOT = {	has_country_flag = touhou_country_flag_changing_everyone_communist_focus }
+			NOT = {	
+				has_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_ideology
+				}
+			}
+		}
+		visible = {
+			has_country_flag = touhou_country_flag_everyone_communist
+			has_government = communism
+		}
+
+		cost = 10
+		days_remove = 20
+	
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+		}
+	
+		complete_effect = {
+			if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = touhou_dynamic_modifiers_everyone_communist_economy
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_economy
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = touhou_dynamic_modifiers_everyone_communist_army
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_army
+				}
+			}
+			else_if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = touhou_dynamic_modifiers_everyone_communist_ideology
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_ideology
+				}
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_focus
+				}
+			}
+			set_country_flag = touhou_country_flag_changing_everyone_communist_focus
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_changing_everyone_communist_focus
+			hidden_effect = {
+				remove_dynamic_modifier = {
+					modifier = touhou_dynamic_modifiers_everyone_communist_focus
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = touhou_dynamic_modifiers_everyone_communist_ideology
+			}
+			every_controlled_state = {
+				add_compliance = 5
+			}
+		}
+	}		
+}
+touhou_decisions_categories_touhou_fiscal_flexibility = {#灵活支出
+	touhou_decisions_touhou_fiscal_flexibility = {#取消额外投资
+		icon = eng_trade_unions_demand
+		days_re_enable = 0
+		available = {
+			NOT = {
+				has_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			}
+		}
+		visible = {
+			NOT = {	has_idea = touhou_fiscal_flexibility }
+			OR = {
+				has_idea = touhou_fiscal_flexibility
+				has_idea = touhou_fiscal_flexibility_1
+				has_idea = touhou_fiscal_flexibility_2
+				has_idea = touhou_fiscal_flexibility_3
+				has_idea = touhou_fiscal_flexibility_4
+				has_idea = touhou_fiscal_flexibility_5
+			}
+			hidden_trigger = {
+				is_ai = no
+			}
+		}
+		cost = 0
+		days_remove = 0		
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}		
+		complete_effect = {
+			set_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			if = {
+				limit = { has_idea = touhou_fiscal_flexibility }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility
+					add_idea = touhou_fiscal_flexibility
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_0 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_0
+					add_idea = touhou_fiscal_flexibility
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_1 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_1
+					add_idea = touhou_fiscal_flexibility
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_2 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_2
+					add_idea = touhou_fiscal_flexibility
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_3 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_3
+					add_idea = touhou_fiscal_flexibility
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_4 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_4
+					add_idea = touhou_fiscal_flexibility
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_5 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_5
+					add_idea = touhou_fiscal_flexibility
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+		}
+	}
+	touhou_decisions_touhou_fiscal_flexibility_0 = {#投资工程
+		icon = hol_draw_up_staff_plans
+		days_re_enable = 0
+		available = {
+			NOT = {
+				has_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			}
+		}
+		visible = {
+			NOT = {	has_idea = touhou_fiscal_flexibility_0 }
+			OR = {
+				has_idea = touhou_fiscal_flexibility
+				has_idea = touhou_fiscal_flexibility_1
+				has_idea = touhou_fiscal_flexibility_2
+				has_idea = touhou_fiscal_flexibility_3
+				has_idea = touhou_fiscal_flexibility_4
+				has_idea = touhou_fiscal_flexibility_5
+			}
+			hidden_trigger = {
+				is_ai = no
+			}
+		}
+		cost = 0
+		days_remove = 0		
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}		
+		complete_effect = {
+			set_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			if = {
+				limit = { has_idea = touhou_fiscal_flexibility }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility
+					add_idea = touhou_fiscal_flexibility_0
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_0 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_0
+					add_idea = touhou_fiscal_flexibility_0
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_1 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_1
+					add_idea = touhou_fiscal_flexibility_0
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_2 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_2
+					add_idea = touhou_fiscal_flexibility_0
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_3 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_3
+					add_idea = touhou_fiscal_flexibility_0
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_4 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_4
+					add_idea = touhou_fiscal_flexibility_0
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_5 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_5
+					add_idea = touhou_fiscal_flexibility_0
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+		}
+	}
+	touhou_decisions_touhou_fiscal_flexibility_1 = {#投资科研
+		icon = generic_research
+		days_re_enable = 0
+		available = {
+			NOT = {
+				has_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			}
+		}
+		visible = {
+			NOT = {	has_idea = touhou_fiscal_flexibility_1 }
+			OR = {
+				has_idea = touhou_fiscal_flexibility
+				has_idea = touhou_fiscal_flexibility_1
+				has_idea = touhou_fiscal_flexibility_2
+				has_idea = touhou_fiscal_flexibility_3
+				has_idea = touhou_fiscal_flexibility_4
+				has_idea = touhou_fiscal_flexibility_5
+			}
+			hidden_trigger = {
+				is_ai = no
+			}
+		}
+		cost = 0
+		days_remove = 0		
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}		
+		complete_effect = {
+			set_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			if = {
+				limit = { has_idea = touhou_fiscal_flexibility }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility
+					add_idea = touhou_fiscal_flexibility_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_0 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_0
+					add_idea = touhou_fiscal_flexibility_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_1 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_1
+					add_idea = touhou_fiscal_flexibility_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_2 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_2
+					add_idea = touhou_fiscal_flexibility_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_3 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_3
+					add_idea = touhou_fiscal_flexibility_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_4 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_4
+					add_idea = touhou_fiscal_flexibility_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_5 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_5
+					add_idea = touhou_fiscal_flexibility_1
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+		}
+	}
+	touhou_decisions_touhou_fiscal_flexibility_2 = {#投资社会福利
+		icon = generic_welfare
+		days_re_enable = 0
+		available = {
+			NOT = {
+				has_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			}
+		}
+		visible = {
+			NOT = {	has_idea = touhou_fiscal_flexibility_2 }
+			OR = {
+				has_idea = touhou_fiscal_flexibility
+				has_idea = touhou_fiscal_flexibility_1
+				has_idea = touhou_fiscal_flexibility_2
+				has_idea = touhou_fiscal_flexibility_3
+				has_idea = touhou_fiscal_flexibility_4
+				has_idea = touhou_fiscal_flexibility_5
+			}
+			hidden_trigger = {
+				is_ai = no
+			}
+		}
+		cost = 0
+		days_remove = 0		
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}		
+		complete_effect = {
+			set_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			if = {
+				limit = { has_idea = touhou_fiscal_flexibility }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility
+					add_idea = touhou_fiscal_flexibility_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_0 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_0
+					add_idea = touhou_fiscal_flexibility_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_1 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_1
+					add_idea = touhou_fiscal_flexibility_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_2 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_2
+					add_idea = touhou_fiscal_flexibility_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_3 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_3
+					add_idea = touhou_fiscal_flexibility_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_4 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_4
+					add_idea = touhou_fiscal_flexibility_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_5 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_5
+					add_idea = touhou_fiscal_flexibility_2
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+		}
+	}
+	touhou_decisions_touhou_fiscal_flexibility_3 = {#吸收社会资金
+		icon = SWI_support_humanitarian_efforts
+		days_re_enable = 0
+		available = {
+			NOT = {
+				has_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			}
+		}
+		visible = {
+			NOT = {	has_idea = touhou_fiscal_flexibility_3 }
+			OR = {
+				has_idea = touhou_fiscal_flexibility
+				has_idea = touhou_fiscal_flexibility_1
+				has_idea = touhou_fiscal_flexibility_2
+				has_idea = touhou_fiscal_flexibility_3
+				has_idea = touhou_fiscal_flexibility_4
+				has_idea = touhou_fiscal_flexibility_5
+			}
+			hidden_trigger = {
+				is_ai = no
+			}
+		}
+		cost = 0
+		days_remove = 0		
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}		
+		complete_effect = {
+			set_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			if = {
+				limit = { has_idea = touhou_fiscal_flexibility }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility
+					add_idea = touhou_fiscal_flexibility_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_0 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_0
+					add_idea = touhou_fiscal_flexibility_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_1 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_1
+					add_idea = touhou_fiscal_flexibility_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_2 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_2
+					add_idea = touhou_fiscal_flexibility_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_3 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_3
+					add_idea = touhou_fiscal_flexibility_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_4 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_4
+					add_idea = touhou_fiscal_flexibility_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_5 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_5
+					add_idea = touhou_fiscal_flexibility_3
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+		}
+	}
+	touhou_decisions_touhou_fiscal_flexibility_4 = {#宣传服役
+		icon = SWE_set_army_budget
+		days_re_enable = 0
+		available = {
+			NOT = {
+				has_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			}
+		}
+		visible = {
+			NOT = {	has_idea = touhou_fiscal_flexibility_4 }
+			OR = {
+				has_idea = touhou_fiscal_flexibility
+				has_idea = touhou_fiscal_flexibility_1
+				has_idea = touhou_fiscal_flexibility_2
+				has_idea = touhou_fiscal_flexibility_3
+				has_idea = touhou_fiscal_flexibility_4
+				has_idea = touhou_fiscal_flexibility_5
+			}
+			hidden_trigger = {
+				is_ai = no
+			}
+		}
+		cost = 0
+		days_remove = 0		
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}		
+		complete_effect = {
+			set_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			if = {
+				limit = { has_idea = touhou_fiscal_flexibility }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility
+					add_idea = touhou_fiscal_flexibility_4
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_0 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_0
+					add_idea = touhou_fiscal_flexibility_4
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_1 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_1
+					add_idea = touhou_fiscal_flexibility_4
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_2 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_2
+					add_idea = touhou_fiscal_flexibility_4
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_3 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_3
+					add_idea = touhou_fiscal_flexibility_4
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_4 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_4
+					add_idea = touhou_fiscal_flexibility_4
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_5 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_5
+					add_idea = touhou_fiscal_flexibility_4
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+		}
+	}
+	touhou_decisions_touhou_fiscal_flexibility_5 = {#投资军工
+		icon = generic_industry
+		days_re_enable = 0
+		available = {
+			NOT = {
+				has_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			}
+		}
+		visible = {
+			NOT = {	has_idea = touhou_fiscal_flexibility_5 }
+			OR = {
+				has_idea = touhou_fiscal_flexibility
+				has_idea = touhou_fiscal_flexibility_1
+				has_idea = touhou_fiscal_flexibility_2
+				has_idea = touhou_fiscal_flexibility_3
+				has_idea = touhou_fiscal_flexibility_4
+				has_idea = touhou_fiscal_flexibility_5
+			}
+			hidden_trigger = {
+				is_ai = no
+			}
+		}
+		cost = 0
+		days_remove = 0		
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}		
+		complete_effect = {
+			set_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+			if = {
+				limit = { has_idea = touhou_fiscal_flexibility }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility
+					add_idea = touhou_fiscal_flexibility_5
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_0 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_0
+					add_idea = touhou_fiscal_flexibility_5
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_1 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_1
+					add_idea = touhou_fiscal_flexibility_5
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_2 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_2
+					add_idea = touhou_fiscal_flexibility_5
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_3 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_3
+					add_idea = touhou_fiscal_flexibility_5
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_4 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_4
+					add_idea = touhou_fiscal_flexibility_5
+				}
+			}
+			else_if = {
+				limit = { has_idea = touhou_fiscal_flexibility_5 }
+				swap_ideas = {
+					remove_idea = touhou_fiscal_flexibility_5
+					add_idea = touhou_fiscal_flexibility_5
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = touhou_country_flag_touhou_fiscal_flexibility_changing
+		}
+	}
+}

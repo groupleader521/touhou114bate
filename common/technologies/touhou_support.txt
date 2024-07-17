@@ -1,0 +1,1368 @@
+technologies = {
+	
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+
+
+	touhou_tech_support = {
+
+		enable_equipments = {
+			touhou_support_equipment_1
+		}
+		
+		
+		path = {
+			leads_to_tech = touhou_tech_engineers
+			research_cost_coeff = 1
+		}	
+		
+		path = {
+			leads_to_tech = touhou_tech_recon
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = touhou_tech_field_hospital
+			research_cost_coeff = 1
+		}					
+
+		path = {
+			leads_to_tech = touhou_tech_logistics_company
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = touhou_tech_military_police
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = touhou_tech_signal_company
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = touhou_tech_maintenance_company
+			research_cost_coeff = 1
+		}
+		research_cost = 1.0
+		start_year = 1918
+		folder = {
+			name = touhou_support_folder
+			position = { x = 0 y = @1918 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 4
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 4
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	
+	touhou_tech_engineers = {
+
+		enable_subunits = {
+			touhou_engineer
+		}
+		
+		path = {
+			leads_to_tech = touhou_tech_engineers2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_support_folder
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				factor = 10
+				date > "1940.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_engineers2 = {
+
+		touhou_engineer = {
+			entrenchment  = 2
+			
+			fort = {
+				defence = 0.10
+				attack = 0.10
+			}
+		}
+		
+		
+		path = {
+			leads_to_tech = touhou_tech_engineers3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_support_folder
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_engineers3 = {
+
+		touhou_engineer = {
+			entrenchment  = 2
+			river = {
+				attack = 0.1	
+				defence = 0.10
+			}
+		}
+		path = {
+			leads_to_tech = touhou_tech_engineers4
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = touhou_support_folder
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_engineers4 = {
+
+		touhou_engineer = {
+			entrenchment  = 2
+			urban = {
+				attack = 0.1	
+				defence = 0.1
+			}
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = touhou_support_folder
+			position = { x = 0 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+	}	
+	
+	touhou_tech_recon = {
+
+		enable_subunits = {
+			touhou_recon
+		}
+		
+		path = {
+			leads_to_tech = touhou_tech_recon2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_support_folder
+			position = { x = 2 y = @1936 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			recon_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				factor = 10
+				date > "1940.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_recon2 = {
+
+		touhou_recon = {
+			recon = 2
+		}
+		
+		path = {
+			leads_to_tech = touhou_tech_recon3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_support_folder
+			position = { x = 2 y = @1939 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			recon_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_recon3 = {
+
+		touhou_recon = {
+			recon = 2
+		}
+		path = {
+			leads_to_tech = touhou_tech_recon4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = touhou_support_folder
+			position = { x = 2 y = @1942 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			recon_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+	touhou_tech_recon4 = {
+
+		touhou_recon = {
+			recon = 2
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = touhou_support_folder
+			position = { x = 2 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			recon_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_military_police = {
+
+		enable_subunits = {
+			touhou_military_police
+		}
+		
+		path = {
+			leads_to_tech = touhou_tech_military_police2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_support_folder
+			position = { x = 4 y = @1936 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			military_police_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 5
+				tag = GER
+			}
+
+			modifier = {
+				factor = 10
+				tag = GER
+
+				POL = { has_capitulated = yes }
+				GER = { has_war = yes }
+			}
+			
+			modifier = {
+				factor = 5
+				tag = JAP
+			}
+			
+			modifier = {
+				factor = 2
+				tag = ITA
+			}
+			
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+	
+	touhou_tech_military_police2 = {
+
+		touhou_military_police = {
+			suppression_factor = 0.1
+		}
+		
+		
+		path = {
+			leads_to_tech = touhou_tech_military_police3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_support_folder
+			position = { x = 4 y = @1939 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			military_police_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+	
+	touhou_tech_military_police3 = {
+
+		touhou_military_police = {
+			suppression_factor = 0.1
+		}
+		path = {
+			leads_to_tech = touhou_tech_military_police4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = touhou_support_folder
+			position = { x = 4 y = @1942 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			military_police_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+	touhou_tech_military_police4 = {
+
+		touhou_military_police = {
+			suppression_factor = 0.1
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = touhou_support_folder
+			position = { x = 4 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			military_police_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+	}
+
+	touhou_tech_maintenance_company = {
+
+		enable_subunits = {
+			touhou_maintenance_company
+		}
+		
+		path = {
+			leads_to_tech = touhou_tech_maintenance_company2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_support_folder
+			position = { x = 6 y = @1936 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			maintenance_company_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_maintenance_company2 = {
+
+		touhou_maintenance_company = {
+			reliability_factor = 0.05
+			equipment_capture_factor = 0.05
+		}
+		
+		
+		path = {
+			leads_to_tech = touhou_tech_maintenance_company3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_support_folder
+			position = { x = 6 y = @1939 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			maintenance_company_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_maintenance_company3 = {
+
+		touhou_maintenance_company = {
+			reliability_factor = 0.05
+			equipment_capture_factor = 0.05
+		}
+		path = {
+			leads_to_tech = touhou_tech_maintenance_company4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = touhou_support_folder
+			position = { x = 6 y = @1942 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			maintenance_company_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+		}
+	}
+	touhou_tech_maintenance_company4 = {
+
+		touhou_maintenance_company = {
+			reliability_factor = 0.05
+			equipment_capture_factor = 0.05
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = touhou_support_folder
+			position = { x = 6 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			maintenance_company_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	touhou_tech_field_hospital = {
+
+		enable_subunits = {
+			touhou_field_hospital
+		}
+		
+		path = {
+			leads_to_tech = touhou_tech_field_hospital2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_support_folder
+			position = { x = 8 y = @1936 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			hospital_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_field_hospital2 = {
+
+		touhou_field_hospital = {
+			casualty_trickleback = 0.10
+			experience_loss_factor = -0.10
+		}
+		
+		path = {
+			leads_to_tech = touhou_tech_field_hospital3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_support_folder
+			position = { x = 8 y = @1939 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			hospital_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_field_hospital3 = {
+
+		touhou_field_hospital = {
+			casualty_trickleback = 0.1
+			experience_loss_factor = -0.10
+		}
+		path = {
+			leads_to_tech = touhou_tech_field_hospital4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = touhou_support_folder
+			position = { x = 8 y = @1942 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			hospital_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+		}
+	}
+	touhou_tech_field_hospital4 = {
+
+		touhou_field_hospital = {
+			casualty_trickleback = 0.1
+			experience_loss_factor = -0.10
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = touhou_support_folder
+			position = { x = 8 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			hospital_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+	touhou_tech_logistics_company = {
+
+		enable_subunits = {
+			touhou_logistics_company
+		}
+		
+		path = {
+			leads_to_tech = touhou_tech_logistics_company2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_support_folder
+			position = { x = 10 y = @1936 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			logistics_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+			modifier = {
+				factor = 5
+				date > "1940.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_logistics_company2 = {
+
+		touhou_logistics_company = {
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
+		}
+		
+		
+		path = {
+			leads_to_tech = touhou_tech_logistics_company3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_support_folder
+			position = { x = 10 y = @1939 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			logistics_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				tag = GER
+			}
+		}
+	}
+	
+	touhou_tech_logistics_company3 = {
+
+		touhou_logistics_company = {
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
+		}
+		path = {
+			leads_to_tech = touhou_tech_logistics_company4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = touhou_support_folder
+			position = { x = 10 y = @1942 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			logistics_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+	touhou_tech_logistics_company4 = {
+
+		touhou_logistics_company = {
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = touhou_support_folder
+			position = { x = 10 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			logistics_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+
+	touhou_tech_signal_company = {
+
+		enable_subunits = {
+			touhou_signal_company
+		}
+		
+		path = {
+			leads_to_tech = touhou_tech_signal_company2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_support_folder
+			position = { x = 12 y = @1936 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			signal_company_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 5
+				is_major = yes
+				date > "1940.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_signal_company2 = {
+
+		touhou_signal_company = {
+			initiative = 0.12
+		}
+		
+		
+		path = {
+			leads_to_tech = touhou_tech_signal_company3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_support_folder
+			position = { x = 12 y = @1939 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			signal_company_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+	}
+	
+	touhou_tech_signal_company3 = {
+
+		touhou_signal_company = {
+			initiative = 0.12
+		}
+		path = {
+			leads_to_tech = touhou_tech_signal_company4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = touhou_support_folder
+			position = { x = 12 y = @1942 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			signal_company_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+		}
+	}
+	touhou_tech_signal_company4 = {
+
+		touhou_signal_company = {
+			initiative = 0.12
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = touhou_support_folder
+			position = { x = 12 y = @1945 }
+		}
+		
+		categories = {
+			support_tech
+			wakan
+			magic
+			demonforce
+			signal_company_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1948.1.1"
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,33 @@
+﻿### BATTLESHIP NAMES ###
+lotus_battleship_name = {
+	name = lotus_battleship_name
+
+	for_countries = { ALI DES HAK DLD HEL SSS OPP RAB TEM BLI KAP TEN HUM VAM MLS EVI }
+
+	type = ship
+	ship_types = { lotus_equipment battleship }
+	
+	prefix = "星莲船"							
+	fallback_name = "%d号舰"		
+
+	unique = {
+		"初号舰" 
+	}
+}
+
+### SUBMARINES ###
+TOUHOU_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { ALI DES HAK DLD HEL SSS OPP RAB TEM BLI KAP TEN HUM VAM MLS EVI }
+
+	type = ship
+	ship_types = { deep_sea_equipment submarine }
+	
+	prefix = "深海"							
+	fallback_name = "少女%d号"	
+
+	unique = {
+		"少女初号"
+	}
+}

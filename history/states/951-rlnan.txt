@@ -1,0 +1,23 @@
+state={
+	id=1012
+	name="STATE_RenLiShangYeQu"
+	provinces={
+		13378 13450 13432 13513 13534 
+	}
+
+	history={
+		add_core_of = HUM
+		add_core_of = RAB
+		owner = HUM
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+	}
+
+	manpower=500000
+	buildings_max_level_factor=1.000
+	#state_category=town
+	state_category=megalopolis
+	local_supplies=0.0 
+}

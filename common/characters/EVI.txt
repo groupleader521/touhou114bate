@@ -1,0 +1,69 @@
+characters = {
+	TOUHOU_Cirno = {
+		name = TOUHOU_Cirno
+		portraits = {
+			civilian = {
+				large = GFX_Cirno
+			}
+			army = {
+				large = GFX_Cirno
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = centrism
+			traits = {
+				qilunuo
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {
+				qilunuo
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+				qilunuo
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = marxism
+			traits = {
+				qilunuo
+			}
+		}
+		field_marshal = {
+			traits = {
+				units_evil winter_specialist winter_expert
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	TOUHOU_Daiyousei = {
+		name = TOUHOU_Daiyousei
+		portraits = {
+			army = {
+				large = GFX_Daiyousei
+			}
+		}
+		field_marshal = {
+			traits = {
+				units_evil jungle_rat ranger
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

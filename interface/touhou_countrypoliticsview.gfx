@@ -1,0 +1,42 @@
+spriteTypes = {#这里主要是额外内阁槽的团
+	spriteType = {#军事主导种族槽的图案
+		name = "GFX_idea_slot_touhou_racial_military"
+		textureFile = "gfx/interface/idea_slot_high_command.dds"
+	}
+	spriteType = {#科研主导种族槽的图案
+		name = "GFX_idea_slot_touhou_racial_research"
+		textureFile = "gfx/interface/idea_slot_high_command.dds"
+	}
+	spriteType = {#经济主导种族槽的图案
+		name = "GFX_idea_slot_touhou_racial_economy"
+		textureFile = "gfx/interface/idea_slot_high_command.dds"
+	}
+	spriteType = {#政治主导种族槽的图案
+		name = "GFX_idea_slot_touhou_racial_politics"
+		textureFile = "gfx/interface/idea_slot_high_command.dds"
+	}
+	spriteType = {#核心理念槽的图案
+		name = "GFX_idea_slot_touhou_ideology"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}	
+	spriteType = {#资源优先分配槽的图案
+		name = "GFX_idea_slot_touhou_fiscal"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {#幻想级力量槽的图案
+		name = "GFX_idea_slot_touhou_choose_future"
+		textureFile = "gfx/interface/idea_slot_theorist.dds"
+	}
+	spriteType = {#研究主导者槽的图案
+		name = "GFX_idea_slot_touhou_main_researcher"
+		textureFile = "gfx/interface/idea_slot_theorist.dds"
+	}
+	spriteType = {#幻想兵团技术槽的图案
+		name = "GFX_idea_slot_touhou_trump_card_tech"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+	spriteType = {#主导科技槽的图案
+		name = "GFX_idea_slot_touhou_main_research"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+}

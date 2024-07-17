@@ -1,0 +1,124 @@
+characters = {
+	TOUHOU_Kamishirasawa_Keine = {
+		name = TOUHOU_Kamishirasawa_Keine
+		portraits = {
+			civilian = {
+				large = GFX_Kamishirasawa_Keine
+			}
+			army = {
+				large = GFX_Kamishirasawa_Keine
+				small = GFX_idea_huiyin
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = marxism
+			traits = {
+				keine_history
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Kamishirasawa_Keine
+			slot = political_advisor
+			traits = { touhou_fortification_engineer }
+		}
+		advisor = {
+			idea_token = TOUHOU_Kamishirasawa_Keine
+			slot = army_chief
+			traits = { touhou_army_chief_old_guard }
+		}
+		advisor = {
+			idea_token = TOUHOU_Kamishirasawa_Keine
+			slot = high_command
+			traits = { touhou_army_chief_reform_3 }
+		}
+		field_marshal = {
+			traits = {
+				units_human infantry_leader organizer urban_assault_specialist ambusher
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	TOUHOU_Hieda_no_Akyuu = {
+		name = TOUHOU_Hieda_no_Akyuu
+		portraits = {
+			civilian = {
+				large = GFX_Hieda_no_Akyuu
+			}
+			army = {
+				large = GFX_Hieda_no_Akyuu
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = centrism
+			traits = {
+				akyuu_record
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+				akyuu_record
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = fascism_ideology
+			traits = {
+				akyuu_record
+			}
+		}
+		field_marshal = {
+			traits = {
+				units_human infantry_leader urban_assault_specialist ambusher
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	TOUHOU_Huziwara_no_Mokou = {
+		name = TOUHOU_Huziwara_no_Mokou
+		portraits = {
+			army = {
+				large = GFX_Huziwara_no_Mokou
+			}
+		}
+		corps_commander = {
+			traits = {
+				units_human trait_reckless infantry_leader urban_assault_specialist ambusher
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	TOUHOU_Motoori_Kosuzu = {
+		name = TOUHOU_Motoori_Kosuzu
+		portraits = {
+			army = {
+				large = GFX_Motoori_Kosuzu
+			}
+		}
+		corps_commander = {
+			traits = {
+				units_human infantry_leader urban_assault_specialist ambusher
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

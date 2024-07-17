@@ -1,0 +1,28 @@
+state={
+	id=991
+	name="STATE_JiuDiYuShangCeng"
+	provinces={
+		13508 13493 13499 13504 13506 13512 13491 13466 13546 
+	}
+
+	history={
+		add_core_of = HEL
+		add_core_of = SSS
+		owner = HEL
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	resources = {
+		rubber = 18
+		tungsten = 8
+		chromium = 4
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	#state_category=town
+	state_category=megalopolis
+	local_supplies=0.0 
+}

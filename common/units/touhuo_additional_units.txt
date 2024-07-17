@@ -1,0 +1,82 @@
+sub_units = {
+	touhou_boss_army = { #魔界精锐
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 2520
+		ai_priority = 2520
+		active = no #只能通过科技激活该编制，其余手段，包括火星兵都不能激活该编制
+
+		type = {
+			armor
+		}
+		
+		group = armor
+
+		categories = {
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_army
+		}
+
+		combat_width = 2
+
+		need = {
+			super_heavy_tank_aa_chassis = 10
+		}
+
+		manpower = 500
+		max_organisation = 50
+		maximum_speed = 2
+		default_morale = 0.3
+		max_strength = 30
+		training_time = 90
+		weight = 1.75
+		
+		supply_consumption = 0.1
+
+		suppression = 2.5
+
+		soft_attack  = 11
+		hard_attack = 17
+		air_attack = 2
+		defense = 30
+		breakthrough = 30
+		ap_attack = 2
+		armor_value = 2
+		experience_loss_factor = -0.05
+		initiative = 0.02
+		can_be_parachuted = yes
+
+		forest = {
+		    attack = 0.35
+		}
+		hills = {
+		    attack = 0.35
+		}
+		mountain = 	{
+		    attack = 0.35
+		}
+		jungle = {
+		    attack = 0.35
+		}
+		marsh = {
+		    attack = 0.35
+		}
+		urban = {
+			attack = 0.35
+		}
+		river = { 
+			attack = 0.35
+		}
+		amphibious = { 
+			attack = 0.35
+		}
+		desert = {
+			attack = 0.35
+		}
+		fort = {
+			attack = 1
+		}
+	}
+}

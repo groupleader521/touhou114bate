@@ -1,0 +1,86 @@
+spriteTypes = {	
+	SpriteType = {
+	name = "touhou_out"
+	texturefile = "gfx/interface/goals/touhou_out.dds"		
+	}
+	SpriteType = {
+	name = "touhou_fascist"
+	texturefile = "gfx/interface/goals/touhou_fascist.dds"		
+	}
+	SpriteType = {
+	name = "touhou_communist"
+	texturefile = "gfx/interface/goals/touhou_communist.dds"		
+	}
+	SpriteType = {
+	name = "touhou_democratic"
+	texturefile = "gfx/interface/goals/touhou_democratic.dds"		
+	}
+	SpriteType = {
+	name = "touhou_society"
+	texturefile = "gfx/interface/goals/touhou_society.dds"		
+	}
+	SpriteType = {
+	name = "touhou_government"
+	texturefile = "gfx/interface/goals/touhou_government.dds"		
+	}
+	SpriteType = {
+	name = "touhou_research"
+	texturefile = "gfx/interface/goals/touhou_research.dds"		
+	}
+	SpriteType = {
+	name = "touhou_army"
+	texturefile = "gfx/interface/goals/touhou_army.dds"		
+	}
+	SpriteType = {
+	name = "touhou_industrial"
+	texturefile = "gfx/interface/goals/touhou_industrial.dds"		
+	}
+	SpriteType = {
+	name = "touhou_in"
+	texturefile = "gfx/interface/goals/touhou_in.dds"		
+	}
+	SpriteType = {
+	name = "touhou_hide_team"
+	texturefile = "gfx/interface/goals/touhou_hide_team.dds"		
+	}
+	SpriteType = {
+	name = "touhou_exchange"
+	texturefile = "gfx/interface/goals/touhou_exchange.dds"		
+	}
+	SpriteType = {
+	name = "touhou_inside"
+	texturefile = "gfx/interface/goals/touhou_inside.dds"		
+	}
+	SpriteType = {
+	name = "touhou_outside"
+	texturefile = "gfx/interface/goals/touhou_outside.dds"		
+	}
+	SpriteType = {
+	name = "touhou_out_self"
+	texturefile = "gfx/interface/goals/touhou_out_self.dds"		
+	}
+	SpriteType = {
+	name = "touhou_out_all"
+	texturefile = "gfx/interface/goals/touhou_out_all.dds"		
+	}
+	SpriteType = {
+	name = "touhou_in_self"
+	texturefile = "gfx/interface/goals/touhou_in_self.dds"		
+	}
+	SpriteType = {
+	name = "touhou_in_all"
+	texturefile = "gfx/interface/goals/touhou_in_all.dds"		
+	}
+	SpriteType = {
+	name = "good_touhou_all"
+	texturefile = "gfx/interface/goals/good_touhou_all.dds"		
+	}
+	SpriteType = {
+	name = "touhou_future"
+	texturefile = "gfx/interface/goals/touhou_future.dds"		
+	}
+	SpriteType = {
+	name = "touhou_world"
+	texturefile = "gfx/interface/goals/touhou_world.dds"		
+	}
+}

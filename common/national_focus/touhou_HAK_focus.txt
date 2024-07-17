@@ -1,0 +1,930 @@
+focus_tree = {
+	id = touhou_HAK_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			tag = HAK
+		}
+		
+		modifier = {
+			add = 20
+			original_tag = HAK
+		}
+	}
+	
+	default = no
+	
+	shared_focus = touhou_army_effort
+	shared_focus = touhou_aviation_effort
+	shared_focus = touhou_naval_effort
+	shared_focus = touhou_industrial_effort
+	shared_focus = touhou_ALL_in
+	
+	
+	focus = {#幻想乡外交
+		id = touhou_HAK_out
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { }
+		available = {
+		}
+		x = 27
+		y = 0
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			add_ideas = touhou_ministry_of_foreign_affairs
+		}
+	}
+	focus = {#冥府守卫
+		id = touhou_HAK_gentle
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = touhou_HAK_out }
+		mutually_exclusive = { focus = touhou_HAK_special_envoy focus = touhou_HAK_be_independent }
+		available = { 
+		}
+		bypass = {
+			
+		}
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 3
+				OR = {
+					has_idea = inside_fantasy_attitude_0
+					has_idea = inside_fantasy_attitude_1
+					has_idea = inside_fantasy_attitude_2
+					has_idea = inside_fantasy_attitude_3
+				}
+				
+			}
+		}
+		
+		
+		x = -2
+		y = 1
+		relative_position_id = touhou_HAK_out
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.1
+			inside_fantasy_attitude_level_down = yes
+			hidden_effect = {
+				every_country = {
+					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+					news_event = { hours = 6 id = news.1010 }
+				}
+			}
+		}
+	}
+	focus = {#亡灵劳工权益
+		id = touhou_HAK_expanded_production
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = touhou_HAK_gentle }
+		available = { 
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 3
+						include_locked = yes
+					}					
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}			
+		}
+		
+		
+		x = -1
+		y = 1
+		relative_position_id = touhou_HAK_gentle
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			inside_fantasy_attitude_level_down = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {#冥府通路
+		id = touhou_HAK_special_supply
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = touhou_HAK_expanded_production focus = touhou_HAK_warfare_will }
+		available = { 
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 3
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_HAK_expanded_production
+		cost = 5
+
+		
+
+		completion_reward = {
+			inside_fantasy_attitude_level_down = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {#亡灵武装
+		id = touhou_HAK_warfare_will
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = touhou_HAK_gentle }
+		available = { 
+		}
+		bypass = {
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 1
+		y = 1
+		relative_position_id = touhou_HAK_gentle
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_stability = 0.1
+			inside_fantasy_attitude_level_down = yes
+			add_tech_bonus = {
+				name = touhou_HAK_warfare_will
+				bonus = 2.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {#半灵研究
+		id = touhou_HAK_champion
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = touhou_HAK_warfare_will focus = touhou_HAK_expanded_production }
+		available = { 
+		}
+		bypass = {
+			
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		
+		
+		x = 0
+		y = 1
+		relative_position_id = touhou_HAK_warfare_will
+		cost = 5
+
+		
+
+		completion_reward = {
+			inside_fantasy_attitude_level_down = yes
+			add_tech_bonus = {
+				name = touhou_HAK_champion
+				ahead_reduction = 2
+				bonus = 2.0
+				uses = 3
+				category = industry
+				category = electronics
+			}
+		}
+	}
+	focus = {#专注冥府
+		id = touhou_HAK_forever
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = touhou_HAK_special_supply }
+		prerequisite = { focus = touhou_HAK_champion }
+		available = { 
+		}
+		bypass = {
+			
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		
+		
+		x = 1
+		y = 1
+		relative_position_id = touhou_HAK_special_supply
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_stability = 0.2
+			add_threat = -5
+			inside_fantasy_attitude_level_down = yes
+		}
+	}
+	focus = {#贤者进驻
+		id = touhou_HAK_special_envoy
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = touhou_HAK_out }
+		mutually_exclusive = { focus = touhou_HAK_gentle focus = touhou_HAK_be_independent }
+		available = { 
+			
+		}
+		bypass = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 3
+				OR = {
+					has_idea = inside_fantasy_attitude_6
+					has_idea = inside_fantasy_attitude_5
+					has_idea = inside_fantasy_attitude_4
+					has_idea = inside_fantasy_attitude_3
+				}
+				
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = touhou_HAK_out
+		cost = 5
+
+		
+
+		completion_reward = {
+			army_experience = 40
+			add_war_support = 0.1
+			inside_fantasy_attitude_level_up = yes
+			add_ideas = touhou_HAK_fascist_influence
+			hidden_effect = {
+				every_country = {
+					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+					news_event = { hours = 6 id = news.1011 }
+				}
+			}
+		}
+	}
+	focus = {#冥府改组
+		id = touhou_HAK_reorganization
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = touhou_HAK_special_envoy }
+		available = { 
+			is_subject_of = OPP
+		}
+		bypass = {
+			OR = {
+				OPP = { exists = no }
+				NOT = { is_subject_of = OPP }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = -1
+		y = 1
+		relative_position_id = touhou_HAK_special_envoy
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			inside_fantasy_attitude_level_up = yes
+			add_ideas = touhou_pop_self_HAK
+		}
+	}
+	focus = {#新冥府协定
+		id = touhou_HAK_agreement
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = touhou_HAK_special_envoy }
+		available = { 
+			is_subject_of = OPP
+		}
+		bypass = {
+			OR = {
+				OPP = { exists = no }
+				NOT = { is_subject_of = OPP }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 1
+		y = 1
+		relative_position_id = touhou_HAK_special_envoy
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			inside_fantasy_attitude_level_up = yes
+			add_autonomy_ratio = {
+				value = 0.8
+				localization = touhou_OPP_Hades_self
+			}
+		}
+	}
+	focus = {#贤者议会影响人里
+		id = touhou_HAK_influence_hum
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = touhou_HAK_reorganization focus = touhou_HAK_agreement }
+		available = { 
+			is_subject = no
+		}
+		bypass = {
+			OR = {
+				HUM = { exists = no }
+				HUM = { has_government = fascism }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_HAK_reorganization
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			inside_fantasy_attitude_level_up = yes
+			HUM = { add_ideas = touhou_HAK_fascist_influence }
+		}
+	}
+	focus = {#贤者议会影响博丽
+		id = touhou_HAK_influence_bli
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = touhou_HAK_reorganization focus = touhou_HAK_agreement }
+		available = { 
+			is_subject = no
+		}
+		bypass = {
+			OR = {
+				BLI = { exists = no }
+				BLI = { has_government = fascism }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_HAK_agreement
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			inside_fantasy_attitude_level_up = yes
+			BLI = { add_ideas = touhou_HAK_fascist_influence }
+		}
+	}
+	focus = {#排除博丽竞争者
+		id = touhou_HAK_war
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = touhou_HAK_influence_hum focus = touhou_HAK_influence_bli }
+		available = { 
+			OR = {
+				BLI = { has_government = fascism }
+				HUM = { has_government = fascism }
+			}
+			is_subject = no
+			has_war = no
+		}
+		bypass = {
+			SSS = { exists = no }
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = -1
+		y = 1
+		relative_position_id = touhou_HAK_influence_bli
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			inside_fantasy_attitude_level_up = yes
+			SSS = { every_owned_state = { add_core_of = HAK } }
+			declare_war_on = {
+				target = SSS
+				type = annex_everything
+			}
+		}
+	}
+	focus = {#准备独立
+		id = touhou_HAK_be_independent
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = touhou_HAK_out }
+		mutually_exclusive = { focus = touhou_HAK_gentle focus = touhou_HAK_special_envoy }
+		available = { 
+			
+		}
+		bypass = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 5
+				has_government = communism
+			}
+		}
+		x = 7
+		y = 1
+		relative_position_id = touhou_HAK_out
+		cost = 5
+
+		
+
+		completion_reward = {
+			army_experience = 50
+			add_political_power = 120
+			add_war_support = 0.15
+			inside_fantasy_attitude_level_up = yes
+			add_ideas = touhou_HAK_war_to_free
+			
+		}
+	}
+	focus = {#独立战争
+		id = touhou_HAK_independent_war
+		icon = GFX_focus_jap_cast_the_die
+		prerequisite = { focus = touhou_HAK_be_independent }
+		available = { 
+			is_subject_of = OPP
+		}
+		bypass = {
+			not = {
+				is_subject_of = OPP
+			}
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_HAK_be_independent
+		cost = 5
+
+		
+
+		completion_reward = {
+			if = {
+				limit = {
+					HAK = { is_subject_of = OPP }
+				}
+				OPP = {
+					set_autonomy = { target = HAK autonomy_state = autonomy_free }
+				}
+			}
+			if = {
+				limit = { has_idea = touhou_pop_join }
+				remove_ideas = touhou_pop_join
+			}
+			declare_war_on = {
+				target = OPP
+				type = annex_everything
+			}
+			add_war_support = 0.15
+			inside_fantasy_attitude_level_up = yes
+		}
+	}
+	focus = {#亡灵军队
+		id = touhou_HAK_death_troop
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = touhou_HAK_independent_war }
+		available = { 
+			
+		}
+		bypass = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = -2
+		y = 1
+		relative_position_id = touhou_HAK_independent_war
+		cost = 5
+
+		
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = touhou_HAK_war_to_free
+				add_idea = touhou_HAK_death_army
+			}
+			army_experience = 25
+			inside_fantasy_attitude_level_up = yes
+		}
+	}
+	focus = {#清除贤者影响
+		id = touhou_HAK_clean_envoy
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = { focus = touhou_HAK_independent_war }
+		available = { 
+			
+		}
+		bypass = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_HAK_independent_war
+		cost = 5
+
+		
+
+		completion_reward = {
+			custom_effect_tooltip = touhou_HAK_bayun_may_declare_war_tt
+			add_stability = 0.05
+			inside_fantasy_attitude_level_up = yes
+		}
+	}
+	focus = {#秘密部队
+		id = touhou_HAK_hidden_army
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = touhou_HAK_independent_war }
+		available = { 
+			
+		}
+		bypass = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 2
+		y = 1
+		relative_position_id = touhou_HAK_independent_war
+		cost = 5
+
+		
+
+		completion_reward = {
+			custom_effect_tooltip = HAK_get_volunteers_tt
+			inside_fantasy_attitude_level_up = yes
+			add_manpower = 100000
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 972 }
+					create_unit = {
+						division = "name = \"秘密部队1\" division_template = \"亡灵小队\" start_experience_factor = 0.2" 
+						owner = HAK
+					}
+					create_unit = {
+						division = "name = \"秘密部队2\" division_template = \"亡灵小队\" start_experience_factor = 0.2" 
+						owner = HAK
+					}
+					create_unit = {
+						division = "name = \"秘密部队3\" division_template = \"亡灵小队\" start_experience_factor = 0.2" 
+						owner = HAK
+					}
+				}
+			}
+		}
+	}
+	focus = {#尘埃落定
+		id = touhou_HAK_everything_over
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		prerequisite = { focus = touhou_HAK_death_troop }
+		prerequisite = { focus = touhou_HAK_hidden_army }
+		prerequisite = { focus = touhou_HAK_clean_envoy }
+		available = { 
+			not = {
+				is_subject_of = OPP
+				has_war_with = OPP
+			}
+		}
+		bypass = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 2
+		relative_position_id = touhou_HAK_independent_war
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.15
+			inside_fantasy_attitude_level_up = yes
+		}
+	}
+	focus = {#幻想乡共同结局
+		id = touhou_HAK_in_all
+		icon = touhou_in_all
+		prerequisite = { focus = touhou_HAK_war focus = touhou_HAK_forever focus = touhou_HAK_everything_over }
+		bypass = {
+			all_other_country = {
+				OR = { 
+					NOT = {original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+					exists = no
+					is_in_faction = yes
+					has_war_with = PREV 
+				}
+			}
+		}
+		available = {
+			has_war = no
+			is_subject = no
+			date > 1937.6.1
+			threat > 0.3
+			any_other_country = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				OR = { is_subject = no is_subject_of = ROOT } exists = yes
+				is_in_faction = no
+				NOT = { has_war_with = PREV }
+			}
+		}
+		x = -2
+		y = 1
+		relative_position_id = touhou_HAK_war
+		cost = 5
+		
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			 
+			add_threat = -10
+			if = {
+				limit = { is_in_faction = no }
+				set_rule = { can_create_factions = yes }
+				create_faction = All_in_touhou
+				custom_effect_tooltip = touhou_in_all_union
+			}
+			hidden_effect = {
+				every_country = {
+					limit = { 
+						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						OR = { is_subject = no is_subject_of = ROOT } exists = yes
+						NOT = { original_tag = PREV }
+						NOT = { has_war_with = PREV }
+						is_in_faction = no
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 400
+					}
+					if = { 
+						limit = {is_ai = yes } 
+						country_event = touhou_ai.2
+					}
+					else = { country_event = generic.5 }
+				}
+			}
+		}
+	}
+	focus = {#幻想乡自立结局
+		id = touhou_HAK_in_self
+		icon = touhou_in_self
+		prerequisite = { focus = touhou_HAK_in_all }
+		available = {
+			has_war = no
+			is_subject = no
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+			any_other_country = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				exists = yes
+				NOT = { is_subject_of = PREV } 
+				NOT = { is_in_faction_with = PREV }
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_HAK_in_all
+		cost = 5
+		
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			add_threat = -5
+			custom_effect_tooltip = touhou_end_war
+			custom_effect_tooltip = touhou_in_self_war
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						exists = yes
+						NOT = { original_tag = PREV }
+						NOT = { is_subject_of = PREV } 
+						NOT = { is_in_faction_with = PREV }
+					}
+					if = {
+						limit = { is_ai = yes }
+						PREV = {
+							declare_war_on = {
+								type = annex_everything
+								target = PREV
+							}
+						}
+					}
+					else = {
+						PREV = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

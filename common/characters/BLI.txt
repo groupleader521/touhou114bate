@@ -1,0 +1,96 @@
+characters = {
+	TOUHOU_Hakurei_Reimu = {
+		name = TOUHOU_Hakurei_Reimu
+		portraits = {
+			civilian = {
+				large = GFX_Hakurei_Reimu
+			}
+			army = {
+				large = GFX_Hakurei_Reimu
+				small = GFX_idea_boli
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = centrism
+			traits = {
+				boli_defence
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = liberalism
+			traits = {
+				boli_defence
+			}
+		}
+		country_leader = {
+			expire = "1989.1.1"
+			ideology = marxism
+			traits = {
+				boli_defence
+			}
+		}
+		advisor = {
+			idea_token = TOUHOU_Hakurei_Reimu
+			slot = political_advisor
+			traits = { touhou_quartermaster_general }
+		}
+		advisor = {
+			idea_token = TOUHOU_Hakurei_Reimu
+			slot = air_chief
+			traits = { touhou_air_chief_ground_support_3 }
+		}
+		advisor = {
+			idea_token = TOUHOU_Hakurei_Reimu
+			slot = high_command
+			traits = { touhou_army_chief_organizational_3 }
+		}
+		corps_commander = {
+			traits = {
+				units_human war_hero infantry_leader hill_fighter urban_assault_specialist infantry_expert
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	TOUHOU_Sukuna_Shinmyoumaru = {
+		name = TOUHOU_Sukuna_Shinmyoumaru
+		portraits = {
+			army = {
+				large = GFX_Sukuna_Shinmyoumaru
+			}
+		}
+		corps_commander = {
+			traits = {
+				units_human infantry_leader hill_fighter urban_assault_specialist infantry_expert
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	TOUHOU_Komano_Aunn = {
+		name = TOUHOU_Komano_Aunn
+		portraits = {
+			army = {
+				large = GFX_Komano_Aunn
+			}
+		}
+		corps_commander = {
+			traits = {
+				units_human infantry_leader hill_fighter urban_assault_specialist infantry_expert
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

@@ -1,0 +1,148 @@
+﻿add_namespace = vampire
+country_event = {
+	id = vampire.0
+	title = vampire.0.t
+	desc = vampire.0.d
+	picture = GFX_report_event_touhou_vam
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = vampire.0.a
+		ai_chance = { base = 1 }
+		VAM = { set_state_owner = 972 set_state_controller = 972 }
+	}
+	option = {
+		name = vampire.0.b
+		ai_chance = { base = 9 }
+		VAM = {
+			declare_war_on = {
+				target = ALI
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = {
+	id = vampire.1
+	title = vampire.1.t
+	desc = vampire.1.d
+	picture = GFX_report_event_touhou_vam
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = vampire.1.a
+		ai_chance = { base = 4 }
+		VAM = { 
+			puppet = ROM 
+		}
+		if = {
+			limit = { owns_state = 77 }
+			VAM = {
+				set_state_owner = 77 
+				set_state_controller = 77
+			}
+		}
+		if = {
+			limit = { owns_state = 81 }
+			VAM = {
+				set_state_owner = 81 
+				set_state_controller = 81
+			}
+		}
+		hidden_effect = {
+			ALI = {
+				set_state_owner = 973 
+				set_state_controller = 973
+			}
+			EVI = {
+				set_state_owner = 974
+				set_state_controller = 974
+			}
+			TEN = {
+				set_state_owner = 1006
+				set_state_controller = 1006
+			}
+		}
+	}
+	option = {
+		name = vampire.1.b
+		ai_chance = { base = 6 }
+		if = {
+			limit = { owns_state = 77 }
+			VAM = {
+				set_state_owner = 77 
+				set_state_controller = 77
+			}
+		}
+		if = {
+			limit = { owns_state = 81 }
+			VAM = {
+				set_state_owner = 81 
+				set_state_controller = 81
+			}
+		}
+		ROM = {
+			declare_war_on = {
+				target = VAM
+				type = annex_everything
+			}
+			add_ideas = ROM_fear_VAM
+		}
+		hidden_effect = {
+			ALI = {
+				set_state_owner = 973 
+				set_state_controller = 973
+			}
+			EVI = {
+				set_state_owner = 974
+				set_state_controller = 974
+			}
+			TEN = {
+				set_state_owner = 1006
+				set_state_controller = 1006
+			}
+		}
+	}
+}
+country_event = {
+	id = vampire.2
+	title = vampire.2.t
+	desc = vampire.2.d
+	picture = GFX_report_event_touhou_vam
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = vampire.2.a
+		ai_chance = { base = 1 }
+		add_timed_idea = { idea = ROM_fear_VAM days = 90 }
+		country_event = { id = vampire.3 days = 120 }
+	}
+}
+country_event = {
+	id = vampire.3
+	title = vampire.3.t
+	desc = vampire.3.d
+	picture = GFX_report_event_touhou_vam
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = vampire.3.a
+		ai_chance = { base = 10 }
+		add_political_power = -200
+		add_stability = -0.2
+		add_war_support = -0.2
+	}
+	option = {
+		name = vampire.3.b
+		ai_chance = { base = 5 }
+		declare_war_on = {
+			target = VAM
+			type = annex_everything
+		}
+		add_ideas = ROM_fear_VAM
+	}
+}

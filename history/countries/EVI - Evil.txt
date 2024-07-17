@@ -1,0 +1,65 @@
+﻿capital = 982
+
+oob = "EVI_1936"
+
+set_stability = 0.5 #baseline, THE EMPEROR PROTECTS
+set_war_support = 0.5
+
+set_research_slots = 1
+
+add_ideas = {
+	touhou_ideas_trump_card
+	evil_trait
+	fantasy_industry
+	fantasy_live
+	fantasy_research
+	fantasy_government
+	fantasy_army
+	limited_conscription
+	wakan_first_research
+	touhou_fiscal_society
+}
+
+set_technology = {
+	transport = 1
+	basic_train = 1
+	evil_army = 1
+}
+
+set_convoys = 0
+set_popularities = {
+	neutrality = 100
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = TOUHOU_Cirno
+recruit_character = TOUHOU_Daiyousei
+set_country_flag = touhou_country_flag_wakan_first_research
+
+if = {
+	limit = { has_dlc = "La Resistance" }
+	create_operative_leader = {
+		name = "冰妖精"
+		GFX = GFX_Cirno
+		traits = { operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { EVI ALI MLS }
+	}
+
+	create_operative_leader = {
+		name = "妖精"
+		GFX = GFX_Daiyousei
+		traits = { operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { EVI VAM }
+	}
+}

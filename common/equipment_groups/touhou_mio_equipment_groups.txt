@@ -1,0 +1,53 @@
+##     ##    ###    ######## ######## ########  #### ######## ##       
+###   ###   ## ##      ##    ##       ##     ##  ##  ##       ##       
+#### ####  ##   ##     ##    ##       ##     ##  ##  ##       ##       
+## ### ## ##     ##    ##    ######   ########   ##  ######   ##       
+##     ## #########    ##    ##       ##   ##    ##  ##       ##       
+##     ## ##     ##    ##    ##       ##    ##   ##  ##       ##       
+##     ## ##     ##    ##    ######## ##     ## #### ######## ######## 
+
+mio_cat_eq_touhou_all_infantry = {
+	icon = GFX_military_industrial_organization_infantry
+	equipment_type = {
+		touhou_demonforce_infantry_equipment
+		touhou_magic_infantry_equipment
+		touhou_wakan_infantry_equipment
+		oni_champion_equipment
+		evil_equipment
+		human_equipment
+		animal_equipment
+		dragon_equipment
+		die_equipment
+		rabbit_team_equipment
+		soul_equipment
+		wunv_equipment
+		magician_equipment
+	}
+}
+
+mio_cat_eq_touhou_all_motorized = {
+	icon = GFX_military_industrial_organization_motorized
+	equipment_type = {
+		touhou_wakan_motorized_equipment
+		touhou_wakan_mechanized_equipment
+		touhou_wakan_amphibious_mechanized_equipment
+		touhou_wakan_motorized_rocket_equipment
+		rabbit_team_equipment
+		soul_equipment
+		wunv_equipment
+	}
+}
+
+mio_cat_eq_touhou_all_artillery = {
+	icon = GFX_military_industrial_organization_artillery
+	equipment_type = {
+		touhou_demonforce_anti_tank_equipment
+		touhou_demonforce_anti_air_equipment
+		touhou_magic_artillery_equipment
+		touhou_magic_anti_tank_equipment
+		touhou_wakan_artillery_equipment
+		touhou_wakan_anti_air_equipment
+		touhou_wakan_motorized_rocket_equipment
+		magician_equipment
+	}
+}

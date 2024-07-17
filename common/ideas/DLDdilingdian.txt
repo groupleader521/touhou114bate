@@ -1,0 +1,30 @@
+ideas = {
+	country = {
+		touhou_lord_of_hell_2 = {
+			picture = generic_morale_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+			}
+			
+			removal_cost = -1
+			targeted_modifier = {
+				tag = HAK
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = OPP
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+	}
+}

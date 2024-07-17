@@ -1,0 +1,214 @@
+outside_world_attitude_clear_all = {
+	hidden_effect = {
+		remove_ideas = {
+			outside_world_attitude_0
+			outside_world_attitude_1
+			outside_world_attitude_2
+			outside_world_attitude_3
+			outside_world_attitude_4
+			outside_world_attitude_5
+			outside_world_attitude_6
+		}
+	}
+}
+
+outside_world_attitude_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = outside_world_attitude_level_up_tt
+	if = {
+		limit = { has_idea = outside_world_attitude_5 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_5
+			add_idea = outside_world_attitude_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = outside_world_attitude_4 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_4
+			add_idea = outside_world_attitude_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = outside_world_attitude_3 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_3
+			add_idea = outside_world_attitude_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = outside_world_attitude_2 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_2
+			add_idea = outside_world_attitude_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = outside_world_attitude_1 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_1
+			add_idea = outside_world_attitude_2
+		}		
+	}
+	else_if = {
+		limit = { has_idea = outside_world_attitude_0 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_0
+			add_idea = outside_world_attitude_1
+		}		
+	}
+}
+
+outside_world_attitude_level_down = {
+custom_effect_tooltip = outside_world_attitude_level_down_tt
+	if = {
+		limit = { has_idea = outside_world_attitude_1 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_1
+			add_idea = outside_world_attitude_0
+		}
+	}
+	else_if = {
+		limit = { has_idea = outside_world_attitude_2 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_2
+			add_idea = outside_world_attitude_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = outside_world_attitude_3 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_3
+			add_idea = outside_world_attitude_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = outside_world_attitude_4 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_4
+			add_idea = outside_world_attitude_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = outside_world_attitude_5 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_5
+			add_idea = outside_world_attitude_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = outside_world_attitude_6 }
+		swap_ideas = {
+			remove_idea = outside_world_attitude_6
+			add_idea = outside_world_attitude_5
+		}
+	}
+}
+
+inside_fantasy_attitude_clear_all = {
+	custom_effect_tooltip = inside_fantasy_attitude_end
+	hidden_effect = {
+		remove_ideas = {
+			inside_fantasy_attitude_0
+			inside_fantasy_attitude_1
+			inside_fantasy_attitude_2
+			inside_fantasy_attitude_3
+			inside_fantasy_attitude_4
+			inside_fantasy_attitude_5
+			inside_fantasy_attitude_6
+		}
+	}
+}
+
+inside_fantasy_attitude_level_up = {
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = inside_fantasy_attitude_level_up_tt
+	if = {
+		limit = { has_idea = inside_fantasy_attitude_5 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_5
+			add_idea = inside_fantasy_attitude_6
+		}
+	}
+	else_if = {
+		limit = { has_idea = inside_fantasy_attitude_4 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_4
+			add_idea = inside_fantasy_attitude_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = inside_fantasy_attitude_3 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_3
+			add_idea = inside_fantasy_attitude_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = inside_fantasy_attitude_2 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_2
+			add_idea = inside_fantasy_attitude_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = inside_fantasy_attitude_1 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_1
+			add_idea = inside_fantasy_attitude_2
+		}		
+	}
+	else_if = {
+		limit = { has_idea = inside_fantasy_attitude_0 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_0
+			add_idea = inside_fantasy_attitude_1
+		}		
+	}
+}
+
+inside_fantasy_attitude_level_down = {
+custom_effect_tooltip = inside_fantasy_attitude_level_down_tt
+	if = {
+		limit = { has_idea = inside_fantasy_attitude_1 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_1
+			add_idea = inside_fantasy_attitude_0
+		}
+	}
+	else_if = {
+		limit = { has_idea = inside_fantasy_attitude_2 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_2
+			add_idea = inside_fantasy_attitude_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = inside_fantasy_attitude_3 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_3
+			add_idea = inside_fantasy_attitude_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = inside_fantasy_attitude_4 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_4
+			add_idea = inside_fantasy_attitude_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = inside_fantasy_attitude_5 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_5
+			add_idea = inside_fantasy_attitude_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = inside_fantasy_attitude_6 }
+		swap_ideas = {
+			remove_idea = inside_fantasy_attitude_6
+			add_idea = inside_fantasy_attitude_5
+		}
+	}
+}

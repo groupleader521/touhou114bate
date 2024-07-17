@@ -1,0 +1,3378 @@
+technologies = {#魔法科技树 research_cost 1单位=100天 
+#攻击加成*1.5 其他正面加成*0.5 其他负面加成*2
+	
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+
+	touhou_magic_infantry_weapons = {#魔力球
+
+		enable_equipments = {
+			touhou_magic_infantry_equipment_0
+		}
+		
+		enable_subunits = {
+			touhou_magic_cavalry
+			touhou_magic_infantry
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_infantry_weapons1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	touhou_magic_infantry_weapons1 = {#繁彩球
+
+		enable_equipments = {
+			touhou_magic_infantry_equipment_1
+		}
+				
+		path = {
+			leads_to_tech = touhou_magic_infantry_weapons2
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1936.1.3"
+			}
+		}
+	}	
+	
+	touhou_magic_infantry_weapons2 = {#魔力转换
+		category_all_infantry = {
+			soft_attack = 0.07
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_improved_infantry_weapons
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1938
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1938 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+	
+	touhou_magic_improved_infantry_weapons = {#能量球
+
+		enable_equipments = {
+			touhou_magic_infantry_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_improved_infantry_weapons_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = touhou_magic_infantry_at
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 3
+						
+			modifier = {
+				factor = 10
+				date > "1939.1.1"
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+	touhou_magic_improved_infantry_weapons_2 = {#魔力精炼
+		category_all_infantry = {
+			soft_attack = 0.07
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_advanced_infantry_weapons
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+	
+	touhou_magic_infantry_at = {#魔力压缩
+		category_all_infantry = {
+			hard_attack = 0.07
+			ap_attack = 0.3
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_infantry_at2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1942 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+		}
+	}
+	
+	touhou_magic_infantry_at2 = {#魔力集束
+		category_all_infantry = {
+			hard_attack = 0.07
+			ap_attack = 0.3
+		}
+		
+		research_cost = 1.5
+		start_year = 1943
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1943 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+	
+	touhou_magic_advanced_infantry_weapons = {#纯粹魔力球
+
+		enable_equipments = {
+			touhou_magic_infantry_equipment_3
+		}	
+		
+		path = {
+			leads_to_tech = touhou_magic_advanced_infantry_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 0.8
+			modifier = {
+				num_of_military_factories > 150
+				factor = 2.5
+			}
+			
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+	
+	touhou_magic_advanced_infantry_weapons2 = {#魔力增压
+		category_all_infantry = {
+			soft_attack = 0.15
+		}		
+
+		research_cost = 1.5
+		start_year = 1944
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1944 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+		}
+	}
+	
+	touhou_magic_paratroopers = {#大气元素
+
+		enable_subunits = {
+			touhou_magic_paratrooper
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_paratroopers2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1936 }
+		}
+		
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = touhou_magic_paratrooper
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "touhou_magic_unlock_paratroopers"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		categories = {
+			magic
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+		}
+	}
+	
+	touhou_magic_paratroopers2 = {#高等大气元素
+		special_forces_no_supply_grace = 12
+		
+		path = {
+			leads_to_tech = touhou_magic_paratroopers3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1939 }
+		}
+		
+		categories = {
+			magic
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+
+	touhou_magic_paratroopers3 = {#元素混合—大气
+		special_forces_no_supply_grace = 12
+		
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1943 }
+		}
+		
+		categories = {
+			magic
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			
+		}
+	}
+	
+	touhou_magic_marines = {#海洋元素
+
+		enable_subunits = {
+			touhou_magic_marine
+		}
+		
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = touhou_magic_marine
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "touhou_magic_unlock_marines"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = touhou_magic_marines2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1936 }
+		}
+		
+		categories = {
+			magic
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+		}
+	}
+	
+	touhou_magic_marines2 = {#高等海洋元素
+		category_special_forces = {
+			soft_attack = 0.07
+		}
+		path = {
+			leads_to_tech = touhou_magic_marines3
+			research_cost_coeff = 1
+		}
+		
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1939 }
+		}
+		
+		categories = {
+			magic
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+		}
+	}
+	
+	touhou_magic_marines3 = {#元素混合-海洋
+		category_special_forces = {
+			hard_attack = 0.07
+		}
+
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1943 }
+		}
+		
+		categories = {
+			magic
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}	
+	
+	touhou_magic_tech_mountaineers = {#大地元素
+
+		enable_subunits = {
+			touhou_magic_mountaineers
+		}
+
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = touhou_magic_mountaineers
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "touhou_magic_unlock_mountineers"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_tech_mountaineers2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1936 }
+		}
+		
+		categories = {
+			magic
+			infantry_tech
+			mountaineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	touhou_magic_tech_mountaineers2 = {#高等大地元素
+		category_special_forces = {
+			max_organisation = 3
+		}
+
+		path = {
+			leads_to_tech = touhou_magic_tech_mountaineers3
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1939 }
+		}
+		
+		categories = {
+			magic
+			infantry_tech
+			mountaineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	touhou_magic_tech_mountaineers3 = {#元素混合-大地
+		category_special_forces = {
+			max_strength = 2
+		}
+
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1943 }
+		}
+		
+		categories = {
+			magic
+			infantry_tech
+			mountaineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	touhou_magic_tech_special_forces = {#元素适应
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.03
+			acclimatization_cold_climate_gain_factor = 0.03
+		}
+
+		path = {
+			leads_to_tech = touhou_magic_advanced_special_forces
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = touhou_magic_improved_special_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1938 }
+		}
+		
+		categories = {
+			magic
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	touhou_magic_advanced_special_forces = {#元素巨大化
+		xor={
+			touhou_magic_improved_special_forces
+		}
+		category_special_forces = {
+			max_organisation = 3
+			defense = 0.03
+		}
+
+		special_forces_training_time_factor = 0.1
+		
+		path = {
+			leads_to_tech = touhou_magic_extreme_environment_training
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1940 }
+		}
+		
+		categories = {
+			magic
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	touhou_magic_improved_special_forces = {#元素小型化
+		xor={
+			touhou_magic_advanced_special_forces
+		}
+
+		special_forces_cap = 0.03
+		special_forces_training_time_factor = -0.05
+		
+		path = {
+			leads_to_tech = touhou_magic_survival_training
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_magic
+			position = { x = 3 y = @1940 }
+		}
+		
+		categories = {
+			magic
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	touhou_magic_extreme_environment_training = {#元素术式特化
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.25
+			acclimatization_cold_climate_gain_factor = 0.25
+		}
+		
+		special_forces_no_supply_grace = 24
+		special_forces_training_time_factor = 0.2
+		
+		path = {
+			leads_to_tech = touhou_magic_elite_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1942 }
+		}
+		
+		categories = {
+			magic
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	touhou_magic_survival_training = {#元素术式简化
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.1
+			acclimatization_cold_climate_gain_factor = 0.1
+		}
+		
+		special_forces_out_of_supply_factor = -0.05
+		
+		path = {
+			leads_to_tech = touhou_magic_elite_forces
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = touhou_magic
+			position = { x = 3 y = @1942 }
+		}
+		
+		categories = {
+			magic
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+
+	touhou_magic_elite_forces = {#元素魔法专攻
+		category_special_forces = {
+			acclimatization_hot_climate_gain_factor = 0.1
+			acclimatization_cold_climate_gain_factor = 0.1
+			max_organisation = 3
+			soft_attack = 0.07
+		}
+		
+		special_forces_no_supply_grace = 24
+
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1944 }
+		}
+		
+		categories = {
+			magic
+			mountaineers_tech
+			marine_tech
+			para_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
+	touhou_magic_night_vision = {#夜明术
+
+		land_night_attack = 0.15
+		
+		path = {
+			leads_to_tech = touhou_magic_night_vision2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1943 }
+		}
+		
+		categories = {
+			magic
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1946.1.1"
+			}
+		}
+	}
+	
+	touhou_magic_night_vision2 = {#昏暗视觉
+
+		land_night_attack = 0.15	
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			magic
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1946.1.6"
+			}
+		}
+	}
+	
+	touhou_magic_support_weapons = {#钢化术
+		category_all_infantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_support_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1918 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	touhou_magic_support_weapons2 = {#火焰战袍
+		category_all_infantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_support_weapons3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1938
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1938 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	touhou_magic_support_weapons3 = {#法师护盾
+		category_all_infantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_support_weapons4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	touhou_magic_support_weapons4 = {#不屈意志
+		category_all_infantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			magic
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	touhou_magic_gw_artillery = {#魔力爆破
+
+		enable_equipments = {
+			touhou_magic_artillery_equipment_1
+		}
+		path = {
+			leads_to_tech = touhou_magic_interwar_artillery 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = touhou_magic_interwar_antitank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			magic
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+	touhou_magic_interwar_artillery = {#能量转换
+		category_army = {
+			soft_attack = 0.07
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_artillery1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			magic
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+	touhou_magic_artillery1 = {
+	
+		enable_equipments = {
+			touhou_magic_artillery_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_artillery2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			magic
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.6"
+			}
+		}
+	}
+	touhou_magic_artillery2 = {
+		category_army = {
+			soft_attack = 0.07
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_artillery3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1940
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			magic
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+	touhou_magic_artillery3 = {
+		category_army = {
+			soft_attack = 0.07
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_artillery4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1941
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1941 }
+		}
+		
+		categories = {
+			magic
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.6"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+	touhou_magic_artillery4 = {
+	
+		enable_equipments = {
+			touhou_magic_artillery_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_artillery5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+
+		start_year = 1942
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			magic
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1942.1.6"
+			}
+		}
+	}
+	
+	touhou_magic_artillery5 = {
+		category_army = {
+			hard_attack = 0.07
+			ap_attack = 0.15
+		}
+		
+		research_cost = 1
+
+		start_year = 1943
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1943 }
+		}
+		
+		categories = {
+			magic
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1945.1.1"
+			}
+		}
+	}
+	
+	touhou_magic_interwar_antitank = {
+
+		enable_equipments = {
+			touhou_magic_anti_tank_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_antitank1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1936 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 30
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			artillery
+			cat_anti_tank
+		}
+	}
+	touhou_magic_antitank1 = {
+		category_army = {
+			hard_attack = 0.07
+			ap_attack = 0.15
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_antitank2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1939
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1939 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 30
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				date > "1939.1.6"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1940.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			artillery
+			cat_anti_tank
+		}
+	}
+	touhou_magic_antitank2 = {
+		
+		enable_equipments = {
+			touhou_magic_anti_tank_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_antitank3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1940
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1940 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.9"
+			}
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
+			}
+			modifier = {
+				factor = 5
+				date > "1940.1.6"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	touhou_magic_antitank3 = {
+		category_army = {
+			hard_attack = 0.07
+			ap_attack = 0.15
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_antitank4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1941
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1941 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.6"
+			}
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1943.1.1"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	touhou_magic_antitank4 = {
+		category_army = {
+			hard_attack = 0.07
+			ap_attack = 0.15
+		}
+	
+		path = {
+			leads_to_tech = touhou_magic_antitank5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1942
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1942 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			modifier = {
+				factor = 5
+				date > "1943.1.1"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 35
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			artillery
+			cat_anti_tank
+		}
+	}
+	
+	touhou_magic_antitank5 = {
+			
+		enable_equipments = {
+			touhou_magic_anti_tank_equipment_3
+		}	
+		
+		research_cost = 1
+
+		start_year = 1943
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1943 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.9"
+			}
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1943.1.6"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 35
+						}
+					}
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			artillery
+			cat_anti_tank
+		}
+	}
+	touhou_magic_basic_light_tank = { #Panzer I
+
+		enable_equipments = {
+			touhou_magic_light_tank_equipment_1 
+		}
+
+		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = touhou_magic_light_armor }
+			NOT = {	has_template_containing_unit = touhou_magic_medium_armor }
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "touhou_magic_unlock_tanks"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_improved_light_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1934
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = -1 }
+		}
+		
+		sub_technologies = {
+			touhou_magic_basic_light_td
+			touhou_magic_basic_light_art
+			touhou_magic_basic_light_spaa
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+			cat_light_armor
+		}
+	}	
+	
+	touhou_magic_basic_light_td = {
+
+		enable_equipments = {
+			touhou_magic_light_tank_destroyer_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1934
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				has_template_containing_unit = light_tank_destroyer_brigade
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories > 50
+				num_of_military_factories < 120
+				factor = 2
+			}
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_improved_light_td
+					can_research = touhou_magic_improved_light_td
+					is_researching_technology = touhou_magic_improved_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_basic_light_art = {
+
+		enable_equipments = {
+			touhou_magic_light_tank_artillery_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1934
+		
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				has_template_containing_unit = light_sp_artillery_brigade
+				add = 2
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_improved_light_art
+					can_research = touhou_magic_improved_light_art
+					is_researching_technology = touhou_magic_improved_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_basic_light_spaa = {
+
+		enable_equipments = {
+			touhou_magic_light_tank_aa_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1934
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				is_major = yes
+				add = 0.25
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_improved_light_spaa
+					can_research = touhou_magic_improved_light_spaa
+					is_researching_technology = touhou_magic_improved_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+
+	touhou_magic_improved_light_tank = { #Panzer II
+
+		enable_equipments = {
+			touhou_magic_light_tank_equipment_2 
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_advanced_light_tank
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_basic_medium_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1936 }
+		}
+		
+		sub_technologies = {
+			touhou_magic_improved_light_td
+			touhou_magic_improved_light_art
+			touhou_magic_improved_light_spaa
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
+				}
+			}
+			modifier = {
+				is_major = yes
+				not = { tag = JAP }
+				has_war = yes
+				factor = 10 #you are embarassing yourself
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+			cat_light_armor
+		}
+	}
+	
+	touhou_magic_improved_light_td = {
+
+		enable_equipments = {
+			touhou_magic_light_tank_destroyer_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1936
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				has_template_containing_unit = light_tank_destroyer_brigade
+				factor = 2
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_advanced_light_td
+					can_research = touhou_magic_advanced_light_td
+					is_researching_technology = touhou_magic_advanced_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_improved_light_art = {
+
+		enable_equipments = {
+			touhou_magic_light_tank_artillery_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1936
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				has_template_containing_unit = light_sp_artillery_brigade
+				add = 2
+			}
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_advanced_light_art
+					can_research = touhou_magic_advanced_light_art
+					is_researching_technology = touhou_magic_advanced_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_improved_light_spaa = {
+
+		enable_equipments = {
+			touhou_magic_light_tank_aa_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1936
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_advanced_light_spaa
+					can_research = touhou_magic_advanced_light_spaa
+					is_researching_technology = touhou_magic_advanced_light_tank
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	touhou_magic_advanced_light_tank = { #Leopard
+
+		enable_equipments = {
+			touhou_magic_light_tank_equipment_3 
+		}
+		research_cost = 2
+		start_year = 1941
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1941 }
+		}
+		
+		sub_technologies = {
+			touhou_magic_advanced_light_td
+			touhou_magic_advanced_light_art
+			touhou_magic_advanced_light_spaa
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+			cat_light_armor
+		}
+	}
+	touhou_magic_advanced_light_td = {
+
+		enable_equipments = {
+			touhou_magic_light_tank_destroyer_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_advanced_light_art = {
+
+		enable_equipments = {
+			touhou_magic_light_tank_artillery_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+	
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_advanced_light_spaa = {
+
+		enable_equipments = {
+			touhou_magic_light_tank_aa_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	touhou_magic_basic_medium_tank = { #Panzer III
+
+		enable_equipments = {
+			touhou_magic_medium_tank_equipment_1 
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_improved_medium_tank 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1939
+
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1939 }
+		}
+		
+		sub_technologies = {
+			touhou_magic_basic_medium_td
+			touhou_magic_basic_medium_art
+			touhou_magic_basic_medium_spaa
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
+				}
+				date > "1938.1.1"
+			}
+			modifier = {
+				tag = SOV
+				factor = 1.5
+			}
+			modifier = {
+				factor = 1.1
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 15.0
+				tag = GER
+				has_opinion_modifier = sov_ger_treaty
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	touhou_magic_basic_medium_td = {
+
+		enable_equipments = {
+			touhou_magic_medium_tank_destroyer_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1939
+
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_improved_medium_td
+					can_research = touhou_magic_improved_medium_td
+					is_researching_technology = touhou_magic_improved_medium_tank
+				}
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_basic_medium_art = {
+
+		enable_equipments = {
+			touhou_magic_medium_tank_artillery_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1939
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_improved_medium_art
+					can_research = touhou_magic_improved_medium_art
+					is_researching_technology = touhou_magic_improved_medium_tank
+				}
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_basic_medium_spaa = {
+
+		enable_equipments = {
+			touhou_magic_medium_tank_aa_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1939
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_improved_medium_spaa
+					can_research = touhou_magic_improved_medium_spaa
+					is_researching_technology = touhou_magic_improved_medium_tank
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_improved_medium_tank = { #Panzer IV
+
+		enable_equipments = {
+			touhou_magic_medium_tank_equipment_2 
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_advanced_medium_tank 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1941
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1941 }
+		}
+		
+		sub_technologies = {
+			touhou_magic_improved_medium_td
+			touhou_magic_improved_medium_art
+			touhou_magic_improved_medium_spaa
+		}
+		
+		ai_will_do = {
+			factor = 3
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
+				}
+			}
+			modifier = {
+				date < "1941.1.1"
+				factor = 0.3
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	touhou_magic_improved_medium_td = {
+
+		enable_equipments = {
+			touhou_magic_medium_tank_destroyer_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_template_containing_unit = medium_tank_destroyer_brigade
+				factor = 3
+			}
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_advanced_medium_td
+					can_research = touhou_magic_advanced_medium_td
+					is_researching_technology = touhou_magic_advanced_medium_tank
+				}
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_improved_medium_art = {
+
+		enable_equipments = {
+			touhou_magic_medium_tank_artillery_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_advanced_medium_art
+					can_research = touhou_magic_advanced_medium_art
+					is_researching_technology = touhou_magic_advanced_medium_tank
+				}
+			}
+			modifier = {
+				has_template_containing_unit = medium_sp_artillery_brigade
+				factor = 3
+			}
+			modifier = {
+				factor = 1.1
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_improved_medium_spaa = {
+
+		enable_equipments = {
+			touhou_magic_medium_tank_aa_equipment_2
+		}
+	
+		research_cost = 0.5
+		start_year = 1941
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = touhou_magic_advanced_medium_spaa
+					can_research = touhou_magic_advanced_medium_spaa
+					is_researching_technology = touhou_magic_advanced_medium_tank
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_advanced_medium_tank = { #Panther
+
+		enable_equipments = {
+			touhou_magic_medium_tank_equipment_3 
+		}
+		
+		research_cost = 2
+		start_year = 1943
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1943 }
+		}
+		
+		sub_technologies = {
+			touhou_magic_advanced_medium_td
+			touhou_magic_advanced_medium_art
+			touhou_magic_advanced_medium_spaa
+		}
+		
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	touhou_magic_advanced_medium_td = {
+
+		enable_equipments = {
+			touhou_magic_medium_tank_destroyer_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1946.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_advanced_medium_art = {
+
+		enable_equipments = {
+			touhou_magic_medium_tank_artillery_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = modern_art
+					can_research = modern_art
+					is_researching_technology = main_battle_tank
+				}
+			}
+			modifier = {
+				has_template_containing_unit = medium_sp_artillery_brigade
+				factor = 3
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "1946.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_advanced_medium_spaa = {
+
+		enable_equipments = {
+			touhou_magic_medium_tank_aa_equipment_3
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = modern_spaa
+					can_research = modern_spaa
+					is_researching_technology = main_battle_tank
+				}
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_main_battle_tank = {
+		enable_equipments = {
+			touhou_magic_modern_tank_equipment_1
+		}
+		research_cost = 2
+		start_year = 1943
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 1 y = @1943 }
+		}
+		
+		sub_technologies = {
+			touhou_magic_modern_td
+			touhou_magic_modern_art
+			touhou_magic_modern_spaa
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+			cat_medium_armor
+		}
+	}
+	
+	touhou_magic_modern_td = {
+
+		enable_equipments = {
+			touhou_magic_modern_tank_destroyer_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_modern_art = {
+
+		enable_equipments = {
+			touhou_magic_modern_tank_artillery_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1948.1.1"
+			}
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_modern_spaa = {
+
+		enable_equipments = {
+			touhou_magic_modern_tank_aa_equipment_1
+		}
+	
+		research_cost = 0.5
+		start_year = 1943
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			magic
+			armor
+		}
+	}
+	
+	touhou_magic_early_fighter = {
+
+		enable_equipments = {
+			touhou_magic_fighter_equipment_0
+		}
+	
+		path = {
+			leads_to_tech = touhou_magic_fighter1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			magic
+			light_air
+			light_fighter
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	touhou_magic_fighter1 = {
+
+		enable_equipments = {
+			touhou_magic_fighter_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = touhou_magic_fighter2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			magic
+			light_air
+			light_fighter
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1940.1.1"
+			}
+		}
+	}
+	touhou_magic_fighter2 = {
+
+		enable_equipments = {
+			touhou_magic_fighter_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = touhou_magic_fighter3
+			research_cost_coeff = 1
+		}
+				
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			magic
+			light_air
+			light_fighter
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1944.1.1"
+			}
+		}
+	}
+	touhou_magic_fighter3 = {
+
+		enable_equipments = {
+			touhou_magic_fighter_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_jet_fighter2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1944
+
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1944 }
+		}
+		
+		categories = {
+			magic
+			light_air
+			light_fighter
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 4
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "1947.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1948.1.1"
+			}
+		}
+	}
+	touhou_magic_jet_fighter2 = {
+
+		enable_equipments = {
+			touhou_magic_jet_fighter_equipment_2
+		}
+		
+		research_cost = 2
+		start_year = 1946
+
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			magic
+			light_air
+			jet_technology
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	touhou_magic_early_bomber = {
+
+		enable_equipments = {
+			touhou_magic_tac_bomber_equipment_0
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_tactical_bomber1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = touhou_magic_strategic_bomber1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1933
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			magic
+			medium_air
+			tactical_bomber
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_magic_tactical_bomber1 = {
+
+		enable_equipments = {
+			touhou_magic_tac_bomber_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = touhou_magic_tactical_bomber2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			magic
+			medium_air
+			tactical_bomber
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1936.1.1"
+			}
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = tactical_bomber
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				is_major = yes
+				date > "1940.1.1"
+			}
+		}
+	}
+	
+	touhou_magic_tactical_bomber2 = {
+
+		enable_equipments = {
+			touhou_magic_tac_bomber_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = touhou_magic_tactical_bomber3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			magic
+			medium_air
+			tactical_bomber
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1940.1.1"
+			}
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = tactical_bomber
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				is_major = yes
+				date > "1944.1.1"
+			}
+		}
+	}
+	
+	touhou_magic_tactical_bomber3 = {
+
+		enable_equipments = {
+			touhou_magic_tac_bomber_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_jet_tactical_bomber2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1944 }
+		}
+		
+		categories = {
+			magic
+			medium_air
+			tactical_bomber
+			air_equipment
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1944.1.1"
+			}
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = tactical_bomber
+				}
+				factor = 2
+			}
+			modifier = {
+				factor = 1.2
+				is_major = yes
+				date > "1945.1.1"
+			}
+		}
+	}
+	touhou_magic_jet_tactical_bomber2 = {
+
+		enable_equipments = {
+			touhou_magic_jet_tac_bomber_equipment_2
+		}
+		
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = touhou_magic
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			magic
+			medium_air
+			jet_technology
+			tactical_bomber
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_magic_strategic_bomber1 = {
+
+		enable_equipments = {
+			touhou_magic_strat_bomber_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = touhou_magic_strategic_bomber2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1936 }
+		}
+		
+		categories = {
+			magic
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_magic_strategic_bomber2 = {
+
+		enable_equipments = {
+			touhou_magic_strat_bomber_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = touhou_magic_strategic_bomber3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1940 }
+		}
+		
+		categories = {
+			magic
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	touhou_magic_strategic_bomber3 = {
+
+		enable_equipments = {
+			touhou_magic_strat_bomber_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = touhou_magic_jet_strategic_bomber1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1944 }
+		}
+		
+		categories = {
+			magic
+			heavy_air
+			air_equipment
+			cat_strategic_bomber
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	touhou_magic_jet_strategic_bomber1 = {
+
+		enable_equipments = {
+			touhou_magic_jet_strat_bomber_equipment_1
+		}
+		
+		research_cost = 2
+		start_year = 1946
+		
+		folder = {
+			name = touhou_magic
+			position = { x = 2 y = @1946 }
+		}
+		
+		categories = {
+			magic
+			heavy_air
+			jet_technology
+			cat_strategic_bomber
+			mio_cat_tech_touhou_aircraft
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_deployed_air_force_size = {
+					size > 500
+					type = strategic_bomber
+				}
+				factor = 4.5
+			}
+		}
+	}
+}

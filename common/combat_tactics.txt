@@ -1,0 +1,4418 @@
+#### COMBAT TACTICS ###########################################################
+#
+# NOTE: tactics must start with "tactic_" in their name to work with techs.
+###############################################################################
+#注意，这里面origin_tag和单纯的has_idea是毫无意义的
+
+
+phases = { # phase = no is the standard phase
+	close_combat
+	tactical_withdrawal
+	seize_bridge
+	hold_bridge
+}
+#幻想乡通用
+tactic_touhou_barrage_defender = { #弹幕阻击
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = { tag = ALI tag = DES tag = HAK tag = DLD tag = HEL tag = SSS tag = OPP tag = RAB tag = TEM tag = BLI tag = KAP tag = TEN tag = HUM tag = VAM tag = MLS tag = EVI }
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_barrage
+	
+	attacker_movement_speed = -0.1
+	attacker = -0.1
+	defender = 0.2
+}
+tactic_touhou_barrage_attacker = { #弹幕打击
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		OR = { tag = ALI tag = DES tag = HAK tag = DLD tag = HEL tag = SSS tag = OPP tag = RAB tag = TEM tag = BLI tag = KAP tag = TEN tag = HUM tag = VAM tag = MLS tag = EVI }
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_barrage
+	
+	attacker = 0.2
+	defender = -0.1
+}
+#幽灵族
+tactic_touhou_defend_chop = { #来敌尽斩 
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = close_combat
+		OR = {
+			has_trait = units_ghost
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_ghost_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = ghost_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_defend_chop
+	display_phase = close_combat
+
+	defender = 0.25
+}
+tactic_touhou_opp_banzai_charge = { #律令
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		OR = {
+			has_trait = units_ghost
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_ghost_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = ghost_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = ghost_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_opp_banzai_charge
+	
+	attacker_movement_speed = 0.1
+	attacker = 0.25 
+}
+#人族
+tactic_touhou_bli_basic_defend = { #此路不通
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			has_trait = units_human
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_human_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = human_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = human_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_bli_basic_defend
+	attacker_movement_speed = -0.1
+	defender = 0.2
+}
+tactic_touhou_TEM_cc_defend = { #超人
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = close_combat
+		OR = {
+			has_trait = units_human
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_human_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = human_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = human_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_TEM_cc_defend
+	display_phase = close_combat
+
+	defender = 0.25
+}
+tactic_touhou_mls_overwhelming_fire = { #弹幕就是火力
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		OR = {
+			has_trait = units_human
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_human_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = human_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = human_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	active = no
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_mls_overwhelming_fire
+	
+	attacker = 0.3
+}
+tactic_touhou_hum_tw_defend = { #不死鸟
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = tactical_withdrawal
+		OR = {
+			has_trait = units_human
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_human_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = human_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = human_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_hum_tw_defend
+	display_phase = tactical_withdrawal
+	
+	combat_width = -0.25		
+	attacker = -0.5
+	defender = -0.05
+}
+tactic_touhou_des_defender_hb_hold = { #修整空间
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = hold_bridge
+		OR = {
+			has_trait = units_human
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_human_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = human_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = human_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_des_defender_hb_hold
+	display_phase = hold_bridge
+
+	combat_width = -0.25
+	defender = 0.2
+}
+tactic_touhou_sss_banzai_charge = { #神明之言
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		OR = {
+			has_trait = units_human
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_human_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = human_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = human_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = human_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = human_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = human_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = human_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = human_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = human_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_sss_banzai_charge
+	
+	attacker_movement_speed = 0.1
+	attacker = 0.3
+}
+#魔兽
+tactic_touhou_dld_tw_chase = { #地狱巡礼
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = tactical_withdrawal
+		OR = {
+			has_trait = units_animal
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_animal_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = DLD_chireiden_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = DLD_chireiden_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_dld_tw_chase
+	display_phase = tactical_withdrawal
+	
+	defender = -0.1
+}
+#鬼族
+tactic_touhou_hel_cc_attack = { #碎星
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = close_combat
+		OR = {
+			has_trait = units_oni
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_hell_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = HEL_hell_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = HEL_hell_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_hel_cc_attack
+	display_phase = close_combat
+
+	attacker = 0.5			#attacker gets a bonus to doing damage
+	defender = 0.3
+}
+#河童
+tactic_defender_touhou_kap_sb_retake_bridge = { #水斗
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = seize_bridge
+		OR = {
+			has_trait = units_kappa
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_kappa_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = KAP_kappa_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = KAP_kappa_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	phase = hold_bridge
+	
+	base =  { factor = 20 }
+	picture = tactic_defender_touhou_kap_sb_retake_bridge
+	display_phase = seize_bridge
+
+	defender = 1
+}
+#血族
+tactic_touhou_vam_tw_attack = { #笼中鸟
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = tactical_withdrawal
+		OR = {
+			has_trait = units_vampire
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_vampire_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = VAM_vampire_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = VAM_vampire_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_vam_tw_attack
+	display_phase = tactical_withdrawal
+	
+	combat_width = -0.25	
+	attacker = -0.5
+	defender = -0.5
+}
+#天狗
+tactic_touhou_ten_basic_defend = { #守望
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			has_trait = units_tengu
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_tengu_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = TEN_tengu_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = TEN_tengu_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ten_basic_defend
+	
+	defender = 0.3
+}
+#妖精
+tactic_touhou_evi_seize_bridge = { #冰封千里
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		has_combat_modifier = river_crossing
+		phase = no
+		OR = {
+			has_trait = units_evil
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_evil_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = evil_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = evil_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_evi_seize_bridge
+	
+	phase = seize_bridge
+	
+	attacker_movement_speed = 0.1
+	combat_width = -0.25
+	attacker = 0.3
+	defender = -0.1
+}
+#永远亭
+tactic_touhou_rab_guerrilla_tactics = { #幻境之瞳
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			has_trait = units_rabbit
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_rabbit_politics_tt
+				OR = {
+					AND = {
+						tag = ALI
+						ALI = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = DES
+						DES = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = HAK
+						HAK = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = DLD
+						DLD = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = HEL
+						HEL = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = SSS
+						SSS = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = OPP
+						OPP = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = RAB
+						RAB = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = TEM
+						TEM = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = BLI
+						BLI = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = KAP
+						KAP = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = TEN
+						TEN = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = HUM
+						HUM = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = VAM
+						VAM = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = MLS
+						MLS = { has_idea = RAB_rabbit_trait }
+					}
+					AND = {
+						tag = EVI
+						EVI = { has_idea = RAB_rabbit_trait }
+					}
+				}
+			}
+		}
+	}
+	
+	active = no
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_rab_guerrilla_tactics
+	
+	combat_width = -0.5
+	attacker = -0.7
+	defender = -0.4
+}
+#人偶族
+tactic_touhou_attacker_ali_assault = { #人偶浪潮 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_attacker_ali_assault
+	display_phase = close_combat
+
+	attacker_movement_speed = 0.1
+	attacker = 0.3
+}
+tactic_touhou_attacker_ali_cc_storm = { #人偶神风击
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = close_combat
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_attacker_ali_cc_storm
+	display_phase = close_combat
+
+	attacker = 0.5			#attacker gets a bonus to doing damage
+	defender = 0.2
+}
+tactic_touhou_defender_ali_cc_local_strong_point = { #千枪阵
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = close_combat
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	display_phase = close_combat
+
+	base =  { factor = 20 }
+	picture = tactic_touhou_defender_ali_cc_local_strong_point
+	
+	defender = 0.2
+	attacker = -0.2			#attacker gets a penalty to doing damage
+}
+tactic_touhou_attacker_ali_cc_withdraw = { #人偶戏法 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = close_combat
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_attacker_ali_cc_withdraw
+	display_phase = close_combat
+
+	phase = no #changes phase to no
+	
+	defender = -0.2
+}
+tactic_touhou_attacker_ali_breakthrough = { #人偶突破
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_attacker_ali_breakthrough
+	
+	attacker_movement_speed = 0.5
+	attacker = 0.3
+	defender = -0.15
+}
+tactic_touhou_ali_backhand_blow = { #人偶机动阵
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_backhand_blow
+	
+	attacker_movement_speed = -0.3
+	attacker = -0.2
+	defender = 0.3
+}
+tactic_touhou_ali_tactical_withdrawal = { #人偶殿后军
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	active = no
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_tactical_withdrawal
+	
+	phase = tactical_withdrawal
+	
+	combat_width = -0.3
+	attacker = -0.25
+	defender = -0.2
+}
+tactic_touhou_ali_tw_chase = { #人偶游猎
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = tactical_withdrawal
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_tw_chase
+	display_phase = tactical_withdrawal
+	
+	
+	attacker = -0.05
+	defender = -0.15
+}
+tactic_touhou_ali_tw_evade = { #镜中世界
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = tactical_withdrawal
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_tw_evade
+	display_phase = tactical_withdrawal
+	
+	
+	combat_width = -0.5		
+	attacker = -0.5
+	defender = -0.1
+}
+tactic_touhou_ali_tw_intercept = { #欢迎回到人偶之家
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = tactical_withdrawal
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_tw_intercept
+	display_phase = tactical_withdrawal
+	
+	phase = no
+		
+	defender = -0.1
+}
+tactic_touhou_ali_seize_bridge = { #人偶之桥
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		has_combat_modifier = river_crossing
+		phase = no
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_seize_bridge
+	
+	phase = seize_bridge
+	
+	attacker_movement_speed = 0.1
+	combat_width = -0.2
+	attacker = 0.25
+	defender = -0.05
+}
+tactic_touhou_ali_attacker_sb_skillful_defence = { #人偶桥卫
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = seize_bridge
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_attacker_sb_skillful_defence
+	display_phase = seize_bridge
+
+	combat_width = -0.25
+	attacker = 0.25
+	defender = -0.1
+}
+tactic_touhou_ali_defender_sb_assault = { #人偶海
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = seize_bridge
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_defender_sb_assault
+	display_phase = seize_bridge
+
+	combat_width = -0.25
+	attacker = -0.05
+}
+tactic_touhou_ali_defender_sb_retake_bridge = { #重回血腥之地
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = seize_bridge
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	phase = hold_bridge
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_defender_sb_retake_bridge
+	display_phase = seize_bridge
+
+	combat_width = -0.25
+	attacker = -0.1
+	defender = 0.05
+}
+tactic_touhou_ali_hold_bridge = { #手中之物
+	is_attacker = no
+	trigger = {
+		has_combat_modifier = river_crossing
+		is_attacker = no
+		phase = no
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_hold_bridge
+	
+	phase = hold_bridge
+	
+	attacker_movement_speed = -0.1
+	combat_width = -0.25
+	attacker = -0.1
+	defender = 0.05
+}
+tactic_touhou_ali_attacker_hb_rush = { #强袭血腥之地
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = hold_bridge
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_attacker_hb_rush
+	display_phase = hold_bridge
+
+	combat_width = -0.25
+	attacker = 0.2
+}
+tactic_touhou_ali_defender_hb_skillful_defence = { #人偶桥卫·镇
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = hold_bridge
+		OR = {
+			has_trait = units_marionette
+			custom_trigger_tooltip = {
+				tooltip = tactics_need_marionette_politics_tt
+				OR = {
+					tag = ALI
+					AND = {
+						tag = DES
+						OR = {
+							DES = { has_idea = ALI_marionette_trait }
+							DES = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HAK
+						OR = {
+							HAK = { has_idea = ALI_marionette_trait }
+							HAK = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = DLD
+						OR = {
+							DLD = { has_idea = ALI_marionette_trait }
+							DLD = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HEL
+						OR = {
+							HEL = { has_idea = ALI_marionette_trait }
+							HEL = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = SSS
+						OR = {
+							SSS = { has_idea = ALI_marionette_trait }
+							SSS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = OPP
+						OR = {
+							OPP = { has_idea = ALI_marionette_trait }
+							OPP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = RAB
+						OR = {
+							RAB = { has_idea = ALI_marionette_trait }
+							RAB = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEM
+						OR = {
+							TEM = { has_idea = ALI_marionette_trait }
+							TEM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = BLI
+						OR = {
+							BLI = { has_idea = ALI_marionette_trait }
+							BLI = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = KAP
+						OR = {
+							KAP = { has_idea = ALI_marionette_trait }
+							KAP = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = TEN
+						OR = {
+							TEN = { has_idea = ALI_marionette_trait }
+							TEN = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = HUM
+						OR = {
+							HUM = { has_idea = ALI_marionette_trait }
+							HUM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = VAM
+						OR = {
+							VAM = { has_idea = ALI_marionette_trait }
+							VAM = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = MLS
+						OR = {
+							MLS = { has_idea = ALI_marionette_trait }
+							MLS = { has_idea = marionette_trait }
+						}
+					}
+					AND = {
+						tag = EVI
+						OR = {
+							EVI = { has_idea = ALI_marionette_trait }
+							EVI = { has_idea = marionette_trait }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	base =  { factor = 20 }
+	picture = tactic_touhou_ali_defender_hb_skillful_defence
+	display_phase = hold_bridge
+	
+	combat_width = -0.25
+	attacker = -0.1
+	defender = 0.05
+}
+
+
+
+tactic_basic_attack = {
+
+	is_attacker = yes
+	trigger = { # combined scope for both country and combatant
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+
+	base =  { factor = 4 }
+	picture = attack
+	
+	countered_by = tactic_counterattack
+
+	attacker = 0.05
+}
+
+tactic_basic_defend = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = defend
+	
+	defender = 0.05
+}
+
+tactic_counterattack = { # counters basic attack, assault
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		skill_advantage > 0
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  {
+		factor = 4
+		modifier = {
+			add = 4
+			has_trait = unyielding_defender
+		}
+	}
+	picture = counterattack
+	
+	defender = 0.25
+}
+
+
+tactic_assault = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  {
+		factor = 2
+		modifier = {
+			add = 2
+			has_trait = aggressive_assaulter
+		}
+	} #Revisit ideally this should be more common in urban terrain
+	
+	picture = assault
+	countered_by = tactic_counterattack
+	
+	phase = close_combat #changes phase to close combat
+	
+	attacker = 0.25			#attacker gets a bonus to doing damage
+}
+###close combat tactics here
+tactic_cc_attack = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = close_combat
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = cc_attack
+	display_phase = close_combat
+
+	attacker = 0.1			#attacker gets a bonus to doing damage
+	defender = 0.05
+}
+tactic_cc_defend = { 
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = close_combat
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = cc_defend
+	display_phase = close_combat
+
+	attacker = 0.05
+	defender = 0.1			#defender gets a bonus to doing damage
+}
+tactic_cc_storm = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = close_combat
+	}
+	
+	active = yes
+	
+	base =  { factor = 2 }
+	picture = cc_storm
+	display_phase = close_combat
+
+	attacker = 0.2			#attacker gets a bonus to doing damage
+	defender = 0.2
+}
+tactic_cc_local_strong_point = { 
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = close_combat
+	}
+	
+	active = yes
+	display_phase = close_combat
+
+	base =  { factor = 2 }
+	picture = cc_local_strong_point
+	
+	attacker = -0.2			#attacker gets a penalty to doing damage
+}
+tactic_cc_withdraw = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = close_combat
+	}
+	
+	active = yes
+	
+	base =  { factor = 1 }
+	picture = cc_withdraw
+	display_phase = close_combat
+
+	phase = no #changes phase to no
+	
+	attacker = -0.05
+	defender = -0.05
+}
+
+
+tactic_encirclement = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		frontage_full = yes
+		has_reserves = yes
+		OR = {
+			skill_advantage > 0
+			has_trait = panzer_leader
+			has_trait = trickster
+		}
+	}
+	
+	active = yes
+	
+	base =  { 
+		factor = 4
+		modifier = {
+			add = 4
+			OR = {
+				has_trait = panzer_expert
+				has_trait = combined_arms_expert
+			}
+		}
+	}
+	
+	picture = encircle
+	countered_by = tactic_tactical_withdrawal
+	countered_by = tactic_touhou_ali_tactical_withdrawal
+
+	combat_width = 0.5		#increased combat_width
+	attacker = 0.25
+	defender = 0.05
+}
+
+tactic_delay = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = no
+	
+	base =  {
+		factor = 4
+	}
+	picture = delay
+	countered_by = tactic_shock
+	
+	attacker_movement_speed = -0.25		#
+	attacker = -0.25
+	defender = -0.15
+}
+
+tactic_shock = { #counters delay
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	base =  {
+		factor = 4
+		modifier = {
+			add = 4
+			has_trait = aggressive_assaulter
+		}
+	}
+	picture = shock
+	countered_by = tactic_ambush
+	
+	defender = -0.25
+}
+
+tactic_tactical_withdrawal = { #counters encirclement
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			skill_advantage > 0
+			has_trait = trickster
+		}
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = withdraw
+	
+	phase = tactical_withdrawal
+	
+	combat_width = -0.25
+	attacker = -0.25
+	defender = -0.05
+}
+###tactical withdrawal tactics
+tactic_tw_attack = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = tactical_withdrawal
+	}
+	
+	base =  { factor = 4 }
+	picture = tw_attack
+	display_phase = tactical_withdrawal
+	
+	combat_width = -0.25	
+	attacker = -0.25
+	defender = -0.1
+}
+tactic_tw_defend = { 
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = tactical_withdrawal
+	}
+	
+	base =  { factor = 4 }
+	picture = tw_defend
+	display_phase = tactical_withdrawal
+	
+	combat_width = -0.25		
+	attacker = -0.3
+	defender = -0.05
+}
+tactic_tw_chase = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = tactical_withdrawal
+	}
+	
+	base =  { factor = 4 }
+	picture = tw_chase
+	display_phase = tactical_withdrawal
+	
+	
+	combat_width = -0.25		
+	attacker = -0.15
+	defender = -0.05
+}
+tactic_tw_evade = { 
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = tactical_withdrawal
+	}
+	
+	base =  { factor = 4 }
+	picture = tw_evade
+	display_phase = tactical_withdrawal
+	
+	
+	combat_width = -0.25		
+	attacker = -0.4
+	defender = -0.1
+}
+tactic_tw_intercept = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = tactical_withdrawal
+	}
+	
+	base =  { factor = 4 }
+	picture = tw_intercept
+	display_phase = tactical_withdrawal
+	
+	phase = no
+		
+	attacker = -0.05
+	defender = -0.1
+}
+
+
+
+tactic_breakthrough = { #counters ambush
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		OR = {
+			hardness > 0.5
+			skill_advantage > 1
+		}
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = breakthrough
+	
+	countered_by = tactic_backhand_blow
+	countered_by = tactic_touhou_ali_backhand_blow
+	
+	attacker_movement_speed = 0.5
+	attacker = 0.25
+	defender = -0.15
+}
+
+tactic_ambush = { #counters shock
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			skill_advantage > 1
+			skill > 2
+			has_trait = trickster
+		}
+	}
+	
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = ambush
+	countered_by = tactic_breakthrough
+	countered_by = tactic_touhou_attacker_ali_breakthrough
+	
+	attacker = -0.25
+}
+
+tactic_blitz = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		hardness > 0.5
+		phase = no
+		OR = {
+			skill > 2
+			has_trait = panzer_leader
+			skill_advantage > 1
+		}
+	}
+	
+	active = no
+	
+	base =  { 
+		factor = 4
+		modifier = {
+			add = 4
+			OR = {
+				has_trait = panzer_expert
+				has_trait = combined_arms_expert
+			}
+		}
+	}
+	
+	picture = blitz
+	countered_by = tactic_elastic_defense
+	
+	attacker_movement_speed = 0.5
+	attacker = 0.15
+	defender = -0.15
+}
+
+
+tactic_elastic_defense = { #counters blitz
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			has_trait = defensive_doctrine
+			skill > 2
+		}
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = elastic_defence
+	
+	attacker_movement_speed = -0.25
+	attacker = -0.15
+	defender = 0.10
+}
+
+tactic_backhand_blow = { #counters breakthrough
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			skill > 4
+			AND = {
+				has_trait = defensive_doctrine
+				skill > 3
+			}
+		}
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = backhand_blow
+	
+	attacker_movement_speed = -0.3
+	attacker = -0.2
+	defender = 0.25
+}
+
+tactic_seize_bridge = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		has_combat_modifier = river_crossing
+		phase = no
+		OR = {
+			skill > 3
+			AND = {
+				has_trait = offensive_doctrine
+				skill > 2
+			}
+		}
+	}
+	
+	base =  { factor = 2 }
+	picture = seize_bridge
+	
+	phase = seize_bridge
+	
+	attacker_movement_speed = 0.1
+	combat_width = -0.25
+	attacker = 0.2
+	defender = -0.05
+}
+tactic_attacker_sb_hold = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = seize_bridge
+	}
+	
+	base =  { factor = 4 }
+	picture = attacker_sb_hold
+	display_phase = seize_bridge
+	
+	combat_width = -0.25
+	attacker = 0.2
+}
+tactic_attacker_sb_skillful_defence = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = seize_bridge
+		skill > 4
+	}
+	
+	base =  { factor = 4 }
+	picture = attacker_sb_skillful_defence
+	display_phase = seize_bridge
+
+	combat_width = -0.25
+	attacker = 0.2
+	defender = -0.1
+}
+tactic_defender_sb_assault = { 
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = seize_bridge
+	}
+	
+	base =  { factor = 4 }
+	picture = defender_sb_assault
+	display_phase = seize_bridge
+
+	combat_width = -0.25
+	defender = -0.05
+}
+tactic_defender_sb_reckless_assault = { 
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = seize_bridge
+		skill < 3
+	}
+	
+	base =  { factor = 4 }
+	picture = defender_sb_reckless_assault
+	display_phase = seize_bridge
+
+	combat_width = -0.25
+	attacker = 0.25
+	defender = -0.1
+}
+tactic_defender_sb_retake_bridge = { 
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = seize_bridge
+		OR = {
+			skill > 2
+			has_trait = trickster
+		}
+	}
+	
+	countered_by = tactic_attacker_sb_skillful_defence
+	countered_by = tactic_touhou_ali_attacker_sb_skillful_defence
+	phase = hold_bridge
+	
+	base =  { factor = 4 }
+	picture = defender_sb_retake_bridge
+	display_phase = seize_bridge
+
+	combat_width = -0.25
+	attacker = 0.1
+	defender = -0.05
+}
+
+tactic_hold_bridge = { 
+	is_attacker = no
+	trigger = {
+		has_combat_modifier = river_crossing
+		is_attacker = no
+		phase = no
+		OR = {
+			skill > 2
+			has_trait = defensive_doctrine
+		}
+	}
+	
+	base =  { factor = 2 }
+	picture = tactic_hold_bridge
+	
+	phase = hold_bridge
+	
+	attacker_movement_speed = 0.1
+	combat_width = -0.25
+	attacker = 0.2
+	defender = -0.05
+}
+tactic_attacker_hb_attack = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = hold_bridge
+	}
+	
+	base =  { factor = 4 }
+	picture = attacker_hb_attack
+	display_phase = hold_bridge
+
+	combat_width = -0.25
+	attacker = 0.1
+}
+tactic_attacker_hb_rush = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = hold_bridge
+		skill > 4
+	}
+	
+	base =  { factor = 4 }
+	picture = attacker_hb_rush
+	display_phase = hold_bridge
+
+	combat_width = -0.25
+	attacker = 0.2
+}
+tactic_attacker_hb_storm = { 
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = hold_bridge
+	}
+	
+	base =  { factor = 2 }
+	picture = attacker_hb_storm
+	display_phase = hold_bridge
+
+	countered_by = tactic_defender_hb_skillful_defence
+	countered_by = tactic_touhou_ali_defender_hb_skillful_defence
+	
+	phase = seize_bridge
+	
+	combat_width = -0.25
+	attacker = 0.2
+	defender = 0.05
+}
+tactic_defender_hb_hold = { 
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = hold_bridge
+		skill < 3
+	}
+	
+	base =  { factor = 2 }
+	picture = defender_hb_hold
+	display_phase = hold_bridge
+
+	combat_width = -0.25
+	attacker = 0.2
+	defender = -0.1
+}
+tactic_defender_hb_skillful_defence = { 
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = hold_bridge
+		OR = {
+			skill > 2
+			has_trait = trickster
+		}
+	}
+	
+	base =  { factor = 2 }
+	picture = defender_hb_skillful_defence
+	display_phase = hold_bridge
+	
+	combat_width = -0.25
+	attacker = 0.1
+	defender = 0.05
+}
+
+tactic_guerrilla_tactics = { #People's army defender tactic. also for German volksturm branch.
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		OR = {
+			skill > 2
+			has_trait = trickster
+		}
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = tactic_guerrilla_tactics
+	
+	combat_width = -0.5
+	attacker = -0.7
+	defender = -0.6
+}
+
+tactic_human_wave_tactics = { #People's army attacker tactic
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		frontage_full = yes
+		has_reserves = yes
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = tactic_human_wave_tactics
+	
+	combat_width = 0.5
+	attacker = 0.1 
+	defender = 0.1
+}
+
+tactic_banzai_charge = { #Special Japan attacker tactic
+	is_attacker = yes
+	trigger = {
+		tag = JAP
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = yes
+	
+	countered_by = tactic_overwhelming_fire
+	countered_by = tactic_touhou_barrage_defender
+	
+	base =  { factor = 4 }
+	picture = tactic_banzai_charge
+	
+	attacker_movement_speed = 0.1
+	attacker = 0.25 
+	defender = 0.1
+}
+
+tactic_infantry_charge = { #GBP -> Infantry attacker tactic
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = tactic_infantry_charge
+	
+	attacker = 0.1 
+	defender = -0.05
+}
+
+tactic_planned_attack = { #GBP -> Armor attacker tactic
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = tactic_planned_attack
+	
+	attacker = 0.15 
+}
+
+tactic_relentless_assault = { #Deep battle attacker tactic
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = tactic_relentless_assault
+	
+	attacker_movement_speed = 0.15
+	attacker = 0.2
+	defender = 0.05	
+}
+
+tactic_unexpected_thrust = { #Mobile warfare attacker tactic
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = tactic_unexpected_thrust
+	
+	attacker_movement_speed = 0.15
+	attacker = 0.15 
+}
+
+tactic_overwhelming_fire = { # Counters Banzai charge
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = no
+	
+	base =  { factor = 2 }
+	picture = tactic_overwhelming_fire
+	
+	attacker = -0.1
+	defender = 0.1
+}
+
+tactic_barrage = { #Superior firepower attacker tactic
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = no
+	
+	base =  { factor = 4 }
+	picture = tactic_barrage
+	
+	attacker = 0.1
+	defender = -0.2	
+}

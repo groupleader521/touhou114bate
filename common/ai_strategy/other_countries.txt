@@ -1,0 +1,90 @@
+gensokyo_civil_war_ally_nobody = {
+	enable = {
+		NOT = {
+			tag = ALI tag = DES tag = HAK tag = DLD tag = HEL tag = SSS tag = OPP tag = RAB tag = TEM tag = BLI tag = KAP tag = TEN tag = HUM tag = VAM tag = MLS tag = EVI
+		}
+	}
+	abort = {
+		has_global_flag = touhou_all_country_unify
+	}
+	ai_strategy = {
+		type = alliance
+		id = ALI
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = DES
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = HAK
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = DLD
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = HEL
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = SSS
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = OPP
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = RAB
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = TEM
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = BLI
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = KAP
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = TEN
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = HUM
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = VAM
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = MLS
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = EVI
+		value = -2000
+	}
+}

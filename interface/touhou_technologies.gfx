@@ -1,0 +1,1064 @@
+spriteTypes = {
+	#幻想兵团
+	SpriteType = {#神风人偶
+		name = "GFX_suicide_puppet_craft_1_medium"
+		texturefile = "gfx/interface/technologies/suicide_puppet.dds"
+	}
+	SpriteType = {#神风人偶
+		name = "GFX_suicide_puppet_craft_2_medium"
+		texturefile = "gfx/interface/technologies/suicide_puppet.dds"
+	}
+	SpriteType = {
+		name = "GFX_goliath_0_medium"
+		texturefile = "gfx/interface/technologies/goliath_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_goliath_1_medium"
+		texturefile = "gfx/interface/technologies/goliath_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_goliath_2_medium"
+		texturefile = "gfx/interface/technologies/goliath_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_goliath_3_medium"
+		texturefile = "gfx/interface/technologies/goliath_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_goliath_4_medium"
+		texturefile = "gfx/interface/technologies/goliath_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tengu_fighter_medium"
+		texturefile = "gfx/interface/technologies/tengu_fighter_trait.dds"
+	}
+	SpriteType = {
+		name = "GFX_oni_champion_medium"
+		texturefile = "gfx/interface/technologies/oni_champion.dds"
+	}
+	SpriteType = {
+		name = "GFX_cas_boli_fighter_medium"
+		texturefile = "gfx/interface/technologies/cas_boli_fighter.dds"
+	}
+	SpriteType = {
+		name = "GFX_desires_bomber_medium"
+		texturefile = "gfx/interface/technologies/desires_bomber.dds"
+	}
+	SpriteType = {
+		name = "GFX_evil_army_medium"
+		texturefile = "gfx/interface/technologies/evil_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_human_army_medium"
+		texturefile = "gfx/interface/technologies/human_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_animal_medium"
+		texturefile = "gfx/interface/technologies/DLD_animal.dds"
+	}
+	SpriteType = {
+		name = "GFX_dragon_medium"
+		texturefile = "gfx/interface/technologies/dragon.dds"
+	}
+	SpriteType = {
+		name = "GFX_die_medium"
+		texturefile = "gfx/interface/technologies/die.dds"
+	}
+	SpriteType = {
+		name = "GFX_rabbit_team_medium"
+		texturefile = "gfx/interface/technologies/rabbit_team.dds"
+	}
+	SpriteType = {
+		name = "GFX_deep_sea_medium"
+		texturefile = "gfx/interface/technologies/deep_sea.dds"
+	}
+	SpriteType = {
+		name = "GFX_soul_medium"
+		texturefile = "gfx/interface/technologies/soul.dds"
+	}
+	SpriteType = {
+		name = "GFX_wunv_medium"
+		texturefile = "gfx/interface/technologies/wunv.dds"
+	}
+	SpriteType = {
+		name = "GFX_lotus_medium"
+		texturefile = "gfx/interface/technologies/lotus.dds"
+	}
+	SpriteType = {
+		name = "GFX_magician_medium"
+		texturefile = "gfx/interface/technologies/magic.dds"
+	}
+	
+	#魔法科技树
+	SpriteType = {
+		name = "GFX_touhou_magic_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_infantry_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_infantry_weapons.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_improved_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_infantry_weapons2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_infantry_at_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_infantry_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_infantry_at2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_infantry_at2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_infantry_weapons3.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_paratroopers3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_paratroopers3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_paratroopers2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_paratroopers2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_paratroopers_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_paratroopers.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_tech_mountaineers3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_mountain3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_tech_mountaineers2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_mountain2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_tech_mountaineers_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_mountain.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_magic_marines3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_marines3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_marines2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_marines2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_marines_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_marines.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_tech_special_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_special_forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_advanced_special_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_advanced_special_forces_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_improved_special_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_improved_special_forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_extreme_environment_training_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_extreme_environment_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_survival_training_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_survival_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_elite_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_elite_forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_night_vision2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_night_vision2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_night_vision_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_night_vision.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_support_weapons4_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_support_weapons4.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_support_weapons3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_support_weapons2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_support_weapons.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_interwar_artillery_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_artillery1.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_artillery1_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_Art_2_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_artillery2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_artillery2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_artillery3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_artillery3.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_artillery4_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_Art_3_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_artillery5_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_artillery5.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_AT_1_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_antitank5_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_AT_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_antitank4_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_antitank5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_antitank3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_antitank3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_antitank2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_AT_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_antitank1_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_antitank2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_magic_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_magic_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_magic_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_magic_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_magic_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/goliath_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_early_fighter.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_magic_fighter1_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_fighter1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_magic_fighter2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_fighter2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_magic_fighter3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_fighter3.dds"
+	}
+		SpriteType = {
+		name = "GFX_touhou_magic_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_jet_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_magic_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_early_bomber.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_magic_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_jet_tactical_bomber2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_touhou_magic_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_magic_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_magic_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_magic_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_jet_strategic_bomber1.dds"
+	}
+	#灵力科技树
+	SpriteType = {
+		name = "GFX_touhou_wakan_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry_weapons.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_improved_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry_weapons2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_infantry_at_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_infantry_at2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry_at2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry_weapons3.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_paratroopers3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_paratroopers3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_paratroopers2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_paratroopers2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_paratroopers_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_paratroopers.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_tech_mountaineers3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_mountain3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_tech_mountaineers2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_mountain2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_tech_mountaineers_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_mountain.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_wakan_marines3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_marines3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_marines2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_marines2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_marines_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_marines.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_tech_special_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_special_forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_advanced_special_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_advanced_special_forces_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_improved_special_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_improved_special_forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_extreme_environment_training_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_extreme_environment_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_survival_training_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_survival_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_elite_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_elite_forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_night_vision2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_night_vision2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_night_vision_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_night_vision.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_support_weapons4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_support_weapons4.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_support_weapons3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_support_weapons2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_support_weapons.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_motorized_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_motorized_rocket_unit_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_motorized_rocket_unit.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_mechanized_equipment_3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_mechanized_equipment_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_mechanized_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_amphibious_mechanized_infantry_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_generic_amphibious_mech_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_amphibious_mechanized_infantry_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_generic_amphibious_mech_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_Art_1_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_interwar_artillery_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_artillery1.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_artillery1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_Art_2_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_artillery2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_artillery2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_artillery3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_artillery3.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_artillery4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_Art_3_comintern.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_artillery5_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_artillery5.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_AA_1_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_antiair5_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_AA_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_antiair4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_antiair5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_antiair3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_antiair2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_antiair2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_AA_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_antiair1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_antiair1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_early_fighter.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_wakan_fighter1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_fighter1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_wakan_fighter2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_fighter2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_wakan_fighter3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_fighter3.dds"
+	}
+		SpriteType = {
+		name = "GFX_touhou_wakan_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_jet_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_CAS1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_CAS1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_wakan_CAS2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_CAS2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_wakan_CAS3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_CAS3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_wakan_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_early_bomber.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_wakan_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_wakan_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
+	}
+	#妖力科技树
+	SpriteType = {
+		name = "GFX_touhou_demonforce_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry_weapons.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_improved_infantry_weapons_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry_weapons2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_infantry_at_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry_at.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_infantry_at2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry_at2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry_weapons3.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_paratroopers3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_paratroopers3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_paratroopers2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_paratroopers2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_paratroopers_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_paratroopers.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_tech_mountaineers3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_mountain3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_tech_mountaineers2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_mountain2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_tech_mountaineers_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_mountain.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_marines3_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_marines3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_marines2_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_marines2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_marines_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_marines.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_tech_special_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_special_forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_advanced_special_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_advanced_special_forces_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_improved_special_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_improved_special_forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_extreme_environment_training_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_extreme_environment_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_survival_training_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_survival_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_elite_forces_medium"
+		texturefile = "gfx/interface/technologies/touhou_magic_tech_elite_forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_night_vision2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_night_vision2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_night_vision_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_night_vision.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_support_weapons4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_support_weapons4.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_support_weapons3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_support_weapons2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_support_weapons.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_AA_1_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_antiair5_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_AA_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_antiair4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_antiair5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_antiair3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_antiair2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_antiair2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_AA_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_antiair1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_antiair1.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_AT_1_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_antitank5_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_AT_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_antitank4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_antitank5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_antitank3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_antitank3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_antitank2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_AT_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_antitank1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_antitank2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
+	}	
+	SpriteType = {
+		name = "GFX_touhou_demonforce_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_fighter1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_fighter2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_fighter3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
+	}
+		SpriteType = {
+		name = "GFX_touhou_demonforce_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_demonforce_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_CAS1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_CAS2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_touhou_demonforce_CAS3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS3.dds"
+	}
+	#幻想支援
+	SpriteType = {
+		name = "GFX_touhou_tech_support_medium"
+		texturefile = "gfx/interface/technologies/touhou_support_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_tech_engineers4_medium"
+		texturefile = "gfx/interface/technologies/touhou_engineers4.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_engineers3_medium"
+		texturefile = "gfx/interface/technologies/touhou_engineers3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_engineers2_medium"
+		texturefile = "gfx/interface/technologies/touhou_engineers2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_engineers_medium"
+		texturefile = "gfx/interface/technologies/touhou_engineers.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_recon4_medium"
+		texturefile = "gfx/interface/technologies/touhou_recon4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_recon3_medium"
+		texturefile = "gfx/interface/technologies/touhou_recon3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_recon2_medium"
+		texturefile = "gfx/interface/technologies/touhou_recon2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_recon_medium"
+		texturefile = "gfx/interface/technologies/touhou_recon.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_tech_military_police4_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_military_police4.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_military_police3_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_military_police3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_military_police2_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_military_police2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_military_police_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_military_police.dds"
+	}
+	SpriteType = {
+		name = "GFX_touhou_tech_maintenance_company4_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_maintenance_company4.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_maintenance_company3_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_maintenance_company3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_maintenance_company2_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_maintenance_company2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_maintenance_company_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_maintenance_company.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_field_hospital4_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_field_hospital4.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_field_hospital3_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_field_hospital3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_field_hospital2_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_field_hospital2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_field_hospital_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_field_hospital.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_logistics_company4_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_logistics_company4.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_logistics_company3_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_logistics_company3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_logistics_company2_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_logistics_company2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_logistics_company_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_logistics_company.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_signal_company4_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_signal_company4.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_signal_company3_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_signal_company3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_signal_company2_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_signal_company2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_touhou_tech_signal_company_medium"
+		texturefile = "gfx/interface/technologies/touhou_tech_signal_company.dds"
+	}
+}

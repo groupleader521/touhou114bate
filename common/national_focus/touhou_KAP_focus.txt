@@ -1,0 +1,756 @@
+focus_tree = {
+	id = touhou_KAP_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			tag = KAP
+		}
+		
+		modifier = {
+			add = 20
+			original_tag = KAP
+		}
+	}
+	
+	default = no
+	
+	shared_focus = touhou_army_effort
+	shared_focus = touhou_aviation_effort
+	shared_focus = touhou_naval_effort
+	shared_focus = touhou_industrial_effort
+	shared_focus = touhou_ALL_in
+	
+	
+	focus = {#幻想乡外交
+		id = touhou_KAP_out
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { }
+		available = {
+		}
+		x = 27
+		y = 0
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		completion_reward = {
+			add_ideas = touhou_ministry_of_foreign_affairs
+		}
+	}
+	focus = {#给天狗的贡品
+		id = touhou_KAP_gentle
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = touhou_KAP_out }
+		mutually_exclusive = { focus = touhou_KAP_special_envoy }
+		available = { 
+		}
+		bypass = {
+			
+		}
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 3
+				OR = {
+					has_idea = inside_fantasy_attitude_0
+					has_idea = inside_fantasy_attitude_1
+					has_idea = inside_fantasy_attitude_2
+					has_idea = inside_fantasy_attitude_3
+				}
+				
+			}
+		}
+		
+		
+		x = -2
+		y = 1
+		relative_position_id = touhou_KAP_out
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.1
+			inside_fantasy_attitude_level_down = yes
+			hidden_effect = {
+				every_country = {
+					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+					news_event = { hours = 6 id = news.1008 }
+				}
+			}
+		}
+	}
+	focus = {#自发生产
+		id = touhou_KAP_expanded_production
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = touhou_KAP_gentle }
+		available = { 
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 3
+						include_locked = yes
+					}					
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}			
+		}
+		
+		
+		x = -1
+		y = 1
+		relative_position_id = touhou_KAP_gentle
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			inside_fantasy_attitude_level_down = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {#加强妖怪山连通
+		id = touhou_KAP_special_supply
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = touhou_KAP_expanded_production focus = touhou_KAP_warfare_will }
+		available = { 
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 3
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_KAP_expanded_production
+		cost = 5
+
+		
+
+		completion_reward = {
+			inside_fantasy_attitude_level_down = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 2
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 2
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {#天狗武装厂
+		id = touhou_KAP_warfare_will
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = touhou_KAP_gentle }
+		available = { 
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 3
+						include_locked = yes
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}	
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 1
+		y = 1
+		relative_position_id = touhou_KAP_gentle
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_stability = 0.1
+			inside_fantasy_attitude_level_down = yes
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {#新发明
+		id = touhou_KAP_champion
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = touhou_KAP_warfare_will focus = touhou_KAP_expanded_production }
+		available = { 
+		}
+		bypass = {
+			
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		
+		
+		x = 0
+		y = 1
+		relative_position_id = touhou_KAP_warfare_will
+		cost = 5
+
+		
+
+		completion_reward = {
+			inside_fantasy_attitude_level_down = yes
+			add_tech_bonus = {
+				name = touhou_KAP_champion
+				ahead_reduction = 2
+				bonus = 2.0
+				uses = 3
+				category = industry
+				category = electronics
+			}
+		}
+	}
+	focus = {#发明与科学
+		id = touhou_KAP_forever
+		icon = GFX_focus_research
+		prerequisite = { focus = touhou_KAP_special_supply }
+		prerequisite = { focus = touhou_KAP_champion }
+		available = { 
+		}
+		bypass = {
+			
+		}
+		ai_will_do = {
+			factor = 3
+		}
+		
+		
+		x = 1
+		y = 1
+		relative_position_id = touhou_KAP_special_supply
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_stability = 0.2
+			add_threat = -5
+			inside_fantasy_attitude_level_down = yes
+			set_country_flag = KAP_is_ok
+			custom_effect_tooltip = KAP_is_ok_tooltip
+		}
+	}
+	focus = {#机密特使
+		id = touhou_KAP_special_envoy
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = touhou_KAP_out }
+		mutually_exclusive = { focus = touhou_KAP_gentle }
+		available = { 
+			
+		}
+		bypass = {
+			
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 3
+				OR = {
+					has_idea = inside_fantasy_attitude_6
+					has_idea = inside_fantasy_attitude_5
+					has_idea = inside_fantasy_attitude_4
+					has_idea = inside_fantasy_attitude_3
+				}
+				
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = touhou_KAP_out
+		cost = 5
+
+		
+
+		completion_reward = {
+			army_experience = 40
+			add_war_support = 0.1
+			inside_fantasy_attitude_level_up = yes
+			hidden_effect = {
+				every_country = {
+					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+					news_event = { hours = 6 id = news.1009 }
+				}
+			}
+		}
+	}
+	focus = {#和爱丽丝的会谈
+		id = touhou_KAP_talk_with_ali
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = touhou_KAP_special_envoy }
+		available = { 
+			is_subject = yes
+		}
+		bypass = {
+			is_subject = no
+			is_guaranteed_by = ALI
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = -1
+		y = 1
+		relative_position_id = touhou_KAP_special_envoy
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			ALI = { country_event = { id = kappa.2 } }
+		}
+	}
+	focus = {#和红魔馆的会谈
+		id = touhou_KAP_talk_with_vam
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = touhou_KAP_special_envoy }
+		available = { 
+			is_subject = yes
+		}
+		bypass = {
+			is_subject = no
+			is_guaranteed_by = VAM
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 1
+		y = 1
+		relative_position_id = touhou_KAP_special_envoy
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			VAM = { country_event = { id = kappa.2 } }
+		}
+	}
+	focus = {#和永远亭的会谈
+		id = touhou_KAP_talk_with_rab
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = touhou_KAP_talk_with_ali  }
+		available = { 
+			is_subject = yes
+		}
+		bypass = {
+			is_subject = no
+			is_guaranteed_by = RAB
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_KAP_talk_with_ali
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			RAB = { country_event = { id = kappa.2 } }
+		}
+	}
+	focus = {#宣布独立
+		id = touhou_KAP_independent
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		prerequisite = { focus = touhou_KAP_talk_with_ali focus = touhou_KAP_talk_with_vam }
+		available = { 
+			is_subject = yes
+		}
+		bypass = {
+			is_subject = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				is_guaranteed_by = ALI
+			}
+			modifier = {
+				factor = 1.5
+				is_guaranteed_by = VAM
+			}
+			modifier = {
+				factor = 1.5
+				is_guaranteed_by = RAB
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_KAP_talk_with_vam
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.2
+			inside_fantasy_attitude_level_up = yes
+			OVERLORD = { country_event = { id = kappa.3 } }
+		}
+	}
+	focus = {#反戈一击
+		id = touhou_KAP_war
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = touhou_KAP_independent }
+		available = { 
+			is_subject = no
+			has_war = no
+		}
+		bypass = {
+		}
+		
+		ai_will_do = {
+			factor = 3
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_KAP_independent
+		cost = 5
+
+		
+
+		completion_reward = {
+			add_war_support = 0.1
+			inside_fantasy_attitude_level_up = yes
+			random_neighbor_country = { 
+				limit = { NOT = { is_subject_of = KAP } NOT = { is_in_faction_with = KAP } OR = { original_tag = ALI original_tag = DES  original_tag = SSS original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+				every_owned_state = { add_core_of = KAP }
+				KAP = {
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+	focus = {#幻想乡共同结局
+		id = touhou_KAP_in_all
+		icon = touhou_in_all
+		prerequisite = { focus = touhou_KAP_war focus = touhou_KAP_forever }
+		bypass = {
+			all_other_country = {
+				OR = { 
+					NOT = {original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+					exists = no
+					is_in_faction = yes
+					has_war_with = PREV 
+				}
+			}
+		}
+		available = {
+			has_war = no
+			is_subject = no
+			date > 1937.6.1
+			threat > 0.3
+			any_other_country = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				OR = { is_subject = no is_subject_of = ROOT } exists = yes
+				is_in_faction = no
+				NOT = { has_war_with = PREV }
+			}
+		}
+		x = -3
+		y = 1
+		relative_position_id = touhou_KAP_war
+		cost = 5
+		
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			 
+			add_threat = -10
+			if = {
+				limit = { is_in_faction = no }
+				set_rule = { can_create_factions = yes }
+				create_faction = All_in_touhou
+				custom_effect_tooltip = touhou_in_all_union
+			}
+			hidden_effect = {
+				every_country = {
+					limit = { 
+						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						OR = { is_subject = no is_subject_of = ROOT } exists = yes
+						NOT = { original_tag = PREV }
+						NOT = { has_war_with = PREV }
+						is_in_faction = no
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 400
+					}
+					if = { 
+						limit = {is_ai = yes } 
+						country_event = touhou_ai.2
+					}
+					else = { country_event = generic.5 }
+				}
+			}
+		}
+	}
+	focus = {#幻想乡自立结局
+		id = touhou_KAP_in_self
+		icon = touhou_in_self
+		prerequisite = { focus = touhou_KAP_in_all }
+		available = {
+			has_war = no
+			is_subject = no
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+			any_other_country = {
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				exists = yes
+				NOT = { is_subject_of = PREV } 
+				NOT = { is_in_faction_with = PREV }
+			}
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_KAP_in_all
+		cost = 5
+		
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			add_threat = -5
+			custom_effect_tooltip = touhou_end_war
+			custom_effect_tooltip = touhou_in_self_war
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						exists = yes
+						NOT = { original_tag = PREV }
+						NOT = { is_subject_of = PREV } 
+						NOT = { is_in_faction_with = PREV }
+					}
+					if = {
+						limit = { is_ai = yes }
+						PREV = {
+							declare_war_on = {
+								type = annex_everything
+								target = PREV
+							}
+						}
+					}
+					else = {
+						PREV = {
+							create_wargoal = {
+								type = annex_everything
+								target = PREV
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
