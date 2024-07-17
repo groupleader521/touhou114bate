@@ -424,9 +424,6 @@ technologies = {
 		enable_equipments = {
 			magician_equipment_0
 		}
-		enable_subunits = {
-			magician_brigade
-		}
 		research_cost = 1000
 		start_year = 3000
 		allow = {
