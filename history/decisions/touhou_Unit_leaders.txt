@@ -1,0 +1,401 @@
+touhou_Unit_leaders = {
+	#芙兰
+	touhou_find_fula = {
+		icon = GFX_decision_generic_special_project
+		fire_only_once = yes
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			controls_state = 1006
+			1006 = {
+				non_damaged_building_level = {
+					building = infrastructure
+					level > 3
+				}
+			}
+		}
+		visible = {
+			NOT = { has_global_flag = touhou_global_flag_find_fula }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			controls_state = 1006
+		}
+		
+		complete_effect = {
+			recruit_character = TOUHOU_Flandre_Scarlet
+			1006 = {
+				damage_building = {
+					type = infrastructure
+					damage = 3
+				}
+			}
+			set_global_flag = touhou_global_flag_find_fula
+		}
+	}
+	#寻找海军上将适任者
+	touhou_find_navy_Kawasiro_Nitori = { #寻找海军上将适任者-河城荷取
+		icon = GFX_decision_generic_special_project
+		fire_only_once = yes
+		days_remove = 7
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_controlled_state = {
+				is_coastal = yes				
+			}
+			NOT = { has_idea = fantasy_government }
+			NOT = { has_idea = fantasy_army }
+			has_character = TOUHOU_Kawasiro_Nitori
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+			NOT = { has_global_flag = touhou_global_flag_find_navy_Kawasiro_Nitori }
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -25
+			}
+		}
+		
+		remove_effect = {
+			TOUHOU_Kawasiro_Nitori = {
+				remove_unit_leader_role = yes
+				add_naval_commander_role = {
+					traits = { navy_career_officer chief_engineer green_water_expert seawolf blockade_runner superior_tactician spotter silent_hunter torpedo_expert lancer loading_drill_master concealment_expert smoke_screen_expert }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 4
+					maneuvering_skill = 4
+					coordination_skill = 4
+				}
+			}
+			set_global_flag = touhou_global_flag_find_navy_Kawasiro_Nitori
+		}
+	}	
+	touhou_find_navy_Wakasagihime = { #寻找海军上将适任者-若鹭姬
+		icon = GFX_decision_generic_special_project
+		fire_only_once = yes
+		days_remove = 7
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			any_controlled_state = {
+				is_coastal = yes				
+			}
+			NOT = { has_idea = fantasy_government }
+			NOT = { has_idea = fantasy_army }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+			NOT = {
+				has_global_flag = touhou_global_flag_find_navy_Wakasagihime
+			}
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -25
+			}
+		}
+		
+		remove_effect = {
+			recruit_character = TOUHOU_Wakasagihime
+			set_global_flag = touhou_global_flag_find_navy_Wakasagihime
+		}
+	}	
+	#太阳花田
+	touhou_find_sun = {
+		icon = GFX_decision_generic_special_project
+		fire_only_once = yes
+		days_remove = 7
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			controls_state = 1015
+			NOT = { has_idea = fantasy_government }
+			NOT = { has_idea = fantasy_army }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			NOT = { has_idea = ALI_marionette_freedom_none }
+			NOT = { has_idea = ALI_marionette_freedom_1 }
+			NOT = { has_idea = ALI_marionette_freedom_2 }
+			NOT = { has_idea = ALI_marionette_freedom_3 }
+			NOT = { has_idea = ALI_marionette_freedom_4 }
+			NOT = { has_idea = ALI_marionette_freedom_5 }
+			controls_state = 1015
+			NOT = { has_country_flag = ali_no_pop_self }
+			any_other_country = { NOT = { original_tag = ALI } }
+			OR = {
+				NOT = { has_character = TOUHOU_Medicine_Melancholy }
+				NOT = { has_character = TOUHOU_Kazami_Yuka }				
+			}
+			NOT = { has_global_flag = touhou_global_flag_find_sun }
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -25
+			}
+		}
+		
+		remove_effect = {
+			if = {
+				limit = { NOT = { has_character = TOUHOU_Medicine_Melancholy } }
+				recruit_character = TOUHOU_Medicine_Melancholy
+			}
+			if = {
+				limit = { NOT = { has_character = TOUHOU_Kazami_Yuka } }
+				recruit_character = TOUHOU_Kazami_Yuka
+			}
+			set_global_flag = touhou_global_flag_find_sun
+		}
+	}
+	#玄云海
+	touhou_find_cloud = {
+		icon = GFX_decision_generic_special_project
+		fire_only_once = yes
+		days_remove = 7
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			controls_state = 990
+			NOT = { has_idea = fantasy_government }
+			NOT = { has_idea = fantasy_army }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			controls_state = 990
+			NOT = { has_global_flag = touhou_global_flag_find_cloud }
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -25
+			}
+		}
+		
+		remove_effect = {
+			recruit_character = TOUHOU_Hinanawi_Tenshi
+			recruit_character = Touhou_Nagae_Iku
+			set_global_flag = touhou_global_flag_find_cloud
+		}
+	}
+	#八云家
+	touhou_find_yakumo = {
+		icon = GFX_decision_generic_special_project
+		fire_only_once = yes
+		days_remove = 7
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			controls_state = 1001
+			NOT = { has_idea = fantasy_government }
+			NOT = { has_idea = fantasy_army }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			controls_state = 1001
+			NOT = { has_global_flag = touhou_global_flag_find_yakumo }
+		}
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -25
+			}
+		}
+		
+		remove_effect = {
+			recruit_character = TOUHOU_Yakumo_Ran
+			recruit_character = TOUHOU_Chen
+			set_global_flag = touhou_global_flag_find_yakumo
+		}
+	}
+	#贤者
+	touhou_find_sage = {
+		icon = GFX_decision_generic_special_project
+		fire_only_once = yes
+		days_remove = 7
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			NOT = { has_idea = fantasy_government }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			NOT = { has_global_flag = touhou_global_flag_find_sage }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -25
+			}
+		}
+		
+		remove_effect = {
+			recruit_character = TOUHOU_Matara_Okina
+			recruit_character = TOUHOU_Ibaraki_Kasen
+			set_global_flag = touhou_global_flag_find_sage
+		}
+	}
+	#外界
+	touhou_find_out = {
+		icon = GFX_decision_generic_special_project
+		fire_only_once = yes
+		days_remove = 7
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		available = {
+			NOT = { has_idea = fantasy_army }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		visible = {
+			NOT = { has_global_flag = touhou_global_flag_find_out }
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -25
+			}
+		}
+		
+		remove_effect = {
+			recruit_character = TOUHOU_Usami_Renko
+			recruit_character = TOUHOU_Maribel_Hearn
+			recruit_character = TOUHOU_Usami_Sumireko
+			set_global_flag = touhou_global_flag_find_out
+		}
+	}	
+	#拜访亲友
+	touhou_find_friends = {
+		icon = GFX_decision_generic_special_project
+		target_trigger = {
+			FROM = { 
+				exists = no
+				any_character = { has_character_flag = touhou_character_flag_character }
+			}
+		}
+		target_non_existing = yes #通常情况不检测不存在的国家，用这个代码解决
+		visible = {
+			is_ai = no
+			NOT = {
+				has_war_with = FROM
+				is_subject_of = FROM
+				has_subject = FROM
+			}
+		}
+		days_remove = 7
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			political_power_cost = 5
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+				add_political_power = -25
+			}
+		}		
+		remove_effect = {
+			FROM = {
+				every_character = {
+					limit = {
+						has_character_flag = touhou_character_flag_character
+					}
+					set_nationality = ROOT
+				}				
+			}
+			FROM = { hidden_effect = { clr_country_flag = touhou_country_flag_a_player_capture_character } }
+		}
+	}
+}

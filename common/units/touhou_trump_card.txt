@@ -165,7 +165,7 @@ sub_units = {
 		
 		maximum_speed = 3 #注意，这些属性是+的倍数，所以比真正的倍数减一
 
-		defence = 19
+		defense = 19
 		breakthrough = 1
 		hardness = -1
 		armor_value = -1
@@ -215,7 +215,7 @@ sub_units = {
 		
 		maximum_speed = 9
 
-		defence = 3
+		defense = 3
 		breakthrough = 25
 		hardness = -0.2
 		armor_value = 9
@@ -301,7 +301,7 @@ sub_units = {
 
 		maximum_speed = 3
 
-		defence = 14
+		defense = 14
 		breakthrough = 6
 		hardness = -1
 		armor_value = -1

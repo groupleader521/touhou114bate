@@ -805,18 +805,16 @@ leader_traits = {
 		}
 	}
 	touhou_air_air_superiority_3 = { # Air Superiority mission efficiency increased by 12%
-		air_air_superiority_attack_factor = 0.05
-		air_air_superiority_defence_factor = 0.05
-		air_air_superiority_agility_factor = 0.05
+		air_attack_factor = 0.05
+		air_defence_factor = 0.05
+		air_agility_factor = 0.05
 		
 		ai_will_do = {
 			factor = 3
 		}
 	}
 	touhou_air_strategic_bombing_3 = { # Strategic Bombing mission efficiency increased by 12%
-		air_strategic_bomber_attack_factor = 0.03
 		air_strategic_bomber_defence_factor = 0.03
-		air_strategic_bomber_agility_factor = 0.03
 		air_strategic_bomber_bombing_factor = 0.09
 		
 		ai_will_do = {
@@ -852,9 +850,7 @@ leader_traits = {
 		}
 	}
 	touhou_air_strategic_bombing_mls = { # Strategic Bombing mission efficiency increased by 12%
-		air_strategic_bomber_attack_factor = 0.03
 		air_strategic_bomber_defence_factor = 0.03
-		air_strategic_bomber_agility_factor = 0.03
 		air_strategic_bomber_bombing_factor = 0.09
 		
 		ai_will_do = {

@@ -894,7 +894,6 @@ equipments = {
 			ship_armor_upgrade
 			ship_gun_upgrade
 			ship_deckspace_upgrade
-			ship_deckspace_upgrade
 			carrier_armor_upgrade
 		}
 		
