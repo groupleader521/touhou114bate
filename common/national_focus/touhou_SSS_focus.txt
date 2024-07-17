@@ -35,11 +35,14 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				factor = 0
+				date < 1936.10.1
+			}
 		}
-
+		
 		completion_reward = {
 			add_ideas = touhou_ministry_of_foreign_affairs
 		}

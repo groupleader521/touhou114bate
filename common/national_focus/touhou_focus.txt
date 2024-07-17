@@ -3733,9 +3733,9 @@
 
 		completion_reward = {
 			#add_ideas = touhou_panic 由于现在玩家也会点这个国策是，所以先关掉
-			add_offsite_building = { type = industrial_complex level = 20 }
-			add_offsite_building = { type = arms_factory level = 20 }
-			add_offsite_building = { type = dockyard level = 20 }
+			add_offsite_building = { type = industrial_complex level = 5 }
+			add_offsite_building = { type = arms_factory level = 5 }
+			add_offsite_building = { type = dockyard level = 5 }
 		}
 	}
 	shared_focus = {#工业战

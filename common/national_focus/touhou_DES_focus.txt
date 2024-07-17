@@ -37,6 +37,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 3
+			modifier = {
+				factor = 0
+				date < 1936.10.1
+			}
 		}
 
 		completion_reward = {
