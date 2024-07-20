@@ -719,7 +719,7 @@ touhou_decisions_categories_evi_military_academy = {
 				}
 			}
 			set_division_template_cap = {
-				division_template = "妖精突击师"
+				division_template = "突击师"
 				division_cap = 10
 			}
 			add_units_to_division_template = {
