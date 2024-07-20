@@ -2,54 +2,35 @@
 	name = "人里自警队" 
 
 	regiments = {
-		human_brigade = { x = 0 y = 0 }
-		human_brigade = { x = 0 y = 1 }
-		human_brigade = { x = 0 y = 2 }
-		human_brigade = { x = 0 y = 3 }		
-
-		human_brigade = { x = 1 y = 0 }
-		human_brigade = { x = 1 y = 1 }
-		human_brigade = { x = 1 y = 2 }
-		human_brigade = { x = 1 y = 3 }
+		touhou_wakan_infantry = { x = 0 y = 0 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "人里中队" 
 
 	regiments = {
-		human_brigade = { x = 0 y = 0 }
-		human_brigade = { x = 0 y = 1 }
-		human_brigade = { x = 0 y = 2 }
-		human_brigade = { x = 0 y = 3 }	
-		
-		touhou_wakan_infantry = { x = 1 y = 0 }
-		touhou_wakan_infantry = { x = 1 y = 1 }
-		touhou_wakan_infantry = { x = 1 y = 2 }
-		touhou_wakan_infantry = { x = 1 y = 3 }
+		touhou_wakan_infantry = { x = 0 y = 0 }
+		touhou_wakan_infantry = { x = 0 y = 1 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "人里大队" 
 
 	regiments = {
-		human_brigade = { x = 0 y = 0 }
-		human_brigade = { x = 0 y = 1 }
-		human_brigade = { x = 0 y = 2 }
-		human_brigade = { x = 0 y = 3 }	
-		
-		touhou_wakan_infantry = { x = 1 y = 0 }
-		touhou_wakan_infantry = { x = 1 y = 1 }
-		touhou_wakan_infantry = { x = 1 y = 2 }
-		touhou_wakan_infantry = { x = 1 y = 3 }
-		
-		touhou_wakan_infantry = { x = 2 y = 0 }
-		touhou_wakan_infantry = { x = 2 y = 1 }
-		touhou_wakan_infantry = { x = 2 y = 2 }
-		touhou_wakan_infantry = { x = 2 y = 3 }
+		touhou_wakan_infantry = { x = 0 y = 0 }
+		touhou_wakan_infantry = { x = 0 y = 1 }
+		touhou_wakan_infantry = { x = 0 y = 2 }
+		touhou_wakan_infantry = { x = 0 y = 3 }
 	}
+	support = {
 
+	}
 }
 ##### OOB #####
 units = {
@@ -57,25 +38,25 @@ units = {
 	division = { 
 		name = "人里自警队第一小队"
 		location = 13385 
-		division_template = "人里大队"
+		division_template = "人里自警队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "人里自警队第二小队"
 		location = 13385 
-		division_template = "人里大队"
+		division_template = "人里自警队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "人里自警队第三小队"
 		location = 13385 
-		division_template = "人里大队"
+		division_template = "人里自警队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "人里自警队第四小队"
 		location = 13385 
-		division_template = "人里大队"
+		division_template = "人里自警队"
 		start_experience_factor = 0.1
 	}
 }
@@ -85,16 +66,7 @@ instant_effect = {
 			type = touhou_wakan_infantry_equipment_0
 			creator = "HUM"
 		}
-		requested_factories = 2
-		progress = 0.1
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = human_equipment_0
-			creator = "HUM"
-		}
-		requested_factories = 1
+		requested_factories = 3
 		progress = 0.1
 		efficiency = 50
 	}

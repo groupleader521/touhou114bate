@@ -36,7 +36,7 @@ country_event = {#偷天换日
 	
 	option = {
 		name = rabbit.1.a
-		ai_chance = { base = 999 }
+		ai_chance = { base = 9 }
 		random_list = {
 			1 = { 
 				JAP = {
@@ -115,6 +115,6 @@ country_event = {#偷天换日
 	}
 	option = {
 		name = rabbit.1.b
-		ai_chance = { base = 0 }
+		ai_chance = { base = 1 }
 	}
 }

@@ -626,7 +626,6 @@ touhou_unify = {
 				is_faction_leader = yes
 			}
 			is_subject = no
-			is_ai = no
 			has_war = no
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_surrender_to_out
@@ -1624,6 +1623,10 @@ touhou_decisions_categories_touhou_fiscal_military = {#准备战争
 			FROM = { has_war = no }
 		}
 		visible = {
+			OR = {
+				is_ai = no
+				date > 1938.1.1
+			}
 			NOT = { 
 				is_in_faction_with = FROM
 				has_war_with = FROM
@@ -1654,9 +1657,9 @@ touhou_decisions_categories_touhou_fiscal_military = {#准备战争
 			political_power_cost = 0.5
 		}
 		ai_will_do = {
-			base = 100
+			factor = 100
 		}
-		cost = 50
+		cost = 100
 		war_with_target_on_remove = yes #提醒敌国宣战，但实际上代码已经失效了
 		targeted_modifier = {
 			tag = FROM

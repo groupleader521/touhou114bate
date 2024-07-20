@@ -4,21 +4,20 @@
 	regiments = {
 		touhou_demonforce_cavalry = { x = 0 y = 0 }
 		touhou_demonforce_cavalry = { x = 0 y = 1 }
-		touhou_demonforce_cavalry = { x = 0 y = 2 }
-		touhou_demonforce_cavalry = { x = 0 y = 3 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "天狗小队" 
 
 	regiments = {
 		touhou_demonforce_infantry = { x = 0 y = 0 }
-		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "天狗中队" 
@@ -26,15 +25,10 @@ division_template = {
 	regiments = {
 		touhou_demonforce_infantry = { x = 0 y = 0 }
 		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
-		
-		touhou_demonforce_infantry = { x = 1 y = 0 }
-		touhou_demonforce_infantry = { x = 1 y = 1 }
-		touhou_demonforce_infantry = { x = 1 y = 2 }
-		touhou_demonforce_infantry = { x = 1 y = 3 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "天狗大队" 
@@ -42,24 +36,17 @@ division_template = {
 	regiments = {
 		touhou_demonforce_infantry = { x = 0 y = 0 }
 		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
-		
 		touhou_demonforce_infantry = { x = 1 y = 0 }
 		touhou_demonforce_infantry = { x = 1 y = 1 }
-		touhou_demonforce_infantry = { x = 1 y = 2 }
-		touhou_demonforce_infantry = { x = 1 y = 3 }
-		
-		touhou_demonforce_infantry = { x = 2 y = 0 }
-		touhou_demonforce_infantry = { x = 2 y = 1 }
-		touhou_demonforce_infantry = { x = 2 y = 2 }
-		touhou_demonforce_infantry = { x = 2 y = 3 }
 	}
+	support = {
 
+	}
 }
 
 ##### OOB #####
 units = {
+
 	division = { 
 		name = "天狗村落守卫"
 		location = 13415 
@@ -76,13 +63,9 @@ units = {
 
 air_wings = {
 	984 = { 
-		tengu_fighter_equipment_0 = {
+		touhou_demonforce_fighter_equipment_0 = {
 			owner = "TEN" 
-			amount = 100
-		}
-		tengu_fighter_equipment_0 = {
-			owner = "TEN" 
-			amount = 100
+			amount = 40
 		}
 	}
 }

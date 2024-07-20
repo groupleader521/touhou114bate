@@ -3,11 +3,10 @@
 
 	regiments = {
 		touhou_wakan_infantry = { x = 0 y = 0 }
-		touhou_wakan_infantry = { x = 0 y = 1 }
-		touhou_wakan_infantry = { x = 0 y = 2 }
-		touhou_wakan_infantry = { x = 0 y = 3 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "巫女" 
@@ -15,15 +14,10 @@ division_template = {
 	regiments = {
 		touhou_wakan_infantry = { x = 0 y = 0 }
 		touhou_wakan_infantry = { x = 0 y = 1 }
-		touhou_wakan_infantry = { x = 0 y = 2 }
-		touhou_wakan_infantry = { x = 0 y = 3 }
-
-		touhou_wakan_infantry = { x = 1 y = 0 }
-		touhou_wakan_infantry = { x = 1 y = 1 }
-		touhou_wakan_infantry = { x = 1 y = 2 }
-		touhou_wakan_infantry = { x = 1 y = 3 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "巫女大队" 
@@ -33,18 +27,10 @@ division_template = {
 		touhou_wakan_infantry = { x = 0 y = 1 }
 		touhou_wakan_infantry = { x = 0 y = 2 }
 		touhou_wakan_infantry = { x = 0 y = 3 }
-		
-		touhou_wakan_infantry = { x = 1 y = 0 }
-		touhou_wakan_infantry = { x = 1 y = 1 }
-		touhou_wakan_infantry = { x = 1 y = 2 }
-		touhou_wakan_infantry = { x = 1 y = 3 }
-		
-		touhou_wakan_infantry = { x = 2 y = 0 }
-		touhou_wakan_infantry = { x = 2 y = 1 }
-		touhou_wakan_infantry = { x = 2 y = 2 }
-		touhou_wakan_infantry = { x = 2 y = 3 }
 	}
+	support = {
 
+	}
 }
 
 ##### OOB #####
@@ -52,32 +38,32 @@ units = {
 
 	division = { 
 		name = "博丽巫女"
-		location = 13477 
-		division_template = "巫女大队"
+		location = 13350 
+		division_template = "巫女小队"
 		start_experience_factor = 0.3
 	}
 	division = { 
 		name = "见习巫女"
-		location = 13477 
-		division_template = "巫女大队"
+		location = 13350 
+		division_template = "巫女小队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "博丽神社守卫"
-		location = 13477 
-		division_template = "巫女大队"
+		location = 13350 
+		division_template = "巫女小队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "幻想乡巡逻队"
-		location = 13477 
-		division_template = "巫女大队"
+		location = 13350 
+		division_template = "巫女小队"
 		start_experience_factor = 0.2
 	}
 }
 air_wings = {
 	1001 = { 
-		cas_boli_equipment_0 = {
+		touhou_wakan_fighter_equipment_0 = {
 			owner = "BLI" 
 			amount = 40
 		}

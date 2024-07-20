@@ -1,64 +1,51 @@
 ﻿division_template = {
-	name = "心灵引导者" 
-
-	regiments = {
-		animal_brigade = { x = 0 y = 0 }
-	}
-}
-division_template = {
 	name = "地灵殿守卫" 
 
 	regiments = {
 		touhou_demonforce_infantry = { x = 0 y = 0 }
-		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
-		
-		touhou_demonforce_infantry = { x = 1 y = 0 }
-		touhou_demonforce_infantry = { x = 1 y = 1 }
-		touhou_demonforce_infantry = { x = 1 y = 2 }
-		touhou_demonforce_infantry = { x = 1 y = 3 }
+		touhou_demonforce_cavalry = { x = 0 y = 1 }
+	}
+	support = {
+
+	}
+}
+division_template = {
+	name = "魔兽小队" 
+
+	regiments = {
+		touhou_demonforce_infantry = { x = 0 y = 0 }
+	}
+	support = {
+
 	}
 }
 division_template = {
 	name = "魔兽大队" 
 
 	regiments = {
-		touhou_demonforce_cavalry = { x = 0 y = 0 }
-		touhou_demonforce_cavalry = { x = 0 y = 1 }
-		touhou_demonforce_cavalry = { x = 0 y = 2 }
-		touhou_demonforce_cavalry = { x = 0 y = 3 }
-		
-		touhou_demonforce_cavalry = { x = 1 y = 0 }
-		touhou_demonforce_cavalry = { x = 1 y = 1 }
-		touhou_demonforce_cavalry = { x = 1 y = 2 }
-		touhou_demonforce_cavalry = { x = 1 y = 3 }
-		
-		touhou_demonforce_cavalry = { x = 2 y = 0 }
-		touhou_demonforce_cavalry = { x = 2 y = 1 }
-		touhou_demonforce_cavalry = { x = 2 y = 2 }
-		touhou_demonforce_cavalry = { x = 2 y = 3 }
+		touhou_demonforce_infantry = { x = 0 y = 0 }
+		touhou_demonforce_infantry = { x = 0 y = 1 }
+		touhou_demonforce_infantry = { x = 0 y = 2 }
+		touhou_demonforce_infantry = { x = 0 y = 3 }
+	}
+	support = {
+
 	}
 }
 ##### OOB #####
 units = {
+
 	division = { 
 		name = "地狱猫小队"
 		location = 13498 
-		division_template = "魔兽大队"
-		start_experience_factor = 0.3
+		division_template = "地灵殿守卫"
+		start_experience_factor = 0.2
 	}
 	division = { 
 		name = "地狱鸦小队"
-		location = 13498 
-		division_template = "魔兽大队"
-		start_experience_factor = 0.3
-	}
-	division = {
-		name = "觉妖怪小队"
-		location = 13498 
-		division_template = "心灵引导者"
-		start_experience_factor = 1
+		location = 13498
+		division_template = "地灵殿守卫"
+		start_experience_factor = 0.2
 	}
 }
 air_wings = {
@@ -75,16 +62,7 @@ instant_effect = {
 			type = touhou_demonforce_infantry_equipment_0
 			creator = "DLD"
 		}
-		requested_factories = 2
-		progress = 0.1
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = animal_equipment_0
-			creator = "DLD"
-		}
-		requested_factories = 1
+		requested_factories = 3
 		progress = 0.1
 		efficiency = 50
 	}
