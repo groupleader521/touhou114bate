@@ -89,6 +89,9 @@ script_enum_equipment_stat = {
 	night_penalty				#Cannot be used with MIOS
 	build_cost_ic
 	naval_weather_penalty_factor
+
+
+	
 }
 
 script_enum_production_stat = {
@@ -532,11 +535,7 @@ script_enum_equipment_bonus_type = {
 	light_tank_equipment_1
 	light_tank_equipment_2
 	light_tank_equipment_3
-	light_tank_artillery_equipment
-	heavy_tank_artillery_equipment
-	medium_tank_artillery_equipment
-	modern_tank_artillery_equipment
-	super_heavy_tank_artillery_equipment
+	
 	light_tank_artillery_equipment_1
 	light_tank_artillery_equipment_2
 	light_tank_artillery_equipment_3

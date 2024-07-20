@@ -20,8 +20,8 @@ touhou_devildom = {#魔神降临
 		}
 		
 		remove_effect = {
-			recruit_character = TOUHOU_Shinki
-			recruit_character = TOUHOU_Shinki_navy
+			#recruit_character = TOUHOU_Shinki
+			#recruit_character = TOUHOU_Shinki_navy
 			news_event = { id = news.1035 }
 		}
 	}

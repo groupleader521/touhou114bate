@@ -649,6 +649,7 @@ touhou_demonforce_mountaineers_generic = {
 			touhou_field_hospital
 			touhou_logistics_company
 			touhou_demonforce_anti_tank
+			touhou_engineer
 		}
 	}
 }
@@ -753,6 +754,7 @@ touhou_demonforce_marines_generic = {
 			touhou_demonforce_marine
 			touhou_engineer
 			touhou_logistics_company
+			touhou_recon
 		}
 	}
 }

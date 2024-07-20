@@ -834,6 +834,8 @@ touhou_magic_mountaineers_generic = {
 			touhou_field_hospital
 			touhou_logistics_company
 			touhou_magic_anti_tank
+			touhou_magic_artillery_brigade
+			touhou_engineer
 		}
 	}
 }
@@ -935,6 +937,7 @@ touhou_magic_marines_generic = {
 			touhou_magic_marine
 			touhou_engineer
 			touhou_logistics_company
+			touhou_recon
 		}
 	}
 }

@@ -2226,7 +2226,7 @@ country_event = {#魔界的征召
 				}
 			}
 			leave_faction = yes
-			load_focus_tree = touhou_devildom_focus
+			#load_focus_tree = touhou_devildom_focus
 			set_research_slots = 0
 			touhou_boss_effect_1 = yes
 			set_country_flag = touhou_god_of_makai_country_flag #魔界国家的标志
@@ -2303,7 +2303,7 @@ country_event = {#主的降临
 				limit = {
 					is_ai = yes
 				}
-				load_focus_tree = touhou_devildom_focus				
+				#load_focus_tree = touhou_devildom_focus				
 			}
 			country_event = { id = touhou_devildom.21 days = 90 random_days = 11 }
 			every_other_country = {
@@ -3495,9 +3495,9 @@ country_event = {#接受祝福吧！
 	option = {
 		name = touhou_option.21.a
 		ai_chance = { base = 1 }
-		recruit_character = TOUHOU_nameless
-		recruit_character = TOUHOU_bear
-		recruit_character = TOUHOU_lightGod
+		#recruit_character = TOUHOU_nameless
+		#recruit_character = TOUHOU_bear
+		#recruit_character = TOUHOU_lightGod
 	}
 }
 country_event = {#有奖问答：群号
@@ -3546,13 +3546,13 @@ country_event = {#群友们来帮忙了！
 		name = touhou_option.31.a
 		ai_chance = { base = 1 }
 		add_manpower = 100000
-		recruit_character = TOUHOU_Trino
-		recruit_character = TOUHOU_LLB
-		recruit_character = TOUHOU_GYFSJ
-		recruit_character = TOUHOU_GYFSJ_navy
-		recruit_character = TOUHOU_BNMJFJ
-		recruit_character = TOUHOU_DLEZ]
-		recruit_character = TOUHOU_TTTTBD
+		#recruit_character = TOUHOU_Trino
+		#recruit_character = TOUHOU_LLB
+		#recruit_character = TOUHOU_GYFSJ
+		#recruit_character = TOUHOU_GYFSJ_navy
+		#recruit_character = TOUHOU_BNMJFJ
+		#recruit_character = TOUHOU_DLEZ]
+		#recruit_character = TOUHOU_TTTTBD
 	}
 }
 

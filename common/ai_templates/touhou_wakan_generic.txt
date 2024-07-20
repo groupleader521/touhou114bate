@@ -535,6 +535,8 @@ touhou_wakan_mountaineers_generic = {
 			touhou_signal_company
 			touhou_field_hospital
 			touhou_logistics_company
+			touhou_wakan_artillery_brigade
+			touhou_engineer
 		}
 	}
 }
@@ -637,6 +639,7 @@ touhou_wakan_marines_generic = {
 			touhou_wakan_marine
 			touhou_engineer
 			touhou_logistics_company
+			touhou_recon
 		}
 	}
 	touhou_wakan_marine_armored = {

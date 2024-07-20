@@ -1859,10 +1859,13 @@ touhou_decisions_categories_touhou_fiscal_society = {#和平演变
 					}	
 				}					
 			}	
-			add_collaboration = {
-				target = FROM
-				value = 0.2
+			ROOT = {
+				add_collaboration = {
+					target = FROM
+					value = 0.2
+				}
 			}
+			
 		}
 		cancel_if_not_visible = yes
 		cancel_effect = {

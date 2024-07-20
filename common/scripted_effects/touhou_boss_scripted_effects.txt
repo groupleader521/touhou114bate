@@ -240,7 +240,7 @@ touhou_boss_get_army_effect = {
 }
 
 touhou_boss_get_characters_effect = {
-	recruit_character = TOUHOU_boss_shinki_leader
+	#recruit_character = TOUHOU_boss_shinki_leader
 	add_country_leader_role = {#保证神琦可以成为黑色任何一个自意识形态的领导人,其他方法均不如此法高效
 		character = TOUHOU_boss_shinki_leader
 		country_leader = {
@@ -291,27 +291,27 @@ touhou_boss_get_characters_effect = {
 	add_stability = 1
 	add_war_support = 1
 	#enable_subunits = { touhou_boss_army } 只能在科技中激活units
-	recruit_character = touhou_boss_shinki_commander_0
-	recruit_character = touhou_boss_shinki_commander_1
-	recruit_character = touhou_boss_shinki_commander_2
-	recruit_character = touhou_boss_shinki_commander_3
-	recruit_character = touhou_boss_shinki_commander_4
-	recruit_character = touhou_boss_shinki_commander_5
-	recruit_character = touhou_boss_shinki_commander_6
-	recruit_character = touhou_boss_shinki_commander_7
-	recruit_character = touhou_boss_shinki_commander_8
-	recruit_character = touhou_boss_shinki_commander_9
-	recruit_character = touhou_boss_shinki_commander_a
-	recruit_character = touhou_boss_shinki_commander_b
-	recruit_character = touhou_boss_shinki_commander_c
-	recruit_character = touhou_boss_shinki_commander_d
-	recruit_character = touhou_boss_shinki_commander_e
-	recruit_character = touhou_boss_shinki_commander_f
+	#recruit_character = touhou_boss_shinki_commander_0
+	#recruit_character = touhou_boss_shinki_commander_1
+	#recruit_character = touhou_boss_shinki_commander_2
+	#recruit_character = touhou_boss_shinki_commander_3
+	#recruit_character = touhou_boss_shinki_commander_4
+	#recruit_character = touhou_boss_shinki_commander_5
+	#recruit_character = touhou_boss_shinki_commander_6
+	#recruit_character = touhou_boss_shinki_commander_7
+	#recruit_character = touhou_boss_shinki_commander_8
+	#recruit_character = touhou_boss_shinki_commander_9
+	#recruit_character = touhou_boss_shinki_commander_a
+	#recruit_character = touhou_boss_shinki_commander_b
+	#recruit_character = touhou_boss_shinki_commander_c
+	#recruit_character = touhou_boss_shinki_commander_d
+	#recruit_character = touhou_boss_shinki_commander_e
+	#recruit_character = touhou_boss_shinki_commander_f
 	
-	recruit_character = touhou_boss_shinki_navy_0
-	recruit_character = touhou_boss_shinki_navy_1
-	recruit_character = touhou_boss_shinki_navy_2
-	recruit_character = touhou_boss_shinki_navy_3
+	#recruit_character = touhou_boss_shinki_navy_0
+	#recruit_character = touhou_boss_shinki_navy_1
+	#recruit_character = touhou_boss_shinki_navy_2
+	#recruit_character = touhou_boss_shinki_navy_3
 }
 
 touhou_boss_get_industry_effect = {

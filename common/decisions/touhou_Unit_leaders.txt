@@ -26,7 +26,7 @@ touhou_Unit_leaders = {
 		}
 		
 		complete_effect = {
-			recruit_character = TOUHOU_Flandre_Scarlet
+			#recruit_character = TOUHOU_Flandre_Scarlet
 			1006 = {
 				damage_building = {
 					type = infrastructure
@@ -132,7 +132,7 @@ touhou_Unit_leaders = {
 		}
 		
 		remove_effect = {
-			recruit_character = TOUHOU_Wakasagihime
+			#recruit_character = TOUHOU_Wakasagihime
 			set_global_flag = touhou_global_flag_find_navy_Wakasagihime
 		}
 	}	
@@ -183,14 +183,14 @@ touhou_Unit_leaders = {
 		}
 		
 		remove_effect = {
-			if = {
-				limit = { NOT = { has_character = TOUHOU_Medicine_Melancholy } }
-				recruit_character = TOUHOU_Medicine_Melancholy
-			}
-			if = {
-				limit = { NOT = { has_character = TOUHOU_Kazami_Yuka } }
-				recruit_character = TOUHOU_Kazami_Yuka
-			}
+			#if = {
+			#	limit = { NOT = { has_character = TOUHOU_Medicine_Melancholy } }
+			#	recruit_character = TOUHOU_Medicine_Melancholy
+			#}
+			#if = {
+			#	limit = { NOT = { has_character = TOUHOU_Kazami_Yuka } }
+			#	recruit_character = TOUHOU_Kazami_Yuka
+			#}
 			set_global_flag = touhou_global_flag_find_sun
 		}
 	}
@@ -229,8 +229,8 @@ touhou_Unit_leaders = {
 		}
 		
 		remove_effect = {
-			recruit_character = TOUHOU_Hinanawi_Tenshi
-			recruit_character = Touhou_Nagae_Iku
+			#recruit_character = TOUHOU_Hinanawi_Tenshi
+			#recruit_character = Touhou_Nagae_Iku
 			set_global_flag = touhou_global_flag_find_cloud
 		}
 	}
@@ -269,8 +269,8 @@ touhou_Unit_leaders = {
 		}
 		
 		remove_effect = {
-			recruit_character = TOUHOU_Yakumo_Ran
-			recruit_character = TOUHOU_Chen
+			#recruit_character = TOUHOU_Yakumo_Ran
+			#recruit_character = TOUHOU_Chen
 			set_global_flag = touhou_global_flag_find_yakumo
 		}
 	}
@@ -306,8 +306,8 @@ touhou_Unit_leaders = {
 		}
 		
 		remove_effect = {
-			recruit_character = TOUHOU_Matara_Okina
-			recruit_character = TOUHOU_Ibaraki_Kasen
+			#recruit_character = TOUHOU_Matara_Okina
+			#recruit_character = TOUHOU_Ibaraki_Kasen
 			set_global_flag = touhou_global_flag_find_sage
 		}
 	}
@@ -343,9 +343,9 @@ touhou_Unit_leaders = {
 		}
 		
 		remove_effect = {
-			recruit_character = TOUHOU_Usami_Renko
-			recruit_character = TOUHOU_Maribel_Hearn
-			recruit_character = TOUHOU_Usami_Sumireko
+			#recruit_character = TOUHOU_Usami_Renko
+			#recruit_character = TOUHOU_Maribel_Hearn
+			#recruit_character = TOUHOU_Usami_Sumireko
 			set_global_flag = touhou_global_flag_find_out
 		}
 	}	
