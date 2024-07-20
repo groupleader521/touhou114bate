@@ -2323,297 +2323,297 @@ country_event = {#主的降临
 
 	}
 }
-country_event = {#主的恩赐
-	id = touhou_devildom.26
-	title = touhou_devildom.26.t
-	desc = touhou_devildom.26.d
-	picture = GFX_report_event_touhou_plenary_happy_end
-	is_triggered_only = yes
-	immediate = {
-	}
-	option = {
-		name = touhou_devildom.26.a
-		ai_chance = { base = 1 }
-		FROM = { annex_country = { target = ROOT transfer_troops = no } }
-	}
-}
-country_event = {#主的恩赐-自动监测系统
-	id = touhou_devildom.261
-	title = touhou_devildom.261.t
-	desc = touhou_devildom.261.d
-	picture = GFX_report_event_touhou_plenary_happy_end
-	mean_time_to_happen = {
-		days = 1
-	}
-	immediate = {
-		every_other_country = {
-			limit = {
-				NOT = {
-					has_war_with = ROOT
-				}
-				is_ai = yes
-			}
-			country_event = { id = touhou_devildom.26 }
-		}
-	}
-	trigger = {
-		has_global_flag = touhou_god_of_makai_start_global_flag
-		has_country_flag = touhou_god_of_makai_country_flag
-		OR = {
-			num_subjects > 0
-			num_faction_members > 1 #1个是自己
-		}
-	}
-	option = {
-		name = touhou_devildom.261.a
-		ai_chance = { base = 1 }
-	}
-}
-country_event = {#吾主的力量
-	id = touhou_devildom.21
-	title = touhou_devildom.21.t
-	desc = touhou_devildom.21.d
-	picture = GFX_report_event_touhou_plenary_bad_end
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			remove_ideas = touhou_god_of_makai_ideas_speed
-			set_global_flag = touhou_god_of_makai_no_fiction_global_flag
-			country_event = { id = touhou_devildom.22 days = 60 random_days = 11 }
-			every_other_country = {
-				limit = {
-					NOT = {
-						is_in_faction_with = ROOT
-						is_subject_of = ROOT
-					}
-				}
-				set_country_flag = touhou_god_of_makai_no_fiction_country_flag
-				set_rule = { 
-					can_guarantee_other_ideologies = no
-					can_create_factions = no
-					can_join_factions = no
-					can_not_declare_war = yes
-					can_decline_call_to_war = no			
-				}
-				news_event = { id = news.1047 hours = 6 } 
-				if = {
-					limit = { 
-						OR = {
-							num_subjects > 0
-							is_in_faction = yes
-						}
-					}
-					country_event = { id = touhou_devildom.211 }
-				}
-			}
-		}
-	}
-	option = {
-		name = touhou_devildom.21.a
-		ai_chance = { base = 1 }
-	}
-}
-country_event = {#吾主的力量-自动监测系统
-	id = touhou_devildom.212
-	title = touhou_devildom.212.t
-	desc = touhou_devildom.212.d
-	picture = GFX_report_event_touhou_plenary_happy_end
-	mean_time_to_happen = {
-		days = 1
-	}
-	immediate = {
-		set_country_flag = touhou_god_of_makai_no_fiction_country_flag
-		set_rule = { 
-			can_guarantee_other_ideologies = no
-			can_create_factions = no
-			can_join_factions = no
-			can_not_declare_war = yes
-			can_decline_call_to_war = no			
-		}
-		leave_faction = yes
-		every_subject_country = {
-			country_event = { id = touhou_devildom.2111 }
-		}
-	}
-	trigger = {
-		has_global_flag = touhou_god_of_makai_no_fiction_global_flag
-		NOT = { has_country_flag = touhou_god_of_makai_no_fiction_country_flag }
-		NOT = { has_country_flag = touhou_god_of_makai_country_flag }
-	}
-	option = {
-		name = touhou_devildom.212.a
-		ai_chance = { base = 1 }
-	}
-}
-country_event = {#我们的抉择
-	id = touhou_devildom.211
-	title = touhou_devildom.211.t
-	desc = touhou_devildom.211.d
-	picture = GFX_report_event_generic_sign_treaty3
-	is_triggered_only = yes
-	option = {
-		name = touhou_devildom.211.a
-		ai_chance = { base = 1 }
-		if = {
-			limit = { is_in_faction = yes }
-			leave_faction = yes
-			if = {
-				limit = { is_faction_leader = yes }
-				dismantle_faction = yes
-			}
-		}
-		every_subject_country = {
-			country_event = { id = touhou_devildom.2111 }
-		}
-		custom_effect_tooltip = touhou_our_choose
-	}
-	option = {
-		name = touhou_devildom.211.b
-		ai_chance = { base = 0 }
-		add_political_power = -200
-		add_stability = -0.2
-		add_war_support = -0.2
-	}
-}
-country_event = {#被抛弃
-	id = touhou_devildom.2111
-	title = touhou_devildom.2111.t
-	desc = touhou_devildom.2111.d
-	picture = GFX_report_event_generic_sign_treaty3
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			OVERLORD = {
-				set_autonomy = {
-					target = ROOT
-					autonomy_state = autonomy_free
-				}
-			}
-			leave_faction = yes
-		}
-	}
-	option = {
-		name = touhou_devildom.2111.a
-		ai_chance = { base = 1 }
-	}
-}
-country_event = {#蚂蚁聚合
-	id = touhou_devildom.22
-	title = touhou_devildom.22.t
-	desc = touhou_devildom.22.d
-	picture = GFX_report_event_touhou_plenary_bad_end
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			country_event = { id = touhou_devildom.23 days = 60 random_days = 11 }
-			if = {
-				limit = {
-					PRC = {
-						exists = yes
-						has_war_with = ROOT
-						is_subject = no
-					}
-				}
-				PRC = { 
-					country_event = { id = touhou_devildom.221 } 
-					add_offsite_building = { type = arms_factory level = 500 } 
-				}
-			}
-			else = {
-				random_enemy_country = {
-					limit = {
-						exists = yes
-						is_subject = no
-						is_major = no
-					}
-					country_event = { id = touhou_devildom.221 }
-				}
-			}
-		}
+# country_event = {#主的恩赐
+# 	id = touhou_devildom.26
+# 	title = touhou_devildom.26.t
+# 	desc = touhou_devildom.26.d
+# 	picture = GFX_report_event_touhou_plenary_happy_end
+# 	is_triggered_only = yes
+# 	immediate = {
+# 	}
+# 	option = {
+# 		name = touhou_devildom.26.a
+# 		ai_chance = { base = 1 }
+# 		FROM = { annex_country = { target = ROOT transfer_troops = no } }
+# 	}
+# }
+# country_event = {#主的恩赐-自动监测系统
+# 	id = touhou_devildom.261
+# 	title = touhou_devildom.261.t
+# 	desc = touhou_devildom.261.d
+# 	picture = GFX_report_event_touhou_plenary_happy_end
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
+# 	immediate = {
+# 		every_other_country = {
+# 			limit = {
+# 				NOT = {
+# 					has_war_with = ROOT
+# 				}
+# 				is_ai = yes
+# 			}
+# 			country_event = { id = touhou_devildom.26 }
+# 		}
+# 	}
+# 	trigger = {
+# 		has_global_flag = touhou_god_of_makai_start_global_flag
+# 		has_country_flag = touhou_god_of_makai_country_flag
+# 		OR = {
+# 			num_subjects > 0
+# 			num_faction_members > 1 #1个是自己
+# 		}
+# 	}
+# 	option = {
+# 		name = touhou_devildom.261.a
+# 		ai_chance = { base = 1 }
+# 	}
+# }
+# country_event = {#吾主的力量
+# 	id = touhou_devildom.21
+# 	title = touhou_devildom.21.t
+# 	desc = touhou_devildom.21.d
+# 	picture = GFX_report_event_touhou_plenary_bad_end
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			remove_ideas = touhou_god_of_makai_ideas_speed
+# 			set_global_flag = touhou_god_of_makai_no_fiction_global_flag
+# 			country_event = { id = touhou_devildom.22 days = 60 random_days = 11 }
+# 			every_other_country = {
+# 				limit = {
+# 					NOT = {
+# 						is_in_faction_with = ROOT
+# 						is_subject_of = ROOT
+# 					}
+# 				}
+# 				set_country_flag = touhou_god_of_makai_no_fiction_country_flag
+# 				set_rule = { 
+# 					can_guarantee_other_ideologies = no
+# 					can_create_factions = no
+# 					can_join_factions = no
+# 					can_not_declare_war = yes
+# 					can_decline_call_to_war = no			
+# 				}
+# 				news_event = { id = news.1047 hours = 6 } 
+# 				if = {
+# 					limit = { 
+# 						OR = {
+# 							num_subjects > 0
+# 							is_in_faction = yes
+# 						}
+# 					}
+# 					country_event = { id = touhou_devildom.211 }
+# 				}
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = touhou_devildom.21.a
+# 		ai_chance = { base = 1 }
+# 	}
+# }
+# country_event = {#吾主的力量-自动监测系统
+# 	id = touhou_devildom.212
+# 	title = touhou_devildom.212.t
+# 	desc = touhou_devildom.212.d
+# 	picture = GFX_report_event_touhou_plenary_happy_end
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
+# 	immediate = {
+# 		set_country_flag = touhou_god_of_makai_no_fiction_country_flag
+# 		set_rule = { 
+# 			can_guarantee_other_ideologies = no
+# 			can_create_factions = no
+# 			can_join_factions = no
+# 			can_not_declare_war = yes
+# 			can_decline_call_to_war = no			
+# 		}
+# 		leave_faction = yes
+# 		every_subject_country = {
+# 			country_event = { id = touhou_devildom.2111 }
+# 		}
+# 	}
+# 	trigger = {
+# 		has_global_flag = touhou_god_of_makai_no_fiction_global_flag
+# 		NOT = { has_country_flag = touhou_god_of_makai_no_fiction_country_flag }
+# 		NOT = { has_country_flag = touhou_god_of_makai_country_flag }
+# 	}
+# 	option = {
+# 		name = touhou_devildom.212.a
+# 		ai_chance = { base = 1 }
+# 	}
+# }
+# country_event = {#我们的抉择
+# 	id = touhou_devildom.211
+# 	title = touhou_devildom.211.t
+# 	desc = touhou_devildom.211.d
+# 	picture = GFX_report_event_generic_sign_treaty3
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = touhou_devildom.211.a
+# 		ai_chance = { base = 1 }
+# 		if = {
+# 			limit = { is_in_faction = yes }
+# 			leave_faction = yes
+# 			if = {
+# 				limit = { is_faction_leader = yes }
+# 				dismantle_faction = yes
+# 			}
+# 		}
+# 		every_subject_country = {
+# 			country_event = { id = touhou_devildom.2111 }
+# 		}
+# 		custom_effect_tooltip = touhou_our_choose
+# 	}
+# 	option = {
+# 		name = 1.b
+# 		ai_chance = { base = 0 }
+# 		add_political_power = -200
+# 		add_stability = -0.2
+# 		add_war_support = -0.2
+# 	}
+# }
+# country_event = {#被抛弃
+# 	id = touhou_devildom.2111
+# 	title = touhou_devildom.2111.t
+# 	desc = touhou_devildom.2111.d
+# 	picture = GFX_report_event_generic_sign_treaty3
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			OVERLORD = {
+# 				set_autonomy = {
+# 					target = ROOT
+# 					autonomy_state = autonomy_free
+# 				}
+# 			}
+# 			leave_faction = yes
+# 		}
+# 	}
+# 	option = {
+# 		name = touhou_devildom.2111.a
+# 		ai_chance = { base = 1 }
+# 	}
+# }
+# country_event = {#蚂蚁聚合
+# 	id = touhou_devildom.22
+# 	title = touhou_devildom.22.t
+# 	desc = touhou_devildom.22.d
+# 	picture = GFX_report_event_touhou_plenary_bad_end
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			country_event = { id = touhou_devildom.23 days = 60 random_days = 11 }
+# 			if = {
+# 				limit = {
+# 					PRC = {
+# 						exists = yes
+# 						has_war_with = ROOT
+# 						is_subject = no
+# 					}
+# 				}
+# 				PRC = { 
+# 					country_event = { id = touhou_devildom.221 } 
+# 					add_offsite_building = { type = arms_factory level = 500 } 
+# 				}
+# 			}
+# 			else = {
+# 				random_enemy_country = {
+# 					limit = {
+# 						exists = yes
+# 						is_subject = no
+# 						is_major = no
+# 					}
+# 					country_event = { id = touhou_devildom.221 }
+# 				}
+# 			}
+# 		}
 
-	}
-	option = {
-		name = touhou_devildom.22.a
-		ai_chance = { base = 1 }
-	}
-}
-country_event = {#被遗忘者联盟
-	id = touhou_devildom.221
-	title = touhou_devildom.221.t
-	desc = touhou_devildom.221.d
-	picture = GFX_report_event_chinese_soldiers_city_ruin
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			add_ideas = touhou_forsaken_ideas
-			add_offsite_building = { type = arms_factory level = 20 }
-			add_offsite_building = { type = industrial_complex level = 3000 }
-			leave_faction = yes
-			create_faction = touhou_forsaken
-			every_other_country = {
-				limit = { 
-					OR = { is_subject = no is_subject_of = ROOT } 
-					exists = yes
-					NOT = { has_war_with = ROOT }
-					NOT = { has_country_flag = touhou_god_of_makai_country_flag }
-					is_in_faction = no
-					is_major = no
-				}
-				add_ideas = touhou_forsaken_ideas
-				add_offsite_building = { type = arms_factory level = 20 }
-				add_offsite_building = { type = industrial_complex level = 3000 }
-				add_ai_strategy = {
-					type = alliance
-					id = PREV
-					value = 400
-				}
-				if = { 
-					limit = { is_ai = yes } 
-					country_event = touhou_ai.2
-				}
-				else = { country_event = generic.5 }
-			}
-			every_other_country = {
-				news_event = { id = news.1045 } 
-			}
-		}
-	}
-	option = {
-		name = touhou_devildom.221.a
-		ai_chance = { base = 1 }
-	}
-}
-country_event = {#螳臂当车
-	id = touhou_devildom.23
-	title = touhou_devildom.23.t
-	desc = touhou_devildom.23.d
-	picture = GFX_report_event_touhou_plenary_bad_end
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			country_event = { id = touhou_devildom.24 days = 120 random_days = 11 }
-			every_other_country = {
-				set_rule = { 
-					can_guarantee_other_ideologies = no
-					can_create_factions = no
-					can_join_factions = no
-					can_not_declare_war = yes
-					can_decline_call_to_war = no				
-				}
-				if = {
-					limit = {
-						has_war_with = ROOT
-					}
-					country_event = { id = touhou_devildom.231 }
-				}
-			}
-		}
-	}
-	option = {
-		name = touhou_devildom.23.a
-		ai_chance = { base = 1 }
-	}
-}
+# 	}
+# 	option = {
+# 		name = touhou_devildom.22.a
+# 		ai_chance = { base = 1 }
+# 	}
+# }
+# country_event = {#被遗忘者联盟
+# 	id = touhou_devildom.221
+# 	title = touhou_devildom.221.t
+# 	desc = touhou_devildom.221.d
+# 	picture = GFX_report_event_chinese_soldiers_city_ruin
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			add_ideas = touhou_forsaken_ideas
+# 			add_offsite_building = { type = arms_factory level = 20 }
+# 			add_offsite_building = { type = industrial_complex level = 3000 }
+# 			leave_faction = yes
+# 			create_faction = touhou_forsaken
+# 			every_other_country = {
+# 				limit = { 
+# 					OR = { is_subject = no is_subject_of = ROOT } 
+# 					exists = yes
+# 					NOT = { has_war_with = ROOT }
+# 					NOT = { has_country_flag = touhou_god_of_makai_country_flag }
+# 					is_in_faction = no
+# 					is_major = no
+# 				}
+# 				add_ideas = touhou_forsaken_ideas
+# 				add_offsite_building = { type = arms_factory level = 20 }
+# 				add_offsite_building = { type = industrial_complex level = 3000 }
+# 				add_ai_strategy = {
+# 					type = alliance
+# 					id = PREV
+# 					value = 400
+# 				}
+# 				if = { 
+# 					limit = { is_ai = yes } 
+# 					country_event = touhou_ai.2
+# 				}
+# 				else = { country_event = generic.5 }
+# 			}
+# 			every_other_country = {
+# 				news_event = { id = news.1045 } 
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = touhou_devildom.221.a
+# 		ai_chance = { base = 1 }
+# 	}
+# }
+# country_event = {#螳臂当车
+# 	id = touhou_devildom.23
+# 	title = touhou_devildom.23.t
+# 	desc = touhou_devildom.23.d
+# 	picture = GFX_report_event_touhou_plenary_bad_end
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			country_event = { id = touhou_devildom.24 days = 120 random_days = 11 }
+# 			every_other_country = {
+# 				set_rule = { 
+# 					can_guarantee_other_ideologies = no
+# 					can_create_factions = no
+# 					can_join_factions = no
+# 					can_not_declare_war = yes
+# 					can_decline_call_to_war = no				
+# 				}
+# 				if = {
+# 					limit = {
+# 						has_war_with = ROOT
+# 					}
+# 					country_event = { id = touhou_devildom.231 }
+# 				}
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = touhou_devildom.23.a
+# 		ai_chance = { base = 1 }
+# 	}
+# }
 country_event = {#神秘来客其二
 	id = touhou_devildom.231
 	title = touhou_devildom.231.t
@@ -2689,79 +2689,79 @@ country_event = {#我们看见了
 		add_ideas = touhou_ideas_god_of_makai_tactic_2 
 	}
 }
-country_event = {#兔子们的勇气
-	id = touhou_devildom.24
-	title = touhou_devildom.24.t
-	desc = touhou_devildom.24.d
-	picture = GFX_report_event_touhou_plenary_bad_end
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			clr_global_flag = touhou_god_of_makai_no_fiction_global_flag
-			set_global_flag = touhou_god_of_makai_fiction_global_flag
-			country_event = { id = touhou_devildom.25 days = 60 random_days = 11 }
-			every_other_country = {
-				limit = {
-					NOT = { 
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}
-				}
-				set_country_flag = touhou_god_of_makai_fiction_country_flag
-				set_rule = { 
-					can_guarantee_other_ideologies = no
-					can_create_factions = yes
-					can_join_factions = yes
-					can_not_declare_war = yes
-					can_decline_call_to_war = no			
-				}
-				news_event = { id = news.1048 hours = 6 } 
-			}
-		}
-	}
-	option = {
-		name = touhou_devildom.24.a
-		ai_chance = { base = 1 }
-	}
-}
-country_event = {#兔子们的勇气-自动监测系统
-	id = touhou_devildom.241
-	title = touhou_devildom.241.t
-	desc = touhou_devildom.241.d
-	picture = GFX_report_event_touhou_plenary_happy_end
-	mean_time_to_happen = {
-		days = 1
-	}
-	immediate = {
-		set_country_flag = touhou_god_of_makai_fiction_country_flag
-		set_politics = {
-			ruling_party = communism
-		}
-		add_popularity = {
-			ideology = communism
-			popularity = 100
-		}
-		set_rule = { 
-			can_guarantee_other_ideologies = no
-			can_create_factions = yes
-			can_join_factions = yes
-			can_not_declare_war = yes
-			can_decline_call_to_war = no			
-		}
-		every_subject_country = {
-			country_event = { id = touhou_devildom.2111 }
-		}
-	}
-	trigger = {
-		has_global_flag = touhou_god_of_makai_fiction_global_flag
-		NOT = { has_country_flag = touhou_god_of_makai_fiction_country_flag }
-		NOT = { has_country_flag = touhou_god_of_makai_country_flag }
-	}
-	option = {
-		name = touhou_devildom.241.a
-		ai_chance = { base = 1 }
-	}
-}
+# country_event = {#兔子们的勇气
+# 	id = touhou_devildom.24
+# 	title = touhou_devildom.24.t
+# 	desc = touhou_devildom.24.d
+# 	picture = GFX_report_event_touhou_plenary_bad_end
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			clr_global_flag = touhou_god_of_makai_no_fiction_global_flag
+# 			set_global_flag = touhou_god_of_makai_fiction_global_flag
+# 			country_event = { id = touhou_devildom.25 days = 60 random_days = 11 }
+# 			every_other_country = {
+# 				limit = {
+# 					NOT = { 
+# 						is_subject_of = ROOT 
+# 						is_in_faction_with = ROOT
+# 					}
+# 				}
+# 				set_country_flag = touhou_god_of_makai_fiction_country_flag
+# 				set_rule = { 
+# 					can_guarantee_other_ideologies = no
+# 					can_create_factions = yes
+# 					can_join_factions = yes
+# 					can_not_declare_war = yes
+# 					can_decline_call_to_war = no			
+# 				}
+# 				news_event = { id = news.1048 hours = 6 } 
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = touhou_devildom.24.a
+# 		ai_chance = { base = 1 }
+# 	}
+# }
+# country_event = {#兔子们的勇气-自动监测系统
+# 	id = touhou_devildom.241
+# 	title = touhou_devildom.241.t
+# 	desc = touhou_devildom.241.d
+# 	picture = GFX_report_event_touhou_plenary_happy_end
+# 	mean_time_to_happen = {
+# 		days = 1
+# 	}
+# 	immediate = {
+# 		set_country_flag = touhou_god_of_makai_fiction_country_flag
+# 		set_politics = {
+# 			ruling_party = communism
+# 		}
+# 		add_popularity = {
+# 			ideology = communism
+# 			popularity = 100
+# 		}
+# 		set_rule = { 
+# 			can_guarantee_other_ideologies = no
+# 			can_create_factions = yes
+# 			can_join_factions = yes
+# 			can_not_declare_war = yes
+# 			can_decline_call_to_war = no			
+# 		}
+# 		every_subject_country = {
+# 			country_event = { id = touhou_devildom.2111 }
+# 		}
+# 	}
+# 	trigger = {
+# 		has_global_flag = touhou_god_of_makai_fiction_global_flag
+# 		NOT = { has_country_flag = touhou_god_of_makai_fiction_country_flag }
+# 		NOT = { has_country_flag = touhou_god_of_makai_country_flag }
+# 	}
+# 	option = {
+# 		name = touhou_devildom.241.a
+# 		ai_chance = { base = 1 }
+# 	}
+# }
 country_event = {#养不熟的狗
 	id = touhou_devildom.25
 	title = touhou_devildom.25.t
@@ -3046,57 +3046,57 @@ country_event = {#路在何方？
 		}
 	}
 }
-country_event = {#无耻的罪人-ai监测系统
-	id = touhou_devildom.432
-	title = touhou_devildom.432.t
-	desc = touhou_devildom.432.d
-	picture = GFX_report_event_SOV_tank_column
-	is_triggered_only = yes
-	immediate = {
-		if = {
-			limit = { 
-				has_global_flag = touhou_global_flag_touhou_470
-				has_global_flag = touhou_global_flag_redemption
-			}
-			country_event = { id = touhou_devildom.431 }
-		}
-	}
-	option = {
-		name = touhou_devildom.432.a
-		ai_chance = { base = 1 }
-	}
-}
-country_event = {#无耻的罪人
-	id = touhou_devildom.431
-	title = touhou_devildom.431.t
-	desc = touhou_devildom.431.d
-	picture = GFX_report_event_SOV_tank_column
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = { is_ai = no }
-				add_ideas = touhou_ideas_god_of_makai_cheat
-			}
-		}
-	}
-	option = {
-		name = touhou_devildom.431.a
-		ai_chance = { base = 1 }
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.35
-		}
-		add_ideas = touhou_ideas_god_of_makai_justice
-		clr_global_flag = touhou_global_flag_redemption
-		news_event = { id = news.10571 hours = 6 } 
-		hidden_effect = {
-			every_other_country = {
-				news_event = { id = news.10571 hours = 6 } 
-			}
-		}
-	}
-}
+# country_event = {#无耻的罪人-ai监测系统
+# 	id = touhou_devildom.432
+# 	title = touhou_devildom.432.t
+# 	desc = touhou_devildom.432.d
+# 	picture = GFX_report_event_SOV_tank_column
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		if = {
+# 			limit = { 
+# 				has_global_flag = touhou_global_flag_touhou_470
+# 				has_global_flag = touhou_global_flag_redemption
+# 			}
+# 			country_event = { id = touhou_devildom.431 }
+# 		}
+# 	}
+# 	option = {
+# 		name = touhou_devildom.432.a
+# 		ai_chance = { base = 1 }
+# 	}
+# }
+# country_event = {#无耻的罪人
+# 	id = touhou_devildom.431
+# 	title = touhou_devildom.431.t
+# 	desc = touhou_devildom.431.d
+# 	picture = GFX_report_event_SOV_tank_column
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			if = {
+# 				limit = { is_ai = no }
+# 				add_ideas = touhou_ideas_god_of_makai_cheat
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = touhou_devildom.431.a
+# 		ai_chance = { base = 1 }
+# 		add_popularity = {
+# 			ideology = fascism
+# 			popularity = 0.35
+# 		}
+# 		add_ideas = touhou_ideas_god_of_makai_justice
+# 		clr_global_flag = touhou_global_flag_redemption
+# 		news_event = { id = news.10571 hours = 6 } 
+# 		hidden_effect = {
+# 			every_other_country = {
+# 				news_event = { id = news.10571 hours = 6 } 
+# 			}
+# 		}
+# 	}
+# }
 country_event = {#神秘来客其四
 	id = touhou_devildom.41
 	title = touhou_devildom.41.t
