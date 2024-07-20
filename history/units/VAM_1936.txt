@@ -3,9 +3,6 @@
 
 	regiments = {
 		dragon_brigade = { x = 0 y = 0 }
-		dragon_brigade = { x = 0 y = 1 }
-		dragon_brigade = { x = 0 y = 2 }
-		dragon_brigade = { x = 0 y = 3 }
 	}
 
 }
@@ -15,8 +12,6 @@ division_template = {
 	regiments = {
 		touhou_magic_infantry = { x = 0 y = 0 }
 		touhou_magic_infantry = { x = 0 y = 1 }
-		touhou_magic_infantry = { x = 0 y = 2 }
-		touhou_magic_infantry = { x = 0 y = 3 }
 	}
 
 }
@@ -28,16 +23,6 @@ division_template = {
 		touhou_magic_infantry = { x = 0 y = 1 }
 		touhou_magic_infantry = { x = 0 y = 2 }
 		touhou_magic_infantry = { x = 0 y = 3 }
-		
-		touhou_magic_infantry = { x = 1 y = 0 }
-		touhou_magic_infantry = { x = 1 y = 1 }
-		touhou_magic_infantry = { x = 1 y = 2 }
-		touhou_magic_infantry = { x = 1 y = 3 }
-		
-		touhou_magic_infantry = { x = 2 y = 0 }
-		touhou_magic_infantry = { x = 2 y = 1 }
-		touhou_magic_infantry = { x = 2 y = 2 }
-		touhou_magic_infantry = { x = 2 y = 3 }
 	}
 
 }
@@ -47,25 +32,7 @@ units = {
 		name = "红魔馆精锐一队"
 		location = 13407 
 		division_template = "龙虎卫小队"
-		start_experience_factor = 0.8
-	}
-	division = { 
-		name = "红魔馆精锐二队"
-		location = 13407 
-		division_template = "龙虎卫小队"
-		start_experience_factor = 0.8
-	}
-	division = { 
-		name = "红魔馆精锐三队"
-		location = 13407 
-		division_template = "龙虎卫小队"
-		start_experience_factor = 0.8
-	}
-	division = { 
-		name = "红魔馆精锐四队"
-		location = 13407 
-		division_template = "龙虎卫小队"
-		start_experience_factor = 0.8
+		start_experience_factor = 0.5
 	}
 }
 air_wings = {

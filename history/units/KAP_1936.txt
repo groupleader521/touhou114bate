@@ -1,29 +1,23 @@
 ﻿division_template = {
-	name = "河童两栖队" 
+	name = "河童两栖小队" 
 
 	regiments = {
 		touhou_demonforce_marine = { x = 0 y = 0 }
 		touhou_demonforce_marine = { x = 0 y = 1 }
-		touhou_demonforce_marine = { x = 0 y = 2 }
-		touhou_demonforce_marine = { x = 0 y = 3 }
-
-		touhou_demonforce_marine = { x = 1 y = 0 }
-		touhou_demonforce_marine = { x = 1 y = 1 }
-		touhou_demonforce_marine = { x = 1 y = 2 }
-		touhou_demonforce_marine = { x = 1 y = 3 }		
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "河童小队" 
 
 	regiments = {
 		touhou_demonforce_infantry = { x = 0 y = 0 }
-		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "河童中队" 
@@ -31,15 +25,10 @@ division_template = {
 	regiments = {
 		touhou_demonforce_infantry = { x = 0 y = 0 }
 		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
-		
-		touhou_demonforce_infantry = { x = 1 y = 0 }
-		touhou_demonforce_infantry = { x = 1 y = 1 }
-		touhou_demonforce_infantry = { x = 1 y = 2 }
-		touhou_demonforce_infantry = { x = 1 y = 3 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "河童大队" 
@@ -49,18 +38,10 @@ division_template = {
 		touhou_demonforce_infantry = { x = 0 y = 1 }
 		touhou_demonforce_infantry = { x = 0 y = 2 }
 		touhou_demonforce_infantry = { x = 0 y = 3 }
-		
-		touhou_demonforce_infantry = { x = 1 y = 0 }
-		touhou_demonforce_infantry = { x = 1 y = 1 }
-		touhou_demonforce_infantry = { x = 1 y = 2 }
-		touhou_demonforce_infantry = { x = 1 y = 3 }
-		
-		touhou_demonforce_infantry = { x = 2 y = 0 }
-		touhou_demonforce_infantry = { x = 2 y = 1 }
-		touhou_demonforce_infantry = { x = 2 y = 2 }
-		touhou_demonforce_infantry = { x = 2 y = 3 }
 	}
+	support = {
 
+	}
 }
 
 ##### OOB #####
@@ -68,13 +49,13 @@ units = {
 	division = { 
 		name = "河童两栖小队"
 		location = 13393 
-		division_template = "河童两栖队"
+		division_template = "河童两栖小队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "河童水下小队"
 		location = 13393 
-		division_template = "河童两栖队"
+		division_template = "河童两栖小队"
 		start_experience_factor = 0.1
 	}
 }

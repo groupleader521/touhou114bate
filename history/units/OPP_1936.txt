@@ -2,14 +2,25 @@
 	name = "死神小队" 
 
 	regiments = {
-		die_brigade = { x = 0 y = 0 }
-		die_brigade = { x = 0 y = 1 }
-		die_brigade = { x = 0 y = 2 }
-		die_brigade = { x = 0 y = 3 }
+		touhou_demonforce_infantry = { x = 0 y = 0 }
+	}
+	support = {
+
 	}
 }
 division_template = {
-	name = "地狱小队" 
+	name = "死神" 
+
+	regiments = {
+		touhou_demonforce_infantry = { x = 0 y = 0 }
+		touhou_demonforce_infantry = { x = 0 y = 1 }
+	}
+	support = {
+
+	}
+}
+division_template = {
+	name = "死神大队" 
 
 	regiments = {
 		touhou_demonforce_infantry = { x = 0 y = 0 }
@@ -17,46 +28,24 @@ division_template = {
 		touhou_demonforce_infantry = { x = 0 y = 2 }
 		touhou_demonforce_infantry = { x = 0 y = 3 }
 	}
-}
-division_template = {
-	name = "地狱大队" 
+	support = {
 
-	regiments = {
-		touhou_demonforce_infantry = { x = 0 y = 0 }
-		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
-		
-		touhou_demonforce_infantry = { x = 1 y = 0 }
-		touhou_demonforce_infantry = { x = 1 y = 1 }
-		touhou_demonforce_infantry = { x = 1 y = 2 }
-		touhou_demonforce_infantry = { x = 1 y = 3 }
-		
-		touhou_demonforce_infantry = { x = 2 y = 0 }
-		touhou_demonforce_infantry = { x = 2 y = 1 }
-		touhou_demonforce_infantry = { x = 2 y = 2 }
-		touhou_demonforce_infantry = { x = 2 y = 3 }
 	}
 }
 
 ##### OOB #####
 units = {
+
 	division = { 
-		name = "死神"
+		name = "死神中队"
 		location = 13464 
-		division_template = "死神小队"
-		start_experience_factor = 0.7
+		division_template = "死神"
+		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "引渡人"
 		location = 13464 
-		division_template = "死神小队"
-		start_experience_factor = 0.7
-	}
-	division = { 
-		name = "地狱正规军"
-		location = 13464 
-		division_template = "地狱大队"
+		division_template = "死神"
 		start_experience_factor = 0.1
 	}
 }

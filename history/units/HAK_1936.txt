@@ -3,11 +3,10 @@
 
 	regiments = {
 		touhou_demonforce_infantry = { x = 0 y = 0 }
-		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "亡灵中队" 
@@ -15,15 +14,10 @@ division_template = {
 	regiments = {
 		touhou_demonforce_infantry = { x = 0 y = 0 }
 		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
-		
-		touhou_demonforce_infantry = { x = 1 y = 0 }
-		touhou_demonforce_infantry = { x = 1 y = 1 }
-		touhou_demonforce_infantry = { x = 1 y = 2 }
-		touhou_demonforce_infantry = { x = 1 y = 3 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "亡灵大队" 
@@ -33,18 +27,10 @@ division_template = {
 		touhou_demonforce_infantry = { x = 0 y = 1 }
 		touhou_demonforce_infantry = { x = 0 y = 2 }
 		touhou_demonforce_infantry = { x = 0 y = 3 }
-		
-		touhou_demonforce_infantry = { x = 1 y = 0 }
-		touhou_demonforce_infantry = { x = 1 y = 1 }
-		touhou_demonforce_infantry = { x = 1 y = 2 }
-		touhou_demonforce_infantry = { x = 1 y = 3 }
-		
-		touhou_demonforce_infantry = { x = 2 y = 0 }
-		touhou_demonforce_infantry = { x = 2 y = 1 }
-		touhou_demonforce_infantry = { x = 2 y = 2 }
-		touhou_demonforce_infantry = { x = 2 y = 3 }
 	}
+	support = {
 
+	}
 }
 
 ##### OOB #####

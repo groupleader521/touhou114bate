@@ -3,11 +3,10 @@
 
 	regiments = {
 		touhou_magic_infantry = { x = 0 y = 0 }
-		touhou_magic_infantry = { x = 0 y = 1 }
-		touhou_magic_infantry = { x = 0 y = 2 }
-		touhou_magic_infantry = { x = 0 y = 3 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "僧兵" 
@@ -15,15 +14,10 @@ division_template = {
 	regiments = {
 		touhou_magic_infantry = { x = 0 y = 0 }
 		touhou_magic_infantry = { x = 0 y = 1 }
-		touhou_magic_infantry = { x = 0 y = 2 }
-		touhou_magic_infantry = { x = 0 y = 3 }
-
-		touhou_magic_infantry = { x = 1 y = 0 }
-		touhou_magic_infantry = { x = 1 y = 1 }
-		touhou_magic_infantry = { x = 1 y = 2 }
-		touhou_magic_infantry = { x = 1 y = 3 }
 	}
+	support = {
 
+	}
 }
 division_template = {
 	name = "僧兵大队" 
@@ -33,18 +27,10 @@ division_template = {
 		touhou_magic_infantry = { x = 0 y = 1 }
 		touhou_magic_infantry = { x = 0 y = 2 }
 		touhou_magic_infantry = { x = 0 y = 3 }
-		
-		touhou_magic_infantry = { x = 1 y = 0 }
-		touhou_magic_infantry = { x = 1 y = 1 }
-		touhou_magic_infantry = { x = 1 y = 2 }
-		touhou_magic_infantry = { x = 1 y = 3 }
-		
-		touhou_magic_infantry = { x = 2 y = 0 }
-		touhou_magic_infantry = { x = 2 y = 1 }
-		touhou_magic_infantry = { x = 2 y = 2 }
-		touhou_magic_infantry = { x = 2 y = 3 }
 	}
+	support = {
 
+	}
 }
 
 ##### OOB #####
@@ -52,13 +38,13 @@ units = {
 
 	division = { 
 		name = "人类僧"
-		location = 13401 
+		location = 13401
 		division_template = "僧兵"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "妖怪僧"
-		location = 13401 
+		location = 13401
 		division_template = "僧兵"
 		start_experience_factor = 0.1
 	}

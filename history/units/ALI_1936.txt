@@ -3,9 +3,9 @@
 
 	regiments = {
 		touhou_magic_infantry = { x = 0 y = 0 }
-		touhou_magic_infantry = { x = 0 y = 1 }
-		touhou_magic_infantry = { x = 0 y = 2 }
-		touhou_magic_infantry = { x = 0 y = 3 }
+	}
+	support = {
+
 	}
 }
 division_template = {
@@ -14,13 +14,9 @@ division_template = {
 	regiments = {
 		touhou_magic_infantry = { x = 0 y = 0 }
 		touhou_magic_infantry = { x = 0 y = 1 }
-		touhou_magic_infantry = { x = 0 y = 2 }
-		touhou_magic_infantry = { x = 0 y = 3 }
+	}
+	support = {
 
-		touhou_magic_infantry = { x = 1 y = 0 }
-		touhou_magic_infantry = { x = 1 y = 1 }
-		touhou_magic_infantry = { x = 1 y = 2 }
-		touhou_magic_infantry = { x = 1 y = 3 }
 	}
 }
 division_template = {
@@ -31,16 +27,9 @@ division_template = {
 		touhou_magic_infantry = { x = 0 y = 1 }
 		touhou_magic_infantry = { x = 0 y = 2 }
 		touhou_magic_infantry = { x = 0 y = 3 }
-		
-		touhou_magic_infantry = { x = 1 y = 0 }
-		touhou_magic_infantry = { x = 1 y = 1 }
-		touhou_magic_infantry = { x = 1 y = 2 }
-		touhou_magic_infantry = { x = 1 y = 3 }
-		
-		touhou_magic_infantry = { x = 2 y = 0 }
-		touhou_magic_infantry = { x = 2 y = 1 }
-		touhou_magic_infantry = { x = 2 y = 2 }
-		touhou_magic_infantry = { x = 2 y = 3 }
+	}
+	support = {
+
 	}
 }
 division_template = {
@@ -49,8 +38,6 @@ division_template = {
 	regiments = {
 		touhou_magic_light_armor = { x = 0 y = 0 }
 		touhou_magic_light_armor = { x = 0 y = 1 }
-		touhou_magic_light_armor = { x = 0 y = 2 }
-		touhou_magic_light_armor = { x = 0 y = 3 }
 	}
 }
 division_template = {
