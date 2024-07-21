@@ -38,7 +38,7 @@ country_event = {#偷天换日
 		name = rabbit.1.a
 		ai_chance = { base = 9 }
 		random_list = {
-			1 = { 
+			20 = { 
 				JAP = {
 					declare_war_on = {
 						target = RAB
@@ -100,7 +100,7 @@ country_event = {#偷天换日
 					controls_state = 555
 				}
 			}
-			100 = {
+			80 = {
 				random_owned_state = {
 					limit = { any_neighbor_state = { is_owned_by = JAP } }
 					random_neighbor_state = {
