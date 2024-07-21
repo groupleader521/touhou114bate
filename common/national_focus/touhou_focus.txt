@@ -2790,7 +2790,7 @@
 		icon = GFX_goal_generic_build_airforce
 		x = 5
 		y = 0
-		cost = 8
+		cost = 5
 
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -2907,7 +2907,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_bomber_focus
-		cost = 8
+		cost = 5
 
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -3098,7 +3098,7 @@
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 9
 		y = 0
-		cost = 8
+		cost = 5
 
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -3291,7 +3291,7 @@
 		x = 0
 		y = 2
 		relative_position_id = touhou_flexible_navy
-		cost = 8
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3323,7 +3323,7 @@
 		x = 0
 		y = 2
 		relative_position_id = touhou_large_navy
-		cost = 8
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3355,7 +3355,7 @@
 		x = 0
 		y = 2
 		relative_position_id = touhou_submarine_effort
-		cost = 8
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3387,7 +3387,7 @@
 		x = 0
 		y = 2
 		relative_position_id = touhou_cruiser_effort
-		cost = 8
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3421,7 +3421,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_large_navy
-		cost = 8
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3531,6 +3531,7 @@
 			factor = 0
 		}
 		completion_reward = {
+			custom_effect_tooltip = touhou_focus_research_2_tt
 			add_to_variable = { var_touhou_industrial_research = 0.05 }
 			set_country_flag = touhou_focus_research_2_flag #这个flag貌似用到了的样子，暂时别动
 		}
@@ -3583,7 +3584,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_industrial_effort
-		cost = 8
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3611,6 +3612,7 @@
 		completion_reward = {
 			add_to_variable = { var_touhou_industrial_industrial = 0.10 }
 			set_country_flag = touhou_focus_industrial_2_flag #防bug暂时保留
+			custom_effect_tooltip = touhou_focus_industrial_2_tt
 		}
 	}
 	shared_focus = {#工业培训
@@ -3666,7 +3668,7 @@
 		x = 2
 		y = 1
 		relative_position_id = touhou_industrial_effort
-		cost = 8
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3751,6 +3753,5 @@
 
 		completion_reward = {
 			add_research_slot = 1
-			custom_effect_tooltip = touhou_industrial_finish_tt
 		}
 	}

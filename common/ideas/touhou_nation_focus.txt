@@ -812,8 +812,8 @@ ideas = {
 			picture = generic_communist_army
 			
 			modifier = {
-				experience_gain_army = 0.5 #每日陆军经验增长
-				experience_gain_army_factor = -0.2 #陆军经验增长率
+				experience_gain_army = 0.1 #每日陆军经验增长
+				experience_gain_army_factor = 0.1 #陆军经验增长率
 				experience_gain_army_unit_factor = 0.1 #陆军师经验增长
 			}
 		}
@@ -831,8 +831,8 @@ ideas = {
 			picture = generic_air_bonus
 			
 			modifier = {
-				experience_gain_air = 0.5 #每日空军经验增长
-				experience_gain_air_factor = -0.2 #空军经验增长率
+				experience_gain_air = 0.1 #每日空军经验增长
+				experience_gain_air_factor = 0.1 #空军经验增长率
 				air_training_xp_gain_factor = 0.1 #空军训练经验增长
 				air_mission_xp_gain_factor = 0.1 #空军任务经验增长
 			}
@@ -851,8 +851,8 @@ ideas = {
 			picture = generic_sea_focused_navy
 			
 			modifier = {
-				experience_gain_navy = 0.5 #每日海军经验增长
-				experience_gain_navy_factor = -0.2 #海军经验增长率
+				experience_gain_navy = 0.1 #每日海军经验增长
+				experience_gain_navy_factor = 0.1 #海军经验增长率
 				experience_gain_navy_unit_factor = 0.1 #海军舰船经验增长
 			}
 		}

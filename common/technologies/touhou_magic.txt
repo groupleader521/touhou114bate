@@ -79,8 +79,24 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}	
 	
 	touhou_magic_infantry_weapons2 = {#魔力转换
-		category_all_infantry = {
-			soft_attack = 0.07
+	
+		touhou_magic_infantry = {
+			soft_attack = 0.05
+		}
+		touhou_magic_cavalry = {
+			soft_attack = 0.05
+		}
+		touhou_magic_marine = {
+			soft_attack = 0.05
+		}
+		touhou_magic_mountaineers = {
+			soft_attack = 0.05
+		}
+		touhou_magic_paratrooper = {
+			soft_attack = 0.05
+		}
+		dragon_brigade = {
+			soft_attack = 0.05
 		}
 		
 		path = {
@@ -151,8 +167,24 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 		}
 	}
 	touhou_magic_improved_infantry_weapons_2 = {#魔力精炼
-		category_all_infantry = {
-			soft_attack = 0.07
+
+		touhou_magic_infantry = {
+			soft_attack = 0.05
+		}
+		touhou_magic_cavalry = {
+			soft_attack = 0.05
+		}
+		touhou_magic_marine = {
+			soft_attack = 0.05
+		}
+		touhou_magic_mountaineers = {
+			soft_attack = 0.05
+		}
+		touhou_magic_paratrooper = {
+			soft_attack = 0.05
+		}
+		dragon_brigade = {
+			soft_attack = 0.05
 		}
 		
 		path = {
@@ -193,9 +225,29 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_infantry_at = {#魔力压缩
-		category_all_infantry = {
-			hard_attack = 0.07
-			ap_attack = 0.3
+		touhou_magic_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_magic_cavalry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_magic_marine = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_magic_mountaineers = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_magic_paratrooper = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		dragon_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
 		
 		path = {
@@ -236,11 +288,30 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_infantry_at2 = {#魔力集束
-		category_all_infantry = {
-			hard_attack = 0.07
-			ap_attack = 0.3
+		touhou_magic_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
-		
+		touhou_magic_cavalry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_magic_marine = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_magic_mountaineers = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_magic_paratrooper = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		dragon_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
 		research_cost = 1.5
 		start_year = 1943
 		folder = {
@@ -311,9 +382,24 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_advanced_infantry_weapons2 = {#魔力增压
-		category_all_infantry = {
-			soft_attack = 0.15
-		}		
+		touhou_magic_infantry = {
+			soft_attack = 0.1
+		}
+		touhou_magic_cavalry = {
+			soft_attack = 0.1
+		}
+		touhou_magic_marine = {
+			soft_attack = 0.1
+		}
+		touhou_magic_mountaineers = {
+			soft_attack = 0.1
+		}
+		touhou_magic_paratrooper = {
+			soft_attack = 0.1
+		}
+		dragon_brigade = {
+			soft_attack = 0.1
+		}	
 
 		research_cost = 1.5
 		start_year = 1944
@@ -389,8 +475,12 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_paratroopers2 = {#高等大气元素
-		special_forces_no_supply_grace = 12
-		
+
+		touhou_magic_paratrooper = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+
 		path = {
 			leads_to_tech = touhou_magic_paratroopers3
 			research_cost_coeff = 1
@@ -414,7 +504,11 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 
 	touhou_magic_paratroopers3 = {#元素混合—大气
-		special_forces_no_supply_grace = 12
+
+		touhou_magic_paratrooper = {
+			max_organisation = 5
+		}
+		
 		
 		research_cost = 2.0
 		start_year = 1943
@@ -476,9 +570,12 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_marines2 = {#高等海洋元素
-		category_special_forces = {
-			soft_attack = 0.07
+
+		touhou_magic_marine = {
+			max_organisation = 5
+			soft_attack = 0.05
 		}
+
 		path = {
 			leads_to_tech = touhou_magic_marines3
 			research_cost_coeff = 1
@@ -504,8 +601,9 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_marines3 = {#元素混合-海洋
-		category_special_forces = {
-			hard_attack = 0.07
+	
+		touhou_magic_marine = {
+			max_organisation = 5
 		}
 
 		research_cost = 2.0
@@ -567,8 +665,9 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_tech_mountaineers2 = {#高等大地元素
-		category_special_forces = {
-			max_organisation = 3
+		touhou_magic_mountaineers = {
+			max_organisation = 5
+			soft_attack = 0.05
 		}
 
 		path = {
@@ -596,8 +695,9 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_tech_mountaineers3 = {#元素混合-大地
-		category_special_forces = {
-			max_strength = 2
+
+		touhou_magic_mountaineers = {
+			max_organisation = 5
 		}
 
 		research_cost = 2.0
@@ -619,9 +719,17 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 
 	touhou_magic_tech_special_forces = {#元素适应
-		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.03
-			acclimatization_cold_climate_gain_factor = 0.03
+		touhou_magic_mountaineers = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+		}
+		touhou_magic_marine = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+		}
+		touhou_magic_paratrooper = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
 		}
 
 		path = {
@@ -658,12 +766,20 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 		xor={
 			touhou_magic_improved_special_forces
 		}
-		category_special_forces = {
-			max_organisation = 3
-			defense = 0.03
+		touhou_magic_mountaineers = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		touhou_magic_marine = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		touhou_magic_paratrooper = {
+			max_organisation = 5
+			defense = 0.05
 		}
 
-		special_forces_training_time_factor = 0.1
+		special_forces_training_time_factor = 0.05
 		
 		path = {
 			leads_to_tech = touhou_magic_extreme_environment_training
@@ -694,7 +810,7 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 			touhou_magic_advanced_special_forces
 		}
 
-		special_forces_cap = 0.03
+		special_forces_cap = 0.05
 		special_forces_training_time_factor = -0.05
 		
 		path = {
@@ -723,13 +839,21 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 
 
 	touhou_magic_extreme_environment_training = {#元素术式特化
-		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.25
-			acclimatization_cold_climate_gain_factor = 0.25
+		touhou_magic_mountaineers = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
+		}
+		touhou_magic_marine = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
+		}
+		touhou_magic_paratrooper = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
 		}
 		
 		special_forces_no_supply_grace = 24
-		special_forces_training_time_factor = 0.2
+		special_forces_training_time_factor = 0.1
 		
 		path = {
 			leads_to_tech = touhou_magic_elite_forces
@@ -791,10 +915,10 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 
 	touhou_magic_elite_forces = {#元素魔法专攻
 		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.1
-			acclimatization_cold_climate_gain_factor = 0.1
-			max_organisation = 3
-			soft_attack = 0.07
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+			max_organisation = 5
+			soft_attack = 0.05
 		}
 		
 		special_forces_no_supply_grace = 24
@@ -820,7 +944,7 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 
 	touhou_magic_night_vision = {#夜明术
 
-		land_night_attack = 0.15
+		land_night_attack = 0.1
 		
 		path = {
 			leads_to_tech = touhou_magic_night_vision2
@@ -866,7 +990,7 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	
 	touhou_magic_night_vision2 = {#昏暗视觉
 
-		land_night_attack = 0.15	
+		land_night_attack = 0.1
 
 		research_cost = 2
 		start_year = 1946
@@ -901,9 +1025,29 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_support_weapons = {#钢化术
-		category_all_infantry = {
+		touhou_magic_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_magic_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		touhou_magic_marine = {
 			defense = 0.03
 			breakthrough = 0.03
+		}
+		touhou_magic_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_magic_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		dragon_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		
 		path = {
@@ -947,10 +1091,31 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_support_weapons2 = {#火焰战袍
-		category_all_infantry = {
+		touhou_magic_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_magic_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		touhou_magic_marine = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
+		touhou_magic_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_magic_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		dragon_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
 		
 		path = {
 			leads_to_tech = touhou_magic_support_weapons3
@@ -999,10 +1164,31 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_support_weapons3 = {#法师护盾
-		category_all_infantry = {
+		touhou_magic_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_magic_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		touhou_magic_marine = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
+		touhou_magic_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_magic_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		dragon_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
 		
 		path = {
 			leads_to_tech = touhou_magic_support_weapons4
@@ -1051,10 +1237,31 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_support_weapons4 = {#不屈意志
-		category_all_infantry = {
+		touhou_magic_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_magic_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		touhou_magic_marine = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
+		touhou_magic_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_magic_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		dragon_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
 		
 		
 		research_cost = 1.5
@@ -1145,8 +1352,15 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 		}
 	}
 	touhou_magic_interwar_artillery = {#能量转换
-		category_army = {
-			soft_attack = 0.07
+
+		touhou_magic_artillery = {
+			soft_attack = 0.1
+		}
+		touhou_magic_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		magic_brigade = {
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1232,8 +1446,15 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 		}
 	}
 	touhou_magic_artillery2 = {
-		category_army = {
-			soft_attack = 0.07
+
+		touhou_magic_artillery = {
+			soft_attack = 0.1
+		}
+		touhou_magic_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		magic_brigade = {
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1275,8 +1496,15 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 		}
 	}
 	touhou_magic_artillery3 = {
-		category_army = {
-			soft_attack = 0.07
+
+		touhou_magic_artillery = {
+			soft_attack = 0.1
+		}
+		touhou_magic_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		magic_brigade = {
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1358,9 +1586,14 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_artillery5 = {
-		category_army = {
-			hard_attack = 0.07
-			ap_attack = 0.15
+		touhou_magic_artillery = {
+			soft_attack = 0.1
+		}
+		touhou_magic_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		magic_brigade = {
+			soft_attack = 0.1
 		}
 		
 		research_cost = 1
@@ -1454,9 +1687,13 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 		}
 	}
 	touhou_magic_antitank1 = {
-		category_army = {
-			hard_attack = 0.07
-			ap_attack = 0.15
+		touhou_magic_anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
+		touhou_magic_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.2
 		}
 		
 		path = {
@@ -1559,9 +1796,14 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_antitank3 = {
-		category_army = {
-			hard_attack = 0.07
-			ap_attack = 0.15
+
+		touhou_magic_anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		touhou_magic_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 		
 		path = {
@@ -1615,9 +1857,14 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 	}
 	
 	touhou_magic_antitank4 = {
-		category_army = {
-			hard_attack = 0.07
-			ap_attack = 0.15
+
+		touhou_magic_anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		touhou_magic_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 	
 		path = {

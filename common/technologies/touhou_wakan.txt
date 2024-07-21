@@ -1,5 +1,4 @@
 technologies = {#灵力科技树
-#防御及规模加成*1.5 其他正面加成*0.8 其他负面加成*1.2
 	
 	@1918 = 0
 	@1936 = 2
@@ -79,8 +78,29 @@ technologies = {#灵力科技树
 	}	
 	
 	touhou_wakan_infantry_weapons2 = {
-		category_all_infantry = {
-			soft_attack = 0.04
+		touhou_wakan_infantry = {
+			soft_attack = 0.05
+		}
+		
+		touhou_wakan_cavalry = {
+			soft_attack = 0.05
+		}
+		
+		touhou_wakan_motorized = {
+			soft_attack = 0.05
+		}
+		
+		touhou_wakan_mechanized = {
+			soft_attack = 0.05
+		}
+		touhou_wakan_amphibious_mechanized = {
+			soft_attack = 0.05
+		}
+		evil_brigade = {
+			soft_attack = 0.05
+		}
+		human_brigade = {
+			soft_attack = 0.05
 		}
 		
 		path = {
@@ -151,8 +171,30 @@ technologies = {#灵力科技树
 		}
 	}
 	touhou_wakan_improved_infantry_weapons_2 = {
-		category_all_infantry = {
-			soft_attack = 0.04
+
+		touhou_wakan_infantry = {
+			soft_attack = 0.05
+		}
+		
+		touhou_wakan_cavalry = {
+			soft_attack = 0.05
+		}
+		
+		touhou_wakan_motorized = {
+			soft_attack = 0.05
+		}
+		
+		touhou_wakan_mechanized = {
+			soft_attack = 0.05
+		}
+		touhou_wakan_amphibious_mechanized = {
+			soft_attack = 0.05
+		}
+		evil_brigade = {
+			soft_attack = 0.05
+		}
+		human_brigade = {
+			soft_attack = 0.05
 		}
 		
 		path = {
@@ -193,9 +235,37 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_infantry_at = {
-		category_all_infantry = {
-			hard_attack = 0.04
-			ap_attack = 0.16
+
+		touhou_wakan_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		touhou_wakan_cavalry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		touhou_wakan_motorized = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		touhou_wakan_mechanized = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_wakan_amphibious_mechanized = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		evil_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		human_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
 		
 		path = {
@@ -236,9 +306,37 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_infantry_at2 = {
-		category_all_infantry = {
-			hard_attack = 0.04
-			ap_attack = 0.16
+
+		touhou_wakan_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		touhou_wakan_cavalry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		touhou_wakan_motorized = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		touhou_wakan_mechanized = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_wakan_amphibious_mechanized = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		evil_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		human_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
 		
 		research_cost = 1.5
@@ -311,8 +409,40 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_advanced_infantry_weapons2 = {
-		category_all_infantry = {
-			soft_attack = 0.08
+		touhou_wakan_infantry = {
+			soft_attack = 0.1
+		}
+		
+		touhou_wakan_cavalry = {
+			soft_attack = 0.1
+		}
+		
+		touhou_wakan_motorized = {
+			soft_attack = 0.1
+		}
+		
+		touhou_wakan_mechanized = {
+			soft_attack = 0.1
+		}
+		touhou_wakan_amphibious_mechanized = {
+			soft_attack = 0.1
+		}
+		evil_brigade = {
+			soft_attack = 0.1
+		}
+		human_brigade = {
+			soft_attack = 0.1
+		}		
+
+
+		motorized = {
+			soft_attack = 0.1
+		}
+		mechanized = {
+			soft_attack = 0.1
+		}
+		amphibious_mechanized = {
+			soft_attack = 0.1
 		}		
 
 		research_cost = 1.5
@@ -389,7 +519,11 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_paratroopers2 = {
-		special_forces_no_supply_grace = 20
+
+		touhou_wakan_paratrooper = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
 		
 		path = {
 			leads_to_tech = touhou_wakan_paratroopers3
@@ -414,8 +548,12 @@ technologies = {#灵力科技树
 	}
 
 	touhou_wakan_paratroopers3 = {
-		special_forces_no_supply_grace = 20
+
+		touhou_wakan_paratrooper = {
+			max_organisation = 5
+		}
 		
+
 		research_cost = 2.0
 		start_year = 1943
 		folder = {
@@ -476,8 +614,10 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_marines2 = {
-		category_special_forces = {
-			soft_attack = 0.04
+
+		touhou_wakan_marine = {
+			max_organisation = 5
+			soft_attack = 0.05
 		}
 
 		path = {
@@ -505,8 +645,9 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_marines3 = {
-		category_special_forces = {
-			hard_attack = 0.04
+
+		touhou_wakan_marine = {
+			max_organisation = 5
 		}
 
 		research_cost = 2.0
@@ -568,8 +709,10 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_tech_mountaineers2 = {
-		category_special_forces = {
-			max_organisation = 7
+
+		touhou_wakan_mountaineers = {
+			max_organisation = 5
+			soft_attack = 0.05
 		}
 		path = {
 			leads_to_tech = touhou_wakan_tech_mountaineers3
@@ -596,8 +739,8 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_tech_mountaineers3 = {	
-		category_special_forces = {
-			max_strength = 4
+		touhou_wakan_mountaineers = {
+			max_organisation = 5
 		}
 
 		research_cost = 2.0
@@ -619,10 +762,26 @@ technologies = {#灵力科技树
 	}
 
 	touhou_wakan_tech_special_forces = {
-		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.04
-			acclimatization_cold_climate_gain_factor = 0.04
+		touhou_wakan_mountaineers = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
 		}
+		touhou_wakan_marine = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+		}
+		touhou_wakan_paratrooper = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+		}
+		
+		#dependencies = {
+		#	OR = {
+		#		marines = 1
+		#		paratrooper = 1
+		#		mountaineer = 1
+		#	}
+		#}
 
 		path = {
 			leads_to_tech = touhou_wakan_advanced_special_forces
@@ -659,9 +818,17 @@ technologies = {#灵力科技树
 			touhou_wakan_improved_special_forces
 		}
 
-		category_special_forces = {
-			max_organisation = 7
-			defense = 0.07
+		touhou_wakan_mountaineers = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		touhou_wakan_marine = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		touhou_wakan_paratrooper = {
+			max_organisation = 5
+			defense = 0.05
 		}
 
 		special_forces_training_time_factor = 0.1
@@ -695,8 +862,8 @@ technologies = {#灵力科技树
 			touhou_wakan_advanced_special_forces
 		}
 
-		special_forces_cap = 0.07
-		special_forces_training_time_factor = -0.15
+		special_forces_cap = 0.05
+		special_forces_training_time_factor = -0.1
 		
 		path = {
 			leads_to_tech = touhou_wakan_survival_training
@@ -724,13 +891,22 @@ technologies = {#灵力科技树
 
 
 	touhou_wakan_extreme_environment_training = {
-		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.4
-			acclimatization_cold_climate_gain_factor = 0.4
+
+		touhou_wakan_mountaineers = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
+		}
+		touhou_wakan_marine = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
+		}
+		touhou_wakan_paratrooper = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
 		}
 		
-		special_forces_no_supply_grace = 40
-		special_forces_training_time_factor = 0.8
+		special_forces_no_supply_grace = 48
+		special_forces_training_time_factor = 0.1
 		
 		path = {
 			leads_to_tech = touhou_wakan_elite_forces
@@ -758,12 +934,21 @@ technologies = {#灵力科技树
 
 
 	touhou_wakan_survival_training = {
-		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.16
-			acclimatization_cold_climate_gain_factor = 0.16
+
+		touhou_wakan_mountaineers = {
+			acclimatization_hot_climate_gain_factor = 0.20
+			acclimatization_cold_climate_gain_factor = 0.20
+		}
+		touhou_wakan_marine = {
+			acclimatization_hot_climate_gain_factor = 0.20
+			acclimatization_cold_climate_gain_factor = 0.20
+		}
+		touhou_wakan_paratrooper = {
+			acclimatization_hot_climate_gain_factor = 0.20
+			acclimatization_cold_climate_gain_factor = 0.20
 		}
 		
-		special_forces_out_of_supply_factor = -0.08
+		special_forces_out_of_supply_factor = -0.1
 		
 		path = {
 			leads_to_tech = touhou_wakan_elite_forces
@@ -792,13 +977,13 @@ technologies = {#灵力科技树
 
 	touhou_wakan_elite_forces = {
 		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.16
-			acclimatization_cold_climate_gain_factor = 0.16
-			max_organisation = 7
-			soft_attack = 0.04
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+			max_organisation = 5
+			soft_attack = 0.05
 		}
-		
-		special_forces_no_supply_grace = 40
+
+		special_forces_no_supply_grace = 24
 
 		research_cost = 2
 		start_year = 1944
@@ -820,7 +1005,8 @@ technologies = {#灵力科技树
 	}
 
 	touhou_wakan_night_vision = {
-		land_night_attack = 0.08
+
+		land_night_attack = 0.1
 		
 		path = {
 			leads_to_tech = touhou_wakan_night_vision2
@@ -865,7 +1051,8 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_night_vision2 = {
-		land_night_attack = 0.08	
+
+		land_night_attack = 0.1
 
 		research_cost = 2
 		start_year = 1946
@@ -900,9 +1087,47 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_support_weapons = {
-		category_all_infantry = {
-			defense = 0.07
-			breakthrough = 0.07
+		touhou_wakan_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_wakan_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		touhou_wakan_motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		touhou_wakan_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_wakan_amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		evil_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		human_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		
 		path = {
@@ -946,9 +1171,48 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_support_weapons2 = {
-		category_all_infantry = {
-			defense = 0.07
-			breakthrough = 0.07
+
+		touhou_wakan_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_wakan_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		touhou_wakan_motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		touhou_wakan_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_wakan_amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		evil_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		human_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		
 		path = {
@@ -998,9 +1262,47 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_support_weapons3 = {
-		category_all_infantry = {
-			defense = 0.07
-			breakthrough = 0.07
+		touhou_wakan_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_wakan_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		touhou_wakan_motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		touhou_wakan_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_wakan_amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		evil_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		human_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		
 		path = {
@@ -1050,9 +1352,47 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_support_weapons4 = {
-		category_all_infantry = {
-			defense = 0.07
-			breakthrough = 0.07
+		touhou_wakan_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_wakan_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_wakan_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		touhou_wakan_motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		touhou_wakan_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		touhou_wakan_amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		evil_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		human_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
 		}
 		
 		research_cost = 1.5
@@ -1146,8 +1486,15 @@ technologies = {#灵力科技树
 		}
 	}
 	touhou_wakan_interwar_artillery = {
-		category_army = {
-			soft_attack = 0.08
+
+		touhou_wakan_artillery = {
+			soft_attack = 0.1
+		}
+		touhou_wakan_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		touhou_wakan_mot_artillery_brigade = {
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1233,8 +1580,15 @@ technologies = {#灵力科技树
 		}
 	}
 	touhou_wakan_artillery2 = {
-		category_army = {
-			soft_attack = 0.08
+
+		touhou_wakan_artillery = {
+			soft_attack = 0.1
+		}
+		touhou_wakan_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		touhou_wakan_mot_artillery_brigade = {
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1276,8 +1630,15 @@ technologies = {#灵力科技树
 		}
 	}
 	touhou_wakan_artillery3 = {
-		category_army = {
-			soft_attack = 0.08
+
+		touhou_wakan_artillery = {
+			soft_attack = 0.1
+		}
+		touhou_wakan_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		touhou_wakan_mot_artillery_brigade = {
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1359,8 +1720,15 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_artillery5 = {
-		category_army = {
-			soft_attack = 0.08
+
+		touhou_wakan_artillery = {
+			soft_attack = 0.1
+		}
+		touhou_wakan_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		touhou_wakan_mot_artillery_brigade = {
+			soft_attack = 0.1
 		}
 		
 		research_cost = 1
@@ -1454,11 +1822,21 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_antiair1 = {
-		category_army = {
-			air_attack = 0.15
+
+		touhou_wakan_anti_air = {
+			air_attack = 0.1
+		}
+		touhou_wakan_anti_air_brigade = {
+			air_attack = 0.1
+		}
+		touhou_wakan_mot_anti_air_brigade = {
+			air_attack = 0.1
+		}
+		wunv_brigade = {
+			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.03
+		tech_air_damage_factor = -0.02
 		
 		path = {
 			leads_to_tech = touhou_wakan_antiair2
@@ -1500,7 +1878,7 @@ technologies = {#灵力科技树
 		enable_equipment_modules = { 
 			ship_anti_air_3
 		}
-		static_anti_air_damage_factor = 0.15
+		static_anti_air_damage_factor = 0.1
 
 		path = {
 			leads_to_tech = touhou_wakan_antiair3
@@ -1540,11 +1918,21 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_antiair3 = {
-		category_army = {
-			air_attack = 0.15
+
+		touhou_wakan_anti_air = {
+			air_attack = 0.1
+		}
+		touhou_wakan_anti_air_brigade = {
+			air_attack = 0.1
+		}
+		touhou_wakan_mot_anti_air_brigade = {
+			air_attack = 0.1
+		}
+		wunv_brigade = {
+			air_attack = 0.1
 		}
 		
-		tech_air_damage_factor = -0.03
+		tech_air_damage_factor = -0.02
 
 		path = {
 			leads_to_tech = touhou_wakan_antiair4
@@ -1584,11 +1972,21 @@ technologies = {#灵力科技树
 	}
 	
 	touhou_wakan_antiair4 = {
-		category_army = {
-			air_attack = 0.15
+
+		touhou_wakan_anti_air = {
+			air_attack = 0.1
+		}
+		touhou_wakan_anti_air_brigade = {
+			air_attack = 0.1
+		}
+		touhou_wakan_mot_anti_air_brigade = {
+			air_attack = 0.1
+		}
+		wunv_brigade = {
+			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.03
+		tech_air_damage_factor = -0.02
 		
 		path = {
 			leads_to_tech = touhou_wakan_antiair5
@@ -1635,7 +2033,7 @@ technologies = {#灵力科技树
 		enable_equipment_modules = { 
 			ship_anti_air_4
 		}
-		static_anti_air_damage_factor = 0.15
+		static_anti_air_damage_factor = 0.1
 		
 		research_cost = 1
 
@@ -1917,8 +2315,12 @@ technologies = {#灵力科技树
 		}
 
 		touhou_wakan_mechanized = {
-			soft_attack = 0.12
-			hard_attack = 0.12
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+		touhou_wakan_amphibious_mechanized = {
+			soft_attack = 0.15
+			hard_attack = 0.15
 		}
 
 		research_cost = 3

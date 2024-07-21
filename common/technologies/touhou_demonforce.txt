@@ -78,7 +78,32 @@ technologies = {#妖力科技树 基准属性
 	}	
 	
 	touhou_demonforce_infantry_weapons2 = {
-		category_all_infantry = {
+
+		touhou_demonforce_infantry = {
+			soft_attack = 0.05
+		}
+		touhou_demonforce_marine = {
+			soft_attack = 0.05
+		}
+		touhou_demonforce_mountaineers = {
+			soft_attack = 0.05
+		}
+		touhou_demonforce_paratrooper = {
+			soft_attack = 0.05
+		}
+		touhou_demonforce_cavalry = {
+			soft_attack = 0.05
+		}
+		animal_brigade = {
+			soft_attack = 0.05
+		}
+		soul_brigade = {
+			soft_attack = 0.05
+		}
+		rabbit_team_brigade = {
+			soft_attack = 0.05
+		}
+		die_brigade = {
 			soft_attack = 0.05
 		}
 		
@@ -150,10 +175,35 @@ technologies = {#妖力科技树 基准属性
 		}
 	}
 	touhou_demonforce_improved_infantry_weapons_2 = {
-		category_all_infantry = {
+
+		touhou_demonforce_infantry = {
 			soft_attack = 0.05
 		}
-
+		touhou_demonforce_marine = {
+			soft_attack = 0.05
+		}
+		touhou_demonforce_mountaineers = {
+			soft_attack = 0.05
+		}
+		touhou_demonforce_paratrooper = {
+			soft_attack = 0.05
+		}
+		touhou_demonforce_cavalry = {
+			soft_attack = 0.05
+		}
+		animal_brigade = {
+			soft_attack = 0.05
+		}
+		soul_brigade = {
+			soft_attack = 0.05
+		}
+		rabbit_team_brigade = {
+			soft_attack = 0.05
+		}
+		die_brigade = {
+			soft_attack = 0.05
+		}
+		
 		path = {
 			leads_to_tech = touhou_demonforce_advanced_infantry_weapons
 			research_cost_coeff = 1
@@ -192,9 +242,42 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_infantry_at = {
-		category_all_infantry = {
-			hard_attack = 0.05
-			ap_attack = 0.2
+	
+		touhou_demonforce_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_demonforce_marine = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_demonforce_mountaineers = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_demonforce_paratrooper = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_demonforce_cavalry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		animal_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		soul_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		rabbit_team_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		die_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
 		
 		path = {
@@ -235,9 +318,42 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_infantry_at2 = {
-		category_all_infantry = {
-			hard_attack = 0.05
-			ap_attack = 0.2
+
+		touhou_demonforce_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_demonforce_marine = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_demonforce_mountaineers = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_demonforce_paratrooper = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		touhou_demonforce_cavalry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		animal_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		soul_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		rabbit_team_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		die_brigade = {
+			hard_attack = 0.25
+			ap_attack = 1
 		}
 		
 		research_cost = 1.5
@@ -310,7 +426,31 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_advanced_infantry_weapons2 = {
-		category_all_infantry = {
+		touhou_demonforce_infantry = {
+			soft_attack = 0.1
+		}
+		touhou_demonforce_marine = {
+			soft_attack = 0.1
+		}
+		touhou_demonforce_mountaineers = {
+			soft_attack = 0.1
+		}
+		touhou_demonforce_paratrooper = {
+			soft_attack = 0.1
+		}
+		touhou_demonforce_cavalry = {
+			soft_attack = 0.1
+		}
+		animal_brigade = {
+			soft_attack = 0.1
+		}
+		soul_brigade = {
+			soft_attack = 0.1
+		}
+		rabbit_team_brigade = {
+			soft_attack = 0.1
+		}
+		die_brigade = {
 			soft_attack = 0.1
 		}	
 
@@ -389,8 +529,15 @@ technologies = {#妖力科技树 基准属性
 	
 	touhou_demonforce_paratroopers2 = {
 
-		special_forces_no_supply_grace = 24
-
+		touhou_demonforce_paratrooper = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		rabbit_team_brigade = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		
 		path = {
 			leads_to_tech = touhou_demonforce_paratroopers3
 			research_cost_coeff = 1
@@ -415,7 +562,13 @@ technologies = {#妖力科技树 基准属性
 
 	touhou_demonforce_paratroopers3 = {
 
-		special_forces_no_supply_grace = 24
+		touhou_demonforce_paratrooper = {
+			max_organisation = 5
+		}
+		rabbit_team_brigade = {
+			max_organisation = 5
+		}
+		
 
 		research_cost = 2.0
 		start_year = 1943
@@ -476,10 +629,19 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_marines2 = {
-		category_special_forces = {
+
+		touhou_demonforce_marine = {
+			max_organisation = 5
 			soft_attack = 0.05
 		}
-
+		rabbit_team_brigade = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		die_brigade = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
 		path = {
 			leads_to_tech = touhou_demonforce_marines3
 			research_cost_coeff = 1
@@ -505,8 +667,15 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_marines3 = {
-		category_special_forces = {
-			hard_attack = 0.05
+
+		touhou_demonforce_marine = {
+			max_organisation = 5
+		}
+		rabbit_team_brigade = {
+			max_organisation = 5
+		}
+		die_brigade = {
+			max_organisation = 5
 		}
 
 		research_cost = 2.0
@@ -568,10 +737,19 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_tech_mountaineers2 = {
-		category_special_forces = {
-			max_organisation = 5
-		}
 
+		touhou_demonforce_mountaineers = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		rabbit_team_brigade = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		die_brigade = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
 		path = {
 			leads_to_tech = touhou_demonforce_tech_mountaineers3
 			research_cost_coeff = 1
@@ -597,8 +775,14 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_tech_mountaineers3 = {	
-		category_special_forces = {
-			max_strength = 3
+		touhou_demonforce_mountaineers = {
+			max_organisation = 5
+		}
+		rabbit_team_brigade = {
+			max_organisation = 5
+		}
+		die_brigade = {
+			max_organisation = 5
 		}
 
 		research_cost = 2.0
@@ -620,11 +804,26 @@ technologies = {#妖力科技树 基准属性
 	}
 
 	touhou_demonforce_tech_special_forces = {
-		category_special_forces = {
+		touhou_demonforce_paratrooper = {
 			acclimatization_hot_climate_gain_factor = 0.05
 			acclimatization_cold_climate_gain_factor = 0.05
 		}
-
+		touhou_demonforce_marine = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+		}
+		touhou_demonforce_mountaineers = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+		}
+		rabbit_team_brigade = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+		}
+		die_brigade = {
+			acclimatization_hot_climate_gain_factor = 0.05
+			acclimatization_cold_climate_gain_factor = 0.05
+		}
 		path = {
 			leads_to_tech = touhou_demonforce_advanced_special_forces
 			research_cost_coeff = 1
@@ -660,7 +859,23 @@ technologies = {#妖力科技树 基准属性
 			touhou_demonforce_improved_special_forces
 		}
 
-		category_special_forces = {
+		touhou_demonforce_paratrooper = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		touhou_demonforce_marine = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		touhou_demonforce_mountaineers = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		rabbit_team_brigade = {
+			max_organisation = 5
+			defense = 0.05
+		}
+		die_brigade = {
 			max_organisation = 5
 			defense = 0.05
 		}
@@ -725,9 +940,25 @@ technologies = {#妖力科技树 基准属性
 
 
 	touhou_demonforce_extreme_environment_training = {
-		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.5
-			acclimatization_cold_climate_gain_factor = 0.5
+		touhou_demonforce_paratrooper = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
+		}
+		touhou_demonforce_marine = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
+		}
+		touhou_demonforce_mountaineers = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
+		}
+		rabbit_team_brigade = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
+		}
+		die_brigade = {
+			acclimatization_hot_climate_gain_factor = 0.50
+			acclimatization_cold_climate_gain_factor = 0.50
 		}
 		
 		special_forces_no_supply_grace = 48
@@ -759,9 +990,25 @@ technologies = {#妖力科技树 基准属性
 
 
 	touhou_demonforce_survival_training = {
-		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.2
-			acclimatization_cold_climate_gain_factor = 0.2
+		touhou_demonforce_paratrooper = {
+			acclimatization_hot_climate_gain_factor = 0.20
+			acclimatization_cold_climate_gain_factor = 0.20
+		}
+		touhou_demonforce_marine = {
+			acclimatization_hot_climate_gain_factor = 0.20
+			acclimatization_cold_climate_gain_factor = 0.20
+		}
+		touhou_demonforce_mountaineers = {
+			acclimatization_hot_climate_gain_factor = 0.20
+			acclimatization_cold_climate_gain_factor = 0.20
+		}
+		rabbit_team_brigade = {
+			acclimatization_hot_climate_gain_factor = 0.20
+			acclimatization_cold_climate_gain_factor = 0.20
+		}
+		die_brigade = {
+			acclimatization_hot_climate_gain_factor = 0.20
+			acclimatization_cold_climate_gain_factor = 0.20
 		}
 		
 		special_forces_out_of_supply_factor = -0.1
@@ -793,8 +1040,6 @@ technologies = {#妖力科技树 基准属性
 
 	touhou_demonforce_elite_forces = {
 		category_special_forces = {
-			acclimatization_hot_climate_gain_factor = 0.2
-			acclimatization_cold_climate_gain_factor = 0.2
 			max_organisation = 5
 			soft_attack = 0.05
 		}
@@ -901,9 +1146,42 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_support_weapons = {
-		category_all_infantry = {
+
+		touhou_demonforce_infantry = {
 			defense = 0.05
 			breakthrough = 0.05
+		}
+		touhou_demonforce_marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		animal_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		soul_brigade = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		rabbit_team_brigade = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		die_brigade = {
+			defense = 0.03
+			breakthrough = 0.03
 		}
 		
 		path = {
@@ -947,9 +1225,42 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_support_weapons2 = {
-		category_all_infantry = {
+
+		touhou_demonforce_infantry = {
 			defense = 0.05
 			breakthrough = 0.05
+		}
+		touhou_demonforce_marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		animal_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		soul_brigade = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		rabbit_team_brigade = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		die_brigade = {
+			defense = 0.03
+			breakthrough = 0.03
 		}
 		
 		path = {
@@ -999,9 +1310,42 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_support_weapons3 = {
-		category_all_infantry = {
+
+		touhou_demonforce_infantry = {
 			defense = 0.05
 			breakthrough = 0.05
+		}
+		touhou_demonforce_marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		animal_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		soul_brigade = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		rabbit_team_brigade = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		die_brigade = {
+			defense = 0.03
+			breakthrough = 0.03
 		}
 		
 		path = {
@@ -1051,9 +1395,42 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_support_weapons4 = {
-		category_all_infantry = {
+
+		touhou_demonforce_infantry = {
 			defense = 0.05
 			breakthrough = 0.05
+		}
+		touhou_demonforce_marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		touhou_demonforce_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		animal_brigade = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		soul_brigade = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		rabbit_team_brigade = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		die_brigade = {
+			defense = 0.03
+			breakthrough = 0.03
 		}
 		
 		research_cost = 1.5
@@ -1163,7 +1540,11 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_antiair1 = {
-		category_army = {
+
+		touhou_demonforce_anti_air = {
+			air_attack = 0.1
+		}
+		touhou_demonforce_anti_air_brigade = {
 			air_attack = 0.1
 		}
 
@@ -1254,7 +1635,11 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_antiair3 = {
-		category_army = {
+
+		touhou_demonforce_anti_air = {
+			air_attack = 0.1
+		}
+		touhou_demonforce_anti_air_brigade = {
 			air_attack = 0.1
 		}
 		
@@ -1298,7 +1683,11 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_antiair4 = {
-		category_army = {
+
+		touhou_demonforce_anti_air = {
+			air_attack = 0.1
+		}
+		touhou_demonforce_anti_air_brigade = {
 			air_attack = 0.1
 		}
 
@@ -1440,9 +1829,18 @@ technologies = {#妖力科技树 基准属性
 		}
 	}
 	touhou_demonforce_antitank1 = {
-		category_army = {
-			hard_attack = 0.05
-			ap_attack = 0.1
+
+		touhou_demonforce_anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
+		touhou_demonforce_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
+		oni_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.2
 		}
 		
 		path = {
@@ -1554,9 +1952,18 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_antitank3 = {
-		category_army = {
-			hard_attack = 0.05
+
+		touhou_demonforce_anti_tank = {
+			hard_attack = 0.1
 			ap_attack = 0.1
+		}
+		touhou_demonforce_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		oni_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.2
 		}
 		
 		path = {
@@ -1610,9 +2017,18 @@ technologies = {#妖力科技树 基准属性
 	}
 	
 	touhou_demonforce_antitank4 = {
-		category_army = {
-			hard_attack = 0.05
+		
+		touhou_demonforce_anti_tank = {
+			hard_attack = 0.1
 			ap_attack = 0.1
+		}
+		touhou_demonforce_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		oni_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.2
 		}
 	
 		path = {
