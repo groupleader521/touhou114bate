@@ -340,7 +340,7 @@ country_event = {#梅蒂欣胜利了
 	option = {
 		name = alice.4.a
 		ai_chance = { base = 1 }
-		#recruit_character = TOUHOU_Medicine_Melancholy
+		recruit_character = TOUHOU_Medicine_Melancholy
 		ALI_marionette_freedom_clear_all = yes
 		hidden_effect = {
 			set_country_flag = alice_be_defeated

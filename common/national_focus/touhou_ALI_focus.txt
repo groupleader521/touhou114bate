@@ -1075,7 +1075,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			#recruit_character = TOUHOU_Medicine_Melancholy
+			recruit_character = TOUHOU_Medicine_Melancholy
 			ALI_marionette_freedom_clear_all = yes
 			if = {
 				limit = { has_idea = ALI_marionette_response }
@@ -1114,7 +1114,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			#recruit_character = TOUHOU_Kazami_Yuka
+			recruit_character = TOUHOU_Kazami_Yuka
 			TOUHOU_Kazami_Yuka = {
 				set_character_name = TOUHOU_Yuka_old
 				set_portraits = {
@@ -1123,10 +1123,10 @@ focus_tree = {
 					}
 				}
 			}
-			#recruit_character = TOUHOU_Elly
-			#recruit_character = TOUHOU_Kurumi
-			#recruit_character = TOUHOU_Mugetsu
-			#recruit_character = TOUHOU_Gengetsu
+			recruit_character = TOUHOU_Elly
+			recruit_character = TOUHOU_Kurumi
+			recruit_character = TOUHOU_Mugetsu
+			recruit_character = TOUHOU_Gengetsu
 			capital_scope = {
 				create_unit = {
 					division = "name = \"梦幻馆支援一队\" division_template = \"高速人偶卫队\" start_experience_factor = 1" 
@@ -1171,12 +1171,12 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			#recruit_character = TOUHOU_Okazaki_Yumemi
-			#recruit_character = TOUHOU_Kitashirakawa_Chiyuri
-			#recruit_character = TOUHOU_Asakura_Rikako
-			#recruit_character = TOUHOU_Kana_Anaberal
-			#recruit_character = TOUHOU_Kotohime
-			#recruit_character = TOUHOU_Ellen
+			recruit_character = TOUHOU_Okazaki_Yumemi
+			recruit_character = TOUHOU_Kitashirakawa_Chiyuri
+			recruit_character = TOUHOU_Asakura_Rikako
+			recruit_character = TOUHOU_Kana_Anaberal
+			recruit_character = TOUHOU_Kotohime
+			recruit_character = TOUHOU_Ellen
 			add_tech_bonus = {
 				name = touhou_ALI_devildom
 				ahead_reduction = 2
@@ -1212,11 +1212,11 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			#recruit_character = TOUHOU_Yumeko
-			#recruit_character = TOUHOU_Mai
-			#recruit_character = TOUHOU_Yuki
-			#recruit_character = TOUHOU_Luize
-			#recruit_character = TOUHOU_Sara
+			recruit_character = TOUHOU_Yumeko
+			recruit_character = TOUHOU_Mai
+			recruit_character = TOUHOU_Yuki
+			recruit_character = TOUHOU_Luize
+			recruit_character = TOUHOU_Sara
 			capital_scope = {
 				create_unit = {
 					division = "name = \"魔界支援第一小队\" division_template = \"高速人偶卫队\" start_experience_factor = 1" 
@@ -1261,9 +1261,9 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			#recruit_character = TOUHOU_Sariel
-			#recruit_character = TOUHOU_Mima
-			#recruit_character = TOUHOU_Konngara
+			recruit_character = TOUHOU_Sariel
+			recruit_character = TOUHOU_Mima
+			recruit_character = TOUHOU_Konngara
 			custom_effect_tooltip = touhou_ALI_devildom_5_tooltip
 			hidden_effect = {
 				if = {
@@ -1304,7 +1304,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = touhou_ALI_devildom_6_tooltip
-			#recruit_character = TOUHOU_Shinki_shadow
+			recruit_character = TOUHOU_Shinki_shadow
 			hidden_effect = {
 				TOUHOU_Alice_Margatroid = {
 					set_character_name = TOUHOU_Alice_old
