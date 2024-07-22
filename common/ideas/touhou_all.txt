@@ -1240,11 +1240,8 @@ ideas = {
 			
 			modifier = {
 				#注意：offence、defence在country scope不生效
-				army_attack_factor = 0.2
-				army_attack_against_major_factor = 0.5
-				army_defence_factor = 0.2 #这个防御buff在战斗中生效，且对突破也生效
-				army_defence_against_major_factor = 0.5
-				army_breakthrough_against_major_factor = 0.5	
+				army_attack_factor = 0.25
+				army_defence_factor = 0.25 #这个防御buff在战斗中生效，且对突破也生效
 				army_strength_factor = 0.5
 				army_speed_factor = 0.5
 				army_org_factor = 1
@@ -1609,11 +1606,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = 0.2
-				army_attack_against_major_factor = 0.2
-				army_defence_factor = 0.2 #这个防御buff在战斗中生效，且对突破也生效
-				army_defence_against_major_factor = -0.4
-				army_breakthrough_against_major_factor = 0.5	
+				army_attack_factor = 0.4
+				army_defence_factor = 0.4 #这个防御buff在战斗中生效，且对突破也生效
 				army_speed_factor = 0.3
 				army_org_factor = 1
 				combat_width_factor = -0.2 #宽度
@@ -1787,11 +1781,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = 0.4
-				army_attack_against_major_factor = 0.4
-				army_defence_factor = 0.4 #这个防御buff在战斗中生效，且对突破也生效
-				army_defence_against_major_factor = 0.4
-				army_breakthrough_against_major_factor = 0.4	
+				army_attack_factor = 0.5
+				army_defence_factor = 0.5 #这个防御buff在战斗中生效，且对突破也生效
 				army_speed_factor = 0.3
 				army_org_factor = 1
 				combat_width_factor = -0.2 #宽度

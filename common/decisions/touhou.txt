@@ -464,13 +464,6 @@ touhou_unify = {
 					limit = { has_government = neutrality }
 					country_event = { id = touhou_end.3 }
 				}
-				if = {
-					limit = { 
-						NOT = { has_global_flag = touhou_god_of_makai_start_global_flag } 
-						date < 1940.1.1
-					}
-					country_event = { id = touhou_devildom.5 days = 30 }
-				}
 				country_event = { id = touhou_end.4 days = 10 }
 			}
 			remove_ideas = touhou_no_need_help
