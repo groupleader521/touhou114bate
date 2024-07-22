@@ -660,10 +660,10 @@ ideas = {
 			picture = ast_abandon_the_westminster_system_fascism
 			removal_cost = 0
 			modifier = {
-				army_attack_factor = 0.25
-				army_defence_factor = 0.25
-				attrition = -0.25
-				army_morale_factor = 0.25
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				attrition = -0.05
+				army_morale_factor = 0.05
 			}
 		}
 		touhou_human_has_all = {

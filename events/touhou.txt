@@ -3866,7 +3866,7 @@ country_event = {#处置俘虏-玩家傀儡国
 				retire = yes
 				ROOT = {
 					add_to_variable = {
-						touhou_var_first_line = 0.05
+						touhou_var_first_line = 0.01
 					}	
 				}
 			}
@@ -3990,7 +3990,7 @@ country_event = {#接收傀儡国流亡者-玩家
 				retire = yes
 				ROOT = {
 					add_to_variable = {
-						touhou_var_first_line = 0.05
+						touhou_var_first_line = 0.01
 					}	
 				}
 			}
@@ -4122,7 +4122,7 @@ country_event = {#处置俘虏-玩家吞并
 				retire = yes
 				ROOT = {
 					add_to_variable = {
-						touhou_var_first_line = 0.05
+						touhou_var_first_line = 0.01
 					}	
 				}
 			}
@@ -4246,7 +4246,7 @@ country_event = {#接收被吞并流亡者-玩家
 				retire = yes
 				ROOT = {
 					add_to_variable = {
-						touhou_var_first_line = 0.05
+						touhou_var_first_line = 0.01
 					}	
 				}
 			}
