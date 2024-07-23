@@ -35,8 +35,13 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		
-		entrenchment  = 5
+		entrenchment  = 2
 
+		battalion_mult = {
+			category = category_light_infantry
+			entrenchment = 0.20
+			add = yes
+		}
 				
 		defense = 0.1
 		breakthrough = 0.5
@@ -63,7 +68,12 @@ sub_units = {
 			defence = 0.1
 		}
 
+		mountain = {
+			attack = 0.10
+		}
+
 		jungle = {
+			attack = 0.05
 			defence = 0.25
 		}
 
@@ -123,9 +133,14 @@ sub_units = {
 
 		# Important Ability
 		casualty_trickleback = 0.20
-		experience_loss_factor = -0.10
+		experience_loss_factor = -0.15
 
 		own_equipment_fuel_consumption_mult = 0.0 # no fuel use
+
+		battalion_mult = {
+			category = category_all_infantry
+			max_strength = 0.10
+		}
 
 		essential = {
 			touhou_support_equipment
@@ -316,8 +331,6 @@ sub_units = {
 		# Support nerfs to combat abilities
 		defense = -0.5
 		breakthrough = -0.5
-		soft_attack = -0.9
-		hard_attack = -0.9
 		
 		essential = {
 			touhou_support_equipment
