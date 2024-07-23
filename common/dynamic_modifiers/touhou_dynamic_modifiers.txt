@@ -26,8 +26,8 @@ touhou_dynamic_modifiers_everyone_communist_army = {#党支部-军队建设
 	army_attack_factor = touhou_var_everyone_communist_army_attack_factor #党支部-军队建设陆军攻击变量
 	army_org_factor = touhou_var_everyone_communist_army_org_factor #党支部-军队建设陆军组织度变量
 	command_power_gain_mult = touhou_var_everyone_communist_command_power_gain_mult #党支部-军队建设指挥点增速变量
-	war_support_weekly = touhou_var_everyone_communist_war_support_weekly_army #党支部-军队建设每周战争支持度变量
-	stability_weekly = touhou_var_everyone_communist_stability_weekly_army #党支部-军队建设每周稳定度变量
+	# war_support_weekly = touhou_var_everyone_communist_war_support_weekly_army #党支部-军队建设每周战争支持度变量
+	# stability_weekly = touhou_var_everyone_communist_stability_weekly_army #党支部-军队建设每周稳定度变量
 	conscription_factor = touhou_var_everyone_communist_conscription_factor #党支部-军队建设征兵加成变量
 }
 touhou_dynamic_modifiers_everyone_communist_ideology = {#党支部-思想建设

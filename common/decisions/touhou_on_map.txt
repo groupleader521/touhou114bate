@@ -8,7 +8,24 @@ touhou_decisions_categories_everyone_communist = {#支部建到地方
 		fire_only_once = no
 		
 		allowed = {
-			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			OR = { 
+			original_tag = ALI 
+			original_tag = DES 
+			original_tag = HAK 
+			original_tag = DLD
+			original_tag = HEL 
+			original_tag = SSS 
+			original_tag = OPP 
+			original_tag = RAB 
+			original_tag = TEM 
+			original_tag = BLI
+			original_tag = KAP 
+			original_tag = TEN 
+			original_tag = HUM 
+			original_tag = VAM 
+			original_tag = MLS 
+			original_tag = EVI 
+		}
 		}
 
 		available = {
@@ -19,18 +36,36 @@ touhou_decisions_categories_everyone_communist = {#支部建到地方
 		
 		state_target = yes
 		target_trigger = {
-			FROM = {
-				is_owned_by = ROOT
-				is_fully_controlled_by = ROOT
-				NOT = { has_state_flag = touhou_state_flag_everyone_communist }
+			AND = {
+				FROM = {
+					is_owned_by = ROOT
+					NOT = { has_state_flag = touhou_state_flag_everyone_communist }
+					OR = {
+						is_core_of = ALI 
+						is_core_of = DES 
+						is_core_of = HAK 
+						is_core_of = DLD
+						is_core_of = HEL 
+						is_core_of = SSS 
+						is_core_of = OPP 
+						is_core_of = RAB 
+						is_core_of = TEM 
+						is_core_of = BLI
+						is_core_of = KAP 
+						is_core_of = TEN 
+						is_core_of = HUM 
+						is_core_of = VAM 
+						is_core_of = MLS 
+						is_core_of = EVI 
+					}
+				}
 			}
         }
 		on_map_mode = map_and_decisions_view
-		cost = 10
-		days_remove = 50
+		cost = 20
+		days_remove = 60
 		modifier = {
 			political_power_cost = 0.1
-			compliance_gain = -0.05
 		}
 		remove_effect = {#幻想乡能成立47个党支部，以此为基础确定数值
 			hidden_effect = {
