@@ -786,8 +786,8 @@ sub_units = {
 		combat_width = 2
 
 		#Offensive Abilities
-		soft_attack = 0.1
-		hard_attack = 4.0
+		soft_attack = 0.2
+		hard_attack = 2.0
 		
 		#Size Definitions
 		max_strength = 30
@@ -869,8 +869,8 @@ sub_units = {
 		combat_width = 2
 
 		#Offensive Abilities
-		soft_attack = 0.1
-		hard_attack = 0.5
+		soft_attack = 0.2
+		hard_attack = 2.0
 		
 		#Size Definitions
 		max_strength = 30

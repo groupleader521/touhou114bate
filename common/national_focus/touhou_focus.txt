@@ -146,10 +146,10 @@
 	shared_focus = {#幻想化武装
 		id = touhou_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = touhou_equipment_effort }
+		prerequisite = { focus = touhou_motorization_effort }
 		x = 0
 		y = 2
-		relative_position_id = touhou_equipment_effort
+		relative_position_id = touhou_motorization_effort
 		cost = 8
 
 		available_if_capitulated = yes

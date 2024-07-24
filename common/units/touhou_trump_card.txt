@@ -424,7 +424,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 35
-		max_organisation = 80
+		max_organisation = 75
 		default_morale = 0.5
 		manpower = 500
 
@@ -465,8 +465,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 15
-		max_organisation = 45
+		max_strength = 5
+		max_organisation = 30
 		default_morale = 0.5
 		manpower = 100
 
@@ -526,6 +526,12 @@ sub_units = {
 		need = {
 			rabbit_team_equipment = 50
 		}
+		forest = {
+			attack = 0.15
+		}
+		jungle = {
+			attack = 0.15
+		}
 		marsh = {
 			attack = 0.3
 		}
@@ -574,8 +580,8 @@ sub_units = {
 		combat_width = 0
 		
 		#Size Definitions
-		max_strength = 2
-		max_organisation = 20	
+		max_strength = 20
+		max_organisation = 30
 		default_morale = 0.3
 		manpower = 500
 		training_time = 120
@@ -587,6 +593,12 @@ sub_units = {
 		
 		# Important Ability
 		casualty_trickleback = 0.7
+		experience_loss_factor = -0.6
+
+		battalion_mult = {
+			category = category_all_infantry
+			max_strength = 0.2
+		}
 
 		need = {
 			wunv_equipment = 50

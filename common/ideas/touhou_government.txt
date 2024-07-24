@@ -405,8 +405,8 @@ ideas = {
 			}	
 			modifier = {
 				training_time_factor = 0.1
-				MONTHLY_POPULATION = 0.05
-				conscription = 0.15
+				MONTHLY_POPULATION = 0.15
+				conscription = 0.02
 			}
 			removal_cost = 0	
 		}
@@ -1181,9 +1181,9 @@ ideas = {
 			equipment_bonus = {
 			}
 			modifier = {
-				army_strength_factor = 0.2
-				army_org_factor = 0.2
-				industrial_capacity_factory = 0.1
+				army_strength_factor = 0.05
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.05
 				land_reinforce_rate = 0.05 #增援率
 			}
 			traits = { fantasy_wakan_researcher_trait }
@@ -1206,8 +1206,8 @@ ideas = {
 			equipment_bonus = {		
 			}
 			modifier = {
-				army_attack_factor = 0.25
-				army_defence_factor = -0.3
+				army_attack_factor = 0.05
+				army_defence_factor = -0.05
 			}
 			traits = { fantasy_magic_researcher_trait }
 		}
@@ -1229,10 +1229,10 @@ ideas = {
 			equipment_bonus = {
 			}
 			modifier = {
-				supply_consumption_factor = -0.15 #补给消耗
-				out_of_supply_factor = -0.15 #补给耗尽惩罚
-				no_supply_grace = 96 #携行补给
-				army_fuel_consumption_factor = -0.15 #陆军燃油消耗
+				supply_consumption_factor = -0.05 #补给消耗
+				out_of_supply_factor = -0.05 #补给耗尽惩罚
+				no_supply_grace = 24 #携行补给
+				army_fuel_consumption_factor = -0.05 #陆军燃油消耗
 			}
 			traits = { fantasy_demonforce_researcher_trait }
 		}
@@ -1254,7 +1254,7 @@ ideas = {
 			equipment_bonus = {
 			}
 			modifier = {
-				research_speed_factor = 0.3
+				research_speed_factor = 0.15
 				equipment_upgrade_xp_cost = -0.4
 			}
 			traits = { out_no_fantasy_researcher_trait }
@@ -1276,13 +1276,13 @@ ideas = {
 			equipment_bonus = {
 			}
 			modifier = {
-				army_strength_factor = 0.2
-				army_org_factor = 0.2
+				army_strength_factor = 0.1
+				army_org_factor = 0.1
 				industrial_capacity_factory = 0.1
 				land_reinforce_rate = 0.05 #增援率
-				army_attack_against_major_factor = 0.1
-				army_defence_against_major_factor = 0.2
-				army_breakthrough_against_major_factor = 0.2
+				army_attack_against_major_factor = 0.05
+				army_defence_against_major_factor = 0.05
+				army_breakthrough_against_major_factor = 0.05
 			}
 			traits = { fantasy_wakan_researcher_trait }
 		}
@@ -1303,9 +1303,8 @@ ideas = {
 			equipment_bonus = {		
 			}
 			modifier = {
-				army_attack_factor = 0.25
-				army_defence_factor = -0.35
-				army_attack_against_major_factor = 0.15
+				army_attack_factor = 0.1
+				army_attack_against_major_factor = 0.1
 				land_night_attack = 0.15
 			}
 			traits = { fantasy_magic_researcher_trait }
@@ -1327,12 +1326,12 @@ ideas = {
 			equipment_bonus = {
 			}
 			modifier = {
-				supply_consumption_factor = -0.15 #补给消耗
-				out_of_supply_factor = -0.15 #补给耗尽惩罚
-				no_supply_grace = 96 #携行补给
-				army_fuel_consumption_factor = -0.15 #陆军燃油消耗
+				supply_consumption_factor = -0.1 #补给消耗
+				out_of_supply_factor = -0.1 #补给耗尽惩罚
+				no_supply_grace = 48 #携行补给
+				army_fuel_consumption_factor = -0.1 #陆军燃油消耗
 				army_fuel_capacity_factor = 0.5
-				army_speed_factor = 0.25
+				army_speed_factor = 0.15
 			}
 			traits = { fantasy_demonforce_researcher_trait }
 		}
@@ -1353,10 +1352,10 @@ ideas = {
 			equipment_bonus = {
 			}
 			modifier = {
-				research_speed_factor = 0.3
+				research_speed_factor = 0.2
 				equipment_upgrade_xp_cost = -0.4
-				line_change_production_efficiency_factor = 0.5
-				production_factory_efficiency_gain_factor = 0.3
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.2
 			}
 			traits = { out_no_fantasy_researcher_trait }
 		}		
