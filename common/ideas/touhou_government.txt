@@ -255,7 +255,7 @@ ideas = {
 
 			removal_cost = -75
 
-			modifier = { research_speed_factor = 0.25 }
+			modifier = { research_speed_factor = 0.2 }
 
 		}
 	#产出线
@@ -308,7 +308,7 @@ ideas = {
 
 			modifier = {
 			research_speed_factor = 0.1
-			industrial_capacity_factory = 0.4
+			industrial_capacity_factory = 0.2
 			custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
 			}
 
@@ -334,7 +334,7 @@ ideas = {
 
 			modifier = {
 			research_speed_factor = 0.1
-			industrial_capacity_factory = 0.4
+			industrial_capacity_factory = 0.2
 			supply_consumption_factor = -0.1
 			army_fuel_consumption_factor = -0.1
 			}
@@ -361,7 +361,7 @@ ideas = {
 			removal_cost = -75
 
 			modifier = {
-			production_speed_buildings_factor = 0.2
+			production_speed_buildings_factor = 0.1
 			custom_modifier_tooltip = SOV_gosproyektstroy_1_tt
 			
 			}
@@ -387,9 +387,8 @@ ideas = {
 			removal_cost = -75
 
 			modifier = {
-			production_speed_buildings_factor = 0.4
+			production_speed_buildings_factor = 0.2
 			global_building_slots_factor = 0.2
-
 			}
 		}		
 	}
@@ -405,8 +404,8 @@ ideas = {
 				NOT = { has_idea = touhou_ideas_evil_angry }
 			}	
 			modifier = {
-				training_time_factor = 0.2
-				MONTHLY_POPULATION = 0.15
+				training_time_factor = 0.1
+				MONTHLY_POPULATION = 0.05
 				conscription = 0.15
 			}
 			removal_cost = 0	
@@ -680,10 +679,10 @@ ideas = {
 			
 			modifier = {
 				political_power_factor = 0.1
-				consumer_goods_factor = -0.3
+				consumer_goods_factor = -0.2
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.05
 			}
 		}
 		touhou_communism = {#携手共进

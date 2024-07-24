@@ -1257,9 +1257,9 @@ country_event = {#外界交流军事改革准备
 			}
 		}
 		outside_world_attitude_level_up = yes
-		army_experience = 100
-		air_experience = 100
-		navy_experience = 100
+		army_experience = 15
+		air_experience = 15
+		navy_experience = 15
 	}
 	option = {
 		name = touhou_reformation_out.14.b
@@ -1276,9 +1276,9 @@ country_event = {#外界交流军事改革准备
 			}
 		}
 		outside_world_attitude_level_down = yes
-		army_experience = 100
-		air_experience = 100
-		navy_experience = 100
+		army_experience = 15
+		air_experience = 15
+		navy_experience = 15
 	}
 }
 country_event = {#外界交流军事改革已经准备

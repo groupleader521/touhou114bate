@@ -59,79 +59,79 @@
 			}
 		}
 	}
-	shared_focus = {#潜伏小队
-		id = touhou_doctrine_effort
+	# shared_focus = {#潜伏小队
+	# 	id = touhou_doctrine_effort
+	# 	icon = GFX_goal_generic_army_doctrines
+	# 	prerequisite = { focus = touhou_army_effort }
+	# 	x = 0
+	# 	y = 2
+	# 	relative_position_id = touhou_army_effort
+	# 	cost = 5
+
+	# 	available_if_capitulated = yes
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+
+	# 	completion_reward = {
+	# 		army_experience = 50
+	# 	}
+	# }
+	# shared_focus = {#动能武器
+	# 	id = touhou_equipment_effort_2
+	# 	icon = GFX_goal_generic_army_artillery
+	# 	prerequisite = { focus = touhou_equipment_effort }
+	# 	x = 0
+	# 	y = 2
+	# 	relative_position_id = touhou_equipment_effort
+	# 	cost = 5
+
+	# 	available_if_capitulated = yes
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = touhou_equipment_effort_2
+	# 			bonus = 1.0
+	# 			uses = 2
+	# 			category = infantry_weapons
+	# 			category = artillery
+	# 		}
+	# 	}
+	# }
+	# shared_focus = {#移动装备武装化
+	# 	id = touhou_mechanization_effort
+	# 	icon = GFX_goal_generic_build_tank
+	# 	prerequisite = { focus = touhou_motorization_effort }
+	# 	x = 0
+	# 	y = 2
+	# 	relative_position_id = touhou_motorization_effort
+	# 	cost = 5
+
+	# 	available_if_capitulated = yes
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+
+	# 	completion_reward = {
+	# 		add_tech_bonus = {
+	# 			name = touhou_mechanization_effort
+	# 			bonus = 1.0
+	# 			uses = 2
+	# 			category = motorized_equipment
+	# 			category = armor
+	# 		}
+	# 	}
+	# }
+	shared_focus = {#邀请外界陆军顾问
+		id = touhou_doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = touhou_army_effort }
 		x = 0
 		y = 2
 		relative_position_id = touhou_army_effort
-		cost = 5
-
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 0
-		}
-
-		completion_reward = {
-			army_experience = 50
-		}
-	}
-	shared_focus = {#动能武器
-		id = touhou_equipment_effort_2
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = touhou_equipment_effort }
-		x = 0
-		y = 2
-		relative_position_id = touhou_equipment_effort
-		cost = 5
-
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 0
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = touhou_equipment_effort_2
-				bonus = 1.0
-				uses = 2
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-	shared_focus = {#移动装备武装化
-		id = touhou_mechanization_effort
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = touhou_motorization_effort }
-		x = 0
-		y = 2
-		relative_position_id = touhou_motorization_effort
-		cost = 5
-
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 0
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = touhou_mechanization_effort
-				bonus = 1.0
-				uses = 2
-				category = motorized_equipment
-				category = armor
-			}
-		}
-	}
-	shared_focus = {#邀请外界陆军顾问
-		id = touhou_doctrine_effort_2
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = touhou_doctrine_effort }
-		x = 0
-		y = 2
-		relative_position_id = touhou_doctrine_effort
 		cost = 8
 
 		available_if_capitulated = yes
@@ -146,10 +146,10 @@
 	shared_focus = {#幻想化武装
 		id = touhou_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = touhou_equipment_effort_2 }
+		prerequisite = { focus = touhou_equipment_effort }
 		x = 0
 		y = 2
-		relative_position_id = touhou_equipment_effort_2
+		relative_position_id = touhou_equipment_effort
 		cost = 8
 
 		available_if_capitulated = yes
@@ -171,10 +171,10 @@
 	shared_focus = {#幻想装甲
 		id = touhou_armor_effort
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = touhou_mechanization_effort }
+		prerequisite = { focus = touhou_equipment_effort }
 		x = 0
 		y = 2
-		relative_position_id = touhou_mechanization_effort
+		relative_position_id = touhou_equipment_effort
 		cost = 8
 
 		available_if_capitulated = yes
@@ -3486,7 +3486,6 @@
 			add_dynamic_modifier = { modifier = touhou_industrial_adviser }
 			add_to_variable = { var_touhou_industrial_research = 0.05 }
 			add_to_variable = { var_touhou_industrial_industrial = 0.05 }
-			add_to_variable = { var_touhou_industrial_buildings = 0.05 }
 			custom_effect_tooltip = touhou_industrial_effort_tt
 			set_country_flag = touhou_flag_industry_and_electronics_technology 
 		}

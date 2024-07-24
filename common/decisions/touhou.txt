@@ -1222,77 +1222,77 @@ touhou_god_of_makai_decisions_categories = {#抗击魔界
 	}
 }
 touhou_decisions_categories_option = {#菜单
-	touhou_decisions_option_cheat = {#开启作弊模式
-		icon = GFX_decision_SWI_support_humanitarian_efforts
-		fire_only_once = yes
-		allowed = {
-			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		}
+	# touhou_decisions_option_cheat = {#开启作弊模式
+	# 	icon = GFX_decision_SWI_support_humanitarian_efforts
+	# 	fire_only_once = yes
+	# 	allowed = {
+	# 		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	# 	}
 
-		visible = {
-			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		}
+	# 	visible = {
+	# 		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	# 	}
 
-		available = { is_ai = no }
+	# 	available = { is_ai = no }
 		
-		cost = 0
-		days_remove = 0
+	# 	cost = 0
+	# 	days_remove = 0
 
-		ai_will_do = {
-			factor = 0
-		}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
 
-		complete_effect = {
-			set_country_flag = fantasy_society_reform_ready_flag
-            touhou_society_reform_finish_effect = yes
-			set_country_flag = fantasy_government_reform_ready_flag
-            touhou_fiscal_reform_finish_effect = yes
-            set_country_flag = fantasy_research_reform_ready_flag
-            touhou_research_reform_finish_effect = yes
-            set_country_flag = fantasy_army_reform_ready_flag
-            touhou_army_reform_finish_effect = yes
-            set_country_flag = fantasy_industry_reform_ready_flag
-            touhou_industry_reform_finish_effect = yes
-			add_political_power = 150
-			army_experience = 100
-			add_research_slot = 1
-			add_war_support = 0.2
-			add_stability = 0.2
-			hidden_effect = {
-				add_ideas = touhou_ideas_god_of_makai_cheat
-			}
-		}
-	}
-	touhou_decisions_option_cheat_removed = {#移除作弊检测
-		icon = GFX_decision_SWI_support_humanitarian_efforts
-		fire_only_once = yes
-		allowed = {
-			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		}
+	# 	complete_effect = {
+	# 		set_country_flag = fantasy_society_reform_ready_flag
+    #         touhou_society_reform_finish_effect = yes
+	# 		set_country_flag = fantasy_government_reform_ready_flag
+    #         touhou_fiscal_reform_finish_effect = yes
+    #         set_country_flag = fantasy_research_reform_ready_flag
+    #         touhou_research_reform_finish_effect = yes
+    #         set_country_flag = fantasy_army_reform_ready_flag
+    #         touhou_army_reform_finish_effect = yes
+    #         set_country_flag = fantasy_industry_reform_ready_flag
+    #         touhou_industry_reform_finish_effect = yes
+	# 		add_political_power = 150
+	# 		army_experience = 100
+	# 		add_research_slot = 1
+	# 		add_war_support = 0.2
+	# 		add_stability = 0.2
+	# 		hidden_effect = {
+	# 			add_ideas = touhou_ideas_god_of_makai_cheat
+	# 		}
+	# 	}
+	# }
+	# touhou_decisions_option_cheat_removed = {#移除作弊检测
+	# 	icon = GFX_decision_SWI_support_humanitarian_efforts
+	# 	fire_only_once = yes
+	# 	allowed = {
+	# 		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	# 	}
 
-		visible = {
-			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-			has_idea = touhou_ideas_god_of_makai_cheat
-		}
+	# 	visible = {
+	# 		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	# 		has_idea = touhou_ideas_god_of_makai_cheat
+	# 	}
 
-		available = { 
-			is_ai = no 
-		}
+	# 	available = { 
+	# 		is_ai = no 
+	# 	}
 		
-		cost = 0
-		days_remove = 0
+	# 	cost = 0
+	# 	days_remove = 0
 
-		ai_will_do = {
-			factor = 0
-		}
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
 
-		complete_effect = {
-			remove_ideas = touhou_ideas_god_of_makai_cheat
-			hidden_effect = {
-				country_event = { id = touhou_option.4 } 
-			}
-		}
-	}	
+	# 	complete_effect = {
+	# 		remove_ideas = touhou_ideas_god_of_makai_cheat
+	# 		hidden_effect = {
+	# 			country_event = { id = touhou_option.4 } 
+	# 		}
+	# 	}
+	# }	
 	touhou_decisions_option_closed = {#永久关闭菜单
 		icon = oppression
 		fire_only_once = yes
