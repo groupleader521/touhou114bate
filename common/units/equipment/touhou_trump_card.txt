@@ -146,9 +146,9 @@ equipments = {
 		soft_attack = 25
 		hard_attack = 25
 		ap_attack = 50
-		air_attack = 15
+		air_attack = 1
 
-		build_cost_ic = 400
+		build_cost_ic = 560
 		resources = {
 			steel = 3
 			chromium = 2

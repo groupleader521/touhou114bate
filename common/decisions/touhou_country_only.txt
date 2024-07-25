@@ -1436,8 +1436,6 @@ touhou_decisions_categories_evi_military_academy = {
 				regiments = {
 					evil_brigade = 1
 					evil_brigade = 1
-					evil_brigade = 1
-					evil_brigade = 1
 				}
 			}
 			set_division_template_cap = {
@@ -1448,8 +1446,6 @@ touhou_decisions_categories_evi_military_academy = {
 				template_name = "妖精突击师"
 				regiments = {
 					evil_brigade = 0
-					evil_brigade = 0
-					evil_armor_brigade = 1
 					evil_armor_brigade = 1
 				}
 			}
@@ -1461,8 +1457,6 @@ touhou_decisions_categories_evi_military_academy = {
 				template_name = "妖精炮兵师"
 				regiments = {
 					evil_brigade = 0
-					evil_brigade = 0
-					evil_artillery_brigade = 1
 					evil_artillery_brigade = 1
 				}
 			}
@@ -1499,10 +1493,6 @@ touhou_decisions_categories_evi_military_academy = {
 				regiments = {
 					evil_brigade = 2
 					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 3
-					evil_brigade = 3
 					evil_brigade = 3
 					evil_brigade = 3
 				}
@@ -1516,10 +1506,6 @@ touhou_decisions_categories_evi_military_academy = {
 				regiments = {
 					evil_brigade = 2
 					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_armor_brigade = 3
-					evil_armor_brigade = 3
 					evil_armor_brigade = 3
 					evil_armor_brigade = 3
 				}
@@ -1533,10 +1519,6 @@ touhou_decisions_categories_evi_military_academy = {
 				regiments = {
 					evil_brigade = 2
 					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_artillery_brigade = 3
-					evil_artillery_brigade = 3
 					evil_artillery_brigade = 3
 					evil_artillery_brigade = 3
 				}
@@ -1627,21 +1609,21 @@ touhou_decisions_categories_evi_military_academy = {
 					create_unit = {
 						division = "name = \"妖精步兵师\" division_template = \"妖精步兵师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 2
+						count = 1
 					}
 				}
 				random_controlled_state = {
 					create_unit = {
 						division = "name = \"妖精突击师\" division_template = \"妖精突击师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 2
+						count = 1
 					}
 				}
 				random_controlled_state = {
 					create_unit = {
 						division = "name = \"妖精炮兵师\" division_template = \"妖精炮兵师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 2
+						count = 1
 					}
 				}
 			}
@@ -1658,21 +1640,21 @@ touhou_decisions_categories_evi_military_academy = {
 					create_unit = {
 						division = "name = \"妖精步兵师\" division_template = \"妖精步兵师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 4
+						count = 2
 					}
 				}
 				random_controlled_state = {
 					create_unit = {
 						division = "name = \"妖精突击师\" division_template = \"妖精突击师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 4
+						count = 2
 					}
 				}
 				random_controlled_state = {
 					create_unit = {
 						division = "name = \"妖精炮兵师\" division_template = \"妖精炮兵师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 4
+						count = 2
 					}
 				}
 			}
@@ -1689,21 +1671,21 @@ touhou_decisions_categories_evi_military_academy = {
 					create_unit = {
 						division = "name = \"妖精步兵师\" division_template = \"妖精步兵师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 6
+						count = 3
 					}
 				}
 				random_controlled_state = {
 					create_unit = {
 						division = "name = \"妖精突击师\" division_template = \"妖精突击师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 6
+						count = 3
 					}
 				}
 				random_controlled_state = {
 					create_unit = {
 						division = "name = \"妖精炮兵师\" division_template = \"妖精炮兵师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 6
+						count = 3
 					}
 				}
 			}
@@ -1718,21 +1700,21 @@ touhou_decisions_categories_evi_military_academy = {
 					create_unit = {
 						division = "name = \"妖精步兵师\" division_template = \"妖精步兵师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 8
+						count = 2
 					}
 				}
 				random_controlled_state = {
 					create_unit = {
 						division = "name = \"妖精突击师\" division_template = \"妖精突击师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 8
+						count = 2
 					}
 				}
 				random_controlled_state = {
 					create_unit = {
 						division = "name = \"妖精炮兵师\" division_template = \"妖精炮兵师\" start_experience_factor = 0.8"
 						owner = ROOT
-						count = 8
+						count = 2
 					}
 				}
 			}
