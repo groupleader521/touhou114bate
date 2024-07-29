@@ -622,7 +622,6 @@ focus_tree = {
 			has_war = no
 			is_subject = no
 			date > 1937.6.1
-			threat > 0.3
 			any_other_country = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 				OR = { is_subject = no is_subject_of = ROOT } exists = yes

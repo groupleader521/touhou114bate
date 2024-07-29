@@ -439,13 +439,6 @@ touhou_unify = {
 			set_cosmetic_tag = TOUHOU_UNIFIED
 			set_global_flag = touhou_all_country_unify
 			set_country_flag = touhou_all_country_unify_for_country
-			every_other_country = {
-				limit = {
-					OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-					is_ai = no
-				}
-				set_country_flag = touhou_all_country_unify_for_country
-			}
 			hidden_effect = {
 				if = {
 					limit = { has_government = fascism }
@@ -745,11 +738,8 @@ touhou_unify = {
 						NOT = { is_subject_of = ROOT }
 					}
 					country_event = { id = touhou_ai.4 }
-				}			
-				if = {
-					limit = { is_ai = no }
-					set_country_flag = touhou_country_flag_unity_end
-				}	
+				}		
+				set_country_flag = touhou_country_flag_unity_end	
 			}
 			every_other_country = {
 				limit = {

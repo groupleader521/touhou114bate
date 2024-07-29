@@ -3484,7 +3484,6 @@
 
 		completion_reward = {
 			add_dynamic_modifier = { modifier = touhou_industrial_adviser }
-			add_to_variable = { var_touhou_industrial_research = 0.05 }
 			add_to_variable = { var_touhou_industrial_industrial = 0.05 }
 			custom_effect_tooltip = touhou_industrial_effort_tt
 			set_country_flag = touhou_flag_industry_and_electronics_technology 

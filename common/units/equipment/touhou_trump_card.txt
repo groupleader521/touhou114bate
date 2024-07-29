@@ -739,7 +739,7 @@ equipments = {
 		archetype = rabbit_team_equipment
 		priority = 10
 		visual_level = 3
-		maximum_speed = 8
+		maximum_speed = 12
 		reliability = 0.8
 
 		fuel_consumption = 1.2
@@ -831,7 +831,7 @@ equipments = {
 
 		fuel_capacity = 20000
 
-		build_cost_ic = 4
+		build_cost_ic = 8
 		resources = {
 			steel = 1
 			rubber = 2
@@ -866,7 +866,14 @@ equipments = {
 		
 		reliability = 0.8
 
-		fuel_consumption = 1.2
+		#Defensive Abilities
+		defense = 10
+		breakthrough = 3
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 3
+		air_attack = 5
 
 		build_cost_ic = 8
 		resources = {

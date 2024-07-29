@@ -149,7 +149,7 @@
  touhou_focus_buildings_tt:0 "工业改革顾问增加5%的建筑速度（共10%）。"
  touhou_focus_buildings_2:0 "水中工程师"
  touhou_focus_buildings_2_desc:0 "河童是幻想乡真正的工程师，比起相信半路出家的其他人，我们应该把发展交给专家。"
- touhou_focus_buildings_2_tt:0 "河童重工增加10%的建造速度，并为工业改革额外增加10%的建筑速度。（共15%）"
+ touhou_focus_buildings_2_tt:0 "河童重工增加10%的建造速度，并为工业改革额外增加5%的建筑速度。（共15%）"
  touhou_focus_buildings_3:0 "开发异世界的土地"
  touhou_focus_buildings_3_desc:0 "我们打开了不该打开的门，这必定会为我们埋下隐患，但长期来看我们都会死！"
  touhou_focus_buildings_4:0 "工业战"
