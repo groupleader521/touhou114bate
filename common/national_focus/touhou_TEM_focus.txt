@@ -35,7 +35,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 3
+			factor = 5
 			modifier = {
 				factor = 0
 				date < 1937.1.1

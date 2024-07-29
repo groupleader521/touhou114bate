@@ -274,7 +274,13 @@ country_event = {#请求幻想乡合并
 	option = {
 		name = touhou_ai.3.a
 		ai_chance = { base = 1 }
-		FROM = { annex_country = { target = ROOT transfer_troops = no } }
+		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+		every_owned_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_core_of = from
+		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 	option = {
@@ -295,7 +301,15 @@ country_event = {#要求幻想乡合并
 	option = {
 		name = touhou_ai.1.a
 		ai_chance = { base = 1 }
-		FROM = { annex_country = { target = ROOT transfer_troops = no } }
+		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+		ROOT = {
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_core_of = from
+			}
+		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 }
@@ -3963,7 +3977,7 @@ country_event = {#接收傀儡国流亡者-玩家
 				}
 			}
 		}
-		add_manpower = 1000000
+		add_manpower = 200000
 	}
 	option = {
 		name = touhou_capture_character.13.b
@@ -4073,7 +4087,7 @@ country_event = {#接收傀儡国流亡者-AI
 				}
 			}
 		}
-		add_manpower = 1000000		
+		add_manpower = 200000		
 	}
 }
 country_event = {#处置俘虏-玩家吞并
@@ -4219,7 +4233,7 @@ country_event = {#接收被吞并流亡者-玩家
 				}
 			}
 		}
-		add_manpower = 1000000
+		add_manpower = 200000
 	}
 	option = {
 		name = touhou_capture_character.13.b
@@ -4331,6 +4345,6 @@ country_event = {#接收被吞并流亡者-AI
 				}
 			}
 		}
-		add_manpower = 1000000		
+		add_manpower = 200000		
 	}
 }

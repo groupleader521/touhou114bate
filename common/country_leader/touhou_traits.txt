@@ -228,9 +228,9 @@ leader_traits = {
 	
 	marionette_dictator = {
 		random = no
-		political_power_factor = 0.3
-		army_org_Factor = 0.2
-		army_morale_factor = 0.2
+		political_power_factor = 0.15
+		army_org_Factor = 0.05
+		army_morale_factor = 0.05
 		
 		ai_will_do = {
 			factor = 1
@@ -460,8 +460,8 @@ leader_traits = {
 	
 	yongyi = {
 		random = no
-		army_defence_factor = -0.2
-		army_attack_factor = 0.2
+		army_defence_factor = -0.1
+		army_attack_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -470,8 +470,8 @@ leader_traits = {
 	
 	cuixiang = {
 		random = no
-		army_defence_factor = -0.2
-		army_attack_factor = 0.2
+		army_defence_factor = -0.1
+		army_attack_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -706,15 +706,15 @@ leader_traits = {
 		}
 	}
 	touhou_army_armored_3 = { # +12 armor efficiency
-		army_armor_attack_factor = 0.15
-	    army_armor_defence_factor = 0.15
+		army_armor_attack_factor = 0.10
+	    army_armor_defence_factor = 0.10
 		
 		ai_will_do = {
 			factor = 3
 		}
 	}
-	touhou_army_chief_offensive_3 = { # +15 Offensive efficiency
-		army_attack_factor = 0.15
+	touhou_army_chief_offensive_3 = { # +10 Offensive efficiency
+		army_attack_factor = 0.10
 		
 		ai_will_do = {
 			factor = 3
@@ -872,8 +872,8 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	touhou_army_chief_defensive_3 = { # +15 Defensive efficiency
-		army_defence_factor = 0.2
+	touhou_army_chief_defensive_3 = { # +10 Defensive efficiency
+		army_defence_factor = 0.15
 		
 		ai_will_do = {
 			factor = 3
@@ -893,9 +893,9 @@ leader_traits = {
 			factor = 3
 		}
 	}
-	touhou_army_commando_scarlet = { # +12 paratrooper/marine/mountain efficiency
-		special_forces_attack_factor = 0.2
-	    special_forces_defence_factor = 0.2
+	touhou_army_commando_scarlet = { # +15 paratrooper/marine/mountain efficiency
+		special_forces_attack_factor = 0.15
+	    special_forces_defence_factor = 0.15
 		
 		ai_will_do = {
 			factor = 3

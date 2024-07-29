@@ -183,68 +183,6 @@ on_actions = {
 			}
 		}
 	}	
-	on_weekly = {
-		effect = {
-			if = {#侧重国防支出条件BUFF
-				limit = {
-					has_idea = touhou_fiscal_military
-				}
-				if = {#脱战状态
-					limit = { has_war = no }
-					add_war_support = 0.005
-					add_stability = -0.005
-				}
-				if = {#入战状态
-					limit = { has_war = yes }
-					add_war_support = 0.005
-					add_stability = 0.005
-				}
-				if = {#丢失领土
-					limit = {
-						any_owned_state = {
-							is_controlled_by_ROOT_or_ally = no
-						}
-					}
-					add_popularity = {
-						ideology = ROOT
-						popularity = -0.003
-					}
-				}
-				if = {#在不丢失领土的情况下获得领土
-					limit = {
-						all_owned_state = {
-							is_controlled_by_ROOT_or_ally = yes
-						}
-						any_controlled_state = {
-							NOT = { is_owned_by = ROOT }
-						}
-					}
-					add_popularity = {
-						ideology = ROOT
-						popularity = 0.003
-					}
-				}
-			}
-			if = {#投资科教文卫条件BUFF
-				limit = {
-					has_idea = touhou_fiscal_society
-				}
-				add_popularity = {
-					ideology = ROOT
-					popularity = 0.007
-				}
-			}
-			if = {#灵活支出-福利支出条件BUFF
-				limit = {
-					has_idea = touhou_fiscal_flexibility_2
-				}
-				add_popularity = {
-					ideology = ROOT
-					popularity = 0.01
-				}
-			}
-		}
-	}
 	on_startup = {
 		effect = {
 			every_country ={

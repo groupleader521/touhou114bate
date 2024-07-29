@@ -117,12 +117,13 @@
  soul_equipment_0_short:0 "白玉楼移动补给站"
  soul_equipment_0_desc:0 "根据魂魄妖梦的经验设计出的补给装备，能携带大量的补给和燃油。"
 
- wunv_equipment:0 "未来医疗设备"
- wunv_equipment_short:0 "未来医疗设备"
- wunv_equipment_desc:0 "东方谷早苗小姐设计的医疗设备，先进高效，明显改善了伤员状况，据说参考了几十年以后的医疗设备。"
- wunv_equipment_0:0 "未来医疗设备"
- wunv_equipment_0_short:0 "未来医疗设备"
- wunv_equipment_0_desc:0 "东方谷早苗小姐设计的医疗设备，先进高效，明显改善了伤员状况，据说参考了几十年以后的医疗设备。"
+ wunv_equipment:0 "守矢巫女"
+ wunv_equipment_short:0 "守矢巫女"
+ wunv_equipment_desc:0 "对守矢信仰达到了狂热的程度，对于他们而言，其他一切信仰都是异端，是要消灭的对象。虽然说是巫女，然而并非仅有女性。各种性别都有，甚至连妖怪都有。"
+ 
+ wunv_equipment_0:0 "奇迹之星"
+ wunv_equipment_0_short:0 "奇迹之星"
+ wunv_equipment_0_desc:0 "现人神亲传，在经过改良，这个世界的奇迹，奇迹之星。只要信仰守矢便能拥有，还在等什么，快来入教吧。"
  
 #######星莲船#################
  lotus_equipment:0 "星莲船"

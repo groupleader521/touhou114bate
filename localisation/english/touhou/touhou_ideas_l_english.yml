@@ -340,7 +340,7 @@
  touhou_fiscal:0 "财政支出"
  touhou_fiscal_cost_factor:0 "调度财政支出成本"
  touhou_fiscal_society:0 "投资科教文卫"
- touhou_fiscal_society_desc:0 "经[ROOT.capital.GetCapitalVictoryPointName]中央政府判断，我国经济政治运行出现问题，若处理不当，将激化为社会矛盾。为应对预计的不利情况，现决定向社会领域投入额外的财政资金。\n§Y每周增加§G0.7%§!执政党支持率§!"
+ touhou_fiscal_society_desc:0 "经[ROOT.capital.GetCapitalVictoryPointName]中央政府判断，我国经济政治运行出现问题，若处理不当，将激化为社会矛盾。为应对预计的不利情况，现决定向社会领域投入额外的财政资金。
  touhou_fiscal_flexibility:0 "灵活支出-无额外投资"
  touhou_fiscal_flexibility_desc:0 "不进行额外的财政投资，降低行政成本。同时，允许自由调动临时财政支出。"
  touhou_fiscal_flexibility_0:0 "灵活支出-工程投资"
@@ -351,7 +351,7 @@
  touhou_fiscal_flexibility_4:0 "灵活支出-宣传服役"
  touhou_fiscal_flexibility_5:0 "灵活支出-军工投资"
  touhou_fiscal_military:0 "投资国防军事"
- touhou_fiscal_military_desc:0 "经[ROOT.GETNAME]总司令部判断，周边地区出现重大异常，有可能对我国构成直接军事威胁。为应对可能的威胁，现决定向军用领域投入额外的财政资金。\n\n§Y在和平时期，每周增加§G0.5%§!战争支持度，减少§R0.5%§!稳定度§!\n§Y在战争时期，每周增加§G0.5%§!战争支持度，增加§G0.5%§!稳定度§!\n§Y丢失领土时，每周减少§R0.3%§!执政党支持率§!\n§Y扩大领土时，每周增加§G0.3%§!执政党支持率§!"
+ touhou_fiscal_military_desc:0 "经[ROOT.GETNAME]总司令部判断，周边地区出现重大异常，有可能对我国构成直接军事威胁。为应对可能的威胁，现决定向军用领域投入额外的财政资金。
 
  touhou_choose_future:0 "幻想级力量"
  touhou_choose_future_cost_factor:0"幻想级力量花费"

@@ -426,7 +426,6 @@ touhou_unify = {
 		}
 
 		available = {
-			is_ai = no
 			is_subject = no
 			has_country_flag = touhou_country_flag_unity_end
 		}
@@ -470,7 +469,7 @@ touhou_unify = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1000
 		}
 	}
 	touhou_surrender_to_out = {#与外界人和谈
@@ -761,7 +760,7 @@ touhou_unify = {
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 1000
 		}		
 	}
 	touhou_unify_to_other = {#向幻想乡盟友施压
@@ -919,7 +918,7 @@ touhou_unify = {
 		days_remove = 90
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1000
 		}
 
 		visible = {

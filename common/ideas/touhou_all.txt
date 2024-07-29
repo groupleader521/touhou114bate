@@ -441,7 +441,8 @@ ideas = {
 			removal_cost = -1
 	
 			modifier = {
-				ai_get_ally_desire_factor = -100
+				ai_get_ally_desire_factor = -1000
+				ai_focus_aggressive_factor = 1
 				join_faction_tension = 100
 			}
 		}
@@ -507,7 +508,6 @@ ideas = {
 				consumer_goods_factor = -0.6
 				stability_weekly = -0.003
 				war_support_weekly = -0.003
-				weekly_manpower = -1000
 			}
 		}
 		fantasy_live3 = { #重建幻想乡
