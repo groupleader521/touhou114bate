@@ -271,6 +271,7 @@ on_actions = {
 						is_ai = no
 					}
 					country_event = { id = touhou_devildom.5 days = 1802}
+					set_global_flag = touhou_this_is_touhou_mod_identity_flag #幻想世界入mod识别flag
 				}
 			}
 		}
