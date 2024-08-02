@@ -40,7 +40,10 @@ touhou_Unit_leaders = {
 	touhou_find_navy_Kawasiro_Nitori = { #寻找海军上将适任者-河城荷取
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 7
+		days_remove = 70
+		modifier = {
+			political_power_cost = 0.5
+		}
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -94,13 +97,17 @@ touhou_Unit_leaders = {
 	touhou_find_navy_Wakasagihime = { #寻找海军上将适任者-若鹭姬
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 7
+		days_remove = 70
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
 		}
 		custom_cost_text = decision_cost_CP_25_pp_25
 		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
+
+		modifier = {
+			political_power_cost = 0.5
+		}
 
 		available = {
 			any_controlled_state = {
@@ -140,10 +147,13 @@ touhou_Unit_leaders = {
 	touhou_find_sun = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 7
+		days_remove = 70
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
+		}
+		modifier = {
+			political_power_cost = 0.5
 		}
 		custom_cost_text = decision_cost_CP_25_pp_25
 		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }}
@@ -198,7 +208,7 @@ touhou_Unit_leaders = {
 	touhou_find_cloud = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 7
+		days_remove = 70
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -211,7 +221,9 @@ touhou_Unit_leaders = {
 			NOT = { has_idea = fantasy_government }
 			NOT = { has_idea = fantasy_army }
 		}
-
+		modifier = {
+			political_power_cost = 0.5
+		}
 		ai_will_do = {
 			factor = 0
 		}
@@ -238,7 +250,7 @@ touhou_Unit_leaders = {
 	touhou_find_yakumo = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 7
+		days_remove = 70
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -254,6 +266,10 @@ touhou_Unit_leaders = {
 
 		ai_will_do = {
 			factor = 0
+		}
+
+		modifier = {
+			political_power_cost = 0.5
 		}
 
 		visible = {
@@ -278,7 +294,7 @@ touhou_Unit_leaders = {
 	touhou_find_sage = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 7
+		days_remove = 70
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -297,7 +313,9 @@ touhou_Unit_leaders = {
 		visible = {
 			NOT = { has_global_flag = touhou_global_flag_find_sage }
 		}
-
+		modifier = {
+			political_power_cost = 0.5
+		}
 		complete_effect = {
 			hidden_effect = {
 				add_command_power = -25
@@ -315,7 +333,7 @@ touhou_Unit_leaders = {
 	touhou_find_out = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 7
+		days_remove = 70
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -330,7 +348,9 @@ touhou_Unit_leaders = {
 		ai_will_do = {
 			factor = 0
 		}
-		
+		modifier = {
+			political_power_cost = 0.5
+		}
 		visible = {
 			NOT = { has_global_flag = touhou_global_flag_find_out }
 		}
@@ -367,7 +387,7 @@ touhou_Unit_leaders = {
 				has_subject = FROM
 			}
 		}
-		days_remove = 7
+		days_remove = 70
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -378,7 +398,7 @@ touhou_Unit_leaders = {
 			factor = 1
 		}
 		modifier = {
-			political_power_cost = 5
+			political_power_cost = 0.5
 		}
 		complete_effect = {
 			hidden_effect = {

@@ -322,13 +322,14 @@
  touhou_decisions_option_group_desc:0 "回答官方群群号，回答正确有§G奖励§!，回答错误有§R惩罚§!。"
 
 #支部建到地方
- touhou_decisions_categories_everyone_communist:0 "支部建到地方"
- touhou_decisions_categories_everyone_communist_desc:0 "根据考察，凡是拥有一定数量党员的地区，生产积极，秩序稳定，民主观念深入人心。\n未来是人民开创的未来，抓住人民则必须抓好基层。从市开始，形成市党支部，县区有小组，街道与村有党员。我们的党员数量还不足以满足我们的需要，先从各地建立人民委员会开始，在市支部指导下开展工作，用发展满足发展的需求。人民委员会优先解决官民地位一致和种族歧视问题，不能像旧社会那样用强者支配弱者，而要依靠党的基层组织，由下而上，建立新的全面人民民主秩序。\n要把支部建到地方上，要把平等传播到人民所在！"
+ touhou_decisions_categories_everyone_communist:0 "党支部的落地生根"
+ touhou_decisions_categories_everyone_communist_desc:0  "长久以来，人类与妖精的生活如同两条平行的线，彼此之间的误解和隔阂，使得谣言如病毒一般在人类中蔓延。\n为了铸造一个人类和妖精和谐共处的未来，我们必须架起彼此的桥梁，让人类洞察妖精的世界，也让妖精理解人类的价值。我们的未来，不应该只是妖精的未来，也不会只是人类的未来。\n当人类的创造力和妖精的力量结合在一起，我们必定能创造出一个充满希望的未来!"
+
  touhou_decisions_categories_name_everyone_communist:0 "以下是尚未建立党支部的地区。"
  touhou_decisions_everyone_communist:0 "在[FROM.GetName]成立党支部"
- touhou_decisions_everyone_communist_desc:0 "根据党中央指示，我们需要在[FROM.GetName]建立党支部，让党员扎根群众，带动当地的经济建设、教育建设、思想建设和政治建设。"
- touhou_tooltip_everyone_communist:0 "强化§Y党支部-生产建设§!、§Y党支部-军队建设§!和§Y党支部-思想建设§!。"
- touhou_state_flag_everyone_communist:0 "已在[FROM.GetName]成立党支部"
+ touhou_decisions_everyone_communist_desc:0 "[FROM.GetName]的人们尚未了解妖精，建立党支部，让党员扎根群众，引导人妖和解，实现共同繁荣。"
+ touhou_tooltip_everyone_communist:0 "强化§Y支部-生产建设§!、§Y党支部-军队建设§!和§Y党支部-思想建设§!。"
+ touhou_state_flag_everyone_communist:0 "已在[FROM.GetName]成立支部"
 
 #我们的未来
  touhou_decisions_categories_everyone_communist_core:0 "我们的未来"

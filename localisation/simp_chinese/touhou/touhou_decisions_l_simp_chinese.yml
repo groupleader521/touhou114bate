@@ -322,13 +322,14 @@
  touhou_decisions_option_group_desc:0 "回答官方群群号，回答正确有§G奖励§!，回答错误有§R惩罚§!。"
 
 #支部建到地方
- touhou_decisions_categories_everyone_communist:0 "支部建到地方"
- touhou_decisions_categories_everyone_communist_desc:0 "根据考察，凡是拥有一定数量党员的地区，生产积极，秩序稳定，民主观念深入人心。\n未来是人民开创的未来，抓住人民则必须抓好基层。从市开始，形成市党支部，县区有小组，街道与村有党员。我们的党员数量还不足以满足我们的需要，先从各地建立人民委员会开始，在市支部指导下开展工作，用发展满足发展的需求。人民委员会优先解决官民地位一致和种族歧视问题，不能像旧社会那样用强者支配弱者，而要依靠党的基层组织，由下而上，建立新的全面人民民主秩序。\n要把支部建到地方上，要把平等传播到人民所在！"
+ touhou_decisions_categories_everyone_communist:0 "党支部的落地生根"
+ touhou_decisions_categories_everyone_communist_desc:0  "长久以来，人类与妖精的生活如同两条平行的线，彼此之间的误解和隔阂，使得谣言如病毒一般在人类中蔓延。\n为了铸造一个人类和妖精和谐共处的未来，我们必须架起彼此的桥梁，让人类洞察妖精的世界，也让妖精理解人类的价值。我们的未来，不应该只是妖精的未来，也不会只是人类的未来。\n当人类的创造力和妖精的力量结合在一起，我们必定能创造出一个充满希望的未来!"
+
  touhou_decisions_categories_name_everyone_communist:0 "以下是尚未建立党支部的地区。"
  touhou_decisions_everyone_communist:0 "在[FROM.GetName]成立党支部"
- touhou_decisions_everyone_communist_desc:0 "根据党中央指示，我们需要在[FROM.GetName]建立党支部，让党员扎根群众，带动当地的经济建设、教育建设、思想建设和政治建设。"
- touhou_tooltip_everyone_communist:0 "强化§Y党支部-生产建设§!、§Y党支部-军队建设§!和§Y党支部-思想建设§!。"
- touhou_state_flag_everyone_communist:0 "已在[FROM.GetName]成立党支部"
+ touhou_decisions_everyone_communist_desc:0 "[FROM.GetName]的人们尚未了解妖精，建立党支部，让党员扎根群众，引导人妖和解，实现共同繁荣。"
+ touhou_tooltip_everyone_communist:0 "强化§Y支部-生产建设§!、§Y党支部-军队建设§!和§Y党支部-思想建设§!。"
+ touhou_state_flag_everyone_communist:0 "已在[FROM.GetName]成立支部"
 
 #我们的未来
  touhou_decisions_categories_everyone_communist_core:0 "我们的未来"
@@ -444,7 +445,7 @@ touhou_evil_rize_up_start_desc:0 "我们准备好了，去实现妖精的独立�
  touhou_decisions_touhou_fiscal_military_1:0 "对[FROM.GETNAME]进行武力威胁"
  touhou_decisions_touhou_fiscal_military_1_desc:0 "\n§R对方可能会接受傀儡，如果拒绝，我们将在数日后主动宣战§!"
 
-#和平演变
+#和平演变(已停用)
 touhou_decisions_categories_touhou_fiscal_society:0 "和平演变"
 touhou_decisions_categories_touhou_fiscal_society_desc:0 "通过一场真枪实弹的“热战”不但难以击溃敌对国家，而且这种战争的代价是我们自己也难以承受的。我们可以通过与敌对国家的“和平”接触，用我们的价值观、意识形态和生活方式影响和改造他们，特别是青年人，尤其是精英阶层的青年人。使敌对国家逐步变得对我们无害，逐步演变成我们的“人力资源”。\n新的时代，应该采用新的战争手段，但结果是一样的。"
 touhou_decisions_touhou_fiscal_society_0:0 "对[FROM.GETNAME]进行渗透"
@@ -452,7 +453,7 @@ touhou_dynamic_modifiers_touhou_fiscal_society_0:0 "国际支援"
 touhou_dynamic_modifiers_touhou_fiscal_society_0_desc:0 "我们拿到了一笔国际资金，同时，对方愿意免费接收留学生，尤其是政治、军事、科研等领域的年轻人。这很好，但这真的好吗？"
 touhou_decisions_touhou_fiscal_society_1:0 "傀儡[FROM.GETNAME]"
 
-#灵活支出
+#灵活支出(已停用)
 touhou_decisions_categories_touhou_fiscal_flexibility:0 "灵活支出"
 touhou_decisions_categories_touhou_fiscal_flexibility_desc:0 "为达到科学运用财政资金，满足国家完成各项职能的需要的目的，财政支出的安排应体现以下原则：\n（1）量入为出。财政支出的安排应在财政收入允许的范围内，避免出现大幅度的财政赤字。\n（2）统筹兼顾。要处理好积累性支出与消费性支出的关系、生产性支出与非生产性支出的关系，做到统筹兼顾，全面安排。\n（3）讲求效益。财政支出的效益体现在财政投资的经济效益和社会效益两个方面，要保证有限的财政资金最大限度的效益。"
 touhou_country_flag_touhou_fiscal_flexibility_changing:0 "正在调整财政支出计划"

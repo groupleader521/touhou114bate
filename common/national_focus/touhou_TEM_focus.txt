@@ -27,6 +27,7 @@ focus_tree = {
 		id = touhou_TEM_out
 		icon = GFX_goal_generic_intelligence_exchange
 		available = {
+			date > 1936.12.1
 		}
 		x = 27
 		y = 0
@@ -36,10 +37,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 5
-			modifier = {
-				factor = 0
-				date < 1937.1.1
-			}
 		}
 		completion_reward = {
 			add_ideas = touhou_ministry_of_foreign_affairs

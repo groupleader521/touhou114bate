@@ -91,7 +91,7 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				conscription = 0.05
+				conscription = 0.02
 			}
 		}
 		touhou_xianglin_business_idea = {
@@ -148,8 +148,7 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				conscription = 0.05
-				MONTHLY_POPULATION = 0.4
+				MONTHLY_POPULATION = 0.5
 			}
 		}
 		touhou_vampire_infantry_idea = {

@@ -877,13 +877,13 @@
 			custom_effect_tooltip = touhou_strategy_mediate_tooltip
 		}
 	}
-	
+#
 	shared_focus = {#召开贤者大会
 		id = touhou_oracle_meeting
 		icon = GFX_goal_generic_dangerous_deal
 		x = 8
 		y = 0
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -904,7 +904,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_oracle_meeting
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -932,7 +932,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_query_oracle
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -961,7 +961,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_oracle_meeting
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -990,7 +990,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_support_oracle
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1019,7 +1019,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_oracle_secretary
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1047,7 +1047,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_shuffle_oracle
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1075,7 +1075,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_reelect_oracle
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1108,7 +1108,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_appoint_oracle
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1145,7 +1145,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_oracle_secretary
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1173,7 +1173,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_reform_oracle
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1201,7 +1201,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_general_oracle
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1232,7 +1232,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_new_oracle
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1263,7 +1263,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_politics_oracle
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1291,7 +1291,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_oracle_support
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1319,7 +1319,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_connect_oracle
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1350,7 +1350,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_cabinet_oracle
-		cost = 8
+		cost =5
 
 		available = {
 		}
@@ -1378,7 +1378,7 @@
 		icon = GFX_goal_generic_construct_infrastructure
 		x =14
 		y = 0
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 982
@@ -1400,7 +1400,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_evil_happy_place
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1001
@@ -1427,7 +1427,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_boli_wunv
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1002
@@ -1456,7 +1456,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_evil_happy_place
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1007
@@ -1483,7 +1483,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_shousi_wunv
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 999
@@ -1513,7 +1513,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_boli_wunv
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1005
@@ -1537,7 +1537,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_human_publicity
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 993
@@ -1561,7 +1561,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_human_publicity
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 983
@@ -1586,7 +1586,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_xianglin_business
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 994
@@ -1613,7 +1613,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_doll_factory
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1015
@@ -1638,7 +1638,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_kappa_private_research
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1006
@@ -1665,7 +1665,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_vampire_infantry
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1006
@@ -1689,7 +1689,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_doll_factory
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 984
@@ -1721,7 +1721,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_tengu_air
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 997
@@ -1748,7 +1748,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_power_hell_stove
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 997
@@ -1879,7 +1879,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_tengu_air
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 998
@@ -1906,7 +1906,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_ghost_extradite
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1000
@@ -1930,7 +1930,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_power_hell_stove
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1004
@@ -1970,7 +1970,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_special_forces_drill
-		cost = 8
+		cost =5
 		ai_will_do = {
 			factor = 1000
 		}
@@ -2013,7 +2013,7 @@
 		mutually_exclusive = { focus = touhou_power_move_road }
 		x = 1
 		y = 0
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1004
@@ -2080,7 +2080,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_power_boli_wall
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1004
@@ -2158,7 +2158,7 @@
 		mutually_exclusive = { focus = touhou_power_boli_wall }
 		x = 3
 		y = 0
-		cost = 8
+		cost =5
 
 		available = {
 			controls_state = 1004
@@ -2221,7 +2221,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_power_move_road
-		cost = 8
+		cost =5
 		
 		available = {
 			controls_state = 1004
@@ -2300,7 +2300,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_sea_boli_wall
-		cost = 8
+		cost =5
 		ai_will_do = {
 			factor = 1000
 		}
@@ -2391,7 +2391,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_bread_and_butter
-		cost = 8
+		cost =5
 		ai_will_do = {
 			factor = 1000
 		}
@@ -2410,7 +2410,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_sea_move_road
-		cost = 8
+		cost =5
 		ai_will_do = {
 			factor = 1000
 		}
@@ -2501,7 +2501,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_guns_and_cannons
-		cost = 8
+		cost =5
 		ai_will_do = {
 			factor = 1000
 		}
@@ -2523,7 +2523,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_sea_boli_wall
-		cost = 8
+		cost =5
 		
 		available = {
 			controls_state = 1004
@@ -2595,7 +2595,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_safe_air
-		cost = 8
+		cost =5
 		ai_will_do = {
 			factor = 1000
 		}
@@ -2618,7 +2618,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_ministry_of_plan
-		cost = 8
+		cost =5
 		ai_will_do = {
 			factor = 1000
 		}
@@ -2648,7 +2648,7 @@
 		x = -1
 		y = 1
 		relative_position_id = touhou_army_leader_power
-		cost = 8
+		cost =5
 		ai_will_do = {
 			factor = 1000
 		}
@@ -2668,7 +2668,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_for_the_fantasy
-		cost = 8
+		cost =5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2713,7 +2713,7 @@
 		x = 1
 		y = 1
 		relative_position_id = touhou_army_leader_power
-		cost = 8
+		cost =5
 		ai_will_do = {
 			factor = 1000
 		}
@@ -2743,7 +2743,7 @@
 		x = 0
 		y = 1
 		relative_position_id = touhou_terrors_unknown
-		cost = 8
+		cost =5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2783,7 +2783,7 @@
 		}
 	}
 	
-
+#
 
 	shared_focus = {#外界航空装备
 		id = touhou_aviation_effort
@@ -3478,7 +3478,7 @@
 		icon = GFX_goal_generic_production
 		x = 14
 		y = 0
-		cost = 8
+		cost = 5
 
 		available_if_capitulated = yes
 

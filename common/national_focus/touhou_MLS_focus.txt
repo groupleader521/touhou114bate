@@ -28,6 +28,7 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		mutually_exclusive = { }
 		available = {
+			date > 1936.12.1
 		}
 		x = 29
 		y = 0
@@ -37,10 +38,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 5
-			modifier = {
-				factor = 0
-				date < 1937.1.1
-			}
 		}
 
 		completion_reward = {

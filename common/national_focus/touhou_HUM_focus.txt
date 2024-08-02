@@ -33,14 +33,14 @@ focus_tree = {
 		y = 0
 		cost = 5
 
+		available = {
+			date > 1936.12.1
+		}
+
 		available_if_capitulated = yes
 
 		ai_will_do = {
 			factor = 5
-			modifier = {
-				factor = 0
-				date < 1937.1.1
-			}
 		}
 
 		completion_reward = {

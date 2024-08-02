@@ -118,7 +118,7 @@
 #工业国策树
  touhou_industrial_effort:0 "邀请工业改革顾问"
  touhou_industrial_effort_desc:0 "虽然幻想乡里没有所谓工业的概念，我们依然有着自己的生产方式，这给了我们宝贵的时间向外界学习，让我们的生产能力得以适应这个世界。"
- touhou_industrial_effort_tt:0 "解锁§Y外界工程学科技树§!和§Y外界工业科技树§!\n工业改革顾问让我们的科研速度、工厂产出和建筑速度各提升5%"
+ touhou_industrial_effort_tt:0 "解锁§Y外界工程学科技树§!和§Y外界工业科技树§!\n工业改革顾问让我们的工厂产出提升5%"
 #科研线
  touhou_focus_research:0 "重视科研"
  touhou_focus_research_desc:0 "世界入之后，各方势力都在蠢蠢欲动，我们要快点掌握更先进的技术。"
@@ -146,10 +146,10 @@
 #建筑线
  touhou_focus_buildings:0 "重视建造"
  touhou_focus_buildings_desc:0 "世界入之后，各方势力都在蠢蠢欲动，我们必须利用好每一寸土地。"
- touhou_focus_buildings_tt:0 "工业改革顾问增加5%的建筑速度（共10%）。"
+ touhou_focus_buildings_tt:0 "工业改革顾问增加5%的建筑速度。"
  touhou_focus_buildings_2:0 "水中工程师"
  touhou_focus_buildings_2_desc:0 "河童是幻想乡真正的工程师，比起相信半路出家的其他人，我们应该把发展交给专家。"
- touhou_focus_buildings_2_tt:0 "河童重工增加10%的建造速度，并为工业改革额外增加5%的建筑速度。（共15%）"
+ touhou_focus_buildings_2_tt:0 "河童重工增加5%的建造速度，并为工业改革额外增加5%的建筑速度。（共10%）"
  touhou_focus_buildings_3:0 "开发异世界的土地"
  touhou_focus_buildings_3_desc:0 "我们打开了不该打开的门，这必定会为我们埋下隐患，但长期来看我们都会死！"
  touhou_focus_buildings_4:0 "工业战"
