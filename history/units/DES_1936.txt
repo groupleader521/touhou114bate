@@ -38,13 +38,13 @@ units = {
 
 	division = { 
 		name = "道士"
-		location = 13281 
+		location = 13371 
 		division_template = "道士"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "仙人"
-		location = 13281 
+		location = 13371 
 		division_template = "道士"
 		start_experience_factor = 0.1
 	}
