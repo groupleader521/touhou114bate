@@ -24,6 +24,7 @@ touhou_dynamic_modifiers_everyone_communist_army = {#党支部-军队建设
 	icon = GFX_focus_SOV_builder_of_the_red_army
 	max_command_power_mult = 0.2	
 	army_attack_factor = touhou_var_everyone_communist_army_attack_factor #党支部-军队建设陆军攻击变量
+	army_defence_factor = touhou_var_everyone_communist_army_attack_factor
 	army_org_factor = touhou_var_everyone_communist_army_org_factor #党支部-军队建设陆军组织度变量
 	command_power_gain_mult = touhou_var_everyone_communist_command_power_gain_mult #党支部-军队建设指挥点增速变量
 	# war_support_weekly = touhou_var_everyone_communist_war_support_weekly_army #党支部-军队建设每周战争支持度变量
@@ -87,6 +88,7 @@ touhou_dynamic_modifiers_character = {#幻想乡精英
 	experience_gain_navy = touhou_var_first_line
 	experience_gain_air = touhou_var_first_line
 }
+
 touhou_dynamic_modifiers_touhou_fiscal_society_0 = {#国际援助
 	enable = { always = yes }
 	icon = GFX_idea_SPR_seize_the_gold_reserves
@@ -96,4 +98,34 @@ touhou_dynamic_modifiers_touhou_fiscal_society_0 = {#国际援助
 	fascism_drift = touhou_var_touhou_fiscal_society_fascism_drift
 	neutrality_drift = touhou_var_touhou_fiscal_society_neutrality_drift
 	consumer_goods_factor = touhou_var_touhou_fiscal_society_consumer_goods_factor
+}
+
+touhou_dynamic_modifiers_fantasy_live = { #重建幻想乡
+	enable = { always = yes }
+
+	icon =  GFX_idea_FRA_factory_strikes
+	
+	consumer_goods_expected_value = touhou_var_fantasy_consumer_goods_expected_value
+	stability_weekly = touhou_var_fantasy_stability_weekly
+	war_support_weekly = touhou_var_fantasy_war_support_weekly
+	industrial_capacity_factory = touhou_var_fantasy_industrial_capacity_factory
+	industrial_capacity_dockyard = touhou_var_fantasy_industrial_capacity_factory
+	training_time_army_factor = touhou_var_fantasy_training_time_army_factor
+	conscription_factor = touhou_var_fantasy_conscription_factor
+	army_org_factor = touhou_var_fantasy_army_org_factor
+	production_speed_buildings_factor = touhou_var_fantasy_production_speed_buildings_factor
+	political_power_factor = touhou_var_fantasy_political_power_factor
+	justify_war_goal_time = touhou_var_fantasy_justify_war_goal_time
+
+	army_leader_start_defense_level = touhou_var_fantasy_army_leader_start_defense_level
+	army_leader_start_attack_level = touhou_var_fantasy_army_leader_start_attack_level
+	army_leader_start_planning_level = touhou_var_fantasy_army_leader_start_planning_level
+	army_leader_start_logistics_level = touhou_var_fantasy_army_leader_start_logistics_level
+	max_command_power = touhou_var_fantasy_max_command_power
+	command_power_gain_mult = touhou_var_fantasy_command_power_gain_mult
+	army_leader_start_level = touhou_var_fantasy_army_leader_start_level
+	
+	army_attack_factor = touhou_var_fantasy_army_attack_factor
+	army_defence_factor = touhou_var_fantasy_army_defence_factor
+
 }

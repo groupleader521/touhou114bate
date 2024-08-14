@@ -3,8 +3,6 @@ focus_tree = {
 	
 	default = no
 	shared_focus = touhou_oracle_meeting
-	shared_focus = touhou_power_boli_wall
-	shared_focus = touhou_power_move_road
 	shared_focus = touhou_evil_happy_place
 	shared_focus = touhou_into_the_world
 }

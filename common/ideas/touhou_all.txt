@@ -466,6 +466,31 @@ ideas = {
 				production_speed_buildings_factor = -0.6
 			}
 		}
+
+		touhou_fantsy_intelligence = {
+
+			picture = YUG_federal_defense_council
+
+			allowed ={
+				always = no
+			}
+
+			modifier = {
+				agency_upgrade_time = -0.15
+				intel_network_gain = 0.2
+				army_intel_factor = 0.2
+				civilian_intel_factor = 0.2
+				airforce_intel_factor = 0.2
+				navy_intel_factor = 0.2
+				operative_slot = 1
+				intelligence_agency_defense = 3.0
+				civilian_intel_to_others = -10
+				ARMY_INTEL_TO_OTHERS = -5
+				NAVY_INTEL_TO_OTHERS = -5
+				AIRFORCE_INTEL_TO_OTHERS = -5
+			}
+		}
+
 		fantasy_live = {#幻想乡生活
 		
 			picture = fantasy_live
@@ -535,7 +560,7 @@ ideas = {
 				army_org_factor = -0.25
 				production_speed_buildings_factor = -0.2
 				political_power_factor = -0.20
-				justify_war_goal_time = 0.5
+				justify_war_goal_time = 1
 			}
 		}
 		fantasy_live4 = { #重建幻想乡

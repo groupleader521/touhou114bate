@@ -344,7 +344,7 @@ touhou_evil_rize_up_desc:0 "斯卡雷特帝国选择无视我们的独立请求�
 touhou_evil_rize_up_start:0 "准备完成，起义开始！"
 touhou_evil_rize_up_start_desc:0 "我们准备好了，去实现妖精的独立！"
 
-#支部工作重心
+#支部工作重心 #文案待重写
  touhou_decisions_categories_everyone_communist_focus:0 "支部工作重心"
  touhou_decisions_categories_everyone_communist_focus_desc:0 "我们的理想不可能一蹴而就，也不可能生搬硬套某一种方法或思路。必须有的放矢，根据实际情况确定主要矛盾，针对主要矛盾调整各支部的工作重心。" 
  touhou_dynamic_modifiers_everyone_communist_focus:0 "改革阵痛"

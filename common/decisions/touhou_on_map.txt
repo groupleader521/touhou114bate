@@ -128,10 +128,10 @@ touhou_decisions_categories_everyone_communist = {#支部建到地方
 			}
 			#党支部-军队建设变量
 			add_to_variable = {
-				touhou_var_everyone_communist_army_attack_factor = 0.003
+				touhou_var_everyone_communist_army_attack_factor = 0.002
 			}
 			add_to_variable = {
-				touhou_var_everyone_communist_army_org_factor = 0.004
+				touhou_var_everyone_communist_army_org_factor = 0.003
 			}
 			add_to_variable = {
 				touhou_var_everyone_communist_command_power_gain_mult = 0.005				
