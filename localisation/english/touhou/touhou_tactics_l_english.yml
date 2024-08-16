@@ -1,66 +1,66 @@
 ﻿l_english:
  #幻想乡通用
- tactic_touhou_barrage_defender:0 "弹幕阻击"
- tactic_touhou_barrage_attacker:0 "弹幕打击"
+ tactic_touhou_barrage_defender:0 "Barrage interception"
+ tactic_touhou_barrage_attacker:0 "Barrage strike"
  #幽灵族
- tactic_touhou_defend_chop:0 "来敌尽斩"
- tactic_touhou_opp_banzai_charge:0 "律令"
+ tactic_touhou_defend_chop:0 "Kill all enemies"
+ tactic_touhou_opp_banzai_charge:0 "Law and order"
  
- tactics_need_ghost_politics_tt:0 "拥有§Y幽灵§!作为§Y主要种族§!"
+ tactics_need_ghost_politics_tt:0 "Having \" Y Ghost \"! As \" Y's main race \" \" \" "
  #人族
- tactic_touhou_bli_basic_defend:0 "此路不通"
- tactic_touhou_TEM_cc_defend:0 "超人"
- tactic_touhou_mls_overwhelming_fire:0 "弹幕就是火力"
- tactic_touhou_hum_tw_defend:0 "不死鸟"
- tactic_touhou_des_defender_hb_hold:0 "修整空间"
- tactic_touhou_sss_banzai_charge:0 "神明之言"
+ tactic_touhou_bli_basic_defend:0 "This road is not accessible"
+ tactic_touhou_TEM_cc_defend:0 "Superman"
+ tactic_touhou_mls_overwhelming_fire:0 "Barrage is firepower"
+ tactic_touhou_hum_tw_defend:0 "Undead bird"
+ tactic_touhou_des_defender_hb_hold:0 "Repair space"
+ tactic_touhou_sss_banzai_charge:0 "The Words of the Gods"
  
- tactics_need_human_politics_tt:0 "拥有§Y人类§!作为§Y主要种族§!"
+ tactics_need_human_politics_tt:0 "Having \" Y humans \"! As \" Y's main race \" \" \" "
  #地灵殿
- tactic_touhou_dld_tw_chase:0 "地狱巡礼"
+ tactic_touhou_dld_tw_chase:0 "Hell Parade"
  
- tactics_need_animal_politics_tt:0 "拥有§Y魔兽§!作为§Y主要种族§!"
+ tactics_need_animal_politics_tt:0 "Owning \" Y Warcraft \" \" \"! As \" Y's main race \" \" \" "
  #鬼族
- tactic_touhou_hel_cc_attack:0 "碎星"
+ tactic_touhou_hel_cc_attack:0 "Broken Star"
  
- tactics_need_hell_politics_tt:0 "拥有§Y鬼§!作为§Y主要种族§!"
+ tactics_need_hell_politics_tt:0 "Having \" Y Ghost \"! As \" Y's main race \" \" \" "
  #河童
- tactic_defender_touhou_kap_sb_retake_bridge:0 "水斗"
+ tactic_defender_touhou_kap_sb_retake_bridge:0 "Water bucket"
  
- tactics_need_kappa_politics_tt:0 "拥有§Y河童§!作为§Y主要种族§!"
+ tactics_need_kappa_politics_tt:0 "Having \" Y River Boy \"! As \" Y's main race \" \" \" "
  #血族
- tactic_touhou_vam_tw_attack:0 "笼中鸟"
+ tactic_touhou_vam_tw_attack:0 "Caged bird"
  
- tactics_need_vampire_politics_tt:0 "拥有§Y血族§!作为§Y主要种族§!"
+ tactics_need_vampire_politics_tt:0 "Having \" Y bloodline \"! As \" Y's main race \" \" \" "
  #天狗
- tactic_touhou_ten_basic_defend:0 "守望"
+ tactic_touhou_ten_basic_defend:0 "Watchman"
  
- tactics_need_tengu_politics_tt:0 "拥有§Y天狗§!作为§Y主要种族§!"
+ tactics_need_tengu_politics_tt:0 "Owning \" Y Tengu \"! As \" Y's main race \" \" \" "
  #妖精
- tactic_touhou_evi_seize_bridge:0 "冰封千里"
+ tactic_touhou_evi_seize_bridge:0 "Frozen for thousands of miles"
  
- tactics_need_evil_politics_tt:0 "拥有§Y妖精§!作为§Y主要种族§!"
+ tactics_need_evil_politics_tt:0 "Having \" Y Fairy \"! As \" Y's main race \" \" \" "
  #永远亭
- tactic_touhou_rab_guerrilla_tactics:0 "幻境之瞳"
+ tactic_touhou_rab_guerrilla_tactics:0 "Vision Eye"
  
- tactics_need_rabbit_politics_tt:0 "拥有§Y妖怪兔§!作为§Y主要种族§!"
+ tactics_need_rabbit_politics_tt:0 "Owning \" Y Monster Rabbit \"! As \" Y's main race \" \" \" "
  #人偶族
- tactic_touhou_attacker_ali_assault:0 "人偶浪潮"
- tactic_touhou_attacker_ali_cc_storm:0 "人偶神风击"
- tactic_touhou_defender_ali_cc_local_strong_point:0 "千枪阵"
- tactic_touhou_attacker_ali_cc_withdraw:0 "人偶戏法"
- tactic_touhou_attacker_ali_breakthrough:0 "人偶突破"
- tactic_touhou_ali_backhand_blow:0 "人偶机动阵"
- tactic_touhou_ali_tactical_withdrawal:0 "人偶殿后军"
- tactic_touhou_ali_tw_chase:0 "人偶游猎"
- tactic_touhou_ali_tw_evade:0 "镜中世界"
- tactic_touhou_ali_tw_intercept:0 "欢迎回到人偶之家"
- tactic_touhou_ali_seize_bridge:0 "人偶之桥"
- tactic_touhou_ali_attacker_sb_skillful_defence:0 "人偶桥卫·护"
- tactic_touhou_ali_defender_sb_assault:0 "人偶海"
- tactic_touhou_ali_defender_sb_retake_bridge:0 "重回血腥之地"
- tactic_touhou_ali_hold_bridge:0 "手中之物"
- tactic_touhou_ali_attacker_hb_rush:0 "强袭血腥之地"
- tactic_touhou_ali_defender_hb_skillful_defence:0 "人偶桥卫·镇"
+ tactic_touhou_attacker_ali_assault:0 "Doll Wave"
+ tactic_touhou_attacker_ali_cc_storm:0 "Puppet Divine Wind Strike"
+ tactic_touhou_defender_ali_cc_local_strong_point:0 "Thousand Gun Formation"
+ tactic_touhou_attacker_ali_cc_withdraw:0 "Puppet Tricks"
+ tactic_touhou_attacker_ali_breakthrough:0 "Puppet breakthrough"
+ tactic_touhou_ali_backhand_blow:0 "Puppet Mobile Formation"
+ tactic_touhou_ali_tactical_withdrawal:0 "Puppet Palace Rear Army"
+ tactic_touhou_ali_tw_chase:0 "Puppet Hunting"
+ tactic_touhou_ali_tw_evade:0 "Mirror World"
+ tactic_touhou_ali_tw_intercept:0 "Welcome back to the Doll House"
+ tactic_touhou_ali_seize_bridge:0 "The Bridge of Dolls"
+ tactic_touhou_ali_attacker_sb_skillful_defence:0 "Puppet Bridge Guard · Protection"
+ tactic_touhou_ali_defender_sb_assault:0 "Doll Sea"
+ tactic_touhou_ali_defender_sb_retake_bridge:0 "Return to the bloody land"
+ tactic_touhou_ali_hold_bridge:0 "The object in hand"
+ tactic_touhou_ali_attacker_hb_rush:0 "Forcefully attacking the bloody land"
+ tactic_touhou_ali_defender_hb_skillful_defence:0 "Puppet Bridge Guard Town"
  
- tactics_need_marionette_politics_tt:0 "拥有§Y人偶§!作为§Y主要种族之一§!或§Y唯一主要种族§!"
+ tactics_need_marionette_politics_tt:0 "Having \" Y dolls \"! As one of the main races of \" \" Y \" \" \"! Or \" Y, the only major race \" \" \" "
