@@ -428,8 +428,6 @@ touhou_decisions_categories_everyone_communist_focus = {#支部工作重心
 			add_dynamic_modifier = {
 				modifier = touhou_dynamic_modifiers_everyone_communist_economy
 			}
-			add_stability = 0.1
-			add_war_support = 0.1
 		}
 	}
 	touhou_decisions_everyone_communist_army = {#以军队建设为重心
@@ -507,7 +505,6 @@ touhou_decisions_categories_everyone_communist_focus = {#支部工作重心
 			add_dynamic_modifier = {
 				modifier = touhou_dynamic_modifiers_everyone_communist_army
 			}
-			add_command_power = 50
 		}
 	}
 	touhou_decisions_everyone_communist_ideology = {#以思想建设为重心
@@ -584,9 +581,6 @@ touhou_decisions_categories_everyone_communist_focus = {#支部工作重心
 			}
 			add_dynamic_modifier = {
 				modifier = touhou_dynamic_modifiers_everyone_communist_ideology
-			}
-			every_controlled_state = {
-				add_compliance = 5
 			}
 		}
 	}		

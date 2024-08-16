@@ -12,7 +12,10 @@
  fantasy_government_desc:0 "幻想乡一直处于无政府状态，一座寺庙几户人家就能画地自治，然而为了应对现在的局面，没有一个强力的政府明显是不行的。如果[Root.GetName]不能尽快改变这样的情况，那些外来的人类迟早会将[Root.GetName]撕碎。"
  fantasy_army:0 "幻想乡军队"
  fantasy_army_desc:0 "在幻想乡里由于妖力的存在，个体的作用被无限放大，这在幻想乡那种小地区的冲突时是有效的，然而并不适合现在这种大范围、深纵深、参与人数众多的战斗，[Root.GetName]对这种新式的战斗方式毫无头绪也无法适应。如果[Root.GetName]不能尽快改变这样的情况，那些外来的人类迟早会将[Root.GetName]撕碎。"
- 
+
+ touhou_fantsy_intelligence:0 "幻想乡情报部门"
+ touhou_fantsy_intelligence_desc:0 "我们依靠独特的幻想力量建立了属于我们独特的情报部门"
+
  good_fantasy_all:0 "平衡发展"
  good_fantasy_all_desc:0 "[Root.GetName]选择了平衡发展，在强大异能的帮助下，[Root.GetName]所有的能力都得到了提升。"
  super_fantasy_industry:0 "幻想级工业"
