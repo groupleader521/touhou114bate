@@ -21,7 +21,6 @@ mio_cat_eq_touhou_all_infantry = {
 		rabbit_team_equipment
 		soul_equipment
 		wunv_equipment
-		magician_equipment
 	}
 }
 

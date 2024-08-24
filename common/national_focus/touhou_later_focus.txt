@@ -1,0 +1,1209 @@
+	shared_focus = {#召开贤者大会
+		id = touhou_oracle_meeting
+		icon = GFX_goal_generic_dangerous_deal
+		x = 10
+		y = 0
+		cost =5
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	shared_focus = {#来自贤者的支持
+		id = touhou_sages_support
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = touhou_oracle_meeting }
+		relative_position_id = touhou_oracle_meeting
+		x = 0
+		y = 1
+		cost = 5
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_1_tt
+			add_to_variable = { touhou_var_fantasy_consumer_goods_expected_value = -0.05 }
+			add_to_variable = { touhou_var_fantasy_stability_weekly = 0.002 }
+			add_to_variable = { touhou_var_fantasy_war_support_weekly = 0.002 }
+		}
+	}
+
+	shared_focus = {#贤者政治顾问
+		id = touhou_politics_oracle
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = touhou_sages_support }
+		x = 1
+		y = 1
+		relative_position_id = touhou_sages_support
+		cost =5
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_2_tt
+			add_to_variable = { touhou_var_fantasy_political_power_factor = 0.05 }
+		}
+	}
+
+	shared_focus = {#重建幻想乡
+		id = touhou_rebuild_fantasy_land
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = touhou_sages_support }
+		x = -1
+		y = 1
+		relative_position_id = touhou_sages_support
+
+		cost =5
+
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_state = {
+				limit = { is_core_of = root }
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_3_tt
+			add_to_variable = { touhou_var_fantasy_consumer_goods_expected_value = -0.05 }
+			add_to_variable = { touhou_var_fantasy_production_speed_buildings_factor = 0.10 }
+		}
+	}
+	shared_focus = {#调和内部矛盾
+		id = touhou_new_oracle
+		icon = touhou_future
+		prerequisite = {
+			focus = touhou_politics_oracle
+		}
+		prerequisite = {
+			focus = touhou_rebuild_fantasy_land
+		}
+		x = -1
+		y = 1
+		relative_position_id = touhou_rebuild_fantasy_land
+		cost = 10
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_4_tt
+			add_to_variable = { touhou_var_fantasy_stability_weekly = 0.002 }
+			add_to_variable = { touhou_var_fantasy_war_support_weekly = 0.002 }
+			add_to_variable = { touhou_var_fantasy_consumer_goods_expected_value = -0.05 }
+			add_to_variable = { touhou_var_fantasy_training_time_army_factor = -0.1 }
+			add_to_variable = {	touhou_var_fantasy_army_org_factor = 0.15 }
+			add_to_variable = {	touhou_var_fantasy_conscription_factor = 0.2 }
+			add_to_variable = { touhou_var_fantasy_industrial_capacity_factory = 0.1 }
+			add_to_variable = {	touhou_var_fantasy_justify_war_goal_time = -0.6 }
+		}
+	}
+	shared_focus = {#面包和黄油
+		id = touhou_bread_and_butter
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = touhou_new_oracle }
+		x = -1
+		y = 1
+		relative_position_id = touhou_new_oracle
+
+		cost =5
+
+		ai_will_do = {
+			factor = 1000
+		}
+		bypass = {
+			AND = {
+				custom_trigger_tooltip =  {
+					tooltip = production_effort_tt
+					all_owned_state = {
+						free_building_slots = {
+							building = industrial_complex
+							size < 2
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_5_tt
+			every_state = {
+				limit = { has_state_flag = touhou_bread_and_butter_2AF }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			add_to_variable = { touhou_var_fantasy_production_speed_buildings_factor = 0.05 }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = touhou_bread_and_butter_2AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = touhou_bread_and_butter_2AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = touhou_bread_and_butter_2AF
+			}
+		}
+	}
+
+	shared_focus = {#枪支和大炮
+		id = touhou_guns_and_cannons
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = touhou_new_oracle }
+		x = 1
+		y = 1
+		relative_position_id = touhou_new_oracle
+		cost =5
+		ai_will_do = {
+			factor = 1000
+		}
+		bypass = {
+			AND = {
+				custom_trigger_tooltip =  {
+					tooltip = production_effort_tt
+					all_owned_state = {
+						free_building_slots = {
+							building = industrial_complex
+							size < 2
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+		complete_tooltip = {
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_6_tt
+			every_state = {
+				limit = { has_state_flag = touhou_bread_and_butter_2AF }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			add_to_variable = { touhou_var_fantasy_industrial_capacity_factory = 0.1 }
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = touhou_bread_and_butter_2AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = touhou_bread_and_butter_2AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = touhou_bread_and_butter_2AF
+			}
+		}
+	}
+
+	shared_focus = { #鼓励艺术创作
+		id = touhou_support_the_art_creation
+		icon = GFX_goal_generic_propaganda
+
+		prerequisite = {
+			focus = touhou_bread_and_butter 
+			focus = touhou_guns_and_cannons
+		}
+		x = 1
+		y = 1
+		relative_position_id = touhou_bread_and_butter
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_9_tt
+			add_to_variable = { touhou_var_fantasy_stability_weekly = 0.001 }
+			add_to_variable = { touhou_var_fantasy_war_support_weekly = 0.001 }
+			add_to_variable = { touhou_var_fantasy_political_power_factor = 0.1 }
+		}
+
+	}
+	shared_focus = { #幻想乡情报部门
+		id = touhou_military_intelligence_department
+		icon = GFX_goal_generic_intelligence_exchange
+
+		prerequisite = {
+			focus = touhou_politics_oracle
+		}
+		prerequisite = {
+			focus = touhou_rebuild_fantasy_land
+		}
+		x = -1
+		y = 1
+		relative_position_id = touhou_politics_oracle
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = touhou_fantsy_intelligence
+		}
+
+	}
+
+	shared_focus = {#普选贤者
+		id = touhou_general_oracle
+		icon = GFX_goal_generic_position_armies
+		prerequisite = {
+			focus = touhou_politics_oracle
+		}
+		prerequisite = {
+			focus = touhou_rebuild_fantasy_land
+		}
+		x = 1
+		y = 1
+		relative_position_id = touhou_politics_oracle
+		cost = 5
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_2_tt
+			add_to_variable = { touhou_var_fantasy_political_power_factor = 0.05 }
+		}
+	}
+	shared_focus = {#军部贤者席位
+		id = touhou_army_leader_power
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { 
+			focus = touhou_general_oracle
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_general_oracle
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			every_army_leader = {
+				add_skill_level = 1
+			}
+			every_navy_leader = {
+				add_skill_level = 1
+				add_defense = 1
+				add_attack = 1
+			}
+			add_to_variable = {	touhou_var_fantasy_army_org_factor = 0.05 }
+			add_to_variable = {	touhou_var_fantasy_conscription_factor = 0.1 }
+			add_to_variable = {	touhou_var_fantasy_max_command_power = 50 }
+			add_to_variable = {	touhou_var_fantasy_command_power_gain_mult = 0.25 }
+			add_to_variable = {	touhou_var_fantasy_army_leader_start_level = 1 }
+
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_7_tt
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_7_tt1
+
+			unlock_decision_category_tooltip = touhou_touhou_teach_unit_leader
+			unlock_decision_category_tooltip = touhou_touhou_teach_navy_leader
+		}
+	}
+	shared_focus = {#防卫部
+		id = touhou_ministry_of_defence
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = touhou_army_leader_power }
+		x = -2
+		y = 1
+		relative_position_id = touhou_army_leader_power
+		cost =5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_to_variable = { touhou_var_fantasy_training_time_army_factor = -0.05 }
+			add_to_variable = {	touhou_var_fantasy_army_org_factor = 0.05 }
+			add_to_variable = {	touhou_var_fantasy_conscription_factor = 0.05 }
+			add_to_variable = {	touhou_var_fantasy_army_leader_start_defense_level =1 }
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_8_tt
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_8_tt1
+			every_army_leader = {
+				add_logistics = 1
+			}
+		}
+	}
+	shared_focus = {#军武部
+		id = touhou_ministry_of_attack
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = touhou_army_leader_power }
+		x = 0
+		y = 1
+		relative_position_id = touhou_army_leader_power
+		cost =5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_to_variable = { touhou_var_fantasy_training_time_army_factor = -0.05 }
+			add_to_variable = {	touhou_var_fantasy_army_org_factor = 0.05 }
+			add_to_variable = {	touhou_var_fantasy_conscription_factor = 0.05 }
+			add_to_variable = {	touhou_var_fantasy_army_leader_start_attack_level =1 }
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_8_tt
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_8_tt2
+			every_army_leader = {
+				add_attack = 1
+			}
+		}
+	}
+	shared_focus = {#策划部
+		id = touhou_ministry_of_plan
+		icon = GFX_focus_chi_army_reform
+		prerequisite = { focus = touhou_army_leader_power }
+		x = 2
+		y = 1
+		relative_position_id = touhou_army_leader_power
+		cost =5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_to_variable = { touhou_var_fantasy_training_time_army_factor = -0.05 }
+			add_to_variable = {	touhou_var_fantasy_army_org_factor = 0.05 }
+			add_to_variable = {	touhou_var_fantasy_conscription_factor = 0.05 }
+			add_to_variable = {	touhou_var_fantasy_army_leader_start_planning_level =1 }
+			add_to_variable = {	touhou_var_fantasy_army_leader_start_logistics_level =1 }
+			
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_8_tt
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_8_tt3
+			every_army_leader = {
+				add_logistics = 1
+				add_planning = 1
+			}
+		}
+	}
+	shared_focus = {#守护幻想乡
+		id = touhou_for_the_fantasy
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { 
+			focus = touhou_ministry_of_defence
+			focus = touhou_ministry_of_attack
+			focus = touhou_ministry_of_plan
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_ministry_of_attack
+		cost = 10
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_11_tt
+			add_to_variable = { touhou_var_fantasy_army_attack_factor = 0.05 }
+			add_to_variable = { touhou_var_fantasy_army_defence_factor = 0.05 }	
+		}
+	}
+	shared_focus = {#新生幻想乡
+		id = touhou_new_fantasy
+		icon = touhou_in_all
+		prerequisite = { 
+			focus = touhou_support_the_art_creation 
+			focus = touhou_for_the_fantasy
+		}
+		x = 1
+		y = 2
+		relative_position_id = touhou_support_the_art_creation
+		cost = 5
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_10_tt
+			add_war_support = 0.1
+			add_stability = 0.1
+			add_to_variable = { touhou_var_fantasy_stability_weekly = 0.001 }
+			add_to_variable = { touhou_var_fantasy_war_support_weekly = 0.001 }
+			add_to_variable = { touhou_var_fantasy_political_power_factor = 0.1 }
+			add_to_variable = { touhou_var_fantasy_consumer_goods_expected_value = -0.05 }
+			add_to_variable = { touhou_var_fantasy_production_speed_buildings_factor = 0.05 }
+			add_to_variable = { touhou_var_fantasy_industrial_capacity_factory = 0.1 }
+			add_to_variable = {	touhou_var_fantasy_justify_war_goal_time = -0.6 }
+		}
+	}
+	shared_focus = {#组建贤者内阁
+		id = touhou_cabinet_oracle
+		icon = touhou_government
+		prerequisite = { focus = touhou_connect_oracle }
+		x = 0
+		y = 1
+		relative_position_id = touhou_connect_oracle
+		cost =5
+
+		available = {
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = touhou_in_oracle_0
+				add_idea = touhou_in_oracle_1
+			}
+			custom_effect_tooltip = fantasy_live_rebuilt_fantasy2_tt
+			if = {
+				limit = { has_idea = fantasy_live7 }
+				swap_ideas = {
+					remove_idea = fantasy_live7
+					add_idea = fantasy_live8
+				}
+			}
+		}
+	}
+
+	shared_focus = {#妖精游乐园
+		id = touhou_evil_happy_place
+		icon = GFX_goal_generic_construct_infrastructure
+		x =18
+		y = 0
+		cost =5
+
+		available = {
+			controls_state = 982
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	shared_focus = {#任命博丽巫女
+		id = touhou_boli_wunv
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = touhou_evil_happy_place }
+		mutually_exclusive = { focus = touhou_shousi_wunv }
+		x = -1
+		y = 1
+		relative_position_id = touhou_evil_happy_place
+		cost =5
+
+		available = {
+			controls_state = 1001
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_boli_wunv_idea
+			add_tech_bonus = {
+				name = touhou_boli_wunv
+				bonus = 2
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	shared_focus = {#命莲寺暴走队
+		id = touhou_mingliansi_move
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = touhou_boli_wunv }
+		x = -1
+		y = 1
+		relative_position_id = touhou_boli_wunv
+		cost =5
+
+		available = {
+			controls_state = 1002
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_mingliansi_move_idea
+			add_tech_bonus = {
+				name = touhou_mingliansi_move
+				bonus = 2
+				uses = 2
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	shared_focus = {#奉行守矢信仰
+		id = touhou_shousi_wunv
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = touhou_evil_happy_place }
+		mutually_exclusive = { focus = touhou_boli_wunv }
+		x = 1
+		y = 1
+		relative_position_id = touhou_evil_happy_place
+		cost =5
+
+		available = {
+			controls_state = 1007
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_shousi_wunv_idea
+			add_tech_bonus = {
+				name = touhou_shousi_wunv
+				bonus = 2
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	shared_focus = {#神灵庙符咒
+		id = touhou_shenlingmiao_fu
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = touhou_shousi_wunv }
+		x = 1
+		y = 1
+		relative_position_id = touhou_shousi_wunv
+		cost =5
+
+		available = {
+			controls_state = 999
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_shenlingmiao_fu_idea
+			add_tech_bonus = {
+				name = touhou_shenlingmiao_fu
+				bonus = 2
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	shared_focus = {#人里宣传
+		id = touhou_human_publicity
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { 
+			focus = touhou_boli_wunv
+			focus = touhou_shousi_wunv
+		}
+		x = 1
+		y = 1
+		relative_position_id = touhou_boli_wunv
+		cost =5
+
+		available = {
+			controls_state = 1005
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_human_publicity_idea
+		}
+	}
+	shared_focus = {#香霖堂商业授权
+		id = touhou_xianglin_business
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { 
+			focus = touhou_boli_wunv
+			focus = touhou_human_publicity
+		}
+		x = -1
+		y = 1
+		relative_position_id = touhou_human_publicity
+		cost =5
+
+		available = {
+			controls_state = 993
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_xianglin_business_idea
+		}
+	}
+	shared_focus = {#河童私立研究所
+		id = touhou_kappa_private_research
+		icon = GFX_focus_research
+		prerequisite = { 
+			focus = touhou_shousi_wunv
+			focus = touhou_human_publicity
+		}
+		x = 1
+		y = 1
+		relative_position_id = touhou_human_publicity
+		cost =5
+
+		available = {
+			controls_state = 983
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	shared_focus = {#投资人偶工坊
+		id = touhou_doll_factory
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { 
+			focus = touhou_kappa_private_research
+			focus = touhou_xianglin_business
+		}
+		mutually_exclusive = { focus = touhou_vampire_infantry }
+		x = 0
+		y = 1
+		relative_position_id = touhou_xianglin_business
+		cost =5
+
+		available = {
+			controls_state = 994
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_doll_factory_idea
+			add_tech_bonus = {
+				name = touhou_doll_factory
+				bonus = 2
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	shared_focus = {#太阳花田协定
+		id = touhou_sun_flower
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = touhou_doll_factory }
+		x = -1
+		y = 1
+		relative_position_id = touhou_doll_factory
+		cost =5
+
+		available = {
+			controls_state = 1015
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_sun_flower_idea
+		}
+	}
+	shared_focus = {#投资红魔练兵场
+		id = touhou_vampire_infantry
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { 
+			focus = touhou_kappa_private_research
+			focus = touhou_xianglin_business
+		}
+		mutually_exclusive = { focus = touhou_doll_factory }
+		x = 0
+		y = 1
+		relative_position_id = touhou_kappa_private_research
+		cost =5
+
+		available = {
+			controls_state = 1006
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_vampire_infantry_idea
+			add_tech_bonus = {
+				name = touhou_vampire_infantry
+				bonus = 2
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	shared_focus = {#红魔大图书馆
+		id = touhou_vampire_big_book
+		icon = GFX_focus_research
+		prerequisite = { focus = touhou_vampire_infantry }
+		x = 1
+		y = 1
+		relative_position_id = touhou_vampire_infantry
+		cost =5
+
+		available = {
+			controls_state = 1006
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_vampire_big_book_idea
+		}
+	}
+	shared_focus = {#天狗空军教官
+		id = touhou_tengu_air
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { 
+			focus = touhou_doll_factory
+			focus = touhou_vampire_infantry
+		}
+		x = 1
+		y = 1
+		relative_position_id = touhou_doll_factory
+		cost =5
+
+		available = {
+			controls_state = 984
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_tengu_air_idea
+			add_tech_bonus = {
+				name = touhou_tengu_air
+				bonus = 2
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	shared_focus = {#强化地狱炉
+		id = touhou_power_hell_stove
+		icon = GFX_goal_generic_production
+		prerequisite = { 
+			focus = touhou_doll_factory
+			focus = touhou_tengu_air
+		}
+		mutually_exclusive = { focus = touhou_ghost_extradite }
+		x = -1
+		y = 1
+		relative_position_id = touhou_tengu_air
+		cost =5
+
+		available = {
+			controls_state = 997
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_power_hell_stove_idea
+			add_tech_bonus = {
+				name = touhou_power_hell_stove
+				bonus = 2
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	shared_focus = {#开采旧地狱资源
+		id = touhou_old_hell
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = touhou_power_hell_stove }
+		x = -1
+		y = 1
+		relative_position_id = touhou_power_hell_stove
+		cost =5
+
+		available = {
+			controls_state = 997
+			controls_state = 996
+			controls_state = 991
+			controls_state = 992
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			997 = {
+				add_resource = {
+				type = rubber
+				amount = 10
+				}
+				add_resource = {
+				type = steel
+				amount = 10
+				}
+				add_resource = {
+				type = aluminium
+				amount = 10
+				}
+				add_resource = {
+				type = oil
+				amount = 10
+				}
+				add_resource = {
+				type = chromium
+				amount = 10
+				}
+				add_resource = {
+				type = tungsten
+				amount = 10
+				}
+			}
+			996 = {
+				add_resource = {
+				type = rubber
+				amount = 10
+				}
+				add_resource = {
+				type = steel
+				amount = 10
+				}
+				add_resource = {
+				type = aluminium
+				amount = 10
+				}
+				add_resource = {
+				type = oil
+				amount = 10
+				}
+				add_resource = {
+				type = chromium
+				amount = 10
+				}
+				add_resource = {
+				type = tungsten
+				amount = 10
+				}
+			}
+			991 = {
+				add_resource = {
+				type = rubber
+				amount = 10
+				}
+				add_resource = {
+				type = steel
+				amount = 10
+				}
+				add_resource = {
+				type = aluminium
+				amount = 10
+				}
+				add_resource = {
+				type = oil
+				amount = 10
+				}
+				add_resource = {
+				type = chromium
+				amount = 10
+				}
+				add_resource = {
+				type = tungsten
+				amount = 10
+				}
+			}
+			992 = {
+				add_resource = {
+				type = rubber
+				amount = 10
+				}
+				add_resource = {
+				type = steel
+				amount = 10
+				}
+				add_resource = {
+				type = aluminium
+				amount = 10
+				}
+				add_resource = {
+				type = oil
+				amount = 10
+				}
+				add_resource = {
+				type = chromium
+				amount = 10
+				}
+				add_resource = {
+				type = tungsten
+				amount = 10
+				}
+			}
+		}
+	}
+	shared_focus = {#亡灵引渡协议
+		id = touhou_ghost_extradite
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { 
+			focus = touhou_tengu_air
+			focus = touhou_vampire_infantry
+		}
+		mutually_exclusive = { focus = touhou_power_hell_stove }
+		x = 1
+		y = 1
+		relative_position_id = touhou_tengu_air
+		cost =5
+
+		available = {
+			controls_state = 998
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_ghost_extradite_idea
+			add_tech_bonus = {
+				name = touhou_ghost_extradite
+				bonus = 2
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+	shared_focus = {#白玉楼灵体技术
+		id = touhou_ghost_tech
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = touhou_ghost_extradite }
+		x = 1
+		y = 1
+		relative_position_id = touhou_ghost_extradite
+		cost =5
+
+		available = {
+			controls_state = 1000
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_ghost_tech_idea
+		}
+	}
+	shared_focus = {#永远亭特种训练场
+		id = touhou_special_forces_drill
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { 
+			focus = touhou_power_hell_stove
+			focus = touhou_ghost_extradite
+		}
+		x = 1
+		y = 1
+		relative_position_id = touhou_power_hell_stove
+		cost =5
+
+		available = {
+			controls_state = 1004
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = touhou_special_forces_drill_idea
+			add_tech_bonus = {
+				name = touhou_special_forces_drill
+				bonus = 2
+				uses = 2
+				category = para_tech
+				category = marine_tech
+				category = mountaineers_tech
+			}
+		}
+	}
+	shared_focus = {#幻想乡的未来
+		id = touhou_future
+		icon = touhou_future
+		available = {
+			NOT = { has_idea = fantasy_industry }
+			NOT = { has_idea = fantasy_live }
+			NOT = { has_idea = fantasy_research }
+			NOT = { has_idea = fantasy_government }
+			NOT = { has_idea = fantasy_army }
+		}
+		prerequisite = { 
+			focus = touhou_old_hell
+			focus = touhou_ghost_tech
+			focus = touhou_special_forces_drill
+		}
+		x = 0
+		y = 1
+		relative_position_id = touhou_special_forces_drill
+		cost = 10
+		ai_will_do = {
+			factor = 1000
+		}
+
+		completion_reward = {
+			add_ideas = good_fantasy_all
+			capital_scope = {
+				add_resource = {
+				type = rubber
+				amount = 20
+				}
+				add_resource = {
+				type = steel
+				amount = 20
+				}
+				add_resource = {
+				type = aluminium
+				amount = 20
+				}
+				add_resource = {
+				type = oil
+				amount = 20
+				}
+				add_resource = {
+				type = chromium
+				amount = 20
+				}
+				add_resource = {
+				type = tungsten
+				amount = 20
+				}
+			}
+		}
+	}

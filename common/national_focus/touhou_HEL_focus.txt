@@ -662,7 +662,7 @@ focus_tree = {
 					}
 					if = { 
 						limit = {is_ai = yes } 
-						country_event = touhou_ai.2
+						country_event = { id = touhou_ai.2 days = 2}
 					}
 					else = { country_event = generic.5 }
 				}
