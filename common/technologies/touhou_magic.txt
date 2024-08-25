@@ -1359,9 +1359,9 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 		touhou_magic_artillery_brigade = {
 			soft_attack = 0.1
 		}
-		magic_brigade = {
-			soft_attack = 0.1
-		}
+		# magic_brigade = {
+		# 	soft_attack = 0.1
+		# }
 		
 		path = {
 			leads_to_tech = touhou_magic_artillery1
@@ -1453,9 +1453,9 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 		touhou_magic_artillery_brigade = {
 			soft_attack = 0.1
 		}
-		magic_brigade = {
-			soft_attack = 0.1
-		}
+		#magic_brigade = {
+		#	soft_attack = 0.1
+		#}
 		
 		path = {
 			leads_to_tech = touhou_magic_artillery3
@@ -1503,9 +1503,9 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 		touhou_magic_artillery_brigade = {
 			soft_attack = 0.1
 		}
-		magic_brigade = {
-			soft_attack = 0.1
-		}
+		#magic_brigade = {
+		#	soft_attack = 0.1
+		#}
 		
 		path = {
 			leads_to_tech = touhou_magic_artillery4
@@ -1592,9 +1592,9 @@ technologies = {#魔法科技树 research_cost 1单位=100天
 		touhou_magic_artillery_brigade = {
 			soft_attack = 0.1
 		}
-		magic_brigade = {
-			soft_attack = 0.1
-		}
+		#magic_brigade = {
+		#	soft_attack = 0.1
+		#}
 		
 		research_cost = 1
 
