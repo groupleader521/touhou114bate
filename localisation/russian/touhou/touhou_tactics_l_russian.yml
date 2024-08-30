@@ -1,0 +1,66 @@
+﻿l_russian:
+ #幻想乡通用
+ tactic_touhou_barrage_defender:0 "Застрелка!"
+ tactic_touhou_barrage_attacker:0 "Удар с занавески."
+ #幽灵族
+ tactic_touhou_defend_chop:0 "Пришли враги."
+ tactic_touhou_opp_banzai_charge:0 "Законы."
+ 
+ tactics_need_ghost_politics_tt:0 "Обладатель - призрак! Как основная раса Y"
+ #人族
+ tactic_touhou_bli_basic_defend:0 "Дорога не работает."
+ tactic_touhou_TEM_cc_defend:0 "Супермен."
+ tactic_touhou_mls_overwhelming_fire:0 "Снаряд - это огонь."
+ tactic_touhou_hum_tw_defend:0 "Бессмертная птица."
+ tactic_touhou_des_defender_hb_hold:0 "Ремонт пространства."
+ tactic_touhou_sss_banzai_charge:0 "Слово Божье."
+ 
+ tactics_need_human_politics_tt:0 "Обладатель / обладатель / человек Как основная раса Y"
+ #地灵殿
+ tactic_touhou_dld_tw_chase:0 "Адский тур."
+ 
+ tactics_need_animal_politics_tt:0 "Есть! Как основная раса Y"
+ #鬼族
+ tactic_touhou_hel_cc_attack:0 "Сломанная звезда."
+ 
+ tactics_need_hell_politics_tt:0 "Обладатель - призрак! Как основная раса Y"
+ #河童
+ tactic_defender_touhou_kap_sb_retake_bridge:0 "Водяной ковш."
+ 
+ tactics_need_kappa_politics_tt:0 "У Речной Реки есть! Как основная раса Y"
+ #血族
+ tactic_touhou_vam_tw_attack:0 "Птицы в клетке."
+ 
+ tactics_need_vampire_politics_tt:0 "Обладатель / обладатель / Кровь Y Как основная раса Y"
+ #天狗
+ tactic_touhou_ten_basic_defend:0 "Стоять."
+ 
+ tactics_need_tengu_politics_tt:0 "У нас есть собака! Как основная раса Y"
+ #妖精
+ tactic_touhou_evi_seize_bridge:0 "Замороженные тысячи миль."
+ 
+ tactics_need_evil_politics_tt:0 "Есть! Как основная раса Y"
+ #永远亭
+ tactic_touhou_rab_guerrilla_tactics:0 "Зрачки иллюзий."
+ 
+ tactics_need_rabbit_politics_tt:0 "Кролик - монстр! Как основная раса Y"
+ #人偶族
+ tactic_touhou_attacker_ali_assault:0 "Волна кукол."
+ tactic_touhou_attacker_ali_cc_storm:0 "Это кукла - камикадзе."
+ tactic_touhou_defender_ali_cc_local_strong_point:0 "Тысячи выстрелов."
+ tactic_touhou_attacker_ali_cc_withdraw:0 "Это фокус."
+ tactic_touhou_attacker_ali_breakthrough:0 "Прорыв куклы."
+ tactic_touhou_ali_backhand_blow:0 "Мобильная кукла."
+ tactic_touhou_ali_tactical_withdrawal:0 "В тылу куклы."
+ tactic_touhou_ali_tw_chase:0 "Кукольная охота."
+ tactic_touhou_ali_tw_evade:0 "Зеркальный мир."
+ tactic_touhou_ali_tw_intercept:0 "Добро пожаловать в кукольный дом."
+ tactic_touhou_ali_seize_bridge:0 "Мост кукол."
+ tactic_touhou_ali_attacker_sb_skillful_defence:0 "Кукла Мостовой"
+ tactic_touhou_ali_defender_sb_assault:0 "Море кукол."
+ tactic_touhou_ali_defender_sb_retake_bridge:0 "Вернуться в Кровавое место."
+ tactic_touhou_ali_hold_bridge:0 "Вещи в руках."
+ tactic_touhou_ali_attacker_hb_rush:0 "Нападение на кровавую землю."
+ tactic_touhou_ali_defender_hb_skillful_defence:0 "Кукла Мостовой, город."
+ 
+ tactics_need_marionette_politics_tt:0 "У меня есть кукла! Как одна из основных рас Y Или Y Единственная основная раса"

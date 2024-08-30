@@ -1,0 +1,26 @@
+﻿l_russian:
+ remould_KAP_research:0 "Перестройка Центрального института."
+ repair_KAP_research:0 "Восстанавливается Центральный институт."
+ remould_KAP_industry:0 "Перестройка центрального завода."
+ repair_KAP_industry:0 "Ремонт центрального завода."
+
+ alice_be_defeated:0 ""
+ 
+ fantasy_industry_reform_ready_flag:0 "Мы готовы к промышленной реформе."
+ fantasy_society_reform_ready_flag:0 "Мы готовы к социальным реформам."
+ fantasy_research_reform_ready_flag:0 "Мы готовы к научно - исследовательской реформе."
+ fantasy_government_reform_ready_flag:0 "Мы готовы к правительственной реформе."
+ fantasy_army_reform_ready_flag:0 "Мы готовы к военной реформе."
+ 
+ outside_world_attitude_up_flag:0 "Распространяется теория внешней угрозы."
+ outside_world_attitude_down_flag:0 "Пропагандирует внешнюю коалицию."
+ inside_fantasy_attitude_up_flag:0 "Пропагандирует теорию угрозы Fantasy Town."
+ inside_fantasy_attitude_down_flag:0 "Пропагандирует идею объединения фантазий."
+ 
+ touhou_all_country_unify:0 "Фантастическая деревня завершает воссоединение."
+ 
+ touhou_ask_for_aid:0 "Обращаются за помощью."
+ touhou_can_ask_aid:0 "Были проведены консультации по оказанию помощи."
+ 
+ politics_military_tendency_up_flag:0 "Ресурсы выделяются военным."
+ politics_military_tendency_down_flag:0 "Ресурсы выделяются на политическую экономику."
