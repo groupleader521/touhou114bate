@@ -134,7 +134,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6
-		reliability = 0.3
+		reliability = 0.4
 
 		#Defensive Abilities
 		defense = 30
@@ -145,10 +145,10 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 25
 		hard_attack = 25
-		ap_attack = 50
+		ap_attack = 85
 		air_attack = 1
 
-		build_cost_ic = 560
+		build_cost_ic = 320
 		resources = {
 			steel = 3
 			chromium = 2
@@ -170,15 +170,15 @@ equipments = {
 		defense = 50
 		breakthrough = 50
 		hardness = 1
-		armor_value = 100
+		armor_value = 120
 
 		#Offensive Abilities
 		soft_attack = 30
 		hard_attack = 30
-		ap_attack = 80
+		ap_attack = 150
 		air_attack = 2
 
-		build_cost_ic = 640
+		build_cost_ic = 400
 		resources = {
 			steel = 3
 			chromium = 2
@@ -206,10 +206,10 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 50
 		hard_attack = 50
-		ap_attack = 120
+		ap_attack = 150
 		air_attack = 5
 
-		build_cost_ic = 720
+		build_cost_ic = 480
 		resources = {
 			steel = 3
 			chromium = 2
@@ -232,15 +232,15 @@ equipments = {
 		defense = 75
 		breakthrough = 75
 		hardness = 1
-		armor_value = 150
+		armor_value = 180
 
 		#Offensive Abilities
 		soft_attack = 65
 		hard_attack = 65
-		ap_attack = 180
+		ap_attack = 240
 		air_attack = 8
 
-		build_cost_ic = 800
+		build_cost_ic = 600
 		resources = {
 			steel = 3
 			chromium = 2

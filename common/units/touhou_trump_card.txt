@@ -42,7 +42,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			goliath_equipment = 5
+			goliath_equipment = 10
 		}
 
 		manpower = 500

@@ -516,10 +516,9 @@
 		icon = touhou_in_all
 		prerequisite = { 
 			focus = touhou_support_the_art_creation 
-			focus = touhou_for_the_fantasy
 		}
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = touhou_support_the_art_creation
 		cost = 5
 
@@ -541,6 +540,28 @@
 			add_to_variable = { touhou_var_fantasy_production_speed_buildings_factor = 0.05 }
 			add_to_variable = { touhou_var_fantasy_industrial_capacity_factory = 0.1 }
 			add_to_variable = {	touhou_var_fantasy_justify_war_goal_time = -0.6 }
+		}
+	}
+	shared_focus = {#幻想兵装
+		id = touhou_fantasy_armaments
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { 
+			focus = touhou_new_fantasy
+		}
+		prerequisite = { 
+			focus = touhou_for_the_fantasy
+		}
+		x = -1
+		y = 1
+		relative_position_id = touhou_for_the_fantasy
+		cost = 10
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_12_tt
+			add_to_variable = {	touhou_var_fantasy_army_org_factor = 0.05 }
+			add_to_variable = { touhou_var_fantasy_army_strength_factor = 0.05 }	
 		}
 	}
 	shared_focus = {#组建贤者内阁

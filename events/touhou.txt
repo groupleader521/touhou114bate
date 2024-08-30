@@ -260,7 +260,7 @@ country_event = {#改革呼声
 		set_variable = { touhou_var_fantasy_army_leader_start_level = 0 }
 		set_variable = { touhou_var_fantasy_army_attack_factor = 0 }
 		set_variable = { touhou_var_fantasy_army_defence_factor = 0 }
-		
+		set_variable = { touhou_var_fantasy_army_strength_factor = 0 }
 		if = {
 			limit = { has_idea = fantasy_live }
 			remove_ideas = fantasy_live
