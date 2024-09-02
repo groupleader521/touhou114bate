@@ -1,16 +1,16 @@
 ﻿l_english:
- evil_mischief:0 "Fairy's prank"
+ evil_mischief:0 "Fairy prank"
  
- human_molisha_human:0 "Marissa chooses humans"
- moster_molisha_human:0 "Marissa chooses humans"
- human_molisha_moster:0 "Marissa chooses monsters"
- moster_molisha_moster:0 "Marissa chooses monsters"
- equal_molisha:0 "Marissa abandons equality"
+ human_molisha_human:0 "Marisa chooses humans"
+ moster_molisha_human:0 "Marisa chooses humans"
+ human_molisha_moster:0 "Marisa chooses youkai"
+ moster_molisha_moster:0 "Marisa chooses youkai"
+ equal_molisha:0 "Marisa abandons equality"
  
- touhou_All:0 "Fantasy Union"
+ touhou_All:0 "Gensokyo"
  
- has_help_touhou_0:0 "Recently provided assistance to Fantasy Township"
- has_help_touhou_1:0 "Recently provided assistance to Fantasy Township"
- has_help_touhou_2:0 "Recently provided assistance to Fantasy Township"
- has_help_touhou_3:0 "Recently provided assistance to Fantasy Township"
- has_help_touhou_4:0 "Recently provided assistance to Fantasy Township"
+ has_help_touhou_0:0 "Recently provided assistance to Gensokyo"
+ has_help_touhou_1:0 "Recently provided assistance to Gensokyo"
+ has_help_touhou_2:0 "Recently provided assistance to Gensokyo"
+ has_help_touhou_3:0 "Recently provided assistance to Gensokyo"
+ has_help_touhou_4:0 "Recently provided assistance to Gensokyo"

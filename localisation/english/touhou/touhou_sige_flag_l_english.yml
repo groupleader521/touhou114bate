@@ -1,26 +1,26 @@
 ﻿l_english:
- remould_KAP_research:0 "We are currently renovating the Central Research Institute"
- repair_KAP_research:0 "Repairing the Central Research Institute"
- remould_KAP_industry:0 "We are renovating the central factory"
- repair_KAP_industry:0 "Repairing the central factory"
+ remould_KAP_research:0 "We are currently renovating the Kappa Hideout"
+ repair_KAP_research:0 "Repairing the Kappa Hideout"
+ remould_KAP_industry:0 "We are renovating the central industry"
+ repair_KAP_industry:0 "Repairing the central industry"
 
- alice_be_defeated:0 "The puppet liberation front operation was successful"
+ alice_be_defeated:0 "The doll liberation front operation was successful"
  
  fantasy_industry_reform_ready_flag:0 "Ready for industrial reform"
  fantasy_society_reform_ready_flag:0 "Ready for social reform"
- fantasy_research_reform_ready_flag:0 "Ready for scientific research reform"
+ fantasy_research_reform_ready_flag:0 "Ready for science reform"
  fantasy_government_reform_ready_flag:0 "Ready for government reform"
  fantasy_army_reform_ready_flag:0 "Ready for military reform"
  
- outside_world_attitude_up_flag:0 "We are promoting the theory of external threats"
- outside_world_attitude_down_flag:0 "We are promoting the theory of external collaboration"
- inside_fantasy_attitude_up_flag:0 "We are promoting the threat theory of Fantasy Town"
- inside_fantasy_attitude_down_flag:0 "We are promoting the Fantasy Township Alliance Theory"
+ outside_world_attitude_up_flag:0 "We are promoting the awareness of external threats"
+ outside_world_attitude_down_flag:0 "We are promoting the awareness of the potential of external collaboration"
+ inside_fantasy_attitude_up_flag:0 "We are promoting the awareness of internal Gensokyo threats"
+ inside_fantasy_attitude_down_flag:0 "We are promoting the awareness of the potential of Gensokyo collaboration"
  
- touhou_all_country_unify:0 "Fantasy Village achieves unification"
+ touhou_all_country_unify:0 "Gensokyo achieves unification"
  
  touhou_ask_for_aid:0 "Applying for assistance"
  touhou_can_ask_aid:0 "Assistance negotiations have already been conducted"
  
  politics_military_tendency_up_flag:0 "Allocating resources to the military"
- politics_military_tendency_down_flag:0 "Allocating resources to political economy"
+ politics_military_tendency_down_flag:0 "Allocating resources to the economy"
