@@ -224,7 +224,7 @@ touhou_boss_get_army_effect = {
 		create_unit = {
 			division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
 			owner = ROOT
-			count = 80
+			count = 75
 		}
 	}	
 	every_state = {
@@ -234,7 +234,7 @@ touhou_boss_get_army_effect = {
 		create_unit = {
 			division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
 			owner = ROOT
-			count = 3
+			count = 2
 		}
 	}
 }
@@ -424,6 +424,11 @@ touhou_boss_get_army_effect_2 = {
 			owner = ROOT
 			count = 150
 		}
+		create_unit = {
+			division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
+			owner = ROOT
+			count = 75
+		}	
 	}		
 	every_state = {
 		limit = {
@@ -531,7 +536,7 @@ touhou_boss_get_army_effect_3 = {
 		create_unit = {
 			division = "name = \"魔界精英部队\" division_template = \"魔界精英部队\" start_experience_factor = 1"
 			owner = ROOT
-			count = 100
+			count = 80
 		}
 	}
 }

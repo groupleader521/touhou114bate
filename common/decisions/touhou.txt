@@ -1459,141 +1459,141 @@ touhou_decisions_categories_government = {#幻想乡政府内阁
 		}
 	}
 }
-touhou_decisions_categories_AI = {#AI	
-	touhou_mission_god_of_makai_amry = {#魔界武装
-		activation = {
-			has_war = yes
-			has_country_flag = touhou_god_of_makai_country_flag
-		}
-		icon = generic_independence
-		days_mission_timeout = 45
-		fire_only_once = yes
-		available = {
-			hidden_trigger = {
-				always = no
-			}
-		}
-		cancel_trigger = {
-			NOT = {
-				has_country_flag = touhou_god_of_makai_country_flag
-			}
-		}
-		timeout_effect = {	
-			if = {
-				limit = { 
-					surrender_progress > 0.1 
-					enemies_strength_ratio > 0.33
-				}
-				if = {
-					limit = {
-						has_idea = touhou_god_of_makai_ideas_General
-					}
-					every_state = {
-						limit = {
-							is_controlled_by_ROOT_or_subject = yes
-						}
-						create_unit = {
-							division = "name = \"魔界先遣部队\" division_template = \"魔界先遣部队\" start_experience_factor = 0.5"
-							owner = ROOT
-							count = 2
-						}
-					}
-				}
-				else_if = {
-					limit = { 
-						has_idea = touhou_god_of_makai_ideas_General_next_stage
-					}
-					every_state = {
-						limit = {
-							is_controlled_by_ROOT_or_subject = yes
-						}
-						create_unit = {
-							division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75"
-							owner = ROOT
-							count = 1
-						}
-					}
-				}
-				else_if = {
-					limit = { 
-						has_idea = touhou_god_of_makai_ideas_General_last_stage
-					}
-					every_state = {
-						limit = {
-							is_controlled_by_ROOT_or_subject = yes
-						}
-						create_unit = {
-							division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
-							owner = ROOT
-							count = 1
-						}
-					}
-				}
-				activate_mission = touhou_mission_god_of_makai_amry
-			}
-			else_if = {
-				limit = { 
-					surrender_progress > 0.3 
-					enemies_strength_ratio > 0.33
-				}
-				if = {
-					limit = {
-						has_idea = touhou_god_of_makai_ideas_General
-					}
-					every_state = {
-						limit = {
-							is_controlled_by_ROOT_or_subject = yes
-						}
-						create_unit = {
-							division = "name = \"魔界先遣部队\" division_template = \"魔界先遣部队\" start_experience_factor = 0.5"
-							owner = ROOT
-							count = 5
-						}
-					}
-				}
-				else_if = {
-					limit = { 
-						has_idea = touhou_god_of_makai_ideas_General_next_stage
-					}
-					every_state = {
-						limit = {
-							is_controlled_by_ROOT_or_subject = yes
-						}
-						create_unit = {
-							division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75"
-							owner = ROOT
-							count = 2
-						}
-					}
-				}
-				else_if = {
-					limit = { 
-						has_idea = touhou_god_of_makai_ideas_General_last_stage
-					}
-					every_state = {
-						limit = {
-							is_controlled_by_ROOT_or_subject = yes
-						}
-						create_unit = {
-							division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
-							owner = ROOT
-							count = 2
-						}
-					}
-				}
-				activate_mission = touhou_mission_god_of_makai_amry
-			}
-			else_if = {
-				limit = {
-					has_global_flag = touhou_global_flag_our_world
-					has_country_flag = touhou_god_of_makai_country_flag
-					surrender_progress > 0.5
-				}
-				country_event = { id = touhou_devildom.4211 }
-			}
-		}
-		ai_will_do = {
-			factor = 200
-		}
-	}	
-}
+#touhou_decisions_categories_AI = {#AI#
+#touhou_mission_god_of_makai_amry = {#魔界武装
+##activation = {
+###has_war = yes
+###has_country_flag = touhou_god_of_makai_country_flag
+##}
+##icon = generic_independence
+##days_mission_timeout = 45
+##fire_only_once = yes
+##available = {
+###hidden_trigger = {
+####always = no
+###}
+##}
+##cancel_trigger = {
+###NOT = {
+####has_country_flag = touhou_god_of_makai_country_flag
+###}
+##}
+##timeout_effect = {#
+###if = {
+####limit = { 
+#####surrender_progress > 0.1 
+#####enemies_strength_ratio > 0.33
+####}
+####if = {
+#####limit = {
+######has_idea = touhou_god_of_makai_ideas_General
+#####}
+#####every_state = {
+######limit = {
+#######is_controlled_by_ROOT_or_subject = yes
+######}
+######create_unit = {
+#######division = "name = \"魔界先遣部队\" division_template = \"魔界先遣部队\" start_experience_factor = 0.5"
+#######owner = ROOT
+#######count = 2
+######}
+#####}
+####}
+####else_if = {
+#####limit = { 
+######has_idea = touhou_god_of_makai_ideas_General_next_stage
+#####}
+#####every_state = {
+######limit = {
+#######is_controlled_by_ROOT_or_subject = yes
+######}
+######create_unit = {
+#######division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75"
+#######owner = ROOT
+#######count = 1
+######}
+#####}
+####}
+####else_if = {
+#####limit = { 
+######has_idea = touhou_god_of_makai_ideas_General_last_stage
+#####}
+#####every_state = {
+######limit = {
+#######is_controlled_by_ROOT_or_subject = yes
+######}
+######create_unit = {
+#######division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
+#######owner = ROOT
+#######count = 1
+######}
+#####}
+####}
+####activate_mission = touhou_mission_god_of_makai_amry
+###}
+###else_if = {
+####limit = { 
+#####surrender_progress > 0.3 
+#####enemies_strength_ratio > 0.33
+####}
+####if = {
+#####limit = {
+######has_idea = touhou_god_of_makai_ideas_General
+#####}
+#####every_state = {
+######limit = {
+#######is_controlled_by_ROOT_or_subject = yes
+######}
+######create_unit = {
+#######division = "name = \"魔界先遣部队\" division_template = \"魔界先遣部队\" start_experience_factor = 0.5"
+#######owner = ROOT
+#######count = 5
+######}
+#####}
+####}
+####else_if = {
+#####limit = { 
+######has_idea = touhou_god_of_makai_ideas_General_next_stage
+#####}
+#####every_state = {
+######limit = {
+#######is_controlled_by_ROOT_or_subject = yes
+######}
+######create_unit = {
+#######division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75"
+#######owner = ROOT
+#######count = 2
+######}
+#####}
+####}
+####else_if = {
+#####limit = { 
+######has_idea = touhou_god_of_makai_ideas_General_last_stage
+#####}
+#####every_state = {
+######limit = {
+#######is_controlled_by_ROOT_or_subject = yes
+######}
+######create_unit = {
+#######division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
+#######owner = ROOT
+#######count = 2
+######}
+#####}
+####}
+####activate_mission = touhou_mission_god_of_makai_amry
+###}
+###else_if = {
+####limit = {
+#####has_global_flag = touhou_global_flag_our_world
+#####has_country_flag = touhou_god_of_makai_country_flag
+#####surrender_progress > 0.5
+####}
+####country_event = { id = touhou_devildom.4211 }
+###}
+##}
+##ai_will_do = {
+###factor = 200
+##}
+#}#
+#}
