@@ -61,7 +61,7 @@ ideas = {
 					build_cost_ic = 1 instant = yes
 				}
 				wunv_equipment = {
-					build_cost_ic = 0.2 instant = yes
+					build_cost_ic = 0.5 instant = yes
 				}
 				lotus_equipment = {
 					build_cost_ic = 10 instant = yes
@@ -609,7 +609,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		#未来战地医院
+		#守矢巫女
 		wunv_trait = {
 			picture = wunv_trait
 			
@@ -638,7 +638,7 @@ ideas = {
 			removal_cost = 10
 			equipment_bonus = {
 				wunv_equipment = {
-					build_cost_ic = -0.2 instant = yes
+					build_cost_ic = -0.5 instant = yes
 				}
 			}
 			modifier = {

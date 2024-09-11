@@ -556,7 +556,7 @@ sub_units = {
 			defence = 0.5
 		}
 	}
-	#未来战地医院
+	#守矢巫女
 	wunv_brigade = {
 		sprite = infantry
 		map_icon_category = infantry
@@ -580,7 +580,7 @@ sub_units = {
 		combat_width = 0
 		
 		#Size Definitions
-		max_strength = 20
+		max_strength = 10
 		max_organisation = 30
 		default_morale = 0.3
 		manpower = 500
