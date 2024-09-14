@@ -271,6 +271,53 @@ country_event = {#改革呼声
 			remove_ideas = fantasy_live2
 			add_dynamic_modifier = { modifier = touhou_dynamic_modifiers_fantasy_live }
 		}
+		meta_effect = {
+			text = {
+				generate_character = {
+					token_base = kare_Sky_island
+					name = Sky_island
+					portraits={
+						army={
+							large="GFX_kare_leader_syk_island"
+							small="GFX_kare_advisor_syk_island"
+						}
+						civilian={
+							large="GFX_kare_leader_syk_island"
+							small="GFX_kare_advisor_syk_island"
+						}
+					}
+					allowed_civil_war = {
+						is_ai = no
+					}
+					corps_commander={
+						traits = { Syk_island_trait brilliant_strategist }
+						attack_skill = 3
+						defense_skill = 3
+						planning_skill = 3
+						logistics_skill = 3
+						skill = 1
+						legacy_id= -1
+					}
+					advisor={
+						cost = 150
+						slot = political_advisor
+						idea_token = Syk_island_advisor
+						ledger = army
+						allowed = {
+							is_ai = no
+						}
+						visible = {
+						}
+						traits = {
+							Syk_island_advisor_trails
+						}
+						ai_will_do = {
+							factor = 0
+						}
+					}
+				}
+			}
+		}
 		load_focus_tree = touhou_TOUHOU_focus
 	}
 }

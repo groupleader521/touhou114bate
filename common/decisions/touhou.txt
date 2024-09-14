@@ -439,6 +439,9 @@ touhou_unify = {
 			set_cosmetic_tag = TOUHOU_UNIFIED
 			set_global_flag = touhou_all_country_unify
 			set_country_flag = touhou_all_country_unify_for_country
+			set_variable = {
+				global.TOUHOU_var_country = FROM
+			}
 			hidden_effect = {
 				if = {
 					limit = { has_government = fascism }
@@ -1364,6 +1367,7 @@ touhou_decisions_categories_option = {#菜单
 		}
 
 		complete_effect = {
+			set_country_flag = touhou_decisions_categories_option_has
 			country_event = { id = touhou_option.1 } 
 		}
 	}	
@@ -1390,6 +1394,7 @@ touhou_decisions_categories_option = {#菜单
 		}
 
 		complete_effect = {
+			set_country_flag = touhou_decisions_categories_option_has
 			country_event = { id = touhou_option.2 } 
 		}
 	}			
@@ -1416,6 +1421,7 @@ touhou_decisions_categories_option = {#菜单
 		}
 
 		complete_effect = {
+			set_country_flag = touhou_decisions_categories_option_has
 			country_event = { id = touhou_option.3 } 
 		}
 	}				

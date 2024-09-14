@@ -367,4 +367,17 @@ spriteTypes = {
         name = "GFX_Yasaka_Kanako"
         texturefile = "gfx/leaders/ALI/Yasaka_Kanako.dds"
     }
+    #隐藏角色天山与（
+	spriteType = {
+		name = "GFX_trait_Syk_island_trait"
+		texturefile = "gfx/interface/traits/Syk_island_traits.png"
+	}
+	spriteType = {
+		name = "GFX_kare_advisor_syk_island"
+		texturefile = "gfx/leaders/advisor_Sky_island.png"
+	}
+	spriteType = {
+		name = "GFX_kare_leader_syk_island"
+		texturefile = "gfx/leaders/leader_Syk_island.png"
+	}
 }
