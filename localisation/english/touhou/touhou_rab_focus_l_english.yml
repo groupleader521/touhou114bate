@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  touhou_RAB_out:0 "Gensokyo Diplomacy"
  touhou_RAB_out_desc:0 "In order to avoid the pursuit of the Lunarians, Kaguya Houraisan has always been very careful to hide herself. But now it's different. There's no Lunar capital in this world, so let's also stand in the spotlight and lead the way for the times"
  touhou_RAB_gentle:0 "Eientei Technology Expo"
@@ -21,8 +21,8 @@
  touhou_RAB_attack_ali_desc:0 "This is our first goal, and our dominance begins here"
  touhou_RAB_attack_mls:0 "Provoking Kourindou"
  touhou_RAB_attack_mls_desc:0 "For Marisa, who has many friends, it would be better to let her take the initiative to attack"
- touhou_RAB_method:0 "Mind of the Moon strategy"
- touhou_RAB_method_desc:0 "People are the center of Gensokyo and must be occupied. Although the Human Village is protected layer by layer, it doesn't stump the Mind of the Moon, and no one will even realize that the protection for the Human Village has expired"
+ touhou_RAB_method:0 "Brain of the Moon strategy"
+ touhou_RAB_method_desc:0 "People are the center of Gensokyo and must be occupied. Although the Human Village is protected layer by layer, it doesn't stump the Brain of the Moon, and no one will even realize that the protection for the Human Village has expired"
  touhou_RAB_attack_hum:0 "Change of ownership Within the Human Village"
  touhou_RAB_attack_hum_desc:0 "Without protection, one will be vulnerable"
  touhou_RAB_in_self:0 "Unified Gensokyo"

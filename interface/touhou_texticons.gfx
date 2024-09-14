@@ -241,7 +241,7 @@ spriteTypes = {
 		texturefile = "gfx/texticons/ship_carrier_icon_small.dds"
 		legacy_lazy_load = no
 	}
-	#未来战地医院小图标
+	#守矢巫女小图标
 	spriteType = {
 		name = "GFX_unit_wunv_brigade_icon_small"
 		texturefile = "gfx/texticons/support_field_hospital_small.dds"

@@ -1007,4 +1007,10 @@ leader_traits = {
 			factor = 3
 		}
 	}
+	Syk_island_advisor_trails = {
+		random = no
+		consumer_goods_factor = -0.15
+		production_speed_buildings_factor = 0.15
+		global_building_slots = 1
+	}
 }

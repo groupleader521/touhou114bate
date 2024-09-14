@@ -1228,3 +1228,36 @@
 			}
 		}
 	}
+
+	shared_focus = { #幻想乡红线开始
+	id = touhou_special_forces_drill
+	icon = GFX_goal_generic_special_forces
+	prerequisite = { 
+		focus = touhou_power_hell_stove
+		focus = touhou_ghost_extradite
+	}
+	x = 1
+	y = 1
+	relative_position_id = touhou_power_hell_stove
+	cost =5
+
+	available = {
+		controls_state = 1004
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = touhou_special_forces_drill_idea
+		add_tech_bonus = {
+			name = touhou_special_forces_drill
+			bonus = 2
+			uses = 2
+			category = para_tech
+			category = marine_tech
+			category = mountaineers_tech
+		}
+	}
+}

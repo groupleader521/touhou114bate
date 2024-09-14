@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  touhou_TOUHOU_focus:0 "Gensokyo"
  
  touhou_in_self:0 "Unified Gensokyo"
@@ -123,7 +123,7 @@
  touhou_focus_research:0 "Attend to scientific research"
  touhou_focus_research_desc:0 "After we entered this world, various forces were restless, and we need to quickly master more advanced technology"
  touhou_focus_research_tt:0 "Industrial reform consultants increase research speed by 5%. (10% in total)"
- touhou_focus_research_2:0 "The Mind of the Moon"
+ touhou_focus_research_2:0 "The Brain of the Moon"
  touhou_focus_research_2_desc:0 "I don't know why, but Eirin Yagokoro understands new technology faster than anyone else. Sometimes she murmurs to herself, 'Am I Shi Jian this time?'"
  touhou_focus_research_2_tt:0 "The Eientei Research Institute will increase its research speed by 5% and provide an additional 5% research speed for industrial reform. (15% in total)"
  touhou_focus_research_3:0 "Basic education"
