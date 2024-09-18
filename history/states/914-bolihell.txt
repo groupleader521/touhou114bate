@@ -2,7 +2,7 @@ state={
 	id=975
 	name="STATE_BoLiShenSheHouShan"
 	provinces={
-		13465 13472 13478 13483 13485 13538 13539 13540
+		13465 13472 13478 13483 13485
 	}
 	history={
 		add_core_of = BLI

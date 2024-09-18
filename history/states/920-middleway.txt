@@ -2,7 +2,7 @@ state={
 	id=981
 	name="STATE_ZhongYouZhiDao"
 	provinces={
-		13419 13475 13489 13518 13519 13520
+		13419 13475 13489
 	}
 	history={
 		add_core_of = OPP

@@ -2,7 +2,7 @@ state={
 	id=1000
 	name="STATE_MingFu"
 	provinces={
-		13463 13511 13449 13446 13547 13548 13549 
+		13463 13511 13449 13446
 	}
 
 	history={

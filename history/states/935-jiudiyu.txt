@@ -2,7 +2,7 @@ state={
 	id=996
 	name="STATE_JiuDu"
 	provinces={
-		13509 13480 13470 13544 13545 
+		13509 13480 13470 
 	}
 
 	history={

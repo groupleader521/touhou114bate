@@ -2,7 +2,7 @@ state={
 	id=977
 	name="STATE_SanTuHePan"
 	provinces={
-		13425 13517
+		13425
 	}
 	history={
 		add_core_of = OPP

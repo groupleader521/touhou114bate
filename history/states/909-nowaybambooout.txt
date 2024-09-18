@@ -2,7 +2,7 @@ state={
 	id=970
 	name="STATE_MiTuZhuLinWaiWei"
 	provinces={
-		13441 13445 13447 13443 13532 13533 
+		13441 13445 13447 13443 
 	}
 	history={
 		add_core_of = RAB

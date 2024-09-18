@@ -2,7 +2,7 @@ state={
 	id=1015
 	name="STATE_TaiYangHuaTian"
 	provinces={
-		13429 13430 13431 13433 13435 13437 13442 13525 13526 13527 13528 13529 
+		13429 13430 13431 13433 13435 13437 13442 
 	}
 	history={
 		add_core_of = ALI

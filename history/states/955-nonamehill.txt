@@ -2,7 +2,7 @@ state={
 	id=1016
 	name="STATE_WuMingQiu"
 	provinces={
-		13514 13364 13367 13448 13524
+		13514 13364 13367 13448
 	}
 	history={
 		add_core_of = ALI

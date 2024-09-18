@@ -2,7 +2,7 @@ state={
 	id=987
 	name="STATE_SanTuChuan"
 	provinces={
-		13422 13423 13424 13427 13516
+		13422 13423 13424 13427
 	}
 
 	history={

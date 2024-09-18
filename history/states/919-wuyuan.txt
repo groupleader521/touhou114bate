@@ -2,7 +2,7 @@ state={
 	id=980
 	name="STATE_WuYuanZhong"
 	provinces={
-		13380 13395 13399 13462 13521 13522
+		13380 13395 13399 13462
 	}
 	history={
 		add_core_of = OPP

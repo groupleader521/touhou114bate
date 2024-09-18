@@ -2,7 +2,7 @@ state={
 	id=992
 	name="STATE_JiuDiYuShenCeng"
 	provinces={
-		13501 13507 13502 13543 
+		13501 13507 13502 
 	}
 
 	history={

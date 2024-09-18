@@ -2,7 +2,7 @@ state={
 	id=1004
 	name="STATE_MiTuZhuLin"
 	provinces={
-		13434 13436 13438 13439 13440 13530 13531
+		13434 13436 13438 13439 13440
 	}
 
 	history={
