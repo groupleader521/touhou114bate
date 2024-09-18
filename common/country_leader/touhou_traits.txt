@@ -997,10 +997,10 @@ leader_traits = {
 		}
 	}
 	touhou_traits_bear_high_command = {
-		army_attack_factor = 0.15
-		naval_damage_factor = 0.15
-		air_attack_factor = 0.15
-		conscription_factor = -0.3
+		army_attack_factor = 0.05
+		naval_damage_factor = 0.05
+		air_attack_factor = 0.05
+		conscription_factor = -0.15
 
 		custom_modifier_tooltip = touhou_modifier_tooltip_bear_high_command 
 		ai_will_do = {

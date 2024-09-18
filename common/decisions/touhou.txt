@@ -1314,6 +1314,7 @@ touhou_decisions_categories_option = {#菜单
 		}
 
 		complete_effect = {
+			set_country_flag = touhou_decisions_categories_option_has
 			set_global_flag = touhou_global_flag_decisions_categories_option_closed
 		}
 	}	

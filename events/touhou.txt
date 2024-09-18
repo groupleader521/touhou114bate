@@ -271,6 +271,12 @@ country_event = {#改革呼声
 			remove_ideas = fantasy_live2
 			add_dynamic_modifier = { modifier = touhou_dynamic_modifiers_fantasy_live }
 		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = touhou_decisions_categories_option_has }
+				NOT = { has_country_flag = got_Sky_island_flag }
+			}
+		}
 		meta_effect = {
 			text = {
 				generate_character = {
