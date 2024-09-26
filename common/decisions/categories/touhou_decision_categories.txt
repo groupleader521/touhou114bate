@@ -57,7 +57,7 @@ attitude_change = {
 		is_ai = no
 	}
 }
-#英雄集结
+#幻想集结
 touhou_Unit_leaders = {
 	icon = generic_foreign_policy
 	allowed = {

@@ -587,7 +587,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			touhou_demonforce_super_heavy_tank_equipment = 15
+			touhou_demonforce_super_heavy_tank_equipment = 30
 		}
 
 		manpower = 500
@@ -659,7 +659,7 @@ sub_units = {
 		combat_width = 1
 
 		need = {
-			touhou_demonforce_heavy_tank_aa_equipment = 8
+			touhou_demonforce_heavy_tank_aa_equipment = 24
 		}
 		manpower = 500
 		max_organisation = 0
@@ -723,7 +723,7 @@ sub_units = {
 		combat_width = 1
 
 		need = {
-			touhou_demonforce_super_heavy_tank_aa_equipment = 4
+			touhou_demonforce_super_heavy_tank_aa_equipment = 15
 		}
 		manpower = 500
 		max_organisation = 0
@@ -790,7 +790,7 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			touhou_demonforce_heavy_tank_artillery_equipment = 24
+			touhou_demonforce_heavy_tank_artillery_equipment = 40
 		}
 		manpower = 500
 		max_organisation = 0
@@ -854,7 +854,7 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			touhou_demonforce_super_heavy_tank_artillery_equipment = 12
+			touhou_demonforce_super_heavy_tank_artillery_equipment = 30
 		}
 		manpower = 500
 		max_organisation = 0
@@ -921,7 +921,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			touhou_demonforce_heavy_tank_destroyer_equipment = 20
+			touhou_demonforce_heavy_tank_destroyer_equipment = 40
 		}
 		manpower = 500
 		max_organisation = 0
@@ -987,7 +987,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			touhou_demonforce_super_heavy_tank_destroyer_equipment = 7
+			touhou_demonforce_super_heavy_tank_destroyer_equipment = 40
 		}
 		manpower = 500
 		max_organisation = 0

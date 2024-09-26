@@ -113,9 +113,9 @@
  touhou_soul_project_0_desc:0 "现代战争不同于世界入之前的小规模冲突，是国与国之间全方位的较量。人员、装备、后勤被列为现代战争三大要素，其中后勤是前两者的保障。在作战中我们发现，后勤在很多地区难以保障，严重影响前线战斗力。幸好某位大胃王的庭师对这种问题得心应手，指挥官阁下，我有个想法，您愿意听听吗？"
  touhou_flag_soul_project_0:0 "已完成决议：求助大胃王的庭师"
 
- touhou_wunv_project_0:0 "改革战地医疗体系"
- touhou_wunv_project_0_desc:0 "指挥官阁下，东风谷早苗小姐向我们提交意见书。她认为：现有的战地医疗体系过于“野蛮”，“落后得超乎想象”的设备和组织模式造成了“海量不必要的伤亡”，“如果没有督战队，没有一个脑子正常的人愿意往前线走一步”，总之，[ROOT.GetName]亟需改革战地医疗体系。同时，她表示自己愿意成为此次改革的牵头人。指挥官阁下，您怎么看？"
- touhou_flag_wunv_project_0:0 "已完成决议：改革战地医疗体系"
+ touhou_wunv_project_0:0 "招募守矢巫女入伍"
+ touhou_wunv_project_0_desc:0 "现人神东风谷早苗向我们申请在军队中增加守矢巫女的序列。她认为现有的战地医疗体系不够完善，很多士兵因为缺少足够的治疗死在了战场之上，如果战地医院中能增加精通治疗的守矢巫女，那么很多不必要的伤亡都能够避免，总之她认为[ROOT.GetName]亟需改革战地医疗体系，而守矢巫女对于改善我们的医疗是一个极大的帮助。"
+ touhou_flag_wunv_project_0:0 "已完成决议：招募守矢巫女入伍"
 
  touhou_lotus_project_0:0 "重建星莲船"
  touhou_lotus_project_0_desc:0 "指挥官阁下，这里有个令人惊喜的消息。命莲寺愿意配合我们重建星莲船，我们完全可以结合两个世界的科技建造一艘有史以来最大最强的战舰！当她出坞之际，我们将打破外界人在海面上的“黑船霸权”！指挥官阁下，我们已经迫不及待了，请下命令吧！"
@@ -127,7 +127,7 @@
  touhou_magician_project_0_desc:0 "指挥官阁下，尽管装甲军团已经成为现代进攻的主要力量，但量变带来质变，当火力强大到一定程度，装甲军团那强大的突破能力都显得微不足道了。正巧，我们知道某个人能把这化为现实，对吗？"
  touhou_flag_magician_project_0:0 "已完成决议：设计魔法巨炮"
  
- touhou_Unit_leaders:0 "英雄集结"
+ touhou_Unit_leaders:0 "幻想集结"
  touhou_Unit_leaders_desc:0 "为了幻想乡，也为了这个世界，我们需要更多的力量。虽然立场不同，大家都是为了幻想乡的未来而行动的。我们可以去寻求她们的支持，将曾经的对手，变为未来的伙伴。"
  touhou_find_fula:0 "解放芙兰朵露"
  touhou_find_fula_desc:0 "芙兰朵露以其不稳定的精神状态著称，在世界入之后更是如此。若是下定决心从监禁中释放芙兰朵露的话，必须做好应对暴走的准备。相信经过苦心栽培，芙兰朵露的精神力量能够安定下来。"
@@ -455,12 +455,13 @@ touhou_decisions_touhou_fiscal_society_1:0 "傀儡[FROM.GETNAME]"
 
 #灵活支出(已停用)
 touhou_decisions_categories_touhou_fiscal_flexibility:0 "灵活支出"
-touhou_decisions_categories_touhou_fiscal_flexibility_desc:0 "为达到科学运用财政资金，满足国家完成各项职能的需要的目的，财政支出的安排应体现以下原则：\n（1）量入为出。财政支出的安排应在财政收入允许的范围内，避免出现大幅度的财政赤字。\n（2）统筹兼顾。要处理好积累性支出与消费性支出的关系、生产性支出与非生产性支出的关系，做到统筹兼顾，全面安排。\n（3）讲求效益。财政支出的效益体现在财政投资的经济效益和社会效益两个方面，要保证有限的财政资金最大限度的效益。"
+touhou_decisions_categories_touhou_fiscal_flexibility_desc:0 "为了使得我们的每一份资金用得其所，我们需要灵活调整财政的支出，根据实际情况选择恰当的投资方案"
+
 touhou_country_flag_touhou_fiscal_flexibility_changing:0 "正在调整财政支出计划"
 touhou_decisions_touhou_fiscal_flexibility:0 "取消额外投资"
-touhou_decisions_touhou_fiscal_flexibility_0:0 "投资工程"
+touhou_decisions_touhou_fiscal_flexibility_0:0 "投资工程建设"
 touhou_decisions_touhou_fiscal_flexibility_1:0 "投资科研"
-touhou_decisions_touhou_fiscal_flexibility_2:0 "投资社会福利"
-touhou_decisions_touhou_fiscal_flexibility_3:0 "吸收社会资金"
-touhou_decisions_touhou_fiscal_flexibility_4:0 "宣传服役"
+touhou_decisions_touhou_fiscal_flexibility_2:0 "提高社会福利"
+touhou_decisions_touhou_fiscal_flexibility_3:0 "专注于资源精算"
+touhou_decisions_touhou_fiscal_flexibility_4:0 "战争宣传"
 touhou_decisions_touhou_fiscal_flexibility_5:0 "投资军工"
