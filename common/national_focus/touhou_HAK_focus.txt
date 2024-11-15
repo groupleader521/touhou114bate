@@ -755,7 +755,7 @@ focus_tree = {
 			hidden_effect = {
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 972 }
+					prioritize = { 1019 }
 					create_unit = {
 						division = "name = \"秘密部队1\" division_template = \"亡灵小队\" start_experience_factor = 0.2" 
 						owner = HAK

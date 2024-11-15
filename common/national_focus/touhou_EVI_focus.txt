@@ -348,7 +348,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = {  focus = touhou_EVI_campaign }
 		bypass = {
-			controls_state = 974
+			controls_state = 1021
 		}
 		ai_will_do = {
 			factor = 10
@@ -361,7 +361,7 @@ focus_tree = {
 			add_war_support = 0.1
 			inside_fantasy_attitude_level_up = yes
 			every_country = {
-				limit = { controls_state = 974 }
+				limit = { controls_state = 1021 }
 				country_event = { id = evil.6 }
 			}
 		}
@@ -371,7 +371,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = {  focus = touhou_EVI_campaign }
 		bypass = {
-			controls_state = 972
+			controls_state = 1019
 		}
 		ai_will_do = {
 			factor = 10
@@ -384,7 +384,7 @@ focus_tree = {
 			add_war_support = 0.1
 			inside_fantasy_attitude_level_up = yes
 			every_country = {
-				limit = { controls_state = 972 }
+				limit = { controls_state = 1019 }
 				country_event = { id = evil.7 }
 			}
 		}

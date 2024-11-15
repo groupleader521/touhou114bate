@@ -8,22 +8,22 @@
 	
 	trigger = {
 		NOT = {
-				980 = { is_controlled_by = ALI }
-				980 = { is_controlled_by = DES }
-				980 = { is_controlled_by = HAK }
-				980 = { is_controlled_by = DLD }
-				980 = { is_controlled_by = HEL }
-				980 = { is_controlled_by = SSS }
-				980 = { is_controlled_by = OPP }
-				980 = { is_controlled_by = RAB }
-				980 = { is_controlled_by = TEM }
-				980 = { is_controlled_by = BLI }
-				980 = { is_controlled_by = KAP }
-				980 = { is_controlled_by = TEN }
-				980 = { is_controlled_by = HUM }
-				980 = { is_controlled_by = VAM }
-				980 = { is_controlled_by = MLS }
-				980 = { is_controlled_by = EVI }
+				1027 = { is_controlled_by = ALI }
+				1027 = { is_controlled_by = DES }
+				1027 = { is_controlled_by = HAK }
+				1027 = { is_controlled_by = DLD }
+				1027 = { is_controlled_by = HEL }
+				1027 = { is_controlled_by = SSS }
+				1027 = { is_controlled_by = OPP }
+				1027 = { is_controlled_by = RAB }
+				1027 = { is_controlled_by = TEM }
+				1027 = { is_controlled_by = BLI }
+				1027 = { is_controlled_by = KAP }
+				1027 = { is_controlled_by = TEN }
+				1027 = { is_controlled_by = HUM }
+				1027 = { is_controlled_by = VAM }
+				1027 = { is_controlled_by = MLS }
+				1027 = { is_controlled_by = EVI }
 		}
 		NOT = { has_global_flag = RAB_has_been_open }
 	}
@@ -168,22 +168,22 @@ news_event = {
 	trigger = {
 		NOT = {
 			OR = {
-				975 = { is_controlled_by = ALI }
-				975 = { is_controlled_by = DES }
-				975 = { is_controlled_by = HAK }
-				975 = { is_controlled_by = DLD }
-				975 = { is_controlled_by = HEL }
-				975 = { is_controlled_by = SSS }
-				975 = { is_controlled_by = OPP }
-				975 = { is_controlled_by = RAB }
-				975 = { is_controlled_by = TEM }
-				975 = { is_controlled_by = BLI }
-				975 = { is_controlled_by = KAP }
-				975 = { is_controlled_by = TEN }
-				975 = { is_controlled_by = HUM }
-				975 = { is_controlled_by = VAM }
-				975 = { is_controlled_by = MLS }
-				975 = { is_controlled_by = EVI }
+				1022 = { is_controlled_by = ALI }
+				1022 = { is_controlled_by = DES }
+				1022 = { is_controlled_by = HAK }
+				1022 = { is_controlled_by = DLD }
+				1022 = { is_controlled_by = HEL }
+				1022 = { is_controlled_by = SSS }
+				1022 = { is_controlled_by = OPP }
+				1022 = { is_controlled_by = RAB }
+				1022 = { is_controlled_by = TEM }
+				1022 = { is_controlled_by = BLI }
+				1022 = { is_controlled_by = KAP }
+				1022 = { is_controlled_by = TEN }
+				1022 = { is_controlled_by = HUM }
+				1022 = { is_controlled_by = VAM }
+				1022 = { is_controlled_by = MLS }
+				1022 = { is_controlled_by = EVI }
 			}
 		}
 		NOT = { has_global_flag = BLI_has_been_open }

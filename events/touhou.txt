@@ -3767,7 +3767,7 @@ country_event = {#辉夜姬的难题·其三
 			build_railway = {
 				level = 5
 				start_state = 525
-				target_state = 980
+				target_state = 1027
 			}
 			build_railway = {
 				level = 5
@@ -3794,7 +3794,7 @@ country_event = {#辉夜姬的难题·其三
 			build_railway = {
 				level = 5
 				start_state = 525
-				target_state = 980
+				target_state = 1027
 			}
 			build_railway = {
 				level = 5
@@ -3823,7 +3823,7 @@ country_event = {#辉夜姬的难题·其三
 			build_railway = {
 				level = 5
 				start_state = 525
-				target_state = 980
+				target_state = 1027
 			}
 			build_railway = {
 				level = 5

@@ -154,7 +154,7 @@ focus_tree = {
 				}
 			}
 			EVI = {
-				set_state_owner = 972 set_state_controller = 972
+				set_state_owner = 1019 set_state_controller = 1019
 				if = {
 					limit = { is_in_faction = no }
 					add_ai_strategy = {

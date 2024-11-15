@@ -889,8 +889,8 @@
 	# 	available = {
 	# 		controls_state = 1004
 	# 		controls_state = 998
-	# 		controls_state = 975
-	# 		controls_state = 980
+	# 		controls_state = 1022
+	# 		controls_state = 1027
 	# 	}
 	# 	ai_will_do = {
 	# 		factor = 1000
@@ -920,7 +920,7 @@
 	# 				}
 	# 			}
 	# 		}
-	# 		975 = {
+	# 		1022 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
@@ -931,7 +931,7 @@
 	# 				}
 	# 			}
 	# 		}
-	# 		980 = {
+	# 		1027 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
@@ -955,8 +955,8 @@
 	# 	available = {
 	# 		controls_state = 1004
 	# 		controls_state = 998
-	# 		controls_state = 975
-	# 		controls_state = 980
+	# 		controls_state = 1022
+	# 		controls_state = 1027
 	# 	}
 	# 	ai_will_do = {
 	# 		factor = 1000
@@ -984,7 +984,7 @@
 	# 				}
 	# 			}
 	# 		}
-	# 		975 = {
+	# 		1022 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
@@ -994,7 +994,7 @@
 	# 				}
 	# 			}
 	# 		}
-	# 		980 = {
+	# 		1027 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {

@@ -33,10 +33,10 @@ country_event = {
 		name = chireiden.1.a
 		ai_chance = { base = 1 }
 		DLD = {
-			set_state_owner = 975
-			add_state_core = 975
+			set_state_owner = 1022
+			add_state_core = 1022
 		}
-		remove_state_core = 975
+		remove_state_core = 1022
 	}
 	option = {
 		name = chireiden.1.b

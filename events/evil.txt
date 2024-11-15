@@ -193,12 +193,12 @@ country_event = {
 	option = {
 		name = evil.6.a
 		ai_chance = { base = 1 }
-		EVI = { set_state_owner = 974 set_state_controller = 974 }
+		EVI = { set_state_owner = 1021 set_state_controller = 1021 }
 	}
 	option = {
 		name = evil.6.b
 		ai_chance = { base = 9 }
-		EVI = { set_state_owner = 974 set_state_controller = 974 }
+		EVI = { set_state_owner = 1021 set_state_controller = 1021 }
 		declare_war_on = {
 			target = EVI
 			type = annex_everything
@@ -216,7 +216,7 @@ country_event = {
 	option = {
 		name = evil.7.a
 		ai_chance = { base = 1 }
-		EVI = { set_state_owner = 972 set_state_controller = 972 }
+		EVI = { set_state_owner = 1019 set_state_controller = 1019 }
 	}
 	option = {
 		name = evil.7.b

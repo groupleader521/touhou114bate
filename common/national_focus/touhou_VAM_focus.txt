@@ -363,7 +363,7 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			ALI = { OR = { exists = no is_subject_of = VAM is_in_faction_with = VAM NOT = { controls_state = 972 } } }
+			ALI = { OR = { exists = no is_subject_of = VAM is_in_faction_with = VAM NOT = { controls_state = 1019 } } }
 		}
 		
 		ai_will_do = {

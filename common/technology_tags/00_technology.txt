@@ -21,6 +21,7 @@ technology_categories = {
 	nuclear
 	industry
 	electronics
+	cat_fortification
 	land_doctrine
 	air_doctrine
 	naval_doctrine
@@ -108,6 +109,11 @@ technology_categories = {
 	cat_mountaineers_doctrine
 	cat_marines_doctrine
 	cat_paratroopers_doctrine
+	naval_armor
+	naval_artillery
+	helicopter_tech
+	pykrete_tech
+	transport_planes_cat
 
 	mio_cat_tech_all_armor_and_modules #Includes modules and chassis (DOES NOT INCLUDE ARMORED CARS)
 	mio_cat_tech_light_armor_and_modules #Includes modules and stand-alone Amphibious Chassis
@@ -127,6 +133,7 @@ technology_categories = {
 	mio_cat_tech_all_cruiser_and_modules #Includes all CA (+ Coastal etc.), CL (Torpedo Cruiser) and all related modules
 	mio_cat_tech_all_destroyer_and_modules #Includes all DD and all related modules
 	mio_cat_tech_all_motorized_mechanized #Includes all Motorized (incl. Motorized Rocket Artillery) and Mechanized Equipment. (DOES NOT INCLUDE ARMORED CARS)
+	mio_cat_artillery #Includes Artillery only (no AT, AA or Rocketry)
 }
 
 technology_folders = {
@@ -169,6 +176,7 @@ technology_folders = {
 				has_country_flag = touhou_country_flag_out_first_research
 			}
 		}
+		
 	}
 	artillery_folder = {
 		ledger = army
@@ -180,14 +188,14 @@ technology_folders = {
 		}
 	}
 	air_techs_folder = {
-		available = {
-            NOT = { has_dlc = "By Blood Alone" }
-			OR = {
+		available = { 
+		NOT = { has_dlc = "By Blood Alone" }
+		OR = {
 				NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 				has_country_flag = touhou_country_flag_out_first_research
 				has_country_flag = touhou_flag_air_technology
 			}
-        }
+		}
 		ledger = air
 	}
 	bba_air_techs_folder = {
@@ -273,7 +281,6 @@ technology_folders = {
 			}
 		}
 	}
-	#secret_weapons_folder
 }
 
  
