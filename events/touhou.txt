@@ -1833,6 +1833,7 @@ country_event = {#万事俱备
 	title = touhou_reformation.1.t
 	desc = touhou_reformation.1.d
 	picture = GFX_report_event_touhou_plenary_happy_end
+	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -1920,7 +1921,7 @@ country_event = {#妖怪重心
 	title = touhou_ideology.3.t
 	desc = touhou_ideology.3.d
 	picture = GFX_report_event_touhou_politica_monster
-
+	fire_only_once = yes
 	trigger = {
 		fascism > 0.5
 		has_civil_war = no
@@ -1958,7 +1959,7 @@ country_event = {#人类重心
 	title = touhou_ideology.1.t
 	desc = touhou_ideology.1.d
 	picture = GFX_report_event_touhou_politica_human
-
+	fire_only_once = yes
 	trigger = {
 		democratic > 0.5
 		has_civil_war = no
@@ -1996,7 +1997,7 @@ country_event = {#平等共存理念成为主流
 	title = touhou_ideology.2.t
 	desc = touhou_ideology.2.d
 	picture = GFX_report_event_touhou_politica_balance
-
+	fire_only_once = yes
 	trigger = {
 		communism > 0.5
 		has_civil_war = no
@@ -3319,6 +3320,7 @@ country_event = {#主的离去-自动监测系统
 	title = touhou_devildom.4211.t
 	desc = touhou_devildom.4211.d
 	picture = GFX_report_event_touhou_plenary_happy_end
+	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -3385,7 +3387,7 @@ country_event = {#主的离去-自动监测系统
 			touhou_god_of_makai_ideas_Navy_and_Air_last_stage
 			touhou_ideas_god_of_makai_other
 		}
-		remove_mission = touhou_mission_god_of_makai_amry
+		# remove_mission = touhou_mission_god_of_makai_amry
 		set_global_flag = touhou_god_of_makai_has_left_global_flag #魔界已经离去flag
 		clr_global_flag = touhou_global_flag_our_world
 		clr_country_flag = touhou_god_of_makai_country_flag #清除魔界国家flag

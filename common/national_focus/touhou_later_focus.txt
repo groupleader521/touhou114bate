@@ -564,37 +564,37 @@
 			add_to_variable = { touhou_var_fantasy_army_strength_factor = 0.05 }	
 		}
 	}
-	shared_focus = {#组建贤者内阁
-		id = touhou_cabinet_oracle
-		icon = touhou_government
-		prerequisite = { focus = touhou_connect_oracle }
-		x = 0
-		y = 1
-		relative_position_id = touhou_connect_oracle
-		cost =5
+	# shared_focus = {#组建贤者内阁
+	# 	id = touhou_cabinet_oracle
+	# 	icon = touhou_government
+	# 	prerequisite = { focus = touhou_connect_oracle }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = touhou_connect_oracle
+	# 	cost =5
 
-		available = {
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-		available_if_capitulated = yes
+	# 	available = {
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1000
+	# 	}
+	# 	available_if_capitulated = yes
 
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = touhou_in_oracle_0
-				add_idea = touhou_in_oracle_1
-			}
-			custom_effect_tooltip = fantasy_live_rebuilt_fantasy2_tt
-			if = {
-				limit = { has_idea = fantasy_live7 }
-				swap_ideas = {
-					remove_idea = fantasy_live7
-					add_idea = fantasy_live8
-				}
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			remove_idea = touhou_in_oracle_0
+	# 			add_idea = touhou_in_oracle_1
+	# 		}
+	# 		custom_effect_tooltip = fantasy_live_rebuilt_fantasy2_tt
+	# 		if = {
+	# 			limit = { has_idea = fantasy_live7 }
+	# 			swap_ideas = {
+	# 				remove_idea = fantasy_live7
+	# 				add_idea = fantasy_live8
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	shared_focus = {#妖精游乐园
 		id = touhou_evil_happy_place
@@ -1229,35 +1229,35 @@
 		}
 	}
 
-	shared_focus = { #幻想乡红线开始
-	id = touhou_special_forces_drill
-	icon = GFX_goal_generic_special_forces
-	prerequisite = { 
-		focus = touhou_power_hell_stove
-		focus = touhou_ghost_extradite
-	}
-	x = 1
-	y = 1
-	relative_position_id = touhou_power_hell_stove
-	cost =5
+	# shared_focus = { #幻想乡红线开始
+	# id = touhou_special_forces_drill
+	# icon = GFX_goal_generic_special_forces
+	# prerequisite = { 
+	# 	focus = touhou_power_hell_stove
+	# 	focus = touhou_ghost_extradite
+	# }
+	# x = 1
+	# y = 1
+	# relative_position_id = touhou_power_hell_stove
+	# cost =5
 
-	available = {
-		controls_state = 1004
-	}
-	ai_will_do = {
-		factor = 1000
-	}
-	available_if_capitulated = yes
+	# available = {
+	# 	controls_state = 1004
+	# }
+	# ai_will_do = {
+	# 	factor = 1000
+	# }
+	# available_if_capitulated = yes
 
-	completion_reward = {
-		add_ideas = touhou_special_forces_drill_idea
-		add_tech_bonus = {
-			name = touhou_special_forces_drill
-			bonus = 2
-			uses = 2
-			category = para_tech
-			category = marine_tech
-			category = mountaineers_tech
-		}
-	}
+	# completion_reward = {
+	# 	add_ideas = touhou_special_forces_drill_idea
+	# 	add_tech_bonus = {
+	# 		name = touhou_special_forces_drill
+	# 		bonus = 2
+	# 		uses = 2
+	# 		category = para_tech
+	# 		category = marine_tech
+	# 		category = mountaineers_tech
+	# 	}
+	# }
 }

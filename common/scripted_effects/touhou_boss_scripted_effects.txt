@@ -38,7 +38,7 @@ touhou_boss_get_tech_effect_1 = {
 
 	set_technology = { advanced_fire_control_system = 1 }
 	set_technology = { improved_sonar = 1 }
-	set_technology = { advanced_centimetric_radar = 1 }
+	# set_technology = { advanced_centimetric_radar = 1 }
 	set_technology = { improved_submarine_snorkel = 1 }
 	set_technology = { advanced_ship_hull_light = 1 }
 	set_technology = { advanced_ship_hull_cruiser = 1 }
@@ -146,7 +146,7 @@ touhou_boss_initialize_effect = {
 		touhou_boss_update_tech_effect = yes
 		touhou_boss_get_army_effect = yes
 		touhou_boss_get_industry_effect = yes
-		activate_mission = touhou_mission_god_of_makai_amry
+		# activate_mission = touhou_mission_god_of_makai_amry
 	}
 }
 

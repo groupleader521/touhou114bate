@@ -92,7 +92,6 @@ touhou_dynamic_modifiers_character = {#幻想乡精英
 touhou_dynamic_modifiers_touhou_fiscal_society_0 = {#国际援助
 	enable = { always = yes }
 	icon = GFX_idea_SPR_seize_the_gold_reserves
-	consumer_goods_factor = -0.05
 	communism_drift = touhou_var_touhou_fiscal_society_communism_drift
 	democratic_drift = touhou_var_touhou_fiscal_society_democratic_drift
 	fascism_drift = touhou_var_touhou_fiscal_society_fascism_drift

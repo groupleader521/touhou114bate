@@ -4,7 +4,6 @@ oob = "ALI_1936"
 
 set_stability = 0.72 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.55
-
 set_research_slots = 1
 
 add_ideas = {

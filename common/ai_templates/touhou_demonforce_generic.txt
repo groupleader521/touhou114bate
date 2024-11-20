@@ -10,15 +10,13 @@ touhou_demonforce_armor_generic = {
 		HAK
 	}
 
-	roles = {
-		armor
-	}
+	role = armor
 	
 	upgrade_prio = {
 		factor = 2.17
 	}
 	
-	match_to_count = 0.5
+	#match_to_count = 0.5
 
 	touhou_demonforce_heavy_armor_default = {
 		upgrade_prio = {
@@ -29,51 +27,51 @@ touhou_demonforce_armor_generic = {
 			}
 		}
 		
-		target_width = 18.0
-		width_weight = 3.0
-		column_swap_factor = 0.1
+		#target_width = 18.0
+		#width_#weight = 3.0
+		#column_swap_factor = 0.1
 		
-		stat_weights = {
-			0.00 #-- default_morale
-			1.10 #-- defense
-			1.10 #-- breakthrough
-			0.60 #-- hardness
-			2.00 #-- soft_attack
-			0.00 #-- hard_attack
-			0.10 #-- touhou_recon
-			0.01 #-- entrenchment
-			0.10 #-- initiative
-			0.01 #-- casualty_trickleback
-			-0.05 #-- supply_consumption_factor
-			-0.01 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.01 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.02 #-- air_attack
-			#-- Common Values
-			10.00 #-- max_organisation
-			0.80 #-- max_strength
-			0.0 #-- maximum_speed
-			0.20 #-- armor_value
-			0.05 #-- ap_attack
-			0.10 #-- reliability
-			0.10 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			0.00 #-- build_cost_ic
-		}
+		# stat_#weights = {
+		# 	0.00 #-- default_morale
+		# 	1.10 #-- defense
+		# 	1.10 #-- breakthrough
+		# 	0.60 #-- hardness
+		# 	2.00 #-- soft_attack
+		# 	0.00 #-- hard_attack
+		# 	0.10 #-- touhou_recon
+		# 	0.01 #-- entrenchment
+		# 	0.10 #-- initiative
+		# 	0.01 #-- casualty_trickleback
+		# 	-0.05 #-- supply_consumption_factor
+		# 	-0.01 #-- supply_consumption
+		# 	0.00 #-- suppression
+		# 	0.00 #-- suppression_factor
+		# 	0.01 #-- experience_loss_factor
+		# 	0.00 #-- equipment_capture_factor
+		# 	0.00 #-- fuel_capacity
+		# 	#-- Air Values
+		# 	0.02 #-- air_attack
+		# 	#-- Common Values
+		# 	10.00 #-- max_organisation
+		# 	0.80 #-- max_strength
+		# 	0.0 #-- maximum_speed
+		# 	0.20 #-- armor_value
+		# 	0.05 #-- ap_attack
+		# 	0.10 #-- reliability
+		# 	0.10 #-- reliability_factor
+		# 	0.00 #-- #weight
+		# 	0.00 #-- fuel_consumption
+		# 	0.00 #-- fuel_consumption_factor
+		# 	0.00 #-- strat_attack
+		# 	0.00 #-- carrier_size
+		# 	0.00 #-- acc_hot_gain
+		# 	0.00 #-- acc_cold_gain
+		# 	0.00 #-- build_cost_ic
+		# }
 
 		target_template = {
-			weight = 0.5
-			match_value = 1000.0
+			#weight = 0.5
+			#match_value = 1000.0
 			
 			support = {
 				touhou_engineer = 1
@@ -88,17 +86,17 @@ touhou_demonforce_armor_generic = {
 			}
 		}
 		
-		allowed_types = {
-			touhou_demonforce_heavy_armor
+		# allowed_types = {
+		# 	touhou_demonforce_heavy_armor
 
-			#Cheaper but slower might be worth considering
-			touhou_demonforce_infantry
-			touhou_engineer
-			touhou_recon
-			touhou_maintenance_company
-			touhou_logistics_company
-			touhou_demonforce_anti_tank
-		}
+		# 	#Cheaper but slower might be worth considering
+		# 	touhou_demonforce_infantry
+		# 	touhou_engineer
+		# 	touhou_recon
+		# 	touhou_maintenance_company
+		# 	touhou_logistics_company
+		# 	touhou_demonforce_anti_tank
+		# }
 		
 		replace_at_match = 0.4
 		replace_with = modern_armor_default
@@ -118,9 +116,7 @@ touhou_demonforce_garrison_generic = {
 		HAK
 	}
 	
-	roles = {
-		garrison
-	}
+	role = garrison
 	
 	upgrade_prio = {
 		factor = 80
@@ -131,7 +127,7 @@ touhou_demonforce_garrison_generic = {
 		}
 	}
 	
-	match_to_count = 0.60
+	#match_to_count = 0.60
 
 	touhou_demonforce_garrison_generic = {
 	
@@ -146,51 +142,51 @@ touhou_demonforce_garrison_generic = {
 			}
 		}
 		
-		target_width = 6.0
-		width_weight = 1.0
-		column_swap_factor = 0.5
+		#target_width = 6.0
+		#width_#weight = 1.0
+		#column_swap_factor = 0.5
 		
-		stat_weights = {
-			0.00 #-- default_morale
-			0.00 #-- defense
-			0.00 #-- breakthrough
-			0.00 #-- hardness
-			4.00 #-- soft_attack
-			0.00 #-- hard_attack
-			0.00 #-- touhou_recon
-			3.00 #-- entrenchment
-			0.00 #-- initiative
-			0.00 #-- casualty_trickleback
-			0.00 #-- supply_consumption_factor
-			0.00 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.00 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.00 #-- air_attack
-			#-- Common Values
-			0.60 #-- max_organisation
-			0.40 #-- max_strength
-			0.00 #-- maximum_speed
-			0.00 #-- armor_value
-			0.20 #-- ap_attack
-			0.00 #-- reliability
-			0.00 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			0.00 #-- build_cost_ic
-		}
+		# stat_#weights = {
+		# 	0.00 #-- default_morale
+		# 	0.00 #-- defense
+		# 	0.00 #-- breakthrough
+		# 	0.00 #-- hardness
+		# 	4.00 #-- soft_attack
+		# 	0.00 #-- hard_attack
+		# 	0.00 #-- touhou_recon
+		# 	3.00 #-- entrenchment
+		# 	0.00 #-- initiative
+		# 	0.00 #-- casualty_trickleback
+		# 	0.00 #-- supply_consumption_factor
+		# 	0.00 #-- supply_consumption
+		# 	0.00 #-- suppression
+		# 	0.00 #-- suppression_factor
+		# 	0.00 #-- experience_loss_factor
+		# 	0.00 #-- equipment_capture_factor
+		# 	0.00 #-- fuel_capacity
+		# 	#-- Air Values
+		# 	0.00 #-- air_attack
+		# 	#-- Common Values
+		# 	0.60 #-- max_organisation
+		# 	0.40 #-- max_strength
+		# 	0.00 #-- maximum_speed
+		# 	0.00 #-- armor_value
+		# 	0.20 #-- ap_attack
+		# 	0.00 #-- reliability
+		# 	0.00 #-- reliability_factor
+		# 	0.00 #-- #weight
+		# 	0.00 #-- fuel_consumption
+		# 	0.00 #-- fuel_consumption_factor
+		# 	0.00 #-- strat_attack
+		# 	0.00 #-- carrier_size
+		# 	0.00 #-- acc_hot_gain
+		# 	0.00 #-- acc_cold_gain
+		# 	0.00 #-- build_cost_ic
+		# }
 		
 		target_template = {
-			weight = 0.9
-			match_value = 3000.0
+			#weight = 0.9
+			#match_value = 3000.0
 			
 			support = { 
 				touhou_engineer = 1
@@ -201,10 +197,10 @@ touhou_demonforce_garrison_generic = {
 			}
 		}
 		
-		allowed_types = {
-			touhou_demonforce_infantry
-			touhou_engineer
-		}
+		# allowed_types = {
+		# 	touhou_demonforce_infantry
+		# 	touhou_engineer
+		# }
 	}
 }
 
@@ -218,9 +214,7 @@ touhou_demonforce_suppression_generic = {
 		HEL
 		HAK
 	}
-	roles = {
-		suppression
-	}
+	role = suppression
 	
 	upgrade_prio = {
 		factor = 1
@@ -231,7 +225,7 @@ touhou_demonforce_suppression_generic = {
 		}
 	}
 	
-	match_to_count = 0.60
+	#match_to_count = 0.60
 
 	touhou_demonforce_suppression_generic = {
 	
@@ -260,51 +254,51 @@ touhou_demonforce_suppression_generic = {
 			}
 		}
 		
-		target_width = 12.0
-		width_weight = 1.0
-		column_swap_factor = 0.5
+		#target_width = 12.0
+		#width_#weight = 1.0
+		#column_swap_factor = 0.5
 		
-		stat_weights = {
-			0.00 #-- default_morale
-			0.00 #-- defense
-			0.00 #-- breakthrough
-			0.00 #-- hardness
-			4.00 #-- soft_attack
-			0.00 #-- hard_attack
-			0.00 #-- touhou_recon
-			3.00 #-- entrenchment
-			0.00 #-- initiative
-			0.00 #-- casualty_trickleback
-			0.00 #-- supply_consumption_factor
-			0.00 #-- supply_consumption
-			10.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.00 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.00 #-- air_attack
-			#-- Common Values
-			0.60 #-- max_organisation
-			0.40 #-- max_strength
-			0.00 #-- maximum_speed
-			0.00 #-- armor_value
-			0.20 #-- ap_attack
-			0.00 #-- reliability
-			0.00 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			0.00 #-- build_cost_ic
-		}
+		# stat_#weights = {
+		# 	0.00 #-- default_morale
+		# 	0.00 #-- defense
+		# 	0.00 #-- breakthrough
+		# 	0.00 #-- hardness
+		# 	4.00 #-- soft_attack
+		# 	0.00 #-- hard_attack
+		# 	0.00 #-- touhou_recon
+		# 	3.00 #-- entrenchment
+		# 	0.00 #-- initiative
+		# 	0.00 #-- casualty_trickleback
+		# 	0.00 #-- supply_consumption_factor
+		# 	0.00 #-- supply_consumption
+		# 	10.00 #-- suppression
+		# 	0.00 #-- suppression_factor
+		# 	0.00 #-- experience_loss_factor
+		# 	0.00 #-- equipment_capture_factor
+		# 	0.00 #-- fuel_capacity
+		# 	#-- Air Values
+		# 	0.00 #-- air_attack
+		# 	#-- Common Values
+		# 	0.60 #-- max_organisation
+		# 	0.40 #-- max_strength
+		# 	0.00 #-- maximum_speed
+		# 	0.00 #-- armor_value
+		# 	0.20 #-- ap_attack
+		# 	0.00 #-- reliability
+		# 	0.00 #-- reliability_factor
+		# 	0.00 #-- #weight
+		# 	0.00 #-- fuel_consumption
+		# 	0.00 #-- fuel_consumption_factor
+		# 	0.00 #-- strat_attack
+		# 	0.00 #-- carrier_size
+		# 	0.00 #-- acc_hot_gain
+		# 	0.00 #-- acc_cold_gain
+		# 	0.00 #-- build_cost_ic
+		# }
 		
 		target_template = {
-			weight = 0.9
-			match_value = 3000.0
+			#weight = 0.9
+			#match_value = 3000.0
 			
 			support = { 
 				touhou_military_police = 1
@@ -315,10 +309,10 @@ touhou_demonforce_suppression_generic = {
 			}
 		}
 		
-		allowed_types = {
-			touhou_demonforce_cavalry
-			touhou_military_police
-		}
+		# allowed_types = {
+		# 	touhou_demonforce_cavalry
+		# 	touhou_military_police
+		# }
 	}
 }
 
@@ -334,15 +328,13 @@ touhou_demonforce_infantry_generic = {
 		HAK
 	}
 
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
 	}
 
-	match_to_count = 0.10
+	#match_to_count = 0.10
 	
 	touhou_demonforce_infantry_default = {
 	
@@ -354,51 +346,51 @@ touhou_demonforce_infantry_generic = {
 			}
 		}
 		
-		target_width = 20.0
-		width_weight = 1.0
-		column_swap_factor = 0.5
+		#target_width = 20.0
+		#width_#weight = 1.0
+		#column_swap_factor = 0.5
 		
-		stat_weights = {
-			0.00 #-- default_morale
-			0.00 #-- defense
-			1.00 #-- breakthrough
-			0.00 #-- hardness
-			4.00 #-- soft_attack
-			0.00 #-- hard_attack
-			0.00 #-- touhou_recon
-			1.00 #-- entrenchment
-			0.00 #-- initiative
-			0.00 #-- casualty_trickleback
-			0.00 #-- supply_consumption_factor
-			0.00 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.00 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.00 #-- air_attack
-			#-- Common Values
-			0.60 #-- max_organisation
-			0.40 #-- max_strength
-			0.00 #-- maximum_speed
-			0.00 #-- armor_value
-			0.20 #-- ap_attack
-			0.00 #-- reliability
-			0.00 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			0.00 #-- build_cost_ic
-		}
+		# stat_#weights = {
+		# 	0.00 #-- default_morale
+		# 	0.00 #-- defense
+		# 	1.00 #-- breakthrough
+		# 	0.00 #-- hardness
+		# 	4.00 #-- soft_attack
+		# 	0.00 #-- hard_attack
+		# 	0.00 #-- touhou_recon
+		# 	1.00 #-- entrenchment
+		# 	0.00 #-- initiative
+		# 	0.00 #-- casualty_trickleback
+		# 	0.00 #-- supply_consumption_factor
+		# 	0.00 #-- supply_consumption
+		# 	0.00 #-- suppression
+		# 	0.00 #-- suppression_factor
+		# 	0.00 #-- experience_loss_factor
+		# 	0.00 #-- equipment_capture_factor
+		# 	0.00 #-- fuel_capacity
+		# 	#-- Air Values
+		# 	0.00 #-- air_attack
+		# 	#-- Common Values
+		# 	0.60 #-- max_organisation
+		# 	0.40 #-- max_strength
+		# 	0.00 #-- maximum_speed
+		# 	0.00 #-- armor_value
+		# 	0.20 #-- ap_attack
+		# 	0.00 #-- reliability
+		# 	0.00 #-- reliability_factor
+		# 	0.00 #-- #weight
+		# 	0.00 #-- fuel_consumption
+		# 	0.00 #-- fuel_consumption_factor
+		# 	0.00 #-- strat_attack
+		# 	0.00 #-- carrier_size
+		# 	0.00 #-- acc_hot_gain
+		# 	0.00 #-- acc_cold_gain
+		# 	0.00 #-- build_cost_ic
+		# }
 		
 		target_template = {
-			weight = 0.9
-			match_value = 3000.0
+			#weight = 0.9
+			#match_value = 3000.0
 			
 			support = {
 				touhou_engineer = 1
@@ -412,14 +404,14 @@ touhou_demonforce_infantry_generic = {
 			}
 		}
 		
-		allowed_types = {
-			touhou_demonforce_infantry		
-			touhou_engineer
-			touhou_recon
-			touhou_field_hospital
-			touhou_logistics_company
-			touhou_demonforce_anti_tank
-		}
+		# allowed_types = {
+		# 	touhou_demonforce_infantry		
+		# 	touhou_engineer
+		# 	touhou_recon
+		# 	touhou_field_hospital
+		# 	touhou_logistics_company
+		# 	touhou_demonforce_anti_tank
+		# }
 	}
 }
 
@@ -435,9 +427,7 @@ touhou_demonforce_infantry_big_generic = {
 		HAK
 	}
 
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
@@ -455,7 +445,7 @@ touhou_demonforce_infantry_big_generic = {
 		}
 	}
 
-	match_to_count = 0.10
+	#match_to_count = 0.10
 	
 	touhou_demonforce_infantry_default = {
 	
@@ -475,51 +465,51 @@ touhou_demonforce_infantry_big_generic = {
 			}
 		}
 		
-		target_width = 40.0
-		width_weight = 1.5
-		column_swap_factor = 0.5
+		#target_width = 40.0
+		#width_#weight = 1.5
+		#column_swap_factor = 0.5
 		
-		stat_weights = {
-			0.00 #-- default_morale
-			0.00 #-- defense
-			1.00 #-- breakthrough
-			0.00 #-- hardness
-			4.00 #-- soft_attack
-			0.00 #-- hard_attack
-			0.00 #-- touhou_recon
-			1.00 #-- entrenchment
-			0.00 #-- initiative
-			0.00 #-- casualty_trickleback
-			0.00 #-- supply_consumption_factor
-			0.00 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.00 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.00 #-- air_attack
-			#-- Common Values
-			0.60 #-- max_organisation
-			0.40 #-- max_strength
-			0.00 #-- maximum_speed
-			0.00 #-- armor_value
-			0.20 #-- ap_attack
-			0.00 #-- reliability
-			0.00 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			0.00 #-- build_cost_ic
-		}
+		# stat_#weights = {
+		# 	0.00 #-- default_morale
+		# 	0.00 #-- defense
+		# 	1.00 #-- breakthrough
+		# 	0.00 #-- hardness
+		# 	4.00 #-- soft_attack
+		# 	0.00 #-- hard_attack
+		# 	0.00 #-- touhou_recon
+		# 	1.00 #-- entrenchment
+		# 	0.00 #-- initiative
+		# 	0.00 #-- casualty_trickleback
+		# 	0.00 #-- supply_consumption_factor
+		# 	0.00 #-- supply_consumption
+		# 	0.00 #-- suppression
+		# 	0.00 #-- suppression_factor
+		# 	0.00 #-- experience_loss_factor
+		# 	0.00 #-- equipment_capture_factor
+		# 	0.00 #-- fuel_capacity
+		# 	#-- Air Values
+		# 	0.00 #-- air_attack
+		# 	#-- Common Values
+		# 	0.60 #-- max_organisation
+		# 	0.40 #-- max_strength
+		# 	0.00 #-- maximum_speed
+		# 	0.00 #-- armor_value
+		# 	0.20 #-- ap_attack
+		# 	0.00 #-- reliability
+		# 	0.00 #-- reliability_factor
+		# 	0.00 #-- #weight
+		# 	0.00 #-- fuel_consumption
+		# 	0.00 #-- fuel_consumption_factor
+		# 	0.00 #-- strat_attack
+		# 	0.00 #-- carrier_size
+		# 	0.00 #-- acc_hot_gain
+		# 	0.00 #-- acc_cold_gain
+		# 	0.00 #-- build_cost_ic
+		# }
 		
 		target_template = {
-			weight = 0.9
-			match_value = 5000.0
+			#weight = 0.9
+			#match_value = 5000.0
 			
 			support = {
 				touhou_engineer = 1
@@ -534,15 +524,15 @@ touhou_demonforce_infantry_big_generic = {
 			}
 		}
 		
-		allowed_types = {
-			touhou_demonforce_infantry		
-			touhou_engineer
-			touhou_recon
-			touhou_field_hospital
-			touhou_logistics_company
-			touhou_demonforce_anti_tank
-			touhou_signal_company
-		}
+		# allowed_types = {
+		# 	touhou_demonforce_infantry		
+		# 	touhou_engineer
+		# 	touhou_recon
+		# 	touhou_field_hospital
+		# 	touhou_logistics_company
+		# 	touhou_demonforce_anti_tank
+		# 	touhou_signal_company
+		# }
 	}
 }
 
@@ -558,9 +548,7 @@ touhou_demonforce_mountaineers_generic = {
 		HAK
 	}
 
-	roles = {
-		mountaineers
-	}
+	role = mountaineers
 	
 	upgrade_prio = {
 		factor = 2
@@ -573,7 +561,7 @@ touhou_demonforce_mountaineers_generic = {
 		}
 	}
 	
-	match_to_count = 0.45
+	#match_to_count = 0.45
 
 	touhou_demonforce_mountaineers_default = {
 	
@@ -585,51 +573,51 @@ touhou_demonforce_mountaineers_generic = {
 			}
 		}
 	
-		target_width = 20.0
-		width_weight = 2.0
-		column_swap_factor = 0.2
+		#target_width = 20.0
+		#width_#weight = 2.0
+		#column_swap_factor = 0.2
 		
-		stat_weights = {
-			0 #-- default_morale
-			1 #-- defense
-			1 #-- breakthrough
-			0 #-- hardness
-			2 #-- soft_attack
-			0 #-- hard_attack
-			0 #-- touhou_recon
-			0 #-- entrenchment
-			0 #-- initiative
-			0 #-- casualty_trickleback
-			0  #-- supply_consumption_factor
-			0 #-- supply_consumption
-			0 #-- suppression
-			0 #-- suppression_factor
-			0 #-- experience_loss_factor
-			0 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0 #-- air_attack
-			#-- Common Values
-			1 #-- max_organisation
-			1 #-- max_strength
-			0 #-- maximum_speed
-			0 #-- armor_value
-			0 #-- ap_attack
-			0 #-- reliability
-			0 #-- reliability_factor
-			0.00 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			-0.1 #-- build_cost_ic
-		}
+		# stat_#weights = {
+		# 	0 #-- default_morale
+		# 	1 #-- defense
+		# 	1 #-- breakthrough
+		# 	0 #-- hardness
+		# 	2 #-- soft_attack
+		# 	0 #-- hard_attack
+		# 	0 #-- touhou_recon
+		# 	0 #-- entrenchment
+		# 	0 #-- initiative
+		# 	0 #-- casualty_trickleback
+		# 	0  #-- supply_consumption_factor
+		# 	0 #-- supply_consumption
+		# 	0 #-- suppression
+		# 	0 #-- suppression_factor
+		# 	0 #-- experience_loss_factor
+		# 	0 #-- equipment_capture_factor
+		# 	0.00 #-- fuel_capacity
+		# 	#-- Air Values
+		# 	0 #-- air_attack
+		# 	#-- Common Values
+		# 	1 #-- max_organisation
+		# 	1 #-- max_strength
+		# 	0 #-- maximum_speed
+		# 	0 #-- armor_value
+		# 	0 #-- ap_attack
+		# 	0 #-- reliability
+		# 	0 #-- reliability_factor
+		# 	0.00 #-- #weight
+		# 	0.00 #-- fuel_consumption
+		# 	0.00 #-- fuel_consumption_factor
+		# 	0.00 #-- strat_attack
+		# 	0.00 #-- carrier_size
+		# 	0.00 #-- acc_hot_gain
+		# 	0.00 #-- acc_cold_gain
+		# 	-0.1 #-- build_cost_ic
+		# }
 
 		target_template = {
-			weight = 0.5
-			match_value = 3000.0
+			#weight = 0.5
+			#match_value = 3000.0
 			
 			support = {
 				touhou_engineer = 1
@@ -642,15 +630,15 @@ touhou_demonforce_mountaineers_generic = {
 			}
 		}
 		
-		allowed_types = {
-			touhou_demonforce_mountaineers
-			touhou_recon
-			touhou_signal_company
-			touhou_field_hospital
-			touhou_logistics_company
-			touhou_demonforce_anti_tank
-			touhou_engineer
-		}
+		# allowed_types = {
+		# 	touhou_demonforce_mountaineers
+		# 	touhou_recon
+		# 	touhou_signal_company
+		# 	touhou_field_hospital
+		# 	touhou_logistics_company
+		# 	touhou_demonforce_anti_tank
+		# 	touhou_engineer
+		# }
 	}
 }
 
@@ -666,9 +654,7 @@ touhou_demonforce_marines_generic = {
 		HAK
 	}
 
-	roles = {
-		marines
-	}
+	role = marines
 	
 	upgrade_prio = {
 		factor = 2
@@ -681,7 +667,7 @@ touhou_demonforce_marines_generic = {
 		}
 	}
 	
-	match_to_count = 0.45
+	#match_to_count = 0.45
 
 	touhou_demonforce_marine_default = {
 	
@@ -693,51 +679,51 @@ touhou_demonforce_marines_generic = {
 			}
 		}
 	
-		target_width = 18.0
-		width_weight = 1.0
-		column_swap_factor = 0.1
+		#target_width = 18.0
+		#width_#weight = 1.0
+		#column_swap_factor = 0.1
 		
-		stat_weights = {
-			0.00 #-- default_morale
-			0.00 #-- defense
-			1.00 #-- breakthrough
-			0.05 #-- hardness
-			3.00 #-- soft_attack
-			0.01 #-- hard_attack
-			0.00 #-- touhou_recon
-			2.20 #-- entrenchment
-			0.00 #-- initiative
-			0.00 #-- casualty_trickleback
-			-0.1 #-- supply_consumption_factor
-			-0.1 #-- supply_consumption
-			0.00 #-- suppression
-			0.00 #-- suppression_factor
-			0.00 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.00 #-- air_attack
-			#-- Common Values
-			0.60 #-- max_organisation
-			0.40 #-- max_strength
-			0.00 #-- maximum_speed
-			0.05 #-- armor_value
-			0.00 #-- ap_attack
-			0.00 #-- reliability
-			0.00 #-- reliability_factor
-			-0.2 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			-0.1 #-- build_cost_ic
-		}
+		# stat_#weights = {
+		# 	0.00 #-- default_morale
+		# 	0.00 #-- defense
+		# 	1.00 #-- breakthrough
+		# 	0.05 #-- hardness
+		# 	3.00 #-- soft_attack
+		# 	0.01 #-- hard_attack
+		# 	0.00 #-- touhou_recon
+		# 	2.20 #-- entrenchment
+		# 	0.00 #-- initiative
+		# 	0.00 #-- casualty_trickleback
+		# 	-0.1 #-- supply_consumption_factor
+		# 	-0.1 #-- supply_consumption
+		# 	0.00 #-- suppression
+		# 	0.00 #-- suppression_factor
+		# 	0.00 #-- experience_loss_factor
+		# 	0.00 #-- equipment_capture_factor
+		# 	0.00 #-- fuel_capacity
+		# 	#-- Air Values
+		# 	0.00 #-- air_attack
+		# 	#-- Common Values
+		# 	0.60 #-- max_organisation
+		# 	0.40 #-- max_strength
+		# 	0.00 #-- maximum_speed
+		# 	0.05 #-- armor_value
+		# 	0.00 #-- ap_attack
+		# 	0.00 #-- reliability
+		# 	0.00 #-- reliability_factor
+		# 	-0.2 #-- #weight
+		# 	0.00 #-- fuel_consumption
+		# 	0.00 #-- fuel_consumption_factor
+		# 	0.00 #-- strat_attack
+		# 	0.00 #-- carrier_size
+		# 	0.00 #-- acc_hot_gain
+		# 	0.00 #-- acc_cold_gain
+		# 	-0.1 #-- build_cost_ic
+		# }
 
 		target_template = {
-			weight = 0.9
-			match_value = 2000.0
+			#weight = 0.9
+			#match_value = 2000.0
 			
 			support = {
 				touhou_recon = 1
@@ -750,12 +736,12 @@ touhou_demonforce_marines_generic = {
 		}
 
 		
-		allowed_types = {
-			touhou_demonforce_marine
-			touhou_engineer
-			touhou_logistics_company
-			touhou_recon
-		}
+		# allowed_types = {
+		# 	touhou_demonforce_marine
+		# 	touhou_engineer
+		# 	touhou_logistics_company
+		# 	touhou_recon
+		# }
 	}
 }
 
@@ -772,9 +758,7 @@ touhou_demonforce_paratrooper_generic = {
 		HAK
 	}
 
-	roles = {
-		paratrooper
-	}
+	role = paratrooper
 	
 	upgrade_prio = {
 		factor = 2
@@ -787,7 +771,7 @@ touhou_demonforce_paratrooper_generic = {
 		}
 	}
 	
-	match_to_count = 0.45
+	#match_to_count = 0.45
 	
 	touhou_demonforce_paratrooper_default = {
 	
@@ -799,51 +783,51 @@ touhou_demonforce_paratrooper_generic = {
 			}
 		}
 		
-		target_width = 18.0
-		width_weight = 3.0
-		column_swap_factor = 0.1
+		#target_width = 18.0
+		#width_#weight = 3.0
+		#column_swap_factor = 0.1
 		
-		stat_weights = {
-			0.20 #-- default_morale
-			1.00 #-- defense
-			0.20 #-- breakthrough
-			0.00 #-- hardness
-			2.00 #-- soft_attack
-			0.10 #-- hard_attack
-			0.05 #-- touhou_recon
-			0.20 #-- entrenchment
-			0.20 #-- initiative
-			0.05 #-- casualty_trickleback
-			-1.0 #-- supply_consumption_factor
-			-1.0 #-- supply_consumption
-			0.01 #-- suppression
-			0.01 #-- suppression_factor
-			0.05 #-- experience_loss_factor
-			0.00 #-- equipment_capture_factor
-			0.00 #-- fuel_capacity
-			#-- Air Values
-			0.01 #-- air_attack
-			#-- Common Values
-			0.6 #-- max_organisation
-			0.4 #-- max_strength
-			0.00 #-- maximum_speed
-			0.00 #-- armor_value
-			0.20 #-- ap_attack
-			0.00 #-- reliability
-			0.00 #-- reliability_factor
-			-1.0 #-- weight
-			0.00 #-- fuel_consumption
-			0.00 #-- fuel_consumption_factor
-			0.00 #-- strat_attack
-			0.00 #-- carrier_size
-			0.00 #-- acc_hot_gain
-			0.00 #-- acc_cold_gain
-			-0.1 #-- build_cost_ic
-		}
+		# stat_#weights = {
+		# 	0.20 #-- default_morale
+		# 	1.00 #-- defense
+		# 	0.20 #-- breakthrough
+		# 	0.00 #-- hardness
+		# 	2.00 #-- soft_attack
+		# 	0.10 #-- hard_attack
+		# 	0.05 #-- touhou_recon
+		# 	0.20 #-- entrenchment
+		# 	0.20 #-- initiative
+		# 	0.05 #-- casualty_trickleback
+		# 	-1.0 #-- supply_consumption_factor
+		# 	-1.0 #-- supply_consumption
+		# 	0.01 #-- suppression
+		# 	0.01 #-- suppression_factor
+		# 	0.05 #-- experience_loss_factor
+		# 	0.00 #-- equipment_capture_factor
+		# 	0.00 #-- fuel_capacity
+		# 	#-- Air Values
+		# 	0.01 #-- air_attack
+		# 	#-- Common Values
+		# 	0.6 #-- max_organisation
+		# 	0.4 #-- max_strength
+		# 	0.00 #-- maximum_speed
+		# 	0.00 #-- armor_value
+		# 	0.20 #-- ap_attack
+		# 	0.00 #-- reliability
+		# 	0.00 #-- reliability_factor
+		# 	-1.0 #-- #weight
+		# 	0.00 #-- fuel_consumption
+		# 	0.00 #-- fuel_consumption_factor
+		# 	0.00 #-- strat_attack
+		# 	0.00 #-- carrier_size
+		# 	0.00 #-- acc_hot_gain
+		# 	0.00 #-- acc_cold_gain
+		# 	-0.1 #-- build_cost_ic
+		# }
 
 		target_template = {
-			weight = 0.9
-			match_value = 2000.0
+			#weight = 0.9
+			#match_value = 2000.0
 			
 			support = {
 				touhou_engineer = 1
@@ -855,17 +839,17 @@ touhou_demonforce_paratrooper_generic = {
 			}
 		}
 		
-		allowed_types = {
-			touhou_demonforce_paratrooper
-			touhou_engineer
-			touhou_recon
-			touhou_signal_company
-			touhou_field_hospital
-			touhou_logistics_company
-			touhou_demonforce_anti_tank
-			touhou_military_police
-			touhou_demonforce_anti_air
-		}
+		# allowed_types = {
+		# 	touhou_demonforce_paratrooper
+		# 	touhou_engineer
+		# 	touhou_recon
+		# 	touhou_signal_company
+		# 	touhou_field_hospital
+		# 	touhou_logistics_company
+		# 	touhou_demonforce_anti_tank
+		# 	touhou_military_police
+		# 	touhou_demonforce_anti_air
+		# }
 	}
 }
 
