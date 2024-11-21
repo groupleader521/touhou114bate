@@ -40,8 +40,8 @@
  para_tech_research:0 "伞兵研究速度"
  light_fighter_research:0 "轻型战斗机研究速度"
  cat_anti_tank_research:0 "反坦克炮研究速度"
- cas_bomber_research:0 "近距离支援机研究速度"
- tactical_bomber_research:0 "战术轰炸机研究速度"
+ #cas_bomber_research:0 "近距离支援机研究速度"
+ #tactical_bomber_research:0 "战术轰炸机研究速度"
  
  
  touhou_special_research:0 "幻想乡科技"

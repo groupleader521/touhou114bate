@@ -13,8 +13,8 @@
  touhou_democratic_influence:0 "倾向人类思潮"
  touhou_democratic_influence_desc:0 "首领和大部分民众开始更多得为人类考虑。"
  
- touhou_industrial_concern:0 "河童重工"
- touhou_electronics_concern:0 "人偶网络"
+ #touhou_industrial_concern:0 "河童重工"
+ #touhou_electronics_concern:0 "人偶网络"
  yukari_political:0 "贤者议会亲妖怪派"
  matara_political:0 "贤者议会中立派"
  huashan_political:0 "贤者议会亲人类派"

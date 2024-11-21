@@ -2,7 +2,7 @@
  STATE_MiTuZhuLinWaiWei:0 "迷途竹林外围"
  STATE_HongMoGuan:0 "红魔馆"
  STATE_RenLiZhongXinQu:0 "人里中心区"
- STATE_MiTuZhuLin:1 "迷途竹林"
+ #STATE_MiTuZhuLin:1 "迷途竹林"
  STATE_ShouShiCanBaiDao:1 "守矢参拜道"
  STATE_MingLianSi:0 "命莲寺"
  STATE_BoLiShenShe:1 "博丽神社"
