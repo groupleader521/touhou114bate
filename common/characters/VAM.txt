@@ -10,45 +10,9 @@ characters = {
 				small = GFX_idea_scarlet
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = centrism
-			traits = {
-				scarlet_sister
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = fascism_ideology
-			traits = {
-				scarlet_sister
-			}
-		}
-		advisor = {
-			idea_token = TOUHOU_Remilia_Scarlet
-			slot = political_advisor
-			traits = { touhou_backroom_backstabber }
-		}
-		advisor = {
-			idea_token = TOUHOU_Remilia_Scarlet
-			slot = army_chief
-			traits = { touhou_army_concealment_3 }
-		}
-		advisor = {
-			idea_token = TOUHOU_Remilia_Scarlet
-			slot = high_command
-			traits = { touhou_army_commando_scarlet }
-		}
-		field_marshal = {
-			traits = {
-				units_vampire harsh_leader commando infantry_officer urban_assault_specialist camouflage_expert
-			}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-		}
+		
+		
+		
 	}
 	TOUHOU_Patchouli_Knowledge = {
 		name = TOUHOU_Patchouli_Knowledge
@@ -60,23 +24,7 @@ characters = {
 				large = GFX_Patchouli_Knowledge
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = marxism
-			traits = {
-				patchouli_book
-			}
-		}
-		corps_commander = {
-			traits = {
-				units_vampire bearer_of_artillery infantry_officer urban_assault_specialist
-			}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-		}
+		
 	}
 	TOUHOU_Hong_Meirin = {
 		name = TOUHOU_Hong_Meirin
@@ -88,21 +36,7 @@ characters = {
 				large = GFX_Hon_Meirin
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = liberalism
-			traits = {
-				meirin_defence
-			}
-		}
-		corps_commander = {
-			traits = { units_vampire infantry_leader urban_assault_specialist infantry_expert }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-		}
+		
 	}
 	TOUHOU_Izayoi_Sakuya = {
 		name = TOUHOU_Izayoi_Sakuya
@@ -110,14 +44,6 @@ characters = {
 			army = {
 				large = GFX_Izayoi_Sakuya
 			}
-		}
-		corps_commander = {
-			traits = { units_vampire trait_cautious commando infantry_officer urban_assault_specialist camouflage_expert }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
 		}
 	}
 	TOUHOU_Koakuma = {
@@ -127,14 +53,6 @@ characters = {
 				large = GFX_Koakuma
 			}
 		}
-		corps_commander = {
-			traits = { units_vampire trait_cautious urban_assault_specialist }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
 	}
 	TOUHOU_Flandre_Scarlet = {
 		name = TOUHOU_Flandre_Scarlet
@@ -142,16 +60,6 @@ characters = {
 			army = {
 				large = GFX_Flandre_Scarlet
 			}
-		}
-		field_marshal = {
-			traits = {
-				units_vampire harsh_leader commando infantry_officer urban_assault_specialist camouflage_expert
-			}
-			skill = 6
-			attack_skill = 6
-			defense_skill = 6
-			planning_skill = 6
-			logistics_skill = 6
 		}
 	}
 }

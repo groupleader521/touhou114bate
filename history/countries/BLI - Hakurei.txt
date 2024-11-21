@@ -54,8 +54,130 @@ recruit_character = TOUHOU_Yakumo_Yukari
 recruit_character = TOUHOU_Hakurei_Reimu
 recruit_character = TOUHOU_Sukuna_Shinmyoumaru
 recruit_character = TOUHOU_Komano_Aunn
-set_country_flag = touhou_country_flag_wakan_first_research
 
+
+set_country_flag = touhou_country_flag_wakan_first_research
+add_country_leader_role = {
+	character = TOUHOU_Yakumo_Yukari
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			yukari_oracle
+		}
+	}
+}
+add_field_marshal_role = {
+	character = TOUHOU_Yakumo_Yukari
+	traits = {
+		units_human brilliant_strategist organizer cavalry_officer cavalry_leader skilled_staffer urban_assault_specialist expert_delegator combined_arms_expert logistics_wizard
+	}
+	skill = 6
+	attack_skill = 6
+	defense_skill = 6
+	planning_skill = 6
+	logistics_skill = 6
+}
+add_advisor_role = {
+	character = TOUHOU_Yakumo_Yukari
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Yakumo_Yukari
+		slot = political_advisor
+		traits = { yukari_political_trait }
+		cost = 150
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Hakurei_Reimu
+	traits = {
+		units_human war_hero infantry_leader hill_fighter urban_assault_specialist infantry_expert
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_country_leader_role = {
+	character = TOUHOU_Hakurei_Reimu
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			boli_defence
+		}
+	}
+}
+add_country_leader_role = {
+	character = TOUHOU_Hakurei_Reimu
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			boli_defence
+		}
+	}
+}
+add_country_leader_role = {
+	character = TOUHOU_Hakurei_Reimu
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			boli_defence
+		}
+	}
+}
+
+add_advisor_role = {
+	character = TOUHOU_Hakurei_Reimu
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Hakurei_Reimu
+		slot = political_advisor
+		traits = { touhou_quartermaster_general }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Hakurei_Reimu
+		slot = air_chief
+		traits = { touhou_air_chief_ground_support_3 }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Hakurei_Reimu
+		slot = high_command
+		traits = { touhou_army_chief_organizational_3 }
+		cost = 150
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Sukuna_Shinmyoumaru
+	traits = {
+		units_human infantry_leader hill_fighter urban_assault_specialist infantry_expert
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+add_corps_commander_role = {
+	character = TOUHOU_Komano_Aunn
+	traits = {
+		units_human infantry_leader hill_fighter urban_assault_specialist infantry_expert
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
 if = {
 	limit = { has_dlc = "La Resistance" }
 	create_operative_leader = {

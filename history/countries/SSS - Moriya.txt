@@ -53,6 +53,107 @@ set_politics = {
 recruit_character = TOUHOU_Yasaka_Kanako
 recruit_character = TOUHOU_Moriya_Suwako
 recruit_character = TOUHOU_Kochiya_Sanae
+
+
+add_country_leader_role = {
+    character = TOUHOU_Kochiya_Sanae
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			zaomiao
+		}
+	}	
+}
+add_field_marshal_role = {
+	character = TOUHOU_Yasaka_Kanako
+	traits = {
+		units_human brilliant_strategist infantry_leader organizer skilled_staffer trait_mountaineer hill_fighter urban_assault_specialist expert_delegator infantry_expert logistics_wizard
+	}
+	skill = 6
+	attack_skill = 6
+	defense_skill = 6
+	planning_skill = 6
+	logistics_skill = 6
+}
+add_country_leader_role = {
+    character = TOUHOU_Yasaka_Kanako
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			shennaizi
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Yasaka_Kanako
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			shennaizi
+		}
+	}
+}
+add_advisor_role = {
+	character = TOUHOU_Yasaka_Kanako
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Yasaka_Kanako
+		slot = political_advisor
+		traits = { touhou_war_industrialist }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Yasaka_Kanako
+		slot = army_chief
+		traits = { touhou_army_infantry_3 }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Yasaka_Kanako
+		slot = high_command
+		traits = { touhou_army_regrouping_shennaizi }
+		cost = 150
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Moriya_Suwako
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			fangquzi
+		}
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Moriya_Suwako
+	traits = {
+		units_human inflexible_strategist infantry_leader organizer trait_mountaineer hill_fighter urban_assault_specialist ambusher
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_corps_commander_role = {
+	character = TOUHOU_Kochiya_Sanae
+	traits = {
+		units_human infantry_leader trait_mountaineer hill_fighter urban_assault_specialist infantry_expert
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
 set_country_flag = touhou_country_flag_wakan_first_research
 
 if = {

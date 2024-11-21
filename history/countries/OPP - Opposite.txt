@@ -52,8 +52,94 @@ set_politics = {
 
 recruit_character = TOUHOU_Shikieiki_Yamaxanadu
 recruit_character = TOUHOU_Onozuka_Komachi
-set_country_flag = touhou_country_flag_demonforce_first_research
 
+set_country_flag = touhou_country_flag_demonforce_first_research
+add_field_marshal_role = {
+	character = TOUHOU_Shikieiki_Yamaxanadu
+	traits = {
+		units_ghost trait_cautious infantry_officer commando urban_assault_specialist skirmisher
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_country_leader_role = {
+    character = TOUHOU_Shikieiki_Yamaxanadu
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			siji
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Shikieiki_Yamaxanadu
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			siji
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Shikieiki_Yamaxanadu
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			siji
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Shikieiki_Yamaxanadu
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			siji
+		}
+	}
+}
+add_advisor_role = {
+	character = TOUHOU_Shikieiki_Yamaxanadu
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Shikieiki_Yamaxanadu
+		slot = political_advisor
+		traits = { touhou_ideological_crusader }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Shikieiki_Yamaxanadu
+		slot = navy_chief
+		traits = { touhou_navy_screen_3 }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Shikieiki_Yamaxanadu
+		slot = high_command
+		traits = { touhou_army_chief_old_guard_siji }
+		cost = 150
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Onozuka_Komachi
+	traits = { units_ghost infantry_officer commando urban_assault_specialist skirmisher }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
 if = {
 	limit = { has_dlc = "La Resistance" }
 	create_operative_leader = {

@@ -10,45 +10,9 @@ characters = {
 				small = GFX_idea_yongyi
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = fascism_ideology
-			traits = {
-				yongyi
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = marxism
-			traits = {
-				yongyi
-			}
-		}
-		advisor = {
-			idea_token = TOUHOU_Hoshiguma_Yugi
-			slot = political_advisor
-			traits = { touhou_prince_of_terror }
-		}
-		advisor = {
-			idea_token = TOUHOU_Hoshiguma_Yugi
-			slot = army_chief
-			traits = { touhou_army_chief_offensive_3 }
-		}
-		advisor = {
-			idea_token = TOUHOU_Hoshiguma_Yugi
-			slot = high_command
-			traits = { touhou_army_chief_offensive_3 }
-		}
-		field_marshal = {
-			traits = {
-				units_oni harsh_leader infantry_officer trait_mountaineer hill_fighter
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
+		
+		
+		
 	}
 	TOUHOU_Ibuki_Suika = {
 		name = TOUHOU_Ibuki_Suika
@@ -60,27 +24,7 @@ characters = {
 				large = GFX_Ibuki_Suika
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = centrism
-			traits = {
-				cuixiang
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = liberalism
-			traits = {
-				cuixiang
-			}
-		}
-		field_marshal = {
-			traits = { units_oni harsh_leader infantry_officer trait_mountaineer hill_fighter }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
+		
+		
 	}
 }

@@ -52,8 +52,74 @@ set_politics = {
 }
 
 recruit_character = TOUHOU_Kawasiro_Nitori
-set_country_flag = touhou_country_flag_demonforce_first_research
 
+
+set_country_flag = touhou_country_flag_demonforce_first_research
+add_country_leader_role = {
+    character = TOUHOU_Kawasiro_Nitori
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			kappa_research
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Kawasiro_Nitori
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			kappa_research
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Kawasiro_Nitori
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			kappa_research
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Kawasiro_Nitori
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			kappa_research
+		}
+	}
+}
+add_field_marshal_role = {
+	character = TOUHOU_Kawasiro_Nitori
+	traits = {
+		units_kappa trait_engineer naval_invader fortress_buster invader_ii naval_liason
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+add_advisor_role = {
+	character = TOUHOU_Kawasiro_Nitori
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Kawasiro_Nitori
+		slot = navy_chief
+		traits = { touhou_navy_submarine_3 }
+		cost = 150
+	}
+}
 if = {
 	limit = { has_dlc = "La Resistance" }
 	create_operative_leader = {

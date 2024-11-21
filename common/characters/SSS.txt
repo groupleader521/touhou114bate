@@ -10,45 +10,9 @@ characters = {
 				small = GFX_idea_shennaizi
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = centrism
-			traits = {
-				shennaizi
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = fascism_ideology
-			traits = {
-				shennaizi
-			}
-		}
-		advisor = {
-			idea_token = TOUHOU_Yasaka_Kanako
-			slot = political_advisor
-			traits = { touhou_war_industrialist }
-		}
-		advisor = {
-			idea_token = TOUHOU_Yasaka_Kanako
-			slot = army_chief
-			traits = { touhou_army_infantry_3 }
-		}
-		advisor = {
-			idea_token = TOUHOU_Yasaka_Kanako
-			slot = high_command
-			traits = { touhou_army_regrouping_shennaizi }
-		}
-		field_marshal = {
-			traits = {
-				units_human brilliant_strategist infantry_leader organizer skilled_staffer trait_mountaineer hill_fighter urban_assault_specialist expert_delegator infantry_expert logistics_wizard
-			}
-			skill = 6
-			attack_skill = 6
-			defense_skill = 6
-			planning_skill = 6
-			logistics_skill = 6
-		}
+		
+		
+		
 	}
 	TOUHOU_Moriya_Suwako = {
 		name = TOUHOU_Moriya_Suwako
@@ -60,23 +24,7 @@ characters = {
 				large = GFX_Moriya_Suwako
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = marxism
-			traits = {
-				fangquzi
-			}
-		}
-		corps_commander = {
-			traits = {
-				units_human inflexible_strategist infantry_leader organizer trait_mountaineer hill_fighter urban_assault_specialist ambusher
-			}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-		}
+		
 	}
 	TOUHOU_Kochiya_Sanae = {
 		name = TOUHOU_Kochiya_Sanae
@@ -88,22 +36,6 @@ characters = {
 				large = GFX_Kotiya_Sanae
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = liberalism
-			traits = {
-				zaomiao
-			}
-		}
-		corps_commander = {
-			traits = {
-				units_human infantry_leader trait_mountaineer hill_fighter urban_assault_specialist infantry_expert
-			}
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
-		}
+		
 	}
 }

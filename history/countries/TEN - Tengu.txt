@@ -54,6 +54,114 @@ recruit_character = TOUHOU_Iizunamaru_Megumu
 recruit_character = TOUHOU_Shameimaru_Aya
 recruit_character = TOUHOU_Inubashiri_Momizi
 recruit_character = TOUHOU_Himekaidou_Hatate
+
+
+add_country_leader_role = {
+    character = TOUHOU_Inubashiri_Momizi
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			tengu_defence
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Shameimaru_Aya
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			tengu_speed
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Iizunamaru_Megumu
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			tengu_consumer
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Iizunamaru_Megumu
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			tengu_consumer
+		}
+	}
+}
+add_field_marshal_role = {
+	character = TOUHOU_Iizunamaru_Megumu
+	traits = {
+		units_tengu harsh_leader trait_mountaineer hill_fighter
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_advisor_role = {
+	character = TOUHOU_Iizunamaru_Megumu
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Shameimaru_Aya
+		slot = political_advisor
+		traits = { touhou_tengu_mobilize }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Shameimaru_Aya
+		slot = air_chief
+		traits = { touhou_air_air_superiority_3 }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Shameimaru_Aya
+		slot = high_command
+		traits = { touhou_air_chief_safety_3 }
+		cost = 150
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Shameimaru_Aya
+	traits = {
+		units_tengu media_personality trait_mountaineer hill_fighter
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+add_corps_commander_role = {
+	character = TOUHOU_Inubashiri_Momizi
+	traits = { units_tengu trait_cautious trait_mountaineer hill_fighter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+add_corps_commander_role = {
+	character = TOUHOU_Himekaidou_Hatate
+	traits = { units_tengu media_personality trait_mountaineer hill_fighter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
 set_country_flag = touhou_country_flag_demonforce_first_research
 
 if = {

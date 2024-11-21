@@ -53,8 +53,120 @@ set_politics = {
 recruit_character = TOUHOU_Alice_Margatroid
 recruit_character = TOUHOU_Shanghai_Ningyou
 recruit_character = TOUHOU_Hourai_Ningyou
+
+
 set_country_flag = touhou_country_flag_magic_first_research
 country_event = { id = alice.0 days = 3 random_days = 1  } 
+add_field_marshal_role = {
+	character = TOUHOU_Alice_Margatroid
+	traits = {
+		units_marionette bearer_of_artillery skilled_staffer panzer_leader jungle_rat ranger organizer expert_delegator inspirational_leader panzer_expert
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+}
+add_advisor_role = {
+	character = TOUHOU_Alice_Margatroid
+	activate = yes
+	advisor = { 
+		idea_token = TOUHOU_Alice_Margatroid
+		slot = political_advisor
+		traits = {
+			touhou_silent_workhorse
+		}
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Alice_Margatroid
+		slot = army_chief
+		traits = {
+			touhou_army_armored_3
+		}
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Alice_Margatroid
+		slot = high_command
+		traits = {
+			touhou_army_chief_morale_3
+		}
+		cost = 150
+	}
+}
+add_country_leader_role = {
+	character = TOUHOU_Alice_Margatroid
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			marionette_bruise
+		}
+	}
+	
+}
+add_country_leader_role = {
+	character = TOUHOU_Alice_Margatroid
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			marionette_bruise
+		}
+	}
+	
+}
+
+add_country_leader_role = {
+	character = TOUHOU_Alice_Margatroid
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			marionette_bruise
+		}
+	}
+	
+}
+add_country_leader_role = {
+	character = TOUHOU_Alice_Margatroid
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			marionette_bruise
+		}
+	}
+	
+}
+
+
+
+
+add_corps_commander_role = {
+	character = TOUHOU_Shanghai_Ningyou
+	traits = { units_marionette panzer_leader jungle_rat ranger panzer_expert }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+add_corps_commander_role = {
+	character = TOUHOU_Hourai_Ningyou
+	traits = { units_marionette panzer_leader jungle_rat ranger panzer_expert }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
 
 if = {
 	limit = { has_dlc = "La Resistance" }

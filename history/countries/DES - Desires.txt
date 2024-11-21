@@ -51,6 +51,117 @@ recruit_character = TOUHOU_Toyosatomimi_no_Miko
 recruit_character = TOUHOU_Mononobe_no_Futo
 recruit_character = TOUHOU_Soga_no_Toziko
 recruit_character = TOUHOU_Kaku_Seiga
+
+add_field_marshal_role = {
+	character = TOUHOU_Toyosatomimi_no_Miko
+	traits = {
+		units_human infantry_leader urban_assault_specialist infantry_expert
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_country_leader_role = {
+	character = TOUHOU_Toyosatomimi_no_Miko
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			shenzi
+		}
+	}
+}
+add_country_leader_role = {
+	character = TOUHOU_Toyosatomimi_no_Miko
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			shenzi
+		}
+	}
+}
+add_country_leader_role = {
+	character = TOUHOU_Toyosatomimi_no_Miko
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			shenzi
+		}
+	}
+}
+add_country_leader_role = {
+	character = TOUHOU_Toyosatomimi_no_Miko
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			shenzi
+		}
+	}
+}
+add_advisor_role = {
+	character = TOUHOU_Toyosatomimi_no_Miko
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Toyosatomimi_no_Miko
+		slot = political_advisor
+		traits = { touhou_smooth_talking_charmer }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Toyosatomimi_no_Miko
+		slot = air_chief
+		traits = { touhou_air_strategic_bombing_3 }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Toyosatomimi_no_Miko
+		slot = high_command
+		traits = { touhou_army_chief_reform_shenzi }
+		cost = 150
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Mononobe_no_Futo
+	traits = {
+		units_human infantry_leader urban_assault_specialist infantry_expert
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+add_corps_commander_role = {
+	character = TOUHOU_Soga_no_Toziko
+	traits = {
+		units_human infantry_leader urban_assault_specialist infantry_expert
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+add_corps_commander_role = {
+	character = TOUHOU_Kaku_Seiga
+	traits = {
+		units_human infantry_leader urban_assault_specialist infantry_expert
+	}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+}
 set_country_flag = touhou_country_flag_wakan_first_research
 
 if = {

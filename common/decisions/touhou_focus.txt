@@ -20,8 +20,72 @@ touhou_devildom = {#魔神降临
 		}
 		
 		remove_effect = {
-			recruit_character = TOUHOU_Shinki
-			recruit_character = TOUHOU_Shinki_navy
+			add_corps_commander_role = {
+				character = TOUHOU_Shinki
+				traits = {
+					units_marionette units_human units_animal units_evil units_ghost units_oni units_kappa units_rabbit units_tengu units_vampire brilliant_strategist inflexible_strategist war_hero bearer_of_artillery logistics_wizard offensive_doctrine defensive_doctrine fast_planner thorough_planner unyielding_defender aggressive_assaulter organisational_leader inspirational_leader expert_delegator organizer cavalry_leader infantry_leader skilled_staffer trickster winter_specialist adaptable winter_expert trait_engineer panzer_leader commando desert_fox swamp_fox trait_mountaineer hill_fighter jungle_rat ranger urban_assault_specialist naval_invader panzer_expert combined_arms_expert cavalry_expert fortress_buster scavenger infantry_expert ambusher invader_ii naval_liason skirmisher paratrooper camouflage_expert expert_improviser guerilla_fighter 
+				}
+				skill = 9
+				attack_skill = 10
+				defense_skill = 10
+				planning_skill = 10
+				logistics_skill = 10
+			}
+			add_naval_commander_role = {
+				character = TOUHOU_Shinki
+				traits = { 
+					silent_hunter torpedo_expert lancer destroyer_leader loading_drill_master hunter_killer cruiser_captain search_pattern_expert lone_wolf concealment_expert mine_sweeper mine_layer smoke_screen_expert big_guns_expert big_guns_expert safety_first marksman crisis_magician flight_deck_manager fighter_director dive_bomber torpedo_bomber arctic_water_expert inshore_fighter blue_water_expert green_water_expert chief_engineer navy_media_personality naval_lineage 
+				}
+				skill = 9
+				attack_skill = 10
+				defense_skill = 10
+				maneuvering_skill = 10
+				coordination_skill = 10
+			}
+			add_country_leader_role = {
+				character = TOUHOU_Shinki
+				promote_leader = yes
+				country_leader = {
+					expire = "1989.1.1"
+					ideology = centrism
+					traits = {
+						touhou_god_of_makai
+					}
+				}
+			}
+			add_country_leader_role = {
+				character = TOUHOU_Shinki
+				promote_leader = yes
+				country_leader = {
+					expire = "1989.1.1"
+					ideology = fascism_ideology
+					traits = {
+						touhou_god_of_makai
+					}
+				}
+			}
+			add_country_leader_role = {
+				character = TOUHOU_Shinki
+				promote_leader = yes
+				country_leader = {
+					expire = "1989.1.1"
+					ideology = marxism
+					traits = {
+						touhou_god_of_makai
+					}
+				}
+			}
+			add_country_leader_role = {
+				character = TOUHOU_Shinki
+				promote_leader = yes
+				country_leader = {
+					expire = "1989.1.1"
+					ideology = liberalism
+					traits = {
+						touhou_god_of_makai
+					}
+				}
+			}
 			news_event = { id = news.1035 }
 		}
 	}

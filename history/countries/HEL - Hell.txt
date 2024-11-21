@@ -49,6 +49,95 @@ set_politics = {
 
 recruit_character = TOUHOU_Hoshiguma_Yugi
 recruit_character = TOUHOU_Ibuki_Suika
+
+
+add_country_leader_role = {
+    character = TOUHOU_Ibuki_Suika
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			cuixiang
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Ibuki_Suika
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			cuixiang
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Hoshiguma_Yugi
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			yongyi
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Hoshiguma_Yugi
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			yongyi
+		}
+	}
+}
+
+add_field_marshal_role = {
+	character = TOUHOU_Hoshiguma_Yugi
+	traits = {
+		units_oni harsh_leader infantry_officer trait_mountaineer hill_fighter
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+add_advisor_role = {
+	character = TOUHOU_Hoshiguma_Yugi
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Hoshiguma_Yugi
+		slot = political_advisor
+		traits = { touhou_prince_of_terror }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Hoshiguma_Yugi
+		slot = army_chief
+		traits = { touhou_army_chief_offensive_3 }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Hoshiguma_Yugi
+		slot = high_command
+		traits = { touhou_army_chief_offensive_3 }
+		cost = 150
+	}
+}
+add_field_marshal_role = {
+	character = TOUHOU_Ibuki_Suika
+	traits = { units_oni harsh_leader infantry_officer trait_mountaineer hill_fighter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
 set_country_flag = touhou_country_flag_demonforce_first_research
 add_equipment_to_stockpile = {
 	type = oni_champion_equipment_0

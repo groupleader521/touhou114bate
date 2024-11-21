@@ -3511,7 +3511,9 @@ country_event = {#欢迎通关老兵！
 		name = touhou_option.11.dd
 		ai_chance = { base = 1 }
 		trigger = {
-			has_character = TOUHOU_nameless
+			TOUHOU_nameless = {
+				is_advisor = yes
+			}
 		}
 		TOUHOU_nameless = {
 			set_character_name = TOUHOU_real_nameless
@@ -3580,9 +3582,52 @@ country_event = {#接受祝福吧！
 	option = {
 		name = touhou_option.21.a
 		ai_chance = { base = 1 }
-		recruit_character = TOUHOU_nameless
-		recruit_character = TOUHOU_bear
-		recruit_character = TOUHOU_lightGod
+		add_field_marshal_role = {
+			character = TOUHOU_nameless
+			traits={
+				units_marionette units_human units_animal units_evil units_ghost units_oni units_kappa units_rabbit units_tengu units_vampire brilliant_strategist inflexible_strategist war_hero bearer_of_artillery logistics_wizard offensive_doctrine defensive_doctrine fast_planner thorough_planner unyielding_defender aggressive_assaulter organisational_leader inspirational_leader expert_delegator organizer cavalry_leader infantry_leader skilled_staffer trickster winter_specialist adaptable winter_expert trait_engineer panzer_leader commando desert_fox swamp_fox trait_mountaineer hill_fighter jungle_rat ranger urban_assault_specialist naval_invader panzer_expert combined_arms_expert cavalry_expert fortress_buster scavenger infantry_expert ambusher invader_ii naval_liason skirmisher paratrooper camouflage_expert expert_improviser guerilla_fighter
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		add_advisor_role = {
+			character = TOUHOU_nameless
+			activate = yes
+			advisor = {
+				idea_token = TOUHOU_nameless
+				slot = political_advisor
+				traits = {
+					touhou_traits_nameless_political_advisor
+				}
+				cost = 150
+			}
+		}
+		add_advisor_role = {
+			character = TOUHOU_nameless
+			activate = yes
+			advisor = {
+				idea_token = TOUHOU_nameless
+				slot = army_chief
+				traits = {
+					touhou_traits_nameless_army_chief
+				}
+				cost = 150
+			}
+		}
+		add_field_marshal_role = {
+			character = TOUHOU_lightGod
+			traits={
+				units_lightGod
+			}
+			skill = 4
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 7
+			logistics_skill = 7
+		}
 	}
 }
 country_event = {#有奖问答：群号
@@ -3631,13 +3676,81 @@ country_event = {#群友们来帮忙了！
 		name = touhou_option.31.a
 		ai_chance = { base = 1 }
 		add_manpower = 100000
-		recruit_character = TOUHOU_Trino
-		recruit_character = TOUHOU_LLB
-		recruit_character = TOUHOU_GYFSJ
-		recruit_character = TOUHOU_GYFSJ_navy
-		recruit_character = TOUHOU_BNMJFJ
-		recruit_character = TOUHOU_DLEZ]
-		recruit_character = TOUHOU_TTTTBD
+		add_corps_commander_role = {
+			character = TOUHOU_Trino
+			traits = {
+				units_human infantry_leader bearer_of_artillery camouflage_expert guerilla_fighter
+			}
+			skill = 4
+			attack_skill = 1
+			defense_skill = 8
+			planning_skill = 1
+			logistics_skill = 8
+		}
+		add_corps_commander_role = {
+			character = TOUHOU_LLB
+			traits = {
+				units_human infantry_leader old_guard_navy ambusher guerilla_fighter
+			}
+			skill = 4
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 4
+		}
+		add_corps_commander_role = {
+			character = TOUHOU_GYFSJ
+			traits={
+				units_human panzer_expert trait_cautious camouflage_expert trickster
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 2
+		}
+		add_naval_commander_role = {
+			character = TOUHOU_GYFSJ
+			traits = { 
+				aviation_enthusiast air_controller flight_deck_manager
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 6
+		}
+		add_corps_commander_role = {
+			character = TOUHOU_BNMJFJ
+			traits = {
+				units_rabbit brilliant_strategist organizer trickster ranger
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 8
+			logistics_skill = 1
+		}
+		add_corps_commander_role = {
+			character = TOUHOU_DLEZ
+			traits={
+				units_human armor_officer camouflage_expert bearer_of_artillery engineer_officer
+			}
+			skill = 3
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		add_corps_commander_role = {
+			character = TOUHOU_TTTTBD
+			traits={ units_TTTTBD }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 8
+		}
 	}
 }
 

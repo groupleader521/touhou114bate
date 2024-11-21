@@ -53,6 +53,95 @@ set_politics = {
 
 recruit_character = TOUHOU_Kirisame_Marisa
 recruit_character = TOUHOU_Morichika_Rinnosuke
+
+add_country_leader_role = {
+    character = TOUHOU_Kirisame_Marisa
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			molisha
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Kirisame_Marisa
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			molisha
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Kirisame_Marisa
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			molisha
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Kirisame_Marisa
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			molisha
+		}
+	}
+}
+add_field_marshal_role = {
+	character = TOUHOU_Kirisame_Marisa
+	traits = {
+		units_human war_hero bearer_of_artillery trickster urban_assault_specialist
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+add_advisor_role = {
+	character = TOUHOU_Kirisame_Marisa
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Kirisame_Marisa
+		slot = political_advisor
+		traits = { molisha }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Kirisame_Marisa
+		slot = army_chief
+		traits = { touhou_army_artillery_3 }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Kirisame_Marisa
+		slot = high_command
+		traits = { touhou_air_strategic_bombing_mls }
+		cost = 150
+	}
+}
+add_field_marshal_role = {
+	character = TOUHOU_Morichika_Rinnosuke
+	traits = {
+		units_human infantry_leader urban_assault_specialist ambusher
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
 set_country_flag = touhou_country_flag_magic_first_research
 country_event = { id = molisha.0 days = 3 random_days = 1 } 
 

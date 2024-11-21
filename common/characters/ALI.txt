@@ -10,65 +10,7 @@ characters= {
 				small = GFX_idea_alice
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = centrism
-			traits = {
-				marionette_bruise
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = fascism_ideology
-			traits = {
-				marionette_bruise
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = liberalism
-			traits = {
-				marionette_bruise
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = marxism
-			traits = {
-				marionette_bruise
-			}
-		}
-		advisor = {
-			idea_token = TOUHOU_Alice_Margatroid
-			slot = political_advisor
-			traits = {
-				touhou_silent_workhorse
-			}
-		}
-		advisor = {
-			idea_token = TOUHOU_Alice_Margatroid
-			slot = army_chief
-			traits = {
-				touhou_army_armored_3
-			}
-		}
-		advisor = {
-			idea_token = TOUHOU_Alice_Margatroid
-			slot = high_command
-			traits = {
-				touhou_army_chief_morale_3
-			}
-		}
-		field_marshal = {
-			traits = {
-				units_marionette bearer_of_artillery skilled_staffer panzer_leader jungle_rat ranger organizer expert_delegator inspirational_leader panzer_expert
-			}
-			skill = 5
-			attack_skill = 5
-			defense_skill = 5
-			planning_skill = 5
-			logistics_skill = 5
-		}
+		
 	}	
 	TOUHOU_Shanghai_Ningyou = {
 		name = TOUHOU_Shanghai_Ningyou
@@ -77,14 +19,6 @@ characters= {
 				large = GFX_Shanghai_Ningyou
 			}
 		}
-		corps_commander = {
-			traits = { units_marionette panzer_leader jungle_rat ranger panzer_expert }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
 	}
 	TOUHOU_Hourai_Ningyou = {
 		name = TOUHOU_Hourai_Ningyou
@@ -92,14 +26,6 @@ characters= {
 			army = {
 				large = GFX_Hourai_Ningyou
 			}
-		}
-		corps_commander = {
-			traits = { units_marionette panzer_leader jungle_rat ranger panzer_expert }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}
 	TOUHOU_Medicine_Melancholy = {
@@ -112,42 +38,10 @@ characters= {
 				large = GFX_Medicine_Melancholy
 			}
 		}
-		country_leader = {
-			expire = "11000.1.1"
-			ideology = fascism_ideology
-			traits = {
-				marionette_freedom
-			}
-		}
-		country_leader = {
-			expire = "11000.1.1"
-			ideology = centrism
-			traits = {
-				marionette_freedom
-			}
-		}
-		country_leader = {
-			expire = "11000.1.1"
-			ideology = marxism
-			traits = {
-				marionette_freedom
-			}
-		}
-		country_leader = {
-			expire = "11000.1.1"
-			ideology = liberalism
-			traits = {
-				marionette_freedom
-			}
-		}
-		corps_commander = {
-			traits = { units_marionette }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
+		
+		
+		
+		
 	}	
 	TOUHOU_Kazami_Yuka = {
 		name = TOUHOU_Kazami_Yuka
@@ -155,16 +49,6 @@ characters= {
 			army = {
 				large = GFX_Kazami_Yuka
 			}
-		}
-		corps_commander = {
-			traits = {
-				units_marionette brilliant_strategist harsh_leader brilliant_strategist jungle_rat ranger infantry_leader infantry_expert
-			}
-			skill = 5
-			attack_skill = 7
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 4
 		}
 	}	
 	TOUHOU_Elly = {
@@ -174,16 +58,6 @@ characters= {
 				large = GFX_old_Elly
 			}
 		}
-		corps_commander = {
-			traits = {
-				units_marionette bearer_of_artillery skilled_staffer panzer_leader organizer expert_delegator inspirational_leader panzer_expert
-			}
-			skill = 5
-			attack_skill = 5
-			defense_skill = 5
-			planning_skill = 5
-			logistics_skill = 5
-		}
 	}
 	TOUHOU_Kurumi = {
 		name = TOUHOU_Kurumi
@@ -191,16 +65,6 @@ characters= {
 			army = {
 				large = GFX_old_Kurumi
 			}
-		}
-		corps_commander = {
-			traits = {
-				units_vampire commando infantry_officer urban_assault_specialist camouflage_expert
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}
 	TOUHOU_Mugetsu = {
@@ -210,16 +74,6 @@ characters= {
 				large = GFX_old_Mugetsu
 			}
 		}
-		corps_commander = {
-			traits = {
-				units_vampire harsh_leader commando infantry_officer urban_assault_specialist camouflage_expert
-			}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-		}
 	}
 	TOUHOU_Gengetsu = {
 		name = TOUHOU_Gengetsu
@@ -227,16 +81,6 @@ characters= {
 			army = {
 				large = GFX_old_Gengetsu
 			}
-		}
-		corps_commander = {
-			traits = {
-				units_vampire harsh_leader commando infantry_officer urban_assault_specialist camouflage_expert
-			}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
 		}
 	}
 	TOUHOU_Okazaki_Yumemi = {
@@ -246,16 +90,6 @@ characters= {
 				large = GFX_old_Okazaki_Yumemi
 			}
 		}
-		field_marshal = {
-			traits = {
-				units_human brilliant_strategist infantry_leader organizer skilled_staffer trait_mountaineer hill_fighter urban_assault_specialist expert_delegator infantry_expert logistics_wizard
-			}
-			skill = 6
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 6
-			logistics_skill = 6
-		}
 	}
 	TOUHOU_Kitashirakawa_Chiyuri = {
 		name = TOUHOU_Kitashirakawa_Chiyuri
@@ -263,16 +97,6 @@ characters= {
 			army = {
 				large = GFX_old_Kitashirakawa_Chiyuri
 			}
-		}
-		corps_commander = {
-			traits = {
-				units_human infantry_leader trait_mountaineer hill_fighter urban_assault_specialist infantry_expert
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}
 	TOUHOU_Asakura_Rikako = {
@@ -282,16 +106,6 @@ characters= {
 				large = GFX_old_Asakura_Rikako
 			}
 		}
-		corps_commander = {
-			traits = {
-				units_human infantry_leader organizer trait_mountaineer hill_fighter urban_assault_specialist ambusher
-			}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-		}
 	}
 	TOUHOU_Kana_Anaberal = {
 		name = TOUHOU_Kana_Anaberal
@@ -299,16 +113,6 @@ characters= {
 			army = {
 				large = GFX_old_Kana_Anaberal
 			}
-		}
-		corps_commander = {
-			traits = {
-				units_ghost cavalry_officer cavalry_leader urban_assault_specialist combined_arms_expert
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}
 	TOUHOU_Kotohime = {
@@ -318,16 +122,6 @@ characters= {
 				large = GFX_old_Kotohime
 			}
 		}
-		corps_commander = {
-			traits = {
-				units_human infantry_leader urban_assault_specialist infantry_expert
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
 	}
 	TOUHOU_Ellen = {
 		name = TOUHOU_Ellen
@@ -335,16 +129,6 @@ characters= {
 			army = {
 				large = GFX_old_Ellen
 			}
-		}
-		corps_commander = {
-			traits = {
-				units_human infantry_leader organizer urban_assault_specialist ambusher
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}
 	TOUHOU_Yumeko = {
@@ -354,16 +138,6 @@ characters= {
 				large = GFX_old_Yumeko
 			}
 		}
-		field_marshal = {
-			traits = {
-				units_marionette inflexible_strategist bearer_of_artillery skilled_staffer panzer_leader jungle_rat ranger organizer expert_delegator inspirational_leader panzer_expert
-			}
-			skill = 5
-			attack_skill = 5
-			defense_skill = 5
-			planning_skill = 5
-			logistics_skill = 5
-		}
 	}
 	TOUHOU_Mai = {
 		name = TOUHOU_Mai
@@ -371,16 +145,6 @@ characters= {
 			army = {
 				large = GFX_old_Mai
 			}
-		}
-		corps_commander = {
-			traits = {
-				units_marionette armor_officer panzer_leader jungle_rat ranger panzer_expert
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}	
 	TOUHOU_Yuki = {
@@ -390,16 +154,6 @@ characters= {
 				large = GFX_old_Yuki
 			}
 		}
-		corps_commander = {
-			traits = {
-				units_marionette armor_officer panzer_leader jungle_rat ranger panzer_expert
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
 	}
 	TOUHOU_Luize = {
 		name = TOUHOU_Luize
@@ -407,16 +161,6 @@ characters= {
 			army = {
 				large = GFX_old_Luize
 			}
-		}
-		corps_commander = {
-			traits = {
-				units_marionette armor_officer panzer_leader jungle_rat ranger panzer_expert
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}
 	TOUHOU_Sara = {
@@ -426,16 +170,6 @@ characters= {
 				large = GFX_old_Sara
 			}
 		}
-		corps_commander = {
-			traits = {
-				units_marionette armor_officer panzer_leader jungle_rat ranger panzer_expert
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
 	}
 	TOUHOU_Sariel = {
 		name = TOUHOU_Sariel
@@ -444,16 +178,6 @@ characters= {
 				large = GFX_old_Sariel
 			}
 		}
-		field_marshal = {
-			traits = {
-				units_marionette brilliant_strategist inflexible_strategist bearer_of_artillery skilled_staffer panzer_leader organizer expert_delegator inspirational_leader panzer_expert
-			}
-			skill = 6
-			attack_skill = 6
-			defense_skill = 6
-			planning_skill = 6
-			logistics_skill = 6
-		}
 	}
 	TOUHOU_Mima = {
 		name = TOUHOU_Mima
@@ -461,16 +185,6 @@ characters= {
 			army = {
 				large = GFX_old_Mima
 			}
-		}
-		field_marshal = {
-			traits = {
-				units_marionette inflexible_strategist bearer_of_artillery skilled_staffer panzer_leader organizer expert_delegator inspirational_leader panzer_expert
-			}
-			skill = 5
-			attack_skill = 7
-			defense_skill = 7
-			planning_skill = 4
-			logistics_skill = 4
 		}
 	}
 	TOUHOU_Konngara = {
@@ -501,44 +215,10 @@ characters= {
 				large = GFX_old_Shinki
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = centrism
-			traits = {
-				touhou_god_of_makai
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = fascism_ideology
-			traits = {
-				touhou_god_of_makai
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = marxism
-			traits = {
-				touhou_god_of_makai
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = liberalism
-			traits = {
-				touhou_god_of_makai
-			}
-		}
-		field_marshal = {
-			traits = {
-				units_marionette units_human units_animal units_evil units_ghost units_oni units_kappa units_rabbit units_tengu units_vampire brilliant_strategist inflexible_strategist war_hero bearer_of_artillery logistics_wizard offensive_doctrine defensive_doctrine fast_planner thorough_planner unyielding_defender aggressive_assaulter organisational_leader inspirational_leader expert_delegator organizer cavalry_leader infantry_leader skilled_staffer trickster winter_specialist adaptable winter_expert trait_engineer panzer_leader commando desert_fox swamp_fox trait_mountaineer hill_fighter jungle_rat ranger urban_assault_specialist naval_invader panzer_expert combined_arms_expert cavalry_expert fortress_buster scavenger infantry_expert ambusher invader_ii naval_liason skirmisher paratrooper camouflage_expert expert_improviser guerilla_fighter 
-			}
-			skill = 9
-			attack_skill = 10
-			defense_skill = 10
-			planning_skill = 10
-			logistics_skill = 10
-		}
+		
+		
+		
+		
 	}
 	TOUHOU_Shinki_navy = {
 		name = TOUHOU_Shinki
@@ -547,16 +227,6 @@ characters= {
 				large = GFX_old_Shinki
 			}
 		}
-		navy_leader = {
-			traits = { 
-				silent_hunter torpedo_expert lancer destroyer_leader loading_drill_master hunter_killer cruiser_captain search_pattern_expert lone_wolf concealment_expert mine_sweeper mine_layer smoke_screen_expert big_guns_expert big_guns_expert safety_first marksman crisis_magician flight_deck_manager fighter_director dive_bomber torpedo_bomber arctic_water_expert inshore_fighter blue_water_expert green_water_expert chief_engineer navy_media_personality naval_lineage 
-			}
-			skill = 9
-			attack_skill = 10
-			defense_skill = 10
-			maneuvering_skill = 10
-			coordination_skill = 10
-		}
 	}
 	TOUHOU_Shinki_shadow = {
 		name = TOUHOU_Shinki_shadow
@@ -564,16 +234,6 @@ characters= {
 			army = {
 				large = GFX_old_Shinki_shadow
 			}
-		}
-		field_marshal = {
-			traits = {
-				units_marionette brilliant_strategist inflexible_strategist bearer_of_artillery skilled_staffer panzer_leader  organizer expert_delegator inspirational_leader panzer_expert  jungle_rat desert_fox swamp_fox trait_mountaineer hill_fighter ranger urban_assault_specialist winter_specialist winter_expert adaptable trickster expert_improviser
-			}
-			skill = 6
-			attack_skill = 6
-			defense_skill = 6
-			planning_skill = 6
-			logistics_skill = 6
 		}
 	}
 }

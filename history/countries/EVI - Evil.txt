@@ -39,6 +39,74 @@ set_politics = {
 
 recruit_character = TOUHOU_Cirno
 recruit_character = TOUHOU_Daiyousei
+
+
+add_country_leader_role = {
+	character = TOUHOU_Cirno
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			qilunuo
+		}
+	}
+}
+add_country_leader_role = {
+	character = TOUHOU_Cirno
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			qilunuo
+		}
+	}
+}
+add_country_leader_role = {
+	character = TOUHOU_Cirno
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			qilunuo
+		}
+	}
+}
+add_country_leader_role = {
+	character = TOUHOU_Cirno
+	promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			qilunuo
+		}
+	}
+}
+add_field_marshal_role = {
+	character = TOUHOU_Cirno
+	traits = {
+		units_evil winter_specialist winter_expert
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+add_field_marshal_role = {
+	character = TOUHOU_Daiyousei
+	traits = {
+		units_evil jungle_rat ranger
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
 set_country_flag = touhou_country_flag_wakan_first_research
 
 if = {

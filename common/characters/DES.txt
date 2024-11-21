@@ -10,59 +10,11 @@ characters = {
 				small = GFX_idea_shenzi
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = centrism
-			traits = {
-				shenzi
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = fascism_ideology
-			traits = {
-				shenzi
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = liberalism
-			traits = {
-				shenzi
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = marxism
-			traits = {
-				shenzi
-			}
-		}
-		advisor = {
-			idea_token = TOUHOU_Toyosatomimi_no_Miko
-			slot = political_advisor
-			traits = { touhou_smooth_talking_charmer }
-		}
-		advisor = {
-			idea_token = TOUHOU_Toyosatomimi_no_Miko
-			slot = air_chief
-			traits = { touhou_air_strategic_bombing_3 }
-		}
-		advisor = {
-			idea_token = TOUHOU_Toyosatomimi_no_Miko
-			slot = high_command
-			traits = { touhou_army_chief_reform_shenzi }
-		}
-		field_marshal = {
-			traits = {
-				units_human infantry_leader urban_assault_specialist infantry_expert
-			}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-		}
+		
+		
+		
+		
+		
 	}
 	TOUHOU_Mononobe_no_Futo = {
 		name = TOUHOU_Mononobe_no_Futo
@@ -70,16 +22,6 @@ characters = {
 			army = {
 				large = GFX_Mononobe_no_Futo
 			}
-		}
-		corps_commander = {
-			traits = {
-				units_human infantry_leader urban_assault_specialist infantry_expert
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}
 	TOUHOU_Soga_no_Toziko = {
@@ -89,16 +31,6 @@ characters = {
 				large = GFX_Soga_no_Toziko
 			}
 		}
-		corps_commander = {
-			traits = {
-				units_human infantry_leader urban_assault_specialist infantry_expert
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
 	}
 	TOUHOU_Kaku_Seiga = {
 		name = TOUHOU_Kaku_Seiga
@@ -106,16 +38,6 @@ characters = {
 			army = {
 				large = GFX_Kaku_Seiga
 			}
-		}
-		corps_commander = {
-			traits = {
-				units_human infantry_leader urban_assault_specialist infantry_expert
-			}
-			skill = 5
-			attack_skill = 5
-			defense_skill = 5
-			planning_skill = 5
-			logistics_skill = 5
 		}
 	}
 }

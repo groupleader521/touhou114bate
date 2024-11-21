@@ -10,59 +10,11 @@ characters = {
 				small = GFX_idea_jue
 			}
 		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = centrism
-			traits = {
-				jue
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = fascism_ideology
-			traits = {
-				jue
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = liberalism
-			traits = {
-				jue
-			}
-		}
-		country_leader = {
-			expire = "1989.1.1"
-			ideology = marxism
-			traits = {
-				jue
-			}
-		}
-		field_marshal = {
-			traits = {
-				units_animal cavalry_officer cavalry_leader trait_mountaineer hill_fighter cavalry_expert
-			}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-		}
-		advisor = {
-			idea_token = TOUHOU_Komeiji_Satori
-			slot = political_advisor
-			traits = { touhou_armaments_organizer }
-		}
-		advisor = {
-			idea_token = TOUHOU_Komeiji_Satori
-			slot = army_chief
-			traits = { touhou_army_regrouping_3 }
-		}
-		advisor = {
-			idea_token = TOUHOU_Komeiji_Satori
-			slot = high_command
-			traits = { touhou_army_cavalry_3 }
-		}		
+		
+		
+		
+		
+		
 	}
 	TOUHOU_Kaenbyou_Rin = {
 		name = TOUHOU_Kaenbyou_Rin
@@ -70,14 +22,6 @@ characters = {
 			army = {
 				large = GFX_Kaenbyou_Rin
 			}
-		}
-		corps_commander = {
-			traits = { units_animal cavalry_officer cavalry_leader trait_mountaineer hill_fighter cavalry_expert }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}
 	TOUHOU_Reiuji_Utsuho = {
@@ -87,14 +31,6 @@ characters = {
 				large = GFX_Reiuji_Utsuho
 			}
 		}
-		corps_commander = {
-			traits = { units_animal cavalry_officer cavalry_leader trait_mountaineer hill_fighter cavalry_expert }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
 	}
 	TOUHOU_Komeiji_Koishi = {
 		name = TOUHOU_Komeiji_Koishi
@@ -102,14 +38,6 @@ characters = {
 			army = {
 				large = GFX_Komeiji_Koishi
 			}
-		}
-		field_marshal = {
-			traits = { units_animal cavalry_officer cavalry_leader trait_mountaineer hill_fighter cavalry_expert }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}
 }

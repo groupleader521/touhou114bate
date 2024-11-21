@@ -8,7 +8,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			available = {
-				has_character = TOUHOU_Alice_Margatroid
+				TOUHOU_Alice_Margatroid = {
+					is_advisor = yes
+				}
 			}
 			picture = alice
 			cost = 150
@@ -26,7 +28,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			available = {
-				has_character = TOUHOU_Kawasiro_Nitori
+				TOUHOU_Kawasiro_Nitori = {
+					is_advisor = yes
+				}
 			}
 			picture = kappa
 			cost = 150
@@ -48,7 +52,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			available = {
-				has_character = TOUHOU_Kawasiro_Nitori
+				TOUHOU_Kawasiro_Nitori = {
+					is_advisor = yes
+				}
 			}
 			picture = kappa
 			cost = 150
@@ -65,7 +71,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			available = {
-				has_character = TOUHOU_Shikieiki_Yamaxanadu
+				TOUHOU_Shikieiki_Yamaxanadu = {
+					is_advisor = yes
+				}
 			}
 			picture = siji
 			cost = 150
@@ -82,7 +90,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			available = {
-				has_character = TOUHOU_Murasa_Minamitu
+				TOUHOU_Murasa_Minamitu = {
+					is_advisor = yes
+				}
 			}
 			picture = shuimi
 			cost = 150
@@ -100,7 +110,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			available = {
-				has_character = TOUHOU_Hakurei_Reimu
+				TOUHOU_Hakurei_Reimu = {
+					is_advisor = yes
+				}
 			}
 			picture = boli
 			cost = 150
@@ -122,7 +134,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			available = {
-				has_character = TOUHOU_Shameimaru_Aya
+				TOUHOU_Shameimaru_Aya = {
+					is_advisor = yes
+				}
 			}
 			picture = tengu
 			cost = 150
@@ -144,7 +158,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			available = {
-				has_character = TOUHOU_Toyosatomimi_no_Miko
+				TOUHOU_Toyosatomimi_no_Miko = {
+					is_advisor = yes
+				}
 			}
 			picture = shenzi
 			cost = 150
@@ -168,7 +184,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			available = {
-				has_character = TOUHOU_Saigyouji_Yuyuko
+				TOUHOU_Saigyouji_Yuyuko = {
+					is_advisor = yes
+				}
 			}
 			picture = uuz
 			cost = 150
@@ -181,7 +199,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			available = {
-				has_character = TOUHOU_Kochiya_Sanae
+				TOUHOU_Kochiya_Sanae = {
+					is_advisor = yes
+				}
 			}
 			picture = zaomiao
 			cost = 150
@@ -214,10 +234,13 @@ ideas = {
 
 			allowed = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				
 			}
 
 			available = {
-				has_character = TOUHOU_Yagokoro_Eirin
+				TOUHOU_Yagokoro_Eirin = {
+					is_advisor = yes
+				}
 			}
 			visible = {
 				NOT = { has_country_flag = touhou_focus_research_2_flag }
@@ -240,10 +263,14 @@ ideas = {
 
 			allowed = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				
 			}
 
 			available = {
-				has_character = TOUHOU_Yagokoro_Eirin
+				TOUHOU_Yagokoro_Eirin = {
+					is_advisor = yes
+				}
+
 			}
 			visible = {
 				has_country_flag = touhou_focus_research_2_flag
@@ -263,10 +290,13 @@ ideas = {
 
 			allowed = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				
 			}
 
 			available = {
-				has_character = TOUHOU_Alice_Margatroid
+				TOUHOU_Alice_Margatroid = {
+					is_advisor = yes
+				}
 			}
 			visible = {
 				NOT = { has_country_flag = touhou_focus_industrial_2_flag }
@@ -293,7 +323,9 @@ ideas = {
 			}
 
 			available = {
-				has_character = TOUHOU_Alice_Margatroid
+				TOUHOU_Alice_Margatroid = {
+					is_advisor = yes
+				}
 			}
 			visible = {
 				has_country_flag = touhou_focus_industrial_2_flag
@@ -318,7 +350,9 @@ ideas = {
 			}
 
 			available = {
-				has_character = TOUHOU_Alice_Margatroid
+				TOUHOU_Alice_Margatroid = {
+					is_advisor = yes
+				}
 			}
 			visible = {
 				has_country_flag = touhou_focus_industrial_4_flag
@@ -345,7 +379,9 @@ ideas = {
 			}
 
 			available = {
-				has_character = TOUHOU_Kawasiro_Nitori
+				TOUHOU_Kawasiro_Nitori = {
+					is_advisor = yes
+				}
 			}
 			visible = {
 				NOT = { has_country_flag = touhou_focus_buildings_2_flag }
@@ -371,7 +407,9 @@ ideas = {
 			}
 
 			available = {
-				has_character = TOUHOU_Kawasiro_Nitori
+				TOUHOU_Kawasiro_Nitori = {
+					is_advisor = yes
+				}
 			}
 			visible = {
 				has_country_flag = touhou_focus_buildings_2_flag
@@ -494,9 +532,12 @@ ideas = {
 		
 			allowed = {
 				OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				
 			}
 			available = {
-				has_character = TOUHOU_Alice_Margatroid
+				TOUHOU_Alice_Margatroid = {
+					is_advisor = yes
+				}
 			}
 			modifier = {
 				research_speed_factor = 0.1
@@ -1059,9 +1100,12 @@ ideas = {
 		alice_main_researcher = {#爱丽丝主导研究
 			allowed = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				
 			}
 			available = {
-				has_character = TOUHOU_Alice_Margatroid	 
+				TOUHOU_Alice_Margatroid = {
+					is_advisor = yes
+				}	 
 			}
 			visible = {
 			}
@@ -1099,7 +1143,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 				}
 			available = {
-				has_character = TOUHOU_Kawasiro_Nitori 
+				TOUHOU_Kawasiro_Nitori = {
+					is_advisor = yes
+				}
 			}
 			visible = {
 			}
@@ -1119,7 +1165,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 				}
 			available = {
-				has_character = TOUHOU_Komeiji_Satori
+				TOUHOU_Komeiji_Satori = {
+					is_advisor = yes
+				}
 			}
 			visible = {
 			}
@@ -1138,7 +1186,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 				}
 			available = {
-				has_character = TOUHOU_Kamishirasawa_Keine
+				TOUHOU_Kamishirasawa_Keine = {
+					is_advisor = yes
+				}
 			}
 			visible = {
 			}
@@ -1159,7 +1209,9 @@ ideas = {
 				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			available = {
-				has_character = TOUHOU_Hakurei_Reimu
+				TOUHOU_Hakurei_Reimu = {
+					is_advisor = yes
+				}
 			}
 			visible = {
 			}

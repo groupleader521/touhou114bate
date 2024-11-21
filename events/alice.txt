@@ -340,7 +340,59 @@ country_event = {#梅蒂欣胜利了
 	option = {
 		name = alice.4.a
 		ai_chance = { base = 1 }
-		recruit_character = TOUHOU_Medicine_Melancholy
+		add_corps_commander_role = {
+			character = TOUHOU_Medicine_Melancholy
+			traits = { units_marionette }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		add_country_leader_role = {
+			character = TOUHOU_Medicine_Melancholy
+			promote_leader = yes
+			country_leader = {
+				expire = "11000.1.1"
+				ideology = fascism_ideology
+				traits = {
+					marionette_freedom
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = TOUHOU_Medicine_Melancholy
+			promote_leader = yes
+			country_leader = {
+				expire = "11000.1.1"
+				ideology = centrism
+				traits = {
+					marionette_freedom
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = TOUHOU_Medicine_Melancholy
+			promote_leader = yes
+			country_leader = {
+				expire = "11000.1.1"
+				ideology = marxism
+				traits = {
+					marionette_freedom
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = TOUHOU_Medicine_Melancholy
+			promote_leader = yes
+			country_leader = {
+				expire = "11000.1.1"
+				ideology = liberalism
+				traits = {
+					marionette_freedom
+				}
+			}
+		}
 		ALI_marionette_freedom_clear_all = yes
 		hidden_effect = {
 			set_country_flag = alice_be_defeated

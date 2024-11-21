@@ -47,6 +47,94 @@ set_politics = {
 
 recruit_character = TOUHOU_Saigyouji_Yuyuko
 recruit_character = TOUHOU_Konpaku_Youmu
+
+
+add_country_leader_role = {
+    character = TOUHOU_Saigyouji_Yuyuko
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			uuz
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Saigyouji_Yuyuko
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			uuz
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Saigyouji_Yuyuko
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			uuz
+		}
+	}
+}
+add_field_marshal_role = {
+	character = TOUHOU_Saigyouji_Yuyuko
+	traits = {
+		units_ghost cavalry_officer cavalry_leader urban_assault_specialist combined_arms_expert
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_advisor_role = {
+	character = TOUHOU_Saigyouji_Yuyuko
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Saigyouji_Yuyuko
+		slot = political_advisor
+		traits = { touhou_financial_expert }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Saigyouji_Yuyuko
+		slot = army_chief
+		traits = { touhou_army_logistics_3 }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Saigyouji_Yuyuko
+		slot = high_command
+		traits = { touhou_army_entrenchment_3 }
+		cost = 150
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Konpaku_Youmu
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			half_soul_half_human
+		}
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Konpaku_Youmu
+	traits = { units_ghost cavalry_officer cavalry_leader urban_assault_specialist combined_arms_expert }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
 set_country_flag = touhou_country_flag_demonforce_first_research
 
 if = {

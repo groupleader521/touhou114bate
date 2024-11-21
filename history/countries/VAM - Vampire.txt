@@ -56,6 +56,123 @@ recruit_character = TOUHOU_Patchouli_Knowledge
 recruit_character = TOUHOU_Hong_Meirin
 recruit_character = TOUHOU_Izayoi_Sakuya
 recruit_character = TOUHOU_Koakuma
+
+
+add_country_leader_role = {
+    character = TOUHOU_Patchouli_Knowledge
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			patchouli_book
+		}
+	}
+}
+add_field_marshal_role = {
+	character = TOUHOU_Remilia_Scarlet
+	traits = {
+		units_vampire harsh_leader commando infantry_officer urban_assault_specialist camouflage_expert
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_country_leader_role = {
+    character = TOUHOU_Remilia_Scarlet
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			scarlet_sister
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Remilia_Scarlet
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			scarlet_sister
+		}
+	}
+}
+add_advisor_role = {
+	character = TOUHOU_Remilia_Scarlet
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Remilia_Scarlet
+		slot = political_advisor
+		traits = { touhou_backroom_backstabber }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Remilia_Scarlet
+		slot = army_chief
+		traits = { touhou_army_concealment_3 }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Remilia_Scarlet
+		slot = high_command
+		traits = { touhou_army_commando_scarlet }
+		cost = 150
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Patchouli_Knowledge
+	traits = {
+		units_vampire bearer_of_artillery infantry_officer urban_assault_specialist
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_country_leader_role = {
+    character = TOUHOU_Hong_Meirin
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			meirin_defence
+		}
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Hong_Meirin
+	traits = { units_vampire infantry_leader urban_assault_specialist infantry_expert }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_corps_commander_role = {
+	character = TOUHOU_Izayoi_Sakuya
+	traits = { units_vampire trait_cautious commando infantry_officer urban_assault_specialist camouflage_expert }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+add_corps_commander_role = {
+	character = TOUHOU_Koakuma
+	traits = { units_vampire trait_cautious urban_assault_specialist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
 set_country_flag = touhou_country_flag_magic_first_research
 
 if = {

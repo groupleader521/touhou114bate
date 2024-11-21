@@ -52,6 +52,116 @@ recruit_character = TOUHOU_Houraisan_Kaguya
 recruit_character = TOUHOU_Yagokoro_Eirin
 recruit_character = TOUHOU_Reisen_Udongein_Inaba
 recruit_character = TOUHOU_Inaba_Tewi
+
+
+add_field_marshal_role = {
+	character = TOUHOU_Houraisan_Kaguya
+	traits = { units_rabbit trait_cautious jungle_rat ranger infantry_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_country_leader_role = {
+    character = TOUHOU_Houraisan_Kaguya
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			huiye
+		}
+	}
+}
+add_advisor_role = {
+	character = TOUHOU_Houraisan_Kaguya
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Houraisan_Kaguya
+		slot = political_advisor
+		traits = { touhou_popular_figurehead }
+		cost = 150
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Yagokoro_Eirin
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			yonglin
+		}
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Yagokoro_Eirin
+	traits = {
+		units_rabbit brilliant_strategist commando organizer skilled_staffer jungle_rat ranger urban_assault_specialist expert_delegator paratrooper infantry_leader logistics_wizard
+	}
+	skill = 6
+	attack_skill = 6
+	defense_skill = 6
+	planning_skill = 6
+	logistics_skill = 6
+}
+add_country_leader_role = {
+    character = TOUHOU_Reisen_Udongein_Inaba
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			linxian
+		}
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Reisen_Udongein_Inaba
+	traits = { units_rabbit career_officer commando jungle_rat ranger urban_assault_specialist paratrooper }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+add_advisor_role = {
+	character = TOUHOU_Reisen_Udongein_Inaba
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Reisen_Udongein_Inaba
+		slot = army_chief
+		traits = { touhou_army_commando_3 }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Reisen_Udongein_Inaba
+		slot = high_command
+		traits = { touhou_army_concealment_lingxian }
+		cost = 150
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Inaba_Tewi
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			yinpan
+		}
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Inaba_Tewi
+	traits = { units_rabbit politically_connected jungle_rat ranger }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
 set_country_flag = touhou_country_flag_demonforce_first_research
 
 if = {

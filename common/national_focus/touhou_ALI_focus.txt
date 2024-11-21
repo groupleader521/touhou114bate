@@ -1071,7 +1071,15 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			recruit_character = TOUHOU_Medicine_Melancholy
+			add_corps_commander_role = {
+				character = TOUHOU_Medicine_Melancholy
+				traits = { units_marionette }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
 			ALI_marionette_freedom_clear_all = yes
 			if = {
 				limit = { has_idea = ALI_marionette_response }
@@ -1110,7 +1118,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			recruit_character = TOUHOU_Kazami_Yuka
+			
 			TOUHOU_Kazami_Yuka = {
 				set_character_name = TOUHOU_Yuka_old
 				set_portraits = {
@@ -1119,10 +1127,61 @@ focus_tree = {
 					}
 				}
 			}
-			recruit_character = TOUHOU_Elly
-			recruit_character = TOUHOU_Kurumi
-			recruit_character = TOUHOU_Mugetsu
-			recruit_character = TOUHOU_Gengetsu
+			add_corps_commander_role = {
+				character = TOUHOU_Kazami_Yuka
+				traits = {
+					units_marionette brilliant_strategist harsh_leader brilliant_strategist jungle_rat ranger infantry_leader infantry_expert
+				}
+				skill = 5
+				attack_skill = 7
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Elly
+				traits = {
+					units_marionette bearer_of_artillery skilled_staffer panzer_leader organizer expert_delegator inspirational_leader panzer_expert
+				}
+				skill = 5
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Kurumi
+				traits = {
+					units_vampire commando infantry_officer urban_assault_specialist camouflage_expert
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Mugetsu
+				traits = {
+					units_vampire harsh_leader commando infantry_officer urban_assault_specialist camouflage_expert
+				}
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Gengetsu
+				traits = {
+					units_vampire harsh_leader commando infantry_officer urban_assault_specialist camouflage_expert
+				}
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+			}
 			capital_scope = {
 				create_unit = {
 					division = "name = \"梦幻馆支援一队\" division_template = \"高速人偶卫队\" start_experience_factor = 1" 
@@ -1167,12 +1226,72 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			recruit_character = TOUHOU_Okazaki_Yumemi
-			recruit_character = TOUHOU_Kitashirakawa_Chiyuri
-			recruit_character = TOUHOU_Asakura_Rikako
-			recruit_character = TOUHOU_Kana_Anaberal
-			recruit_character = TOUHOU_Kotohime
-			recruit_character = TOUHOU_Ellen
+			add_corps_commander_role = {
+				character = TOUHOU_Okazaki_Yumemi
+				traits = {
+					units_human brilliant_strategist infantry_leader organizer skilled_staffer trait_mountaineer hill_fighter urban_assault_specialist expert_delegator infantry_expert logistics_wizard
+				}
+				skill = 6
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 6
+				logistics_skill = 6
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Kitashirakawa_Chiyuri
+				traits = {
+					units_human infantry_leader trait_mountaineer hill_fighter urban_assault_specialist infantry_expert
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Asakura_Rikako
+				traits = {
+					units_human infantry_leader organizer trait_mountaineer hill_fighter urban_assault_specialist ambusher
+				}
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Kana_Anaberal
+				traits = {
+					units_ghost cavalry_officer cavalry_leader urban_assault_specialist combined_arms_expert
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Kotohime
+				traits = {
+					units_human infantry_leader urban_assault_specialist infantry_expert
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Ellen
+				traits = {
+					units_human infantry_leader organizer urban_assault_specialist ambusher
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
 			add_tech_bonus = {
 				name = touhou_ALI_devildom
 				ahead_reduction = 2
@@ -1208,11 +1327,61 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			recruit_character = TOUHOU_Yumeko
-			recruit_character = TOUHOU_Mai
-			recruit_character = TOUHOU_Yuki
-			recruit_character = TOUHOU_Luize
-			recruit_character = TOUHOU_Sara
+			add_field_marshal_role = {
+				character = TOUHOU_Yumeko
+				traits = {
+					units_marionette inflexible_strategist bearer_of_artillery skilled_staffer panzer_leader jungle_rat ranger organizer expert_delegator inspirational_leader panzer_expert
+				}
+				skill = 5
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Mai
+				traits = {
+					units_marionette armor_officer panzer_leader jungle_rat ranger panzer_expert
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Yuki
+				traits = {
+					units_marionette armor_officer panzer_leader jungle_rat ranger panzer_expert
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Luize
+				traits = {
+					units_marionette armor_officer panzer_leader jungle_rat ranger panzer_expert
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			add_corps_commander_role = {
+				character = TOUHOU_Sara
+				traits = {
+					units_marionette armor_officer panzer_leader jungle_rat ranger panzer_expert
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
 			capital_scope = {
 				create_unit = {
 					division = "name = \"魔界支援第一小队\" division_template = \"高速人偶卫队\" start_experience_factor = 1" 
@@ -1257,9 +1426,39 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			recruit_character = TOUHOU_Sariel
-			recruit_character = TOUHOU_Mima
-			recruit_character = TOUHOU_Konngara
+			add_field_marshal_role = {
+				character = TOUHOU_Sariel
+				traits = {
+					units_marionette brilliant_strategist inflexible_strategist bearer_of_artillery skilled_staffer panzer_leader organizer expert_delegator inspirational_leader panzer_expert
+				}
+				skill = 6
+				attack_skill = 6
+				defense_skill = 6
+				planning_skill = 6
+				logistics_skill = 6
+			}
+			add_field_marshal_role = {
+				character = TOUHOU_Mima
+				traits = {
+					units_marionette inflexible_strategist bearer_of_artillery skilled_staffer panzer_leader organizer expert_delegator inspirational_leader panzer_expert
+				}
+				skill = 5
+				attack_skill = 7
+				defense_skill = 7
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			add_field_marshal_role = {
+				character = TOUHOU_Konngara
+				traits = {
+					units_marionette bearer_of_artillery skilled_staffer panzer_leader organizer expert_delegator inspirational_leader panzer_expert
+				}
+				skill = 5
+				attack_skill = 6
+				defense_skill = 6
+				planning_skill = 6
+				logistics_skill = 6
+			}
 			custom_effect_tooltip = touhou_ALI_devildom_5_tooltip
 			hidden_effect = {
 				if = {
@@ -1300,7 +1499,17 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = touhou_ALI_devildom_6_tooltip
-			recruit_character = TOUHOU_Shinki_shadow
+			add_field_marshal_role = {
+				character = TOUHOU_Shinki_shadow
+				traits = {
+					units_marionette brilliant_strategist inflexible_strategist bearer_of_artillery skilled_staffer panzer_leader  organizer expert_delegator inspirational_leader panzer_expert  jungle_rat desert_fox swamp_fox trait_mountaineer hill_fighter ranger urban_assault_specialist winter_specialist winter_expert adaptable trickster expert_improviser
+				}
+				skill = 6
+				attack_skill = 6
+				defense_skill = 6
+				planning_skill = 6
+				logistics_skill = 6
+			}
 			hidden_effect = {
 				TOUHOU_Alice_Margatroid = {
 					set_character_name = TOUHOU_Alice_old

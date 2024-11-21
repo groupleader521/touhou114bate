@@ -55,6 +55,118 @@ recruit_character = TOUHOU_Hieda_no_Akyuu
 recruit_character = TOUHOU_Kamishirasawa_Keine
 recruit_character = TOUHOU_Huziwara_no_Mokou
 recruit_character = TOUHOU_Motoori_Kosuzu
+
+
+add_country_leader_role = {
+    character = TOUHOU_Hieda_no_Akyuu
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			akyuu_record
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Hieda_no_Akyuu
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			akyuu_record
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Hieda_no_Akyuu
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			akyuu_record
+		}
+	}
+}
+add_field_marshal_role = {
+	character = TOUHOU_Hieda_no_Akyuu
+	traits = {
+		units_human infantry_leader urban_assault_specialist ambusher
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+add_country_leader_role = {
+    character = TOUHOU_Kamishirasawa_Keine
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			keine_history
+		}
+	}
+}
+add_field_marshal_role = {
+	character = TOUHOU_Kamishirasawa_Keine
+	traits = {
+		units_human infantry_leader organizer urban_assault_specialist ambusher
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_advisor_role = {
+	character = TOUHOU_Kamishirasawa_Keine
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Kamishirasawa_Keine
+		slot = political_advisor
+		traits = { touhou_fortification_engineer }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Kamishirasawa_Keine
+		slot = army_chief
+		traits = { touhou_army_chief_old_guard }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Kamishirasawa_Keine
+		slot = high_command
+		traits = { touhou_army_chief_reform_3 }
+		cost = 150
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Huziwara_no_Mokou
+	traits = {
+		units_human trait_reckless infantry_leader urban_assault_specialist ambusher
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+add_corps_commander_role = {
+	character = TOUHOU_Motoori_Kosuzu
+	traits = {
+		units_human infantry_leader urban_assault_specialist ambusher
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
 set_country_flag = touhou_country_flag_wakan_first_research
 
 if = {

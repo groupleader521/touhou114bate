@@ -54,6 +54,121 @@ recruit_character = TOUHOU_Hijiri_Byakuren
 recruit_character = TOUHOU_Toramar_Shou
 recruit_character = TOUHOU_Murasa_Minamitu
 recruit_character = TOUHOU_Kumoi_Ichirin
+
+
+add_field_marshal_role = {
+	character = TOUHOU_Hijiri_Byakuren
+	traits = {
+		units_human infantry_leader urban_assault_specialist ambusher
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+add_country_leader_role = {
+    character = TOUHOU_Hijiri_Byakuren
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = centrism
+		traits = {
+			shengbailian
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Hijiri_Byakuren
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = fascism_ideology
+		traits = {
+			shengbailian
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Hijiri_Byakuren
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = liberalism
+		traits = {
+			shengbailian
+		}
+	}
+}
+add_country_leader_role = {
+    character = TOUHOU_Hijiri_Byakuren
+    promote_leader = yes
+	country_leader = {
+		expire = "1989.1.1"
+		ideology = marxism
+		traits = {
+			shengbailian
+		}
+	}
+}
+add_advisor_role = {
+	character = TOUHOU_Hijiri_Byakuren
+	activate = yes
+	advisor = {
+		idea_token = TOUHOU_Hijiri_Byakuren
+		slot = political_advisor
+		traits = { touhou_compassionate_gentleman }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Hijiri_Byakuren
+		slot = army_chief
+		traits = { touhou_army_chief_maneuver_3 }
+		cost = 150
+	}
+	advisor = {
+		idea_token = TOUHOU_Hijiri_Byakuren
+		slot = high_command
+		traits = { touhou_army_chief_defensive_3 }
+		cost = 150
+	}
+}
+add_corps_commander_role = {
+	character = TOUHOU_Toramar_Shou
+	traits = {
+		units_human infantry_leader urban_assault_specialist ambusher
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+add_corps_commander_role = {
+	character = TOUHOU_Murasa_Minamitu
+	traits = { battleship_adherent navy_career_officer bold gunnery_expert blue_water_expert superior_tactician spotter ironside lone_wolf big_guns_expert ground_pounder safety_first marksman crisis_magician }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 4
+}
+#add_advisor_role = {
+#	character = TOUHOU_Murasa_Minamitu
+#	activate = yes
+#	
+#}
+add_corps_commander_role = {
+	character = TOUHOU_Kumoi_Ichirin
+	traits = {
+		units_human infantry_leader urban_assault_specialist ambusher
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
 set_country_flag = touhou_country_flag_magic_first_research
 
 if = {
