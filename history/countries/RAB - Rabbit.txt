@@ -53,1696 +53,1764 @@ recruit_character = TOUHOU_Yagokoro_Eirin
 recruit_character = TOUHOU_Reisen_Udongein_Inaba
 recruit_character = TOUHOU_Inaba_Tewi
 
-
-if  = {
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Alice_Margatroid}
+		NOT = {
+			has_character = TOUHOU_Alice_Margatroid
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Alice_Margatroid
 		name = TOUHOU_Alice_Margatroid
-portraits = {
-                civilian = {
+		civilian = {
 			large = GFX_Alice_Margatroid
-                        small= GFX_Alice_Margatroid
 		}
 		army = {
 			large = GFX_Alice_Margatroid
-                        small = GFX_Alice_Margatroid
+			small = GFX_idea_alice
 		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Yakumo_Yukari}
+		NOT = {
+			has_character = TOUHOU_Yakumo_Yukari
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Yakumo_Yukari
 		name = TOUHOU_Yakumo_Yukari
-portraits = {
-                civilian = {
-			large = GFX_Yakumo_Yukari
-                        small= GFX_Yakumo_Yukari
+		portraits = {
+			civilian = {
+				large = GFX_Yakumo_Yukari
+			}
+			army = {
+				large = GFX_Yakumo_Yukari
+				small = GFX_idea_yukari
+			}
 		}
-		army = {
-			large = GFX_Yakumo_Yukari
-                        small = GFX_Yakumo_Yukari
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Hakurei_Reimu}
+		NOT = {
+			has_character = TOUHOU_Hakurei_Reimu
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Hakurei_Reimu
 		name = TOUHOU_Hakurei_Reimu
-portraits = {
-                civilian = {
-			large = GFX_Hakurei_Reimu
-                        small= GFX_Hakurei_Reimu
+		portraits = {
+			civilian = {
+				large = GFX_Hakurei_Reimu
+			}
+			army = {
+				large = GFX_Hakurei_Reimu
+				small = GFX_idea_boli
+			}
 		}
-		army = {
-			large = GFX_Hakurei_Reimu
-                        small = GFX_Hakurei_Reimu
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Sukuna_Shinmyoumaru}
+		NOT = {
+			has_character = TOUHOU_Sukuna_Shinmyoumaru
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Sukuna_Shinmyoumaru
 		name = TOUHOU_Sukuna_Shinmyoumaru
-portraits = {
-                civilian = {
-			large = GFX_Sukuna_Shinmyoumaru
-                        small= GFX_Sukuna_Shinmyoumaru
+		portraits = {
+			civilian = {
+				large = GFX_Sukuna_Shinmyoumaru
+				small = GFX_Sukuna_Shinmyoumaru
+			}
+			army = {
+				large = GFX_Sukuna_Shinmyoumaru
+				small = GFX_Sukuna_Shinmyoumaru
+			}
 		}
-		army = {
-			large = GFX_Sukuna_Shinmyoumaru
-                        small = GFX_Sukuna_Shinmyoumaru
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Komano_Aunn}
+		NOT = {
+			has_character = TOUHOU_Komano_Aunn
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Komano_Aunn
 		name = TOUHOU_Komano_Aunn
-portraits = {
-                civilian = {
-			large = GFX_Komano_Aunn
-                        small= GFX_Komano_Aunn
+		portraits = {
+			civilian = {
+				large = GFX_Komano_Aunn
+				small = GFX_Komano_Aunn
+			}
+			army = {
+				large = GFX_Komano_Aunn
+				small = GFX_Komano_Aunn
+			}
 		}
-		army = {
-			large = GFX_Komano_Aunn
-                        small = GFX_Komano_Aunn
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Toyosatomimi_no_Miko}
+		NOT = {
+			has_character = TOUHOU_Toyosatomimi_no_Miko
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Toyosatomimi_no_Miko
 		name = TOUHOU_Toyosatomimi_no_Miko
-portraits = {
-                civilian = {
-			large = GFX_Toyosatomimi_no_Miko
-                        small= GFX_Toyosatomimi_no_Miko
+		portraits = {
+			civilian = {
+				large = GFX_Toyosatomimi_no_Miko
+			}
+			army = {
+				large = GFX_Toyosatomimi_no_Miko
+				small = GFX_idea_shenzi
+			}
 		}
-		army = {
-			large = GFX_Toyosatomimi_no_Miko
-                        small = GFX_Toyosatomimi_no_Miko
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Mononobe_no_Futo}
+		NOT = {
+			has_character = TOUHOU_Mononobe_no_Futo
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Mononobe_no_Futo
 		name = TOUHOU_Mononobe_no_Futo
-portraits = {
-                civilian = {
-			large = GFX_Mononobe_no_Futo
-                        small= GFX_Mononobe_no_Futo
+		portraits = {
+			civilian = {
+				large = GFX_Mononobe_no_Futo
+				small = GFX_Mononobe_no_Futo
+			}
+			army = {
+				large = GFX_Mononobe_no_Futo
+				small = GFX_Mononobe_no_Futo
+			}
 		}
-		army = {
-			large = GFX_Mononobe_no_Futo
-                        small = GFX_Mononobe_no_Futo
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Soga_no_Toziko}
+		NOT = {
+			has_character = TOUHOU_Soga_no_Toziko
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Soga_no_Toziko
 		name = TOUHOU_Soga_no_Toziko
-portraits = {
-                civilian = {
-			large = GFX_Soga_no_Toziko
-                        small= GFX_Soga_no_Toziko
+		portraits = {
+			civilian = {
+				large = GFX_Soga_no_Toziko
+				small = GFX_Soga_no_Toziko
+			}
+			army = {
+				large = GFX_Soga_no_Toziko
+				small = GFX_Soga_no_Toziko
+			}
 		}
-		army = {
-			large = GFX_Soga_no_Toziko
-                        small = GFX_Soga_no_Toziko
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kaku_Seiga}
+		NOT = {
+			has_character = TOUHOU_Kaku_Seiga
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kaku_Seiga
 		name = TOUHOU_Kaku_Seiga
-portraits = {
-                civilian = {
-			large = GFX_Kaku_Seiga
-                        small= GFX_Kaku_Seiga
+		portraits = {
+			civilian = {
+				large = GFX_Kaku_Seiga
+				small = GFX_Kaku_Seiga
+			}
+			army = {
+				large = GFX_Kaku_Seiga
+				small = GFX_Kaku_Seiga
+			}
 		}
-		army = {
-			large = GFX_Kaku_Seiga
-                        small = GFX_Kaku_Seiga
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Komeiji_Satori}
+		NOT = {
+			has_character = TOUHOU_Komeiji_Satori
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Komeiji_Satori
 		name = TOUHOU_Komeiji_Satori
-portraits = {
-                civilian = {
-			large = GFX_Komeiji_Satori
-                        small= GFX_Komeiji_Satori
+		portraits = {
+			civilian = {
+				large = GFX_Komeiji_Satori
+			}
+			army = {
+				large = GFX_Komeiji_Satori
+				small = GFX_idea_jue
+			}
 		}
-		army = {
-			large = GFX_Komeiji_Satori
-                        small = GFX_Komeiji_Satori
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kaenbyou_Rin}
+		NOT = {
+			has_character = TOUHOU_Kaenbyou_Rin
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kaenbyou_Rin
 		name = TOUHOU_Kaenbyou_Rin
-portraits = {
-                civilian = {
-			large = GFX_Kaenbyou_Rin
-                        small= GFX_Kaenbyou_Rin
+		portraits = {
+			civilian = {
+				large = GFX_Kaenbyou_Rin
+				small = GFX_Kaenbyou_Rin
+			}
+			army = {
+				large = GFX_Kaenbyou_Rin
+				small = GFX_Kaenbyou_Rin
+			}
 		}
-		army = {
-			large = GFX_Kaenbyou_Rin
-                        small = GFX_Kaenbyou_Rin
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Reiuji_Utsuho}
+		NOT = {
+			has_character = TOUHOU_Reiuji_Utsuho
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Reiuji_Utsuho
 		name = TOUHOU_Reiuji_Utsuho
-portraits = {
-                civilian = {
-			large = GFX_Reiuji_Utsuho
-                        small= GFX_Reiuji_Utsuho
+		portraits = {
+			civilian = {
+				large = GFX_Reiuji_Utsuho
+				small = GFX_Reiuji_Utsuho
+			}
+			army = {
+				large = GFX_Reiuji_Utsuho
+				small = GFX_Reiuji_Utsuho
+			}
 		}
-		army = {
-			large = GFX_Reiuji_Utsuho
-                        small = GFX_Reiuji_Utsuho
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Komeiji_Koishi}
+		NOT = {
+			has_character = TOUHOU_Komeiji_Koishi
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Komeiji_Koishi
 		name = TOUHOU_Komeiji_Koishi
-portraits = {
-                civilian = {
-			large = GFX_Komeiji_Koishi
-                        small= GFX_Komeiji_Koishi
+		portraits = {
+			civilian = {
+				large = GFX_Komeiji_Koishi
+				small = GFX_Komeiji_Koishi
+			}
+			army = {
+				large = GFX_Komeiji_Koishi
+				small = GFX_Komeiji_Koishi
+			}
 		}
-		army = {
-			large = GFX_Komeiji_Koishi
-                        small = GFX_Komeiji_Koishi
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Cirno}
+		NOT = {
+			has_character = TOUHOU_Cirno
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Cirno
 		name = TOUHOU_Cirno
-portraits = {
-                civilian = {
-			large = GFX_Cirno
-                        small= GFX_Cirno
+		portraits = {
+			civilian = {
+				large = GFX_Cirno
+			}
+			army = {
+				large = GFX_Cirno
+			}
 		}
-		army = {
-			large = GFX_Cirno
-                        small = GFX_Cirno
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Daiyousei}
+		NOT = {
+			has_character = TOUHOU_Daiyousei
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Daiyousei
 		name = TOUHOU_Daiyousei
-portraits = {
-                civilian = {
-			large = GFX_Daiyousei
-                        small= GFX_Daiyousei
+		portraits = {
+			civilian = {
+				large = GFX_Daiyousei
+				small = GFX_Daiyousei
+			}
+			army = {
+				large = GFX_Daiyousei
+				small = GFX_Daiyousei
+			}
 		}
-		army = {
-			large = GFX_Daiyousei
-                        small = GFX_Daiyousei
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Saigyouji_Yuyuko}
+		NOT = {
+			has_character = TOUHOU_Saigyouji_Yuyuko
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Saigyouji_Yuyuko
 		name = TOUHOU_Saigyouji_Yuyuko
-portraits = {
-                civilian = {
-			large = GFX_Saigyouji_Yuyuko
-                        small= GFX_Saigyouji_Yuyuko
+		portraits = {
+			civilian = {
+				large = GFX_Saigyouji_Yuyuko
+			}
+			army = {
+				large = GFX_Saigyouji_Yuyuko
+				small = GFX_idea_uuz
+			}
 		}
-		army = {
-			large = GFX_Saigyouji_Yuyuko
-                        small = GFX_Saigyouji_Yuyuko
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Konpaku_Youmu}
+		NOT = {
+			has_character = TOUHOU_Konpaku_Youmu
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Konpaku_Youmu
 		name = TOUHOU_Konpaku_Youmu
-portraits = {
-                civilian = {
-			large = GFX_Konpaku_Youmu
-                        small= GFX_Konpaku_Youmu
+		portraits = {
+			civilian = {
+				large = GFX_Konpaku_Youmu
+			}
+			army = {
+				large = GFX_Konpaku_Youmu
+			}
 		}
-		army = {
-			large = GFX_Konpaku_Youmu
-                        small = GFX_Konpaku_Youmu
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Hoshiguma_Yugi}
+		NOT = {
+			has_character = TOUHOU_Hoshiguma_Yugi
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Hoshiguma_Yugi
 		name = TOUHOU_Hoshiguma_Yugi
-portraits = {
-                civilian = {
-			large = GFX_Hoshiguma_Yugi
-                        small= GFX_Hoshiguma_Yugi
+		portraits = {
+			civilian = {
+				large = GFX_Hoshiguma_Yugi
+			}
+			army = {
+				large = GFX_Hoshiguma_Yugi
+				small = GFX_idea_yongyi
+			}
 		}
-		army = {
-			large = GFX_Hoshiguma_Yugi
-                        small = GFX_Hoshiguma_Yugi
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Ibuki_Suika}
+		NOT = {
+			has_character = TOUHOU_Ibuki_Suika
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Ibuki_Suika
 		name = TOUHOU_Ibuki_Suika
-portraits = {
-                civilian = {
-			large = GFX_Ibuki_Suika
-                        small= GFX_Ibuki_Suika
+		portraits = {
+			civilian = {
+				large = GFX_Ibuki_Suika
+			}
+			army = {
+				large = GFX_Ibuki_Suika
+			}
 		}
-		army = {
-			large = GFX_Ibuki_Suika
-                        small = GFX_Ibuki_Suika
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Hieda_no_Akyuu}
+		NOT = {
+			has_character = TOUHOU_Hieda_no_Akyuu
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Hieda_no_Akyuu
 		name = TOUHOU_Hieda_no_Akyuu
-portraits = {
-                civilian = {
-			large = GFX_Hieda_no_Akyuu
-                        small= GFX_Hieda_no_Akyuu
+		portraits = {
+			civilian = {
+				large = GFX_Hieda_no_Akyuu
+			}
+			army = {
+				large = GFX_Hieda_no_Akyuu
+			}
 		}
-		army = {
-			large = GFX_Hieda_no_Akyuu
-                        small = GFX_Hieda_no_Akyuu
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kamishirasawa_Keine}
+		NOT = {
+			has_character = TOUHOU_Kamishirasawa_Keine
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kamishirasawa_Keine
 		name = TOUHOU_Kamishirasawa_Keine
-portraits = {
-                civilian = {
-			large = GFX_Kamishirasawa_Keine
-                        small= GFX_Kamishirasawa_Keine
+		portraits = {
+			civilian = {
+				large = GFX_Kamishirasawa_Keine
+			}
+			army = {
+				large = GFX_Kamishirasawa_Keine
+				small = GFX_idea_huiyin
+			}
 		}
-		army = {
-			large = GFX_Kamishirasawa_Keine
-                        small = GFX_Kamishirasawa_Keine
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Huziwara_no_Mokou}
+		NOT = {
+			has_character = TOUHOU_Huziwara_no_Mokou
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Huziwara_no_Mokou
 		name = TOUHOU_Huziwara_no_Mokou
-portraits = {
-                civilian = {
-			large = GFX_Huziwara_no_Mokou
-                        small= GFX_Huziwara_no_Mokou
+		portraits = {
+			civilian = {
+				large = GFX_Huziwara_no_Mokou
+				small = GFX_Huziwara_no_Mokou
+			}
+			army = {
+				large = GFX_Huziwara_no_Mokou
+				small = GFX_Huziwara_no_Mokou
+			}
 		}
-		army = {
-			large = GFX_Huziwara_no_Mokou
-                        small = GFX_Huziwara_no_Mokou
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Motoori_Kosuzu}
+		NOT = {
+			has_character = TOUHOU_Motoori_Kosuzu
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Motoori_Kosuzu
 		name = TOUHOU_Motoori_Kosuzu
-portraits = {
-                civilian = {
-			large = GFX_Motoori_Kosuzu
-                        small= GFX_Motoori_Kosuzu
+		portraits = {
+			civilian = {
+				large = GFX_Motoori_Kosuzu
+				small = GFX_Motoori_Kosuzu
+			}
+			army = {
+				large = GFX_Motoori_Kosuzu
+				small = GFX_Motoori_Kosuzu
+			}
 		}
-		army = {
-			large = GFX_Motoori_Kosuzu
-                        small = GFX_Motoori_Kosuzu
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kirisame_Marisa}
+		NOT = {
+			has_character = TOUHOU_Kirisame_Marisa
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kirisame_Marisa
 		name = TOUHOU_Kirisame_Marisa
-portraits = {
-                civilian = {
-			large = GFX_Kirisame_Marisa
-                        small= GFX_Kirisame_Marisa
+		portraits = {
+			civilian = {
+				large = GFX_Kirisame_Marisa
+			}
+			army = {
+				large = GFX_Kirisame_Marisa
+				small = GFX_idea_molisha
+			}
 		}
-		army = {
-			large = GFX_Kirisame_Marisa
-                        small = GFX_Kirisame_Marisa
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Morichika_Rinnosuke}
+		NOT = {
+			has_character = TOUHOU_Morichika_Rinnosuke
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Morichika_Rinnosuke
 		name = TOUHOU_Morichika_Rinnosuke
-portraits = {
-                civilian = {
-			large = GFX_Morichika_Rinnosuke
-                        small= GFX_Morichika_Rinnosuke
+		portraits = {
+			civilian = {
+				large = GFX_Morichika_Rinnosuke
+				small = GFX_Morichika_Rinnosuke
+			}
+			army = {
+				large = GFX_Morichika_Rinnosuke
+				small = GFX_Morichika_Rinnosuke
+			}
 		}
-		army = {
-			large = GFX_Morichika_Rinnosuke
-                        small = GFX_Morichika_Rinnosuke
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Shikieiki_Yamaxanadu}
+		NOT = {
+			has_character = TOUHOU_Shikieiki_Yamaxanadu
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Shikieiki_Yamaxanadu
 		name = TOUHOU_Shikieiki_Yamaxanadu
-portraits = {
-                civilian = {
-			large = GFX_Shikieiki_Yamaxanadu
-                        small= GFX_Shikieiki_Yamaxanadu
+		portraits = {
+			civilian = {
+				large = GFX_Shikieiki_Yamaxanadu
+			}
+			army = {
+				large = GFX_Shikieiki_Yamaxanadu
+				small = GFX_idea_siji
+			}
 		}
-		army = {
-			large = GFX_Shikieiki_Yamaxanadu
-                        small = GFX_Shikieiki_Yamaxanadu
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Onozuka_Komachi}
+		NOT = {
+			has_character = TOUHOU_Onozuka_Komachi
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Onozuka_Komachi
 		name = TOUHOU_Onozuka_Komachi
-portraits = {
-                civilian = {
-			large = GFX_Onozuka_Komachi
-                        small= GFX_Onozuka_Komachi
+		portraits = {
+			civilian = {
+				large = GFX_Onozuka_Komachi
+				small = GFX_Onozuka_Komachi
+			}
+			army = {
+				large = GFX_Onozuka_Komachi
+				small = GFX_Onozuka_Komachi
+			}
 		}
-		army = {
-			large = GFX_Onozuka_Komachi
-                        small = GFX_Onozuka_Komachi
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Houraisan_Kaguya}
+		NOT = {
+			has_character = TOUHOU_Houraisan_Kaguya
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Houraisan_Kaguya
 		name = TOUHOU_Houraisan_Kaguya
-portraits = {
-                civilian = {
-			large = GFX_Houraisan_Kaguya
-                        small= GFX_Houraisan_Kaguya
+		portraits = {
+			civilian = {
+				large = GFX_Houraisan_Kaguya
+			}
+			army = {
+				large = GFX_Houraisan_Kaguya
+				small = GFX_idea_huiye
+			}
 		}
-		army = {
-			large = GFX_Houraisan_Kaguya
-                        small = GFX_Houraisan_Kaguya
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Yagokoro_Eirin}
+		NOT = {
+			has_character = TOUHOU_Yagokoro_Eirin
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Yagokoro_Eirin
 		name = TOUHOU_Yagokoro_Eirin
-portraits = {
-                civilian = {
-			large = GFX_Yagokoro_Eirin
-                        small= GFX_Yagokoro_Eirin
+		portraits = {
+			civilian = {
+				large = GFX_Eirin_Yagokoro
+			}
+			army = {
+				large = GFX_Eirin_Yagokoro
+			}
 		}
-		army = {
-			large = GFX_Yagokoro_Eirin
-                        small = GFX_Yagokoro_Eirin
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Reisen_Udongein_Inaba}
+		NOT = {
+			has_character = TOUHOU_Reisen_Udongein_Inaba
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Reisen_Udongein_Inaba
 		name = TOUHOU_Reisen_Udongein_Inaba
-portraits = {
-                civilian = {
-			large = GFX_Reisen_Udongein_Inaba
-                        small= GFX_Reisen_Udongein_Inaba
+		portraits = {
+			civilian = {
+				large = GFX_Reisen_Udongein_Inaba
+			}
+			army = {
+				large = GFX_Reisen_Udongein_Inaba
+				small = GFX_idea_lingxian
+			}
 		}
-		army = {
-			large = GFX_Reisen_Udongein_Inaba
-                        small = GFX_Reisen_Udongein_Inaba
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Inaba_Tewi}
+		NOT = {
+			has_character = TOUHOU_Inaba_Tewi
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Inaba_Tewi
 		name = TOUHOU_Inaba_Tewi
-portraits = {
-                civilian = {
-			large = GFX_Inaba_Tewi
-                        small= GFX_Inaba_Tewi
+		portraits = {
+			civilian = {
+				large = GFX_Tewi_Inaba
+			}
+			army = {
+				large = GFX_Tewi_Inaba
+			}
 		}
-		army = {
-			large = GFX_Inaba_Tewi
-                        small = GFX_Inaba_Tewi
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Yasaka_Kanako}
+		NOT = {
+			has_character = TOUHOU_Yasaka_Kanako
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Yasaka_Kanako
 		name = TOUHOU_Yasaka_Kanako
-portraits = {
-                civilian = {
-			large = GFX_Yasaka_Kanako
-                        small= GFX_Yasaka_Kanako
+		portraits = {
+			civilian = {
+				large = GFX_Yasaka_Kanako
+			}
+			army = {
+				large = GFX_Yasaka_Kanako
+				small = GFX_idea_shennaizi
+			}
 		}
-		army = {
-			large = GFX_Yasaka_Kanako
-                        small = GFX_Yasaka_Kanako
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Moriya_Suwako}
+		NOT = {
+			has_character = TOUHOU_Moriya_Suwako
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Moriya_Suwako
 		name = TOUHOU_Moriya_Suwako
-portraits = {
-                civilian = {
-			large = GFX_Moriya_Suwako
-                        small= GFX_Moriya_Suwako
+		portraits = {
+			civilian = {
+				large = GFX_Moriya_Suwako
+			}
+			army = {
+				large = GFX_Moriya_Suwako
+			}
 		}
-		army = {
-			large = GFX_Moriya_Suwako
-                        small = GFX_Moriya_Suwako
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kochiya_Sanae}
+		NOT = {
+			has_character = TOUHOU_Kochiya_Sanae
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kochiya_Sanae
 		name = TOUHOU_Kochiya_Sanae
-portraits = {
-                civilian = {
-			large = GFX_Kochiya_Sanae
-                        small= GFX_Kochiya_Sanae
+		portraits = {
+			civilian = {
+				large = GFX_Kotiya_Sanae
+			}
+			army = {
+				large = GFX_Kotiya_Sanae
+			}
 		}
-		army = {
-			large = GFX_Kochiya_Sanae
-                        small = GFX_Kochiya_Sanae
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Hijiri_Byakuren}
+		NOT = {
+			has_character = TOUHOU_Hijiri_Byakuren
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Hijiri_Byakuren
 		name = TOUHOU_Hijiri_Byakuren
-portraits = {
-                civilian = {
-			large = GFX_Hijiri_Byakuren
-                        small= GFX_Hijiri_Byakuren
+		portraits = {
+			civilian = {
+				large = GFX_Hiziri_Byakuren
+			}
+			army = {
+				large = GFX_Hiziri_Byakuren
+				small = GFX_idea_shengbailian
+			}
 		}
-		army = {
-			large = GFX_Hijiri_Byakuren
-                        small = GFX_Hijiri_Byakuren
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Toramar_Shou}
+		NOT = {
+			has_character = TOUHOU_Toramar_Shou
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Toramar_Shou
 		name = TOUHOU_Toramar_Shou
-portraits = {
-                civilian = {
-			large = GFX_Toramar_Shou
-                        small= GFX_Toramar_Shou
+		portraits = {
+			civilian = {
+				large = GFX_Toramar_Shou
+				small = GFX_Toramar_Shou
+			}
+			army = {
+				large = GFX_Toramar_Shou
+				small = GFX_Toramar_Shou
+			}
 		}
-		army = {
-			large = GFX_Toramar_Shou
-                        small = GFX_Toramar_Shou
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Murasa_Minamitu}
+		NOT = {
+			has_character = TOUHOU_Murasa_Minamitu
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Murasa_Minamitu
 		name = TOUHOU_Murasa_Minamitu
-portraits = {
-                civilian = {
-			large = GFX_Murasa_Minamitu
-                        small= GFX_Murasa_Minamitu
+		portraits = {
+			civilian = {
+				large = GFX_Murasa_Minamitu
+			}
+			army = {
+				large = GFX_Murasa_Minamitu
+				small = GFX_idea_shuimi
+			}
 		}
-		army = {
-			large = GFX_Murasa_Minamitu
-                        small = GFX_Murasa_Minamitu
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kumoi_Ichirin}
+		NOT = {
+			has_character = TOUHOU_Kumoi_Ichirin
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kumoi_Ichirin
 		name = TOUHOU_Kumoi_Ichirin
-portraits = {
-                civilian = {
-			large = GFX_Kumoi_Ichirin
-                        small= GFX_Kumoi_Ichirin
+		portraits = {
+			civilian = {
+				large = GFX_Kumoi_Ichirin
+				small = GFX_Kumoi_Ichirin
+			}
+			army = {
+				large = GFX_Kumoi_Ichirin
+				small = GFX_Kumoi_Ichirin
+			}
 		}
-		army = {
-			large = GFX_Kumoi_Ichirin
-                        small = GFX_Kumoi_Ichirin
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Iizunamaru_Megumu}
+		NOT = {
+			has_character = TOUHOU_Iizunamaru_Megumu
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Iizunamaru_Megumu
 		name = TOUHOU_Iizunamaru_Megumu
-portraits = {
-                civilian = {
-			large = GFX_Iizunamaru_Megumu
-                        small= GFX_Iizunamaru_Megumu
+		portraits = {
+			civilian = {
+				large = GFX_Iizunamaru_Megumu
+			}
+			army = {
+				large = GFX_Iizunamaru_Megumu
+			}
 		}
-		army = {
-			large = GFX_Iizunamaru_Megumu
-                        small = GFX_Iizunamaru_Megumu
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Shameimaru_Aya}
+		NOT = {
+			has_character = TOUHOU_Shameimaru_Aya
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Shameimaru_Aya
 		name = TOUHOU_Shameimaru_Aya
-portraits = {
-                civilian = {
-			large = GFX_Shameimaru_Aya
-                        small= GFX_Shameimaru_Aya
+		portraits = {
+			army = {
+				large = GFX_Shameimaru_Aya
+				small = GFX_idea_tengu
+			}
 		}
-		army = {
-			large = GFX_Shameimaru_Aya
-                        small = GFX_Shameimaru_Aya
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Inubashiri_Momizi}
+		NOT = {
+			has_character = TOUHOU_Inubashiri_Momizi
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Inubashiri_Momizi
 		name = TOUHOU_Inubashiri_Momizi
-portraits = {
-                civilian = {
-			large = GFX_Inubashiri_Momizi
-                        small= GFX_Inubashiri_Momizi
+		portraits = {
+			civilian = {
+				large = GFX_Inubashiri_Momizi
+			}
+			army = {
+				large = GFX_Inubashiri_Momizi
+			}
 		}
-		army = {
-			large = GFX_Inubashiri_Momizi
-                        small = GFX_Inubashiri_Momizi
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Himekaidou_Hatate}
+		NOT = {
+			has_character = TOUHOU_Himekaidou_Hatate
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Himekaidou_Hatate
 		name = TOUHOU_Himekaidou_Hatate
-portraits = {
-                civilian = {
-			large = GFX_Himekaidou_Hatate
-                        small= GFX_Himekaidou_Hatate
+		portraits = {
+			civilian = {
+				large = GFX_Himekaidou_Hatate
+				small = GFX_Himekaidou_Hatate
+			}
+			army = {
+				large = GFX_Himekaidou_Hatate
+				small = GFX_Himekaidou_Hatate
+			}
 		}
-		army = {
-			large = GFX_Himekaidou_Hatate
-                        small = GFX_Himekaidou_Hatate
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Remilia_Scarlet}
+		NOT = {
+			has_character = TOUHOU_Remilia_Scarlet
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Remilia_Scarlet
 		name = TOUHOU_Remilia_Scarlet
-portraits = {
-                civilian = {
-			large = GFX_Remilia_Scarlet
-                        small= GFX_Remilia_Scarlet
+		portraits = {
+			civilian = {
+				large = GFX_Remilia_Scarlet
+			}
+			army = {
+				large = GFX_Remilia_Scarlet
+				small = GFX_idea_scarlet
+			}
 		}
-		army = {
-			large = GFX_Remilia_Scarlet
-                        small = GFX_Remilia_Scarlet
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Patchouli_Knowledge}
+		NOT = {
+			has_character = TOUHOU_Patchouli_Knowledge
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Patchouli_Knowledge
 		name = TOUHOU_Patchouli_Knowledge
-portraits = {
-                civilian = {
-			large = GFX_Patchouli_Knowledge
-                        small= GFX_Patchouli_Knowledge
+		portraits = {
+			civilian = {
+				large = GFX_Patchouli_Knowledge
+			}
+			army = {
+				large = GFX_Patchouli_Knowledge
+			}
 		}
-		army = {
-			large = GFX_Patchouli_Knowledge
-                        small = GFX_Patchouli_Knowledge
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Hong_Meirin}
+		NOT = {
+			has_character = TOUHOU_Hong_Meirin
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Hong_Meirin
 		name = TOUHOU_Hong_Meirin
-portraits = {
-                civilian = {
-			large = GFX_Hong_Meirin
-                        small= GFX_Hong_Meirin
+		portraits = {
+			civilian = {
+				large = GFX_Hon_Meirin
+			}
+			army = {
+				large = GFX_Hon_Meirin
+			}
 		}
-		army = {
-			large = GFX_Hong_Meirin
-                        small = GFX_Hong_Meirin
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Izayoi_Sakuya}
+		NOT = {
+			has_character = TOUHOU_Izayoi_Sakuya
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Izayoi_Sakuya
 		name = TOUHOU_Izayoi_Sakuya
-portraits = {
-                civilian = {
-			large = GFX_Izayoi_Sakuya
-                        small= GFX_Izayoi_Sakuya
+		portraits = {
+			civilian = {
+				large = GFX_Izayoi_Sakuya
+				small = GFX_Izayoi_Sakuya
+			}
+			army = {
+				large = GFX_Izayoi_Sakuya
+				small = GFX_Izayoi_Sakuya
+			}
 		}
-		army = {
-			large = GFX_Izayoi_Sakuya
-                        small = GFX_Izayoi_Sakuya
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Koakuma}
+		NOT = {
+			has_character = TOUHOU_Koakuma
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Koakuma
 		name = TOUHOU_Koakuma
-portraits = {
-                civilian = {
-			large = GFX_Koakuma
-                        small= GFX_Koakuma
+		portraits = {
+			civilian = {
+				large = GFX_Koakuma
+				small = GFX_Koakuma
+			}
+			army = {
+				large = GFX_Koakuma
+				small = GFX_Koakuma
+			}
 		}
-		army = {
-			large = GFX_Koakuma
-                        small = GFX_Koakuma
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kawasiro_Nitori}
+		NOT = {
+			has_character = TOUHOU_Kawasiro_Nitori
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kawasiro_Nitori
 		name = TOUHOU_Kawasiro_Nitori
-portraits = {
-                civilian = {
-			large = GFX_Kawasiro_Nitori
-                        small= GFX_Kawasiro_Nitori
+		portraits = {
+			civilian = {
+				large = GFX_navy_Kawasiro_Nitori
+			}
+			army = {
+				large = GFX_navy_Kawasiro_Nitori
+				small = GFX_idea_kappa
+			}
 		}
-		army = {
-			large = GFX_Kawasiro_Nitori
-                        small = GFX_Kawasiro_Nitori
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Medicine_Melancholy}
+		NOT = {
+			has_character = TOUHOU_Medicine_Melancholy
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Medicine_Melancholy
 		name = TOUHOU_Medicine_Melancholy
-portraits = {
-                civilian = {
-			large = GFX_Medicine_Melancholy
-                        small= GFX_Medicine_Melancholy
+		portraits = {
+			civilian = {
+				large = GFX_Medicine_Melancholy
+			}
+			army = {
+				large = GFX_Medicine_Melancholy
+			}
 		}
-		army = {
-			large = GFX_Medicine_Melancholy
-                        small = GFX_Medicine_Melancholy
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Shinki}
+		NOT = {
+			has_character = TOUHOU_Shinki
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Shinki
 		name = TOUHOU_Shinki
-portraits = {
-                civilian = {
-			large = GFX_Shinki
-                        small= GFX_Shinki
+		portraits = {
+			civilian = {
+				large = GFX_old_Shinki
+			}
+			army = {
+				large = GFX_old_Shinki
+			}
 		}
-		army = {
-			large = GFX_Shinki
-                        small = GFX_Shinki
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Flandre_Scarlet}
+		NOT = {
+			has_character = TOUHOU_Flandre_Scarlet
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Flandre_Scarlet
 		name = TOUHOU_Flandre_Scarlet
-portraits = {
-                civilian = {
-			large = GFX_Flandre_Scarlet
-                        small= GFX_Flandre_Scarlet
+		portraits = {
+			army = {
+				large = GFX_Flandre_Scarlet
+			}
 		}
-		army = {
-			large = GFX_Flandre_Scarlet
-                        small = GFX_Flandre_Scarlet
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Wakasagihime}
+		NOT = {
+			has_character = TOUHOU_Wakasagihime
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Wakasagihime
 		name = TOUHOU_Wakasagihime
-portraits = {
-                civilian = {
-			large = GFX_Wakasagihime
-                        small= GFX_Wakasagihime
+		portraits = {
+			army = {
+				large = GFX_navy_Wakasagihime
+			}
 		}
-		army = {
-			large = GFX_Wakasagihime
-                        small = GFX_Wakasagihime
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kazami_Yuka}
+		NOT = {
+			has_character = TOUHOU_Kazami_Yuka
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kazami_Yuka
 		name = TOUHOU_Kazami_Yuka
-portraits = {
-                civilian = {
-			large = GFX_Kazami_Yuka
-                        small= GFX_Kazami_Yuka
+		portraits = {
+			army = {
+				large = GFX_Kazami_Yuka
+			}
 		}
-		army = {
-			large = GFX_Kazami_Yuka
-                        small = GFX_Kazami_Yuka
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Hinanawi_Tenshi}
+		NOT = {
+			has_character = TOUHOU_Hinanawi_Tenshi
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Hinanawi_Tenshi
 		name = TOUHOU_Hinanawi_Tenshi
-portraits = {
-                civilian = {
-			large = GFX_Hinanawi_Tenshi
-                        small= GFX_Hinanawi_Tenshi
+		portraits = {
+			army = {
+				large = GFX_Hinanawi_Tenshi
+			}
 		}
-		army = {
-			large = GFX_Hinanawi_Tenshi
-                        small = GFX_Hinanawi_Tenshi
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = Touhou_Nagae_Iku}
+		NOT = {
+			has_character = Touhou_Nagae_Iku
+		}
 	}
 	generate_character = {
 		token_base = Touhou_Nagae_Iku
 		name = Touhou_Nagae_Iku
-portraits = {
-                civilian = {
-			large = GFX_Touhou_Nagae_Iku
-                        small= GFX_Touhou_Nagae_Iku
+		portraits = {
+			army = {
+				large = GFX_Nagae_Iku
+			}
 		}
-		army = {
-			large = GFX_Touhou_Nagae_Iku
-                        small = GFX_Touhou_Nagae_Iku
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Matara_Okina}
+		NOT = {
+			has_character = TOUHOU_Matara_Okina
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Matara_Okina
 		name = TOUHOU_Matara_Okina
-portraits = {
-                civilian = {
-			large = GFX_Matara_Okina
-                        small= GFX_Matara_Okina
+		portraits = {
+			army = {
+				small = GFX_idea_matara
+			}
 		}
-		army = {
-			large = GFX_Matara_Okina
-                        small = GFX_Matara_Okina
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Ibaraki_Kasen}
+		NOT = {
+			has_character = TOUHOU_Ibaraki_Kasen
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Ibaraki_Kasen
 		name = TOUHOU_Ibaraki_Kasen
-portraits = {
-                civilian = {
-			large = GFX_Ibaraki_Kasen
-                        small= GFX_Ibaraki_Kasen
+		portraits = {
+			army = {
+				small = GFX_idea_huashan
+			}
 		}
-		army = {
-			large = GFX_Ibaraki_Kasen
-                        small = GFX_Ibaraki_Kasen
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Usami_Renko}
+		NOT = {
+			has_character = TOUHOU_Usami_Renko
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Usami_Renko
 		name = TOUHOU_Usami_Renko
-portraits = {
-                civilian = {
-			large = GFX_Usami_Renko
-                        small= GFX_Usami_Renko
+		portraits = {
+			army = {
+				small = GFX_idea_lianzi
+			}
 		}
-		army = {
-			large = GFX_Usami_Renko
-                        small = GFX_Usami_Renko
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Maribel_Hearn}
+		NOT = {
+			has_character = TOUHOU_Maribel_Hearn
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Maribel_Hearn
 		name = TOUHOU_Maribel_Hearn
-portraits = {
-                civilian = {
-			large = GFX_Maribel_Hearn
-                        small= GFX_Maribel_Hearn
+		portraits = {
+			army = {
+				small = GFX_idea_meili
+			}
 		}
-		army = {
-			large = GFX_Maribel_Hearn
-                        small = GFX_Maribel_Hearn
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Usami_Sumireko}
+		NOT = {
+			has_character = TOUHOU_Usami_Sumireko
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Usami_Sumireko
 		name = TOUHOU_Usami_Sumireko
-portraits = {
-                civilian = {
-			large = GFX_Usami_Sumireko
-                        small= GFX_Usami_Sumireko
+		portraits = {
+			army = {
+				small = GFX_idea_jinzi
+			}
 		}
-		army = {
-			large = GFX_Usami_Sumireko
-                        small = GFX_Usami_Sumireko
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Elly}
+		NOT = {
+			has_character = TOUHOU_Elly
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Elly
 		name = TOUHOU_Elly
-portraits = {
-                civilian = {
-			large = GFX_Elly
-                        small= GFX_Elly
+		portraits = {
+			army = {
+				large = GFX_old_Elly
+			}
 		}
-		army = {
-			large = GFX_Elly
-                        small = GFX_Elly
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kurumi}
+		NOT = {
+			has_character = TOUHOU_Kurumi
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kurumi
 		name = TOUHOU_Kurumi
-portraits = {
-                civilian = {
-			large = GFX_Kurumi
-                        small= GFX_Kurumi
+		portraits = {
+			army = {
+				large = GFX_old_Kurumi
+			}
 		}
-		army = {
-			large = GFX_Kurumi
-                        small = GFX_Kurumi
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Mugetsu}
+		NOT = {
+			has_character = TOUHOU_Mugetsu
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Mugetsu
 		name = TOUHOU_Mugetsu
-portraits = {
-                civilian = {
-			large = GFX_Mugetsu
-                        small= GFX_Mugetsu
+		portraits = {
+			army = {
+				large = GFX_old_Mugetsu
+			}
 		}
-		army = {
-			large = GFX_Mugetsu
-                        small = GFX_Mugetsu
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Gengetsu}
+		NOT = {
+			has_character = TOUHOU_Gengetsu
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Gengetsu
 		name = TOUHOU_Gengetsu
-portraits = {
-                civilian = {
-			large = GFX_Gengetsu
-                        small= GFX_Gengetsu
+		portraits = {
+			army = {
+				large = GFX_old_Gengetsu
+			}
 		}
-		army = {
-			large = GFX_Gengetsu
-                        small = GFX_Gengetsu
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Okazaki_Yumemi}
+		NOT = {
+			has_character = TOUHOU_Okazaki_Yumemi
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Okazaki_Yumemi
 		name = TOUHOU_Okazaki_Yumemi
-portraits = {
-                civilian = {
-			large = GFX_Okazaki_Yumemi
-                        small= GFX_Okazaki_Yumemi
+		portraits = {
+			army = {
+				large = GFX_old_Okazaki_Yumemi
+			}
 		}
-		army = {
-			large = GFX_Okazaki_Yumemi
-                        small = GFX_Okazaki_Yumemi
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kitashirakawa_Chiyuri}
+		NOT = {
+			has_character = TOUHOU_Kitashirakawa_Chiyuri
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kitashirakawa_Chiyuri
 		name = TOUHOU_Kitashirakawa_Chiyuri
-portraits = {
-                civilian = {
-			large = GFX_Kitashirakawa_Chiyuri
-                        small= GFX_Kitashirakawa_Chiyuri
+		portraits = {
+			army = {
+				large = GFX_old_Kitashirakawa_Chiyuri
+			}
 		}
-		army = {
-			large = GFX_Kitashirakawa_Chiyuri
-                        small = GFX_Kitashirakawa_Chiyuri
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Asakura_Rikako}
+		NOT = {
+			has_character = TOUHOU_Asakura_Rikako
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Asakura_Rikako
 		name = TOUHOU_Asakura_Rikako
-portraits = {
-                civilian = {
-			large = GFX_Asakura_Rikako
-                        small= GFX_Asakura_Rikako
+		portraits = {
+			army = {
+				large = GFX_old_Asakura_Rikako
+			}
 		}
-		army = {
-			large = GFX_Asakura_Rikako
-                        small = GFX_Asakura_Rikako
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kana_Anaberal}
+		NOT = {
+			has_character = TOUHOU_Kana_Anaberal
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kana_Anaberal
 		name = TOUHOU_Kana_Anaberal
-portraits = {
-                civilian = {
-			large = GFX_Kana_Anaberal
-                        small= GFX_Kana_Anaberal
+		portraits = {
+			army = {
+				large = GFX_old_Kana_Anaberal
+			}
 		}
-		army = {
-			large = GFX_Kana_Anaberal
-                        small = GFX_Kana_Anaberal
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Kotohime}
+		NOT = {
+			has_character = TOUHOU_Kotohime
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Kotohime
 		name = TOUHOU_Kotohime
-portraits = {
-                civilian = {
-			large = GFX_Kotohime
-                        small= GFX_Kotohime
+		portraits = {
+			army = {
+				large = GFX_old_Kotohime
+			}
 		}
-		army = {
-			large = GFX_Kotohime
-                        small = GFX_Kotohime
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Ellen}
+		NOT = {
+			has_character = TOUHOU_Ellen
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Ellen
 		name = TOUHOU_Ellen
-portraits = {
-                civilian = {
-			large = GFX_Ellen
-                        small= GFX_Ellen
+		portraits = {
+			army = {
+				large = GFX_old_Ellen
+			}
 		}
-		army = {
-			large = GFX_Ellen
-                        small = GFX_Ellen
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Yumeko}
+		NOT = {
+			has_character = TOUHOU_Yumeko
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Yumeko
 		name = TOUHOU_Yumeko
-portraits = {
-                civilian = {
-			large = GFX_Yumeko
-                        small= GFX_Yumeko
+		portraits = {
+			army = {
+				large = GFX_old_Yumeko
+			}
 		}
-		army = {
-			large = GFX_Yumeko
-                        small = GFX_Yumeko
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Mai}
+		NOT = {
+			has_character = TOUHOU_Mai
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Mai
 		name = TOUHOU_Mai
-portraits = {
-                civilian = {
-			large = GFX_Mai
-                        small= GFX_Mai
+		portraits = {
+			army = {
+				large = GFX_old_Mai
+			}
 		}
-		army = {
-			large = GFX_Mai
-                        small = GFX_Mai
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Yuki}
+		NOT = {
+			has_character = TOUHOU_Yuki
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Yuki
 		name = TOUHOU_Yuki
-portraits = {
-                civilian = {
-			large = GFX_Yuki
-                        small= GFX_Yuki
+		portraits = {
+			army = {
+				large = GFX_old_Yuki
+			}
 		}
-		army = {
-			large = GFX_Yuki
-                        small = GFX_Yuki
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Luize}
+		NOT = {
+			has_character = TOUHOU_Luize
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Luize
 		name = TOUHOU_Luize
-portraits = {
-                civilian = {
-			large = GFX_Luize
-                        small= GFX_Luize
+		portraits = {
+			army = {
+				large = GFX_old_Luize
+			}
 		}
-		army = {
-			large = GFX_Luize
-                        small = GFX_Luize
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Sara}
+		NOT = {
+			has_character = TOUHOU_Sara
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Sara
 		name = TOUHOU_Sara
-portraits = {
-                civilian = {
-			large = GFX_Sara
-                        small= GFX_Sara
+		portraits = {
+			army = {
+				large = GFX_old_Sara
+			}
 		}
-		army = {
-			large = GFX_Sara
-                        small = GFX_Sara
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Sariel}
+		NOT = {
+			has_character = TOUHOU_Sariel
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Sariel
 		name = TOUHOU_Sariel
-portraits = {
-                civilian = {
-			large = GFX_Sariel
-                        small= GFX_Sariel
+		portraits = {
+			army = {
+				large = GFX_old_Sariel
+			}
 		}
-		army = {
-			large = GFX_Sariel
-                        small = GFX_Sariel
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Mima}
+		NOT = {
+			has_character = TOUHOU_Mima
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Mima
 		name = TOUHOU_Mima
-portraits = {
-                civilian = {
-			large = GFX_Mima
-                        small= GFX_Mima
+		portraits = {
+			army = {
+				large = GFX_old_Mima
+			}
 		}
-		army = {
-			large = GFX_Mima
-                        small = GFX_Mima
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Konngara}
+		NOT = {
+			has_character = TOUHOU_Konngara
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Konngara
 		name = TOUHOU_Konngara
-portraits = {
-                civilian = {
-			large = GFX_Konngara
-                        small= GFX_Konngara
+		portraits = {
+			army = {
+				large = GFX_old_Konngara
+			}
 		}
-		army = {
-			large = GFX_Konngara
-                        small = GFX_Konngara
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Shinki_shadow}
+		NOT = {
+			has_character = TOUHOU_Shinki_shadow
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Shinki_shadow
 		name = TOUHOU_Shinki_shadow
-portraits = {
-                civilian = {
-			large = GFX_Shinki_shadow
-                        small= GFX_Shinki_shadow
+		portraits = {
+			army = {
+				large = GFX_old_Shinki_shadow
+			}
 		}
-		army = {
-			large = GFX_Shinki_shadow
-                        small = GFX_Shinki_shadow
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_nameless}
+		NOT = {
+			has_character = TOUHOU_nameless
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_nameless
 		name = TOUHOU_nameless
-portraits = {
-                civilian = {
-			large = GFX_nameless
-                        small= GFX_nameless
+		portraits = {
+			civilian = {
+				large = GFX_nameless
+			}
+			army = {
+				large = GFX_nameless
+				small = GFX_idea_nameless_blessing
+			}
 		}
-		army = {
-			large = GFX_nameless
-                        small = GFX_nameless
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_bear}
+		NOT = {
+			has_character = TOUHOU_bear
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_bear
 		name = TOUHOU_bear
-portraits = {
-                civilian = {
-			large = GFX_bear
-                        small= GFX_bear
+		portraits = {
+			civilian = {
+				large = GFX_bear
+				small = GFX_bear
+			}
+			army = {
+				large = GFX_bear
+				small = GFX_bear
+			}
 		}
-		army = {
-			large = GFX_bear
-                        small = GFX_bear
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_lightGod}
+		NOT = {
+			has_character = TOUHOU_lightGod
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_lightGod
 		name = TOUHOU_lightGod
-portraits = {
-                civilian = {
-			large = GFX_lightGod
-                        small= GFX_lightGod
+		portraits = {
+			civilian = {
+				large = GFX_lightGod
+				small = GFX_lightGod
+			}
+			army = {
+				large = GFX_lightGod
+				small = GFX_lightGod
+			}
 		}
-		army = {
-			large = GFX_lightGod
-                        small = GFX_lightGod
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_Trino}
+		NOT = {
+			has_character = TOUHOU_Trino
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_Trino
 		name = TOUHOU_Trino
-portraits = {
-                civilian = {
-			large = GFX_Trino
-                        small= GFX_Trino
+		portraits = {
+			civilian = {
+				large = GFX_Trino
+				small = GFX_Trino
+			}
+			army = {
+				large = GFX_Trino
+				small = GFX_Trino
+			}
 		}
-		army = {
-			large = GFX_Trino
-                        small = GFX_Trino
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_LLB}
+		NOT = {
+			has_character = TOUHOU_LLB
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_LLB
 		name = TOUHOU_LLB
-portraits = {
-                civilian = {
-			large = GFX_LLB
-                        small= GFX_LLB
+		portraits = {
+			civilian = {
+				large = GFX_LLB
+				small = GFX_LLB
+			}
+			army = {
+				large = GFX_LLB
+				small = GFX_LLB
+			}
 		}
-		army = {
-			large = GFX_LLB
-                        small = GFX_LLB
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_GYFSJ}
+		NOT = {
+			has_character = TOUHOU_GYFSJ
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_GYFSJ
 		name = TOUHOU_GYFSJ
-portraits = {
-                civilian = {
-			large = GFX_GYFSJ
-                        small= GFX_GYFSJ
+		portraits = {
+			civilian = {
+				large = GFX_GYFSJ
+				small = GFX_GYFSJ
+			}
+			army = {
+				large = GFX_GYFSJ
+				small = GFX_GYFSJ
+			}
 		}
-		army = {
-			large = GFX_GYFSJ
-                        small = GFX_GYFSJ
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_GYFSJ_navy}
+		NOT = {
+			has_character = TOUHOU_GYFSJ_navy
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_GYFSJ_navy
 		name = TOUHOU_GYFSJ_navy
-portraits = {
-                civilian = {
-			large = GFX_GYFSJ_navy
-                        small= GFX_GYFSJ_navy
+		portraits = {
+			civilian = {
+				large = GFX_GYFSJ
+				small = GFX_GYFSJ
+			}
+			army = {
+				large = GFX_GYFSJ
+				small = GFX_GYFSJ
+			}
 		}
-		army = {
-			large = GFX_GYFSJ_navy
-                        small = GFX_GYFSJ_navy
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_BNMJFJ}
+		NOT = {
+			has_character = TOUHOU_BNMJFJ
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_BNMJFJ
 		name = TOUHOU_BNMJFJ
-portraits = {
-                civilian = {
-			large = GFX_BNMJFJ
-                        small= GFX_BNMJFJ
+		portraits = {
+			civilian = {
+				large = GFX_BNMJFJ
+				small = GFX_BNMJFJ
+			}
+			army = {
+				large = GFX_BNMJFJ
+				small = GFX_BNMJFJ
+			}
 		}
-		army = {
-			large = GFX_BNMJFJ
-                        small = GFX_BNMJFJ
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_DLEZ]}
+		NOT = {
+			has_character = TOUHOU_DLEZ]
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_DLEZ]
 		name = TOUHOU_DLEZ]
-portraits = {
-                civilian = {
-			large = GFX_DLEZ]
-                        small= GFX_DLEZ]
+		portraits = {
+			civilian = {
+				large = GFX_DLEZ]
+				small = GFX_DLEZ]
+			}
+			army = {
+				large = GFX_DLEZ]
+				small = GFX_DLEZ]
+			}
 		}
-		army = {
-			large = GFX_DLEZ]
-                        small = GFX_DLEZ]
-		}
-}
 	}
 }
-if  = {
+
+if = {
 	limit = {
-		NOT = {has_character = TOUHOU_TTTTBD}
+		NOT = {
+			has_character = TOUHOU_TTTTBD
+		}
 	}
 	generate_character = {
 		token_base = TOUHOU_TTTTBD
 		name = TOUHOU_TTTTBD
-portraits = {
-                civilian = {
-			large = GFX_TTTTBD
-                        small= GFX_TTTTBD
+		portraits = {
+			civilian = {
+				large = GFX_TTTTBD
+				small = GFX_TTTTBD
+			}
+			army = {
+				large = GFX_TTTTBD
+				small = GFX_TTTTBD
+			}
 		}
-		army = {
-			large = GFX_TTTTBD
-                        small = GFX_TTTTBD
-		}
-}
 	}
 }
 add_field_marshal_role = {

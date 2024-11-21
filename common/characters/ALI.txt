@@ -194,16 +194,16 @@ characters= {
 				large = GFX_old_Konngara
 			}
 		}
-		field_marshal = {
-			traits = {
-				units_marionette bearer_of_artillery skilled_staffer panzer_leader organizer expert_delegator inspirational_leader panzer_expert
-			}
-			skill = 5
-			attack_skill = 6
-			defense_skill = 6
-			planning_skill = 6
-			logistics_skill = 6
-		}
+		#field_marshal = {
+		#	traits = {
+		#		units_marionette bearer_of_artillery skilled_staffer panzer_leader organizer expert_delegator inspirational_leader panzer_expert
+		#	}
+		#	skill = 5
+		#	attack_skill = 6
+		#	defense_skill = 6
+		#	planning_skill = 6
+		#	logistics_skill = 6
+		#}
 	}
 	TOUHOU_Shinki = {
 		name = TOUHOU_Shinki
