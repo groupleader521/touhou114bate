@@ -13387,13 +13387,13 @@
 13383;88;182;31;land;false;plains;6
 13384;11;88;160;land;false;plains;6
 13385;19;178;184;land;false;forest;6
-13386;99;92;249;lake;false;plains;6
+13386;99;92;249;land;false;plains;6
 13387;206;144;228;lake;false;plains;6
 13388;91;101;231;land;false;plains;6
 13389;116;160;11;land;false;plains;6
 13390;52;133;81;land;false;urban;6
 13391;206;157;94;land;false;plains;6
-13392;228;223;144;lake;true;forest;0
+13392;228;223;144;land;true;forest;0
 13393;148;228;144;land;false;plains;6
 13394;206;143;223;land;false;plains;6
 13395;63;128;188;land;false;plains;6
