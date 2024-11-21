@@ -6,27 +6,22 @@
 #但你很容易发现，touhou.11还可以表示第11个一级事件
 #为保证代码可维护性，需要积极使用add_namespace增加<namespace>
 #具体而言，一个<namespace>每一级只允许有1-9共9个同级事件
-
 #关于id为什么不使用“0”
 #我讲一下p社的事件机制
 #<namespace>是一个“域”，<integer ID>是具体值
 #对，你没有看错，事件id不是独立识别的字符串，而是数值
 #这就导致0、00本质上是相同的，所以我禁止使用“0”
-
 #add_namespace使用规范
 #add_namespace = a_b_c_d，a、b、c、d代表各级标题
-
 #事件位置顺序
 #本地化的位置顺序应该与事件本身的位置顺序相同，事件本身的位置顺序应该按事件链逻辑，而不是命名顺序
 #例如，1=小红吃饭，2=小红做饭，2应该在1前面，这样有助于减少后期维护逻辑思维量
-
 #子事件直接在上级事件后面
 #例如，21=小红把饭端上桌子，整体顺序：2→21→1
-
-
 #幻想乡统一事件
 add_namespace = touhou_end
-country_event = {#时艰……
+country_event = {
+	#时艰……
 	id = touhou_end.7
 	title = touhou_end.7.t
 	desc = touhou_end.7.d
@@ -38,15 +33,49 @@ country_event = {#时艰……
 			every_enemy_country = {
 				limit = {
 					NOT = {
-						original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI
+						original_tag = ALI
+						original_tag = DES
+						original_tag = HAK
+						original_tag = DLD
+						original_tag = HEL
+						original_tag = SSS
+						original_tag = OPP
+						original_tag = RAB
+						original_tag = TEM
+						original_tag = BLI
+						original_tag = KAP
+						original_tag = TEN
+						original_tag = HUM
+						original_tag = VAM
+						original_tag = MLS
+						original_tag = EVI
 						has_country_flag = touhou_god_of_makai_country_flag
 					}
 				}
-				country_event = { id = touhou_end.71 }
+				country_event = {
+					id = touhou_end.71
+				}
 			}
 			every_other_country = {
 				limit = {
-					OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+					OR = {
+						original_tag = ALI
+						original_tag = DES
+						original_tag = HAK
+						original_tag = DLD
+						original_tag = HEL
+						original_tag = SSS
+						original_tag = OPP
+						original_tag = RAB
+						original_tag = TEM
+						original_tag = BLI
+						original_tag = KAP
+						original_tag = TEN
+						original_tag = HUM
+						original_tag = VAM
+						original_tag = MLS
+						original_tag = EVI
+					}
 				}
 				add_timed_idea = {
 					idea = touhou_ideas_sour_loser
@@ -64,50 +93,56 @@ country_event = {#时艰……
 		add_ideas = disarmed_nation
 		add_ideas = free_trade
 		add_ideas = civilian_economy
-		ai_chance = { base = 0 }
+		ai_chance = {
+			base = 0
+		}
 	}
 	option = {
 		name = touhou_end.7.b
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 	}
 }
-country_event = {#归还土地
+
+country_event = {
+	#归还土地
 	id = touhou_end.71
 	title = touhou_end.71.t
 	desc = touhou_end.71.d
 	picture = GFX_report_event_generic_sign_treaty3
 	is_triggered_only = yes
 	immediate = {
-		white_peace = ALI 
-		white_peace = DES 
-		white_peace = HAK 
-		white_peace = DLD 
-		white_peace = HEL 
-		white_peace = SSS 
-		white_peace = OPP 
-		white_peace = RAB 
-		white_peace = TEM 
-		white_peace = BLI 
-		white_peace = KAP 
-		white_peace = TEN 
-		white_peace = HUM 
-		white_peace = VAM 
-		white_peace = MLS 
+		white_peace = ALI
+		white_peace = DES
+		white_peace = HAK
+		white_peace = DLD
+		white_peace = HEL
+		white_peace = SSS
+		white_peace = OPP
+		white_peace = RAB
+		white_peace = TEM
+		white_peace = BLI
+		white_peace = KAP
+		white_peace = TEN
+		white_peace = HUM
+		white_peace = VAM
+		white_peace = MLS
 		white_peace = EVI
 		every_state = {
 			limit = {
 				OR = {
-					is_owned_by = ROOT 
+					is_owned_by = ROOT
 					is_controlled_by = ROOT
 				}
 				has_state_flag = is_gensokyo_state_flag
 			}
-			transfer_state_to  = FROM
+			transfer_state_to = FROM
 		}
 		every_state = {
 			limit = {
 				OR = {
-					is_owned_by = FROM 
+					is_owned_by = FROM
 					is_controlled_by = FROM
 				}
 				is_core_of = ROOT
@@ -115,15 +150,19 @@ country_event = {#归还土地
 					has_state_flag = is_gensokyo_state_flag
 				}
 			}
-			transfer_state_to  = ROOT
+			transfer_state_to = ROOT
 		}
 	}
 	option = {
 		name = touhou_end.71.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 	}
 }
-country_event = {#博丽神社大宴
+
+country_event = {
+	#博丽神社大宴
 	id = touhou_end.5
 	title = touhou_end.5.t
 	desc = touhou_end.5.d
@@ -131,103 +170,279 @@ country_event = {#博丽神社大宴
 	is_triggered_only = yes
 	option = {
 		name = touhou_end.5.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 	}
 }
-country_event = {#幻想乡统一，妖怪至上
+
+country_event = {
+	#幻想乡统一，妖怪至上
 	id = touhou_end.6
 	title = touhou_end.6.t
 	desc = touhou_end.6.d
 	picture = GFX_report_event_touhou_plenary
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 	}
 	option = {
 		name = touhou_end.6.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_war_support = 0.2
 		inside_fantasy_attitude_clear_all = yes
 		hidden_effect = {
 			every_country = {
-				limit = { NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-				news_event = { hours = 6 id = news.1001 }
+				limit = {
+					NOT = {
+						original_tag = ALI
+						original_tag = DES
+						original_tag = HAK
+						original_tag = DLD
+						original_tag = HEL
+						original_tag = SSS
+						original_tag = OPP
+						original_tag = RAB
+						original_tag = TEM
+						original_tag = BLI
+						original_tag = KAP
+						original_tag = TEN
+						original_tag = HUM
+						original_tag = VAM
+						original_tag = MLS
+						original_tag = EVI
+					}
+				}
+				news_event = {
+					hours = 6
+					id = news.1001
+				}
 			}
 		}
 	}
 }
-country_event = {#幻想乡统一，平等共存
+
+country_event = {
+	#幻想乡统一，平等共存
 	id = touhou_end.1
 	title = touhou_end.1.t
 	desc = touhou_end.1.d
 	picture = GFX_report_event_touhou_plenary
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 	}
 	option = {
 		name = touhou_end.1.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_stability = 0.1
 		add_war_support = 0.1
 		inside_fantasy_attitude_clear_all = yes
 		dismantle_faction = yes
 		hidden_effect = {
 			every_country = {
-				limit = { NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-				news_event = { hours = 6 id = news.1001 }
+				limit = {
+					NOT = {
+						original_tag = ALI
+						original_tag = DES
+						original_tag = HAK
+						original_tag = DLD
+						original_tag = HEL
+						original_tag = SSS
+						original_tag = OPP
+						original_tag = RAB
+						original_tag = TEM
+						original_tag = BLI
+						original_tag = KAP
+						original_tag = TEN
+						original_tag = HUM
+						original_tag = VAM
+						original_tag = MLS
+						original_tag = EVI
+					}
+				}
+				news_event = {
+					hours = 6
+					id = news.1001
+				}
 			}
 		}
 	}
 }
-country_event = {#幻想乡统一，人类至上
+
+country_event = {
+	#幻想乡统一，人类至上
 	id = touhou_end.2
 	title = touhou_end.2.t
 	desc = touhou_end.2.d
 	picture = GFX_report_event_touhou_plenary
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 	}
 	option = {
 		name = touhou_end.2.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_stability = 0.2
 		inside_fantasy_attitude_clear_all = yes
 		dismantle_faction = yes
 		hidden_effect = {
 			every_country = {
-				limit = { NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-				news_event = { hours = 6 id = news.1001 }
+				limit = {
+					NOT = {
+						original_tag = ALI
+						original_tag = DES
+						original_tag = HAK
+						original_tag = DLD
+						original_tag = HEL
+						original_tag = SSS
+						original_tag = OPP
+						original_tag = RAB
+						original_tag = TEM
+						original_tag = BLI
+						original_tag = KAP
+						original_tag = TEN
+						original_tag = HUM
+						original_tag = VAM
+						original_tag = MLS
+						original_tag = EVI
+					}
+				}
+				news_event = {
+					hours = 6
+					id = news.1001
+				}
 			}
 		}
 	}
 }
-country_event = {#幻想乡统一，漠不关心
+
+country_event = {
+	#幻想乡统一，漠不关心
 	id = touhou_end.3
 	title = touhou_end.3.t
 	desc = touhou_end.3.d
 	picture = GFX_report_event_touhou_plenary
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-	}	
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
 	option = {
 		name = touhou_end.3.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 		add_stability = 0.1
 		inside_fantasy_attitude_clear_all = yes
 		hidden_effect = {
 			every_country = {
-				limit = { NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-				news_event = { hours = 6 id = news.1001 }
+				limit = {
+					NOT = {
+						original_tag = ALI
+						original_tag = DES
+						original_tag = HAK
+						original_tag = DLD
+						original_tag = HEL
+						original_tag = SSS
+						original_tag = OPP
+						original_tag = RAB
+						original_tag = TEM
+						original_tag = BLI
+						original_tag = KAP
+						original_tag = TEN
+						original_tag = HUM
+						original_tag = VAM
+						original_tag = MLS
+						original_tag = EVI
+					}
+				}
+				news_event = {
+					hours = 6
+					id = news.1001
+				}
 			}
 		}
 	}
 }
-country_event = {#改革呼声
+
+country_event = {
+	#改革呼声
 	id = touhou_end.4
 	title = touhou_end.4.t
 	desc = touhou_end.4.d
@@ -236,45 +451,97 @@ country_event = {#改革呼声
 	fire_only_once = yes
 	option = {
 		name = touhou_end.4.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_stability = -0.1
 		add_war_support = -0.1
-
-		set_variable = { touhou_var_fantasy_consumer_goods_expected_value = 0.2 }
-		set_variable = { touhou_var_fantasy_stability_weekly = -0.005 }
-		set_variable = { touhou_var_fantasy_war_support_weekly = -0.005 }
-		set_variable = { touhou_var_fantasy_industrial_capacity_factory = -0.2 }
-		set_variable = { touhou_var_fantasy_training_time_army_factor = 0.2 }
-		set_variable = { touhou_var_fantasy_conscription_factor = -0.4 }
-		set_variable = { touhou_var_fantasy_army_org_factor = -0.25 }
-		set_variable = { touhou_var_fantasy_production_speed_buildings_factor = -0.1 }
-		set_variable = { touhou_var_fantasy_political_power_factor = -0.2 }
-		set_variable = { touhou_var_fantasy_justify_war_goal_time = 1 }
-
-		set_variable = { touhou_var_fantasy_army_leader_start_defense_level = 0 }
-		set_variable = { touhou_var_fantasy_army_leader_start_attack_level = 0 }
-		set_variable = { touhou_var_fantasy_army_leader_start_planning_level = 0 }
-		set_variable = { touhou_var_fantasy_army_leader_start_logistics_level = 0 }
-		set_variable = { touhou_var_fantasy_max_command_power = 0 }
-		set_variable = { touhou_var_fantasy_command_power_gain_mult = 0 }
-		set_variable = { touhou_var_fantasy_army_leader_start_level = 0 }
-		set_variable = { touhou_var_fantasy_army_attack_factor = 0 }
-		set_variable = { touhou_var_fantasy_army_defence_factor = 0 }
-		set_variable = { touhou_var_fantasy_army_strength_factor = 0 }
-		if = {
-			limit = { has_idea = fantasy_live }
-			remove_ideas = fantasy_live
-			add_dynamic_modifier = { modifier = touhou_dynamic_modifiers_fantasy_live }
+		set_variable = {
+			touhou_var_fantasy_consumer_goods_expected_value = 0.2
 		}
-		if = {
-			limit = { has_idea = fantasy_live2 }
-			remove_ideas = fantasy_live2
-			add_dynamic_modifier = { modifier = touhou_dynamic_modifiers_fantasy_live }
+		set_variable = {
+			touhou_var_fantasy_stability_weekly = -0.005
+		}
+		set_variable = {
+			touhou_var_fantasy_war_support_weekly = -0.005
+		}
+		set_variable = {
+			touhou_var_fantasy_industrial_capacity_factory = -0.2
+		}
+		set_variable = {
+			touhou_var_fantasy_training_time_army_factor = 0.2
+		}
+		set_variable = {
+			touhou_var_fantasy_conscription_factor = -0.4
+		}
+		set_variable = {
+			touhou_var_fantasy_army_org_factor = -0.25
+		}
+		set_variable = {
+			touhou_var_fantasy_production_speed_buildings_factor = -0.1
+		}
+		set_variable = {
+			touhou_var_fantasy_political_power_factor = -0.2
+		}
+		set_variable = {
+			touhou_var_fantasy_justify_war_goal_time = 1
+		}
+		set_variable = {
+			touhou_var_fantasy_army_leader_start_defense_level = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_army_leader_start_attack_level = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_army_leader_start_planning_level = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_army_leader_start_logistics_level = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_max_command_power = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_command_power_gain_mult = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_army_leader_start_level = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_army_attack_factor = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_army_defence_factor = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_army_strength_factor = 0
 		}
 		if = {
 			limit = {
-				NOT = { has_country_flag = touhou_decisions_categories_option_has }
-				NOT = { has_country_flag = got_Sky_island_flag }
+				has_idea = fantasy_live
+			}
+			remove_ideas = fantasy_live
+			add_dynamic_modifier = {
+				modifier = touhou_dynamic_modifiers_fantasy_live
+			}
+		}
+		if = {
+			limit = {
+				has_idea = fantasy_live2
+			}
+			remove_ideas = fantasy_live2
+			add_dynamic_modifier = {
+				modifier = touhou_dynamic_modifiers_fantasy_live
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = touhou_decisions_categories_option_has
+				}
+				NOT = {
+					has_country_flag = got_Sky_island_flag
+				}
 			}
 		}
 		meta_effect = {
@@ -282,29 +549,32 @@ country_event = {#改革呼声
 				generate_character = {
 					token_base = kare_Sky_island
 					name = Sky_island
-					portraits={
-						army={
-							large="GFX_kare_leader_syk_island"
-							small="GFX_kare_advisor_syk_island"
+					portraits = {
+						army = {
+							large = "GFX_kare_leader_syk_island"
+							small = "GFX_kare_advisor_syk_island"
 						}
-						civilian={
-							large="GFX_kare_leader_syk_island"
-							small="GFX_kare_advisor_syk_island"
+						civilian = {
+							large = "GFX_kare_leader_syk_island"
+							small = "GFX_kare_advisor_syk_island"
 						}
 					}
 					allowed_civil_war = {
 						is_ai = no
 					}
-					corps_commander={
-						traits = { Syk_island_trait brilliant_strategist }
+					corps_commander = {
+						traits = {
+							Syk_island_trait
+							brilliant_strategist
+						}
 						attack_skill = 3
 						defense_skill = 3
 						planning_skill = 3
 						logistics_skill = 3
 						skill = 1
-						legacy_id= -1
+						legacy_id = -1
 					}
-					advisor={
+					advisor = {
 						cost = 150
 						slot = political_advisor
 						idea_token = Syk_island_advisor
@@ -330,20 +600,48 @@ country_event = {#改革呼声
 
 #控制ai
 add_namespace = touhou_ai
-country_event = {#请求幻想乡合并
+country_event = {
+	#请求幻想乡合并
 	id = touhou_ai.3
 	title = touhou_ai.3.t
 	desc = touhou_ai.3.d
 	picture = GFX_report_event_touhou_plenary
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		OR = { is_in_faction_with = ROOT is_subject_of = from }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		OR = {
+			is_in_faction_with = ROOT
+			is_subject_of = from
+		}
 	}
 	option = {
 		name = touhou_ai.3.a
-		ai_chance = { base = 1 }
-		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+		ai_chance = {
+			base = 1
+		}
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
 		every_owned_state = {
 			limit = {
 				is_core_of = ROOT
@@ -354,23 +652,54 @@ country_event = {#请求幻想乡合并
 	}
 	option = {
 		name = touhou_ai.3.b
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 	}
 }
-country_event = {#要求幻想乡合并
+
+country_event = {
+	#要求幻想乡合并
 	id = touhou_ai.1
 	title = touhou_ai.1.t
 	desc = touhou_ai.1.d
 	picture = GFX_report_event_touhou_plenary
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		OR = { is_in_faction_with = ROOT is_subject_of = from }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		OR = {
+			is_in_faction_with = ROOT
+			is_subject_of = from
+		}
 	}
 	option = {
 		name = touhou_ai.1.a
-		ai_chance = { base = 1 }
-		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+		ai_chance = {
+			base = 1
+		}
+		FROM = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
 		ROOT = {
 			every_owned_state = {
 				limit = {
@@ -382,10 +711,13 @@ country_event = {#要求幻想乡合并
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 }
-country_event = {#拉同盟通用事件
+
+country_event = {
+	#拉同盟通用事件
 	id = touhou_ai.2
 	title = generic.5.t
-	desc = { # FROM and ROOT are Democratic
+	desc = {
+		# FROM and ROOT are Democratic
 		text = generic.5.d.a
 		trigger = {
 			AND = {
@@ -396,7 +728,8 @@ country_event = {#拉同盟通用事件
 			}
 		}
 	}
-	desc = { # FROM and ROOT are Fascist
+	desc = {
+		# FROM and ROOT are Fascist
 		text = generic.5.d.b
 		trigger = {
 			AND = {
@@ -407,7 +740,8 @@ country_event = {#拉同盟通用事件
 			}
 		}
 	}
-	desc = { # FROM and ROOT are Communist
+	desc = {
+		# FROM and ROOT are Communist
 		text = generic.5.d.c
 		trigger = {
 			AND = {
@@ -418,7 +752,8 @@ country_event = {#拉同盟通用事件
 			}
 		}
 	}
-	desc = { # FROM and ROOT are different ideologies
+	desc = {
+		# FROM and ROOT are different ideologies
 		text = generic.5.d.e
 		trigger = {
 			NOT = {
@@ -444,7 +779,6 @@ country_event = {#拉同盟通用事件
 		}
 	}
 	picture = GFX_report_event_generic_read_write
-
 	immediate = {
 		hidden_effect = {
 			save_event_target_as = alliance_applicant
@@ -453,10 +787,9 @@ country_event = {#拉同盟通用事件
 			}
 		}
 	}
-
 	is_triggered_only = yes
-	
-	option = { #Agree / Both Democratic
+	option = {
+		#Agree / Both Democratic
 		name = generic.5.a
 		trigger = {
 			is_in_faction = no
@@ -470,9 +803,12 @@ country_event = {#拉同盟通用事件
 		ai_chance = {
 			base = 100
 		}
-		FROM = { 
+		FROM = {
 			add_to_faction = ROOT
-			country_event = { id = generic.6 hours = 6 } 
+			country_event = {
+				id = generic.6
+				hours = 6
+			}
 		}
 		add_ai_strategy = {
 			type = alliance
@@ -481,11 +817,17 @@ country_event = {#拉同盟通用事件
 		}
 		hidden_effect = {
 			set_country_flag = alliance_applicant@ROOT
-			FROM = { set_country_flag = alliance_inviter@ROOT }
-			news_event = { id = news.289 hours = 12 }
+			FROM = {
+				set_country_flag = alliance_inviter@ROOT
+			}
+			news_event = {
+				id = news.289
+				hours = 12
+			}
 		}
 	}
-	option = { #Agree / Both Fascist
+	option = {
+		#Agree / Both Fascist
 		name = generic.5.b
 		trigger = {
 			is_in_faction = no
@@ -497,9 +839,12 @@ country_event = {#拉同盟通用事件
 		ai_chance = {
 			base = 100
 		}
-		FROM = { 
+		FROM = {
 			add_to_faction = ROOT
-			country_event = { id = generic.6 hours = 6 } 
+			country_event = {
+				id = generic.6
+				hours = 6
+			}
 		}
 		add_ai_strategy = {
 			type = alliance
@@ -508,11 +853,17 @@ country_event = {#拉同盟通用事件
 		}
 		hidden_effect = {
 			set_country_flag = alliance_applicant@ROOT
-			FROM = { set_country_flag = alliance_inviter@ROOT }
-			news_event = { id = news.289 hours = 12 }
+			FROM = {
+				set_country_flag = alliance_inviter@ROOT
+			}
+			news_event = {
+				id = news.289
+				hours = 12
+			}
 		}
 	}
-	option = { #Agree / Both Communist
+	option = {
+		#Agree / Both Communist
 		name = generic.5.c
 		trigger = {
 			is_in_faction = no
@@ -524,9 +875,12 @@ country_event = {#拉同盟通用事件
 		ai_chance = {
 			base = 100
 		}
-		FROM = { 
+		FROM = {
 			add_to_faction = ROOT
-			country_event = { id = generic.6 hours = 6 }
+			country_event = {
+				id = generic.6
+				hours = 6
+			}
 		}
 		add_ai_strategy = {
 			type = alliance
@@ -535,11 +889,17 @@ country_event = {#拉同盟通用事件
 		}
 		hidden_effect = {
 			set_country_flag = alliance_applicant@ROOT
-			FROM = { set_country_flag = alliance_inviter@ROOT }
-			news_event = { id = news.289 hours = 12 }
+			FROM = {
+				set_country_flag = alliance_inviter@ROOT
+			}
+			news_event = {
+				id = news.289
+				hours = 12
+			}
 		}
 	}
-	option = { #Agree / Both different
+	option = {
+		#Agree / Both different
 		name = generic.5.e
 		trigger = {
 			is_in_faction = no
@@ -566,7 +926,6 @@ country_event = {#拉同盟通用事件
 		}
 		ai_chance = {
 			base = 100
-			
 			modifier = {
 				factor = 0.5
 				has_war = no
@@ -574,14 +933,12 @@ country_event = {#拉同盟通用事件
 					has_war = yes
 				}
 			}
-			
 			modifier = {
 				factor = 0.5
 				NOT = {
 					has_government = neutrality
 				}
 			}
-			
 			modifier = {
 				factor = 0.75
 				FROM = {
@@ -589,16 +946,19 @@ country_event = {#拉同盟通用事件
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			add_to_faction = ROOT
-			country_event = { id = generic.6 hours = 6 }
+			country_event = {
+				id = generic.6
+				hours = 6
+			}
 		}
 		if = {
 			limit = {
 				is_literally_china = yes
 				has_DLC = "Waking the Tiger"
 			}
-			CHI_set_ally_strat_on_current_leader = yes #sets ally strategy to current Chinese leader
+			CHI_set_ally_strat_on_current_leader = yes			#sets ally strategy to current Chinese leader
 		}
 		add_ai_strategy = {
 			type = alliance
@@ -607,12 +967,19 @@ country_event = {#拉同盟通用事件
 		}
 		hidden_effect = {
 			set_country_flag = alliance_applicant@ROOT
-			FROM = { set_country_flag = alliance_inviter@ROOT }
-			news_event = { id = news.289 hours = 12 }
+			FROM = {
+				set_country_flag = alliance_inviter@ROOT
+			}
+			news_event = {
+				id = news.289
+				hours = 12
+			}
 		}
 	}
 }
-country_event = {#最后通牒
+
+country_event = {
+	#最后通牒
 	id = touhou_ai.4
 	title = touhou_ai.4.t
 	desc = touhou_ai.4.d
@@ -625,10 +992,10 @@ country_event = {#最后通牒
 				touhou_var_ai_4_0 = FROM.num_of_factories
 			}
 			set_variable = {
-				touhou_var_ai_4_1 = FROM.num_of_factories				
+				touhou_var_ai_4_1 = FROM.num_of_factories
 			}
 			set_variable = {
-				touhou_var_ai_4_2 = FROM.num_of_factories				
+				touhou_var_ai_4_2 = FROM.num_of_factories
 			}
 			divide_variable = {
 				touhou_var_ai_4_1 = 1.5
@@ -642,9 +1009,13 @@ country_event = {#最后通牒
 		name = touhou_ai.4.a
 		custom_effect_tooltip = touhou_tooltip_touhou_ai_41
 		hidden_effect = {
-			FROM = { country_event = { id = touhou_ai.41 } }
+			FROM = {
+				country_event = {
+					id = touhou_ai.41
+				}
+			}
 		}
-		ai_chance = { 
+		ai_chance = {
 			base = 1
 			modifier = {
 				factor = 0
@@ -664,26 +1035,26 @@ country_event = {#最后通牒
 					target = FROM
 					civilian_intel < 0.1
 				}
-			}	
+			}
 			modifier = {
 				factor = 1.1
 				compare_intel_with = {
 					target = FROM
 					army_intel < 0.1
 				}
-			}	
+			}
 			modifier = {
 				factor = 1.1
 				compare_intel_with = {
 					target = FROM
 					navy_intel < 0.1
 				}
-			}			
+			}
 		}
 		clr_country_flag = touhou_country_flag_unify_to_other_must
 		clear_variable = touhou_var_ai_4_0
 		clear_variable = touhou_var_ai_4_1
-		clear_variable = touhou_var_ai_4_2				
+		clear_variable = touhou_var_ai_4_2
 	}
 	option = {
 		name = touhou_ai.4.b
@@ -692,23 +1063,32 @@ country_event = {#最后通牒
 				has_country_flag = touhou_country_flag_unify_to_other_must
 			}
 		}
-		ai_chance = { 
+		ai_chance = {
 			base = 5
 		}
 		if = {
-			limit = { is_in_faction_with = FROM }
+			limit = {
+				is_in_faction_with = FROM
+			}
 			leave_faction = yes
 		}
 		custom_effect_tooltip = touhou_tooltip_touhou_ai_42
 		hidden_effect = {
-			FROM = { country_event = { id = touhou_ai.42 days = 7 } }
+			FROM = {
+				country_event = {
+					id = touhou_ai.42
+					days = 7
+				}
+			}
 		}
 		clear_variable = touhou_var_ai_4_0
 		clear_variable = touhou_var_ai_4_1
-		clear_variable = touhou_var_ai_4_2		
+		clear_variable = touhou_var_ai_4_2
 	}
 }
-country_event = {#欢聚一堂
+
+country_event = {
+	#欢聚一堂
 	id = touhou_ai.41
 	title = touhou_ai.41.t
 	desc = touhou_ai.41.d
@@ -720,9 +1100,11 @@ country_event = {#欢聚一堂
 			base = 1
 		}
 		puppet = FROM
-	}	
+	}
 }
-country_event = {#大使被杀
+
+country_event = {
+	#大使被杀
 	id = touhou_ai.42
 	title = touhou_ai.42.t
 	desc = touhou_ai.42.d
@@ -742,314 +1124,742 @@ country_event = {#大使被杀
 
 #交流事件
 add_namespace = touhou_communication
-country_event = {#接触外界人
-    id = touhou_communication.2
-    title = touhou_communication.2.t
-    desc = touhou_communication.2.d
-    picture = GFX_report_event_touhou_meet_out_people
-    is_triggered_only = yes
-    trigger = {
-        OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-    } 
-    option = {
-        name = touhou_communication.2.a
-        ai_chance = { base = 1 }
-        random_list = {
-            60 = { country_event = { id = touhou_communication.23 } }
-            30 = { country_event = { id = touhou_communication.21 } }
-            10 = { country_event = { id = touhou_communication.22 } }
-        }
-        hidden_effect = {
-            country_event = { id = touhou_communication.1 days = 7 random_days = 1 }
-            country_event = { id = touhou_reformation_out.1 days = 60 random_days = 7 }
-        }
-    }
-    option = {
-        name = touhou_communication.2.b
-        ai_chance = { base = 1 }
-        random_list = {
-            10 = { country_event = { id = touhou_communication.23 } }
-            30 = { country_event = { id = touhou_communication.21 } }
-            60 = { country_event = { id = touhou_communication.22 } }
-        }
-        hidden_effect = {
-            country_event = { id = touhou_communication.1 days = 7 random_days = 1 }
-            country_event = { id = touhou_reformation_out.1 days = 60 random_days = 7 }
-        }
-    }
-    option = {
-        name = touhou_communication.2.c
-        ai_chance = { base = 1 }
-        random_list = {
-            25 = { country_event = { id = touhou_communication.23 } }
-            50 = { country_event = { id = touhou_communication.21 } }
-            25 = { country_event = { id = touhou_communication.22 } }
-        }
-        hidden_effect = {
-            country_event = { id = touhou_communication.1 days = 7 random_days = 1 }
-            country_event = { id = touhou_reformation_out.1 days = 60 random_days = 7 }
-        }
-    }
+country_event = {
+	#接触外界人
+	id = touhou_communication.2
+	title = touhou_communication.2.t
+	desc = touhou_communication.2.d
+	picture = GFX_report_event_touhou_meet_out_people
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	option = {
+		name = touhou_communication.2.a
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			60 = {
+				country_event = {
+					id = touhou_communication.23
+				}
+			}
+			30 = {
+				country_event = {
+					id = touhou_communication.21
+				}
+			}
+			10 = {
+				country_event = {
+					id = touhou_communication.22
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = touhou_communication.1
+				days = 7
+				random_days = 1
+			}
+			country_event = {
+				id = touhou_reformation_out.1
+				days = 60
+				random_days = 7
+			}
+		}
+	}
+	option = {
+		name = touhou_communication.2.b
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			10 = {
+				country_event = {
+					id = touhou_communication.23
+				}
+			}
+			30 = {
+				country_event = {
+					id = touhou_communication.21
+				}
+			}
+			60 = {
+				country_event = {
+					id = touhou_communication.22
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = touhou_communication.1
+				days = 7
+				random_days = 1
+			}
+			country_event = {
+				id = touhou_reformation_out.1
+				days = 60
+				random_days = 7
+			}
+		}
+	}
+	option = {
+		name = touhou_communication.2.c
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			25 = {
+				country_event = {
+					id = touhou_communication.23
+				}
+			}
+			50 = {
+				country_event = {
+					id = touhou_communication.21
+				}
+			}
+			25 = {
+				country_event = {
+					id = touhou_communication.22
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = touhou_communication.1
+				days = 7
+				random_days = 1
+			}
+			country_event = {
+				id = touhou_reformation_out.1
+				days = 60
+				random_days = 7
+			}
+		}
+	}
 }
-country_event = {#和外界人的交流愉快
-    id = touhou_communication.23
-    title = touhou_communication.23.t
-    desc = touhou_communication.23.d
-    picture = GFX_report_event_touhou_meet_out_people_happy_end
-    is_triggered_only = yes
-    trigger = {
-        OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-    }
-    option = {
-        name = touhou_communication.23.a
-        ai_chance = { base = 1 }
-        add_ideas = outside_world_attitude_2
-    }
+
+country_event = {
+	#和外界人的交流愉快
+	id = touhou_communication.23
+	title = touhou_communication.23.t
+	desc = touhou_communication.23.d
+	picture = GFX_report_event_touhou_meet_out_people_happy_end
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	option = {
+		name = touhou_communication.23.a
+		ai_chance = {
+			base = 1
+		}
+		add_ideas = outside_world_attitude_2
+	}
 }
-country_event = {#和外界人的交流稀松平常
-    id = touhou_communication.21
-    title = touhou_communication.21.t
-    desc = touhou_communication.21.d
-    picture = GFX_report_event_touhou_meet_out_people_nomal_end
-    is_triggered_only = yes
-    trigger = {
-        OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-    }
-    option = {
-        name = touhou_communication.21.a
-        ai_chance = { base = 1 }
-        add_ideas = outside_world_attitude_3
-    }
+
+country_event = {
+	#和外界人的交流稀松平常
+	id = touhou_communication.21
+	title = touhou_communication.21.t
+	desc = touhou_communication.21.d
+	picture = GFX_report_event_touhou_meet_out_people_nomal_end
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	option = {
+		name = touhou_communication.21.a
+		ai_chance = {
+			base = 1
+		}
+		add_ideas = outside_world_attitude_3
+	}
 }
-country_event = {#和外界人的交流不快
-    id = touhou_communication.22
-    title = touhou_communication.22.t
-    desc = touhou_communication.22.d
-    picture = GFX_report_event_touhou_meet_out_people_bad_end
-    is_triggered_only = yes
-    trigger = {
-        OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-    }
-    option = {
-        name = touhou_communication.22.a
-        ai_chance = { base = 1 }
-        add_ideas = outside_world_attitude_4
-    }
+
+country_event = {
+	#和外界人的交流不快
+	id = touhou_communication.22
+	title = touhou_communication.22.t
+	desc = touhou_communication.22.d
+	picture = GFX_report_event_touhou_meet_out_people_bad_end
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	option = {
+		name = touhou_communication.22.a
+		ai_chance = {
+			base = 1
+		}
+		add_ideas = outside_world_attitude_4
+	}
 }
-country_event = {#幻想乡大会
-    id = touhou_communication.1
-    title = touhou_communication.1.t
-    desc = touhou_communication.1.d
-    picture = GFX_report_event_touhou_plenary
-    is_triggered_only = yes
-    trigger = {
-        OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-    }
-    option = {
-        name = touhou_communication.1.a
-        ai_chance = { base = 1 }
-        random_list = {
-            60 = { country_event = { id = touhou_communication.10 } }
-            30 = { country_event = { id = touhou_communication.11 } }
-            10 = { country_event = { id = touhou_communication.12 } }
-        }
-        hidden_effect = {
-            country_event = { id = touhou_reformation_in.1 days = 60 random_days = 7 }
-            if = {
-                limit = { OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES } }
-                country_event = { id = human.0 days = 7 random_days = 3 }
-            }
-        }
-    }
-    option = {
-        name = touhou_communication.1.b
-        ai_chance = { base = 1 }
-        random_list = {
-            10 = { country_event = { id = touhou_communication.10 } }
-            30 = { country_event = { id = touhou_communication.11 } }
-            60 = { country_event = { id = touhou_communication.12 } }
-        }
-        hidden_effect = {
-            country_event = { id = touhou_reformation_in.1 days = 60 random_days = 7 }
-            if = {
-                limit = { OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES } }
-                country_event = { id = human.0 days = 7 random_days = 3 }
-            }
-        }
-    }
-    option = {
-        name = touhou_communication.1.c
-        ai_chance = { base = 1 }
-        random_list = {
-            25 = { country_event = { id = touhou_communication.10 } }
-            50 = { country_event = { id = touhou_communication.11 } }
-            25 = { country_event = { id = touhou_communication.12 } }
-        }
-        hidden_effect = {
-            country_event = { id = touhou_reformation_in.1 days = 60 random_days = 7 }
-            if = {
-                limit = { OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES } }
-                country_event = { id = human.0 days = 7 random_days = 3 }
-            }
-        }
-    }
+
+country_event = {
+	#幻想乡大会
+	id = touhou_communication.1
+	title = touhou_communication.1.t
+	desc = touhou_communication.1.d
+	picture = GFX_report_event_touhou_plenary
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	option = {
+		name = touhou_communication.1.a
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			60 = {
+				country_event = {
+					id = touhou_communication.10
+				}
+			}
+			30 = {
+				country_event = {
+					id = touhou_communication.11
+				}
+			}
+			10 = {
+				country_event = {
+					id = touhou_communication.12
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = touhou_reformation_in.1
+				days = 60
+				random_days = 7
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = HUM
+						original_tag = MLS
+						original_tag = SSS
+						original_tag = BLI
+						original_tag = TEM
+						original_tag = DES
+					}
+				}
+				country_event = {
+					id = human.0
+					days = 7
+					random_days = 3
+				}
+			}
+		}
+	}
+	option = {
+		name = touhou_communication.1.b
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			10 = {
+				country_event = {
+					id = touhou_communication.10
+				}
+			}
+			30 = {
+				country_event = {
+					id = touhou_communication.11
+				}
+			}
+			60 = {
+				country_event = {
+					id = touhou_communication.12
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = touhou_reformation_in.1
+				days = 60
+				random_days = 7
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = HUM
+						original_tag = MLS
+						original_tag = SSS
+						original_tag = BLI
+						original_tag = TEM
+						original_tag = DES
+					}
+				}
+				country_event = {
+					id = human.0
+					days = 7
+					random_days = 3
+				}
+			}
+		}
+	}
+	option = {
+		name = touhou_communication.1.c
+		ai_chance = {
+			base = 1
+		}
+		random_list = {
+			25 = {
+				country_event = {
+					id = touhou_communication.10
+				}
+			}
+			50 = {
+				country_event = {
+					id = touhou_communication.11
+				}
+			}
+			25 = {
+				country_event = {
+					id = touhou_communication.12
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = touhou_reformation_in.1
+				days = 60
+				random_days = 7
+			}
+			if = {
+				limit = {
+					OR = {
+						original_tag = HUM
+						original_tag = MLS
+						original_tag = SSS
+						original_tag = BLI
+						original_tag = TEM
+						original_tag = DES
+					}
+				}
+				country_event = {
+					id = human.0
+					days = 7
+					random_days = 3
+				}
+			}
+		}
+	}
 }
-country_event = {#幻想乡大会的交流愉快
-    id = touhou_communication.10
-    title = touhou_communication.10.t
-    desc = touhou_communication.10.d
-    picture = GFX_report_event_touhou_plenary_happy_end
-    is_triggered_only = yes
-    trigger = {
-        OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-    }
-    option = {
-        name = touhou_communication.10.a
-        ai_chance = { base = 1 }
-        add_ideas = inside_fantasy_attitude_2
-    }
+
+country_event = {
+	#幻想乡大会的交流愉快
+	id = touhou_communication.10
+	title = touhou_communication.10.t
+	desc = touhou_communication.10.d
+	picture = GFX_report_event_touhou_plenary_happy_end
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	option = {
+		name = touhou_communication.10.a
+		ai_chance = {
+			base = 1
+		}
+		add_ideas = inside_fantasy_attitude_2
+	}
 }
-country_event = {#幻想乡大会的交流稀松平常
-    id = touhou_communication.11
-    title = touhou_communication.11.t
-    desc = touhou_communication.11.d
-    picture = GFX_report_event_touhou_plenary_nomal_end
-    is_triggered_only = yes
-    trigger = {
-        OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-    }
-    option = {
-        name = touhou_communication.11.a
-        ai_chance = { base = 1 }
-        add_ideas = inside_fantasy_attitude_3
-    }
+
+country_event = {
+	#幻想乡大会的交流稀松平常
+	id = touhou_communication.11
+	title = touhou_communication.11.t
+	desc = touhou_communication.11.d
+	picture = GFX_report_event_touhou_plenary_nomal_end
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	option = {
+		name = touhou_communication.11.a
+		ai_chance = {
+			base = 1
+		}
+		add_ideas = inside_fantasy_attitude_3
+	}
 }
-country_event = {#幻想乡大会的交流不快
-    id = touhou_communication.12
-    title = touhou_communication.12.t
-    desc = touhou_communication.12.d
-    picture = GFX_report_event_touhou_plenary_bad_end
-    is_triggered_only = yes
-    trigger = {
-        OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-    }
-    option = {
-        name = touhou_communication.12.a
-        ai_chance = { base = 1 }
-        add_ideas = inside_fantasy_attitude_4
-    }
+
+country_event = {
+	#幻想乡大会的交流不快
+	id = touhou_communication.12
+	title = touhou_communication.12.t
+	desc = touhou_communication.12.d
+	picture = GFX_report_event_touhou_plenary_bad_end
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	option = {
+		name = touhou_communication.12.a
+		ai_chance = {
+			base = 1
+		}
+		add_ideas = inside_fantasy_attitude_4
+	}
 }
 
 #交流改革
 add_namespace = touhou_reformation
 #外界交流进行改革
 add_namespace = touhou_reformation_out
-country_event = {#和外界交流
+country_event = {
+	#和外界交流
 	id = touhou_reformation_out.1
 	title = touhou_reformation_out.1.t
 	desc = touhou_reformation_out.1.d
 	picture = GFX_report_event_touhou_meet_out_people_interflow
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		OR = {
-			NOT = { has_country_flag = fantasy_industry_reform_ready_flag }
-			NOT = { has_country_flag = fantasy_society_reform_ready_flag }
-			NOT = { has_country_flag = fantasy_research_reform_ready_flag }
-			NOT = { has_country_flag = fantasy_government_reform_ready_flag }
-			NOT = { has_country_flag = fantasy_army_reform_ready_flag }
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		OR = {
+			NOT = {
+				has_country_flag = fantasy_industry_reform_ready_flag
+			}
+			NOT = {
+				has_country_flag = fantasy_society_reform_ready_flag
+			}
+			NOT = {
+				has_country_flag = fantasy_research_reform_ready_flag
+			}
+			NOT = {
+				has_country_flag = fantasy_government_reform_ready_flag
+			}
+			NOT = {
+				has_country_flag = fantasy_army_reform_ready_flag
+			}
 		}
 	}
 	option = {
 		name = touhou_reformation_out.1.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		random_list = {
-			10 = { 
+			10 = {
 				if = {
-					limit = { NOT = { has_country_flag = fantasy_industry_reform_ready_flag } }
-					country_event = { id = touhou_reformation_out.15 } 
+					limit = {
+						NOT = {
+							has_country_flag = fantasy_industry_reform_ready_flag
+						}
+					}
+					country_event = {
+						id = touhou_reformation_out.15
+					}
 				}
 				else = {
-					country_event = { id = touhou_reformation_out.151 }
+					country_event = {
+						id = touhou_reformation_out.151
+					}
 				}
 				modifier = {
 					factor = 4
-					NOT = { has_country_flag = fantasy_industry_reform_ready_flag }
-				}
-			}
-			10 = { 
-				if = {
-					limit = { NOT = { has_country_flag = fantasy_society_reform_ready_flag } }
-					country_event = { id = touhou_reformation_out.11 }
-				}
-				else = {
-					country_event = { id = touhou_reformation_out.111 }
-				}
-				modifier = {
-					factor = 4
-					NOT = { has_country_flag = fantasy_society_reform_ready_flag }
-				}
-			}
-			10 = { 
-				if = {
-					limit = { NOT = { has_country_flag = fantasy_research_reform_ready_flag } }
-					country_event = { id = touhou_reformation_out.12 }
-				}
-				else = {
-					country_event = { id = touhou_reformation_out.121 }
-				}
-				modifier = {
-					factor = 4
-					NOT = { has_country_flag = fantasy_research_reform_ready_flag }
-				}
-			}
-			10 = { 
-				if = {
-					limit = { NOT = { has_country_flag = fantasy_government_reform_ready_flag } }
-					country_event = { id = touhou_reformation_out.13 }
-				}
-				else = {
-					country_event = { id = touhou_reformation_out.131 }
-				}
-				modifier = {
-					factor = 4
-					NOT = { has_country_flag = fantasy_government_reform_ready_flag }
+					NOT = {
+						has_country_flag = fantasy_industry_reform_ready_flag
+					}
 				}
 			}
 			10 = {
 				if = {
-					limit = { NOT = { has_country_flag = fantasy_army_reform_ready_flag } }
-					country_event = { id = touhou_reformation_out.14 }
+					limit = {
+						NOT = {
+							has_country_flag = fantasy_society_reform_ready_flag
+						}
+					}
+					country_event = {
+						id = touhou_reformation_out.11
+					}
 				}
 				else = {
-					country_event = { id = touhou_reformation_out.141 }
+					country_event = {
+						id = touhou_reformation_out.111
+					}
 				}
 				modifier = {
 					factor = 4
-					NOT = { has_country_flag = fantasy_army_reform_ready_flag }
+					NOT = {
+						has_country_flag = fantasy_society_reform_ready_flag
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = fantasy_research_reform_ready_flag
+						}
+					}
+					country_event = {
+						id = touhou_reformation_out.12
+					}
+				}
+				else = {
+					country_event = {
+						id = touhou_reformation_out.121
+					}
+				}
+				modifier = {
+					factor = 4
+					NOT = {
+						has_country_flag = fantasy_research_reform_ready_flag
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = fantasy_government_reform_ready_flag
+						}
+					}
+					country_event = {
+						id = touhou_reformation_out.13
+					}
+				}
+				else = {
+					country_event = {
+						id = touhou_reformation_out.131
+					}
+				}
+				modifier = {
+					factor = 4
+					NOT = {
+						has_country_flag = fantasy_government_reform_ready_flag
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = fantasy_army_reform_ready_flag
+						}
+					}
+					country_event = {
+						id = touhou_reformation_out.14
+					}
+				}
+				else = {
+					country_event = {
+						id = touhou_reformation_out.141
+					}
+				}
+				modifier = {
+					factor = 4
+					NOT = {
+						has_country_flag = fantasy_army_reform_ready_flag
+					}
 				}
 			}
 		}
 		hidden_effect = {
-			country_event = { id = touhou_reformation_out.1 days = 60 random_days = 7 }
+			country_event = {
+				id = touhou_reformation_out.1
+				days = 60
+				random_days = 7
+			}
 		}
 	}
 }
-country_event = {#外界交流工业改革准备
+
+country_event = {
+	#外界交流工业改革准备
 	id = touhou_reformation_out.15
 	title = touhou_reformation_out.15.t
 	desc = touhou_reformation_out.15.d
 	picture = GFX_report_event_touhou_meet_out_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		NOT = { has_country_flag = fantasy_industry_reform_ready_flag }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		NOT = {
+			has_country_flag = fantasy_industry_reform_ready_flag
+		}
 	}
-	
 	immediate = {
 		set_country_flag = fantasy_industry_reform_ready_flag
 		if = {
-			limit = { is_ai = yes }
+			limit = {
+				is_ai = yes
+			}
 			touhou_industry_reform_finish_effect = yes
 		}
 	}
@@ -1068,7 +1878,10 @@ country_event = {#外界交流工业改革准备
 			}
 		}
 		outside_world_attitude_level_up = yes
-		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
 	}
 	option = {
 		name = touhou_reformation_out.15.b
@@ -1085,39 +1898,86 @@ country_event = {#外界交流工业改革准备
 			}
 		}
 		outside_world_attitude_level_down = yes
-		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
 	}
 }
-country_event = {#外界交流工业改革已经准备
+
+country_event = {
+	#外界交流工业改革已经准备
 	id = touhou_reformation_out.151
 	title = touhou_reformation_out.151.t
 	desc = touhou_reformation_out.151.d
 	picture = GFX_report_event_touhou_meet_out_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		has_country_flag = fantasy_industry_reform_ready_flag
 	}
 	option = {
 		name = touhou_reformation_out.151.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 	}
 }
-country_event = {#外界交流社会改革准备
+
+country_event = {
+	#外界交流社会改革准备
 	id = touhou_reformation_out.11
 	title = touhou_reformation_out.11.t
 	desc = touhou_reformation_out.11.d
 	picture = GFX_report_event_touhou_meet_out_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		NOT = { has_country_flag = fantasy_society_reform_ready_flag }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		NOT = {
+			has_country_flag = fantasy_society_reform_ready_flag
+		}
 	}
 	immediate = {
 		set_country_flag = fantasy_society_reform_ready_flag
 		if = {
-			limit = { is_ai = yes }
+			limit = {
+				is_ai = yes
+			}
 			touhou_society_reform_finish_effect = yes
 		}
 	}
@@ -1156,36 +2016,80 @@ country_event = {#外界交流社会改革准备
 		add_stability = 0.1
 	}
 }
-country_event = {#外界交流社会改革已经准备
+
+country_event = {
+	#外界交流社会改革已经准备
 	id = touhou_reformation_out.111
 	title = touhou_reformation_out.111.t
 	desc = touhou_reformation_out.111.d
 	picture = GFX_report_event_touhou_meet_out_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		has_country_flag = fantasy_society_reform_ready_flag
 	}
 	option = {
 		name = touhou_reformation_out.111.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 	}
 }
-country_event = {#外界交流研究改革准备
+
+country_event = {
+	#外界交流研究改革准备
 	id = touhou_reformation_out.12
 	title = touhou_reformation_out.12.t
 	desc = touhou_reformation_out.12.d
 	picture = GFX_report_event_touhou_meet_out_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		NOT = { has_country_flag = fantasy_research_reform_ready_flag }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		NOT = {
+			has_country_flag = fantasy_research_reform_ready_flag
+		}
 	}
 	immediate = {
 		set_country_flag = fantasy_research_reform_ready_flag
 		if = {
-			limit = { is_ai = yes }
+			limit = {
+				is_ai = yes
+			}
 			touhou_research_reform_finish_effect = yes
 		}
 	}
@@ -1224,36 +2128,80 @@ country_event = {#外界交流研究改革准备
 		add_research_slot = 1
 	}
 }
-country_event = {#外界交流研究改革已经准备
+
+country_event = {
+	#外界交流研究改革已经准备
 	id = touhou_reformation_out.121
 	title = touhou_reformation_out.121.t
 	desc = touhou_reformation_out.121.d
 	picture = GFX_report_event_touhou_meet_out_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		has_country_flag = fantasy_research_reform_ready_flag
 	}
 	option = {
 		name = touhou_reformation_out.121.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 	}
 }
-country_event = {#外界交流政府改革准备
+
+country_event = {
+	#外界交流政府改革准备
 	id = touhou_reformation_out.13
 	title = touhou_reformation_out.13.t
 	desc = touhou_reformation_out.13.d
 	picture = GFX_report_event_touhou_meet_out_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		NOT = { has_country_flag = fantasy_government_reform_ready_flag }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		NOT = {
+			has_country_flag = fantasy_government_reform_ready_flag
+		}
 	}
 	immediate = {
 		set_country_flag = fantasy_government_reform_ready_flag
 		if = {
-			limit = { is_ai = yes }
+			limit = {
+				is_ai = yes
+			}
 			touhou_fiscal_reform_finish_effect = yes
 		}
 	}
@@ -1292,36 +2240,80 @@ country_event = {#外界交流政府改革准备
 		add_political_power = 50
 	}
 }
-country_event = {#外界交流政府改革已经准备
+
+country_event = {
+	#外界交流政府改革已经准备
 	id = touhou_reformation_out.131
 	title = touhou_reformation_out.131.t
 	desc = touhou_reformation_out.131.d
 	picture = GFX_report_event_touhou_meet_out_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		has_country_flag = fantasy_government_reform_ready_flag
 	}
 	option = {
 		name = touhou_reformation_out.131.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 	}
 }
-country_event = {#外界交流军事改革准备
+
+country_event = {
+	#外界交流军事改革准备
 	id = touhou_reformation_out.14
 	title = touhou_reformation_out.14.t
 	desc = touhou_reformation_out.14.d
 	picture = GFX_report_event_touhou_meet_out_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		NOT = { has_country_flag = fantasy_army_reform_ready_flag }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		NOT = {
+			has_country_flag = fantasy_army_reform_ready_flag
+		}
 	}
 	immediate = {
 		set_country_flag = fantasy_army_reform_ready_flag
 		if = {
-			limit = { is_ai = yes }
+			limit = {
+				is_ai = yes
+			}
 			touhou_army_reform_finish_effect = yes
 		}
 	}
@@ -1364,129 +2356,258 @@ country_event = {#外界交流军事改革准备
 		navy_experience = 15
 	}
 }
-country_event = {#外界交流军事改革已经准备
+
+country_event = {
+	#外界交流军事改革已经准备
 	id = touhou_reformation_out.141
 	title = touhou_reformation_out.141.t
 	desc = touhou_reformation_out.141.d
 	picture = GFX_report_event_touhou_meet_out_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		has_country_flag = fantasy_army_reform_ready_flag
 	}
 	option = {
 		name = touhou_reformation_out.141.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 	}
 }
+
 #内部交流进行改革
 add_namespace = touhou_reformation_in
-country_event = {#和幻想乡内部交流
+country_event = {
+	#和幻想乡内部交流
 	id = touhou_reformation_in.1
 	title = touhou_reformation_in.1.t
 	desc = touhou_reformation_in.1.d
 	picture = GFX_report_event_touhou_meet_in_people_interflow
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		OR = {
-			NOT = { has_country_flag = fantasy_industry_reform_ready_flag }
-			NOT = { has_country_flag = fantasy_society_reform_ready_flag }
-			NOT = { has_country_flag = fantasy_research_reform_ready_flag }
-			NOT = { has_country_flag = fantasy_government_reform_ready_flag }
-			NOT = { has_country_flag = fantasy_army_reform_ready_flag }
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		OR = {
+			NOT = {
+				has_country_flag = fantasy_industry_reform_ready_flag
+			}
+			NOT = {
+				has_country_flag = fantasy_society_reform_ready_flag
+			}
+			NOT = {
+				has_country_flag = fantasy_research_reform_ready_flag
+			}
+			NOT = {
+				has_country_flag = fantasy_government_reform_ready_flag
+			}
+			NOT = {
+				has_country_flag = fantasy_army_reform_ready_flag
+			}
 		}
 	}
 	option = {
 		name = touhou_reformation_in.1.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		random_list = {
-			10 = { 
+			10 = {
 				if = {
-					limit = { NOT = { has_country_flag = fantasy_industry_reform_ready_flag } }
-					country_event = { id = touhou_reformation_in.15 } 
+					limit = {
+						NOT = {
+							has_country_flag = fantasy_industry_reform_ready_flag
+						}
+					}
+					country_event = {
+						id = touhou_reformation_in.15
+					}
 				}
 				else = {
-					country_event = { id = touhou_reformation_in.151 }
+					country_event = {
+						id = touhou_reformation_in.151
+					}
 				}
 				modifier = {
 					factor = 4
-					NOT = { has_country_flag = fantasy_industry_reform_ready_flag }
-				}
-			}
-			10 = { 
-				if = {
-					limit = { NOT = { has_country_flag = fantasy_society_reform_ready_flag } }
-					country_event = { id = touhou_reformation_in.11 }
-				}
-				else = {
-					country_event = { id = touhou_reformation_in.111 }
-				}
-				modifier = {
-					factor = 4
-					NOT = { has_country_flag = fantasy_society_reform_ready_flag }
-				}
-			}
-			10 = { 
-				if = {
-					limit = { NOT = { has_country_flag = fantasy_research_reform_ready_flag } }
-					country_event = { id = touhou_reformation_in.12 }
-				}
-				else = {
-					country_event = { id = touhou_reformation_in.121 }
-				}
-				modifier = {
-					factor = 4
-					NOT = { has_country_flag = fantasy_research_reform_ready_flag }
-				}
-			}
-			10 = { 
-				if = {
-					limit = { NOT = { has_country_flag = fantasy_government_reform_ready_flag } }
-					country_event = { id = touhou_reformation_in.13 }
-				}
-				else = {
-					country_event = { id = touhou_reformation_in.131 }
-				}
-				modifier = {
-					factor = 4
-					NOT = { has_country_flag = fantasy_government_reform_ready_flag }
+					NOT = {
+						has_country_flag = fantasy_industry_reform_ready_flag
+					}
 				}
 			}
 			10 = {
 				if = {
-					limit = { NOT = { has_country_flag = fantasy_army_reform_ready_flag } }
-					country_event = { id = touhou_reformation_in.14 }
+					limit = {
+						NOT = {
+							has_country_flag = fantasy_society_reform_ready_flag
+						}
+					}
+					country_event = {
+						id = touhou_reformation_in.11
+					}
 				}
 				else = {
-					country_event = { id = touhou_reformation_in.141 }
+					country_event = {
+						id = touhou_reformation_in.111
+					}
 				}
 				modifier = {
 					factor = 4
-					NOT = { has_country_flag = fantasy_army_reform_ready_flag }
+					NOT = {
+						has_country_flag = fantasy_society_reform_ready_flag
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = fantasy_research_reform_ready_flag
+						}
+					}
+					country_event = {
+						id = touhou_reformation_in.12
+					}
+				}
+				else = {
+					country_event = {
+						id = touhou_reformation_in.121
+					}
+				}
+				modifier = {
+					factor = 4
+					NOT = {
+						has_country_flag = fantasy_research_reform_ready_flag
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = fantasy_government_reform_ready_flag
+						}
+					}
+					country_event = {
+						id = touhou_reformation_in.13
+					}
+				}
+				else = {
+					country_event = {
+						id = touhou_reformation_in.131
+					}
+				}
+				modifier = {
+					factor = 4
+					NOT = {
+						has_country_flag = fantasy_government_reform_ready_flag
+					}
+				}
+			}
+			10 = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = fantasy_army_reform_ready_flag
+						}
+					}
+					country_event = {
+						id = touhou_reformation_in.14
+					}
+				}
+				else = {
+					country_event = {
+						id = touhou_reformation_in.141
+					}
+				}
+				modifier = {
+					factor = 4
+					NOT = {
+						has_country_flag = fantasy_army_reform_ready_flag
+					}
 				}
 			}
 		}
 		hidden_effect = {
-			country_event = { id = touhou_reformation_in.1 days = 60 random_days = 7 }
+			country_event = {
+				id = touhou_reformation_in.1
+				days = 60
+				random_days = 7
+			}
 		}
 	}
 }
-country_event = {#幻想乡交流工业改革准备
+
+country_event = {
+	#幻想乡交流工业改革准备
 	id = touhou_reformation_in.15
 	title = touhou_reformation_in.15.t
 	desc = touhou_reformation_in.15.d
 	picture = GFX_report_event_touhou_meet_in_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		NOT = { has_country_flag = fantasy_industry_reform_ready_flag }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		NOT = {
+			has_country_flag = fantasy_industry_reform_ready_flag
+		}
 	}
 	immediate = {
 		set_country_flag = fantasy_industry_reform_ready_flag
 		if = {
-			limit = { is_ai = yes }
+			limit = {
+				is_ai = yes
+			}
 			touhou_industry_reform_finish_effect = yes
 		}
 	}
@@ -1502,11 +2623,13 @@ country_event = {#幻想乡交流工业改革准备
 					has_idea = inside_fantasy_attitude_4
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		inside_fantasy_attitude_level_up = yes
-		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
 	}
 	option = {
 		name = touhou_reformation_in.15.b
@@ -1520,43 +2643,89 @@ country_event = {#幻想乡交流工业改革准备
 					has_idea = inside_fantasy_attitude_2
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		inside_fantasy_attitude_level_down = yes
-		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
 	}
 }
-country_event = {#幻想乡交流工业改革已经准备
+
+country_event = {
+	#幻想乡交流工业改革已经准备
 	id = touhou_reformation_in.151
 	title = touhou_reformation_in.151.t
 	desc = touhou_reformation_in.151.d
 	picture = GFX_report_event_touhou_meet_in_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		has_country_flag = fantasy_industry_reform_ready_flag
 	}
 	option = {
 		name = touhou_reformation_in.151.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 	}
 }
-country_event = {#幻想乡交流社会改革准备
+
+country_event = {
+	#幻想乡交流社会改革准备
 	id = touhou_reformation_in.11
 	title = touhou_reformation_in.11.t
 	desc = touhou_reformation_in.11.d
 	picture = GFX_report_event_touhou_meet_in_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		NOT = { has_country_flag = fantasy_society_reform_ready_flag }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		NOT = {
+			has_country_flag = fantasy_society_reform_ready_flag
+		}
 	}
 	immediate = {
 		set_country_flag = fantasy_society_reform_ready_flag
 		if = {
-			limit = { is_ai = yes }
+			limit = {
+				is_ai = yes
+			}
 			touhou_society_reform_finish_effect = yes
 		}
 	}
@@ -1572,7 +2741,6 @@ country_event = {#幻想乡交流社会改革准备
 					has_idea = inside_fantasy_attitude_4
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		inside_fantasy_attitude_level_up = yes
@@ -1590,43 +2758,86 @@ country_event = {#幻想乡交流社会改革准备
 					has_idea = inside_fantasy_attitude_2
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		inside_fantasy_attitude_level_down = yes
 		add_stability = 0.1
 	}
 }
-country_event = {#幻想乡交流社会改革已经准备
+
+country_event = {
+	#幻想乡交流社会改革已经准备
 	id = touhou_reformation_in.111
 	title = touhou_reformation_in.111.t
 	desc = touhou_reformation_in.111.d
 	picture = GFX_report_event_touhou_meet_in_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		has_country_flag = fantasy_society_reform_ready_flag
 	}
 	option = {
 		name = touhou_reformation_in.111.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 	}
 }
-country_event = {#幻想乡交流研究改革准备
+
+country_event = {
+	#幻想乡交流研究改革准备
 	id = touhou_reformation_in.12
 	title = touhou_reformation_in.12.t
 	desc = touhou_reformation_in.12.d
 	picture = GFX_report_event_touhou_meet_in_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		NOT = { has_country_flag = fantasy_research_reform_ready_flag }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		NOT = {
+			has_country_flag = fantasy_research_reform_ready_flag
+		}
 	}
 	immediate = {
 		set_country_flag = fantasy_research_reform_ready_flag
 		if = {
-			limit = { is_ai = yes }
+			limit = {
+				is_ai = yes
+			}
 			touhou_research_reform_finish_effect = yes
 		}
 	}
@@ -1642,7 +2853,6 @@ country_event = {#幻想乡交流研究改革准备
 					has_idea = inside_fantasy_attitude_4
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		inside_fantasy_attitude_level_up = yes
@@ -1660,43 +2870,86 @@ country_event = {#幻想乡交流研究改革准备
 					has_idea = inside_fantasy_attitude_2
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		inside_fantasy_attitude_level_down = yes
 		add_research_slot = 1
 	}
 }
-country_event = {#幻想乡交流研究改革已经准备
+
+country_event = {
+	#幻想乡交流研究改革已经准备
 	id = touhou_reformation_in.121
 	title = touhou_reformation_in.121.t
 	desc = touhou_reformation_in.121.d
 	picture = GFX_report_event_touhou_meet_in_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		has_country_flag = fantasy_research_reform_ready_flag
 	}
 	option = {
 		name = touhou_reformation_in.121.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 	}
 }
-country_event = {#幻想乡交流政府改革准备
+
+country_event = {
+	#幻想乡交流政府改革准备
 	id = touhou_reformation_in.13
 	title = touhou_reformation_in.13.t
 	desc = touhou_reformation_in.13.d
 	picture = GFX_report_event_touhou_meet_in_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		NOT = { has_country_flag = fantasy_government_reform_ready_flag }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		NOT = {
+			has_country_flag = fantasy_government_reform_ready_flag
+		}
 	}
 	immediate = {
 		set_country_flag = fantasy_government_reform_ready_flag
 		if = {
-			limit = { is_ai = yes }
+			limit = {
+				is_ai = yes
+			}
 			touhou_fiscal_reform_finish_effect = yes
 		}
 	}
@@ -1712,11 +2965,10 @@ country_event = {#幻想乡交流政府改革准备
 					has_idea = inside_fantasy_attitude_4
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		inside_fantasy_attitude_level_up = yes
-		add_war_support = 0.10
+		add_war_support = 0.1
 	}
 	option = {
 		name = touhou_reformation_in.13.b
@@ -1730,43 +2982,86 @@ country_event = {#幻想乡交流政府改革准备
 					has_idea = inside_fantasy_attitude_2
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		inside_fantasy_attitude_level_down = yes
 		add_political_power = 150
 	}
 }
-country_event = {#幻想乡交流政府改革已经准备
+
+country_event = {
+	#幻想乡交流政府改革已经准备
 	id = touhou_reformation_in.131
 	title = touhou_reformation_in.131.t
 	desc = touhou_reformation_in.131.d
 	picture = GFX_report_event_touhou_meet_in_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		has_country_flag = fantasy_government_reform_ready_flag
 	}
 	option = {
 		name = touhou_reformation_in.131.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 	}
 }
-country_event = {#幻想乡交流军事改革准备
+
+country_event = {
+	#幻想乡交流军事改革准备
 	id = touhou_reformation_in.14
 	title = touhou_reformation_in.14.t
 	desc = touhou_reformation_in.14.d
 	picture = GFX_report_event_touhou_meet_in_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-		NOT = { has_country_flag = fantasy_army_reform_ready_flag }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		NOT = {
+			has_country_flag = fantasy_army_reform_ready_flag
+		}
 	}
 	immediate = {
 		set_country_flag = fantasy_army_reform_ready_flag
 		if = {
-			limit = { is_ai = yes }
+			limit = {
+				is_ai = yes
+			}
 			touhou_army_reform_finish_effect = yes
 		}
 	}
@@ -1782,7 +3077,6 @@ country_event = {#幻想乡交流军事改革准备
 					has_idea = inside_fantasy_attitude_4
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		inside_fantasy_attitude_level_up = yes
@@ -1802,7 +3096,6 @@ country_event = {#幻想乡交流军事改革准备
 					has_idea = inside_fantasy_attitude_2
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		inside_fantasy_attitude_level_down = yes
@@ -1811,24 +3104,47 @@ country_event = {#幻想乡交流军事改革准备
 		navy_experience = 15
 	}
 }
-country_event = {#幻想乡交流军事改革已经准备
+
+country_event = {
+	#幻想乡交流军事改革已经准备
 	id = touhou_reformation_in.141
 	title = touhou_reformation_in.141.t
 	desc = touhou_reformation_in.141.d
 	picture = GFX_report_event_touhou_meet_in_people_interflow_end
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		has_country_flag = fantasy_army_reform_ready_flag
 	}
 	option = {
 		name = touhou_reformation_in.141.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = 50
 	}
 }
+
 #改革完成
-country_event = {#万事俱备
+country_event = {
+	#万事俱备
 	id = touhou_reformation.1
 	title = touhou_reformation.1.t
 	desc = touhou_reformation.1.d
@@ -1838,7 +3154,24 @@ country_event = {#万事俱备
 		days = 1
 	}
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		has_country_flag = fantasy_industry_reform_ready_flag
 		has_country_flag = fantasy_society_reform_ready_flag
 		has_country_flag = fantasy_research_reform_ready_flag
@@ -1850,28 +3183,41 @@ country_event = {#万事俱备
 					has_idea = outside_world_attitude_0
 					has_idea = outside_world_attitude_6
 				}
-				NOT = { has_idea = touhou_out_self_end }
-				NOT = { has_idea = touhou_out_all_end }
+				NOT = {
+					has_idea = touhou_out_self_end
+				}
+				NOT = {
+					has_idea = touhou_out_all_end
+				}
 			}
 			AND = {
 				OR = {
 					has_idea = inside_fantasy_attitude_0
 					has_idea = inside_fantasy_attitude_6
 				}
-				NOT = { has_idea = touhou_in_self_end }
-				NOT = { has_idea = touhou_in_all_end }
+				NOT = {
+					has_idea = touhou_in_self_end
+				}
+				NOT = {
+					has_idea = touhou_in_all_end
+				}
 			}
 		}
-		
 	}
 	option = {
 		name = touhou_reformation.1.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		if = {
-			limit = { 
-				has_idea = outside_world_attitude_0 
-				NOT = { has_idea = touhou_out_all_end }
-				NOT = { has_idea = touhou_out_self_end }
+			limit = {
+				has_idea = outside_world_attitude_0
+				NOT = {
+					has_idea = touhou_out_all_end
+				}
+				NOT = {
+					has_idea = touhou_out_self_end
+				}
 			}
 			swap_ideas = {
 				remove_idea = outside_world_attitude_0
@@ -1879,10 +3225,14 @@ country_event = {#万事俱备
 			}
 		}
 		else_if = {
-			limit = { 
-				has_idea = outside_world_attitude_6 
-				NOT = { has_idea = touhou_out_self_end }
-				NOT = { has_idea = touhou_out_all_end }
+			limit = {
+				has_idea = outside_world_attitude_6
+				NOT = {
+					has_idea = touhou_out_self_end
+				}
+				NOT = {
+					has_idea = touhou_out_all_end
+				}
 			}
 			swap_ideas = {
 				remove_idea = outside_world_attitude_6
@@ -1890,10 +3240,14 @@ country_event = {#万事俱备
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				has_idea = inside_fantasy_attitude_0
-				NOT = { has_idea = touhou_in_all_end }
-				NOT = { has_idea = touhou_in_self_end }
+				NOT = {
+					has_idea = touhou_in_all_end
+				}
+				NOT = {
+					has_idea = touhou_in_self_end
+				}
 			}
 			swap_ideas = {
 				remove_idea = inside_fantasy_attitude_0
@@ -1901,10 +3255,14 @@ country_event = {#万事俱备
 			}
 		}
 		else_if = {
-			limit = { 
-				has_idea = inside_fantasy_attitude_6 
-				NOT = { has_idea = touhou_in_all_end }
-				NOT = { has_idea = touhou_in_self_end }
+			limit = {
+				has_idea = inside_fantasy_attitude_6
+				NOT = {
+					has_idea = touhou_in_all_end
+				}
+				NOT = {
+					has_idea = touhou_in_self_end
+				}
 			}
 			swap_ideas = {
 				remove_idea = inside_fantasy_attitude_6
@@ -1916,7 +3274,8 @@ country_event = {#万事俱备
 
 #变色事件
 add_namespace = touhou_ideology
-country_event = {#妖怪重心
+country_event = {
+	#妖怪重心
 	id = touhou_ideology.3
 	title = touhou_ideology.3.t
 	desc = touhou_ideology.3.d
@@ -1925,18 +3284,34 @@ country_event = {#妖怪重心
 	trigger = {
 		fascism > 0.5
 		has_civil_war = no
-		NOT = { has_government = fascism }
+		NOT = {
+			has_government = fascism
+		}
 		check_has_focus_tree_to_switch_to_fascism = yes
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 	}
-
 	mean_time_to_happen = {
 		days = 1
 	}
-
 	immediate = {
 	}
-
 	option = {
 		name = touhou_ideology.3.a
 		ai_chance = {
@@ -1954,7 +3329,9 @@ country_event = {#妖怪重心
 		}
 	}
 }
-country_event = {#人类重心
+
+country_event = {
+	#人类重心
 	id = touhou_ideology.1
 	title = touhou_ideology.1.t
 	desc = touhou_ideology.1.d
@@ -1963,18 +3340,34 @@ country_event = {#人类重心
 	trigger = {
 		democratic > 0.5
 		has_civil_war = no
-		NOT = { has_government = democratic }
+		NOT = {
+			has_government = democratic
+		}
 		check_has_focus_tree_to_switch_to_democratic = yes
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 	}
-
 	mean_time_to_happen = {
 		days = 1
 	}
-
 	immediate = {
 	}
-
 	option = {
 		name = touhou_ideology.1.a
 		ai_chance = {
@@ -1992,7 +3385,9 @@ country_event = {#人类重心
 		}
 	}
 }
-country_event = {#平等共存理念成为主流
+
+country_event = {
+	#平等共存理念成为主流
 	id = touhou_ideology.2
 	title = touhou_ideology.2.t
 	desc = touhou_ideology.2.d
@@ -2001,18 +3396,34 @@ country_event = {#平等共存理念成为主流
 	trigger = {
 		communism > 0.5
 		has_civil_war = no
-		NOT = { has_government = communism }
+		NOT = {
+			has_government = communism
+		}
 		check_has_focus_tree_to_switch_to_communism = yes
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 	}
-
 	mean_time_to_happen = {
 		days = 1
 	}
-
 	immediate = {
 	}
-
 	option = {
 		name = touhou_ideology.2.a
 		ai_chance = {
@@ -2033,7 +3444,8 @@ country_event = {#平等共存理念成为主流
 
 #动态难度系统
 add_namespace = touhou_difficulty
-country_event = {#“世界的守护”动态难度-清零
+country_event = {
+	#“世界的守护”动态难度-清零
 	id = touhou_ideology.4
 	picture = GFX_report_event_soviet_tanks_snow
 	mean_time_to_happen = {
@@ -2041,7 +3453,24 @@ country_event = {#“世界的守护”动态难度-清零
 	}
 	hidden = yes
 	trigger = {
-		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		NOT = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		surrender_progress < 0.1
 		OR = {
 			has_idea = touhou_invade_new_world_0
@@ -2053,12 +3482,16 @@ country_event = {#“世界的守护”动态难度-清零
 		}
 	}
 	option = {
-		if = { 
-			limit = { has_idea = touhou_invade_new_world_1 }
+		if = {
+			limit = {
+				has_idea = touhou_invade_new_world_1
+			}
 			remove_ideas = touhou_invade_new_world_1
 		}
-		else_if = { 
-			limit = { has_idea = touhou_invade_new_world_2 }
+		else_if = {
+			limit = {
+				has_idea = touhou_invade_new_world_2
+			}
 			remove_ideas = touhou_invade_new_world_2
 		}
 		else = {
@@ -2066,7 +3499,9 @@ country_event = {#“世界的守护”动态难度-清零
 		}
 	}
 }
-country_event = {#“世界的守护”动态难度-一级
+
+country_event = {
+	#“世界的守护”动态难度-一级
 	id = touhou_difficulty.1
 	picture = GFX_report_event_soviet_tanks_snow
 	mean_time_to_happen = {
@@ -2074,7 +3509,24 @@ country_event = {#“世界的守护”动态难度-一级
 	}
 	hidden = yes
 	trigger = {
-		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		NOT = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		OR = {
 			has_war_with = ALI
 			has_war_with = DES
@@ -2095,22 +3547,27 @@ country_event = {#“世界的守护”动态难度-一级
 		}
 		surrender_progress > 0.1
 		surrender_progress < 0.3
-		NOT = { has_idea = touhou_invade_new_world_0 }
+		NOT = {
+			has_idea = touhou_invade_new_world_0
+		}
 		NOT = {
 			has_country_flag = touhou_god_of_makai_country_flag
 		}
 	}
-	
 	option = {
-		if = { 
-			limit = { has_idea = touhou_invade_new_world_1 }
+		if = {
+			limit = {
+				has_idea = touhou_invade_new_world_1
+			}
 			swap_ideas = {
 				remove_idea = touhou_invade_new_world_1
 				add_idea = touhou_invade_new_world_0
 			}
 		}
-		else_if = { 
-			limit = { has_idea = touhou_invade_new_world_2 }
+		else_if = {
+			limit = {
+				has_idea = touhou_invade_new_world_2
+			}
 			swap_ideas = {
 				remove_idea = touhou_invade_new_world_2
 				add_idea = touhou_invade_new_world_0
@@ -2121,7 +3578,9 @@ country_event = {#“世界的守护”动态难度-一级
 		}
 	}
 }
-country_event = {#“世界的守护”动态难度-二级
+
+country_event = {
+	#“世界的守护”动态难度-二级
 	id = touhou_difficulty.2
 	picture = GFX_report_event_soviet_tanks_snow
 	mean_time_to_happen = {
@@ -2129,7 +3588,24 @@ country_event = {#“世界的守护”动态难度-二级
 	}
 	hidden = yes
 	trigger = {
-		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		NOT = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		OR = {
 			has_war_with = ALI
 			has_war_with = DES
@@ -2150,22 +3626,27 @@ country_event = {#“世界的守护”动态难度-二级
 		}
 		surrender_progress > 0.3
 		surrender_progress < 0.5
-		NOT = { has_idea = touhou_invade_new_world_1 }
+		NOT = {
+			has_idea = touhou_invade_new_world_1
+		}
 		NOT = {
 			has_country_flag = touhou_god_of_makai_country_flag
 		}
 	}
-	
 	option = {
-		if = { 
-			limit = { has_idea = touhou_invade_new_world_0 }
+		if = {
+			limit = {
+				has_idea = touhou_invade_new_world_0
+			}
 			swap_ideas = {
 				remove_idea = touhou_invade_new_world_0
 				add_idea = touhou_invade_new_world_1
 			}
 		}
-		else_if = { 
-			limit = { has_idea = touhou_invade_new_world_2 }
+		else_if = {
+			limit = {
+				has_idea = touhou_invade_new_world_2
+			}
 			swap_ideas = {
 				remove_idea = touhou_invade_new_world_2
 				add_idea = touhou_invade_new_world_1
@@ -2176,7 +3657,9 @@ country_event = {#“世界的守护”动态难度-二级
 		}
 	}
 }
-country_event = {#“世界的守护”动态难度-三级
+
+country_event = {
+	#“世界的守护”动态难度-三级
 	id = touhou_difficulty.3
 	picture = GFX_report_event_soviet_tanks_snow
 	mean_time_to_happen = {
@@ -2184,7 +3667,24 @@ country_event = {#“世界的守护”动态难度-三级
 	}
 	hidden = yes
 	trigger = {
-		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		NOT = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		OR = {
 			has_war_with = ALI
 			has_war_with = DES
@@ -2204,22 +3704,27 @@ country_event = {#“世界的守护”动态难度-三级
 			has_war_with = EVI
 		}
 		surrender_progress > 0.5
-		NOT = { has_idea = touhou_invade_new_world_2 }
+		NOT = {
+			has_idea = touhou_invade_new_world_2
+		}
 		NOT = {
 			has_country_flag = touhou_god_of_makai_country_flag
 		}
 	}
-	
 	option = {
-		if = { 
-			limit = { has_idea = touhou_invade_new_world_0 }
+		if = {
+			limit = {
+				has_idea = touhou_invade_new_world_0
+			}
 			swap_ideas = {
 				remove_idea = touhou_invade_new_world_0
 				add_idea = touhou_invade_new_world_2
 			}
 		}
-		else_if = { 
-			limit = { has_idea = touhou_invade_new_world_1 }
+		else_if = {
+			limit = {
+				has_idea = touhou_invade_new_world_1
+			}
 			swap_ideas = {
 				remove_idea = touhou_invade_new_world_1
 				add_idea = touhou_invade_new_world_2
@@ -2231,14 +3736,13 @@ country_event = {#“世界的守护”动态难度-三级
 	}
 }
 
-
-
 #魔界系统
 #关于事件链日期随机数：一般情况下，玩家在月初会自动存档，本来就会卡一下，卡完了爆事件就很烦，为了减少事件在月初发生采取了如下措施：
 #时间间隔本身为15倍数，但加了随机质数15-2 30-7 60及以上-11
 add_namespace = touhou_devildom
 #前戏
-country_event = {#神秘来客其一
+country_event = {
+	#神秘来客其一
 	id = touhou_devildom.5
 	title = touhou_devildom.5.t
 	desc = touhou_devildom.5.d
@@ -2246,32 +3750,45 @@ country_event = {#神秘来客其一
 	is_triggered_only = yes
 	option = {
 		name = touhou_devildom.5.a
-		ai_chance = { base = 0 }
+		ai_chance = {
+			base = 0
+		}
 		add_timed_idea = {
 			idea = touhou_god_of_makai_ideas_preparation
 			days = 360
 		}
 		custom_effect_tooltip = touhou_devildom_coming_one_country
 		hidden_effect = {
-			if = {#优先与玩家关系不密切的ai南非国家
+			if = {
+				#优先与玩家关系不密切的ai南非国家
 				limit = {
 					any_other_country = {
-						owns_state = 681					
+						owns_state = 681
 						is_ai = yes
 						exists = yes
-						NOT = { is_in_faction_with = ROOT } #优先没有与玩家结盟的国家
-						NOT = { is_subject_of = ROOT } #优先不是玩家傀儡的国家
+						NOT = {
+							is_in_faction_with = ROOT
+						}						#优先没有与玩家结盟的国家
+						NOT = {
+							is_subject_of = ROOT
+						}						#优先不是玩家傀儡的国家
 					}
 				}
 				random_other_country = {
 					limit = {
-						owns_state = 681					
+						owns_state = 681
 						is_ai = yes
 						exists = yes
-						NOT = { is_in_faction_with = ROOT } #优先没有与玩家结盟的国家
-						NOT = { is_subject_of = ROOT } #优先不是玩家傀儡的国家
+						NOT = {
+							is_in_faction_with = ROOT
+						}						#优先没有与玩家结盟的国家
+						NOT = {
+							is_subject_of = ROOT
+						}						#优先不是玩家傀儡的国家
 					}
-					country_event = { id = touhou_devildom.1 }
+					country_event = {
+						id = touhou_devildom.1
+					}
 				}
 			}
 			else = {
@@ -2279,20 +3796,30 @@ country_event = {#神秘来客其一
 					limit = {
 						is_ai = yes
 						exists = yes
-						NOT = { is_in_faction_with = ROOT }
-						NOT = { is_subject_of = ROOT }
+						NOT = {
+							is_in_faction_with = ROOT
+						}
+						NOT = {
+							is_subject_of = ROOT
+						}
 					}
-					country_event = { id = touhou_devildom.1 }
+					country_event = {
+						id = touhou_devildom.1
+					}
 				}
 			}
 		}
 	}
 	option = {
 		name = touhou_devildom.5.b
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 	}
 }
-country_event = {#魔界的征召
+
+country_event = {
+	#魔界的征召
 	id = touhou_devildom.1
 	title = touhou_devildom.1.t
 	desc = touhou_devildom.1.d
@@ -2313,7 +3840,7 @@ country_event = {#魔界的征召
 			#load_focus_tree = touhou_devildom_focus
 			set_research_slots = 0
 			touhou_boss_effect_1 = yes
-			set_country_flag = touhou_god_of_makai_country_flag #魔界国家的标志
+			set_country_flag = touhou_god_of_makai_country_flag			#魔界国家的标志
 			set_politics = {
 				ruling_party = fascism
 			}
@@ -2323,16 +3850,16 @@ country_event = {#魔界的征召
 			}
 			set_rule = {
 				can_not_declare_war = yes
-				can_decline_call_to_war = no 
+				can_decline_call_to_war = no
 				can_create_factions = no
-				can_join_factions = no		
-			}			
+				can_join_factions = no
+			}
 			#不知道traits怎么样，反正ideas一次只能生效52个属性，1.12.10版本是这样的，所以写成了四个精神
 			add_ideas = {
 				touhou_god_of_makai_ideas_General
 				touhou_god_of_makai_ideas_Equipment
 				touhou_god_of_makai_ideas_Military
-				touhou_god_of_makai_ideas_Land_combat	
+				touhou_god_of_makai_ideas_Land_combat
 				touhou_god_of_makai_ideas_Navy_and_Air
 			}
 			add_timed_idea = {
@@ -2343,19 +3870,29 @@ country_event = {#魔界的征召
 				SAF_history_of_segregation
 				SAF_history_of_segregation_2
 			}
-			country_event = { id = touhou_devildom.2 days = 360 }
+			country_event = {
+				id = touhou_devildom.2
+				days = 360
+			}
 			every_other_country = {
-				news_event = { id = news.1043 hours = 6 } 
+				news_event = {
+					id = news.1043
+					hours = 6
+				}
 			}
 		}
 	}
 	option = {
 		name = touhou_devildom.1.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 	}
 }
+
 #第一阶段
-country_event = {#主的降临
+country_event = {
+	#主的降临
 	id = touhou_devildom.2
 	title = touhou_devildom.2.t
 	desc = touhou_devildom.2.d
@@ -2363,7 +3900,7 @@ country_event = {#主的降临
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			set_global_flag = touhou_god_of_makai_start_global_flag #魔界大战已经开始的flag
+			set_global_flag = touhou_god_of_makai_start_global_flag			#魔界大战已经开始的flag
 			touhou_boss_initialize_effect = yes
 			leave_faction = yes
 			create_faction = touhou_god_of_makai_faction
@@ -2375,13 +3912,15 @@ country_event = {#主的降临
 						is_in_faction_with = ROOT
 					}
 				}
-				country_event = { id = touhou_devildom.26 }
+				country_event = {
+					id = touhou_devildom.26
+				}
 			}
-			set_rule = { 
+			set_rule = {
 				can_create_factions = no
 				can_join_factions = no
 				can_not_declare_war = no
-				can_decline_call_to_war = yes			
+				can_decline_call_to_war = yes
 			}
 			every_country = {
 				limit = {
@@ -2389,7 +3928,11 @@ country_event = {#主的降临
 				}
 				#load_focus_tree = touhou_devildom_focus				
 			}
-			country_event = { id = touhou_devildom.3 days = 360 random_days = 11 }
+			country_event = {
+				id = touhou_devildom.3
+				days = 360
+				random_days = 11
+			}
 			every_other_country = {
 				limit = {
 					NOT = {
@@ -2397,16 +3940,20 @@ country_event = {#主的降临
 						is_in_faction_with = ROOT
 					}
 				}
-				news_event = { id = news.1046 } 
+				news_event = {
+					id = news.1046
+				}
 			}
 		}
 	}
 	option = {
 		name = touhou_devildom.2.a
-		ai_chance = { base = 1 }
-
+		ai_chance = {
+			base = 1
+		}
 	}
 }
+
 # country_event = {#主的恩赐
 # 	id = touhou_devildom.26
 # 	title = touhou_devildom.26.t
@@ -2614,7 +4161,6 @@ country_event = {#主的降临
 # 				}
 # 			}
 # 		}
-
 # 	}
 # 	option = {
 # 		name = touhou_devildom.22.a
@@ -2710,7 +4256,6 @@ country_event = {#主的降临
 # 		army_experience = -100
 # 		add_ideas = touhou_ideas_all_people_1
 # 		custom_effect_tooltip = touhou_event_the_visitor
-
 # 		hidden_effect = {
 # 			country_event = { id = touhou_devildom.2312 days = 30 random_days = 7 }
 # 		}
@@ -2888,7 +4433,8 @@ country_event = {#主的降临
 # 	}
 # }
 #第二阶段
-country_event = {#第二阶段
+country_event = {
+	#第二阶段
 	id = touhou_devildom.3
 	title = touhou_devildom.3.t
 	desc = touhou_devildom.3.d
@@ -2896,19 +4442,23 @@ country_event = {#第二阶段
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			country_event = { id = touhou_devildom.41 days = 360 random_days = 11 }
+			country_event = {
+				id = touhou_devildom.41
+				days = 360
+				random_days = 11
+			}
 			touhou_boss_effect_2 = yes
-			set_rule = { 
+			set_rule = {
 				can_create_factions = no
 				can_join_factions = no
 				can_not_declare_war = no
-				can_decline_call_to_war = yes			
+				can_decline_call_to_war = yes
 			}
 			remove_ideas = {
 				touhou_god_of_makai_ideas_General
 				touhou_god_of_makai_ideas_Equipment
 				touhou_god_of_makai_ideas_Military
-				touhou_god_of_makai_ideas_Land_combat	
+				touhou_god_of_makai_ideas_Land_combat
 				touhou_god_of_makai_ideas_Navy_and_Air
 			}
 			remove_ideas = {
@@ -2919,23 +4469,28 @@ country_event = {#第二阶段
 				touhou_god_of_makai_ideas_General_next_stage
 				touhou_god_of_makai_ideas_Equipment_next_stage
 				touhou_god_of_makai_ideas_Military_next_stage
-				touhou_god_of_makai_ideas_Land_combat_next_stage	
+				touhou_god_of_makai_ideas_Land_combat_next_stage
 				touhou_god_of_makai_ideas_Navy_and_Air_next_stage
 			}
 			every_enemy_country = {
-				
 			}
 			every_enemy_country = {
 				add_ideas = touhou_ideas_god_of_makai_blood
-				news_event = { id = news.1051 hours = 6 } 
+				news_event = {
+					id = news.1051
+					hours = 6
+				}
 			}
 		}
 	}
 	option = {
 		name = touhou_devildom.3.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 	}
 }
+
 # country_event = {#1VS1
 # 	id = touhou_devildom.31
 # 	title = touhou_devildom.31.t
@@ -2972,7 +4527,6 @@ country_event = {#第二阶段
 # 				}
 # 			}
 # 		}
-
 # 	}
 # 	option = {
 # 		name = touhou_devildom.31.a
@@ -3036,7 +4590,8 @@ country_event = {#第二阶段
 # 	}
 # }
 #第三阶段及结局
-country_event = {#最终阶段
+country_event = {
+	#最终阶段
 	id = touhou_devildom.4
 	title = touhou_devildom.4.t
 	desc = touhou_devildom.4.d
@@ -3045,11 +4600,11 @@ country_event = {#最终阶段
 	immediate = {
 		hidden_effect = {
 			touhou_boss_effect_3 = yes
-			set_rule = { 
+			set_rule = {
 				can_create_factions = no
 				can_join_factions = no
 				can_not_declare_war = no
-				can_decline_call_to_war = yes			
+				can_decline_call_to_war = yes
 			}
 			remove_ideas = {
 				touhou_god_of_makai_ideas_General_next_stage
@@ -3067,20 +4622,42 @@ country_event = {#最终阶段
 				touhou_god_of_makai_ideas_Equipment_last_stage
 				touhou_god_of_makai_ideas_Military_last_stage
 				touhou_god_of_makai_ideas_Land_combat_last_stage
-				touhou_god_of_makai_ideas_Navy_and_Air_last_stage		
+				touhou_god_of_makai_ideas_Navy_and_Air_last_stage
 			}
 			set_global_flag = touhou_global_flag_touhou_470
 			set_global_flag = touhou_global_flag_redemption
 			every_enemy_country = {
 				remove_ideas = touhou_ideas_god_of_makai_blood
 				add_ideas = touhou_ideas_god_of_makai_blood_1
-				country_event = { id = touhou_devildom.41 days = 30 random_days = 7 }
-				news_event = { id = news.1054 hours = 6 } 
+				country_event = {
+					id = touhou_devildom.41
+					days = 30
+					random_days = 7
+				}
+				news_event = {
+					id = news.1054
+					hours = 6
+				}
 			}
 			random_enemy_country = {
 				limit = {
 					NOT = {
-						original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI 
+						original_tag = ALI
+						original_tag = DES
+						original_tag = HAK
+						original_tag = DLD
+						original_tag = HEL
+						original_tag = SSS
+						original_tag = OPP
+						original_tag = RAB
+						original_tag = TEM
+						original_tag = BLI
+						original_tag = KAP
+						original_tag = TEN
+						original_tag = HUM
+						original_tag = VAM
+						original_tag = MLS
+						original_tag = EVI
 					}
 					is_ai = yes
 					exists = yes
@@ -3091,9 +4668,12 @@ country_event = {#最终阶段
 	}
 	option = {
 		name = touhou_devildom.4.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 	}
 }
+
 # country_event = {#路在何方？
 # 	id = touhou_devildom.43
 # 	title = touhou_devildom.43.t
@@ -3181,7 +4761,8 @@ country_event = {#最终阶段
 # 		}
 # 	}
 # }
-country_event = {#神秘来客其四
+country_event = {
+	#神秘来客其四
 	id = touhou_devildom.41
 	title = touhou_devildom.41.t
 	desc = touhou_devildom.41.d
@@ -3193,19 +4774,42 @@ country_event = {#神秘来客其四
 				limit = {
 					ROOT = {
 						is_ai = no
-						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						OR = {
+							original_tag = ALI
+							original_tag = DES
+							original_tag = HAK
+							original_tag = DLD
+							original_tag = HEL
+							original_tag = SSS
+							original_tag = OPP
+							original_tag = RAB
+							original_tag = TEM
+							original_tag = BLI
+							original_tag = KAP
+							original_tag = TEN
+							original_tag = HUM
+							original_tag = VAM
+							original_tag = MLS
+							original_tag = EVI
+						}
 					}
 				}
-				country_event = { id = touhou_devildom.42 days = 120 random_days = 11 }
+				country_event = {
+					id = touhou_devildom.42
+					days = 120
+					random_days = 11
+				}
 			}
 		}
 	}
 	option = {
 		name = touhou_devildom.41.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_tech_bonus = {
 			name = touhou_devildom.41.t
-			bonus = 5.0
+			bonus = 5
 			ahead_reduction = 10
 			uses = 6
 			category = infantry_weapons
@@ -3222,7 +4826,9 @@ country_event = {#神秘来客其四
 		}
 	}
 }
-country_event = {#神秘来客其五
+
+country_event = {
+	#神秘来客其五
 	id = touhou_devildom.42
 	title = touhou_devildom.42.t
 	desc = touhou_devildom.42.d
@@ -3232,13 +4838,23 @@ country_event = {#神秘来客其五
 	}
 	option = {
 		name = touhou_devildom.42.a
-		ai_chance = { base = 1 }
-		hidden_effect = { country_event = { id = touhou_devildom.422 days = 15 random_days = 2 } }
+		ai_chance = {
+			base = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = touhou_devildom.422
+				days = 15
+				random_days = 2
+			}
+		}
 		add_command_power = -100
 	}
 	option = {
 		name = touhou_devildom.42.b
-		ai_chance = { base = 0 }
+		ai_chance = {
+			base = 0
+		}
 		every_country = {
 			limit = {
 				has_country_flag = touhou_god_of_makai_country_flag
@@ -3250,7 +4866,9 @@ country_event = {#神秘来客其五
 		}
 	}
 }
-country_event = {#BE：只属于幻想乡的结局
+
+country_event = {
+	#BE：只属于幻想乡的结局
 	id = touhou_devildom.422
 	title = touhou_devildom.422.t
 	desc = touhou_devildom.422.d
@@ -3265,22 +4883,27 @@ country_event = {#BE：只属于幻想乡的结局
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.35
-			}		
+			}
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.3
 			}
-			every_other_country = { 
-				country_event = { id = touhou_devildom.4221 } 
+			every_other_country = {
+				country_event = {
+					id = touhou_devildom.4221
+				}
 			}
 			set_global_flag = touhou_global_flag_news_1053
 		}
 	}
 	option = {
 		name = touhou_devildom.422.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 	}
 }
+
 # country_event = {#游戏胜利
 # 	id = touhou_devildom.4221
 # 	title = touhou_devildom.4221.t
@@ -3293,7 +4916,8 @@ country_event = {#BE：只属于幻想乡的结局
 # 		FROM = { annex_country = { target = ROOT transfer_troops = no } }
 # 	}
 # }
-country_event = {#GE：我们携手向前
+country_event = {
+	#GE：我们携手向前
 	id = touhou_devildom.421
 	title = touhou_devildom.421.t
 	desc = touhou_devildom.421.d
@@ -3304,18 +4928,26 @@ country_event = {#GE：我们携手向前
 		hidden_effect = {
 			set_global_flag = touhou_global_flag_password
 			set_cosmetic_tag = touhou_cosmetic_tag_our_world
-			every_state = { add_core_of = ROOT }
+			every_state = {
+				add_core_of = ROOT
+			}
 			every_other_country = {
-				country_event = { id = touhou_devildom.4221 } 
+				country_event = {
+					id = touhou_devildom.4221
+				}
 			}
 		}
 	}
 	option = {
 		name = touhou_devildom.421.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 	}
 }
-country_event = {#主的离去-自动监测系统
+
+country_event = {
+	#主的离去-自动监测系统
 	id = touhou_devildom.4211
 	title = touhou_devildom.4211.t
 	desc = touhou_devildom.4211.d
@@ -3331,44 +4963,109 @@ country_event = {#主的离去-自动监测系统
 	}
 	immediate = {
 		TOUHOU_boss_shinki_leader = {
-			remove_country_leader_role = { ideology = rexism }	
-			remove_country_leader_role = { ideology = nazism }	
-			remove_country_leader_role = { ideology = gen_nazism }	
-			remove_country_leader_role = { ideology = fascism_ideology }	
-			remove_country_leader_role = { ideology = falangism }		
+			remove_country_leader_role = {
+				ideology = rexism
+			}
+			remove_country_leader_role = {
+				ideology = nazism
+			}
+			remove_country_leader_role = {
+				ideology = gen_nazism
+			}
+			remove_country_leader_role = {
+				ideology = fascism_ideology
+			}
+			remove_country_leader_role = {
+				ideology = falangism
+			}
 		}
-		touhou_boss_shinki_commander_0 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_1 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_2 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_3 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_4 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_5 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_6 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_7 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_8 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_9 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_a = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_b = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_c = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_d = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_e = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_commander_f = { remove_unit_leader_role = yes }
-		
-		touhou_boss_shinki_navy_0 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_navy_1 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_navy_2 = { remove_unit_leader_role = yes }
-		touhou_boss_shinki_navy_3 = { remove_unit_leader_role = yes }
-
-		delete_unit_template_and_units = { division_template = "魔界先遣部队" }
-		delete_unit_template_and_units = { division_template = "魔界两栖部队" }
-		delete_unit_template_and_units = { division_template = "魔界主力部队" }
-		delete_unit_template_and_units = { division_template = "魔界精英部队" }
-		delete_unit_template_and_units = { division_template = "魔界突击部队" }
-
-		add_offsite_building = { type = arms_factory level = -1000 }
-		add_offsite_building = { type = dockyard level = -1000 }	
-		add_offsite_building = { type = industrial_complex level = -1000 }
-
+		touhou_boss_shinki_commander_0 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_1 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_2 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_3 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_4 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_5 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_6 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_7 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_8 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_9 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_a = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_b = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_c = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_d = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_e = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_commander_f = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_navy_0 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_navy_1 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_navy_2 = {
+			remove_unit_leader_role = yes
+		}
+		touhou_boss_shinki_navy_3 = {
+			remove_unit_leader_role = yes
+		}
+		delete_unit_template_and_units = {
+			division_template = "魔界先遣部队"
+		}
+		delete_unit_template_and_units = {
+			division_template = "魔界两栖部队"
+		}
+		delete_unit_template_and_units = {
+			division_template = "魔界主力部队"
+		}
+		delete_unit_template_and_units = {
+			division_template = "魔界精英部队"
+		}
+		delete_unit_template_and_units = {
+			division_template = "魔界突击部队"
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = -1000
+		}
+		add_offsite_building = {
+			type = dockyard
+			level = -1000
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = -1000
+		}
 		set_cosmetic_tag = touhou_god_of_makai_has_left_cosmetic_tag
 		set_politics = {
 			ruling_party = neutrality
@@ -3378,7 +5075,6 @@ country_event = {#主的离去-自动监测系统
 			popularity = 0.3
 		}
 		leave_faction = yes
-
 		remove_ideas = {
 			touhou_god_of_makai_ideas_General_last_stage
 			touhou_god_of_makai_ideas_Equipment_last_stage
@@ -3388,15 +5084,19 @@ country_event = {#主的离去-自动监测系统
 			touhou_ideas_god_of_makai_other
 		}
 		# remove_mission = touhou_mission_god_of_makai_amry
-		set_global_flag = touhou_god_of_makai_has_left_global_flag #魔界已经离去flag
+		set_global_flag = touhou_god_of_makai_has_left_global_flag		#魔界已经离去flag
 		clr_global_flag = touhou_global_flag_our_world
-		clr_country_flag = touhou_god_of_makai_country_flag #清除魔界国家flag
+		clr_country_flag = touhou_god_of_makai_country_flag		#清除魔界国家flag
 	}
 	option = {
 		name = touhou_devildom.4211.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		every_enemy_country = {
-			news_event = { id = news.1055 } 
+			news_event = {
+				id = news.1055
+			}
 		}
 	}
 }
@@ -3422,7 +5122,8 @@ add_namespace = touhou_option
 # 		ai_chance = { base = 1 }
 # 	}
 # }
-country_event = {#有奖问答：通关码
+country_event = {
+	#有奖问答：通关码
 	id = touhou_option.1
 	title = touhou_option.1.t
 	desc = touhou_option.1.d
@@ -3430,34 +5131,52 @@ country_event = {#有奖问答：通关码
 	is_triggered_only = yes
 	option = {
 		name = touhou_option.1.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.11 } 
+			country_event = {
+				id = touhou_option.11
+			}
 		}
 	}
 	option = {
 		name = touhou_option.1.b
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.12 } 
+			country_event = {
+				id = touhou_option.12
+			}
 		}
 	}
 	option = {
 		name = touhou_option.1.c
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.12 } 
+			country_event = {
+				id = touhou_option.12
+			}
 		}
 	}
 	option = {
 		name = touhou_option.1.dd
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.12 } 
+			country_event = {
+				id = touhou_option.12
+			}
 		}
 	}
 }
-country_event = {#获得通关码
+
+country_event = {
+	#获得通关码
 	id = touhou_option.13
 	title = touhou_option.13.t
 	desc = touhou_option.13.d
@@ -3465,10 +5184,14 @@ country_event = {#获得通关码
 	is_triggered_only = yes
 	option = {
 		name = touhou_option.13.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 	}
 }
-country_event = {#欢迎通关老兵！
+
+country_event = {
+	#欢迎通关老兵！
 	id = touhou_option.11
 	title = touhou_option.11.t
 	desc = touhou_option.11.d
@@ -3477,7 +5200,9 @@ country_event = {#欢迎通关老兵！
 	is_triggered_only = yes
 	option = {
 		name = touhou_option.11.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		set_country_flag = fantasy_society_reform_ready_flag
 		touhou_society_reform_finish_effect = yes
 		set_country_flag = fantasy_government_reform_ready_flag
@@ -3496,7 +5221,9 @@ country_event = {#欢迎通关老兵！
 	}
 	option = {
 		name = touhou_option.11.b
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_timed_idea = {
 			idea = touhou_ideas_option_start_war
 			days = 360
@@ -3504,12 +5231,16 @@ country_event = {#欢迎通关老兵！
 	}
 	option = {
 		name = touhou_option.11.c
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		set_country_flag = touhou_country_flag_first_research_update
 	}
 	option = {
 		name = touhou_option.11.dd
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		trigger = {
 			TOUHOU_nameless = {
 				is_advisor = yes
@@ -3525,7 +5256,9 @@ country_event = {#欢迎通关老兵！
 		}
 	}
 }
-country_event = {#错误，抬走，下一个
+
+country_event = {
+	#错误，抬走，下一个
 	id = touhou_option.12
 	title = touhou_option.12.t
 	desc = touhou_option.12.d
@@ -3533,11 +5266,15 @@ country_event = {#错误，抬走，下一个
 	is_triggered_only = yes
 	option = {
 		name = touhou_option.12.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_political_power = -50
 	}
 }
-country_event = {#有奖问答：作者
+
+country_event = {
+	#有奖问答：作者
 	id = touhou_option.2
 	title = touhou_option.2.t
 	desc = touhou_option.2.d
@@ -3545,34 +5282,52 @@ country_event = {#有奖问答：作者
 	is_triggered_only = yes
 	option = {
 		name = touhou_option.2.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.12 } 
+			country_event = {
+				id = touhou_option.12
+			}
 		}
 	}
 	option = {
 		name = touhou_option.2.b
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.21 } 
+			country_event = {
+				id = touhou_option.21
+			}
 		}
 	}
 	option = {
 		name = touhou_option.2.c
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.12 } 
+			country_event = {
+				id = touhou_option.12
+			}
 		}
 	}
 	option = {
 		name = touhou_option.2.dd
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.12 } 
+			country_event = {
+				id = touhou_option.12
+			}
 		}
 	}
 }
-country_event = {#接受祝福吧！
+
+country_event = {
+	#接受祝福吧！
 	id = touhou_option.21
 	title = touhou_option.21.t
 	desc = touhou_option.21.d
@@ -3581,11 +5336,69 @@ country_event = {#接受祝福吧！
 	is_triggered_only = yes
 	option = {
 		name = touhou_option.21.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_field_marshal_role = {
 			character = TOUHOU_nameless
-			traits={
-				units_marionette units_human units_animal units_evil units_ghost units_oni units_kappa units_rabbit units_tengu units_vampire brilliant_strategist inflexible_strategist war_hero bearer_of_artillery logistics_wizard offensive_doctrine defensive_doctrine fast_planner thorough_planner unyielding_defender aggressive_assaulter organisational_leader inspirational_leader expert_delegator organizer cavalry_leader infantry_leader skilled_staffer trickster winter_specialist adaptable winter_expert trait_engineer panzer_leader commando desert_fox swamp_fox trait_mountaineer hill_fighter jungle_rat ranger urban_assault_specialist naval_invader panzer_expert combined_arms_expert cavalry_expert fortress_buster scavenger infantry_expert ambusher invader_ii naval_liason skirmisher paratrooper camouflage_expert expert_improviser guerilla_fighter
+			traits = {
+				units_marionette
+				units_human
+				units_animal
+				units_evil
+				units_ghost
+				units_oni
+				units_kappa
+				units_rabbit
+				units_tengu
+				units_vampire
+				brilliant_strategist
+				inflexible_strategist
+				war_hero
+				bearer_of_artillery
+				logistics_wizard
+				offensive_doctrine
+				defensive_doctrine
+				fast_planner
+				thorough_planner
+				unyielding_defender
+				aggressive_assaulter
+				organisational_leader
+				inspirational_leader
+				expert_delegator
+				organizer
+				cavalry_leader
+				infantry_leader
+				skilled_staffer
+				trickster
+				winter_specialist
+				adaptable
+				winter_expert
+				trait_engineer
+				panzer_leader
+				commando
+				desert_fox
+				swamp_fox
+				trait_mountaineer
+				hill_fighter
+				jungle_rat
+				ranger
+				urban_assault_specialist
+				naval_invader
+				panzer_expert
+				combined_arms_expert
+				cavalry_expert
+				fortress_buster
+				scavenger
+				infantry_expert
+				ambusher
+				invader_ii
+				naval_liason
+				skirmisher
+				paratrooper
+				camouflage_expert
+				expert_improviser
+				guerilla_fighter
 			}
 			skill = 1
 			attack_skill = 1
@@ -3619,7 +5432,7 @@ country_event = {#接受祝福吧！
 		}
 		add_field_marshal_role = {
 			character = TOUHOU_lightGod
-			traits={
+			traits = {
 				units_lightGod
 			}
 			skill = 4
@@ -3630,7 +5443,9 @@ country_event = {#接受祝福吧！
 		}
 	}
 }
-country_event = {#有奖问答：群号
+
+country_event = {
+	#有奖问答：群号
 	id = touhou_option.3
 	title = touhou_option.3.t
 	desc = touhou_option.3.d
@@ -3638,34 +5453,52 @@ country_event = {#有奖问答：群号
 	is_triggered_only = yes
 	option = {
 		name = touhou_option.3.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.12 } 
+			country_event = {
+				id = touhou_option.12
+			}
 		}
 	}
 	option = {
 		name = touhou_option.3.b
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.12 } 
+			country_event = {
+				id = touhou_option.12
+			}
 		}
 	}
 	option = {
 		name = touhou_option.3.c
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.31 } 
+			country_event = {
+				id = touhou_option.31
+			}
 		}
 	}
 	option = {
 		name = touhou_option.3.dd
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		hidden_effect = {
-			country_event = { id = touhou_option.12 } 
+			country_event = {
+				id = touhou_option.12
+			}
 		}
 	}
 }
-country_event = {#群友们来帮忙了！
+
+country_event = {
+	#群友们来帮忙了！
 	id = touhou_option.31
 	title = touhou_option.31.t
 	desc = touhou_option.31.d
@@ -3674,12 +5507,18 @@ country_event = {#群友们来帮忙了！
 	is_triggered_only = yes
 	option = {
 		name = touhou_option.31.a
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		add_manpower = 100000
 		add_corps_commander_role = {
 			character = TOUHOU_Trino
 			traits = {
-				units_human infantry_leader bearer_of_artillery camouflage_expert guerilla_fighter
+				units_human
+				infantry_leader
+				bearer_of_artillery
+				camouflage_expert
+				guerilla_fighter
 			}
 			skill = 4
 			attack_skill = 1
@@ -3690,7 +5529,11 @@ country_event = {#群友们来帮忙了！
 		add_corps_commander_role = {
 			character = TOUHOU_LLB
 			traits = {
-				units_human infantry_leader old_guard_navy ambusher guerilla_fighter
+				units_human
+				infantry_leader
+				old_guard_navy
+				ambusher
+				guerilla_fighter
 			}
 			skill = 4
 			attack_skill = 7
@@ -3700,8 +5543,12 @@ country_event = {#群友们来帮忙了！
 		}
 		add_corps_commander_role = {
 			character = TOUHOU_GYFSJ
-			traits={
-				units_human panzer_expert trait_cautious camouflage_expert trickster
+			traits = {
+				units_human
+				panzer_expert
+				trait_cautious
+				camouflage_expert
+				trickster
 			}
 			skill = 4
 			attack_skill = 4
@@ -3711,8 +5558,10 @@ country_event = {#群友们来帮忙了！
 		}
 		add_naval_commander_role = {
 			character = TOUHOU_GYFSJ
-			traits = { 
-				aviation_enthusiast air_controller flight_deck_manager
+			traits = {
+				aviation_enthusiast
+				air_controller
+				flight_deck_manager
 			}
 			skill = 4
 			attack_skill = 3
@@ -3723,7 +5572,11 @@ country_event = {#群友们来帮忙了！
 		add_corps_commander_role = {
 			character = TOUHOU_BNMJFJ
 			traits = {
-				units_rabbit brilliant_strategist organizer trickster ranger
+				units_rabbit
+				brilliant_strategist
+				organizer
+				trickster
+				ranger
 			}
 			skill = 4
 			attack_skill = 4
@@ -3733,8 +5586,12 @@ country_event = {#群友们来帮忙了！
 		}
 		add_corps_commander_role = {
 			character = TOUHOU_DLEZ
-			traits={
-				units_human armor_officer camouflage_expert bearer_of_artillery engineer_officer
+			traits = {
+				units_human
+				armor_officer
+				camouflage_expert
+				bearer_of_artillery
+				engineer_officer
 			}
 			skill = 3
 			attack_skill = 5
@@ -3744,7 +5601,9 @@ country_event = {#群友们来帮忙了！
 		}
 		add_corps_commander_role = {
 			character = TOUHOU_TTTTBD
-			traits={ units_TTTTBD }
+			traits = {
+				units_TTTTBD
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -3756,39 +5615,69 @@ country_event = {#群友们来帮忙了！
 
 #难度事件
 add_namespace = touhou_difficulty_select
-country_event = {#难度选择
+country_event = {
+	#难度选择
 	id = touhou_difficulty_select.1
-	title =	touhou_difficulty_select.1.t
+	title = touhou_difficulty_select.1.t
 	desc = touhou_difficulty_select.1.d
 	is_triggered_only = yes
 	trigger = {
-		OR = {original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLI
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
 		is_ai = no
 	}
 	fire_only_once = yes
 	option = {
 		name = touhou_difficulty_select.1.a
 		custom_effect_tooltip = touhou_tooltip_difficulty_select_easy
-		country_event = { id = touhou_difficulty_select.2 }
-		ai_chance = { base = 1 }
+		country_event = {
+			id = touhou_difficulty_select.2
+		}
+		ai_chance = {
+			base = 1
+		}
 	}
 	option = {
 		name = touhou_difficulty_select.1.b
 		custom_effect_tooltip = touhou_tooltip_difficulty_select_normal
-		country_event = { id = touhou_difficulty_select.3 }
+		country_event = {
+			id = touhou_difficulty_select.3
+		}
 	}
 	option = {
 		name = touhou_difficulty_select.1.c
 		custom_effect_tooltip = touhou_tooltip_difficulty_select_hard
-		country_event = { id = touhou_difficulty_select.4 }
+		country_event = {
+			id = touhou_difficulty_select.4
+		}
 	}
 	option = {
 		name = touhou_difficulty_select.1.e
 		custom_effect_tooltip = touhou_tooltip_difficulty_select_lunatic
-		country_event = { id = touhou_difficulty_select.5 }
+		country_event = {
+			id = touhou_difficulty_select.5
+		}
 	}
 }
-country_event = {#E难度
+
+country_event = {
+	#E难度
 	id = touhou_difficulty_select.2
 	title = touhou_difficulty_select.2.t
 	desc = touhou_difficulty_select.2.d
@@ -3797,40 +5686,60 @@ country_event = {#E难度
 		name = touhou_difficulty_select.2.a
 	}
 }
-country_event = {#N难度
+
+country_event = {
+	#N难度
 	id = touhou_difficulty_select.3
 	title = touhou_difficulty_select.3.t
 	desc = touhou_difficulty_select.3.d
 	is_triggered_only = yes
 	option = {
 		name = touhou_difficulty_select.3.a
-		country_event = { id = touhou_difficulty_select.6 }
+		country_event = {
+			id = touhou_difficulty_select.6
+		}
 	}
 }
-country_event = {#H难度
+
+country_event = {
+	#H难度
 	id = touhou_difficulty_select.4
 	title = touhou_difficulty_select.4.t
 	desc = touhou_difficulty_select.4.d
 	is_triggered_only = yes
 	option = {
 		name = touhou_difficulty_select.4.a
-		country_event = { id = touhou_difficulty_select.7 }
-		country_event = { id = touhou_difficulty_select.6 }
+		country_event = {
+			id = touhou_difficulty_select.7
+		}
+		country_event = {
+			id = touhou_difficulty_select.6
+		}
 	}
 }
-country_event = {#L难度
+
+country_event = {
+	#L难度
 	id = touhou_difficulty_select.5
 	title = touhou_difficulty_select.5.t
 	desc = touhou_difficulty_select.5.d
 	is_triggered_only = yes
 	option = {
 		name = touhou_difficulty_select.5.a
-		country_event = { id = touhou_difficulty_select.8 }
-		country_event = { id = touhou_difficulty_select.7 }
-		country_event = { id = touhou_difficulty_select.6 }
+		country_event = {
+			id = touhou_difficulty_select.8
+		}
+		country_event = {
+			id = touhou_difficulty_select.7
+		}
+		country_event = {
+			id = touhou_difficulty_select.6
+		}
 	}
 }
-country_event = {#辉夜姬的难题·其一
+
+country_event = {
+	#辉夜姬的难题·其一
 	id = touhou_difficulty_select.6
 	title = touhou_difficulty_select.6.t
 	desc = touhou_difficulty_select.6.d
@@ -3849,7 +5758,9 @@ country_event = {#辉夜姬的难题·其一
 		add_ideas = touhou_ideas_difficulty_select_resistance
 	}
 }
-country_event = {#辉夜姬的难题·其二
+
+country_event = {
+	#辉夜姬的难题·其二
 	id = touhou_difficulty_select.7
 	title = touhou_difficulty_select.7.t
 	desc = touhou_difficulty_select.7.d
@@ -3868,7 +5779,9 @@ country_event = {#辉夜姬的难题·其二
 		add_ideas = touhou_ideas_difficulty_select_pathetic
 	}
 }
-country_event = {#辉夜姬的难题·其三
+
+country_event = {
+	#辉夜姬的难题·其三
 	id = touhou_difficulty_select.8
 	title = touhou_difficulty_select.8.t
 	desc = touhou_difficulty_select.8.d
@@ -3876,7 +5789,12 @@ country_event = {#辉夜姬的难题·其三
 	is_triggered_only = yes
 	option = {
 		name = touhou_difficulty_select.8.a
-		JAP = { country_event = { id = touhou_difficulty_select.81 days = 90 } }
+		JAP = {
+			country_event = {
+				id = touhou_difficulty_select.81
+				days = 90
+			}
+		}
 		custom_effect_tooltip = touhou_tooltip_difficulty_select_jap
 		hidden_effect = {
 			build_railway = {
@@ -3903,7 +5821,12 @@ country_event = {#辉夜姬的难题·其三
 	}
 	option = {
 		name = touhou_difficulty_select.8.b
-		SOV = { country_event = { id = touhou_difficulty_select.81 days = 90 } }
+		SOV = {
+			country_event = {
+				id = touhou_difficulty_select.81
+				days = 90
+			}
+		}
 		custom_effect_tooltip = touhou_tooltip_difficulty_select_sov
 		hidden_effect = {
 			build_railway = {
@@ -3931,8 +5854,18 @@ country_event = {#辉夜姬的难题·其三
 	option = {
 		name = touhou_difficulty_select.8.c
 		add_ideas = touhou_ideas_difficulty_select_courage
-		SOV = { country_event = { id = touhou_difficulty_select.81 days = 120 } }
-		JAP = { country_event = { id = touhou_difficulty_select.81 days = 121 } }
+		SOV = {
+			country_event = {
+				id = touhou_difficulty_select.81
+				days = 120
+			}
+		}
+		JAP = {
+			country_event = {
+				id = touhou_difficulty_select.81
+				days = 121
+			}
+		}
 		custom_effect_tooltip = touhou_tooltip_difficulty_select_both
 		hidden_effect = {
 			build_railway = {
@@ -3958,7 +5891,9 @@ country_event = {#辉夜姬的难题·其三
 		}
 	}
 }
-country_event = {#侵吞幻想乡
+
+country_event = {
+	#侵吞幻想乡
 	id = touhou_difficulty_select.81
 	title = touhou_difficulty_select.81.t
 	desc = touhou_difficulty_select.81.d
@@ -3969,18 +5904,37 @@ country_event = {#侵吞幻想乡
 			base = 1
 		}
 		every_state = {
-			limit = { has_state_flag = is_gensokyo_state_flag }
+			limit = {
+				has_state_flag = is_gensokyo_state_flag
+			}
 			add_core_of = ROOT
 		}
-		set_rule = { 
+		set_rule = {
 			can_create_factions = no
-			can_join_factions = no			
+			can_join_factions = no
 		}
 		if = {
-			limit = { 
-				original_tag = JAP 
+			limit = {
+				original_tag = JAP
 				any_other_country = {
-					OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+					OR = {
+						original_tag = ALI
+						original_tag = DES
+						original_tag = HAK
+						original_tag = DLD
+						original_tag = HEL
+						original_tag = SSS
+						original_tag = OPP
+						original_tag = RAB
+						original_tag = TEM
+						original_tag = BLI
+						original_tag = KAP
+						original_tag = TEN
+						original_tag = HUM
+						original_tag = VAM
+						original_tag = MLS
+						original_tag = EVI
+					}
 					has_war_with = SOV
 				}
 			}
@@ -3998,7 +5952,26 @@ country_event = {#侵吞幻想乡
 			level = 200
 		}
 		every_other_country = {
-			limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+			limit = {
+				OR = {
+					original_tag = ALI
+					original_tag = DES
+					original_tag = HAK
+					original_tag = DLD
+					original_tag = HEL
+					original_tag = SSS
+					original_tag = OPP
+					original_tag = RAB
+					original_tag = TEM
+					original_tag = BLI
+					original_tag = KAP
+					original_tag = TEN
+					original_tag = HUM
+					original_tag = VAM
+					original_tag = MLS
+					original_tag = EVI
+				}
+			}
 			ROOT = {
 				declare_war_on = {
 					target = PREV
