@@ -63,13 +63,16 @@ if = {
 	generate_character = {
 		token_base = TOUHOU_Alice_Margatroid
 		name = TOUHOU_Alice_Margatroid
-		civilian = {
-			large = GFX_Alice_Margatroid
+		portraits = {
+			civilian = {
+				large = GFX_Alice_Margatroid
+			}
+			army = {
+				large = GFX_Alice_Margatroid
+				small = GFX_idea_alice
+			}
 		}
-		army = {
-			large = GFX_Alice_Margatroid
-			small = GFX_idea_alice
-		}
+		
 	}
 }
 
