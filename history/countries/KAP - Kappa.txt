@@ -1874,7 +1874,7 @@ add_field_marshal_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Kawasiro_Nitori
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Kawasiro_Nitori
 		slot = navy_chief

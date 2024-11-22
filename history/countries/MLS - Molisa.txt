@@ -1873,19 +1873,29 @@ add_field_marshal_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Kirisame_Marisa
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Kirisame_Marisa
 		slot = political_advisor
 		traits = { molisha }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Kirisame_Marisa
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Kirisame_Marisa
 		slot = army_chief
 		traits = { touhou_army_artillery_3 }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Kirisame_Marisa
+	#activate = yes
+	
+	
 	advisor = {
 		idea_token = TOUHOU_Kirisame_Marisa
 		slot = high_command

@@ -1866,19 +1866,29 @@ add_country_leader_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Remilia_Scarlet
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Remilia_Scarlet
 		slot = political_advisor
 		traits = { touhou_backroom_backstabber }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Remilia_Scarlet
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Remilia_Scarlet
 		slot = army_chief
 		traits = { touhou_army_concealment_3 }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Remilia_Scarlet
+	#activate = yes
+	
+	
 	advisor = {
 		idea_token = TOUHOU_Remilia_Scarlet
 		slot = high_command

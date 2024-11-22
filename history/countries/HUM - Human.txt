@@ -1887,19 +1887,29 @@ add_field_marshal_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Kamishirasawa_Keine
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Kamishirasawa_Keine
 		slot = political_advisor
 		traits = { touhou_fortification_engineer }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Kamishirasawa_Keine
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Kamishirasawa_Keine
 		slot = army_chief
 		traits = { touhou_army_chief_old_guard }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Kamishirasawa_Keine
+	#activate = yes
+	
+	
 	advisor = {
 		idea_token = TOUHOU_Kamishirasawa_Keine
 		slot = high_command

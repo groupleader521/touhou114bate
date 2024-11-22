@@ -1838,7 +1838,7 @@ add_country_leader_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Houraisan_Kaguya
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Houraisan_Kaguya
 		slot = political_advisor
@@ -1890,13 +1890,18 @@ add_corps_commander_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Reisen_Udongein_Inaba
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Reisen_Udongein_Inaba
 		slot = army_chief
 		traits = { touhou_army_commando_3 }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Reisen_Udongein_Inaba
+	#activate = yes
+	
 	advisor = {
 		idea_token = TOUHOU_Reisen_Udongein_Inaba
 		slot = high_command

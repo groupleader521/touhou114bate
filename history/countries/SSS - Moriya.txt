@@ -1863,19 +1863,29 @@ add_country_leader_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Yasaka_Kanako
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Yasaka_Kanako
 		slot = political_advisor
 		traits = { touhou_war_industrialist }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Yasaka_Kanako
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Yasaka_Kanako
 		slot = army_chief
 		traits = { touhou_army_infantry_3 }
 		cost = 150
 	}
+}
+
+add_advisor_role = {
+	character = TOUHOU_Yasaka_Kanako
+	#activate = yes
+
 	advisor = {
 		idea_token = TOUHOU_Yasaka_Kanako
 		slot = high_command

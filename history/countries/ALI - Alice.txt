@@ -1846,10 +1846,9 @@ add_field_marshal_role = {
 	planning_skill = 5
 	logistics_skill = 5
 }
-
 add_advisor_role = {
 	character = TOUHOU_Alice_Margatroid
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Alice_Margatroid
 		slot = political_advisor
@@ -1858,6 +1857,10 @@ add_advisor_role = {
 		}
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Alice_Margatroid
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Alice_Margatroid
 		slot = army_chief
@@ -1866,6 +1869,10 @@ add_advisor_role = {
 		}
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Alice_Margatroid
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Alice_Margatroid
 		slot = high_command

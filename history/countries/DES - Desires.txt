@@ -1871,19 +1871,27 @@ add_country_leader_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Toyosatomimi_no_Miko
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Toyosatomimi_no_Miko
 		slot = political_advisor
 		traits = { touhou_smooth_talking_charmer }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Toyosatomimi_no_Miko
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Toyosatomimi_no_Miko
 		slot = air_chief
 		traits = { touhou_air_strategic_bombing_3 }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Toyosatomimi_no_Miko
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Toyosatomimi_no_Miko
 		slot = high_command

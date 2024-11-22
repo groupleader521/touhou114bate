@@ -1843,7 +1843,7 @@ add_field_marshal_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Yakumo_Yukari
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Yakumo_Yukari
 		slot = political_advisor
@@ -1895,22 +1895,31 @@ add_country_leader_role = {
 		}
 	}
 }
-
 add_advisor_role = {
 	character = TOUHOU_Hakurei_Reimu
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Hakurei_Reimu
 		slot = political_advisor
 		traits = { touhou_quartermaster_general }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Hakurei_Reimu
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Hakurei_Reimu
 		slot = air_chief
 		traits = { touhou_air_chief_ground_support_3 }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Hakurei_Reimu
+	#activate = yes
+	
+	
 	advisor = {
 		idea_token = TOUHOU_Hakurei_Reimu
 		slot = high_command

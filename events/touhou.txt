@@ -5408,7 +5408,7 @@ country_event = {
 		}
 		add_advisor_role = {
 			character = TOUHOU_nameless
-			activate = yes
+			#activate = yes
 			advisor = {
 				idea_token = TOUHOU_nameless
 				slot = political_advisor
@@ -5420,7 +5420,7 @@ country_event = {
 		}
 		add_advisor_role = {
 			character = TOUHOU_nameless
-			activate = yes
+			#activate = yes
 			advisor = {
 				idea_token = TOUHOU_nameless
 				slot = army_chief

@@ -1877,19 +1877,29 @@ add_field_marshal_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Komeiji_Satori
-	activate = yes
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Komeiji_Satori
 		slot = political_advisor
 		traits = { touhou_armaments_organizer }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Komeiji_Satori
+	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Komeiji_Satori
 		slot = army_chief
 		traits = { touhou_army_regrouping_3 }
 		cost = 150
 	}
+}
+add_advisor_role = {
+	character = TOUHOU_Komeiji_Satori
+	#activate = yes
+	
+	
 	advisor = {
 		idea_token = TOUHOU_Komeiji_Satori
 		slot = high_command
