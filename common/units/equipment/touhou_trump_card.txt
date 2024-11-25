@@ -29,7 +29,7 @@ equipments = {
 
 		carrier_capable = yes
 
-		air_range = 800
+		air_range = 1000
 		maximum_speed = 3000
 
 		air_agility = 150
