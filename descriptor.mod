@@ -1,4 +1,4 @@
-version="1.14"
+version="1.16"
 tags={
 	"National Focuses"
 	"Alternative History"
@@ -8,8 +8,8 @@ tags={
 dependencies={
 	"52 Chinese Localisation"
 }
-name="TouHou Into the World ~ 幻想世界入 1.14 测试版"
+name="TouHou Into the World ~ 幻想世界入 1.16 测试版"
 picture="thumbnail.png"
 replace_path="gfx/loadingscreens"
-supported_version="1.15.*"
+supported_version="1.16.*"
 remote_file_id="3290248402"
