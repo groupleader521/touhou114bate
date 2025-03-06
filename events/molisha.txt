@@ -277,7 +277,7 @@ country_event = {#坚持到底
 		}
 		add_ideas = touhou_communist_influence
 		add_manpower = 200000
-		add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 1000 producer = ALI }
+		add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 1035 producer = ALI }
 	}
 }
 country_event = {

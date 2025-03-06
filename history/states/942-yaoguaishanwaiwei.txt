@@ -1,8 +1,8 @@
 state={
-	id=1003
+	id=1038
 	name="STATE_ShouShiCanBaiDao"
 	provinces={
-		13481 13486 13487 
+		13491 13496 13497 
 	}
 
 	history={
@@ -19,7 +19,7 @@ state={
 		chromium = 11
 		tungsten = 37
 	}
-	manpower=1000000
+	manpower=1035000
 	buildings_max_level_factor=1.000
 	#state_category=town
 	state_category=megalopolis

@@ -1,4 +1,4 @@
-﻿capital = 1000
+﻿capital = 1035
 
 oob = "HAK_1936"
 
@@ -1815,7 +1815,7 @@ add_country_leader_role = {
     character = TOUHOU_Saigyouji_Yuyuko
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = centrism
 		traits = {
 			uuz
@@ -1826,7 +1826,7 @@ add_country_leader_role = {
     character = TOUHOU_Saigyouji_Yuyuko
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = fascism_ideology
 		traits = {
 			uuz
@@ -1837,7 +1837,7 @@ add_country_leader_role = {
     character = TOUHOU_Saigyouji_Yuyuko
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = liberalism
 		traits = {
 			uuz
@@ -1892,7 +1892,7 @@ add_country_leader_role = {
     character = TOUHOU_Konpaku_Youmu
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = marxism
 		traits = {
 			half_soul_half_human

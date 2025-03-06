@@ -1,4 +1,4 @@
-﻿capital = 996
+﻿capital = 1031
 
 oob = "HEL_1936"
 
@@ -1817,7 +1817,7 @@ add_country_leader_role = {
     character = TOUHOU_Ibuki_Suika
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = centrism
 		traits = {
 			cuixiang
@@ -1828,7 +1828,7 @@ add_country_leader_role = {
     character = TOUHOU_Ibuki_Suika
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = liberalism
 		traits = {
 			cuixiang
@@ -1839,7 +1839,7 @@ add_country_leader_role = {
     character = TOUHOU_Hoshiguma_Yugi
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = fascism_ideology
 		traits = {
 			yongyi
@@ -1850,7 +1850,7 @@ add_country_leader_role = {
     character = TOUHOU_Hoshiguma_Yugi
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = marxism
 		traits = {
 			yongyi

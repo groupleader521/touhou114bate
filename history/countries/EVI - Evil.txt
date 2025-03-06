@@ -1,4 +1,4 @@
-﻿capital = 982
+﻿capital = 1017
 
 oob = "EVI_1936"
 
@@ -1807,7 +1807,7 @@ add_country_leader_role = {
 	character = TOUHOU_Cirno
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = centrism
 		traits = {
 			qilunuo
@@ -1818,7 +1818,7 @@ add_country_leader_role = {
 	character = TOUHOU_Cirno
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = fascism_ideology
 		traits = {
 			qilunuo
@@ -1829,7 +1829,7 @@ add_country_leader_role = {
 	character = TOUHOU_Cirno
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = liberalism
 		traits = {
 			qilunuo
@@ -1840,7 +1840,7 @@ add_country_leader_role = {
 	character = TOUHOU_Cirno
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = marxism
 		traits = {
 			qilunuo

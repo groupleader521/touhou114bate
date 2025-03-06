@@ -1,4 +1,4 @@
-﻿capital = 1005
+﻿capital = 1040
 
 oob = "HUM_1936"
 
@@ -1823,7 +1823,7 @@ add_country_leader_role = {
     character = TOUHOU_Hieda_no_Akyuu
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = centrism
 		traits = {
 			akyuu_record
@@ -1834,7 +1834,7 @@ add_country_leader_role = {
     character = TOUHOU_Hieda_no_Akyuu
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = liberalism
 		traits = {
 			akyuu_record
@@ -1845,7 +1845,7 @@ add_country_leader_role = {
     character = TOUHOU_Hieda_no_Akyuu
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = fascism_ideology
 		traits = {
 			akyuu_record
@@ -1867,7 +1867,7 @@ add_country_leader_role = {
     character = TOUHOU_Kamishirasawa_Keine
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = marxism
 		traits = {
 			keine_history

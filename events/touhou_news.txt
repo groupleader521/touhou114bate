@@ -1,29 +1,29 @@
 ﻿news_event = {
-	id = news.994
-	title = news.994.t
-	desc = news.994.d
+	id = news.1029
+	title = news.1029.t
+	desc = news.1029.d
 	picture = GFX_news_event_touhou_has_open
 	
 	major = yes
 	
 	trigger = {
 		NOT = {
-				1027 = { is_controlled_by = ALI }
-				1027 = { is_controlled_by = DES }
-				1027 = { is_controlled_by = HAK }
-				1027 = { is_controlled_by = DLD }
-				1027 = { is_controlled_by = HEL }
-				1027 = { is_controlled_by = SSS }
-				1027 = { is_controlled_by = OPP }
-				1027 = { is_controlled_by = RAB }
-				1027 = { is_controlled_by = TEM }
-				1027 = { is_controlled_by = BLI }
-				1027 = { is_controlled_by = KAP }
-				1027 = { is_controlled_by = TEN }
-				1027 = { is_controlled_by = HUM }
-				1027 = { is_controlled_by = VAM }
-				1027 = { is_controlled_by = MLS }
-				1027 = { is_controlled_by = EVI }
+				1062 = { is_controlled_by = ALI }
+				1062 = { is_controlled_by = DES }
+				1062 = { is_controlled_by = HAK }
+				1062 = { is_controlled_by = DLD }
+				1062 = { is_controlled_by = HEL }
+				1062 = { is_controlled_by = SSS }
+				1062 = { is_controlled_by = OPP }
+				1062 = { is_controlled_by = RAB }
+				1062 = { is_controlled_by = TEM }
+				1062 = { is_controlled_by = BLI }
+				1062 = { is_controlled_by = KAP }
+				1062 = { is_controlled_by = TEN }
+				1062 = { is_controlled_by = HUM }
+				1062 = { is_controlled_by = VAM }
+				1062 = { is_controlled_by = MLS }
+				1062 = { is_controlled_by = EVI }
 		}
 		NOT = { has_global_flag = RAB_has_been_open }
 	}
@@ -37,20 +37,20 @@
 	}
 	
 	option = {
-		name = news.994.a
+		name = news.1029.a
 		trigger = {
 			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	option = {
-		name = news.994.b
+		name = news.1029.b
 		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 	}
 }
 news_event = {
-	id = news.995
-	title = news.995.t
-	desc = news.995.d
+	id = news.1030
+	title = news.1030.t
+	desc = news.1030.d
 	picture = GFX_news_event_touhou_has_open
 	
 	major = yes
@@ -58,22 +58,22 @@ news_event = {
 	trigger = {
 		NOT = {
 			OR = {
-				998 = { is_controlled_by = ALI }
-				998 = { is_controlled_by = DES }
-				998 = { is_controlled_by = HAK }
-				998 = { is_controlled_by = DLD }
-				998 = { is_controlled_by = HEL }
-				998 = { is_controlled_by = SSS }
-				998 = { is_controlled_by = OPP }
-				998 = { is_controlled_by = RAB }
-				998 = { is_controlled_by = TEM }
-				998 = { is_controlled_by = BLI }
-				998 = { is_controlled_by = KAP }
-				998 = { is_controlled_by = TEN }
-				998 = { is_controlled_by = HUM }
-				998 = { is_controlled_by = VAM }
-				998 = { is_controlled_by = MLS }
-				998 = { is_controlled_by = EVI }
+				1033 = { is_controlled_by = ALI }
+				1033 = { is_controlled_by = DES }
+				1033 = { is_controlled_by = HAK }
+				1033 = { is_controlled_by = DLD }
+				1033 = { is_controlled_by = HEL }
+				1033 = { is_controlled_by = SSS }
+				1033 = { is_controlled_by = OPP }
+				1033 = { is_controlled_by = RAB }
+				1033 = { is_controlled_by = TEM }
+				1033 = { is_controlled_by = BLI }
+				1033 = { is_controlled_by = KAP }
+				1033 = { is_controlled_by = TEN }
+				1033 = { is_controlled_by = HUM }
+				1033 = { is_controlled_by = VAM }
+				1033 = { is_controlled_by = MLS }
+				1033 = { is_controlled_by = EVI }
 			}
 		}
 		NOT = { has_global_flag = RAB_has_been_open }
@@ -88,24 +88,24 @@ news_event = {
 	}
 	
 	option = {
-		name = news.995.a
+		name = news.1030.a
 		trigger = {
 			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	option = {
-		name = news.995.b
+		name = news.1030.b
 		trigger = { TAG = OPP }
 	}
 	option = {
-		name = news.995.c
+		name = news.1030.c
 		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 	}
 }
 news_event = {
-	id = news.996
-	title = news.996.t
-	desc = news.996.d
+	id = news.1031
+	title = news.1031.t
+	desc = news.1031.d
 	picture = GFX_news_event_touhou_has_open
 	
 	major = yes
@@ -113,22 +113,22 @@ news_event = {
 	trigger = {
 		NOT = {
 			OR = {
-				1004 = { is_controlled_by = ALI }
-				1004 = { is_controlled_by = DES }
-				1004 = { is_controlled_by = HAK }
-				1004 = { is_controlled_by = DLD }
-				1004 = { is_controlled_by = HEL }
-				1004 = { is_controlled_by = SSS }
-				1004 = { is_controlled_by = OPP }
-				1004 = { is_controlled_by = RAB }
-				1004 = { is_controlled_by = TEM }
-				1004 = { is_controlled_by = BLI }
-				1004 = { is_controlled_by = KAP }
-				1004 = { is_controlled_by = TEN }
-				1004 = { is_controlled_by = HUM }
-				1004 = { is_controlled_by = VAM }
-				1004 = { is_controlled_by = MLS }
-				1004 = { is_controlled_by = EVI }
+				1039 = { is_controlled_by = ALI }
+				1039 = { is_controlled_by = DES }
+				1039 = { is_controlled_by = HAK }
+				1039 = { is_controlled_by = DLD }
+				1039 = { is_controlled_by = HEL }
+				1039 = { is_controlled_by = SSS }
+				1039 = { is_controlled_by = OPP }
+				1039 = { is_controlled_by = RAB }
+				1039 = { is_controlled_by = TEM }
+				1039 = { is_controlled_by = BLI }
+				1039 = { is_controlled_by = KAP }
+				1039 = { is_controlled_by = TEN }
+				1039 = { is_controlled_by = HUM }
+				1039 = { is_controlled_by = VAM }
+				1039 = { is_controlled_by = MLS }
+				1039 = { is_controlled_by = EVI }
 			}
 		}
 		NOT = { has_global_flag = RAB_has_been_open }
@@ -143,24 +143,24 @@ news_event = {
 	}
 	
 	option = {
-		name = news.996.a
+		name = news.1031.a
 		trigger = {
 			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	option = {
-		name = news.996.b
+		name = news.1031.b
 		trigger = { TAG = RAB }
 	}
 	option = {
-		name = news.996.c
+		name = news.1031.c
 		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 	}
 }
 news_event = {
-	id = news.997
-	title = news.997.t
-	desc = news.997.d
+	id = news.1032
+	title = news.1032.t
+	desc = news.1032.d
 	picture = GFX_news_event_touhou_has_open
 	
 	major = yes
@@ -168,22 +168,22 @@ news_event = {
 	trigger = {
 		NOT = {
 			OR = {
-				1022 = { is_controlled_by = ALI }
-				1022 = { is_controlled_by = DES }
-				1022 = { is_controlled_by = HAK }
-				1022 = { is_controlled_by = DLD }
-				1022 = { is_controlled_by = HEL }
-				1022 = { is_controlled_by = SSS }
-				1022 = { is_controlled_by = OPP }
-				1022 = { is_controlled_by = RAB }
-				1022 = { is_controlled_by = TEM }
-				1022 = { is_controlled_by = BLI }
-				1022 = { is_controlled_by = KAP }
-				1022 = { is_controlled_by = TEN }
-				1022 = { is_controlled_by = HUM }
-				1022 = { is_controlled_by = VAM }
-				1022 = { is_controlled_by = MLS }
-				1022 = { is_controlled_by = EVI }
+				1057 = { is_controlled_by = ALI }
+				1057 = { is_controlled_by = DES }
+				1057 = { is_controlled_by = HAK }
+				1057 = { is_controlled_by = DLD }
+				1057 = { is_controlled_by = HEL }
+				1057 = { is_controlled_by = SSS }
+				1057 = { is_controlled_by = OPP }
+				1057 = { is_controlled_by = RAB }
+				1057 = { is_controlled_by = TEM }
+				1057 = { is_controlled_by = BLI }
+				1057 = { is_controlled_by = KAP }
+				1057 = { is_controlled_by = TEN }
+				1057 = { is_controlled_by = HUM }
+				1057 = { is_controlled_by = VAM }
+				1057 = { is_controlled_by = MLS }
+				1057 = { is_controlled_by = EVI }
 			}
 		}
 		NOT = { has_global_flag = BLI_has_been_open }
@@ -198,25 +198,25 @@ news_event = {
 	}
 	
 	option = {
-		name = news.997.a
+		name = news.1032.a
 		trigger = {
 			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	option = {
-		name = news.997.b
+		name = news.1032.b
 		trigger = { TAG = BLI }
 	}
 	option = {
-		name = news.997.c
+		name = news.1032.c
 		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 	}
 }
 
 news_event = {#爱丽丝恢复
-	id = news.998
-	title = news.998.t
-	desc = news.998.d
+	id = news.1033
+	title = news.1033.t
+	desc = news.1033.d
 	picture = GFX_news_event_touhou_alice_has_reply
 	
 	is_triggered_only = yes
@@ -224,13 +224,13 @@ news_event = {#爱丽丝恢复
 		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
 	}
 	option = {
-		name = news.998.a
+		name = news.1033.a
 	}
 }
 news_event = {#爱丽丝胜新闻
-	id = news.999
-	title = news.999.t
-	desc = news.999.d
+	id = news.1034
+	title = news.1034.t
+	desc = news.1034.d
 	picture = GFX_news_event_touhou_alice_end_war_win
 	
 	is_triggered_only = yes
@@ -238,13 +238,13 @@ news_event = {#爱丽丝胜新闻
 		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
 	}
 	option = {
-		name = news.999.a
+		name = news.1034.a
 	}
 }
 news_event = {#爱丽丝败新闻
-	id = news.1000
-	title = news.1000.t
-	desc = news.1000.d
+	id = news.1035
+	title = news.1035.t
+	desc = news.1035.d
 	picture = GFX_news_event_touhou_alice_end_war_lose
 	
 	is_triggered_only = yes
@@ -252,13 +252,13 @@ news_event = {#爱丽丝败新闻
 		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
 	}
 	option = {
-		name = news.1000.a
+		name = news.1035.a
 	}
 }
 news_event = {#幻想乡统一——对外
-	id = news.1001
-	title = news.1001.t
-	desc = news.1001.d
+	id = news.1036
+	title = news.1036.t
+	desc = news.1036.d
 	picture = GFX_news_event_touhou
 	
 	trigger = {
@@ -266,13 +266,13 @@ news_event = {#幻想乡统一——对外
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1001.a
+		name = news.1036.a
 	}
 }
 news_event = {#地狱新政
-	id = news.1002
-	title = news.1002.t
-	desc = news.1002.d
+	id = news.1037
+	title = news.1037.t
+	desc = news.1037.d
 	picture = GFX_news_event_touhou_opp
 	
 	trigger = {
@@ -280,13 +280,13 @@ news_event = {#地狱新政
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1002.a
+		name = news.1037.a
 	}
 }
 news_event = {#重申地狱所有权
-	id = news.1003
-	title = news.1003.t
-	desc = news.1003.d
+	id = news.1038
+	title = news.1038.t
+	desc = news.1038.d
 	picture = GFX_news_event_touhou_opp
 	
 	trigger = {
@@ -294,13 +294,13 @@ news_event = {#重申地狱所有权
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1003.a
+		name = news.1038.a
 	}
 }
 news_event = {#旧都酿酒厂
-	id = news.1004
-	title = news.1004.t
-	desc = news.1004.d
+	id = news.1039
+	title = news.1039.t
+	desc = news.1039.d
 	picture = GFX_news_event_touhou_hel
 	
 	trigger = {
@@ -308,13 +308,13 @@ news_event = {#旧都酿酒厂
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1004.a
+		name = news.1039.a
 	}
 }
 news_event = {#要求天狗进贡
-	id = news.1005
-	title = news.1005.t
-	desc = news.1005.d
+	id = news.1040
+	title = news.1040.t
+	desc = news.1040.d
 	picture = GFX_news_event_touhou_hel
 	
 	trigger = {
@@ -322,13 +322,13 @@ news_event = {#要求天狗进贡
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1005.a
+		name = news.1040.a
 	}
 }
 news_event = {#开放地狱炉
-	id = news.1006
-	title = news.1006.t
-	desc = news.1006.d
+	id = news.1041
+	title = news.1041.t
+	desc = news.1041.d
 	picture = GFX_news_event_touhou_dld
 	
 	trigger = {
@@ -336,13 +336,13 @@ news_event = {#开放地狱炉
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1006.a
+		name = news.1041.a
 	}
 }
 news_event = {#新天地
-	id = news.1007
-	title = news.1007.t
-	desc = news.1007.d
+	id = news.1042
+	title = news.1042.t
+	desc = news.1042.d
 	picture = GFX_news_event_touhou_dld
 	
 	trigger = {
@@ -350,13 +350,13 @@ news_event = {#新天地
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1007.a
+		name = news.1042.a
 	}
 }
 news_event = {#河童向天狗进贡
-	id = news.1008
-	title = news.1008.t
-	desc = news.1008.d
+	id = news.1043
+	title = news.1043.t
+	desc = news.1043.d
 	picture = GFX_news_event_touhou_kap
 	
 	trigger = {
@@ -364,13 +364,13 @@ news_event = {#河童向天狗进贡
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1008.a
+		name = news.1043.a
 	}
 }
 news_event = {#河童代表团
-	id = news.1009
-	title = news.1009.t
-	desc = news.1009.d
+	id = news.1044
+	title = news.1044.t
+	desc = news.1044.d
 	picture = GFX_news_event_touhou_kap
 	
 	trigger = {
@@ -378,13 +378,13 @@ news_event = {#河童代表团
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1009.a
+		name = news.1044.a
 	}
 }
 news_event = {#冥府门卫
-	id = news.1010
-	title = news.1010.t
-	desc = news.1010.d
+	id = news.1045
+	title = news.1045.t
+	desc = news.1045.d
 	picture = GFX_news_event_touhou_hak
 	
 	trigger = {
@@ -392,13 +392,13 @@ news_event = {#冥府门卫
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1010.a
+		name = news.1045.a
 	}
 }
 news_event = {#贤者进驻
-	id = news.1011
-	title = news.1011.t
-	desc = news.1011.d
+	id = news.1046
+	title = news.1046.t
+	desc = news.1046.d
 	picture = GFX_news_event_touhou_hak
 	
 	trigger = {
@@ -406,13 +406,13 @@ news_event = {#贤者进驻
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1011.a
+		name = news.1046.a
 	}
 }
 news_event = {#扩大乐园
-	id = news.1012
-	title = news.1012.t
-	desc = news.1012.d
+	id = news.1047
+	title = news.1047.t
+	desc = news.1047.d
 	picture = GFX_news_event_touhou_evi
 	
 	trigger = {
@@ -420,13 +420,13 @@ news_event = {#扩大乐园
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1012.a
+		name = news.1047.a
 	}
 }
 news_event = {#妖精的团结
-	id = news.1013
-	title = news.1013.t
-	desc = news.1013.d
+	id = news.1048
+	title = news.1048.t
+	desc = news.1048.d
 	picture = GFX_news_event_touhou_evi
 	
 	trigger = {
@@ -434,13 +434,13 @@ news_event = {#妖精的团结
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1013.a
+		name = news.1048.a
 	}
 }
 news_event = {#幻想乡会谈
-	id = news.1014
-	title = news.1014.t
-	desc = news.1014.d
+	id = news.1049
+	title = news.1049.t
+	desc = news.1049.d
 	picture = GFX_news_event_touhou_bli
 	
 	trigger = {
@@ -448,13 +448,13 @@ news_event = {#幻想乡会谈
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1014.a
+		name = news.1049.a
 	}
 }
 news_event = {#平定纠纷
-	id = news.1015
-	title = news.1015.t
-	desc = news.1015.d
+	id = news.1050
+	title = news.1050.t
+	desc = news.1050.d
 	picture = GFX_news_event_touhou_bli
 	
 	trigger = {
@@ -462,13 +462,13 @@ news_event = {#平定纠纷
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1015.a
+		name = news.1050.a
 	}
 }
 news_event = {#永远亭科技博览会
-	id = news.1016
-	title = news.1016.t
-	desc = news.1016.d
+	id = news.1051
+	title = news.1051.t
+	desc = news.1051.d
 	picture = GFX_news_event_touhou_rab
 	
 	trigger = {
@@ -476,22 +476,22 @@ news_event = {#永远亭科技博览会
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1016.a
+		name = news.1051.a
 		trigger = {
 			OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = TEM original_tag = BLI original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	option = {
-		name = news.1016.b
+		name = news.1051.b
 		trigger = {
 			OR = { original_tag = ALI original_tag = RAB original_tag = KAP }
 		}
 	}
 }
 news_event = {#幻想霸权
-	id = news.1017
-	title = news.1017.t
-	desc = news.1017.d
+	id = news.1052
+	title = news.1052.t
+	desc = news.1052.d
 	picture = GFX_news_event_touhou_rab
 	
 	trigger = {
@@ -499,13 +499,13 @@ news_event = {#幻想霸权
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1017.a
+		name = news.1052.a
 	}
 }
 news_event = {#外界渗透计划
-	id = news.1018
-	title = news.1018.t
-	desc = news.1018.d
+	id = news.1053
+	title = news.1053.t
+	desc = news.1053.d
 	picture = GFX_news_event_touhou_rab
 	
 	trigger = {
@@ -513,13 +513,13 @@ news_event = {#外界渗透计划
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1018.a
+		name = news.1053.a
 	}
 }
 news_event = {#红魔大宴
-	id = news.1019
-	title = news.1019.t
-	desc = news.1019.d
+	id = news.1054
+	title = news.1054.t
+	desc = news.1054.d
 	picture = GFX_news_event_touhou_vam
 	
 	trigger = {
@@ -527,13 +527,13 @@ news_event = {#红魔大宴
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1019.a
+		name = news.1054.a
 	}
 }
 news_event = {#宣称霸权
-	id = news.1020
-	title = news.1020.t
-	desc = news.1020.d
+	id = news.1055
+	title = news.1055.t
+	desc = news.1055.d
 	picture = GFX_news_event_touhou_vam
 	
 	trigger = {
@@ -541,13 +541,13 @@ news_event = {#宣称霸权
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1020.a
+		name = news.1055.a
 	}
 }
 news_event = {#异教宽容
-	id = news.1021
-	title = news.1021.t
-	desc = news.1021.d
+	id = news.1056
+	title = news.1056.t
+	desc = news.1056.d
 	picture = GFX_news_event_touhou_sss
 	
 	trigger = {
@@ -555,13 +555,13 @@ news_event = {#异教宽容
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1021.a
+		name = news.1056.a
 	}
 }
 news_event = {#信徒宣誓
-	id = news.1022
-	title = news.1022.t
-	desc = news.1022.d
+	id = news.1057
+	title = news.1057.t
+	desc = news.1057.d
 	picture = GFX_news_event_touhou_sss
 	
 	trigger = {
@@ -569,13 +569,13 @@ news_event = {#信徒宣誓
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1022.a
+		name = news.1057.a
 	}
 }
 news_event = {#幻想乡观光团
-	id = news.1023
-	title = news.1023.t
-	desc = news.1023.d
+	id = news.1058
+	title = news.1058.t
+	desc = news.1058.d
 	picture = GFX_news_event_touhou_ten
 	
 	trigger = {
@@ -583,13 +583,13 @@ news_event = {#幻想乡观光团
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1023.a
+		name = news.1058.a
 	}
 }
 news_event = {#全面戒严
-	id = news.1024
-	title = news.1024.t
-	desc = news.1024.d
+	id = news.1059
+	title = news.1059.t
+	desc = news.1059.d
 	picture = GFX_news_event_touhou_ten
 	
 	trigger = {
@@ -597,13 +597,13 @@ news_event = {#全面戒严
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1024.a
+		name = news.1059.a
 	}
 }
 news_event = {#联络好友
-	id = news.1025
-	title = news.1025.t
-	desc = news.1025.d
+	id = news.1060
+	title = news.1060.t
+	desc = news.1060.d
 	picture = GFX_news_event_touhou_mls
 	
 	trigger = {
@@ -611,13 +611,13 @@ news_event = {#联络好友
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1025.a
+		name = news.1060.a
 	}
 }
 news_event = {#暗中行动
-	id = news.1026
-	title = news.1026.t
-	desc = news.1026.d
+	id = news.1061
+	title = news.1061.t
+	desc = news.1061.d
 	picture = GFX_news_event_touhou_mls
 	
 	trigger = {
@@ -625,13 +625,13 @@ news_event = {#暗中行动
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1026.a
+		name = news.1061.a
 	}
 }
 news_event = {#普渡众生
-	id = news.1027
-	title = news.1027.t
-	desc = news.1027.d
+	id = news.1062
+	title = news.1062.t
+	desc = news.1062.d
 	picture = GFX_news_event_touhou_tem
 	
 	trigger = {
@@ -639,13 +639,13 @@ news_event = {#普渡众生
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1027.a
+		name = news.1062.a
 	}
 }
 news_event = {#普渡众生（物理）
-	id = news.1028
-	title = news.1028.t
-	desc = news.1028.d
+	id = news.1063
+	title = news.1063.t
+	desc = news.1063.d
 	picture = GFX_news_event_touhou_tem
 	
 	trigger = {
@@ -653,7 +653,7 @@ news_event = {#普渡众生（物理）
 	}
 	is_triggered_only = yes
 	option = {
-		name = news.1028.a
+		name = news.1063.a
 	}
 }
 news_event = {#诸事兴于和

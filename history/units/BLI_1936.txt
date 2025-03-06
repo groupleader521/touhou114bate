@@ -38,31 +38,31 @@ units = {
 
 	division = { 
 		name = "博丽巫女"
-		location = 13440 
+		location = 13450 
 		division_template = "巫女小队"
 		start_experience_factor = 0.3
 	}
 	division = { 
 		name = "见习巫女"
-		location = 13440 
+		location = 13450 
 		division_template = "巫女小队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "博丽神社守卫"
-		location = 13440 
+		location = 13450 
 		division_template = "巫女小队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "幻想乡巡逻队"
-		location = 13440 
+		location = 13450 
 		division_template = "巫女小队"
 		start_experience_factor = 0.2
 	}
 }
 air_wings = {
-	1001 = { 
+	1036 = { 
 		touhou_wakan_fighter_equipment_0 = {
 			owner = "BLI" 
 			amount = 40

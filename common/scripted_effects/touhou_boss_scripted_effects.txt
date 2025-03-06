@@ -132,7 +132,7 @@ touhou_boss_get_army_effect_1 = {
 	#	resource = oil
 	#	amount = 10
 	#}
-	#add_offsite_building = { type = synthetic_refinery level = 1000 }
+	#add_offsite_building = { type = synthetic_refinery level = 1035 }
 	#魔界油不够，本来我想加虚空石油，结果可以直接加虚空燃油，这里是加虚空资源的一个范例
 #}
 
@@ -243,7 +243,7 @@ touhou_boss_get_characters_effect = {
 	add_country_leader_role = {#保证神琦可以成为黑色任何一个自意识形态的领导人,其他方法均不如此法高效
 		character = TOUHOU_boss_shinki_leader
 		country_leader = {
-			expire = "1989.1.1"
+			expire = "11024.1.1"
 			ideology = rexism
 		}
 		promote_leader = yes
@@ -251,7 +251,7 @@ touhou_boss_get_characters_effect = {
 	add_country_leader_role = {
 		character = TOUHOU_boss_shinki_leader
 		country_leader = {
-			expire = "1989.1.1"
+			expire = "11024.1.1"
 			ideology = nazism
 		}
 		promote_leader = yes
@@ -259,7 +259,7 @@ touhou_boss_get_characters_effect = {
 	add_country_leader_role = {
 		character = TOUHOU_boss_shinki_leader
 		country_leader = {
-			expire = "1989.1.1"
+			expire = "11024.1.1"
 			ideology = gen_nazism
 		}
 		promote_leader = yes
@@ -267,7 +267,7 @@ touhou_boss_get_characters_effect = {
 	add_country_leader_role = {
 		character = TOUHOU_boss_shinki_leader
 		country_leader = {
-			expire = "1989.1.1"
+			expire = "11024.1.1"
 			ideology = fascism_ideology
 		}
 		promote_leader = yes
@@ -275,7 +275,7 @@ touhou_boss_get_characters_effect = {
 	add_country_leader_role = {
 		character = TOUHOU_boss_shinki_leader
 		country_leader = {
-			expire = "1989.1.1"
+			expire = "11024.1.1"
 			ideology = falangism
 		}
 		promote_leader = yes

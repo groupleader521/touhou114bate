@@ -1,8 +1,8 @@
 state={
-	id=984
+	id=1019
 	name="STATE_YaoGuaiShan"
 	provinces={
-		13413 13414 13415 13416 13496 
+		13423 13424 13425 13426 13506 
 	}
 
 	history={
@@ -15,14 +15,14 @@ state={
 			air_base = 1
 		}
 		victory_points = {
-			13415 50 
+			13425 50 
 		}
 
 	}
 	resources = {
 		steel = 210
 	}
-	manpower=1000000
+	manpower=1035000
 	buildings_max_level_factor=1.000
 	#state_category=city
 	state_category=megalopolis

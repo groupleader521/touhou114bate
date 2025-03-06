@@ -1,8 +1,8 @@
 state={
-	id=1022
+	id=1057
 	name="STATE_BoLiShenSheHouShan"
 	provinces={
-		13465 13472 13478 13483 13485
+		13475 13482 13488 13493 13495
 	}
 	history={
 		add_core_of = BLI
@@ -12,14 +12,14 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			13485 20
+			13495 20
 		}
 	}
 	resources = {
 		oil = 23
 		rubber = 15
 	}
-	manpower=1000000
+	manpower=1035000
 	buildings_max_level_factor=1.000
 	#state_category=town
 	state_category=megalopolis

@@ -154,7 +154,7 @@ focus_tree = {
 				}
 			}
 			EVI = {
-				set_state_owner = 1019 set_state_controller = 1019
+				set_state_owner = 1054 set_state_controller = 1054
 				if = {
 					limit = { is_in_faction = no }
 					add_ai_strategy = {
@@ -425,11 +425,11 @@ focus_tree = {
 			is_subject = no
 			OR = {
 				VAM = { exists = yes is_in_faction_with = ALI }
-				controls_state = 1006
+				controls_state = 1041
 			}
 			OR = {
 				MLS = { exists = yes is_in_faction_with = ALI }
-				controls_state = 993
+				controls_state = 1028
 			}
 		}
 		bypass = {
@@ -648,7 +648,7 @@ focus_tree = {
 			hidden_effect = {
 				every_country = {
 					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-					news_event = { hours = 6 id = news.1015 }
+					news_event = { hours = 6 id = news.1050 }
 				}
 			}
 		}
@@ -1471,7 +1471,7 @@ focus_tree = {
 				}
 				every_country = {
 					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-					news_event = { hours = 6 id = news.998 }
+					news_event = { hours = 6 id = news.1033 }
 				}
 			}
 		}
@@ -1541,7 +1541,7 @@ focus_tree = {
 				set_global_flag = touhou_god_of_makai_start_global_flag
 				every_country = {
 					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-					news_event = { hours = 6 id = news.998 }
+					news_event = { hours = 6 id = news.1033 }
 					news_event = { id = news.1039 }
 				}
 				every_country = {

@@ -37,25 +37,25 @@ units = {
 
 	division = { 
 		name = "人里自警队第一小队"
-		location = 13385 
+		location = 13395 
 		division_template = "人里自警队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "人里自警队第二小队"
-		location = 13385 
+		location = 13395 
 		division_template = "人里自警队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "人里自警队第三小队"
-		location = 13385 
+		location = 13395 
 		division_template = "人里自警队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "人里自警队第四小队"
-		location = 13385 
+		location = 13395 
 		division_template = "人里自警队"
 		start_experience_factor = 0.1
 	}

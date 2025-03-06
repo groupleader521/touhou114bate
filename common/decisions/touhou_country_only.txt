@@ -389,7 +389,7 @@ touhou_evil_rize_up = {
 touhou_decisions_categories_doll = {
 	touhou_mission_doll_production_line = {#人偶生产线
 		activation = {
-			has_manpower < 100000000
+			has_manpower < 103500000
 		}
 		icon = generic_factory
 		days_mission_timeout = 0
@@ -401,7 +401,7 @@ touhou_decisions_categories_doll = {
 			}
 		}
 		cancel_trigger = {
-			has_manpower > 100000000
+			has_manpower > 103500000
 		}
 		modifier = {
 			consumer_goods_expected_value = 0.1
@@ -414,7 +414,7 @@ touhou_decisions_categories_doll = {
 				}
 				multiply_variable = {
 					var = touhou_var_alice_trait_manpower
-					value = 1000
+					value = 1035
 				}
 				if = {
 					limit = {
@@ -482,7 +482,7 @@ touhou_decisions_categories_doll = {
 	touhou_decisions_sent_manpower_faction = {#输送人偶士兵
 		icon = eng_propaganda_campaigns
 		available = {
-			has_manpower > 100000
+			has_manpower > 103500
 		}	
 		visible = {
 			FROM = { 
@@ -505,14 +505,14 @@ touhou_decisions_categories_doll = {
 		ai_will_do = {
 			base = 10
 			modifier = {
-				add = 1000
+				add = 1035
 				FROM = { is_ai = no }
 			}
 		}
 		cost = 50
 		complete_effect = {			
-			add_manpower = -100000			
-			FROM = { add_manpower = 100000 }
+			add_manpower = -103500			
+			FROM = { add_manpower = 103500 }
 		}
 	}	
 	touhou_decisions_strengthen_alice_doll_army = {#强化人偶作战网络-陆战

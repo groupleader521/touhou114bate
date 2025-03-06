@@ -10,7 +10,7 @@ country_event = {
 	option = {
 		name = vampire.0.a
 		ai_chance = { base = 1 }
-		VAM = { set_state_owner = 1019 set_state_controller = 1019 }
+		VAM = { set_state_owner = 1054 set_state_controller = 1054 }
 	}
 	option = {
 		name = vampire.0.b
@@ -53,16 +53,16 @@ country_event = {
 		}
 		hidden_effect = {
 			ALI = {
-				set_state_owner = 1020 
-				set_state_controller = 1020
+				set_state_owner = 1055 
+				set_state_controller = 1055
 			}
 			EVI = {
-				set_state_owner = 1021
-				set_state_controller = 1021
+				set_state_owner = 1056
+				set_state_controller = 1056
 			}
 			TEN = {
-				set_state_owner = 1006
-				set_state_controller = 1006
+				set_state_owner = 1041
+				set_state_controller = 1041
 			}
 		}
 	}
@@ -92,16 +92,16 @@ country_event = {
 		}
 		hidden_effect = {
 			ALI = {
-				set_state_owner = 1020 
-				set_state_controller = 1020
+				set_state_owner = 1055 
+				set_state_controller = 1055
 			}
 			EVI = {
-				set_state_owner = 1021
-				set_state_controller = 1021
+				set_state_owner = 1056
+				set_state_controller = 1056
 			}
 			TEN = {
-				set_state_owner = 1006
-				set_state_controller = 1006
+				set_state_owner = 1041
+				set_state_controller = 1041
 			}
 		}
 	}

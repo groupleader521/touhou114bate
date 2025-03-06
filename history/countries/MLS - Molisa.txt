@@ -1,4 +1,4 @@
-﻿capital = 993
+﻿capital = 1028
 
 oob = "MLS_1936"
 
@@ -1820,7 +1820,7 @@ add_country_leader_role = {
     character = TOUHOU_Kirisame_Marisa
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = centrism
 		traits = {
 			molisha
@@ -1831,7 +1831,7 @@ add_country_leader_role = {
     character = TOUHOU_Kirisame_Marisa
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = fascism_ideology
 		traits = {
 			molisha
@@ -1842,7 +1842,7 @@ add_country_leader_role = {
     character = TOUHOU_Kirisame_Marisa
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = liberalism
 		traits = {
 			molisha
@@ -1853,7 +1853,7 @@ add_country_leader_role = {
     character = TOUHOU_Kirisame_Marisa
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = marxism
 		traits = {
 			molisha

@@ -887,57 +887,57 @@
 	# 	cost =5
 
 	# 	available = {
-	# 		controls_state = 1004
-	# 		controls_state = 998
-	# 		controls_state = 1022
-	# 		controls_state = 1027
+	# 		controls_state = 1039
+	# 		controls_state = 1033
+	# 		controls_state = 1057
+	# 		controls_state = 1062
 	# 	}
 	# 	ai_will_do = {
-	# 		factor = 1000
+	# 		factor = 1035
 	# 	}
 	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
-	# 		1004 = {
+	# 		1039 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
 	# 					type = coastal_bunker
 	# 					level = 10
-	# 					province = 13436
+	# 					province = 13446
 	# 					instant_build = yes
 	# 				}
 	# 			}
 	# 		}
-	# 		998 = {
+	# 		1033 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
 	# 					type = coastal_bunker
 	# 					level = 10
-	# 					province = 13464
+	# 					province = 13474
 	# 					instant_build = yes
 	# 				}
 	# 			}
 	# 		}
-	# 		1022 = {
+	# 		1057 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
 	# 					type = coastal_bunker
 	# 					level = 10
-	# 					province = 13478
+	# 					province = 13488
 	# 					instant_build = yes
 	# 				}
 	# 			}
 	# 		}
-	# 		1027 = {
+	# 		1062 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
 	# 					type = coastal_bunker
 	# 					level = 10
-	# 					province = 13380
+	# 					province = 13390
 	# 					instant_build = yes
 	# 				}
 	# 			}
@@ -953,18 +953,18 @@
 	# 	cost =5
 
 	# 	available = {
-	# 		controls_state = 1004
-	# 		controls_state = 998
-	# 		controls_state = 1022
-	# 		controls_state = 1027
+	# 		controls_state = 1039
+	# 		controls_state = 1033
+	# 		controls_state = 1057
+	# 		controls_state = 1062
 	# 	}
 	# 	ai_will_do = {
-	# 		factor = 1000
+	# 		factor = 1035
 	# 	}
 	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
-	# 		1004 = {
+	# 		1039 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
@@ -974,7 +974,7 @@
 	# 				}
 	# 			}
 	# 		}
-	# 		998 = {
+	# 		1033 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
@@ -984,7 +984,7 @@
 	# 				}
 	# 			}
 	# 		}
-	# 		1022 = {
+	# 		1057 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
@@ -994,7 +994,7 @@
 	# 				}
 	# 			}
 	# 		}
-	# 		1027 = {
+	# 		1062 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
@@ -1065,7 +1065,7 @@
 	# 	relative_position_id = touhou_army_leader_power
 	# 	cost =5
 	# 	ai_will_do = {
-	# 		factor = 1000
+	# 		factor = 1035
 	# 	}
 	# 	completion_reward = {
 	# 		add_ideas = touhou_terrors_unknown_idea

@@ -46,7 +46,7 @@ touhou_devildom = {#魔神降临
 				character = TOUHOU_Shinki
 				promote_leader = yes
 				country_leader = {
-					expire = "1989.1.1"
+					expire = "11024.1.1"
 					ideology = centrism
 					traits = {
 						touhou_god_of_makai
@@ -57,7 +57,7 @@ touhou_devildom = {#魔神降临
 				character = TOUHOU_Shinki
 				promote_leader = yes
 				country_leader = {
-					expire = "1989.1.1"
+					expire = "11024.1.1"
 					ideology = fascism_ideology
 					traits = {
 						touhou_god_of_makai
@@ -68,7 +68,7 @@ touhou_devildom = {#魔神降临
 				character = TOUHOU_Shinki
 				promote_leader = yes
 				country_leader = {
-					expire = "1989.1.1"
+					expire = "11024.1.1"
 					ideology = marxism
 					traits = {
 						touhou_god_of_makai
@@ -79,7 +79,7 @@ touhou_devildom = {#魔神降临
 				character = TOUHOU_Shinki
 				promote_leader = yes
 				country_leader = {
-					expire = "1989.1.1"
+					expire = "11024.1.1"
 					ideology = liberalism
 					traits = {
 						touhou_god_of_makai

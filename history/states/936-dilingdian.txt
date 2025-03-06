@@ -1,8 +1,8 @@
 state={
-	id=997
+	id=1032
 	name="STATE_JiuDiYuHeXin"
 	provinces={
-		13494 13498 13505
+		13504 13508 13515
 	}
 
 	history={
@@ -15,7 +15,7 @@ state={
 			air_base = 1
 		}
 		victory_points = {
-			13498 50 
+			13508 50 
 		}
 
 	}
@@ -23,7 +23,7 @@ state={
 		aluminium = 45
 		steel = 20
 	}
-	manpower=1000000
+	manpower=1035000
 	buildings_max_level_factor=1.000
 	#state_category=city
 	state_category=megalopolis

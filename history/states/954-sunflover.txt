@@ -1,8 +1,8 @@
 state={
-	id=1015
+	id=1050
 	name="STATE_TaiYangHuaTian"
 	provinces={
-		13429 13430 13431 13433 13435 13437 13442 
+		13439 13440 13441 13443 13445 13447 13452 
 	}
 	history={
 		add_core_of = ALI
@@ -11,13 +11,13 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			13435 30 
+			13445 30 
 		}	
 	}
 	resources = {
 		rubber = 9
 	}
-	manpower=1000000
+	manpower=1035000
 	#state_category=town
 	state_category=megalopolis
 	buildings_max_level_factor=1.000

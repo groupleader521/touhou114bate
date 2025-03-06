@@ -441,7 +441,7 @@ ideas = {
 			removal_cost = -1
 	
 			modifier = {
-				ai_get_ally_desire_factor = -1000
+				ai_get_ally_desire_factor = -1035
 				ai_focus_aggressive_factor = 1
 				join_faction_tension = 100
 			}
@@ -1323,8 +1323,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				base_fuel_gain = 1000000 #无单位，每小时
-				max_fuel = 100000 #单位是k
+				base_fuel_gain = 1035000 #无单位，每小时
+				max_fuel = 103500 #单位是k
 				supply_consumption_factor = -0.4 #补给消耗
 				out_of_supply_factor = 0.4 #补给耗尽惩罚
 				no_supply_grace = 120 #携行补给
@@ -1687,8 +1687,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				base_fuel_gain = 1000000 #无单位，每小时
-				max_fuel = 100000 #单位是k
+				base_fuel_gain = 1035000 #无单位，每小时
+				max_fuel = 103500 #单位是k
 				supply_consumption_factor = -0.4 #补给消耗
 				out_of_supply_factor = 0.4 #补给耗尽惩罚
 				no_supply_grace = 120 #携行补给
@@ -1863,8 +1863,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				base_fuel_gain = 1000000 #无单位，每小时
-				max_fuel = 100000 #单位是k
+				base_fuel_gain = 1035000 #无单位，每小时
+				max_fuel = 103500 #单位是k
 				supply_consumption_factor = -0.4 #补给消耗
 				out_of_supply_factor = 0.4 #补给耗尽惩罚
 				no_supply_grace = 120 #携行补给

@@ -1,4 +1,4 @@
-﻿capital = 1001
+﻿capital = 1036
 
 oob = "BLI_1936"
 
@@ -1823,7 +1823,7 @@ add_country_leader_role = {
 	character = TOUHOU_Yakumo_Yukari
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = fascism_ideology
 		traits = {
 			yukari_oracle
@@ -1866,7 +1866,7 @@ add_country_leader_role = {
 	character = TOUHOU_Hakurei_Reimu
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = centrism
 		traits = {
 			boli_defence
@@ -1877,7 +1877,7 @@ add_country_leader_role = {
 	character = TOUHOU_Hakurei_Reimu
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = liberalism
 		traits = {
 			boli_defence
@@ -1888,7 +1888,7 @@ add_country_leader_role = {
 	character = TOUHOU_Hakurei_Reimu
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = marxism
 		traits = {
 			boli_defence

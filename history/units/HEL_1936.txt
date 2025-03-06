@@ -36,19 +36,19 @@ division_template = {
 units = {
 	division = { 
 		name = "斗鬼"
-		location = 13470 
+		location = 13480 
 		division_template = "鬼"
 		start_experience_factor = 0.3
 	}
 	division = { 
 		name = "战鬼"
-		location = 13470 
+		location = 13480 
 		division_template = "鬼"
 		start_experience_factor = 0.3
 	}
 }
 air_wings = {
-	996 = { 
+	1031 = { 
 		touhou_demonforce_fighter_equipment_0 = {
 			owner = "HEL" 
 			amount = 40

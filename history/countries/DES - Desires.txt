@@ -1,4 +1,4 @@
-﻿capital = 999
+﻿capital = 1034
 
 oob = "DES_1936"
 
@@ -1829,7 +1829,7 @@ add_country_leader_role = {
 	character = TOUHOU_Toyosatomimi_no_Miko
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = centrism
 		traits = {
 			shenzi
@@ -1840,7 +1840,7 @@ add_country_leader_role = {
 	character = TOUHOU_Toyosatomimi_no_Miko
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = fascism_ideology
 		traits = {
 			shenzi
@@ -1851,7 +1851,7 @@ add_country_leader_role = {
 	character = TOUHOU_Toyosatomimi_no_Miko
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = liberalism
 		traits = {
 			shenzi
@@ -1862,7 +1862,7 @@ add_country_leader_role = {
 	character = TOUHOU_Toyosatomimi_no_Miko
 	promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = marxism
 		traits = {
 			shenzi

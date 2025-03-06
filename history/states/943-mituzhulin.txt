@@ -1,8 +1,8 @@
 state={
-	id=1004
+	id=1039
 	name="STATE_MiTuZhuLin"
 	provinces={
-		13434 13436 13438 13439 13440
+		13444 13446 13448 13449 13450
 	}
 
 	history={
@@ -15,14 +15,14 @@ state={
 			air_base = 1
 		}
 		victory_points = {
-			13436 50 
+			13446 50 
 		}
 	}
 	resources = {
 		rubber = 112
 		steel = 26
 	}
-	manpower=1000000
+	manpower=1035000
 	buildings_max_level_factor=1.000
 	#state_category=city
 	state_category=megalopolis

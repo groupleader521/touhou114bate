@@ -1,8 +1,8 @@
 state={
-	id=1027
+	id=1062
 	name="STATE_WuYuanZhong"
 	provinces={
-		13380 13395 13399 13462
+		13390 13405 13409 13472
 	}
 	history={
 		add_core_of = OPP
@@ -11,13 +11,13 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			13380 20
+			13390 20
 		}
 	}
 	resources = {
 		steel = 60
 	}
-	manpower=1000000
+	manpower=1035000
 	#state_category=town
 	state_category=megalopolis
 	buildings_max_level_factor=1.000

@@ -12,7 +12,7 @@ on_actions = {
 				}
 				multiply_variable = {
 					var = touhou_var_alice_trait_manpower
-					value = 1000
+					value = 1035
 				}
 			}
 			EVI = {

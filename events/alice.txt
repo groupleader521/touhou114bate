@@ -12,7 +12,7 @@ country_event = {#启动最后的备用人偶
 	option = {
 		name = alice.0.a
 		ai_chance = { base = 1 }
-		add_manpower = 10000
+		add_manpower = 10350
 		hidden_effect = {
 			capital_scope = {
 				create_unit = {
@@ -151,7 +151,7 @@ country_event = {#爱丽丝恢复了
 		hidden_effect = {
 			every_country = {
 				limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-				news_event = { hours = 6 id = news.998 }
+				news_event = { hours = 6 id = news.1033 }
 			}
 		}
 		ALI_marionette_freedom_clear_all = yes
@@ -353,7 +353,7 @@ country_event = {#梅蒂欣胜利了
 			character = TOUHOU_Medicine_Melancholy
 			promote_leader = yes
 			country_leader = {
-				expire = "11000.1.1"
+				expire = "11035.1.1"
 				ideology = fascism_ideology
 				traits = {
 					marionette_freedom
@@ -364,7 +364,7 @@ country_event = {#梅蒂欣胜利了
 			character = TOUHOU_Medicine_Melancholy
 			promote_leader = yes
 			country_leader = {
-				expire = "11000.1.1"
+				expire = "11035.1.1"
 				ideology = centrism
 				traits = {
 					marionette_freedom
@@ -375,7 +375,7 @@ country_event = {#梅蒂欣胜利了
 			character = TOUHOU_Medicine_Melancholy
 			promote_leader = yes
 			country_leader = {
-				expire = "11000.1.1"
+				expire = "11035.1.1"
 				ideology = marxism
 				traits = {
 					marionette_freedom
@@ -386,7 +386,7 @@ country_event = {#梅蒂欣胜利了
 			character = TOUHOU_Medicine_Melancholy
 			promote_leader = yes
 			country_leader = {
-				expire = "11000.1.1"
+				expire = "11035.1.1"
 				ideology = liberalism
 				traits = {
 					marionette_freedom
@@ -398,7 +398,7 @@ country_event = {#梅蒂欣胜利了
 			set_country_flag = alice_be_defeated
 			every_country = {
 				limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-				news_event = { hours = 6 id = news.1000 }
+				news_event = { hours = 6 id = news.1035 }
 			}
 		}
 		if = {
@@ -433,7 +433,7 @@ country_event = {#主人胜利了
 			}
 			every_country = {
 				limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-				news_event = { hours = 6 id = news.999 }
+				news_event = { hours = 6 id = news.1034 }
 			}
 		}
 		
@@ -492,7 +492,7 @@ country_event = {#AI爱丽丝不造兵不生产人口的补救措施
 		days = 90
 	}
 	immediate = {
-		add_manpower = 10000
+		add_manpower = 10350
 		if = {
 			limit = { has_equipment = { touhou_magic_infantry_equipment > 2000 } }
 			add_equipment_to_stockpile = {

@@ -1,4 +1,4 @@
-﻿capital = 984
+﻿capital = 1019
 
 oob = "TEN_1936"
 
@@ -1822,7 +1822,7 @@ add_country_leader_role = {
     character = TOUHOU_Inubashiri_Momizi
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = liberalism
 		traits = {
 			tengu_defence
@@ -1833,7 +1833,7 @@ add_country_leader_role = {
     character = TOUHOU_Shameimaru_Aya
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = marxism
 		traits = {
 			tengu_speed
@@ -1844,7 +1844,7 @@ add_country_leader_role = {
     character = TOUHOU_Iizunamaru_Megumu
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = centrism
 		traits = {
 			tengu_consumer
@@ -1855,7 +1855,7 @@ add_country_leader_role = {
     character = TOUHOU_Iizunamaru_Megumu
     promote_leader = yes
 	country_leader = {
-		expire = "1989.1.1"
+		expire = "11024.1.1"
 		ideology = fascism_ideology
 		traits = {
 			tengu_consumer

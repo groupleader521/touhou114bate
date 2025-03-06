@@ -43,7 +43,7 @@ technologies = {
 	goliath_0 = {
 		enable_equipments = {}
 		on_research_complete = {}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -86,7 +86,7 @@ technologies = {
 		ai_will_do = {
 			factor = 0.01
 			modifier = {
-				factor = 1000
+				factor = 1035
 				has_idea = ALI_goliath_trait
 			}
 			modifier = {
@@ -116,7 +116,7 @@ technologies = {
 		ai_will_do = {
 			factor = 0.01
 			modifier = {
-				factor = 1000
+				factor = 1035
 				has_idea = ALI_goliath_trait
 			}
 			modifier = {
@@ -152,7 +152,7 @@ technologies = {
 		ai_will_do = {
 			factor = 0.01
 			modifier = {
-				factor = 1000
+				factor = 1035
 				has_idea = ALI_goliath_trait
 			}
 			modifier = {
@@ -178,7 +178,7 @@ technologies = {
 		ai_will_do = {
 			factor = 0.01
 			modifier = {
-				factor = 1000
+				factor = 1035
 				has_idea = ALI_goliath_trait
 			}
 			modifier = {
@@ -198,7 +198,7 @@ technologies = {
 		enable_equipments = {
 			tengu_fighter_equipment_0
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -217,7 +217,7 @@ technologies = {
 		enable_subunits = {
 			oni_brigade
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -228,7 +228,7 @@ technologies = {
 		enable_equipments = {
 			cas_boli_equipment_0
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -244,7 +244,7 @@ technologies = {
 		enable_equipments = {
 			desires_equipment_0
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -265,7 +265,7 @@ technologies = {
 			evil_armor_brigade
 			evil_artillery_brigade
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -279,7 +279,7 @@ technologies = {
 		enable_subunits = {
 			human_brigade
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -293,7 +293,7 @@ technologies = {
 		enable_subunits = {
 			animal_brigade
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -307,7 +307,7 @@ technologies = {
 		enable_subunits = {
 			dragon_brigade
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -321,7 +321,7 @@ technologies = {
 		enable_subunits = {
 			die_brigade
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -335,7 +335,7 @@ technologies = {
 		enable_subunits = {
 			rabbit_team_brigade
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -346,7 +346,7 @@ technologies = {
 		enable_equipments = {
 			deep_sea_equipment_0
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -364,7 +364,7 @@ technologies = {
 		enable_subunits = {
 			soul_brigade
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -378,7 +378,7 @@ technologies = {
 		enable_subunits = {
 			wunv_brigade
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -408,7 +408,7 @@ technologies = {
 			ship_lotus_dp_light_battery
 			ship_lotus_airplane_launcher
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no
@@ -424,7 +424,7 @@ technologies = {
 		enable_equipments = {
 			magician_equipment_0
 		}
-		research_cost = 1000
+		research_cost = 1035
 		start_year = 3000
 		allow = {
 			always = no

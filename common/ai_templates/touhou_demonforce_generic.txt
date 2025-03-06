@@ -71,7 +71,7 @@ touhou_demonforce_armor_generic = {
 
 		target_template = {
 			#weight = 0.5
-			#match_value = 1000.0
+			#match_value = 1035.0
 			
 			support = {
 				touhou_engineer = 1

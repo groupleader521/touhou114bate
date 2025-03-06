@@ -9,7 +9,7 @@ touhou_kappa_naval_organization = {
 			OR = {
 				original_tag = KAP
 				KAP = { has_opinion = { target = FROM value > 24 } }
-				controls_state = 983
+				controls_state = 1018
 			}
 		}
 	}
@@ -25,7 +25,7 @@ touhou_siji_naval_organization = {
 			OR = {
 				original_tag = OPP
 				OPP = { has_opinion = { target = FROM value > 24 } }
-				controls_state = 998
+				controls_state = 1033
 			}
 		}
 	}
@@ -41,7 +41,7 @@ touhou_shuimi_naval_organization = {
 			OR = {
 				original_tag = TEM
 				TEM = { has_opinion = { target = FROM value > 24 } }
-				controls_state = 1002
+				controls_state = 1037
 			}
 		}
 	}
