@@ -48,7 +48,7 @@ division_template = {
 		magician_brigade = { x = 2 y = 0 }
 	}
 	support = {
-
+		touhou_engineer = { x = 0 y = 1 }
 	}
 }
 ##### OOB #####
@@ -70,7 +70,7 @@ units = {
 		name = "极限火力军"
 		location = 13381 
 		division_template = "超·火力部队"
-		start_equipment_factor = 0.01
+		start_equipment_factor = 0.1
 		start_experience_factor = 1
 	}	
 }

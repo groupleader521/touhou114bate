@@ -1110,13 +1110,13 @@ ideas = {
 			visible = {
 			}
 			picture = alice
-			cost = 250
+			cost = 150
 			removal_cost = 0
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.05
 			}
 			research_bonus = {
-				magic = 0.4
+				magic = 0.1
 			}
 			traits = { magic_researcher_trait }
 		}
@@ -1130,11 +1130,11 @@ ideas = {
 			visible = {
 			}
 			picture = paqiuli
-			cost = 250
+			cost = 150
 			removal_cost = 0
 			
 			research_bonus = {
-				magic = 0.6
+				magic = 0.15
 			}
 			traits = { magic_researcher_trait }
 		}
@@ -1150,13 +1150,13 @@ ideas = {
 			visible = {
 			}
 			picture = kappa
-			cost = 250
+			cost = 150
 			removal_cost = 0
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.05
 			}
 			research_bonus = {
-				demonforce = 0.4
+				demonforce = 0.1
 			}
 			traits = { demonforce_researcher_trait }
 		}
@@ -1172,11 +1172,11 @@ ideas = {
 			visible = {
 			}
 			picture = jue
-			cost = 250
+			cost = 150
 			removal_cost = 0
 			
 			research_bonus = {
-				demonforce = 0.6
+				demonforce = 0.15
 			}
 			
 			traits = { demonforce_researcher_trait }
@@ -1193,13 +1193,13 @@ ideas = {
 			visible = {
 			}
 			picture = huiyin
-			cost = 250
+			cost = 150
 			removal_cost = 0
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.05
 			}
 			research_bonus = {
-				wakan = 0.4
+				wakan = 0.1
 			}
 
 			traits = { wakan_researcher_trait }
@@ -1216,11 +1216,11 @@ ideas = {
 			visible = {
 			}
 			picture = boli
-			cost = 250
+			cost = 150
 			removal_cost = 0
 			
 			research_bonus = {
-				wakan = 0.6
+				wakan = 0.15
 			}
 
 			traits = { wakan_researcher_trait }

@@ -627,10 +627,10 @@ sub_units = {
 			category_special_forces
 		}		
 		
-		combat_width = 30
+		combat_width = 24
 		manpower = 1000
-		max_strength = -80
-		max_organisation = -200
+		max_strength = -40
+		max_organisation = -100
 		default_morale = 0.1
 		training_time = 180
 		weight = 2

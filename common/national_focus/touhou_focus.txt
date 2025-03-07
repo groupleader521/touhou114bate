@@ -1162,7 +1162,6 @@
 		completion_reward = {
 			air_experience = 50
 			set_country_flag = touhou_flag_air_technology
-			custom_effect_tooltip = touhou_aviation_effort_tt
 			if = {
 				limit = {
 					capital_scope = {
@@ -1476,7 +1475,6 @@
 		completion_reward = {
 			navy_experience = 50
 			set_country_flag = touhou_flag_navel_technology
-			custom_effect_tooltip = touhou_naval_effort_tt
 			if = {
 				limit = {
 					NOT = {
@@ -1835,7 +1833,6 @@
 		completion_reward = {
 			add_dynamic_modifier = { modifier = touhou_industrial_adviser }
 			add_to_variable = { var_touhou_industrial_industrial = 0.05 }
-			custom_effect_tooltip = touhou_industrial_effort_tt
 			set_country_flag = touhou_flag_industry_and_electronics_technology 
 		}
 

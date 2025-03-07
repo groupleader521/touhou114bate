@@ -1,0 +1,14 @@
+#capital = 0
+
+set_country_flag = touhou_god_of_makai_country_flag
+
+add_manpower = 20000000
+set_stability = 1
+set_war_support = 1
+set_research_slots = 0
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+
+set_popularities = {
+	fascism = 100
+}

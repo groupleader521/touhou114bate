@@ -190,67 +190,35 @@ technology_folders = {
 	air_techs_folder = {
 		available = { 
 		NOT = { has_dlc = "By Blood Alone" }
-		OR = {
-				NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-				has_country_flag = touhou_country_flag_out_first_research
-				has_country_flag = touhou_flag_air_technology
-			}
 		}
 		ledger = air
 	}
 	bba_air_techs_folder = {
 		available = {
 			has_dlc = "By Blood Alone"
-			OR = {
-				NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-				has_country_flag = touhou_country_flag_out_first_research
-				has_country_flag = touhou_flag_air_technology
-			}
 		}
 		ledger = air
 	}
 	naval_folder = {
 		available = {
 			not = { has_dlc = "Man the Guns" }
-			OR = {
-				NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-				has_country_flag = touhou_country_flag_out_first_research
-				has_country_flag = touhou_flag_navel_technology
-			}
 		}
 		ledger = navy
 	}
 	mtgnavalfolder = {
 		available = {
 			has_dlc = "Man the Guns"
-			OR = {
-				NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-				has_country_flag = touhou_country_flag_out_first_research
-				has_country_flag = touhou_flag_navel_technology
-			}
 		}
 		ledger = navy
 	}
 	mtgnavalsupportfolder = {
 		available = {
 			has_dlc = "Man the Guns"
-			OR = {
-				NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-				has_country_flag = touhou_country_flag_out_first_research
-				has_country_flag = touhou_flag_navel_technology
-			}
 		}
 		ledger = navy
 	}
 	industry_folder = {
 		ledger = civilian
-		available = {
-			OR = {
-				NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-				has_country_flag = touhou_country_flag_out_first_research
-				has_country_flag = touhou_flag_industry_and_electronics_technology 
-			}
-		}
 	}
 	land_doctrine_folder = {
 		ledger = army
@@ -273,13 +241,6 @@ technology_folders = {
 	}
 	electronics_folder = {
 		ledger = civilian
-		available = {
-			OR = {
-				NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-				has_country_flag = touhou_country_flag_out_first_research
-				has_country_flag = touhou_flag_industry_and_electronics_technology 
-			}
-		}
 	}
 }
 
