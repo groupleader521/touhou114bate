@@ -7,26 +7,26 @@ characters = {
 				large = GFX_old_Shinki
 			}
 		}
-		country_leader = {
-			expire = "11024.1.1"
-			ideology = rexism
-		}
-		country_leader = {
-			expire = "11024.1.1"
-			ideology = nazism
-		}
-		country_leader = {
-			expire = "11024.1.1"
-			ideology = gen_nazism
-		}
+		#country_leader = {
+		#	expire = "11024.1.1"
+		#	ideology = rexism
+		#}
+		#country_leader = {
+		#	expire = "11024.1.1"
+		#	ideology = nazism
+		#}
+		#country_leader = {
+		#	expire = "11024.1.1"
+		#	ideology = gen_nazism
+		#}
 		country_leader = {
 			expire = "11024.1.1"
 			ideology = fascism_ideology
 		}
-		country_leader = {
-			expire = "11024.1.1"
-			ideology = falangism
-		}
+		#country_leader = {
+		#	expire = "11024.1.1"
+		#	ideology = falangism
+		#}
 	}
 	touhou_boss_shinki_commander_0 = {
 		name = TOUHOU_Shinki_boss

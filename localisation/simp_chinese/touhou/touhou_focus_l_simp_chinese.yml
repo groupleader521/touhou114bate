@@ -94,8 +94,6 @@
  touhou_large_navy_desc:0 "我们得到的资料显示，厚重的装甲和巨大的火力，将使得舰队所向无敌。"
  touhou_submarine_effort:0 "深海猎杀者"
  touhou_submarine_effort_desc:0 "水下活动的装备？听起来像是河童们的工作。"
- early_ship_hull_submarine:0 "早期潜艇船体"
- basic_ship_hull_submarine:0 "1936潜艇船体"
  touhou_cruiser_effort:0 "海上先锋"
  touhou_cruiser_effort_desc:0 "比驱逐舰强大，比战列舰灵活，巡洋舰能够胜任双方的任务。"
  early_ship_hull_cruiser:0 "早期巡洋舰船体"

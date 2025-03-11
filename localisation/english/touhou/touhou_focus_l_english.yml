@@ -94,8 +94,6 @@ l_english:
  touhou_large_navy_desc:0 "The information we have obtained shows that the heavy armor and enormous firepower will make the fleet invincible"
  touhou_submarine_effort:0 "Deep sea hunters"
  touhou_submarine_effort_desc:0 "Equipment for underwater activities? It sounds like the work of the Kappa"
- early_ship_hull_submarine:0 "Early submarine hulls"
- basic_ship_hull_submarine:0 "1936 submarine hull"
  touhou_cruiser_effort:0 "Pioneer at Sea"
  touhou_cruiser_effort_desc:0 "More powerful than destroyers, more flexible than battleships, cruisers are capable of handling missions on both sides"
  early_ship_hull_cruiser:0 "Early cruiser hulls"
