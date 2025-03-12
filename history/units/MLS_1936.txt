@@ -47,9 +47,9 @@ division_template = {
 		touhou_magic_infantry = { x = 1 y = 3 }
 		magician_brigade = { x = 2 y = 0 }
 	}
-	support = {
-		touhou_engineer = { x = 0 y = 1 }
-	}
+	#support = {
+	#	touhou_engineer = { x = 0 y = 1 } 魔理沙没有这个类型的编制会报错
+	#}
 }
 ##### OOB #####
 units = {
