@@ -151,7 +151,7 @@ country_event = {#爱丽丝恢复了
 		hidden_effect = {
 			every_country = {
 				limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-				news_event = { hours = 6 id = news.1033 }
+				news_event = { hours = 6 id = news.998 }
 			}
 		}
 		ALI_marionette_freedom_clear_all = yes
@@ -398,7 +398,7 @@ country_event = {#梅蒂欣胜利了
 			set_country_flag = alice_be_defeated
 			every_country = {
 				limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-				news_event = { hours = 6 id = news.1035 }
+				news_event = { hours = 6 id = news.1000 }
 			}
 		}
 		if = {
@@ -433,7 +433,7 @@ country_event = {#主人胜利了
 			}
 			every_country = {
 				limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-				news_event = { hours = 6 id = news.1034 }
+				news_event = { hours = 6 id = news.999 }
 			}
 		}
 		

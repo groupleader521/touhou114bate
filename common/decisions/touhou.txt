@@ -1188,7 +1188,7 @@ touhou_god_of_makai_decisions_categories = {#抗击魔界
 		}
 
 		complete_effect = {
-			news_event = { id = news.1053 } 
+			news_event = { id = news.1018 } 
 		}
 	}
 	touhou_country_event_touhou_474 = {#GE：我们携手向前

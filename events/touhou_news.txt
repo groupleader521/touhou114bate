@@ -807,7 +807,7 @@ news_event = {#幻想乡统一——对内
 		}
 	}
 	option = {
-		name = news.1038.d
+		name = news.1038.e
 		trigger = {
 			has_government = neutrality
 		}
