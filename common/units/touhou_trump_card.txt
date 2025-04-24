@@ -48,14 +48,14 @@ sub_units = {
 		manpower = 500
 		max_organisation = 60
 		default_morale = 0.5
-		max_strength = 30
+		max_strength = 40
 		training_time = 180
 		weight = 3
 		
 		supply_consumption = 0.5
 
 		fort = {
-			attack = 1.5
+			attack = 1
 		}
 	}
 	#冠军鬼王

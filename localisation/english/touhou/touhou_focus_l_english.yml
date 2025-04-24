@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  touhou_TOUHOU_focus:0 "Gensokyo"
  
  touhou_in_self:0 "Unified Gensokyo"
@@ -333,3 +333,11 @@ l_english:
  touhou_new_fantasy:0 "New Gensokyo"
  touhou_new_fantasy_desc:0 "Through our continuous efforts, Gensokyo finally escaped the clouds of war and glowed with new vitality."
  touhou_fantasy_armaments:0 "Gensokyo Warfare"
+
+ touhou_fantasy_armaments:"Gensokyo Weapons"
+ touhou_fantasy_armaments_desc:"After in-depth research on outside technology, the sages unanimously agreed that even if the spell card rules were abolished, we would not be able to gain a decisive advantage over outsiders. We need to use our unique advantages to research an ultimate weapon, so that when war cannot be avoided even after making every effort, the outsiders will realize their mistakes!"
+ touhou_korlia_project:"Project Goliath"
+ touhou_korlia_project_desc:"The Goliath Project: Focus all of the research and development in Gensokyo on the Goliath doll, which would be enough to make the doll's combat power comparable to that of a terrifying monster. Even if outsiders develop responses for decades, they will never be able to fight against an army of such power. Ordinary dolls can be mass-produced mechanically in the Doll Workshop, but the Goliath doll, which is a powerful weapon, is currently not being produced. We found Alice, and in a bitter conversation, Alice finally accepted the reality that her work would be used as an ultimate weapon of war. We promised her that we would never let Goliath enter the war unless it was absolutely necessary, but she obviously did not believe us. This is a necessary evil"
+ #为歌莉娅提供-20%造价和10%双攻和20%穿深和装甲
+ touhou_wind_deity_project:"Wind God Project"
+ touhou_wind_deity_project_desc:"It is obviously impossible for the outsiders' air force to defeat the Wind God's favorites, but it would be too humorous to let the few Tengu fight against the mass-produced aircraft of the outsiders. We decided to combine the technology of the outside world and invite the Tengu clan to design new mass-produced military equipment to fight against the outsiders."

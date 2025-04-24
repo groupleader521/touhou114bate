@@ -83,8 +83,6 @@ touhou_boss_get_army_effect_1 = {
 			artillery_brigade = { x = 3 y = 0 }
 			artillery_brigade = { x = 3 y = 1 }
 			anti_air_brigade = { x = 3 y = 2 }
-			anti_air_brigade = { x = 3 y = 3 }
-			anti_air_brigade = { x = 3 y = 4 }
 
 			anti_tank_brigade = { x = 4 y = 0 }
 			anti_tank_brigade = { x = 4 y = 1 }
@@ -386,10 +384,10 @@ touhou_boss_get_army_effect_2 = {
 			mechanized = { x = 0 y = 3 }
 			mechanized = { x = 0 y = 4 }
 
-			modern_tank_destroyer_brigade = { x = 1 y = 0 }
-			modern_tank_destroyer_brigade = { x = 1 y = 1 }
-			modern_tank_destroyer_brigade = { x = 1 y = 2 }
-			modern_tank_destroyer_brigade = { x = 1 y = 3 }
+			mechanized = { x = 1 y = 0 }
+			mechanized = { x = 1 y = 1 }
+			mechanized = { x = 1 y = 2 }
+			mechanized = { x = 1 y = 3 }
 			modern_tank_destroyer_brigade = { x = 1 y = 4 }
 
 			modern_tank_destroyer_brigade = { x = 2 y = 0 }
@@ -405,10 +403,6 @@ touhou_boss_get_army_effect_2 = {
 			modern_sp_artillery_brigade = { x = 3 y = 4 }
 
 			modern_sp_anti_air_brigade = { x = 4 y = 0 }
-			modern_sp_anti_air_brigade = { x = 4 y = 1 }
-			modern_sp_anti_air_brigade = { x = 4 y = 2 }
-			modern_sp_anti_air_brigade = { x = 4 y = 3 }
-			modern_sp_anti_air_brigade = { x = 4 y = 4 }
 		}
 		support = {
 			engineer = { x = 0 y = 0 }
