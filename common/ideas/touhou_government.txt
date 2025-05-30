@@ -250,7 +250,7 @@ ideas = {
 
 			cost = 75
 
-			removal_cost = -75
+			removal_cost = 0
 
 			modifier = {
 			research_speed_factor = 0.15
@@ -280,7 +280,7 @@ ideas = {
 
 			cost = 75
 
-			removal_cost = -75
+			removal_cost = 0
 
 			modifier = { research_speed_factor = 0.2 }
 
@@ -307,7 +307,7 @@ ideas = {
 
 			cost = 75
 
-			removal_cost = -75
+			removal_cost = 0
 
 			modifier = {
 			industrial_capacity_factory = 0.1
@@ -335,7 +335,7 @@ ideas = {
 
 			cost = 75
 
-			removal_cost = -75
+			removal_cost = 0
 
 			modifier = {
 			industrial_capacity_factory = 0.2
@@ -362,7 +362,7 @@ ideas = {
 
 			cost = 75
 
-			removal_cost = -75
+			removal_cost = 0
 
 			modifier = {
 			industrial_capacity_factory = 0.2
@@ -391,7 +391,7 @@ ideas = {
 
 			cost = 75
 
-			removal_cost = -75
+			removal_cost = 0
 
 			modifier = {
 			production_speed_buildings_factor = 0.1
@@ -419,7 +419,7 @@ ideas = {
 
 			cost = 75
 
-			removal_cost = -75
+			removal_cost = 0
 
 			modifier = {
 			production_speed_buildings_factor = 0.15
