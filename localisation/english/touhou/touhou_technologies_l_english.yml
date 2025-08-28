@@ -1,7 +1,7 @@
 ﻿l_english:
 #幻想兵团
  goliath_0:0 "Goliath"
- goliath_0_desc:0 "Goliath is a super sized doll developed by Alice, which underwent start-up experiments in Fantasia. Due to limitations in materials and craftsmanship, it quickly lost its ability to move after start-up. The situation is different now. In order to change the status quo, Alice restarted this project. N  n \" \" \" G has begun, the first step towards ending everything. \" \" \" "
+ goliath_0_desc:0 "Goliath is a super sized doll developed by Alice, which underwent start-up experiments in Gensokyo. Due to limitations in materials and craftsmanship, it quickly lost its ability to move after start-up. The situation is different now. In order to change the status quo, Alice restarted this project. N  n \" \" \" G has begun, the first step towards ending everything. \" \" \" "
  tengu_fighter:0 "Wings of the Wind God"
  oni_champion:0 "Demon Power Composite Armor"
  cas_boli_fighter:0 "Current Yin Yang Jade"
@@ -52,7 +52,7 @@
  touhou_demonforce_air_fighter:0 "Demon Feather Demonization"
  
  touhou_support_folder:0 "Fantasy Support"
- touhou_support_folder_desc:0 "The unique method of supporting frontline troops in Fantasia. Although the process is somewhat eerie, the effect is similar to that of external support forces"
+ touhou_support_folder_desc:0 "The unique method of supporting frontline troops in Gensokyo. Although the process is somewhat eerie, the effect is similar to that of external support forces"
  touhou_tech_engineers:0 "Earth Messenger"
  touhou_tech_engineers_desc:0 "Although there are differences in the specific methods, building fortifications and removing obstacles are the primary duties of the Earth Messenger. For them, there is no such thing as difficult terrain. It should be noted that they do not provide after-sales services such as warranty"
  touhou_tech_engineers2:0 "Earth Messenger LV2"
