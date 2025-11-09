@@ -65,7 +65,7 @@
  touhou_armor_effort:0 "Gensokyo Armor"
  touhou_armor_effort_desc:0 "In the process of arming mobile equipment, the increasing thickness of armor and the increasing firepower have gradually made it a powerful weapon. Compared to external armor, this is more suitable for the residents of Gensokyo"
  touhou_special_forces:0 "Special Operations Officer"
- touhou_special_forces_desc:0 "The special forces of Fantasia are able to cope with even harsher challenges in even harsher environments"
+ touhou_special_forces_desc:0 "The special forces of Gensokyo are able to cope with even harsher challenges in even harsher environments"
 
 #空军国策树
  touhou_aviation_effort:0 "External aviation equipment"
@@ -164,7 +164,7 @@
  touhou_mingliansi_move:0 "Myouren Temple Motor Team"
  touhou_mingliansi_move_desc:0 "For unknown reasons, Myouren Temple has considerable experience in the use of mobile equipment. Although they declined the invitation to join the supplier, they still expressed their willingness to provide technical support"
  touhou_shousi_wunv:0 "The Belief of Guarding Arrows"
- touhou_shousi_wunv_desc:0 "By promoting the belief in guarding arrows throughout the township, we can gain the support of the divine race and enhance our control over the people's thoughts. This belief can even make people forget the existence of the Hakurei Miko"
+ touhou_shousi_wunv_desc:0 "By promoting the belief in guarding arrows throughout Gensokyo, we can gain the support of the divine race and enhance our control over the people's thoughts. This belief can even make people forget the existence of the Hakurei Miko"
  touhou_shenlingmiao_fu:0 "Divine Spirit Mausoleum Talismans"
  touhou_shenlingmiao_fu_desc:0 "The improved talismans of the Divine Spirit Mausoleum, although still unable to restore their former power, have shone brightly in another field. These talismans can enhance certain properties of our materials, making them easier to forge while improving the quality of the finished product, especially on artillery"
  touhou_human_publicity:0 "Promote New Gensokyo"

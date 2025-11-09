@@ -1,15 +1,15 @@
 ﻿l_english:
- alice_main_researcher:0 "Alice leads the research"
+ alice_main_researcher:0 "Alice Margatroid"
  alice_main_researcher_desc:0 "Capable of leading research on magic techniques and skilled in multiple research areas"
- paqiuli_main_researcher:0 "Patchouli led the research"
+ paqiuli_main_researcher:0 "Patchouli Knowledge"
  paqiuli_main_researcher_desc:0 "Proficient in researching magical techniques"
- kappa_main_researcher:0 "The Kappa led research"
+ kappa_main_researcher:0 "The Kappa"
  kappa_main_researcher_desc:0 "Capable of leading research on demon power technology and skilled in various research areas"
- jue_main_researcher:0 "Gu Ming's dominant research on land perception"
+ jue_main_researcher:0 "Satori Komeiji"
  jue_main_researcher_desc:0 "Proficient in researching demon power technology"
- huiyin_main_researcher:0 "Research led by Keine Kamishirasawa"
+ huiyin_main_researcher:0 "Keine Kamishirasawa"
  huiyin_main_researcher_desc:0 "Capable of leading the research of spiritual power technology and skilled in various types of research"
- boli_main_researcher:0 "Reimu Hakurei led the research"
+ boli_main_researcher:0 "Reimu Hakurei"
  boli_main_researcher_desc:0 "Proficient in spiritual power technology research"
 
  wakan_first_research:0 "Spiritual power leads"
@@ -44,7 +44,7 @@
  tactical_bomber_research:0 "Tactical bomber research speed"
  
  
- touhou_special_research:0 "Fantasy Township Technology"
+ touhou_special_research:0 "Gensokyo Technology"
  touhou_main_researcher:0 "Research leader"
  touhou_main_researcher_cost_factor:0 "Research leader expenses"
  touhou_ideology:0 "Core concept"

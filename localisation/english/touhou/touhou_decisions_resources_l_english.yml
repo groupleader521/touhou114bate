@@ -71,7 +71,7 @@
  touhou_dynamic_fantasy_live_11_tt:0"Modify §YRebuilding Gensokyo§! by:\n$MODIFIERS_ARMY_ATTACK_FACTOR$: §G+5%§!\n$MODIFIERS_ARMY_DEFENCE_FACTOR$: §G+5%§!"
  touhou_dynamic_fantasy_live_12_tt:0"Modify §YRebuilding Gensokyo§! by:\n$MODIFIER_ARMY_ORG_FACTOR$: §G+5%§!\n$MODIFIER_ARMY_STRENGTH$: §G+5%§!"
 
- fantasy_live_rebuilt_fantasy2_tt:0 "Reduce \" \" \" \" Y and rebuild Fantasia \" \" \" §\" W's profit reduction"
+ fantasy_live_rebuilt_fantasy2_tt:0 "Reduce \" \" \" \" Y and rebuild Gensokyo \" \" \" §\" W's profit reduction"
  fantasy_live3:0 "Rebuilding Gensokyo"
  fantasy_live3_desc:0 "The severe reform situation"
  fantasy_live4:0 "Rebuilding Gensokyo"

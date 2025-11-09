@@ -17,9 +17,9 @@
  goliath_equipment:0 "Goliath"
  goliath_equipment_short:0 "Goliath"
  goliath_equipment_desc:0 "A complete war weapon with a sturdy alchemy body, powerful strength, and overwhelming firepower, there is nothing on land that can hinder Alice's Goliath army"
- goliath_equipment_1:0 "Goliath Fantasy Township Test Type"
- goliath_equipment_1_short:0 "Goliath Fantasy Township Test Type"
- goliath_equipment_1_desc:0 "Goliath was a super large puppet weapon developed by Alice, but there was no war in Fantasia, so the project was quickly shelved and its performance was not commendable. Because G is aware, he cannot become numb"
+ goliath_equipment_1:0 "Goliath Test Type"
+ goliath_equipment_1_short:0 "Goliath Test Type"
+ goliath_equipment_1_desc:0 "Goliath was a super large puppet weapon developed by Alice, but there was no war in Gensokyo, so the project was quickly shelved and its performance was not commendable. Because G is aware, he cannot become numb"
  goliath_equipment_2:0 "Goliath Improved Type"
  goliath_equipment_2_short:0 "Goliath Improved Type"
  goliath_equipment_2_desc:0 "By introducing materials, processes, and other technologies from this world, and relying on experimental data from the fantasy countryside trial, Alice's initial idea was gradually realized step by step. Sometimes she would sigh, but she never stopped working. There are only winners, losers, and incompetent people who cannot make decisions in the world"
@@ -161,7 +161,7 @@
 
  lotus_equipment_0:0 "Prototype Palanquin"
  lotus_equipment_0_short:0 "Palanquin Ship"
- lotus_equipment_0_desc:0 "The Palanquin, which was remade using materials and technology from this world and Fantasia, may be old, but its advantage lies in its low cost"
+ lotus_equipment_0_desc:0 "The Palanquin, which was remade using materials and technology from this world and Gensokyo, may be old, but its advantage lies in its low cost"
 
  lotus_equipment_1:0 "Formal Palanquin"
  lotus_equipment_1_short:0 "Palanquin Ship"
