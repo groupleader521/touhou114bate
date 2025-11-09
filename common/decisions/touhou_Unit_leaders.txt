@@ -70,7 +70,7 @@ touhou_Unit_leaders = {
 		#寻找海军上将适任者-河城荷取
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 70
+		days_remove = 7
 		modifier = {
 			political_power_cost = 0.5
 		}
@@ -165,7 +165,7 @@ touhou_Unit_leaders = {
 		#寻找海军上将适任者-若鹭姬
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 70
+		days_remove = 7
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -240,7 +240,7 @@ touhou_Unit_leaders = {
 	touhou_find_sun = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 70
+		days_remove = 7
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -368,7 +368,7 @@ touhou_Unit_leaders = {
 	touhou_find_cloud = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 70
+		days_remove = 7
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -449,7 +449,7 @@ touhou_Unit_leaders = {
 	touhou_find_yakumo = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 70
+		days_remove = 7
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -532,7 +532,7 @@ touhou_Unit_leaders = {
 	touhou_find_sage = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 70
+		days_remove = 7
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -608,7 +608,7 @@ touhou_Unit_leaders = {
 	touhou_find_out = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		days_remove = 70
+		days_remove = 7
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -711,7 +711,7 @@ touhou_Unit_leaders = {
 				has_subject = FROM
 			}
 		}
-		days_remove = 70
+		days_remove = 7
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
