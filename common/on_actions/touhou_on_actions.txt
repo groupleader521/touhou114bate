@@ -1,6 +1,7 @@
 on_actions = {
 	on_startup = {
 		#开局给玩家加所有角色
+		
 		effect = {
 			ALI = {
 				set_variable = {
@@ -45,6 +46,7 @@ on_actions = {
 						original_tag = EVI
 					}
 				}
+				
 				country_event = {
 					id = touhou_communication.2
 					days = 5

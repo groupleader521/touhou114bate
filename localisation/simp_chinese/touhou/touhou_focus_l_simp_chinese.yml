@@ -120,6 +120,7 @@
 #科研线
  touhou_focus_research:0 "重视科研"
  touhou_focus_research_desc:0 "世界入之后，各方势力都在蠢蠢欲动，我们要快点掌握更先进的技术。"
+ touhou_focus_ind_tt9:0 "工业改革顾问初始5%的工厂产出。"
  touhou_focus_research_tt:0 "工业改革顾问增加5%的科研速度。（共10%）"
  touhou_focus_research_2:0 "月之头脑"
  touhou_focus_research_2_desc:0 "不知为何，八意永琳比谁都更快理解了新技术，有时她喃喃自语：“这次我是‘思兼’么？”"

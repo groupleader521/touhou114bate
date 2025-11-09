@@ -235,7 +235,7 @@ country_event = {
 				}
 				news_event = {
 					hours = 6
-					id = news.1036
+					id = nstouhou.8
 				}
 			}
 		}
@@ -302,7 +302,7 @@ country_event = {
 				}
 				news_event = {
 					hours = 6
-					id = news.1036
+					id = nstouhou.8
 				}
 			}
 		}
@@ -368,7 +368,7 @@ country_event = {
 				}
 				news_event = {
 					hours = 6
-					id = news.1036
+					id = nstouhou.8
 				}
 			}
 		}
@@ -434,7 +434,7 @@ country_event = {
 				}
 				news_event = {
 					hours = 6
-					id = news.1036
+					id = nstouhou.8
 				}
 			}
 		}
@@ -3876,7 +3876,7 @@ country_event = {
 			}
 			every_other_country = {
 				news_event = {
-					id = news.1043
+					id = nstouhou.50
 					hours = 6
 				}
 			}
@@ -3941,7 +3941,7 @@ country_event = {
 					}
 				}
 				news_event = {
-					id = news.1046
+					id = nstouhou.53
 				}
 			}
 		}
@@ -4026,7 +4026,7 @@ country_event = {
 # 					can_not_declare_war = yes
 # 					can_decline_call_to_war = no			
 # 				}
-# 				news_event = { id = news.1047 hours = 6 } 
+# 				news_event = { id = nstouhou.54 hours = 6 } 
 # 				if = {
 # 					limit = { 
 # 						OR = {
@@ -4204,7 +4204,7 @@ country_event = {
 # 				else = { country_event = generic.5 }
 # 			}
 # 			every_other_country = {
-# 				news_event = { id = news.1045 } 
+# 				news_event = { id = nstouhou.52 } 
 # 			}
 # 		}
 # 	}
@@ -4285,8 +4285,8 @@ country_event = {
 # 		custom_effect_tooltip = touhou_event_the_more
 # 		hidden_effect = {
 # 			country_event = { id = touhou_devildom.2311 days = 60 random_days = 11 }
-# 			news_event = { id = news.1049 days = 15 random_days = 2 } 
-# 			news_event = { id = news.1050 days = 30 random_days = 7 } 
+# 			news_event = { id = nstouhou.56 days = 15 random_days = 2 } 
+# 			news_event = { id = nstouhou.57 days = 30 random_days = 7 } 
 # 		}
 # 	}
 # 	option = {
@@ -4344,7 +4344,7 @@ country_event = {
 # 					can_not_declare_war = yes
 # 					can_decline_call_to_war = no			
 # 				}
-# 				news_event = { id = news.1048 hours = 6 } 
+# 				news_event = { id = nstouhou.55 hours = 6 } 
 # 			}
 # 		}
 # 	}
@@ -4408,7 +4408,7 @@ country_event = {
 # 				size = 0.5
 # 			}
 # 			every_other_country = {
-# 				news_event = { id = news.1044 hours = 6 } 
+# 				news_event = { id = nstouhou.51 hours = 6 } 
 # 			}
 # 			every_enemy_country = {
 # 				limit = { 
@@ -4477,7 +4477,7 @@ country_event = {
 			every_enemy_country = {
 				add_ideas = touhou_ideas_god_of_makai_blood
 				news_event = {
-					id = news.1051
+					id = nstouhou.58
 					hours = 6
 				}
 			}
@@ -4564,7 +4564,7 @@ country_event = {
 # 				limit = {
 # 					NOT = { has_country_flag = touhou_god_of_makai_country_flag }
 # 				}
-# 				news_event = { id = news.1052 hours = 6 } 
+# 				news_event = { id = nstouhou.59 hours = 6 } 
 # 			}
 # 		}
 # 	}
@@ -4635,7 +4635,7 @@ country_event = {
 					random_days = 7
 				}
 				news_event = {
-					id = news.1054
+					id = nstouhou.61
 					hours = 6
 				}
 			}
@@ -4684,11 +4684,11 @@ country_event = {
 # 		name = touhou_devildom.43.a
 # 		ai_chance = { base = 0 }
 # 		add_political_power = -100
-# 		news_event = { id = news.1056 hours = 6 } 
+# 		news_event = { id = nstouhou.63 hours = 6 } 
 # 		hidden_effect = {
 # 			touhou_boss_get_tech_effect_3 = yes
 # 			every_other_country = {
-# 				news_event = { id = news.10561 hours = 6 } 
+# 				news_event = { id = nstouhou.64 hours = 6 } 
 # 			}
 # 		}
 # 		touhou_boss_player_get_army_effect = yes
@@ -4702,10 +4702,10 @@ country_event = {
 # 		}
 # 		custom_effect_tooltip = touhou_tooltip_justice
 # 		add_ideas = touhou_ideas_god_of_makai_justice
-# 		news_event = { id = news.1057 hours = 6 } 
+# 		news_event = { id = nstouhou.65 hours = 6 } 
 # 		hidden_effect = {
 # 			every_other_country = {
-# 				news_event = { id = news.10571 hours = 6 } 
+# 				news_event = { id = nstouhou.66 hours = 6 } 
 # 			}
 # 		}
 # 	}
@@ -4753,10 +4753,10 @@ country_event = {
 # 		}
 # 		add_ideas = touhou_ideas_god_of_makai_justice
 # 		clr_global_flag = touhou_global_flag_redemption
-# 		news_event = { id = news.10571 hours = 6 } 
+# 		news_event = { id = nstouhou.66 hours = 6 } 
 # 		hidden_effect = {
 # 			every_other_country = {
-# 				news_event = { id = news.10571 hours = 6 } 
+# 				news_event = { id = nstouhou.66 hours = 6 } 
 # 			}
 # 		}
 # 	}
@@ -5095,7 +5095,7 @@ country_event = {
 		}
 		every_enemy_country = {
 			news_event = {
-				id = news.1055
+				id = nstouhou.62
 			}
 		}
 	}

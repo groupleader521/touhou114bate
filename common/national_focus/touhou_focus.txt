@@ -1834,6 +1834,7 @@
 			add_dynamic_modifier = { modifier = touhou_industrial_adviser }
 			add_to_variable = { var_touhou_industrial_industrial = 0.05 }
 			set_country_flag = touhou_flag_industry_and_electronics_technology 
+			custom_effect_tooltip = touhou_focus_ind_tt9
 		}
 
 		ai_will_do = {

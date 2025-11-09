@@ -86,7 +86,7 @@ touhou_devildom = {#魔神降临
 					}
 				}
 			}
-			news_event = { id = news.1035 }
+			news_event = { id = nstouhou.42 }
 		}
 	}
 }
