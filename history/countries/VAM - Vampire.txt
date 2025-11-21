@@ -1,4 +1,4 @@
-﻿capital = 1041
+﻿capital = 1071
 
 oob = "VAM_1936"
 
@@ -61,7 +61,7 @@ add_country_leader_role = {
     character = TOUHOU_Patchouli_Knowledge
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = marxism
 		traits = {
 			patchouli_book
@@ -83,7 +83,7 @@ add_country_leader_role = {
     character = TOUHOU_Remilia_Scarlet
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = centrism
 		traits = {
 			scarlet_sister
@@ -94,7 +94,7 @@ add_country_leader_role = {
     character = TOUHOU_Remilia_Scarlet
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = fascism_ideology
 		traits = {
 			scarlet_sister
@@ -148,7 +148,7 @@ add_country_leader_role = {
     character = TOUHOU_Hong_Meirin
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = liberalism
 		traits = {
 			meirin_defence

@@ -1,0 +1,25 @@
+state={
+	id=1082
+	name="STATE_MiTuZhuLinWaiWei"
+	provinces={
+		13481 13485 13487 13483 
+	}
+	history={
+		add_core_of = RAB
+		owner = RAB
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+	resources = {
+		aluminium = 50
+	}
+	manpower=1065000
+	#state_category=town
+	state_category=megalopolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

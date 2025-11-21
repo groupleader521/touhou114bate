@@ -30,13 +30,13 @@ division_template = {
 units = {
 	division = { 
 		name = "红魔馆精锐一队"
-		location = 13417 
+		location = 13423 
 		division_template = "龙虎卫小队"
 		start_experience_factor = 0.5
 	}
 }
 air_wings = {
-	1019 = { 
+	1049 = { 
 		touhou_magic_fighter_equipment_0 = {
 			owner = "VAM" 
 			amount = 40

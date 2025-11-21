@@ -4893,7 +4893,7 @@ country_event = {
 					id = touhou_devildom.4221
 				}
 			}
-			set_global_flag = touhou_global_flag_news_1053
+			set_global_flag = touhou_global_flag_news_1083
 		}
 	}
 	option = {
@@ -5056,15 +5056,15 @@ country_event = {
 		}
 		add_offsite_building = {
 			type = arms_factory
-			level = -1035
+			level = -1065
 		}
 		add_offsite_building = {
 			type = dockyard
-			level = -1035
+			level = -1065
 		}
 		add_offsite_building = {
 			type = industrial_complex
-			level = -1035
+			level = -1065
 		}
 		set_cosmetic_tag = touhou_god_of_makai_has_left_cosmetic_tag
 		set_politics = {
@@ -5510,7 +5510,7 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		add_manpower = 103500
+		add_manpower = 106500
 		add_corps_commander_role = {
 			character = TOUHOU_Trino
 			traits = {
@@ -5800,22 +5800,22 @@ country_event = {
 			build_railway = {
 				level = 5
 				start_state = 525
-				target_state = 1062
+				target_state = 1092
 			}
 			build_railway = {
 				level = 5
 				start_state = 533
-				target_state = 1036
+				target_state = 1066
 			}
 			build_railway = {
 				level = 5
 				start_state = 148
-				target_state = 1033
+				target_state = 1063
 			}
 			build_railway = {
 				level = 5
 				start_state = 529
-				target_state = 1039
+				target_state = 1069
 			}
 		}
 	}
@@ -5832,22 +5832,22 @@ country_event = {
 			build_railway = {
 				level = 5
 				start_state = 525
-				target_state = 1062
+				target_state = 1092
 			}
 			build_railway = {
 				level = 5
 				start_state = 533
-				target_state = 1036
+				target_state = 1066
 			}
 			build_railway = {
 				level = 5
 				start_state = 148
-				target_state = 1033
+				target_state = 1063
 			}
 			build_railway = {
 				level = 5
 				start_state = 529
-				target_state = 1039
+				target_state = 1069
 			}
 		}
 	}
@@ -5871,22 +5871,22 @@ country_event = {
 			build_railway = {
 				level = 5
 				start_state = 525
-				target_state = 1062
+				target_state = 1092
 			}
 			build_railway = {
 				level = 5
 				start_state = 533
-				target_state = 1036
+				target_state = 1066
 			}
 			build_railway = {
 				level = 5
 				start_state = 148
-				target_state = 1033
+				target_state = 1063
 			}
 			build_railway = {
 				level = 5
 				start_state = 529
-				target_state = 1039
+				target_state = 1069
 			}
 		}
 	}

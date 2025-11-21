@@ -13,7 +13,7 @@ on_actions = {
 				}
 				multiply_variable = {
 					var = touhou_var_alice_trait_manpower
-					value = 1035
+					value = 1065
 				}
 			}
 			EVI = {
@@ -278,6 +278,148 @@ on_actions = {
 						}
 						country_event = {
 							id = touhou_capture_character.14
+						}
+					}
+				}
+			}
+		}
+	}
+	on_peace = {
+		effect = {
+			this = {
+				if = {
+					limit = {
+						has_global_flag = touhou_global_flag_our_world
+						has_country_flag = touhou_god_of_makai_country_flag
+					}
+					TOUHOU_boss_shinki_leader = {
+						remove_country_leader_role = {
+							ideology = rexism
+						}
+						remove_country_leader_role = {
+							ideology = nazism
+						}
+						remove_country_leader_role = {
+							ideology = gen_nazism
+						}
+						remove_country_leader_role = {
+							ideology = fascism_ideology
+						}
+						remove_country_leader_role = {
+							ideology = falangism
+						}
+					}
+					touhou_boss_shinki_commander_0 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_1 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_2 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_3 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_4 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_5 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_6 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_7 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_8 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_9 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_a = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_b = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_c = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_d = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_e = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_commander_f = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_navy_0 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_navy_1 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_navy_2 = {
+						remove_unit_leader_role = yes
+					}
+					touhou_boss_shinki_navy_3 = {
+						remove_unit_leader_role = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "魔界先遣部队"
+					}
+					delete_unit_template_and_units = {
+						division_template = "魔界两栖部队"
+					}
+					delete_unit_template_and_units = {
+						division_template = "魔界主力部队"
+					}
+					delete_unit_template_and_units = {
+						division_template = "魔界精英部队"
+					}
+					delete_unit_template_and_units = {
+						division_template = "魔界突击部队"
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = -1035
+					}
+					add_offsite_building = {
+						type = dockyard
+						level = -1035
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = -1035
+					}
+					set_cosmetic_tag = touhou_god_of_makai_has_left_cosmetic_tag
+					set_politics = {
+						ruling_party = neutrality
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.3
+					}
+					leave_faction = yes
+					remove_ideas = {
+						touhou_god_of_makai_ideas_General_last_stage
+						touhou_god_of_makai_ideas_Equipment_last_stage
+						touhou_god_of_makai_ideas_Military_last_stage
+						touhou_god_of_makai_ideas_Land_combat_last_stage
+						touhou_god_of_makai_ideas_Navy_and_Air_last_stage
+						touhou_ideas_god_of_makai_other
+					}
+					# remove_mission = touhou_mission_god_of_makai_amry
+					set_global_flag = touhou_god_of_makai_has_left_global_flag					#魔界已经离去flag
+					clr_global_flag = touhou_global_flag_our_world
+					clr_country_flag = touhou_god_of_makai_country_flag					#清除魔界国家flag
+					every_other_country = {
+						news_event = {
+							id = nstouhou.62
 						}
 					}
 				}

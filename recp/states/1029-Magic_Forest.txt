@@ -1,0 +1,31 @@
+state={
+	id=1089
+	name="STATE_MoFaSenLin"
+	provinces={
+		13531 13533 13408 13409 13412
+	}
+
+	history={
+		add_core_of = ALI
+		owner = ALI
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		victory_points = {
+			13409 50 
+		}
+
+	}
+	resources = {
+		steel = 65
+	}
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	#state_category=town
+	state_category=megalopolis
+	local_supplies=0.0 
+}

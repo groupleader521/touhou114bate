@@ -784,7 +784,7 @@ focus_tree = {
 		prerequisite = { focus = touhou_RAB_out_world }
 		available = { 
 			is_subject = no 
-			has_manpower > 10350
+			has_manpower > 10650
 		}
 		bypass = {
 		}
@@ -798,12 +798,12 @@ focus_tree = {
 		relative_position_id = touhou_RAB_out_world
 		cost = 5
 		select_effect = {
-			add_manpower = -10350
+			add_manpower = -10650
 		}
 		
 		completion_reward = {
 			custom_effect_tooltip = touhou_RAB_permeate_society_tooltip
-			JAP = { add_manpower = 10350 }
+			JAP = { add_manpower = 10650 }
 		}
 	}
 	focus = {#军政渗透

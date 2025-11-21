@@ -37,19 +37,19 @@ units = {
 
 	division = { 
 		name = "地狱猫小队"
-		location = 13508 
+		location = 13514 
 		division_template = "地灵殿守卫"
 		start_experience_factor = 0.2
 	}
 	division = { 
 		name = "地狱鸦小队"
-		location = 13508
+		location = 13514
 		division_template = "地灵殿守卫"
 		start_experience_factor = 0.2
 	}
 }
 air_wings = {
-	1032 = { 
+	1062 = { 
 		touhou_demonforce_fighter_equipment_0 = {
 			owner = "DLD" 
 			amount = 40

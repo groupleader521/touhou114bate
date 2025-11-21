@@ -48,13 +48,13 @@ division_template = {
 units = {
 	division = { 
 		name = "河童两栖小队"
-		location = 13403 
+		location = 13409 
 		division_template = "河童两栖小队"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "河童水下小队"
-		location = 13403 
+		location = 13409 
 		division_template = "河童两栖小队"
 		start_experience_factor = 0.1
 	}

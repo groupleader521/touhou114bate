@@ -9,7 +9,7 @@ touhou_tengu_aircraft_organization = { # 天狗航空
 			OR = {
 				original_tag = TEN
 				TEN = { has_opinion = { target = FROM value > 24 } }
-				controls_state = 1019
+				controls_state = 1049
 			}
 		}
 	}
@@ -44,7 +44,7 @@ touhou_boli_aircraft_organization = { # 博丽航空
 			OR = {
 				original_tag = BLI
 				BLI = { has_opinion = { target = FROM value > 24 } }
-				controls_state = 1036
+				controls_state = 1066
 			}
 		}
 	}
@@ -80,7 +80,7 @@ touhou_miko_aircraft_organization = { # 神子航空
 			OR = {
 				original_tag = DES
 				DES = { has_opinion = { target = FROM value > 24 } }
-				controls_state = 1034
+				controls_state = 1064
 			}
 		}
 	}

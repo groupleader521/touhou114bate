@@ -1,4 +1,4 @@
-﻿capital = 1033
+﻿capital = 1063
 
 oob = "OPP_1936"
 
@@ -68,7 +68,7 @@ add_country_leader_role = {
     character = TOUHOU_Shikieiki_Yamaxanadu
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = centrism
 		traits = {
 			siji
@@ -79,7 +79,7 @@ add_country_leader_role = {
     character = TOUHOU_Shikieiki_Yamaxanadu
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = fascism_ideology
 		traits = {
 			siji
@@ -90,7 +90,7 @@ add_country_leader_role = {
     character = TOUHOU_Shikieiki_Yamaxanadu
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = liberalism
 		traits = {
 			siji
@@ -101,7 +101,7 @@ add_country_leader_role = {
     character = TOUHOU_Shikieiki_Yamaxanadu
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = marxism
 		traits = {
 			siji

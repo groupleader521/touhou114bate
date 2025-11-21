@@ -70,7 +70,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			anti_air_attack = 33
-			build_cost_ic = 1020
+			build_cost_ic = 1050
 		}
 		build_cost_resources = {
 			steel = 2

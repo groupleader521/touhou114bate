@@ -19,7 +19,7 @@ touhou_trump_card = {
 				original_tag = HUM
 				AND = {
 					AND = {
-						controls_state = 1040
+						controls_state = 1070
 						HUM = { exists = no }
 					}	
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
@@ -54,7 +54,7 @@ touhou_trump_card = {
 		visible = {
 			OR = {
 				AND = {
-					controls_state = 1029
+					controls_state = 1059
 					ALI = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -89,7 +89,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = ALI
 				AND = {
-					controls_state = 1029
+					controls_state = 1059
 					ALI = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -125,7 +125,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = TEN
 				AND = {
-					controls_state = 1019
+					controls_state = 1049
 					TEN = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -159,7 +159,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = HEL
 				AND = {
-					controls_state = 1031
+					controls_state = 1061
 					HEL = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -193,7 +193,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = BLI
 				AND = {
-					controls_state = 1036
+					controls_state = 1066
 					BLI = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -227,7 +227,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = DES
 				AND = {
-					controls_state = 1034
+					controls_state = 1064
 					DES = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -262,7 +262,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = DLD
 				AND = {
-					controls_state = 1032
+					controls_state = 1062
 					DLD = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -296,7 +296,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = VAM
 				AND = {
-					controls_state = 1041
+					controls_state = 1071
 					VAM = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -331,7 +331,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = OPP
 				AND = {
-					controls_state = 1033
+					controls_state = 1063
 					OPP = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -365,7 +365,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = RAB
 				AND = {
-					controls_state = 1039
+					controls_state = 1069
 					RAB = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -403,7 +403,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = KAP
 				AND = {
-					controls_state = 1018
+					controls_state = 1048
 					KAP = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -438,7 +438,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = HAK
 				AND = {
-					controls_state = 1035
+					controls_state = 1065
 					HAK = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -473,7 +473,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = SSS
 				AND = {
-					controls_state = 1042
+					controls_state = 1072
 					SSS = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -501,7 +501,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = TEM
 				TEM = { has_opinion = { target = ROOT value > 24 } }
-				controls_state = 1037
+				controls_state = 1067
 			}
 			has_tech = basic_ship_hull_cruiser
 			has_tech = basic_ship_hull_light			
@@ -517,7 +517,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = TEM
 				AND = {
-					controls_state = 1037
+					controls_state = 1067
 					TEM = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}
@@ -552,7 +552,7 @@ touhou_trump_card = {
 			OR = {
 				original_tag = MLS
 				AND = {
-					controls_state = 1028
+					controls_state = 1058
 					MLS = { exists = no }
 					NOT= { has_country_flag = touhou_country_flag_out_first_research }
 				}

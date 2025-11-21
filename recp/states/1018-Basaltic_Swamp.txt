@@ -1,0 +1,32 @@
+state={
+	id=1078
+	name="STATE_XuanWuZe"
+	provinces={
+		13422 13427 13430 13433 13498 
+	}
+
+	history={
+		add_core_of = KAP
+		owner = KAP
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = {
+			13433 50 
+		}
+
+	}
+	resources = {
+		steel = 10
+		aluminium = 62
+		oil = 7
+	}
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	#state_category=city
+	state_category=megalopolis
+	local_supplies=0.0 
+}

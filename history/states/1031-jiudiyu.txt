@@ -1,8 +1,8 @@
 state={
-	id=1031
+	id=1061
 	name="STATE_JiuDu"
 	provinces={
-		13519 13490 13480 
+		13525 13496 13486 
 	}
 
 	history={
@@ -15,13 +15,13 @@ state={
 			air_base = 1
 		}
 		victory_points = {
-			13480 50 
+			13486 50 
 		}
 	}
 	resources = {
 		steel = 40
 	}
-	manpower=1035000
+	manpower=1065000
 	buildings_max_level_factor=1.000
 	#state_category=city
 	state_category=megalopolis

@@ -49,20 +49,20 @@ units = {
 
 	division = { 
 		name = "天狗村落守卫"
-		location = 13425 
+		location = 13431 
 		division_template = "白狼天狗警卫队"
 		start_experience_factor = 0.3
 	}
 	division = { 
 		name = "妖怪山守卫"
-		location = 13425 
+		location = 13431 
 		division_template = "白狼天狗警卫队"
 		start_experience_factor = 0.3
 	}
 }
 
 air_wings = {
-	1019 = { 
+	1049 = { 
 		touhou_demonforce_fighter_equipment_0 = {
 			owner = "TEN" 
 			amount = 40

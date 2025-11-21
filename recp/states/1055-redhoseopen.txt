@@ -1,0 +1,20 @@
+state={
+	id=1085
+	name="STATE_HongMoGuanRuKou"
+	provinces={
+		13434 13445 
+	}
+	history={
+		add_core_of = MLS
+		add_core_of = VAM
+		owner = VAM
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	#state_category=town
+	state_category=megalopolis
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

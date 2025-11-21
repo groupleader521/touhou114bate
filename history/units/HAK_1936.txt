@@ -38,13 +38,13 @@ units = {
 
 	division = { 
 		name = "白玉楼守卫队"
-		location = 13456 
+		location = 13462 
 		division_template = "亡灵大队"
 		start_experience_factor = 0.1
 	}
 }
 air_wings = {
-	1035 = { 
+	1065 = { 
 		touhou_demonforce_fighter_equipment_0 = {
 			owner = "HAK" 
 			amount = 40

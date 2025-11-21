@@ -1,4 +1,4 @@
-﻿capital = 1039
+﻿capital = 1069
 
 oob = "RAB_1936"
 
@@ -66,7 +66,7 @@ add_country_leader_role = {
     character = TOUHOU_Houraisan_Kaguya
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = centrism
 		traits = {
 			huiye
@@ -87,7 +87,7 @@ add_country_leader_role = {
     character = TOUHOU_Yagokoro_Eirin
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = fascism_ideology
 		traits = {
 			yonglin
@@ -109,7 +109,7 @@ add_country_leader_role = {
     character = TOUHOU_Reisen_Udongein_Inaba
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = liberalism
 		traits = {
 			linxian
@@ -150,7 +150,7 @@ add_country_leader_role = {
     character = TOUHOU_Inaba_Tewi
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = marxism
 		traits = {
 			yinpan

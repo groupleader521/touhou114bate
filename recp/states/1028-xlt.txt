@@ -1,0 +1,29 @@
+state={
+	id=1088
+	name="STATE_XiangLinTang"
+	provinces={
+		13411 13491 
+	}
+
+	history={
+		add_core_of = MLS
+		owner = MLS
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = {
+			13411 50 
+		}
+	}
+	resources = {
+		steel = 33
+	}
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	#state_category=city
+	state_category=megalopolis
+	local_supplies=0.0 
+}

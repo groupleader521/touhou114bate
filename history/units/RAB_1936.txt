@@ -62,20 +62,20 @@ units = {
 
 	division = { 
 		name = "水兔"
-		location = 13446
+		location = 13452
 		division_template = "水兔"
 		start_experience_factor = 0.2
 	}
 	
 	division = { 
 		name = "山兔"
-		location = 13446
+		location = 13452
 		division_template = "山兔"
 		start_experience_factor = 0.2
 	}
 }
 air_wings = {
-	1039 = { 
+	1069 = { 
 		touhou_demonforce_fighter_equipment_0 = {
 			owner = "RAB" 
 			amount = 40

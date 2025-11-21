@@ -1,0 +1,24 @@
+state={
+	id=1075
+	name="STATE_ShouDao"
+	provinces={
+		13501 13507 13509 13514 
+	}
+
+	history={
+		add_core_of = BLI
+		add_core_of = SSS
+		owner = BLI
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	#state_category=rural
+	state_category=megalopolis
+	local_supplies=0.0 
+}

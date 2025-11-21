@@ -1,4 +1,4 @@
-﻿capital = 1042
+﻿capital = 1072
 
 oob = "SSS_1936"
 
@@ -58,7 +58,7 @@ add_country_leader_role = {
     character = TOUHOU_Kochiya_Sanae
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = liberalism
 		traits = {
 			zaomiao
@@ -80,7 +80,7 @@ add_country_leader_role = {
     character = TOUHOU_Yasaka_Kanako
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = centrism
 		traits = {
 			shennaizi
@@ -91,7 +91,7 @@ add_country_leader_role = {
     character = TOUHOU_Yasaka_Kanako
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = fascism_ideology
 		traits = {
 			shennaizi
@@ -134,7 +134,7 @@ add_country_leader_role = {
     character = TOUHOU_Moriya_Suwako
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = marxism
 		traits = {
 			fangquzi

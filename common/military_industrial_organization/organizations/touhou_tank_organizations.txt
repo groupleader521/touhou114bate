@@ -9,7 +9,7 @@ touhou_alice_tank_organization = {
 			OR = {
 				original_tag = ALI
 				ALI = { has_opinion = { target = FROM value > 24 } }
-				controls_state = 1029
+				controls_state = 1059
 			}
 		}
 	}
@@ -37,7 +37,7 @@ touhou_kappa_tank_organization = {
 			OR = {
 				original_tag = KAP
 				KAP = { has_opinion = { target = FROM value > 24 } }
-				controls_state = 1018
+				controls_state = 1048
 			}
 		}
 	}

@@ -8,23 +8,23 @@ characters = {
 			}
 		}
 		#country_leader = {
-		#	expire = "11024.1.1"
+		#	expire = "11054.1.1"
 		#	ideology = rexism
 		#}
 		#country_leader = {
-		#	expire = "11024.1.1"
+		#	expire = "11054.1.1"
 		#	ideology = nazism
 		#}
 		#country_leader = {
-		#	expire = "11024.1.1"
+		#	expire = "11054.1.1"
 		#	ideology = gen_nazism
 		#}
 		country_leader = {
-			expire = "11024.1.1"
+			expire = "11054.1.1"
 			ideology = fascism_ideology
 		}
 		#country_leader = {
-		#	expire = "11024.1.1"
+		#	expire = "11054.1.1"
 		#	ideology = falangism
 		#}
 	}

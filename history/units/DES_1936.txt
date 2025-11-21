@@ -38,19 +38,19 @@ units = {
 
 	division = { 
 		name = "道士"
-		location = 13428 
+		location = 13434 
 		division_template = "道士"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "仙人"
-		location = 13428 
+		location = 13434 
 		division_template = "道士"
 		start_experience_factor = 0.1
 	}
 }
 air_wings = {
-	1034 = { 
+	1064 = { 
 		touhou_wakan_fighter_equipment_0 = {
 			owner = "DES" 
 			amount = 40

@@ -1,0 +1,29 @@
+state={
+	id=1072
+	name="STATE_YaoGuaiShanShouShiShenShe"
+	provinces={
+		13529 13528 13531 
+	}
+
+	history={
+		add_core_of = SSS
+		owner = SSS
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = {
+			13531 50 
+		}
+	}
+	resources = {
+		steel = 26
+	}
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	#state_category=city
+	state_category=megalopolis
+	local_supplies=0.0 
+}

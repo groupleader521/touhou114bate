@@ -1,0 +1,25 @@
+state={
+	id=1080
+	name="STATE_TaiYangHuaTian"
+	provinces={
+		13469 13470 13471 13473 13475 13477 13482 
+	}
+	history={
+		add_core_of = ALI
+		owner = ALI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13475 30 
+		}	
+	}
+	resources = {
+		rubber = 9
+	}
+	manpower=1065000
+	#state_category=town
+	state_category=megalopolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

@@ -1,0 +1,25 @@
+state={
+	id=1086
+	name="STATE_WuZhiHuBei"
+	provinces={
+		13432 13437 
+	}
+	history={
+		add_core_of = EVI
+		add_core_of = VAM
+		owner = VAM
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	resources = {
+		oil = 45
+	}
+	#state_category=rural
+	state_category=megalopolis
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

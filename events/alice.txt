@@ -12,7 +12,7 @@ country_event = {#启动最后的备用人偶
 	option = {
 		name = alice.0.a
 		ai_chance = { base = 1 }
-		add_manpower = 10350
+		add_manpower = 10650
 		hidden_effect = {
 			capital_scope = {
 				create_unit = {
@@ -353,7 +353,7 @@ country_event = {#梅蒂欣胜利了
 			character = TOUHOU_Medicine_Melancholy
 			promote_leader = yes
 			country_leader = {
-				expire = "11035.1.1"
+				expire = "11065.1.1"
 				ideology = fascism_ideology
 				traits = {
 					marionette_freedom
@@ -364,7 +364,7 @@ country_event = {#梅蒂欣胜利了
 			character = TOUHOU_Medicine_Melancholy
 			promote_leader = yes
 			country_leader = {
-				expire = "11035.1.1"
+				expire = "11065.1.1"
 				ideology = centrism
 				traits = {
 					marionette_freedom
@@ -375,7 +375,7 @@ country_event = {#梅蒂欣胜利了
 			character = TOUHOU_Medicine_Melancholy
 			promote_leader = yes
 			country_leader = {
-				expire = "11035.1.1"
+				expire = "11065.1.1"
 				ideology = marxism
 				traits = {
 					marionette_freedom
@@ -386,7 +386,7 @@ country_event = {#梅蒂欣胜利了
 			character = TOUHOU_Medicine_Melancholy
 			promote_leader = yes
 			country_leader = {
-				expire = "11035.1.1"
+				expire = "11065.1.1"
 				ideology = liberalism
 				traits = {
 					marionette_freedom
@@ -492,7 +492,7 @@ country_event = {#AI爱丽丝不造兵不生产人口的补救措施
 		days = 90
 	}
 	immediate = {
-		add_manpower = 10350
+		add_manpower = 10650
 		if = {
 			limit = { has_equipment = { touhou_magic_infantry_equipment > 2000 } }
 			add_equipment_to_stockpile = {

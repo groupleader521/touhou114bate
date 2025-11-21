@@ -1693,4 +1693,50 @@ every_possible_country = {
 			}
 		}
 	}
+
+
+
+	if = {
+		limit = {
+			NOT = {
+				has_character = TOUHOU_Yakumo_Ran
+			}
+		}
+		generate_character = {
+			token_base = TOUHOU_Yakumo_Ran
+			name = TOUHOU_Yakumo_Ran
+			portraits = {
+				civilian = {
+					large = GFX_Yakumo_Ran
+					small = GFX_Yakumo_Ran
+				}
+				army = {
+					large = GFX_Yakumo_Ran
+					small = GFX_Yakumo_Ran
+				}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				has_character = TOUHOU_Chen
+			}
+		}
+		generate_character = {
+			token_base = TOUHOU_Chen
+			name = TOUHOU_Chen
+			portraits = {
+				civilian = {
+					large = GFX_Chen
+					small = GFX_Chen
+				}
+				army = {
+					large = GFX_Chen
+					small = GFX_Chen
+				}
+			}
+		}
+	}
 }

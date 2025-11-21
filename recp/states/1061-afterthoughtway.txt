@@ -1,0 +1,19 @@
+state={
+	id=1091
+	name="STATE_ZaiSiZhiDao"
+	provinces={
+		13414 13416 13429
+	}
+	history={
+		add_core_of = OPP
+		owner = OPP
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=1065000
+	#state_category=pastoral
+	state_category=megalopolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

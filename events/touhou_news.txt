@@ -9,22 +9,22 @@ news_event = {
 	
 	trigger = {
 		NOT = {
-				1062 = { is_controlled_by = ALI }
-				1062 = { is_controlled_by = DES }
-				1062 = { is_controlled_by = HAK }
-				1062 = { is_controlled_by = DLD }
-				1062 = { is_controlled_by = HEL }
-				1062 = { is_controlled_by = SSS }
-				1062 = { is_controlled_by = OPP }
-				1062 = { is_controlled_by = RAB }
-				1062 = { is_controlled_by = TEM }
-				1062 = { is_controlled_by = BLI }
-				1062 = { is_controlled_by = KAP }
-				1062 = { is_controlled_by = TEN }
-				1062 = { is_controlled_by = HUM }
-				1062 = { is_controlled_by = VAM }
-				1062 = { is_controlled_by = MLS }
-				1062 = { is_controlled_by = EVI }
+				1092 = { is_controlled_by = ALI }
+				1092 = { is_controlled_by = DES }
+				1092 = { is_controlled_by = HAK }
+				1092 = { is_controlled_by = DLD }
+				1092 = { is_controlled_by = HEL }
+				1092 = { is_controlled_by = SSS }
+				1092 = { is_controlled_by = OPP }
+				1092 = { is_controlled_by = RAB }
+				1092 = { is_controlled_by = TEM }
+				1092 = { is_controlled_by = BLI }
+				1092 = { is_controlled_by = KAP }
+				1092 = { is_controlled_by = TEN }
+				1092 = { is_controlled_by = HUM }
+				1092 = { is_controlled_by = VAM }
+				1092 = { is_controlled_by = MLS }
+				1092 = { is_controlled_by = EVI }
 		}
 		NOT = { has_global_flag = RAB_has_been_open }
 	}
@@ -59,22 +59,22 @@ news_event = {
 	trigger = {
 		NOT = {
 			OR = {
-				1033 = { is_controlled_by = ALI }
-				1033 = { is_controlled_by = DES }
-				1033 = { is_controlled_by = HAK }
-				1033 = { is_controlled_by = DLD }
-				1033 = { is_controlled_by = HEL }
-				1033 = { is_controlled_by = SSS }
-				1033 = { is_controlled_by = OPP }
-				1033 = { is_controlled_by = RAB }
-				1033 = { is_controlled_by = TEM }
-				1033 = { is_controlled_by = BLI }
-				1033 = { is_controlled_by = KAP }
-				1033 = { is_controlled_by = TEN }
-				1033 = { is_controlled_by = HUM }
-				1033 = { is_controlled_by = VAM }
-				1033 = { is_controlled_by = MLS }
-				1033 = { is_controlled_by = EVI }
+				1063 = { is_controlled_by = ALI }
+				1063 = { is_controlled_by = DES }
+				1063 = { is_controlled_by = HAK }
+				1063 = { is_controlled_by = DLD }
+				1063 = { is_controlled_by = HEL }
+				1063 = { is_controlled_by = SSS }
+				1063 = { is_controlled_by = OPP }
+				1063 = { is_controlled_by = RAB }
+				1063 = { is_controlled_by = TEM }
+				1063 = { is_controlled_by = BLI }
+				1063 = { is_controlled_by = KAP }
+				1063 = { is_controlled_by = TEN }
+				1063 = { is_controlled_by = HUM }
+				1063 = { is_controlled_by = VAM }
+				1063 = { is_controlled_by = MLS }
+				1063 = { is_controlled_by = EVI }
 			}
 		}
 		NOT = { has_global_flag = RAB_has_been_open }
@@ -114,22 +114,22 @@ news_event = {
 	trigger = {
 		NOT = {
 			OR = {
-				1039 = { is_controlled_by = ALI }
-				1039 = { is_controlled_by = DES }
-				1039 = { is_controlled_by = HAK }
-				1039 = { is_controlled_by = DLD }
-				1039 = { is_controlled_by = HEL }
-				1039 = { is_controlled_by = SSS }
-				1039 = { is_controlled_by = OPP }
-				1039 = { is_controlled_by = RAB }
-				1039 = { is_controlled_by = TEM }
-				1039 = { is_controlled_by = BLI }
-				1039 = { is_controlled_by = KAP }
-				1039 = { is_controlled_by = TEN }
-				1039 = { is_controlled_by = HUM }
-				1039 = { is_controlled_by = VAM }
-				1039 = { is_controlled_by = MLS }
-				1039 = { is_controlled_by = EVI }
+				1069 = { is_controlled_by = ALI }
+				1069 = { is_controlled_by = DES }
+				1069 = { is_controlled_by = HAK }
+				1069 = { is_controlled_by = DLD }
+				1069 = { is_controlled_by = HEL }
+				1069 = { is_controlled_by = SSS }
+				1069 = { is_controlled_by = OPP }
+				1069 = { is_controlled_by = RAB }
+				1069 = { is_controlled_by = TEM }
+				1069 = { is_controlled_by = BLI }
+				1069 = { is_controlled_by = KAP }
+				1069 = { is_controlled_by = TEN }
+				1069 = { is_controlled_by = HUM }
+				1069 = { is_controlled_by = VAM }
+				1069 = { is_controlled_by = MLS }
+				1069 = { is_controlled_by = EVI }
 			}
 		}
 		NOT = { has_global_flag = RAB_has_been_open }
@@ -169,22 +169,22 @@ news_event = {
 	trigger = {
 		NOT = {
 			OR = {
-				1057 = { is_controlled_by = ALI }
-				1057 = { is_controlled_by = DES }
-				1057 = { is_controlled_by = HAK }
-				1057 = { is_controlled_by = DLD }
-				1057 = { is_controlled_by = HEL }
-				1057 = { is_controlled_by = SSS }
-				1057 = { is_controlled_by = OPP }
-				1057 = { is_controlled_by = RAB }
-				1057 = { is_controlled_by = TEM }
-				1057 = { is_controlled_by = BLI }
-				1057 = { is_controlled_by = KAP }
-				1057 = { is_controlled_by = TEN }
-				1057 = { is_controlled_by = HUM }
-				1057 = { is_controlled_by = VAM }
-				1057 = { is_controlled_by = MLS }
-				1057 = { is_controlled_by = EVI }
+				1087 = { is_controlled_by = ALI }
+				1087 = { is_controlled_by = DES }
+				1087 = { is_controlled_by = HAK }
+				1087 = { is_controlled_by = DLD }
+				1087 = { is_controlled_by = HEL }
+				1087 = { is_controlled_by = SSS }
+				1087 = { is_controlled_by = OPP }
+				1087 = { is_controlled_by = RAB }
+				1087 = { is_controlled_by = TEM }
+				1087 = { is_controlled_by = BLI }
+				1087 = { is_controlled_by = KAP }
+				1087 = { is_controlled_by = TEN }
+				1087 = { is_controlled_by = HUM }
+				1087 = { is_controlled_by = VAM }
+				1087 = { is_controlled_by = MLS }
+				1087 = { is_controlled_by = EVI }
 			}
 		}
 		NOT = { has_global_flag = BLI_has_been_open }
@@ -956,16 +956,6 @@ news_event = {#新绥靖
 	}
 	option = {
 		name = nstouhou.54.a
-	}
-}
-news_event = {#新战术
-	id = nstouhou.56
-	title = nstouhou.56.t
-	desc = nstouhou.56.d
-	picture = GFX_news_event_003
-	is_triggered_only = yes
-	option = {
-		name = nstouhou.56.a
 	}
 }
 news_event = {#新战术

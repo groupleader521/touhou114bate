@@ -1,0 +1,31 @@
+state={
+	id=1065
+	name="STATE_MingFu"
+	provinces={
+		13503 13533 13489 13486
+	}
+
+	history={
+		add_core_of = HAK
+		owner = HAK
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = {
+			13486 50 
+		}
+
+	}
+	resources = {
+		steel = 40
+		rubber = 15
+	}
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	#state_category=city
+	state_category=megalopolis
+	local_supplies=0.0 
+}

@@ -1,8 +1,8 @@
 state={
-	id=1061
+	id=1091
 	name="STATE_ZaiSiZhiDao"
 	provinces={
-		13384 13386 13399
+		13390 13392 13405
 	}
 	history={
 		add_core_of = OPP
@@ -11,7 +11,7 @@ state={
 			infrastructure = 1
 		}
 	}
-	manpower=1035000
+	manpower=1065000
 	#state_category=pastoral
 	state_category=megalopolis
 	buildings_max_level_factor=1.000

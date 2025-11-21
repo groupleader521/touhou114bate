@@ -1,0 +1,23 @@
+state={
+	id=1076
+	name="STATE_RenLiNongYeQu"
+	provinces={
+		13438 13508 
+	}
+
+	history={
+		add_core_of = HUM
+		add_core_of = TEM
+		owner = HUM
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+
+	manpower=500000
+	buildings_max_level_factor=1.000
+	#state_category=rural
+	state_category=megalopolis
+	local_supplies=0.0 
+}

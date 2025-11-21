@@ -363,7 +363,7 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			ALI = { OR = { exists = no is_subject_of = VAM is_in_faction_with = VAM NOT = { controls_state = 1054 } } }
+			ALI = { OR = { exists = no is_subject_of = VAM is_in_faction_with = VAM NOT = { controls_state = 1084 } } }
 		}
 		
 		ai_will_do = {
@@ -749,7 +749,7 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 40
-			add_manpower = 103500
+			add_manpower = 106500
 		}
 	}
 	focus = {#“弗拉德”归来

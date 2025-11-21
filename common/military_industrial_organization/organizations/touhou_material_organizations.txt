@@ -9,7 +9,7 @@ touhou_uuz_materiel_organization = {
 			OR = {
 				original_tag = HAK
 				HAK = { has_opinion = { target = FROM value > 24 } }
-				controls_state = 1035
+				controls_state = 1065
 			}
 		}
 	}
@@ -128,7 +128,7 @@ touhou_wunv_materiel_organization = {
 			OR = {
 				original_tag = SSS
 				SSS = { has_opinion = { target = FROM value > 24 } }
-				controls_state = 1042
+				controls_state = 1072
 			}
 		}
 	}
@@ -148,7 +148,7 @@ touhou_molisha_materiel_organization = {
 			OR = {
 				original_tag = MLS
 				MLS = { has_opinion = { target = FROM value > 24 } }
-				controls_state = 1028
+				controls_state = 1058
 			}
 		}
 	}

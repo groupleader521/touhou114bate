@@ -14,32 +14,32 @@ opinion_modifiers = {
 	
 	human_molisha_human = {
 		value = 30
-		months = 1035
+		months = 1065
 		decay = 1
 	}
 	moster_molisha_human = {
 		value = -30
-		months = 1035
+		months = 1065
 		decay = 1
 	}
 	human_molisha_moster = {
 		value = -30
-		months = 1035
+		months = 1065
 		decay = 1
 	}
 	moster_molisha_moster = {
 		value = 30
-		months = 1035
+		months = 1065
 		decay = 1
 	}
 	equal_molisha = {
 		value = -30
-		months = 1035
+		months = 1065
 		decay = 1
 	}
 	touhou_All = {
 		value = 100
-		months = 1035
+		months = 1065
 		decay = 1
 	}
 	has_help_touhou_0 = {

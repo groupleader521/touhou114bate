@@ -154,7 +154,7 @@ focus_tree = {
 				}
 			}
 			EVI = {
-				set_state_owner = 1054 set_state_controller = 1054
+				set_state_owner = 1084 set_state_controller = 1084
 				if = {
 					limit = { is_in_faction = no }
 					add_ai_strategy = {
@@ -425,11 +425,11 @@ focus_tree = {
 			is_subject = no
 			OR = {
 				VAM = { exists = yes is_in_faction_with = ALI }
-				controls_state = 1041
+				controls_state = 1071
 			}
 			OR = {
 				MLS = { exists = yes is_in_faction_with = ALI }
-				controls_state = 1028
+				controls_state = 1058
 			}
 		}
 		bypass = {

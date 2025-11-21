@@ -1,8 +1,8 @@
 state={
-	id=1021
+	id=1051
 	name="STATE_YaoGuaiShanBeiBu"
 	provinces={
-		13419 13422 13430 13502 
+		13425 13428 13436 13508 
 	}
 
 	history={
@@ -13,13 +13,13 @@ state={
 			infrastructure = 1
 		}
 		victory_points = {
-			13502 20
+			13508 20
 		}
 	}
 	resources = {
 		aluminium = 20
 	}
-	manpower=1035000
+	manpower=1065000
 	buildings_max_level_factor=1.000
 	#state_category=rural
 	state_category=megalopolis

@@ -1,0 +1,23 @@
+state={
+	id=1079
+	name="STATE_ShouGongYeQu"
+	provinces={
+		13431 13436 13500 
+	}
+
+	history={
+		add_core_of = HUM
+		add_core_of = MLS
+		owner = HUM
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+
+	manpower=500000
+	buildings_max_level_factor=1.000
+	#state_category=rural
+	state_category=megalopolis
+	local_supplies=0.0 
+}

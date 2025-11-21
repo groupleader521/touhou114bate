@@ -21,7 +21,7 @@ touhou_reform = {#五大改革
 		days_remove = 90
 
 		ai_will_do = {
-			factor = 1035
+			factor = 1065
 		}
 
 		modifier = {
@@ -55,7 +55,7 @@ touhou_reform = {#五大改革
 		days_remove = 90
 		
 		ai_will_do = {
-			factor = 1035
+			factor = 1065
 		}
 
 		modifier = {
@@ -89,7 +89,7 @@ touhou_reform = {#五大改革
 		days_remove = 90
 		
 		ai_will_do = {
-			factor = 1035
+			factor = 1065
 		}
 
 		modifier = {
@@ -123,7 +123,7 @@ touhou_reform = {#五大改革
 		days_remove = 90
 		
 		ai_will_do = {
-			factor = 1035
+			factor = 1065
 		}
 
 		modifier = {
@@ -159,7 +159,7 @@ touhou_reform = {#五大改革
 		days_remove = 90
 		
 		ai_will_do = {
-			factor = 1035
+			factor = 1065
 		}
 
 		modifier = {
@@ -471,7 +471,7 @@ touhou_unify = {
 		}
 
 		ai_will_do = {
-			factor = 1035
+			factor = 1065
 		}
 	}
 	touhou_surrender_to_out = {#与外界人和谈
@@ -490,97 +490,97 @@ touhou_unify = {
 			is_ai = no
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_surrender_to_out
-				1029 = {
+				1059 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1036 = {
+				1066 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1034 = {
+				1064 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1032 = {
+				1062 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1017 = {
+				1047 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1035 = {
+				1065 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1031 = {
+				1061 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1040 = {
+				1070 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1018 = {
+				1048 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1028 = {
+				1058 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1033 = {
+				1063 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1039 = {
+				1069 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1042 = {
+				1072 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1037 = {
+				1067 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1019 = {
+				1049 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1041 = {
+				1071 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
@@ -623,97 +623,97 @@ touhou_unify = {
 			has_war = no
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_surrender_to_out
-				1029 = {
+				1059 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1036 = {
+				1066 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1034 = {
+				1064 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1032 = {
+				1062 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1017 = {
+				1047 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1035 = {
+				1065 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1031 = {
+				1061 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1040 = {
+				1070 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1018 = {
+				1048 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1028 = {
+				1058 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1033 = {
+				1063 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1039 = {
+				1069 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1042 = {
+				1072 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1037 = {
+				1067 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1019 = {
+				1049 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
 					}
 				}
-				1041 = {
+				1071 = {
 					OR = {
 						is_controlled_by_ROOT_or_subject = yes
 						is_controlled_by_ROOT_or_ally = yes	
@@ -759,7 +759,7 @@ touhou_unify = {
 		}
 
 		ai_will_do = {
-			factor = 1035
+			factor = 1065
 		}		
 	}
 	touhou_unify_to_other = {#向幻想乡盟友施压
@@ -801,7 +801,7 @@ touhou_unify = {
 		days_remove = 90
 		
 		ai_will_do = {
-			factor = 1035
+			factor = 1065
 		}
 
 		visible = {
@@ -860,7 +860,7 @@ touhou_unify = {
 		cost = 300
 		days_remove = 120		
 		ai_will_do = {
-			factor = 1035
+			factor = 1065
 		}
 		visible = {
 			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
@@ -917,7 +917,7 @@ touhou_unify = {
 		days_remove = 90
 		
 		ai_will_do = {
-			factor = 1035
+			factor = 1065
 		}
 
 		visible = {
@@ -1065,7 +1065,7 @@ touhou_kappa = {
 			OR = {
 					original_tag = KAP
 					KAP = { has_opinion = { target = ROOT value > 50 } }
-					controls_state = 1018
+					controls_state = 1048
 				}
 		}
 
@@ -1080,7 +1080,7 @@ touhou_kappa = {
 			OR = {
 					original_tag = KAP
 					KAP = { has_opinion = { target = ROOT value > 50 } }
-					controls_state = 1018
+					controls_state = 1048
 				}
 		}
 		
@@ -1104,7 +1104,7 @@ touhou_kappa = {
 			OR = {
 					original_tag = KAP
 					KAP = { has_opinion = { target = ROOT value > 50 } }
-					controls_state = 1018
+					controls_state = 1048
 				}
 		}
 
@@ -1119,7 +1119,7 @@ touhou_kappa = {
 			OR = {
 					original_tag = KAP
 					KAP = { has_opinion = { target = ROOT value > 50 } }
-					controls_state = 1018
+					controls_state = 1048
 				}
 		}
 		
@@ -1164,7 +1164,7 @@ touhou_god_of_makai_decisions_categories = {#抗击魔界
 			country_event = { id = touhou_devildom.43 } 
 		}
 	}
-	touhou_news_event_news_1053 = {#一些其他事项……
+	touhou_news_event_news_1083 = {#一些其他事项……
 		icon = oppression
 		fire_only_once = yes
 		allowed = {
@@ -1173,11 +1173,11 @@ touhou_god_of_makai_decisions_categories = {#抗击魔界
 
 		visible = {
 			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-			has_global_flag = touhou_global_flag_news_1053
+			has_global_flag = touhou_global_flag_news_1083
 		}
 
 		available = {
-			has_global_flag = touhou_global_flag_news_1053
+			has_global_flag = touhou_global_flag_news_1083
 		}
 
 		cost = 0

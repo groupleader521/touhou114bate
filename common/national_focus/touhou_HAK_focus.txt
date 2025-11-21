@@ -751,11 +751,11 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = HAK_get_volunteers_tt
 			inside_fantasy_attitude_level_up = yes
-			add_manpower = 103500
+			add_manpower = 106500
 			hidden_effect = {
 				random_owned_controlled_state = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 1054 }
+					prioritize = { 1084 }
 					create_unit = {
 						division = "name = \"秘密部队1\" division_template = \"亡灵小队\" start_experience_factor = 0.2" 
 						owner = HAK

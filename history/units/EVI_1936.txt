@@ -35,55 +35,55 @@ division_template = {
 units = {
 	division = { 
 		name = "①"
-		location = 13438 
+		location = 13444 
 		division_template = "妖精步兵师"
 		start_experience_factor = 0.05
 	}
 	division = { 
 		name = "②"
-		location = 13438 
+		location = 13444 
 		division_template = "妖精步兵师"
 		start_experience_factor = 0.05
 	}
 	division = { 
 		name = "③"
-		location = 13438 
+		location = 13444 
 		division_template = "妖精步兵师"
 		start_experience_factor = 0.05
 	}
 	division = { 
 		name = "④"
-		location = 13438 
+		location = 13444 
 		division_template = "妖精突击师"
 		start_experience_factor = 0.05
 	}
 	division = { 
 		name = "⑤"
-		location = 13438 
+		location = 13444 
 		division_template = "妖精突击师"
 		start_experience_factor = 0.05
 	}
 	division = { 
 		name = "⑥"
-		location = 13438 
+		location = 13444 
 		division_template = "妖精突击师"
 		start_experience_factor = 0.05
 	}
 	division = { 
 		name = "⑦"
-		location = 13438 
+		location = 13444 
 		division_template = "妖精炮兵师"
 		start_experience_factor = 0.05
 	}
 	division = { 
 		name = "⑧"
-		location = 13438 
+		location = 13444 
 		division_template = "妖精炮兵师"
 		start_experience_factor = 0.05
 	}
 	division = { 
 		name = "⑨"
-		location = 13438 
+		location = 13444 
 		division_template = "妖精炮兵师"
 		start_experience_factor = 0.05
 	}

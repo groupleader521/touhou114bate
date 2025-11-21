@@ -10,11 +10,28 @@
 
 	trigger = {
 		OR = {
-			FROM.FROM = { state = 1042 }
-			FROM.FROM = { state = 1043 }
-			FROM.FROM = { state = 1044 }
-			FROM.FROM = { state = 1045 }
-			FROM.FROM = { state = 1046 }
+			FROM.FROM = { state = 1072 }
+			FROM.FROM = { state = 1073 }
+			FROM.FROM = { state = 1074 }
+			FROM.FROM = { state = 1075 }
+			FROM.FROM = { state = 1076 }
+			FROM.FROM = { state = 1077 }
+			FROM.FROM = { state = 1078 }
+			FROM.FROM = { state = 1079 }
+			FROM.FROM = { state = 1080 }
+			FROM.FROM = { state = 1081 }
+			FROM.FROM = { state = 1082 }
+			FROM.FROM = { state = 1083 }
+			FROM.FROM = { state = 1084 }
+			FROM.FROM = { state = 1085 }
+			FROM.FROM = { state = 1086 }
+			FROM.FROM = { state = 1087 }
+			FROM.FROM = { state = 1088 }
+			FROM.FROM = { state = 1089 }
+			FROM.FROM = { state = 1090 }
+			FROM.FROM = { state = 1091 }
+			FROM.FROM = { state = 1092 }
+			FROM.FROM = { state = 1093 }
 			FROM.FROM = { state = 1047 }
 			FROM.FROM = { state = 1048 }
 			FROM.FROM = { state = 1049 }
@@ -32,31 +49,14 @@
 			FROM.FROM = { state = 1061 }
 			FROM.FROM = { state = 1062 }
 			FROM.FROM = { state = 1063 }
-			FROM.FROM = { state = 1017 }
-			FROM.FROM = { state = 1018 }
-			FROM.FROM = { state = 1019 }
-			FROM.FROM = { state = 1020 }
-			FROM.FROM = { state = 1021 }
-			FROM.FROM = { state = 1022 }
-			FROM.FROM = { state = 1023 }
-			FROM.FROM = { state = 1024 }
-			FROM.FROM = { state = 1025 }
-			FROM.FROM = { state = 1026 }
-			FROM.FROM = { state = 1027 }
-			FROM.FROM = { state = 1028 }
-			FROM.FROM = { state = 1029 }
-			FROM.FROM = { state = 1030 }
-			FROM.FROM = { state = 1031 }
-			FROM.FROM = { state = 1032 }
-			FROM.FROM = { state = 1033 }
-			FROM.FROM = { state = 1034 }
-			FROM.FROM = { state = 1035 }
-			FROM.FROM = { state = 1036 }
-			FROM.FROM = { state = 1037 }
-			FROM.FROM = { state = 1038 }
-			FROM.FROM = { state = 1039 }
-			FROM.FROM = { state = 1040 }
-			FROM.FROM = { state = 1041 }
+			FROM.FROM = { state = 1064 }
+			FROM.FROM = { state = 1065 }
+			FROM.FROM = { state = 1066 }
+			FROM.FROM = { state = 1067 }
+			FROM.FROM = { state = 1068 }
+			FROM.FROM = { state = 1069 }
+			FROM.FROM = { state = 1070 }
+			FROM.FROM = { state = 1071 }
 		}
 	}
 

@@ -1,0 +1,30 @@
+state={
+	id=1064
+	name="STATE_YiKongJian"
+	provinces={
+		13448 13451 
+	}
+
+	history={
+		add_core_of = DES
+		owner = DES
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = {
+			13448 50 
+		}
+	}
+	resources = {
+		steel = 20
+		chromium = 15
+	}
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	#state_category=city
+	state_category=megalopolis
+	local_supplies=0.0 
+}

@@ -1,4 +1,4 @@
-﻿capital = 1029
+﻿capital = 1059
 oob = "ALI_1936"
 set_stability = 0.72#baseline, THE EMPEROR PROTECTS
 set_war_support = 0.55
@@ -124,7 +124,7 @@ add_country_leader_role = {
 	character = TOUHOU_Alice_Margatroid
 	promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = centrism
 		traits = {
 			marionette_bruise
@@ -136,7 +136,7 @@ add_country_leader_role = {
 	character = TOUHOU_Alice_Margatroid
 	promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = fascism_ideology
 		traits = {
 			marionette_bruise
@@ -148,7 +148,7 @@ add_country_leader_role = {
 	character = TOUHOU_Alice_Margatroid
 	promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = liberalism
 		traits = {
 			marionette_bruise
@@ -160,7 +160,7 @@ add_country_leader_role = {
 	character = TOUHOU_Alice_Margatroid
 	promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = marxism
 		traits = {
 			marionette_bruise

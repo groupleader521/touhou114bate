@@ -1,0 +1,27 @@
+state={
+	id=1081
+	name="STATE_YaoGuaiShanBeiBu"
+	provinces={
+		13449 13452 13460 13532 
+	}
+
+	history={
+		add_core_of = KAP
+		add_core_of = TEN
+		owner = TEN
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13532 20
+		}
+	}
+	resources = {
+		aluminium = 20
+	}
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	#state_category=rural
+	state_category=megalopolis
+	local_supplies=0.0 
+}

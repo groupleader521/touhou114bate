@@ -1,0 +1,27 @@
+state={
+	id=1083
+	name="STATE_MoFaSenLinDongBu"
+	provinces={
+		13406 13415 13484 13496 
+	}
+
+	history={
+		add_core_of = ALI
+		add_core_of = MLS
+		owner = ALI
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+	resources = {
+		tungsten = 27
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	#state_category=rural
+	state_category=megalopolis
+	local_supplies=0.0 
+}

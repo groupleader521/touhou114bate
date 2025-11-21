@@ -1,0 +1,26 @@
+state={
+	id=1083
+	name="STATE_MoFaSenLinWaiWei"
+	provinces={
+		13423 13428 
+	}
+	history={
+		add_core_of = ALI
+		add_core_of = MLS
+		owner = MLS
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+	}
+	resources = {
+		chromium = 55
+	}
+	manpower=1065000
+	#state_category=town
+	state_category=megalopolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+}

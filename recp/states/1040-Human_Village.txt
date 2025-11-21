@@ -1,0 +1,33 @@
+state={
+	id=1070
+	name="STATE_RenLiZhongXinQu"
+	provinces={
+		13425 13494 
+	}
+
+	history={
+		add_core_of = HUM
+		owner = HUM
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = {
+			13425 50
+		}
+	}
+	resources = {
+		steel = 80
+		aluminium = 30
+		chromium = 49
+		tungsten = 22
+		rubber = 11
+	}
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	#state_category=town
+	state_category=megalopolis
+	local_supplies=0.0 
+}

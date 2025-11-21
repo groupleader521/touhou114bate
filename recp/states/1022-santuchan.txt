@@ -1,0 +1,26 @@
+state={
+	id=1082
+	name="STATE_SanTuChuan"
+	provinces={
+		13462 13463 13464 13467
+	}
+
+	history={
+		add_core_of = OPP
+		owner = OPP
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+	resources = {
+		chromium = 73
+		tungsten = 10
+	}
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	#state_category=rural
+	state_category=megalopolis
+	local_supplies=0.0 
+}

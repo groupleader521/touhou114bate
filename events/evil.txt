@@ -145,7 +145,7 @@ country_event = {
 		original_tag = EVI
 		OR = {
 			is_ai = yes
-			has_manpower < 103500
+			has_manpower < 106500
 		}
 	}
 	mean_time_to_happen = {
@@ -153,7 +153,7 @@ country_event = {
 	}
 	option = {
 		name = evil.4.a
-		add_manpower = 103500
+		add_manpower = 106500
 	}
 }
 country_event = {
@@ -193,12 +193,12 @@ country_event = {
 	option = {
 		name = evil.6.a
 		ai_chance = { base = 1 }
-		EVI = { set_state_owner = 1056 set_state_controller = 1056 }
+		EVI = { set_state_owner = 1086 set_state_controller = 1086 }
 	}
 	option = {
 		name = evil.6.b
 		ai_chance = { base = 9 }
-		EVI = { set_state_owner = 1056 set_state_controller = 1056 }
+		EVI = { set_state_owner = 1086 set_state_controller = 1086 }
 		declare_war_on = {
 			target = EVI
 			type = annex_everything
@@ -216,7 +216,7 @@ country_event = {
 	option = {
 		name = evil.7.a
 		ai_chance = { base = 1 }
-		EVI = { set_state_owner = 1054 set_state_controller = 1054 }
+		EVI = { set_state_owner = 1084 set_state_controller = 1084 }
 	}
 	option = {
 		name = evil.7.b

@@ -1,4 +1,4 @@
-﻿capital = 1018
+﻿capital = 1048
 
 oob = "KAP_1936"
 
@@ -58,7 +58,7 @@ add_country_leader_role = {
     character = TOUHOU_Kawasiro_Nitori
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = centrism
 		traits = {
 			kappa_research
@@ -69,7 +69,7 @@ add_country_leader_role = {
     character = TOUHOU_Kawasiro_Nitori
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = fascism_ideology
 		traits = {
 			kappa_research
@@ -80,7 +80,7 @@ add_country_leader_role = {
     character = TOUHOU_Kawasiro_Nitori
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = liberalism
 		traits = {
 			kappa_research
@@ -91,7 +91,7 @@ add_country_leader_role = {
     character = TOUHOU_Kawasiro_Nitori
     promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = marxism
 		traits = {
 			kappa_research

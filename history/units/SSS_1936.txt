@@ -38,19 +38,19 @@ units = {
 
 	division = { 
 		name = "神明侍从"
-		location = 13513
+		location = 13519
 		division_template = "守矢巫女"
 		start_experience_factor = 0.3
 	}
 	division = { 
 		name = "信仰狩猎队"
-		location = 13491
+		location = 13497
 		division_template = "守矢巫女"
 		start_experience_factor = 0.1
 	}
 }
 air_wings = {
-	1042 = { 
+	1072 = { 
 		touhou_wakan_fighter_equipment_0 = {
 			owner = "SSS" 
 			amount = 40

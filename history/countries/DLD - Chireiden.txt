@@ -1,4 +1,4 @@
-﻿capital = 1032
+﻿capital = 1062
 
 oob = "DLD_1936"
 
@@ -61,7 +61,7 @@ add_country_leader_role = {
 	character = TOUHOU_Komeiji_Satori
 	promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = centrism
 		traits = {
 			jue
@@ -72,7 +72,7 @@ add_country_leader_role = {
 	character = TOUHOU_Komeiji_Satori
 	promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = fascism_ideology
 		traits = {
 			jue
@@ -83,7 +83,7 @@ add_country_leader_role = {
 	character = TOUHOU_Komeiji_Satori
 	promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = liberalism
 		traits = {
 			jue
@@ -94,7 +94,7 @@ add_country_leader_role = {
 	character = TOUHOU_Komeiji_Satori
 	promote_leader = yes
 	country_leader = {
-		expire = "11024.1.1"
+		expire = "11054.1.1"
 		ideology = marxism
 		traits = {
 			jue

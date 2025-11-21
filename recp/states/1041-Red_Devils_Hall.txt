@@ -1,0 +1,32 @@
+state={
+	id=1071
+	name="STATE_HongMoGuan"
+	provinces={
+		13442 13444 13447 13522 
+	}
+
+	history={
+		add_core_of = VAM
+		owner = VAM
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = {
+			13447 50 
+		}
+	}
+	resources = {
+		steel = 65
+		chromium = 15
+		aluminium = 30
+		rubber = 19
+	}
+	manpower=1065000
+	buildings_max_level_factor=1.000
+	#state_category=city
+	state_category=megalopolis
+	local_supplies=0.0 
+}

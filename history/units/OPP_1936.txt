@@ -38,19 +38,19 @@ units = {
 
 	division = { 
 		name = "死神中队"
-		location = 13474 
+		location = 13480 
 		division_template = "死神"
 		start_experience_factor = 0.1
 	}
 	division = { 
 		name = "引渡人"
-		location = 13474 
+		location = 13480 
 		division_template = "死神"
 		start_experience_factor = 0.1
 	}
 }
 air_wings = {
-	1033 = { 
+	1063 = { 
 		touhou_demonforce_fighter_equipment_0 = {
 			owner = "OPP" 
 			amount = 40
