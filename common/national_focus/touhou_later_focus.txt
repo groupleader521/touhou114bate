@@ -165,6 +165,7 @@
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_5_tt
 			add_to_variable = { touhou_var_fantasy_production_speed_buildings_factor = 0.05 }
 			random_owned_controlled_state = {
 				limit = {
@@ -255,6 +256,7 @@
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = touhou_dynamic_fantasy_live_6_tt
 			add_to_variable = { touhou_var_fantasy_industrial_capacity_factory = 0.1 }
 			random_owned_controlled_state = {
 				limit = {

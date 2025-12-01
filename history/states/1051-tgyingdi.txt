@@ -18,6 +18,7 @@ state={
 	}
 	resources = {
 		aluminium = 20
+		coal = 73
 	}
 	manpower=1065000
 	buildings_max_level_factor=1.000

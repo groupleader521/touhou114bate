@@ -535,38 +535,38 @@ touhou_trump_card = {
 		}
 	}
 	#邀请普通的魔法使讲座
-	touhou_magician_project_0 = {
-		icon = GFX_decision_generic_special_project
-		fire_only_once = yes
-		
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
-		available = {
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		visible = {
-			OR = {
-				original_tag = MLS
-				AND = {
-					controls_state = 1058
-					MLS = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
-				}
-				AND = {
-					MLS = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
-				}
-			}
-			NOT = { has_tech = magician }
-			NOT = { has_idea = fantasy_research }
-		}
-				
-		complete_effect = {
-			set_technology =  { magician = 1 }
-		}
-	}
+#	touhou_magician_project_0 = {
+#		icon = GFX_decision_generic_special_project
+#		fire_only_once = yes
+#		
+#		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+#
+#		available = {
+#		}
+#
+#		ai_will_do = {
+#			factor = 0
+#		}
+#
+#		visible = {
+#			OR = {
+#				original_tag = MLS
+#				AND = {
+#					controls_state = 1058
+#					MLS = { exists = no }
+#					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+#				}
+#				AND = {
+#					MLS = { has_opinion = { target = ROOT value > 49 } }
+#					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+#				}
+#			}
+#			NOT = { has_tech = magician }
+#			NOT = { has_idea = fantasy_research }
+#		}
+#				
+#		complete_effect = {
+#			set_technology =  { magician = 1 }
+#		}
+#	}
 }

@@ -16,6 +16,7 @@ state={
 	}
 	resources = {
 		steel = 60
+		coal = 2
 	}
 	manpower=1065000
 	#state_category=town

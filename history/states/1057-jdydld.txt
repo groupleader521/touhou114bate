@@ -1,24 +1,24 @@
 state={
-	id=1087
-	name="STATE_BoLiShenSheHouShan"
+	id=1057
+	name="STATE_JiuDiYuShenCeng"
 	provinces={
-		13481 13488 13494 13499 13501
+		13517 13523 13518 
 	}
+
 	history={
-		add_core_of = BLI
 		add_core_of = DLD
-		owner = BLI
+		add_core_of = HEL
+		owner = DLD
 		buildings = {
 			infrastructure = 1
-		}
-		victory_points = {
-			13501 20
+			arms_factory = 1
+			industrial_complex = 1
 		}
 	}
 	resources = {
-		oil = 23
-		rubber = 15
+		coal = 107
 	}
+
 	manpower=1065000
 	buildings_max_level_factor=1.000
 	#state_category=town

@@ -1,13 +1,13 @@
 state={
-	id=1066
-	name="STATE_BoLiShenShe"
+	id=1062
+	name="STATE_JiuDiYuHeXin"
 	provinces={
-		13487 13493 13495 13500 
+		13510 13514 13521
 	}
 
 	history={
-		add_core_of = BLI
-		owner = BLI
+		add_core_of = DLD
+		owner = DLD
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -15,12 +15,14 @@ state={
 			air_base = 1
 		}
 		victory_points = {
-			13493 50 
+			13514 50 
 		}
 
 	}
 	resources = {
-		steel = 65
+		aluminium = 45
+		steel = 20
+		coal = 139
 	}
 	manpower=1065000
 	buildings_max_level_factor=1.000

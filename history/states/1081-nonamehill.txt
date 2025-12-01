@@ -15,6 +15,7 @@ state={
 	resources = {
 		steel = 12
 		aluminium = 8
+		coal = 3
 	}
 	manpower=1065000
 	#state_category=pastoral

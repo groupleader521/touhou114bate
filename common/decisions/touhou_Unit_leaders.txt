@@ -697,7 +697,10 @@ touhou_Unit_leaders = {
 			FROM = {
 				exists = no
 				any_character = {
-					is_advisor = yes
+					OR = {
+						is_advisor = yes
+						is_unit_leader = yes
+					}
 					has_character_flag = touhou_character_flag_character
 				}
 			}
@@ -753,7 +756,10 @@ touhou_Unit_leaders = {
 			FROM = {
 				every_character = {
 					limit = {
-						is_advisor = yes
+						OR = {
+							is_advisor = yes
+							is_unit_leader = yes
+						}
 						has_character_flag = touhou_character_flag_character
 					}
 					set_nationality = ROOT

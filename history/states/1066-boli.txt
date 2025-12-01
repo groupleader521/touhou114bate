@@ -1,24 +1,31 @@
 state={
-	id=1057
-	name="STATE_JiuDiYuShenCeng"
+	id=1066
+	name="STATE_BoLiShenShe"
 	provinces={
-		13517 13523 13518 
+		13487 13493 13495 13500 
 	}
 
 	history={
-		add_core_of = DLD
-		add_core_of = HEL
-		owner = DLD
+		add_core_of = BLI
+		owner = BLI
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 1
+			air_base = 1
 		}
-	}
+		victory_points = {
+			13493 50 
+		}
 
+	}
+	resources = {
+		steel = 65
+		coal = 47
+	}
 	manpower=1065000
 	buildings_max_level_factor=1.000
-	#state_category=town
+	#state_category=city
 	state_category=megalopolis
 	local_supplies=0.0 
 }

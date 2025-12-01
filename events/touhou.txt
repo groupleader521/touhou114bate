@@ -4443,7 +4443,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			country_event = {
-				id = touhou_devildom.41
+				id = touhou_devildom.4
 				days = 360
 				random_days = 11
 			}

@@ -394,7 +394,7 @@ sub_units = {
 		supply_consumption = 0.001
 	
 		need = {
-			animal_equipment = 1
+			animal_equipment = 100
 		}
 	}
 	#龙虎卫

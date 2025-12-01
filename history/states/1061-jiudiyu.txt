@@ -1,13 +1,13 @@
 state={
-	id=1049
-	name="STATE_YaoGuaiShan"
+	id=1061
+	name="STATE_JiuDu"
 	provinces={
-		13429 13430 13431 13432 13512 
+		13525 13496 13486 
 	}
 
 	history={
-		add_core_of = TEN
-		owner = TEN
+		add_core_of = HEL
+		owner = HEL
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -15,12 +15,12 @@ state={
 			air_base = 1
 		}
 		victory_points = {
-			13431 50 
+			13486 50 
 		}
-
 	}
 	resources = {
-		steel = 210
+		steel = 40
+		coal = 101
 	}
 	manpower=1065000
 	buildings_max_level_factor=1.000
