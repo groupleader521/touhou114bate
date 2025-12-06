@@ -127,4 +127,10 @@ touhou_dynamic_modifiers_fantasy_live = { #重建幻想乡
 	army_attack_factor = touhou_var_fantasy_army_attack_factor
 	army_defence_factor = touhou_var_fantasy_army_defence_factor
 	army_strength_factor = touhou_var_fantasy_army_strength_factor
+
+	navy_leader_start_level = touhou_var_fantasy_navy_leader_start_level
+	navy_leader_start_attack_level = touhou_var_fantasy_navy_leader_start_attack_level
+	navy_leader_start_defense_level = touhou_var_fantasy_navy_leader_start_defense_level
+	navy_leader_start_coordination_level = touhou_var_fantasy_navy_leader_start_coordination_level
+	navy_leader_start_maneuvering_level = touhou_var_fantasy_navy_leader_start_maneuvering_level
 }

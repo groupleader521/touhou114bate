@@ -516,6 +516,21 @@ country_event = {
 		set_variable = {
 			touhou_var_fantasy_army_strength_factor = 0
 		}
+		set_variable = {
+			touhou_var_fantasy_navy_leader_start_level = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_navy_leader_start_attack_level = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_navy_leader_start_defense_level = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_navy_leader_start_coordination_level = 0
+		}
+		set_variable = {
+			touhou_var_fantasy_navy_leader_start_maneuvering_level = 0
+		}
 		if = {
 			limit = {
 				has_idea = fantasy_live
