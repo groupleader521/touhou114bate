@@ -135,6 +135,7 @@ touhou_wunv_materiel_organization = {
 	equipment_type = {
 		infantry_equipment
 		mio_cat_eq_touhou_all_infantry
+		mio_cat_eq_touhou_support_equipment
 	}
 }
 touhou_molisha_materiel_organization = {

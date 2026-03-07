@@ -41,7 +41,7 @@ equipments = {
 	touhou_magic_infantry_equipment_0 = {#基本魔力发射器
 		year = 1918
 	
-		archetype = touhou_magic_infantry_equipment
+		archetype = infantry_equipment
 		priority = 05
 		visual_level = 0
 
