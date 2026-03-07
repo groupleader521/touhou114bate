@@ -1,29 +1,43 @@
-touhou_society_reform_finish_effect = {#社会改革
+touhou_society_reform_finish_effect = {
+	#社会改革
 	set_country_flag = touhou_society_reform_finished_flag
-	swap_ideas = {
-		remove_idea = fantasy_live
-		add_idea = fantasy_live2
+	if = {
+		limit = {
+			has_idea = fantasy_live
+		}
+		swap_ideas = {
+			remove_idea = fantasy_live
+			add_idea = fantasy_live2
+		}
 	}
 	add_manpower = 400000
 }
-touhou_fiscal_reform_finish_effect = {#政府改革
+
+touhou_fiscal_reform_finish_effect = {
+	#政府改革
 	set_country_flag = touhou_fiscal_reform_finished_flag
 	remove_ideas = fantasy_government
 	add_political_power = 300
 }
-touhou_research_reform_finish_effect = {#科研改革
+
+touhou_research_reform_finish_effect = {
+	#科研改革
 	set_country_flag = touhou_research_reform_finished_flag
 	remove_ideas = fantasy_research
 	add_research_slot = 1
 }
-touhou_army_reform_finish_effect = {#军事改革
+
+touhou_army_reform_finish_effect = {
+	#军事改革
 	set_country_flag = touhou_army_reform_finished_flag
 	remove_ideas = fantasy_army
 	army_experience = 15
 	air_experience = 15
 	navy_experience = 15
 }
-touhou_industry_reform_finish_effect = {#工业改革
+
+touhou_industry_reform_finish_effect = {
+	#工业改革
 	set_country_flag = touhou_industry_reform_finished_flag
 	remove_ideas = fantasy_industry
 	unlock_decision_category_tooltip = touhou_mine_resources
