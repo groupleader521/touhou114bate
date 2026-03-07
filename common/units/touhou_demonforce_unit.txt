@@ -215,6 +215,7 @@ sub_units = {
 		categories = {
 			category_front_line
 			category_army
+			category_cavalry
 		}
 
 		
@@ -284,6 +285,7 @@ sub_units = {
 		categories = {
 			category_support_battalions
 			category_army
+			category_anti_air
 		}
 
 		
@@ -331,6 +333,7 @@ sub_units = {
 		categories = {
 			category_army
 			category_line_artillery
+			category_anti_air
 		}		
 		
 		combat_width = 1
@@ -393,6 +396,7 @@ sub_units = {
 			category_front_line
 			category_support_battalions
 			category_army
+			category_anti_tank
 		}
 
 
@@ -437,6 +441,7 @@ sub_units = {
 			category_front_line
 			category_army
 			category_line_artillery
+			category_anti_tank
 		}		
 		
 		combat_width = 1
