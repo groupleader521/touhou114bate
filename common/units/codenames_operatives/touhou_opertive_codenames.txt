@@ -3,7 +3,7 @@ GENERIC_TOUHOU_OPERATIVE_CODENAME_HISTORICAL = {
 	name = NAME_THOUHOU_HISTORICAL_OPERATIVES
 
 	# for all touhou speaking countries
-	for_countries = {  ALI  DES  HAK  DLD  HEL  SSS  OPP  RAB  TEM  BLI  KAP  TEN  HUM  VAM  MLS  EVI }
+	for_countries = {  ALI  DES  HAK  DLD  HEL  SSS  OPP  RAB  TEM  BLQ  KAP  TEN  HUM  VAM  MLS  EVI }
 
 	type = codename
 

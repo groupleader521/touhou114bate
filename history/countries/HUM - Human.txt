@@ -1,4 +1,4 @@
-﻿capital = 1070
+﻿capital = 1105
 
 oob = "HUM_1936"
 
@@ -32,7 +32,7 @@ set_technology = {
 	human_army = 1
 }
 
-give_military_access = BLI
+give_military_access = BLQ
 give_military_access = MLS
 give_military_access = SSS
 give_military_access = TEM
@@ -60,7 +60,7 @@ add_country_leader_role = {
     character = TOUHOU_Hieda_no_Akyuu
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = centrism
 		traits = {
 			akyuu_record
@@ -71,7 +71,7 @@ add_country_leader_role = {
     character = TOUHOU_Hieda_no_Akyuu
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = liberalism
 		traits = {
 			akyuu_record
@@ -82,7 +82,7 @@ add_country_leader_role = {
     character = TOUHOU_Hieda_no_Akyuu
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = fascism_ideology
 		traits = {
 			akyuu_record
@@ -104,7 +104,7 @@ add_country_leader_role = {
     character = TOUHOU_Kamishirasawa_Keine
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = marxism
 		traits = {
 			keine_history
@@ -197,6 +197,6 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { HUM MLS BLI ALI }
+		nationalities = { HUM MLS BLQ ALI }
 	}
 }

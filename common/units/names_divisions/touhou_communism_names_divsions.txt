@@ -1,6 +1,6 @@
 touhou_communism_names_divsions_01 = {
 	name = "幻想联军"
-	for_countries = { ALI BLI DES DLD EVI HAK HEL HUM KAP MLS OPP RAB SSS TEM TEN VAM }
+	for_countries = { ALI BLQ DES DLD EVI HAK HEL HUM KAP MLS OPP RAB SSS TEM TEN VAM }
 	can_use = { 
 		is_ai = no
 		has_government = communism

@@ -1227,7 +1227,7 @@ SSS = {
 	}
 }
 
-BLI = {
+BLQ = {
 	operative = {
 		male = {
 			"gfx/leaders/Fantasy/Generic_land_41.dds"

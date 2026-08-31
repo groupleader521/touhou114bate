@@ -49,8 +49,8 @@
  touhou_unity_to_puppet_cancel_tt:0 "The prerequisite conditions are not met"
  touhou_decisions_evil_education:0 "Fairy Re-education Programme"
  touhou_decisions_evil_education_desc:0 "Fairies are everywhere in Gensokyo, mischievous and arrogant like young children, but this is not a reason to reject them. Through sufficient education, they will become the most outstanding citizens of Gensoyko"
- touhou_tooltip_evil_education:0 "Establish the \"Fairy Re-education Programme\""
- touhou_country_flag_evil_education:0 "Established the Fairy Re-education Programme"
+ touhou_tooltip_evil_education:0 "Establqsh the \"Fairy Re-education Programme\""
+ touhou_country_flag_evil_education:0 "Establqshed the Fairy Re-education Programme"
  touhou_tooltip_evil_education_1:0 "If you are communist, while establishing a party branch, will also establish the fairy re-education programme"
  touhou_mission_evil_damage:0 "Fairies causing trouble"
  touhou_mission_evil_damage_desc:0 "It's not surprising that fairies are making noise and causing destruction everywhere. But recently they seem to have been specifically destroying our military industry. Is this a coincidence"
@@ -81,9 +81,9 @@
  touhou_HEL_oni_project_0_desc:0 "Commander, our research institute has designed a new type of armor that can provide our military with a large amount of resistence at a low cost, but this armor is extremely heavy. If we can recruit the oni tribe, I believe we will soon have a powerful force that could wield the armor"
  touhou_flag_HEL_oni_project_0:0 "Resolution Completed; Recruit Oni Warriors"
 
- touhou_BLI_boli_project_0:0 "The Ability to fly"
- touhou_BLI_boli_project_0_desc:0 "After entering the world, the Hakurei Miko still retains some of her ability to control gravity. If we get her assistance, we can design a flying device that can carry more firepower. Commander, what do you think?"
- touhou_flag_BLI_boli_project_0:0 "Resolution completed; \" Ability to fly at a certain level"
+ touhou_BLQ_boli_project_0:0 "The Ability to fly"
+ touhou_BLQ_boli_project_0_desc:0 "After entering the world, the Hakurei Miko still retains some of her ability to control gravity. If we get her assistance, we can design a flying device that can carry more firepower. Commander, what do you think?"
+ touhou_flag_BLQ_boli_project_0:0 "Resolution completed; \" Ability to fly at a certain level"
 
  touhou_DES_bomber_project_0:0 "Understand Mysterious Talismans and Spells"
  touhou_DES_bomber_project_0_desc:0 "Commander, we have obtained some subtle intelligence... The Taoists of the Divine Spirit Mausoleum have developed a talisman that allows the wearer to be unstoppable and cast powerful spells. Although it is the research results of those evil hermits, why don't you take a look?"
@@ -307,7 +307,7 @@
  touhou_decisions_categories_option:0 "Menu"
  touhou_option_decisions_categories_closed:0 "Close menu"
  touhou_decisions_option_cheat:0 "Enable cheats"
- touhou_decisions_option_cheat_desc:0 "After enabling cheats, the preliminary work can be completed immediately, but during the testing phase, there is no guarantee of no side effects. Please use with caution"
+ touhou_decisions_option_cheat_desc:0 "After enablqng cheats, the preliminary work can be completed immediately, but during the testing phase, there is no guarantee of no side effects. Please use with caution"
  touhou_decisions_option_cheat_removed:0 "Remove cheating detection"
  touhou_decisions_option_cheat_removed_desc:0 "This resolution can permanently remove cheating detection"
  touhou_decisions_option_closed:0 "Permanently close menu"
@@ -323,11 +323,11 @@
 
 #支部建到地方
  touhou_decisions_categories_everyone_communist:0 "The rooting of the Party branch"
- touhou_decisions_categories_everyone_communist_desc:0 "For a long time, the lives of humans and fairies have been like two parallel lines, with misunderstandings and barriers between them, causing rumors to spread like viruses among humans. In order to forge a future of harmonious coexistence between humans and fairies, we must build bridges between each other, allowing humans to gain insight into the world of fairies and also enabling fairies to understand the value of humanity. Our future should not be just the future of fairies, nor just the future of humanity. When human creativity and fairy power are combined, we will surely be able to create a hopeful future"
+ touhou_decisions_categories_everyone_communist_desc:0 "For a long time, the lives of humans and fairies have been like two parallel lines, with misunderstandings and barriers between them, causing rumors to spread like viruses among humans. In order to forge a future of harmonious coexistence between humans and fairies, we must build bridges between each other, allowing humans to gain insight into the world of fairies and also enablqng fairies to understand the value of humanity. Our future should not be just the future of fairies, nor just the future of humanity. When human creativity and fairy power are combined, we will surely be able to create a hopeful future"
 
  touhou_decisions_categories_name_everyone_communist:0 "Areas where party branches have not yet been established"
- touhou_decisions_everyone_communist:0 "Establish a party branch in [FROM.GetName]"
- touhou_decisions_everyone_communist_desc:0 "The people of [FROM.GetName] have not yet learned about fairies. Establishing a party branch to root party members in the masses, guiding reconciliation between humans and monsters, and achieving common prosperity"
+ touhou_decisions_everyone_communist:0 "Establqsh a party branch in [FROM.GetName]"
+ touhou_decisions_everyone_communist_desc:0 "The people of [FROM.GetName] have not yet learned about fairies. Establqshing a party branch to root party members in the masses, guiding reconciliation between humans and monsters, and achieving common prosperity"
  touhou_tooltip_everyone_communist:0 "Strengthening §Y Branch - Production and Construction§!, §YParty Branch - Military Construction§! And §Y Party Branch - Ideological Construction§!"
  touhou_state_flag_everyone_communist:0 "A branch has been established in [FROM.GetName]"
 
@@ -346,7 +346,7 @@ touhou_evil_rize_up_start_desc:0 "We are ready to achieve the independence of fa
 
 #支部工作重心
  touhou_decisions_categories_everyone_communist_focus:0 "Focus of Branch Work"
- touhou_decisions_categories_everyone_communist_focus_desc:0 "Our ideals cannot be achieved overnight, nor can we blindly apply a certain method or approach. We must be targeted and determine the main contradiction based on the actual situation, and adjust the focus of each branch's work according to the main contradiction"
+ touhou_decisions_categories_everyone_communist_focus_desc:0 "Our ideals cannot be achieved overnight, nor can we blqndly apply a certain method or approach. We must be targeted and determine the main contradiction based on the actual situation, and adjust the focus of each branch's work according to the main contradiction"
  touhou_dynamic_modifiers_everyone_communist_focus:0 "Pains of Reform"
  touhou_dynamic_modifiers_everyone_communist_focus_desc:0 "We must rearrange the tasks of each branch. As the number of branches increases, this is not an easy task"
  touhou_country_flag_changing_everyone_communist_focus:0 "Adjusting the focus of branch work"
@@ -406,7 +406,7 @@ touhou_evil_rize_up_start_desc:0 "We are ready to achieve the independence of fa
  touhou_decisions_cost_50_army_xp_civ_factory_30_blocked:0 "￡army_experience §R50§! ￡civ_factory §R30§!"
  touhou_decisions_cost_50_army_xp_civ_factory_30_tooltip:0 "Executing this resolution requires ￡ army_experience \" Y50 \"! And continue to occupy ￡ civ_factory \" Y30 \" "
  touhou_country_flag_evi_military_academy_3:0 "Fairy Military Academy is basically complete"
- touhou_decisions_evi_military_academy_4:0 "Establish the Gensokyo Joint Military Academy"
+ touhou_decisions_evi_military_academy_4:0 "Establqsh the Gensokyo Joint Military Academy"
  touhou_decisions_evi_military_academy_4_desc:0 "Gensokyo has been unified, and the training units of military schools should not be limited to fairies. We can expand the scope of enrollment, but this will significantly slow down our training speed. After the expansion is completed, §Ythe military school will provide us with 4 target divisions every 90 days.§!"
  touhou_decisions_cost_60_army_xp_civ_factory_50:0 "￡army_experience §Y60§! ￡civ_factory §Y50§!"
  touhou_decisions_cost_60_army_xp_civ_factory_50_blocked:0 "￡army_experience §R60§! ￡civ_factory §R50§!"

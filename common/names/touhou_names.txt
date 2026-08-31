@@ -1,0 +1,193 @@
+### Touhou mod character name pools ###
+
+# 人偶工坊 - Alice
+ALI = {
+	male = {
+		names = { Reimu Marisa Sakuya Youmu Sanae Cirno Remilia Flandre Alice Yukari Yuyuko Suika Aya Patchouli Reisen }
+	}
+	female = {
+		names = { Reimu Marisa Sakuya Youmu Sanae Cirno Remilia Flandre Alice Yukari Yuyuko Suika Aya Patchouli Reisen }
+	}
+	surnames = { Hakurei Kirisame Izayoi Konpaku Kochiya Scarlet Margatroid Yakumo Saigyouji Ibuki Shameimaru Knowledge Udongein }
+	callsigns = { }
+}
+
+# 博丽神社 - Hakurei
+BLQ = {
+	male = {
+		names = { Reimu Marisa Sakuya Youmu Sanae Cirno Remilia Flandre Alice Yukari Yuyuko Suika Aya Patchouli Reisen }
+	}
+	female = {
+		names = { Reimu Marisa Sakuya Youmu Sanae Cirno Remilia Flandre Alice Yukari Yuyuko Suika Aya Patchouli Reisen }
+	}
+	surnames = { Hakurei Kirisame Izayoi Konpaku Kochiya Scarlet Margatroid Yakumo Saigyouji Ibuki Shameimaru Knowledge Udongein }
+	callsigns = { }
+}
+
+# 斯卡雷特帝国 - Vampire
+VAM = {
+	male = {
+		names = { Remilia Flandre Sakuya Patchouli Koakuma Meiling }
+	}
+	female = {
+		names = { Remilia Flandre Sakuya Patchouli Koakuma Meiling }
+	}
+	surnames = { Scarlet Izayoi Knowledge Hong }
+	callsigns = { }
+}
+
+# 天狗妖怪国 - Tengu
+TEN = {
+	male = {
+		names = { Aya Hatate Momiji Megumu }
+	}
+	female = {
+		names = { Aya Hatate Momiji Megumu }
+	}
+	surnames = { Shameimaru Himekaidou Inubashiri Iizunamaru }
+	callsigns = { }
+}
+
+# 命莲寺 - Temple
+TEM = {
+	male = {
+		names = { Byakuren Shou Nazrin Minamitsu Ichirin Unzan Nue Kyouko Mamizou }
+	}
+	female = {
+		names = { Byakuren Shou Nazrin Minamitsu Ichirin Unzan Nue Kyouko Mamizou }
+	}
+	surnames = { Hijiri Toramaru Murasa Kumoi Tatsumi Futatsuiwa }
+	callsigns = { }
+}
+
+# 永远亭 - Rabbit
+RAB = {
+	male = {
+		names = { Reisen Tewi Eirin Kaguya }
+	}
+	female = {
+		names = { Reisen Tewi Eirin Kaguya }
+	}
+	surnames = { Udongein Inaba Yagokoro Houraisan }
+	callsigns = { }
+}
+
+# 阎罗殿 - Yama
+OPP = {
+	male = {
+		names = { Eiki Komachi Kutaka }
+	}
+	female = {
+		names = { Eiki Komachi Kutaka }
+	}
+	surnames = { Shiki Onozuka Niwatari }
+	callsigns = { }
+}
+
+# 守矢神社 - Moriya
+SSS = {
+	male = {
+		names = { Kanako Suwako Sanae }
+	}
+	female = {
+		names = { Kanako Suwako Sanae }
+	}
+	surnames = { Yasaka Moriya Kochiya }
+	callsigns = { }
+}
+
+# 雾雨魔法店 - Molisha
+MLS = {
+	male = {
+		names = { Marisa Mima Yuuka }
+	}
+	female = {
+		names = { Marisa Mima Yuuka }
+	}
+	surnames = { Kirisame Kazami }
+	callsigns = { }
+}
+
+# 天狗属河童保护国 - Kappa
+KAP = {
+	male = {
+		names = { Nitori Hina Takane }
+	}
+	female = {
+		names = { Nitori Hina Takane }
+	}
+	surnames = { Kawashiro Kagiyama Yamashiro }
+	callsigns = { }
+}
+
+# 人类独立国 - Human
+HUM = {
+	male = {
+		names = { Keine Kosuzu Akyuu Rinnosuke }
+	}
+	female = {
+		names = { Keine Kosuzu Akyuu Rinnosuke }
+	}
+	surnames = { Kamishirasawa Motoori Hieda Morichika }
+	callsigns = { }
+}
+
+# 觉妖怪属旧地狱保护国 - Hell
+HEL = {
+	male = {
+		names = { Satori Koishi Rin Utsuho Yamame Kisume Parsee Yuugi }
+	}
+	female = {
+		names = { Satori Koishi Rin Utsuho Yamame Kisume Parsee Yuugi }
+	}
+	surnames = { Komeiji Kaenbyou Reiuji Kurodani Yamakuroyanagi Hoshiguma }
+	callsigns = { }
+}
+
+# 地狱属西行寺家族 - Hakugyokurou
+HAK = {
+	male = {
+		names = { Yuyuko Youmu Saigyou }
+	}
+	female = {
+		names = { Yuyuko Youmu }
+	}
+	surnames = { Saigyouji Konpaku }
+	callsigns = { }
+}
+
+# 血族属妖精 - Evil
+EVI = {
+	male = {
+		names = { Cirno Daiyousei Rumia Wriggle Mystia }
+	}
+	female = {
+		names = { Cirno Daiyousei Rumia Wriggle Mystia }
+	}
+	surnames = { Cirno }
+	callsigns = { }
+}
+
+# 地灵殿 - Chireiden
+DLD = {
+	male = {
+		names = { Satori Koishi Rin Utsuho Yamame Kisume Parsee Yuugi }
+	}
+	female = {
+		names = { Satori Koishi Rin Utsuho Yamame Kisume Parsee Yuugi }
+	}
+	surnames = { Komeiji Kaenbyou Reiuji Kurodani Yamakuroyanagi Hoshiguma }
+	callsigns = { }
+}
+
+# 神灵庙 - Desires
+DES = {
+	male = {
+		names = { Miko Futo Tojiko Seiga }
+	}
+	female = {
+		names = { Miko Futo Tojiko Seiga }
+	}
+	surnames = { Toyosatomimi Mononobe Soga Kaku }
+	callsigns = { }
+}

@@ -114,7 +114,7 @@ focus_tree = {
 			inside_fantasy_attitude_level_down = yes
 			hidden_effect = {
 				every_country = {
-					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 					news_event = { hours = 6 id = nstouhou.13 }
 				}
 			}
@@ -358,7 +358,7 @@ focus_tree = {
 			inside_fantasy_attitude_level_up = yes
 			hidden_effect = {
 				every_country = {
-					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 					news_event = { hours = 6 id = nstouhou.31 }
 				}
 			}
@@ -502,7 +502,7 @@ focus_tree = {
 		bypass = {
 			all_other_country = {
 				OR = { 
-					NOT = {original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+					NOT = {original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 					exists = no
 					is_in_faction = yes
 					has_war_with = PREV 
@@ -514,7 +514,7 @@ focus_tree = {
 			is_subject = no
 			date > 1937.6.1
 			any_other_country = {
-				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 				OR = { is_subject = no is_subject_of = ROOT } exists = yes
 				is_in_faction = no
 				NOT = { has_war_with = PREV }
@@ -540,7 +540,7 @@ focus_tree = {
 			hidden_effect = {
 				every_country = {
 					limit = { 
-						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 						OR = { is_subject = no is_subject_of = ROOT } exists = yes
 						NOT = { original_tag = PREV }
 						NOT = { has_war_with = PREV }
@@ -572,7 +572,7 @@ focus_tree = {
 				is_faction_leader = yes
 			}
 			any_other_country = {
-				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 				exists = yes
 				NOT = { is_subject_of = PREV } 
 				NOT = { is_in_faction_with = PREV }
@@ -593,7 +593,7 @@ focus_tree = {
 			hidden_effect = {
 				every_country = {
 					limit = {
-						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 						exists = yes
 						NOT = { original_tag = PREV }
 						NOT = { is_subject_of = PREV } 

@@ -48,8 +48,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_touhou_evi.dds"
 	}
 	spriteType = {
-		name = "GFX_news_event_touhou_bli"
-		texturefile = "gfx/event_pictures/news_event_touhou_bli.dds"
+		name = "GFX_news_event_touhou_blq"
+		texturefile = "gfx/event_pictures/news_event_touhou_blq.dds"
 	}
 	spriteType = {
 		name = "GFX_news_event_touhou_has_open"
@@ -253,8 +253,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_touhou_hak.dds"
 	}
 	spriteType = {
-		name = "GFX_report_event_touhou_bli"
-		texturefile = "gfx/event_pictures/report_event_touhou_bli.dds"
+		name = "GFX_report_event_touhou_blq"
+		texturefile = "gfx/event_pictures/report_event_touhou_blq.dds"
 	}
 	spriteType = {
 		name = "GFX_report_event_touhou_rab"

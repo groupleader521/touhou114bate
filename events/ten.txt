@@ -33,10 +33,10 @@ country_event = {
 		name = tengu.1.a
 		ai_chance = { base = 1 }
 		TEN = {
-			set_state_owner = 1072
-			add_state_core = 1072
+			set_state_owner = 1107
+			add_state_core = 1107
 		}
-		remove_state_core = 1072
+		remove_state_core = 1107
 	}
 	option = {
 		name = tengu.1.b

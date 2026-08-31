@@ -58,7 +58,7 @@ ideas = {
 				defense_bonus_against = 0.1
 			}
 			targeted_modifier = {
-				tag = BLI
+				tag = BLQ
 				attack_bonus_against = 0.1
 				defense_bonus_against = 0.1
 			}
@@ -154,7 +154,7 @@ ideas = {
 				defense_bonus_against = 0.2
 			}
 			targeted_modifier = {
-				tag = BLI
+				tag = BLQ
 				attack_bonus_against = 0.2
 				defense_bonus_against = 0.2
 			}
@@ -250,7 +250,7 @@ ideas = {
 				defense_bonus_against = 0.3
 			}
 			targeted_modifier = {
-				tag = BLI
+				tag = BLQ
 				attack_bonus_against = 0.3
 				defense_bonus_against = 0.3
 			}
@@ -349,7 +349,7 @@ ideas = {
 				defense_bonus_against = 0.5
 			}
 			targeted_modifier = {
-				tag = BLI
+				tag = BLQ
 				attack_bonus_against = 0.5
 				defense_bonus_against = 0.5
 			}
@@ -2191,7 +2191,7 @@ ideas = {
 			picture = generic_democratic_opposition
 				
 			allowed = {
-				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 	
 			available = {
@@ -2222,7 +2222,7 @@ ideas = {
 		touhou_ideas_slave = {
 			picture = saf_history_of_segregation
 			allowed = {
-				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			modifier = {
 				consumer_goods_factor = -0.15
@@ -2237,7 +2237,7 @@ ideas = {
 		touhou_ideas_profit = {
 			picture = generic_foreign_capital
 			allowed = {
-				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 			}
 			modifier = {
 				research_speed_factor = 0.1

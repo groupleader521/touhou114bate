@@ -22,7 +22,7 @@
  touhou_magic_night_vision:0 "Night Bright Technique"
  touhou_magic_night_vision_desc:0 "Among the many types of elements, light has always been the most difficult to control. Although small-scale brightening techniques have long been popular, the progress of brightening techniques that can provide assistance for night combat has been slow. Night light technique can illuminate an area in a short period of time, just like during the day"
  touhou_magic_night_vision2:0 "Dim vision"
- touhou_magic_night_vision2_desc:0 "The application of night vision is subject to many limitations, so some researchers have begun to attempt to enable soldiers to see clearly even at night, which is called dim vision. However, although dim vision improves soldiers' night vision, the improvement is still limited. Most people like to use both in combination, but there have been increasing complaints of blindness recently"
+ touhou_magic_night_vision2_desc:0 "The application of night vision is subject to many limitations, so some researchers have begun to attempt to enable soldiers to see clearly even at night, which is called dim vision. However, although dim vision improves soldiers' night vision, the improvement is still limited. Most people like to use both in combination, but there have been increasing complaints of blqndness recently"
  
  touhou_magic_marines:0 "Marine elements"
  touhou_magic_marines_desc:0 "In specific terrains, specific elements perform better than conventional war mages. Where there is water, it is the world of ocean elements"
@@ -54,7 +54,7 @@
  touhou_magic_survival_training:0 "Simplification of Elemental Techniques"
  touhou_magic_survival_training_desc:0 "Simplify summoning and controlling magic spells to enhance stability in complex situations without affecting the elemental abilities themselves"
  touhou_magic_elite_forces:0 "Elemental Magic Specialization"
- touhou_magic_elite_forces_desc:0 "Establish a specialized elemental magic school to continuously provide the best talents and research results for the elemental troops"
+ touhou_magic_elite_forces_desc:0 "Establqsh a specialized elemental magic school to continuously provide the best talents and research results for the elemental troops"
  
  touhou_magic_interwar_artillery:0 "Energy Conversion"
  touhou_magic_interwar_artillery_desc:0 "The foundation of casting shapeshifting spells is the technique of converting one type of energy into another. Although it may increase energy loss, it can maximize the effect of a specific energy"
@@ -63,7 +63,7 @@
  touhou_magic_artillery3:0 "Element amplification"
  touhou_magic_artillery3_desc:0 "The technique of injecting elements twice after energy conversion to further enhance the effectiveness of the technique. Due to the difficulty in maintaining stable energy state after energy conversion, this technology belongs to advanced applications"
  touhou_magic_artillery5:0 "Specialized in Sculpting Magic"
- touhou_magic_artillery5_desc:0 "Establish a specialized school of plastic magic to continuously supply the best talents and research achievements for the plastic mage army"
+ touhou_magic_artillery5_desc:0 "Establqsh a specialized school of plastic magic to continuously supply the best talents and research achievements for the plastic mage army"
  
  touhou_magic_antitank1:0 "High-density condensation"
  touhou_magic_antitank1_desc:0 "Enhance the maximum amount of magic retention when condensing magic, and increase the density of magic"

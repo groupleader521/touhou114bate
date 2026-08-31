@@ -2,7 +2,7 @@ touhou_tengu_aircraft_organization = { # 天狗航空
 	include = generic_high_agility_fighter_aircraft_organization
 	icon = GFX_idea_tengu
 	allowed = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	available = {#注意，这个trigger范围不是country，而是mio本身，所以下面会有“FROM”，并且ROOT也无法定位到本国
 		FROM = {
@@ -37,13 +37,13 @@ touhou_boli_aircraft_organization = { # 博丽航空
 	include = generic_multi_role_aircraft_organization
 	icon = GFX_idea_boli
 	allowed = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	available = {
 		FROM = {
 			OR = {
-				original_tag = BLI
-				BLI = { has_opinion = { target = FROM value > 24 } }
+				original_tag = BLQ
+				BLQ = { has_opinion = { target = FROM value > 24 } }
 				controls_state = 1066
 			}
 		}
@@ -73,7 +73,7 @@ touhou_miko_aircraft_organization = { # 神子航空
 	include = generic_heavy_aircraft_organization
 	icon = GFX_idea_shenzi
 	allowed = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	available = {
 		FROM = {

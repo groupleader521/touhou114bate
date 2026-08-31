@@ -10,16 +10,28 @@
 
 	trigger = {
 		OR = {
-			FROM.FROM = { state = 1072 }
-			FROM.FROM = { state = 1073 }
-			FROM.FROM = { state = 1074 }
-			FROM.FROM = { state = 1075 }
-			FROM.FROM = { state = 1076 }
-			FROM.FROM = { state = 1077 }
-			FROM.FROM = { state = 1078 }
-			FROM.FROM = { state = 1079 }
-			FROM.FROM = { state = 1080 }
-			FROM.FROM = { state = 1081 }
+			FROM.FROM = { state = 1107 }
+			FROM.FROM = { state = 1108 }
+			FROM.FROM = { state = 1109 }
+			FROM.FROM = { state = 1110 }
+			FROM.FROM = { state = 1111 }
+			FROM.FROM = { state = 1112 }
+			FROM.FROM = { state = 1113 }
+			FROM.FROM = { state = 1114 }
+			FROM.FROM = { state = 1115 }
+			FROM.FROM = { state = 1116 }
+			FROM.FROM = { state = 1117 }
+			FROM.FROM = { state = 1118 }
+			FROM.FROM = { state = 1119 }
+			FROM.FROM = { state = 1120 }
+			FROM.FROM = { state = 1121 }
+			FROM.FROM = { state = 1122 }
+			FROM.FROM = { state = 1123 }
+			FROM.FROM = { state = 1124 }
+			FROM.FROM = { state = 1125 }
+			FROM.FROM = { state = 1126 }
+			FROM.FROM = { state = 1127 }
+			FROM.FROM = { state = 1128 }
 			FROM.FROM = { state = 1082 }
 			FROM.FROM = { state = 1083 }
 			FROM.FROM = { state = 1084 }
@@ -32,45 +44,33 @@
 			FROM.FROM = { state = 1091 }
 			FROM.FROM = { state = 1092 }
 			FROM.FROM = { state = 1093 }
-			FROM.FROM = { state = 1047 }
-			FROM.FROM = { state = 1048 }
-			FROM.FROM = { state = 1049 }
-			FROM.FROM = { state = 1050 }
-			FROM.FROM = { state = 1051 }
-			FROM.FROM = { state = 1052 }
-			FROM.FROM = { state = 1053 }
-			FROM.FROM = { state = 1054 }
-			FROM.FROM = { state = 1055 }
-			FROM.FROM = { state = 1056 }
-			FROM.FROM = { state = 1057 }
-			FROM.FROM = { state = 1058 }
-			FROM.FROM = { state = 1059 }
-			FROM.FROM = { state = 1060 }
-			FROM.FROM = { state = 1061 }
-			FROM.FROM = { state = 1062 }
-			FROM.FROM = { state = 1063 }
-			FROM.FROM = { state = 1064 }
-			FROM.FROM = { state = 1065 }
-			FROM.FROM = { state = 1066 }
-			FROM.FROM = { state = 1067 }
-			FROM.FROM = { state = 1068 }
-			FROM.FROM = { state = 1069 }
-			FROM.FROM = { state = 1070 }
-			FROM.FROM = { state = 1071 }
+			FROM.FROM = { state = 1094 }
+			FROM.FROM = { state = 1095 }
+			FROM.FROM = { state = 1096 }
+			FROM.FROM = { state = 1097 }
+			FROM.FROM = { state = 1098 }
+			FROM.FROM = { state = 1099 }
+			FROM.FROM = { state = 1100 }
+			FROM.FROM = { state = 1101 }
+			FROM.FROM = { state = 1102 }
+			FROM.FROM = { state = 1103 }
+			FROM.FROM = { state = 1104 }
+			FROM.FROM = { state = 1105 }
+			FROM.FROM = { state = 1106 }
 		}
 	}
 
 	option = {
 		name = nuke_dropped.50.a
 		trigger = {
-			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	
 	option = {
 		name = nuke_dropped.50.b
 		trigger = {
-			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	

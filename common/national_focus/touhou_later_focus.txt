@@ -8,7 +8,7 @@
 		available = {
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -28,7 +28,7 @@
 		available = {
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -52,7 +52,7 @@
 		available = {
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -74,7 +74,7 @@
 		cost =5
 
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -109,7 +109,7 @@
 		available = {
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -136,7 +136,7 @@
 		cost =5
 
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		bypass = {
 			AND = {
@@ -227,7 +227,7 @@
 		relative_position_id = touhou_new_oracle
 		cost =5
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		bypass = {
 			AND = {
@@ -376,7 +376,7 @@
 		available = {
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -518,7 +518,7 @@
 		relative_position_id = touhou_ministry_of_attack
 		cost = 10
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		completion_reward = {
 			custom_effect_tooltip = touhou_dynamic_fantasy_live_11_tt
@@ -540,7 +540,7 @@
 		available = {
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -571,7 +571,7 @@
 		relative_position_id = touhou_for_the_fantasy
 		cost = 10
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		completion_reward = {
 			custom_effect_tooltip = touhou_dynamic_fantasy_live_12_tt
@@ -591,7 +591,7 @@
 	# 	available = {
 	# 	}
 	# 	ai_will_do = {
-	# 		factor = 1065
+	# 		factor = 1100
 	# 	}
 	# 	available_if_capitulated = yes
 
@@ -619,10 +619,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1047
+			controls_state = 1082
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -641,10 +641,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1066
+			controls_state = 1101
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -668,10 +668,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1067
+			controls_state = 1102
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -697,10 +697,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1072
+			controls_state = 1107
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -724,10 +724,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1064
+			controls_state = 1099
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -754,10 +754,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1070
+			controls_state = 1105
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -778,10 +778,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1058
+			controls_state = 1093
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -802,10 +802,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1048
+			controls_state = 1083
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -827,10 +827,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1059
+			controls_state = 1094
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -854,10 +854,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1080
+			controls_state = 1115
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -879,10 +879,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1071
+			controls_state = 1106
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -906,10 +906,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1071
+			controls_state = 1106
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -930,10 +930,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1049
+			controls_state = 1084
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -962,10 +962,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1062
+			controls_state = 1097
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -989,18 +989,18 @@
 		cost =5
 
 		available = {
-			controls_state = 1062
-			controls_state = 1061
-			controls_state = 1056
-			controls_state = 1057
+			controls_state = 1097
+			controls_state = 1096
+			controls_state = 1091
+			controls_state = 1092
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
 		completion_reward = {
-			1062 = {
+			1097 = {
 				add_resource = {
 				type = rubber
 				amount = 10
@@ -1026,7 +1026,7 @@
 				amount = 10
 				}
 			}
-			1061 = {
+			1096 = {
 				add_resource = {
 				type = rubber
 				amount = 10
@@ -1052,7 +1052,7 @@
 				amount = 10
 				}
 			}
-			1056 = {
+			1091 = {
 				add_resource = {
 				type = rubber
 				amount = 10
@@ -1078,7 +1078,7 @@
 				amount = 10
 				}
 			}
-			1057 = {
+			1092 = {
 				add_resource = {
 				type = rubber
 				amount = 10
@@ -1120,10 +1120,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1063
+			controls_state = 1098
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -1147,10 +1147,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1065
+			controls_state = 1100
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -1171,10 +1171,10 @@
 		cost =5
 
 		available = {
-			controls_state = 1069
+			controls_state = 1104
 		}
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 		available_if_capitulated = yes
 
@@ -1210,7 +1210,7 @@
 		relative_position_id = touhou_special_forces_drill
 		cost = 10
 		ai_will_do = {
-			factor = 1065
+			factor = 1100
 		}
 
 		completion_reward = {
@@ -1257,10 +1257,10 @@
 	# cost =5
 
 	# available = {
-	# 	controls_state = 1069
+	# 	controls_state = 1104
 	# }
 	# ai_will_do = {
-	# 	factor = 1065
+	# 	factor = 1100
 	# }
 	# available_if_capitulated = yes
 

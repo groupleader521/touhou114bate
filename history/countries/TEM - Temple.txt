@@ -1,4 +1,4 @@
-﻿capital = 1067
+﻿capital = 1102
 
 oob = "TEM_1936"
 
@@ -70,7 +70,7 @@ add_country_leader_role = {
     character = TOUHOU_Hijiri_Byakuren
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = centrism
 		traits = {
 			shengbailian
@@ -81,7 +81,7 @@ add_country_leader_role = {
     character = TOUHOU_Hijiri_Byakuren
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = fascism_ideology
 		traits = {
 			shengbailian
@@ -92,7 +92,7 @@ add_country_leader_role = {
     character = TOUHOU_Hijiri_Byakuren
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = liberalism
 		traits = {
 			shengbailian
@@ -103,7 +103,7 @@ add_country_leader_role = {
     character = TOUHOU_Hijiri_Byakuren
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = marxism
 		traits = {
 			shengbailian
@@ -199,6 +199,6 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { TEM HUM MLS BLI }
+		nationalities = { TEM HUM MLS BLQ }
 	}
 }

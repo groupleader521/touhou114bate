@@ -34,10 +34,10 @@
  SSS_democratic_party:0 "Человечество превыше всего."
  SSS_neutrality_party:0 "Безразличие."
  
- BLI_fascism_party:0 "Зависимость от монстра."
- BLI_communism_party:0 "Равное сосуществование."
- BLI_democratic_party:0 "Человечество превыше всего."
- BLI_neutrality_party:0 "Безразличие."
+ BLQ_fascism_party:0 "Зависимость от монстра."
+ BLQ_communism_party:0 "Равное сосуществование."
+ BLQ_democratic_party:0 "Человечество превыше всего."
+ BLQ_neutrality_party:0 "Безразличие."
  
  TEM_fascism_party:0 "Зависимость от монстра."
  TEM_communism_party:0 "Равное сосуществование."

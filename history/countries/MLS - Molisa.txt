@@ -1,4 +1,4 @@
-﻿capital = 1058
+﻿capital = 1093
 
 oob = "MLS_1936"
 
@@ -33,7 +33,7 @@ set_technology = {
 }
 
 give_guarantee = HUM
-give_guarantee = BLI
+give_guarantee = BLQ
 give_guarantee = TEM
 
 
@@ -57,7 +57,7 @@ add_country_leader_role = {
     character = TOUHOU_Kirisame_Marisa
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = centrism
 		traits = {
 			molisha
@@ -68,7 +68,7 @@ add_country_leader_role = {
     character = TOUHOU_Kirisame_Marisa
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = fascism_ideology
 		traits = {
 			molisha
@@ -79,7 +79,7 @@ add_country_leader_role = {
     character = TOUHOU_Kirisame_Marisa
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = liberalism
 		traits = {
 			molisha
@@ -90,7 +90,7 @@ add_country_leader_role = {
     character = TOUHOU_Kirisame_Marisa
     promote_leader = yes
 	country_leader = {
-		expire = "11054.1.1"
+		expire = "11089.1.1"
 		ideology = marxism
 		traits = {
 			molisha
@@ -163,7 +163,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { MLS HUM BLI ALI }
+		nationalities = { MLS HUM BLQ ALI }
 	}
 
 	create_operative_leader = {

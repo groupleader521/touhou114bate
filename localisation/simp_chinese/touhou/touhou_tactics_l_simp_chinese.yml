@@ -8,7 +8,7 @@
  
  tactics_need_ghost_politics_tt:0 "拥有§Y幽灵§!作为§Y主要种族§!"
  #人族
- tactic_touhou_bli_basic_defend:0 "此路不通"
+ tactic_touhou_blq_basic_defend:0 "此路不通"
  tactic_touhou_TEM_cc_defend:0 "超人"
  tactic_touhou_mls_overwhelming_fire:0 "弹幕就是火力"
  tactic_touhou_hum_tw_defend:0 "不死鸟"

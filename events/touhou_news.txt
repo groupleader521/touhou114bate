@@ -9,22 +9,22 @@ news_event = {
 	
 	trigger = {
 		NOT = {
-				1092 = { is_controlled_by = ALI }
-				1092 = { is_controlled_by = DES }
-				1092 = { is_controlled_by = HAK }
-				1092 = { is_controlled_by = DLD }
-				1092 = { is_controlled_by = HEL }
-				1092 = { is_controlled_by = SSS }
-				1092 = { is_controlled_by = OPP }
-				1092 = { is_controlled_by = RAB }
-				1092 = { is_controlled_by = TEM }
-				1092 = { is_controlled_by = BLI }
-				1092 = { is_controlled_by = KAP }
-				1092 = { is_controlled_by = TEN }
-				1092 = { is_controlled_by = HUM }
-				1092 = { is_controlled_by = VAM }
-				1092 = { is_controlled_by = MLS }
-				1092 = { is_controlled_by = EVI }
+				1127 = { is_controlled_by = ALI }
+				1127 = { is_controlled_by = DES }
+				1127 = { is_controlled_by = HAK }
+				1127 = { is_controlled_by = DLD }
+				1127 = { is_controlled_by = HEL }
+				1127 = { is_controlled_by = SSS }
+				1127 = { is_controlled_by = OPP }
+				1127 = { is_controlled_by = RAB }
+				1127 = { is_controlled_by = TEM }
+				1127 = { is_controlled_by = BLQ }
+				1127 = { is_controlled_by = KAP }
+				1127 = { is_controlled_by = TEN }
+				1127 = { is_controlled_by = HUM }
+				1127 = { is_controlled_by = VAM }
+				1127 = { is_controlled_by = MLS }
+				1127 = { is_controlled_by = EVI }
 		}
 		NOT = { has_global_flag = RAB_has_been_open }
 	}
@@ -40,12 +40,12 @@ news_event = {
 	option = {
 		name = nstouhou.1.a
 		trigger = {
-			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	option = {
 		name = nstouhou.1.b
-		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 	}
 }
 news_event = {
@@ -59,22 +59,22 @@ news_event = {
 	trigger = {
 		NOT = {
 			OR = {
-				1063 = { is_controlled_by = ALI }
-				1063 = { is_controlled_by = DES }
-				1063 = { is_controlled_by = HAK }
-				1063 = { is_controlled_by = DLD }
-				1063 = { is_controlled_by = HEL }
-				1063 = { is_controlled_by = SSS }
-				1063 = { is_controlled_by = OPP }
-				1063 = { is_controlled_by = RAB }
-				1063 = { is_controlled_by = TEM }
-				1063 = { is_controlled_by = BLI }
-				1063 = { is_controlled_by = KAP }
-				1063 = { is_controlled_by = TEN }
-				1063 = { is_controlled_by = HUM }
-				1063 = { is_controlled_by = VAM }
-				1063 = { is_controlled_by = MLS }
-				1063 = { is_controlled_by = EVI }
+				1098 = { is_controlled_by = ALI }
+				1098 = { is_controlled_by = DES }
+				1098 = { is_controlled_by = HAK }
+				1098 = { is_controlled_by = DLD }
+				1098 = { is_controlled_by = HEL }
+				1098 = { is_controlled_by = SSS }
+				1098 = { is_controlled_by = OPP }
+				1098 = { is_controlled_by = RAB }
+				1098 = { is_controlled_by = TEM }
+				1098 = { is_controlled_by = BLQ }
+				1098 = { is_controlled_by = KAP }
+				1098 = { is_controlled_by = TEN }
+				1098 = { is_controlled_by = HUM }
+				1098 = { is_controlled_by = VAM }
+				1098 = { is_controlled_by = MLS }
+				1098 = { is_controlled_by = EVI }
 			}
 		}
 		NOT = { has_global_flag = RAB_has_been_open }
@@ -91,7 +91,7 @@ news_event = {
 	option = {
 		name = nstouhou.2.a
 		trigger = {
-			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	option = {
@@ -100,7 +100,7 @@ news_event = {
 	}
 	option = {
 		name = nstouhou.2.c
-		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 	}
 }
 news_event = {
@@ -114,22 +114,22 @@ news_event = {
 	trigger = {
 		NOT = {
 			OR = {
-				1069 = { is_controlled_by = ALI }
-				1069 = { is_controlled_by = DES }
-				1069 = { is_controlled_by = HAK }
-				1069 = { is_controlled_by = DLD }
-				1069 = { is_controlled_by = HEL }
-				1069 = { is_controlled_by = SSS }
-				1069 = { is_controlled_by = OPP }
-				1069 = { is_controlled_by = RAB }
-				1069 = { is_controlled_by = TEM }
-				1069 = { is_controlled_by = BLI }
-				1069 = { is_controlled_by = KAP }
-				1069 = { is_controlled_by = TEN }
-				1069 = { is_controlled_by = HUM }
-				1069 = { is_controlled_by = VAM }
-				1069 = { is_controlled_by = MLS }
-				1069 = { is_controlled_by = EVI }
+				1104 = { is_controlled_by = ALI }
+				1104 = { is_controlled_by = DES }
+				1104 = { is_controlled_by = HAK }
+				1104 = { is_controlled_by = DLD }
+				1104 = { is_controlled_by = HEL }
+				1104 = { is_controlled_by = SSS }
+				1104 = { is_controlled_by = OPP }
+				1104 = { is_controlled_by = RAB }
+				1104 = { is_controlled_by = TEM }
+				1104 = { is_controlled_by = BLQ }
+				1104 = { is_controlled_by = KAP }
+				1104 = { is_controlled_by = TEN }
+				1104 = { is_controlled_by = HUM }
+				1104 = { is_controlled_by = VAM }
+				1104 = { is_controlled_by = MLS }
+				1104 = { is_controlled_by = EVI }
 			}
 		}
 		NOT = { has_global_flag = RAB_has_been_open }
@@ -146,7 +146,7 @@ news_event = {
 	option = {
 		name = nstouhou.3.a
 		trigger = {
-			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	option = {
@@ -155,7 +155,7 @@ news_event = {
 	}
 	option = {
 		name = nstouhou.3.c
-		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+		trigger = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 	}
 }
 news_event = {
@@ -169,29 +169,29 @@ news_event = {
 	trigger = {
 		NOT = {
 			OR = {
-				1087 = { is_controlled_by = ALI }
-				1087 = { is_controlled_by = DES }
-				1087 = { is_controlled_by = HAK }
-				1087 = { is_controlled_by = DLD }
-				1087 = { is_controlled_by = HEL }
-				1087 = { is_controlled_by = SSS }
-				1087 = { is_controlled_by = OPP }
-				1087 = { is_controlled_by = RAB }
-				1087 = { is_controlled_by = TEM }
-				1087 = { is_controlled_by = BLI }
-				1087 = { is_controlled_by = KAP }
-				1087 = { is_controlled_by = TEN }
-				1087 = { is_controlled_by = HUM }
-				1087 = { is_controlled_by = VAM }
-				1087 = { is_controlled_by = MLS }
-				1087 = { is_controlled_by = EVI }
+				1122 = { is_controlled_by = ALI }
+				1122 = { is_controlled_by = DES }
+				1122 = { is_controlled_by = HAK }
+				1122 = { is_controlled_by = DLD }
+				1122 = { is_controlled_by = HEL }
+				1122 = { is_controlled_by = SSS }
+				1122 = { is_controlled_by = OPP }
+				1122 = { is_controlled_by = RAB }
+				1122 = { is_controlled_by = TEM }
+				1122 = { is_controlled_by = BLQ }
+				1122 = { is_controlled_by = KAP }
+				1122 = { is_controlled_by = TEN }
+				1122 = { is_controlled_by = HUM }
+				1122 = { is_controlled_by = VAM }
+				1122 = { is_controlled_by = MLS }
+				1122 = { is_controlled_by = EVI }
 			}
 		}
-		NOT = { has_global_flag = BLI_has_been_open }
+		NOT = { has_global_flag = BLQ_has_been_open }
 	}
 	
 	immediate = {
-		set_global_flag = BLI_has_been_open
+		set_global_flag = BLQ_has_been_open
 	}
 	
 	mean_time_to_happen = {
@@ -201,12 +201,12 @@ news_event = {
 	option = {
 		name = nstouhou.4.a
 		trigger = {
-			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	option = {
 		name = nstouhou.4.b
-		trigger = { TAG = BLI }
+		trigger = { TAG = BLQ }
 	}
 	option = {
 		name = nstouhou.4.c
@@ -222,7 +222,7 @@ news_event = {#爱丽丝恢复
 	
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
 	}
 	option = {
 		name = nstouhou.5.a
@@ -236,7 +236,7 @@ news_event = {#爱丽丝胜新闻
 	
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
 	}
 	option = {
 		name = nstouhou.6.a
@@ -250,7 +250,7 @@ news_event = {#爱丽丝败新闻
 	
 	is_triggered_only = yes
 	trigger = {
-		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
 	}
 	option = {
 		name = nstouhou.7.a
@@ -263,7 +263,7 @@ news_event = {#幻想乡统一——对外
 	picture = GFX_news_event_touhou
 	
 	trigger = {
-		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -277,7 +277,7 @@ news_event = {#地狱新政
 	picture = GFX_news_event_touhou_opp
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -291,7 +291,7 @@ news_event = {#重申地狱所有权
 	picture = GFX_news_event_touhou_opp
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -305,7 +305,7 @@ news_event = {#旧都酿酒厂
 	picture = GFX_news_event_touhou_hel
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -319,7 +319,7 @@ news_event = {#要求天狗进贡
 	picture = GFX_news_event_touhou_hel
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -333,7 +333,7 @@ news_event = {#开放地狱炉
 	picture = GFX_news_event_touhou_dld
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -347,7 +347,7 @@ news_event = {#新天地
 	picture = GFX_news_event_touhou_dld
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -361,7 +361,7 @@ news_event = {#河童向天狗进贡
 	picture = GFX_news_event_touhou_kap
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -375,7 +375,7 @@ news_event = {#河童代表团
 	picture = GFX_news_event_touhou_kap
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -389,7 +389,7 @@ news_event = {#冥府门卫
 	picture = GFX_news_event_touhou_hak
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -403,7 +403,7 @@ news_event = {#贤者进驻
 	picture = GFX_news_event_touhou_hak
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -417,7 +417,7 @@ news_event = {#扩大乐园
 	picture = GFX_news_event_touhou_evi
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -431,7 +431,7 @@ news_event = {#妖精的团结
 	picture = GFX_news_event_touhou_evi
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -442,10 +442,10 @@ news_event = {#幻想乡会谈
 	id = nstouhou.21
 	title = nstouhou.21.t
 	desc = nstouhou.21.d
-	picture = GFX_news_event_touhou_bli
+	picture = GFX_news_event_touhou_blq
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -456,10 +456,10 @@ news_event = {#平定纠纷
 	id = nstouhou.22
 	title = nstouhou.22.t
 	desc = nstouhou.22.d
-	picture = GFX_news_event_touhou_bli
+	picture = GFX_news_event_touhou_blq
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -473,13 +473,13 @@ news_event = {#永远亭科技博览会
 	picture = GFX_news_event_touhou_rab
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
 		name = nstouhou.23.a
 		trigger = {
-			OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = TEM original_tag = BLI original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			OR = { original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = TEM original_tag = BLQ original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	option = {
@@ -496,7 +496,7 @@ news_event = {#幻想霸权
 	picture = GFX_news_event_touhou_rab
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -510,7 +510,7 @@ news_event = {#外界渗透计划
 	picture = GFX_news_event_touhou_rab
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -524,7 +524,7 @@ news_event = {#红魔大宴
 	picture = GFX_news_event_touhou_vam
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -538,7 +538,7 @@ news_event = {#宣称霸权
 	picture = GFX_news_event_touhou_vam
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -552,7 +552,7 @@ news_event = {#异教宽容
 	picture = GFX_news_event_touhou_sss
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -566,7 +566,7 @@ news_event = {#信徒宣誓
 	picture = GFX_news_event_touhou_sss
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -580,7 +580,7 @@ news_event = {#幻想乡观光团
 	picture = GFX_news_event_touhou_ten
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -594,7 +594,7 @@ news_event = {#全面戒严
 	picture = GFX_news_event_touhou_ten
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -608,7 +608,7 @@ news_event = {#联络好友
 	picture = GFX_news_event_touhou_mls
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -622,7 +622,7 @@ news_event = {#暗中行动
 	picture = GFX_news_event_touhou_mls
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -636,7 +636,7 @@ news_event = {#普渡众生
 	picture = GFX_news_event_touhou_tem
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -650,7 +650,7 @@ news_event = {#普渡众生（物理）
 	picture = GFX_news_event_touhou_tem
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -664,7 +664,7 @@ news_event = {#诸事兴于和
 	picture = GFX_news_event_touhou_tem
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -678,7 +678,7 @@ news_event = {#万物亡于怠
 	picture = GFX_news_event_touhou_tem
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -692,7 +692,7 @@ news_event = {#依附强者
 	picture = GFX_news_event_touhou_hum
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -706,7 +706,7 @@ news_event = {#独立自主
 	picture = GFX_news_event_touhou_hum
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -720,7 +720,7 @@ news_event = {#人偶献礼
 	picture = GFX_news_event_touhou_ali_gentle
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -734,7 +734,7 @@ news_event = {#人偶情报网
 	picture = GFX_news_event_touhou_ali_radicalness
 	
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -759,7 +759,7 @@ news_event = {#血族离开
 	desc = nstouhou.43.d
 	picture = GFX_news_event_touhou_vam
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -772,7 +772,7 @@ news_event = {#血月病
 	desc = nstouhou.44.d
 	picture = GFX_news_event_touhou_vam
 	trigger = {
-		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		NOT = { has_idea = ROM_fear_VAM }
 	}
 	is_triggered_only = yes
@@ -786,7 +786,7 @@ news_event = {#幻想乡统一——对内
 	desc = nstouhou.45.d
 	picture = GFX_news_event_touhou
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -820,7 +820,7 @@ news_event = {#死之少女——对内
 	desc = nstouhou.46.d
 	picture = GFX_news_event_touhou_alice_death's_girl
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -842,7 +842,7 @@ news_event = {#死之少女——对外
 	desc = nstouhou.47.d
 	picture = GFX_news_event_touhou_alice_death's_girl
 	trigger = {
-		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -855,7 +855,7 @@ news_event = {#魔界降临——对内
 	desc = nstouhou.48.d
 	picture = GFX_news_event_touhou_alice_devildom
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {
@@ -877,7 +877,7 @@ news_event = {#魔界降临——对外
 	desc = nstouhou.49.d
 	picture = GFX_news_event_touhou_alice_devildom
 	trigger = {
-		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+		NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	}
 	is_triggered_only = yes
 	option = {

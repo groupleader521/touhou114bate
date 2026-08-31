@@ -26,7 +26,7 @@
  evil.4.d:0 "Since I started fantasizing about it, our compatriots have been joining us from various places. Some of them were resurrected after dying in battle, some came to play after hearing about it. In short, they have any reason, and some have no reason at all. They just came here when they saw many people. But no matter what, they all expressed their willingness to become soldiers, although perhaps no one knows what a soldier is and no one cares at all"
  evil.4.a:0 "Hahaha! Mother is the strongest"
  evil.5.t:0 "Fairies demand independence"
- evil.5.d:0 "The Fairy Freedom Movement has started a new activity, and they are demanding that we agree to the independence of Fairy Paradise. Although they pose no threat, their excessively large number and widespread presence in almost every corner make it very difficult to handle and have a huge impact on public security. Moreover, this movement has never stopped. What should we do"
+ evil.5.d:0 "The Fairy Freedom Movement has started a new activity, and they are demanding that we agree to the independence of Fairy Paradise. Although they pose no threat, their excessively large number and widespread presence in almost every corner make it very difficult to handle and have a huge impact on publqc security. Moreover, this movement has never stopped. What should we do"
  evil.5.a:0 "There's no other way"
  evil.5.b:0 "Don't even think about it"
  evil.6.t:0 "Fairies Occupy northern Misty Lake"
@@ -106,7 +106,7 @@
  molisha.0.t:0 "The establishment of Wuyu Country"
  molisha.0.d:0 "At the beginning of the world's incident, everyone was in a state of confusion and panic, including myself. However, I am Marisa, the one who has solved countless incident. This time, I will also be able to eliminate the incident three times and five times. But there must be a beginning, Xianglin Hall looks good. When I said I wanted to borrow Xianglin Hall as my territory, Xianglin's expression was really funny. Although it took some twists and turns, it was at least established. His name is Misty Rain Country, a land where both humans and youkai can live happily\" By. Misty Rain Magic Risha Diary"
  molisha.0.a:0 "Both humans and youkai are my friends"
- molisha.1.t:0 "Doubts from the public"
+ molisha.1.t:0 "Doubts from the publqc"
  molisha.1.d:0 "At the beginning of its establishment, everything went smoothly, but when the people discovered that there were still foreigners here, and Miss Marisa, you were the leader, the situation suddenly changed. At present, the main points of controversy you are facing are; your legitimacy, and people suspect that you obtained your territory through despicable means; Your ability, although you have resolved many incidents, you are still a child and there are controversies in governing the country; Your purpose is that the youkai in your territory believe you are human and attempt to destroy them under the banner of equality, while humans believe you are a youkai and oppress them under the banner of equality"
  molisha.1.a:0 "How could this happen"
  molisha.2.t:0 "Anxiety is spreading"
@@ -537,7 +537,7 @@
  touhou_devildom.31.d:0 "They gathered together"
  touhou_devildom.31.a:0 "Whatever"
 
- touhou_devildom.311.t:0 "Establish this World Federation"
+ touhou_devildom.311.t:0 "Establqsh this World Federation"
  touhou_devildom.311.d:0 "After a long period of practice, our leader [ROOT. VNet eader] made the assertion that no country has the ability to contend with the demon world - a world that can only be countered by a united world. Any act of self-protection is self destructive. Based on this, we invite high-level officials from various countries to establish a global alliance. This proposal received support from all exiled governments and warring countries in the demon world, but those geographically superior countries held opposing views or needed sufficient benefits. The meeting fell into chaos. I hope that all of you will make a decision that can be recognized by yourself and your descendants. In the end, the conference will unanimously support the establishment of a global alliance, with no objections or abstentions, and [ROOT.GetName] as the leading country"
  touhou_devildom.311.a:0 "A great step forward"
  touhou_the_Union:0 "This World Federation"
@@ -589,7 +589,7 @@
  touhou_ideas_god_of_makai_other_desc:0 "禝f it's more about perseverance, I won't lose"
 
  touhou_devildom.422.t:0 "BE; A Good Ending Only Belonging to Gensokyo"
- touhou_devildom.422.d:0 "The beheading team successfully entered the demon city, and Alice escorted the tearful and bewildered Shenqi to the headquarters, announcing the surrender of the demon world. The unwelcome guest was seriously injured and is receiving treatment. In order to calm the situation, we did not make Shen Qi public. Unexpectedly, this has instead caused panic in various countries. Before the accident occurred, we deployed the beheading team to major cities in various countries and other places where they should have been deployed, although we encountered some resistance... In short, the outcome was good, at least for Gensokyo"
+ touhou_devildom.422.d:0 "The beheading team successfully entered the demon city, and Alice escorted the tearful and bewildered Shenqi to the headquarters, announcing the surrender of the demon world. The unwelcome guest was seriously injured and is receiving treatment. In order to calm the situation, we did not make Shen Qi publqc. Unexpectedly, this has instead caused panic in various countries. Before the accident occurred, we deployed the beheading team to major cities in various countries and other places where they should have been deployed, although we encountered some resistance... In short, the outcome was good, at least for Gensokyo"
  touhou_devildom.422.a:0 "There is still a long way to go"
  touhou_global_flag_news_1053:0 "Enter BE"
 
@@ -636,7 +636,7 @@
  touhou_option.11.dd:0 "Unnamed boundary breaking"
 
  touhou_option.12.t:0 "Error, move it away, next one"
- touhou_option.12.d:0 "Don't guess blindly, there will be punishment if you answer incorrectly~"
+ touhou_option.12.d:0 "Don't guess blqndly, there will be punishment if you answer incorrectly~"
  touhou_option.12.a:0 "Dare again next time"
 
  touhou_option.2.t:0 "Award winning Q&A; Author"

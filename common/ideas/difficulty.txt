@@ -132,7 +132,7 @@ ideas = {
 					type = puppet_wargoal_focus
 				}
 				declare_war_on = {
-					target = BLI
+					target = BLQ
 					type = puppet_wargoal_focus
 				}
 				declare_war_on = {
@@ -207,7 +207,7 @@ ideas = {
 					type = puppet_wargoal_focus
 				}
 				declare_war_on = {
-					target = BLI
+					target = BLQ
 					type = puppet_wargoal_focus
 				}
 				declare_war_on = {

@@ -887,57 +887,57 @@
 	# 	cost =5
 
 	# 	available = {
-	# 		controls_state = 1069
-	# 		controls_state = 1063
-	# 		controls_state = 1087
-	# 		controls_state = 1092
+	# 		controls_state = 1104
+	# 		controls_state = 1098
+	# 		controls_state = 1122
+	# 		controls_state = 1127
 	# 	}
 	# 	ai_will_do = {
-	# 		factor = 1065
+	# 		factor = 1100
 	# 	}
 	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
-	# 		1069 = {
+	# 		1104 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
 	# 					type = coastal_bunker
 	# 					level = 10
-	# 					province = 13452
+	# 					province = 13484
 	# 					instant_build = yes
 	# 				}
 	# 			}
 	# 		}
-	# 		1063 = {
+	# 		1098 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
 	# 					type = coastal_bunker
 	# 					level = 10
-	# 					province = 13480
+	# 					province = 13512
 	# 					instant_build = yes
 	# 				}
 	# 			}
 	# 		}
-	# 		1087 = {
+	# 		1122 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
 	# 					type = coastal_bunker
 	# 					level = 10
-	# 					province = 13494
+	# 					province = 13526
 	# 					instant_build = yes
 	# 				}
 	# 			}
 	# 		}
-	# 		1092 = {
+	# 		1127 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
 	# 					type = coastal_bunker
 	# 					level = 10
-	# 					province = 13396
+	# 					province = 13428
 	# 					instant_build = yes
 	# 				}
 	# 			}
@@ -953,18 +953,18 @@
 	# 	cost =5
 
 	# 	available = {
-	# 		controls_state = 1069
-	# 		controls_state = 1063
-	# 		controls_state = 1087
-	# 		controls_state = 1092
+	# 		controls_state = 1104
+	# 		controls_state = 1098
+	# 		controls_state = 1122
+	# 		controls_state = 1127
 	# 	}
 	# 	ai_will_do = {
-	# 		factor = 1065
+	# 		factor = 1100
 	# 	}
 	# 	available_if_capitulated = yes
 
 	# 	completion_reward = {
-	# 		1069 = {
+	# 		1104 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
@@ -974,7 +974,7 @@
 	# 				}
 	# 			}
 	# 		}
-	# 		1063 = {
+	# 		1098 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
@@ -984,7 +984,7 @@
 	# 				}
 	# 			}
 	# 		}
-	# 		1087 = {
+	# 		1122 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
@@ -994,7 +994,7 @@
 	# 				}
 	# 			}
 	# 		}
-	# 		1092 = {
+	# 		1127 = {
 	# 			if = {
 	# 				limit = { is_controlled_by = ROOT }
 	# 				add_building_construction = {
@@ -1042,7 +1042,7 @@
 	# 			every_neighbor_country = {
 	# 				if = {
 	# 					limit = { 
-	# 						NOT = {original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	# 						NOT = {original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	# 						exists = yes
 	# 					}
 	# 					country_event = generic.5
@@ -1065,7 +1065,7 @@
 	# 	relative_position_id = touhou_army_leader_power
 	# 	cost =5
 	# 	ai_will_do = {
-	# 		factor = 1065
+	# 		factor = 1100
 	# 	}
 	# 	completion_reward = {
 	# 		add_ideas = touhou_terrors_unknown_idea
@@ -1078,7 +1078,7 @@
 	# 		OR = {
 	# 			any_neighbor_country = {
 	# 				NOT = { original_tag = JAP }
-	# 				NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	# 				NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	# 				NOT = { is_in_faction_with = FROM }
 	# 			}
 	# 			JAP = {
@@ -1105,7 +1105,7 @@
 	# 				if = {
 	# 					limit = { 
 	# 						NOT = { original_tag = JAP }
-	# 						NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+	# 						NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 	# 						NOT = { is_in_faction_with = FROM }
 	# 					}
 	# 					PREV = {

@@ -34,10 +34,10 @@
  SSS_democratic_party:0 "人类至上"
  SSS_neutrality_party:0 "漠不关心"
  
- BLI_fascism_party:0 "依附妖怪"
- BLI_communism_party:0 "平等共存"
- BLI_democratic_party:0 "人类至上"
- BLI_neutrality_party:0 "漠不关心"
+ BLQ_fascism_party:0 "依附妖怪"
+ BLQ_communism_party:0 "平等共存"
+ BLQ_democratic_party:0 "人类至上"
+ BLQ_neutrality_party:0 "漠不关心"
  
  TEM_fascism_party:0 "依附妖怪"
  TEM_communism_party:0 "平等共存"

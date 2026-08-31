@@ -1,7 +1,7 @@
 gensokyo_civil_war_ally_nobody = {
 	enable = {
 		NOT = {
-			tag = ALI tag = DES tag = HAK tag = DLD tag = HEL tag = SSS tag = OPP tag = RAB tag = TEM tag = BLI tag = KAP tag = TEN tag = HUM tag = VAM tag = MLS tag = EVI
+			tag = ALI tag = DES tag = HAK tag = DLD tag = HEL tag = SSS tag = OPP tag = RAB tag = TEM tag = BLQ tag = KAP tag = TEN tag = HUM tag = VAM tag = MLS tag = EVI
 		}
 	}
 	abort = {
@@ -54,7 +54,7 @@ gensokyo_civil_war_ally_nobody = {
 	}
 	ai_strategy = {
 		type = alliance
-		id = BLI
+		id = BLQ
 		value = -2000
 	}
 	ai_strategy = {

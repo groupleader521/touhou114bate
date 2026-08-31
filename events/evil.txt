@@ -28,13 +28,13 @@ country_event = {
 	desc = {
 		text = evil.1.d
 		trigger = {
-			NOT = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+			NOT = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 		}
 	}
 	desc = {
 		text = evil.1.d_fantasy
 		trigger = {
-			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS }
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS }
 		}
 	}
 	desc = {
@@ -63,13 +63,13 @@ country_event = {
 	desc = {
 		text = evil.2.d
 		trigger = {
-			NOT = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+			NOT = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 		}
 	}
 	desc = {
 		text = evil.2.d_fantasy
 		trigger = {
-			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS }
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS }
 		}
 	}
 	desc = {
@@ -103,19 +103,19 @@ country_event = {
 	desc = {
 		text = evil.3.d
 		trigger = {
-			NOT = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
+			NOT = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
 		}
 	}
 	desc = {
 		text = evil.3.d_fantasy
 		trigger = {
-			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
 		}
 	}
 	desc = {
 		text = evil.3.d_fantasy
 		trigger = {
-			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS }
+			OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS }
 		}
 	}
 	desc = {
@@ -145,7 +145,7 @@ country_event = {
 		original_tag = EVI
 		OR = {
 			is_ai = yes
-			has_manpower < 106500
+			has_manpower < 110000
 		}
 	}
 	mean_time_to_happen = {
@@ -153,7 +153,7 @@ country_event = {
 	}
 	option = {
 		name = evil.4.a
-		add_manpower = 106500
+		add_manpower = 110000
 	}
 }
 country_event = {
@@ -193,12 +193,12 @@ country_event = {
 	option = {
 		name = evil.6.a
 		ai_chance = { base = 1 }
-		EVI = { set_state_owner = 1086 set_state_controller = 1086 }
+		EVI = { set_state_owner = 1121 set_state_controller = 1121 }
 	}
 	option = {
 		name = evil.6.b
 		ai_chance = { base = 9 }
-		EVI = { set_state_owner = 1086 set_state_controller = 1086 }
+		EVI = { set_state_owner = 1121 set_state_controller = 1121 }
 		declare_war_on = {
 			target = EVI
 			type = annex_everything
@@ -216,7 +216,7 @@ country_event = {
 	option = {
 		name = evil.7.a
 		ai_chance = { base = 1 }
-		EVI = { set_state_owner = 1084 set_state_controller = 1084 }
+		EVI = { set_state_owner = 1119 set_state_controller = 1119 }
 	}
 	option = {
 		name = evil.7.b

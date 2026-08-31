@@ -56,7 +56,7 @@ units = {
 }
 
 air_wings = {
-	1059 = { 
+	1094 = { 
 		suicide_puppet_equipment_2 = {
 			owner = "ALI" 
 			amount = 10

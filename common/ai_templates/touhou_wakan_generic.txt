@@ -1,7 +1,7 @@
 touhou_wakan_garrison_generic = {
 
 	available_for = {
-		BLI
+		BLQ
 		HUM
 		SSS
 		DES
@@ -98,7 +98,7 @@ touhou_wakan_garrison_generic = {
 
 touhou_wakan_suppression_generic = {
 	available_for = {
-		BLI
+		BLQ
 		HUM
 		SSS
 		DES
@@ -209,7 +209,7 @@ touhou_wakan_suppression_generic = {
 touhou_wakan_infantry_generic = {
 
 	available_for = {
-		BLI
+		BLQ
 		HUM
 		SSS
 		DES
@@ -308,7 +308,7 @@ touhou_wakan_infantry_generic = {
 touhou_wakan_infantry_big_generic = {
 
 	available_for = {
-		BLI
+		BLQ
 		HUM
 		SSS
 		DES
@@ -428,7 +428,7 @@ touhou_wakan_infantry_big_generic = {
 touhou_wakan_mountaineers_generic = {
 
 	available_for = {
-		BLI
+		BLQ
 		HUM
 		SSS
 		DES
@@ -534,7 +534,7 @@ touhou_wakan_mountaineers_generic = {
 touhou_wakan_marines_generic = {
 
 	available_for = {
-		BLI
+		BLQ
 		HUM
 		SSS
 		DES
@@ -719,7 +719,7 @@ touhou_wakan_marines_generic = {
 touhou_wakan_paratrooper_generic = {
 
 	available_for = {
-		BLI
+		BLQ
 		HUM
 		SSS
 		DES

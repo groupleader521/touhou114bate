@@ -34,10 +34,10 @@
  SSS_democratic_party:0 "Human supremacy"
  SSS_neutrality_party:0 "Indifference"
  
- BLI_fascism_party:0 "Dependent on Youkai"
- BLI_communism_party:0 "Equal coexistence"
- BLI_democratic_party:0 "Human supremacy"
- BLI_neutrality_party:0 "Indifference"
+ BLQ_fascism_party:0 "Dependent on Youkai"
+ BLQ_communism_party:0 "Equal coexistence"
+ BLQ_democratic_party:0 "Human supremacy"
+ BLQ_neutrality_party:0 "Indifference"
  
  TEM_fascism_party:0 "Dependent on Youkai"
  TEM_communism_party:0 "Equal coexistence"

@@ -128,7 +128,7 @@ country_event = {#选择人类
 		add_equipment_to_stockpile = { type = touhou_magic_light_tank_equipment_1 amount = 200 producer = ALI }
 		add_equipment_to_stockpile = { type = touhou_wakan_motorized_equipment_1 amount = 500 producer = TEM }
 		add_equipment_to_stockpile = { type = touhou_wakan_artillery_equipment_1 amount = 300 producer = DES }
-		add_equipment_to_stockpile = { type = touhou_wakan_infantry_equipment_0 amount = 3000 producer = BLI }
+		add_equipment_to_stockpile = { type = touhou_wakan_infantry_equipment_0 amount = 3000 producer = BLQ }
 		add_equipment_to_stockpile = { type = touhou_support_equipment_1 amount = 500 producer = SSS }
 		hidden_effect = {
 			country_event = { id = molisha.41 random_days = 5 }
@@ -144,7 +144,7 @@ country_event = {#选择人类，人类方
 	is_triggered_only = yes
 	picture = GFX_report_event_touhou_politica_human
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
 		has_government = democratic
 	}
 	option = {
@@ -159,7 +159,7 @@ country_event = {#选择人类，妖怪方
 	is_triggered_only = yes
 	picture = GFX_report_event_touhou_politica_human
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
 		has_government = communism
 	}
 	option = {
@@ -174,7 +174,7 @@ country_event = {#平等方
 	is_triggered_only = yes
 	picture = GFX_report_event_touhou_politica_monster
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
 		has_government = communism
 	}
 	option = {
@@ -231,7 +231,7 @@ country_event = {#选择妖怪，人类方
 	is_triggered_only = yes
 	picture = GFX_report_event_touhou_politica_monster
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
 		has_government = democratic
 	}
 	option = {
@@ -246,7 +246,7 @@ country_event = {#选择妖怪，妖怪方
 	is_triggered_only = yes
 	picture = GFX_report_event_touhou_politica_monster
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLI original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
 		has_government = communism
 	}
 	option = {
@@ -277,7 +277,7 @@ country_event = {#坚持到底
 		}
 		add_ideas = touhou_communist_influence
 		add_manpower = 200000
-		add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 1065 producer = ALI }
+		add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 1100 producer = ALI }
 	}
 }
 country_event = {

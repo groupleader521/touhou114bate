@@ -1,0 +1,156 @@
+touhou_debug_decisions = {
+    touhou_debug_annex_gensokyo = {
+        icon = generic_research
+        available = {
+            is_ai = no
+        }
+        visible = {
+            always = yes
+        }
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+            every_state = {
+                limit = {
+                    has_state_flag = is_gensokyo_state_flag
+                }
+                transfer_state_to  = ROOT
+            }
+        }
+    }
+    touhou_debug_instant_reform = {
+        icon = generic_research
+        available = {
+            is_ai = no
+        }
+        visible = {
+            always = yes
+        }
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+            set_country_flag = fantasy_society_reform_ready_flag
+            touhou_society_reform_finish_effect = yes
+			set_country_flag = fantasy_government_reform_ready_flag
+            touhou_fiscal_reform_finish_effect = yes
+            set_country_flag = fantasy_research_reform_ready_flag
+            touhou_research_reform_finish_effect = yes
+            set_country_flag = fantasy_army_reform_ready_flag
+            touhou_army_reform_finish_effect = yes
+            set_country_flag = fantasy_industry_reform_ready_flag
+            touhou_industry_reform_finish_effect = yes
+        }
+    }
+    touhou_debug_core_all = {
+        icon = generic_research
+        available = {
+            is_ai = no
+        }
+        visible = {
+            always = yes
+        }
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+            every_owned_state = {
+                add_core_of = ROOT
+            }
+        }
+    }
+    touhou_debug_annex_afr = {
+        icon = generic_research
+        available = {
+            is_ai = no
+        }
+        visible = {
+            always = yes
+        }
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+            every_state = {
+                if = {
+                    limit = {
+                        is_on_continent = africa
+                    }
+                    transfer_state_to = ROOT
+                }
+            }
+        }
+    }
+    touhou_debug_remove_elec = {
+        icon = generic_research
+        available = {
+            is_ai = no
+        }
+        visible = {
+            always = yes
+        }
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+            remove_ideas_with_trait = electronics_concern
+        }
+    }
+    touhou_debug_remove_elec2 = {
+        icon = generic_research
+        available = {
+            is_ai = no
+        }
+        visible = {
+            always = yes
+        }
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+            remove_ideas = generic_electronics_concern
+        }
+    }
+    touhou_debug_remove_elec3 = {
+        icon = generic_research
+        available = {
+            is_ai = no
+        }
+        visible = {
+            always = yes
+        }
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+            swap_ideas = {
+                remove_idea = generic_electronics_concern
+                add_idea = generic_industrial_concern
+            }
+            
+        }
+    }
+	
+	touhou_debug_get_boss_characters = {
+        icon = generic_research
+        available = {
+            is_ai = no
+        }
+        visible = {
+            always = yes
+        }
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+			touhou_boss_get_characters_effect = yes
+        }
+	}
+	touhou_debug_become_boss = {
+        icon = generic_research
+        available = {
+            is_ai = no
+        }
+        visible = {
+            always = yes
+        }
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+			touhou_boss_initialize_effect = yes
+        }
+	}
+}

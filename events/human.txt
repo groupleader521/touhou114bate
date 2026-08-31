@@ -6,7 +6,7 @@ country_event = {#迷茫的人们
 	picture = GFX_report_event_touhou_human_confused
 	is_triggered_only = yes
 	trigger = {
-			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLQ original_tag = TEM original_tag = DES }
 		}
 
 	immediate = {
@@ -26,7 +26,7 @@ country_event = {#人类和共存论战
 	desc = human.1.d
 	picture = GFX_report_event_touhou_human_discussion
 	trigger = {
-			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLQ original_tag = TEM original_tag = DES }
 			has_idea = confused_human
 			communism > 0.1
 			democratic > 0.1
@@ -85,7 +85,7 @@ country_event = {#人类和妖怪论战
 	desc = human.2.d
 	picture = GFX_report_event_touhou_human_discussion
 	trigger = {
-			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLQ original_tag = TEM original_tag = DES }
 			fascism > 0.1
 			democratic > 0.1
 			NOT = {
@@ -142,7 +142,7 @@ country_event = {#共存和妖怪论战
 	desc = human.3.d
 	picture = GFX_report_event_touhou_human_discussion
 	trigger = {
-			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLQ original_tag = TEM original_tag = DES }
 			fascism > 0.1
 			communism > 0.1
 			NOT = {
@@ -217,7 +217,7 @@ country_event = {#论战结果前胜
 	picture = GFX_report_event_touhou_human_discussion_windanlose
 	is_triggered_only = yes
 	trigger = {
-			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLQ original_tag = TEM original_tag = DES }
 		}
 	
 	option = {
@@ -288,7 +288,7 @@ country_event = {#论战结果后胜
 	picture = GFX_report_event_touhou_human_discussion_windanlose
 	is_triggered_only = yes
 	trigger = {
-			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLQ original_tag = TEM original_tag = DES }
 		}
 	
 	option = {
@@ -341,7 +341,7 @@ country_event = {#人类和共存激烈论战
 	desc = human.6.d
 	picture = GFX_report_event_touhou_human_discussion
 	trigger = {
-			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLQ original_tag = TEM original_tag = DES }
 			has_idea = confused_human
 			communism > 0.4
 			democratic > 0.4
@@ -397,7 +397,7 @@ country_event = {#人类和妖怪激烈论战
 	desc = human.7.d
 	picture = GFX_report_event_touhou_human_discussion
 	trigger = {
-			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLQ original_tag = TEM original_tag = DES }
 			fascism > 0.4
 			democratic > 0.4
 			has_idea = confused_human
@@ -451,7 +451,7 @@ country_event = {#共存和妖怪激烈论战
 	desc = human.8.d
 	picture = GFX_report_event_touhou_human_discussion
 	trigger = {
-			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLQ original_tag = TEM original_tag = DES }
 			fascism > 0.4
 			communism > 0.4
 			has_idea = confused_human
@@ -506,7 +506,7 @@ country_event = {#冲突
 	is_triggered_only = yes
 	picture = GFX_report_event_touhou_human_conflict
 	trigger = {
-			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLQ original_tag = TEM original_tag = DES }
 		}
 	option = {
 		name = human.9.a
@@ -527,7 +527,7 @@ country_event = {#一切尘埃落定
 	desc = human.10.d
 	picture = GFX_report_event_touhou_human_confused
 	trigger = {
-			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLI original_tag = TEM original_tag = DES }
+			OR = { original_tag = HUM original_tag = MLS original_tag = SSS original_tag = BLQ original_tag = TEM original_tag = DES }
 			has_idea = confused_human
 			has_global_flag = touhou_all_country_unify
 			date > 1939.1.1

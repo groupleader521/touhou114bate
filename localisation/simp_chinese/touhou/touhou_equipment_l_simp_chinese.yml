@@ -109,6 +109,7 @@
  modifier_production_cost_max_deep_sea_equipment:0 "深海少女最大成本"
  modifier_experience_gain_deep_sea_brigade_training_factor:1 "深海少女训练经验增益"
  modifier_experience_gain_deep_sea_brigade_combat_factor:1 "深海少女战斗经验增益"
+ modifier_experience_gain_deep_sea_brigade_mission_factor:1 "深海少女任务经验增益"
 
  soul_equipment:0 "白玉楼移动补给站"
  soul_equipment_short:0 "白玉楼移动补给站"
@@ -173,6 +174,7 @@
 
  modifier_experience_gain_lotus_brigade_training_factor:0 "星莲船训练经验增益"
  modifier_experience_gain_lotus_brigade_combat_factor:0 "星莲船训练经验增益"
+ modifier_experience_gain_lotus_brigade_mission_factor:0 "星莲船任务经验增益"
  
  magician_equipment:0 "超·极限花火"
  magician_equipment_short:0 "超·极限花火"

@@ -16,20 +16,20 @@ ALI_to_MlS = {
 	}	
 }
 
-ALI_to_BLI = {
+ALI_to_BLQ = {
 	enable = {
 		tag = ALI
-		country_exists = BLI
+		country_exists = BLQ
 	}
 	abort = {
 		NOT = {
-			country_exists = BLI
+			country_exists = BLQ
 		}
 	}
 	
 	ai_strategy = {
 		type = befriend
-		id = "BLI"
+		id = "BLQ"
 		value = 50
 	}
 }
@@ -116,25 +116,25 @@ MLS_to_HUM = {
 	}
 }
 
-MLS_to_BLI = {
+MLS_to_BLQ = {
 	enable = {
 		tag = MLS
-		country_exists = BLI
+		country_exists = BLQ
 	}
 	abort = {
 		NOT = {
-			country_exists = BLI
+			country_exists = BLQ
 		}
 	}
 	
 	ai_strategy = {
 		type = befriend
-		id = "BLI"
+		id = "BLQ"
 		value = 100
 	}
 	ai_strategy = {
 		type = protect
-		id = "BLI"
+		id = "BLQ"
 		value = 100
 	}
 }
@@ -283,20 +283,20 @@ HUM_to_MLS = {
 	}
 }
 
-HUM_to_BLI = {
+HUM_to_BLQ = {
 	enable = {
 		tag = HUM
-		country_exists = BLI
+		country_exists = BLQ
 	}
 	abort = {
 		NOT = {
-			country_exists = BLI
+			country_exists = BLQ
 		}
 	}
 	
 	ai_strategy = {
 		type = befriend
-		id = "BLI"
+		id = "BLQ"
 		value = 50
 	}
 }

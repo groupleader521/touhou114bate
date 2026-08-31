@@ -109,6 +109,7 @@
  modifier_production_cost_max_deep_sea_equipment:0 "The maximum cost of deep-sea Kappa"
  modifier_experience_gain_deep_sea_brigade_training_factor:1 "深海少女训练经验增益"
  modifier_experience_gain_deep_sea_brigade_combat_factor:1 "深海少女战斗经验增益"
+ modifier_experience_gain_deep_sea_brigade_mission_factor:1 "Deep Sea Girl Mission Experience Gain"
 
  soul_equipment:0 "Hakugyokurou Mobile Supply Station"
  soul_equipment_short:0 "Hakugyokurou Mobile Supply Station"
@@ -173,6 +174,7 @@
 
  modifier_experience_gain_lotus_brigade_training_factor:0 "Star Lotus Ship Training Experience Gain"
  modifier_experience_gain_lotus_brigade_combat_factor:0 "Star Lotus Ship Training Experience Gain"
+ modifier_experience_gain_lotus_brigade_mission_factor:0 "Star Lotus Ship Mission Experience Gain"
  
  magician_equipment:0 "Ultra Extreme Fireworks"
  magician_equipment_short:0 "Ultra Extreme Fireworks"

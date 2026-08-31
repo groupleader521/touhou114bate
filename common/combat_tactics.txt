@@ -17,7 +17,7 @@ tactic_touhou_barrage_defender = { #弹幕阻击
 	trigger = {
 		is_attacker = no
 		phase = no
-		OR = { tag = ALI tag = DES tag = HAK tag = DLD tag = HEL tag = SSS tag = OPP tag = RAB tag = TEM tag = BLI tag = KAP tag = TEN tag = HUM tag = VAM tag = MLS tag = EVI }
+		OR = { tag = ALI tag = DES tag = HAK tag = DLD tag = HEL tag = SSS tag = OPP tag = RAB tag = TEM tag = BLQ tag = KAP tag = TEN tag = HUM tag = VAM tag = MLS tag = EVI }
 	}
 	
 	active = yes
@@ -34,7 +34,7 @@ tactic_touhou_barrage_attacker = { #弹幕打击
 	trigger = {
 		is_attacker = yes
 		phase = no
-		OR = { tag = ALI tag = DES tag = HAK tag = DLD tag = HEL tag = SSS tag = OPP tag = RAB tag = TEM tag = BLI tag = KAP tag = TEN tag = HUM tag = VAM tag = MLS tag = EVI }
+		OR = { tag = ALI tag = DES tag = HAK tag = DLD tag = HEL tag = SSS tag = OPP tag = RAB tag = TEM tag = BLQ tag = KAP tag = TEN tag = HUM tag = VAM tag = MLS tag = EVI }
 	}
 	
 	active = yes
@@ -93,8 +93,8 @@ tactic_touhou_defend_chop = { #来敌尽斩
 						TEM = { has_idea = ghost_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = ghost_trait }
+						tag = BLQ
+						BLQ = { has_idea = ghost_trait }
 					}
 					AND = {
 						tag = KAP
@@ -180,8 +180,8 @@ tactic_touhou_opp_banzai_charge = { #律令
 						TEM = { has_idea = ghost_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = ghost_trait }
+						tag = BLQ
+						BLQ = { has_idea = ghost_trait }
 					}
 					AND = {
 						tag = KAP
@@ -221,7 +221,7 @@ tactic_touhou_opp_banzai_charge = { #律令
 	attacker = 0.25 
 }
 #人族
-tactic_touhou_bli_basic_defend = { #此路不通
+tactic_touhou_blq_basic_defend = { #此路不通
 	is_attacker = no
 	trigger = {
 		is_attacker = no
@@ -268,8 +268,8 @@ tactic_touhou_bli_basic_defend = { #此路不通
 						TEM = { has_idea = human_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = human_trait }
+						tag = BLQ
+						BLQ = { has_idea = human_trait }
 					}
 					AND = {
 						tag = KAP
@@ -303,7 +303,7 @@ tactic_touhou_bli_basic_defend = { #此路不通
 	active = yes
 	
 	base =  { factor = 20 }
-	picture = tactic_touhou_bli_basic_defend
+	picture = tactic_touhou_blq_basic_defend
 	attacker_movement_speed = -0.1
 	defender = 0.2
 }
@@ -354,8 +354,8 @@ tactic_touhou_TEM_cc_defend = { #超人
 						TEM = { has_idea = human_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = human_trait }
+						tag = BLQ
+						BLQ = { has_idea = human_trait }
 					}
 					AND = {
 						tag = KAP
@@ -441,8 +441,8 @@ tactic_touhou_mls_overwhelming_fire = { #弹幕就是火力
 						TEM = { has_idea = human_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = human_trait }
+						tag = BLQ
+						BLQ = { has_idea = human_trait }
 					}
 					AND = {
 						tag = KAP
@@ -527,8 +527,8 @@ tactic_touhou_hum_tw_defend = { #不死鸟
 						TEM = { has_idea = human_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = human_trait }
+						tag = BLQ
+						BLQ = { has_idea = human_trait }
 					}
 					AND = {
 						tag = KAP
@@ -614,8 +614,8 @@ tactic_touhou_des_defender_hb_hold = { #修整空间
 						TEM = { has_idea = human_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = human_trait }
+						tag = BLQ
+						BLQ = { has_idea = human_trait }
 					}
 					AND = {
 						tag = KAP
@@ -700,8 +700,8 @@ tactic_touhou_sss_banzai_charge = { #神明之言
 						TEM = { has_idea = human_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = human_trait }
+						tag = BLQ
+						BLQ = { has_idea = human_trait }
 					}
 					AND = {
 						tag = KAP
@@ -788,8 +788,8 @@ tactic_touhou_dld_tw_chase = { #地狱巡礼
 						TEM = { has_idea = DLD_chireiden_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = DLD_chireiden_trait }
+						tag = BLQ
+						BLQ = { has_idea = DLD_chireiden_trait }
 					}
 					AND = {
 						tag = KAP
@@ -874,8 +874,8 @@ tactic_touhou_hel_cc_attack = { #碎星
 						TEM = { has_idea = HEL_hell_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = HEL_hell_trait }
+						tag = BLQ
+						BLQ = { has_idea = HEL_hell_trait }
 					}
 					AND = {
 						tag = KAP
@@ -963,8 +963,8 @@ tactic_defender_touhou_kap_sb_retake_bridge = { #水斗
 						TEM = { has_idea = KAP_kappa_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = KAP_kappa_trait }
+						tag = BLQ
+						BLQ = { has_idea = KAP_kappa_trait }
 					}
 					AND = {
 						tag = KAP
@@ -1051,8 +1051,8 @@ tactic_touhou_vam_tw_attack = { #笼中鸟
 						TEM = { has_idea = VAM_vampire_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = VAM_vampire_trait }
+						tag = BLQ
+						BLQ = { has_idea = VAM_vampire_trait }
 					}
 					AND = {
 						tag = KAP
@@ -1139,8 +1139,8 @@ tactic_touhou_ten_basic_defend = { #守望
 						TEM = { has_idea = TEN_tengu_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = TEN_tengu_trait }
+						tag = BLQ
+						BLQ = { has_idea = TEN_tengu_trait }
 					}
 					AND = {
 						tag = KAP
@@ -1227,8 +1227,8 @@ tactic_touhou_evi_seize_bridge = { #冰封千里
 						TEM = { has_idea = evil_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = evil_trait }
+						tag = BLQ
+						BLQ = { has_idea = evil_trait }
 					}
 					AND = {
 						tag = KAP
@@ -1317,8 +1317,8 @@ tactic_touhou_rab_guerrilla_tactics = { #幻境之瞳
 						TEM = { has_idea = RAB_rabbit_trait }
 					}
 					AND = {
-						tag = BLI
-						BLI = { has_idea = RAB_rabbit_trait }
+						tag = BLQ
+						BLQ = { has_idea = RAB_rabbit_trait }
 					}
 					AND = {
 						tag = KAP
@@ -1427,10 +1427,10 @@ tactic_touhou_attacker_ali_assault = { #人偶浪潮
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -1557,10 +1557,10 @@ tactic_touhou_attacker_ali_cc_storm = { #人偶神风击
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -1687,10 +1687,10 @@ tactic_touhou_defender_ali_cc_local_strong_point = { #千枪阵
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -1817,10 +1817,10 @@ tactic_touhou_attacker_ali_cc_withdraw = { #人偶戏法
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -1948,10 +1948,10 @@ tactic_touhou_attacker_ali_breakthrough = { #人偶突破
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -2078,10 +2078,10 @@ tactic_touhou_ali_backhand_blow = { #人偶机动阵
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -2208,10 +2208,10 @@ tactic_touhou_ali_tactical_withdrawal = { #人偶殿后军
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -2340,10 +2340,10 @@ tactic_touhou_ali_tw_chase = { #人偶游猎
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -2469,10 +2469,10 @@ tactic_touhou_ali_tw_evade = { #镜中世界
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -2599,10 +2599,10 @@ tactic_touhou_ali_tw_intercept = { #欢迎回到人偶之家
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -2729,10 +2729,10 @@ tactic_touhou_ali_seize_bridge = { #人偶之桥
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -2860,10 +2860,10 @@ tactic_touhou_ali_attacker_sb_skillful_defence = { #人偶桥卫
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -2989,10 +2989,10 @@ tactic_touhou_ali_defender_sb_assault = { #人偶海
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -3117,10 +3117,10 @@ tactic_touhou_ali_defender_sb_retake_bridge = { #重回血腥之地
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -3249,10 +3249,10 @@ tactic_touhou_ali_hold_bridge = { #手中之物
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -3380,10 +3380,10 @@ tactic_touhou_ali_attacker_hb_rush = { #强袭血腥之地
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {
@@ -3508,10 +3508,10 @@ tactic_touhou_ali_defender_hb_skillful_defence = { #人偶桥卫·镇
 						}
 					}
 					AND = {
-						tag = BLI
+						tag = BLQ
 						OR = {
-							BLI = { has_idea = ALI_marionette_trait }
-							BLI = { has_idea = marionette_trait }
+							BLQ = { has_idea = ALI_marionette_trait }
+							BLQ = { has_idea = marionette_trait }
 						}
 					}
 					AND = {

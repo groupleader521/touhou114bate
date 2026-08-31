@@ -8,7 +8,7 @@
  
  tactics_need_ghost_politics_tt:0 "Обладатель - призрак! Как основная раса Y"
  #人族
- tactic_touhou_bli_basic_defend:0 "Дорога не работает."
+ tactic_touhou_blq_basic_defend:0 "Дорога не работает."
  tactic_touhou_TEM_cc_defend:0 "Супермен."
  tactic_touhou_mls_overwhelming_fire:0 "Снаряд - это огонь."
  tactic_touhou_hum_tw_defend:0 "Бессмертная птица."

@@ -1,6 +1,6 @@
 ﻿l_english:
  touhou_SSS_out:0 "Gensokyo Diplomacy"
- touhou_SSS_out_desc:0 "Moriya Shrine has always been committed to developing believers and collecting information on faith. Therefore, although religious exchanges are very active, other diplomacy is blank. Establishing a modern diplomatic system is the beginning of everything"
+ touhou_SSS_out_desc:0 "Moriya Shrine has always been committed to developing believers and collecting information on faith. Therefore, although religious exchanges are very active, other diplomacy is blank. Establqshing a modern diplomatic system is the beginning of everything"
  touhou_SSS_gentle:0 "Pagan tolerance"
  touhou_SSS_gentle_desc:0 "We have always adopted a policy of excluding other religions, and in the past, we had to do so for the sake of our faith. Now it's different. Compared to faith, unifying Gensokyo is more important, and for this goal, we need allies"
  touhou_SSS_mediate:0 "Religious mediation"
@@ -29,11 +29,11 @@
  
  #事件：
  moriya.0.t:0 "Myouren Temple provocation"
- moriya.0.d:0 "Recently, the provocations from Myouren Temple have been escalating, repeatedly challenging our bottom line. Although some people think there is something fishy about it, more people have long been unable to bear it anymore. Nowadays, the public strongly demands a counterattack against Myouren Temple. How should we make a decision"
+ moriya.0.d:0 "Recently, the provocations from Myouren Temple have been escalating, repeatedly challenging our bottom line. Although some people think there is something fishy about it, more people have long been unable to bear it anymore. Nowadays, the publqc strongly demands a counterattack against Myouren Temple. How should we make a decision"
  moriya.0.a:0 "Forget it"
  moriya.0.b:0 "Can't bear it anymore"
  moriya.1.t:0 "The Moriya Shrine questions the legitimacy of the Hakurei faith"
- moriya.1.d:0 "As early as in the Gensokyo, Moriya Shrine has been promoting the outside world more than once. We have no faith, but we have never been as strong as now. They even printed it as flyers and distributed it to every corner of Gensokyo. The public can no longer bear it, please order a counterattack"
+ moriya.1.d:0 "As early as in the Gensokyo, Moriya Shrine has been promoting the outside world more than once. We have no faith, but we have never been as strong as now. They even printed it as flyers and distributed it to every corner of Gensokyo. The publqc can no longer bear it, please order a counterattack"
  moriya.1.a:0 "Forget it"
  moriya.1.b:0 "Can't bear it anymore"
  moriya.2.t:0 "Dispute over the regulation of missionaries"

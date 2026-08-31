@@ -1,0 +1,22 @@
+state={
+	id=1113
+	name="STATE_RenLiJvZhuQu"
+	provinces={
+		13501 13505 13507
+	}
+
+	history={
+		add_core_of = BLQ
+		add_core_of = HUM
+		owner = HUM
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	manpower=500000
+	buildings_max_level_factor=1.000
+	#state_category=town
+	state_category=megalopolis
+	local_supplies=0.0 
+}

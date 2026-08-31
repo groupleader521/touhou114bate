@@ -9,26 +9,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1059
+				state = 1094
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1059 = {
+			1094 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1059 = {
+				1094 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1059 = {
+			1094 = {
 				NOT = {
 					has_state_flag = mofasenlin_steel_1_developed
 				}
@@ -52,8 +52,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1059 = { set_state_flag = mofasenlin_steel_1_developed } 
-			1059 = {
+			1094 = { set_state_flag = mofasenlin_steel_1_developed } 
+			1094 = {
 				add_resource = {
 					type = steel
 					amount = 25
@@ -72,27 +72,27 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1059
+				state = 1094
 			}
 		}
 
 		available = {
 			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 1
-			1059 = {
+			1094 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1059 = {
+				1094 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1059 = {
+			1094 = {
 				has_state_flag = mofasenlin_steel_1_developed
 				NOT = {
 					has_state_flag = mofasenlin_steel_2_developed
@@ -117,8 +117,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1059 = { set_state_flag = mofasenlin_steel_2_developed } 
-			1059 = {
+			1094 = { set_state_flag = mofasenlin_steel_2_developed } 
+			1094 = {
 				add_resource = {
 					type = steel
 					amount = 40
@@ -137,26 +137,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1080
+				state = 1115
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1080 = {
+			1115 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1080 = {
+				1115 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1080 = {
+			1115 = {
 				NOT = {
 					has_state_flag = taiyanghuatian_rubber_developed
 				}
@@ -180,8 +180,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1080 = { set_state_flag = taiyanghuatian_rubber_developed } 
-			1080 = {
+			1115 = { set_state_flag = taiyanghuatian_rubber_developed } 
+			1115 = {
 				add_resource = {
 					type = rubber
 					amount = 9
@@ -200,26 +200,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1084
+				state = 1119
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1084 = {
+			1119 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1084 = {
+				1119 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1084 = {
+			1119 = {
 				NOT = {
 					has_state_flag = south_wuzhihu_oil_developed
 				}
@@ -243,8 +243,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1084 = { set_state_flag = south_wuzhihu_oil_developed } 
-			1084 = {
+			1119 = { set_state_flag = south_wuzhihu_oil_developed } 
+			1119 = {
 				add_resource = {
 					type = oil
 					amount = 8
@@ -263,26 +263,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1053
+				state = 1088
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1053 = {
+			1088 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1053 = {
+				1088 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1053 = {
+			1088 = {
 				NOT = {
 					has_state_flag = east_mofasenlin_tungsten_developed
 				}
@@ -306,8 +306,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1053 = { set_state_flag = east_mofasenlin_tungsten_developed } 
-			1053 = {
+			1088 = { set_state_flag = east_mofasenlin_tungsten_developed } 
+			1088 = {
 				add_resource = {
 					type = tungsten
 					amount = 27
@@ -326,26 +326,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1081
+				state = 1116
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 1
-			1081 = {
+			1116 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1081 = {
+				1116 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1081 = {
+			1116 = {
 				NOT = {
 					has_state_flag = wuminqiu_steel_tungsten_developed
 				}
@@ -369,8 +369,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1081 = { set_state_flag = wuminqiu_steel_tungsten_developed } 
-			1081 = {
+			1116 = { set_state_flag = wuminqiu_steel_tungsten_developed } 
+			1116 = {
 				add_resource = {
 					type = steel
 					amount = 12
@@ -393,26 +393,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1069
+				state = 1104
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1069 = {
+			1104 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1069 = {
+				1104 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1069 = {
+			1104 = {
 				NOT = {
 					has_state_flag = zhulin_rubber_developed
 				}
@@ -436,8 +436,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1069 = { set_state_flag = zhulin_rubber_developed } 
-			1069 = {
+			1104 = { set_state_flag = zhulin_rubber_developed } 
+			1104 = {
 				add_resource = {
 					type = rubber
 					amount = 33
@@ -456,27 +456,27 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1069
+				state = 1104
 			}
 		}
 
 		available = {
 			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 1
-			1069 = {
+			1104 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1069 = {
+				1104 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1069 = {
+			1104 = {
 				has_state_flag = zhulin_rubber_developed
 				NOT = {
 					has_state_flag = zhulin_rubber2_developed
@@ -501,8 +501,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1069 = { set_state_flag = zhulin_rubber2_developed } 
-			1069 = {
+			1104 = { set_state_flag = zhulin_rubber2_developed } 
+			1104 = {
 				add_resource = {
 					type = rubber
 					amount = 79
@@ -521,26 +521,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1069
+				state = 1104
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1069 = {
+			1104 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1069 = {
+				1104 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1069 = {
+			1104 = {
 				NOT = {
 					has_state_flag = zhulin_steel_developed
 				}
@@ -564,8 +564,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1069 = { set_state_flag = zhulin_steel_developed } 
-			1069 = {
+			1104 = { set_state_flag = zhulin_steel_developed } 
+			1104 = {
 				add_resource = {
 					type = steel
 					amount = 26
@@ -584,27 +584,27 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1082
+				state = 1117
 			}
 		}
 
 		available = {
 			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 0
-			1082 = {
+			1117 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1082 = {
+				1117 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1082 = {
+			1117 = {
 				NOT = {
 					has_state_flag = zhulin_outside_aluminium_developed
 				}
@@ -628,8 +628,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1082 = { set_state_flag = zhulin_outside_aluminium_developed } 
-			1082 = {
+			1117 = { set_state_flag = zhulin_outside_aluminium_developed } 
+			1117 = {
 				add_resource = {
 					type = aluminium
 					amount = 50
@@ -648,27 +648,27 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1047
+				state = 1082
 			}
 		}
 
 		available = {
 			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 1
-			1047 = {
+			1082 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1047 = {
+				1082 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1047 = {
+			1082 = {
 				NOT = {
 					has_state_flag = dead_yaojing_oil_developed
 				}
@@ -692,8 +692,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1047 = { set_state_flag = dead_yaojing_oil_developed } 
-			1047 = {
+			1082 = { set_state_flag = dead_yaojing_oil_developed } 
+			1082 = {
 				add_resource = {
 					type = oil
 					amount = 136
@@ -712,26 +712,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1047
+				state = 1082
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 1
-			1047 = {
+			1082 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1047 = {
+				1082 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1047 = {
+			1082 = {
 				NOT = {
 					has_state_flag = dead_yaojing_resources_developed
 				}
@@ -755,8 +755,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1047 = { set_state_flag = dead_yaojing_resources_developed } 
-			1047 = {
+			1082 = { set_state_flag = dead_yaojing_resources_developed } 
+			1082 = {
 				add_resource = {
 					type = chromium
 					amount = 35
@@ -787,26 +787,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1058
+				state = 1093
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1058 = {
+			1093 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1058 = {
+				1093 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1058 = {
+			1093 = {
 				NOT = {
 					has_state_flag = xianglingtang_steel_developed
 				}
@@ -830,8 +830,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1058 = { set_state_flag = xianglingtang_steel_developed } 
-			1058 = {
+			1093 = { set_state_flag = xianglingtang_steel_developed } 
+			1093 = {
 				add_resource = {
 					type = steel
 					amount = 33
@@ -850,26 +850,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1083
+				state = 1118
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1083 = {
+			1118 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1083 = {
+				1118 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1083 = {
+			1118 = {
 				NOT = {
 					has_state_flag = mofasenling_outside_chromium_developed
 				}
@@ -893,8 +893,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1083 = { set_state_flag = mofasenling_outside_chromium_developed } 
-			1083 = {
+			1118 = { set_state_flag = mofasenling_outside_chromium_developed } 
+			1118 = {
 				add_resource = {
 					type = chromium
 					amount = 55
@@ -913,26 +913,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1048
+				state = 1083
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 1
-			1048 = {
+			1083 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1048 = {
+				1083 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1048 = {
+			1083 = {
 				NOT = {
 					has_state_flag = xuanwuze_resources_developed
 				}
@@ -956,8 +956,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1048 = { set_state_flag = xuanwuze_resources_developed } 
-			1048 = {
+			1083 = { set_state_flag = xuanwuze_resources_developed } 
+			1083 = {
 				add_resource = {
 					type = steel
 					amount = 10
@@ -984,25 +984,25 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1090
+				state = 1125
 			}
 		}
 
 		available = {
-			1090 = {
+			1125 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1090 = {
+				1125 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1090 = {
+			1125 = {
 				NOT = {
 					has_state_flag = pubu_resources_developed
 				}
@@ -1026,8 +1026,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1090 = { set_state_flag = pubu_resources_developed } 
-			1090 = {
+			1125 = { set_state_flag = pubu_resources_developed } 
+			1125 = {
 				add_resource = {
 					type = steel
 					amount = 50
@@ -1046,26 +1046,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1086
+				state = 1121
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1086 = {
+			1121 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1086 = {
+				1121 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1086 = {
+			1121 = {
 				NOT = {
 					has_state_flag = north_wuzhihu_oil_developed
 				}
@@ -1089,8 +1089,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1086 = { set_state_flag = north_wuzhihu_oil_developed } 
-			1086 = {
+			1121 = { set_state_flag = north_wuzhihu_oil_developed } 
+			1121 = {
 				add_resource = {
 					type = oil
 					amount = 45
@@ -1109,26 +1109,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1071
+				state = 1106
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1071 = {
+			1106 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1071 = {
+				1106 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1071 = {
+			1106 = {
 				NOT = {
 					has_state_flag = hongmoguan_resources_developed
 				}
@@ -1152,8 +1152,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1071 = { set_state_flag = hongmoguan_resources_developed } 
-			1071 = {
+			1106 = { set_state_flag = hongmoguan_resources_developed } 
+			1106 = {
 				add_resource = {
 					type = steel
 					amount = 30
@@ -1184,27 +1184,27 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1071
+				state = 1106
 			}
 		}
 
 		available = {
 			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 2
-			1071 = {
+			1106 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1071 = {
+				1106 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1071 = {
+			1106 = {
 				has_state_flag = hongmoguan_resources_developed
 				NOT = {
 					has_state_flag = hongmoguan_resources2_developed
@@ -1229,8 +1229,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			1071 = { set_state_flag = hongmoguan_resources2_developed } 
-			1071 = {
+			1106 = { set_state_flag = hongmoguan_resources2_developed } 
+			1106 = {
 				add_resource = {
 					type = steel
 					amount = 35
@@ -1257,26 +1257,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 949
+				state = 1084
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			949 = {
+			1084 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				949 = {
+				1084 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			949 = {			
+			1084 = {			
 				NOT = {
 					has_state_flag = yaoguaishan_steel_developed
 				}
@@ -1300,8 +1300,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			949 = { set_state_flag = yaoguaishan_steel_developed } 
-			949 = {
+			1084 = { set_state_flag = yaoguaishan_steel_developed } 
+			1084 = {
 				add_resource = {
 					type = steel
 					amount = 50
@@ -1320,28 +1320,28 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 949
+				state = 1084
 			}
 		}
 
 		available = {
 			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 1
-			949 = {
+			1084 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				949 = {
+				1084 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 
 		visible = {
-			949 = {
+			1084 = {
 				has_state_flag = yaoguaishan_steel_developed				
 				NOT = {
 					has_state_flag = yaoguaishan_steel2_developed
@@ -1366,8 +1366,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = { 
-			949 = { set_state_flag = yaoguaishan_steel2_developed } 
-			949 = {
+			1084 = { set_state_flag = yaoguaishan_steel2_developed } 
+			1084 = {
 				add_resource = {
 					type = steel
 					amount = 70
@@ -1386,27 +1386,27 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 949
+				state = 1084
 			}
 		}
 
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			949 = {
+			1084 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				949 = {
+				1084 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			949 = {
+			1084 = {
 				has_state_flag = yaoguaishan_steel2_developed				
 				NOT = {
 					has_state_flag = yaoguaishan_steel3_developed
@@ -1431,8 +1431,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			949 = { set_state_flag = yaoguaishan_steel3_developed } 
-			949 = {
+			1084 = { set_state_flag = yaoguaishan_steel3_developed } 
+			1084 = {
 				add_resource = {
 					type = steel
 					amount = 90
@@ -1451,26 +1451,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1051
+				state = 1086
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1051 = {
+			1086 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1051 = {
+				1086 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1051 = {								
+			1086 = {								
 				NOT = {
 					has_state_flag = hamachi_aluminium_developed
 				}
@@ -1494,8 +1494,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1051 = { set_state_flag = hamachi_aluminium_developed } 
-			1051 = {
+			1086 = { set_state_flag = hamachi_aluminium_developed } 
+			1086 = {
 				add_resource = {
 					type = aluminium
 					amount = 20
@@ -1514,26 +1514,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1055
+				state = 1090
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1055 = {
+			1090 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1055 = {
+				1090 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1055 = {				
+			1090 = {				
 				NOT = {
 					has_state_flag = xuanyunhai_tungsten_developed
 				}
@@ -1557,8 +1557,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1055 = { set_state_flag = xuanyunhai_tungsten_developed } 
-			1055 = {
+			1090 = { set_state_flag = xuanyunhai_tungsten_developed } 
+			1090 = {
 				add_resource = {
 					type = tungsten
 					amount = 25
@@ -1581,26 +1581,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1063
+				state = 1098
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1063 = {
+			1098 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1063 = {
+				1098 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1063 = {							
+			1098 = {							
 				NOT = {
 					has_state_flag = bian_oil_developed
 				}
@@ -1624,8 +1624,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1063 = { set_state_flag = bian_oil_developed } 
-			1063 = {
+			1098 = { set_state_flag = bian_oil_developed } 
+			1098 = {
 				add_resource = {
 					type = oil
 					amount = 35
@@ -1644,26 +1644,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1052
+				state = 1087
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1052 = {
+			1087 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1052 = {
+				1087 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1052 = {								
+			1087 = {								
 				NOT = {
 					has_state_flag = santuchuan_resources_developed
 				}
@@ -1687,8 +1687,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1052 = { set_state_flag = santuchuan_resources_developed } 
-			1052 = {
+			1087 = { set_state_flag = santuchuan_resources_developed } 
+			1087 = {
 				add_resource = {
 					type = chromium
 					amount = 73
@@ -1711,26 +1711,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1092
+				state = 1127
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1092 = {
+			1127 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1092 = {
+				1127 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1092 = {								
+			1127 = {								
 				NOT = {
 					has_state_flag = wuyuanzhuo_resources_developed
 				}
@@ -1754,8 +1754,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1092 = { set_state_flag = wuyuanzhuo_resources_developed } 
-			1092 = {
+			1127 = { set_state_flag = wuyuanzhuo_resources_developed } 
+			1127 = {
 				add_resource = {
 					type = steel
 					amount = 30
@@ -1774,27 +1774,27 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1092
+				state = 1127
 			}
 		}
 
 		available = {
 			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 1
-			1092 = {
+			1127 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1092 = {
+				1127 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1092 = {
+			1127 = {
 				has_state_flag = wuyuanzhuo_resources_developed
 				NOT = {
 					has_state_flag = wuyuanzhuo_resources2_developed
@@ -1819,8 +1819,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1092 = { set_state_flag = wuyuanzhuo_resources2_developed } 
-			1092 = {
+			1127 = { set_state_flag = wuyuanzhuo_resources2_developed } 
+			1127 = {
 				add_resource = {
 					type = steel
 					amount = 30
@@ -1839,26 +1839,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1065
+				state = 1100
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 1
-			1065 = {
+			1100 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1065 = {
+				1100 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1065 = {								
+			1100 = {								
 				NOT = {
 					has_state_flag = baiyulou_death_developed
 				}
@@ -1882,8 +1882,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1065 = { set_state_flag = baiyulou_death_developed } 
-			1065 = {
+			1100 = { set_state_flag = baiyulou_death_developed } 
+			1100 = {
 				add_resource = {
 					type = steel
 					amount = 40
@@ -1906,26 +1906,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1074
+				state = 1109
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1074 = {
+			1109 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1074 = {
+				1109 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1074 = {
+			1109 = {
 				NOT = {
 					has_state_flag = youminjiejie_developed
 				}
@@ -1949,8 +1949,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1074 = { set_state_flag = youminjiejie_developed } 
-			1074 = {
+			1109 = { set_state_flag = youminjiejie_developed } 
+			1109 = {
 				add_resource = {
 					type = aluminium
 					amount = 8
@@ -1977,26 +1977,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1070
+				state = 1105
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1070 = {
+			1105 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1070 = {
+				1105 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1070 = {				
+			1105 = {				
 				NOT = {
 					has_state_flag = renli_resources_developed
 				}
@@ -2020,8 +2020,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1070 = { set_state_flag = renli_resources_developed } 
-			1070 = {
+			1105 = { set_state_flag = renli_resources_developed } 
+			1105 = {
 				add_resource = {
 					type = steel
 					amount = 30
@@ -2056,27 +2056,27 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1070
+				state = 1105
 			}
 		}
 
 		available = {
 			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 1
-			1070 = {
+			1105 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1070 = {
+				1105 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1070 = {
+			1105 = {
 				has_state_flag = renli_resources_developed
 				NOT = {
 					has_state_flag = renli_resources2_developed
@@ -2101,8 +2101,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1070 = { set_state_flag = renli_resources2_developed } 
-			1070 = {
+			1105 = { set_state_flag = renli_resources2_developed } 
+			1105 = {
 				add_resource = {
 					type = steel
 					amount = 15
@@ -2137,27 +2137,27 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1070
+				state = 1105
 			}
 		}
 
 		available = {
 			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
-			1070 = {
+			1105 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1070 = {
+				1105 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1070 = {				
+			1105 = {				
 				has_state_flag = renli_resources2_developed
 				NOT = {
 					has_state_flag = renli_resources3_developed
@@ -2182,8 +2182,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1070 = { set_state_flag = renli_resources3_developed } 
-			1070 = {
+			1105 = { set_state_flag = renli_resources3_developed } 
+			1105 = {
 				add_resource = {
 					type = steel
 					amount = 35
@@ -2218,26 +2218,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1066
+				state = 1101
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1066 = {
+			1101 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1066 = {
+				1101 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1066 = {
+			1101 = {
 				NOT = {
 					has_state_flag = boli_steel_developed
 				}
@@ -2261,8 +2261,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1066 = { set_state_flag = boli_steel_developed } 
-			1066 = {
+			1101 = { set_state_flag = boli_steel_developed } 
+			1101 = {
 				add_resource = {
 					type = steel
 					amount = 30
@@ -2281,27 +2281,27 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1066
+				state = 1101
 			}
 		}
 
 		available = {
 			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 1
-			1066 = {
+			1101 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1066 = {
+				1101 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1066 = {	
+			1101 = {	
 				has_state_flag = boli_steel_developed
 				NOT = {
 					has_state_flag = boli_steel2_developed
@@ -2326,8 +2326,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1066 = { set_state_flag = boli_steel2_developed } 
-			1066 = {
+			1101 = { set_state_flag = boli_steel2_developed } 
+			1101 = {
 				add_resource = {
 					type = steel
 					amount = 35
@@ -2346,26 +2346,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1087
+				state = 1122
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 1
-			1087 = {
+			1122 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1087 = {
+				1122 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1087 = {
+			1122 = {
 				NOT = {
 					has_state_flag = jianxiequan_resources_developed
 				}
@@ -2389,8 +2389,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1087 = { set_state_flag = jianxiequan_resources_developed } 
-			1087 = {
+			1122 = { set_state_flag = jianxiequan_resources_developed } 
+			1122 = {
 				add_resource = {
 					type = oil
 					amount = 23
@@ -2413,26 +2413,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1067
+				state = 1102
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1067 = {
+			1102 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1067 = {
+				1102 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1067 = {				
+			1102 = {				
 				NOT = {
 					has_state_flag = mingliansi_aluminium_developed
 				}
@@ -2456,8 +2456,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1067 = { set_state_flag = mingliansi_aluminium_developed } 
-			1067 = {
+			1102 = { set_state_flag = mingliansi_aluminium_developed } 
+			1102 = {
 				add_resource = {
 					type = aluminium
 					amount = 50
@@ -2476,26 +2476,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1073
+				state = 1108
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1073 = {
+			1108 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1073 = {
+				1108 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1073 = {
+			1108 = {
 				NOT = {
 					has_state_flag = mudi_steel_developed
 				}
@@ -2519,8 +2519,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1073 = { set_state_flag = mudi_steel_developed } 
-			1073 = {
+			1108 = { set_state_flag = mudi_steel_developed } 
+			1108 = {
 				add_resource = {
 					type = steel
 					amount = 22
@@ -2539,26 +2539,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1064
+				state = 1099
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1064 = {
+			1099 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1064 = {
+				1099 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1064 = {
+			1099 = {
 				NOT = {
 					has_state_flag = yikongjian_resources_developed
 				}
@@ -2582,8 +2582,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1064 = { set_state_flag = yikongjian_resources_developed } 
-			1064 = {
+			1099 = { set_state_flag = yikongjian_resources_developed } 
+			1099 = {
 				add_resource = {
 					type = steel
 					amount = 20
@@ -2606,26 +2606,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1088
+				state = 1123
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1088 = {
+			1123 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1088 = {
+				1123 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1088 = {
+			1123 = {
 				NOT = {
 					has_state_flag = linmiao_tungsten_developed
 				}
@@ -2649,8 +2649,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1088 = { set_state_flag = linmiao_tungsten_developed } 
-			1088 = {
+			1123 = { set_state_flag = linmiao_tungsten_developed } 
+			1123 = {
 				add_resource = {
 					type = tungsten
 					amount = 8
@@ -2669,26 +2669,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1072
+				state = 1107
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1072 = {
+			1107 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1072 = {
+				1107 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1072 = {
+			1107 = {
 				NOT = {
 					has_state_flag = shoushi_steel_developed
 				}
@@ -2712,8 +2712,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1072 = { set_state_flag = shoushi_steel_developed } 
-			1072 = {
+			1107 = { set_state_flag = shoushi_steel_developed } 
+			1107 = {
 				add_resource = {
 					type = steel
 					amount = 26
@@ -2732,26 +2732,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1068
+				state = 1103
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1068 = {
+			1103 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1068 = {
+				1103 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1068 = {
+			1103 = {
 				NOT = {
 					has_state_flag = shoushi_resources_developed
 				}
@@ -2775,8 +2775,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1068 = { set_state_flag = shoushi_resources_developed } 
-			1068 = {
+			1103 = { set_state_flag = shoushi_resources_developed } 
+			1103 = {
 				add_resource = {
 					type = chromium
 					amount = 11
@@ -2799,26 +2799,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1062
+				state = 1097
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1062 = {
+			1097 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1062 = {
+				1097 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1062 = {
+			1097 = {
 				NOT = {
 					has_state_flag = dilindian_resources_developed
 				}
@@ -2842,8 +2842,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1062 = { set_state_flag = dilindian_resources_developed } 
-			1062 = {
+			1097 = { set_state_flag = dilindian_resources_developed } 
+			1097 = {
 				add_resource = {
 					type = aluminium
 					amount = 45
@@ -2866,26 +2866,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1061
+				state = 1096
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1061 = {
+			1096 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1061 = {
+				1096 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1061 = {
+			1096 = {
 				NOT = {
 					has_state_flag = jiudu_steel_developed
 				}
@@ -2909,8 +2909,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1061 = { set_state_flag = jiudu_steel_developed } 
-			1061 = {
+			1096 = { set_state_flag = jiudu_steel_developed } 
+			1096 = {
 				add_resource = {
 					type = steel
 					amount = 40
@@ -2929,26 +2929,26 @@ touhou_mine_resources = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1056
+				state = 1091
 			}
 		}
 
 		available = {
 			num_of_civilian_factories_available_for_projects > 0
-			1056 = {
+			1091 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 		}
 		cancel_trigger = {
 			custom_trigger_tooltip = {
 				tooltip = touhou_tooltip_resources_cancel
-				1056 = {
+				1091 = {
 					is_controlled_by_ROOT_or_subject = no
 				}
 			}
 		}
 		visible = {
-			1056 = {
+			1091 = {
 				NOT = {
 					has_state_flag = jiudiyu_resources_developed
 				}
@@ -2972,8 +2972,8 @@ touhou_mine_resources = {
 			factor = 10
 		}
 		remove_effect = {
-			1056 = { set_state_flag = jiudiyu_resources_developed } 
-			1056 = {
+			1091 = { set_state_flag = jiudiyu_resources_developed } 
+			1091 = {
 				add_resource = {
 					type = rubber
 					amount = 18

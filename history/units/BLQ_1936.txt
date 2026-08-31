@@ -1,0 +1,82 @@
+﻿division_template = {
+	name = "巫女小队" 
+
+	regiments = {
+		touhou_wakan_infantry = { x = 0 y = 0 }
+	}
+	support = {
+
+	}
+}
+division_template = {
+	name = "巫女" 
+
+	regiments = {
+		touhou_wakan_infantry = { x = 0 y = 0 }
+		touhou_wakan_infantry = { x = 0 y = 1 }
+	}
+	support = {
+
+	}
+}
+division_template = {
+	name = "巫女大队" 
+
+	regiments = {
+		touhou_wakan_infantry = { x = 0 y = 0 }
+		touhou_wakan_infantry = { x = 0 y = 1 }
+		touhou_wakan_infantry = { x = 0 y = 2 }
+		touhou_wakan_infantry = { x = 0 y = 3 }
+	}
+	support = {
+
+	}
+}
+
+##### OOB #####
+units = {
+
+	division = { 
+		name = "博丽巫女"
+		location = 13520 
+		division_template = "巫女小队"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		name = "见习巫女"
+		location = 13520 
+		division_template = "巫女小队"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		name = "博丽神社守卫"
+		location = 13520 
+		division_template = "巫女小队"
+		start_experience_factor = 0.1
+	}
+	division = { 
+		name = "幻想乡巡逻队"
+		location = 13520 
+		division_template = "巫女小队"
+		start_experience_factor = 0.2
+	}
+}
+air_wings = {
+	1101 = { 
+		touhou_wakan_fighter_equipment_0 = {
+			owner = "BLQ" 
+			amount = 40
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = touhou_wakan_infantry_equipment_0
+			creator = "BLQ"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+}

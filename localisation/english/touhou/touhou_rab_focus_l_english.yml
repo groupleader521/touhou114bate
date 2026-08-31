@@ -59,6 +59,6 @@
  rabbit.1.a:0 "Replace the provincial government"
  rabbit.1.b:0 "Stop it whilst it's good"
  
- touhou_RAB_permeate_politics_tooltip:0 "Enabling national policies will immediately consume 150 political points"
- touhou_RAB_permeate_society_tooltip:0 "Enabling national policies will immediately consume 10K manpower"
- touhou_RAB_permeate_military_tooltip:0 "Enabling national policies will immediately consume 50 political points and 30 command points"
+ touhou_RAB_permeate_politics_tooltip:0 "Enablqng national policies will immediately consume 150 political points"
+ touhou_RAB_permeate_society_tooltip:0 "Enablqng national policies will immediately consume 10K manpower"
+ touhou_RAB_permeate_military_tooltip:0 "Enablqng national policies will immediately consume 50 political points and 30 command points"
