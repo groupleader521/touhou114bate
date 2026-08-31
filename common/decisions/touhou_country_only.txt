@@ -407,6 +407,28 @@ touhou_decisions_categories_doll = {
 			consumer_goods_expected_value = 0.1
 		}
 		remove_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						touhou_var_alice_trait_manpower > 2100000
+					}
+				}
+				add_manpower = 2100000
+				hidden_effect = {
+					subtract_from_variable = { touhou_var_alice_trait_manpower = 2100000 }
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						touhou_var_alice_trait_manpower > 2100000
+					}
+				}
+				add_manpower = 2100000
+				hidden_effect = {
+					subtract_from_variable = { touhou_var_alice_trait_manpower = 2100000 }
+				}
+			}
 			add_manpower = var:touhou_var_alice_trait_manpower
 			hidden_effect = {			
 				set_variable = {

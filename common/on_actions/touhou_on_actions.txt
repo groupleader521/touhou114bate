@@ -15,6 +15,16 @@ on_actions = {
 					var = touhou_var_alice_trait_manpower
 					value = 1065
 				}
+				if = {
+					limit = {
+						check_variable = {
+							touhou_var_alice_trait_manpower > 5000000
+						}
+					}
+					set_variable = {
+						touhou_var_alice_trait_manpower = 5000000
+					}
+				}
 			}
 			EVI = {
 				if = {

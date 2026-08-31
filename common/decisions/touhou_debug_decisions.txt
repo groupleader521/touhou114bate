@@ -152,5 +152,20 @@ touhou_debug_decisions = {
         complete_effect = {
 			touhou_boss_initialize_effect = yes
         }
-	}
+    }
+    touhou_debug_add_offsite_factories = {
+        icon = generic_factory
+        available = {
+            is_ai = no
+        }
+        visible = {
+            always = yes
+        }
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+            add_offsite_building = { type = arms_factory level = 5000 }
+            add_offsite_building = { type = industrial_complex level = 5000 }
+        }
+    }
 }
