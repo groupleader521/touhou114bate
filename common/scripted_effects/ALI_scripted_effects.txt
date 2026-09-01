@@ -144,3 +144,116 @@ ALI_Alice_recover_effect = {
 		set_country_flag = touhou_country_flag_ALI_Alice_recover_effect
 	}
 }
+
+# 将调用方提供的工厂数拆成三段，避免乘以人力系数后超过脚本数值上限。
+# 第一、第二段最多各 1900 座工厂；第三段只需保留 1000 座，
+# 因为最终总产量还会在调用处限制为 500 万。
+ALI_prepare_doll_production_manpower_chunks = {
+	if = {
+		limit = {
+			check_variable = {
+				touhou_var_alice_trait_manpower > 1900
+			}
+		}
+		set_variable = {
+			touhou_var_alice_trait_manpower = 1900
+		}
+	}
+
+	subtract_from_variable = {
+		touhou_var_alice_trait_manpower_2 = 1900
+	}
+	if = {
+		limit = {
+			check_variable = {
+				touhou_var_alice_trait_manpower_2 < 0
+			}
+		}
+		set_variable = {
+			touhou_var_alice_trait_manpower_2 = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				touhou_var_alice_trait_manpower_2 > 1900
+			}
+		}
+		set_variable = {
+			touhou_var_alice_trait_manpower_2 = 1900
+		}
+	}
+
+	subtract_from_variable = {
+		touhou_var_alice_trait_manpower_3 = 3800
+	}
+	if = {
+		limit = {
+			check_variable = {
+				touhou_var_alice_trait_manpower_3 < 0
+			}
+		}
+		set_variable = {
+			touhou_var_alice_trait_manpower_3 = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				touhou_var_alice_trait_manpower_3 > 1000
+			}
+		}
+		set_variable = {
+			touhou_var_alice_trait_manpower_3 = 1000
+		}
+	}
+}
+
+ALI_update_doll_production_manpower_total = {
+	set_variable = {
+		touhou_var_alice_trait_manpower_total = var:touhou_var_alice_trait_manpower
+	}
+	add_to_variable = {
+		touhou_var_alice_trait_manpower_total = var:touhou_var_alice_trait_manpower_2
+	}
+	add_to_variable = {
+		touhou_var_alice_trait_manpower_total = var:touhou_var_alice_trait_manpower_3
+	}
+}
+
+# 计算下一轮人偶生产线的人力。后续轮次沿用原设计，按民用工厂数计算。
+ALI_prepare_next_doll_production_manpower = {
+	set_variable = {
+		touhou_var_alice_trait_manpower = num_of_civilian_factories
+	}
+	set_variable = {
+		touhou_var_alice_trait_manpower_2 = num_of_civilian_factories
+	}
+	set_variable = {
+		touhou_var_alice_trait_manpower_3 = num_of_civilian_factories
+	}
+	ALI_prepare_doll_production_manpower_chunks = yes
+	multiply_variable = {
+		var = touhou_var_alice_trait_manpower
+		value = 1100
+	}
+	multiply_variable = {
+		var = touhou_var_alice_trait_manpower_2
+		value = 1100
+	}
+	multiply_variable = {
+		var = touhou_var_alice_trait_manpower_3
+		value = 1100
+	}
+	if = {
+		limit = {
+			check_variable = {
+				touhou_var_alice_trait_manpower_3 > 820000
+			}
+		}
+		set_variable = {
+			touhou_var_alice_trait_manpower_3 = 820000
+		}
+	}
+	ALI_update_doll_production_manpower_total = yes
+}

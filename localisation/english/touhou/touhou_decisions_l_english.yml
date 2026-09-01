@@ -372,6 +372,7 @@ touhou_evil_rize_up_start_desc:0 "We are ready to achieve the independence of fa
  touhou_decisions_categories_doll:0 "Special Usages of dolls"
  touhou_mission_doll_production_line:0 "Doll Production Line"
  touhou_mission_doll_production_line_desc:0 "We will allocate some civilian factories for the production of combat dolls and settle accounts every 35 days. When there are enough dolls (100m), the production line will automatically shut down"
+ touhou_mission_doll_production_line_manpower_tt:0 "On completion, gain §G[?ROOT.touhou_var_alice_trait_manpower_total|0]§! manpower."
  touhou_mission_doll_automatic_construction:0 "Automated Doll Construction"
  touhou_mission_doll_automatic_construction_desc:0 "Every 20 days, we use the puppet network to improve the infrastructure in random areas"
  touhou_decisions_sent_manpower_faction:0 "Transporting Doll Soldiers to [From.GetName]"

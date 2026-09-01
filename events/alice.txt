@@ -605,3 +605,29 @@ country_event = {#AI爱丽丝不造兵不生产人口的补救措施
 		}
 	}
 }
+
+# 人偶生产线分批结算：每个事件只执行一次 add_manpower，
+# 避免同一效果块内的多次人力修改只生效一段。
+country_event = {
+	id = alice.8
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_manpower = var:touhou_var_alice_trait_manpower_2
+		country_event = {
+			id = alice.81
+			hours = 1
+		}
+	}
+}
+
+country_event = {
+	id = alice.81
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_manpower = var:touhou_var_alice_trait_manpower_3
+		ALI_prepare_next_doll_production_manpower = yes
+		activate_mission = touhou_mission_doll_production_line
+	}
+}

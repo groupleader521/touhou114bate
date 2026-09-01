@@ -392,8 +392,7 @@ touhou_decisions_categories_doll = {
 			has_manpower < 110000000
 		}
 		icon = generic_factory
-		days_mission_timeout = 0
-		days_remove = 35
+		days_mission_timeout = 35
 		is_good = yes
 		available = {
 			hidden_trigger = {
@@ -406,50 +405,16 @@ touhou_decisions_categories_doll = {
 		modifier = {
 			consumer_goods_expected_value = 0.1
 		}
-		remove_effect = {
-			if = {
-				limit = {
-					check_variable = {
-						touhou_var_alice_trait_manpower > 2100000
-					}
-				}
-				add_manpower = 2100000
-				hidden_effect = {
-					subtract_from_variable = { touhou_var_alice_trait_manpower = 2100000 }
+		timeout_effect = {
+			custom_effect_tooltip = touhou_mission_doll_production_line_manpower_tt
+			hidden_effect = {
+				#每段通过独立事件执行，避免同一效果块中的人力修改互相覆盖。
+				add_manpower = var:touhou_var_alice_trait_manpower
+				country_event = {
+					id = alice.8
+					hours = 1
 				}
 			}
-			if = {
-				limit = {
-					check_variable = {
-						touhou_var_alice_trait_manpower > 2100000
-					}
-				}
-				add_manpower = 2100000
-				hidden_effect = {
-					subtract_from_variable = { touhou_var_alice_trait_manpower = 2100000 }
-				}
-			}
-			add_manpower = var:touhou_var_alice_trait_manpower
-			hidden_effect = {			
-				set_variable = {
-					touhou_var_alice_trait_manpower = num_of_civilian_factories
-				}
-				multiply_variable = {
-					var = touhou_var_alice_trait_manpower
-					value = 1100
-				}
-				if = {
-					limit = {
-						check_variable = {
-							touhou_var_alice_trait_manpower > 5000000
-						}
-					}
-					set_variable = {
-						touhou_var_alice_trait_manpower = 5000000
-					}
-				}
-			}
-			activate_mission = touhou_mission_doll_production_line			
 		}
 		ai_will_do = {
 			factor = 200

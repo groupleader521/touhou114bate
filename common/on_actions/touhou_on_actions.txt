@@ -7,24 +7,40 @@ on_actions = {
 				set_variable = {
 					touhou_var_alice_doll_consumer_goods_expected_value = 0.1
 				}
+				#如果写进history里会导致工厂数为0
 				set_variable = {
-					#如果写进history里会导致“num_of_factories”为0
 					touhou_var_alice_trait_manpower = num_of_factories
 				}
+				set_variable = {
+					touhou_var_alice_trait_manpower_2 = num_of_factories
+				}
+				set_variable = {
+					touhou_var_alice_trait_manpower_3 = num_of_factories
+				}
+				ALI_prepare_doll_production_manpower_chunks = yes
 				multiply_variable = {
 					var = touhou_var_alice_trait_manpower
+					value = 1065
+				}
+				multiply_variable = {
+					var = touhou_var_alice_trait_manpower_2
+					value = 1065
+				}
+				multiply_variable = {
+					var = touhou_var_alice_trait_manpower_3
 					value = 1065
 				}
 				if = {
 					limit = {
 						check_variable = {
-							touhou_var_alice_trait_manpower > 5000000
+							touhou_var_alice_trait_manpower_3 > 953000
 						}
 					}
 					set_variable = {
-						touhou_var_alice_trait_manpower = 5000000
+						touhou_var_alice_trait_manpower_3 = 953000
 					}
 				}
+				ALI_update_doll_production_manpower_total = yes
 			}
 			EVI = {
 				if = {
