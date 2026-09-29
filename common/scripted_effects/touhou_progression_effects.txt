@@ -1,0 +1,43 @@
+# Country scope. Shared by the unification event, Alice's Makai route and save recovery.
+touhou_load_unified_focus_effect = {
+	if = {
+		limit = { NOT = { has_focus_tree = touhou_TOUHOU_focus } }
+		load_focus_tree = {
+			tree = touhou_TOUHOU_focus
+			keep_completed = yes
+		}
+	}
+}
+
+# Country scope. A permanent output bonus replaces the old permanent 200 factories.
+touhou_lunatic_industry_effect = {
+	add_ideas = touhou_lunatic_industrial_mobilization
+	set_country_flag = touhou_lunatic_reward_v2
+}
+
+# Explicit old-save migration only: the caller confirms this country received the old reward.
+# The idea check also supports saves repaired with the previously supplied console command.
+touhou_migrate_lunatic_reward_effect = {
+	if = {
+		limit = {
+			OR = { tag = JAP tag = SOV }
+			NOT = { has_country_flag = touhou_lunatic_reward_v2 }
+		}
+		if = {
+			limit = { NOT = { has_idea = touhou_lunatic_industrial_mobilization } }
+			add_offsite_building = { type = arms_factory level = -200 }
+		}
+		every_state = {
+			limit = {
+				has_state_flag = is_gensokyo_state_flag
+				is_core_of = ROOT
+			}
+			remove_core_of = ROOT
+		}
+		# Clear only surrender-based tiers. The intentional 730-day L reward is _3.
+		remove_ideas = touhou_invade_new_world_0
+		remove_ideas = touhou_invade_new_world_1
+		remove_ideas = touhou_invade_new_world_2
+		touhou_lunatic_industry_effect = yes
+	}
+}

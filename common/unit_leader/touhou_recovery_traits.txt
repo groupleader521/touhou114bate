@@ -1,0 +1,9 @@
+leader_traits = {
+	# The reform event referenced this trait, but only its icon and localisation existed.
+	# Keep it cosmetic; no combat values are specified by the original definition.
+	Syk_island_trait = {
+		type = land
+		trait_type = personality_trait
+		allowed = { always = no }
+	}
+}

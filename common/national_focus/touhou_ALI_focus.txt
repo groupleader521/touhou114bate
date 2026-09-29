@@ -1578,7 +1578,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			load_focus_tree = touhou_TOUHOU_focus
+			touhou_load_unified_focus_effect = yes
 			set_cosmetic_tag = TOUHOU_DEVILDOM
 			every_state = { add_core_of = ROOT }
 			set_country_flag = touhou_all_country_unify_for_country

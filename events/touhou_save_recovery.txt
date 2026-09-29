@@ -1,0 +1,42 @@
+add_namespace = touhou_save_recovery
+
+# Run only for a JAP/SOV that received the old L-difficulty invasion reward.
+# event touhou_save_recovery.1 JAP (or SOV); safe to repeat after a successful migration.
+country_event = {
+	id = touhou_save_recovery.1
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { OR = { tag = JAP tag = SOV } }
+	immediate = { touhou_migrate_lunatic_reward_effect = yes }
+}
+
+# Old saves can retain the national tree even though the reform event already ran.
+# The reform variable is initialized by touhou_end.4; do not use unification alone,
+# which would skip the ten-day wait. Only replace the original national trees.
+country_event = {
+	id = touhou_save_recovery.2
+	hidden = yes
+	trigger = {
+		has_variable = touhou_var_fantasy_consumer_goods_expected_value
+		OR = {
+			has_focus_tree = touhou_ALI_focus
+			has_focus_tree = touhou_BLQ_focus
+			has_focus_tree = touhou_DES_focus
+			has_focus_tree = touhou_DLD_focus
+			has_focus_tree = touhou_EVI_focus
+			has_focus_tree = touhou_HAK_focus
+			has_focus_tree = touhou_HEL_focus
+			has_focus_tree = touhou_HUM_focus
+			has_focus_tree = touhou_KAP_focus
+			has_focus_tree = touhou_MLS_focus
+			has_focus_tree = touhou_OPP_focus
+			has_focus_tree = touhou_RAB_focus
+			has_focus_tree = touhou_SSS_focus
+			has_focus_tree = touhou_TEM_focus
+			has_focus_tree = touhou_TEN_focus
+			has_focus_tree = touhou_VAM_focus
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = { touhou_load_unified_focus_effect = yes }
+}
