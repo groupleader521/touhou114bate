@@ -1,0 +1,9 @@
+air_wings = {
+	1084 = {
+		small_plane_airframe_touhou_magic_small_0 = {
+			owner = "VAM"
+			amount = 40
+			version_name = "扫把"
+		}
+	}
+}

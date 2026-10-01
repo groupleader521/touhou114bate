@@ -73,14 +73,6 @@ units = {
 		start_experience_factor = 0.2
 	}
 }
-air_wings = {
-	1101 = {
-		touhou_wakan_fighter_equipment_0 = {
-			owner = "BLQ"
-			amount = 40
-		}
-	}
-}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

@@ -1,3 +1,4 @@
+set_country_flag = touhou_country_flag_demonforce_first_research
 capital = 1083
 oob = "KAP_1936"
 set_stability = 0.5

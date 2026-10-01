@@ -1,0 +1,1146 @@
+# Native tank archetypes; blank modular chassis. Load before native x_* role duplication.
+equipments = {
+	heavy_tank_chassis_touhou_demonforce_heavy_1 = {
+		archetype = heavy_tank_chassis
+		year = 1934
+		priority = 90
+		visual_level = 0
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = heavy_tank_chassis_touhou_demonforce_heavy_1
+		derived_variant_name = heavy_tank_chassis_touhou_demonforce_heavy_1_design
+		variant_name = heavy_tank_chassis_touhou_demonforce_heavy_1_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 1
+		build_cost_ic = 10.5
+		reliability = 0.28
+		armor_value = 19.25
+		hardness = 0.1
+		lend_lease_cost = 14
+		manpower = 0
+		defense = 0.5
+		breakthrough = 0.5
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		resources = {
+			steel = 1
+			chromium = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_country_flag_demonforce_first_research
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = basic_heavy_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = basic_heavy_tank
+				}
+			}
+			has_tech = touhou_tank_license_demonforce_heavy_1
+		}
+	}
+	heavy_tank_chassis_touhou_demonforce_heavy_2 = {
+		archetype = heavy_tank_chassis
+		year = 1941
+		priority = 90
+		visual_level = 1
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = heavy_tank_chassis_touhou_demonforce_heavy_2
+		derived_variant_name = heavy_tank_chassis_touhou_demonforce_heavy_2_design
+		variant_name = heavy_tank_chassis_touhou_demonforce_heavy_2_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 1.25
+		build_cost_ic = 12.6
+		reliability = 0.28
+		armor_value = 24.5
+		hardness = 0.1
+		lend_lease_cost = 14
+		manpower = 0
+		defense = 0.75
+		breakthrough = 0.75
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		resources = {
+			steel = 1
+			chromium = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_country_flag_demonforce_first_research
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = improved_heavy_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = improved_heavy_tank
+				}
+			}
+			has_tech = touhou_tank_license_demonforce_heavy_2
+		}
+	}
+	heavy_tank_chassis_touhou_demonforce_heavy_3 = {
+		archetype = heavy_tank_chassis
+		year = 1943
+		priority = 90
+		visual_level = 2
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = heavy_tank_chassis_touhou_demonforce_heavy_3
+		derived_variant_name = heavy_tank_chassis_touhou_demonforce_heavy_3_design
+		variant_name = heavy_tank_chassis_touhou_demonforce_heavy_3_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 1.5
+		build_cost_ic = 12.6
+		reliability = 0.28
+		armor_value = 31.5
+		hardness = 0.1
+		lend_lease_cost = 14
+		manpower = 0
+		defense = 0.875
+		breakthrough = 0.9
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		resources = {
+			steel = 1
+			chromium = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_country_flag_demonforce_first_research
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = advanced_heavy_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = advanced_heavy_tank
+				}
+			}
+			has_tech = touhou_tank_license_demonforce_heavy_3
+		}
+	}
+	super_heavy_tank_chassis_touhou_demonforce_super_heavy_1 = {
+		archetype = super_heavy_tank_chassis
+		year = 1943
+		priority = 130
+		visual_level = 0
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = super_heavy_tank_chassis_touhou_demonforce_super_heavy_1
+		derived_variant_name = super_heavy_tank_chassis_touhou_demonforce_super_heavy_1_design
+		variant_name = super_heavy_tank_chassis_touhou_demonforce_super_heavy_1_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 1
+		build_cost_ic = 35
+		reliability = 0.24
+		armor_value = 56
+		hardness = 0.1
+		lend_lease_cost = 15
+		manpower = 0
+		defense = 0.875
+		breakthrough = 0.9
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		resources = {
+			steel = 1
+			chromium = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_country_flag_demonforce_first_research
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = super_heavy_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = super_heavy_tank
+				}
+			}
+			has_tech = touhou_tank_license_demonforce_super_heavy_1
+		}
+	}
+	light_tank_chassis_touhou_magic_light_1 = {
+		archetype = light_tank_chassis
+		year = 1934
+		priority = 10
+		visual_level = 0
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = light_tank_chassis_touhou_magic_light_1
+		derived_variant_name = light_tank_chassis_touhou_magic_light_1_design
+		variant_name = light_tank_chassis_touhou_magic_light_1_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 2
+		build_cost_ic = 2.45
+		reliability = 0.32
+		hardness = 0.1
+		armor_value = 2.8
+		lend_lease_cost = 10
+		manpower = 0
+		defense = 0.55
+		breakthrough = 0.5
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		fuel_capacity = 110
+		resources = {
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_country_flag_magic_first_research
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = basic_light_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = basic_light_tank
+				}
+			}
+			has_tech = touhou_tank_license_magic_light_1
+		}
+	}
+	light_tank_chassis_touhou_magic_light_2 = {
+		archetype = light_tank_chassis
+		year = 1936
+		priority = 10
+		visual_level = 1
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = light_tank_chassis_touhou_magic_light_2
+		derived_variant_name = light_tank_chassis_touhou_magic_light_2_design
+		variant_name = light_tank_chassis_touhou_magic_light_2_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 2.5
+		build_cost_ic = 2.975
+		reliability = 0.32
+		hardness = 0.1
+		armor_value = 4.2
+		lend_lease_cost = 10
+		manpower = 0
+		defense = 0.75
+		breakthrough = 0.75
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		fuel_capacity = 120
+		resources = {
+			steel = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_country_flag_magic_first_research
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = improved_light_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = improved_light_tank
+				}
+			}
+			has_tech = touhou_tank_license_magic_light_2
+		}
+	}
+	light_tank_chassis_touhou_magic_light_3 = {
+		archetype = light_tank_chassis
+		year = 1941
+		priority = 10
+		visual_level = 2
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = light_tank_chassis_touhou_magic_light_3
+		derived_variant_name = light_tank_chassis_touhou_magic_light_3_design
+		variant_name = light_tank_chassis_touhou_magic_light_3_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 3
+		build_cost_ic = 2.975
+		reliability = 0.32
+		hardness = 0.1
+		armor_value = 7.35
+		lend_lease_cost = 10
+		manpower = 0
+		defense = 1.125
+		breakthrough = 1.2
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		fuel_capacity = 130
+		resources = {
+			steel = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_country_flag_magic_first_research
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = advanced_light_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = advanced_light_tank
+				}
+			}
+			has_tech = touhou_tank_license_magic_light_3
+		}
+	}
+	medium_tank_chassis_touhou_magic_medium_1 = {
+		archetype = medium_tank_chassis
+		year = 1939
+		priority = 50
+		visual_level = 0
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = medium_tank_chassis_touhou_magic_medium_1
+		derived_variant_name = medium_tank_chassis_touhou_magic_medium_1_design
+		variant_name = medium_tank_chassis_touhou_magic_medium_1_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 1.5
+		build_cost_ic = 4.9
+		reliability = 0.32
+		armor_value = 16.45
+		hardness = 0.1
+		lend_lease_cost = 12
+		manpower = 0
+		defense = 0.75625
+		breakthrough = 0.75
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		fuel_capacity = 165
+		resources = {
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_country_flag_magic_first_research
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = basic_medium_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = basic_medium_tank
+				}
+			}
+			has_tech = touhou_tank_license_magic_medium_1
+		}
+	}
+	medium_tank_chassis_touhou_magic_medium_2 = {
+		archetype = medium_tank_chassis
+		year = 1941
+		priority = 50
+		visual_level = 1
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = medium_tank_chassis_touhou_magic_medium_2
+		derived_variant_name = medium_tank_chassis_touhou_magic_medium_2_design
+		variant_name = medium_tank_chassis_touhou_magic_medium_2_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 2
+		build_cost_ic = 6.125
+		reliability = 0.32
+		armor_value = 19.25
+		hardness = 0.1
+		lend_lease_cost = 12
+		manpower = 0
+		defense = 0.89375
+		breakthrough = 1
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		fuel_capacity = 180
+		resources = {
+			steel = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_country_flag_magic_first_research
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = improved_medium_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = improved_medium_tank
+				}
+			}
+			has_tech = touhou_tank_license_magic_medium_2
+		}
+	}
+	medium_tank_chassis_touhou_magic_medium_3 = {
+		archetype = medium_tank_chassis
+		year = 1943
+		priority = 50
+		visual_level = 2
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = medium_tank_chassis_touhou_magic_medium_3
+		derived_variant_name = medium_tank_chassis_touhou_magic_medium_3_design
+		variant_name = medium_tank_chassis_touhou_magic_medium_3_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 2.5
+		build_cost_ic = 6.125
+		reliability = 0.32
+		armor_value = 22.75
+		hardness = 0.1
+		lend_lease_cost = 12
+		manpower = 0
+		defense = 1.1
+		breakthrough = 1.155
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		fuel_capacity = 195
+		resources = {
+			steel = 1
+			tungsten = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_country_flag_magic_first_research
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = advanced_medium_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = advanced_medium_tank
+				}
+			}
+			has_tech = touhou_tank_license_magic_medium_3
+		}
+	}
+	modern_tank_chassis_touhou_magic_modern_1 = {
+		archetype = modern_tank_chassis
+		year = 1945
+		priority = 170
+		visual_level = 0
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = modern_tank_chassis_touhou_magic_modern_1
+		derived_variant_name = modern_tank_chassis_touhou_magic_modern_1_design
+		variant_name = modern_tank_chassis_touhou_magic_modern_1_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 3
+		build_cost_ic = 12.25
+		reliability = 0.36
+		armor_value = 35
+		hardness = 0.1
+		lend_lease_cost = 14
+		manpower = 0
+		defense = 1
+		breakthrough = 1
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		fuel_capacity = 275
+		resources = {
+			steel = 1
+			chromium = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_country_flag_magic_first_research
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = main_battle_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = main_battle_tank
+				}
+			}
+			has_tech = touhou_tank_license_magic_modern_1
+		}
+	}
+	heavy_tank_chassis_touhou_goliath_1 = {
+		archetype = heavy_tank_chassis
+		year = 1931
+		priority = 6
+		visual_level = 2
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = heavy_tank_chassis_touhou_goliath_1
+		derived_variant_name = heavy_tank_chassis_touhou_goliath_1_design
+		variant_name = heavy_tank_chassis_touhou_goliath_1_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 1.5
+		build_cost_ic = 112
+		reliability = 0.16
+		armor_value = 21
+		hardness = 0.1
+		lend_lease_cost = 15
+		manpower = 0
+		defense = 7.5
+		breakthrough = 15
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		resources = {
+			steel = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_project_unlocked_goliath_0
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = basic_heavy_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = basic_heavy_tank
+				}
+			}
+			has_tech = touhou_tank_license_goliath_1
+		}
+	}
+	heavy_tank_chassis_touhou_goliath_2 = {
+		archetype = heavy_tank_chassis
+		year = 1931
+		priority = 8
+		visual_level = 3
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = heavy_tank_chassis_touhou_goliath_2
+		derived_variant_name = heavy_tank_chassis_touhou_goliath_2_design
+		variant_name = heavy_tank_chassis_touhou_goliath_2_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 2
+		build_cost_ic = 140
+		reliability = 0.2
+		armor_value = 42
+		hardness = 0.1
+		lend_lease_cost = 15
+		manpower = 0
+		defense = 12.5
+		breakthrough = 25
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		resources = {
+			steel = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_project_unlocked_goliath_0
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = improved_heavy_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = improved_heavy_tank
+				}
+			}
+			has_tech = touhou_tank_license_goliath_2
+		}
+	}
+	heavy_tank_chassis_touhou_goliath_3 = {
+		archetype = heavy_tank_chassis
+		year = 1931
+		priority = 10
+		visual_level = 4
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = heavy_tank_chassis_touhou_goliath_3
+		derived_variant_name = heavy_tank_chassis_touhou_goliath_3_design
+		variant_name = heavy_tank_chassis_touhou_goliath_3_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 2.5
+		build_cost_ic = 168
+		reliability = 0.32
+		armor_value = 42
+		hardness = 0.1
+		lend_lease_cost = 15
+		manpower = 0
+		defense = 15
+		breakthrough = 30
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		resources = {
+			steel = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_project_unlocked_goliath_0
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = advanced_heavy_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = advanced_heavy_tank
+				}
+			}
+			has_tech = touhou_tank_license_goliath_3
+		}
+	}
+	heavy_tank_chassis_touhou_goliath_4 = {
+		archetype = heavy_tank_chassis
+		year = 1931
+		priority = 12
+		visual_level = 5
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = heavy_tank_chassis_touhou_goliath_4
+		derived_variant_name = heavy_tank_chassis_touhou_goliath_4_design
+		variant_name = heavy_tank_chassis_touhou_goliath_4_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 3
+		build_cost_ic = 210
+		reliability = 0.4
+		armor_value = 63
+		hardness = 0.1
+		lend_lease_cost = 15
+		manpower = 0
+		defense = 18.75
+		breakthrough = 37.5
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		resources = {
+			steel = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_project_unlocked_goliath_0
+			OR = {
+				AND = {
+					has_dlc = "No Step Back"
+					has_tech = super_heavy_tank_chassis
+				}
+				AND = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+					has_tech = super_heavy_tank
+				}
+			}
+			has_tech = touhou_tank_license_goliath_4
+		}
+	}
+	heavy_tank_chassis_touhou_oni_champion_0 = {
+		archetype = heavy_tank_chassis
+		year = 1931
+		priority = 90
+		visual_level = 2
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = heavy_tank_chassis_touhou_oni_champion_0
+		derived_variant_name = heavy_tank_chassis_touhou_oni_champion_0_design
+		variant_name = heavy_tank_chassis_touhou_oni_champion_0_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 1
+		build_cost_ic = 5.25
+		reliability = 0.34
+		armor_value = 42
+		hardness = 0.1
+		lend_lease_cost = 3
+		manpower = 0
+		defense = 3
+		breakthrough = 4
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		resources = {
+			steel = 1
+			tungsten = 1
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_project_unlocked_oni_champion
+			has_tech = touhou_tank_license_oni_champion_0
+		}
+	}
+	medium_tank_chassis_touhou_evil_armor_0 = {
+		archetype = medium_tank_chassis
+		year = 1931
+		priority = 05
+		visual_level = 0
+		module_slots = inherit
+		active = yes
+		is_buildable = yes
+		picture = medium_tank_chassis_touhou_evil_armor_0
+		derived_variant_name = medium_tank_chassis_touhou_evil_armor_0_design
+		variant_name = medium_tank_chassis_touhou_evil_armor_0_design
+		upgrades = {
+			tank_nsb_engine_upgrade
+			tank_nsb_armor_upgrade
+		}
+		fuel_consumption = 0
+		maximum_speed = 0.25
+		build_cost_ic = 0.35
+		reliability = 0.2
+		armor_value = 0.35
+		hardness = 0.1
+		lend_lease_cost = 1
+		manpower = 0
+		defense = 0.25
+		breakthrough = 0.5
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		resources = {
+		}
+		can_be_produced = {
+			has_dlc = "No Step Back"
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_country_flag = touhou_project_unlocked_evil_army
+			has_tech = touhou_tank_license_evil_armor_0
+		}
+	}
+}

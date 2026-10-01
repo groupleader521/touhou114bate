@@ -83,26 +83,36 @@ division_template = {
 }
 units = {
 }
-air_wings = {
-	1094 = {
-		suicide_puppet_equipment_2 = {
-			owner = "ALI"
-			amount = 10
+instant_effect = {
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
 		}
-		suicide_puppet_equipment_2 = {
-			owner = "ALI"
-			amount = 10
+		add_equipment_production = {
+			equipment = {
+				type = light_tank_chassis_touhou_magic_light_1
+				creator = "ALI"
+				version = 1
+			}
+			requested_factories = 3
+			progress = 0.1
+			efficiency = 50
 		}
 	}
-}
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = touhou_magic_light_tank_equipment_1
-			creator = "ALI"
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
 		}
-		requested_factories = 3
-		progress = 0.1
-		efficiency = 50
+		add_equipment_production = {
+			equipment = {
+				type = light_tank_equipment_1
+				creator = "ALI"
+			}
+			requested_factories = 3
+			progress = 0.1
+			efficiency = 50
+		}
 	}
 }

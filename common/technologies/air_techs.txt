@@ -1153,8 +1153,8 @@ technologies = {
 			mio_cat_all_cas_and_modules
 			mio_cat_all_light_aircraft_and_modules
 			demonforce
-			wakan
 			mio_cat_tech_touhou_aircraft
+			wakan
 		}
 		special_project_specialization = {
 			specialization_air
@@ -1176,54 +1176,6 @@ technologies = {
 			}
 		}
 		on_research_complete = {
-			if = {
-				limit = {
-					OR = {
-						original_tag = ALI
-						original_tag = DES
-						original_tag = HAK
-						original_tag = DLD
-						original_tag = HEL
-						original_tag = SSS
-						original_tag = OPP
-						original_tag = RAB
-						original_tag = TEM
-						original_tag = BLQ
-						original_tag = KAP
-						original_tag = TEN
-						original_tag = HUM
-						original_tag = VAM
-						original_tag = MLS
-						original_tag = EVI
-					}
-					has_country_flag = touhou_country_flag_wakan_first_research
-				}
-				custom_effect_tooltip = touhou_model_unlock_wakan_CAS1
-			}
-			if = {
-				limit = {
-					OR = {
-						original_tag = ALI
-						original_tag = DES
-						original_tag = HAK
-						original_tag = DLD
-						original_tag = HEL
-						original_tag = SSS
-						original_tag = OPP
-						original_tag = RAB
-						original_tag = TEM
-						original_tag = BLQ
-						original_tag = KAP
-						original_tag = TEN
-						original_tag = HUM
-						original_tag = VAM
-						original_tag = MLS
-						original_tag = EVI
-					}
-					has_country_flag = touhou_country_flag_demonforce_first_research
-				}
-				custom_effect_tooltip = touhou_model_unlock_demonforce_CAS1
-			}
 			if = {
 				limit = {
 					OR = {
@@ -1332,8 +1284,8 @@ technologies = {
 			mio_cat_all_cas_and_modules
 			mio_cat_all_light_aircraft_and_modules
 			demonforce
-			wakan
 			mio_cat_tech_touhou_aircraft
+			wakan
 		}
 		special_project_specialization = {
 			specialization_air
@@ -1364,54 +1316,6 @@ technologies = {
 			}
 		}
 		on_research_complete = {
-			if = {
-				limit = {
-					OR = {
-						original_tag = ALI
-						original_tag = DES
-						original_tag = HAK
-						original_tag = DLD
-						original_tag = HEL
-						original_tag = SSS
-						original_tag = OPP
-						original_tag = RAB
-						original_tag = TEM
-						original_tag = BLQ
-						original_tag = KAP
-						original_tag = TEN
-						original_tag = HUM
-						original_tag = VAM
-						original_tag = MLS
-						original_tag = EVI
-					}
-					has_country_flag = touhou_country_flag_wakan_first_research
-				}
-				custom_effect_tooltip = touhou_model_unlock_wakan_CAS2
-			}
-			if = {
-				limit = {
-					OR = {
-						original_tag = ALI
-						original_tag = DES
-						original_tag = HAK
-						original_tag = DLD
-						original_tag = HEL
-						original_tag = SSS
-						original_tag = OPP
-						original_tag = RAB
-						original_tag = TEM
-						original_tag = BLQ
-						original_tag = KAP
-						original_tag = TEN
-						original_tag = HUM
-						original_tag = VAM
-						original_tag = MLS
-						original_tag = EVI
-					}
-					has_country_flag = touhou_country_flag_demonforce_first_research
-				}
-				custom_effect_tooltip = touhou_model_unlock_demonforce_CAS2
-			}
 			if = {
 				limit = {
 					OR = {
@@ -1520,8 +1424,8 @@ technologies = {
 			mio_cat_all_cas_and_modules
 			mio_cat_all_light_aircraft_and_modules
 			demonforce
-			wakan
 			mio_cat_tech_touhou_aircraft
+			wakan
 		}
 		special_project_specialization = {
 			specialization_air
@@ -1552,54 +1456,6 @@ technologies = {
 			}
 		}
 		on_research_complete = {
-			if = {
-				limit = {
-					OR = {
-						original_tag = ALI
-						original_tag = DES
-						original_tag = HAK
-						original_tag = DLD
-						original_tag = HEL
-						original_tag = SSS
-						original_tag = OPP
-						original_tag = RAB
-						original_tag = TEM
-						original_tag = BLQ
-						original_tag = KAP
-						original_tag = TEN
-						original_tag = HUM
-						original_tag = VAM
-						original_tag = MLS
-						original_tag = EVI
-					}
-					has_country_flag = touhou_country_flag_wakan_first_research
-				}
-				custom_effect_tooltip = touhou_model_unlock_wakan_CAS3
-			}
-			if = {
-				limit = {
-					OR = {
-						original_tag = ALI
-						original_tag = DES
-						original_tag = HAK
-						original_tag = DLD
-						original_tag = HEL
-						original_tag = SSS
-						original_tag = OPP
-						original_tag = RAB
-						original_tag = TEM
-						original_tag = BLQ
-						original_tag = KAP
-						original_tag = TEN
-						original_tag = HUM
-						original_tag = VAM
-						original_tag = MLS
-						original_tag = EVI
-					}
-					has_country_flag = touhou_country_flag_demonforce_first_research
-				}
-				custom_effect_tooltip = touhou_model_unlock_demonforce_CAS3
-			}
 			if = {
 				limit = {
 					OR = {

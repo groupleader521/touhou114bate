@@ -60,7 +60,7 @@ exports.buildMilitaryPresentation=function({root,game,oldTech,models,ordinaryTec
     const icon=originalSprites.get('GFX_'+model.id+'_medium')||iconSource(model.unlock);
     const texture=addIcon('GFX_'+model.id+'_medium',icon);
     // Archetype defaults no longer point at custom graphics, so every retained model needs a direct sprite.
-    equipment.push({id:model.id,original:model.unlock,nameSource:name,shortNameSource:short,descriptionSource:desc,texture});
+    equipment.push({id:model.id,presetDesign:!!model.presetDesign,original:model.unlock,nameSource:name,shortNameSource:short,descriptionSource:desc,texture});
     for(const tag of tags){
       alias(tag+'_'+model.id,name);alias(tag+'_'+model.id+'_short',short);alias(tag+'_'+model.id+'_desc',desc);
       addIcon('GFX_'+tag+'_'+model.id+'_medium',icon);

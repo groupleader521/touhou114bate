@@ -1,0 +1,689 @@
+# Script-only national aviation component licenses.
+technologies = {
+	touhou_air_license_demonforce_small_0 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_demonforce_small_0
+			small_plane_cas_airframe_touhou_demonforce_small_0
+			small_plane_naval_bomber_airframe_touhou_demonforce_small_0
+			small_plane_suicide_airframe_touhou_demonforce_small_0
+		}
+		enable_equipment_modules = {
+			touhou_air_demonforce_small_0_engine
+			touhou_air_demonforce_small_0_protection
+			touhou_air_demonforce_small_0_range
+			touhou_air_weapon_demonforce_fighter_equipment_0
+		}
+	}
+	touhou_air_license_demonforce_small_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_demonforce_small_1
+			small_plane_cas_airframe_touhou_demonforce_small_1
+			small_plane_naval_bomber_airframe_touhou_demonforce_small_1
+			small_plane_suicide_airframe_touhou_demonforce_small_1
+		}
+		enable_equipment_modules = {
+			touhou_air_demonforce_small_1_engine
+			touhou_air_demonforce_small_1_protection
+			touhou_air_demonforce_small_1_range
+			touhou_air_weapon_demonforce_fighter_equipment_1
+			touhou_air_weapon_demonforce_CAS_equipment_1
+		}
+	}
+	touhou_air_license_demonforce_small_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_demonforce_small_2
+			small_plane_cas_airframe_touhou_demonforce_small_2
+			small_plane_naval_bomber_airframe_touhou_demonforce_small_2
+			small_plane_suicide_airframe_touhou_demonforce_small_2
+		}
+		enable_equipment_modules = {
+			touhou_air_demonforce_small_2_engine
+			touhou_air_demonforce_small_2_protection
+			touhou_air_demonforce_small_2_range
+			touhou_air_weapon_demonforce_fighter_equipment_2
+			touhou_air_weapon_demonforce_CAS_equipment_2
+		}
+	}
+	touhou_air_license_demonforce_small_3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_demonforce_small_3
+			small_plane_cas_airframe_touhou_demonforce_small_3
+			small_plane_naval_bomber_airframe_touhou_demonforce_small_3
+			small_plane_suicide_airframe_touhou_demonforce_small_3
+		}
+		enable_equipment_modules = {
+			touhou_air_demonforce_small_3_engine
+			touhou_air_demonforce_small_3_protection
+			touhou_air_demonforce_small_3_range
+			touhou_air_weapon_demonforce_fighter_equipment_3
+			touhou_air_weapon_demonforce_CAS_equipment_3
+		}
+	}
+	touhou_air_license_demonforce_small_5 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_demonforce_small_5
+			small_plane_cas_airframe_touhou_demonforce_small_5
+			small_plane_naval_bomber_airframe_touhou_demonforce_small_5
+			small_plane_suicide_airframe_touhou_demonforce_small_5
+		}
+		enable_equipment_modules = {
+			touhou_air_demonforce_small_5_engine
+			touhou_air_demonforce_small_5_protection
+			touhou_air_demonforce_small_5_range
+			touhou_air_weapon_demonforce_jet_fighter_equipment_2
+		}
+	}
+	touhou_air_license_demonforce_medium_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_demonforce_medium_1
+			medium_plane_fighter_airframe_touhou_demonforce_medium_1
+			medium_plane_scout_plane_airframe_touhou_demonforce_medium_1
+		}
+		enable_equipment_modules = {
+			touhou_air_demonforce_medium_1_engine
+			touhou_air_demonforce_medium_1_protection
+			touhou_air_demonforce_medium_1_range
+			touhou_air_weapon_demonforce_heavy_fighter_equipment_1
+		}
+	}
+	touhou_air_license_demonforce_medium_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_demonforce_medium_2
+			medium_plane_fighter_airframe_touhou_demonforce_medium_2
+			medium_plane_scout_plane_airframe_touhou_demonforce_medium_2
+		}
+		enable_equipment_modules = {
+			touhou_air_demonforce_medium_2_engine
+			touhou_air_demonforce_medium_2_protection
+			touhou_air_demonforce_medium_2_range
+			touhou_air_weapon_demonforce_heavy_fighter_equipment_2
+		}
+	}
+	touhou_air_license_demonforce_medium_3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_demonforce_medium_3
+			medium_plane_fighter_airframe_touhou_demonforce_medium_3
+			medium_plane_scout_plane_airframe_touhou_demonforce_medium_3
+		}
+		enable_equipment_modules = {
+			touhou_air_demonforce_medium_3_engine
+			touhou_air_demonforce_medium_3_protection
+			touhou_air_demonforce_medium_3_range
+			touhou_air_weapon_demonforce_heavy_fighter_equipment_3
+		}
+	}
+	touhou_air_license_magic_small_0 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_magic_small_0
+			small_plane_cas_airframe_touhou_magic_small_0
+			small_plane_naval_bomber_airframe_touhou_magic_small_0
+			small_plane_suicide_airframe_touhou_magic_small_0
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_small_0_engine
+			touhou_air_magic_small_0_protection
+			touhou_air_magic_small_0_range
+			touhou_air_weapon_magic_fighter_equipment_0
+		}
+	}
+	touhou_air_license_magic_small_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_magic_small_1
+			small_plane_cas_airframe_touhou_magic_small_1
+			small_plane_naval_bomber_airframe_touhou_magic_small_1
+			small_plane_suicide_airframe_touhou_magic_small_1
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_small_1_engine
+			touhou_air_magic_small_1_protection
+			touhou_air_magic_small_1_range
+			touhou_air_weapon_magic_fighter_equipment_1
+		}
+	}
+	touhou_air_license_magic_small_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_magic_small_2
+			small_plane_cas_airframe_touhou_magic_small_2
+			small_plane_naval_bomber_airframe_touhou_magic_small_2
+			small_plane_suicide_airframe_touhou_magic_small_2
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_small_2_engine
+			touhou_air_magic_small_2_protection
+			touhou_air_magic_small_2_range
+			touhou_air_weapon_magic_fighter_equipment_2
+		}
+	}
+	touhou_air_license_magic_small_3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_magic_small_3
+			small_plane_cas_airframe_touhou_magic_small_3
+			small_plane_naval_bomber_airframe_touhou_magic_small_3
+			small_plane_suicide_airframe_touhou_magic_small_3
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_small_3_engine
+			touhou_air_magic_small_3_protection
+			touhou_air_magic_small_3_range
+			touhou_air_weapon_magic_fighter_equipment_3
+		}
+	}
+	touhou_air_license_magic_small_5 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_magic_small_5
+			small_plane_cas_airframe_touhou_magic_small_5
+			small_plane_naval_bomber_airframe_touhou_magic_small_5
+			small_plane_suicide_airframe_touhou_magic_small_5
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_small_5_engine
+			touhou_air_magic_small_5_protection
+			touhou_air_magic_small_5_range
+			touhou_air_weapon_magic_jet_fighter_equipment_2
+		}
+	}
+	touhou_air_license_magic_medium_0 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_magic_medium_0
+			medium_plane_fighter_airframe_touhou_magic_medium_0
+			medium_plane_scout_plane_airframe_touhou_magic_medium_0
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_medium_0_engine
+			touhou_air_magic_medium_0_protection
+			touhou_air_magic_medium_0_range
+			touhou_air_weapon_magic_tac_bomber_equipment_0
+		}
+	}
+	touhou_air_license_magic_medium_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_magic_medium_1
+			medium_plane_fighter_airframe_touhou_magic_medium_1
+			medium_plane_scout_plane_airframe_touhou_magic_medium_1
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_medium_1_engine
+			touhou_air_magic_medium_1_protection
+			touhou_air_magic_medium_1_range
+			touhou_air_weapon_magic_tac_bomber_equipment_1
+		}
+	}
+	touhou_air_license_magic_medium_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_magic_medium_2
+			medium_plane_fighter_airframe_touhou_magic_medium_2
+			medium_plane_scout_plane_airframe_touhou_magic_medium_2
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_medium_2_engine
+			touhou_air_magic_medium_2_protection
+			touhou_air_magic_medium_2_range
+			touhou_air_weapon_magic_tac_bomber_equipment_2
+		}
+	}
+	touhou_air_license_magic_medium_3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_magic_medium_3
+			medium_plane_fighter_airframe_touhou_magic_medium_3
+			medium_plane_scout_plane_airframe_touhou_magic_medium_3
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_medium_3_engine
+			touhou_air_magic_medium_3_protection
+			touhou_air_magic_medium_3_range
+			touhou_air_weapon_magic_tac_bomber_equipment_3
+		}
+	}
+	touhou_air_license_magic_medium_4 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_magic_medium_4
+			medium_plane_fighter_airframe_touhou_magic_medium_4
+			medium_plane_scout_plane_airframe_touhou_magic_medium_4
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_medium_4_engine
+			touhou_air_magic_medium_4_protection
+			touhou_air_magic_medium_4_range
+			touhou_air_weapon_magic_jet_tac_bomber_equipment_2
+		}
+	}
+	touhou_air_license_magic_large_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			large_plane_airframe_touhou_magic_large_1
+			large_plane_maritime_patrol_plane_airframe_touhou_magic_large_1
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_large_1_engine
+			touhou_air_magic_large_1_protection
+			touhou_air_magic_large_1_range
+			touhou_air_weapon_magic_strat_bomber_equipment_1
+		}
+	}
+	touhou_air_license_magic_large_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			large_plane_airframe_touhou_magic_large_2
+			large_plane_maritime_patrol_plane_airframe_touhou_magic_large_2
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_large_2_engine
+			touhou_air_magic_large_2_protection
+			touhou_air_magic_large_2_range
+			touhou_air_weapon_magic_strat_bomber_equipment_2
+		}
+	}
+	touhou_air_license_magic_large_3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			large_plane_airframe_touhou_magic_large_3
+			large_plane_maritime_patrol_plane_airframe_touhou_magic_large_3
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_large_3_engine
+			touhou_air_magic_large_3_protection
+			touhou_air_magic_large_3_range
+			touhou_air_weapon_magic_strat_bomber_equipment_3
+		}
+	}
+	touhou_air_license_magic_large_4 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			large_plane_airframe_touhou_magic_large_4
+			large_plane_maritime_patrol_plane_airframe_touhou_magic_large_4
+		}
+		enable_equipment_modules = {
+			touhou_air_magic_large_4_engine
+			touhou_air_magic_large_4_protection
+			touhou_air_magic_large_4_range
+			touhou_air_weapon_magic_jet_strat_bomber_equipment_1
+		}
+	}
+	touhou_air_license_suicide_puppet_equipment_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_suicide_puppet_equipment_1
+			small_plane_cas_airframe_touhou_suicide_puppet_equipment_1
+			small_plane_naval_bomber_airframe_touhou_suicide_puppet_equipment_1
+			small_plane_suicide_airframe_touhou_suicide_puppet_equipment_1
+		}
+		enable_equipment_modules = {
+			touhou_air_suicide_puppet_equipment_1_engine
+			touhou_air_suicide_puppet_equipment_1_protection
+			touhou_air_suicide_puppet_equipment_1_range
+			touhou_air_weapon_suicide_puppet_equipment_1
+		}
+	}
+	touhou_air_license_suicide_puppet_equipment_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_suicide_puppet_equipment_2
+			small_plane_cas_airframe_touhou_suicide_puppet_equipment_2
+			small_plane_naval_bomber_airframe_touhou_suicide_puppet_equipment_2
+			small_plane_suicide_airframe_touhou_suicide_puppet_equipment_2
+		}
+		enable_equipment_modules = {
+			touhou_air_suicide_puppet_equipment_2_engine
+			touhou_air_suicide_puppet_equipment_2_protection
+			touhou_air_suicide_puppet_equipment_2_range
+			touhou_air_weapon_suicide_puppet_equipment_2
+		}
+	}
+	touhou_air_license_tengu_fighter_equipment_0 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_tengu_fighter_equipment_0
+			small_plane_cas_airframe_touhou_tengu_fighter_equipment_0
+			small_plane_naval_bomber_airframe_touhou_tengu_fighter_equipment_0
+			small_plane_suicide_airframe_touhou_tengu_fighter_equipment_0
+		}
+		enable_equipment_modules = {
+			touhou_air_tengu_fighter_equipment_0_engine
+			touhou_air_tengu_fighter_equipment_0_protection
+			touhou_air_tengu_fighter_equipment_0_range
+			touhou_air_weapon_tengu_fighter_equipment_0
+		}
+	}
+	touhou_air_license_cas_boli_equipment_0 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_cas_boli_equipment_0
+			small_plane_cas_airframe_touhou_cas_boli_equipment_0
+			small_plane_naval_bomber_airframe_touhou_cas_boli_equipment_0
+			small_plane_suicide_airframe_touhou_cas_boli_equipment_0
+		}
+		enable_equipment_modules = {
+			touhou_air_cas_boli_equipment_0_engine
+			touhou_air_cas_boli_equipment_0_protection
+			touhou_air_cas_boli_equipment_0_range
+			touhou_air_weapon_cas_boli_equipment_0
+		}
+	}
+	touhou_air_license_desires_equipment_0 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			large_plane_airframe_touhou_desires_equipment_0
+			large_plane_maritime_patrol_plane_airframe_touhou_desires_equipment_0
+		}
+		enable_equipment_modules = {
+			touhou_air_desires_equipment_0_engine
+			touhou_air_desires_equipment_0_protection
+			touhou_air_desires_equipment_0_range
+			touhou_air_weapon_desires_equipment_0
+		}
+	}
+	touhou_air_license_wakan_small_0 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_wakan_small_0
+			small_plane_cas_airframe_touhou_wakan_small_0
+			small_plane_naval_bomber_airframe_touhou_wakan_small_0
+			small_plane_suicide_airframe_touhou_wakan_small_0
+		}
+		enable_equipment_modules = {
+			touhou_air_wakan_small_0_engine
+			touhou_air_wakan_small_0_protection
+			touhou_air_wakan_small_0_range
+			touhou_air_weapon_wakan_fighter_equipment_0
+		}
+	}
+	touhou_air_license_wakan_small_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_wakan_small_1
+			small_plane_cas_airframe_touhou_wakan_small_1
+			small_plane_naval_bomber_airframe_touhou_wakan_small_1
+			small_plane_suicide_airframe_touhou_wakan_small_1
+		}
+		enable_equipment_modules = {
+			touhou_air_wakan_small_1_engine
+			touhou_air_wakan_small_1_protection
+			touhou_air_wakan_small_1_range
+			touhou_air_weapon_wakan_fighter_equipment_1
+			touhou_air_weapon_wakan_CAS_equipment_1
+		}
+	}
+	touhou_air_license_wakan_small_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_wakan_small_2
+			small_plane_cas_airframe_touhou_wakan_small_2
+			small_plane_naval_bomber_airframe_touhou_wakan_small_2
+			small_plane_suicide_airframe_touhou_wakan_small_2
+		}
+		enable_equipment_modules = {
+			touhou_air_wakan_small_2_engine
+			touhou_air_wakan_small_2_protection
+			touhou_air_wakan_small_2_range
+			touhou_air_weapon_wakan_fighter_equipment_2
+			touhou_air_weapon_wakan_CAS_equipment_2
+		}
+	}
+	touhou_air_license_wakan_small_3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_wakan_small_3
+			small_plane_cas_airframe_touhou_wakan_small_3
+			small_plane_naval_bomber_airframe_touhou_wakan_small_3
+			small_plane_suicide_airframe_touhou_wakan_small_3
+		}
+		enable_equipment_modules = {
+			touhou_air_wakan_small_3_engine
+			touhou_air_wakan_small_3_protection
+			touhou_air_wakan_small_3_range
+			touhou_air_weapon_wakan_fighter_equipment_3
+			touhou_air_weapon_wakan_CAS_equipment_3
+		}
+	}
+	touhou_air_license_wakan_small_5 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			small_plane_airframe_touhou_wakan_small_5
+			small_plane_cas_airframe_touhou_wakan_small_5
+			small_plane_naval_bomber_airframe_touhou_wakan_small_5
+			small_plane_suicide_airframe_touhou_wakan_small_5
+		}
+		enable_equipment_modules = {
+			touhou_air_wakan_small_5_engine
+			touhou_air_wakan_small_5_protection
+			touhou_air_wakan_small_5_range
+			touhou_air_weapon_wakan_jet_fighter_equipment_2
+		}
+	}
+	touhou_air_license_wakan_medium_0 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_wakan_medium_0
+			medium_plane_fighter_airframe_touhou_wakan_medium_0
+			medium_plane_scout_plane_airframe_touhou_wakan_medium_0
+		}
+		enable_equipment_modules = {
+			touhou_air_wakan_medium_0_engine
+			touhou_air_wakan_medium_0_protection
+			touhou_air_wakan_medium_0_range
+			touhou_air_weapon_wakan_tac_bomber_equipment_0
+		}
+	}
+	touhou_air_license_wakan_medium_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_wakan_medium_1
+			medium_plane_fighter_airframe_touhou_wakan_medium_1
+			medium_plane_scout_plane_airframe_touhou_wakan_medium_1
+		}
+		enable_equipment_modules = {
+			touhou_air_wakan_medium_1_engine
+			touhou_air_wakan_medium_1_protection
+			touhou_air_wakan_medium_1_range
+			touhou_air_weapon_wakan_tac_bomber_equipment_1
+		}
+	}
+	touhou_air_license_wakan_medium_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_wakan_medium_2
+			medium_plane_fighter_airframe_touhou_wakan_medium_2
+			medium_plane_scout_plane_airframe_touhou_wakan_medium_2
+		}
+		enable_equipment_modules = {
+			touhou_air_wakan_medium_2_engine
+			touhou_air_wakan_medium_2_protection
+			touhou_air_wakan_medium_2_range
+			touhou_air_weapon_wakan_tac_bomber_equipment_2
+		}
+	}
+	touhou_air_license_wakan_medium_3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_wakan_medium_3
+			medium_plane_fighter_airframe_touhou_wakan_medium_3
+			medium_plane_scout_plane_airframe_touhou_wakan_medium_3
+		}
+		enable_equipment_modules = {
+			touhou_air_wakan_medium_3_engine
+			touhou_air_wakan_medium_3_protection
+			touhou_air_wakan_medium_3_range
+			touhou_air_weapon_wakan_tac_bomber_equipment_3
+		}
+	}
+	touhou_air_license_wakan_medium_4 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			medium_plane_airframe_touhou_wakan_medium_4
+			medium_plane_fighter_airframe_touhou_wakan_medium_4
+			medium_plane_scout_plane_airframe_touhou_wakan_medium_4
+		}
+		enable_equipment_modules = {
+			touhou_air_wakan_medium_4_engine
+			touhou_air_wakan_medium_4_protection
+			touhou_air_wakan_medium_4_range
+			touhou_air_weapon_wakan_jet_tac_bomber_equipment_2
+		}
+	}
+}

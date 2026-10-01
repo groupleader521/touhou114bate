@@ -1,3 +1,4 @@
+set_country_flag = touhou_country_flag_wakan_first_research
 capital = 1099
 oob = "DES_1936"
 set_stability = 0.4
@@ -254,3 +255,41 @@ if = {
 	}
 }
 touhou_sync_vanilla_military = yes
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = touhou_air_design_v1_touhou_wakan_fighter_equipment_0
+			}
+		}
+		create_equipment_variant = {
+			name = "起风"
+			type = small_plane_airframe_touhou_wakan_small_0
+			allow_without_tech = yes
+			parent_version = 0
+			icon = "GFX_touhou_wakan_fighter_equipment_0_medium"
+			modules = {
+				fixed_main_weapon_slot = touhou_air_weapon_wakan_fighter_equipment_0
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = touhou_air_wakan_small_0_engine
+				special_type_slot_1 = touhou_air_wakan_small_0_protection
+				special_type_slot_2 = touhou_air_wakan_small_0_range
+			}
+			upgrades = {
+			}
+		}
+		set_country_flag = touhou_air_design_v1_touhou_wakan_fighter_equipment_0
+	}
+	set_air_oob = "DES_1936_air_bba"
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_air_oob = "DES_1936_air_legacy"
+}

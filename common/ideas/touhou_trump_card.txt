@@ -35,43 +35,43 @@ ideas = {
 			cost = 0
 			removal_cost = 0
 			equipment_bonus = {
-				suicide_puppet_equipment_1 = {
+				small_plane_suicide_airframe_touhou_suicide_puppet_equipment_1 = {
 					build_cost_ic = 1
 					instant = yes
 				}
-				suicide_puppet_equipment_2 = {
+				small_plane_cas_airframe_touhou_suicide_puppet_equipment_2 = {
 					build_cost_ic = 10
 					instant = yes
 				}
-				goliath_equipment_1 = {
+				heavy_tank_chassis_touhou_goliath_1 = {
 					build_cost_ic = 10
 					instant = yes
 				}
-				goliath_equipment_2 = {
+				heavy_tank_chassis_touhou_goliath_2 = {
 					build_cost_ic = 10
 					instant = yes
 				}
-				goliath_equipment_3 = {
+				heavy_tank_chassis_touhou_goliath_3 = {
 					build_cost_ic = 10
 					instant = yes
 				}
-				goliath_equipment_4 = {
+				heavy_tank_chassis_touhou_goliath_4 = {
 					build_cost_ic = 10
 					instant = yes
 				}
-				tengu_fighter_equipment_0 = {
+				small_plane_airframe_touhou_tengu_fighter_equipment_0 = {
 					build_cost_ic = 10
 					instant = yes
 				}
-				oni_champion_equipment_0 = {
+				heavy_tank_chassis_touhou_oni_champion_0 = {
 					build_cost_ic = 2
 					instant = yes
 				}
-				cas_boli_equipment_0 = {
+				small_plane_cas_airframe_touhou_cas_boli_equipment_0 = {
 					build_cost_ic = 10
 					instant = yes
 				}
-				desires_equipment_0 = {
+				large_plane_airframe_touhou_desires_equipment_0 = {
 					build_cost_ic = 10
 					instant = yes
 				}
@@ -168,7 +168,7 @@ ideas = {
 			cost = 10
 			removal_cost = 10
 			equipment_bonus = {
-				suicide_puppet_equipment_1 = {
+				small_plane_suicide_airframe_touhou_suicide_puppet_equipment_1 = {
 					build_cost_ic = -1
 					instant = yes
 				}
@@ -223,7 +223,7 @@ ideas = {
 			cost = 10
 			removal_cost = 10
 			equipment_bonus = {
-				suicide_puppet_equipment_2 = {
+				small_plane_cas_airframe_touhou_suicide_puppet_equipment_2 = {
 					build_cost_ic = -10
 					instant = yes
 				}
@@ -272,19 +272,19 @@ ideas = {
 			cost = 10
 			removal_cost = 10
 			equipment_bonus = {
-				goliath_equipment_1 = {
+				heavy_tank_chassis_touhou_goliath_1 = {
 					build_cost_ic = -10
 					instant = yes
 				}
-				goliath_equipment_2 = {
+				heavy_tank_chassis_touhou_goliath_2 = {
 					build_cost_ic = -10
 					instant = yes
 				}
-				goliath_equipment_3 = {
+				heavy_tank_chassis_touhou_goliath_3 = {
 					build_cost_ic = -10
 					instant = yes
 				}
-				goliath_equipment_4 = {
+				heavy_tank_chassis_touhou_goliath_4 = {
 					build_cost_ic = -10
 					instant = yes
 				}
@@ -338,19 +338,19 @@ ideas = {
 			cost = 10
 			removal_cost = 10
 			equipment_bonus = {
-				goliath_equipment_1 = {
+				heavy_tank_chassis_touhou_goliath_1 = {
 					build_cost_ic = -10
 					instant = yes
 				}
-				goliath_equipment_2 = {
+				heavy_tank_chassis_touhou_goliath_2 = {
 					build_cost_ic = -10
 					instant = yes
 				}
-				goliath_equipment_3 = {
+				heavy_tank_chassis_touhou_goliath_3 = {
 					build_cost_ic = -10
 					instant = yes
 				}
-				goliath_equipment_4 = {
+				heavy_tank_chassis_touhou_goliath_4 = {
 					build_cost_ic = -10
 					instant = yes
 				}
@@ -404,7 +404,7 @@ ideas = {
 			cost = 10
 			removal_cost = 10
 			equipment_bonus = {
-				tengu_fighter_equipment_0 = {
+				small_plane_airframe_touhou_tengu_fighter_equipment_0 = {
 					build_cost_ic = -10
 					instant = yes
 				}
@@ -458,7 +458,7 @@ ideas = {
 			cost = 10
 			removal_cost = 10
 			equipment_bonus = {
-				oni_champion_equipment_0 = {
+				heavy_tank_chassis_touhou_oni_champion_0 = {
 					build_cost_ic = -2
 					instant = yes
 				}
@@ -512,7 +512,7 @@ ideas = {
 			cost = 10
 			removal_cost = 10
 			equipment_bonus = {
-				cas_boli_equipment_0 = {
+				small_plane_cas_airframe_touhou_cas_boli_equipment_0 = {
 					build_cost_ic = -10
 					instant = yes
 				}
@@ -566,7 +566,7 @@ ideas = {
 			cost = 10
 			removal_cost = 10
 			equipment_bonus = {
-				desires_equipment_0 = {
+				large_plane_airframe_touhou_desires_equipment_0 = {
 					build_cost_ic = -10
 					instant = yes
 				}

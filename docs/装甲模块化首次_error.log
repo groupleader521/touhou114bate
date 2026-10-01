@@ -1,0 +1,14 @@
+[18:14:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/MIRA.mod line: 7
+[18:14:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_1862018480.mod line: 8
+[18:14:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_2829179259.mod line: 7
+[18:14:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3157816605.mod line: 6
+[18:14:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3310177852.mod line: 6
+[18:14:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3322324112.mod line: 8
+[18:14:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3405989555.mod line: 6
+[18:14:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3686435343.mod line: 8
+[18:14:24][no_game_date][persistent.cpp:67]: Error: "Unexpected token: lend_lease_cost, near line: 562" in file: "common/units/equipment/modules/touhou_tank_modules.txt" near line: 562
+[18:14:24][no_game_date][persistent.cpp:67]: Error: "Unexpected token: lend_lease_cost, near line: 589" in file: "common/units/equipment/modules/touhou_tank_modules.txt" near line: 589
+[18:14:24][no_game_date][persistent.cpp:67]: Error: "Unexpected token: lend_lease_cost, near line: 612" in file: "common/units/equipment/modules/touhou_tank_modules.txt" near line: 612
+[18:14:28][no_game_date][database_scoped_variables.cpp:63]: invalid database object for effect/trigger:  file: events/molisha.txt line: 128 touhou_magic_light_tank_equipment_1. use var:var_name to explicitly use variables in effects/triggers
+[18:14:28][no_game_date][database_scoped_variables.cpp:63]: invalid database object for effect/trigger:  file: events/molisha.txt line: 215 touhou_magic_light_tank_equipment_1. use var:var_name to explicitly use variables in effects/triggers
+[18:14:28][no_game_date][database_scoped_variables.cpp:63]: invalid database object for effect/trigger:  file: events/molisha.txt line: 216 touhou_demonforce_heavy_tank_equipment_1. use var:var_name to explicitly use variables in effects/triggers

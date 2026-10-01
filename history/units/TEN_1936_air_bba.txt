@@ -1,0 +1,9 @@
+air_wings = {
+	1084 = {
+		small_plane_airframe_touhou_demonforce_small_0 = {
+			owner = "TEN"
+			amount = 40
+			version_name = "有翼"
+		}
+	}
+}

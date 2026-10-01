@@ -1,3 +1,4 @@
+set_country_flag = touhou_country_flag_wakan_first_research
 capital = 1105
 oob = "HUM_1936"
 set_stability = 0.4

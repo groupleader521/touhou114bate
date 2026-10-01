@@ -1,0 +1,14 @@
+air_wings = {
+	1094 = {
+		small_plane_cas_airframe_touhou_suicide_puppet_equipment_2 = {
+			owner = "ALI"
+			amount = 10
+			version_name = "人偶战略导弹"
+		}
+		small_plane_cas_airframe_touhou_suicide_puppet_equipment_2 = {
+			owner = "ALI"
+			amount = 10
+			version_name = "人偶战略导弹"
+		}
+	}
+}

@@ -1,5 +1,5 @@
-﻿add_namespace = molisha
-country_event = {#开始
+add_namespace = molisha
+country_event = {
 	id = molisha.0
 	title = molisha.0.t
 	desc = molisha.0.d
@@ -8,15 +8,18 @@ country_event = {#开始
 	trigger = {
 		original_tag = MLS
 	}
-	
 	option = {
 		name = molisha.0.a
 		hidden_effect = {
-			country_event = { id = molisha.1 days = 30 random_days = 10 }
+			country_event = {
+				id = molisha.1
+				days = 30
+				random_days = 10
+			}
 		}
 	}
 }
-country_event = {#不被承认者
+country_event = {
 	id = molisha.1
 	title = molisha.1.t
 	desc = molisha.1.d
@@ -29,11 +32,15 @@ country_event = {#不被承认者
 		name = molisha.1.a
 		add_ideas = not_recognized_trait
 		hidden_effect = {
-			country_event = { id = molisha.2 days = 90  random_days = 10 }
+			country_event = {
+				id = molisha.2
+				days = 90
+				random_days = 10
+			}
 		}
 	}
 }
-country_event = {#不被承认者扩大
+country_event = {
 	id = molisha.2
 	title = molisha.2.t
 	desc = molisha.2.d
@@ -49,11 +56,15 @@ country_event = {#不被承认者扩大
 			add_idea = not_recognized_trait_2
 		}
 		hidden_effect = {
-			country_event = { id = molisha.3 days = 90  random_days = 10 }
+			country_event = {
+				id = molisha.3
+				days = 90
+				random_days = 10
+			}
 		}
 	}
 }
-country_event = {#双方伸出“援手”
+country_event = {
 	id = molisha.3
 	title = molisha.3.t
 	desc = molisha.3.d
@@ -74,20 +85,28 @@ country_event = {#双方伸出“援手”
 		name = molisha.3.a
 		hidden_effect = {
 			set_country_flag = choice_human
-			country_event = { id = molisha.4 }
+			country_event = {
+				id = molisha.4
+			}
 		}
 	}
 	option = {
 		name = molisha.3.b
 		hidden_effect = {
 			set_country_flag = choice_monster
-			country_event = { id = molisha.5 }
+			country_event = {
+				id = molisha.5
+			}
 		}
 	}
 	option = {
 		name = molisha.3.c
 		hidden_effect = {
-			country_event = { id = molisha.6 days = 360 random_days = 30 }
+			country_event = {
+				id = molisha.6
+				days = 360
+				random_days = 30
+			}
 		}
 		add_popularity = {
 			ideology = communism
@@ -95,7 +114,7 @@ country_event = {#双方伸出“援手”
 		}
 	}
 }
-country_event = {#选择人类
+country_event = {
 	id = molisha.4
 	title = molisha.4.t
 	desc = molisha.4.d
@@ -117,7 +136,11 @@ country_event = {#选择人类
 			popularity = 0.8
 		}
 		if = {
-			limit = { NOT = { has_government = democratic } }
+			limit = {
+				NOT = {
+					has_government = democratic
+				}
+			}
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = no
@@ -125,64 +148,200 @@ country_event = {#选择人类
 		}
 		add_ideas = touhou_democratic_influence
 		add_manpower = 50000
-		add_equipment_to_stockpile = { type = touhou_magic_light_tank_equipment_1 amount = 200 producer = ALI }
-		add_equipment_to_stockpile = { type = touhou_wakan_motorized_equipment_1 amount = 500 producer = TEM }
-		add_equipment_to_stockpile = { type = touhou_wakan_artillery_equipment_1 amount = 300 producer = DES }
-		add_equipment_to_stockpile = { type = touhou_wakan_infantry_equipment_0 amount = 3000 producer = BLQ }
-		add_equipment_to_stockpile = { type = touhou_support_equipment_1 amount = 500 producer = SSS }
+		if = {
+			limit = {
+				has_dlc = "No Step Back"
+			}
+			ALI = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = touhou_tank_design_v1_touhou_magic_light_tank_equipment_1
+						}
+					}
+					create_equipment_variant = {
+						name = "上海级"
+						type = light_tank_chassis_touhou_magic_light_1
+						allow_without_tech = yes
+						parent_version = 0
+						icon = "GFX_touhou_magic_light_tank_equipment_1_medium"
+						modules = {
+							engine_type_slot = touhou_tank_magic_light_1_engine
+							suspension_type_slot = touhou_tank_magic_light_1_suspension
+							armor_type_slot = touhou_tank_magic_light_1_armor
+							turret_type_slot = touhou_tank_magic_light_1_control
+							main_armament_slot = touhou_tank_weapon_magic_light_tank_equipment_1
+							special_type_slot_1 = empty
+							special_type_slot_2 = empty
+							special_type_slot_3 = empty
+							special_type_slot_4 = empty
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 0
+							tank_nsb_armor_upgrade = 0
+						}
+					}
+					set_country_flag = touhou_tank_design_v1_touhou_magic_light_tank_equipment_1
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_touhou_magic_light_1
+				amount = 200
+				producer = ALI
+				variant_name = "上海级"
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "No Step Back"
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_1
+				amount = 200
+				producer = ALI
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = touhou_wakan_motorized_equipment_1
+			amount = 500
+			producer = TEM
+		}
+		add_equipment_to_stockpile = {
+			type = touhou_wakan_artillery_equipment_1
+			amount = 300
+			producer = DES
+		}
+		add_equipment_to_stockpile = {
+			type = touhou_wakan_infantry_equipment_0
+			amount = 3000
+			producer = BLQ
+		}
+		add_equipment_to_stockpile = {
+			type = touhou_support_equipment_1
+			amount = 500
+			producer = SSS
+		}
 		hidden_effect = {
-			country_event = { id = molisha.41 random_days = 5 }
-			country_event = { id = molisha.42 random_days = 5 }
-			country_event = { id = molisha.43 random_days = 5 }
+			country_event = {
+				id = molisha.41
+				random_days = 5
+			}
+			country_event = {
+				id = molisha.42
+				random_days = 5
+			}
+			country_event = {
+				id = molisha.43
+				random_days = 5
+			}
 		}
 	}
 }
-country_event = {#选择人类，人类方
+country_event = {
 	id = molisha.41
 	title = molisha.41.t
 	desc = molisha.41.d
 	is_triggered_only = yes
 	picture = GFX_report_event_touhou_politica_human
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = EVI
+		}
 		has_government = democratic
 	}
 	option = {
 		name = molisha.41.a
-		add_opinion_modifier = { target = MLS modifier = human_molisha_human }
+		add_opinion_modifier = {
+			target = MLS
+			modifier = human_molisha_human
+		}
 	}
 }
-country_event = {#选择人类，妖怪方
+country_event = {
 	id = molisha.42
 	title = molisha.42.t
 	desc = molisha.42.d
 	is_triggered_only = yes
 	picture = GFX_report_event_touhou_politica_human
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = EVI
+		}
 		has_government = communism
 	}
 	option = {
 		name = molisha.42.a
-		add_opinion_modifier = { target = MLS modifier = moster_molisha_human }
+		add_opinion_modifier = {
+			target = MLS
+			modifier = moster_molisha_human
+		}
 	}
 }
-country_event = {#平等方
+country_event = {
 	id = molisha.43
 	title = molisha.43.t
 	desc = molisha.43.d
 	is_triggered_only = yes
 	picture = GFX_report_event_touhou_politica_monster
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = EVI
+		}
 		has_government = communism
 	}
 	option = {
 		name = molisha.43.a
-		add_opinion_modifier = { target = MLS modifier = equal_molisha }
+		add_opinion_modifier = {
+			target = MLS
+			modifier = equal_molisha
+		}
 	}
 }
-country_event = {#选择妖怪
+country_event = {
 	id = molisha.5
 	title = molisha.5.t
 	desc = molisha.5.d
@@ -204,7 +363,11 @@ country_event = {#选择妖怪
 			popularity = 0.8
 		}
 		if = {
-			limit = { NOT = { has_government = fascism } }
+			limit = {
+				NOT = {
+					has_government = fascism
+				}
+			}
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
@@ -212,49 +375,260 @@ country_event = {#选择妖怪
 		}
 		add_ideas = touhou_fascist_influence
 		add_manpower = 50000
-		add_equipment_to_stockpile = { type = touhou_magic_light_tank_equipment_1 amount = 200 producer = ALI }
-		add_equipment_to_stockpile = { type = touhou_demonforce_heavy_tank_equipment_1 amount = 30 producer = KAP }
-		add_equipment_to_stockpile = { type = touhou_demonforce_fighter_equipment_0 amount = 100 producer = TEN }
-		add_equipment_to_stockpile = { type = touhou_magic_infantry_equipment_0 amount = 3000 producer = VAM }
-		add_equipment_to_stockpile = { type = touhou_support_equipment_1 amount = 500 producer = RAB }
+		if = {
+			limit = {
+				has_dlc = "No Step Back"
+			}
+			ALI = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = touhou_tank_design_v1_touhou_magic_light_tank_equipment_1
+						}
+					}
+					create_equipment_variant = {
+						name = "上海级"
+						type = light_tank_chassis_touhou_magic_light_1
+						allow_without_tech = yes
+						parent_version = 0
+						icon = "GFX_touhou_magic_light_tank_equipment_1_medium"
+						modules = {
+							engine_type_slot = touhou_tank_magic_light_1_engine
+							suspension_type_slot = touhou_tank_magic_light_1_suspension
+							armor_type_slot = touhou_tank_magic_light_1_armor
+							turret_type_slot = touhou_tank_magic_light_1_control
+							main_armament_slot = touhou_tank_weapon_magic_light_tank_equipment_1
+							special_type_slot_1 = empty
+							special_type_slot_2 = empty
+							special_type_slot_3 = empty
+							special_type_slot_4 = empty
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 0
+							tank_nsb_armor_upgrade = 0
+						}
+					}
+					set_country_flag = touhou_tank_design_v1_touhou_magic_light_tank_equipment_1
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_touhou_magic_light_1
+				amount = 200
+				producer = ALI
+				variant_name = "上海级"
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "No Step Back"
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_1
+				amount = 200
+				producer = ALI
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "No Step Back"
+			}
+			KAP = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = touhou_tank_design_v1_touhou_demonforce_heavy_tank_equipment_1
+						}
+					}
+					create_equipment_variant = {
+						name = "妖兽"
+						type = heavy_tank_chassis_touhou_demonforce_heavy_1
+						allow_without_tech = yes
+						parent_version = 0
+						icon = "GFX_touhou_demonforce_heavy_tank_equipment_1_medium"
+						modules = {
+							engine_type_slot = touhou_tank_demonforce_heavy_1_engine
+							suspension_type_slot = touhou_tank_demonforce_heavy_1_suspension
+							armor_type_slot = touhou_tank_demonforce_heavy_1_armor
+							turret_type_slot = touhou_tank_demonforce_heavy_1_control
+							main_armament_slot = touhou_tank_weapon_demonforce_heavy_tank_equipment_1
+							special_type_slot_1 = empty
+							special_type_slot_2 = empty
+							special_type_slot_3 = empty
+							special_type_slot_4 = empty
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 0
+							tank_nsb_armor_upgrade = 0
+						}
+					}
+					set_country_flag = touhou_tank_design_v1_touhou_demonforce_heavy_tank_equipment_1
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = heavy_tank_chassis_touhou_demonforce_heavy_1
+				amount = 30
+				producer = KAP
+				variant_name = "妖兽"
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "No Step Back"
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = heavy_tank_equipment_1
+				amount = 30
+				producer = KAP
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			TEN = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = touhou_air_design_v1_touhou_demonforce_fighter_equipment_0
+						}
+					}
+					create_equipment_variant = {
+						name = "有翼"
+						type = small_plane_airframe_touhou_demonforce_small_0
+						allow_without_tech = yes
+						parent_version = 0
+						icon = "GFX_touhou_demonforce_fighter_equipment_0_medium"
+						modules = {
+							fixed_main_weapon_slot = touhou_air_weapon_demonforce_fighter_equipment_0
+							fixed_auxiliary_weapon_slot_1 = empty
+							engine_type_slot = touhou_air_demonforce_small_0_engine
+							special_type_slot_1 = touhou_air_demonforce_small_0_protection
+							special_type_slot_2 = touhou_air_demonforce_small_0_range
+						}
+						upgrades = {
+						}
+					}
+					set_country_flag = touhou_air_design_v1_touhou_demonforce_fighter_equipment_0
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_touhou_demonforce_small_0
+				amount = 100
+				producer = TEN
+				variant_name = "有翼"
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "By Blood Alone"
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_0
+				amount = 100
+				producer = TEN
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = touhou_magic_infantry_equipment_0
+			amount = 3000
+			producer = VAM
+		}
+		add_equipment_to_stockpile = {
+			type = touhou_support_equipment_1
+			amount = 500
+			producer = RAB
+		}
 		hidden_effect = {
-			country_event = { id = molisha.51 random_days = 5 }
-			country_event = { id = molisha.52 random_days = 5 }
-			country_event = { id = molisha.43 random_days = 5 }
+			country_event = {
+				id = molisha.51
+				random_days = 5
+			}
+			country_event = {
+				id = molisha.52
+				random_days = 5
+			}
+			country_event = {
+				id = molisha.43
+				random_days = 5
+			}
 		}
 	}
 }
-country_event = {#选择妖怪，人类方
+country_event = {
 	id = molisha.51
 	title = molisha.51.t
 	desc = molisha.51.d
 	is_triggered_only = yes
 	picture = GFX_report_event_touhou_politica_monster
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = EVI
+		}
 		has_government = democratic
 	}
 	option = {
 		name = molisha.51.a
-		add_opinion_modifier = { target = MLS modifier = human_molisha_moster }
+		add_opinion_modifier = {
+			target = MLS
+			modifier = human_molisha_moster
+		}
 	}
 }
-country_event = {#选择妖怪，妖怪方
+country_event = {
 	id = molisha.52
 	title = molisha.52.t
 	desc = molisha.52.d
 	is_triggered_only = yes
 	picture = GFX_report_event_touhou_politica_monster
 	trigger = {
-		OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = EVI }
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = EVI
+		}
 		has_government = communism
 	}
 	option = {
 		name = molisha.52.a
-		add_opinion_modifier = { target = MLS modifier = moster_molisha_moster }
+		add_opinion_modifier = {
+			target = MLS
+			modifier = moster_molisha_moster
+		}
 	}
 }
-country_event = {#坚持到底
+country_event = {
 	id = molisha.6
 	title = molisha.6.t
 	desc = molisha.6.d
@@ -277,7 +651,11 @@ country_event = {#坚持到底
 		}
 		add_ideas = touhou_communist_influence
 		add_manpower = 200000
-		add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 1100 producer = ALI }
+		add_equipment_to_stockpile = {
+			type = light_tank_equipment_1
+			amount = 1100
+			producer = ALI
+		}
 	}
 }
 country_event = {
@@ -287,18 +665,24 @@ country_event = {
 	picture = GFX_report_event_touhou_mls_out
 	is_triggered_only = yes
 	trigger = {
-		NOT = { is_subject_of = MLS }
+		NOT = {
+			is_subject_of = MLS
+		}
 	}
 	option = {
 		name = molisha.7.a
-		ai_chance = { base = 0 }
+		ai_chance = {
+			base = 0
+		}
 		every_unit_leader = {
 			set_nationality = MLS
 		}
 	}
 	option = {
 		name = molisha.7.b
-		ai_chance = { base = 1 }
+		ai_chance = {
+			base = 1
+		}
 		declare_war_on = {
 			type = annex_everything
 			target = MLS

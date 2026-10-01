@@ -1,0 +1,2384 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	touhou_tank_demonforce_heavy_1_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 2
+			reliability = 0.175
+			build_cost_ic = 6
+			fuel_consumption = 1.1
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.5
+	}
+	touhou_tank_demonforce_heavy_1_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 1
+			reliability = 0.175
+			build_cost_ic = 3
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+	}
+	touhou_tank_demonforce_heavy_1_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 35.75
+			defense = 0.7
+			build_cost_ic = 4.5
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.125
+	}
+	touhou_tank_demonforce_heavy_1_control = {
+		category = tank_heavy_turret_type
+		gfx = tank_heavy_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 0.5
+			defense = 0.8
+			reliability = 0.07
+			build_cost_ic = 3
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_equipment_1 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 3.3
+			build_cost_ic = 3
+			armor_value = 15
+			hardness = 0.85
+			defense = 4
+			breakthrough = 35
+			soft_attack = 21
+			hard_attack = 18
+			ap_attack = 50
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		build_cost_resources = {
+			steel = 2
+			chromium = 2
+		}
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_1 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_howitzer
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.1
+			build_cost_ic = 3
+			defense = 2
+			breakthrough = 1
+			soft_attack = 35
+			hard_attack = 1
+			ap_attack = 8
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		build_cost_resources = {
+			steel = 2
+			chromium = 2
+		}
+		allow_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_1 = {
+		category = tank_heavy_main_armament
+		gfx = tank_high_velocity_cannon_3
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.1
+			build_cost_ic = 3
+			reliability = 0.1
+			hardness = 0.85
+			defense = 2
+			soft_attack = 6
+			hard_attack = 25
+			ap_attack = 125
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		build_cost_resources = {
+			steel = 2
+			chromium = 2
+		}
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_1 = {
+		category = tank_medium_main_armament
+		gfx = tank_anti_air_cannon_3
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 3
+			hardness = 0.15
+			breakthrough = 1
+			soft_attack = 4.5
+			hard_attack = 4
+			ap_attack = 35
+			air_attack = 17
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		build_cost_resources = {
+			steel = 2
+			chromium = 2
+		}
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_demonforce_heavy_2_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 2.5
+			reliability = 0.175
+			build_cost_ic = 7.2
+			fuel_consumption = 1.1
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.8
+	}
+	touhou_tank_demonforce_heavy_2_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 1.25
+			reliability = 0.175
+			build_cost_ic = 3.6
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+	}
+	touhou_tank_demonforce_heavy_2_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 45.5
+			defense = 1.05
+			build_cost_ic = 5.4
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.35
+	}
+	touhou_tank_demonforce_heavy_2_control = {
+		category = tank_heavy_turret_type
+		gfx = tank_heavy_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 0.75
+			defense = 1.2
+			reliability = 0.07
+			build_cost_ic = 3.6
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_equipment_2 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 3.3
+			build_cost_ic = 3.6
+			armor_value = 65
+			hardness = 0.85
+			defense = 9
+			breakthrough = 50.5
+			soft_attack = 36
+			hard_attack = 39
+			ap_attack = 150
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		build_cost_resources = {
+			steel = 2
+			chromium = 2
+		}
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_2 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_howitzer
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.1
+			build_cost_ic = 3.6
+			armor_value = 20
+			defense = 3
+			breakthrough = 1.5
+			soft_attack = 60
+			hard_attack = 2
+			ap_attack = 8
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		build_cost_resources = {
+			steel = 3
+			chromium = 2
+		}
+		allow_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_2 = {
+		category = tank_heavy_main_armament
+		gfx = tank_high_velocity_cannon_3
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.1
+			build_cost_ic = 3.6
+			reliability = 0.1
+			armor_value = 20
+			hardness = 0.85
+			defense = 3
+			soft_attack = 8
+			hard_attack = 45
+			ap_attack = 215
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		build_cost_resources = {
+			steel = 3
+			chromium = 2
+		}
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_2 = {
+		category = tank_medium_main_armament
+		gfx = tank_anti_air_cannon_3
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 3.6
+			hardness = 0.15
+			breakthrough = 1.5
+			soft_attack = 6
+			hard_attack = 4.5
+			ap_attack = 75
+			air_attack = 33
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		build_cost_resources = {
+			steel = 2
+			chromium = 2
+		}
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_demonforce_heavy_3_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 3
+			reliability = 0.175
+			build_cost_ic = 7.2
+			fuel_consumption = 1.1
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.8
+	}
+	touhou_tank_demonforce_heavy_3_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 1.5
+			reliability = 0.175
+			build_cost_ic = 3.6
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+	}
+	touhou_tank_demonforce_heavy_3_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 58.5
+			defense = 1.225
+			build_cost_ic = 5.4
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.35
+	}
+	touhou_tank_demonforce_heavy_3_control = {
+		category = tank_heavy_turret_type
+		gfx = tank_heavy_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 0.9
+			defense = 1.4
+			reliability = 0.07
+			build_cost_ic = 3.6
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_equipment_3 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 3.3
+			build_cost_ic = 6.1
+			armor_value = 90
+			hardness = 0.85
+			defense = 11.5
+			breakthrough = 58.2
+			soft_attack = 45
+			hard_attack = 48
+			ap_attack = 185
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.525
+		build_cost_resources = {
+			steel = 3
+			chromium = 2
+		}
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_3 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_howitzer
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.1
+			build_cost_ic = 6.1
+			armor_value = 30
+			defense = 3.5
+			breakthrough = 1.7
+			soft_attack = 75
+			hard_attack = 2.5
+			ap_attack = 8
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.525
+		build_cost_resources = {
+			steel = 4
+			chromium = 2
+		}
+		allow_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_3 = {
+		category = tank_heavy_main_armament
+		gfx = tank_high_velocity_cannon_3
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.1
+			build_cost_ic = 3.6
+			reliability = 0.1
+			armor_value = 30
+			hardness = 0.85
+			defense = 3.5
+			soft_attack = 10
+			hard_attack = 60
+			ap_attack = 275
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		build_cost_resources = {
+			steel = 3
+			chromium = 3
+		}
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_3 = {
+		category = tank_medium_main_armament
+		gfx = tank_anti_air_cannon_3
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 6.1
+			reliability = 0.1
+			hardness = 0.15
+			breakthrough = 1.7
+			soft_attack = 7.5
+			hard_attack = 6
+			ap_attack = 100
+			air_attack = 44
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.525
+		build_cost_resources = {
+			steel = 3
+			chromium = 2
+		}
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_demonforce_super_heavy_1_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 2
+			reliability = 0.15
+			build_cost_ic = 20
+			fuel_consumption = 2.5
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 5
+	}
+	touhou_tank_demonforce_super_heavy_1_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 1
+			reliability = 0.15
+			build_cost_ic = 10
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 2.5
+	}
+	touhou_tank_demonforce_super_heavy_1_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 104
+			defense = 1.225
+			build_cost_ic = 15
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 3.75
+	}
+	touhou_tank_demonforce_super_heavy_1_control = {
+		category = tank_super_heavy_turret_type
+		gfx = tank_super_heavy_four_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+				tank_super_heavy_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 0.9
+			defense = 1.4
+			reliability = 0.06
+			build_cost_ic = 10
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 2.5
+	}
+	touhou_tank_weapon_demonforce_super_heavy_tank_equipment_1 = {
+		category = tank_super_heavy_main_armament
+		gfx = tank_super_heavy_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 7.5
+			build_cost_ic = 10
+			armor_value = 50
+			hardness = 0.88
+			defense = 8.5
+			breakthrough = 55.2
+			soft_attack = 50
+			hard_attack = 50
+			ap_attack = 240
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 2.5
+		build_cost_resources = {
+			steel = 2
+			chromium = 3
+		}
+	}
+	touhou_tank_weapon_demonforce_super_heavy_tank_artillery_equipment_1 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_howitzer
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 2.5
+			build_cost_ic = 10
+			reliability = 0.2
+			defense = 3.5
+			breakthrough = 1.7
+			soft_attack = 85
+			hard_attack = 3
+			ap_attack = 9
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 2.5
+		build_cost_resources = {
+			steel = 2
+			chromium = 3
+		}
+		allow_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_demonforce_super_heavy_tank_destroyer_equipment_1 = {
+		category = tank_heavy_main_armament
+		gfx = tank_high_velocity_cannon_3
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 2.5
+			build_cost_ic = 10
+			reliability = 0.2
+			armor_value = 10
+			hardness = 0.89
+			defense = 3.5
+			soft_attack = 12
+			hard_attack = 70
+			ap_attack = 315
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 2.5
+		build_cost_resources = {
+			steel = 2
+			chromium = 3
+		}
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_demonforce_super_heavy_tank_aa_equipment_1 = {
+		category = tank_medium_main_armament
+		gfx = tank_anti_air_cannon_3
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 10
+			reliability = 0.2
+			breakthrough = 1.7
+			soft_attack = 11.5
+			hard_attack = 9
+			ap_attack = 115
+			air_attack = 50
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 2.5
+		build_cost_resources = {
+			steel = 2
+			chromium = 3
+		}
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_magic_light_1_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 4
+			reliability = 0.2
+			build_cost_ic = 1.4
+			fuel_consumption = 0.75
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.35
+	}
+	touhou_tank_magic_light_1_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 2
+			reliability = 0.2
+			build_cost_ic = 0.7
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.175
+	}
+	touhou_tank_magic_light_1_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 5.2
+			defense = 0.77
+			build_cost_ic = 1.05
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.2625
+	}
+	touhou_tank_magic_light_1_control = {
+		category = tank_light_turret_type
+		gfx = tank_light_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			breakthrough = 0.5
+			defense = 0.88
+			reliability = 0.08
+			build_cost_ic = 0.7
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.175
+	}
+	touhou_tank_weapon_magic_light_tank_equipment_1 = {
+		category = tank_small_main_armament
+		gfx = tank_small_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 2.25
+			build_cost_ic = 0.7
+			hardness = 0.7
+			armor_value = 10
+			defense = 1.8
+			breakthrough = 24
+			soft_attack = 15
+			hard_attack = 9
+			ap_attack = 25
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.175
+		build_cost_resources = {
+			steel = 2
+		}
+	}
+	touhou_tank_weapon_magic_light_tank_artillery_equipment_1 = {
+		category = tank_small_main_armament
+		gfx = tank_close_support_gun
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 0.75
+			build_cost_ic = 0.7
+			hardness = 0.05
+			defense = 1.8
+			breakthrough = 1
+			soft_attack = 24
+			hard_attack = 0.8
+			ap_attack = 8
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.175
+		build_cost_resources = {
+			steel = 3
+			tungsten = 1
+		}
+		allow_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_light_tank_destroyer_equipment_1 = {
+		category = tank_small_main_armament
+		gfx = tank_high_velocity_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 0.75
+			build_cost_ic = 0.7
+			hardness = 0.7
+			armor_value = 2
+			defense = 1.8
+			soft_attack = 4
+			hard_attack = 13
+			ap_attack = 70
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.175
+		build_cost_resources = {
+			steel = 3
+			tungsten = 2
+		}
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_light_tank_aa_equipment_1 = {
+		category = tank_small_main_armament
+		gfx = tank_anti_air_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 2.2
+			hardness = 0.05
+			armor_value = 0.25
+			breakthrough = 1.2
+			soft_attack = 2.5
+			hard_attack = 1.2
+			ap_attack = 12
+			air_attack = 15
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		build_cost_resources = {
+			steel = 3
+		}
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_magic_light_2_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 5
+			reliability = 0.2
+			build_cost_ic = 1.7
+			fuel_consumption = 0.75
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.425
+	}
+	touhou_tank_magic_light_2_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 2.5
+			reliability = 0.2
+			build_cost_ic = 0.85
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.2125
+	}
+	touhou_tank_magic_light_2_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 7.8
+			defense = 1.05
+			build_cost_ic = 1.275
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.31875
+	}
+	touhou_tank_magic_light_2_control = {
+		category = tank_light_turret_type
+		gfx = tank_light_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			breakthrough = 0.75
+			defense = 1.2
+			reliability = 0.08
+			build_cost_ic = 0.85
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.2125
+	}
+	touhou_tank_weapon_magic_light_tank_equipment_2 = {
+		category = tank_small_main_armament
+		gfx = tank_small_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 2.25
+			build_cost_ic = 0.85
+			hardness = 0.7
+			armor_value = 18
+			defense = 3
+			breakthrough = 28.5
+			soft_attack = 18
+			hard_attack = 12
+			ap_attack = 30
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.2125
+		build_cost_resources = {
+			steel = 2
+		}
+	}
+	touhou_tank_weapon_magic_light_tank_artillery_equipment_2 = {
+		category = tank_small_main_armament
+		gfx = tank_close_support_gun
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 0.75
+			build_cost_ic = 0.85
+			hardness = 0.05
+			defense = 3
+			breakthrough = 1.5
+			soft_attack = 30
+			hard_attack = 1
+			ap_attack = 15
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.2125
+		build_cost_resources = {
+			steel = 2
+			tungsten = 2
+		}
+		allow_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_light_tank_destroyer_equipment_2 = {
+		category = tank_small_main_armament
+		gfx = tank_high_velocity_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 0.75
+			build_cost_ic = 0.85
+			hardness = 0.78
+			armor_value = 12
+			defense = 3
+			soft_attack = 6
+			hard_attack = 20
+			ap_attack = 90
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.2125
+		build_cost_resources = {
+			steel = 3
+			tungsten = 2
+		}
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_light_tank_aa_equipment_2 = {
+		category = tank_small_main_armament
+		gfx = tank_anti_air_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 0.85
+			hardness = 0.05
+			armor_value = 6
+			breakthrough = 1.5
+			soft_attack = 4
+			hard_attack = 3
+			ap_attack = 24
+			air_attack = 21
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.2125
+		build_cost_resources = {
+			steel = 3
+		}
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_magic_light_3_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 6
+			reliability = 0.2
+			build_cost_ic = 1.7
+			fuel_consumption = 0.75
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.425
+	}
+	touhou_tank_magic_light_3_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 3
+			reliability = 0.2
+			build_cost_ic = 0.85
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.2125
+	}
+	touhou_tank_magic_light_3_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 13.65
+			defense = 1.575
+			build_cost_ic = 1.275
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.31875
+	}
+	touhou_tank_magic_light_3_control = {
+		category = tank_light_turret_type
+		gfx = tank_light_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			breakthrough = 1.2
+			defense = 1.8
+			reliability = 0.08
+			build_cost_ic = 0.85
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.2125
+	}
+	touhou_tank_weapon_magic_light_tank_equipment_3 = {
+		category = tank_small_main_armament
+		gfx = tank_small_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 2.25
+			build_cost_ic = 0.85
+			hardness = 0.7
+			armor_value = 29
+			defense = 7.5
+			breakthrough = 33.6
+			soft_attack = 28
+			hard_attack = 24
+			ap_attack = 55
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.2125
+		build_cost_resources = {
+			tungsten = 1
+			steel = 2
+		}
+	}
+	touhou_tank_weapon_magic_light_tank_artillery_equipment_3 = {
+		category = tank_small_main_armament
+		gfx = tank_close_support_gun
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 0.75
+			build_cost_ic = 2.35
+			reliability = 0.08
+			hardness = 0.05
+			defense = 1.5
+			breakthrough = 1.6
+			soft_attack = 36
+			hard_attack = 2
+			ap_attack = 25
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5875
+		build_cost_resources = {
+			steel = 3
+			tungsten = 2
+		}
+		allow_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_light_tank_destroyer_equipment_3 = {
+		category = tank_small_main_armament
+		gfx = tank_high_velocity_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 0.75
+			build_cost_ic = 2.35
+			hardness = 0.7
+			armor_value = 4
+			defense = 1.5
+			soft_attack = 10
+			hard_attack = 28
+			ap_attack = 125
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5875
+		build_cost_resources = {
+			steel = 3
+			tungsten = 3
+		}
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_light_tank_aa_equipment_3 = {
+		category = tank_small_main_armament
+		gfx = tank_anti_air_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 2.35
+			armor_value = 3
+			breakthrough = 2.1
+			soft_attack = 6
+			hard_attack = 7
+			ap_attack = 30
+			air_attack = 35
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5875
+		build_cost_resources = {
+			steel = 4
+		}
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_magic_medium_1_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 3
+			reliability = 0.2
+			build_cost_ic = 2.8
+			fuel_consumption = 1.125
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.7
+	}
+	touhou_tank_magic_medium_1_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 1.5
+			reliability = 0.2
+			build_cost_ic = 1.4
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.35
+	}
+	touhou_tank_magic_medium_1_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 30.55
+			defense = 1.05875
+			build_cost_ic = 2.1
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.525
+	}
+	touhou_tank_magic_medium_1_control = {
+		category = tank_medium_turret_type
+		gfx = tank_medium_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 0.75
+			defense = 1.21
+			reliability = 0.08
+			build_cost_ic = 1.4
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.35
+	}
+	touhou_tank_weapon_magic_medium_tank_equipment_1 = {
+		category = tank_medium_main_armament
+		gfx = tank_medium_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 3.375
+			build_cost_ic = 1.4
+			armor_value = 18
+			hardness = 0.75
+			defense = 8.975
+			breakthrough = 48.5
+			soft_attack = 32
+			hard_attack = 24
+			ap_attack = 65
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.35
+		build_cost_resources = {
+			steel = 2
+			tungsten = 3
+		}
+	}
+	touhou_tank_weapon_magic_medium_tank_artillery_equipment_1 = {
+		category = tank_medium_main_armament
+		gfx = tank_medium_howitzer
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.125
+			build_cost_ic = 1.4
+			armor_value = 3
+			hardness = 0.05
+			defense = 2.975
+			breakthrough = 1.5
+			soft_attack = 40
+			hard_attack = 1.2
+			ap_attack = 5
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.35
+		build_cost_resources = {
+			steel = 3
+			tungsten = 3
+		}
+		allow_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_medium_tank_destroyer_equipment_1 = {
+		category = tank_medium_main_armament
+		gfx = tank_high_velocity_cannon_2
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.125
+			build_cost_ic = 1.4
+			armor_value = 3
+			hardness = 0.6
+			defense = 2.975
+			soft_attack = 6
+			hard_attack = 30
+			ap_attack = 150
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.35
+		build_cost_resources = {
+			steel = 3
+			tungsten = 4
+		}
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_medium_tank_aa_equipment_1 = {
+		category = tank_small_main_armament
+		gfx = tank_anti_air_cannon_2
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			maximum_speed = 3.35
+			build_cost_ic = 1.4
+			reliability = 0.08
+			hardness = 0.065
+			breakthrough = 1.525
+			soft_attack = 5
+			hard_attack = 4
+			ap_attack = 55
+			air_attack = 25
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.35
+		build_cost_resources = {
+			steel = 3
+			tungsten = 2
+		}
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_magic_medium_2_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 4
+			reliability = 0.2
+			build_cost_ic = 3.5
+			fuel_consumption = 1.125
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.875
+	}
+	touhou_tank_magic_medium_2_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 2
+			reliability = 0.2
+			build_cost_ic = 1.75
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4375
+	}
+	touhou_tank_magic_medium_2_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 35.75
+			defense = 1.25125
+			build_cost_ic = 2.625
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.65625
+	}
+	touhou_tank_magic_medium_2_control = {
+		category = tank_medium_turret_type
+		gfx = tank_medium_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 1
+			defense = 1.43
+			reliability = 0.08
+			build_cost_ic = 1.75
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4375
+	}
+	touhou_tank_weapon_magic_medium_tank_equipment_2 = {
+		category = tank_medium_main_armament
+		gfx = tank_medium_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 3.375
+			build_cost_ic = 2.25
+			armor_value = 20
+			hardness = 0.75
+			defense = 12.425
+			breakthrough = 68
+			soft_attack = 36
+			hard_attack = 28
+			ap_attack = 90
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5625
+		build_cost_resources = {
+			steel = 2
+			tungsten = 3
+		}
+	}
+	touhou_tank_weapon_magic_medium_tank_artillery_equipment_2 = {
+		category = tank_medium_main_armament
+		gfx = tank_medium_howitzer
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.125
+			build_cost_ic = 2.25
+			armor_value = 10
+			hardness = 0.05
+			defense = 3.425
+			breakthrough = 1.5
+			soft_attack = 51
+			hard_attack = 1.5
+			ap_attack = 5.5
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5625
+		build_cost_resources = {
+			steel = 3
+			tungsten = 3
+		}
+		allow_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_medium_tank_destroyer_equipment_2 = {
+		category = tank_medium_main_armament
+		gfx = tank_high_velocity_cannon_2
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.125
+			build_cost_ic = 1.75
+			armor_value = 10
+			hardness = 0.6
+			defense = 2.425
+			soft_attack = 7
+			hard_attack = 35
+			ap_attack = 180
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4375
+		build_cost_resources = {
+			steel = 3
+			tungsten = 4
+		}
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_medium_tank_aa_equipment_2 = {
+		category = tank_small_main_armament
+		gfx = tank_anti_air_cannon_2
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			maximum_speed = 2.45
+			build_cost_ic = 1.75
+			reliability = 0.08
+			hardness = 0.065
+			breakthrough = 1.575
+			soft_attack = 7.425
+			hard_attack = 5.775
+			ap_attack = 71.5
+			air_attack = 32
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4375
+		build_cost_resources = {
+			steel = 3
+			tungsten = 2
+		}
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_magic_medium_3_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 5
+			reliability = 0.2
+			build_cost_ic = 3.5
+			fuel_consumption = 1.125
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.875
+	}
+	touhou_tank_magic_medium_3_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 2.5
+			reliability = 0.2
+			build_cost_ic = 1.75
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4375
+	}
+	touhou_tank_magic_medium_3_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 42.25
+			defense = 1.54
+			build_cost_ic = 2.625
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.65625
+	}
+	touhou_tank_magic_medium_3_control = {
+		category = tank_medium_turret_type
+		gfx = tank_medium_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 1.155
+			defense = 1.76
+			reliability = 0.08
+			build_cost_ic = 1.75
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4375
+	}
+	touhou_tank_weapon_magic_medium_tank_equipment_3 = {
+		category = tank_medium_main_armament
+		gfx = tank_medium_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 3.375
+			build_cost_ic = 6.75
+			armor_value = 50
+			hardness = 0.75
+			defense = 19.6
+			breakthrough = 92.69
+			soft_attack = 42
+			hard_attack = 35
+			ap_attack = 125
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.6875
+		build_cost_resources = {
+			steel = 3
+			tungsten = 2
+		}
+	}
+	touhou_tank_weapon_magic_medium_tank_artillery_equipment_3 = {
+		category = tank_medium_main_armament
+		gfx = tank_medium_howitzer
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.125
+			build_cost_ic = 6.75
+			armor_value = 15
+			hardness = 0.05
+			defense = 3.6
+			breakthrough = 2.69
+			soft_attack = 58
+			hard_attack = 2
+			ap_attack = 5
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.6875
+		build_cost_resources = {
+			steel = 4
+			tungsten = 2
+		}
+		allow_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_medium_tank_destroyer_equipment_3 = {
+		category = tank_medium_main_armament
+		gfx = tank_high_velocity_cannon_2
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.125
+			build_cost_ic = 2.25
+			armor_value = 30
+			hardness = 0.861
+			defense = 4.4
+			soft_attack = 10
+			hard_attack = 45
+			ap_attack = 225
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5625
+		build_cost_resources = {
+			steel = 4
+			tungsten = 3
+		}
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_medium_tank_aa_equipment_3 = {
+		category = tank_small_main_armament
+		gfx = tank_anti_air_cannon_2
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			maximum_speed = 2.1
+			build_cost_ic = 1.75
+			reliability = 0.08
+			hardness = 0.065
+			breakthrough = 2.09
+			soft_attack = 9
+			hard_attack = 7.5
+			ap_attack = 80
+			air_attack = 42
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4375
+		build_cost_resources = {
+			steel = 3
+			tungsten = 2
+		}
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_magic_modern_1_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 6
+			reliability = 0.225
+			build_cost_ic = 7
+			fuel_consumption = 1.28
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.75
+	}
+	touhou_tank_magic_modern_1_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 3
+			reliability = 0.225
+			build_cost_ic = 3.5
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.875
+	}
+	touhou_tank_magic_modern_1_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 65
+			defense = 1.4
+			build_cost_ic = 5.25
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.3125
+	}
+	touhou_tank_magic_modern_1_control = {
+		category = tank_modern_turret_type
+		gfx = tank_modern_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 1
+			defense = 1.6
+			reliability = 0.09
+			build_cost_ic = 3.5
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.875
+	}
+	touhou_tank_weapon_magic_modern_tank_equipment_1 = {
+		category = tank_medium_main_armament
+		gfx = tank_medium_cannon_2
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 3.839
+			build_cost_ic = 3.5
+			armor_value = 50
+			hardness = 0.9
+			defense = 32
+			breakthrough = 98
+			soft_attack = 45
+			hard_attack = 42
+			ap_attack = 180
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.875
+		build_cost_resources = {
+			steel = 3
+			chromium = 3
+		}
+	}
+	touhou_tank_weapon_magic_modern_tank_artillery_equipment_1 = {
+		category = tank_medium_main_armament
+		gfx = tank_medium_howitzer_2
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.279
+			build_cost_ic = 4.5
+			hardness = 0.05
+			defense = 5
+			breakthrough = 38
+			soft_attack = 75
+			hard_attack = 4
+			ap_attack = 15
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.125
+		build_cost_resources = {
+			steel = 3
+			chromium = 3
+		}
+		allow_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_modern_tank_destroyer_equipment_1 = {
+		category = tank_heavy_main_armament
+		gfx = tank_high_velocity_cannon_3
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_consumption = 1.279
+			build_cost_ic = 4.5
+			hardness = 0.8
+			defense = 5
+			soft_attack = 18
+			hard_attack = 64
+			ap_attack = 300
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.125
+		build_cost_resources = {
+			steel = 3
+			chromium = 3
+		}
+		allow_equipment_type = anti_tank
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_weapon_magic_modern_tank_aa_equipment_1 = {
+		category = tank_medium_main_armament
+		gfx = tank_anti_air_cannon_3
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 4.5
+			hardness = 0.05
+			breakthrough = 2
+			soft_attack = 11
+			hard_attack = 9
+			ap_attack = 125
+			air_attack = 50
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.125
+		build_cost_resources = {
+			steel = 3
+			chromium = 3
+		}
+		allow_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+	}
+	touhou_tank_goliath_1_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 3
+			reliability = 0.1
+			build_cost_ic = 64
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 16
+	}
+	touhou_tank_goliath_1_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 1.5
+			reliability = 0.1
+			build_cost_ic = 32
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 8
+	}
+	touhou_tank_goliath_1_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 39
+			defense = 10.5
+			build_cost_ic = 48
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 12
+	}
+	touhou_tank_goliath_1_control = {
+		category = tank_heavy_turret_type
+		gfx = tank_heavy_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 15
+			defense = 12
+			reliability = 0.04
+			build_cost_ic = 32
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 8
+	}
+	touhou_tank_weapon_goliath_equipment_1 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 32
+			hardness = 0.9
+			soft_attack = 30
+			hard_attack = 30
+			ap_attack = 90
+			air_attack = 1
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 8
+		build_cost_resources = {
+			steel = 2
+			chromium = 2
+		}
+	}
+	touhou_tank_goliath_2_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 4
+			reliability = 0.125
+			build_cost_ic = 80
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 20
+	}
+	touhou_tank_goliath_2_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 2
+			reliability = 0.125
+			build_cost_ic = 40
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 10
+	}
+	touhou_tank_goliath_2_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 78
+			defense = 17.5
+			build_cost_ic = 60
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 15
+	}
+	touhou_tank_goliath_2_control = {
+		category = tank_heavy_turret_type
+		gfx = tank_heavy_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 25
+			defense = 20
+			reliability = 0.05
+			build_cost_ic = 40
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 10
+	}
+	touhou_tank_weapon_goliath_equipment_2 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 40
+			hardness = 0.9
+			soft_attack = 40
+			hard_attack = 40
+			ap_attack = 150
+			air_attack = 2
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 10
+		build_cost_resources = {
+			steel = 2
+			chromium = 2
+			tungsten = 1
+		}
+	}
+	touhou_tank_goliath_3_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 5
+			reliability = 0.2
+			build_cost_ic = 96
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 24
+	}
+	touhou_tank_goliath_3_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 2.5
+			reliability = 0.2
+			build_cost_ic = 48
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 12
+	}
+	touhou_tank_goliath_3_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 78
+			defense = 21
+			build_cost_ic = 72
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 18
+	}
+	touhou_tank_goliath_3_control = {
+		category = tank_heavy_turret_type
+		gfx = tank_heavy_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 30
+			defense = 24
+			reliability = 0.08
+			build_cost_ic = 48
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 12
+	}
+	touhou_tank_weapon_goliath_equipment_3 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 48
+			hardness = 0.9
+			soft_attack = 50
+			hard_attack = 50
+			ap_attack = 150
+			air_attack = 5
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 12
+		build_cost_resources = {
+			steel = 2
+			chromium = 2
+			tungsten = 2
+		}
+	}
+	touhou_tank_goliath_4_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 6
+			reliability = 0.25
+			build_cost_ic = 120
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 30
+	}
+	touhou_tank_goliath_4_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 3
+			reliability = 0.25
+			build_cost_ic = 60
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 15
+	}
+	touhou_tank_goliath_4_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 117
+			defense = 26.25
+			build_cost_ic = 90
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 22.5
+	}
+	touhou_tank_goliath_4_control = {
+		category = tank_heavy_turret_type
+		gfx = tank_heavy_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 37.5
+			defense = 30
+			reliability = 0.1
+			build_cost_ic = 60
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 15
+	}
+	touhou_tank_weapon_goliath_equipment_4 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 60
+			hardness = 0.9
+			soft_attack = 70
+			hard_attack = 70
+			ap_attack = 240
+			air_attack = 8
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 15
+		build_cost_resources = {
+			steel = 2
+			chromium = 2
+			tungsten = 2
+		}
+	}
+	touhou_tank_oni_champion_0_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 2
+			reliability = 0.2125
+			build_cost_ic = 3
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+	}
+	touhou_tank_oni_champion_0_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 1
+			reliability = 0.2125
+			build_cost_ic = 1.5
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.375
+	}
+	touhou_tank_oni_champion_0_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 78
+			defense = 4.2
+			build_cost_ic = 2.25
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5625
+	}
+	touhou_tank_oni_champion_0_control = {
+		category = tank_heavy_turret_type
+		gfx = tank_heavy_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+				tank_heavy_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 4
+			defense = 4.8
+			reliability = 0.085
+			build_cost_ic = 1.5
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.375
+	}
+	touhou_tank_weapon_oni_champion_equipment_0 = {
+		category = tank_heavy_main_armament
+		gfx = tank_heavy_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1.5
+			hardness = 0.4
+			soft_attack = 10
+			hard_attack = 10
+			ap_attack = 15
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.375
+		build_cost_resources = {
+			steel = 2
+			tungsten = 2
+		}
+	}
+	touhou_tank_evil_armor_0_engine = {
+		category = tank_engine_type
+		gfx = tank_diesel_engine
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			maximum_speed = 0.5
+			reliability = 0.125
+			build_cost_ic = 0.2
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.1
+	}
+	touhou_tank_evil_armor_0_suspension = {
+		category = tank_suspension_type
+		gfx = tank_torsion_bar_suspension
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			maximum_speed = 0.25
+			reliability = 0.125
+			build_cost_ic = 0.1
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.1
+	}
+	touhou_tank_evil_armor_0_armor = {
+		category = tank_armor_type
+		gfx = tank_welded_armor
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			armor_value = 0.65
+			defense = 0.35
+			build_cost_ic = 0.15
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.1
+	}
+	touhou_tank_evil_armor_0_control = {
+		category = tank_medium_turret_type
+		gfx = tank_medium_three_man_tank_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+			}
+		}
+		add_stats = {
+			breakthrough = 0.5
+			defense = 0.4
+			reliability = 0.05
+			build_cost_ic = 0.1
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.1
+	}
+	touhou_tank_weapon_evil_armor_equipment_0 = {
+		category = tank_medium_main_armament
+		gfx = tank_medium_cannon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 0.1
+			hardness = 0.9
+			soft_attack = 1
+			hard_attack = 1
+			ap_attack = 1
+			air_attack = 1
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.1
+	}
+	touhou_tank_wakan_engine = {
+		abbreviation = "die"
+		category = tank_engine_type
+		sfx = sfx_ui_sd_module_engine
+		add_stats = {
+			build_cost_ic = 1
+			fuel_consumption = 2
+			reliability = 0.25
+		}
+		multiply_stats = {
+		}
+		gfx = tank_diesel_engine
+	}
+	touhou_tank_wakan_suspension = {
+		abbreviation = "tor"
+		category = tank_suspension_type
+		sfx = sfx_ui_sd_module_sonar
+		add_stats = {
+			build_cost_ic = 1
+			reliability = 0.15
+		}
+		dismantle_cost_ic = 2
+		multiply_stats = {
+		}
+		gfx = tank_torsion_bar_suspension
+	}
+	touhou_tank_wakan_armor = {
+		abbreviation = "wel"
+		category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+		xp_cost = 8
+		add_stats = {
+			defense = 4
+			breakthrough = 4
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 8
+		multiply_stats = {
+			armor_value = 0.3
+		}
+		build_cost_resources = {
+			chromium = 1
+		}
+		gfx = tank_welded_armor
+	}
+	touhou_tank_wakan_light_control = {
+		abbreviation = "l3m"
+		category = tank_light_turret_type
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1.5
+			maximum_speed = -0.1
+			breakthrough = 14
+		}
+		dismantle_cost_ic = 0.5
+		xp_cost = 2
+		multiply_stats = {
+		}
+		gfx = tank_light_three_man_tank_turret
+	}
+	touhou_tank_wakan_medium_control = {
+		abbreviation = "m3m"
+		category = tank_medium_turret_type
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_medium_main_armament
+			}
+		}
+		add_stats = {
+			build_cost_ic = 2.25
+			maximum_speed = -0.25
+			breakthrough = 24
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 2
+		multiply_stats = {
+		}
+		gfx = tank_medium_three_man_tank_turret
+	}
+	touhou_tank_wakan_light_weapon_1 = {
+		abbreviation = "sc1"
+		category = tank_small_main_armament
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 10
+			hard_attack = 6
+			ap_attack = 25
+			build_cost_ic = 1.5
+			maximum_speed = -0.1
+			reliability = -0.1
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_small_main_armament
+			convert_cost_ic = 1.5
+		}
+		gfx = tank_small_cannon
+	}
+	touhou_tank_wakan_medium_weapon_1 = {
+		abbreviation = "mc1"
+		category = tank_medium_main_armament
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		add_stats = {
+			soft_attack = 20
+			hard_attack = 15
+			ap_attack = 60
+			build_cost_ic = 3
+			maximum_speed = -0.2
+			reliability = -0.15
+			breakthrough = 2
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_medium_main_armament
+			convert_cost_ic = 3
+		}
+		build_cost_resources = {
+			tungsten = 1
+			steel = 1
+		}
+		gfx = tank_medium_cannon
+	}
+	touhou_tank_wakan_light_weapon_2 = {
+		abbreviation = "sc2"
+		category = tank_small_main_armament
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 15
+			hard_attack = 15
+			ap_attack = 50
+			build_cost_ic = 3
+			maximum_speed = -0.1
+			reliability = -0.1
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_small_main_armament
+			convert_cost_ic = 3
+		}
+		gfx = tank_small_cannon_2
+	}
+	touhou_tank_wakan_medium_weapon_2 = {
+		abbreviation = "mc2"
+		category = tank_medium_main_armament
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		dismantle_cost_ic = 1
+		add_stats = {
+			soft_attack = 32
+			hard_attack = 20
+			ap_attack = 90
+			build_cost_ic = 4
+			maximum_speed = -0.3
+			reliability = -0.15
+			breakthrough = 4
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_medium_main_armament
+			convert_cost_ic = 4
+		}
+		build_cost_resources = {
+			tungsten = 1
+			steel = 2
+			chromium = 1
+		}
+		gfx = tank_medium_cannon_2
+	}
+	touhou_tank_wakan_light_weapon_3 = {
+		abbreviation = "hv1"
+		category = tank_small_main_armament
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		add_stats = {
+			soft_attack = 10
+			hard_attack = 26
+			ap_attack = 68
+			build_cost_ic = 3
+			maximum_speed = -0.1
+			reliability = -0.05
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_small_main_armament
+			convert_cost_ic = 3
+		}
+		build_cost_resources = {
+			tungsten = 2
+			steel = 2
+		}
+		gfx = tank_high_velocity_cannon
+	}
+	touhou_tank_wakan_medium_weapon_3 = {
+		abbreviation = "hv2"
+		category = tank_medium_main_armament
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		add_stats = {
+			soft_attack = 20
+			hard_attack = 35
+			ap_attack = 125
+			build_cost_ic = 5
+			maximum_speed = -0.3
+			reliability = -0.175
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_medium_main_armament
+			convert_cost_ic = 5
+		}
+		build_cost_resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 2
+		}
+		gfx = tank_high_velocity_cannon_2
+	}
+}

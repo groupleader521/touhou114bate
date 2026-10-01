@@ -1,3 +1,4 @@
+set_country_flag = touhou_country_flag_magic_first_research
 capital = 1094
 oob = "ALI_1936"
 set_stability = 0.72
@@ -99,6 +100,7 @@ if = {
 		basic_heavy_tank = 1
 	}
 }
+touhou_sync_vanilla_military = yes
 load_oob = "unlock_goliath"
 touhou_sync_vanilla_military = yes
 set_technology = {
@@ -299,3 +301,41 @@ if = {
 	}
 }
 touhou_sync_vanilla_military = yes
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = touhou_air_design_v1_suicide_puppet_equipment_2
+			}
+		}
+		create_equipment_variant = {
+			name = "人偶战略导弹"
+			type = small_plane_cas_airframe_touhou_suicide_puppet_equipment_2
+			allow_without_tech = yes
+			parent_version = 0
+			icon = "GFX_suicide_puppet_equipment_2_medium"
+			modules = {
+				fixed_main_weapon_slot = touhou_air_weapon_suicide_puppet_equipment_2
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = touhou_air_suicide_puppet_equipment_2_engine
+				special_type_slot_1 = touhou_air_suicide_puppet_equipment_2_protection
+				special_type_slot_2 = touhou_air_suicide_puppet_equipment_2_range
+			}
+			upgrades = {
+			}
+		}
+		set_country_flag = touhou_air_design_v1_suicide_puppet_equipment_2
+	}
+	set_air_oob = "ALI_1936_air_bba"
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_air_oob = "ALI_1936_air_legacy"
+}

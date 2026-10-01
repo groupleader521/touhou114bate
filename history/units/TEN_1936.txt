@@ -76,14 +76,6 @@ units = {
 		start_experience_factor = 0.3
 	}
 }
-air_wings = {
-	1084 = {
-		touhou_demonforce_fighter_equipment_0 = {
-			owner = "TEN"
-			amount = 40
-		}
-	}
-}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

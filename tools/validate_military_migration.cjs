@@ -5,7 +5,7 @@ const manifest=JSON.parse(fs.readFileSync(path.join(root,'docs/幻想乡军事�
 const baseline=JSON.parse(fs.readFileSync(path.join(root,'tools/military_migration_baseline.json'),'utf8'));
 const values=JSON.parse(fs.readFileSync(path.join(root,'docs/幻想乡装备实际数值对照.json'),'utf8'));
 const oldCards=h.parse(baseline.sources['common/technologies/touhou_trump_card.txt'])[0].value.filter(n=>n.key&&Array.isArray(n.value)).map(n=>n.key);
-const retired=new Set([...Object.keys(manifest.units),...Object.keys(manifest.archetypes),...Object.keys(manifest.technologies),...oldCards]);
+const retired=new Set([...Object.keys(manifest.units),...Object.keys(manifest.archetypes),...Object.keys(manifest.technologies),...oldCards,...Object.keys(manifest.armor?.replacements||{}),...Object.keys(manifest.aircraft?.replacements||{})]);
 const errors=[],warnings=[];let checkedFiles=0,numericChecks=0;
 const localEq=h.definitions(root,'common/units/equipment','equipments'),vanillaEq=h.definitions(game,'common/units/equipment','equipments');
 const eq=new Map([...vanillaEq,...h.definitions(game,'common/units/equipment','duplicate_archetypes'),...localEq].map(n=>[n.key,n]));
@@ -17,11 +17,21 @@ for(const d of h.definitions(game,'common/units/equipment','duplicate_archetypes
   }
 }
 const units=new Map(h.definitions(game,'common/units','sub_units').map(n=>[n.key,n]));
+require('./armor_validation.cjs').installArmorAliases(manifest,eq);
+require('./aircraft_validation.cjs').installAircraftAliases(manifest,eq);
 const nativeSupport=id=>S(units.get(id),'group')==='support'||S(units.get(id),'regimental')==='no';
 const property=(n,key)=>{const own=S(n,key);if(own!==undefined)return own;const a=S(n,'archetype');return a?property(eq.get(a),key):undefined;};
 const tech=new Set([...h.definitions(game,'common/technologies','technologies'),...h.definitions(root,'common/technologies','technologies')].map(n=>n.key));
+// Category names must come from declared tags, rather than inferred equipment ID prefixes.
+const technologyCategories=new Set();
+for(const base of [game,root])for(const file of h.files(path.join(base,'common/technology_tags')).filter(f=>f.endsWith('.txt')))
+  for(const n of h.parse(fs.readFileSync(file,'utf8')).filter(n=>n.key==='technology_categories'))for(const c of n.value)technologyCategories.add(c.value);
+for(const t of h.definitions(root,'common/technologies','technologies'))for(const c of C(t,'categories').flatMap(n=>n.value))if(!technologyCategories.has(c.value))errors.push('Undefined technology category '+t.key+' -> '+c.value);
+for(const a of manifest.armor?.aliases||[])if(localEq.some(n=>n.key===a.id))errors.push('Explicit armor collides with native generated role '+a.id);
+for(const a of manifest.aircraft?.aliases||[])if(localEq.some(n=>n.key===a.id))errors.push('Explicit aircraft collides with native generated role '+a.id);
 const resolve=n=>{const a=S(n,'archetype');const out=a?resolve(eq.get(a)):{};for(const c of n.value){if(c.key==='resources'&&Array.isArray(c.value)){for(const k of Object.keys(out).filter(k=>k.startsWith('resources.')))delete out[k];for(const r of c.value)out['resources.'+r.key]=Number(r.value);}else if(c.key&&typeof c.value==='string'&&/^-?(?:\d+(?:\.\d*)?|\.\d+)$/.test(c.value))out[c.key]=Number(c.value);}return out;};
 for(const r of [...values.regular,...values.special]) {
+  if(manifest.armor?.replacements[r.id]||manifest.aircraft?.replacements[r.id])continue;
   const n=eq.get(r.id);if(!n){errors.push('Removed model '+r.id);continue;}
   const effective=resolve(n);
   for(const p of r.values.filter(p=>p.custom)){numericChecks++;if(effective[p.key]!==p.custom.value)errors.push(r.id+' '+p.key+': '+p.custom.value+' -> '+effective[p.key]);}
@@ -33,8 +43,8 @@ for(const m of manifest.models){const n=eq.get(m.id);if(!n){errors.push('Missing
   if(retired.has(a))errors.push('Retired archetype '+a);
   if(S(n,'is_archetype')==='yes')errors.push('Custom archetype retained '+m.id);
   if(!C(n,'can_be_produced').length)errors.push('Missing country/research production gate '+m.id);
-  if(S(n,'active')!==(m.modularHull?'yes':'no'))errors.push('Wrong national model/chassis initialization '+m.id);
-  if(!C(n,'can_be_produced')[0].value.some(c=>c.key==='has_country_flag'&&c.value==='touhou_registered_model_'+m.id))errors.push('Missing national production registration gate '+m.id);
+  if(S(n,'active')!==(m.modularHull||m.armorChassis||m.airframe?'yes':'no'))errors.push('Wrong national model/chassis initialization '+m.id);
+  if(!m.armorChassis&&!m.airframe&&!C(n,'can_be_produced')[0].value.some(c=>c.key==='has_country_flag'&&c.value==='touhou_registered_model_'+m.id))errors.push('Missing national production registration gate '+m.id);
   if(S(n,'carrier_capable')!==undefined&&S(n,'carrier_capable')!==(property(eq.get(a),'carrier_capable')||'no'))errors.push('Illegal carrier_capable override '+m.id);
 }
 for(const folder of ['common','events','history/countries','history/units','interface','recp'])for(const f of h.files(path.join(root,folder)).filter(f=>/\.(txt|gui|gfx)$/.test(f))){
@@ -42,10 +52,10 @@ for(const folder of ['common','events','history/countries','history/units','inte
   try{nodes=h.parse(fs.readFileSync(f,'utf8'));checkedFiles++;}catch(e){errors.push(rel+': '+e.message);continue;}
   if(rel.startsWith('history/countries/')&&nodes.some(n=>['else','else_if'].includes(n.key)))errors.push(rel+': unsupported sibling else in country history');
   function walk(ns,parent='') {for(const n of ns){
-    for(const token of [n.key,typeof n.value==='string'&&!['picture','sprite','gfx','icon'].includes(n.key)?n.value.replace(/^"|"$/g,''):null])if(token&&retired.has(token))errors.push(rel+': retired identifier '+token);
+    for(const token of [n.key,typeof n.value==='string'&&!['picture','sprite','gfx','icon','abbreviation'].includes(n.key)?n.value.replace(/^"|"$/g,''):null])if(token&&retired.has(token))errors.push(rel+': retired identifier '+token);
     if(n.key&&Object.keys(manifest.units).some(id=>n.key.includes('army_sub_unit_'+id+'_')))errors.push(rel+': retired unit modifier '+n.key);
     if(n.key==='has_tech'&&!tech.has(n.value))errors.push(rel+': unresolved has_tech '+n.value);
-    if(n.key==='set_technology')for(const c of n.value)if(c.key&&!tech.has(c.key))errors.push(rel+': unresolved set_technology '+c.key);
+    if(n.key==='set_technology')for(const c of n.value)if(c.key&&c.key!=='popup'&&!tech.has(c.key))errors.push(rel+': unresolved set_technology '+c.key);
     if(n.key==='enable_equipments')for(const c of n.value)if(!eq.has(c.value))errors.push(rel+': unresolved equipment unlock '+c.value);
     if(n.key==='create_equipment_variant'&&!eq.has(S(n,'type')))errors.push(rel+': unresolved design type '+S(n,'type'));
     if(n.key==='enable_subunits')for(const c of n.value)if(typeof c.value==='string'&&!units.has(c.value))errors.push(rel+': unresolved unit unlock '+c.value);
@@ -66,8 +76,8 @@ for(const t of h.definitions(root,'common/technologies','technologies'))if(vanil
 const militaryEffects=h.parse(fs.readFileSync(path.join(root,'common/scripted_effects/touhou_vanilla_military.txt'),'utf8'));
 const registration=militaryEffects.find(n=>n.key==='touhou_register_country_equipment');
 const registeredDesigns=C(C(registration,'if')[0],'if');
-if(registeredDesigns.length!==manifest.models.length)errors.push('Incomplete country model registration');
-for(const m of manifest.models){
+if(registeredDesigns.length!==manifest.models.filter(m=>!m.armorChassis&&!m.airframe).length)errors.push('Incomplete country model registration');
+for(const m of manifest.models.filter(m=>!m.armorChassis&&!m.airframe)){
   const entries=registeredDesigns.filter(n=>S(n,'set_country_flag')==='touhou_registered_model_'+m.id);
   if(entries.length!==1){errors.push('Missing or duplicate country registration '+m.id);continue;}
   const entry=entries[0],design=C(entry,'create_equipment_variant')[0],limit=C(entry,'limit')[0],flag='touhou_registered_model_'+m.id;
@@ -137,8 +147,10 @@ else {
   }
   for(const m of manifest.models){checkAlias(m.id);if(!displaySprites.has('GFX_'+m.id+'_medium'))errors.push('Missing retained model icon '+m.id);}
   for(const display of presentation.equipment){
+    if(display.presetDesign)continue;
     const model=eq.get(display.id);
-    for(const key of ['picture','variant_name','derived_variant_name'])if(S(model,key)!==display.id)errors.push('Model display inherits native identity '+display.id+' '+key);
+    const generic=manifest.models.find(m=>m.id===display.id);
+    for(const key of ['picture','variant_name','derived_variant_name'])if(S(model,key)!==display.id+((generic?.armorChassis||generic?.airframe)&&key!=='picture'?'_design':''))errors.push('Model display inherits native identity '+display.id+' '+key);
     const sprite=displaySprites.get('GFX_'+S(model,'picture')+'_medium');
     if(S(sprite,'texturefile')?.replace(/^"|"$/g,'')!==display.texture)errors.push('Model picture resolves to wrong texture '+display.id);
     for(const tag of ['ALI','DES','HAK','DLD','HEL','SSS','OPP','RAB','TEM','BLQ','KAP','TEN','HUM','VAM','MLS','EVI']){
@@ -146,7 +158,7 @@ else {
       if(locValues.get(tag+'_'+display.id)!=='$'+display.nameSource+'$')errors.push('Country uses wrong equipment name '+tag+' '+display.id);
       if(locValues.get(tag+'_'+display.id+'_short')!=='$'+display.shortNameSource+'$')errors.push('Country uses wrong abbreviated equipment name '+tag+' '+display.id);
     }
-    const entry=registeredDesigns.find(n=>S(n,'set_country_flag')==='touhou_registered_model_'+display.id),design=C(entry,'create_equipment_variant')[0];
+    const entry=registeredDesigns.find(n=>S(n,'set_country_flag')==='touhou_registered_model_'+display.id),design=entry?C(entry,'create_equipment_variant')[0]:null;
     if(design&&JSON.parse(S(design,'name'))!==locValues.get(display.id))errors.push('Registered design name differs from original equipment name '+display.id);
     if(design&&JSON.parse(S(design,'icon'))!=='GFX_'+display.id+'_medium')errors.push('Registered design uses wrong icon '+display.id);
   }
@@ -166,6 +178,14 @@ function checkRepairScope(ns,country=false){for(const n of ns){if(n.key==='touho
 checkRepairScope(repairActions);
 const weather=fs.readFileSync(path.join(root,'map/weatherpositions.txt'),'utf8').trimEnd().split(/\r?\n/);
 for(let i=0;i<weather.length;i++)if(weather[i].split(';').length!==5)errors.push('weatherpositions.txt invalid argument count at '+(i+1));
-const result={checkedFiles,retainedOriginalModels:values.regular.length+values.special.length,totalModels:localEq.length,numericChecks,countryUnlocks:{nativeUnlockListsChecked,registeredModels:registeredDesigns.length,finishedDesigns:manifest.models.filter(m=>!m.modularHull).length,projectGatedModularHulls:manifest.models.filter(m=>m.modularHull).length},nativeEquipmentProtection:{definitionOverrides:nativeOverrides.definitions.length,localisationOverrides:nativeOverrides.localisation.length,iconOverrides:nativeOverrides.icons.length},presentation: presentation?{countryTechnologyMappings:presentation.research.length,retainedModelIcons:presentation.equipment.length,spriteAliases:presentation.sprites.length,countryEquipmentNames:presentation.equipment.length*16,researchModelTooltips:Object.keys(presentation.equipmentTooltips||{}).length}:null,errors:[...new Set(errors)],warnings};
+const armorResult=require('./armor_validation.cjs').validateArmor({root,game,manifest,eq,values,errors});
+numericChecks+=armorResult.numericChecks;
+if(armorResult.blueprintValues)fs.writeFileSync(path.join(root,'docs/装甲预设装配数值.json'),JSON.stringify(armorResult.blueprintValues,null,2)+'\n');
+delete armorResult.blueprintValues;
+const aircraftResult=require('./aircraft_validation.cjs').validateAircraft({root,game,manifest,eq,values,errors});
+numericChecks+=aircraftResult.numericChecks;
+if(aircraftResult.blueprintValues)fs.writeFileSync(path.join(root,'docs/飞机预设装配数值.json'),JSON.stringify(aircraftResult.blueprintValues,null,2)+'\n');
+delete aircraftResult.blueprintValues;
+const result={checkedFiles,retainedOriginalModels:values.regular.length+values.special.length,totalModels:localEq.length,numericChecks,armor:armorResult,aircraft:aircraftResult,countryUnlocks:{nativeUnlockListsChecked,registeredModels:registeredDesigns.length,finishedDesigns:manifest.models.filter(m=>!m.modularHull&&!m.armorChassis&&!m.airframe).length,projectGatedModularHulls:manifest.models.filter(m=>m.modularHull).length},nativeEquipmentProtection:{definitionOverrides:nativeOverrides.definitions.length,localisationOverrides:nativeOverrides.localisation.length,iconOverrides:nativeOverrides.icons.length},presentation: presentation?{countryTechnologyMappings:presentation.research.length,retainedModelIcons:presentation.equipment.length,spriteAliases:presentation.sprites.length,countryEquipmentNames:presentation.equipment.length*16,researchModelTooltips:Object.keys(presentation.equipmentTooltips||{}).length}:null,errors:[...new Set(errors)],warnings};
 fs.writeFileSync(path.join(root,'docs/幻想乡军事原版化校验.json'),JSON.stringify(result,null,2)+'\n');
 console.log(JSON.stringify(result,null,2));if(result.errors.length)process.exitCode=1;

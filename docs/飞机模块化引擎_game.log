@@ -1,0 +1,7 @@
+[19:56:52][no_game_date][defines.cpp:270]: 4470 defines loaded
+[19:57:14][no_game_date][gamestate.cpp:2844]: Loaded 13566 provinces.
+[19:57:19][no_game_date][gameapplication.cpp:2968]: Resetting game
+[19:57:22][1936.01.01.12][history.cpp:165]: Executing History from -1.1.1.1 to  2.1.1.1
+[19:57:23][1936.01.01.12][effectbase.cpp:1783]: TOUHOU_AIR_PROBE_DESIGNS_43_BEGIN
+[19:57:23][1936.01.01.12][effectbase.cpp:1799]: [19:57:23][1936.01.01.12][effectbase.cpp:1783]: TOUHOU_AIR_PROBE_DESIGNS_43_END
+[19:57:23][1936.01.01.12][effectbase.cpp:1799]: [19:57:23][1936.01.01.12][history.cpp:165]: Executing History from 2.1.1.1 to  1936.1.1.12

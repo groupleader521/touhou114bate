@@ -1,0 +1,8 @@
+air_wings = {
+	1099 = {
+		fighter_equipment_0 = {
+			owner = "DES"
+			amount = 40
+		}
+	}
+}

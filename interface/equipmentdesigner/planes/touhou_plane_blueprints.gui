@@ -1,0 +1,2377 @@
+guiTypes = {
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_demonforce_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_demonforce_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_demonforce_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_demonforce_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_demonforce_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_demonforce_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_demonforce_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_demonforce_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_demonforce_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_demonforce_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_demonforce_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_demonforce_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_demonforce_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_demonforce_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_demonforce_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_demonforce_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_demonforce_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_demonforce_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_demonforce_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_demonforce_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_demonforce_medium_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_demonforce_medium_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_demonforce_medium_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_demonforce_medium_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_demonforce_medium_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_demonforce_medium_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_demonforce_medium_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_demonforce_medium_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_demonforce_medium_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_magic_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_magic_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_magic_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_magic_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_magic_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_magic_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_magic_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_magic_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_magic_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_magic_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_magic_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_magic_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_magic_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_magic_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_magic_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_magic_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_magic_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_magic_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_magic_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_magic_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_magic_medium_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_magic_medium_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_magic_medium_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_magic_medium_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_magic_medium_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_magic_medium_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_magic_medium_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_magic_medium_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_magic_medium_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_magic_medium_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_magic_medium_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_magic_medium_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_magic_medium_4"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_4"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_magic_medium_4"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_4"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_magic_medium_4"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_4"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_touhou_magic_large_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_large_plane_maritime_patrol_plane_airframe_touhou_magic_large_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_maritime_patrol_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_touhou_magic_large_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_large_plane_maritime_patrol_plane_airframe_touhou_magic_large_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_maritime_patrol_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_touhou_magic_large_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_large_plane_maritime_patrol_plane_airframe_touhou_magic_large_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_touhou_magic_large_4"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_4"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_large_plane_maritime_patrol_plane_airframe_touhou_magic_large_4"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_4"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_suicide_puppet_equipment_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_suicide_puppet_equipment_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_suicide_puppet_equipment_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_suicide_puppet_equipment_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_suicide_puppet_equipment_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_suicide_puppet_equipment_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_suicide_puppet_equipment_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_suicide_puppet_equipment_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_tengu_fighter_equipment_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_tengu_fighter_equipment_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_tengu_fighter_equipment_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_tengu_fighter_equipment_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_cas_boli_equipment_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_cas_boli_equipment_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_cas_boli_equipment_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_cas_boli_equipment_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_touhou_desires_equipment_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_large_plane_maritime_patrol_plane_airframe_touhou_desires_equipment_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_maritime_patrol_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_wakan_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_wakan_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_wakan_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_wakan_small_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_wakan_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_wakan_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_wakan_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_wakan_small_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_wakan_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_wakan_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_wakan_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_wakan_small_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_wakan_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_wakan_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_wakan_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_wakan_small_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_touhou_wakan_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_touhou_wakan_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_touhou_wakan_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_touhou_wakan_small_5"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_wakan_medium_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_wakan_medium_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_wakan_medium_0"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_0"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_wakan_medium_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_wakan_medium_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_wakan_medium_1"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_1"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_wakan_medium_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_wakan_medium_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_wakan_medium_2"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_2"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_wakan_medium_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_wakan_medium_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_wakan_medium_3"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_3"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_touhou_wakan_medium_4"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_4"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_touhou_wakan_medium_4"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_4"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe_touhou_wakan_medium_4"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 508
+			height = 248
+		}
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_4"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+}

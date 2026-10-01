@@ -110,14 +110,6 @@ units = {
 		start_experience_factor = 1
 	}
 }
-air_wings = {
-	1093 = {
-		touhou_magic_fighter_equipment_0 = {
-			owner = "MLS"
-			amount = 40
-		}
-	}
-}
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

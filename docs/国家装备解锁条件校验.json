@@ -1,5 +1,5 @@
 {
-  "checks": 11,
+  "checks": 17,
   "passed": [
     "Native GER/USA/JAP never register Touhou designs, even with all technology/style/project flags",
     "No researched equipment technology yields no ordinary design",
@@ -7,10 +7,16 @@
     "1936 magic infantry research does not grant later rifles or other cultures",
     "Repeated daily synchronization does not duplicate a design",
     "Changing manufacturing tradition grants its design while closing the old production gate",
-    "NSB requires chassis research; without NSB the legacy tank research applies",
-    "BBA requires airframe research; without BBA legacy aircraft research applies",
+    "Modular armor requires NSB and its native chassis research; no independent finished armor fallback",
+    "Aircraft designer requires BBA and native airframe research; no standalone finished fallback",
+    "Small native research opens shared fighter/CAS parts in the selected tradition only",
+    "Changing aviation tradition withdraws old component licenses and retains preset guards",
+    "Special aircraft require their own project; native research alone cannot open them",
+    "Native countries receive no aviation parts or licenses",
     "Native research alone grants no trump/project designs",
     "Goliath project does not grant unrelated projects or later unreached Goliath tiers",
+    "Changing tradition withdraws the previous component licenses without duplicating old designs",
+    "Native countries receive no Touhou component licenses",
     "Lotus project opens only its own modular hulls without creating invalid empty ship designs"
   ],
   "limitation": "AST condition checks only; engine design creation, production UI and combat are not simulated."

@@ -1,0 +1,9 @@
+air_wings = {
+	1107 = {
+		small_plane_airframe_touhou_wakan_small_0 = {
+			owner = "SSS"
+			amount = 40
+			version_name = "起风"
+		}
+	}
+}

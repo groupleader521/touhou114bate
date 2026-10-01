@@ -1,0 +1,457 @@
+# Script-only national component licenses; no research folders or independent research nodes.
+technologies = {
+	touhou_tank_license_demonforce_heavy_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			heavy_tank_chassis_touhou_demonforce_heavy_1
+			heavy_tank_aa_chassis_touhou_demonforce_heavy_1
+			heavy_tank_artillery_chassis_touhou_demonforce_heavy_1
+			heavy_tank_destroyer_chassis_touhou_demonforce_heavy_1
+			heavy_tank_amphibious_chassis_touhou_demonforce_heavy_1
+			heavy_tank_flame_chassis_touhou_demonforce_heavy_1
+		}
+		enable_equipment_modules = {
+			touhou_tank_demonforce_heavy_1_engine
+			touhou_tank_demonforce_heavy_1_suspension
+			touhou_tank_demonforce_heavy_1_armor
+			touhou_tank_demonforce_heavy_1_control
+			touhou_tank_weapon_demonforce_heavy_tank_equipment_1
+			touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_1
+			touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_1
+			touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_1
+		}
+	}
+	touhou_tank_license_demonforce_heavy_2 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			heavy_tank_chassis_touhou_demonforce_heavy_2
+			heavy_tank_aa_chassis_touhou_demonforce_heavy_2
+			heavy_tank_artillery_chassis_touhou_demonforce_heavy_2
+			heavy_tank_destroyer_chassis_touhou_demonforce_heavy_2
+			heavy_tank_amphibious_chassis_touhou_demonforce_heavy_2
+			heavy_tank_flame_chassis_touhou_demonforce_heavy_2
+		}
+		enable_equipment_modules = {
+			touhou_tank_demonforce_heavy_2_engine
+			touhou_tank_demonforce_heavy_2_suspension
+			touhou_tank_demonforce_heavy_2_armor
+			touhou_tank_demonforce_heavy_2_control
+			touhou_tank_weapon_demonforce_heavy_tank_equipment_2
+			touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_2
+			touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_2
+			touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_2
+		}
+	}
+	touhou_tank_license_demonforce_heavy_3 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			heavy_tank_chassis_touhou_demonforce_heavy_3
+			heavy_tank_aa_chassis_touhou_demonforce_heavy_3
+			heavy_tank_artillery_chassis_touhou_demonforce_heavy_3
+			heavy_tank_destroyer_chassis_touhou_demonforce_heavy_3
+			heavy_tank_amphibious_chassis_touhou_demonforce_heavy_3
+			heavy_tank_flame_chassis_touhou_demonforce_heavy_3
+		}
+		enable_equipment_modules = {
+			touhou_tank_demonforce_heavy_3_engine
+			touhou_tank_demonforce_heavy_3_suspension
+			touhou_tank_demonforce_heavy_3_armor
+			touhou_tank_demonforce_heavy_3_control
+			touhou_tank_weapon_demonforce_heavy_tank_equipment_3
+			touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_3
+			touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_3
+			touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_3
+		}
+	}
+	touhou_tank_license_demonforce_super_heavy_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			super_heavy_tank_chassis_touhou_demonforce_super_heavy_1
+			super_heavy_tank_aa_chassis_touhou_demonforce_super_heavy_1
+			super_heavy_tank_artillery_chassis_touhou_demonforce_super_heavy_1
+			super_heavy_tank_destroyer_chassis_touhou_demonforce_super_heavy_1
+			super_heavy_tank_artillery_chassis_touhou_demonforce_super_heavy_1_preset
+			super_heavy_tank_destroyer_chassis_touhou_demonforce_super_heavy_1_preset
+			super_heavy_tank_aa_chassis_touhou_demonforce_super_heavy_1_preset
+		}
+		enable_equipment_modules = {
+			touhou_tank_demonforce_super_heavy_1_engine
+			touhou_tank_demonforce_super_heavy_1_suspension
+			touhou_tank_demonforce_super_heavy_1_armor
+			touhou_tank_demonforce_super_heavy_1_control
+			touhou_tank_weapon_demonforce_super_heavy_tank_equipment_1
+			touhou_tank_weapon_demonforce_super_heavy_tank_artillery_equipment_1
+			touhou_tank_weapon_demonforce_super_heavy_tank_destroyer_equipment_1
+			touhou_tank_weapon_demonforce_super_heavy_tank_aa_equipment_1
+		}
+	}
+	touhou_tank_license_magic_light_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			light_tank_chassis_touhou_magic_light_1
+			light_tank_aa_chassis_touhou_magic_light_1
+			light_tank_artillery_chassis_touhou_magic_light_1
+			light_tank_destroyer_chassis_touhou_magic_light_1
+			light_tank_amphibious_chassis_touhou_magic_light_1
+			light_tank_flame_chassis_touhou_magic_light_1
+		}
+		enable_equipment_modules = {
+			touhou_tank_magic_light_1_engine
+			touhou_tank_magic_light_1_suspension
+			touhou_tank_magic_light_1_armor
+			touhou_tank_magic_light_1_control
+			touhou_tank_weapon_magic_light_tank_equipment_1
+			touhou_tank_weapon_magic_light_tank_artillery_equipment_1
+			touhou_tank_weapon_magic_light_tank_destroyer_equipment_1
+			touhou_tank_weapon_magic_light_tank_aa_equipment_1
+		}
+	}
+	touhou_tank_license_magic_light_2 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			light_tank_chassis_touhou_magic_light_2
+			light_tank_aa_chassis_touhou_magic_light_2
+			light_tank_artillery_chassis_touhou_magic_light_2
+			light_tank_destroyer_chassis_touhou_magic_light_2
+			light_tank_amphibious_chassis_touhou_magic_light_2
+			light_tank_flame_chassis_touhou_magic_light_2
+		}
+		enable_equipment_modules = {
+			touhou_tank_magic_light_2_engine
+			touhou_tank_magic_light_2_suspension
+			touhou_tank_magic_light_2_armor
+			touhou_tank_magic_light_2_control
+			touhou_tank_weapon_magic_light_tank_equipment_2
+			touhou_tank_weapon_magic_light_tank_artillery_equipment_2
+			touhou_tank_weapon_magic_light_tank_destroyer_equipment_2
+			touhou_tank_weapon_magic_light_tank_aa_equipment_2
+		}
+	}
+	touhou_tank_license_magic_light_3 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			light_tank_chassis_touhou_magic_light_3
+			light_tank_aa_chassis_touhou_magic_light_3
+			light_tank_artillery_chassis_touhou_magic_light_3
+			light_tank_destroyer_chassis_touhou_magic_light_3
+			light_tank_amphibious_chassis_touhou_magic_light_3
+			light_tank_flame_chassis_touhou_magic_light_3
+		}
+		enable_equipment_modules = {
+			touhou_tank_magic_light_3_engine
+			touhou_tank_magic_light_3_suspension
+			touhou_tank_magic_light_3_armor
+			touhou_tank_magic_light_3_control
+			touhou_tank_weapon_magic_light_tank_equipment_3
+			touhou_tank_weapon_magic_light_tank_artillery_equipment_3
+			touhou_tank_weapon_magic_light_tank_destroyer_equipment_3
+			touhou_tank_weapon_magic_light_tank_aa_equipment_3
+		}
+	}
+	touhou_tank_license_magic_medium_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			medium_tank_chassis_touhou_magic_medium_1
+			medium_tank_aa_chassis_touhou_magic_medium_1
+			medium_tank_artillery_chassis_touhou_magic_medium_1
+			medium_tank_destroyer_chassis_touhou_magic_medium_1
+			medium_tank_amphibious_chassis_touhou_magic_medium_1
+			medium_tank_flame_chassis_touhou_magic_medium_1
+		}
+		enable_equipment_modules = {
+			touhou_tank_magic_medium_1_engine
+			touhou_tank_magic_medium_1_suspension
+			touhou_tank_magic_medium_1_armor
+			touhou_tank_magic_medium_1_control
+			touhou_tank_weapon_magic_medium_tank_equipment_1
+			touhou_tank_weapon_magic_medium_tank_artillery_equipment_1
+			touhou_tank_weapon_magic_medium_tank_destroyer_equipment_1
+			touhou_tank_weapon_magic_medium_tank_aa_equipment_1
+		}
+	}
+	touhou_tank_license_magic_medium_2 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			medium_tank_chassis_touhou_magic_medium_2
+			medium_tank_aa_chassis_touhou_magic_medium_2
+			medium_tank_artillery_chassis_touhou_magic_medium_2
+			medium_tank_destroyer_chassis_touhou_magic_medium_2
+			medium_tank_amphibious_chassis_touhou_magic_medium_2
+			medium_tank_flame_chassis_touhou_magic_medium_2
+		}
+		enable_equipment_modules = {
+			touhou_tank_magic_medium_2_engine
+			touhou_tank_magic_medium_2_suspension
+			touhou_tank_magic_medium_2_armor
+			touhou_tank_magic_medium_2_control
+			touhou_tank_weapon_magic_medium_tank_equipment_2
+			touhou_tank_weapon_magic_medium_tank_artillery_equipment_2
+			touhou_tank_weapon_magic_medium_tank_destroyer_equipment_2
+			touhou_tank_weapon_magic_medium_tank_aa_equipment_2
+		}
+	}
+	touhou_tank_license_magic_medium_3 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			medium_tank_chassis_touhou_magic_medium_3
+			medium_tank_aa_chassis_touhou_magic_medium_3
+			medium_tank_artillery_chassis_touhou_magic_medium_3
+			medium_tank_destroyer_chassis_touhou_magic_medium_3
+			medium_tank_amphibious_chassis_touhou_magic_medium_3
+			medium_tank_flame_chassis_touhou_magic_medium_3
+		}
+		enable_equipment_modules = {
+			touhou_tank_magic_medium_3_engine
+			touhou_tank_magic_medium_3_suspension
+			touhou_tank_magic_medium_3_armor
+			touhou_tank_magic_medium_3_control
+			touhou_tank_weapon_magic_medium_tank_equipment_3
+			touhou_tank_weapon_magic_medium_tank_artillery_equipment_3
+			touhou_tank_weapon_magic_medium_tank_destroyer_equipment_3
+			touhou_tank_weapon_magic_medium_tank_aa_equipment_3
+		}
+	}
+	touhou_tank_license_magic_modern_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			modern_tank_chassis_touhou_magic_modern_1
+			modern_tank_aa_chassis_touhou_magic_modern_1
+			modern_tank_artillery_chassis_touhou_magic_modern_1
+			modern_tank_destroyer_chassis_touhou_magic_modern_1
+		}
+		enable_equipment_modules = {
+			touhou_tank_magic_modern_1_engine
+			touhou_tank_magic_modern_1_suspension
+			touhou_tank_magic_modern_1_armor
+			touhou_tank_magic_modern_1_control
+			touhou_tank_weapon_magic_modern_tank_equipment_1
+			touhou_tank_weapon_magic_modern_tank_artillery_equipment_1
+			touhou_tank_weapon_magic_modern_tank_destroyer_equipment_1
+			touhou_tank_weapon_magic_modern_tank_aa_equipment_1
+		}
+	}
+	touhou_tank_license_goliath_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			heavy_tank_chassis_touhou_goliath_1
+			heavy_tank_aa_chassis_touhou_goliath_1
+			heavy_tank_artillery_chassis_touhou_goliath_1
+			heavy_tank_destroyer_chassis_touhou_goliath_1
+			heavy_tank_amphibious_chassis_touhou_goliath_1
+			heavy_tank_flame_chassis_touhou_goliath_1
+		}
+		enable_equipment_modules = {
+			touhou_tank_goliath_1_engine
+			touhou_tank_goliath_1_suspension
+			touhou_tank_goliath_1_armor
+			touhou_tank_goliath_1_control
+			touhou_tank_weapon_goliath_equipment_1
+		}
+	}
+	touhou_tank_license_goliath_2 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			heavy_tank_chassis_touhou_goliath_2
+			heavy_tank_aa_chassis_touhou_goliath_2
+			heavy_tank_artillery_chassis_touhou_goliath_2
+			heavy_tank_destroyer_chassis_touhou_goliath_2
+			heavy_tank_amphibious_chassis_touhou_goliath_2
+			heavy_tank_flame_chassis_touhou_goliath_2
+		}
+		enable_equipment_modules = {
+			touhou_tank_goliath_2_engine
+			touhou_tank_goliath_2_suspension
+			touhou_tank_goliath_2_armor
+			touhou_tank_goliath_2_control
+			touhou_tank_weapon_goliath_equipment_2
+		}
+	}
+	touhou_tank_license_goliath_3 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			heavy_tank_chassis_touhou_goliath_3
+			heavy_tank_aa_chassis_touhou_goliath_3
+			heavy_tank_artillery_chassis_touhou_goliath_3
+			heavy_tank_destroyer_chassis_touhou_goliath_3
+			heavy_tank_amphibious_chassis_touhou_goliath_3
+			heavy_tank_flame_chassis_touhou_goliath_3
+		}
+		enable_equipment_modules = {
+			touhou_tank_goliath_3_engine
+			touhou_tank_goliath_3_suspension
+			touhou_tank_goliath_3_armor
+			touhou_tank_goliath_3_control
+			touhou_tank_weapon_goliath_equipment_3
+		}
+	}
+	touhou_tank_license_goliath_4 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			heavy_tank_chassis_touhou_goliath_4
+			heavy_tank_aa_chassis_touhou_goliath_4
+			heavy_tank_artillery_chassis_touhou_goliath_4
+			heavy_tank_destroyer_chassis_touhou_goliath_4
+			heavy_tank_amphibious_chassis_touhou_goliath_4
+			heavy_tank_flame_chassis_touhou_goliath_4
+		}
+		enable_equipment_modules = {
+			touhou_tank_goliath_4_engine
+			touhou_tank_goliath_4_suspension
+			touhou_tank_goliath_4_armor
+			touhou_tank_goliath_4_control
+			touhou_tank_weapon_goliath_equipment_4
+		}
+	}
+	touhou_tank_license_oni_champion_0 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			heavy_tank_chassis_touhou_oni_champion_0
+			heavy_tank_aa_chassis_touhou_oni_champion_0
+			heavy_tank_artillery_chassis_touhou_oni_champion_0
+			heavy_tank_destroyer_chassis_touhou_oni_champion_0
+			heavy_tank_amphibious_chassis_touhou_oni_champion_0
+			heavy_tank_flame_chassis_touhou_oni_champion_0
+		}
+		enable_equipment_modules = {
+			touhou_tank_oni_champion_0_engine
+			touhou_tank_oni_champion_0_suspension
+			touhou_tank_oni_champion_0_armor
+			touhou_tank_oni_champion_0_control
+			touhou_tank_weapon_oni_champion_equipment_0
+		}
+	}
+	touhou_tank_license_evil_armor_0 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			medium_tank_chassis_touhou_evil_armor_0
+			medium_tank_aa_chassis_touhou_evil_armor_0
+			medium_tank_artillery_chassis_touhou_evil_armor_0
+			medium_tank_destroyer_chassis_touhou_evil_armor_0
+			medium_tank_amphibious_chassis_touhou_evil_armor_0
+			medium_tank_flame_chassis_touhou_evil_armor_0
+		}
+		enable_equipment_modules = {
+			touhou_tank_evil_armor_0_engine
+			touhou_tank_evil_armor_0_suspension
+			touhou_tank_evil_armor_0_armor
+			touhou_tank_evil_armor_0_control
+			touhou_tank_weapon_evil_armor_equipment_0
+		}
+	}
+	touhou_tank_license_wakan_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			touhou_tank_wakan_engine
+			touhou_tank_wakan_suspension
+			touhou_tank_wakan_armor
+			touhou_tank_wakan_light_control
+			touhou_tank_wakan_medium_control
+			touhou_tank_wakan_light_weapon_1
+			touhou_tank_wakan_medium_weapon_1
+		}
+	}
+	touhou_tank_license_wakan_2 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			touhou_tank_wakan_engine
+			touhou_tank_wakan_suspension
+			touhou_tank_wakan_armor
+			touhou_tank_wakan_light_control
+			touhou_tank_wakan_medium_control
+			touhou_tank_wakan_light_weapon_2
+			touhou_tank_wakan_medium_weapon_2
+		}
+	}
+	touhou_tank_license_wakan_3 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			touhou_tank_wakan_engine
+			touhou_tank_wakan_suspension
+			touhou_tank_wakan_armor
+			touhou_tank_wakan_light_control
+			touhou_tank_wakan_medium_control
+			touhou_tank_wakan_light_weapon_3
+			touhou_tank_wakan_medium_weapon_3
+		}
+	}
+}

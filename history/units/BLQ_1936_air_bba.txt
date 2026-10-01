@@ -1,0 +1,9 @@
+air_wings = {
+	1101 = {
+		small_plane_airframe_touhou_wakan_small_0 = {
+			owner = "BLQ"
+			amount = 40
+			version_name = "起风"
+		}
+	}
+}

@@ -1,4 +1,3 @@
-# Vanilla archetypes; original Touhou finished-model statistics are preserved.
 equipments = {
 	touhou_support_equipment_1 = {
 		archetype = support_equipment
