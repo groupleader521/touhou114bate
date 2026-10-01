@@ -1,0 +1,8 @@
+on_actions = {
+	on_startup = {
+		effect = { every_country = { touhou_check_runtime_repairs = yes } }
+	}
+	on_daily = {
+		effect = { every_country = { touhou_check_runtime_repairs = yes } }
+	}
+}

@@ -1,0 +1,2722 @@
+﻿自定义科技 → 原版科技逐项对应表
+================================
+
+依据：本项目全部科技定义，以及本机原版 HOI4 1.19.3 的实际科技与学说文件。
+共 306 条：246 项常规科技 + 22 项王牌科技 + 38 项旧式学说。
+
+阅读说明：
+1. 常规对应：按原版体系/科技 ID 对应，不表示自定义属性与原版数值相同。
+2. NSB（No Step Back）启用时，坦克采用底盘科技；坦歼、自行火炮、自行防空共用底盘，并需相应武器模块与装备角色。
+3. BBA（By Blood Alone）启用时，飞机采用机体科技；需搭配发动机、武器/炸弹模块完成指定任务的设计。
+4. MTG（Man the Guns）启用时，舰船按舰体与模块设计；本文仅在涉及王牌舰船时列可选方向。
+5. DLC 底盘/机体对应按装备类型与型号代际列出；可能存在研究年份差异，不是完整开局科技包。
+6. “无直接对应”表示不存在等价的原版科技；所列“近似方向”是待选择的改造方案，不是现有映射事实。
+7. 旧式学说已改为 1.19 的学说/熟练度奖励；doctrine_id/reward_N 表示该学说下的奖励块，不是科技 ID，不能填进 set_technology。
+8. 现代喷气技术含特殊项目条件，文件中逐项提示；不能只改科技 ID。
+9. 自定义名称沿用已有清单；其中部分按解锁装备名称标注。
+
+================================================================================================
+逐项对应速览（完整来源、条件与说明见后文）
+================================================================================================
+
+魔力科技：
+  1. 基本魔力发射器 [touhou_magic_infantry_weapons] → 原版对应：步兵武器 [infantry_weapons]（1918）
+  2. 繁彩魔力发射器 [touhou_magic_infantry_weapons1] → 原版对应：步兵装备 I型 [infantry_weapons1]（1936）
+  3. 魔力转换 [touhou_magic_infantry_weapons2] → 原版对应：改进步兵装备 I [infantry_weapons2]（1938）
+  4. 纯色魔力发射器 [touhou_magic_improved_infantry_weapons] → 原版对应：步兵装备 II型 [improved_infantry_weapons]（1939）
+  5. 魔力精炼 [touhou_magic_improved_infantry_weapons_2] → 原版对应：改进步兵装备 II [improved_infantry_weapons_2]（1940）
+  6. 魔力压缩 [touhou_magic_infantry_at] → 原版对应：步兵反坦克武器 I [infantry_at]（1942）
+  7. 魔力集束 [touhou_magic_infantry_at2] → 原版对应：步兵反坦克武器 II [infantry_at2]（1943）
+  8. 纯粹魔力发射器 [touhou_magic_advanced_infantry_weapons] → 原版对应：步兵装备 III型 [advanced_infantry_weapons]（1942）
+  9. 魔力增压 [touhou_magic_advanced_infantry_weapons2] → 原版对应：改进步兵装备 III [advanced_infantry_weapons2]（1944）
+  10. 大气元素 [touhou_magic_paratroopers] → 原版对应：伞兵 I [paratroopers]（1936）
+  11. 高等大气元素 [touhou_magic_paratroopers2] → 原版对应：伞兵 II [paratroopers2]（1939）
+  12. 元素混合-大气 [touhou_magic_paratroopers3] → 原版对应：伞兵 III [paratroopers3]（1943）
+  13. 海洋元素 [touhou_magic_marines] → 原版对应：海军陆战队 I [marines]（1936）
+  14. 高等海洋元素 [touhou_magic_marines2] → 原版对应：海军陆战队 II [marines2]（1939）
+  15. 元素混合-海洋 [touhou_magic_marines3] → 原版对应：海军陆战队 III [marines3]（1943）
+  16. 大地元素 [touhou_magic_tech_mountaineers] → 原版对应：山地步兵 I [tech_mountaineers]（1936）
+  17. 高等大地元素 [touhou_magic_tech_mountaineers2] → 原版对应：山地步兵 II [tech_mountaineers2]（1939）
+  18. 元素混合-大地 [touhou_magic_tech_mountaineers3] → 原版对应：山地步兵 III [tech_mountaineers3]（1943）
+  19. 元素适应 [touhou_magic_tech_special_forces] → 原版对应：特种部队 [tech_special_forces]（1938）
+  20. 元素巨大化 [touhou_magic_advanced_special_forces] → 原版对应：先进特种部队训练 [advanced_special_forces]（1940）
+  21. 元素小型化 [touhou_magic_improved_special_forces] → 原版对应：加强特种部队计划 [improved_special_forces]（1940）
+  22. 元素术式特化 [touhou_magic_extreme_environment_training] → 原版对应：极端环境训练 [extreme_environment_training]（1942）
+  23. 元素术式简化 [touhou_magic_survival_training] → 原版对应：生存训练 [survival_training]（1942）
+  24. 元素魔法专攻 [touhou_magic_elite_forces] → 原版对应：精锐部队 [elite_forces]（1944）
+  25. 夜明术 [touhou_magic_night_vision] → 原版对应：夜视仪 I [night_vision]（1943）
+  26. 昏暗视觉 [touhou_magic_night_vision2] → 原版对应：夜视仪 II [night_vision2]（1946）
+  27. 钢化术 [touhou_magic_support_weapons] → 原版对应：支援武器 I [support_weapons]（1918）
+  28. 火焰战袍 [touhou_magic_support_weapons2] → 原版对应：支援武器 II [support_weapons2]（1938）
+  29. 法师护盾 [touhou_magic_support_weapons3] → 原版对应：支援武器 III [support_weapons3]（1940）
+  30. 不屈意志 [touhou_magic_support_weapons4] → 原版对应：支援武器 IV [support_weapons4]（1942）
+  31. 魔力爆破器 [touhou_magic_gw_artillery] → 原版对应：牵引式火炮 [gw_artillery]
+  32. 能量转换 [touhou_magic_interwar_artillery] → 原版对应：战间期型火炮 [interwar_artillery]（1936）
+  33. 魔火焰喷射器 [touhou_magic_artillery1] → 原版对应：火炮 I型 [artillery1]（1939）
+  34. 元素注入 [touhou_magic_artillery2] → 原版对应：改进火炮升级 I [artillery2]（1940）
+  35. 元素增幅 [touhou_magic_artillery3] → 原版对应：改进火炮升级 II [artillery3]（1941）
+  36. 地狱火喷射器 [touhou_magic_artillery4] → 原版对应：火炮 IV型 [artillery4]（1942）
+  37. 塑能魔法专攻 [touhou_magic_artillery5] → 原版对应：先进火炮升级 [artillery5]（1943）
+  38. 火花穿甲炮 [touhou_magic_interwar_antitank] → 原版对应：反坦克炮 [interwar_antitank]（1936）
+  39. 高密度凝聚 [touhou_magic_antitank1] → 原版对应：反坦克炮升级 [antitank1]（1939）
+  40. 极限火花穿甲炮 [touhou_magic_antitank2] → 原版对应：反坦克炮 II型 [antitank2]（1940）
+  41. 极大化增压 [touhou_magic_antitank3] → 原版对应：改进反坦克炮升级 I [antitank3]（1941）
+  42. 导向扩散 [touhou_magic_antitank4] → 原版对应：改进反坦克炮升级 II [antitank4]（1942）
+  43. 究极火花穿甲炮 [touhou_magic_antitank5] → 原版对应：反坦克炮 V型 [antitank5]（1943）
+  44. 上海级 [touhou_magic_basic_light_tank] → 未启用 NSB：轻型坦克 I型 [basic_light_tank]（1934）；启用 NSB：基础型轻型坦克 [basic_light_tank_chassis]（1934）
+  45. 上海级破甲装 [touhou_magic_basic_light_td] → 未启用 NSB：轻型自行反坦克炮 I型 [basic_light_td]（1934）；启用 NSB：基础型轻型坦克 [basic_light_tank_chassis]（1934）
+  46. 上海级火炮装 [touhou_magic_basic_light_art] → 未启用 NSB：轻型自行火炮 I型 [basic_light_art]（1934）；启用 NSB：基础型轻型坦克 [basic_light_tank_chassis]（1934）
+  47. 上海级弹幕装 [touhou_magic_basic_light_spaa] → 未启用 NSB：轻型自行防空炮 I型 [basic_light_spaa]（1934）；启用 NSB：基础型轻型坦克 [basic_light_tank_chassis]（1934）
+  48. 上海级改良型 [touhou_magic_improved_light_tank] → 未启用 NSB：轻型坦克 II型 [improved_light_tank]（1936）；启用 NSB：改进型轻型坦克 [improved_light_tank_chassis]（1936）
+  49. 上海级改良型破甲装 [touhou_magic_improved_light_td] → 未启用 NSB：轻型自行反坦克炮 II型 [improved_light_td]（1936）；启用 NSB：改进型轻型坦克 [improved_light_tank_chassis]（1936）
+  50. 上海级改良型火炮装 [touhou_magic_improved_light_art] → 未启用 NSB：轻型自行火炮 II型 [improved_light_art]（1936）；启用 NSB：改进型轻型坦克 [improved_light_tank_chassis]（1936）
+  51. 上海级改良型弹幕装 [touhou_magic_improved_light_spaa] → 未启用 NSB：轻型自行防空炮 II型 [improved_light_spaa]（1936）；启用 NSB：改进型轻型坦克 [improved_light_tank_chassis]（1936）
+  52. 上海级完全型 [touhou_magic_advanced_light_tank] → 未启用 NSB：轻型坦克 III型 [advanced_light_tank]（1941）；启用 NSB：先进型轻型坦克 [advanced_light_tank_chassis]（1941）
+  53. 上海级完全型破甲装 [touhou_magic_advanced_light_td] → 未启用 NSB：轻型自行反坦克炮 III型 [advanced_light_td]（1941）；启用 NSB：先进型轻型坦克 [advanced_light_tank_chassis]（1941）
+  54. 上海级完全型火炮装 [touhou_magic_advanced_light_art] → 未启用 NSB：轻型自行火炮 III型 [advanced_light_art]（1941）；启用 NSB：先进型轻型坦克 [advanced_light_tank_chassis]（1941）
+  55. 上海级完全型弹幕装 [touhou_magic_advanced_light_spaa] → 未启用 NSB：轻型自行防空炮 III型 [advanced_light_spaa]（1941）；启用 NSB：先进型轻型坦克 [advanced_light_tank_chassis]（1941）
+  56. 提泰妮娅级 [touhou_magic_basic_medium_tank] → 未启用 NSB：中型坦克 I型 [basic_medium_tank]（1939）；启用 NSB：基础型中型坦克 [basic_medium_tank_chassis]（1938）
+  57. 提泰妮娅级破甲装 [touhou_magic_basic_medium_td] → 未启用 NSB：中型自行反坦克炮 I型 [basic_medium_td]（1939）；启用 NSB：基础型中型坦克 [basic_medium_tank_chassis]（1938）
+  58. 提泰妮娅级火炮装 [touhou_magic_basic_medium_art] → 未启用 NSB：中型自行火炮 I型 [basic_medium_art]（1939）；启用 NSB：基础型中型坦克 [basic_medium_tank_chassis]（1938）
+  59. 提泰妮娅级弹幕装 [touhou_magic_basic_medium_spaa] → 未启用 NSB：中型自行防空炮 I型 [basic_medium_spaa]（1939）；启用 NSB：基础型中型坦克 [basic_medium_tank_chassis]（1938）
+  60. 提泰妮娅级改良型 [touhou_magic_improved_medium_tank] → 未启用 NSB：中型坦克 II型 [improved_medium_tank]（1941）；启用 NSB：改进型中型坦克 [improved_medium_tank_chassis]（1940）
+  61. 提泰妮娅级改良型破甲装 [touhou_magic_improved_medium_td] → 未启用 NSB：中型自行反坦克炮 II型 [improved_medium_td]（1941）；启用 NSB：改进型中型坦克 [improved_medium_tank_chassis]（1940）
+  62. 提泰妮娅级改良型火炮装 [touhou_magic_improved_medium_art] → 未启用 NSB：中型自行火炮 II型 [improved_medium_art]（1941）；启用 NSB：改进型中型坦克 [improved_medium_tank_chassis]（1940）
+  63. 提泰妮娅级改良型弹幕装 [touhou_magic_improved_medium_spaa] → 未启用 NSB：中型自行防空炮 II型 [improved_medium_spaa]（1941）；启用 NSB：改进型中型坦克 [improved_medium_tank_chassis]（1940）
+  64. 提泰妮娅级完全型 [touhou_magic_advanced_medium_tank] → 未启用 NSB：中型坦克 III型 [advanced_medium_tank]（1943）；启用 NSB：先进型中型坦克 [advanced_medium_tank_chassis]（1943）
+  65. 提泰妮娅级完全型破甲装 [touhou_magic_advanced_medium_td] → 未启用 NSB：中型自行反坦克炮 III型 [advanced_medium_td]（1943）；启用 NSB：先进型中型坦克 [advanced_medium_tank_chassis]（1943）
+  66. 提泰妮娅级完全型火炮装 [touhou_magic_advanced_medium_art] → 未启用 NSB：中型自行火炮 III型 [advanced_medium_art]（1943）；启用 NSB：先进型中型坦克 [advanced_medium_tank_chassis]（1943）
+  67. 提泰妮娅级完全型弹幕装 [touhou_magic_advanced_medium_spaa] → 未启用 NSB：中型自行防空炮 III型 [advanced_medium_spaa]（1943）；启用 NSB：先进型中型坦克 [advanced_medium_tank_chassis]（1943）
+  68. 量产型歌利亚 [touhou_magic_main_battle_tank] → 未启用 NSB：现代坦克 [main_battle_tank]（1945）；启用 NSB：现代坦克 [main_battle_tank_chassis]（1945）
+  69. 量产型歌利亚破甲装 [touhou_magic_modern_td] → 未启用 NSB：现代自行反坦克炮 [modern_td]（1945）；启用 NSB：现代坦克 [main_battle_tank_chassis]（1945）
+  70. 量产型歌利亚炮击装 [touhou_magic_modern_art] → 未启用 NSB：现代自行火炮 [modern_art]（1945）；启用 NSB：现代坦克 [main_battle_tank_chassis]（1945）
+  71. 量产型歌利亚弹幕装 [touhou_magic_modern_spaa] → 未启用 NSB：现代自行防空炮 [modern_spaa]（1945）；启用 NSB：现代坦克 [main_battle_tank_chassis]（1945）
+  72. 扫把 [touhou_magic_early_fighter] → 未启用 BBA：战间期型战斗机 [early_fighter]（1933）；启用 BBA：战间期小型机身 [iw_small_airframe]（1926）
+  73. 飞行扫把 [touhou_magic_fighter1] → 未启用 BBA：战斗机 I型 [fighter1]（1936）；启用 BBA：基础小型机身 [basic_small_airframe]（1936）
+  74. 附魔扫把 [touhou_magic_fighter2] → 未启用 BBA：战斗机 II型 [fighter2]（1940）；启用 BBA：改进型小型机身 [improved_small_airframe]（1940）
+  75. 魔法扫把 [touhou_magic_fighter3] → 未启用 BBA：战斗机 III型 [fighter3]（1944）；启用 BBA：先进型小型机身 [advanced_small_airframe]（1944）
+  76. 强效魔法扫把 [touhou_magic_jet_fighter2] → 未启用 BBA：喷气式战斗机 II型 [jet_fighter2]（1950）；启用 BBA：现代小型机身 [modern_small_airframe]（1945）
+  77. 爆炸魔法 [touhou_magic_early_bomber] → 未启用 BBA：战间期型轰炸机 [early_bomber]（1933）；启用 BBA：战间期中型机身 [iw_medium_airframe]（1926）
+  78. 爆破魔法 [touhou_magic_tactical_bomber1] → 未启用 BBA：战术轰炸机 I型 [tactical_bomber1]（1936）；启用 BBA：基础中型机身 [basic_medium_airframe]（1936）
+  79. 爆裂魔法 [touhou_magic_tactical_bomber2] → 未启用 BBA：战术轰炸机 II型 [tactical_bomber2]（1940）；启用 BBA：改进型中型机身 [improved_medium_airframe]（1940）
+  80. 极限爆裂魔法 [touhou_magic_tactical_bomber3] → 未启用 BBA：战术轰炸机 III型 [tactical_bomber3]（1944）；启用 BBA：先进型中型机身 [advanced_medium_airframe]（1944）
+  81. 究极爆裂魔法 [touhou_magic_jet_tactical_bomber2] → 未启用 BBA：喷气式战术轰炸机 II型 [jet_tactical_bomber2]（1950）；启用 BBA：现代中型机身 [modern_medium_airframe]（1945）
+  82. 大范围爆炸魔法 [touhou_magic_strategic_bomber1] → 未启用 BBA：战略轰炸机 I型 [strategic_bomber1]（1936）；启用 BBA：基础大型机身 [basic_large_airframe]（1936）
+  83. 毁灭魔法 [touhou_magic_strategic_bomber2] → 未启用 BBA：战略轰炸机 II型 [strategic_bomber2]（1940）；启用 BBA：改进型大型机身 [improved_large_airframe]（1940）
+  84. 极限毁灭魔法 [touhou_magic_strategic_bomber3] → 未启用 BBA：战略轰炸机 III型 [strategic_bomber3]（1944）；启用 BBA：先进型大型机身 [advanced_large_airframe]（1944）
+  85. 究极毁灭魔法 [touhou_magic_jet_strategic_bomber1] → 未启用 BBA：喷气式战略轰炸机 I型 [jet_strategic_bomber1]（1950）；启用 BBA：现代大型机身 [modern_large_airframe]（1945）
+
+灵力科技：
+  1. 除灵道具 [touhou_wakan_infantry_weapons] → 原版对应：步兵武器 [infantry_weapons]（1918）
+  2. 附灵道具 [touhou_wakan_infantry_weapons1] → 原版对应：步兵装备 I型 [infantry_weapons1]（1936）
+  3. 强化附灵 [touhou_wakan_infantry_weapons2] → 原版对应：改进步兵装备 I [infantry_weapons2]（1938）
+  4. 灵力场 [touhou_wakan_improved_infantry_weapons] → 原版对应：步兵装备 II型 [improved_infantry_weapons]（1939）
+  5. 灵力束缚 [touhou_wakan_improved_infantry_weapons_2] → 原版对应：改进步兵装备 II [improved_infantry_weapons_2]（1940）
+  6. 封魔针 [touhou_wakan_infantry_at] → 原版对应：步兵反坦克武器 I [infantry_at]（1942）
+  7. 强化封魔针 [touhou_wakan_infantry_at2] → 原版对应：步兵反坦克武器 II [infantry_at2]（1943）
+  8. 灵力结界 [touhou_wakan_advanced_infantry_weapons] → 原版对应：步兵装备 III型 [advanced_infantry_weapons]（1942）
+  9. 破魔 [touhou_wakan_advanced_infantry_weapons2] → 原版对应：改进步兵装备 III [advanced_infantry_weapons2]（1944）
+  10. 风精灵 [touhou_wakan_paratroopers] → 原版对应：伞兵 I [paratroopers]（1936）
+  11. 高等风精灵 [touhou_wakan_paratroopers2] → 原版对应：伞兵 II [paratroopers2]（1939）
+  12. 精灵信仰-风 [touhou_wakan_paratroopers3] → 原版对应：伞兵 III [paratroopers3]（1943）
+  13. 水精灵 [touhou_wakan_marines] → 原版对应：海军陆战队 I [marines]（1936）
+  14. 高等水精灵 [touhou_wakan_marines2] → 原版对应：海军陆战队 II [marines2]（1939）
+  15. 精灵信仰-水 [touhou_wakan_marines3] → 原版对应：海军陆战队 III [marines3]（1943）
+  16. 土精灵 [touhou_wakan_tech_mountaineers] → 原版对应：山地步兵 I [tech_mountaineers]（1936）
+  17. 高等土精灵 [touhou_wakan_tech_mountaineers2] → 原版对应：山地步兵 II [tech_mountaineers2]（1939）
+  18. 精灵信仰-土 [touhou_wakan_tech_mountaineers3] → 原版对应：山地步兵 III [tech_mountaineers3]（1943）
+  19. 精灵适应 [touhou_wakan_tech_special_forces] → 原版对应：特种部队 [tech_special_forces]（1938）
+  20. 大型精灵 [touhou_wakan_advanced_special_forces] → 原版对应：先进特种部队训练 [advanced_special_forces]（1940）
+  21. 小型精灵 [touhou_wakan_improved_special_forces] → 原版对应：加强特种部队计划 [improved_special_forces]（1940）
+  22. 精灵特化 [touhou_wakan_extreme_environment_training] → 原版对应：极端环境训练 [extreme_environment_training]（1942）
+  23. 精灵泛化 [touhou_wakan_survival_training] → 原版对应：生存训练 [survival_training]（1942）
+  24. 精灵崇拜 [touhou_wakan_elite_forces] → 原版对应：精锐部队 [elite_forces]（1944）
+  25. 暗精灵 [touhou_wakan_night_vision] → 原版对应：夜视仪 I [night_vision]（1943）
+  26. 夜女神的祝福 [touhou_wakan_night_vision2] → 原版对应：夜视仪 II [night_vision2]（1946）
+  27. 灵气 [touhou_wakan_support_weapons] → 原版对应：支援武器 I [support_weapons]（1918）
+  28. 强化灵气 [touhou_wakan_support_weapons2] → 原版对应：支援武器 II [support_weapons2]（1938）
+  29. 能量吸收 [touhou_wakan_support_weapons3] → 原版对应：支援武器 III [support_weapons3]（1940）
+  30. 灵气转化 [touhou_wakan_support_weapons4] → 原版对应：支援武器 IV [support_weapons4]（1942）
+  31. 灵场 [touhou_wakan_gw_artillery] → 原版对应：牵引式火炮 [gw_artillery]
+  32. 灵场震 [touhou_wakan_interwar_artillery] → 原版对应：战间期型火炮 [interwar_artillery]（1936）
+  33. 灵力爆破 [touhou_wakan_artillery1] → 原版对应：火炮 I型 [artillery1]（1939）
+  34. 灵力诱导 [touhou_wakan_artillery2] → 原版对应：改进火炮升级 I [artillery2]（1940）
+  35. 灵力增压 [touhou_wakan_artillery3] → 原版对应：改进火炮升级 II [artillery3]（1941）
+  36. 空间震 [touhou_wakan_artillery4] → 原版对应：火炮 IV型 [artillery4]（1942）
+  37. 瞬发现象 [touhou_wakan_artillery5] → 原版对应：先进火炮升级 [artillery5]（1943）
+  38. 天网 [touhou_wakan_interwar_antiair] → 原版对应：防空炮 [interwar_antiair]（1936）
+  39. 多层次天网 [touhou_wakan_antiair1] → 原版对应：防空炮升级 [antiair1]（1939）
+  40. 天网阵 [touhou_wakan_antiair2] → 原版对应：防空炮 II型 [antiair2]（1940）
+  41. 天网雷 [touhou_wakan_antiair3] → 原版对应：改进防空炮升级 I [antiair3]（1941）
+  42. 主动式天网雷 [touhou_wakan_antiair4] → 原版对应：改进防空炮升级 II [antiair4]（1942）
+  43. 天网结界 [touhou_wakan_antiair5] → 原版对应：防空炮 V型 [antiair5]（1943）
+  44. 高速灵装 [touhou_wakan_motorised_infantry] → 原版对应：摩托化步兵 [motorised_infantry]（1936）
+  45. 火风暴灵装 [touhou_wakan_motorized_rocket_unit] → 原版对应：自行火箭炮 [motorized_rocket_unit]（1939）
+  46. 灵装机 [touhou_wakan_mechanised_infantry] → 原版对应：机械化装备 I型 [mechanised_infantry]（1940）
+  47. 泛用型灵装机 [touhou_wakan_amphibious_mechanized_infantry] → 原版对应：两栖牵引机 [amphibious_mechanized_infantry]（1941）
+  48. 强化泛用型灵装机 [touhou_wakan_amphibious_mechanized_infantry_2] → 原版对应：改进型两栖突击车 [amphibious_mechanized_infantry_2]（1943）
+  49. 强化灵装机 [touhou_wakan_mechanised_infantry2] → 原版对应：机械化装备 II型 [mechanised_infantry2]（1942）
+  50. 不朽灵装机 [touhou_wakan_mechanised_infantry3] → 原版对应：机械化装备 III型 [mechanised_infantry3]（1944）
+  51. 起风 [touhou_wakan_early_fighter] → 未启用 BBA：战间期型战斗机 [early_fighter]（1933）；启用 BBA：战间期小型机身 [iw_small_airframe]（1926）
+  52. 强风 [touhou_wakan_fighter1] → 未启用 BBA：战斗机 I型 [fighter1]（1936）；启用 BBA：基础小型机身 [basic_small_airframe]（1936）
+  53. 狂风 [touhou_wakan_fighter2] → 未启用 BBA：战斗机 II型 [fighter2]（1940）；启用 BBA：改进型小型机身 [improved_small_airframe]（1940）
+  54. 飓风 [touhou_wakan_fighter3] → 未启用 BBA：战斗机 III型 [fighter3]（1944）；启用 BBA：先进型小型机身 [advanced_small_airframe]（1944）
+  55. 天龙卷 [touhou_wakan_jet_fighter2] → 未启用 BBA：喷气式战斗机 II型 [jet_fighter2]（1950）；启用 BBA：现代小型机身 [modern_small_airframe]（1945）
+  56. 惊雷 [touhou_wakan_CAS1] → 未启用 BBA：近距支援机 I型 [CAS1]（1936）；启用 BBA：基础小型机身 [basic_small_airframe]（1936）
+  57. 狂雷 [touhou_wakan_CAS2] → 未启用 BBA：近距支援机 II型 [CAS2]（1940）；启用 BBA：改进型小型机身 [improved_small_airframe]（1940）
+  58. 万雷 [touhou_wakan_CAS3] → 未启用 BBA：近距支援机 III型 [CAS3]（1944）；启用 BBA：先进型小型机身 [advanced_small_airframe]（1944）
+  59. 天火 [touhou_wakan_early_bomber] → 未启用 BBA：战间期型轰炸机 [early_bomber]（1933）；启用 BBA：战间期中型机身 [iw_medium_airframe]（1926）
+  60. 天火击 [touhou_wakan_tactical_bomber1] → 未启用 BBA：战术轰炸机 I型 [tactical_bomber1]（1936）；启用 BBA：基础中型机身 [basic_medium_airframe]（1936）
+  61. 天火坠 [touhou_wakan_tactical_bomber2] → 未启用 BBA：战术轰炸机 II型 [tactical_bomber2]（1940）；启用 BBA：改进型中型机身 [improved_medium_airframe]（1940）
+  62. 天火雨 [touhou_wakan_tactical_bomber3] → 未启用 BBA：战术轰炸机 III型 [tactical_bomber3]（1944）；启用 BBA：先进型中型机身 [advanced_medium_airframe]（1944）
+  63. 天地异变 [touhou_wakan_jet_tactical_bomber2] → 未启用 BBA：喷气式战术轰炸机 II型 [jet_tactical_bomber2]（1950）；启用 BBA：现代中型机身 [modern_medium_airframe]（1945）
+
+妖力科技：
+  1. 妖怪 [touhou_demonforce_infantry_weapons] → 原版对应：步兵武器 [infantry_weapons]（1918）
+  2. 妖魔 [touhou_demonforce_infantry_weapons1] → 原版对应：步兵装备 I型 [infantry_weapons1]（1936）
+  3. 幻化 [touhou_demonforce_infantry_weapons2] → 原版对应：改进步兵装备 I [infantry_weapons2]（1938）
+  4. 幻魔 [touhou_demonforce_improved_infantry_weapons] → 原版对应：步兵装备 II型 [improved_infantry_weapons]（1939）
+  5. 升格 [touhou_demonforce_improved_infantry_weapons_2] → 原版对应：改进步兵装备 II [improved_infantry_weapons_2]（1940）
+  6. 穿刺 [touhou_demonforce_infantry_at] → 原版对应：步兵反坦克武器 I [infantry_at]（1942）
+  7. 钻刃 [touhou_demonforce_infantry_at2] → 原版对应：步兵反坦克武器 II [infantry_at2]（1943）
+  8. 哈努曼 [touhou_demonforce_advanced_infantry_weapons] → 原版对应：步兵装备 III型 [advanced_infantry_weapons]（1942）
+  9. 神化 [touhou_demonforce_advanced_infantry_weapons2] → 原版对应：改进步兵装备 III [advanced_infantry_weapons2]（1944）
+  10. 风生 [touhou_demonforce_paratroopers] → 原版对应：伞兵 I [paratroopers]（1936）
+  11. 风魔 [touhou_demonforce_paratroopers2] → 原版对应：伞兵 II [paratroopers2]（1939）
+  12. 加斯伯禄 [touhou_demonforce_paratroopers3] → 原版对应：伞兵 III [paratroopers3]（1943）
+  13. 水生 [touhou_demonforce_marines] → 原版对应：海军陆战队 I [marines]（1936）
+  14. 水魔 [touhou_demonforce_marines2] → 原版对应：海军陆战队 II [marines2]（1939）
+  15. 利维坦 [touhou_demonforce_marines3] → 原版对应：海军陆战队 III [marines3]（1943）
+  16. 土生 [touhou_demonforce_tech_mountaineers] → 原版对应：山地步兵 I [tech_mountaineers]（1936）
+  17. 土魔 [touhou_demonforce_tech_mountaineers2] → 原版对应：山地步兵 II [tech_mountaineers2]（1939）
+  18. 野锤 [touhou_demonforce_tech_mountaineers3] → 原版对应：山地步兵 III [tech_mountaineers3]（1943）
+  19. 土生土长 [touhou_demonforce_tech_special_forces] → 原版对应：特种部队 [tech_special_forces]（1938）
+  20. 强化繁殖 [touhou_demonforce_advanced_special_forces] → 原版对应：先进特种部队训练 [advanced_special_forces]（1940）
+  21. 快速繁殖 [touhou_demonforce_improved_special_forces] → 原版对应：加强特种部队计划 [improved_special_forces]（1940）
+  22. 特异进化 [touhou_demonforce_extreme_environment_training] → 原版对应：极端环境训练 [extreme_environment_training]（1942）
+  23. 泛型进化 [touhou_demonforce_survival_training] → 原版对应：生存训练 [survival_training]（1942）
+  24. 龙蟠虎踞 [touhou_demonforce_elite_forces] → 原版对应：精锐部队 [elite_forces]（1944）
+  25. 夜魔 [touhou_demonforce_night_vision] → 原版对应：夜视仪 I [night_vision]（1943）
+  26. 血族 [touhou_demonforce_night_vision2] → 原版对应：夜视仪 II [night_vision2]（1946）
+  27. 硬皮 [touhou_demonforce_support_weapons] → 原版对应：支援武器 I [support_weapons]（1918）
+  28. 钢筋 [touhou_demonforce_support_weapons2] → 原版对应：支援武器 II [support_weapons2]（1938）
+  29. 铁骨 [touhou_demonforce_support_weapons3] → 原版对应：支援武器 III [support_weapons3]（1940）
+  30. 魔甲 [touhou_demonforce_support_weapons4] → 原版对应：支援武器 IV [support_weapons4]（1942）
+  31. 恶鬼 [touhou_demonforce_interwar_antiair] → 原版对应：防空炮 [interwar_antiair]（1936）
+  32. 魔化 [touhou_demonforce_antiair1] → 原版对应：防空炮升级 [antiair1]（1939）
+  33. 恶魔 [touhou_demonforce_antiair2] → 原版对应：防空炮 II型 [antiair2]（1940）
+  34. 化形 [touhou_demonforce_antiair3] → 原版对应：改进防空炮升级 I [antiair3]（1941）
+  35. 驱命 [touhou_demonforce_antiair4] → 原版对应：改进防空炮升级 II [antiair4]（1942）
+  36. 单卡拉比 [touhou_demonforce_antiair5] → 原版对应：防空炮 V型 [antiair5]（1943）
+  37. 走兽 [touhou_demonforce_interwar_antitank] → 原版对应：反坦克炮 [interwar_antitank]（1936）
+  38. 赐福 [touhou_demonforce_antitank1] → 原版对应：反坦克炮升级 [antitank1]（1939）
+  39. 神兽 [touhou_demonforce_antitank2] → 原版对应：反坦克炮 II型 [antitank2]（1940）
+  40. 巨化 [touhou_demonforce_antitank3] → 原版对应：改进反坦克炮升级 I [antitank3]（1941）
+  41. 守护 [touhou_demonforce_antitank4] → 原版对应：改进反坦克炮升级 II [antitank4]（1942）
+  42. 巴隆 [touhou_demonforce_antitank5] → 原版对应：反坦克炮 V型 [antitank5]（1943）
+  43. 妖兽 [touhou_demonforce_basic_heavy_tank] → 未启用 NSB：重型坦克 I型 [basic_heavy_tank]（1934）；启用 NSB：基础型重型坦克 [basic_heavy_tank_chassis]（1934）
+  44. 破坏者 [touhou_demonforce_basic_heavy_td] → 未启用 NSB：重型自行反坦克炮 I型 [basic_heavy_td]（1934）；启用 NSB：基础型重型坦克 [basic_heavy_tank_chassis]（1934）
+  45. 飞龙 [touhou_demonforce_basic_heavy_art] → 未启用 NSB：重型自行火炮 I型 [basic_heavy_art]（1934）；启用 NSB：基础型重型坦克 [basic_heavy_tank_chassis]（1934）
+  46. 惊雀 [touhou_demonforce_basic_heavy_spaa] → 未启用 NSB：重型自行防空炮 I型 [basic_heavy_spaa]（1934）；启用 NSB：基础型重型坦克 [basic_heavy_tank_chassis]（1934）
+  47. 魔兽 [touhou_demonforce_improved_heavy_tank] → 未启用 NSB：重型坦克 II型 [improved_heavy_tank]（1941）；启用 NSB：改进型重型坦克 [improved_heavy_tank_chassis]（1940）
+  48. 毁灭王 [touhou_demonforce_improved_heavy_td] → 未启用 NSB：重型自行反坦克炮 II型 [improved_heavy_td]（1941）；启用 NSB：改进型重型坦克 [improved_heavy_tank_chassis]（1940）
+  49. 邪龙 [touhou_demonforce_improved_heavy_art] → 未启用 NSB：重型自行火炮 II型 [improved_heavy_art]（1941）；启用 NSB：改进型重型坦克 [improved_heavy_tank_chassis]（1940）
+  50. 群鸟 [touhou_demonforce_improved_heavy_spaa] → 未启用 NSB：重型自行防空炮 II型 [improved_heavy_spaa]（1941）；启用 NSB：改进型重型坦克 [improved_heavy_tank_chassis]（1940）
+  51. 阿巴东 [touhou_demonforce_advanced_heavy_tank] → 未启用 NSB：重型坦克 III型 [advanced_heavy_tank]（1943）；启用 NSB：先进型重型坦克 [advanced_heavy_tank_chassis]（1943）
+  52. 须佐之男 [touhou_demonforce_advanced_heavy_td] → 未启用 NSB：重型自行反坦克炮 III型 [advanced_heavy_td]（1943）；启用 NSB：先进型重型坦克 [advanced_heavy_tank_chassis]（1943）
+  53. 弗栗多 [touhou_demonforce_advanced_heavy_art] → 未启用 NSB：重型自行火炮 III型 [advanced_heavy_art]（1943）；启用 NSB：先进型重型坦克 [advanced_heavy_tank_chassis]（1943）
+  54. 芭一波卡赫 [touhou_demonforce_advanced_heavy_spaa] → 未启用 NSB：重型自行防空炮 III型 [advanced_heavy_spaa]（1943）；启用 NSB：先进型重型坦克 [advanced_heavy_tank_chassis]（1943）
+  55. 泰坦 [touhou_demonforce_super_heavy_tank] → 未启用 NSB：超重型坦克 [super_heavy_tank]（1941）；启用 NSB：超重型坦克 [super_heavy_tank_chassis]（1941）
+  56. 湿婆 [touhou_demonforce_super_heavy_td] → 未启用 NSB：超重型自行反坦克炮 [super_heavy_td]（1943）；启用 NSB：超重型坦克 [super_heavy_tank_chassis]（1941）
+  57. 婆苏吉 [touhou_demonforce_super_heavy_art] → 未启用 NSB：超重型自行火炮 [super_heavy_art]（1943）；启用 NSB：超重型坦克 [super_heavy_tank_chassis]（1941）
+  58. 鹏 [touhou_demonforce_super_heavy_spaa] → 未启用 NSB：超重型自行防空炮 [super_heavy_spaa]（1943）；启用 NSB：超重型坦克 [super_heavy_tank_chassis]（1941）
+  59. 有翼 [touhou_demonforce_early_fighter] → 未启用 BBA：战间期型战斗机 [early_fighter]（1933）；启用 BBA：战间期小型机身 [iw_small_airframe]（1926）
+  60. 飞禽 [touhou_demonforce_fighter1] → 未启用 BBA：战斗机 I型 [fighter1]（1936）；启用 BBA：基础小型机身 [basic_small_airframe]（1936）
+  61. 灵鸟 [touhou_demonforce_fighter2] → 未启用 BBA：战斗机 II型 [fighter2]（1940）；启用 BBA：改进型小型机身 [improved_small_airframe]（1940）
+  62. 神乌 [touhou_demonforce_fighter3] → 未启用 BBA：战斗机 III型 [fighter3]（1944）；启用 BBA：先进型小型机身 [advanced_small_airframe]（1944）
+  63. 迦楼罗 [touhou_demonforce_jet_fighter2] → 未启用 BBA：喷气式战斗机 II型 [jet_fighter2]（1950）；启用 BBA：现代小型机身 [modern_small_airframe]（1945）
+  64. 雄鹰 [touhou_demonforce_CAS1] → 未启用 BBA：近距支援机 I型 [CAS1]（1936）；启用 BBA：基础小型机身 [basic_small_airframe]（1936）
+  65. 女武神 [touhou_demonforce_CAS2] → 未启用 BBA：近距支援机 II型 [CAS2]（1940）；启用 BBA：改进型小型机身 [improved_small_airframe]（1940）
+  66. 瓦尔基莉 [touhou_demonforce_CAS3] → 未启用 BBA：近距支援机 III型 [CAS3]（1944）；启用 BBA：先进型小型机身 [advanced_small_airframe]（1944）
+  67. 巨翅 [touhou_demonforce_heavy_fighter1] → 未启用 BBA：重型战斗机 I型 [heavy_fighter1]（1936）；启用 BBA：基础中型机身 [basic_medium_airframe]（1936）
+  68. 巨鸟 [touhou_demonforce_heavy_fighter2] → 未启用 BBA：重型战斗机 II型 [heavy_fighter2]（1940）；启用 BBA：改进型中型机身 [improved_medium_airframe]（1940）
+  69. 萨玛艾尔 [touhou_demonforce_heavy_fighter3] → 未启用 BBA：重型战斗机 III型 [heavy_fighter3]（1944）；启用 BBA：先进型中型机身 [advanced_medium_airframe]（1944）
+
+幻想支援科技：
+  1. 幻想支援装备 [touhou_tech_support] → 原版对应：支援装备 [tech_support]（1918）
+  2. 大地使者 [touhou_tech_engineers] → 原版对应：工兵连 I [tech_engineers]（1936）
+  3. 大地使者 LV2 [touhou_tech_engineers2] → 原版对应：工兵连 II [tech_engineers2]（1939）
+  4. 大地使者 LV3 [touhou_tech_engineers3] → 原版对应：工兵连 III [tech_engineers3]（1942）
+  5. 大地使者 LV4 [touhou_tech_engineers4] → 原版对应：工兵连 IV [tech_engineers4]（1945）
+  6. 守望之眼 [touhou_tech_recon] → 原版对应：侦察连 I [tech_recon]（1936）
+  7. 守望之眼 LV2 [touhou_tech_recon2] → 原版对应：侦察连 II [tech_recon2]（1939）
+  8. 守望之眼 LV3 [touhou_tech_recon3] → 原版对应：侦察连 III [tech_recon3]（1942）
+  9. 守望之眼 LV4 [touhou_tech_recon4] → 原版对应：侦察连 IV [tech_recon4]（1945）
+  10. 幻想教长 [touhou_tech_military_police] → 原版对应：宪兵队 I [tech_military_police]（1936）
+  11. 幻想教长 LV2 [touhou_tech_military_police2] → 原版对应：宪兵队 II [tech_military_police2]（1939）
+  12. 幻想教长 LV3 [touhou_tech_military_police3] → 原版对应：宪兵队 III [tech_military_police3]（1942）
+  13. 幻想教长 LV4 [touhou_tech_military_police4] → 原版对应：宪兵队 IV [tech_military_police4]（1945）
+  14. 鬼斧神工 [touhou_tech_maintenance_company] → 原版对应：维修连 I [tech_maintenance_company]（1936）
+  15. 鬼斧神工 LV2 [touhou_tech_maintenance_company2] → 原版对应：维修连 II [tech_maintenance_company2]（1939）
+  16. 鬼斧神工 LV3 [touhou_tech_maintenance_company3] → 原版对应：维修连 III [tech_maintenance_company3]（1942）
+  17. 鬼斧神工 LV4 [touhou_tech_maintenance_company4] → 原版对应：维修连 IV [tech_maintenance_company4]（1945）
+  18. 阎王愁 [touhou_tech_field_hospital] → 原版对应：野战医院 I [tech_field_hospital]（1936）
+  19. 阎王愁 LV2 [touhou_tech_field_hospital2] → 原版对应：野战医院 II [tech_field_hospital2]（1939）
+  20. 阎王愁 LV3 [touhou_tech_field_hospital3] → 原版对应：野战医院 III [tech_field_hospital3]（1942）
+  21. 阎王愁 LV4 [touhou_tech_field_hospital4] → 原版对应：野战医院 IV [tech_field_hospital4]（1945）
+  22. 圣诞老人 [touhou_tech_logistics_company] → 原版对应：后勤连 I [tech_logistics_company]（1936）
+  23. 圣诞老人 LV2 [touhou_tech_logistics_company2] → 原版对应：后勤连 II [tech_logistics_company2]（1939）
+  24. 圣诞老人 LV3 [touhou_tech_logistics_company3] → 原版对应：后勤连 III [tech_logistics_company3]（1942）
+  25. 圣诞老人 LV4 [touhou_tech_logistics_company4] → 原版对应：后勤连 IV [tech_logistics_company4]（1945）
+  26. 通信人偶 [touhou_tech_signal_company] → 原版对应：通信连 I [tech_signal_company]（1936）
+  27. 通信人偶 LV2 [touhou_tech_signal_company2] → 原版对应：通信连 II [tech_signal_company2]（1939）
+  28. 通信人偶 LV3 [touhou_tech_signal_company3] → 原版对应：通信连 III [tech_signal_company3]（1942）
+  29. 通信人偶 LV4 [touhou_tech_signal_company4] → 原版对应：通信连 IV [tech_signal_company4]（1945）
+
+王牌科技：
+  1. 神风人偶 [suicide_puppet_craft_1] → 原版对应：无直接对应。
+     原版近似方向：战间期型战斗机 [early_fighter]（1933）；设计器近似方向：战间期小型机身 [iw_small_airframe]（1926）
+  2. 人偶战略导弹 [suicide_puppet_craft_2] → 原版对应：无直接对应。
+     原版近似方向：战略轰炸机 I型 [strategic_bomber1]（1936）；设计器近似方向：基础大型机身 [basic_large_airframe]（1936）
+  3. 歌利亚 [goliath_0] → 原版对应：无直接对应。
+  4. 歌利亚幻想乡试做型 [goliath_1] → 原版对应：无直接对应。
+     原版近似方向：重型坦克 I型 [basic_heavy_tank]（1934）；设计器近似方向：基础型重型坦克 [basic_heavy_tank_chassis]（1934）
+  5. 歌利亚改良型 [goliath_2] → 原版对应：无直接对应。
+     原版近似方向：重型坦克 II型 [improved_heavy_tank]（1941）；设计器近似方向：改进型重型坦克 [improved_heavy_tank_chassis]（1940）
+  6. 歌利亚完成型 [goliath_3] → 原版对应：无直接对应。
+     原版近似方向：重型坦克 III型 [advanced_heavy_tank]（1943）；设计器近似方向：先进型重型坦克 [advanced_heavy_tank_chassis]（1943）
+  7. 歌利亚人偶 [goliath_4] → 原版对应：无直接对应。
+     原版近似方向：超重型坦克 [super_heavy_tank]（1941）；设计器近似方向：超重型坦克 [super_heavy_tank_chassis]（1941）
+  8. 风神之翼 [tengu_fighter] → 原版对应：无直接对应。
+     原版近似方向：战斗机 I型 [fighter1]（1936）；设计器近似方向：基础小型机身 [basic_small_airframe]（1936）
+  9. 妖力复合装甲 [oni_champion] → 原版对应：无直接对应。
+     原版近似方向：步兵武器 [infantry_weapons]（1918）；特种部队 [tech_special_forces]（1938）
+  10. 现世阴阳玉 [cas_boli_fighter] → 原版对应：无直接对应。
+     原版近似方向：近距支援机 I型 [CAS1]（1936）；设计器近似方向：基础小型机身 [basic_small_airframe]（1936）
+  11. 诡道符咒 [desires_bomber] → 原版对应：无直接对应。
+     原版近似方向：战略轰炸机 I型 [strategic_bomber1]（1936）；设计器近似方向：基础型大型机体 [basic_large_airframe]（1936）
+  12. 妖精武器 [evil_army] → 原版对应：无直接对应。
+     原版近似方向：步兵武器 [infantry_weapons]（1918）；牵引式火炮 [gw_artillery]；轻型坦克 I型 [basic_light_tank]（1934）；设计器近似方向：基础型轻型坦克 [basic_light_tank_chassis]（1934）
+  13. 卫队装备 [human_army] → 原版对应：无直接对应。
+     原版近似方向：步兵武器 [infantry_weapons]（1918）；特种部队 [tech_special_forces]（1938）
+  14. 心灵控制器 [DLD_animal] → 原版对应：无直接对应。
+     原版近似方向：步兵武器 [infantry_weapons]（1918）
+  15. 龙虎卫装备 [dragon] → 原版对应：无直接对应。
+     原版近似方向：步兵武器 [infantry_weapons]（1918）；特种部队 [tech_special_forces]（1938）
+  16. 收割者 [die] → 原版对应：无直接对应。
+     原版近似方向：摩托化步兵 [motorised_infantry]（1936）；特种部队 [tech_special_forces]（1938）
+  17. 月都参谋连用车 [rabbit_team] → 原版对应：无直接对应。
+     原版近似方向：工兵连 I [tech_engineers]（1936）
+  18. 便携式淡化设备 [deep_sea] → 原版对应：无直接对应。
+     原版近似方向：潜艇 II型 [basic_submarine]（1936）；设计器近似方向：基础型潜艇 [basic_ship_hull_submarine]（1936）
+  19. 白玉楼移动补给站 [soul] → 原版对应：无直接对应。
+     原版近似方向：后勤连 I [tech_logistics_company]（1936）
+  20. 未来医疗设备 [wunv] → 原版对应：无直接对应。
+     原版近似方向：野战医院 I [tech_field_hospital]（1936）
+  21. 星莲船 [lotus] → 原版对应：无直接对应。
+     原版近似方向：战列舰 II型 [basic_battleship]（1936）；基础航空母舰 II型 [basic_carrier]（1936）；设计器近似方向：1936重型战舰船体 [basic_ship_hull_heavy]（1936）；1936航空母舰船体 [basic_ship_hull_carrier]（1936）
+  22. 超·极限花火 [magician] → 原版对应：无直接对应。
+     原版近似方向：火炮 I型 [artillery1]（1939）
+
+附录：旧式学说：
+  1. 重视山地步兵 [special_forces_mountaineers] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：寒冷天气专家 [mountaineers_1]；重视山地步兵 [mountaineers_2]
+  2. 寒冷天气专家 [ski_troops] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：寒冷天气专家 [mountaineers_1]
+  3. 崎岖地形专家 [rangers] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：重视山地步兵 [mountaineers_2]
+  4. 战场情报 [special_forces_recon] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：重视山地步兵 [mountaineers_2/reward_2]
+  5. 守住防线 [mountaineers_combat_1] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：寒冷天气专家 [mountaineers_1/reward_3]
+  6. 山地火炮 [mountaineers_combat_2] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：重视山地步兵 [mountaineers_2/reward_3]
+  7. 协同作战训练 [mountaineers_combat_3] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：寒冷天气专家 [mountaineers_1/reward_4]；重视山地步兵 [mountaineers_2/reward_4]
+  8. 武装力量骨干 [mountaineers_keystone_1] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：寒冷天气专家 [mountaineers_1/reward_2]；寒冷天气专家 [mountaineers_1/reward_5]
+  9. 共享教官 [mountaineers_keystone_2] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：扩大特种部队 [special_forces_quantity]；寒冷天气专家 [mountaineers_1/reward_1]；重视山地步兵 [mountaineers_2/reward_5]
+  10. 重视海军陆战队 [special_forces_marines] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：海军突击队 [marines_1]；远征单位 [marines_2]
+  11. 丛林专家 [marines_jungle_troops] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：海军突击队 [marines_1]
+  12. 滩头部队 [marines_shore_parties] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：远征单位 [marines_2]
+  13. 严苛训练方案 [marines_recon] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：海军突击队 [marines_1/reward_2]；远征单位 [marines_2/reward_3]
+  14. 海军突击队 [marines_commandoes] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：海军突击队 [marines_1/reward_1]
+  15. 远征单位 [marines_expeditionary] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：扩大特种部队 [special_forces_quantity]；远征单位 [marines_2/reward_4]
+  16. 爆破专家 [marines_commandos_demolition] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：海军突击队 [marines_1/reward_3]
+  17. 喷灯与瓶塞钻 [marines_expeditionary_blowtorch] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：远征单位 [marines_2/reward_2]；远征单位 [marines_2/reward_4]；远征单位 [marines_2/reward_5]
+  18. 机械化海军陆战队 [marines_commandoes_mechanised] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：海军突击队 [marines_1/reward_5]
+  19. 远征特遣部队 [marines_expeditionary_support] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：远征单位 [marines_2/reward_1]；远征单位 [marines_2/reward_2]；远征单位 [marines_2/reward_3]
+  20. 重视空降兵 [special_forces_paratroopers] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：破坏分队作战 [paratroopers_1]；密集空投 [paratroopers_2]
+  21. 侦查破袭 [paras_dispersed_drop] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：破坏分队作战 [paratroopers_1/reward_1]
+  22. 战斗穿插 [paras_combat_drop] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：密集空投 [paratroopers_2/reward_1]
+  23. 空降装甲 [paras_airborne_light_armor] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：破坏分队作战 [paratroopers_1]；密集空投 [paratroopers_2]
+  24. 空降通讯 [paras_combat_1] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：破坏分队作战 [paratroopers_1]；破坏分队作战 [paratroopers_1/reward_4]
+  25. 空降医疗分队 [paras_combat_2] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：密集空投 [paratroopers_2]；密集空投 [paratroopers_2/reward_3]
+  26. 增强导航训练 [paras_bonus_1] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：破坏分队作战 [paratroopers_1/reward_2]；破坏分队作战 [paratroopers_1/reward_3]
+  27. 战略空运部队 [paras_bonus_2] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：密集空投 [paratroopers_2/reward_4]；破坏分队作战 [paratroopers_1]
+  28. 精益求精 [paras_keystone_1] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：破坏分队作战 [paratroopers_1/reward_5]
+  29. 武装力量骨干 [paras_keystone_2] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：密集空投 [paratroopers_2/reward_1]；密集空投 [paratroopers_2/reward_2]；密集空投 [paratroopers_2/reward_5]
+  30. 升级游击队 [special_forces_rangers] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：猎兵传统 [rangers_1]；游骑兵丛林训练 [rangers_2]
+  31. 融入猎兵传统 [rangers_jaegers_training] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：猎兵传统 [rangers_1]
+  32. 游骑兵丛林训练 [rangers_jungle_training] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：游骑兵丛林训练 [rangers_2]
+  33. 森林游击战士 [rangers_guerilla_doctrine] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：猎兵传统 [rangers_1/reward_1]
+  34. 侦察游骑兵地形掌握 [rangers_recon_terrain_training] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：游骑兵丛林训练 [rangers_2/reward_1]
+  35. 火力支援整合 [rangers_fire_support_integration] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：猎兵传统 [rangers_1/reward_3]
+  36. 游骑兵城市战专长 [rangers_urban_combat] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：猎兵传统 [rangers_1/reward_4]
+  37. 精锐游骑兵 [elite_rangers_doctrine] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：猎兵传统 [rangers_1/reward_2]；猎兵传统 [rangers_1/reward_5]
+  38. 轻步兵专业化 [rangers_backbone_doctrine] → 原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+     现行学说方向：扩大特种部队 [special_forces_quantity]；游骑兵丛林训练 [rangers_2/reward_3]；游骑兵丛林训练 [rangers_2/reward_4]；游骑兵丛林训练 [rangers_2/reward_5]
+
+================================================================================================
+魔力科技（85 项）
+================================================================================================
+
+1. 基本魔力发射器
+   自定义 ID：touhou_magic_infantry_weapons
+   自定义来源：common/technologies/touhou_magic.txt:16
+   原版对应：步兵武器 [infantry_weapons]（1918）
+   原版来源：common/technologies/infantry.txt:16
+
+2. 繁彩魔力发射器
+   自定义 ID：touhou_magic_infantry_weapons1
+   自定义来源：common/technologies/touhou_magic.txt:49
+   原版对应：步兵装备 I型 [infantry_weapons1]（1936）
+   原版来源：common/technologies/infantry.txt:53
+
+3. 魔力转换
+   自定义 ID：touhou_magic_infantry_weapons2
+   自定义来源：common/technologies/touhou_magic.txt:81
+   原版对应：改进步兵装备 I [infantry_weapons2]（1938）
+   原版来源：common/technologies/infantry.txt:106
+
+4. 纯色魔力发射器
+   自定义 ID：touhou_magic_improved_infantry_weapons
+   自定义来源：common/technologies/touhou_magic.txt:129
+   原版对应：步兵装备 II型 [improved_infantry_weapons]（1939）
+   原版来源：common/technologies/infantry.txt:172
+
+5. 魔力精炼
+   自定义 ID：touhou_magic_improved_infantry_weapons_2
+   自定义来源：common/technologies/touhou_magic.txt:169
+   原版对应：改进步兵装备 II [improved_infantry_weapons_2]（1940）
+   原版来源：common/technologies/infantry.txt:227
+
+6. 魔力压缩
+   自定义 ID：touhou_magic_infantry_at
+   自定义来源：common/technologies/touhou_magic.txt:227
+   原版对应：步兵反坦克武器 I [infantry_at]（1942）
+   原版来源：common/technologies/infantry.txt:277
+
+7. 魔力集束
+   自定义 ID：touhou_magic_infantry_at2
+   自定义来源：common/technologies/touhou_magic.txt:290
+   原版对应：步兵反坦克武器 II [infantry_at2]（1943）
+   原版来源：common/technologies/infantry.txt:334
+
+8. 纯粹魔力发射器
+   自定义 ID：touhou_magic_advanced_infantry_weapons
+   自定义来源：common/technologies/touhou_magic.txt:347
+   原版对应：步兵装备 III型 [advanced_infantry_weapons]（1942）
+   原版来源：common/technologies/infantry.txt:384
+
+9. 魔力增压
+   自定义 ID：touhou_magic_advanced_infantry_weapons2
+   自定义来源：common/technologies/touhou_magic.txt:384
+   原版对应：改进步兵装备 III [advanced_infantry_weapons2]（1944）
+   原版来源：common/technologies/infantry.txt:437
+
+10. 大气元素
+   自定义 ID：touhou_magic_paratroopers
+   自定义来源：common/technologies/touhou_magic.txt:436
+   原版对应：伞兵 I [paratroopers]（1936）
+   原版来源：common/technologies/infantry.txt:480
+
+11. 高等大气元素
+   自定义 ID：touhou_magic_paratroopers2
+   自定义来源：common/technologies/touhou_magic.txt:477
+   原版对应：伞兵 II [paratroopers2]（1939）
+   原版来源：common/technologies/infantry.txt:567
+
+12. 元素混合-大气
+   自定义 ID：touhou_magic_paratroopers3
+   自定义来源：common/technologies/touhou_magic.txt:506
+   原版对应：伞兵 III [paratroopers3]（1943）
+   原版来源：common/technologies/infantry.txt:616
+
+13. 海洋元素
+   自定义 ID：touhou_magic_marines
+   自定义来源：common/technologies/touhou_magic.txt:531
+   原版对应：海军陆战队 I [marines]（1936）
+   原版来源：common/technologies/infantry.txt:655
+
+14. 高等海洋元素
+   自定义 ID：touhou_magic_marines2
+   自定义来源：common/technologies/touhou_magic.txt:572
+   原版对应：海军陆战队 II [marines2]（1939）
+   原版来源：common/technologies/infantry.txt:710
+
+15. 元素混合-海洋
+   自定义 ID：touhou_magic_marines3
+   自定义来源：common/technologies/touhou_magic.txt:603
+   原版对应：海军陆战队 III [marines3]（1943）
+   原版来源：common/technologies/infantry.txt:748
+
+16. 大地元素
+   自定义 ID：touhou_magic_tech_mountaineers
+   自定义来源：common/technologies/touhou_magic.txt:626
+   原版对应：山地步兵 I [tech_mountaineers]（1936）
+   原版来源：common/technologies/infantry.txt:781
+
+17. 高等大地元素
+   自定义 ID：touhou_magic_tech_mountaineers2
+   自定义来源：common/technologies/touhou_magic.txt:667
+   原版对应：山地步兵 II [tech_mountaineers2]（1939）
+   原版来源：common/technologies/infantry.txt:822
+
+18. 元素混合-大地
+   自定义 ID：touhou_magic_tech_mountaineers3
+   自定义来源：common/technologies/touhou_magic.txt:697
+   原版对应：山地步兵 III [tech_mountaineers3]（1943）
+   原版来源：common/technologies/infantry.txt:851
+
+19. 元素适应
+   自定义 ID：touhou_magic_tech_special_forces
+   自定义来源：common/technologies/touhou_magic.txt:721
+   原版对应：特种部队 [tech_special_forces]（1938）
+   原版来源：common/technologies/infantry.txt:993
+   原版条件：原版有 allow_branch 条件
+
+20. 元素巨大化
+   自定义 ID：touhou_magic_advanced_special_forces
+   自定义来源：common/technologies/touhou_magic.txt:765
+   原版对应：先进特种部队训练 [advanced_special_forces]（1940）
+   原版来源：common/technologies/infantry.txt:1039
+
+21. 元素小型化
+   自定义 ID：touhou_magic_improved_special_forces
+   自定义来源：common/technologies/touhou_magic.txt:808
+   原版对应：加强特种部队计划 [improved_special_forces]（1940）
+   原版来源：common/technologies/infantry.txt:1075
+
+22. 元素术式特化
+   自定义 ID：touhou_magic_extreme_environment_training
+   自定义来源：common/technologies/touhou_magic.txt:841
+   原版对应：极端环境训练 [extreme_environment_training]（1942）
+   原版来源：common/technologies/infantry.txt:1108
+
+23. 元素术式简化
+   自定义 ID：touhou_magic_survival_training
+   自定义来源：common/technologies/touhou_magic.txt:883
+   原版对应：生存训练 [survival_training]（1942）
+   原版来源：common/technologies/infantry.txt:1143
+
+24. 元素魔法专攻
+   自定义 ID：touhou_magic_elite_forces
+   自定义来源：common/technologies/touhou_magic.txt:916
+   原版对应：精锐部队 [elite_forces]（1944）
+   原版来源：common/technologies/infantry.txt:1177
+
+25. 夜明术
+   自定义 ID：touhou_magic_night_vision
+   自定义来源：common/technologies/touhou_magic.txt:945
+   原版对应：夜视仪 I [night_vision]（1943）
+   原版来源：common/technologies/infantry.txt:1488
+
+26. 昏暗视觉
+   自定义 ID：touhou_magic_night_vision2
+   自定义来源：common/technologies/touhou_magic.txt:991
+   原版对应：夜视仪 II [night_vision2]（1946）
+   原版来源：common/technologies/infantry.txt:1533
+
+27. 钢化术
+   自定义 ID：touhou_magic_support_weapons
+   自定义来源：common/technologies/touhou_magic.txt:1027
+   原版对应：支援武器 I [support_weapons]（1918）
+   原版来源：common/technologies/infantry.txt:1568
+
+28. 火焰战袍
+   自定义 ID：touhou_magic_support_weapons2
+   自定义来源：common/technologies/touhou_magic.txt:1093
+   原版对应：支援武器 II [support_weapons2]（1938）
+   原版来源：common/technologies/infantry.txt:1655
+
+29. 法师护盾
+   自定义 ID：touhou_magic_support_weapons3
+   自定义来源：common/technologies/touhou_magic.txt:1166
+   原版对应：支援武器 III [support_weapons3]（1940）
+   原版来源：common/technologies/infantry.txt:1745
+
+30. 不屈意志
+   自定义 ID：touhou_magic_support_weapons4
+   自定义来源：common/technologies/touhou_magic.txt:1239
+   原版对应：支援武器 IV [support_weapons4]（1942）
+   原版来源：common/technologies/infantry.txt:1821
+
+31. 魔力爆破器
+   自定义 ID：touhou_magic_gw_artillery
+   自定义来源：common/technologies/touhou_magic.txt:1308
+   原版对应：牵引式火炮 [gw_artillery]
+   原版来源：common/technologies/artillery.txt:6
+
+32. 能量转换
+   自定义 ID：touhou_magic_interwar_artillery
+   自定义来源：common/technologies/touhou_magic.txt:1354
+   原版对应：战间期型火炮 [interwar_artillery]（1936）
+   原版来源：common/technologies/artillery.txt:88
+
+33. 魔火焰喷射器
+   自定义 ID：touhou_magic_artillery1
+   自定义来源：common/technologies/touhou_magic.txt:1404
+   原版对应：火炮 I型 [artillery1]（1939）
+   原版来源：common/technologies/artillery.txt:163
+
+34. 元素注入
+   自定义 ID：touhou_magic_artillery2
+   自定义来源：common/technologies/touhou_magic.txt:1448
+   原版对应：改进火炮升级 I [artillery2]（1940）
+   原版来源：common/technologies/artillery.txt:231
+
+35. 元素增幅
+   自定义 ID：touhou_magic_artillery3
+   自定义来源：common/technologies/touhou_magic.txt:1498
+   原版对应：改进火炮升级 II [artillery3]（1941）
+   原版来源：common/technologies/artillery.txt:295
+
+36. 地狱火喷射器
+   自定义 ID：touhou_magic_artillery4
+   自定义来源：common/technologies/touhou_magic.txt:1543
+   原版对应：火炮 IV型 [artillery4]（1942）
+   原版来源：common/technologies/artillery.txt:352
+
+37. 塑能魔法专攻
+   自定义 ID：touhou_magic_artillery5
+   自定义来源：common/technologies/touhou_magic.txt:1588
+   原版对应：先进火炮升级 [artillery5]（1943）
+   原版来源：common/technologies/artillery.txt:407
+
+38. 火花穿甲炮
+   自定义 ID：touhou_magic_interwar_antitank
+   自定义来源：common/technologies/touhou_magic.txt:1633
+   原版对应：反坦克炮 [interwar_antitank]（1936）
+   原版来源：common/technologies/artillery.txt:1051
+
+39. 高密度凝聚
+   自定义 ID：touhou_magic_antitank1
+   自定义来源：common/technologies/touhou_magic.txt:1689
+   原版对应：反坦克炮升级 [antitank1]（1939）
+   原版来源：common/technologies/artillery.txt:1163
+
+40. 极限火花穿甲炮
+   自定义 ID：touhou_magic_antitank2
+   自定义来源：common/technologies/touhou_magic.txt:1743
+   原版对应：反坦克炮 II型 [antitank2]（1940）
+   原版来源：common/technologies/artillery.txt:1239
+
+41. 极大化增压
+   自定义 ID：touhou_magic_antitank3
+   自定义来源：common/technologies/touhou_magic.txt:1798
+   原版对应：改进反坦克炮升级 I [antitank3]（1941）
+   原版来源：common/technologies/artillery.txt:1320
+
+42. 导向扩散
+   自定义 ID：touhou_magic_antitank4
+   自定义来源：common/technologies/touhou_magic.txt:1859
+   原版对应：改进反坦克炮升级 II [antitank4]（1942）
+   原版来源：common/technologies/artillery.txt:1411
+
+43. 究极火花穿甲炮
+   自定义 ID：touhou_magic_antitank5
+   自定义来源：common/technologies/touhou_magic.txt:1915
+   原版对应：反坦克炮 V型 [antitank5]（1943）
+   原版来源：common/technologies/artillery.txt:1487
+
+44. 上海级
+   自定义 ID：touhou_magic_basic_light_tank
+   自定义来源：common/technologies/touhou_magic.txt:1965
+   未启用 NSB：轻型坦克 I型 [basic_light_tank]（1934）
+   原版来源：common/technologies/armor.txt:90
+   启用 NSB：基础型轻型坦克 [basic_light_tank_chassis]（1934）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:159
+   设计角色：坦克；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+45. 上海级破甲装
+   自定义 ID：touhou_magic_basic_light_td
+   自定义来源：common/technologies/touhou_magic.txt:2031
+   未启用 NSB：轻型自行反坦克炮 I型 [basic_light_td]（1934）
+   原版来源：common/technologies/armor.txt:177
+   启用 NSB：基础型轻型坦克 [basic_light_tank_chassis]（1934）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:159
+   设计角色：坦克歼击车；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+46. 上海级火炮装
+   自定义 ID：touhou_magic_basic_light_art
+   自定义来源：common/technologies/touhou_magic.txt:2068
+   未启用 NSB：轻型自行火炮 I型 [basic_light_art]（1934）
+   原版来源：common/technologies/armor.txt:237
+   启用 NSB：基础型轻型坦克 [basic_light_tank_chassis]（1934）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:159
+   设计角色：自行火炮；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+47. 上海级弹幕装
+   自定义 ID：touhou_magic_basic_light_spaa
+   自定义来源：common/technologies/touhou_magic.txt:2099
+   未启用 NSB：轻型自行防空炮 I型 [basic_light_spaa]（1934）
+   原版来源：common/technologies/armor.txt:274
+   启用 NSB：基础型轻型坦克 [basic_light_tank_chassis]（1934）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:159
+   设计角色：自行防空；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+48. 上海级改良型
+   自定义 ID：touhou_magic_improved_light_tank
+   自定义来源：common/technologies/touhou_magic.txt:2130
+   未启用 NSB：轻型坦克 II型 [improved_light_tank]（1936）
+   原版来源：common/technologies/armor.txt:311
+   启用 NSB：改进型轻型坦克 [improved_light_tank_chassis]（1936）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:250
+   设计角色：坦克；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+49. 上海级改良型破甲装
+   自定义 ID：touhou_magic_improved_light_td
+   自定义来源：common/technologies/touhou_magic.txt:2201
+   未启用 NSB：轻型自行反坦克炮 II型 [improved_light_td]（1936）
+   原版来源：common/technologies/armor.txt:394
+   启用 NSB：改进型轻型坦克 [improved_light_tank_chassis]（1936）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:250
+   设计角色：坦克歼击车；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+50. 上海级改良型火炮装
+   自定义 ID：touhou_magic_improved_light_art
+   自定义来源：common/technologies/touhou_magic.txt:2233
+   未启用 NSB：轻型自行火炮 II型 [improved_light_art]（1936）
+   原版来源：common/technologies/armor.txt:445
+   启用 NSB：改进型轻型坦克 [improved_light_tank_chassis]（1936）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:250
+   设计角色：自行火炮；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+51. 上海级改良型弹幕装
+   自定义 ID：touhou_magic_improved_light_spaa
+   自定义来源：common/technologies/touhou_magic.txt:2266
+   未启用 NSB：轻型自行防空炮 II型 [improved_light_spaa]（1936）
+   原版来源：common/technologies/armor.txt:481
+   启用 NSB：改进型轻型坦克 [improved_light_tank_chassis]（1936）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:250
+   设计角色：自行防空；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+52. 上海级完全型
+   自定义 ID：touhou_magic_advanced_light_tank
+   自定义来源：common/technologies/touhou_magic.txt:2293
+   未启用 NSB：轻型坦克 III型 [advanced_light_tank]（1941）
+   原版来源：common/technologies/armor.txt:616
+   启用 NSB：先进型轻型坦克 [advanced_light_tank_chassis]（1941）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:505
+   设计角色：坦克；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+53. 上海级完全型破甲装
+   自定义 ID：touhou_magic_advanced_light_td
+   自定义来源：common/technologies/touhou_magic.txt:2341
+   未启用 NSB：轻型自行反坦克炮 III型 [advanced_light_td]（1941）
+   原版来源：common/technologies/armor.txt:668
+   启用 NSB：先进型轻型坦克 [advanced_light_tank_chassis]（1941）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:505
+   设计角色：坦克歼击车；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+54. 上海级完全型火炮装
+   自定义 ID：touhou_magic_advanced_light_art
+   自定义来源：common/technologies/touhou_magic.txt:2360
+   未启用 NSB：轻型自行火炮 III型 [advanced_light_art]（1941）
+   原版来源：common/technologies/armor.txt:707
+   启用 NSB：先进型轻型坦克 [advanced_light_tank_chassis]（1941）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:505
+   设计角色：自行火炮；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+55. 上海级完全型弹幕装
+   自定义 ID：touhou_magic_advanced_light_spaa
+   自定义来源：common/technologies/touhou_magic.txt:2379
+   未启用 NSB：轻型自行防空炮 III型 [advanced_light_spaa]（1941）
+   原版来源：common/technologies/armor.txt:729
+   启用 NSB：先进型轻型坦克 [advanced_light_tank_chassis]（1941）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:505
+   设计角色：自行防空；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+56. 提泰妮娅级
+   自定义 ID：touhou_magic_basic_medium_tank
+   自定义来源：common/technologies/touhou_magic.txt:2397
+   未启用 NSB：中型坦克 I型 [basic_medium_tank]（1939）
+   原版来源：common/technologies/armor.txt:751
+   启用 NSB：基础型中型坦克 [basic_medium_tank_chassis]（1938）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:560
+   设计角色：坦克；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+57. 提泰妮娅级破甲装
+   自定义 ID：touhou_magic_basic_medium_td
+   自定义来源：common/technologies/touhou_magic.txt:2467
+   未启用 NSB：中型自行反坦克炮 I型 [basic_medium_td]（1939）
+   原版来源：common/technologies/armor.txt:827
+   启用 NSB：基础型中型坦克 [basic_medium_tank_chassis]（1938）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:560
+   设计角色：坦克歼击车；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+58. 提泰妮娅级火炮装
+   自定义 ID：touhou_magic_basic_medium_art
+   自定义来源：common/technologies/touhou_magic.txt:2511
+   未启用 NSB：中型自行火炮 I型 [basic_medium_art]（1939）
+   原版来源：common/technologies/armor.txt:894
+   启用 NSB：基础型中型坦克 [basic_medium_tank_chassis]（1938）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:560
+   设计角色：自行火炮；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+59. 提泰妮娅级弹幕装
+   自定义 ID：touhou_magic_basic_medium_spaa
+   自定义来源：common/technologies/touhou_magic.txt:2554
+   未启用 NSB：中型自行防空炮 I型 [basic_medium_spaa]（1939）
+   原版来源：common/technologies/armor.txt:948
+   启用 NSB：基础型中型坦克 [basic_medium_tank_chassis]（1938）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:560
+   设计角色：自行防空；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+60. 提泰妮娅级改良型
+   自定义 ID：touhou_magic_improved_medium_tank
+   自定义来源：common/technologies/touhou_magic.txt:2582
+   未启用 NSB：中型坦克 II型 [improved_medium_tank]（1941）
+   原版来源：common/technologies/armor.txt:987
+   启用 NSB：改进型中型坦克 [improved_medium_tank_chassis]（1940）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:694
+   设计角色：坦克；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+61. 提泰妮娅级改良型破甲装
+   自定义 ID：touhou_magic_improved_medium_td
+   自定义来源：common/technologies/touhou_magic.txt:2646
+   未启用 NSB：中型自行反坦克炮 II型 [improved_medium_td]（1941）
+   原版来源：common/technologies/armor.txt:1066
+   启用 NSB：改进型中型坦克 [improved_medium_tank_chassis]（1940）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:694
+   设计角色：坦克歼击车；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+62. 提泰妮娅级改良型火炮装
+   自定义 ID：touhou_magic_improved_medium_art
+   自定义来源：common/technologies/touhou_magic.txt:2693
+   未启用 NSB：中型自行火炮 II型 [improved_medium_art]（1941）
+   原版来源：common/technologies/armor.txt:1133
+   启用 NSB：改进型中型坦克 [improved_medium_tank_chassis]（1940）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:694
+   设计角色：自行火炮；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+63. 提泰妮娅级改良型弹幕装
+   自定义 ID：touhou_magic_improved_medium_spaa
+   自定义来源：common/technologies/touhou_magic.txt:2739
+   未启用 NSB：中型自行防空炮 II型 [improved_medium_spaa]（1941）
+   原版来源：common/technologies/armor.txt:1182
+   启用 NSB：改进型中型坦克 [improved_medium_tank_chassis]（1940）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:694
+   设计角色：自行防空；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+64. 提泰妮娅级完全型
+   自定义 ID：touhou_magic_advanced_medium_tank
+   自定义来源：common/technologies/touhou_magic.txt:2767
+   未启用 NSB：中型坦克 III型 [advanced_medium_tank]（1943）
+   原版来源：common/technologies/armor.txt:1217
+   启用 NSB：先进型中型坦克 [advanced_medium_tank_chassis]（1943）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:850
+   设计角色：坦克；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+65. 提泰妮娅级完全型破甲装
+   自定义 ID：touhou_magic_advanced_medium_td
+   自定义来源：common/technologies/touhou_magic.txt:2814
+   未启用 NSB：中型自行反坦克炮 III型 [advanced_medium_td]（1943）
+   原版来源：common/technologies/armor.txt:1275
+   启用 NSB：先进型中型坦克 [advanced_medium_tank_chassis]（1943）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:850
+   设计角色：坦克歼击车；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+66. 提泰妮娅级完全型火炮装
+   自定义 ID：touhou_magic_advanced_medium_art
+   自定义来源：common/technologies/touhou_magic.txt:2848
+   未启用 NSB：中型自行火炮 III型 [advanced_medium_art]（1943）
+   原版来源：common/technologies/armor.txt:1341
+   启用 NSB：先进型中型坦克 [advanced_medium_tank_chassis]（1943）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:850
+   设计角色：自行火炮；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+67. 提泰妮娅级完全型弹幕装
+   自定义 ID：touhou_magic_advanced_medium_spaa
+   自定义来源：common/technologies/touhou_magic.txt:2895
+   未启用 NSB：中型自行防空炮 III型 [advanced_medium_spaa]（1943）
+   原版来源：common/technologies/armor.txt:1391
+   启用 NSB：先进型中型坦克 [advanced_medium_tank_chassis]（1943）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:850
+   设计角色：自行防空；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+68. 量产型歌利亚
+   自定义 ID：touhou_magic_main_battle_tank
+   自定义来源：common/technologies/touhou_magic.txt:2923
+   未启用 NSB：现代坦克 [main_battle_tank]（1945）
+   原版来源：common/technologies/armor.txt:1422
+   启用 NSB：现代坦克 [main_battle_tank_chassis]（1945）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:976
+   设计角色：现代坦克；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+69. 量产型歌利亚破甲装
+   自定义 ID：touhou_magic_modern_td
+   自定义来源：common/technologies/touhou_magic.txt:2967
+   未启用 NSB：现代自行反坦克炮 [modern_td]（1945）
+   原版来源：common/technologies/armor.txt:1473
+   启用 NSB：现代坦克 [main_battle_tank_chassis]（1945）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:976
+   设计角色：现代坦克歼击车；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+70. 量产型歌利亚炮击装
+   自定义 ID：touhou_magic_modern_art
+   自定义来源：common/technologies/touhou_magic.txt:3001
+   未启用 NSB：现代自行火炮 [modern_art]（1945）
+   原版来源：common/technologies/armor.txt:1514
+   启用 NSB：现代坦克 [main_battle_tank_chassis]（1945）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:976
+   设计角色：现代自行火炮；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+71. 量产型歌利亚弹幕装
+   自定义 ID：touhou_magic_modern_spaa
+   自定义来源：common/technologies/touhou_magic.txt:3035
+   未启用 NSB：现代自行防空炮 [modern_spaa]（1945）
+   原版来源：common/technologies/armor.txt:1555
+   启用 NSB：现代坦克 [main_battle_tank_chassis]（1945）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:976
+   设计角色：现代自行防空；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+72. 扫把
+   自定义 ID：touhou_magic_early_fighter
+   自定义来源：common/technologies/touhou_magic.txt:3054
+   未启用 BBA：战间期型战斗机 [early_fighter]（1933）
+   原版来源：common/technologies/air_techs.txt:98
+   启用 BBA：战间期小型机身 [iw_small_airframe]（1926）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:105
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+73. 飞行扫把
+   自定义 ID：touhou_magic_fighter1
+   自定义来源：common/technologies/touhou_magic.txt:3089
+   未启用 BBA：战斗机 I型 [fighter1]（1936）
+   原版来源：common/technologies/air_techs.txt:186
+   启用 BBA：基础小型机身 [basic_small_airframe]（1936）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:164
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+74. 附魔扫把
+   自定义 ID：touhou_magic_fighter2
+   自定义来源：common/technologies/touhou_magic.txt:3145
+   未启用 BBA：战斗机 II型 [fighter2]（1940）
+   原版来源：common/technologies/air_techs.txt:296
+   启用 BBA：改进型小型机身 [improved_small_airframe]（1940）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:237
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+75. 魔法扫把
+   自定义 ID：touhou_magic_fighter3
+   自定义来源：common/technologies/touhou_magic.txt:3201
+   未启用 BBA：战斗机 III型 [fighter3]（1944）
+   原版来源：common/technologies/air_techs.txt:429
+   启用 BBA：先进型小型机身 [advanced_small_airframe]（1944）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:319
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+76. 强效魔法扫把
+   自定义 ID：touhou_magic_jet_fighter2
+   自定义来源：common/technologies/touhou_magic.txt:3257
+   未启用 BBA：喷气式战斗机 II型 [jet_fighter2]（1950）
+   原版来源：common/technologies/air_techs.txt:592
+   原版条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+   启用 BBA：现代小型机身 [modern_small_airframe]（1945）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:394
+   设计角色：喷气战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+   BBA 条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+
+77. 爆炸魔法
+   自定义 ID：touhou_magic_early_bomber
+   自定义来源：common/technologies/touhou_magic.txt:3283
+   未启用 BBA：战间期型轰炸机 [early_bomber]（1933）
+   原版来源：common/technologies/air_techs.txt:1295
+   启用 BBA：战间期中型机身 [iw_medium_airframe]（1926）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:473
+   设计角色：战术轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+78. 爆破魔法
+   自定义 ID：touhou_magic_tactical_bomber1
+   自定义来源：common/technologies/touhou_magic.txt:3317
+   未启用 BBA：战术轰炸机 I型 [tactical_bomber1]（1936）
+   原版来源：common/technologies/air_techs.txt:1516
+   启用 BBA：基础中型机身 [basic_medium_airframe]（1936）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:512
+   设计角色：战术轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+79. 爆裂魔法
+   自定义 ID：touhou_magic_tactical_bomber2
+   自定义来源：common/technologies/touhou_magic.txt:3373
+   未启用 BBA：战术轰炸机 II型 [tactical_bomber2]（1940）
+   原版来源：common/technologies/air_techs.txt:1572
+   启用 BBA：改进型中型机身 [improved_medium_airframe]（1940）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:571
+   设计角色：战术轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+80. 极限爆裂魔法
+   自定义 ID：touhou_magic_tactical_bomber3
+   自定义来源：common/technologies/touhou_magic.txt:3428
+   未启用 BBA：战术轰炸机 III型 [tactical_bomber3]（1944）
+   原版来源：common/technologies/air_techs.txt:1644
+   启用 BBA：先进型中型机身 [advanced_medium_airframe]（1944）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:634
+   设计角色：战术轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+81. 究极爆裂魔法
+   自定义 ID：touhou_magic_jet_tactical_bomber2
+   自定义来源：common/technologies/touhou_magic.txt:3476
+   未启用 BBA：喷气式战术轰炸机 II型 [jet_tactical_bomber2]（1950）
+   原版来源：common/technologies/air_techs.txt:1740
+   原版条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+   启用 BBA：现代中型机身 [modern_medium_airframe]（1945）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:691
+   设计角色：喷气战术轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+   BBA 条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+
+82. 大范围爆炸魔法
+   自定义 ID：touhou_magic_strategic_bomber1
+   自定义来源：common/technologies/touhou_magic.txt:3501
+   未启用 BBA：战略轰炸机 I型 [strategic_bomber1]（1936）
+   原版来源：common/technologies/air_techs.txt:1773
+   启用 BBA：基础大型机身 [basic_large_airframe]（1936）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:782
+   设计角色：战略轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+83. 毁灭魔法
+   自定义 ID：touhou_magic_strategic_bomber2
+   自定义来源：common/technologies/touhou_magic.txt:3531
+   未启用 BBA：战略轰炸机 II型 [strategic_bomber2]（1940）
+   原版来源：common/technologies/air_techs.txt:1813
+   启用 BBA：改进型大型机身 [improved_large_airframe]（1940）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:825
+   设计角色：战略轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+84. 极限毁灭魔法
+   自定义 ID：touhou_magic_strategic_bomber3
+   自定义来源：common/technologies/touhou_magic.txt:3561
+   未启用 BBA：战略轰炸机 III型 [strategic_bomber3]（1944）
+   原版来源：common/technologies/air_techs.txt:1881
+   启用 BBA：先进型大型机身 [advanced_large_airframe]（1944）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:886
+   设计角色：战略轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+85. 究极毁灭魔法
+   自定义 ID：touhou_magic_jet_strategic_bomber1
+   自定义来源：common/technologies/touhou_magic.txt:3592
+   未启用 BBA：喷气式战略轰炸机 I型 [jet_strategic_bomber1]（1950）
+   原版来源：common/technologies/air_techs.txt:1923
+   原版条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+   启用 BBA：现代大型机身 [modern_large_airframe]（1945）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:929
+   设计角色：喷气战略轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+   BBA 条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+
+================================================================================================
+灵力科技（63 项）
+================================================================================================
+
+1. 除灵道具
+   自定义 ID：touhou_wakan_infantry_weapons
+   自定义来源：common/technologies/touhou_wakan.txt:15
+   原版对应：步兵武器 [infantry_weapons]（1918）
+   原版来源：common/technologies/infantry.txt:16
+
+2. 附灵道具
+   自定义 ID：touhou_wakan_infantry_weapons1
+   自定义来源：common/technologies/touhou_wakan.txt:48
+   原版对应：步兵装备 I型 [infantry_weapons1]（1936）
+   原版来源：common/technologies/infantry.txt:53
+
+3. 强化附灵
+   自定义 ID：touhou_wakan_infantry_weapons2
+   自定义来源：common/technologies/touhou_wakan.txt:80
+   原版对应：改进步兵装备 I [infantry_weapons2]（1938）
+   原版来源：common/technologies/infantry.txt:106
+
+4. 灵力场
+   自定义 ID：touhou_wakan_improved_infantry_weapons
+   自定义来源：common/technologies/touhou_wakan.txt:133
+   原版对应：步兵装备 II型 [improved_infantry_weapons]（1939）
+   原版来源：common/technologies/infantry.txt:172
+
+5. 灵力束缚
+   自定义 ID：touhou_wakan_improved_infantry_weapons_2
+   自定义来源：common/technologies/touhou_wakan.txt:173
+   原版对应：改进步兵装备 II [improved_infantry_weapons_2]（1940）
+   原版来源：common/technologies/infantry.txt:227
+
+6. 封魔针
+   自定义 ID：touhou_wakan_infantry_at
+   自定义来源：common/technologies/touhou_wakan.txt:237
+   原版对应：步兵反坦克武器 I [infantry_at]（1942）
+   原版来源：common/technologies/infantry.txt:277
+
+7. 强化封魔针
+   自定义 ID：touhou_wakan_infantry_at2
+   自定义来源：common/technologies/touhou_wakan.txt:308
+   原版对应：步兵反坦克武器 II [infantry_at2]（1943）
+   原版来源：common/technologies/infantry.txt:334
+
+8. 灵力结界
+   自定义 ID：touhou_wakan_advanced_infantry_weapons
+   自定义来源：common/technologies/touhou_wakan.txt:374
+   原版对应：步兵装备 III型 [advanced_infantry_weapons]（1942）
+   原版来源：common/technologies/infantry.txt:384
+
+9. 破魔
+   自定义 ID：touhou_wakan_advanced_infantry_weapons2
+   自定义来源：common/technologies/touhou_wakan.txt:411
+   原版对应：改进步兵装备 III [advanced_infantry_weapons2]（1944）
+   原版来源：common/technologies/infantry.txt:437
+
+10. 风精灵
+   自定义 ID：touhou_wakan_paratroopers
+   自定义来源：common/technologies/touhou_wakan.txt:480
+   原版对应：伞兵 I [paratroopers]（1936）
+   原版来源：common/technologies/infantry.txt:480
+
+11. 高等风精灵
+   自定义 ID：touhou_wakan_paratroopers2
+   自定义来源：common/technologies/touhou_wakan.txt:521
+   原版对应：伞兵 II [paratroopers2]（1939）
+   原版来源：common/technologies/infantry.txt:567
+
+12. 精灵信仰-风
+   自定义 ID：touhou_wakan_paratroopers3
+   自定义来源：common/technologies/touhou_wakan.txt:550
+   原版对应：伞兵 III [paratroopers3]（1943）
+   原版来源：common/technologies/infantry.txt:616
+
+13. 水精灵
+   自定义 ID：touhou_wakan_marines
+   自定义来源：common/technologies/touhou_wakan.txt:575
+   原版对应：海军陆战队 I [marines]（1936）
+   原版来源：common/technologies/infantry.txt:655
+
+14. 高等水精灵
+   自定义 ID：touhou_wakan_marines2
+   自定义来源：common/technologies/touhou_wakan.txt:616
+   原版对应：海军陆战队 II [marines2]（1939）
+   原版来源：common/technologies/infantry.txt:710
+
+15. 精灵信仰-水
+   自定义 ID：touhou_wakan_marines3
+   自定义来源：common/technologies/touhou_wakan.txt:647
+   原版对应：海军陆战队 III [marines3]（1943）
+   原版来源：common/technologies/infantry.txt:748
+
+16. 土精灵
+   自定义 ID：touhou_wakan_tech_mountaineers
+   自定义来源：common/technologies/touhou_wakan.txt:670
+   原版对应：山地步兵 I [tech_mountaineers]（1936）
+   原版来源：common/technologies/infantry.txt:781
+
+17. 高等土精灵
+   自定义 ID：touhou_wakan_tech_mountaineers2
+   自定义来源：common/technologies/touhou_wakan.txt:711
+   原版对应：山地步兵 II [tech_mountaineers2]（1939）
+   原版来源：common/technologies/infantry.txt:822
+
+18. 精灵信仰-土
+   自定义 ID：touhou_wakan_tech_mountaineers3
+   自定义来源：common/technologies/touhou_wakan.txt:741
+   原版对应：山地步兵 III [tech_mountaineers3]（1943）
+   原版来源：common/technologies/infantry.txt:851
+
+19. 精灵适应
+   自定义 ID：touhou_wakan_tech_special_forces
+   自定义来源：common/technologies/touhou_wakan.txt:764
+   原版对应：特种部队 [tech_special_forces]（1938）
+   原版来源：common/technologies/infantry.txt:993
+   原版条件：原版有 allow_branch 条件
+
+20. 大型精灵
+   自定义 ID：touhou_wakan_advanced_special_forces
+   自定义来源：common/technologies/touhou_wakan.txt:816
+   原版对应：先进特种部队训练 [advanced_special_forces]（1940）
+   原版来源：common/technologies/infantry.txt:1039
+
+21. 小型精灵
+   自定义 ID：touhou_wakan_improved_special_forces
+   自定义来源：common/technologies/touhou_wakan.txt:860
+   原版对应：加强特种部队计划 [improved_special_forces]（1940）
+   原版来源：common/technologies/infantry.txt:1075
+
+22. 精灵特化
+   自定义 ID：touhou_wakan_extreme_environment_training
+   自定义来源：common/technologies/touhou_wakan.txt:893
+   原版对应：极端环境训练 [extreme_environment_training]（1942）
+   原版来源：common/technologies/infantry.txt:1108
+
+23. 精灵泛化
+   自定义 ID：touhou_wakan_survival_training
+   自定义来源：common/technologies/touhou_wakan.txt:936
+   原版对应：生存训练 [survival_training]（1942）
+   原版来源：common/technologies/infantry.txt:1143
+
+24. 精灵崇拜
+   自定义 ID：touhou_wakan_elite_forces
+   自定义来源：common/technologies/touhou_wakan.txt:978
+   原版对应：精锐部队 [elite_forces]（1944）
+   原版来源：common/technologies/infantry.txt:1177
+
+25. 暗精灵
+   自定义 ID：touhou_wakan_night_vision
+   自定义来源：common/technologies/touhou_wakan.txt:1007
+   原版对应：夜视仪 I [night_vision]（1943）
+   原版来源：common/technologies/infantry.txt:1488
+
+26. 夜女神的祝福
+   自定义 ID：touhou_wakan_night_vision2
+   自定义来源：common/technologies/touhou_wakan.txt:1053
+   原版对应：夜视仪 II [night_vision2]（1946）
+   原版来源：common/technologies/infantry.txt:1533
+
+27. 灵气
+   自定义 ID：touhou_wakan_support_weapons
+   自定义来源：common/technologies/touhou_wakan.txt:1089
+   原版对应：支援武器 I [support_weapons]（1918）
+   原版来源：common/technologies/infantry.txt:1568
+
+28. 强化灵气
+   自定义 ID：touhou_wakan_support_weapons2
+   自定义来源：common/technologies/touhou_wakan.txt:1173
+   原版对应：支援武器 II [support_weapons2]（1938）
+   原版来源：common/technologies/infantry.txt:1655
+
+29. 能量吸收
+   自定义 ID：touhou_wakan_support_weapons3
+   自定义来源：common/technologies/touhou_wakan.txt:1264
+   原版对应：支援武器 III [support_weapons3]（1940）
+   原版来源：common/technologies/infantry.txt:1745
+
+30. 灵气转化
+   自定义 ID：touhou_wakan_support_weapons4
+   自定义来源：common/technologies/touhou_wakan.txt:1354
+   原版对应：支援武器 IV [support_weapons4]（1942）
+   原版来源：common/technologies/infantry.txt:1821
+
+31. 灵场
+   自定义 ID：touhou_wakan_gw_artillery
+   自定义来源：common/technologies/touhou_wakan.txt:1440
+   原版对应：牵引式火炮 [gw_artillery]
+   原版来源：common/technologies/artillery.txt:6
+
+32. 灵场震
+   自定义 ID：touhou_wakan_interwar_artillery
+   自定义来源：common/technologies/touhou_wakan.txt:1488
+   原版对应：战间期型火炮 [interwar_artillery]（1936）
+   原版来源：common/technologies/artillery.txt:88
+
+33. 灵力爆破
+   自定义 ID：touhou_wakan_artillery1
+   自定义来源：common/technologies/touhou_wakan.txt:1538
+   原版对应：火炮 I型 [artillery1]（1939）
+   原版来源：common/technologies/artillery.txt:163
+
+34. 灵力诱导
+   自定义 ID：touhou_wakan_artillery2
+   自定义来源：common/technologies/touhou_wakan.txt:1582
+   原版对应：改进火炮升级 I [artillery2]（1940）
+   原版来源：common/technologies/artillery.txt:231
+
+35. 灵力增压
+   自定义 ID：touhou_wakan_artillery3
+   自定义来源：common/technologies/touhou_wakan.txt:1632
+   原版对应：改进火炮升级 II [artillery3]（1941）
+   原版来源：common/technologies/artillery.txt:295
+
+36. 空间震
+   自定义 ID：touhou_wakan_artillery4
+   自定义来源：common/technologies/touhou_wakan.txt:1677
+   原版对应：火炮 IV型 [artillery4]（1942）
+   原版来源：common/technologies/artillery.txt:352
+
+37. 瞬发现象
+   自定义 ID：touhou_wakan_artillery5
+   自定义来源：common/technologies/touhou_wakan.txt:1722
+   原版对应：先进火炮升级 [artillery5]（1943）
+   原版来源：common/technologies/artillery.txt:407
+
+38. 天网
+   自定义 ID：touhou_wakan_interwar_antiair
+   自定义来源：common/technologies/touhou_wakan.txt:1767
+   原版对应：防空炮 [interwar_antiair]（1936）
+   原版来源：common/technologies/artillery.txt:657
+
+39. 多层次天网
+   自定义 ID：touhou_wakan_antiair1
+   自定义来源：common/technologies/touhou_wakan.txt:1824
+   原版对应：防空炮升级 [antiair1]（1939）
+   原版来源：common/technologies/artillery.txt:738
+
+40. 天网阵
+   自定义 ID：touhou_wakan_antiair2
+   自定义来源：common/technologies/touhou_wakan.txt:1873
+   原版对应：防空炮 II型 [antiair2]（1940）
+   原版来源：common/technologies/artillery.txt:803
+
+41. 天网雷
+   自定义 ID：touhou_wakan_antiair3
+   自定义来源：common/technologies/touhou_wakan.txt:1920
+   原版对应：改进防空炮升级 I [antiair3]（1941）
+   原版来源：common/technologies/artillery.txt:864
+
+42. 主动式天网雷
+   自定义 ID：touhou_wakan_antiair4
+   自定义来源：common/technologies/touhou_wakan.txt:1974
+   原版对应：改进防空炮升级 II [antiair4]（1942）
+   原版来源：common/technologies/artillery.txt:933
+
+43. 天网结界
+   自定义 ID：touhou_wakan_antiair5
+   自定义来源：common/technologies/touhou_wakan.txt:2028
+   原版对应：防空炮 V型 [antiair5]（1943）
+   原版来源：common/technologies/artillery.txt:999
+
+44. 高速灵装
+   自定义 ID：touhou_wakan_motorised_infantry
+   自定义来源：common/technologies/touhou_wakan.txt:2069
+   原版对应：摩托化步兵 [motorised_infantry]（1936）
+   原版来源：common/technologies/infantry.txt:1962
+
+45. 火风暴灵装
+   自定义 ID：touhou_wakan_motorized_rocket_unit
+   自定义来源：common/technologies/touhou_wakan.txt:2136
+   原版对应：自行火箭炮 [motorized_rocket_unit]（1939）
+   原版来源：common/technologies/infantry.txt:2046
+
+46. 灵装机
+   自定义 ID：touhou_wakan_mechanised_infantry
+   自定义来源：common/technologies/touhou_wakan.txt:2163
+   原版对应：机械化装备 I型 [mechanised_infantry]（1940）
+   原版来源：common/technologies/infantry.txt:2328
+
+47. 泛用型灵装机
+   自定义 ID：touhou_wakan_amphibious_mechanized_infantry
+   自定义来源：common/technologies/touhou_wakan.txt:2212
+   原版对应：两栖牵引机 [amphibious_mechanized_infantry]（1941）
+   原版来源：common/technologies/infantry.txt:2425
+   原版条件：原版有 allow_branch 条件
+
+48. 强化泛用型灵装机
+   自定义 ID：touhou_wakan_amphibious_mechanized_infantry_2
+   自定义来源：common/technologies/touhou_wakan.txt:2255
+   原版对应：改进型两栖突击车 [amphibious_mechanized_infantry_2]（1943）
+   原版来源：common/technologies/infantry.txt:2469
+
+49. 强化灵装机
+   自定义 ID：touhou_wakan_mechanised_infantry2
+   自定义来源：common/technologies/touhou_wakan.txt:2281
+   原版对应：机械化装备 II型 [mechanised_infantry2]（1942）
+   原版来源：common/technologies/infantry.txt:2497
+
+50. 不朽灵装机
+   自定义 ID：touhou_wakan_mechanised_infantry3
+   自定义来源：common/technologies/touhou_wakan.txt:2311
+   原版对应：机械化装备 III型 [mechanised_infantry3]（1944）
+   原版来源：common/technologies/infantry.txt:2537
+
+51. 起风
+   自定义 ID：touhou_wakan_early_fighter
+   自定义来源：common/technologies/touhou_wakan.txt:2344
+   未启用 BBA：战间期型战斗机 [early_fighter]（1933）
+   原版来源：common/technologies/air_techs.txt:98
+   启用 BBA：战间期小型机身 [iw_small_airframe]（1926）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:105
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+52. 强风
+   自定义 ID：touhou_wakan_fighter1
+   自定义来源：common/technologies/touhou_wakan.txt:2383
+   未启用 BBA：战斗机 I型 [fighter1]（1936）
+   原版来源：common/technologies/air_techs.txt:186
+   启用 BBA：基础小型机身 [basic_small_airframe]（1936）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:164
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+53. 狂风
+   自定义 ID：touhou_wakan_fighter2
+   自定义来源：common/technologies/touhou_wakan.txt:2439
+   未启用 BBA：战斗机 II型 [fighter2]（1940）
+   原版来源：common/technologies/air_techs.txt:296
+   启用 BBA：改进型小型机身 [improved_small_airframe]（1940）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:237
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+54. 飓风
+   自定义 ID：touhou_wakan_fighter3
+   自定义来源：common/technologies/touhou_wakan.txt:2495
+   未启用 BBA：战斗机 III型 [fighter3]（1944）
+   原版来源：common/technologies/air_techs.txt:429
+   启用 BBA：先进型小型机身 [advanced_small_airframe]（1944）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:319
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+55. 天龙卷
+   自定义 ID：touhou_wakan_jet_fighter2
+   自定义来源：common/technologies/touhou_wakan.txt:2551
+   未启用 BBA：喷气式战斗机 II型 [jet_fighter2]（1950）
+   原版来源：common/technologies/air_techs.txt:592
+   原版条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+   启用 BBA：现代小型机身 [modern_small_airframe]（1945）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:394
+   设计角色：喷气战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+   BBA 条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+
+56. 惊雷
+   自定义 ID：touhou_wakan_CAS1
+   自定义来源：common/technologies/touhou_wakan.txt:2576
+   未启用 BBA：近距支援机 I型 [CAS1]（1936）
+   原版来源：common/technologies/air_techs.txt:656
+   启用 BBA：基础小型机身 [basic_small_airframe]（1936）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:164
+   设计角色：近距支援机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+57. 狂雷
+   自定义 ID：touhou_wakan_CAS2
+   自定义来源：common/technologies/touhou_wakan.txt:2624
+   未启用 BBA：近距支援机 II型 [CAS2]（1940）
+   原版来源：common/technologies/air_techs.txt:759
+   启用 BBA：改进型小型机身 [improved_small_airframe]（1940）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:237
+   设计角色：近距支援机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+58. 万雷
+   自定义 ID：touhou_wakan_CAS3
+   自定义来源：common/technologies/touhou_wakan.txt:2681
+   未启用 BBA：近距支援机 III型 [CAS3]（1944）
+   原版来源：common/technologies/air_techs.txt:872
+   启用 BBA：先进型小型机身 [advanced_small_airframe]（1944）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:319
+   设计角色：近距支援机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+59. 天火
+   自定义 ID：touhou_wakan_early_bomber
+   自定义来源：common/technologies/touhou_wakan.txt:2730
+   未启用 BBA：战间期型轰炸机 [early_bomber]（1933）
+   原版来源：common/technologies/air_techs.txt:1295
+   启用 BBA：战间期中型机身 [iw_medium_airframe]（1926）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:473
+   设计角色：战术轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+60. 天火击
+   自定义 ID：touhou_wakan_tactical_bomber1
+   自定义来源：common/technologies/touhou_wakan.txt:2760
+   未启用 BBA：战术轰炸机 I型 [tactical_bomber1]（1936）
+   原版来源：common/technologies/air_techs.txt:1516
+   启用 BBA：基础中型机身 [basic_medium_airframe]（1936）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:512
+   设计角色：战术轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+61. 天火坠
+   自定义 ID：touhou_wakan_tactical_bomber2
+   自定义来源：common/technologies/touhou_wakan.txt:2816
+   未启用 BBA：战术轰炸机 II型 [tactical_bomber2]（1940）
+   原版来源：common/technologies/air_techs.txt:1572
+   启用 BBA：改进型中型机身 [improved_medium_airframe]（1940）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:571
+   设计角色：战术轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+62. 天火雨
+   自定义 ID：touhou_wakan_tactical_bomber3
+   自定义来源：common/technologies/touhou_wakan.txt:2871
+   未启用 BBA：战术轰炸机 III型 [tactical_bomber3]（1944）
+   原版来源：common/technologies/air_techs.txt:1644
+   启用 BBA：先进型中型机身 [advanced_medium_airframe]（1944）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:634
+   设计角色：战术轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+63. 天地异变
+   自定义 ID：touhou_wakan_jet_tactical_bomber2
+   自定义来源：common/technologies/touhou_wakan.txt:2919
+   未启用 BBA：喷气式战术轰炸机 II型 [jet_tactical_bomber2]（1950）
+   原版来源：common/technologies/air_techs.txt:1740
+   原版条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+   启用 BBA：现代中型机身 [modern_medium_airframe]（1945）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:691
+   设计角色：喷气战术轰炸机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+   BBA 条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+
+================================================================================================
+妖力科技（69 项）
+================================================================================================
+
+1. 妖怪
+   自定义 ID：touhou_demonforce_infantry_weapons
+   自定义来源：common/technologies/touhou_demonforce.txt:15
+   原版对应：步兵武器 [infantry_weapons]（1918）
+   原版来源：common/technologies/infantry.txt:16
+
+2. 妖魔
+   自定义 ID：touhou_demonforce_infantry_weapons1
+   自定义来源：common/technologies/touhou_demonforce.txt:48
+   原版对应：步兵装备 I型 [infantry_weapons1]（1936）
+   原版来源：common/technologies/infantry.txt:53
+
+3. 幻化
+   自定义 ID：touhou_demonforce_infantry_weapons2
+   自定义来源：common/technologies/touhou_demonforce.txt:80
+   原版对应：改进步兵装备 I [infantry_weapons2]（1938）
+   原版来源：common/technologies/infantry.txt:106
+
+4. 幻魔
+   自定义 ID：touhou_demonforce_improved_infantry_weapons
+   自定义来源：common/technologies/touhou_demonforce.txt:137
+   原版对应：步兵装备 II型 [improved_infantry_weapons]（1939）
+   原版来源：common/technologies/infantry.txt:172
+
+5. 升格
+   自定义 ID：touhou_demonforce_improved_infantry_weapons_2
+   自定义来源：common/technologies/touhou_demonforce.txt:177
+   原版对应：改进步兵装备 II [improved_infantry_weapons_2]（1940）
+   原版来源：common/technologies/infantry.txt:227
+
+6. 穿刺
+   自定义 ID：touhou_demonforce_infantry_at
+   自定义来源：common/technologies/touhou_demonforce.txt:244
+   原版对应：步兵反坦克武器 I [infantry_at]（1942）
+   原版来源：common/technologies/infantry.txt:277
+
+7. 钻刃
+   自定义 ID：touhou_demonforce_infantry_at2
+   自定义来源：common/technologies/touhou_demonforce.txt:320
+   原版对应：步兵反坦克武器 II [infantry_at2]（1943）
+   原版来源：common/technologies/infantry.txt:334
+
+8. 哈努曼
+   自定义 ID：touhou_demonforce_advanced_infantry_weapons
+   自定义来源：common/technologies/touhou_demonforce.txt:391
+   原版对应：步兵装备 III型 [advanced_infantry_weapons]（1942）
+   原版来源：common/technologies/infantry.txt:384
+
+9. 神化
+   自定义 ID：touhou_demonforce_advanced_infantry_weapons2
+   自定义来源：common/technologies/touhou_demonforce.txt:428
+   原版对应：改进步兵装备 III [advanced_infantry_weapons2]（1944）
+   原版来源：common/technologies/infantry.txt:437
+
+10. 风生
+   自定义 ID：touhou_demonforce_paratroopers
+   自定义来源：common/technologies/touhou_demonforce.txt:489
+   原版对应：伞兵 I [paratroopers]（1936）
+   原版来源：common/technologies/infantry.txt:480
+
+11. 风魔
+   自定义 ID：touhou_demonforce_paratroopers2
+   自定义来源：common/technologies/touhou_demonforce.txt:530
+   原版对应：伞兵 II [paratroopers2]（1939）
+   原版来源：common/technologies/infantry.txt:567
+
+12. 加斯伯禄
+   自定义 ID：touhou_demonforce_paratroopers3
+   自定义来源：common/technologies/touhou_demonforce.txt:563
+   原版对应：伞兵 III [paratroopers3]（1943）
+   原版来源：common/technologies/infantry.txt:616
+
+13. 水生
+   自定义 ID：touhou_demonforce_marines
+   自定义来源：common/technologies/touhou_demonforce.txt:591
+   原版对应：海军陆战队 I [marines]（1936）
+   原版来源：common/technologies/infantry.txt:655
+
+14. 水魔
+   自定义 ID：touhou_demonforce_marines2
+   自定义来源：common/technologies/touhou_demonforce.txt:631
+   原版对应：海军陆战队 II [marines2]（1939）
+   原版来源：common/technologies/infantry.txt:710
+
+15. 利维坦
+   自定义 ID：touhou_demonforce_marines3
+   自定义来源：common/technologies/touhou_demonforce.txt:669
+   原版对应：海军陆战队 III [marines3]（1943）
+   原版来源：common/technologies/infantry.txt:748
+
+16. 土生
+   自定义 ID：touhou_demonforce_tech_mountaineers
+   自定义来源：common/technologies/touhou_demonforce.txt:698
+   原版对应：山地步兵 I [tech_mountaineers]（1936）
+   原版来源：common/technologies/infantry.txt:781
+
+17. 土魔
+   自定义 ID：touhou_demonforce_tech_mountaineers2
+   自定义来源：common/technologies/touhou_demonforce.txt:739
+   原版对应：山地步兵 II [tech_mountaineers2]（1939）
+   原版来源：common/technologies/infantry.txt:822
+
+18. 野锤
+   自定义 ID：touhou_demonforce_tech_mountaineers3
+   自定义来源：common/technologies/touhou_demonforce.txt:777
+   原版对应：山地步兵 III [tech_mountaineers3]（1943）
+   原版来源：common/technologies/infantry.txt:851
+
+19. 土生土长
+   自定义 ID：touhou_demonforce_tech_special_forces
+   自定义来源：common/technologies/touhou_demonforce.txt:806
+   原版对应：特种部队 [tech_special_forces]（1938）
+   原版来源：common/technologies/infantry.txt:993
+   原版条件：原版有 allow_branch 条件
+
+20. 强化繁殖
+   自定义 ID：touhou_demonforce_advanced_special_forces
+   自定义来源：common/technologies/touhou_demonforce.txt:857
+   原版对应：先进特种部队训练 [advanced_special_forces]（1940）
+   原版来源：common/technologies/infantry.txt:1039
+
+21. 快速繁殖
+   自定义 ID：touhou_demonforce_improved_special_forces
+   自定义来源：common/technologies/touhou_demonforce.txt:909
+   原版对应：加强特种部队计划 [improved_special_forces]（1940）
+   原版来源：common/technologies/infantry.txt:1075
+
+22. 特异进化
+   自定义 ID：touhou_demonforce_extreme_environment_training
+   自定义来源：common/technologies/touhou_demonforce.txt:942
+   原版对应：极端环境训练 [extreme_environment_training]（1942）
+   原版来源：common/technologies/infantry.txt:1108
+
+23. 泛型进化
+   自定义 ID：touhou_demonforce_survival_training
+   自定义来源：common/technologies/touhou_demonforce.txt:992
+   原版对应：生存训练 [survival_training]（1942）
+   原版来源：common/technologies/infantry.txt:1143
+
+24. 龙蟠虎踞
+   自定义 ID：touhou_demonforce_elite_forces
+   自定义来源：common/technologies/touhou_demonforce.txt:1041
+   原版对应：精锐部队 [elite_forces]（1944）
+   原版来源：common/technologies/infantry.txt:1177
+
+25. 夜魔
+   自定义 ID：touhou_demonforce_night_vision
+   自定义来源：common/technologies/touhou_demonforce.txt:1068
+   原版对应：夜视仪 I [night_vision]（1943）
+   原版来源：common/technologies/infantry.txt:1488
+
+26. 血族
+   自定义 ID：touhou_demonforce_night_vision2
+   自定义来源：common/technologies/touhou_demonforce.txt:1113
+   原版对应：夜视仪 II [night_vision2]（1946）
+   原版来源：common/technologies/infantry.txt:1533
+
+27. 硬皮
+   自定义 ID：touhou_demonforce_support_weapons
+   自定义来源：common/technologies/touhou_demonforce.txt:1148
+   原版对应：支援武器 I [support_weapons]（1918）
+   原版来源：common/technologies/infantry.txt:1568
+
+28. 钢筋
+   自定义 ID：touhou_demonforce_support_weapons2
+   自定义来源：common/technologies/touhou_demonforce.txt:1227
+   原版对应：支援武器 II [support_weapons2]（1938）
+   原版来源：common/technologies/infantry.txt:1655
+
+29. 铁骨
+   自定义 ID：touhou_demonforce_support_weapons3
+   自定义来源：common/technologies/touhou_demonforce.txt:1312
+   原版对应：支援武器 III [support_weapons3]（1940）
+   原版来源：common/technologies/infantry.txt:1745
+
+30. 魔甲
+   自定义 ID：touhou_demonforce_support_weapons4
+   自定义来源：common/technologies/touhou_demonforce.txt:1397
+   原版对应：支援武器 IV [support_weapons4]（1942）
+   原版来源：common/technologies/infantry.txt:1821
+
+31. 恶鬼
+   自定义 ID：touhou_demonforce_interwar_antiair
+   自定义来源：common/technologies/touhou_demonforce.txt:1477
+   原版对应：防空炮 [interwar_antiair]（1936）
+   原版来源：common/technologies/artillery.txt:657
+
+32. 魔化
+   自定义 ID：touhou_demonforce_antiair1
+   自定义来源：common/technologies/touhou_demonforce.txt:1542
+   原版对应：防空炮升级 [antiair1]（1939）
+   原版来源：common/technologies/artillery.txt:738
+
+33. 恶魔
+   自定义 ID：touhou_demonforce_antiair2
+   自定义来源：common/technologies/touhou_demonforce.txt:1590
+   原版对应：防空炮 II型 [antiair2]（1940）
+   原版来源：common/technologies/artillery.txt:803
+
+34. 化形
+   自定义 ID：touhou_demonforce_antiair3
+   自定义来源：common/technologies/touhou_demonforce.txt:1637
+   原版对应：改进防空炮升级 I [antiair3]（1941）
+   原版来源：common/technologies/artillery.txt:864
+
+35. 驱命
+   自定义 ID：touhou_demonforce_antiair4
+   自定义来源：common/technologies/touhou_demonforce.txt:1685
+   原版对应：改进防空炮升级 II [antiair4]（1942）
+   原版来源：common/technologies/artillery.txt:933
+
+36. 单卡拉比
+   自定义 ID：touhou_demonforce_antiair5
+   自定义来源：common/technologies/touhou_demonforce.txt:1733
+   原版对应：防空炮 V型 [antiair5]（1943）
+   原版来源：common/technologies/artillery.txt:999
+
+37. 走兽
+   自定义 ID：touhou_demonforce_interwar_antitank
+   自定义来源：common/technologies/touhou_demonforce.txt:1775
+   原版对应：反坦克炮 [interwar_antitank]（1936）
+   原版来源：common/technologies/artillery.txt:1051
+
+38. 赐福
+   自定义 ID：touhou_demonforce_antitank1
+   自定义来源：common/technologies/touhou_demonforce.txt:1831
+   原版对应：反坦克炮升级 [antitank1]（1939）
+   原版来源：common/technologies/artillery.txt:1163
+
+39. 神兽
+   自定义 ID：touhou_demonforce_antitank2
+   自定义来源：common/technologies/touhou_demonforce.txt:1890
+   原版对应：反坦克炮 II型 [antitank2]（1940）
+   原版来源：common/technologies/artillery.txt:1239
+
+40. 巨化
+   自定义 ID：touhou_demonforce_antitank3
+   自定义来源：common/technologies/touhou_demonforce.txt:1954
+   原版对应：改进反坦克炮升级 I [antitank3]（1941）
+   原版来源：common/technologies/artillery.txt:1320
+
+41. 守护
+   自定义 ID：touhou_demonforce_antitank4
+   自定义来源：common/technologies/touhou_demonforce.txt:2019
+   原版对应：改进反坦克炮升级 II [antitank4]（1942）
+   原版来源：common/technologies/artillery.txt:1411
+
+42. 巴隆
+   自定义 ID：touhou_demonforce_antitank5
+   自定义来源：common/technologies/touhou_demonforce.txt:2079
+   原版对应：反坦克炮 V型 [antitank5]（1943）
+   原版来源：common/technologies/artillery.txt:1487
+
+43. 妖兽
+   自定义 ID：touhou_demonforce_basic_heavy_tank
+   自定义来源：common/technologies/touhou_demonforce.txt:2129
+   未启用 NSB：重型坦克 I型 [basic_heavy_tank]（1934）
+   原版来源：common/technologies/armor.txt:1581
+   启用 NSB：基础型重型坦克 [basic_heavy_tank_chassis]（1934）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1032
+   设计角色：坦克；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+44. 破坏者
+   自定义 ID：touhou_demonforce_basic_heavy_td
+   自定义来源：common/technologies/touhou_demonforce.txt:2207
+   未启用 NSB：重型自行反坦克炮 I型 [basic_heavy_td]（1934）
+   原版来源：common/technologies/armor.txt:1684
+   启用 NSB：基础型重型坦克 [basic_heavy_tank_chassis]（1934）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1032
+   设计角色：坦克歼击车；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+45. 飞龙
+   自定义 ID：touhou_demonforce_basic_heavy_art
+   自定义来源：common/technologies/touhou_demonforce.txt:2235
+   未启用 NSB：重型自行火炮 I型 [basic_heavy_art]（1934）
+   原版来源：common/technologies/armor.txt:1719
+   启用 NSB：基础型重型坦克 [basic_heavy_tank_chassis]（1934）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1032
+   设计角色：自行火炮；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+46. 惊雀
+   自定义 ID：touhou_demonforce_basic_heavy_spaa
+   自定义来源：common/technologies/touhou_demonforce.txt:2264
+   未启用 NSB：重型自行防空炮 I型 [basic_heavy_spaa]（1934）
+   原版来源：common/technologies/armor.txt:1755
+   启用 NSB：基础型重型坦克 [basic_heavy_tank_chassis]（1934）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1032
+   设计角色：自行防空；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+47. 魔兽
+   自定义 ID：touhou_demonforce_improved_heavy_tank
+   自定义来源：common/technologies/touhou_demonforce.txt:2292
+   未启用 NSB：重型坦克 II型 [improved_heavy_tank]（1941）
+   原版来源：common/technologies/armor.txt:1789
+   启用 NSB：改进型重型坦克 [improved_heavy_tank_chassis]（1940）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1125
+   设计角色：坦克；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+48. 毁灭王
+   自定义 ID：touhou_demonforce_improved_heavy_td
+   自定义来源：common/technologies/touhou_demonforce.txt:2359
+   未启用 NSB：重型自行反坦克炮 II型 [improved_heavy_td]（1941）
+   原版来源：common/technologies/armor.txt:1866
+   启用 NSB：改进型重型坦克 [improved_heavy_tank_chassis]（1940）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1125
+   设计角色：坦克歼击车；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+49. 邪龙
+   自定义 ID：touhou_demonforce_improved_heavy_art
+   自定义来源：common/technologies/touhou_demonforce.txt:2387
+   未启用 NSB：重型自行火炮 II型 [improved_heavy_art]（1941）
+   原版来源：common/technologies/armor.txt:1897
+   启用 NSB：改进型重型坦克 [improved_heavy_tank_chassis]（1940）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1125
+   设计角色：自行火炮；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+50. 群鸟
+   自定义 ID：touhou_demonforce_improved_heavy_spaa
+   自定义来源：common/technologies/touhou_demonforce.txt:2416
+   未启用 NSB：重型自行防空炮 II型 [improved_heavy_spaa]（1941）
+   原版来源：common/technologies/armor.txt:1929
+   启用 NSB：改进型重型坦克 [improved_heavy_tank_chassis]（1940）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1125
+   设计角色：自行防空；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+51. 阿巴东
+   自定义 ID：touhou_demonforce_advanced_heavy_tank
+   自定义来源：common/technologies/touhou_demonforce.txt:2444
+   未启用 NSB：重型坦克 III型 [advanced_heavy_tank]（1943）
+   原版来源：common/technologies/armor.txt:1960
+   启用 NSB：先进型重型坦克 [advanced_heavy_tank_chassis]（1943）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1210
+   设计角色：坦克；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+52. 须佐之男
+   自定义 ID：touhou_demonforce_advanced_heavy_td
+   自定义来源：common/technologies/touhou_demonforce.txt:2490
+   未启用 NSB：重型自行反坦克炮 III型 [advanced_heavy_td]（1943）
+   原版来源：common/technologies/armor.txt:2022
+   启用 NSB：先进型重型坦克 [advanced_heavy_tank_chassis]（1943）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1210
+   设计角色：坦克歼击车；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+53. 弗栗多
+   自定义 ID：touhou_demonforce_advanced_heavy_art
+   自定义来源：common/technologies/touhou_demonforce.txt:2518
+   未启用 NSB：重型自行火炮 III型 [advanced_heavy_art]（1943）
+   原版来源：common/technologies/armor.txt:2053
+   启用 NSB：先进型重型坦克 [advanced_heavy_tank_chassis]（1943）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1210
+   设计角色：自行火炮；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+54. 芭一波卡赫
+   自定义 ID：touhou_demonforce_advanced_heavy_spaa
+   自定义来源：common/technologies/touhou_demonforce.txt:2546
+   未启用 NSB：重型自行防空炮 III型 [advanced_heavy_spaa]（1943）
+   原版来源：common/technologies/armor.txt:2084
+   启用 NSB：先进型重型坦克 [advanced_heavy_tank_chassis]（1943）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1210
+   设计角色：自行防空；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+55. 泰坦
+   自定义 ID：touhou_demonforce_super_heavy_tank
+   自定义来源：common/technologies/touhou_demonforce.txt:2574
+   未启用 NSB：超重型坦克 [super_heavy_tank]（1941）
+   原版来源：common/technologies/armor.txt:2115
+   启用 NSB：超重型坦克 [super_heavy_tank_chassis]（1941）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1281
+   设计角色：超重型坦克；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+56. 湿婆
+   自定义 ID：touhou_demonforce_super_heavy_td
+   自定义来源：common/technologies/touhou_demonforce.txt:2604
+   未启用 NSB：超重型自行反坦克炮 [super_heavy_td]（1943）
+   原版来源：common/technologies/armor.txt:2183
+   启用 NSB：超重型坦克 [super_heavy_tank_chassis]（1941）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1281
+   设计角色：超重型坦克歼击车；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+57. 婆苏吉
+   自定义 ID：touhou_demonforce_super_heavy_art
+   自定义来源：common/technologies/touhou_demonforce.txt:2623
+   未启用 NSB：超重型自行火炮 [super_heavy_art]（1943）
+   原版来源：common/technologies/armor.txt:2209
+   启用 NSB：超重型坦克 [super_heavy_tank_chassis]（1941）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1281
+   设计角色：超重型自行火炮；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+58. 鹏
+   自定义 ID：touhou_demonforce_super_heavy_spaa
+   自定义来源：common/technologies/touhou_demonforce.txt:2642
+   未启用 NSB：超重型自行防空炮 [super_heavy_spaa]（1943）
+   原版来源：common/technologies/armor.txt:2235
+   启用 NSB：超重型坦克 [super_heavy_tank_chassis]（1941）
+   原版 NSB 来源：common/technologies/NSB_armor.txt:1281
+   设计角色：超重型自行防空；使用对应底盘和武器模块设计，不再单独研究此角色型号。
+
+59. 有翼
+   自定义 ID：touhou_demonforce_early_fighter
+   自定义来源：common/technologies/touhou_demonforce.txt:2661
+   未启用 BBA：战间期型战斗机 [early_fighter]（1933）
+   原版来源：common/technologies/air_techs.txt:98
+   启用 BBA：战间期小型机身 [iw_small_airframe]（1926）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:105
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+60. 飞禽
+   自定义 ID：touhou_demonforce_fighter1
+   自定义来源：common/technologies/touhou_demonforce.txt:2704
+   未启用 BBA：战斗机 I型 [fighter1]（1936）
+   原版来源：common/technologies/air_techs.txt:186
+   启用 BBA：基础小型机身 [basic_small_airframe]（1936）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:164
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+61. 灵鸟
+   自定义 ID：touhou_demonforce_fighter2
+   自定义来源：common/technologies/touhou_demonforce.txt:2760
+   未启用 BBA：战斗机 II型 [fighter2]（1940）
+   原版来源：common/technologies/air_techs.txt:296
+   启用 BBA：改进型小型机身 [improved_small_airframe]（1940）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:237
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+62. 神乌
+   自定义 ID：touhou_demonforce_fighter3
+   自定义来源：common/technologies/touhou_demonforce.txt:2816
+   未启用 BBA：战斗机 III型 [fighter3]（1944）
+   原版来源：common/technologies/air_techs.txt:429
+   启用 BBA：先进型小型机身 [advanced_small_airframe]（1944）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:319
+   设计角色：战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+63. 迦楼罗
+   自定义 ID：touhou_demonforce_jet_fighter2
+   自定义来源：common/technologies/touhou_demonforce.txt:2872
+   未启用 BBA：喷气式战斗机 II型 [jet_fighter2]（1950）
+   原版来源：common/technologies/air_techs.txt:592
+   原版条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+   启用 BBA：现代小型机身 [modern_small_airframe]（1945）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:394
+   设计角色：喷气战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+   BBA 条件：原版含特殊项目条件，请连同对应项目解锁流程处理
+
+64. 雄鹰
+   自定义 ID：touhou_demonforce_CAS1
+   自定义来源：common/technologies/touhou_demonforce.txt:2897
+   未启用 BBA：近距支援机 I型 [CAS1]（1936）
+   原版来源：common/technologies/air_techs.txt:656
+   启用 BBA：基础小型机身 [basic_small_airframe]（1936）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:164
+   设计角色：近距支援机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+65. 女武神
+   自定义 ID：touhou_demonforce_CAS2
+   自定义来源：common/technologies/touhou_demonforce.txt:2944
+   未启用 BBA：近距支援机 II型 [CAS2]（1940）
+   原版来源：common/technologies/air_techs.txt:759
+   启用 BBA：改进型小型机身 [improved_small_airframe]（1940）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:237
+   设计角色：近距支援机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+66. 瓦尔基莉
+   自定义 ID：touhou_demonforce_CAS3
+   自定义来源：common/technologies/touhou_demonforce.txt:3000
+   未启用 BBA：近距支援机 III型 [CAS3]（1944）
+   原版来源：common/technologies/air_techs.txt:872
+   启用 BBA：先进型小型机身 [advanced_small_airframe]（1944）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:319
+   设计角色：近距支援机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+67. 巨翅
+   自定义 ID：touhou_demonforce_heavy_fighter1
+   自定义来源：common/technologies/touhou_demonforce.txt:3048
+   未启用 BBA：重型战斗机 I型 [heavy_fighter1]（1936）
+   原版来源：common/technologies/air_techs.txt:1335
+   启用 BBA：基础中型机身 [basic_medium_airframe]（1936）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:512
+   设计角色：重型战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+68. 巨鸟
+   自定义 ID：touhou_demonforce_heavy_fighter2
+   自定义来源：common/technologies/touhou_demonforce.txt:3079
+   未启用 BBA：重型战斗机 II型 [heavy_fighter2]（1940）
+   原版来源：common/technologies/air_techs.txt:1365
+   启用 BBA：改进型中型机身 [improved_medium_airframe]（1940）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:571
+   设计角色：重型战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+69. 萨玛艾尔
+   自定义 ID：touhou_demonforce_heavy_fighter3
+   自定义来源：common/technologies/touhou_demonforce.txt:3110
+   未启用 BBA：重型战斗机 III型 [heavy_fighter3]（1944）
+   原版来源：common/technologies/air_techs.txt:1396
+   启用 BBA：先进型中型机身 [advanced_medium_airframe]（1944）
+   原版 BBA 来源：common/technologies/bba_air_techs.txt:634
+   设计角色：重型战斗机；必须搭配相应发动机和武器/炸弹模块，单独机体科技不等于成品飞机。
+
+================================================================================================
+幻想支援科技（29 项）
+================================================================================================
+
+1. 幻想支援装备
+   自定义 ID：touhou_tech_support
+   自定义来源：common/technologies/touhou_support.txt:16
+   原版对应：支援装备 [tech_support]（1918）
+   原版来源：common/technologies/support.txt:20
+
+2. 大地使者
+   自定义 ID：touhou_tech_engineers
+   自定义来源：common/technologies/touhou_support.txt:88
+   原版对应：工兵连 I [tech_engineers]（1936）
+   原版来源：common/technologies/support.txt:98
+
+3. 大地使者 LV2
+   自定义 ID：touhou_tech_engineers2
+   自定义来源：common/technologies/touhou_support.txt:143
+   原版对应：工兵连 II [tech_engineers2]（1939）
+   原版来源：common/technologies/support.txt:199
+
+4. 大地使者 LV3
+   自定义 ID：touhou_tech_engineers3
+   自定义来源：common/technologies/touhou_support.txt:195
+   原版对应：工兵连 III [tech_engineers3]（1942）
+   原版来源：common/technologies/support.txt:289
+
+5. 大地使者 LV4
+   自定义 ID：touhou_tech_engineers4
+   自定义来源：common/technologies/touhou_support.txt:244
+   原版对应：工兵连 IV [tech_engineers4]（1945）
+   原版来源：common/technologies/support.txt:385
+
+6. 守望之眼
+   自定义 ID：touhou_tech_recon
+   自定义来源：common/technologies/touhou_support.txt:289
+   原版对应：侦察连 I [tech_recon]（1936）
+   原版来源：common/technologies/support.txt:471
+
+7. 守望之眼 LV2
+   自定义 ID：touhou_tech_recon2
+   自定义来源：common/technologies/touhou_support.txt:344
+   原版对应：侦察连 II [tech_recon2]（1939）
+   原版来源：common/technologies/support.txt:536
+
+8. 守望之眼 LV3
+   自定义 ID：touhou_tech_recon3
+   自定义来源：common/technologies/touhou_support.txt:390
+   原版对应：侦察连 III [tech_recon3]（1942）
+   原版来源：common/technologies/support.txt:583
+
+9. 守望之眼 LV4
+   自定义 ID：touhou_tech_recon4
+   自定义来源：common/technologies/touhou_support.txt:434
+   原版对应：侦察连 IV [tech_recon4]（1945）
+   原版来源：common/technologies/support.txt:633
+
+10. 幻想教长
+   自定义 ID：touhou_tech_military_police
+   自定义来源：common/technologies/touhou_support.txt:475
+   原版对应：宪兵队 I [tech_military_police]（1936）
+   原版来源：common/technologies/support.txt:675
+
+11. 幻想教长 LV2
+   自定义 ID：touhou_tech_military_police2
+   自定义来源：common/technologies/touhou_support.txt:544
+   原版对应：宪兵队 II [tech_military_police2]（1939）
+   原版来源：common/technologies/support.txt:780
+
+12. 幻想教长 LV3
+   自定义 ID：touhou_tech_military_police3
+   自定义来源：common/technologies/touhou_support.txt:581
+   原版对应：宪兵队 III [tech_military_police3]（1942）
+   原版来源：common/technologies/support.txt:821
+
+13. 幻想教长 LV4
+   自定义 ID：touhou_tech_military_police4
+   自定义来源：common/technologies/touhou_support.txt:615
+   原版对应：宪兵队 IV [tech_military_police4]（1945）
+   原版来源：common/technologies/support.txt:861
+
+14. 鬼斧神工
+   自定义 ID：touhou_tech_maintenance_company
+   自定义来源：common/technologies/touhou_support.txt:646
+   原版对应：维修连 I [tech_maintenance_company]（1936）
+   原版来源：common/technologies/support.txt:911
+
+15. 鬼斧神工 LV2
+   自定义 ID：touhou_tech_maintenance_company2
+   自定义来源：common/technologies/touhou_support.txt:692
+   原版对应：维修连 II [tech_maintenance_company2]（1939）
+   原版来源：common/technologies/support.txt:983
+
+16. 鬼斧神工 LV3
+   自定义 ID：touhou_tech_maintenance_company3
+   自定义来源：common/technologies/touhou_support.txt:740
+   原版对应：维修连 III [tech_maintenance_company3]（1942）
+   原版来源：common/technologies/support.txt:1038
+
+17. 鬼斧神工 LV4
+   自定义 ID：touhou_tech_maintenance_company4
+   自定义来源：common/technologies/touhou_support.txt:785
+   原版对应：维修连 IV [tech_maintenance_company4]（1945）
+   原版来源：common/technologies/support.txt:1101
+
+18. 阎王愁
+   自定义 ID：touhou_tech_field_hospital
+   自定义来源：common/technologies/touhou_support.txt:827
+   原版对应：野战医院 I [tech_field_hospital]（1936）
+   原版来源：common/technologies/support.txt:1146
+
+19. 阎王愁 LV2
+   自定义 ID：touhou_tech_field_hospital2
+   自定义来源：common/technologies/touhou_support.txt:873
+   原版对应：野战医院 II [tech_field_hospital2]（1939）
+   原版来源：common/technologies/support.txt:1220
+
+20. 阎王愁 LV3
+   自定义 ID：touhou_tech_field_hospital3
+   自定义来源：common/technologies/touhou_support.txt:920
+   原版对应：野战医院 III [tech_field_hospital3]（1942）
+   原版来源：common/technologies/support.txt:1276
+
+21. 阎王愁 LV4
+   自定义 ID：touhou_tech_field_hospital4
+   自定义来源：common/technologies/touhou_support.txt:965
+   原版对应：野战医院 IV [tech_field_hospital4]（1945）
+   原版来源：common/technologies/support.txt:1341
+
+22. 圣诞老人
+   自定义 ID：touhou_tech_logistics_company
+   自定义来源：common/technologies/touhou_support.txt:1007
+   原版对应：后勤连 I [tech_logistics_company]（1936）
+   原版来源：common/technologies/support.txt:1410
+
+23. 圣诞老人 LV2
+   自定义 ID：touhou_tech_logistics_company2
+   自定义来源：common/technologies/touhou_support.txt:1057
+   原版对应：后勤连 II [tech_logistics_company2]（1939）
+   原版来源：common/technologies/support.txt:1497
+
+24. 圣诞老人 LV3
+   自定义 ID：touhou_tech_logistics_company3
+   自定义来源：common/technologies/touhou_support.txt:1110
+   原版对应：后勤连 III [tech_logistics_company3]（1942）
+   原版来源：common/technologies/support.txt:1552
+
+25. 圣诞老人 LV4
+   自定义 ID：touhou_tech_logistics_company4
+   自定义来源：common/technologies/touhou_support.txt:1155
+   原版对应：后勤连 IV [tech_logistics_company4]（1945）
+   原版来源：common/technologies/support.txt:1605
+
+26. 通信人偶
+   自定义 ID：touhou_tech_signal_company
+   自定义来源：common/technologies/touhou_support.txt:1198
+   原版对应：通信连 I [tech_signal_company]（1936）
+   原版来源：common/technologies/support.txt:1651
+
+27. 通信人偶 LV2
+   自定义 ID：touhou_tech_signal_company2
+   自定义来源：common/technologies/touhou_support.txt:1235
+   原版对应：通信连 II [tech_signal_company2]（1939）
+   原版来源：common/technologies/support.txt:1700
+
+28. 通信人偶 LV3
+   自定义 ID：touhou_tech_signal_company3
+   自定义来源：common/technologies/touhou_support.txt:1282
+   原版对应：通信连 III [tech_signal_company3]（1942）
+   原版来源：common/technologies/support.txt:1752
+
+29. 通信人偶 LV4
+   自定义 ID：touhou_tech_signal_company4
+   自定义来源：common/technologies/touhou_support.txt:1326
+   原版对应：通信连 IV [tech_signal_company4]（1945）
+   原版来源：common/technologies/support.txt:1803
+
+================================================================================================
+王牌科技（22 项）
+================================================================================================
+
+1. 神风人偶
+   自定义 ID：suicide_puppet_craft_1
+   自定义来源：common/technologies/touhou_trump_card.txt:16
+   原版对应：无直接对应。
+   原版近似方向：战间期型战斗机 [early_fighter]（1933）
+   设计器近似方向：战间期小型机身 [iw_small_airframe]（1926）
+   说明：仅提供早期小型飞机基础；神风任务、单次攻击方式及人偶性能需要另行处理。
+
+2. 人偶战略导弹
+   自定义 ID：suicide_puppet_craft_2
+   自定义来源：common/technologies/touhou_trump_card.txt:29
+   原版对应：无直接对应。
+   原版近似方向：战略轰炸机 I型 [strategic_bomber1]（1936）
+   设计器近似方向：基础大型机身 [basic_large_airframe]（1936）
+   说明：这是战略打击的近似方向；原装备是特殊航空装备，名称中的“导弹”不代表可直接映射原版导弹科技。
+
+3. 歌利亚
+   自定义 ID：goliath_0
+   自定义来源：common/technologies/touhou_trump_card.txt:43
+   原版对应：无直接对应。
+   说明：项目启动/开局解锁标记，原版没有对应科技；适合改为决议或国策状态。
+
+4. 歌利亚幻想乡试做型
+   自定义 ID：goliath_1
+   自定义来源：common/technologies/touhou_trump_card.txt:57
+   原版对应：无直接对应。
+   原版近似方向：重型坦克 I型 [basic_heavy_tank]（1934）
+   设计器近似方向：基础型重型坦克 [basic_heavy_tank_chassis]（1934）
+   说明：按重型地面装甲角色近似替代；必须另做编制和装备设计，不保留歌利亚的独立属性。
+
+5. 歌利亚改良型
+   自定义 ID：goliath_2
+   自定义来源：common/technologies/touhou_trump_card.txt:103
+   原版对应：无直接对应。
+   原版近似方向：重型坦克 II型 [improved_heavy_tank]（1941）
+   设计器近似方向：改进型重型坦克 [improved_heavy_tank_chassis]（1940）
+   说明：歌利亚第二级的近似重坦升级方向，研究年份和属性可能不同。
+
+6. 歌利亚完成型
+   自定义 ID：goliath_3
+   自定义来源：common/technologies/touhou_trump_card.txt:134
+   原版对应：无直接对应。
+   原版近似方向：重型坦克 III型 [advanced_heavy_tank]（1943）
+   设计器近似方向：先进型重型坦克 [advanced_heavy_tank_chassis]（1943）
+   说明：歌利亚第三级的近似重坦升级方向，研究年份和属性可能不同。
+
+7. 歌利亚人偶
+   自定义 ID：goliath_4
+   自定义来源：common/technologies/touhou_trump_card.txt:169
+   原版对应：无直接对应。
+   原版近似方向：超重型坦克 [super_heavy_tank]（1941）
+   设计器近似方向：超重型坦克 [super_heavy_tank_chassis]（1941）
+   说明：可选的终极重型地面装备方向，属于重新设计；与原版超重坦研究年份及强度并不等价。
+
+8. 风神之翼
+   自定义 ID：tengu_fighter
+   自定义来源：common/technologies/touhou_trump_card.txt:197
+   原版对应：无直接对应。
+   原版近似方向：战斗机 I型 [fighter1]（1936）
+   设计器近似方向：基础小型机身 [basic_small_airframe]（1936）
+   说明：可按专属战斗机处理；选取的等级只是设计起点。
+
+9. 妖力复合装甲
+   自定义 ID：oni_champion
+   自定义来源：common/technologies/touhou_trump_card.txt:213
+   原版对应：无直接对应。
+   原版近似方向：步兵武器 [infantry_weapons]（1918）；特种部队 [tech_special_forces]（1938）
+   说明：鬼王同时具有步兵和装甲分类；此方向只模拟精锐步兵角色，若保留装甲作用，还需选择原版装甲编制，无法用一项科技完整对应。
+
+10. 现世阴阳玉
+   自定义 ID：cas_boli_fighter
+   自定义来源：common/technologies/touhou_trump_card.txt:227
+   原版对应：无直接对应。
+   原版近似方向：近距支援机 I型 [CAS1]（1936）
+   设计器近似方向：基础小型机身 [basic_small_airframe]（1936）
+   说明：可按近距支援飞机设计处理；特殊阴阳玉属性另由国家效果模拟。
+
+11. 诡道符咒
+   自定义 ID：desires_bomber
+   自定义来源：common/technologies/touhou_trump_card.txt:243
+   原版对应：无直接对应。
+   原版近似方向：战略轰炸机 I型 [strategic_bomber1]（1936）
+   设计器近似方向：基础型大型机体 [basic_large_airframe]（1936）
+   说明：实际装备与兵种属于战略轰炸机，按大型轰炸机方向重做；诡道符咒的独立性能不会由原版科技继承。
+
+12. 妖精武器
+   自定义 ID：evil_army
+   自定义来源：common/technologies/touhou_trump_card.txt:259
+   原版对应：无直接对应。
+   原版近似方向：步兵武器 [infantry_weapons]（1918）；牵引式火炮 [gw_artillery]；轻型坦克 I型 [basic_light_tank]（1934）
+   设计器近似方向：基础型轻型坦克 [basic_light_tank_chassis]（1934）
+   说明：同时解锁妖精步兵、装甲、炮兵；只能拆成多个原版体系，不能对应一项科技。
+
+13. 卫队装备
+   自定义 ID：human_army
+   自定义来源：common/technologies/touhou_trump_card.txt:275
+   原版对应：无直接对应。
+   原版近似方向：步兵武器 [infantry_weapons]（1918）；特种部队 [tech_special_forces]（1938）
+   说明：卫队可按原版步兵/精锐编制处理，特殊属性通过国家效果或决议保留。
+
+14. 心灵控制器
+   自定义 ID：DLD_animal
+   自定义来源：common/technologies/touhou_trump_card.txt:289
+   原版对应：无直接对应。
+   原版近似方向：步兵武器 [infantry_weapons]（1918）
+   说明：原版没有心灵控制科技或动物兵种；此处仅是地面部队装备的替代方向。
+
+15. 龙虎卫装备
+   自定义 ID：dragon
+   自定义来源：common/technologies/touhou_trump_card.txt:303
+   原版对应：无直接对应。
+   原版近似方向：步兵武器 [infantry_weapons]（1918）；特种部队 [tech_special_forces]（1938）
+   说明：原版没有龙虎卫兵种；可以重做为精锐步兵或特种部队。
+
+16. 收割者
+   自定义 ID：die
+   自定义来源：common/technologies/touhou_trump_card.txt:317
+   原版对应：无直接对应。
+   原版近似方向：摩托化步兵 [motorised_infantry]（1936）；特种部队 [tech_special_forces]（1938）
+   说明：原兵种属于机动型特种部队，可按摩托化编制重做并用国家效果补充精锐属性；原版摩托化部队不自动成为特种部队，也不保留死神属性。
+
+17. 月都参谋连用车
+   自定义 ID：rabbit_team
+   自定义来源：common/technologies/touhou_trump_card.txt:331
+   原版对应：无直接对应。
+   原版近似方向：工兵连 I [tech_engineers]（1936）
+   说明：该参谋连的实际效果主要是多地形攻击、防御和移动加成，故可按工兵/地形支援方向重做；名称中的“参谋”不等于通信连效果，原版工兵仍不完全等价。
+
+18. 便携式淡化设备
+   自定义 ID：deep_sea
+   自定义来源：common/technologies/touhou_trump_card.txt:345
+   原版对应：无直接对应。
+   原版近似方向：潜艇 II型 [basic_submarine]（1936）
+   设计器近似方向：基础型潜艇 [basic_ship_hull_submarine]（1936）
+   说明：实际解锁特殊潜艇装备，不能按名称中的“淡化”误配后勤科技；需将舰体和性能另行转换。
+
+19. 白玉楼移动补给站
+   自定义 ID：soul
+   自定义来源：common/technologies/touhou_trump_card.txt:360
+   原版对应：无直接对应。
+   原版近似方向：后勤连 I [tech_logistics_company]（1936）
+   说明：可按后勤支援功能近似处理，不保留特殊补给站装备的独立属性。
+
+20. 未来医疗设备
+   自定义 ID：wunv
+   自定义来源：common/technologies/touhou_trump_card.txt:374
+   原版对应：无直接对应。
+   原版近似方向：野战医院 I [tech_field_hospital]（1936）
+   说明：可按野战医院功能近似处理，特殊医疗能力另由国家效果或决议模拟。
+
+21. 星莲船
+   自定义 ID：lotus
+   自定义来源：common/technologies/touhou_trump_card.txt:388
+   原版对应：无直接对应。
+   原版近似方向：战列舰 II型 [basic_battleship]（1936）；基础航空母舰 II型 [basic_carrier]（1936）
+   设计器近似方向：1936重型战舰船体 [basic_ship_hull_heavy]（1936）；1936航空母舰船体 [basic_ship_hull_carrier]（1936）
+   说明：实际解锁多个星莲船型号与专属舰船模块；这是舰队重做方向，不是一项原版科技的直接替换。
+
+22. 超·极限花火
+   自定义 ID：magician
+   自定义来源：common/technologies/touhou_trump_card.txt:423
+   原版对应：无直接对应。
+   原版近似方向：火炮 I型 [artillery1]（1939）
+   说明：原版没有超·极限花火装备；只能按火力支援角色近似替代，实际兵种/装备属性仍需另行设计。
+
+================================================================================================
+附录：旧式特种部队学说（38 项）
+================================================================================================
+
+1. 重视山地步兵
+   自定义 ID：special_forces_mountaineers
+   自定义来源：common/technologies/special_forces_doctrine.txt:5
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     寒冷天气专家 [mountaineers_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:1
+     重视山地步兵 [mountaineers_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:92
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+2. 寒冷天气专家
+   自定义 ID：ski_troops
+   自定义来源：common/technologies/special_forces_doctrine.txt:84
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     寒冷天气专家 [mountaineers_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:1
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+3. 崎岖地形专家
+   自定义 ID：rangers
+   自定义来源：common/technologies/special_forces_doctrine.txt:130
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     重视山地步兵 [mountaineers_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:92
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+4. 战场情报
+   自定义 ID：special_forces_recon
+   自定义来源：common/technologies/special_forces_doctrine.txt:175
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     重视山地步兵 [mountaineers_2/reward_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:92
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+5. 守住防线
+   自定义 ID：mountaineers_combat_1
+   自定义来源：common/technologies/special_forces_doctrine.txt:221
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     寒冷天气专家 [mountaineers_1/reward_3]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:1
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+6. 山地火炮
+   自定义 ID：mountaineers_combat_2
+   自定义来源：common/technologies/special_forces_doctrine.txt:265
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     重视山地步兵 [mountaineers_2/reward_3]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:92
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+7. 协同作战训练
+   自定义 ID：mountaineers_combat_3
+   自定义来源：common/technologies/special_forces_doctrine.txt:316
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     寒冷天气专家 [mountaineers_1/reward_4]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:1
+     重视山地步兵 [mountaineers_2/reward_4]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:92
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+8. 武装力量骨干
+   自定义 ID：mountaineers_keystone_1
+   自定义来源：common/technologies/special_forces_doctrine.txt:360
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     寒冷天气专家 [mountaineers_1/reward_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:1
+     寒冷天气专家 [mountaineers_1/reward_5]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:1
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+9. 共享教官
+   自定义 ID：mountaineers_keystone_2
+   自定义来源：common/technologies/special_forces_doctrine.txt:399
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     扩大特种部队 [special_forces_quantity]
+     原版来源：common/doctrines/grand_doctrines/special_forces_grand_doctrines.txt:1
+     寒冷天气专家 [mountaineers_1/reward_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:1
+     重视山地步兵 [mountaineers_2/reward_5]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:92
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+10. 重视海军陆战队
+   自定义 ID：special_forces_marines
+   自定义来源：common/technologies/special_forces_doctrine.txt:439
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     海军突击队 [marines_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:203
+     远征单位 [marines_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:311
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+11. 丛林专家
+   自定义 ID：marines_jungle_troops
+   自定义来源：common/technologies/special_forces_doctrine.txt:519
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     海军突击队 [marines_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:203
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+12. 滩头部队
+   自定义 ID：marines_shore_parties
+   自定义来源：common/technologies/special_forces_doctrine.txt:565
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     远征单位 [marines_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:311
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+13. 严苛训练方案
+   自定义 ID：marines_recon
+   自定义来源：common/technologies/special_forces_doctrine.txt:611
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     海军突击队 [marines_1/reward_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:203
+     远征单位 [marines_2/reward_3]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:311
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+14. 海军突击队
+   自定义 ID：marines_commandoes
+   自定义来源：common/technologies/special_forces_doctrine.txt:658
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     海军突击队 [marines_1/reward_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:203
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+15. 远征单位
+   自定义 ID：marines_expeditionary
+   自定义来源：common/technologies/special_forces_doctrine.txt:707
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     扩大特种部队 [special_forces_quantity]
+     原版来源：common/doctrines/grand_doctrines/special_forces_grand_doctrines.txt:1
+     远征单位 [marines_2/reward_4]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:311
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+16. 爆破专家
+   自定义 ID：marines_commandos_demolition
+   自定义来源：common/technologies/special_forces_doctrine.txt:750
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     海军突击队 [marines_1/reward_3]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:203
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+17. 喷灯与瓶塞钻
+   自定义 ID：marines_expeditionary_blowtorch
+   自定义来源：common/technologies/special_forces_doctrine.txt:793
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     远征单位 [marines_2/reward_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:311
+     远征单位 [marines_2/reward_4]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:311
+     远征单位 [marines_2/reward_5]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:311
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+18. 机械化海军陆战队
+   自定义 ID：marines_commandoes_mechanised
+   自定义来源：common/technologies/special_forces_doctrine.txt:842
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     海军突击队 [marines_1/reward_5]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:203
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+19. 远征特遣部队
+   自定义 ID：marines_expeditionary_support
+   自定义来源：common/technologies/special_forces_doctrine.txt:892
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     远征单位 [marines_2/reward_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:311
+     远征单位 [marines_2/reward_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:311
+     远征单位 [marines_2/reward_3]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:311
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+20. 重视空降兵
+   自定义 ID：special_forces_paratroopers
+   自定义来源：common/technologies/special_forces_doctrine.txt:950
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     破坏分队作战 [paratroopers_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:423
+     密集空投 [paratroopers_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:522
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+21. 侦查破袭
+   自定义 ID：paras_dispersed_drop
+   自定义来源：common/technologies/special_forces_doctrine.txt:1025
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     破坏分队作战 [paratroopers_1/reward_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:423
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+22. 战斗穿插
+   自定义 ID：paras_combat_drop
+   自定义来源：common/technologies/special_forces_doctrine.txt:1068
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     密集空投 [paratroopers_2/reward_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:522
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+23. 空降装甲
+   自定义 ID：paras_airborne_light_armor
+   自定义来源：common/technologies/special_forces_doctrine.txt:1111
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     破坏分队作战 [paratroopers_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:423
+     密集空投 [paratroopers_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:522
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+24. 空降通讯
+   自定义 ID：paras_combat_1
+   自定义来源：common/technologies/special_forces_doctrine.txt:1159
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     破坏分队作战 [paratroopers_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:423
+     破坏分队作战 [paratroopers_1/reward_4]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:423
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+25. 空降医疗分队
+   自定义 ID：paras_combat_2
+   自定义来源：common/technologies/special_forces_doctrine.txt:1204
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     密集空投 [paratroopers_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:522
+     密集空投 [paratroopers_2/reward_3]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:522
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+26. 增强导航训练
+   自定义 ID：paras_bonus_1
+   自定义来源：common/technologies/special_forces_doctrine.txt:1249
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     破坏分队作战 [paratroopers_1/reward_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:423
+     破坏分队作战 [paratroopers_1/reward_3]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:423
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+27. 战略空运部队
+   自定义 ID：paras_bonus_2
+   自定义来源：common/technologies/special_forces_doctrine.txt:1293
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     密集空投 [paratroopers_2/reward_4]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:522
+     破坏分队作战 [paratroopers_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:423
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+28. 精益求精
+   自定义 ID：paras_keystone_1
+   自定义来源：common/technologies/special_forces_doctrine.txt:1332
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     破坏分队作战 [paratroopers_1/reward_5]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:423
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+29. 武装力量骨干
+   自定义 ID：paras_keystone_2
+   自定义来源：common/technologies/special_forces_doctrine.txt:1370
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     密集空投 [paratroopers_2/reward_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:522
+     密集空投 [paratroopers_2/reward_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:522
+     密集空投 [paratroopers_2/reward_5]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:522
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+30. 升级游击队
+   自定义 ID：special_forces_rangers
+   自定义来源：common/technologies/special_forces_doctrine.txt:1408
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     猎兵传统 [rangers_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:609
+     游骑兵丛林训练 [rangers_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:722
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+31. 融入猎兵传统
+   自定义 ID：rangers_jaegers_training
+   自定义来源：common/technologies/special_forces_doctrine.txt:1469
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     猎兵传统 [rangers_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:609
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+32. 游骑兵丛林训练
+   自定义 ID：rangers_jungle_training
+   自定义来源：common/technologies/special_forces_doctrine.txt:1507
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     游骑兵丛林训练 [rangers_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:722
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+33. 森林游击战士
+   自定义 ID：rangers_guerilla_doctrine
+   自定义来源：common/technologies/special_forces_doctrine.txt:1544
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     猎兵传统 [rangers_1/reward_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:609
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+34. 侦察游骑兵地形掌握
+   自定义 ID：rangers_recon_terrain_training
+   自定义来源：common/technologies/special_forces_doctrine.txt:1581
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     游骑兵丛林训练 [rangers_2/reward_1]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:722
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+35. 火力支援整合
+   自定义 ID：rangers_fire_support_integration
+   自定义来源：common/technologies/special_forces_doctrine.txt:1621
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     猎兵传统 [rangers_1/reward_3]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:609
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+36. 游骑兵城市战专长
+   自定义 ID：rangers_urban_combat
+   自定义来源：common/technologies/special_forces_doctrine.txt:1663
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     猎兵传统 [rangers_1/reward_4]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:609
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+37. 精锐游骑兵
+   自定义 ID：elite_rangers_doctrine
+   自定义来源：common/technologies/special_forces_doctrine.txt:1705
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     猎兵传统 [rangers_1/reward_2]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:609
+     猎兵传统 [rangers_1/reward_5]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:609
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+38. 轻步兵专业化
+   自定义 ID：rangers_backbone_doctrine
+   自定义来源：common/technologies/special_forces_doctrine.txt:1735
+   原版科技对应：无；此项属于旧式学说，不是 1.19 科技。
+   现行学说近似方向：
+     扩大特种部队 [special_forces_quantity]
+     原版来源：common/doctrines/grand_doctrines/special_forces_grand_doctrines.txt:1
+     游骑兵丛林训练 [rangers_2/reward_3]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:722
+     游骑兵丛林训练 [rangers_2/reward_4]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:722
+     游骑兵丛林训练 [rangers_2/reward_5]
+     原版来源：common/doctrines/subdoctrines/special_forces/special_forces_subdoctrines.txt:722
+   说明：按主要效果与原有分支列出对应方向；新旧效果、数值、互斥关系和熟练度进度不完全相同。
+
+核对结果
+{"regular":246,"tank":44,"air":38,"cards":22,"legacy":38}
+306 项已逐条覆盖，原版科技 ID、学说 ID、奖励块均已在本机原版文件中验证存在。
+仅新增对应表，没有修改游戏配置。
+

@@ -1,0 +1,724 @@
+[11:10:56][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/MIRA.mod line: 7
+[11:10:56][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_1862018480.mod line: 8
+[11:10:56][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_2829179259.mod line: 7
+[11:10:56][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3157816605.mod line: 6
+[11:10:56][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3310177852.mod line: 6
+[11:10:56][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3322324112.mod line: 8
+[11:10:56][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3405989555.mod line: 6
+[11:10:56][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3686435343.mod line: 8
+[11:11:12][no_game_date][strategic_region_database.cpp:208]: map/weatherpositions.txt error at line 589: invalid arguments count.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_demonforce_equipment.txt:1648-1723 'touhou_demonforce_fighter_equipment_0': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_demonforce_equipment.txt:1724-1800 'touhou_demonforce_fighter_equipment_1': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_demonforce_equipment.txt:1801-1877 'touhou_demonforce_fighter_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_demonforce_equipment.txt:1878-1955 'touhou_demonforce_fighter_equipment_3': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_demonforce_equipment.txt:1956-2033 'touhou_demonforce_jet_fighter_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_demonforce_equipment.txt:2034-2108 'touhou_demonforce_heavy_fighter_equipment_1': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_demonforce_equipment.txt:2109-2184 'touhou_demonforce_heavy_fighter_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_demonforce_equipment.txt:2185-2261 'touhou_demonforce_heavy_fighter_equipment_3': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_demonforce_equipment.txt:2262-2339 'touhou_demonforce_CAS_equipment_1': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_demonforce_equipment.txt:2340-2418 'touhou_demonforce_CAS_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_demonforce_equipment.txt:2419-2497 'touhou_demonforce_CAS_equipment_3': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:2566-2641 'touhou_magic_fighter_equipment_0': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:2642-2718 'touhou_magic_fighter_equipment_1': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:2719-2795 'touhou_magic_fighter_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:2796-2873 'touhou_magic_fighter_equipment_3': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:2874-2951 'touhou_magic_jet_fighter_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:2952-3029 'touhou_magic_tac_bomber_equipment_0': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:3030-3109 'touhou_magic_tac_bomber_equipment_1': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:3110-3189 'touhou_magic_tac_bomber_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:3190-3269 'touhou_magic_tac_bomber_equipment_3': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:3270-3349 'touhou_magic_jet_tac_bomber_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:3350-3430 'touhou_magic_strat_bomber_equipment_1': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:3431-3512 'touhou_magic_strat_bomber_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:3513-3594 'touhou_magic_strat_bomber_equipment_3': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_magic_equipment.txt:3595-3676 'touhou_magic_jet_strat_bomber_equipment_1': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_trump_card.txt:3-61 'suicide_puppet_equipment_1': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_trump_card.txt:405-469 'tengu_fighter_equipment_0': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_trump_card.txt:520-586 'cas_boli_equipment_0': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_trump_card.txt:587-652 'desires_equipment_0': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:841-916 'touhou_wakan_fighter_equipment_0': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:917-993 'touhou_wakan_fighter_equipment_1': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:994-1071 'touhou_wakan_fighter_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:1072-1149 'touhou_wakan_fighter_equipment_3': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:1150-1228 'touhou_wakan_jet_fighter_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:1229-1308 'touhou_wakan_CAS_equipment_1': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:1309-1390 'touhou_wakan_CAS_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:1391-1472 'touhou_wakan_CAS_equipment_3': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:1473-1555 'touhou_wakan_tac_bomber_equipment_0': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:1556-1639 'touhou_wakan_tac_bomber_equipment_1': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:1640-1723 'touhou_wakan_tac_bomber_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:1724-1807 'touhou_wakan_tac_bomber_equipment_3': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:15][no_game_date][equipment.cpp:552]: common/units/equipment/zz_touhou_wakan_equipment.txt:1808-1892 'touhou_wakan_jet_tac_bomber_equipment_2': Equipment type must not change its 'carrier_capable' value inherited from its archetype.
+[11:11:17][no_game_date][persistent.cpp:67]: Error: "Error reading division names group - Armored Divisions, division_types has unknown token: goliath_brigade: }, near line: 9" in file: "common/units/names_divisions/ALI_names_divisions.txt" near line: 9
+[11:11:17][no_game_date][decision.cpp:488]: Decision scripted with modifier, but no days_remove duration. ID: touhou_mission_doll_production_line
+[11:11:17][no_game_date][decision.cpp:488]: Decision scripted with modifier, but no days_remove duration. ID: touhou_mission_doll_production_line
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/ALI - Alice.txt: 35
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'basic_light_tank'<==  for Countryhistory/countries/ALI - Alice.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/ALI - Alice.txt: 48
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/ALI - Alice.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/ALI - Alice.txt: 61
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_bomber'<==  for Countryhistory/countries/ALI - Alice.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/ALI - Alice.txt: 78
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'basic_heavy_tank'<==  for Countryhistory/countries/ALI - Alice.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/BLQ - Hakurei.txt: 32
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/BLQ - Hakurei.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/BLQ - Hakurei.txt: 46
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'CAS1'<==  for Countryhistory/countries/BLQ - Hakurei.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/DES - Desires.txt: 31
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/DES - Desires.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/DES - Desires.txt: 45
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'strategic_bomber1'<==  for Countryhistory/countries/DES - Desires.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/DLD - Chireiden.txt: 32
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/DLD - Chireiden.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/HAK - Hakugyokurou.txt: 31
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/HAK - Hakugyokurou.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/HEL - Hell.txt: 31
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/HEL - Hell.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/HEL - Hell.txt: 45
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'basic_heavy_tank'<==  for Countryhistory/countries/HEL - Hell.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/KAP - Kappa.txt: 34
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'basic_heavy_tank'<==  for Countryhistory/countries/KAP - Kappa.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/MLS - Molisa.txt: 31
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/MLS - Molisa.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/OPP - Opposite.txt: 31
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/OPP - Opposite.txt
+[11:11:18][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/RAB - Rabbit.txt: 31
+[11:11:18][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/RAB - Rabbit.txt
+[11:11:19][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/SSS - Moriya.txt: 31
+[11:11:19][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/SSS - Moriya.txt
+[11:11:19][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/TEM - Temple.txt: 31
+[11:11:19][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/TEM - Temple.txt
+[11:11:19][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/TEN - Tengu.txt: 31
+[11:11:19][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/TEN - Tengu.txt
+[11:11:19][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/TEN - Tengu.txt: 44
+[11:11:19][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'heavy_fighter1'<==  for Countryhistory/countries/TEN - Tengu.txt
+[11:11:19][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/TEN - Tengu.txt: 58
+[11:11:19][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/TEN - Tengu.txt
+[11:11:19][no_game_date][effect.cpp:392]: Else/else if not following an if or else if in history/countries/VAM - Vampire.txt: 32
+[11:11:19][no_game_date][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/VAM - Vampire.txt
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 397
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 401
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 405
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 409
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 413
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 417
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 421
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 425
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 429
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 433" in file: "common/scripted_effects/touhou_boss_scripted_effects.txt" near line: 437
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 890
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 894
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 898
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 902
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 906
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 910
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 914
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 918
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 922
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 926
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 930
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 934
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 938
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 942
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 946
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 950
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 954
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 958
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 962
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 966
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 970
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 974
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 978
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 982
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 986" in file: "common/scripted_effects/touhou_boss_scripted_effects.txt" near line: 990
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1028
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1032
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1036
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1040
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1044
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1048
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1052
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1056
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1060
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1064
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1068
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1072
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1076
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1080
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1084
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1088
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1092
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1096
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1100
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1104
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1108
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1112
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1116
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1120
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1124" in file: "common/scripted_effects/touhou_boss_scripted_effects.txt" near line: 1128
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 79" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 79
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 83" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 83
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 155" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 155
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 159" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 159
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 232" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 232
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 237" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 237
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 242" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 242
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 321" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 321
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 326" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 326
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 331" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 331
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 409" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 409
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 413" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 413
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 417" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 417
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 421" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 421
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 425" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 425
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 429" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 429
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 433" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 433
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 521" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 521
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 591" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 591
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 661" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 661
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 666" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 666
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 740" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 740
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 744" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 744
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 817" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 817
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 822" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 822
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 896" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 896
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 900" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 900
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 973" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 973
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 978" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 978
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1053" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1053
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1058" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1058
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1133" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1133
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1138" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1138
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1143" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1143
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1148" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1148
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1153" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1153
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1240" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1240
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1245" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1245
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1250" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1250
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1255" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1255
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1260" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1260
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1347" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1347
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1418" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1418
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1423" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1423
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1428" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1428
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1433" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1433
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1438" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1438
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1443" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1443
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1448" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1448
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1453" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1453
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1552" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1552
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1557" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1557
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1562" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1562
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1567" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1567
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1572" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1572
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1577" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1577
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1582" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1582
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1587" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1587
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1686" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1686
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1691" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1691
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1696" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1696
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1701" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1701
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1706" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1706
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1711" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1711
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1716" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1716
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1721" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1721
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1820" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1820
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1825" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1825
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1830" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1830
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1835" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1835
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1840" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1840
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1845" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1845
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1850" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1850
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1855" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1855
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1953" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1953
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1957" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1957
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2029" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2029
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2033" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2033
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2105" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2105
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2109" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2109
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2182" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2182
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2187" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2187
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2262" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2262
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2267" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2267
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2342" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2342
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2347" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2347
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2422" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2422
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2493" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2493
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2563" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2563
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2567" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2567
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2571" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2571
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2575" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2575
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2579" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2579
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2661" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2661
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2666" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2666
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2671" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2671
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2750" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2750
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2755" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2755
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2830" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2830
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2835" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2835
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2840" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2840
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2847" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2847
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2854" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2854
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2945" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2945
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2950" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2950
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2955" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2955
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2960" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2960
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2965" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2965
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3052" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3052
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3057" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3057
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3062" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3062
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3067" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3067
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3072" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3072
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3159" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3159
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3164" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3164
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3169" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3169
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3174" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3174
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3179" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3179
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3266" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3266
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3271" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3271
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3276" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3276
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3281" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3281
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3286" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3286
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3372" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3372
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3376" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3376
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3380" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3380
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3384" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3384
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3462" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3462
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3466" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3466
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3470" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3470
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3474" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3474
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3552" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3552
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3556" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3556
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3560" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3560
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3564" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3564
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3642" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3642
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3646" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3646
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3650" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3650
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3654" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3654
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3733" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3733
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3738" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3738
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3743" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3743
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3822" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3822
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3827" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3827
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3832" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3832
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3911" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3911
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3916" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3916
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3921" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3921
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3998" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3998
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4065" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4065
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4132" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4132
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4202" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4202
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4273" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4273
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4277" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4277
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4281" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4281
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4356" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4356
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4360" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4360
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4364" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4364
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4440" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4440
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4445" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4445
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4450" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4450
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4455" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4455
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4538" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4538
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4543" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4543
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4548" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4548
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4553" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4553
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4635" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4635
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4639" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4639
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4643" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4643
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4647" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4647
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4651" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4651
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4655" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4655
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4659" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4659
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4663" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4663
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4754" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4754
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4825" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4825
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4896" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4896
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4901" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4901
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4906" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4906
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4911" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4911
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4994" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4994
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4999" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4999
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5004" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5004
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5009" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5009
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5094" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5094
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5099" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5099
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5104" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5104
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5109" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5109
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5114" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5114
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5203" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5203
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5208" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5208
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5213" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5213
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5218" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5218
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5223" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5223
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5228" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5228
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5233" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5233
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5238" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5238
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5337" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5337
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5342" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5342
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5347" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5347
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5352" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5352
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5357" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5357
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5362" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5362
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5367" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5367
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5372" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5372
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5471" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5471
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5476" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5476
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5481" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5481
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5486" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5486
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5491" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5491
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5496" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5496
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5501" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5501
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5506" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5506
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5605" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5605
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5610" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5610
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5615" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5615
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5620" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5620
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5625" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5625
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5630" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5630
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5635" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5635
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5640" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5640
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5738" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5738
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5807" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5807
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5876" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5876
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5945" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5945
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 6014" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 6014
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 6083" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 6083
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 6152" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 6152
+[11:11:19][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 6222" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 6222
+[11:11:20][no_game_date][eventmanager.cpp:566]: events/touhou_save_recovery.txt:16: touhou_save_recovery.2: Event is set to trigger every day.
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 397
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 401
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 405
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 409
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 413
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 417
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 421
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 425
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 429
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 433" in file: "common/scripted_effects/touhou_boss_scripted_effects.txt" near line: 437
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 890
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 894
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 898
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 902
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 906
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 910
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 914
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 918
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 922
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 926
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 930
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 934
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 938
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 942
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 946
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 950
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 954
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 958
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 962
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 966
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 970
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 974
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 978
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 982
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 986" in file: "common/scripted_effects/touhou_boss_scripted_effects.txt" near line: 990
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1028
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1032
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1036
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1040
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1044
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1048
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1052
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1056
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1060
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1064
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1068
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1072
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1076
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1080
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1084
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1088
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1092
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1096
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1100
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1104
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1108
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1112
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1116
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1120
+Subunit is of support type: super_heavy_sp_anti_air_brigade, near line: 1124" in file: "common/scripted_effects/touhou_boss_scripted_effects.txt" near line: 1128
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 79" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 79
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 83" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 83
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 155" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 155
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 159" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 159
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 232" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 232
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 237" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 237
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 242" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 242
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 321" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 321
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 326" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 326
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 331" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 331
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 409" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 409
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 413" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 413
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 417" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 417
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 421" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 421
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 425" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 425
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 429" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 429
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 433" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 433
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 521" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 521
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 591" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 591
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 661" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 661
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 666" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 666
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 740" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 740
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 744" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 744
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 817" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 817
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 822" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 822
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 896" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 896
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 900" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 900
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 973" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 973
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 978" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 978
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1053" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1053
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1058" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1058
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1133" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1133
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1138" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1138
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1143" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1143
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1148" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1148
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1153" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1153
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1240" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1240
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1245" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1245
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1250" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1250
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1255" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1255
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1260" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1260
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1347" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1347
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1418" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1418
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1423" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1423
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1428" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1428
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1433" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1433
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1438" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1438
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1443" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1443
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1448" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1448
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1453" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1453
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1552" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1552
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1557" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1557
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1562" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1562
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1567" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1567
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1572" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1572
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1577" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1577
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1582" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1582
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1587" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1587
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1686" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1686
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1691" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1691
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1696" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1696
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1701" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1701
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1706" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1706
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1711" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1711
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1716" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1716
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1721" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1721
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1820" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1820
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1825" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1825
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1830" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1830
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1835" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1835
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1840" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1840
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1845" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1845
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1850" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1850
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1855" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1855
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1953" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1953
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 1957" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 1957
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2029" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2029
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2033" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2033
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2105" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2105
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2109" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2109
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2182" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2182
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2187" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2187
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2262" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2262
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2267" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2267
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2342" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2342
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2347" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2347
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2422" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2422
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2493" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2493
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2563" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2563
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2567" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2567
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2571" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2571
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2575" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2575
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2579" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2579
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2661" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2661
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2666" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2666
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2671" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2671
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2750" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2750
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2755" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2755
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2830" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2830
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2835" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2835
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2840" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2840
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2847" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2847
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2854" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2854
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2945" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2945
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2950" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2950
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2955" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2955
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2960" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2960
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 2965" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 2965
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3052" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3052
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3057" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3057
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3062" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3062
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3067" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3067
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3072" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3072
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3159" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3159
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3164" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3164
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3169" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3169
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3174" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3174
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3179" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3179
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3266" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3266
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3271" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3271
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3276" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3276
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3281" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3281
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3286" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3286
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3372" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3372
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3376" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3376
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3380" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3380
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3384" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3384
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3462" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3462
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3466" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3466
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3470" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3470
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3474" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3474
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3552" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3552
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3556" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3556
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3560" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3560
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3564" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3564
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3642" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3642
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3646" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3646
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3650" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3650
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3654" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3654
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3733" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3733
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3738" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3738
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3743" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3743
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3822" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3822
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3827" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3827
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3832" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3832
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3911" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3911
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3916" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3916
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3921" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3921
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 3998" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 3998
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4065" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4065
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4132" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4132
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4202" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4202
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4273" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4273
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4277" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4277
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4281" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4281
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4356" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4356
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4360" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4360
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4364" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4364
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4440" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4440
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4445" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4445
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4450" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4450
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4455" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4455
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4538" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4538
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4543" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4543
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4548" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4548
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4553" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4553
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4635" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4635
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4639" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4639
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4643" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4643
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4647" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4647
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4651" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4651
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4655" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4655
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4659" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4659
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4663" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4663
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4754" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4754
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4825" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4825
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4896" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4896
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4901" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4901
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4906" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4906
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4911" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4911
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4994" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4994
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 4999" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 4999
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5004" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5004
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5009" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5009
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5094" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5094
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5099" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5099
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5104" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5104
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5109" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5109
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5114" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5114
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5203" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5203
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5208" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5208
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5213" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5213
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5218" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5218
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5223" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5223
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5228" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5228
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5233" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5233
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5238" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5238
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5337" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5337
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5342" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5342
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5347" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5347
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5352" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5352
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5357" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5357
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5362" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5362
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5367" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5367
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5372" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5372
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5471" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5471
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5476" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5476
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5481" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5481
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5486" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5486
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5491" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5491
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5496" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5496
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5501" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5501
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5506" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5506
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5605" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5605
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5610" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5610
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5615" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5615
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5620" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5620
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5625" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5625
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5630" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5630
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5635" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5635
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5640" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5640
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5738" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5738
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5807" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5807
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5876" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5876
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 5945" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 5945
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 6014" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 6014
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 6083" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 6083
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 6152" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 6152
+[11:11:23][no_game_date][persistent.cpp:67]: Error: "Unexpected token: name, near line: 6222" in file: "common/scripted_effects/touhou_vanilla_military.txt" near line: 6222
+[11:11:23][no_game_date][gameitemdatabase.h:324]: 232 errors.
+[11:11:23][no_game_date][gameitemdatabase.h:336]: =============================
+[11:11:25][no_game_date][gameapplication.cpp:866]: The game has loc key collisions. Check logs/text.log for more details
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/ALI - Alice.txt: 35
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'basic_light_tank'<==  for Countryhistory/countries/ALI - Alice.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/ALI - Alice.txt: 48
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/ALI - Alice.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/ALI - Alice.txt: 61
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_bomber'<==  for Countryhistory/countries/ALI - Alice.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/ALI - Alice.txt: 78
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'basic_heavy_tank'<==  for Countryhistory/countries/ALI - Alice.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/BLQ - Hakurei.txt: 32
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/BLQ - Hakurei.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/BLQ - Hakurei.txt: 46
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'CAS1'<==  for Countryhistory/countries/BLQ - Hakurei.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/DES - Desires.txt: 31
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/DES - Desires.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/DES - Desires.txt: 45
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'strategic_bomber1'<==  for Countryhistory/countries/DES - Desires.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/DLD - Chireiden.txt: 32
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/DLD - Chireiden.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/HAK - Hakugyokurou.txt: 31
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/HAK - Hakugyokurou.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/HEL - Hell.txt: 31
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/HEL - Hell.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/HEL - Hell.txt: 45
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'basic_heavy_tank'<==  for Countryhistory/countries/HEL - Hell.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/KAP - Kappa.txt: 34
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'basic_heavy_tank'<==  for Countryhistory/countries/KAP - Kappa.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/MLS - Molisa.txt: 31
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/MLS - Molisa.txt
+[11:11:26][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/OPP - Opposite.txt: 31
+[11:11:26][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/OPP - Opposite.txt
+[11:11:27][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/RAB - Rabbit.txt: 31
+[11:11:27][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/RAB - Rabbit.txt
+[11:11:27][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/SSS - Moriya.txt: 31
+[11:11:27][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/SSS - Moriya.txt
+[11:11:27][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/TEM - Temple.txt: 31
+[11:11:27][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/TEM - Temple.txt
+[11:11:27][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/TEN - Tengu.txt: 31
+[11:11:27][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/TEN - Tengu.txt
+[11:11:27][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/TEN - Tengu.txt: 44
+[11:11:27][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'heavy_fighter1'<==  for Countryhistory/countries/TEN - Tengu.txt
+[11:11:27][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/TEN - Tengu.txt: 58
+[11:11:27][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/TEN - Tengu.txt
+[11:11:27][1936.01.01.12][effect.cpp:392]: Else/else if not following an if or else if in history/countries/VAM - Vampire.txt: 32
+[11:11:27][1936.01.01.12][countryhistory.cpp:171]: Unknown History Command ==>'early_fighter'<==  for Countryhistory/countries/VAM - Vampire.txt

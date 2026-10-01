@@ -1,12 +1,8 @@
-﻿capital = 1098
-
+capital = 1098
 oob = "OPP_1936"
-
-set_stability = 0.7 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.7
 set_war_support = 0.2
-
 set_research_slots = 1
-
 add_ideas = {
 	touhou_ideas_trump_card
 	ghost_trait
@@ -18,27 +14,43 @@ add_ideas = {
 	limited_conscription
 	demonforce_first_research
 	touhou_fiscal_flexibility
-    die_trait 
+	die_trait
 }
-
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {
+		iw_small_airframe = 1
+	}
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+set_country_flag = touhou_project_unlocked_die
 set_technology = {
-	touhou_demonforce_infantry_weapons = 1
-	touhou_demonforce_early_fighter = 1
-	touhou_demonforce_interwar_antitank = 1
-	touhou_demonforce_interwar_antiair = 1
+	motorised_infantry = 1
+}
+touhou_sync_vanilla_military = yes
+set_technology = {
+	infantry_weapons = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
 	tech_support = 1
 	transport = 1
 	basic_train = 1
-	die = 1
 }
-
-
-
 set_autonomy = {
 	target = HAK
-	autonomous_state =  autonomy_puppet
+	autonomous_state = autonomy_puppet
 }
-
 set_convoys = 0
 set_popularities = {
 	communism = 100
@@ -49,14 +61,18 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
 recruit_character = TOUHOU_Shikieiki_Yamaxanadu
 recruit_character = TOUHOU_Onozuka_Komachi
 set_country_flag = touhou_country_flag_demonforce_first_research
 add_field_marshal_role = {
 	character = TOUHOU_Shikieiki_Yamaxanadu
 	traits = {
-		units_ghost trait_cautious infantry_officer commando urban_assault_specialist skirmisher
+		units_ghost
+		trait_cautious
+		infantry_officer
+		commando
+		urban_assault_specialist
+		skirmisher
 	}
 	skill = 4
 	attack_skill = 4
@@ -65,8 +81,8 @@ add_field_marshal_role = {
 	logistics_skill = 4
 }
 add_country_leader_role = {
-    character = TOUHOU_Shikieiki_Yamaxanadu
-    promote_leader = yes
+	character = TOUHOU_Shikieiki_Yamaxanadu
+	promote_leader = yes
 	country_leader = {
 		expire = "11089.1.1"
 		ideology = centrism
@@ -76,8 +92,8 @@ add_country_leader_role = {
 	}
 }
 add_country_leader_role = {
-    character = TOUHOU_Shikieiki_Yamaxanadu
-    promote_leader = yes
+	character = TOUHOU_Shikieiki_Yamaxanadu
+	promote_leader = yes
 	country_leader = {
 		expire = "11089.1.1"
 		ideology = fascism_ideology
@@ -87,8 +103,8 @@ add_country_leader_role = {
 	}
 }
 add_country_leader_role = {
-    character = TOUHOU_Shikieiki_Yamaxanadu
-    promote_leader = yes
+	character = TOUHOU_Shikieiki_Yamaxanadu
+	promote_leader = yes
 	country_leader = {
 		expire = "11089.1.1"
 		ideology = liberalism
@@ -98,8 +114,8 @@ add_country_leader_role = {
 	}
 }
 add_country_leader_role = {
-    character = TOUHOU_Shikieiki_Yamaxanadu
-    promote_leader = yes
+	character = TOUHOU_Shikieiki_Yamaxanadu
+	promote_leader = yes
 	country_leader = {
 		expire = "11089.1.1"
 		ideology = marxism
@@ -110,39 +126,46 @@ add_country_leader_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Shikieiki_Yamaxanadu
-	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Shikieiki_Yamaxanadu
 		slot = political_advisor
-		traits = { touhou_ideological_crusader }
+		traits = {
+			touhou_ideological_crusader
+		}
 		cost = 150
 	}
 }
 add_advisor_role = {
 	character = TOUHOU_Shikieiki_Yamaxanadu
-	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Shikieiki_Yamaxanadu
 		slot = navy_chief
-		traits = { touhou_navy_screen_3 }
+		traits = {
+			touhou_navy_screen_3
+		}
 		cost = 150
 	}
 }
 add_advisor_role = {
 	character = TOUHOU_Shikieiki_Yamaxanadu
-	#activate = yes
-	
-	
 	advisor = {
 		idea_token = TOUHOU_Shikieiki_Yamaxanadu
 		slot = high_command
-		traits = { touhou_army_chief_old_guard_siji }
+		traits = {
+			touhou_army_chief_old_guard_siji
+		}
 		cost = 150
 	}
 }
 add_corps_commander_role = {
 	character = TOUHOU_Onozuka_Komachi
-	traits = { units_ghost infantry_officer commando urban_assault_specialist skirmisher }
+	traits = {
+		units_ghost
+		infantry_officer
+		commando
+		urban_assault_specialist
+		skirmisher
+	}
 	skill = 3
 	attack_skill = 3
 	defense_skill = 3
@@ -150,24 +173,44 @@ add_corps_commander_role = {
 	logistics_skill = 3
 }
 if = {
-	limit = { has_dlc = "La Resistance" }
+	limit = {
+		has_dlc = "La Resistance"
+	}
 	create_operative_leader = {
 		name = "业镜"
 		GFX = GFX_Shikieiki_Yamaxanadu
-		traits = { operative_escape_artist operative_master_interrogator operative_natural_orator }
+		traits = {
+			operative_escape_artist
+			operative_master_interrogator
+			operative_natural_orator
+		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { OPP TEN HUM VAM }
+		nationalities = {
+			OPP
+			TEN
+			HUM
+			VAM
+		}
 	}
-
 	create_operative_leader = {
 		name = "记录死神"
 		GFX = GFX_Shikieiki_Yamaxanadu
-		traits = { operative_escape_artist operative_infiltrator operative_demolition_expert }
+		traits = {
+			operative_escape_artist
+			operative_infiltrator
+			operative_demolition_expert
+		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { OPP HEL DLD HAK }
+		nationalities = {
+			OPP
+			HEL
+			DLD
+			HAK
+		}
 	}
 }
+touhou_sync_vanilla_military = yes

@@ -1,0 +1,363 @@
+﻿幻想乡军事体系改造：统计与实施方案
+==================================
+
+用户确认方案：保留幻想乡装备型号 ID，统一归入原版装备原型，供原版兵种通用。
+本文件保留前期统计与方案。现已实施迁移，实际规则与校验结果见《幻想乡军事原版化实施说明.txt》。
+
+一、完整统计
+体系 | 科技 | 自定义原型 | 装备型号 | 自定义兵种
+魔力 | 85 | 18 | 52 | 24
+灵力 | 63 | 10 | 30 | 18
+妖力 | 69 | 14 | 37 | 20
+幻想支援 | 29 | 1 | 1 | 7
+王牌 | 22 | 18 | 23 | 20
+额外 Boss | 0 | 0 | 0 | 1
+合计 | 268 | 61 | 143 | 90
+装备定义共 204 项 = 61 项原型 + 143 项型号。另有 38 项旧式学说，需恢复原版 1.19 学说体系。
+兵种按所属体系归类，已包含 common/units/touhou_air.txt 的 9 个空军兵种。
+
+常规科技细分（王牌与支援另计）：
+体系 | 步兵武器/训练加成 | 特种部队 | 火炮/防空/反坦克 | 车辆/机械化 | 坦克及衍生型 | 飞机
+魔力 | 15 | 15 | 13 | 0 | 28 | 14
+灵力 | 15 | 15 | 13 | 7 | 0 | 13
+妖力 | 15 | 15 | 12 | 0 | 16 | 11
+
+常规装备型号细分（不含原型）：
+体系 | 步兵武器 | 火炮/防空/反坦克 | 车辆/机械化 | 坦克及衍生型 | 飞机 | 合计
+魔力 | 4 | 6 | 0 | 28 | 14 | 52
+灵力 | 4 | 6 | 7 | 0 | 13 | 30
+妖力 | 4 | 6 | 0 | 16 | 11 | 37
+幻想支援另有 1 个型号，王牌另有 23 个型号。普通型号 120 个，全部型号 143 个。
+
+二、目标结构
+原版研究节点 → 解锁幻想乡装备型号 → 型号归入原版装备原型 → 原版兵种消耗该类装备。
+例：infantry_weapons1 → touhou_magic_infantry_equipment_1（繁彩魔力发射器）→ infantry_equipment → infantry（步兵）。
+旧型号 ID 和名字保留，研究路线、类别与部队需求统一到原版；装备数值依据当前文件的逐项审计处理，暂不预设削弱比例。
+同一原版原型下的型号在装备类别上通用，最终配发仍受师模板的装备允许列表等限制。
+幻想乡的 61 项独立原型全部退役；143 个现有型号逐项转换。
+90 个自定义 sub_units 全部替换为原版兵种；保留历史师、空军联队、舰艇的剧情名称，转换其实际类型和编制。
+
+三、装备定义的改法
+步兵、火炮、支援装备：将 archetype 指向原版原型，依据当前装备数值与对应原版型号的实际差异逐项处理。
+保留型号 ID、名称、本地化、图片与合理的升级顺序。
+不要只写 parent = infantry_equipment_1 就认为会继承 1936 步枪全部数值；parent 是装备升级关系，仍需按原版型号重建实际属性。
+示例方向（不是已部署文件）：
+touhou_magic_infantry_equipment_1 = {
+    archetype = infantry_equipment
+    parent = touhou_magic_infantry_equipment_0
+    year = 1936
+    defense = 20
+    breakthrough = 2.7
+    soft_attack = 6.6
+    hard_attack = 2
+    ap_attack = 5
+    build_cost_ic = 0.55
+    reliability = 0.7
+    resources = { steel = 3 }
+    # 上述是当前繁彩魔力发射器的实际值，仅用于说明转换需要核对的字段。
+    # 是否保留各项差异需审阅数值报告后确定；这不是最终平衡方案。
+}
+
+三-A、实际数值审计更正（2026-10-01）
+之前提出的“主要战斗属性统一原版90%”没有逐项数值依据，现撤回。
+以当前 Mod 与本机 HOI4 1.19.3 文件为准，详见《幻想乡装备实际数值对照.txt》及其 JSON 原始数值与来源记录。
+覆盖：120 个普通型号、23 个王牌型号、61 个原型；另列 69 个普通兵种和 246 项常规科技的直接修正。
+实际结论：魔力、灵力、妖力的各项属性有高有低；妖力四代步枪的主要战斗属性、可靠性、成本、钢材与原版对应型号相同。
+不能从名称、科技树说明或少量样例推断整个体系都弱于原版；不再预设统一比例，也不预设统一改成原版成本。
+坦克、飞机当前是固定成品装备，文件对照基线为原版固定成品；未完成同模块 NSB/BBA 设计验证，故不能据此宣称其相对设计器成品更强或更弱。
+“parent”不用于本次属性继承，型号显式值覆盖其原型链；未完整声明的值不猜为0。
+六个喷气型号在 Mod 中年份为1946，而原版对应型号为1950，已在审计中保留年份差异。
+原版1.19支援武器Ⅰ解锁新的火力支援单位，而 Mod 仍保留旧式单位防御/突破加成；迁移时需要一起处理。
+基础装备、单位修正、科研加成、国家/MIO 效果与最终设计性能分层记录；当前审计尚未模拟最终战斗结果。
+游戏数值尚未修改。
+
+四、研究解锁与生产归属
+常规研究使用原版科技 ID；在原版科技的 enable_equipments 中补充相应幻想乡型号。
+不再保留 touhou_magic/touhou_wakan/touhou_demonforce 独立研究树及其技术效果。
+科技进度共享原版路线；通过型号生产条件区分魔力、灵力、妖力国家，避免所有国家都生产全部幻想型号。
+生产条件可使用原版已有的 can_be_produced 机制；具体显示、AI 选择与许可生产行为需在样例中验证。
+研究风格标记可作为装备文化分类保留；原科技切换决议改为装备风格/设计选择，具体转换避免重置科研。
+统一幻想乡后，需要允许原有多体系库存混用，并明确联合国家能够继续生产哪些文化型号。
+
+五、坦克与飞机设计器
+不开 NSB/BBA：型号使用原版固定装备类别，具体性能依据当前装备与原版固定型号的实际差异逐项迁移。
+开 NSB：旧坦克型号转为对应原版底盘或角色装备型号，补齐模块槽、升级项、角色与预设设计。
+开 BBA：旧飞机型号转为对应原版机体或角色装备型号，补齐发动机/武器模块、任务与预设设计。
+44 个常规坦克型号、38 个常规飞机型号需要设计器转换。
+旧型号 ID 尽量原样用于对应底盘/机体或角色型号；生成的角色派生 ID 与历史设计引用必须在样例验证后固定。
+不能只改 archetype、保留旧成品全部攻击/装甲数据，再叠加模块数值；否则会重复计算并失去原版平衡。
+原版 x_tank_chassis.txt / x_plane_airframes.txt 使用 duplicate_archetypes 构造坦歼、火炮、防空、CAS 等角色；转换必须沿用相应原版角色原型和生成规则。
+
+六、底盘命名建议（建议新增名称，装备已有名称继续保留）
+类别 | 魔力体系 | 灵力体系 | 妖力体系
+轻型 | 轻型人偶底盘 I/II/III | 轻型附灵底盘 I/II/III | 轻型河童底盘 I/II/III
+中型 | 中型人偶底盘 I/II/III | 中型结界底盘 I/II/III | 中型河童底盘 I/II/III
+重型 | 重型人偶底盘 I/II/III | 重型守护底盘 I/II/III | 重型河童底盘 I/II/III
+超重型 | 巨型人偶底盘 | 超重型御灵底盘 | 超重型河童底盘
+现代 | 现代人偶底盘 | 现代灵装底盘 | 现代妖装底盘
+原版底盘技术 ID 不变，各国家技术名使用国家专属本地化；型号名与成品设计名使用各自独立名称。
+例如 ALI_basic_light_tank_chassis 可显示“基础型轻型人偶底盘”，不覆盖德国等国家的原版显示名称。
+现有灵力没有独立坦克型号；替换后仍可研究整套原版坦克路线，缺少的幻想型号可后续补充，或先生产原版型号并使用灵力国家名称。
+
+七、必须单独处理的王牌
+1. evil_equipment_0：一个型号目前供步兵、装甲、炮兵三种自定义兵种使用。原版兵种需求不同，单个型号不能同时归入三个 archetype。保留旧 ID 作为其中一类，另新增同主题的装甲/火炮型号。
+2. 鬼王：原兵种混合步兵与装甲分类，需选原版装甲或步兵编制；旧独立兵种能力不会自动保留。
+3. 神风人偶与战略人偶：要按实际任务选飞机原型，不能仅凭名称当成导弹；特殊自爆任务与兼容性需独立处理。
+4. 歌利亚：改为原版重型/超重型装甲角色设计，专属兵种与科技退役，型号名可保留。
+5. 深海少女、星莲船：也在“全部自定义装备/兵种”范围内，需要原版潜艇、航母/重型舰体及模块转换。
+6. 月都参谋连：实际主要效果为地形加成，近似工兵方向；未来医疗设备近似医院，移动补给站近似后勤。
+7. 超·极限花火：其极高装备攻击与独立特殊部队要改为原版火炮/支援设计；是否保留特殊强度由国策或决议另行表达。
+8. 王牌解锁改为决议/国策条件、装备生产资格与设计发放，删除隐藏王牌科技；不以遗留隐藏科技替代。
+
+八、实施顺序与验证
+阶段 1：只做一套完整样例：爱丽丝步枪、轻坦、战斗机，以及原版步兵/轻装甲编制。
+验证：原版科技是否解锁型号；原版步兵能否补充幻想与外界枪械；库存和生产是否正确；NSB/BBA 下模块、角色、设计、升级是否正常。
+阶段 2：按样例转换其余 120 个常规模型、69 个普通兵种及相关历史配置。
+阶段 3：处理 23 个王牌型号、20 个王牌兵种、额外 Boss 和舰船设计。
+阶段 4：恢复原版科技/学说页，删除自定义科技及 61 项独立原型、90 项兵种的旧定义。
+阶段 5：更新 AI、MIO、国策研究加成、事件装备奖励/消耗、开局生产、库存、师模板与各解锁模板；清理引用。
+验收范围：三种文化开局、NSB/BBA/MTG 支持组合、统一幻想乡、王牌获得与剧情装备转移。首版以新开局为目标；旧存档迁移另行评估。
+
+九、全部 90 项自定义兵种的原版替代方向
+普通兵种为对应转换；王牌/Boss 的角色选择为方案建议，不能视为数值等价。
+1. 迦楼罗 [touhou_demonforce_fighter] → fighter
+2. 萨玛艾尔 [touhou_demonforce_heavy_fighter] → heavy_fighter
+3. 瓦尔基莉 [touhou_demonforce_cas] → cas
+4. 大气法师 [touhou_magic_fighter] → fighter
+5. 爆裂法师 [touhou_magic_tac_bomber] → tac_bomber
+6. 毁灭法师 [touhou_magic_strat_bomber] → strat_bomber
+7. 飓风术士 [touhou_wakan_fighter] → fighter
+8. 天火术士 [touhou_wakan_tac_bomber] → tac_bomber
+9. 唤雷术士 [touhou_wakan_cas] → cas
+10. 哈努曼 [touhou_demonforce_infantry] → infantry
+11. 利维坦 [touhou_demonforce_marine] → marine
+12. 雅木 [touhou_demonforce_mountaineers] → mountaineers
+13. 加斯伯禄 [touhou_demonforce_paratrooper] → paratrooper
+14. 芬里尔 [touhou_demonforce_cavalry] → cavalry
+15. 单卡拉比 [touhou_demonforce_anti_air] → anti_air
+16. 单卡拉比 [touhou_demonforce_anti_air_brigade] → anti_air_brigade
+17. 巴隆 [touhou_demonforce_anti_tank] → anti_tank
+18. 巴隆 [touhou_demonforce_anti_tank_brigade] → anti_tank_brigade
+19. 阿巴东 [touhou_demonforce_heavy_armor] → heavy_armor
+20. 泰坦 [touhou_demonforce_super_heavy_armor] → super_heavy_armor
+21. 芭一波卡赫 [touhou_demonforce_heavy_sp_anti_air_brigade] → heavy_sp_anti_air_brigade
+22. 鹏 [touhou_demonforce_super_heavy_sp_anti_air_brigade] → super_heavy_sp_anti_air_brigade
+23. 弗栗多 [touhou_demonforce_heavy_sp_artillery_brigade] → heavy_sp_artillery_brigade
+24. 婆苏吉 [touhou_demonforce_super_heavy_sp_artillery_brigade] → super_heavy_sp_artillery_brigade
+25. 须佐之男 [touhou_demonforce_heavy_tank_destroyer_brigade] → heavy_tank_destroyer_brigade
+26. 湿婆 [touhou_demonforce_super_heavy_tank_destroyer_brigade] → super_heavy_tank_destroyer_brigade
+27. 战争法师 [touhou_magic_infantry] → infantry
+28. 海洋元素 [touhou_magic_marine] → marine
+29. 大地元素 [touhou_magic_mountaineers] → mountaineers
+30. 大气元素 [touhou_magic_paratrooper] → paratrooper
+31. 魔法兽 [touhou_magic_cavalry] → cavalry
+32. 塑能法师 [touhou_magic_artillery] → artillery
+33. 塑能法师 [touhou_magic_artillery_brigade] → artillery_brigade
+34. 魔炮射手 [touhou_magic_anti_tank] → anti_tank
+35. 魔炮射手 [touhou_magic_anti_tank_brigade] → anti_tank_brigade
+36. 轻型人偶 [touhou_magic_light_armor] → light_armor
+37. 重型人偶 [touhou_magic_medium_armor] → medium_armor
+38. 轻型人偶炮装 [touhou_magic_light_sp_artillery_brigade] → light_sp_artillery_brigade
+39. 重型人偶炮装 [touhou_magic_medium_sp_artillery_brigade] → medium_sp_artillery_brigade
+40. 轻型人偶重装 [touhou_magic_light_tank_destroyer_brigade] → light_tank_destroyer_brigade
+41. 重型人偶重装 [touhou_magic_medium_tank_destroyer_brigade] → medium_tank_destroyer_brigade
+42. 轻型人偶弹幕装 [touhou_magic_light_sp_anti_air_brigade] → light_sp_anti_air_brigade
+43. 重型人偶弹幕装 [touhou_magic_medium_sp_anti_air_brigade] → medium_sp_anti_air_brigade
+44. 量产型歌利亚 [touhou_magic_modern_armor] → modern_armor
+45. 量产型歌利亚炮击装 [touhou_magic_modern_sp_artillery_brigade] → modern_sp_artillery_brigade
+46. 量产型歌利亚破甲装 [touhou_magic_modern_tank_destroyer_brigade] → modern_tank_destroyer_brigade
+47. 量产型歌利亚弹幕装 [touhou_magic_modern_sp_anti_air_brigade] → modern_sp_anti_air_brigade
+48. 大地使者 [touhou_engineer] → engineer
+49. 阎王愁 [touhou_field_hospital] → field_hospital
+50. 圣诞老人 [touhou_logistics_company] → logistics_company
+51. 鬼斧神工 [touhou_maintenance_company] → maintenance_company
+52. 幻想教长 [touhou_military_police] → military_police
+53. 守望之眼 [touhou_recon] → recon
+54. 通信人偶 [touhou_signal_company] → signal_company
+55. 神风人偶编队 [suicide_puppet_1] → nav_bomber（近似角色方案）
+56. 人偶战略导弹集群 [suicide_puppet_2] → cas（近似角色方案）
+57. 歌利亚战团 [goliath_brigade] → heavy_armor（近似角色方案）
+58. 冠军鬼王 [oni_brigade] → heavy_armor（近似角色方案）
+59. 风神天狗 [tengu_brigade] → fighter（近似角色方案）
+60. 博丽对地攻击联队 [cas_boli_fighter_brigade] → cas（近似角色方案）
+61. 天谴道士 [desires_brigade] → strat_bomber（近似角色方案）
+62. 妖精 [evil_brigade] → infantry（近似角色方案）
+63. 妖精突击营 [evil_armor_brigade] → medium_armor（近似角色方案）
+64. 妖精火炮营 [evil_artillery_brigade] → artillery_brigade（近似角色方案）
+65. 人类卫队 [human_brigade] → infantry（近似角色方案）
+66. 心灵引导者 [animal_brigade] → infantry（近似角色方案）
+67. 龙虎卫 [dragon_brigade] → mountaineers（近似角色方案）
+68. 死神 [die_brigade] → motorized（近似角色方案）
+69. 月都式参谋连 [rabbit_team_brigade] → engineer（近似角色方案）
+70. 守矢巫女 [wunv_brigade] → field_hospital（近似角色方案）
+71. 移动魔法巨炮 [magician_brigade] → artillery_brigade（实际为线列炮兵，已按原文件修正）
+72. 庭师亲传弟子 [soul_brigade] → logistics_company（近似角色方案）
+73. 深海少女 [deep_sea_brigade] → submarine（近似角色方案）
+74. 星莲船 [lotus_brigade] → carrier（近似角色方案）
+75. 破魔术士 [touhou_wakan_infantry] → infantry
+76. 水精灵 [touhou_wakan_marine] → marine
+77. 土精灵 [touhou_wakan_mountaineers] → mountaineers
+78. 风精灵 [touhou_wakan_paratrooper] → paratrooper
+79. 灵兽 [touhou_wakan_cavalry] → cavalry
+80. 轰击术士 [touhou_wakan_artillery] → artillery
+81. 轰击术士 [touhou_wakan_artillery_brigade] → artillery_brigade
+82. 瞬轰术士 [touhou_wakan_mot_artillery_brigade] → mot_artillery_brigade
+83. 火风暴灵装 [touhou_wakan_motorized_rocket_brigade] → motorized_rocket_brigade
+84. 天网术士 [touhou_wakan_anti_air] → anti_air
+85. 天网术士 [touhou_wakan_anti_air_brigade] → anti_air_brigade
+86. 天网瞬击士 [touhou_wakan_mot_anti_air_brigade] → mot_anti_air_brigade
+87. 灵装术士 [touhou_wakan_motorized] → motorized
+88. 灵装机术士 [touhou_wakan_mechanized] → mechanized
+89. 泛用型灵装机 [touhou_wakan_amphibious_mechanized] → amphibious_mechanized
+90. 魔界精锐部队 [touhou_boss_army] → heavy_armor（原版超重型防空属于支援连；保留 Boss 的线列装甲位置，采用重型装甲营）
+
+十、全部 143 项现有型号的转换基线
+普通型号按原版固定型号核对；NSB/BBA 模块化的具体角色生成与 ID 适配见第五节。
+本附录的“原版基线”用于重建属性与原型，不表示使用 parent 字段继承同代型号。
+1. 妖怪 [touhou_demonforce_infantry_equipment_0] → 原版基线 infantry_equipment_0；共用原型 infantry_equipment
+2. 妖魔 [touhou_demonforce_infantry_equipment_1] → 原版基线 infantry_equipment_1；共用原型 infantry_equipment
+3. 幻魔 [touhou_demonforce_infantry_equipment_2] → 原版基线 infantry_equipment_2；共用原型 infantry_equipment
+4. 哈努曼 [touhou_demonforce_infantry_equipment_3] → 原版基线 infantry_equipment_3；共用原型 infantry_equipment
+5. 恶鬼 [touhou_demonforce_anti_air_equipment_1] → 原版基线 anti_air_equipment_1；共用原型 anti_air_equipment
+6. 恶魔 [touhou_demonforce_anti_air_equipment_2] → 原版基线 anti_air_equipment_2；共用原型 anti_air_equipment
+7. 单卡拉比 [touhou_demonforce_anti_air_equipment_3] → 原版基线 anti_air_equipment_3；共用原型 anti_air_equipment
+8. 走兽 [touhou_demonforce_anti_tank_equipment_1] → 原版基线 anti_tank_equipment_1；共用原型 anti_tank_equipment
+9. 神兽 [touhou_demonforce_anti_tank_equipment_2] → 原版基线 anti_tank_equipment_2；共用原型 anti_tank_equipment
+10. 巴隆 [touhou_demonforce_anti_tank_equipment_3] → 原版基线 anti_tank_equipment_3；共用原型 anti_tank_equipment
+11. 妖兽 [touhou_demonforce_heavy_tank_equipment_1] → 原版基线 heavy_tank_equipment_1；共用原型 heavy_tank_chassis
+12. 魔兽 [touhou_demonforce_heavy_tank_equipment_2] → 原版基线 heavy_tank_equipment_2；共用原型 heavy_tank_chassis
+13. 阿巴东 [touhou_demonforce_heavy_tank_equipment_3] → 原版基线 heavy_tank_equipment_3；共用原型 heavy_tank_chassis
+14. 飞龙 [touhou_demonforce_heavy_tank_artillery_equipment_1] → 原版基线 heavy_tank_artillery_equipment_1；共用原型 heavy_tank_artillery_chassis
+15. 邪龙 [touhou_demonforce_heavy_tank_artillery_equipment_2] → 原版基线 heavy_tank_artillery_equipment_2；共用原型 heavy_tank_artillery_chassis
+16. 弗栗多 [touhou_demonforce_heavy_tank_artillery_equipment_3] → 原版基线 heavy_tank_artillery_equipment_3；共用原型 heavy_tank_artillery_chassis
+17. 破坏者 [touhou_demonforce_heavy_tank_destroyer_equipment_1] → 原版基线 heavy_tank_destroyer_equipment_1；共用原型 heavy_tank_destroyer_chassis
+18. 毁灭王 [touhou_demonforce_heavy_tank_destroyer_equipment_2] → 原版基线 heavy_tank_destroyer_equipment_2；共用原型 heavy_tank_destroyer_chassis
+19. 须佐之男 [touhou_demonforce_heavy_tank_destroyer_equipment_3] → 原版基线 heavy_tank_destroyer_equipment_3；共用原型 heavy_tank_destroyer_chassis
+20. 惊雀 [touhou_demonforce_heavy_tank_aa_equipment_1] → 原版基线 heavy_tank_aa_equipment_1；共用原型 heavy_tank_aa_chassis
+21. 群鸟 [touhou_demonforce_heavy_tank_aa_equipment_2] → 原版基线 heavy_tank_aa_equipment_2；共用原型 heavy_tank_aa_chassis
+22. 芭一波卡赫 [touhou_demonforce_heavy_tank_aa_equipment_3] → 原版基线 heavy_tank_aa_equipment_3；共用原型 heavy_tank_aa_chassis
+23. 泰坦 [touhou_demonforce_super_heavy_tank_equipment_1] → 原版基线 super_heavy_tank_equipment_1；共用原型 super_heavy_tank_chassis
+24. 婆苏吉 [touhou_demonforce_super_heavy_tank_artillery_equipment_1] → 原版基线 super_heavy_tank_artillery_equipment_1；共用原型 super_heavy_tank_artillery_chassis
+25. 湿婆 [touhou_demonforce_super_heavy_tank_destroyer_equipment_1] → 原版基线 super_heavy_tank_destroyer_equipment_1；共用原型 super_heavy_tank_destroyer_chassis
+26. 鹏 [touhou_demonforce_super_heavy_tank_aa_equipment_1] → 原版基线 super_heavy_tank_aa_equipment_1；共用原型 super_heavy_tank_aa_chassis
+27. 有翼 [touhou_demonforce_fighter_equipment_0] → 原版基线 fighter_equipment_0；共用原型 small_plane_airframe
+28. 飞禽 [touhou_demonforce_fighter_equipment_1] → 原版基线 fighter_equipment_1；共用原型 small_plane_airframe
+29. 灵鸟 [touhou_demonforce_fighter_equipment_2] → 原版基线 fighter_equipment_2；共用原型 small_plane_airframe
+30. 神乌 [touhou_demonforce_fighter_equipment_3] → 原版基线 fighter_equipment_3；共用原型 small_plane_airframe
+31. 迦楼罗 [touhou_demonforce_jet_fighter_equipment_2] → 原版基线 jet_fighter_equipment_2；共用原型 jet_fighter_equipment
+32. 巨翅 [touhou_demonforce_heavy_fighter_equipment_1] → 原版基线 heavy_fighter_equipment_1；共用原型 medium_plane_fighter_airframe
+33. 巨鸟 [touhou_demonforce_heavy_fighter_equipment_2] → 原版基线 heavy_fighter_equipment_2；共用原型 medium_plane_fighter_airframe
+34. 萨玛艾尔 [touhou_demonforce_heavy_fighter_equipment_3] → 原版基线 heavy_fighter_equipment_3；共用原型 medium_plane_fighter_airframe
+35. 雄鹰 [touhou_demonforce_CAS_equipment_1] → 原版基线 CAS_equipment_1；共用原型 small_plane_cas_airframe
+36. 女武神 [touhou_demonforce_CAS_equipment_2] → 原版基线 CAS_equipment_2；共用原型 small_plane_cas_airframe
+37. 瓦尔基莉 [touhou_demonforce_CAS_equipment_3] → 原版基线 CAS_equipment_3；共用原型 small_plane_cas_airframe
+38. 基本魔力发射器 [touhou_magic_infantry_equipment_0] → 原版基线 infantry_equipment_0；共用原型 infantry_equipment
+39. 繁彩魔力发射器 [touhou_magic_infantry_equipment_1] → 原版基线 infantry_equipment_1；共用原型 infantry_equipment
+40. 纯色魔力发射器 [touhou_magic_infantry_equipment_2] → 原版基线 infantry_equipment_2；共用原型 infantry_equipment
+41. 纯粹魔力发射器 [touhou_magic_infantry_equipment_3] → 原版基线 infantry_equipment_3；共用原型 infantry_equipment
+42. 魔力爆破器 [touhou_magic_artillery_equipment_1] → 原版基线 artillery_equipment_1；共用原型 artillery_equipment
+43. 魔火焰喷射器 [touhou_magic_artillery_equipment_2] → 原版基线 artillery_equipment_2；共用原型 artillery_equipment
+44. 地狱火喷射器 [touhou_magic_artillery_equipment_3] → 原版基线 artillery_equipment_3；共用原型 artillery_equipment
+45. 火花穿甲炮 [touhou_magic_anti_tank_equipment_1] → 原版基线 anti_tank_equipment_1；共用原型 anti_tank_equipment
+46. 极限火花穿甲炮 [touhou_magic_anti_tank_equipment_2] → 原版基线 anti_tank_equipment_2；共用原型 anti_tank_equipment
+47. 究极火花穿甲炮 [touhou_magic_anti_tank_equipment_3] → 原版基线 anti_tank_equipment_3；共用原型 anti_tank_equipment
+48. 上海级 [touhou_magic_light_tank_equipment_1] → 原版基线 light_tank_equipment_1；共用原型 light_tank_chassis
+49. 上海级改良型 [touhou_magic_light_tank_equipment_2] → 原版基线 light_tank_equipment_2；共用原型 light_tank_chassis
+50. 上海级完全型 [touhou_magic_light_tank_equipment_3] → 原版基线 light_tank_equipment_3；共用原型 light_tank_chassis
+51. 上海级火炮装 [touhou_magic_light_tank_artillery_equipment_1] → 原版基线 light_tank_artillery_equipment_1；共用原型 light_tank_artillery_chassis
+52. 上海级改良型火炮装 [touhou_magic_light_tank_artillery_equipment_2] → 原版基线 light_tank_artillery_equipment_2；共用原型 light_tank_artillery_chassis
+53. 上海级完全型火炮装 [touhou_magic_light_tank_artillery_equipment_3] → 原版基线 light_tank_artillery_equipment_3；共用原型 light_tank_artillery_chassis
+54. 上海级破甲装 [touhou_magic_light_tank_destroyer_equipment_1] → 原版基线 light_tank_destroyer_equipment_1；共用原型 light_tank_destroyer_chassis
+55. 上海级改良型破甲装 [touhou_magic_light_tank_destroyer_equipment_2] → 原版基线 light_tank_destroyer_equipment_2；共用原型 light_tank_destroyer_chassis
+56. 上海级完全型破甲装 [touhou_magic_light_tank_destroyer_equipment_3] → 原版基线 light_tank_destroyer_equipment_3；共用原型 light_tank_destroyer_chassis
+57. 上海级弹幕装 [touhou_magic_light_tank_aa_equipment_1] → 原版基线 light_tank_aa_equipment_1；共用原型 light_tank_aa_chassis
+58. 上海级改良型弹幕装 [touhou_magic_light_tank_aa_equipment_2] → 原版基线 light_tank_aa_equipment_2；共用原型 light_tank_aa_chassis
+59. 上海级完全型弹幕装 [touhou_magic_light_tank_aa_equipment_3] → 原版基线 light_tank_aa_equipment_3；共用原型 light_tank_aa_chassis
+60. 提泰妮娅级 [touhou_magic_medium_tank_equipment_1] → 原版基线 medium_tank_equipment_1；共用原型 medium_tank_chassis
+61. 提泰妮娅级改良型 [touhou_magic_medium_tank_equipment_2] → 原版基线 medium_tank_equipment_2；共用原型 medium_tank_chassis
+62. 提泰妮娅级完全型 [touhou_magic_medium_tank_equipment_3] → 原版基线 medium_tank_equipment_3；共用原型 medium_tank_chassis
+63. 提泰妮娅级火炮装 [touhou_magic_medium_tank_artillery_equipment_1] → 原版基线 medium_tank_artillery_equipment_1；共用原型 medium_tank_artillery_chassis
+64. 提泰妮娅级改良型火炮装 [touhou_magic_medium_tank_artillery_equipment_2] → 原版基线 medium_tank_artillery_equipment_2；共用原型 medium_tank_artillery_chassis
+65. 提泰妮娅级完全型火炮装 [touhou_magic_medium_tank_artillery_equipment_3] → 原版基线 medium_tank_artillery_equipment_3；共用原型 medium_tank_artillery_chassis
+66. 提泰妮娅级破甲装 [touhou_magic_medium_tank_destroyer_equipment_1] → 原版基线 medium_tank_destroyer_equipment_1；共用原型 medium_tank_destroyer_chassis
+67. 提泰妮娅级改良型破甲装 [touhou_magic_medium_tank_destroyer_equipment_2] → 原版基线 medium_tank_destroyer_equipment_2；共用原型 medium_tank_destroyer_chassis
+68. 提泰妮娅级完全型破甲装 [touhou_magic_medium_tank_destroyer_equipment_3] → 原版基线 medium_tank_destroyer_equipment_3；共用原型 medium_tank_destroyer_chassis
+69. 提泰妮娅级弹幕装 [touhou_magic_medium_tank_aa_equipment_1] → 原版基线 medium_tank_aa_equipment_1；共用原型 medium_tank_aa_chassis
+70. 提泰妮娅级改良型弹幕装 [touhou_magic_medium_tank_aa_equipment_2] → 原版基线 medium_tank_aa_equipment_2；共用原型 medium_tank_aa_chassis
+71. 提泰妮娅级完全型弹幕装 [touhou_magic_medium_tank_aa_equipment_3] → 原版基线 medium_tank_aa_equipment_3；共用原型 medium_tank_aa_chassis
+72. 量产型歌利亚 [touhou_magic_modern_tank_equipment_1] → 原版基线 modern_tank_equipment_1；共用原型 modern_tank_chassis
+73. 量产型歌利亚炮击装 [touhou_magic_modern_tank_artillery_equipment_1] → 原版基线 modern_tank_artillery_equipment_1；共用原型 modern_tank_artillery_chassis
+74. 量产型歌利亚破甲装 [touhou_magic_modern_tank_destroyer_equipment_1] → 原版基线 modern_tank_destroyer_equipment_1；共用原型 modern_tank_destroyer_chassis
+75. 量产型歌利亚弹幕装 [touhou_magic_modern_tank_aa_equipment_1] → 原版基线 modern_tank_aa_equipment_1；共用原型 modern_tank_aa_chassis
+76. 扫把 [touhou_magic_fighter_equipment_0] → 原版基线 fighter_equipment_0；共用原型 small_plane_airframe
+77. 飞行扫把 [touhou_magic_fighter_equipment_1] → 原版基线 fighter_equipment_1；共用原型 small_plane_airframe
+78. 附魔扫把 [touhou_magic_fighter_equipment_2] → 原版基线 fighter_equipment_2；共用原型 small_plane_airframe
+79. 魔法扫把 [touhou_magic_fighter_equipment_3] → 原版基线 fighter_equipment_3；共用原型 small_plane_airframe
+80. 强效魔法扫把 [touhou_magic_jet_fighter_equipment_2] → 原版基线 jet_fighter_equipment_2；共用原型 jet_fighter_equipment
+81. 爆炸魔法 [touhou_magic_tac_bomber_equipment_0] → 原版基线 tac_bomber_equipment_0；共用原型 medium_plane_airframe
+82. 爆破魔法 [touhou_magic_tac_bomber_equipment_1] → 原版基线 tac_bomber_equipment_1；共用原型 medium_plane_airframe
+83. 爆裂魔法 [touhou_magic_tac_bomber_equipment_2] → 原版基线 tac_bomber_equipment_2；共用原型 medium_plane_airframe
+84. 极限爆裂魔法 [touhou_magic_tac_bomber_equipment_3] → 原版基线 tac_bomber_equipment_3；共用原型 medium_plane_airframe
+85. 究极爆裂魔法 [touhou_magic_jet_tac_bomber_equipment_2] → 原版基线 jet_tac_bomber_equipment_2；共用原型 jet_tac_bomber_equipment
+86. 大范围爆炸魔法 [touhou_magic_strat_bomber_equipment_1] → 原版基线 strat_bomber_equipment_1；共用原型 large_plane_airframe
+87. 毁灭魔法 [touhou_magic_strat_bomber_equipment_2] → 原版基线 strat_bomber_equipment_2；共用原型 large_plane_airframe
+88. 极限毁灭魔法 [touhou_magic_strat_bomber_equipment_3] → 原版基线 strat_bomber_equipment_3；共用原型 large_plane_airframe
+89. 究极毁灭魔法 [touhou_magic_jet_strat_bomber_equipment_1] → 原版基线 jet_strat_bomber_equipment_1；共用原型 jet_strat_bomber_equipment
+90. 幻想支援装备 [touhou_support_equipment_1] → 原版基线 support_equipment_1；共用原型 support_equipment
+91. 神风人偶 [suicide_puppet_equipment_1] → 王牌型号，按第七节重做并选择原版原型。
+92. 人偶战略导弹 [suicide_puppet_equipment_2] → 王牌型号，按第七节重做并选择原版原型。
+93. 歌利亚幻想乡试做型 [goliath_equipment_1] → 王牌型号，按第七节重做并选择原版原型。
+94. 歌利亚改良型 [goliath_equipment_2] → 王牌型号，按第七节重做并选择原版原型。
+95. 歌利亚完成型 [goliath_equipment_3] → 王牌型号，按第七节重做并选择原版原型。
+96. 歌利亚人偶 [goliath_equipment_4] → 王牌型号，按第七节重做并选择原版原型。
+97. 风神之翼 [tengu_fighter_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+98. 妖力复合装甲 [oni_champion_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+99. 现世阴阳玉 [cas_boli_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+100. 诡道符咒 [desires_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+101. 妖精武器 [evil_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+102. 卫队装备 [human_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+103. 心灵控制器 [animal_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+104. 龙虎卫装备 [dragon_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+105. 收割者 [die_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+106. 月都参谋连用车 [rabbit_team_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+107. 深海少女 [deep_sea_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+108. 白玉楼移动补给站 [soul_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+109. 奇迹之星 [wunv_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+110. 星莲船试做型 [lotus_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+111. 星莲船正式型 [lotus_equipment_1] → 王牌型号，按第七节重做并选择原版原型。
+112. 星莲船完成型 [lotus_equipment_2] → 王牌型号，按第七节重做并选择原版原型。
+113. 超·极限花火 [magician_equipment_0] → 王牌型号，按第七节重做并选择原版原型。
+114. 除灵道具 [touhou_wakan_infantry_equipment_0] → 原版基线 infantry_equipment_0；共用原型 infantry_equipment
+115. 附灵道具 [touhou_wakan_infantry_equipment_1] → 原版基线 infantry_equipment_1；共用原型 infantry_equipment
+116. 灵力场 [touhou_wakan_infantry_equipment_2] → 原版基线 infantry_equipment_2；共用原型 infantry_equipment
+117. 灵力结界 [touhou_wakan_infantry_equipment_3] → 原版基线 infantry_equipment_3；共用原型 infantry_equipment
+118. 灵场 [touhou_wakan_artillery_equipment_1] → 原版基线 artillery_equipment_1；共用原型 artillery_equipment
+119. 灵力爆破 [touhou_wakan_artillery_equipment_2] → 原版基线 artillery_equipment_2；共用原型 artillery_equipment
+120. 空间震 [touhou_wakan_artillery_equipment_3] → 原版基线 artillery_equipment_3；共用原型 artillery_equipment
+121. 天网 [touhou_wakan_anti_air_equipment_1] → 原版基线 anti_air_equipment_1；共用原型 anti_air_equipment
+122. 天网阵 [touhou_wakan_anti_air_equipment_2] → 原版基线 anti_air_equipment_2；共用原型 anti_air_equipment
+123. 天网结界 [touhou_wakan_anti_air_equipment_3] → 原版基线 anti_air_equipment_3；共用原型 anti_air_equipment
+124. 高速灵装 [touhou_wakan_motorized_equipment_1] → 原版基线 motorized_equipment_1；共用原型 motorized_equipment
+125. 灵装机 [touhou_wakan_mechanized_equipment_1] → 原版基线 mechanized_equipment_1；共用原型 mechanized_equipment
+126. 强化灵装机 [touhou_wakan_mechanized_equipment_2] → 原版基线 mechanized_equipment_2；共用原型 mechanized_equipment
+127. 不朽灵装机 [touhou_wakan_mechanized_equipment_3] → 原版基线 mechanized_equipment_3；共用原型 mechanized_equipment
+128. 泛用型灵装机 [touhou_wakan_amphibious_mechanized_equipment_1] → 原版基线 amphibious_mechanized_equipment_1；共用原型 amphibious_mechanized_equipment
+129. 强化泛用型灵装机 [touhou_wakan_amphibious_mechanized_equipment_2] → 原版基线 amphibious_mechanized_equipment_2；共用原型 amphibious_mechanized_equipment
+130. 火风暴灵装 [touhou_wakan_motorized_rocket_equipment_1] → 原版基线 motorized_rocket_equipment_1；共用原型 motorized_rocket_equipment
+131. 起风 [touhou_wakan_fighter_equipment_0] → 原版基线 fighter_equipment_0；共用原型 small_plane_airframe
+132. 强风 [touhou_wakan_fighter_equipment_1] → 原版基线 fighter_equipment_1；共用原型 small_plane_airframe
+133. 狂风 [touhou_wakan_fighter_equipment_2] → 原版基线 fighter_equipment_2；共用原型 small_plane_airframe
+134. 飓风 [touhou_wakan_fighter_equipment_3] → 原版基线 fighter_equipment_3；共用原型 small_plane_airframe
+135. 天龙卷 [touhou_wakan_jet_fighter_equipment_2] → 原版基线 jet_fighter_equipment_2；共用原型 jet_fighter_equipment
+136. 惊雷 [touhou_wakan_CAS_equipment_1] → 原版基线 CAS_equipment_1；共用原型 small_plane_cas_airframe
+137. 狂雷 [touhou_wakan_CAS_equipment_2] → 原版基线 CAS_equipment_2；共用原型 small_plane_cas_airframe
+138. 万雷 [touhou_wakan_CAS_equipment_3] → 原版基线 CAS_equipment_3；共用原型 small_plane_cas_airframe
+139. 天火 [touhou_wakan_tac_bomber_equipment_0] → 原版基线 tac_bomber_equipment_0；共用原型 medium_plane_airframe
+140. 天火击 [touhou_wakan_tac_bomber_equipment_1] → 原版基线 tac_bomber_equipment_1；共用原型 medium_plane_airframe
+141. 天火坠 [touhou_wakan_tac_bomber_equipment_2] → 原版基线 tac_bomber_equipment_2；共用原型 medium_plane_airframe
+142. 天火雨 [touhou_wakan_tac_bomber_equipment_3] → 原版基线 tac_bomber_equipment_3；共用原型 medium_plane_airframe
+143. 天地异变 [touhou_wakan_jet_tac_bomber_equipment_2] → 原版基线 jet_tac_bomber_equipment_2；共用原型 jet_tac_bomber_equipment
+
+核对：90 个兵种替代目标均在原版兵种定义中存在；120 个普通型号的原版固定型号基线均在原版装备定义中存在。
+统计来源：common/technologies、common/units、common/units/equipment 以及本机 HOI4 1.19.3 对应目录。
+官方国家专属名称机制参考：https://store.steampowered.com/news/posts/?appids=394360&enddate=1731420014&feed=steam_community_announcements

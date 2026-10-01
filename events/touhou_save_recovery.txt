@@ -16,6 +16,7 @@ country_event = {
 country_event = {
 	id = touhou_save_recovery.2
 	hidden = yes
+	is_triggered_only = yes
 	trigger = {
 		has_variable = touhou_var_fantasy_consumer_goods_expected_value
 		OR = {
@@ -37,6 +38,5 @@ country_event = {
 			has_focus_tree = touhou_VAM_focus
 		}
 	}
-	mean_time_to_happen = { days = 1 }
 	immediate = { touhou_load_unified_focus_effect = yes }
 }

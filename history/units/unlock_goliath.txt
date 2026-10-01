@@ -1,8 +1,13 @@
-﻿division_template = {
+division_template = {
 	name = "歌利亚战团"
-
 	regiments = {
-		goliath_brigade = { x = 0 y = 0 }
-		goliath_brigade = { x = 0 y = 1 }
+		heavy_armor = {
+			x = 0
+			y = 0
+		}
+		heavy_armor = {
+			x = 0
+			y = 1
+		}
 	}
 }

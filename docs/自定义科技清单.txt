@@ -1,0 +1,3567 @@
+﻿本 Mod 自定义科技与旧式学说完整清单
+====================================
+
+扫描日期：2026-10-01
+来源：当前项目 common/technologies 下全部 6 个 .txt 文件。
+统计：268 项自定义科技 + 38 项旧式特种部队学说，共 306 项。
+说明：附录中的旧学说是 Mod 保留的旧式定义，不计入 268 项自定义科技。
+名称优先读取简体中文科技本地化；没有独立科技名称时按解锁装备的本地化标注，并注明来源。
+不可常规研究：指该科技的 allow 中明确设置 always = no；是否由开局、决议或事件授予需看相关脚本。
+前序节点：按科技路径反推；不等同于所有强制解锁条件。实际效果与条件以源文件为准。
+本文件仅为资料清单，没有修改科技或游戏配置。
+
+目录与数量
+  魔力科技：85 项（touhou_magic.txt）
+  灵力科技：63 项（touhou_wakan.txt）
+  妖力科技：69 项（touhou_demonforce.txt）
+  幻想支援科技：29 项（touhou_support.txt）
+  王牌科技：22 项（touhou_trump_card.txt）
+  附录：旧式特种部队学说：38 项（special_forces_doctrine.txt）
+
+================================================================================
+全部名称速览（详细年份、解锁内容及描述见后文）
+================================================================================
+
+魔力科技：
+  1. 基本魔力发射器（装备名）  [touhou_magic_infantry_weapons]
+  2. 繁彩魔力发射器（装备名）  [touhou_magic_infantry_weapons1]
+  3. 魔力转换  [touhou_magic_infantry_weapons2]
+  4. 纯色魔力发射器（装备名）  [touhou_magic_improved_infantry_weapons]
+  5. 魔力精炼  [touhou_magic_improved_infantry_weapons_2]
+  6. 魔力压缩  [touhou_magic_infantry_at]
+  7. 魔力集束  [touhou_magic_infantry_at2]
+  8. 纯粹魔力发射器（装备名）  [touhou_magic_advanced_infantry_weapons]
+  9. 魔力增压  [touhou_magic_advanced_infantry_weapons2]
+  10. 大气元素  [touhou_magic_paratroopers]
+  11. 高等大气元素  [touhou_magic_paratroopers2]
+  12. 元素混合-大气  [touhou_magic_paratroopers3]
+  13. 海洋元素  [touhou_magic_marines]
+  14. 高等海洋元素  [touhou_magic_marines2]
+  15. 元素混合-海洋  [touhou_magic_marines3]
+  16. 大地元素  [touhou_magic_tech_mountaineers]
+  17. 高等大地元素  [touhou_magic_tech_mountaineers2]
+  18. 元素混合-大地  [touhou_magic_tech_mountaineers3]
+  19. 元素适应  [touhou_magic_tech_special_forces]
+  20. 元素巨大化  [touhou_magic_advanced_special_forces]
+  21. 元素小型化  [touhou_magic_improved_special_forces]
+  22. 元素术式特化  [touhou_magic_extreme_environment_training]
+  23. 元素术式简化  [touhou_magic_survival_training]
+  24. 元素魔法专攻  [touhou_magic_elite_forces]
+  25. 夜明术  [touhou_magic_night_vision]
+  26. 昏暗视觉  [touhou_magic_night_vision2]
+  27. 钢化术  [touhou_magic_support_weapons]
+  28. 火焰战袍  [touhou_magic_support_weapons2]
+  29. 法师护盾  [touhou_magic_support_weapons3]
+  30. 不屈意志  [touhou_magic_support_weapons4]
+  31. 魔力爆破器（装备名）  [touhou_magic_gw_artillery]
+  32. 能量转换  [touhou_magic_interwar_artillery]
+  33. 魔火焰喷射器（装备名）  [touhou_magic_artillery1]
+  34. 元素注入  [touhou_magic_artillery2]
+  35. 元素增幅  [touhou_magic_artillery3]
+  36. 地狱火喷射器（装备名）  [touhou_magic_artillery4]
+  37. 塑能魔法专攻  [touhou_magic_artillery5]
+  38. 火花穿甲炮（装备名）  [touhou_magic_interwar_antitank]
+  39. 高密度凝聚  [touhou_magic_antitank1]
+  40. 极限火花穿甲炮（装备名）  [touhou_magic_antitank2]
+  41. 极大化增压  [touhou_magic_antitank3]
+  42. 导向扩散  [touhou_magic_antitank4]
+  43. 究极火花穿甲炮（装备名）  [touhou_magic_antitank5]
+  44. 上海级（装备名）  [touhou_magic_basic_light_tank]
+  45. 上海级破甲装（装备名）  [touhou_magic_basic_light_td]
+  46. 上海级火炮装（装备名）  [touhou_magic_basic_light_art]
+  47. 上海级弹幕装（装备名）  [touhou_magic_basic_light_spaa]
+  48. 上海级改良型（装备名）  [touhou_magic_improved_light_tank]
+  49. 上海级改良型破甲装（装备名）  [touhou_magic_improved_light_td]
+  50. 上海级改良型火炮装（装备名）  [touhou_magic_improved_light_art]
+  51. 上海级改良型弹幕装（装备名）  [touhou_magic_improved_light_spaa]
+  52. 上海级完全型（装备名）  [touhou_magic_advanced_light_tank]
+  53. 上海级完全型破甲装（装备名）  [touhou_magic_advanced_light_td]
+  54. 上海级完全型火炮装（装备名）  [touhou_magic_advanced_light_art]
+  55. 上海级完全型弹幕装（装备名）  [touhou_magic_advanced_light_spaa]
+  56. 提泰妮娅级（装备名）  [touhou_magic_basic_medium_tank]
+  57. 提泰妮娅级破甲装（装备名）  [touhou_magic_basic_medium_td]
+  58. 提泰妮娅级火炮装（装备名）  [touhou_magic_basic_medium_art]
+  59. 提泰妮娅级弹幕装（装备名）  [touhou_magic_basic_medium_spaa]
+  60. 提泰妮娅级改良型（装备名）  [touhou_magic_improved_medium_tank]
+  61. 提泰妮娅级改良型破甲装（装备名）  [touhou_magic_improved_medium_td]
+  62. 提泰妮娅级改良型火炮装（装备名）  [touhou_magic_improved_medium_art]
+  63. 提泰妮娅级改良型弹幕装（装备名）  [touhou_magic_improved_medium_spaa]
+  64. 提泰妮娅级完全型（装备名）  [touhou_magic_advanced_medium_tank]
+  65. 提泰妮娅级完全型破甲装（装备名）  [touhou_magic_advanced_medium_td]
+  66. 提泰妮娅级完全型火炮装（装备名）  [touhou_magic_advanced_medium_art]
+  67. 提泰妮娅级完全型弹幕装（装备名）  [touhou_magic_advanced_medium_spaa]
+  68. 量产型歌利亚  [touhou_magic_main_battle_tank]
+  69. 量产型歌利亚破甲装  [touhou_magic_modern_td]
+  70. 量产型歌利亚炮击装  [touhou_magic_modern_art]
+  71. 量产型歌利亚弹幕装  [touhou_magic_modern_spaa]
+  72. 扫把（装备名）  [touhou_magic_early_fighter]
+  73. 飞行扫把（装备名）  [touhou_magic_fighter1]
+  74. 附魔扫把（装备名）  [touhou_magic_fighter2]
+  75. 魔法扫把（装备名）  [touhou_magic_fighter3]
+  76. 强效魔法扫把（装备名）  [touhou_magic_jet_fighter2]
+  77. 爆炸魔法（装备名）  [touhou_magic_early_bomber]
+  78. 爆破魔法（装备名）  [touhou_magic_tactical_bomber1]
+  79. 爆裂魔法（装备名）  [touhou_magic_tactical_bomber2]
+  80. 极限爆裂魔法（装备名）  [touhou_magic_tactical_bomber3]
+  81. 究极爆裂魔法（装备名）  [touhou_magic_jet_tactical_bomber2]
+  82. 大范围爆炸魔法（装备名）  [touhou_magic_strategic_bomber1]
+  83. 毁灭魔法（装备名）  [touhou_magic_strategic_bomber2]
+  84. 极限毁灭魔法（装备名）  [touhou_magic_strategic_bomber3]
+  85. 究极毁灭魔法（装备名）  [touhou_magic_jet_strategic_bomber1]
+
+灵力科技：
+  1. 除灵道具（装备名）  [touhou_wakan_infantry_weapons]
+  2. 附灵道具（装备名）  [touhou_wakan_infantry_weapons1]
+  3. 强化附灵  [touhou_wakan_infantry_weapons2]
+  4. 灵力场（装备名）  [touhou_wakan_improved_infantry_weapons]
+  5. 灵力束缚  [touhou_wakan_improved_infantry_weapons_2]
+  6. 封魔针  [touhou_wakan_infantry_at]
+  7. 强化封魔针  [touhou_wakan_infantry_at2]
+  8. 灵力结界（装备名）  [touhou_wakan_advanced_infantry_weapons]
+  9. 破魔  [touhou_wakan_advanced_infantry_weapons2]
+  10. 风精灵  [touhou_wakan_paratroopers]
+  11. 高等风精灵  [touhou_wakan_paratroopers2]
+  12. 精灵信仰-风  [touhou_wakan_paratroopers3]
+  13. 水精灵  [touhou_wakan_marines]
+  14. 高等水精灵  [touhou_wakan_marines2]
+  15. 精灵信仰-水  [touhou_wakan_marines3]
+  16. 土精灵  [touhou_wakan_tech_mountaineers]
+  17. 高等土精灵  [touhou_wakan_tech_mountaineers2]
+  18. 精灵信仰-土  [touhou_wakan_tech_mountaineers3]
+  19. 精灵适应  [touhou_wakan_tech_special_forces]
+  20. 大型精灵  [touhou_wakan_advanced_special_forces]
+  21. 小型精灵  [touhou_wakan_improved_special_forces]
+  22. 精灵特化  [touhou_wakan_extreme_environment_training]
+  23. 精灵泛化  [touhou_wakan_survival_training]
+  24. 精灵崇拜  [touhou_wakan_elite_forces]
+  25. 暗精灵  [touhou_wakan_night_vision]
+  26. 夜女神的祝福  [touhou_wakan_night_vision2]
+  27. 灵气  [touhou_wakan_support_weapons]
+  28. 强化灵气  [touhou_wakan_support_weapons2]
+  29. 能量吸收  [touhou_wakan_support_weapons3]
+  30. 灵气转化  [touhou_wakan_support_weapons4]
+  31. 灵场（装备名）  [touhou_wakan_gw_artillery]
+  32. 灵场震  [touhou_wakan_interwar_artillery]
+  33. 灵力爆破（装备名）  [touhou_wakan_artillery1]
+  34. 灵力诱导  [touhou_wakan_artillery2]
+  35. 灵力增压  [touhou_wakan_artillery3]
+  36. 空间震（装备名）  [touhou_wakan_artillery4]
+  37. 瞬发现象  [touhou_wakan_artillery5]
+  38. 天网（装备名）  [touhou_wakan_interwar_antiair]
+  39. 多层次天网  [touhou_wakan_antiair1]
+  40. 天网阵（装备名）  [touhou_wakan_antiair2]
+  41. 天网雷  [touhou_wakan_antiair3]
+  42. 主动式天网雷  [touhou_wakan_antiair4]
+  43. 天网结界（装备名）  [touhou_wakan_antiair5]
+  44. 高速灵装（装备名）  [touhou_wakan_motorised_infantry]
+  45. 火风暴灵装（装备名）  [touhou_wakan_motorized_rocket_unit]
+  46. 灵装机（装备名）  [touhou_wakan_mechanised_infantry]
+  47. 泛用型灵装机（装备名）  [touhou_wakan_amphibious_mechanized_infantry]
+  48. 强化泛用型灵装机（装备名）  [touhou_wakan_amphibious_mechanized_infantry_2]
+  49. 强化灵装机（装备名）  [touhou_wakan_mechanised_infantry2]
+  50. 不朽灵装机（装备名）  [touhou_wakan_mechanised_infantry3]
+  51. 起风（装备名）  [touhou_wakan_early_fighter]
+  52. 强风（装备名）  [touhou_wakan_fighter1]
+  53. 狂风（装备名）  [touhou_wakan_fighter2]
+  54. 飓风（装备名）  [touhou_wakan_fighter3]
+  55. 天龙卷（装备名）  [touhou_wakan_jet_fighter2]
+  56. 惊雷（装备名）  [touhou_wakan_CAS1]
+  57. 狂雷（装备名）  [touhou_wakan_CAS2]
+  58. 万雷（装备名）  [touhou_wakan_CAS3]
+  59. 天火（装备名）  [touhou_wakan_early_bomber]
+  60. 天火击（装备名）  [touhou_wakan_tactical_bomber1]
+  61. 天火坠（装备名）  [touhou_wakan_tactical_bomber2]
+  62. 天火雨（装备名）  [touhou_wakan_tactical_bomber3]
+  63. 天地异变（装备名）  [touhou_wakan_jet_tactical_bomber2]
+
+妖力科技：
+  1. 妖怪（装备名）  [touhou_demonforce_infantry_weapons]
+  2. 妖魔（装备名）  [touhou_demonforce_infantry_weapons1]
+  3. 幻化  [touhou_demonforce_infantry_weapons2]
+  4. 幻魔（装备名）  [touhou_demonforce_improved_infantry_weapons]
+  5. 升格  [touhou_demonforce_improved_infantry_weapons_2]
+  6. 穿刺  [touhou_demonforce_infantry_at]
+  7. 钻刃  [touhou_demonforce_infantry_at2]
+  8. 哈努曼（装备名）  [touhou_demonforce_advanced_infantry_weapons]
+  9. 神化  [touhou_demonforce_advanced_infantry_weapons2]
+  10. 风生  [touhou_demonforce_paratroopers]
+  11. 风魔  [touhou_demonforce_paratroopers2]
+  12. 加斯伯禄  [touhou_demonforce_paratroopers3]
+  13. 水生  [touhou_demonforce_marines]
+  14. 水魔  [touhou_demonforce_marines2]
+  15. 利维坦  [touhou_demonforce_marines3]
+  16. 土生  [touhou_demonforce_tech_mountaineers]
+  17. 土魔  [touhou_demonforce_tech_mountaineers2]
+  18. 野锤  [touhou_demonforce_tech_mountaineers3]
+  19. 土生土长  [touhou_demonforce_tech_special_forces]
+  20. 强化繁殖  [touhou_demonforce_advanced_special_forces]
+  21. 快速繁殖  [touhou_demonforce_improved_special_forces]
+  22. 特异进化  [touhou_demonforce_extreme_environment_training]
+  23. 泛型进化  [touhou_demonforce_survival_training]
+  24. 龙蟠虎踞  [touhou_demonforce_elite_forces]
+  25. 夜魔  [touhou_demonforce_night_vision]
+  26. 血族  [touhou_demonforce_night_vision2]
+  27. 硬皮  [touhou_demonforce_support_weapons]
+  28. 钢筋  [touhou_demonforce_support_weapons2]
+  29. 铁骨  [touhou_demonforce_support_weapons3]
+  30. 魔甲  [touhou_demonforce_support_weapons4]
+  31. 恶鬼（装备名）  [touhou_demonforce_interwar_antiair]
+  32. 魔化  [touhou_demonforce_antiair1]
+  33. 恶魔（装备名）  [touhou_demonforce_antiair2]
+  34. 化形  [touhou_demonforce_antiair3]
+  35. 驱命  [touhou_demonforce_antiair4]
+  36. 单卡拉比（装备名）  [touhou_demonforce_antiair5]
+  37. 走兽（装备名）  [touhou_demonforce_interwar_antitank]
+  38. 赐福  [touhou_demonforce_antitank1]
+  39. 神兽（装备名）  [touhou_demonforce_antitank2]
+  40. 巨化  [touhou_demonforce_antitank3]
+  41. 守护  [touhou_demonforce_antitank4]
+  42. 巴隆（装备名）  [touhou_demonforce_antitank5]
+  43. 妖兽（装备名）  [touhou_demonforce_basic_heavy_tank]
+  44. 破坏者（装备名）  [touhou_demonforce_basic_heavy_td]
+  45. 飞龙（装备名）  [touhou_demonforce_basic_heavy_art]
+  46. 惊雀（装备名）  [touhou_demonforce_basic_heavy_spaa]
+  47. 魔兽（装备名）  [touhou_demonforce_improved_heavy_tank]
+  48. 毁灭王（装备名）  [touhou_demonforce_improved_heavy_td]
+  49. 邪龙（装备名）  [touhou_demonforce_improved_heavy_art]
+  50. 群鸟（装备名）  [touhou_demonforce_improved_heavy_spaa]
+  51. 阿巴东（装备名）  [touhou_demonforce_advanced_heavy_tank]
+  52. 须佐之男（装备名）  [touhou_demonforce_advanced_heavy_td]
+  53. 弗栗多（装备名）  [touhou_demonforce_advanced_heavy_art]
+  54. 芭一波卡赫（装备名）  [touhou_demonforce_advanced_heavy_spaa]
+  55. 泰坦（装备名）  [touhou_demonforce_super_heavy_tank]
+  56. 湿婆（装备名）  [touhou_demonforce_super_heavy_td]
+  57. 婆苏吉（装备名）  [touhou_demonforce_super_heavy_art]
+  58. 鹏（装备名）  [touhou_demonforce_super_heavy_spaa]
+  59. 有翼（装备名）  [touhou_demonforce_early_fighter]
+  60. 飞禽（装备名）  [touhou_demonforce_fighter1]
+  61. 灵鸟（装备名）  [touhou_demonforce_fighter2]
+  62. 神乌（装备名）  [touhou_demonforce_fighter3]
+  63. 迦楼罗（装备名）  [touhou_demonforce_jet_fighter2]
+  64. 雄鹰（装备名）  [touhou_demonforce_CAS1]
+  65. 女武神（装备名）  [touhou_demonforce_CAS2]
+  66. 瓦尔基莉（装备名）  [touhou_demonforce_CAS3]
+  67. 巨翅（装备名）  [touhou_demonforce_heavy_fighter1]
+  68. 巨鸟（装备名）  [touhou_demonforce_heavy_fighter2]
+  69. 萨玛艾尔（装备名）  [touhou_demonforce_heavy_fighter3]
+
+幻想支援科技：
+  1. 幻想支援装备（装备名）  [touhou_tech_support]
+  2. 大地使者  [touhou_tech_engineers]
+  3. 大地使者 LV2  [touhou_tech_engineers2]
+  4. 大地使者 LV3  [touhou_tech_engineers3]
+  5. 大地使者 LV4  [touhou_tech_engineers4]
+  6. 守望之眼  [touhou_tech_recon]
+  7. 守望之眼 LV2  [touhou_tech_recon2]
+  8. 守望之眼 LV3  [touhou_tech_recon3]
+  9. 守望之眼 LV4  [touhou_tech_recon4]
+  10. 幻想教长  [touhou_tech_military_police]
+  11. 幻想教长 LV2  [touhou_tech_military_police2]
+  12. 幻想教长 LV3  [touhou_tech_military_police3]
+  13. 幻想教长 LV4  [touhou_tech_military_police4]
+  14. 鬼斧神工  [touhou_tech_maintenance_company]
+  15. 鬼斧神工 LV2  [touhou_tech_maintenance_company2]
+  16. 鬼斧神工 LV3  [touhou_tech_maintenance_company3]
+  17. 鬼斧神工 LV4  [touhou_tech_maintenance_company4]
+  18. 阎王愁  [touhou_tech_field_hospital]
+  19. 阎王愁 LV2  [touhou_tech_field_hospital2]
+  20. 阎王愁 LV3  [touhou_tech_field_hospital3]
+  21. 阎王愁 LV4  [touhou_tech_field_hospital4]
+  22. 圣诞老人  [touhou_tech_logistics_company]
+  23. 圣诞老人 LV2  [touhou_tech_logistics_company2]
+  24. 圣诞老人 LV3  [touhou_tech_logistics_company3]
+  25. 圣诞老人 LV4  [touhou_tech_logistics_company4]
+  26. 通信人偶  [touhou_tech_signal_company]
+  27. 通信人偶 LV2  [touhou_tech_signal_company2]
+  28. 通信人偶 LV3  [touhou_tech_signal_company3]
+  29. 通信人偶 LV4  [touhou_tech_signal_company4]
+
+王牌科技：
+  1. 神风人偶  [suicide_puppet_craft_1]
+  2. 人偶战略导弹  [suicide_puppet_craft_2]
+  3. 歌利亚  [goliath_0]
+  4. 歌利亚幻想乡试做型（装备名）  [goliath_1]
+  5. 歌利亚改良型（装备名）  [goliath_2]
+  6. 歌利亚完成型（装备名）  [goliath_3]
+  7. 歌利亚人偶  [goliath_4]
+  8. 风神之翼  [tengu_fighter]
+  9. 妖力复合装甲  [oni_champion]
+  10. 现世阴阳玉  [cas_boli_fighter]
+  11. 诡道符咒  [desires_bomber]
+  12. 妖精武器（装备名）  [evil_army]
+  13. 卫队装备  [human_army]
+  14. 心灵控制器  [DLD_animal]
+  15. 龙虎卫装备  [dragon]
+  16. 收割者  [die]
+  17. 月都参谋连用车  [rabbit_team]
+  18. 便携式淡化设备  [deep_sea]
+  19. 白玉楼移动补给站  [soul]
+  20. 未来医疗设备  [wunv]
+  21. 星莲船  [lotus]
+  22. 超·极限花火  [magician]
+
+附录：旧式特种部队学说：
+  1. 重视山地步兵  [special_forces_mountaineers]
+  2. 寒冷天气专家  [ski_troops]
+  3. 崎岖地形专家  [rangers]
+  4. 战场情报  [special_forces_recon]
+  5. 守住防线  [mountaineers_combat_1]
+  6. 山地火炮  [mountaineers_combat_2]
+  7. 协同作战训练  [mountaineers_combat_3]
+  8. 武装力量骨干  [mountaineers_keystone_1]
+  9. 共享教官  [mountaineers_keystone_2]
+  10. 重视海军陆战队  [special_forces_marines]
+  11. 丛林专家  [marines_jungle_troops]
+  12. 滩头部队  [marines_shore_parties]
+  13. 严苛训练方案  [marines_recon]
+  14. 海军突击队  [marines_commandoes]
+  15. 远征单位  [marines_expeditionary]
+  16. 爆破专家  [marines_commandos_demolition]
+  17. 喷灯与瓶塞钻  [marines_expeditionary_blowtorch]
+  18. 机械化海军陆战队  [marines_commandoes_mechanised]
+  19. 远征特遣部队  [marines_expeditionary_support]
+  20. 重视空降兵  [special_forces_paratroopers]
+  21. 侦查破袭  [paras_dispersed_drop]
+  22. 战斗穿插  [paras_combat_drop]
+  23. 空降装甲  [paras_airborne_light_armor]
+  24. 空降通讯  [paras_combat_1]
+  25. 空降医疗分队  [paras_combat_2]
+  26. 增强导航训练  [paras_bonus_1]
+  27. 战略空运部队  [paras_bonus_2]
+  28. 精益求精  [paras_keystone_1]
+  29. 武装力量骨干  [paras_keystone_2]
+  30. 升级游击队  [special_forces_rangers]
+  31. 融入猎兵传统  [rangers_jaegers_training]
+  32. 游骑兵丛林训练  [rangers_jungle_training]
+  33. 森林游击战士  [rangers_guerilla_doctrine]
+  34. 侦察游骑兵地形掌握  [rangers_recon_terrain_training]
+  35. 火力支援整合  [rangers_fire_support_integration]
+  36. 游骑兵城市战专长  [rangers_urban_combat]
+  37. 精锐游骑兵  [elite_rangers_doctrine]
+  38. 轻步兵专业化  [rangers_backbone_doctrine]
+
+================================================================================
+魔力科技（85 项）
+================================================================================
+
+1. 基本魔力发射器
+   ID：touhou_magic_infantry_weapons
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:16
+   年份：1918
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   解锁装备：基本魔力发射器 [touhou_magic_infantry_equipment_0]
+   解锁兵种：魔法兽 [touhou_magic_cavalry]；战争法师 [touhou_magic_infantry]
+
+   装备描述：将魔力转化为其他能量加以使用，这是魔法的基本，将这些能量发射出去是魔法师最主要的作战方式。虽然发射出去的并不是魔力，但习惯上还是称之为“发射魔力”。
+             
+             将这种技术运用到武器上可以替代外界的步枪。
+2. 繁彩魔力发射器
+   ID：touhou_magic_infantry_weapons1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:49
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   前序节点：基本魔力发射器 [touhou_magic_infantry_weapons]
+   解锁装备：繁彩魔力发射器 [touhou_magic_infantry_equipment_1]
+
+   装备描述：不断增大魔力输出，释放出的大量魔力会转化为多种能量，迸发出七色的光芒。这种技术可以进一步提高魔力发射器的杀伤力。
+             
+             曾经这种技术用在花火大会，现在不需要了。
+3. 魔力转换
+   ID：touhou_magic_infantry_weapons2
+   来源：common/technologies/touhou_magic.txt:81
+   年份：1938
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   前序节点：繁彩魔力发射器 [touhou_magic_infantry_weapons1]
+   描述：将魔力定向转换的技术。能有效减少因能量转换而产生的能量衰减。
+
+4. 纯色魔力发射器
+   ID：touhou_magic_improved_infantry_weapons
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:129
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   前序节点：魔力转换 [touhou_magic_infantry_weapons2]
+   解锁装备：纯色魔力发射器 [touhou_magic_infantry_equipment_2]
+
+   装备描述：成熟的魔法师能将魔力只转化为一种能量，有效提升了魔力利用率。采用这种技术的武器可以在魔力限制下最大程度提高杀伤力。
+             
+             不久前，没人想得到这种技术这么适合杀人。
+5. 魔力精炼
+   ID：touhou_magic_improved_infantry_weapons_2
+   来源：common/technologies/touhou_magic.txt:169
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   前序节点：纯色魔力发射器 [touhou_magic_improved_infantry_weapons]
+   描述：提炼魔力，使其尽可能保持本身而非自然转化为其他能量的技术。释放的魔法能包含多少纯粹的魔力，而非转化后的能量，和魔法师的能力直接相关。
+
+6. 魔力压缩
+   ID：touhou_magic_infantry_at
+   来源：common/technologies/touhou_magic.txt:227
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   前序节点：纯色魔力发射器 [touhou_magic_improved_infantry_weapons]
+   描述：将魔力尽可能压缩，在魔力总量不变的情况下，缩小体积，增强特定点的破坏的能力。主要针对通常模式下无法造成有效伤害的重型敌人。
+
+7. 魔力集束
+   ID：touhou_magic_infantry_at2
+   来源：common/technologies/touhou_magic.txt:290
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   前序节点：魔力压缩 [touhou_magic_infantry_at]
+   描述：在压缩的基础上，改变形态，使其集束，进一步缩小伤害面积，并将对目标点造成有效伤害的时间增长到三倍，显著增强特定点破坏的能力。
+
+8. 纯粹魔力发射器
+   ID：touhou_magic_advanced_infantry_weapons
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:347
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   前序节点：魔力精炼 [touhou_magic_improved_infantry_weapons_2]
+   解锁装备：纯粹魔力发射器 [touhou_magic_infantry_equipment_3]
+
+   装备描述：我们对魔法的研究炉火纯青，但转化中的损失仍是我们的大敌，现在我们能够直接利用魔力，实现真正的“发射魔力”，连妖精都能爆破红魔馆的时代来了。
+             
+             不管怎样，技术进步总是好事，对吗？
+9. 魔力增压
+   ID：touhou_magic_advanced_infantry_weapons2
+   来源：common/technologies/touhou_magic.txt:384
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   前序节点：纯粹魔力发射器 [touhou_magic_advanced_infantry_weapons]
+   描述：在魔力输出不变的情况下，避免魔力和能量自然散失的技术。
+
+10. 大气元素
+   ID：touhou_magic_paratroopers
+   来源：common/technologies/touhou_magic.txt:436
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、para_tech
+   解锁兵种：大气元素 [touhou_magic_paratrooper]
+   描述：在特定的地形中，特定元素的表现比常规的战争法师更为出色。
+         大气元素能从天空降临，给予敌人毁灭性的打击。
+
+11. 高等大气元素
+   ID：touhou_magic_paratroopers2
+   来源：common/technologies/touhou_magic.txt:477
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、para_tech
+   前序节点：大气元素 [touhou_magic_paratroopers]
+   描述：改进大气元素召唤和控制魔法术式，增强大气元素的整体能力。
+
+12. 元素混合-大气
+   ID：touhou_magic_paratroopers3
+   来源：common/technologies/touhou_magic.txt:506
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、para_tech
+   前序节点：高等大气元素 [touhou_magic_paratroopers2]
+   描述：在大气元素中混入其他元素的特质，在不干扰大气元素本身性质的情况之下，增强其综合能力。
+
+13. 海洋元素
+   ID：touhou_magic_marines
+   来源：common/technologies/touhou_magic.txt:531
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、marine_tech
+   解锁兵种：海洋元素 [touhou_magic_marine]
+   描述：在特定的地形中，特定元素的表现比常规的战争法师更为出色。
+         在有水的地方，就是海洋元素的天下了。
+
+14. 高等海洋元素
+   ID：touhou_magic_marines2
+   来源：common/technologies/touhou_magic.txt:572
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、marine_tech
+   前序节点：海洋元素 [touhou_magic_marines]
+   描述：改进海洋元素召唤和控制魔法术式，增强海洋元素的整体能力。
+
+15. 元素混合-海洋
+   ID：touhou_magic_marines3
+   来源：common/technologies/touhou_magic.txt:603
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、marine_tech
+   前序节点：高等海洋元素 [touhou_magic_marines2]
+   描述：在海洋元素中混入其他元素的特质，在不干扰海洋元素本身性质的情况之下，增强其综合能力。
+
+16. 大地元素
+   ID：touhou_magic_tech_mountaineers
+   来源：common/technologies/touhou_magic.txt:626
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_tech、mountaineers_tech
+   解锁兵种：大地元素 [touhou_magic_mountaineers]
+   描述：在特定的地形中，特定元素的表现比常规的战争法师更为出色。
+         在山地，大地元素表现最为突出。
+
+17. 高等大地元素
+   ID：touhou_magic_tech_mountaineers2
+   来源：common/technologies/touhou_magic.txt:667
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_tech、mountaineers_tech
+   前序节点：大地元素 [touhou_magic_tech_mountaineers]
+   描述：改进大地元素召唤和控制魔法术式，增强大地元素的整体能力。
+
+18. 元素混合-大地
+   ID：touhou_magic_tech_mountaineers3
+   来源：common/technologies/touhou_magic.txt:697
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_tech、mountaineers_tech
+   前序节点：高等大地元素 [touhou_magic_tech_mountaineers2]
+   描述：在大地元素中混入其他元素的特质，在不干扰大地元素本身性质的情况之下，增强其综合能力。
+
+19. 元素适应
+   ID：touhou_magic_tech_special_forces
+   来源：common/technologies/touhou_magic.txt:721
+   年份：1938
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、mountaineers_tech、marine_tech、para_tech
+   描述：在特定环境中适当改换元素形态，可以增强元素对环境的适应力。
+
+20. 元素巨大化
+   ID：touhou_magic_advanced_special_forces
+   来源：common/technologies/touhou_magic.txt:765
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、mountaineers_tech、marine_tech、para_tech
+   前序节点：元素适应 [touhou_magic_tech_special_forces]
+   描述：大型的元素拥有着更强的战斗能力，同时召唤时间也一同延长了。
+
+21. 元素小型化
+   ID：touhou_magic_improved_special_forces
+   来源：common/technologies/touhou_magic.txt:808
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、mountaineers_tech、marine_tech、para_tech
+   前序节点：元素适应 [touhou_magic_tech_special_forces]
+   描述：小型的元素召唤时间更短，同时同样情况下能支持的元素数量也增加了。
+
+22. 元素术式特化
+   ID：touhou_magic_extreme_environment_training
+   来源：common/technologies/touhou_magic.txt:841
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、mountaineers_tech、marine_tech、para_tech
+   前序节点：元素巨大化 [touhou_magic_advanced_special_forces]
+   描述：为多种特定情况准备不同的特化反应术式，极大地提升元素适应环境的能力，同时延长了召唤时间。
+
+23. 元素术式简化
+   ID：touhou_magic_survival_training
+   来源：common/technologies/touhou_magic.txt:883
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、mountaineers_tech、marine_tech、para_tech
+   前序节点：元素小型化 [touhou_magic_improved_special_forces]
+   描述：在不影响元素本身能力的情况下，简化召唤和控制魔法术式，提升复杂情况下的稳定性。
+
+24. 元素魔法专攻
+   ID：touhou_magic_elite_forces
+   来源：common/technologies/touhou_magic.txt:916
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、mountaineers_tech、marine_tech、para_tech
+   前序节点：元素术式特化 [touhou_magic_extreme_environment_training]；元素术式简化 [touhou_magic_survival_training]
+   描述：成立专门的元素魔法学派，源源不断地为元素部队供应最优秀的人才和研究成果。
+
+25. 夜明术
+   ID：touhou_magic_night_vision
+   来源：common/technologies/touhou_magic.txt:945
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、night_vision
+   描述：众多元素种类中，光一直是最难控制的一种，虽然小范围的光亮术早已普及，但是能为夜晚作战提供帮助的光亮术则一直进展缓慢。夜明术能在短时间照亮一片区域，就像在白天一样。
+
+26. 昏暗视觉
+   ID：touhou_magic_night_vision2
+   来源：common/technologies/touhou_magic.txt:991
+   年份：1946
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、night_vision
+   前序节点：夜明术 [touhou_magic_night_vision]
+   描述：夜明术的应用受到诸多限制，因而部分研究者开始试图让士兵能够在夜晚也能看清，这就是昏暗视觉。然而昏暗视觉虽然提升了士兵夜晚的视力，然而提升仍然有限，大部分人喜欢将这两者搭配使用，不过最近闪瞎眼的投诉越来越多了。
+
+27. 钢化术
+   ID：touhou_magic_support_weapons
+   来源：common/technologies/touhou_magic.txt:1027
+   年份：1918
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   描述：短时间内让自己的皮肤能像钢铁般坚硬。将钢化术的卷轴分发给部队，能有效提升军队的整体生存率。
+
+28. 火焰战袍
+   ID：touhou_magic_support_weapons2
+   来源：common/technologies/touhou_magic.txt:1093
+   年份：1938
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   前序节点：钢化术 [touhou_magic_support_weapons]
+   描述：短时间内让自己披上火焰斗篷，目标自身不会被火焰所伤。
+
+29. 法师护盾
+   ID：touhou_magic_support_weapons3
+   来源：common/technologies/touhou_magic.txt:1166
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   前序节点：火焰战袍 [touhou_magic_support_weapons2]
+   描述：在所有者面前出现一道魔法盾牌，吸收一定伤害或是时间到了，便会消失。
+
+30. 不屈意志
+   ID：touhou_magic_support_weapons4
+   来源：common/technologies/touhou_magic.txt:1239
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、infantry_weapons
+   前序节点：法师护盾 [touhou_magic_support_weapons3]
+   描述：让濒死的生物仍然能够像正常人一样行动，为他们后撤、治疗（或是发动冲锋）提供条件。
+
+31. 魔力爆破器
+   ID：touhou_magic_gw_artillery
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:1308
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery
+   解锁装备：魔力爆破器 [touhou_magic_artillery_equipment_1]
+
+   装备描述：将魔力转化为冲击波，引发爆破，可以造成大规模杀伤。
+             
+             将这种技术运用到武器上可以替代外界的火炮。
+32. 能量转换
+   ID：touhou_magic_interwar_artillery
+   来源：common/technologies/touhou_magic.txt:1354
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery
+   前序节点：魔力爆破器 [touhou_magic_gw_artillery]
+   描述：施展塑能法术的基础，将某一种能量转换为其他能量的技术，虽然会提高能量损耗，但是能最大化某种特定能量的效果。
+
+33. 魔火焰喷射器
+   ID：touhou_magic_artillery1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:1404
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery
+   前序节点：能量转换 [touhou_magic_interwar_artillery]
+   解锁装备：魔火焰喷射器 [touhou_magic_artillery_equipment_2]
+
+   装备描述：比起单纯的冲击波，火焰能利用更少的魔力造成更广泛的人员杀伤。战争让我们想到了很多曾经想不到的事，这一武器便是一个例证。
+             
+             火，能带给人们温暖，也能带给人们永远的温暖。
+34. 元素注入
+   ID：touhou_magic_artillery2
+   来源：common/technologies/touhou_magic.txt:1448
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery
+   前序节点：魔火焰喷射器 [touhou_magic_artillery1]
+   描述：在施展塑能法术时，预先注入一些元素能量作为导引，减少因为能量转换而造成的能量损失，同时提升整体效果。
+
+35. 元素增幅
+   ID：touhou_magic_artillery3
+   来源：common/technologies/touhou_magic.txt:1498
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery
+   前序节点：元素注入 [touhou_magic_artillery2]
+   描述：在将能量转换后，二次注入元素，使术式效果进一步增强的技术。由于能量转换后，能量的状态很难保持稳定，此技术属于高级应用。
+
+36. 地狱火喷射器
+   ID：touhou_magic_artillery4
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:1543
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery
+   前序节点：元素增幅 [touhou_magic_artillery3]
+   解锁装备：地狱火喷射器 [touhou_magic_artillery_equipment_3]
+
+   装备描述：随着对魔力的进一步掌握，我们复现出了地狱的不灭之火，将这种技术应用到武器，我们也可以复现出地狱本身。
+             
+             不管怎样，有所收获总是好事，对吗？
+37. 塑能魔法专攻
+   ID：touhou_magic_artillery5
+   来源：common/technologies/touhou_magic.txt:1588
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery
+   前序节点：地狱火喷射器 [touhou_magic_artillery4]
+   描述：成立专门的塑能魔法学派，源源不断地为塑能法师部队供应最优秀的人才和研究成果。
+
+38. 火花穿甲炮
+   ID：touhou_magic_interwar_antitank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:1633
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery、cat_anti_tank
+   前序节点：魔力爆破器 [touhou_magic_gw_artillery]
+   解锁装备：火花穿甲炮 [touhou_magic_anti_tank_equipment_1]
+
+   装备描述：某位黑白色的魔法天才从研究室扔出的淘汰作品，能将魔力凝聚到一点再射出，虽然效率不高，但依旧拥有良好的穿甲能力。
+             
+             这种武器可以替代外界的反坦克炮。
+39. 高密度凝聚
+   ID：touhou_magic_antitank1
+   来源：common/technologies/touhou_magic.txt:1689
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery、cat_anti_tank
+   前序节点：火花穿甲炮 [touhou_magic_interwar_antitank]
+   描述：增强魔力凝聚时最大魔力保有量，增强魔力密度。
+
+40. 极限火花穿甲炮
+   ID：touhou_magic_antitank2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:1743
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery、cat_anti_tank
+   前序节点：高密度凝聚 [touhou_magic_antitank1]
+   解锁装备：极限火花穿甲炮 [touhou_magic_anti_tank_equipment_2]
+
+   装备描述：某位黑白色的魔法天才的正规作，将魔力积蓄到极限再释放，极大提高了穿透力和威力。
+             
+             不要让她看到这些装备穿透了什么。
+41. 极大化增压
+   ID：touhou_magic_antitank3
+   来源：common/technologies/touhou_magic.txt:1798
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery、cat_anti_tank
+   前序节点：极限火花穿甲炮 [touhou_magic_antitank2]
+   描述：魔炮的威力和凝聚的魔力量直接相关，魔炮的威力相关的研究也一直集中在增强魔力密度方面。
+
+42. 导向扩散
+   ID：touhou_magic_antitank4
+   来源：common/technologies/touhou_magic.txt:1859
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery、cat_anti_tank
+   前序节点：极大化增压 [touhou_magic_antitank3]
+   描述：减少光能和热能的扩散损失，尽可能多地将能量导向目标。
+
+43. 究极火花穿甲炮
+   ID：touhou_magic_antitank5
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:1915
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、artillery、cat_anti_tank
+   前序节点：导向扩散 [touhou_magic_antitank4]
+   解锁装备：究极火花穿甲炮 [touhou_magic_anti_tank_equipment_3]
+
+   装备描述：某位黑白色的魔法天才的自豪之作，据称是魔力穿甲炮的最终形态，能穿透几乎所有装甲。
+             
+             我们不能把更多的责任推卸给她了。
+44. 上海级
+   ID：touhou_magic_basic_light_tank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:1965
+   年份：1934
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、armor、cat_light_armor
+   解锁装备：上海级 [touhou_magic_light_tank_equipment_1]
+
+   装备描述：上海人偶的量产型，也因此得名。尽管不是为战争而生的，但由于爱丽丝的天才设计，上海级也足以碾压同期所有的轻型装甲。
+             
+             上海级可以替代外界的轻型坦克
+45. 上海级破甲装
+   ID：touhou_magic_basic_light_td
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2031
+   年份：1934
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：上海级破甲装 [touhou_magic_light_tank_destroyer_equipment_1]
+
+   装备描述：装备破甲武装的上海级轻型人偶，特化反装甲能力。
+46. 上海级火炮装
+   ID：touhou_magic_basic_light_art
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2068
+   年份：1934
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：上海级火炮装 [touhou_magic_light_tank_artillery_equipment_1]
+
+   装备描述：装备火炮武装的上海级轻型人偶，特化炮击能力。
+47. 上海级弹幕装
+   ID：touhou_magic_basic_light_spaa
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2099
+   年份：1934
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：上海级弹幕装 [touhou_magic_light_tank_aa_equipment_1]
+
+   装备描述：装备弹幕武装的上海级轻型人偶，特化防空能力。
+48. 上海级改良型
+   ID：touhou_magic_improved_light_tank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2130
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、armor、cat_light_armor
+   前序节点：上海级 [touhou_magic_basic_light_tank]
+   解锁装备：上海级改良型 [touhou_magic_light_tank_equipment_2]
+
+   装备描述：上海级的改良型号，仅仅舍弃了一些非战斗功能，便超越了所有新研发出的轻型装甲，或许爱丽丝早就做好了准备。
+             
+             沉默的人不一定有一颗沉默的心。
+49. 上海级改良型破甲装
+   ID：touhou_magic_improved_light_td
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2201
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：上海级改良型破甲装 [touhou_magic_light_tank_destroyer_equipment_2]
+
+   装备描述：装备破甲武装的上海级改良型轻型人偶，特化反装甲能力。
+50. 上海级改良型火炮装
+   ID：touhou_magic_improved_light_art
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2233
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：上海级改良型火炮装 [touhou_magic_light_tank_artillery_equipment_2]
+
+   装备描述：装备火炮武装的上海级改良型轻型人偶，特化炮击能力。
+51. 上海级改良型弹幕装
+   ID：touhou_magic_improved_light_spaa
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2266
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：上海级改良型弹幕装 [touhou_magic_light_tank_aa_equipment_2]
+
+   装备描述：装备弹幕武装的上海级改良型轻型人偶，特化防空能力。
+52. 上海级完全型
+   ID：touhou_magic_advanced_light_tank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2293
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、armor、cat_light_armor
+   前序节点：上海级改良型 [touhou_magic_improved_light_tank]
+   解锁装备：上海级完全型 [touhou_magic_light_tank_equipment_3]
+
+   装备描述：舍弃了所有的非战斗功能，被誉为上海级最完美的改进型号，所有角度都达到了几乎所能达到的巅峰，里程碑级的设计。
+             
+             “总得有人让一切恢复正常”，爱丽丝说。
+53. 上海级完全型破甲装
+   ID：touhou_magic_advanced_light_td
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2341
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：上海级完全型破甲装 [touhou_magic_light_tank_destroyer_equipment_3]
+
+   装备描述：装备破甲武装的上海级完全型轻型人偶，特化反装甲能力。
+54. 上海级完全型火炮装
+   ID：touhou_magic_advanced_light_art
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2360
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：上海级完全型火炮装 [touhou_magic_light_tank_artillery_equipment_3]
+
+   装备描述：装备火炮武装的上海级完全型轻型人偶，特化炮击能力。
+55. 上海级完全型弹幕装
+   ID：touhou_magic_advanced_light_spaa
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2379
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：上海级完全型弹幕装 [touhou_magic_light_tank_aa_equipment_3]
+
+   装备描述：装备弹幕武装的上海级完全型轻型人偶，特化防空能力。
+56. 提泰妮娅级
+   ID：touhou_magic_basic_medium_tank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2397
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、armor、cat_medium_armor
+   前序节点：上海级改良型 [touhou_magic_improved_light_tank]
+   解锁装备：提泰妮娅级 [touhou_magic_medium_tank_equipment_1]
+
+   装备描述：幻想乡时代就存在实验性的原型机，两个一组，采用了最先进的人偶网络，与其说一组两个，不如说是一个人偶有两具身体，跨时代的设计使提泰妮娅级拥有了跨时代的战斗力。
+             
+             提泰妮娅级可以替代外界的中型坦克。
+57. 提泰妮娅级破甲装
+   ID：touhou_magic_basic_medium_td
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2467
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：提泰妮娅级破甲装 [touhou_magic_medium_tank_destroyer_equipment_1]
+
+   装备描述：装备破甲武装的提泰妮娅级重型人偶，特化反装甲能力。
+58. 提泰妮娅级火炮装
+   ID：touhou_magic_basic_medium_art
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2511
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：提泰妮娅级火炮装 [touhou_magic_medium_tank_artillery_equipment_1]
+
+   装备描述：装备火炮武装的提泰妮娅级重型人偶，特化炮击能力。
+59. 提泰妮娅级弹幕装
+   ID：touhou_magic_basic_medium_spaa
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2554
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：提泰妮娅级弹幕装 [touhou_magic_medium_tank_aa_equipment_1]
+
+   装备描述：装备弹幕武装的提泰妮娅级重型人偶，特化防空能力。
+60. 提泰妮娅级改良型
+   ID：touhou_magic_improved_medium_tank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2582
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、armor、cat_medium_armor
+   前序节点：提泰妮娅级 [touhou_magic_basic_medium_tank]
+   解锁装备：提泰妮娅级改良型 [touhou_magic_medium_tank_equipment_2]
+
+   装备描述：设计师在幻想乡时代原型机改了几处，完善了曾经的设计，虽然她本人不太满意，但还是放弃了继续修改。
+             
+             有些东西比武器更值得完善。
+61. 提泰妮娅级改良型破甲装
+   ID：touhou_magic_improved_medium_td
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2646
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：提泰妮娅级改良型破甲装 [touhou_magic_medium_tank_destroyer_equipment_2]
+
+   装备描述：装备破甲武装的提泰妮娅级改良型重型人偶，特化反装甲能力。
+62. 提泰妮娅级改良型火炮装
+   ID：touhou_magic_improved_medium_art
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2693
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：提泰妮娅级改良型火炮装 [touhou_magic_medium_tank_artillery_equipment_2]
+
+   装备描述：装备火炮武装的提泰妮娅级改良型重型人偶，特化炮击能力。
+63. 提泰妮娅级改良型弹幕装
+   ID：touhou_magic_improved_medium_spaa
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2739
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：提泰妮娅级改良型弹幕装 [touhou_magic_medium_tank_aa_equipment_2]
+
+   装备描述：装备弹幕武装的提泰妮娅级改良型重型人偶，特化防空能力。
+64. 提泰妮娅级完全型
+   ID：touhou_magic_advanced_medium_tank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2767
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、armor、cat_medium_armor
+   前序节点：提泰妮娅级改良型 [touhou_magic_improved_medium_tank]
+   解锁装备：提泰妮娅级完全型 [touhou_magic_medium_tank_equipment_3]
+
+   装备描述：提泰妮娅级改良型进一步完善的结果，堪称中型装甲的巅峰。设计师曾说过有改进的余地，随后又否定了这一点。
+             
+             “最后的幻想乡人”
+65. 提泰妮娅级完全型破甲装
+   ID：touhou_magic_advanced_medium_td
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2814
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：提泰妮娅级完全型破甲装 [touhou_magic_medium_tank_destroyer_equipment_3]
+
+   装备描述：装备破甲武装的提泰妮娅级完全型重型人偶，特化反装甲能力。
+66. 提泰妮娅级完全型火炮装
+   ID：touhou_magic_advanced_medium_art
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2848
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：提泰妮娅级完全型火炮装 [touhou_magic_medium_tank_artillery_equipment_3]
+
+   装备描述：装备火炮武装的提泰妮娅级完全型重型人偶，特化炮击能力。
+67. 提泰妮娅级完全型弹幕装
+   ID：touhou_magic_advanced_medium_spaa
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:2895
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：提泰妮娅级完全型弹幕装 [touhou_magic_medium_tank_aa_equipment_3]
+
+   装备描述：装备弹幕武装的提泰妮娅级完全型重型人偶，特化防空能力。
+68. 量产型歌利亚
+   ID：touhou_magic_main_battle_tank
+   来源：common/technologies/touhou_magic.txt:2923
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、armor、cat_medium_armor
+   前序节点：歌利亚完成型 [goliath_3]
+   解锁装备：量产型歌利亚 [touhou_magic_modern_tank_equipment_1]
+
+69. 量产型歌利亚破甲装
+   ID：touhou_magic_modern_td
+   来源：common/technologies/touhou_magic.txt:2967
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：量产型歌利亚破甲装 [touhou_magic_modern_tank_destroyer_equipment_1]
+   描述：量产型歌利亚破甲装
+
+70. 量产型歌利亚炮击装
+   ID：touhou_magic_modern_art
+   来源：common/technologies/touhou_magic.txt:3001
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：量产型歌利亚炮击装 [touhou_magic_modern_tank_artillery_equipment_1]
+   描述：量产型歌利亚炮击装
+
+71. 量产型歌利亚弹幕装
+   ID：touhou_magic_modern_spaa
+   来源：common/technologies/touhou_magic.txt:3035
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：magic、armor
+   解锁装备：量产型歌利亚弹幕装 [touhou_magic_modern_tank_aa_equipment_1]
+   描述：量产型歌利亚弹幕装
+
+72. 扫把
+   ID：touhou_magic_early_fighter
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3054
+   年份：1933
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   解锁装备：扫把 [touhou_magic_fighter_equipment_0]
+
+   装备描述：由于某些理由，后幻想乡时代诞生的众多魔法师坚信，魔法师必须依靠扫把才能飞行。而那些知道真相的人大部分都懒得因为这个和他们辩驳上好几天。
+73. 飞行扫把
+   ID：touhou_magic_fighter1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3089
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：扫把 [touhou_magic_early_fighter]
+   解锁装备：飞行扫把 [touhou_magic_fighter_equipment_1]
+
+   装备描述：法师们逐渐发现，普通的扫把对于飞行没有任何帮助。于是带有飞行魔法的扫把出现了。
+74. 附魔扫把
+   ID：touhou_magic_fighter2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3145
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：飞行扫把 [touhou_magic_fighter1]
+   解锁装备：附魔扫把 [touhou_magic_fighter_equipment_2]
+
+   装备描述：带有飞行魔法的扫把，虽然可以辅助飞行，然而在其他方面却完全是累赘。于是附有多种魔法的附魔扫把出现了。
+75. 魔法扫把
+   ID：touhou_magic_fighter3
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3201
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：附魔扫把 [touhou_magic_fighter2]
+   解锁装备：魔法扫把 [touhou_magic_fighter_equipment_3]
+
+   装备描述：附魔扫把虽然让扫把不再那么毫无意义，但是和其他魔法道具相比仍然非常逊色。于是魔法扫把出现了。
+76. 强效魔法扫把
+   ID：touhou_magic_jet_fighter2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3257
+   年份：1946
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、light_air、jet_technology、mio_cat_tech_touhou_aircraft
+   前序节点：魔法扫把 [touhou_magic_fighter3]
+   解锁装备：强效魔法扫把 [touhou_magic_jet_fighter_equipment_2]
+
+   装备描述：说实在话，即使到了这个阶段，扫把仍然没有任何意义，明明自己飞会更好。即使从附魔或是魔法物品角度看，项链、戒指或是其他物品远比扫把简单又能达到更好的效果。但是考虑到扫把是唯一能让魔法师们愿意上天的东西，也只能如此了。
+77. 爆炸魔法
+   ID：touhou_magic_early_bomber
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3283
+   年份：1933
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、medium_air、tactical_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   解锁装备：爆炸魔法 [touhou_magic_tac_bomber_equipment_0]
+
+   装备描述：相关体系的基础，以各种方式引发爆炸的技术，简单粗暴。
+78. 爆破魔法
+   ID：touhou_magic_tactical_bomber1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3317
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、medium_air、tactical_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：爆炸魔法 [touhou_magic_early_bomber]
+   解锁装备：爆破魔法 [touhou_magic_tac_bomber_equipment_1]
+
+   装备描述：针对坚硬物体常规爆炸效果不佳的问题，以爆破的方式应对。
+79. 爆裂魔法
+   ID：touhou_magic_tactical_bomber2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3373
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、medium_air、tactical_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：爆破魔法 [touhou_magic_tactical_bomber1]
+   解锁装备：爆裂魔法 [touhou_magic_tac_bomber_equipment_2]
+
+   装备描述：威力、范围都有了巨大的飞跃，甚至可以称得上是一个新的体系。然而因为其简单粗暴的特性，被简单粗暴地分到了同样简单粗暴的类别里了。
+80. 极限爆裂魔法
+   ID：touhou_magic_tactical_bomber3
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3428
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、medium_air、tactical_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：爆裂魔法 [touhou_magic_tactical_bomber2]
+   解锁装备：极限爆裂魔法 [touhou_magic_tac_bomber_equipment_3]
+
+   装备描述：爆裂魔法的强化版，限制级的魔法。
+81. 究极爆裂魔法
+   ID：touhou_magic_jet_tactical_bomber2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3476
+   年份：1946
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、medium_air、jet_technology、tactical_bomber、mio_cat_tech_touhou_aircraft
+   前序节点：极限爆裂魔法 [touhou_magic_tactical_bomber3]
+   解锁装备：究极爆裂魔法 [touhou_magic_jet_tac_bomber_equipment_2]
+
+   装备描述：爆裂魔法的最终形态(?)，可以对所有种类的目标造成巨大的破坏。
+82. 大范围爆炸魔法
+   ID：touhou_magic_strategic_bomber1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3501
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、heavy_air、air_equipment、cat_strategic_bomber、mio_cat_tech_touhou_aircraft
+   前序节点：爆炸魔法 [touhou_magic_early_bomber]
+   解锁装备：大范围爆炸魔法 [touhou_magic_strat_bomber_equipment_1]
+
+   装备描述：最大化伤害范围的模式，对特定单体目标效果欠佳。
+83. 毁灭魔法
+   ID：touhou_magic_strategic_bomber2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3531
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、heavy_air、air_equipment、cat_strategic_bomber、mio_cat_tech_touhou_aircraft
+   前序节点：大范围爆炸魔法 [touhou_magic_strategic_bomber1]
+   解锁装备：毁灭魔法 [touhou_magic_strat_bomber_equipment_2]
+
+   装备描述：特化对固定目标的魔法术式，威力和范围都是最强的，然而对小目标意义不大。
+84. 极限毁灭魔法
+   ID：touhou_magic_strategic_bomber3
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3561
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、heavy_air、air_equipment、cat_strategic_bomber、mio_cat_tech_touhou_aircraft
+   前序节点：毁灭魔法 [touhou_magic_strategic_bomber2]
+   解锁装备：极限毁灭魔法 [touhou_magic_strat_bomber_equipment_3]
+
+   装备描述：强化版的毁灭魔法，单纯为了威力和范围而存在的。
+85. 究极毁灭魔法
+   ID：touhou_magic_jet_strategic_bomber1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_magic.txt:3592
+   年份：1946
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、heavy_air、jet_technology、cat_strategic_bomber、mio_cat_tech_touhou_aircraft
+   前序节点：极限毁灭魔法 [touhou_magic_strategic_bomber3]
+   解锁装备：究极毁灭魔法 [touhou_magic_jet_strat_bomber_equipment_1]
+
+   装备描述：最强的毁灭魔法，无论防御性多强的固定目标都将化为灰烬。
+================================================================================
+灵力科技（63 项）
+================================================================================
+
+1. 除灵道具
+   ID：touhou_wakan_infantry_weapons
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:15
+   年份：1918
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   解锁装备：除灵道具 [touhou_wakan_infantry_equipment_0]
+   解锁兵种：破魔术士 [touhou_wakan_infantry]；灵兽 [touhou_wakan_cavalry]
+
+   装备描述：从最初开始便留下了无数传说的各种道具，是否有真实效果无从考究。是之后一切灵力体系出现与发展的基础。
+2. 附灵道具
+   ID：touhou_wakan_infantry_weapons1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:48
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   前序节点：除灵道具 [touhou_wakan_infantry_weapons]
+   解锁装备：附灵道具 [touhou_wakan_infantry_equipment_1]
+
+   装备描述：将灵力附着在道具上，使得普通的简单道具可以发挥巨大的效果。
+3. 强化附灵
+   ID：touhou_wakan_infantry_weapons2
+   来源：common/technologies/touhou_wakan.txt:80
+   年份：1938
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   前序节点：附灵道具 [touhou_wakan_infantry_weapons1]
+   描述：强化道具中附着灵力的能力。同样的道具现在可以附着更多灵力了。
+
+4. 灵力场
+   ID：touhou_wakan_improved_infantry_weapons
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:133
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   前序节点：强化附灵 [touhou_wakan_infantry_weapons2]
+   解锁装备：灵力场 [touhou_wakan_infantry_equipment_2]
+
+   装备描述：通过附灵的道具，引发灵力共鸣，形成灵力场，即使没有直接命中，也能造成有效伤害。
+5. 灵力束缚
+   ID：touhou_wakan_improved_infantry_weapons_2
+   来源：common/technologies/touhou_wakan.txt:173
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   前序节点：灵力场 [touhou_wakan_improved_infantry_weapons]
+   描述：通过灵力流，使灵力场中的敌人行动困难，难以逃脱。
+
+6. 封魔针
+   ID：touhou_wakan_infantry_at
+   来源：common/technologies/touhou_wakan.txt:237
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   前序节点：灵力场 [touhou_wakan_improved_infantry_weapons]
+   描述：能够附着在其外甲上的灵力道具，会对接触到的外甲造成持续损伤。
+
+7. 强化封魔针
+   ID：touhou_wakan_infantry_at2
+   来源：common/technologies/touhou_wakan.txt:308
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   前序节点：封魔针 [touhou_wakan_infantry_at]
+   描述：附着在敌人外甲上的灵力道具会更加剧烈地灼烧起来，甚至会点燃敌人外甲所含有的灵力，形成连锁反应。
+
+8. 灵力结界
+   ID：touhou_wakan_advanced_infantry_weapons
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:374
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   前序节点：灵力束缚 [touhou_wakan_improved_infantry_weapons_2]
+   解锁装备：灵力结界 [touhou_wakan_infantry_equipment_3]
+
+   装备描述：通过附灵道具的灵力场效应，将多个灵力场系统地结合在一起，达到远超灵力场的效果。
+9. 破魔
+   ID：touhou_wakan_advanced_infantry_weapons2
+   来源：common/technologies/touhou_wakan.txt:411
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   前序节点：灵力结界 [touhou_wakan_advanced_infantry_weapons]
+   描述：回归初始，返璞归真。全方位简化灵力道具复杂程度的同时，进一步增强其效果。
+
+10. 风精灵
+   ID：touhou_wakan_paratroopers
+   来源：common/technologies/touhou_wakan.txt:480
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、para_tech
+   解锁兵种：风精灵 [touhou_wakan_paratrooper]
+   描述：在特定的地形中，精灵的表现比常规的术士更为出色。
+         风精灵能从天空降临，给予敌人毁灭性的打击。
+
+11. 高等风精灵
+   ID：touhou_wakan_paratroopers2
+   来源：common/technologies/touhou_wakan.txt:521
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、para_tech
+   前序节点：风精灵 [touhou_wakan_paratroopers]
+   描述：改进呼唤与请求风精灵术式，增强呼唤更强大精灵的能力。
+
+12. 精灵信仰-风
+   ID：touhou_wakan_paratroopers3
+   来源：common/technologies/touhou_wakan.txt:550
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、para_tech
+   前序节点：高等风精灵 [touhou_wakan_paratroopers2]
+   描述：为精灵提供更强的信仰之力，精灵们将会拥有更加完美的表现。
+
+13. 水精灵
+   ID：touhou_wakan_marines
+   来源：common/technologies/touhou_wakan.txt:575
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、marine_tech
+   解锁兵种：水精灵 [touhou_wakan_marine]
+   描述：在特定的地形中，精灵的表现比常规的术士更为出色。
+         在有水的地方，就是水精灵的天下了。
+
+14. 高等水精灵
+   ID：touhou_wakan_marines2
+   来源：common/technologies/touhou_wakan.txt:616
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、marine_tech
+   前序节点：水精灵 [touhou_wakan_marines]
+   描述：改进呼唤与请求水精灵术式，增强呼唤更强大精灵的能力。
+
+15. 精灵信仰-水
+   ID：touhou_wakan_marines3
+   来源：common/technologies/touhou_wakan.txt:647
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、marine_tech
+   前序节点：高等水精灵 [touhou_wakan_marines2]
+   描述：为精灵提供更强的信仰之力，精灵们将会拥有更加完美的表现。
+
+16. 土精灵
+   ID：touhou_wakan_tech_mountaineers
+   来源：common/technologies/touhou_wakan.txt:670
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_tech、mountaineers_tech
+   解锁兵种：土精灵 [touhou_wakan_mountaineers]
+   描述：在特定的地形中，精灵的表现比常规的术士更为出色。
+         在山地，土精灵表现最为突出。
+
+17. 高等土精灵
+   ID：touhou_wakan_tech_mountaineers2
+   来源：common/technologies/touhou_wakan.txt:711
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_tech、mountaineers_tech
+   前序节点：土精灵 [touhou_wakan_tech_mountaineers]
+   描述：改进呼唤与请求土精灵术式，增强呼唤更强大精灵的能力。
+
+18. 精灵信仰-土
+   ID：touhou_wakan_tech_mountaineers3
+   来源：common/technologies/touhou_wakan.txt:741
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_tech、mountaineers_tech
+   前序节点：高等土精灵 [touhou_wakan_tech_mountaineers2]
+   描述：为精灵提供更强的信仰之力，精灵们将会拥有更加完美的表现。
+
+19. 精灵适应
+   ID：touhou_wakan_tech_special_forces
+   来源：common/technologies/touhou_wakan.txt:764
+   年份：1938
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、mountaineers_tech、marine_tech、para_tech
+   描述：增强精灵从自然获得的祝福，可以增强精灵对环境的适应力。
+
+20. 大型精灵
+   ID：touhou_wakan_advanced_special_forces
+   来源：common/technologies/touhou_wakan.txt:816
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、mountaineers_tech、marine_tech、para_tech
+   前序节点：精灵适应 [touhou_wakan_tech_special_forces]
+   描述：大型的精灵拥有着更强的战斗能力，同时召唤时间也一同延长了。
+
+21. 小型精灵
+   ID：touhou_wakan_improved_special_forces
+   来源：common/technologies/touhou_wakan.txt:860
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、mountaineers_tech、marine_tech、para_tech
+   前序节点：精灵适应 [touhou_wakan_tech_special_forces]
+   描述：小型的精灵呼唤的时间更短，同时同样情况下能支持的精灵数量也增加了。
+
+22. 精灵特化
+   ID：touhou_wakan_extreme_environment_training
+   来源：common/technologies/touhou_wakan.txt:893
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、mountaineers_tech、marine_tech、para_tech
+   前序节点：大型精灵 [touhou_wakan_advanced_special_forces]
+   描述：为多种特定情况准备不同的精灵进行专门应对，极大地提升元素适应环境的能力，同时延长了召唤时间。
+
+23. 精灵泛化
+   ID：touhou_wakan_survival_training
+   来源：common/technologies/touhou_wakan.txt:936
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、mountaineers_tech、marine_tech、para_tech
+   前序节点：小型精灵 [touhou_wakan_improved_special_forces]
+   描述：在不影响精灵本身能力的情况下，尽可能增强精灵的泛用能力，提升复杂情况下的稳定性。
+
+24. 精灵崇拜
+   ID：touhou_wakan_elite_forces
+   来源：common/technologies/touhou_wakan.txt:978
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、mountaineers_tech、marine_tech、para_tech
+   前序节点：精灵特化 [touhou_wakan_extreme_environment_training]；精灵泛化 [touhou_wakan_survival_training]
+   描述：我们依靠精灵，仰仗精灵，作为回报，我们将献上我们的信仰，而坚实的信仰会让我们之间的关系变得更加紧密。
+
+25. 暗精灵
+   ID：touhou_wakan_night_vision
+   来源：common/technologies/touhou_wakan.txt:1007
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、night_vision
+   描述：暗精灵天生拥有在黑暗中视物的能力，在黑夜可以呼唤他们来指引道路。
+
+26. 夜女神的祝福
+   ID：touhou_wakan_night_vision2
+   来源：common/technologies/touhou_wakan.txt:1053
+   年份：1946
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、night_vision
+   前序节点：暗精灵 [touhou_wakan_night_vision]
+   描述：在黑夜女神的祝福下，术士们能融入黑夜之中，给敌人出其不意的打击。
+
+27. 灵气
+   ID：touhou_wakan_support_weapons
+   来源：common/technologies/touhou_wakan.txt:1089
+   年份：1918
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   描述：在自身外围附着一层灵气，提供基本外层防御。
+
+28. 强化灵气
+   ID：touhou_wakan_support_weapons2
+   来源：common/technologies/touhou_wakan.txt:1173
+   年份：1938
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   前序节点：灵气 [touhou_wakan_support_weapons]
+   描述：增强外层附着的灵气，增强防御力。
+
+29. 能量吸收
+   ID：touhou_wakan_support_weapons3
+   来源：common/technologies/touhou_wakan.txt:1264
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   前序节点：强化灵气 [touhou_wakan_support_weapons2]
+   描述：灵气能够吸收部分来袭的能量，为灵气本身和使用者提供回复能力。
+
+30. 灵气转化
+   ID：touhou_wakan_support_weapons4
+   来源：common/technologies/touhou_wakan.txt:1354
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、infantry_weapons
+   前序节点：能量吸收 [touhou_wakan_support_weapons3]
+   描述：快速、即时地转化灵气性质的技术，可以因地制宜地进行调整。
+
+31. 灵场
+   ID：touhou_wakan_gw_artillery
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:1440
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   解锁装备：灵场 [touhou_wakan_artillery_equipment_1]
+
+   装备描述：以爆炸的形式形成一片高能量区，进行持续伤害的技术，虽然名称相近，但是和破魔道具体系内的灵力场有本质不同。
+32. 灵场震
+   ID：touhou_wakan_interwar_artillery
+   来源：common/technologies/touhou_wakan.txt:1488
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：灵场 [touhou_wakan_gw_artillery]
+   描述：在灵场中混入局部小范围爆破，提高整体杀伤效率。
+
+33. 灵力爆破
+   ID：touhou_wakan_artillery1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:1538
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：灵场震 [touhou_wakan_interwar_artillery]
+   解锁装备：灵力爆破 [touhou_wakan_artillery_equipment_2]
+
+   装备描述：不形成灵场，而是直接引爆，将全部的能量一口气释放出来，而非进行持续伤害。
+34. 灵力诱导
+   ID：touhou_wakan_artillery2
+   来源：common/technologies/touhou_wakan.txt:1582
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：灵力爆破 [touhou_wakan_artillery1]
+   描述：将周围的灵力吸引到目标点周围，增强目标点周围的灵力密度，增强灵场的威力。
+
+35. 灵力增压
+   ID：touhou_wakan_artillery3
+   来源：common/technologies/touhou_wakan.txt:1632
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：灵力诱导 [touhou_wakan_artillery2]
+   描述：在灵力共鸣引发灵场现象前，尽可能增加环境灵力和触发灵力的灵力密度，增强范围与杀伤。
+
+36. 空间震
+   ID：touhou_wakan_artillery4
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:1677
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：灵力增压 [touhou_wakan_artillery3]
+   解锁装备：空间震 [touhou_wakan_artillery_equipment_3]
+
+   装备描述：使用灵力压缩空间，再一口气释放的技术，破坏力惊人，但在使用时会出现一段的反应时间，为敌人的回避行动提供条件。
+37. 瞬发现象
+   ID：touhou_wakan_artillery5
+   来源：common/technologies/touhou_wakan.txt:1722
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：空间震 [touhou_wakan_artillery4]
+   描述：不同于在触发前会出现高灵力区而引发敌人警觉的旧式，瞬发现象可以在毫无征兆的情况下引发空间震。
+
+38. 天网
+   ID：touhou_wakan_interwar_antiair
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:1767
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：灵场 [touhou_wakan_gw_artillery]
+   解锁装备：天网 [touhou_wakan_anti_air_equipment_1]
+
+   装备描述：以弹幕的形式在天空中展开巨网，故而得名。
+39. 多层次天网
+   ID：touhou_wakan_antiair1
+   来源：common/technologies/touhou_wakan.txt:1824
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：天网 [touhou_wakan_interwar_antiair]
+   描述：将多层天网交织起来，形成立体结构。是天网阵的基础技术。
+
+40. 天网阵
+   ID：touhou_wakan_antiair2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:1873
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：多层次天网 [touhou_wakan_antiair1]
+   解锁装备：天网阵 [touhou_wakan_anti_air_equipment_2]
+
+   装备描述：多层次，立体化地天网配置，非但不会互相干扰，反而能够增强整体效能。
+41. 天网雷
+   ID：touhou_wakan_antiair3
+   来源：common/technologies/touhou_wakan.txt:1920
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：天网阵 [touhou_wakan_antiair2]
+   描述：在天网中混入空雷，同时具有阻止敌人行动和伤害敌人的双重效果。
+
+42. 主动式天网雷
+   ID：touhou_wakan_antiair4
+   来源：common/technologies/touhou_wakan.txt:1974
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：天网雷 [touhou_wakan_antiair3]
+   描述：不同于之前必须接触才会爆发的旧式，新式天网雷只要在一定范围内出现目标，便能主动前往拦截。
+
+43. 天网结界
+   ID：touhou_wakan_antiair5
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2028
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、artillery
+   前序节点：主动式天网雷 [touhou_wakan_antiair4]
+   解锁装备：天网结界 [touhou_wakan_anti_air_equipment_3]
+
+   装备描述：将结界技术应用到天网中，暂时困住接近天网的空中单位。
+44. 高速灵装
+   ID：touhou_wakan_motorised_infantry
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2069
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、motorized_equipment、infantry_tech
+   解锁装备：高速灵装 [touhou_wakan_motorized_equipment_1]
+   解锁兵种：灵装术士 [touhou_wakan_motorized]
+
+   装备描述：尽可能提高装备者的移动速度，对其他方面的提升不大，面对高速型妖怪时，是不可或缺的重要装备。
+45. 火风暴灵装
+   ID：touhou_wakan_motorized_rocket_unit
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2136
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：wakan、mot_rockets
+   解锁装备：火风暴灵装 [touhou_wakan_motorized_rocket_equipment_1]
+   解锁兵种：火风暴灵装 [touhou_wakan_motorized_rocket_brigade]
+
+   装备描述：高密度、大范围地投射灵力触发弹，如风暴一般，在目标区域内点燃无尽的烈焰，故而得名。
+46. 灵装机
+   ID：touhou_wakan_mechanised_infantry
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2163
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、motorized_equipment、infantry_tech、cat_mechanized_equipment
+   前序节点：高速灵装 [touhou_wakan_motorised_infantry]
+   解锁装备：灵装机 [touhou_wakan_mechanized_equipment_1]
+
+   装备描述：在高速灵装基础上附加外装甲，在不影响速度的前提下，增加了防御性能。
+47. 泛用型灵装机
+   ID：touhou_wakan_amphibious_mechanized_infantry
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2212
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、motorized_equipment、infantry_tech、cat_mechanized_equipment、tp_tech
+   前序节点：灵装机 [touhou_wakan_mechanised_infantry]
+   解锁装备：泛用型灵装机 [touhou_wakan_amphibious_mechanized_equipment_1]
+   解锁兵种：泛用型灵装机 [touhou_wakan_amphibious_mechanized]
+
+   装备描述：泛用型灵装机能在水中发挥和陆地上一样的性能，不会被复杂的环境所影响。
+48. 强化泛用型灵装机
+   ID：touhou_wakan_amphibious_mechanized_infantry_2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2255
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、motorized_equipment、infantry_tech、cat_mechanized_equipment、tp_tech
+   前序节点：泛用型灵装机 [touhou_wakan_amphibious_mechanized_infantry]
+   解锁装备：强化泛用型灵装机 [touhou_wakan_amphibious_mechanized_equipment_2]
+
+   装备描述：泛用型灵装机的改进版，所有能力都有所提升。
+49. 强化灵装机
+   ID：touhou_wakan_mechanised_infantry2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2281
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、motorized_equipment、infantry_tech、cat_mechanized_equipment
+   前序节点：灵装机 [touhou_wakan_mechanised_infantry]
+   解锁装备：强化灵装机 [touhou_wakan_mechanized_equipment_2]
+
+   装备描述：强化外装甲和整体框架结构强度，强化攻击和防御两方面能力。
+50. 不朽灵装机
+   ID：touhou_wakan_mechanised_infantry3
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2311
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、motorized_equipment、infantry_tech、cat_mechanized_equipment
+   前序节点：强化灵装机 [touhou_wakan_mechanised_infantry2]
+   解锁装备：不朽灵装机 [touhou_wakan_mechanized_equipment_3]
+
+   装备描述：全方位地改进，不朽级能达到灵装机理论上的最大性能。
+51. 起风
+   ID：touhou_wakan_early_fighter
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2344
+   年份：1933
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   解锁装备：起风 [touhou_wakan_fighter_equipment_0]
+
+   装备描述：控制风来杀伤敌方空中单位的技术，对地伤害非常有限，受限于射程，必须由空中单位使用。
+52. 强风
+   ID：touhou_wakan_fighter1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2383
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：起风 [touhou_wakan_early_fighter]
+   解锁装备：强风 [touhou_wakan_fighter_equipment_1]
+
+   装备描述：卷起强风，干扰敌人的行动，造成伤害。
+53. 狂风
+   ID：touhou_wakan_fighter2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2439
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：强风 [touhou_wakan_fighter1]
+   解锁装备：狂风 [touhou_wakan_fighter_equipment_2]
+
+   装备描述：卷起狂风，干扰敌人的行动，造成伤害。
+54. 飓风
+   ID：touhou_wakan_fighter3
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2495
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：狂风 [touhou_wakan_fighter2]
+   解锁装备：飓风 [touhou_wakan_fighter_equipment_3]
+
+   装备描述：卷起飓风，干扰敌人的行动，造成伤害。
+55. 天龙卷
+   ID：touhou_wakan_jet_fighter2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2551
+   年份：1946
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、light_air、jet_technology、mio_cat_tech_touhou_aircraft
+   前序节点：飓风 [touhou_wakan_fighter3]
+   解锁装备：天龙卷 [touhou_wakan_jet_fighter_equipment_2]
+
+   装备描述：卷起仅在天空中存在的龙卷风，卷走一切。
+56. 惊雷
+   ID：touhou_wakan_CAS1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2576
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、light_air、cas_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：起风 [touhou_wakan_early_fighter]
+   解锁装备：惊雷 [touhou_wakan_CAS_equipment_1]
+
+   装备描述：在敌人头顶降下惊雷。
+57. 狂雷
+   ID：touhou_wakan_CAS2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2624
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、light_air、cas_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：惊雷 [touhou_wakan_CAS1]
+   解锁装备：狂雷 [touhou_wakan_CAS_equipment_2]
+
+   装备描述：若狂涛般的雷电，能够造成范围性地打击。
+58. 万雷
+   ID：touhou_wakan_CAS3
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2681
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、light_air、cas_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：狂雷 [touhou_wakan_CAS2]
+   解锁装备：万雷 [touhou_wakan_CAS_equipment_3]
+
+   装备描述：召唤数以万计的雷电，大范围打击敌军。
+59. 天火
+   ID：touhou_wakan_early_bomber
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2730
+   年份：1933
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、medium_air、tactical_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   解锁装备：天火 [touhou_wakan_tac_bomber_equipment_0]
+
+   装备描述：召唤火球从天空坠落。
+60. 天火击
+   ID：touhou_wakan_tactical_bomber1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2760
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、medium_air、tactical_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：天火 [touhou_wakan_early_bomber]
+   解锁装备：天火击 [touhou_wakan_tac_bomber_equipment_1]
+
+   装备描述：召唤更大的火球从天空坠落。
+61. 天火坠
+   ID：touhou_wakan_tactical_bomber2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2816
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、medium_air、tactical_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：天火击 [touhou_wakan_tactical_bomber1]
+   解锁装备：天火坠 [touhou_wakan_tac_bomber_equipment_2]
+
+   装备描述：召唤带有内核的火球从天空坠落。
+62. 天火雨
+   ID：touhou_wakan_tactical_bomber3
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2871
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、medium_air、tactical_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：天火坠 [touhou_wakan_tactical_bomber2]
+   解锁装备：天火雨 [touhou_wakan_tac_bomber_equipment_3]
+
+   装备描述：一口气召唤复数的天火从天空坠落。
+63. 天地异变
+   ID：touhou_wakan_jet_tactical_bomber2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_wakan.txt:2919
+   年份：1946
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_wakan
+   类别：wakan、medium_air、jet_technology、tactical_bomber、mio_cat_tech_touhou_aircraft
+   前序节点：天火雨 [touhou_wakan_tactical_bomber3]
+   解锁装备：天地异变 [touhou_wakan_jet_tac_bomber_equipment_2]
+
+   装备描述：天空坠落，大地翻涌。
+================================================================================
+妖力科技（69 项）
+================================================================================
+
+1. 妖怪
+   ID：touhou_demonforce_infantry_weapons
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:15
+   年份：1918
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   解锁装备：妖怪 [touhou_demonforce_infantry_equipment_0]
+   解锁兵种：芬里尔 [touhou_demonforce_cavalry]；哈努曼 [touhou_demonforce_infantry]
+
+   装备描述：对拥有妖力的生物的统称，包含的种族千差万别，不可一概而论。
+2. 妖魔
+   ID：touhou_demonforce_infantry_weapons1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:48
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   前序节点：妖怪 [touhou_demonforce_infantry_weapons]
+   解锁装备：妖魔 [touhou_demonforce_infantry_equipment_1]
+
+   装备描述：拥有魔的力量，妖力比寻常的妖怪要更进一步。
+3. 幻化
+   ID：touhou_demonforce_infantry_weapons2
+   来源：common/technologies/touhou_demonforce.txt:80
+   年份：1938
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   前序节点：妖魔 [touhou_demonforce_infantry_weapons1]
+   描述：调动妖力，幻化万物的能力。
+
+4. 幻魔
+   ID：touhou_demonforce_improved_infantry_weapons
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:137
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   前序节点：幻化 [touhou_demonforce_infantry_weapons2]
+   解锁装备：幻魔 [touhou_demonforce_infantry_equipment_2]
+
+   装备描述：妖魔掌握幻化之力，幻化后的统称，拥有人形，变化万千。
+5. 升格
+   ID：touhou_demonforce_improved_infantry_weapons_2
+   来源：common/technologies/touhou_demonforce.txt:177
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   前序节点：幻魔 [touhou_demonforce_improved_infantry_weapons]
+   描述：超越妖怪的界限，逼近神的领域。
+
+6. 穿刺
+   ID：touhou_demonforce_infantry_at
+   来源：common/technologies/touhou_demonforce.txt:244
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   前序节点：幻魔 [touhou_demonforce_improved_infantry_weapons]
+   描述：进化能够贯穿坚甲的尖刺。
+
+7. 钻刃
+   ID：touhou_demonforce_infantry_at2
+   来源：common/technologies/touhou_demonforce.txt:320
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   前序节点：穿刺 [touhou_demonforce_infantry_at]
+   描述：进化带有利刃的钻头。
+
+8. 哈努曼
+   ID：touhou_demonforce_advanced_infantry_weapons
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:391
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   前序节点：升格 [touhou_demonforce_improved_infantry_weapons_2]
+   解锁装备：哈努曼 [touhou_demonforce_infantry_equipment_3]
+
+   装备描述：印度神话史诗《罗摩衍那》中的神猴。是风神伐由之子，力能担山。在罗摩王子与十头魔王罗婆那的 战争中大为活跃，率领猴军帮助罗摩获胜。
+9. 神化
+   ID：touhou_demonforce_advanced_infantry_weapons2
+   来源：common/technologies/touhou_demonforce.txt:428
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   前序节点：哈努曼 [touhou_demonforce_advanced_infantry_weapons]
+   描述：概念或是力量神格化，获得类似神明的力量。但并不是真正成为了神。
+
+10. 风生
+   ID：touhou_demonforce_paratroopers
+   来源：common/technologies/touhou_demonforce.txt:489
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、para_tech
+   解锁兵种：加斯伯禄 [touhou_demonforce_paratrooper]
+   描述：风生种族能够从天而降，给与敌人巨大的打击。
+
+11. 风魔
+   ID：touhou_demonforce_paratroopers2
+   来源：common/technologies/touhou_demonforce.txt:530
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、para_tech
+   前序节点：风生 [touhou_demonforce_paratroopers]
+   描述：风种化魔，能够获得更大的力量。
+
+12. 加斯伯禄
+   ID：touhou_demonforce_paratroopers3
+   来源：common/technologies/touhou_demonforce.txt:563
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、para_tech
+   前序节点：风魔 [touhou_demonforce_paratroopers2]
+   描述：仿启示文学『以诺书』所作之『伪以诺书』的目录中记载之恶魔。纳贝流士的别名之一。不太像是恶魔，反倒是灵体（鬼神）的色彩较浓。
+
+13. 水生
+   ID：touhou_demonforce_marines
+   来源：common/technologies/touhou_demonforce.txt:591
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、marine_tech
+   解锁兵种：利维坦 [touhou_demonforce_marine]
+   描述：在有水的地方战斗，水生种族的表现更加优异，水生种族特化编队能最大化这种优势。
+
+14. 水魔
+   ID：touhou_demonforce_marines2
+   来源：common/technologies/touhou_demonforce.txt:631
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、marine_tech
+   前序节点：水生 [touhou_demonforce_marines]
+   描述：水种化魔，能够获得更大的力量。
+
+15. 利维坦
+   ID：touhou_demonforce_marines3
+   来源：common/technologies/touhou_demonforce.txt:669
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、marine_tech
+   前序节点：水魔 [touhou_demonforce_marines2]
+   描述：意为裂缝，在《圣经》中是象征邪恶的一种海怪，通常被描述为鲸鱼。关于利维坦的记载紧跟在《约伯记》中记载贝希摩斯的下一章，书中描述的利维坦实际上就是一条鱼，拥有坚硬的鳞甲，锋利的牙齿，腹下有尖刺，令人生畏。
+
+16. 土生
+   ID：touhou_demonforce_tech_mountaineers
+   来源：common/technologies/touhou_demonforce.txt:698
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_tech、mountaineers_tech
+   解锁兵种：雅木 [touhou_demonforce_mountaineers]
+   描述：在有山地战斗，土生种族的表现更加优异，土生种族特化编队能最大化这种优势。
+
+17. 土魔
+   ID：touhou_demonforce_tech_mountaineers2
+   来源：common/technologies/touhou_demonforce.txt:739
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_tech、mountaineers_tech
+   前序节点：土生 [touhou_demonforce_tech_mountaineers]
+   描述：土种化魔，能够获得更大的力量。
+
+18. 野锤
+   ID：touhou_demonforce_tech_mountaineers3
+   来源：common/technologies/touhou_demonforce.txt:777
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_tech、mountaineers_tech
+   前序节点：土魔 [touhou_demonforce_tech_mountaineers2]
+   描述：古事记中出现的居住在山上的蛇的精灵，掌管着地脉。
+
+19. 土生土长
+   ID：touhou_demonforce_tech_special_forces
+   来源：common/technologies/touhou_demonforce.txt:806
+   年份：1938
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、mountaineers_tech、marine_tech、para_tech
+   描述：本就是在相应的环境中生长，能够更加快速地适应特殊的环境。
+
+20. 强化繁殖
+   ID：touhou_demonforce_advanced_special_forces
+   来源：common/technologies/touhou_demonforce.txt:857
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、mountaineers_tech、marine_tech、para_tech
+   前序节点：土生土长 [touhou_demonforce_tech_special_forces]
+   描述：为了更强大的个体，损失一些效率是可以接受的。
+
+21. 快速繁殖
+   ID：touhou_demonforce_improved_special_forces
+   来源：common/technologies/touhou_demonforce.txt:909
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、mountaineers_tech、marine_tech、para_tech
+   前序节点：土生土长 [touhou_demonforce_tech_special_forces]
+   描述：为了赢得战争，速度是第一位的，需要尽可能快得获得军队。
+
+22. 特异进化
+   ID：touhou_demonforce_extreme_environment_training
+   来源：common/technologies/touhou_demonforce.txt:942
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、mountaineers_tech、marine_tech、para_tech
+   前序节点：强化繁殖 [touhou_demonforce_advanced_special_forces]
+   描述：专门的族群能更快得适应环境的变化，为此损失一些效率是可以接受的。
+
+23. 泛型进化
+   ID：touhou_demonforce_survival_training
+   来源：common/technologies/touhou_demonforce.txt:992
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、mountaineers_tech、marine_tech、para_tech
+   前序节点：快速繁殖 [touhou_demonforce_improved_special_forces]
+   描述：在不影响战斗效能的前提下，尽可能统一我们的军队。这样可以提升我们的效率。
+
+24. 龙蟠虎踞
+   ID：touhou_demonforce_elite_forces
+   来源：common/technologies/touhou_demonforce.txt:1041
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、mountaineers_tech、marine_tech、para_tech
+   前序节点：特异进化 [touhou_demonforce_extreme_environment_training]；泛型进化 [touhou_demonforce_survival_training]
+   描述：妖魔因天地而生，自得天地庇护，据一方不败也。
+
+25. 夜魔
+   ID：touhou_demonforce_night_vision
+   来源：common/technologies/touhou_demonforce.txt:1068
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、night_vision
+   描述：夜魔是夜行生物，在黑夜中视野也不会受到影响。
+
+26. 血族
+   ID：touhou_demonforce_night_vision2
+   来源：common/technologies/touhou_demonforce.txt:1113
+   年份：1946
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、night_vision
+   前序节点：夜魔 [touhou_demonforce_night_vision]
+   描述：血族是暗中行动的大师，在血族的帮助下，黑夜将不再是种阻碍。
+
+27. 硬皮
+   ID：touhou_demonforce_support_weapons
+   来源：common/technologies/touhou_demonforce.txt:1148
+   年份：1918
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   描述：调用妖力，硬化皮肤。
+
+28. 钢筋
+   ID：touhou_demonforce_support_weapons2
+   来源：common/technologies/touhou_demonforce.txt:1227
+   年份：1938
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   前序节点：硬皮 [touhou_demonforce_support_weapons]
+   描述：强化筋骨。
+
+29. 铁骨
+   ID：touhou_demonforce_support_weapons3
+   来源：common/technologies/touhou_demonforce.txt:1312
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   前序节点：钢筋 [touhou_demonforce_support_weapons2]
+   描述：增强骨骼整体结构强度。
+
+30. 魔甲
+   ID：touhou_demonforce_support_weapons4
+   来源：common/technologies/touhou_demonforce.txt:1397
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、infantry_weapons
+   前序节点：铁骨 [touhou_demonforce_support_weapons3]
+   描述：使用妖力，在外皮生成类似于护甲一类的外壳，但是不像护甲那样会影响行动。
+
+31. 恶鬼
+   ID：touhou_demonforce_interwar_antiair
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:1477
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery
+   解锁装备：恶鬼 [touhou_demonforce_anti_air_equipment_1]
+
+   装备描述：凶恶的厉鬼，不同于后迁移进旧地狱的鬼族，恶鬼是地狱的原住民。
+32. 魔化
+   ID：touhou_demonforce_antiair1
+   来源：common/technologies/touhou_demonforce.txt:1542
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery
+   前序节点：恶鬼 [touhou_demonforce_interwar_antiair]
+   描述：恶鬼获得恶魔之力，化为恶魔。
+
+33. 恶魔
+   ID：touhou_demonforce_antiair2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:1590
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery
+   前序节点：魔化 [touhou_demonforce_antiair1]
+   解锁装备：恶魔 [touhou_demonforce_anti_air_equipment_2]
+
+   装备描述：地狱的又一原住民，拥有非常强劲的力量，喜好蛊惑人心。
+34. 化形
+   ID：touhou_demonforce_antiair3
+   来源：common/technologies/touhou_demonforce.txt:1637
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery
+   前序节点：恶魔 [touhou_demonforce_antiair2]
+   描述：恶魔化形，不一而足。
+
+35. 驱命
+   ID：touhou_demonforce_antiair4
+   来源：common/technologies/touhou_demonforce.txt:1685
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery
+   前序节点：化形 [touhou_demonforce_antiair3]
+   描述：凡有命者，皆无可违令。
+
+36. 单卡拉比
+   ID：touhou_demonforce_antiair5
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:1733
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery
+   前序节点：驱命 [touhou_demonforce_antiair4]
+   解锁装备：单卡拉比 [touhou_demonforce_anti_air_equipment_3]
+
+   装备描述：形象为一颗五角星，也有人的相貌。擅长判别宝石或鸟类的品相，可以驱使群鸟。所罗门王72柱魔神中排第69位的魔神，位阶侯爵，统帅30个军团。
+37. 走兽
+   ID：touhou_demonforce_interwar_antitank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:1775
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery、cat_anti_tank
+   解锁装备：走兽 [touhou_demonforce_anti_tank_equipment_1]
+
+   装备描述：地上奔跑的野兽的统称，也包含大量不具备妖力的种类，难以分辨。
+38. 赐福
+   ID：touhou_demonforce_antitank1
+   来源：common/technologies/touhou_demonforce.txt:1831
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery、cat_anti_tank
+   前序节点：走兽 [touhou_demonforce_interwar_antitank]
+   描述：虽为走兽，得仙佛神魔赐福，亦得神格。但实际上，所谓“赐福”，更多的是指走兽通过自己的妖力转化而得到类神格的过程。
+
+39. 神兽
+   ID：touhou_demonforce_antitank2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:1890
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery、cat_anti_tank
+   前序节点：赐福 [touhou_demonforce_antitank1]
+   解锁装备：神兽 [touhou_demonforce_anti_tank_equipment_2]
+
+   装备描述：被神明（或者恶魔）赐福的走兽，拥有神奇的力量。虽然外界并不认为其为妖怪，但在幻想乡里，仍被归属于妖怪的大家庭中。
+40. 巨化
+   ID：touhou_demonforce_antitank3
+   来源：common/technologies/touhou_demonforce.txt:1954
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery、cat_anti_tank
+   前序节点：神兽 [touhou_demonforce_antitank2]
+   描述：即为神兽，与常兽不可同，乃得巨躯，长獠牙，或狰狞，或圣洁。
+
+41. 守护
+   ID：touhou_demonforce_antitank4
+   来源：common/technologies/touhou_demonforce.txt:2019
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery、cat_anti_tank
+   前序节点：巨化 [touhou_demonforce_antitank3]
+   描述：神兽者，护一方安宁，则天下敬也。
+
+42. 巴隆
+   ID：touhou_demonforce_antitank5
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2079
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、artillery、cat_anti_tank
+   前序节点：守护 [touhou_demonforce_antitank4]
+   解锁装备：巴隆 [touhou_demonforce_anti_tank_equipment_3]
+
+   装备描述：巴厘岛民俗神话故事中的神兽，森林与白昼之神。
+43. 妖兽
+   ID：touhou_demonforce_basic_heavy_tank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2129
+   年份：1934
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、armor、cat_heavy_armor
+   解锁装备：妖兽 [touhou_demonforce_heavy_tank_equipment_1]
+
+   装备描述：妖化的野兽，刚刚获得妖力，普遍智商不高，甚至没有智商。
+44. 破坏者
+   ID：touhou_demonforce_basic_heavy_td
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2207
+   年份：1934
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：破坏者 [touhou_demonforce_heavy_tank_destroyer_equipment_1]
+
+   装备描述：获得妖力的人类或是其他类人生物，被力量吞噬，脑中仅剩破坏的可怜人。
+45. 飞龙
+   ID：touhou_demonforce_basic_heavy_art
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2235
+   年份：1934
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：飞龙 [touhou_demonforce_heavy_tank_artillery_equipment_1]
+
+   装备描述：比传说中的龙类要小，硬要说的话，翼龙类比较恰当。但仍不可小视。
+46. 惊雀
+   ID：touhou_demonforce_basic_heavy_spaa
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2264
+   年份：1934
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：惊雀 [touhou_demonforce_heavy_tank_aa_equipment_1]
+
+   装备描述：飞鸟的一种，很小，难以察觉。
+47. 魔兽
+   ID：touhou_demonforce_improved_heavy_tank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2292
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、armor、cat_heavy_armor
+   前序节点：妖兽 [touhou_demonforce_basic_heavy_tank]
+   解锁装备：魔兽 [touhou_demonforce_heavy_tank_equipment_2]
+
+   装备描述：传说中地狱恶魔的宠物，实际上，大部分都是自然或人为诱发魔化的结果。。
+48. 毁灭王
+   ID：touhou_demonforce_improved_heavy_td
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2359
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：毁灭王 [touhou_demonforce_heavy_tank_destroyer_equipment_2]
+
+   装备描述：破坏者中少有的保持智商的存在，虽然仍无法控制自己。比起破坏者要好太多了。
+49. 邪龙
+   ID：touhou_demonforce_improved_heavy_art
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2387
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：邪龙 [touhou_demonforce_heavy_tank_artillery_equipment_2]
+
+   装备描述：被邪污所浸染的飞龙，虽然体型并未改变，但是妖力获得了巨大的提升。
+50. 群鸟
+   ID：touhou_demonforce_improved_heavy_spaa
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2416
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：群鸟 [touhou_demonforce_heavy_tank_aa_equipment_2]
+
+   装备描述：一大群一起行动，受到妖力的影响，这一群实际上是一只生物。
+51. 阿巴东
+   ID：touhou_demonforce_advanced_heavy_tank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2444
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、armor、cat_heavy_armor
+   前序节点：魔兽 [touhou_demonforce_improved_heavy_tank]
+   解锁装备：阿巴东 [touhou_demonforce_heavy_tank_equipment_3]
+
+   装备描述：默示录中记载的无底洞的魔王，在天使第五次吹响喇叭的时候出现在地面上并且带来大量的蝗虫吃尽一切食物。
+52. 须佐之男
+   ID：touhou_demonforce_advanced_heavy_td
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2490
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：须佐之男 [touhou_demonforce_heavy_tank_destroyer_equipment_3]
+
+   装备描述：全名素盏明尊。须佐是其名，“之男”是个尊称又尊名建速须佐之男命，命也是一种尊称。
+53. 弗栗多
+   ID：touhou_demonforce_advanced_heavy_art
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2518
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：弗栗多 [touhou_demonforce_heavy_tank_artillery_equipment_3]
+
+   装备描述：于早期吠陀神话中就已经登场的阿修罗神族的巨龙，其名意为“掩盖者”，是旱灾的神格化。
+54. 芭一波卡赫
+   ID：touhou_demonforce_advanced_heavy_spaa
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2546
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：芭一波卡赫 [touhou_demonforce_heavy_tank_aa_equipment_3]
+
+   装备描述：凯尔特神话里是主要神祇之一的神族成员，掌管着战争和死亡，
+55. 泰坦
+   ID：touhou_demonforce_super_heavy_tank
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2574
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、armor、cat_heavy_armor
+   前序节点：魔兽 [touhou_demonforce_improved_heavy_tank]
+   解锁装备：泰坦 [touhou_demonforce_super_heavy_tank_equipment_1]
+
+   装备描述：希腊神话中的巨人族。天神乌喇诺斯和地神盖亚生下的三种巨人族的其中之一。(另外两种是独眼巨人和百手巨人)和两外两种野蛮而原始的巨人不同，泰坦族拥有高度的智慧，能够与人类进行语言交流。他们的样子被描述为类似希腊重装步兵，持有自己制造的铠甲和武器。泰坦族与人类共同生息的时代被称为黄金时代。
+56. 湿婆
+   ID：touhou_demonforce_super_heavy_td
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2604
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：湿婆 [touhou_demonforce_super_heavy_tank_destroyer_equipment_1]
+
+   装备描述：前身是印度河文明时代的生殖之神“兽主”和吠陀风暴之神鲁陀罗，兼具生殖与毁灭、创造与破坏双重性格，呈现各种奇谲怪诞的不同相貌，主要有林伽相、恐怖相、温柔相、超人相、三面相、舞王相、璃伽之主相、半女之主相等变相，林伽（男根）是湿婆的最基本象征。
+57. 婆苏吉
+   ID：touhou_demonforce_super_heavy_art
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2623
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：婆苏吉 [touhou_demonforce_super_heavy_tank_artillery_equipment_1]
+
+   装备描述：婆苏吉是印度神话中的蛇神（龙神），也是八大龙王之一，地位跟千蛇之王舍沙相若，甚至被视为是同一化身。
+58. 鹏
+   ID：touhou_demonforce_super_heavy_spaa
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2642
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   类别：demonforce、armor
+   解锁装备：鹏 [touhou_demonforce_super_heavy_tank_aa_equipment_1]
+
+   装备描述：鹏是中国神话传说中最大的一种鸟，由鲲变化而成。
+59. 有翼
+   ID：touhou_demonforce_early_fighter
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2661
+   年份：1933
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   解锁装备：有翼 [touhou_demonforce_fighter_equipment_0]
+
+   装备描述：所有有翅膀的生物的统称，妖怪还是普通鸟类，真假难辨。
+60. 飞禽
+   ID：touhou_demonforce_fighter1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2704
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：有翼 [touhou_demonforce_early_fighter]
+   解锁装备：飞禽 [touhou_demonforce_fighter_equipment_1]
+
+   装备描述：能飞上天种类的统称，虽为禽类，在妖力的加持下，已然不容小视。
+61. 灵鸟
+   ID：touhou_demonforce_fighter2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2760
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：飞禽 [touhou_demonforce_fighter1]
+   解锁装备：灵鸟 [touhou_demonforce_fighter_equipment_2]
+
+   装备描述：拥有妖力的同时还能感受到灵力的飞禽，虽然妖力作为主体，吞噬灵力也是增强力量的有效途径。
+62. 神乌
+   ID：touhou_demonforce_fighter3
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2816
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、light_air、light_fighter、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：灵鸟 [touhou_demonforce_fighter2]
+   解锁装备：神乌 [touhou_demonforce_fighter_equipment_3]
+
+   装备描述：通过种种手段获得神力或是类神力的灵鸟，但不可能拥有神格。
+63. 迦楼罗
+   ID：touhou_demonforce_jet_fighter2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2872
+   年份：1946
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、light_air、jet_technology、mio_cat_tech_touhou_aircraft
+   前序节点：神乌 [touhou_demonforce_fighter3]
+   解锁装备：迦楼罗 [touhou_demonforce_jet_fighter_equipment_2]
+
+   装备描述：古印度神话传说中记载的一种巨型神鸟，在印度教中是三大主神之一的毗湿奴的坐骑，而在佛教中则位列于天龙八部之一。
+64. 雄鹰
+   ID：touhou_demonforce_CAS1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2897
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、light_air、cas_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：有翼 [touhou_demonforce_early_fighter]
+   解锁装备：雄鹰 [touhou_demonforce_CAS_equipment_1]
+
+   装备描述：机敏与力量的有机结合，一旦被盯上，几乎无法逃脱。
+65. 女武神
+   ID：touhou_demonforce_CAS2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:2944
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、light_air、cas_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：雄鹰 [touhou_demonforce_CAS1]
+   解锁装备：女武神 [touhou_demonforce_CAS_equipment_2]
+
+   装备描述：为了备战尚未到来的“众神之黄昏”而从人间挑选优秀的勇士，引导他们前往英灵殿。
+66. 瓦尔基莉
+   ID：touhou_demonforce_CAS3
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:3000
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、light_air、cas_bomber、air_equipment、mio_cat_tech_touhou_aircraft
+   前序节点：女武神 [touhou_demonforce_CAS2]
+   解锁装备：瓦尔基莉 [touhou_demonforce_CAS_equipment_3]
+
+   装备描述：北欧神话中奥丁的随从，骑着骏马飞翔在天空的女武神，美神弗丽娅统领她们。她们身着的绚丽的盔甲形成极光现象。
+67. 巨翅
+   ID：touhou_demonforce_heavy_fighter1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:3048
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、medium_air、air_equipment、cat_heavy_fighter、mio_cat_tech_touhou_aircraft
+   前序节点：有翼 [touhou_demonforce_early_fighter]
+   解锁装备：巨翅 [touhou_demonforce_heavy_fighter_equipment_1]
+
+   装备描述：拥有着巨大的翅膀，能长时间翱翔不落。
+68. 巨鸟
+   ID：touhou_demonforce_heavy_fighter2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:3079
+   年份：1940
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、medium_air、air_equipment、cat_heavy_fighter、mio_cat_tech_touhou_aircraft
+   前序节点：巨翅 [touhou_demonforce_heavy_fighter1]
+   解锁装备：巨鸟 [touhou_demonforce_heavy_fighter_equipment_2]
+
+   装备描述：巨大的飞鸟，直上九天。
+69. 萨玛艾尔
+   ID：touhou_demonforce_heavy_fighter3
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_demonforce.txt:3110
+   年份：1944
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_demonforce
+   类别：demonforce、medium_air、air_equipment、cat_heavy_fighter、mio_cat_tech_touhou_aircraft
+   前序节点：巨鸟 [touhou_demonforce_heavy_fighter2]
+   解锁装备：萨玛艾尔 [touhou_demonforce_heavy_fighter_equipment_3]
+
+   装备描述：名字是“毒”的意思，很特殊的一个天使。《以诺书》中将其称为恶魔的首领。传说神排遣他给诺亚带去死亡。形象为赤色的龙，还保留着曾经身为炽天使的六翼。
+================================================================================
+幻想支援科技（29 项）
+================================================================================
+
+1. 幻想支援装备
+   ID：touhou_tech_support
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_support.txt:16
+   年份：1918
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce
+   解锁装备：幻想支援装备 [touhou_support_equipment_1]
+
+   装备描述：基于幻想乡内错综复杂的自然和社会环境，以及几乎每天都在改变的地形，支援技术是幻想乡唯一能达到甚至超过外界科技的项目。虽然魔法、妖力和灵力之间存在巨大的差异，然而在支援装备上殊途同归，形成了一套通用且公认最优的体系。
+2. 大地使者
+   ID：touhou_tech_engineers
+   来源：common/technologies/touhou_support.txt:88
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、engineers_tech
+   前序节点：幻想支援装备 [touhou_tech_support]
+   解锁兵种：大地使者 [touhou_engineer]
+   描述：虽然具体方式存在差异，构建工事和排除障碍是大地使者的本职工作。对于他们而言，没有所谓的困难地形。需要注意的是，他们不提供类似质保等售后服务。
+
+3. 大地使者 LV2
+   ID：touhou_tech_engineers2
+   来源：common/technologies/touhou_support.txt:143
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、engineers_tech
+   前序节点：大地使者 [touhou_tech_engineers]
+   描述：增强了大地使者对地形的支配能力。
+
+4. 大地使者 LV3
+   ID：touhou_tech_engineers3
+   来源：common/technologies/touhou_support.txt:195
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、engineers_tech
+   前序节点：大地使者 LV2 [touhou_tech_engineers2]
+   描述：增强了大地使者破坏地形的能力。
+
+5. 大地使者 LV4
+   ID：touhou_tech_engineers4
+   来源：common/technologies/touhou_support.txt:244
+   年份：1945
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、engineers_tech
+   前序节点：大地使者 LV3 [touhou_tech_engineers3]
+   描述：增强了大地使者重塑地形的能力。
+
+6. 守望之眼
+   ID：touhou_tech_recon
+   来源：common/technologies/touhou_support.txt:289
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、recon_tech
+   前序节点：幻想支援装备 [touhou_tech_support]
+   解锁兵种：守望之眼 [touhou_recon]
+   描述：虽然被称为守望之眼，但是和白狼天狗的千里眼不同，他们更多地依赖法术获得多种情报，而非直接获得影像。虽然他们偶尔也会使用影像系法术，不过大多是在偷看家里的电视。
+
+7. 守望之眼 LV2
+   ID：touhou_tech_recon2
+   来源：common/technologies/touhou_support.txt:344
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、recon_tech
+   前序节点：守望之眼 [touhou_tech_recon]
+   描述：增幅守望之眼法术范围（提供更多偷看的选项）。
+
+8. 守望之眼 LV3
+   ID：touhou_tech_recon3
+   来源：common/technologies/touhou_support.txt:390
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、recon_tech
+   前序节点：守望之眼 LV2 [touhou_tech_recon2]
+   描述：细化分工，增强信息筛选能力（也为剔除不想看的频道提供手段）。
+
+9. 守望之眼 LV4
+   ID：touhou_tech_recon4
+   来源：common/technologies/touhou_support.txt:434
+   年份：1945
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、recon_tech
+   前序节点：守望之眼 LV3 [touhou_tech_recon3]
+   描述：守望之眼能够组成阵列，极大增强了信息搜集能力（并避免了他们偷看电视的情况，除非是整个阵列一起偷看同一个节目）。
+
+10. 幻想教长
+   ID：touhou_tech_military_police
+   来源：common/technologies/touhou_support.txt:475
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、military_police_tech
+   前序节点：幻想支援装备 [touhou_tech_support]
+   解锁兵种：幻想教长 [touhou_military_police]
+   描述：和宗教概念的教长差别不大，一边是想办法让人跟随，另一边是想办法让人听话，只不过幻想教长教导的方法主要是敲掉反对者的头。
+
+11. 幻想教长 LV2
+   ID：touhou_tech_military_police2
+   来源：common/technologies/touhou_support.txt:544
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、military_police_tech
+   前序节点：幻想教长 [touhou_tech_military_police]
+   描述：改进幻想教长的装备，使其可以在不杀死目标的情况下造成更多痛苦。（但他们还是更喜欢一击敲掉对方的头）
+
+12. 幻想教长 LV3
+   ID：touhou_tech_military_police3
+   来源：common/technologies/touhou_support.txt:581
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、military_police_tech
+   前序节点：幻想教长 LV2 [touhou_tech_military_police2]
+   描述：为教长装备律令，使得教长可以通过话语直接震慑对方的心灵。（然而并没有多少人能活着听到这些）
+
+13. 幻想教长 LV4
+   ID：touhou_tech_military_police4
+   来源：common/technologies/touhou_support.txt:615
+   年份：1945
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、military_police_tech
+   前序节点：幻想教长 LV3 [touhou_tech_military_police3]
+   描述：痛苦连锁，使得教长伤害目标的时候，能够让周围的人感受到同样的痛苦。（大部分教长表示还是更喜欢一个一个地敲掉头）
+
+14. 鬼斧神工
+   ID：touhou_tech_maintenance_company
+   来源：common/technologies/touhou_support.txt:646
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、maintenance_company_tech
+   前序节点：幻想支援装备 [touhou_tech_support]
+   解锁兵种：鬼斧神工 [touhou_maintenance_company]
+   描述：鬼斧神工的名号和他们的技术关系不大，主要是和这个部队的组成有关，负责拆卸的被称为“鬼”，这之后还能修好的就只有“神”了。另外，河童由于擅自改装和引发爆炸的问题，在选拔一开始便全部被淘汰了。
+
+15. 鬼斧神工 LV2
+   ID：touhou_tech_maintenance_company2
+   来源：common/technologies/touhou_support.txt:692
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、maintenance_company_tech
+   前序节点：鬼斧神工 [touhou_tech_maintenance_company]
+   描述：改进他们的装备，辅助他们的维修工作。（“鬼”表示还是更喜欢用手）
+
+16. 鬼斧神工 LV3
+   ID：touhou_tech_maintenance_company3
+   来源：common/technologies/touhou_support.txt:740
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、maintenance_company_tech
+   前序节点：鬼斧神工 LV2 [touhou_tech_maintenance_company2]
+   描述：增强教育，告诉“鬼”们，所谓拆卸，并非是把一切都弄成零件状态才行。（之后“神”反馈称，与其让他们弄得奇形怪状，还是变成零件更简单一点）
+
+17. 鬼斧神工 LV4
+   ID：touhou_tech_maintenance_company4
+   来源：common/technologies/touhou_support.txt:785
+   年份：1945
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、maintenance_company_tech
+   前序节点：鬼斧神工 LV3 [touhou_tech_maintenance_company3]
+   描述：聘请河童顾问，指导维修，只要避免让他们直接参与工作，应该就能避免改装和爆炸的问题。（那边的！回到顾问席！是谁把笼子打开的！）
+
+18. 阎王愁
+   ID：touhou_tech_field_hospital
+   来源：common/technologies/touhou_support.txt:827
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、hospital_tech
+   前序节点：幻想支援装备 [touhou_tech_support]
+   解锁兵种：阎王愁 [touhou_field_hospital]
+   描述：由于四季映姬曾公开表示讨厌他们（身上的味道），由此得名。另外他们所谓的救助主要是通过打跑过来收魂的死神实现的，这可能也是四季映姬讨厌他们的原因之一。
+
+19. 阎王愁 LV2
+   ID：touhou_tech_field_hospital2
+   来源：common/technologies/touhou_support.txt:873
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、hospital_tech
+   前序节点：阎王愁 [touhou_tech_field_hospital]
+   描述：和外界的概念不同，阎王愁的装备升级是以提升装备伤害为主的。（死神众对此表示抗议）
+
+20. 阎王愁 LV3
+   ID：touhou_tech_field_hospital3
+   来源：common/technologies/touhou_support.txt:920
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、hospital_tech
+   前序节点：阎王愁 LV2 [touhou_tech_field_hospital2]
+   描述：更加厚重的装甲，更加强大的火力以及最精锐的战士，这便是医院的标准配置。（药？那是什么？）
+
+21. 阎王愁 LV4
+   ID：touhou_tech_field_hospital4
+   来源：common/technologies/touhou_support.txt:965
+   年份：1945
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、hospital_tech
+   前序节点：阎王愁 LV3 [touhou_tech_field_hospital3]
+   描述：医院（要塞）是所有机构中守备最森严的地方，即使是一只虫子也没有办法随意进入，这使得医院内的死亡率几乎降到了0。（医院外围暴毙率极具上升，有关部分提醒广大民众不要随意靠近）
+
+22. 圣诞老人
+   ID：touhou_tech_logistics_company
+   来源：common/technologies/touhou_support.txt:1007
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、logistics_tech
+   前序节点：幻想支援装备 [touhou_tech_support]
+   解锁兵种：圣诞老人 [touhou_logistics_company]
+   描述：一袭红衣（敌人的鲜血染红），背着一个大口袋（数十吨的载重），乘坐着雪橇（由巨兽拉动），为前线战士带去礼物（或者死亡），这和传说中的“圣诞老人”一模一样啊。
+
+23. 圣诞老人 LV2
+   ID：touhou_tech_logistics_company2
+   来源：common/technologies/touhou_support.txt:1057
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、logistics_tech
+   前序节点：圣诞老人 [touhou_tech_logistics_company]
+   描述：既然是运输人员，那么载重一定是最优先考虑的内容，增大圣诞老人的口袋容量，以便于运输更多补给（并且提升了他的火力）。
+
+24. 圣诞老人 LV3
+   ID：touhou_tech_logistics_company3
+   来源：common/technologies/touhou_support.txt:1110
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、logistics_tech
+   前序节点：圣诞老人 LV2 [touhou_tech_logistics_company2]
+   描述：为雪橇安装特别装备，使其更坚固，能到达最危险的区域，运输物质（并且把敌人撞飞）。
+
+25. 圣诞老人 LV4
+   ID：touhou_tech_logistics_company4
+   来源：common/technologies/touhou_support.txt:1155
+   年份：1945
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、logistics_tech
+   前序节点：圣诞老人 LV3 [touhou_tech_logistics_company3]
+   描述：后勤是敌人重点打击的对象，是最危险的位置，通过特别培训，圣诞老人能够有效规避风险（找自己能打过的目标冲撞）。
+
+26. 通信人偶
+   ID：touhou_tech_signal_company
+   来源：common/technologies/touhou_support.txt:1198
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、signal_company_tech
+   前序节点：幻想支援装备 [touhou_tech_support]
+   解锁兵种：通信人偶 [touhou_signal_company]
+   描述：除了少数拥有心灵感应能力的英雄外，绝大多数部队还在使用书信的形式传递信息，直到爱丽丝出品的通信人偶出现为止。基于不明原理（谣言称是爱丽丝听一边的声音，再控制另一边的人偶说出来），通信人偶能几乎没有延迟地复述另一个人偶听到的东西，甚至连背景音都能完美地复现，这极大得改变了整个战场结构。（司令部友情提示：请不要使用专用链路讨论晚饭和正在播放的电视内容。）
+
+27. 通信人偶 LV2
+   ID：touhou_tech_signal_company2
+   来源：common/technologies/touhou_support.txt:1235
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、signal_company_tech
+   前序节点：通信人偶 [touhou_tech_signal_company]
+   描述：爱丽丝对通信人偶进行了升级，现在通信人偶能够支持多人会议了。
+
+28. 通信人偶 LV3
+   ID：touhou_tech_signal_company3
+   来源：common/technologies/touhou_support.txt:1282
+   年份：1942
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、signal_company_tech
+   前序节点：通信人偶 LV2 [touhou_tech_signal_company2]
+   描述：爱丽丝对通信人偶进行了升级，现在通信人偶一对一通信的时候能够传递简单的影像了。
+
+29. 通信人偶 LV4
+   ID：touhou_tech_signal_company4
+   来源：common/technologies/touhou_support.txt:1326
+   年份：1945
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_support_folder
+   类别：support_tech、wakan、magic、demonforce、signal_company_tech
+   前序节点：通信人偶 LV3 [touhou_tech_signal_company3]
+   描述：爱丽丝对通信人偶进行了升级，现在通信人偶可以自行漂浮并且跟随部队行动。
+
+================================================================================
+王牌科技（22 项）
+================================================================================
+
+1. 神风人偶
+   ID：suicide_puppet_craft_1
+   来源：common/technologies/touhou_trump_card.txt:16
+   年份：1944
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：神风人偶 [suicide_puppet_equipment_1]
+
+2. 人偶战略导弹
+   ID：suicide_puppet_craft_2
+   来源：common/technologies/touhou_trump_card.txt:29
+   年份：1944
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：人偶战略导弹 [suicide_puppet_equipment_2]
+
+3. 歌利亚
+   ID：goliath_0
+   来源：common/technologies/touhou_trump_card.txt:43
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   类别：magic、armor、goliath
+   描述：歌利亚是爱丽丝研制的超大型的人偶，曾在幻想乡中进行启动实验，受限于材料和工艺在启动之后很快便失去行动能力。现在情况不一样了，为了改变现状，爱丽丝重新启动这一项目。
+         
+         开始了，结束一切的第一步。
+
+4. 歌利亚幻想乡试做型
+   ID：goliath_1
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_trump_card.txt:57
+   年份：1936
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、armor、goliath
+   dependencies：goliath_0
+   解锁装备：歌利亚幻想乡试做型 [goliath_equipment_1]
+   解锁兵种：歌利亚战团 [goliath_brigade]
+
+   装备描述：歌利亚是爱丽丝研制的超大型的人偶兵器，但幻想乡并没有战争，这一项目很快得到搁浅，其性能也不敢恭维。
+             
+             因为知晓，故无法麻木。
+5. 歌利亚改良型
+   ID：goliath_2
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_trump_card.txt:103
+   年份：1939
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、armor、goliath
+   前序节点：歌利亚幻想乡试做型 [goliath_1]
+   解锁装备：歌利亚改良型 [goliath_equipment_2]
+
+   装备描述：引入这个世界的材料、工艺和其他技术，依靠幻想乡试做型的实验数据进行改造，爱丽丝最初的设想一步步实现了，有时她会叹气，但一刻也没有停止工作。
+             
+             世上只有胜者、败者和做不出抉择的无能者。
+6. 歌利亚完成型
+   ID：goliath_3
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_trump_card.txt:134
+   年份：1941
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、armor、goliath
+   前序节点：歌利亚改良型 [goliath_2]
+   解锁装备：歌利亚完成型 [goliath_equipment_3]
+
+   装备描述：我们在战场上得到了爱丽丝所需的种种数据，爱丽丝似乎有些焦急，不分昼夜解决了歌利亚改良型的种种缺陷，使其成为了名副其实的王牌。
+             
+             合理与正确并不相同，所谓英雄就是直面并接受这一事实的人。
+7. 歌利亚人偶
+   ID：goliath_4
+   来源：common/technologies/touhou_trump_card.txt:169
+   年份：1943
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：touhou_magic
+   类别：magic、armor、goliath
+   前序节点：歌利亚完成型 [goliath_3]
+   解锁装备：歌利亚人偶 [goliath_equipment_4]
+
+8. 风神之翼
+   ID：tengu_fighter
+   来源：common/technologies/touhou_trump_card.txt:197
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   类别：light_air、light_fighter、air_equipment
+   解锁装备：风神之翼 [tengu_fighter_equipment_0]
+
+9. 妖力复合装甲
+   ID：oni_champion
+   来源：common/technologies/touhou_trump_card.txt:213
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：妖力复合装甲 [oni_champion_equipment_0]
+   解锁兵种：冠军鬼王 [oni_brigade]
+
+10. 现世阴阳玉
+   ID：cas_boli_fighter
+   来源：common/technologies/touhou_trump_card.txt:227
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   类别：light_air、cas_bomber、air_equipment
+   解锁装备：现世阴阳玉 [cas_boli_equipment_0]
+
+11. 诡道符咒
+   ID：desires_bomber
+   来源：common/technologies/touhou_trump_card.txt:243
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   类别：heavy_air、jet_technology、cat_strategic_bomber
+   解锁装备：诡道符咒 [desires_equipment_0]
+
+12. 妖精武器
+   ID：evil_army
+   名称来源：按解锁装备的本地化标注；该科技 ID 没有独立名称。
+   来源：common/technologies/touhou_trump_card.txt:259
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：妖精武器 [evil_equipment_0]
+   解锁兵种：妖精 [evil_brigade]；妖精突击营 [evil_armor_brigade]；妖精火炮营 [evil_artillery_brigade]
+
+   装备描述：妖精组成的部队完全不需要训练，只要象征性的随便生产一点点垃圾，然后告诉她们这是“武器”就行了。
+13. 卫队装备
+   ID：human_army
+   来源：common/technologies/touhou_trump_card.txt:275
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：卫队装备 [human_equipment_0]
+   解锁兵种：人类卫队 [human_brigade]
+
+14. 心灵控制器
+   ID：DLD_animal
+   来源：common/technologies/touhou_trump_card.txt:289
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：心灵控制器 [animal_equipment_0]
+   解锁兵种：心灵引导者 [animal_brigade]
+
+15. 龙虎卫装备
+   ID：dragon
+   来源：common/technologies/touhou_trump_card.txt:303
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：龙虎卫装备 [dragon_equipment_0]
+   解锁兵种：龙虎卫 [dragon_brigade]
+
+16. 收割者
+   ID：die
+   来源：common/technologies/touhou_trump_card.txt:317
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：收割者 [die_equipment_0]
+   解锁兵种：死神 [die_brigade]
+
+17. 月都参谋连用车
+   ID：rabbit_team
+   来源：common/technologies/touhou_trump_card.txt:331
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：月都参谋连用车 [rabbit_team_equipment_0]
+   解锁兵种：月都式参谋连 [rabbit_team_brigade]
+
+18. 便携式淡化设备
+   ID：deep_sea
+   来源：common/technologies/touhou_trump_card.txt:345
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   类别：naval_equipment、ss_tech
+   解锁装备：深海少女 [deep_sea_equipment_0]
+
+19. 白玉楼移动补给站
+   ID：soul
+   来源：common/technologies/touhou_trump_card.txt:360
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：白玉楼移动补给站 [soul_equipment_0]
+   解锁兵种：庭师亲传弟子 [soul_brigade]
+
+20. 未来医疗设备
+   ID：wunv
+   来源：common/technologies/touhou_trump_card.txt:374
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：奇迹之星 [wunv_equipment_0]
+   解锁兵种：守矢巫女 [wunv_brigade]
+
+21. 星莲船
+   ID：lotus
+   来源：common/technologies/touhou_trump_card.txt:388
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   类别：naval_equipment、bb_tech、cv_tech
+   解锁装备：星莲船试做型 [lotus_equipment_0]；星莲船正式型 [lotus_equipment_1]；星莲船完成型 [lotus_equipment_2]
+
+22. 超·极限花火
+   ID：magician
+   来源：common/technologies/touhou_trump_card.txt:423
+   年份：3000（脚本设置的特殊年份）
+   研究：不可常规研究（allow = { always = no }）
+   解锁装备：超·极限花火 [magician_equipment_0]
+
+================================================================================
+附录：旧式特种部队学说（38 项）
+================================================================================
+
+1. 重视山地步兵
+   ID：special_forces_mountaineers
+   来源：common/technologies/special_forces_doctrine.txt:5
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_mountaineers_doctrine
+   解锁兵种：侦察游骑兵 [rangers_support]
+   描述：恶劣的环境和激烈的冲突吸引着最坚韧的士兵加入我们的精锐部队。将他们的首要地位奉为我们的学说哲学，确保我们将继续从招聘最优秀的人才中受益。
+
+2. 寒冷天气专家
+   ID：ski_troops
+   来源：common/technologies/special_forces_doctrine.txt:84
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_mountaineers_doctrine
+   前序节点：重视山地步兵 [special_forces_mountaineers]
+   描述：寒冷天气专家对我们的战场战术至关重要。通过在军事章程中正式承认这些专家，我们就可以划出资源和训练来进一步提升他们。
+
+3. 崎岖地形专家
+   ID：rangers
+   来源：common/technologies/special_forces_doctrine.txt:130
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_mountaineers_doctrine
+   前序节点：重视山地步兵 [special_forces_mountaineers]
+   描述：以渗透和战术意识为导向，加强游骑兵面对的敌对环境训练，我们定能从中受益。
+
+4. 战场情报
+   ID：special_forces_recon
+   来源：common/technologies/special_forces_doctrine.txt:175
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_mountaineers_doctrine
+   前序节点：寒冷天气专家 [ski_troops]；崎岖地形专家 [rangers]
+   描述：我们的精锐军团受益于首屈一指的反制情报和战场感知。额外的培训肯定会使我们进一步受益。
+
+5. 守住防线
+   ID：mountaineers_combat_1
+   来源：common/technologies/special_forces_doctrine.txt:221
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_mountaineers_doctrine
+   前序节点：战场情报 [special_forces_recon]
+   描述：我们的精锐部队必须集中力量坚守擅长的地区。将伏击战术和改进的兵团组织相结合，可以确保我们的特种部队对入侵部队具有显著的纵深防御能力。
+
+6. 山地火炮
+   ID：mountaineers_combat_2
+   来源：common/technologies/special_forces_doctrine.txt:265
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_mountaineers_doctrine
+   前序节点：战场情报 [special_forces_recon]
+   描述：山地炮兵团是专门为我们的精锐师提供快速远程支援而设计的部队，他们在困难的地形上训练和作战。他们的存在大大提高了我们特种部队的作战能力。
+
+7. 协同作战训练
+   ID：mountaineers_combat_3
+   来源：common/technologies/special_forces_doctrine.txt:316
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_mountaineers_doctrine
+   前序节点：守住防线 [mountaineers_combat_1]；山地火炮 [mountaineers_combat_2]
+   描述：虽然我们的精锐军团在高度独立的基础上运作，但通过在训练方案中增加对协同作战行动的关注，可以提高他们在战场上的效能。
+
+8. 武装力量骨干
+   ID：mountaineers_keystone_1
+   来源：common/technologies/special_forces_doctrine.txt:360
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_mountaineers_doctrine
+   前序节点：协同作战训练 [mountaineers_combat_3]
+   描述：我们精英特种部队的成功要求我们以他们的存在为中心重新调整我们的军事理论。
+
+9. 共享教官
+   ID：mountaineers_keystone_2
+   来源：common/technologies/special_forces_doctrine.txt:399
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_mountaineers_doctrine
+   前序节点：协同作战训练 [mountaineers_combat_3]
+   描述：如果不把我们山地部队已经掌握的这些知识运用到我们特种部队的其他分支中，那简直愚蠢至极。我们将实行教官轮岗计划，以期提高我们的整个机构的知识。
+
+10. 重视海军陆战队
+   ID：special_forces_marines
+   来源：common/technologies/special_forces_doctrine.txt:439
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_marines_doctrine
+   解锁兵种：先头工程部队 [pioneer_support]
+   描述：海军陆战队生来就是为了在他人望而却步处战斗。无论是国内海岸或是国外气候，这些专家擅长渗透和两栖作战。我们的军事学说应该以涉及广泛、精巧灵活的理论为核心。
+
+11. 丛林专家
+   ID：marines_jungle_troops
+   来源：common/technologies/special_forces_doctrine.txt:519
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_marines_doctrine
+   前序节点：重视海军陆战队 [special_forces_marines]
+   描述：这种海军陆战队主要清理密集地形，并擅长在崎岖地形上进行大规模进攻行动以及工程建设。
+
+12. 滩头部队
+   ID：marines_shore_parties
+   来源：common/technologies/special_forces_doctrine.txt:565
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_marines_doctrine
+   前序节点：重视海军陆战队 [special_forces_marines]
+   描述：登陆作战时，率先进入缺口的主要是滩头部队。这群专业战斗工程师小组将在炮火下建立立足点。
+
+13. 严苛训练方案
+   ID：marines_recon
+   来源：common/technologies/special_forces_doctrine.txt:611
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_marines_doctrine
+   前序节点：丛林专家 [marines_jungle_troops]；滩头部队 [marines_shore_parties]
+   描述：从来没有完全准备好面临战争的士兵。但作战教官保证称，这一点可以无限去趋近——只有最坚强的新兵才能抵达战场之彼岸。
+
+14. 海军突击队
+   ID：marines_commandoes
+   来源：common/technologies/special_forces_doctrine.txt:658
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_marines_doctrine
+   前序节点：严苛训练方案 [marines_recon]
+   解锁兵种：海军突击队 [marine_commando]
+   描述：海军陆战队在敌后的长期作战中证明了其价值。如今应更进一步，将其实践巩固于学说之中，并按有效游击行动来组织部队。
+
+15. 远征单位
+   ID：marines_expeditionary
+   来源：common/technologies/special_forces_doctrine.txt:707
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_marines_doctrine
+   前序节点：严苛训练方案 [marines_recon]
+   描述：协同袭击从跨部门的规划和后勤中得益。随着学说发展，我们定能从支持特遣部队中获益。
+
+16. 爆破专家
+   ID：marines_commandos_demolition
+   来源：common/technologies/special_forces_doctrine.txt:750
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_marines_doctrine
+   前序节点：海军突击队 [marines_commandoes]
+   描述：爆炸就是艺术，我们可以从中受益。破坏是件脏活儿，但也没法不承认其十分有效。
+
+17. 喷灯与瓶塞钻
+   ID：marines_expeditionary_blowtorch
+   来源：common/technologies/special_forces_doctrine.txt:793
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_marines_doctrine
+   前序节点：远征单位 [marines_expeditionary]
+   描述：海空与专业陆上部队的完美协同可确保占领任何目标。这种进攻战争的兵种联合策略将彰显我们强大的后勤能力。
+
+18. 机械化海军陆战队
+   ID：marines_commandoes_mechanised
+   来源：common/technologies/special_forces_doctrine.txt:842
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_marines_doctrine
+   前序节点：爆破专家 [marines_commandos_demolition]
+   描述：只有先头部队装备妥当，才能增强登陆成功后的海岸巩固能力。这需要我们在生产战略以及学说上进行转变。
+
+19. 远征特遣部队
+   ID：marines_expeditionary_support
+   来源：common/technologies/special_forces_doctrine.txt:892
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_marines_doctrine
+   前序节点：喷灯与瓶塞钻 [marines_expeditionary_blowtorch]
+   描述：眼下，各部队间密切合作的重要性再怎么强调也不为过。后勤特遣部队投入战场后，我们真真切切地成为了一支不可忽视的力量。
+
+20. 重视空降兵
+   ID：special_forces_paratroopers
+   来源：common/technologies/special_forces_doctrine.txt:950
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_paratroopers_doctrine
+   描述：没有什么比看到一千架满载部队、遮天蔽日的运输机更恐怖。我们的学说理论必须利用空降兵给敌人施加恐惧和震撼。
+
+21. 侦查破袭
+   ID：paras_dispersed_drop
+   来源：common/technologies/special_forces_doctrine.txt:1025
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_paratroopers_doctrine
+   前序节点：重视空降兵 [special_forces_paratroopers]
+   描述：我们的行动性质要求我们的空降部队精通高度分散的空投，以期在敌人意识到我们的存在之前进行重大破坏。
+
+22. 战斗穿插
+   ID：paras_combat_drop
+   来源：common/technologies/special_forces_doctrine.txt:1068
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_paratroopers_doctrine
+   前序节点：重视空降兵 [special_forces_paratroopers]
+   描述：直接强行介入战术虽然危险，但在此方面训练我们的精英部队可以结合常规突击带来显著的战斗优势。
+
+23. 空降装甲
+   ID：paras_airborne_light_armor
+   来源：common/technologies/special_forces_doctrine.txt:1111
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_paratroopers_doctrine
+   前序节点：侦查破袭 [paras_dispersed_drop]；战斗穿插 [paras_combat_drop]
+   解锁兵种：空降轻装甲 [airborne_light_armor]
+   描述：一些轻型坦克可以借助重型滑翔机进行空投。这种新颖的战斗插入方法可能有些名不见经传，但可以为我们提供新的机会。
+
+24. 空降通讯
+   ID：paras_combat_1
+   来源：common/technologies/special_forces_doctrine.txt:1159
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_paratroopers_doctrine
+   前序节点：空降装甲 [paras_airborne_light_armor]
+   描述：我们后方部队的完美通讯线路无与伦比。训练通讯连的空中穿插本领，这样我们即使在最恶劣的条件下也能保有这些关键的通信能力。
+
+25. 空降医疗分队
+   ID：paras_combat_2
+   来源：common/technologies/special_forces_doctrine.txt:1204
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_paratroopers_doctrine
+   前序节点：空降装甲 [paras_airborne_light_armor]
+   描述：我们的空降行动规模已经扩大到甚至连基本的医疗设备也必须为空降行动做好准备的程度。
+
+26. 增强导航训练
+   ID：paras_bonus_1
+   来源：common/technologies/special_forces_doctrine.txt:1249
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_paratroopers_doctrine
+   前序节点：空降通讯 [paras_combat_1]
+   描述：即使最好的投送也有可能偏航。我们必须确保部队在临时导航方面得到良好的训练。
+
+27. 战略空运部队
+   ID：paras_bonus_2
+   来源：common/technologies/special_forces_doctrine.txt:1293
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_paratroopers_doctrine
+   前序节点：空降医疗分队 [paras_combat_2]
+   描述：建立一个专司空运管理的机构意味着我们可以依照特定空降介入目的针对性地调整我们的货机。
+
+28. 精益求精
+   ID：paras_keystone_1
+   来源：common/technologies/special_forces_doctrine.txt:1332
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_paratroopers_doctrine
+   前序节点：增强导航训练 [paras_bonus_1]
+   描述：只有那些久经沙场的老兵才应该被考虑加入我们的空降营。虽然这可能会减少我们招兵的来源，但在战场上肯定大有裨益。
+
+29. 武装力量骨干
+   ID：paras_keystone_2
+   来源：common/technologies/special_forces_doctrine.txt:1370
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_paratroopers_doctrine
+   前序节点：战略空运部队 [paras_bonus_2]
+   描述：今后，我们的武装力量将以空降部队的技能和训练为基础。当我们来临时必将天昏地暗，敌人必闻风丧胆。
+
+30. 升级游击队
+   ID：special_forces_rangers
+   来源：common/technologies/special_forces_doctrine.txt:1408
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_rangers_doctrine
+   解锁兵种：侦察游骑兵 [rangers_support]
+   描述：轻步兵乃我军制胜之本。神射手的传统与渗透战术，理应成为锻造精英部队的基石。
+
+31. 融入猎兵传统
+   ID：rangers_jaegers_training
+   来源：common/technologies/special_forces_doctrine.txt:1469
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_rangers_doctrine
+   前序节点：升级游击队 [special_forces_rangers]
+   描述：轻步兵专精森林作战，善于依托地形资源生存，擅设陷阱伏击，射击精准无比。
+
+32. 游骑兵丛林训练
+   ID：rangers_jungle_training
+   来源：common/technologies/special_forces_doctrine.txt:1507
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_rangers_doctrine
+   前序节点：升级游击队 [special_forces_rangers]
+   描述：游骑兵不仅能在热带密林中顽强生存，更能在严酷环境中激烈作战，是深入敌后、常规部队难以企及之地的利刃。
+
+33. 森林游击战士
+   ID：rangers_guerilla_doctrine
+   来源：common/technologies/special_forces_doctrine.txt:1544
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_rangers_doctrine
+   前序节点：融入猎兵传统 [rangers_jaegers_training]；游骑兵丛林训练 [rangers_jungle_training]
+   描述：主动出击与灵活机动，是攻敌制胜的关键。我军游骑兵当善用隐秘与突袭，令敌人措手不及。
+
+34. 侦察游骑兵地形掌握
+   ID：rangers_recon_terrain_training
+   来源：common/technologies/special_forces_doctrine.txt:1581
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_rangers_doctrine
+   前序节点：森林游击战士 [rangers_guerilla_doctrine]
+   描述：游骑兵战术的一个必要前提是能够穿越最崎岖的地形，在敌人意想不到的地方发起攻击。
+
+35. 火力支援整合
+   ID：rangers_fire_support_integration
+   来源：common/technologies/special_forces_doctrine.txt:1621
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_rangers_doctrine
+   前序节点：森林游击战士 [rangers_guerilla_doctrine]
+   描述：将前方观察员与便携式信号设备整合至游骑兵小队中，意味着即使是小型孤立单位也无须在没有火炮支援的情况下作战。
+
+36. 游骑兵城市战专长
+   ID：rangers_urban_combat
+   来源：common/technologies/special_forces_doctrine.txt:1663
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_rangers_doctrine
+   前序节点：侦察游骑兵地形掌握 [rangers_recon_terrain_training]；火力支援整合 [rangers_fire_support_integration]
+   描述：森林作战与城市作战有些相似——交战距离短且视野有限。擅长其中一种环境的部队经过训练也能适应另一种作战环境。
+
+37. 精锐游骑兵
+   ID：elite_rangers_doctrine
+   来源：common/technologies/special_forces_doctrine.txt:1705
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_rangers_doctrine
+   前序节点：游骑兵城市战专长 [rangers_urban_combat]
+   描述：游骑兵乃我们武装力量的骄傲。我们必须继续招募最优秀的人才，令其创造更辉煌的战绩。
+
+38. 轻步兵专业化
+   ID：rangers_backbone_doctrine
+   来源：common/technologies/special_forces_doctrine.txt:1735
+   研究：未设置 always = no；仍受前置、DLC 等条件限制
+   科技页：special_forces_doctrine_folder
+   类别：special_forces_doctrine、cat_rangers_doctrine
+   前序节点：游骑兵城市战专长 [rangers_urban_combat]
+   描述：林地专家所积累的技艺，是全军精英轻步兵的宝贵财富。这样的经验必须贯穿于所有轻步兵及精锐部队。
+
+
+================================================================================
+名称校验
+================================================================================
+读取定义：306 项；唯一 ID：306 项。
+独立科技名称：186 项。
+按解锁装备名称标注：120 项。
+仍未找到名称：0 项。
+

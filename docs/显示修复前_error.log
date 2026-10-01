@@ -1,0 +1,9 @@
+[11:31:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/MIRA.mod line: 7
+[11:31:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_1862018480.mod line: 8
+[11:31:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_2829179259.mod line: 7
+[11:31:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3157816605.mod line: 6
+[11:31:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3310177852.mod line: 6
+[11:31:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3322324112.mod line: 8
+[11:31:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3405989555.mod line: 6
+[11:31:06][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3686435343.mod line: 8
+[11:31:45][1936.01.01.12][effect.cpp:555]: common/on_actions/touhou_runtime_repairs.txt:3: touhou_check_runtime_repairs: Invalid Scope, supported: State|Country|Character|Combatant|Ace|StrategicRegion|Operation|Unit|Military Industrial Organisation|Purchase Contract|Raid Instance|Special Project|Faction, provided: None

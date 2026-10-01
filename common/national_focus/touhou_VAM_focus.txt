@@ -1,62 +1,56 @@
 focus_tree = {
 	id = touhou_VAM_focus
-	
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 20
 			tag = VAM
 		}
-		
 		modifier = {
 			add = 20
 			original_tag = VAM
 		}
 	}
-	
 	default = no
-	
 	shared_focus = touhou_army_effort
 	shared_focus = touhou_aviation_effort
 	shared_focus = touhou_naval_effort
 	shared_focus = touhou_industrial_effort
 	shared_focus = touhou_ALL_in
-	
-	
-	focus = {#幻想乡外交
+	focus = {
 		id = touhou_VAM_out
 		icon = GFX_goal_generic_intelligence_exchange
-		mutually_exclusive = { focus = touhou_VAM_out_to_ROM }
+		mutually_exclusive = {
+			focus = touhou_VAM_out_to_ROM
+		}
 		available = {
 			date > 1936.12.1
 		}
 		x = 28
 		y = 0
 		cost = 5
-
 		available_if_capitulated = yes
-
 		ai_will_do = {
 			factor = 5
 		}
-
 		completion_reward = {
 			add_ideas = touhou_ministry_of_foreign_affairs
 		}
 	}
-	focus = {#红魔大宴
+	focus = {
 		id = touhou_VAM_gentle
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = touhou_VAM_out }
-		mutually_exclusive = { focus = touhou_VAM_radicalness }
-		available = { 
-			is_subject = no 
+		prerequisite = {
+			focus = touhou_VAM_out
+		}
+		mutually_exclusive = {
+			focus = touhou_VAM_radicalness
+		}
+		available = {
+			is_subject = no
 		}
 		bypass = {
-			
 		}
-		
 		ai_will_do = {
 			factor = 3
 			modifier = {
@@ -67,40 +61,66 @@ focus_tree = {
 					has_idea = inside_fantasy_attitude_2
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		x = -2
 		y = 1
 		relative_position_id = touhou_VAM_out
 		cost = 5
-
-		
-
 		completion_reward = {
 			add_political_power = 150
 			add_stability = 0.1
 			inside_fantasy_attitude_level_down = yes
 			hidden_effect = {
 				every_country = {
-					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-					news_event = { hours = 6 id = nstouhou.26 }
+					limit = {
+						OR = {
+							original_tag = ALI
+							original_tag = DES
+							original_tag = HAK
+							original_tag = DLD
+							original_tag = HEL
+							original_tag = SSS
+							original_tag = OPP
+							original_tag = RAB
+							original_tag = TEM
+							original_tag = BLQ
+							original_tag = KAP
+							original_tag = TEN
+							original_tag = HUM
+							original_tag = VAM
+							original_tag = MLS
+							original_tag = EVI
+						}
+					}
+					news_event = {
+						hours = 6
+						id = nstouhou.26
+					}
 				}
 			}
 		}
 	}
-	focus = {#霸权对抗转合作
+	focus = {
 		id = touhou_VAM_hegemony
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = touhou_VAM_gentle }
-		available = { 
-			is_subject = no 
-			TEN = { exists = yes NOT = { has_war_with = VAM } }
+		prerequisite = {
+			focus = touhou_VAM_gentle
+		}
+		available = {
+			is_subject = no
+			TEN = {
+				exists = yes
+				NOT = {
+					has_war_with = VAM
+				}
+			}
 		}
 		bypass = {
-			TEN = { exists = no }
+			TEN = {
+				exists = no
+			}
 		}
-		
 		ai_will_do = {
 			factor = 3
 		}
@@ -108,9 +128,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = touhou_VAM_gentle
 		cost = 5
-
-		
-
 		completion_reward = {
 			TEN = {
 				add_tech_bonus = {
@@ -131,18 +148,34 @@ focus_tree = {
 			inside_fantasy_attitude_level_down = yes
 		}
 	}
-	focus = {#妖怪寡头
+	focus = {
 		id = touhou_VAM_magnate
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = touhou_VAM_hegemony }
-		available = { 
-			is_subject = no 
-			TEN = { OR = { is_subject = no is_subject_of = ROOT } exists = yes is_in_faction = no NOT = { has_war_with = VAM } }
+		prerequisite = {
+			focus = touhou_VAM_hegemony
+		}
+		available = {
+			is_subject = no
+			TEN = {
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+				}
+				exists = yes
+				is_in_faction = no
+				NOT = {
+					has_war_with = VAM
+				}
+			}
 		}
 		bypass = {
-			TEN = { OR = { exists = no is_in_faction = yes } }
+			TEN = {
+				OR = {
+					exists = no
+					is_in_faction = yes
+				}
+			}
 		}
-		
 		ai_will_do = {
 			factor = 3
 		}
@@ -150,46 +183,72 @@ focus_tree = {
 		y = 1
 		relative_position_id = touhou_VAM_hegemony
 		cost = 5
-		
-
 		completion_reward = {
 			add_threat = -1
 			if = {
-				limit = { is_in_faction = no }
-				set_rule = { can_create_factions = yes }
+				limit = {
+					is_in_faction = no
+				}
+				set_rule = {
+					can_create_factions = yes
+				}
 				create_faction = touhou_VAM_unin
 			}
-			
 			TEN = {
 				if = {
-					limit = { OR = { is_subject = no is_subject_of = ROOT } exists = yes is_in_faction = no }
+					limit = {
+						OR = {
+							is_subject = no
+							is_subject_of = ROOT
+						}
+						exists = yes
+						is_in_faction = no
+					}
 					add_ai_strategy = {
 						type = alliance
 						id = PREV
 						value = 400
 					}
-					if = { 
-						limit = {is_ai = yes } 
-						country_event = { id = touhou_ai.2 days = 2}
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						country_event = {
+							id = touhou_ai.2
+							days = 2
+						}
 					}
-					else = { country_event = generic.5 }
+					else = {
+						country_event = generic.5
+					}
 				}
 			}
 			inside_fantasy_attitude_level_down = yes
 		}
 	}
-	focus = {#妖精女仆自由就业
+	focus = {
 		id = touhou_VAM_evi_self
 		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = touhou_VAM_gentle }
-		available = { 
-			is_subject = no 
-			EVI = { exists = yes is_puppet_of = VAM }
+		prerequisite = {
+			focus = touhou_VAM_gentle
+		}
+		available = {
+			is_subject = no
+			EVI = {
+				exists = yes
+				is_puppet_of = VAM
+			}
 		}
 		bypass = {
-			EVI = { OR = { exists = no NOT = { is_puppet_of = VAM } } }
+			EVI = {
+				OR = {
+					exists = no
+					NOT = {
+						is_puppet_of = VAM
+					}
+				}
+			}
 		}
-		
 		ai_will_do = {
 			factor = 3
 		}
@@ -197,12 +256,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = touhou_VAM_gentle
 		cost = 5
-
-		
-
 		completion_reward = {
 			add_stability = 0.1
-			EVI = { 
+			EVI = {
 				add_ideas = touhou_pop_self
 				add_autonomy_ratio = {
 					value = 0.4
@@ -212,18 +268,26 @@ focus_tree = {
 			inside_fantasy_attitude_level_down = yes
 		}
 	}
-	focus = {#和爱丽丝和解
+	focus = {
 		id = touhou_VAM_reconciliation_ali
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = touhou_VAM_gentle }
-		available = { 
-			is_subject = no 
-			ALI = { exists = yes NOT = { has_war_with = VAM } }
+		prerequisite = {
+			focus = touhou_VAM_gentle
+		}
+		available = {
+			is_subject = no
+			ALI = {
+				exists = yes
+				NOT = {
+					has_war_with = VAM
+				}
+			}
 		}
 		bypass = {
-			ALI = { exists = no }
+			ALI = {
+				exists = no
+			}
 		}
-		
 		ai_will_do = {
 			factor = 3
 		}
@@ -231,31 +295,61 @@ focus_tree = {
 		y = 1
 		relative_position_id = touhou_VAM_gentle
 		cost = 5
-
-		
-
 		completion_reward = {
 			add_stability = 0.1
 			inside_fantasy_attitude_level_down = yes
 		}
 	}
-	focus = {#新雾之湖协定
+	focus = {
 		id = touhou_VAM_new_lake_unin
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = touhou_VAM_reconciliation_ali }
-		prerequisite = { focus = touhou_VAM_evi_self }
-		available = { 
-			is_subject = no 
+		prerequisite = {
+			focus = touhou_VAM_reconciliation_ali
+		}
+		prerequisite = {
+			focus = touhou_VAM_evi_self
+		}
+		available = {
+			is_subject = no
 			OR = {
-				ALI = { OR = { is_subject = no is_subject_of = ROOT } exists = yes is_in_faction = no NOT = { has_war_with = VAM } }
-				EVI = { OR = { is_subject = no is_subject_of = ROOT } exists = yes is_in_faction = no NOT = { has_war_with = VAM } }
+				ALI = {
+					OR = {
+						is_subject = no
+						is_subject_of = ROOT
+					}
+					exists = yes
+					is_in_faction = no
+					NOT = {
+						has_war_with = VAM
+					}
+				}
+				EVI = {
+					OR = {
+						is_subject = no
+						is_subject_of = ROOT
+					}
+					exists = yes
+					is_in_faction = no
+					NOT = {
+						has_war_with = VAM
+					}
+				}
 			}
 		}
 		bypass = {
-			ALI = { OR = { exists = no is_in_faction = yes } }
-			EVI = { OR = { exists = no is_in_faction = yes } }
+			ALI = {
+				OR = {
+					exists = no
+					is_in_faction = yes
+				}
+			}
+			EVI = {
+				OR = {
+					exists = no
+					is_in_faction = yes
+				}
+			}
 		}
-		
 		ai_will_do = {
 			factor = 3
 		}
@@ -263,63 +357,99 @@ focus_tree = {
 		y = 1
 		relative_position_id = touhou_VAM_reconciliation_ali
 		cost = 5
-
-		
-
 		completion_reward = {
 			add_stability = 0.1
 			add_threat = -1
 			if = {
-				limit = { is_in_faction = no }
-				set_rule = { can_create_factions = yes }
+				limit = {
+					is_in_faction = no
+				}
+				set_rule = {
+					can_create_factions = yes
+				}
 				create_faction = touhou_VAM_unin
 			}
 			ALI = {
 				if = {
-					limit = { OR = { is_subject = no is_subject_of = ROOT } exists = yes is_in_faction = no NOT = { has_war_with = VAM } }
+					limit = {
+						OR = {
+							is_subject = no
+							is_subject_of = ROOT
+						}
+						exists = yes
+						is_in_faction = no
+						NOT = {
+							has_war_with = VAM
+						}
+					}
 					add_ai_strategy = {
 						type = alliance
 						id = PREV
 						value = 400
 					}
-					if = { 
-						limit = {is_ai = yes } 
-						country_event = { id = touhou_ai.2 days = 2}
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						country_event = {
+							id = touhou_ai.2
+							days = 2
+						}
 					}
-					else = { country_event = generic.5 }
+					else = {
+						country_event = generic.5
+					}
 				}
 			}
 			EVI = {
 				if = {
-					limit = { OR = { is_subject = no is_subject_of = ROOT } exists = yes is_in_faction = no NOT = { has_war_with = VAM } }
+					limit = {
+						OR = {
+							is_subject = no
+							is_subject_of = ROOT
+						}
+						exists = yes
+						is_in_faction = no
+						NOT = {
+							has_war_with = VAM
+						}
+					}
 					add_ai_strategy = {
 						type = alliance
 						id = PREV
 						value = 400
 					}
-					if = { 
-						limit = {is_ai = yes } 
-						country_event = { id = touhou_ai.2 days = 2}
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						country_event = {
+							id = touhou_ai.2
+							days = 2
+						}
 					}
-					else = { country_event = generic.5 }
+					else = {
+						country_event = generic.5
+					}
 				}
 			}
 			inside_fantasy_attitude_level_down = yes
 		}
 	}
-	focus = {#宣称霸权
+	focus = {
 		id = touhou_VAM_radicalness
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = touhou_VAM_out }
-		mutually_exclusive = { focus = touhou_VAM_gentle }
-		available = { 
-			is_subject = no 
-			
+		prerequisite = {
+			focus = touhou_VAM_out
+		}
+		mutually_exclusive = {
+			focus = touhou_VAM_gentle
+		}
+		available = {
+			is_subject = no
 		}
 		bypass = {
-			
 		}
-		
 		ai_will_do = {
 			factor = 3
 			modifier = {
@@ -330,42 +460,78 @@ focus_tree = {
 					has_idea = inside_fantasy_attitude_4
 					has_idea = inside_fantasy_attitude_3
 				}
-				
 			}
 		}
 		x = 2
 		y = 1
 		relative_position_id = touhou_VAM_out
 		cost = 5
-
-		
-
 		completion_reward = {
 			army_experience = 40
 			add_war_support = 0.1
 			inside_fantasy_attitude_level_up = yes
 			hidden_effect = {
 				every_country = {
-					limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-					news_event = { hours = 6 id = nstouhou.27 }
+					limit = {
+						OR = {
+							original_tag = ALI
+							original_tag = DES
+							original_tag = HAK
+							original_tag = DLD
+							original_tag = HEL
+							original_tag = SSS
+							original_tag = OPP
+							original_tag = RAB
+							original_tag = TEM
+							original_tag = BLQ
+							original_tag = KAP
+							original_tag = TEN
+							original_tag = HUM
+							original_tag = VAM
+							original_tag = MLS
+							original_tag = EVI
+						}
+					}
+					news_event = {
+						hours = 6
+						id = nstouhou.27
+					}
 				}
 			}
 		}
 	}
-	focus = {#雾之湖的解决方案
+	focus = {
 		id = touhou_VAM_final_notice
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-		prerequisite = { focus = touhou_VAM_radicalness }
-		available = { 
-			is_subject = no 
+		prerequisite = {
+			focus = touhou_VAM_radicalness
+		}
+		available = {
+			is_subject = no
 			OR = {
-				ALI = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } }
+				ALI = {
+					exists = yes
+					NOT = {
+						is_subject_of = VAM
+					}
+					NOT = {
+						is_in_faction_with = VAM
+					}
+				}
 			}
 		}
 		bypass = {
-			ALI = { OR = { exists = no is_subject_of = VAM is_in_faction_with = VAM NOT = { controls_state = 1119 } } }
+			ALI = {
+				OR = {
+					exists = no
+					is_subject_of = VAM
+					is_in_faction_with = VAM
+					NOT = {
+						controls_state = 1119
+					}
+				}
+			}
 		}
-		
 		ai_will_do = {
 			factor = 3
 		}
@@ -373,34 +539,65 @@ focus_tree = {
 		y = 1
 		relative_position_id = touhou_VAM_radicalness
 		cost = 5
-
-		
-
 		completion_reward = {
 			add_war_support = 0.1
 			inside_fantasy_attitude_level_up = yes
-			ALI = { country_event = { id = vampire.0 } }
-			#add_ideas = touhou_lord_of_hell
+			ALI = {
+				country_event = {
+					id = vampire.0
+				}
+			}
 		}
 	}
-	focus = {#黑暗时代
+	focus = {
 		id = touhou_VAM_attack_belief
 		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = touhou_VAM_final_notice }
-		available = { 
-			is_subject = no 
+		prerequisite = {
+			focus = touhou_VAM_final_notice
+		}
+		available = {
+			is_subject = no
 			OR = {
-				SSS = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } }
-				DES = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } }
-				TEM = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } }
+				SSS = {
+					exists = yes
+					NOT = {
+						is_subject_of = VAM
+					}
+					NOT = {
+						is_in_faction_with = VAM
+					}
+				}
+				DES = {
+					exists = yes
+					NOT = {
+						is_subject_of = VAM
+					}
+					NOT = {
+						is_in_faction_with = VAM
+					}
+				}
+				TEM = {
+					exists = yes
+					NOT = {
+						is_subject_of = VAM
+					}
+					NOT = {
+						is_in_faction_with = VAM
+					}
+				}
 			}
 		}
 		bypass = {
-			SSS = { exists = no }
-			DES = { exists = no }
-			TEM = { exists = no }
+			SSS = {
+				exists = no
+			}
+			DES = {
+				exists = no
+			}
+			TEM = {
+				exists = no
+			}
 		}
-		
 		ai_will_do = {
 			factor = 3
 		}
@@ -408,16 +605,25 @@ focus_tree = {
 		y = 1
 		relative_position_id = touhou_VAM_final_notice
 		cost = 5
-
-		
-
 		completion_reward = {
 			add_war_support = 0.1
 			inside_fantasy_attitude_level_up = yes
 			if = {
-				limit = { SSS = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } } }
+				limit = {
+					SSS = {
+						exists = yes
+						NOT = {
+							is_subject_of = VAM
+						}
+						NOT = {
+							is_in_faction_with = VAM
+						}
+					}
+				}
 				if = {
-					limit = { is_ai = yes }
+					limit = {
+						is_ai = yes
+					}
 					declare_war_on = {
 						type = annex_everything
 						target = SSS
@@ -431,9 +637,21 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { DES = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } } }
+				limit = {
+					DES = {
+						exists = yes
+						NOT = {
+							is_subject_of = VAM
+						}
+						NOT = {
+							is_in_faction_with = VAM
+						}
+					}
+				}
 				if = {
-					limit = { is_ai = yes }
+					limit = {
+						is_ai = yes
+					}
 					declare_war_on = {
 						type = annex_everything
 						target = DES
@@ -447,9 +665,21 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { TEM = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } } }
+				limit = {
+					TEM = {
+						exists = yes
+						NOT = {
+							is_subject_of = VAM
+						}
+						NOT = {
+							is_in_faction_with = VAM
+						}
+					}
+				}
 				if = {
-					limit = { is_ai = yes }
+					limit = {
+						is_ai = yes
+					}
 					declare_war_on = {
 						type = annex_everything
 						target = TEM
@@ -464,24 +694,55 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {#妖怪时代
+	focus = {
 		id = touhou_VAM_attack_hum
 		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = touhou_VAM_final_notice }
-		available = { 
+		prerequisite = {
+			focus = touhou_VAM_final_notice
+		}
+		available = {
 			is_subject = no
 			OR = {
-				BLQ = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } }
-				HUM = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } }
-				MLS = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } }
+				BLQ = {
+					exists = yes
+					NOT = {
+						is_subject_of = VAM
+					}
+					NOT = {
+						is_in_faction_with = VAM
+					}
+				}
+				HUM = {
+					exists = yes
+					NOT = {
+						is_subject_of = VAM
+					}
+					NOT = {
+						is_in_faction_with = VAM
+					}
+				}
+				MLS = {
+					exists = yes
+					NOT = {
+						is_subject_of = VAM
+					}
+					NOT = {
+						is_in_faction_with = VAM
+					}
+				}
 			}
 		}
 		bypass = {
-			BLQ = { exists = no }
-			HUM = { exists = no }
-			MLS = { exists = no }
+			BLQ = {
+				exists = no
+			}
+			HUM = {
+				exists = no
+			}
+			MLS = {
+				exists = no
+			}
 		}
-		
 		ai_will_do = {
 			factor = 3
 		}
@@ -489,16 +750,25 @@ focus_tree = {
 		y = 1
 		relative_position_id = touhou_VAM_final_notice
 		cost = 5
-
-		
-
 		completion_reward = {
 			add_war_support = 0.1
 			inside_fantasy_attitude_level_up = yes
 			if = {
-				limit = { BLQ = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } } }
+				limit = {
+					BLQ = {
+						exists = yes
+						NOT = {
+							is_subject_of = VAM
+						}
+						NOT = {
+							is_in_faction_with = VAM
+						}
+					}
+				}
 				if = {
-					limit = { is_ai = yes }
+					limit = {
+						is_ai = yes
+					}
 					declare_war_on = {
 						type = annex_everything
 						target = BLQ
@@ -512,9 +782,21 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { HUM = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } } }
+				limit = {
+					HUM = {
+						exists = yes
+						NOT = {
+							is_subject_of = VAM
+						}
+						NOT = {
+							is_in_faction_with = VAM
+						}
+					}
+				}
 				if = {
-					limit = { is_ai = yes }
+					limit = {
+						is_ai = yes
+					}
 					declare_war_on = {
 						type = annex_everything
 						target = HUM
@@ -528,9 +810,21 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { MLS = { exists = yes NOT = { is_subject_of = VAM } NOT = { is_in_faction_with = VAM } } }
+				limit = {
+					MLS = {
+						exists = yes
+						NOT = {
+							is_subject_of = VAM
+						}
+						NOT = {
+							is_in_faction_with = VAM
+						}
+					}
+				}
 				if = {
-					limit = { is_ai = yes }
+					limit = {
+						is_ai = yes
+					}
 					declare_war_on = {
 						type = annex_everything
 						target = MLS
@@ -545,18 +839,24 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {#雾之湖总督
+	focus = {
 		id = touhou_VAM_governor_evi
 		icon = GFX_goal_continuous_restrict_freedom
-		prerequisite = { focus = touhou_VAM_radicalness }
-		available = { 
-			is_subject = no 
-			EVI = { exists = yes is_subject_of = VAM }
+		prerequisite = {
+			focus = touhou_VAM_radicalness
+		}
+		available = {
+			is_subject = no
+			EVI = {
+				exists = yes
+				is_subject_of = VAM
+			}
 		}
 		bypass = {
-			EVI = { exists = no }
+			EVI = {
+				exists = no
+			}
 		}
-		
 		ai_will_do = {
 			factor = 3
 		}
@@ -564,11 +864,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = touhou_VAM_radicalness
 		cost = 5
-
-		
-
 		completion_reward = {
-			EVI = { 
+			EVI = {
 				add_ideas = touhou_pop_join
 				add_autonomy_ratio = {
 					value = -0.5
@@ -578,19 +875,38 @@ focus_tree = {
 			inside_fantasy_attitude_level_up = yes
 		}
 	}
-	
-	
-	focus = {#幻想乡共同结局
+	focus = {
 		id = touhou_VAM_in_all
 		icon = touhou_in_all
-		prerequisite = { focus = touhou_VAM_attack_hum focus = touhou_VAM_new_lake_unin focus = touhou_VAM_attack_belief }
+		prerequisite = {
+			focus = touhou_VAM_attack_hum
+			focus = touhou_VAM_new_lake_unin
+			focus = touhou_VAM_attack_belief
+		}
 		bypass = {
 			all_other_country = {
-				OR = { 
-					NOT = {original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				OR = {
+					NOT = {
+						original_tag = ALI
+						original_tag = DES
+						original_tag = HAK
+						original_tag = DLD
+						original_tag = HEL
+						original_tag = SSS
+						original_tag = OPP
+						original_tag = RAB
+						original_tag = TEM
+						original_tag = BLQ
+						original_tag = KAP
+						original_tag = TEN
+						original_tag = HUM
+						original_tag = VAM
+						original_tag = MLS
+						original_tag = EVI
+					}
 					exists = no
 					is_in_faction = yes
-					has_war_with = PREV 
+					has_war_with = PREV
 				}
 			}
 		}
@@ -599,36 +915,86 @@ focus_tree = {
 			is_subject = no
 			date > 1937.6.1
 			any_other_country = {
-				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-				OR = { is_subject = no is_subject_of = ROOT } exists = yes
+				OR = {
+					original_tag = ALI
+					original_tag = DES
+					original_tag = HAK
+					original_tag = DLD
+					original_tag = HEL
+					original_tag = SSS
+					original_tag = OPP
+					original_tag = RAB
+					original_tag = TEM
+					original_tag = BLQ
+					original_tag = KAP
+					original_tag = TEN
+					original_tag = HUM
+					original_tag = VAM
+					original_tag = MLS
+					original_tag = EVI
+				}
+				OR = {
+					is_subject = no
+					is_subject_of = ROOT
+				}
+				exists = yes
 				is_in_faction = no
-				NOT = { has_war_with = PREV }
+				NOT = {
+					has_war_with = PREV
+				}
 			}
 		}
 		x = -3
 		y = 1
 		relative_position_id = touhou_VAM_attack_hum
 		cost = 5
-		
 		ai_will_do = {
 			factor = 3
 		}
 		completion_reward = {
-			 
 			add_threat = -10
 			if = {
-				limit = { is_in_faction = no }
-				set_rule = { can_create_factions = yes }
+				limit = {
+					is_in_faction = no
+				}
+				set_rule = {
+					can_create_factions = yes
+				}
 				create_faction = All_in_touhou
 				custom_effect_tooltip = touhou_in_all_union
 			}
 			hidden_effect = {
 				every_country = {
-					limit = { 
-						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
-						OR = { is_subject = no is_subject_of = ROOT } exists = yes
-						NOT = { original_tag = PREV }
-						NOT = { has_war_with = PREV }
+					limit = {
+						OR = {
+							original_tag = ALI
+							original_tag = DES
+							original_tag = HAK
+							original_tag = DLD
+							original_tag = HEL
+							original_tag = SSS
+							original_tag = OPP
+							original_tag = RAB
+							original_tag = TEM
+							original_tag = BLQ
+							original_tag = KAP
+							original_tag = TEN
+							original_tag = HUM
+							original_tag = VAM
+							original_tag = MLS
+							original_tag = EVI
+						}
+						OR = {
+							is_subject = no
+							is_subject_of = ROOT
+						}
+						exists = yes
+						NOT = {
+							original_tag = PREV
+						}
+						NOT = {
+							has_war_with = PREV
+						}
 						is_in_faction = no
 					}
 					add_ai_strategy = {
@@ -636,19 +1002,28 @@ focus_tree = {
 						id = PREV
 						value = 400
 					}
-					if = { 
-						limit = {is_ai = yes } 
-						country_event = { id = touhou_ai.2 days = 2}
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						country_event = {
+							id = touhou_ai.2
+							days = 2
+						}
 					}
-					else = { country_event = generic.5 }
+					else = {
+						country_event = generic.5
+					}
 				}
 			}
 		}
 	}
-	focus = {#幻想乡自立结局
+	focus = {
 		id = touhou_VAM_in_self
 		icon = touhou_in_self
-		prerequisite = { focus = touhou_VAM_in_all }
+		prerequisite = {
+			focus = touhou_VAM_in_all
+		}
 		available = {
 			has_war = no
 			is_subject = no
@@ -657,17 +1032,37 @@ focus_tree = {
 				is_faction_leader = yes
 			}
 			any_other_country = {
-				OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+				OR = {
+					original_tag = ALI
+					original_tag = DES
+					original_tag = HAK
+					original_tag = DLD
+					original_tag = HEL
+					original_tag = SSS
+					original_tag = OPP
+					original_tag = RAB
+					original_tag = TEM
+					original_tag = BLQ
+					original_tag = KAP
+					original_tag = TEN
+					original_tag = HUM
+					original_tag = VAM
+					original_tag = MLS
+					original_tag = EVI
+				}
 				exists = yes
-				NOT = { is_subject_of = PREV } 
-				NOT = { is_in_faction_with = PREV }
+				NOT = {
+					is_subject_of = PREV
+				}
+				NOT = {
+					is_in_faction_with = PREV
+				}
 			}
 		}
 		x = 0
 		y = 1
 		relative_position_id = touhou_VAM_in_all
 		cost = 5
-		
 		ai_will_do = {
 			factor = 3
 		}
@@ -678,14 +1073,39 @@ focus_tree = {
 			hidden_effect = {
 				every_country = {
 					limit = {
-						OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI }
+						OR = {
+							original_tag = ALI
+							original_tag = DES
+							original_tag = HAK
+							original_tag = DLD
+							original_tag = HEL
+							original_tag = SSS
+							original_tag = OPP
+							original_tag = RAB
+							original_tag = TEM
+							original_tag = BLQ
+							original_tag = KAP
+							original_tag = TEN
+							original_tag = HUM
+							original_tag = VAM
+							original_tag = MLS
+							original_tag = EVI
+						}
 						exists = yes
-						NOT = { original_tag = PREV }
-						NOT = { is_subject_of = PREV } 
-						NOT = { is_in_faction_with = PREV }
+						NOT = {
+							original_tag = PREV
+						}
+						NOT = {
+							is_subject_of = PREV
+						}
+						NOT = {
+							is_in_faction_with = PREV
+						}
 					}
 					if = {
-						limit = { is_ai = yes }
+						limit = {
+							is_ai = yes
+						}
 						PREV = {
 							declare_war_on = {
 								type = annex_everything
@@ -705,73 +1125,68 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {#穿刺公的史诗
+	focus = {
 		id = touhou_VAM_out_to_ROM
 		icon = GFX_goal_generic_demand_territory
-		mutually_exclusive = { focus = touhou_VAM_out }
-		available = { 
+		mutually_exclusive = {
+			focus = touhou_VAM_out
+		}
+		available = {
 			is_subject = no
 		}
 		x = 34
 		y = 0
 		cost = 2
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		completion_reward = {
 			add_political_power = 50
 		}
 	}
-	focus = {#血族大公的号令
+	focus = {
 		id = touhou_VAM_find_vampire
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = touhou_VAM_out_to_ROM }
-		available = { 
+		prerequisite = {
+			focus = touhou_VAM_out_to_ROM
+		}
+		available = {
 			is_subject = no
 		}
 		x = 0
 		y = 1
 		relative_position_id = touhou_VAM_out_to_ROM
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		completion_reward = {
 			army_experience = 40
 			add_manpower = 110000
 		}
 	}
-	focus = {#“弗拉德”归来
+	focus = {
 		id = touhou_VAM_vampire_duke
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = touhou_VAM_find_vampire }
-		available = { 
+		prerequisite = {
+			focus = touhou_VAM_find_vampire
+		}
+		available = {
 			is_subject = no
-			NOT = { owns_state = 46 }
+			NOT = {
+				owns_state = 46
+			}
 		}
 		x = 0
 		y = 1
 		relative_position_id = touhou_VAM_find_vampire
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 100
 		}
-
 		completion_reward = {
 			set_country_flag = VAM_go_to_ROM
 			load_focus_tree = romanian_focus
@@ -838,8 +1253,15 @@ focus_tree = {
 			inside_fantasy_attitude_clear_all = yes
 			dismantle_faction = yes
 			every_country = {
-				limit = { owns_state = 46 NOT = { tag = VAM } }
-				every_owned_state = { add_core_of = VAM }
+				limit = {
+					owns_state = 46
+					NOT = {
+						tag = VAM
+					}
+				}
+				every_owned_state = {
+					add_core_of = VAM
+				}
 				country_event = vampire.1
 				hidden_effect = {
 					every_neighbor_country = {
@@ -848,41 +1270,117 @@ focus_tree = {
 				}
 			}
 			VAM = {
-				set_state_owner = 46 
+				set_state_owner = 46
 				set_state_controller = 46
-				set_capital = { state = 46 }
+				set_capital = {
+					state = 46
+				}
 				hidden_effect = {
 					division_template = {
 						name = "本土血族部队"
 						regiments = {
-							dragon_brigade = { x = 0 y = 0 }
-							dragon_brigade = { x = 0 y = 1 }
-							dragon_brigade = { x = 0 y = 2 }
-							dragon_brigade = { x = 0 y = 3 }
-							dragon_brigade = { x = 0 y = 4 }
-							dragon_brigade = { x = 1 y = 0 }
-							dragon_brigade = { x = 1 y = 1 }
-							dragon_brigade = { x = 1 y = 2 }
-							dragon_brigade = { x = 1 y = 3 }
-							dragon_brigade = { x = 1 y = 4 }
+							mountaineers = {
+								x = 0
+								y = 0
+							}
+							mountaineers = {
+								x = 0
+								y = 1
+							}
+							mountaineers = {
+								x = 0
+								y = 2
+							}
+							mountaineers = {
+								x = 0
+								y = 3
+							}
+							mountaineers = {
+								x = 0
+								y = 4
+							}
+							mountaineers = {
+								x = 1
+								y = 0
+							}
+							mountaineers = {
+								x = 1
+								y = 1
+							}
+							mountaineers = {
+								x = 1
+								y = 2
+							}
+							mountaineers = {
+								x = 1
+								y = 3
+							}
+							mountaineers = {
+								x = 1
+								y = 4
+							}
 						}
 					}
 					46 = {
 						create_unit = {
-							division = "name = \"本土血族部队\" division_template = \"本土血族部队\" start_experience_factor = 0.9" 
+							division = "name = \"本土血族部队\" division_template = \"本土血族部队\" start_experience_factor = 0.9"
 							owner = VAM
 							count = 10
 						}
 					}
 					every_country = {
-						limit = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = MLS original_tag = EVI } }
-						news_event = { hours = 6 id = nstouhou.43 }
+						limit = {
+							OR = {
+								original_tag = ALI
+								original_tag = DES
+								original_tag = HAK
+								original_tag = DLD
+								original_tag = HEL
+								original_tag = SSS
+								original_tag = OPP
+								original_tag = RAB
+								original_tag = TEM
+								original_tag = BLQ
+								original_tag = KAP
+								original_tag = TEN
+								original_tag = HUM
+								original_tag = MLS
+								original_tag = EVI
+							}
+						}
+						news_event = {
+							hours = 6
+							id = nstouhou.43
+						}
 					}
 					every_country = {
-						limit = { NOT = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } 
-						NOT = { has_idea = ROM_fear_VAM }
+						limit = {
+							NOT = {
+								original_tag = ALI
+								original_tag = DES
+								original_tag = HAK
+								original_tag = DLD
+								original_tag = HEL
+								original_tag = SSS
+								original_tag = OPP
+								original_tag = RAB
+								original_tag = TEM
+								original_tag = BLQ
+								original_tag = KAP
+								original_tag = TEN
+								original_tag = HUM
+								original_tag = VAM
+								original_tag = MLS
+								original_tag = EVI
+							}
+							NOT = {
+								has_idea = ROM_fear_VAM
+							}
 						}
-						news_event = { hours = 6 id = nstouhou.44 }
+						news_event = {
+							hours = 6
+							id = nstouhou.44
+						}
 					}
 				}
 			}

@@ -1,4 +1,3 @@
-#修复爆炸损伤
 touhou_kappa_repair = {
 	kappa_research_repair = {
 		icon = generic_research
@@ -6,23 +5,21 @@ touhou_kappa_repair = {
 		allowed = {
 			original_tag = KAP
 		}
-
 		available = {
-			NOT = { has_country_flag = remould_KAP_research }
+			NOT = {
+				has_country_flag = remould_KAP_research
+			}
 			original_tag = KAP
 			OR = {
 				has_idea = KAP_research_concentrate_damage
 				has_idea = KAP_research_disperse_damage
 			}
 		}
-
 		cost = 150
 		days_remove = 30
-		
 		ai_will_do = {
 			factor = 1
 		}
-
 		visible = {
 			original_tag = KAP
 			OR = {
@@ -30,26 +27,26 @@ touhou_kappa_repair = {
 				has_idea = KAP_research_disperse_damage
 			}
 		}
-
 		modifier = {
-			
 		}
-		
 		complete_effect = {
 			set_country_flag = repair_KAP_research
 		}
-		
 		remove_effect = {
 			clr_country_flag = repair_KAP_research
 			if = {
-				limit = { has_idea = KAP_research_concentrate_damage }
+				limit = {
+					has_idea = KAP_research_concentrate_damage
+				}
 				swap_ideas = {
 					remove_idea = KAP_research_concentrate_damage
 					add_idea = KAP_research_concentrate
 				}
 			}
 			else_if = {
-				limit = { has_idea = KAP_research_disperse_damage }
+				limit = {
+					has_idea = KAP_research_disperse_damage
+				}
 				swap_ideas = {
 					remove_idea = KAP_research_disperse_damage
 					add_idea = KAP_research_disperse
@@ -63,23 +60,21 @@ touhou_kappa_repair = {
 		allowed = {
 			original_tag = KAP
 		}
-
 		available = {
-			NOT = { has_country_flag = repair_KAP_research }
+			NOT = {
+				has_country_flag = repair_KAP_research
+			}
 			original_tag = KAP
 			OR = {
 				has_idea = KAP_research_concentrate_damage
 				has_idea = KAP_research_disperse_damage
 			}
 		}
-
 		cost = 150
 		days_remove = 60
-		
 		ai_will_do = {
 			factor = 1
 		}
-
 		visible = {
 			original_tag = KAP
 			OR = {
@@ -87,25 +82,26 @@ touhou_kappa_repair = {
 				has_idea = KAP_research_disperse_damage
 			}
 		}
-
 		modifier = {
 		}
-		
 		complete_effect = {
 			set_country_flag = remould_KAP_research
 		}
-		
 		remove_effect = {
 			clr_country_flag = remould_KAP_research
 			if = {
-				limit = { has_idea = KAP_research_concentrate_damage }
+				limit = {
+					has_idea = KAP_research_concentrate_damage
+				}
 				swap_ideas = {
 					remove_idea = KAP_research_concentrate_damage
 					add_idea = KAP_research_disperse
 				}
 			}
 			else_if = {
-				limit = { has_idea = KAP_research_disperse_damage }
+				limit = {
+					has_idea = KAP_research_disperse_damage
+				}
 				swap_ideas = {
 					remove_idea = KAP_research_disperse_damage
 					add_idea = KAP_research_concentrate
@@ -119,23 +115,21 @@ touhou_kappa_repair = {
 		allowed = {
 			original_tag = KAP
 		}
-
 		available = {
-			NOT = { has_country_flag = remould_KAP_industry }
+			NOT = {
+				has_country_flag = remould_KAP_industry
+			}
 			original_tag = KAP
 			OR = {
 				has_idea = KAP_industrial_concentrate_damage
 				has_idea = KAP_industrial_disperse_damage
 			}
 		}
-
 		cost = 150
 		days_remove = 30
-		
 		ai_will_do = {
 			factor = 1
 		}
-
 		visible = {
 			original_tag = KAP
 			OR = {
@@ -143,24 +137,26 @@ touhou_kappa_repair = {
 				has_idea = KAP_industrial_disperse_damage
 			}
 		}
-		
 		modifier = {
 		}
 		complete_effect = {
 			set_country_flag = repair_KAP_industry
 		}
-		
 		remove_effect = {
 			clr_country_flag = repair_KAP_industry
 			if = {
-				limit = { has_idea = KAP_industrial_concentrate_damage }
+				limit = {
+					has_idea = KAP_industrial_concentrate_damage
+				}
 				swap_ideas = {
 					remove_idea = KAP_industrial_concentrate_damage
 					add_idea = KAP_industrial_concentrate
 				}
 			}
 			else_if = {
-				limit = { has_idea = KAP_industrial_disperse_damage }
+				limit = {
+					has_idea = KAP_industrial_disperse_damage
+				}
 				swap_ideas = {
 					remove_idea = KAP_industrial_disperse_damage
 					add_idea = KAP_industrial_disperse
@@ -174,23 +170,21 @@ touhou_kappa_repair = {
 		allowed = {
 			original_tag = KAP
 		}
-
 		available = {
-			NOT = { has_country_flag = repair_KAP_industry }
+			NOT = {
+				has_country_flag = repair_KAP_industry
+			}
 			original_tag = KAP
 			OR = {
 				has_idea = KAP_industrial_concentrate_damage
 				has_idea = KAP_industrial_disperse_damage
 			}
 		}
-
 		cost = 150
 		days_remove = 60
-		
 		ai_will_do = {
 			factor = 1
 		}
-
 		visible = {
 			original_tag = KAP
 			OR = {
@@ -198,24 +192,26 @@ touhou_kappa_repair = {
 				has_idea = KAP_industrial_disperse_damage
 			}
 		}
-		
 		modifier = {
 		}
 		complete_effect = {
 			set_country_flag = remould_KAP_industry
 		}
-		
 		remove_effect = {
 			clr_country_flag = remould_KAP_industry
 			if = {
-				limit = { has_idea = KAP_industrial_concentrate_damage }
+				limit = {
+					has_idea = KAP_industrial_concentrate_damage
+				}
 				swap_ideas = {
 					remove_idea = KAP_industrial_concentrate_damage
 					add_idea = KAP_industrial_disperse
 				}
 			}
 			else_if = {
-				limit = { has_idea = KAP_industrial_disperse_damage }
+				limit = {
+					has_idea = KAP_industrial_disperse_damage
+				}
 				swap_ideas = {
 					remove_idea = KAP_industrial_disperse_damage
 					add_idea = KAP_industrial_concentrate
@@ -224,8 +220,6 @@ touhou_kappa_repair = {
 		}
 	}
 }
-
-#“接受”援助
 touhou_molisha = {
 	molisha_need_human_help = {
 		icon = generic_political_discourse
@@ -233,36 +227,32 @@ touhou_molisha = {
 		allowed = {
 			original_tag = MLS
 		}
-
 		available = {
-			NOT = { has_country_flag = moster_help }
+			NOT = {
+				has_country_flag = moster_help
+			}
 			original_tag = MLS
 			has_idea = not_recognized_more_trait
 		}
-
 		cost = 150
 		days_remove = 30
-		
 		ai_will_do = {
 			factor = 1
 		}
-
 		visible = {
 			original_tag = MLS
 			has_idea = not_recognized_more_trait
 		}
-
 		modifier = {
-			
 		}
-		
 		complete_effect = {
 			set_country_flag = human_help
 		}
-		
 		remove_effect = {
 			clr_country_flag = human_help
-			country_event = { id = molisha.4 }
+			country_event = {
+				id = molisha.4
+			}
 		}
 	}
 	molisha_need_monster_help = {
@@ -271,78 +261,79 @@ touhou_molisha = {
 		allowed = {
 			original_tag = MLS
 		}
-
 		available = {
-			NOT = { has_country_flag = human_help }
+			NOT = {
+				has_country_flag = human_help
+			}
 			original_tag = MLS
 			has_idea = not_recognized_more_trait
 		}
-
 		cost = 150
 		days_remove = 30
-		
 		ai_will_do = {
 			factor = 1
 		}
-
 		visible = {
 			original_tag = MLS
 			has_idea = not_recognized_more_trait
 		}
-
 		modifier = {
-			
 		}
-		
 		complete_effect = {
 			set_country_flag = moster_help
 		}
-		
 		remove_effect = {
 			clr_country_flag = moster_help
-			country_event = { id = molisha.5 }
+			country_event = {
+				id = molisha.5
+			}
 		}
 	}
 }
-
-#外界渗透计划
 touhou_rabbit_permeate = {
-	touhou_RAB_all_right = {#万事俱备
+	touhou_RAB_all_right = {
 		icon = generic_form_nation
 		fire_only_once = yes
 		allowed = {
 			original_tag = RAB
 		}
-
 		available = {
 			is_subject = no
 			any_country = {
 				original_tag = JAP
-				NOT = { is_subject_of = RAB }
-				NOT = { is_in_faction_with = RAB }
+				NOT = {
+					is_subject_of = RAB
+				}
+				NOT = {
+					is_in_faction_with = RAB
+				}
 			}
 		}
-
 		visible = {
 			original_tag = RAB
 			has_completed_focus = touhou_RAB_exchange_all
 		}
-
 		complete_effect = {
 			every_country = {
-				limit = { 
+				limit = {
 					original_tag = JAP
-					NOT = { is_subject_of = RAB }
-					NOT = { is_in_faction_with = RAB }
+					NOT = {
+						is_subject_of = RAB
+					}
+					NOT = {
+						is_in_faction_with = RAB
+					}
 				}
 				every_core_state = {
 					add_core_of = ROOT
 				}
 				every_country = {
 					limit = {
-						is_subject_of = PREV #prev可用于every系列
+						is_subject_of = PREV
 					}
-					country_event = { id = touhou_ai.4 }
+					country_event = {
+						id = touhou_ai.4
+					}
 				}
 				ROOT = {
 					declare_war_on = {
@@ -357,7 +348,6 @@ touhou_rabbit_permeate = {
 		}
 	}
 }
-#妖精起义
 touhou_evil_rize_up = {
 	touhou_evil_rize_up_start = {
 		icon = generic_form_nation
@@ -372,7 +362,9 @@ touhou_evil_rize_up = {
 			has_country_flag = touhou_country_flag_evil_rize_up
 		}
 		complete_effect = {
-			VAM = { end_puppet = EVI }
+			VAM = {
+				end_puppet = EVI
+			}
 			EVI = {
 				declare_war_on = {
 					target = VAM
@@ -385,9 +377,8 @@ touhou_evil_rize_up = {
 		}
 	}
 }
-#人偶的特殊用途
 touhou_decisions_categories_doll = {
-	touhou_mission_doll_production_line = {#人偶生产线
+	touhou_mission_doll_production_line = {
 		activation = {
 			has_manpower < 110000000
 		}
@@ -402,13 +393,9 @@ touhou_decisions_categories_doll = {
 		cancel_trigger = {
 			has_manpower > 110000000
 		}
-		modifier = {
-			consumer_goods_expected_value = 0.1
-		}
 		timeout_effect = {
 			custom_effect_tooltip = touhou_mission_doll_production_line_manpower_tt
 			hidden_effect = {
-				#每段通过独立事件执行，避免同一效果块中的人力修改互相覆盖。
 				add_manpower = var:touhou_var_alice_trait_manpower
 				country_event = {
 					id = alice.8
@@ -419,14 +406,14 @@ touhou_decisions_categories_doll = {
 		ai_will_do = {
 			factor = 200
 		}
-	}		
-	touhou_mission_doll_automatic_construction = {#自动化人偶建设
+	}
+	touhou_mission_doll_automatic_construction = {
 		activation = {
 			any_controlled_state = {
 				free_building_slots = {
 					building = infrastructure
 					size > 0
-				}				
+				}
 			}
 		}
 		icon = generic_construction
@@ -443,12 +430,12 @@ touhou_decisions_categories_doll = {
 				free_building_slots = {
 					building = infrastructure
 					size < 1
-				}	
+				}
 			}
 		}
-		timeout_effect = {			
+		timeout_effect = {
 			random_controlled_state = {
-				limit = { 
+				limit = {
 					free_building_slots = {
 						building = infrastructure
 						size > 0
@@ -465,14 +452,14 @@ touhou_decisions_categories_doll = {
 		ai_will_do = {
 			factor = 200
 		}
-	}		
-	touhou_decisions_sent_manpower_faction = {#输送人偶士兵
+	}
+	touhou_decisions_sent_manpower_faction = {
 		icon = eng_propaganda_campaigns
 		available = {
 			has_manpower > 110000
-		}	
+		}
 		visible = {
-			FROM = { 
+			FROM = {
 				OR = {
 					is_in_faction_with = ROOT
 					is_subject_of = ROOT
@@ -480,41 +467,47 @@ touhou_decisions_categories_doll = {
 			}
 		}
 		target_trigger = {
-			FROM = { 
+			FROM = {
 				OR = {
 					is_in_faction_with = ROOT
 					is_subject_of = ROOT
 				}
 			}
 		}
-		days_remove = 30		
+		days_remove = 30
 		fire_only_once = no
 		ai_will_do = {
 			base = 10
 			modifier = {
 				add = 1100
-				FROM = { is_ai = no }
+				FROM = {
+					is_ai = no
+				}
 			}
 		}
 		cost = 50
-		complete_effect = {			
-			add_manpower = -110000			
-			FROM = { add_manpower = 110000 }
+		complete_effect = {
+			add_manpower = -110000
+			FROM = {
+				add_manpower = 110000
+			}
 		}
-	}	
-	touhou_decisions_strengthen_alice_doll_army = {#强化人偶作战网络-陆战
+	}
+	touhou_decisions_strengthen_alice_doll_army = {
 		icon = generic_army_support
 		available = {
 			has_manpower > 400000
 		}
 		cost = 50
 		fire_only_once = yes
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+			factor = 1
+		}
 		days_re_enable = 30
 		complete_effect = {
 			add_manpower = -400000
-			add_to_variable = { 
-				touhou_var_alice_doll_army_attack_factor = 0.05 								
+			add_to_variable = {
+				touhou_var_alice_doll_army_attack_factor = 0.05
 			}
 			add_to_variable = {
 				touhou_var_alice_doll_army_defence_factor = 0.05
@@ -523,45 +516,49 @@ touhou_decisions_categories_doll = {
 				touhou_var_alice_doll_army_org_factor = 0.05
 			}
 			add_to_variable = {
-				touhou_var_alice_doll_army_strength_factor = 0.02	
+				touhou_var_alice_doll_army_strength_factor = 0.02
 			}
 		}
 	}
-	touhou_decisions_strengthen_alice_doll_naval = {#强化人偶作战网络-海战
+	touhou_decisions_strengthen_alice_doll_naval = {
 		icon = generic_naval
 		available = {
 			has_manpower > 200000
 		}
 		cost = 50
 		fire_only_once = yes
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+			factor = 1
+		}
 		days_re_enable = 30
 		complete_effect = {
 			add_manpower = -200000
-			add_to_variable = { 
-				touhou_var_alice_doll_naval_damage_factor = 0.05 
+			add_to_variable = {
+				touhou_var_alice_doll_naval_damage_factor = 0.05
 			}
 			add_to_variable = {
-				touhou_var_alice_doll_naval_defense_factor = 0.05				
+				touhou_var_alice_doll_naval_defense_factor = 0.05
 			}
 			add_to_variable = {
 				touhou_var_alice_doll_navy_org_factor = 0.05
 			}
 		}
 	}
-	touhou_decisions_strengthen_alice_doll_air = {#强化人偶作战网络-空战
+	touhou_decisions_strengthen_alice_doll_air = {
 		icon = generic_air
 		available = {
 			has_manpower > 200000
 		}
 		cost = 50
 		fire_only_once = yes
-		ai_will_do = { factor = 1 }
+		ai_will_do = {
+			factor = 1
+		}
 		days_re_enable = 30
 		complete_effect = {
 			add_manpower = -200000
-			add_to_variable = { 
-				touhou_var_alice_doll_air_attack_factor = 0.05 
+			add_to_variable = {
+				touhou_var_alice_doll_air_attack_factor = 0.05
 			}
 			add_to_variable = {
 				touhou_var_alice_doll_air_defence_factor = 0.05
@@ -572,9 +569,8 @@ touhou_decisions_categories_doll = {
 		}
 	}
 }
-#妖精军事学校
 touhou_decisions_categories_evi_military_academy = {
-	touhou_decisions_evi_military_academy_1 = {#建设妖精军事学校
+	touhou_decisions_evi_military_academy_1 = {
 		icon = GFX_trait_units_evil
 		fire_only_once = yes
 		days_remove = 35
@@ -587,11 +583,15 @@ touhou_decisions_categories_evi_military_academy = {
 			civilian_factory_use = 1
 		}
 		available = {
-			NOT = { has_idea = fantasy_army }
+			NOT = {
+				has_idea = fantasy_army
+			}
 		}
-		visible = { 
-			is_ai = no 
-			NOT = {	has_country_flag = touhou_country_flag_evi_military_academy_1 }
+		visible = {
+			is_ai = no
+			NOT = {
+				has_country_flag = touhou_country_flag_evi_military_academy_1
+			}
 		}
 		ai_will_do = {
 			factor = 100
@@ -601,7 +601,7 @@ touhou_decisions_categories_evi_military_academy = {
 				army_experience = -30
 			}
 		}
-		remove_effect = { 
+		remove_effect = {
 			set_division_template_cap = {
 				division_template = "妖精步兵师"
 				division_cap = 5
@@ -609,8 +609,8 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精步兵师"
 				regiments = {
-					evil_brigade = 0
-					evil_brigade = 0
+					infantry = 0
+					infantry = 0
 				}
 			}
 			set_division_template_cap = {
@@ -620,8 +620,8 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精突击师"
 				regiments = {
-					evil_brigade = 0
-					evil_armor_brigade = 1
+					infantry = 0
+					medium_armor = 1
 				}
 			}
 			set_division_template_cap = {
@@ -631,11 +631,11 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精炮兵师"
 				regiments = {
-					evil_brigade = 0
-					evil_artillery_brigade = 1
+					infantry = 0
+					artillery_brigade = 1
 				}
 			}
-			set_country_flag = touhou_country_flag_evi_military_academy_1 
+			set_country_flag = touhou_country_flag_evi_military_academy_1
 			set_country_flag = touhou_country_flag_evi_military_academy_infantry
 			set_country_flag = touhou_country_flag_evi_military_academy_move
 			activate_mission = touhou_mission_evi_military_academy
@@ -644,7 +644,7 @@ touhou_decisions_categories_evi_military_academy = {
 			}
 		}
 	}
-	touhou_decisions_evi_military_academy_2 = {#扩建妖精军事学校
+	touhou_decisions_evi_military_academy_2 = {
 		icon = GFX_trait_units_evil
 		fire_only_once = yes
 		days_remove = 35
@@ -664,15 +664,19 @@ touhou_decisions_categories_evi_military_academy = {
 				custom_trigger_tooltip = {
 					tooltip = touhou_tooltip_evi_military_academy_cancel
 					all_controlled_state = {
-						NOT = { has_state_flag = touhou_state_flag_evi_military_academy_mass }
-					}				
-				}	
-			}			
+						NOT = {
+							has_state_flag = touhou_state_flag_evi_military_academy_mass
+						}
+					}
+				}
+			}
 		}
-		visible = { 
-			is_ai = no 
+		visible = {
+			is_ai = no
 			has_country_flag = touhou_country_flag_evi_military_academy_1
-			NOT = {	has_country_flag = touhou_country_flag_evi_military_academy_2 }
+			NOT = {
+				has_country_flag = touhou_country_flag_evi_military_academy_2
+			}
 		}
 		cancel_trigger = {
 			OR = {
@@ -680,8 +684,10 @@ touhou_decisions_categories_evi_military_academy = {
 				custom_trigger_tooltip = {
 					tooltip = touhou_tooltip_evi_military_academy_cancel
 					all_controlled_state = {
-						NOT = { has_state_flag = touhou_state_flag_evi_military_academy_mass }
-					}				
+						NOT = {
+							has_state_flag = touhou_state_flag_evi_military_academy_mass
+						}
+					}
 				}
 			}
 		}
@@ -694,7 +700,7 @@ touhou_decisions_categories_evi_military_academy = {
 			}
 			set_country_flag = touhou_country_flag_evi_military_academy_updating
 		}
-		remove_effect = {  
+		remove_effect = {
 			set_division_template_cap = {
 				division_template = "妖精步兵师"
 				division_cap = 10
@@ -702,10 +708,10 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精步兵师"
 				regiments = {
-					evil_brigade = 1
-					evil_brigade = 1
-					evil_brigade = 1
-					evil_brigade = 1
+					infantry = 1
+					infantry = 1
+					infantry = 1
+					infantry = 1
 				}
 			}
 			set_division_template_cap = {
@@ -715,10 +721,10 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精突击师"
 				regiments = {
-					evil_brigade = 0
-					evil_brigade = 0
-					evil_armor_brigade = 1
-					evil_armor_brigade = 1
+					infantry = 0
+					infantry = 0
+					medium_armor = 1
+					medium_armor = 1
 				}
 			}
 			set_division_template_cap = {
@@ -728,17 +734,17 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精炮兵师"
 				regiments = {
-					evil_brigade = 0
-					evil_brigade = 0
-					evil_artillery_brigade = 1
-					evil_artillery_brigade = 1
+					infantry = 0
+					infantry = 0
+					artillery_brigade = 1
+					artillery_brigade = 1
 				}
 			}
 			clr_country_flag = touhou_country_flag_evi_military_academy_updating
-			set_country_flag = touhou_country_flag_evi_military_academy_2 
+			set_country_flag = touhou_country_flag_evi_military_academy_2
 		}
 	}
-	touhou_decisions_evi_military_academy_3 = {#再次扩建妖精军事学校
+	touhou_decisions_evi_military_academy_3 = {
 		icon = GFX_trait_units_evil
 		fire_only_once = yes
 		days_remove = 35
@@ -758,15 +764,19 @@ touhou_decisions_categories_evi_military_academy = {
 				custom_trigger_tooltip = {
 					tooltip = touhou_tooltip_evi_military_academy_cancel
 					all_controlled_state = {
-						NOT = { has_state_flag = touhou_state_flag_evi_military_academy_mass }
-					}				
-				}	
+						NOT = {
+							has_state_flag = touhou_state_flag_evi_military_academy_mass
+						}
+					}
+				}
 			}
 		}
-		visible = { 
-			is_ai = no 
+		visible = {
+			is_ai = no
 			has_country_flag = touhou_country_flag_evi_military_academy_2
-			NOT = {	has_country_flag = touhou_country_flag_evi_military_academy_3 }
+			NOT = {
+				has_country_flag = touhou_country_flag_evi_military_academy_3
+			}
 		}
 		cancel_trigger = {
 			OR = {
@@ -774,8 +784,10 @@ touhou_decisions_categories_evi_military_academy = {
 				custom_trigger_tooltip = {
 					tooltip = touhou_tooltip_evi_military_academy_cancel
 					all_controlled_state = {
-						NOT = { has_state_flag = touhou_state_flag_evi_military_academy_mass }
-					}				
+						NOT = {
+							has_state_flag = touhou_state_flag_evi_military_academy_mass
+						}
+					}
 				}
 			}
 		}
@@ -788,7 +800,7 @@ touhou_decisions_categories_evi_military_academy = {
 			}
 			set_country_flag = touhou_country_flag_evi_military_academy_updating
 		}
-		remove_effect = { 
+		remove_effect = {
 			set_division_template_cap = {
 				division_template = "妖精步兵师"
 				division_cap = 20
@@ -796,14 +808,14 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精步兵师"
 				regiments = {
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 3
-					evil_brigade = 3
-					evil_brigade = 3
-					evil_brigade = 3
+					infantry = 2
+					infantry = 2
+					infantry = 2
+					infantry = 2
+					infantry = 3
+					infantry = 3
+					infantry = 3
+					infantry = 3
 				}
 			}
 			set_division_template_cap = {
@@ -813,14 +825,14 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精突击师"
 				regiments = {
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_armor_brigade = 3
-					evil_armor_brigade = 3
-					evil_armor_brigade = 3
-					evil_armor_brigade = 3
+					infantry = 2
+					infantry = 2
+					infantry = 2
+					infantry = 2
+					medium_armor = 3
+					medium_armor = 3
+					medium_armor = 3
+					medium_armor = 3
 				}
 			}
 			set_division_template_cap = {
@@ -830,21 +842,21 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精炮兵师"
 				regiments = {
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_artillery_brigade = 3
-					evil_artillery_brigade = 3
-					evil_artillery_brigade = 3
-					evil_artillery_brigade = 3
+					infantry = 2
+					infantry = 2
+					infantry = 2
+					infantry = 2
+					artillery_brigade = 3
+					artillery_brigade = 3
+					artillery_brigade = 3
+					artillery_brigade = 3
 				}
 			}
 			clr_country_flag = touhou_country_flag_evi_military_academy_updating
-			set_country_flag = touhou_country_flag_evi_military_academy_3 
+			set_country_flag = touhou_country_flag_evi_military_academy_3
 		}
 	}
-	touhou_decisions_evi_military_academy_4 = {#成立幻想乡联合军事学院
+	touhou_decisions_evi_military_academy_4 = {
 		icon = GFX_trait_units_evil
 		fire_only_once = yes
 		days_remove = 35
@@ -865,15 +877,19 @@ touhou_decisions_categories_evi_military_academy = {
 				custom_trigger_tooltip = {
 					tooltip = touhou_tooltip_evi_military_academy_cancel
 					all_controlled_state = {
-						NOT = { has_state_flag = touhou_state_flag_evi_military_academy_mass }
-					}				
-				}	
+						NOT = {
+							has_state_flag = touhou_state_flag_evi_military_academy_mass
+						}
+					}
+				}
 			}
 		}
-		visible = { 
-			is_ai = no 
+		visible = {
+			is_ai = no
 			has_country_flag = touhou_country_flag_evi_military_academy_3
-			NOT = {	has_country_flag = touhou_country_flag_evi_military_academy_4 }
+			NOT = {
+				has_country_flag = touhou_country_flag_evi_military_academy_4
+			}
 		}
 		cancel_trigger = {
 			OR = {
@@ -881,8 +897,10 @@ touhou_decisions_categories_evi_military_academy = {
 				custom_trigger_tooltip = {
 					tooltip = touhou_tooltip_evi_military_academy_cancel
 					all_controlled_state = {
-						NOT = { has_state_flag = touhou_state_flag_evi_military_academy_mass }
-					}				
+						NOT = {
+							has_state_flag = touhou_state_flag_evi_military_academy_mass
+						}
+					}
 				}
 			}
 		}
@@ -895,35 +913,37 @@ touhou_decisions_categories_evi_military_academy = {
 			}
 			set_country_flag = touhou_country_flag_evi_military_academy_updating
 		}
-		remove_effect = { 
+		remove_effect = {
 			set_division_template_lock = {
 				division_template = "妖精步兵师"
 				is_locked = no
 			}
-			clear_division_template_cap = { 
+			clear_division_template_cap = {
 				division_template = "妖精步兵师"
 			}
 			set_division_template_lock = {
 				division_template = "妖精突击师"
 				is_locked = no
 			}
-			clear_division_template_cap = { 
+			clear_division_template_cap = {
 				division_template = "妖精突击师"
 			}
 			set_division_template_lock = {
 				division_template = "妖精炮兵师"
 				is_locked = no
 			}
-			clear_division_template_cap = { 
+			clear_division_template_cap = {
 				division_template = "妖精炮兵师"
 			}
 			clr_country_flag = touhou_country_flag_evi_military_academy_updating
-			set_country_flag = touhou_country_flag_evi_military_academy_4 
+			set_country_flag = touhou_country_flag_evi_military_academy_4
 		}
 	}
-	touhou_decisions_evi_military_academy_move = {#迁移军事学校
+	touhou_decisions_evi_military_academy_move = {
 		icon = GFX_trait_units_evil
-		visible = { has_country_flag = touhou_country_flag_evi_military_academy_move }
+		visible = {
+			has_country_flag = touhou_country_flag_evi_military_academy_move
+		}
 		cost = 10
 		available = {
 			NOT = {
@@ -931,10 +951,10 @@ touhou_decisions_categories_evi_military_academy = {
 			}
 		}
 		visible = {
-			is_ai = no 
+			is_ai = no
 			NOT = {
 				has_country_flag = touhou_country_flag_evi_military_academy_moving
-			}			
+			}
 		}
 		complete_effect = {
 			remove_mission = touhou_mission_evi_military_academy
@@ -943,7 +963,7 @@ touhou_decisions_categories_evi_military_academy = {
 			set_country_flag = touhou_country_flag_evi_military_academy_moving
 		}
 	}
-	touhou_decisions_evi_military_academy_position = {#将军事学校迁移到[FROM.GetName]
+	touhou_decisions_evi_military_academy_position = {
 		icon = GFX_trait_units_evil
 		fire_only_once = no
 		available = {
@@ -952,7 +972,7 @@ touhou_decisions_categories_evi_military_academy = {
 			}
 		}
 		visible = {
-			is_ai = no 
+			is_ai = no
 			has_country_flag = touhou_country_flag_evi_military_academy_moving
 			OR = {
 				NOT = {
@@ -967,7 +987,9 @@ touhou_decisions_categories_evi_military_academy = {
 		target_trigger = {
 			FROM = {
 				is_fully_controlled_by = ROOT
-				NOT = { has_state_flag = touhou_state_flag_evi_military_academy_mass }
+				NOT = {
+					has_state_flag = touhou_state_flag_evi_military_academy_mass
+				}
 			}
 		}
 		on_map_mode = map_and_decisions_view
@@ -996,12 +1018,12 @@ touhou_decisions_categories_evi_military_academy = {
 					clr_state_flag = touhou_state_flag_evi_military_academy_start_moving
 				}
 				clr_country_flag = touhou_country_flag_evi_military_academy_start_moving
-				clr_country_flag = touhou_country_flag_evi_military_academy_moving				
+				clr_country_flag = touhou_country_flag_evi_military_academy_moving
 			}
 			activate_mission = touhou_mission_evi_military_academy
 		}
 	}
-	touhou_decisions_evi_military_academy_change_to_infantry = {#训练步兵部队
+	touhou_decisions_evi_military_academy_change_to_infantry = {
 		icon = GFX_trait_units_evil
 		days_re_enable = 0
 		available = {
@@ -1011,7 +1033,7 @@ touhou_decisions_categories_evi_military_academy = {
 			}
 		}
 		visible = {
-			is_ai = no 
+			is_ai = no
 			has_country_flag = touhou_country_flag_evi_military_academy_1
 		}
 		cost = 0
@@ -1030,7 +1052,7 @@ touhou_decisions_categories_evi_military_academy = {
 			clr_country_flag = touhou_country_flag_evi_military_academy_changing
 		}
 	}
-	touhou_decisions_evi_military_academy_change_to_armor = {#训练突击部队
+	touhou_decisions_evi_military_academy_change_to_armor = {
 		icon = GFX_trait_units_evil
 		days_re_enable = 0
 		available = {
@@ -1040,7 +1062,7 @@ touhou_decisions_categories_evi_military_academy = {
 			}
 		}
 		visible = {
-			is_ai = no 
+			is_ai = no
 			has_country_flag = touhou_country_flag_evi_military_academy_1
 		}
 		cost = 0
@@ -1059,7 +1081,7 @@ touhou_decisions_categories_evi_military_academy = {
 			clr_country_flag = touhou_country_flag_evi_military_academy_changing
 		}
 	}
-	touhou_decisions_evi_military_academy_change_to_artillery = {#训练火炮部队
+	touhou_decisions_evi_military_academy_change_to_artillery = {
 		icon = GFX_trait_units_evil
 		days_re_enable = 0
 		available = {
@@ -1069,7 +1091,7 @@ touhou_decisions_categories_evi_military_academy = {
 			}
 		}
 		visible = {
-			is_ai = no 
+			is_ai = no
 			has_country_flag = touhou_country_flag_evi_military_academy_1
 		}
 		cost = 0
@@ -1088,19 +1110,21 @@ touhou_decisions_categories_evi_military_academy = {
 			clr_country_flag = touhou_country_flag_evi_military_academy_changing
 		}
 	}
-	touhou_mission_evi_military_academy = {#妖精军事学校
+	touhou_mission_evi_military_academy = {
 		activation = {
-			is_ai = no 
+			is_ai = no
 			has_country_flag = touhou_country_flag_evi_military_academy_1
 			NOT = {
 				has_country_flag = touhou_country_flag_evi_military_academy_moving
 				custom_trigger_tooltip = {
 					tooltip = touhou_tooltip_evi_military_academy_cancel
 					all_controlled_state = {
-						NOT = { has_state_flag = touhou_state_flag_evi_military_academy_mass }
-					}				
-				}	
-			}		
+						NOT = {
+							has_state_flag = touhou_state_flag_evi_military_academy_mass
+						}
+					}
+				}
+			}
 		}
 		available = {
 			hidden_trigger = {
@@ -1120,8 +1144,10 @@ touhou_decisions_categories_evi_military_academy = {
 				custom_trigger_tooltip = {
 					tooltip = touhou_tooltip_evi_military_academy_cancel
 					all_controlled_state = {
-						NOT = { has_state_flag = touhou_state_flag_evi_military_academy_mass }
-					}				
+						NOT = {
+							has_state_flag = touhou_state_flag_evi_military_academy_mass
+						}
+					}
 				}
 			}
 		}
@@ -1130,16 +1156,18 @@ touhou_decisions_categories_evi_military_academy = {
 				activate_mission = touhou_mission_evi_military_academy
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_country_flag = touhou_country_flag_evi_military_academy_1
 					NOT = {
 						has_country_flag = touhou_country_flag_evi_military_academy_2
 						has_country_flag = touhou_country_flag_evi_military_academy_3
 						has_country_flag = touhou_country_flag_evi_military_academy_4
-					} 
+					}
 				}
 				if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_infantry }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_infantry
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_infantry
 					every_controlled_state = {
 						limit = {
@@ -1153,7 +1181,9 @@ touhou_decisions_categories_evi_military_academy = {
 					}
 				}
 				else_if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_armor }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_armor
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_armor
 					every_controlled_state = {
 						limit = {
@@ -1167,7 +1197,9 @@ touhou_decisions_categories_evi_military_academy = {
 					}
 				}
 				else_if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_artillery }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_artillery
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_artillery
 					every_controlled_state = {
 						limit = {
@@ -1182,16 +1214,18 @@ touhou_decisions_categories_evi_military_academy = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_country_flag = touhou_country_flag_evi_military_academy_1
 					has_country_flag = touhou_country_flag_evi_military_academy_2
 					NOT = {
 						has_country_flag = touhou_country_flag_evi_military_academy_3
 						has_country_flag = touhou_country_flag_evi_military_academy_4
-					} 
+					}
 				}
 				if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_infantry }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_infantry
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_infantry
 					every_controlled_state = {
 						limit = {
@@ -1205,7 +1239,9 @@ touhou_decisions_categories_evi_military_academy = {
 					}
 				}
 				else_if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_armor }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_armor
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_armor
 					every_controlled_state = {
 						limit = {
@@ -1219,7 +1255,9 @@ touhou_decisions_categories_evi_military_academy = {
 					}
 				}
 				else_if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_artillery }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_artillery
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_artillery
 					every_controlled_state = {
 						limit = {
@@ -1234,16 +1272,18 @@ touhou_decisions_categories_evi_military_academy = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_country_flag = touhou_country_flag_evi_military_academy_1
 					has_country_flag = touhou_country_flag_evi_military_academy_2
 					has_country_flag = touhou_country_flag_evi_military_academy_3
 					NOT = {
 						has_country_flag = touhou_country_flag_evi_military_academy_4
-					} 
+					}
 				}
 				if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_infantry }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_infantry
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_infantry
 					every_controlled_state = {
 						limit = {
@@ -1257,7 +1297,9 @@ touhou_decisions_categories_evi_military_academy = {
 					}
 				}
 				else_if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_armor }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_armor
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_armor
 					every_controlled_state = {
 						limit = {
@@ -1271,7 +1313,9 @@ touhou_decisions_categories_evi_military_academy = {
 					}
 				}
 				else_if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_artillery }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_artillery
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_artillery
 					every_controlled_state = {
 						limit = {
@@ -1286,14 +1330,16 @@ touhou_decisions_categories_evi_military_academy = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_country_flag = touhou_country_flag_evi_military_academy_1
 					has_country_flag = touhou_country_flag_evi_military_academy_2
 					has_country_flag = touhou_country_flag_evi_military_academy_3
 					has_country_flag = touhou_country_flag_evi_military_academy_4
 				}
 				if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_infantry }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_infantry
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_infantry
 					every_controlled_state = {
 						limit = {
@@ -1307,7 +1353,9 @@ touhou_decisions_categories_evi_military_academy = {
 					}
 				}
 				else_if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_armor }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_armor
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_armor
 					every_controlled_state = {
 						limit = {
@@ -1321,7 +1369,9 @@ touhou_decisions_categories_evi_military_academy = {
 					}
 				}
 				else_if = {
-					limit = { has_country_flag = touhou_country_flag_evi_military_academy_artillery }
+					limit = {
+						has_country_flag = touhou_country_flag_evi_military_academy_artillery
+					}
 					custom_effect_tooltip = touhou_country_flag_evi_military_academy_artillery
 					every_controlled_state = {
 						limit = {
@@ -1339,9 +1389,8 @@ touhou_decisions_categories_evi_military_academy = {
 		ai_will_do = {
 			factor = 200
 		}
-	}	
-	#下面是ai适配
-	touhou_mission_ai_evi_military_academy_1 = {#AI建设妖精军事学校
+	}
+	touhou_mission_ai_evi_military_academy_1 = {
 		icon = GFX_trait_units_evil
 		fire_only_once = yes
 		activation = {
@@ -1365,8 +1414,8 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精步兵师"
 				regiments = {
-					evil_brigade = 0
-					evil_brigade = 0
+					infantry = 0
+					infantry = 0
 				}
 			}
 			set_division_template_cap = {
@@ -1376,8 +1425,8 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精突击师"
 				regiments = {
-					evil_brigade = 0
-					evil_armor_brigade = 1
+					infantry = 0
+					medium_armor = 1
 				}
 			}
 			set_division_template_cap = {
@@ -1387,11 +1436,11 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精炮兵师"
 				regiments = {
-					evil_brigade = 0
-					evil_artillery_brigade = 1
+					infantry = 0
+					artillery_brigade = 1
 				}
 			}
-			set_country_flag = touhou_country_flag_evi_military_academy_1 
+			set_country_flag = touhou_country_flag_evi_military_academy_1
 			set_country_flag = touhou_country_flag_evi_military_academy_infantry
 			set_country_flag = touhou_country_flag_evi_military_academy_move
 			random_controlled_state = {
@@ -1401,13 +1450,15 @@ touhou_decisions_categories_evi_military_academy = {
 			activate_mission = touhou_mission_ai_evi_military_academy
 		}
 	}
-	touhou_mission_ai_evi_military_academy_2 = {#AI扩建妖精军事学校
+	touhou_mission_ai_evi_military_academy_2 = {
 		icon = GFX_trait_units_evil
 		fire_only_once = yes
 		activation = {
 			is_ai = yes
 			has_country_flag = touhou_country_flag_evi_military_academy_1
-			NOT = {	has_country_flag = touhou_country_flag_evi_military_academy_2 }
+			NOT = {
+				has_country_flag = touhou_country_flag_evi_military_academy_2
+			}
 		}
 		available = {
 			always = no
@@ -1424,8 +1475,8 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精步兵师"
 				regiments = {
-					evil_brigade = 1
-					evil_brigade = 1
+					infantry = 1
+					infantry = 1
 				}
 			}
 			set_division_template_cap = {
@@ -1435,8 +1486,8 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精突击师"
 				regiments = {
-					evil_brigade = 0
-					evil_armor_brigade = 1
+					infantry = 0
+					medium_armor = 1
 				}
 			}
 			set_division_template_cap = {
@@ -1446,25 +1497,27 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精炮兵师"
 				regiments = {
-					evil_brigade = 0
-					evil_artillery_brigade = 1
+					infantry = 0
+					artillery_brigade = 1
 				}
 			}
 			clr_country_flag = touhou_country_flag_evi_military_academy_updating
-			set_country_flag = touhou_country_flag_evi_military_academy_2 
+			set_country_flag = touhou_country_flag_evi_military_academy_2
 			random_controlled_state = {
 				set_state_flag = touhou_state_flag_evi_military_academy_mass
 			}
 			activate_mission = touhou_mission_ai_evi_military_academy_3
 		}
 	}
-	touhou_mission_ai_evi_military_academy_3 = {#AI再次扩建妖精军事学校
+	touhou_mission_ai_evi_military_academy_3 = {
 		icon = GFX_trait_units_evil
 		fire_only_once = yes
 		activation = {
 			is_ai = yes
 			has_country_flag = touhou_country_flag_evi_military_academy_2
-			NOT = {	has_country_flag = touhou_country_flag_evi_military_academy_3 }
+			NOT = {
+				has_country_flag = touhou_country_flag_evi_military_academy_3
+			}
 		}
 		available = {
 			always = no
@@ -1481,10 +1534,10 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精步兵师"
 				regiments = {
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_brigade = 3
-					evil_brigade = 3
+					infantry = 2
+					infantry = 2
+					infantry = 3
+					infantry = 3
 				}
 			}
 			set_division_template_cap = {
@@ -1494,10 +1547,10 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精突击师"
 				regiments = {
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_armor_brigade = 3
-					evil_armor_brigade = 3
+					infantry = 2
+					infantry = 2
+					medium_armor = 3
+					medium_armor = 3
 				}
 			}
 			set_division_template_cap = {
@@ -1507,27 +1560,29 @@ touhou_decisions_categories_evi_military_academy = {
 			add_units_to_division_template = {
 				template_name = "妖精炮兵师"
 				regiments = {
-					evil_brigade = 2
-					evil_brigade = 2
-					evil_artillery_brigade = 3
-					evil_artillery_brigade = 3
+					infantry = 2
+					infantry = 2
+					artillery_brigade = 3
+					artillery_brigade = 3
 				}
 			}
 			clr_country_flag = touhou_country_flag_evi_military_academy_updating
-			set_country_flag = touhou_country_flag_evi_military_academy_3 
+			set_country_flag = touhou_country_flag_evi_military_academy_3
 			random_controlled_state = {
 				set_state_flag = touhou_state_flag_evi_military_academy_mass
 			}
 			activate_mission = touhou_mission_ai_evi_military_academy_4
 		}
 	}
-	touhou_mission_ai_evi_military_academy_4 = {#AI再次扩建妖精军事学校
+	touhou_mission_ai_evi_military_academy_4 = {
 		icon = GFX_trait_units_evil
 		fire_only_once = yes
 		activation = {
 			is_ai = yes
 			has_country_flag = touhou_country_flag_evi_military_academy_3
-			NOT = {	has_country_flag = touhou_country_flag_evi_military_academy_4 }
+			NOT = {
+				has_country_flag = touhou_country_flag_evi_military_academy_4
+			}
 		}
 		available = {
 			always = no
@@ -1541,33 +1596,33 @@ touhou_decisions_categories_evi_military_academy = {
 				division_template = "妖精步兵师"
 				is_locked = no
 			}
-			clear_division_template_cap = { 
+			clear_division_template_cap = {
 				division_template = "妖精步兵师"
 			}
 			set_division_template_lock = {
 				division_template = "妖精突击师"
 				is_locked = no
 			}
-			clear_division_template_cap = { 
+			clear_division_template_cap = {
 				division_template = "妖精突击师"
 			}
 			set_division_template_lock = {
 				division_template = "妖精炮兵师"
 				is_locked = no
 			}
-			clear_division_template_cap = { 
+			clear_division_template_cap = {
 				division_template = "妖精炮兵师"
 			}
 			clr_country_flag = touhou_country_flag_evi_military_academy_updating
-			set_country_flag = touhou_country_flag_evi_military_academy_4 
+			set_country_flag = touhou_country_flag_evi_military_academy_4
 			random_controlled_state = {
 				set_state_flag = touhou_state_flag_evi_military_academy_mass
 			}
 		}
 	}
-	touhou_mission_ai_evi_military_academy = {#AI妖精军事学校
+	touhou_mission_ai_evi_military_academy = {
 		activation = {
-			is_ai = yes 
+			is_ai = yes
 			has_country_flag = touhou_country_flag_evi_military_academy_1
 		}
 		available = {
@@ -1587,13 +1642,13 @@ touhou_decisions_categories_evi_military_academy = {
 				activate_mission = touhou_mission_ai_evi_military_academy
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_country_flag = touhou_country_flag_evi_military_academy_1
 					NOT = {
 						has_country_flag = touhou_country_flag_evi_military_academy_2
 						has_country_flag = touhou_country_flag_evi_military_academy_3
 						has_country_flag = touhou_country_flag_evi_military_academy_4
-					} 
+					}
 				}
 				random_controlled_state = {
 					create_unit = {
@@ -1618,13 +1673,13 @@ touhou_decisions_categories_evi_military_academy = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_country_flag = touhou_country_flag_evi_military_academy_1
 					has_country_flag = touhou_country_flag_evi_military_academy_2
 					NOT = {
 						has_country_flag = touhou_country_flag_evi_military_academy_3
 						has_country_flag = touhou_country_flag_evi_military_academy_4
-					} 
+					}
 				}
 				random_controlled_state = {
 					create_unit = {
@@ -1649,13 +1704,13 @@ touhou_decisions_categories_evi_military_academy = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_country_flag = touhou_country_flag_evi_military_academy_1
 					has_country_flag = touhou_country_flag_evi_military_academy_2
 					has_country_flag = touhou_country_flag_evi_military_academy_3
 					NOT = {
 						has_country_flag = touhou_country_flag_evi_military_academy_4
-					} 
+					}
 				}
 				random_controlled_state = {
 					create_unit = {
@@ -1680,7 +1735,7 @@ touhou_decisions_categories_evi_military_academy = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_country_flag = touhou_country_flag_evi_military_academy_1
 					has_country_flag = touhou_country_flag_evi_military_academy_2
 					has_country_flag = touhou_country_flag_evi_military_academy_3
@@ -1712,5 +1767,5 @@ touhou_decisions_categories_evi_military_academy = {
 		ai_will_do = {
 			factor = 200
 		}
-	}	
+	}
 }

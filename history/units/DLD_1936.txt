@@ -1,47 +1,60 @@
-﻿division_template = {
-	name = "地灵殿守卫" 
-
+division_template = {
+	name = "地灵殿守卫"
 	regiments = {
-		touhou_demonforce_infantry = { x = 0 y = 0 }
-		touhou_demonforce_cavalry = { x = 0 y = 1 }
+		infantry = {
+			x = 0
+			y = 0
+		}
+		cavalry = {
+			x = 0
+			y = 1
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "魔兽小队" 
-
+	name = "魔兽小队"
 	regiments = {
-		touhou_demonforce_infantry = { x = 0 y = 0 }
+		infantry = {
+			x = 0
+			y = 0
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "魔兽大队" 
-
+	name = "魔兽大队"
 	regiments = {
-		touhou_demonforce_infantry = { x = 0 y = 0 }
-		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
 	}
 	support = {
-
 	}
 }
-##### OOB #####
 units = {
-
-	division = { 
+	division = {
 		name = "地狱猫小队"
-		location = 13546 
+		location = 13546
 		division_template = "地灵殿守卫"
 		start_experience_factor = 0.2
 	}
-	division = { 
+	division = {
 		name = "地狱鸦小队"
 		location = 13546
 		division_template = "地灵殿守卫"
@@ -49,9 +62,9 @@ units = {
 	}
 }
 air_wings = {
-	1097 = { 
+	1097 = {
 		touhou_demonforce_fighter_equipment_0 = {
-			owner = "DLD" 
+			owner = "DLD"
 			amount = 40
 		}
 	}

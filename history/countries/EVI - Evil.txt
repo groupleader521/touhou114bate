@@ -1,12 +1,8 @@
-﻿capital = 1082
-
+capital = 1082
 oob = "EVI_1936"
-
-set_stability = 0.5 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.5
 set_war_support = 0.5
-
 set_research_slots = 1
-
 add_ideas = {
 	touhou_ideas_trump_card
 	evil_trait
@@ -19,13 +15,15 @@ add_ideas = {
 	wakan_first_research
 	touhou_fiscal_society
 }
-
+set_country_flag = touhou_project_unlocked_evil_army
+set_technology = {
+	infantry_weapons = 1
+}
+touhou_sync_vanilla_military = yes
 set_technology = {
 	transport = 1
 	basic_train = 1
-	evil_army = 1
 }
-
 set_convoys = 0
 set_popularities = {
 	neutrality = 100
@@ -36,10 +34,8 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
 recruit_character = TOUHOU_Cirno
 recruit_character = TOUHOU_Daiyousei
-
 add_country_leader_role = {
 	character = TOUHOU_Cirno
 	promote_leader = yes
@@ -87,7 +83,9 @@ add_country_leader_role = {
 add_field_marshal_role = {
 	character = TOUHOU_Cirno
 	traits = {
-		units_evil winter_specialist winter_expert
+		units_evil
+		winter_specialist
+		winter_expert
 	}
 	skill = 1
 	attack_skill = 1
@@ -98,7 +96,9 @@ add_field_marshal_role = {
 add_field_marshal_role = {
 	character = TOUHOU_Daiyousei
 	traits = {
-		units_evil jungle_rat ranger
+		units_evil
+		jungle_rat
+		ranger
 	}
 	skill = 1
 	attack_skill = 1
@@ -107,26 +107,38 @@ add_field_marshal_role = {
 	logistics_skill = 1
 }
 set_country_flag = touhou_country_flag_wakan_first_research
-
 if = {
-	limit = { has_dlc = "La Resistance" }
+	limit = {
+		has_dlc = "La Resistance"
+	}
 	create_operative_leader = {
 		name = "冰妖精"
 		GFX = GFX_Cirno
-		traits = { operative_infiltrator }
+		traits = {
+			operative_infiltrator
+		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { EVI ALI MLS }
+		nationalities = {
+			EVI
+			ALI
+			MLS
+		}
 	}
-
 	create_operative_leader = {
 		name = "妖精"
 		GFX = GFX_Daiyousei
-		traits = { operative_infiltrator }
+		traits = {
+			operative_infiltrator
+		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { EVI VAM }
+		nationalities = {
+			EVI
+			VAM
+		}
 	}
 }
+touhou_sync_vanilla_military = yes

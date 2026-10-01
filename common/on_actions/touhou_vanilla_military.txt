@@ -1,0 +1,56 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = ALI
+						original_tag = DES
+						original_tag = HAK
+						original_tag = DLD
+						original_tag = HEL
+						original_tag = SSS
+						original_tag = OPP
+						original_tag = RAB
+						original_tag = TEM
+						original_tag = BLQ
+						original_tag = KAP
+						original_tag = TEN
+						original_tag = HUM
+						original_tag = VAM
+						original_tag = MLS
+						original_tag = EVI
+					}
+				}
+				touhou_sync_vanilla_military = yes
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = ALI
+						original_tag = DES
+						original_tag = HAK
+						original_tag = DLD
+						original_tag = HEL
+						original_tag = SSS
+						original_tag = OPP
+						original_tag = RAB
+						original_tag = TEM
+						original_tag = BLQ
+						original_tag = KAP
+						original_tag = TEN
+						original_tag = HUM
+						original_tag = VAM
+						original_tag = MLS
+						original_tag = EVI
+					}
+				}
+				touhou_sync_vanilla_military = yes
+			}
+		}
+	}
+}

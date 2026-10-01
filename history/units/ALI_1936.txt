@@ -1,76 +1,101 @@
-﻿division_template = {
-	name = "步战人偶卫队" 
-
+division_template = {
+	name = "步战人偶卫队"
 	regiments = {
-		touhou_magic_infantry = { x = 0 y = 0 }
+		infantry = {
+			x = 0
+			y = 0
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "步战人偶中队" 
-
+	name = "步战人偶中队"
 	regiments = {
-		touhou_magic_infantry = { x = 0 y = 0 }
-		touhou_magic_infantry = { x = 0 y = 1 }
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "步战人偶大队" 
-
+	name = "步战人偶大队"
 	regiments = {
-		touhou_magic_infantry = { x = 0 y = 0 }
-		touhou_magic_infantry = { x = 0 y = 1 }
-		touhou_magic_infantry = { x = 0 y = 2 }
-		touhou_magic_infantry = { x = 0 y = 3 }
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "高速人偶卫队" 
-
+	name = "高速人偶卫队"
 	regiments = {
-		touhou_magic_light_armor = { x = 0 y = 0 }
-		touhou_magic_light_armor = { x = 0 y = 1 }
-		touhou_magic_infantry = { x = 1 y = 0 }
-		touhou_magic_infantry = { x = 1 y = 1 }
+		light_armor = {
+			x = 0
+			y = 0
+		}
+		light_armor = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
 	}
 }
 division_template = {
 	name = "歌利亚战团"
-
 	regiments = {
-		goliath_brigade = { x = 0 y = 0 }
-		goliath_brigade = { x = 0 y = 1 }
+		heavy_armor = {
+			x = 0
+			y = 0
+		}
+		heavy_armor = {
+			x = 0
+			y = 1
+		}
 	}
 }
-##### OOB #####
 units = {
-    
 }
-
 air_wings = {
-	1094 = { 
+	1094 = {
 		suicide_puppet_equipment_2 = {
-			owner = "ALI" 
+			owner = "ALI"
 			amount = 10
 		}
-
-		suicide_puppet_equipment_2 =  {
-			owner = "ALI" 
+		suicide_puppet_equipment_2 = {
+			owner = "ALI"
 			amount = 10
 		}
 	}
 }
-
-instant_effect = 
-{
+instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = touhou_magic_light_tank_equipment_1

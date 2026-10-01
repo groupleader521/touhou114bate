@@ -1,0 +1,45 @@
+# Vanilla archetypes; original Touhou finished-model statistics are preserved.
+equipments = {
+	touhou_support_equipment_1 = {
+		archetype = support_equipment
+		year = 1918
+		interface_category = interface_category_land
+		reliability = 0.8
+		lend_lease_cost = 1
+		build_cost_ic = 4
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+		priority = 20
+		picture = touhou_support_equipment_1
+		variant_name = touhou_support_equipment_1
+		derived_variant_name = touhou_support_equipment_1
+		fuel_consumption = 0
+		manpower = 0
+		is_buildable = yes
+		active = no
+		can_be_produced = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+			has_tech = tech_support
+			has_country_flag = touhou_registered_model_touhou_support_equipment_1
+		}
+	}
+}

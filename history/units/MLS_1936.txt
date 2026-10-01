@@ -1,83 +1,119 @@
-﻿division_template = {
-	name = "法师小队" 
-
+division_template = {
+	name = "法师小队"
 	regiments = {
-		touhou_magic_infantry = { x = 0 y = 0 }
+		infantry = {
+			x = 0
+			y = 0
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "香霖堂守卫" 
-
+	name = "香霖堂守卫"
 	regiments = {
-		touhou_magic_infantry = { x = 0 y = 0 }
-		touhou_magic_infantry = { x = 0 y = 1 }
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "法师大队" 
-
+	name = "法师大队"
 	regiments = {
-		touhou_magic_infantry = { x = 0 y = 0 }
-		touhou_magic_infantry = { x = 0 y = 1 }
-		touhou_magic_infantry = { x = 0 y = 2 }
-		touhou_magic_infantry = { x = 0 y = 3 }
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "超·火力部队" 
+	name = "超·火力部队"
 	division_cap = 1
 	regiments = {
-		touhou_magic_infantry = { x = 0 y = 0 }
-		touhou_magic_infantry = { x = 0 y = 1 }
-		touhou_magic_infantry = { x = 0 y = 2 }
-		touhou_magic_infantry = { x = 0 y = 3 }
-
-		touhou_magic_infantry = { x = 1 y = 0 }
-		touhou_magic_infantry = { x = 1 y = 1 }
-		touhou_magic_infantry = { x = 1 y = 2 }
-		touhou_magic_infantry = { x = 1 y = 3 }
-		magician_brigade = { x = 2 y = 0 }
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 3
+		}
+		artillery_brigade = {
+			x = 2
+			y = 0
+		}
 	}
-	#support = {
-	#	touhou_engineer = { x = 0 y = 1 } 魔理沙没有这个类型的编制会报错
-	#}
 }
-##### OOB #####
 units = {
-
-	division = { 
+	division = {
 		name = "香霖堂守卫"
 		location = 13419
 		division_template = "香霖堂守卫"
 		start_experience_factor = 0.2
 	}
-	division = { 
+	division = {
 		name = "魔法森林守卫"
 		location = 13419
 		division_template = "香霖堂守卫"
 		start_experience_factor = 0.2
 	}
-	division = { 
+	division = {
 		name = "极限火力军"
-		location = 13419 
+		location = 13419
 		division_template = "超·火力部队"
 		start_equipment_factor = 0.1
 		start_experience_factor = 1
-	}	
+	}
 }
 air_wings = {
-	1093 = { 
+	1093 = {
 		touhou_magic_fighter_equipment_0 = {
-			owner = "MLS" 
+			owner = "MLS"
 			amount = 40
 		}
 	}

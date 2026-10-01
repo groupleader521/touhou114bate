@@ -1,6 +1,6 @@
-﻿capital = 1094
+capital = 1094
 oob = "ALI_1936"
-set_stability = 0.72#baseline, THE EMPEROR PROTECTS
+set_stability = 0.72
 set_war_support = 0.55
 set_research_slots = 1
 add_ideas = {
@@ -20,38 +20,107 @@ add_ideas = {
 	ALI_suicide_puppet_big_trait
 	ALI_goliath_trait
 }
-
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		basic_light_tank_chassis = 1
+	}
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {
+		iw_small_airframe = 1
+	}
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {
+		iw_medium_airframe = 1
+	}
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_technology = {
+		early_bomber = 1
+	}
+}
+set_country_flag = touhou_project_unlocked_suicide_puppet_craft_1
+touhou_sync_vanilla_military = yes
+set_country_flag = touhou_project_unlocked_suicide_puppet_craft_2
+touhou_sync_vanilla_military = yes
+set_country_flag = touhou_project_unlocked_goliath_0
+touhou_sync_vanilla_military = yes
+set_country_flag = touhou_project_unlocked_goliath_0
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		basic_heavy_tank_chassis = 1
+	}
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		basic_heavy_tank = 1
+	}
+}
+load_oob = "unlock_goliath"
+touhou_sync_vanilla_military = yes
 set_technology = {
-	touhou_magic_infantry_weapons = 1
-	touhou_magic_basic_light_tank = 1
-	touhou_magic_early_fighter = 1
-	touhou_magic_early_bomber = 1
+	infantry_weapons = 1
 	tech_support = 1
 	transport = 1
 	basic_train = 1
-	suicide_puppet_craft_1 = 1
-	suicide_puppet_craft_2 = 1
-	goliath_0 = 1
-	goliath_1 = 1
 }
-
 add_dynamic_modifier = {
 	modifier = touhou_dynamic_modifiers_alice_doll
 }
-
 give_guarantee = MLS
 set_convoys = 0
 set_popularities = {
 	neutrality = 100
 }
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 recruit_character = TOUHOU_Alice_Margatroid
 recruit_character = TOUHOU_Shanghai_Ningyou
 recruit_character = TOUHOU_Hourai_Ningyou
@@ -61,8 +130,6 @@ country_event = {
 	days = 3
 	random_days = 1
 }
-
-
 add_field_marshal_role = {
 	character = TOUHOU_Alice_Margatroid
 	traits = {
@@ -85,7 +152,6 @@ add_field_marshal_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Alice_Margatroid
-	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Alice_Margatroid
 		slot = political_advisor
@@ -97,7 +163,6 @@ add_advisor_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Alice_Margatroid
-	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Alice_Margatroid
 		slot = army_chief
@@ -109,7 +174,6 @@ add_advisor_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Alice_Margatroid
-	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Alice_Margatroid
 		slot = high_command
@@ -119,7 +183,6 @@ add_advisor_role = {
 		cost = 150
 	}
 }
-
 add_country_leader_role = {
 	character = TOUHOU_Alice_Margatroid
 	promote_leader = yes
@@ -131,7 +194,6 @@ add_country_leader_role = {
 		}
 	}
 }
-
 add_country_leader_role = {
 	character = TOUHOU_Alice_Margatroid
 	promote_leader = yes
@@ -143,7 +205,6 @@ add_country_leader_role = {
 		}
 	}
 }
-
 add_country_leader_role = {
 	character = TOUHOU_Alice_Margatroid
 	promote_leader = yes
@@ -155,7 +216,6 @@ add_country_leader_role = {
 		}
 	}
 }
-
 add_country_leader_role = {
 	character = TOUHOU_Alice_Margatroid
 	promote_leader = yes
@@ -167,7 +227,6 @@ add_country_leader_role = {
 		}
 	}
 }
-
 add_corps_commander_role = {
 	character = TOUHOU_Shanghai_Ningyou
 	traits = {
@@ -183,7 +242,6 @@ add_corps_commander_role = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
 add_corps_commander_role = {
 	character = TOUHOU_Hourai_Ningyou
 	traits = {
@@ -199,7 +257,6 @@ add_corps_commander_role = {
 	planning_skill = 3
 	logistics_skill = 3
 }
-
 if = {
 	limit = {
 		has_dlc = "La Resistance"
@@ -241,3 +298,4 @@ if = {
 		}
 	}
 }
+touhou_sync_vanilla_military = yes

@@ -1,12 +1,8 @@
-﻿capital = 1102
-
+capital = 1102
 oob = "TEM_1936"
-
-set_stability = 0.4 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.4
 set_war_support = 0.2
-
 set_research_slots = 1
-
 add_ideas = {
 	touhou_ideas_trump_card
 	human_trait
@@ -18,25 +14,41 @@ add_ideas = {
 	limited_conscription
 	magic_first_research
 	touhou_fiscal_society
-    lotus_trait 
+	lotus_trait
 }
-
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {
+		iw_small_airframe = 1
+	}
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+set_country_flag = touhou_project_unlocked_lotus
 set_technology = {
-	touhou_magic_infantry_weapons = 1
-	touhou_magic_interwar_antitank = 1
-	touhou_magic_early_fighter = 1
-	touhou_magic_gw_artillery = 1
+	basic_ship_hull_carrier = 1
+}
+touhou_sync_vanilla_military = yes
+set_technology = {
+	infantry_weapons = 1
+	interwar_antitank = 1
+	gw_artillery = 1
 	tech_support = 1
 	transport = 1
 	basic_train = 1
-	lotus = 1
 }
-
 give_guarantee = HUM
 give_guarantee = MLS
-
-
-
 set_convoys = 0
 set_popularities = {
 	communism = 60
@@ -49,16 +61,17 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
 recruit_character = TOUHOU_Hijiri_Byakuren
 recruit_character = TOUHOU_Toramar_Shou
 recruit_character = TOUHOU_Murasa_Minamitu
 recruit_character = TOUHOU_Kumoi_Ichirin
-
 add_field_marshal_role = {
 	character = TOUHOU_Hijiri_Byakuren
 	traits = {
-		units_human infantry_leader urban_assault_specialist ambusher
+		units_human
+		infantry_leader
+		urban_assault_specialist
+		ambusher
 	}
 	skill = 4
 	attack_skill = 4
@@ -67,8 +80,8 @@ add_field_marshal_role = {
 	logistics_skill = 4
 }
 add_country_leader_role = {
-    character = TOUHOU_Hijiri_Byakuren
-    promote_leader = yes
+	character = TOUHOU_Hijiri_Byakuren
+	promote_leader = yes
 	country_leader = {
 		expire = "11089.1.1"
 		ideology = centrism
@@ -78,8 +91,8 @@ add_country_leader_role = {
 	}
 }
 add_country_leader_role = {
-    character = TOUHOU_Hijiri_Byakuren
-    promote_leader = yes
+	character = TOUHOU_Hijiri_Byakuren
+	promote_leader = yes
 	country_leader = {
 		expire = "11089.1.1"
 		ideology = fascism_ideology
@@ -89,8 +102,8 @@ add_country_leader_role = {
 	}
 }
 add_country_leader_role = {
-    character = TOUHOU_Hijiri_Byakuren
-    promote_leader = yes
+	character = TOUHOU_Hijiri_Byakuren
+	promote_leader = yes
 	country_leader = {
 		expire = "11089.1.1"
 		ideology = liberalism
@@ -100,8 +113,8 @@ add_country_leader_role = {
 	}
 }
 add_country_leader_role = {
-    character = TOUHOU_Hijiri_Byakuren
-    promote_leader = yes
+	character = TOUHOU_Hijiri_Byakuren
+	promote_leader = yes
 	country_leader = {
 		expire = "11089.1.1"
 		ideology = marxism
@@ -112,40 +125,44 @@ add_country_leader_role = {
 }
 add_advisor_role = {
 	character = TOUHOU_Hijiri_Byakuren
-	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Hijiri_Byakuren
 		slot = political_advisor
-		traits = { touhou_compassionate_gentleman }
+		traits = {
+			touhou_compassionate_gentleman
+		}
 		cost = 150
 	}
 }
 add_advisor_role = {
 	character = TOUHOU_Hijiri_Byakuren
-	#activate = yes
 	advisor = {
 		idea_token = TOUHOU_Hijiri_Byakuren
 		slot = army_chief
-		traits = { touhou_army_chief_maneuver_3 }
+		traits = {
+			touhou_army_chief_maneuver_3
+		}
 		cost = 150
 	}
 }
 add_advisor_role = {
 	character = TOUHOU_Hijiri_Byakuren
-	#activate = yes
-	
-	
 	advisor = {
 		idea_token = TOUHOU_Hijiri_Byakuren
 		slot = high_command
-		traits = { touhou_army_chief_defensive_3 }
+		traits = {
+			touhou_army_chief_defensive_3
+		}
 		cost = 150
 	}
 }
 add_corps_commander_role = {
 	character = TOUHOU_Toramar_Shou
 	traits = {
-		units_human infantry_leader urban_assault_specialist ambusher
+		units_human
+		infantry_leader
+		urban_assault_specialist
+		ambusher
 	}
 	skill = 3
 	attack_skill = 3
@@ -155,22 +172,35 @@ add_corps_commander_role = {
 }
 add_corps_commander_role = {
 	character = TOUHOU_Murasa_Minamitu
-	traits = { battleship_adherent navy_career_officer bold gunnery_expert blue_water_expert superior_tactician spotter ironside lone_wolf big_guns_expert ground_pounder safety_first marksman crisis_magician }
+	traits = {
+		battleship_adherent
+		navy_career_officer
+		bold
+		gunnery_expert
+		blue_water_expert
+		superior_tactician
+		spotter
+		ironside
+		lone_wolf
+		big_guns_expert
+		ground_pounder
+		safety_first
+		marksman
+		crisis_magician
+	}
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4
 	maneuvering_skill = 4
 	coordination_skill = 4
 }
-#add_advisor_role = {
-#	character = TOUHOU_Murasa_Minamitu
-#	#activate = yes
-#	
-#}
 add_corps_commander_role = {
 	character = TOUHOU_Kumoi_Ichirin
 	traits = {
-		units_human infantry_leader urban_assault_specialist ambusher
+		units_human
+		infantry_leader
+		urban_assault_specialist
+		ambusher
 	}
 	skill = 2
 	attack_skill = 2
@@ -179,26 +209,44 @@ add_corps_commander_role = {
 	logistics_skill = 2
 }
 set_country_flag = touhou_country_flag_magic_first_research
-
 if = {
-	limit = { has_dlc = "La Resistance" }
+	limit = {
+		has_dlc = "La Resistance"
+	}
 	create_operative_leader = {
 		name = "正体不明"
 		GFX = GFX_Houjuu_Nue
-		traits = { operative_escape_artist operative_seducer operative_infiltrator }
+		traits = {
+			operative_escape_artist
+			operative_seducer
+			operative_infiltrator
+		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { TEM DES SSS }
+		nationalities = {
+			TEM
+			DES
+			SSS
+		}
 	}
-
 	create_operative_leader = {
 		name = "寻宝鼠"
 		GFX = GFX_Nazrin
-		traits = { operative_safe_cracker operative_well_groomed operative_linguist }
+		traits = {
+			operative_safe_cracker
+			operative_well_groomed
+			operative_linguist
+		}
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { TEM HUM MLS BLQ }
+		nationalities = {
+			TEM
+			HUM
+			MLS
+			BLQ
+		}
 	}
 }
+touhou_sync_vanilla_military = yes

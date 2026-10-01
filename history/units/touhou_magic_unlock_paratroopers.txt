@@ -1,9 +1,17 @@
-﻿division_template = {
+division_template = {
 	name = "大气元素"
-
 	regiments = {
-		touhou_magic_paratrooper = { x = 0 y = 0 }
-		touhou_magic_paratrooper = { x = 0 y = 1 }
-        touhou_magic_paratrooper = { x = 0 y = 2 }
+		paratrooper = {
+			x = 0
+			y = 0
+		}
+		paratrooper = {
+			x = 0
+			y = 1
+		}
+		paratrooper = {
+			x = 0
+			y = 2
+		}
 	}
 }

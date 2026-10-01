@@ -1,56 +1,70 @@
-﻿division_template = {
-	name = "鬼" 
-
+division_template = {
+	name = "鬼"
 	regiments = {
-		touhou_demonforce_infantry = { x = 0 y = 0 }
-		touhou_demonforce_infantry = { x = 0 y = 1 }
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "鬼小队" 
-
+	name = "鬼小队"
 	regiments = {
-		touhou_demonforce_infantry = { x = 0 y = 0 }
+		infantry = {
+			x = 0
+			y = 0
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "鬼大队" 
-
+	name = "鬼大队"
 	regiments = {
-		touhou_demonforce_infantry = { x = 0 y = 0 }
-		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
 	}
 	support = {
-
 	}
 }
-##### OOB #####
 units = {
-	division = { 
+	division = {
 		name = "斗鬼"
-		location = 13518 
+		location = 13518
 		division_template = "鬼"
 		start_experience_factor = 0.3
 	}
-	division = { 
+	division = {
 		name = "战鬼"
-		location = 13518 
+		location = 13518
 		division_template = "鬼"
 		start_experience_factor = 0.3
 	}
 }
 air_wings = {
-	1096 = { 
+	1096 = {
 		touhou_demonforce_fighter_equipment_0 = {
-			owner = "HEL" 
+			owner = "HEL"
 			amount = 40
 		}
 	}

@@ -1,48 +1,60 @@
-﻿division_template = {
-	name = "守矢巫女小队" 
-
+division_template = {
+	name = "守矢巫女小队"
 	regiments = {
-		touhou_wakan_infantry = { x = 0 y = 0 }
+		infantry = {
+			x = 0
+			y = 0
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "守矢巫女" 
-
+	name = "守矢巫女"
 	regiments = {
-		touhou_wakan_infantry = { x = 0 y = 0 }
-		touhou_wakan_infantry = { x = 0 y = 1 }
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "守矢巫女大队" 
-
+	name = "守矢巫女大队"
 	regiments = {
-		touhou_wakan_infantry = { x = 0 y = 0 }
-		touhou_wakan_infantry = { x = 0 y = 1 }
-		touhou_wakan_infantry = { x = 0 y = 2 }
-		touhou_wakan_infantry = { x = 0 y = 3 }
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
 	}
 	support = {
-
 	}
 }
-
-##### OOB #####
 units = {
-
-	division = { 
+	division = {
 		name = "神明侍从"
 		location = 13551
 		division_template = "守矢巫女"
 		start_experience_factor = 0.3
 	}
-	division = { 
+	division = {
 		name = "信仰狩猎队"
 		location = 13529
 		division_template = "守矢巫女"
@@ -50,9 +62,9 @@ units = {
 	}
 }
 air_wings = {
-	1107 = { 
+	1107 = {
 		touhou_wakan_fighter_equipment_0 = {
-			owner = "SSS" 
+			owner = "SSS"
 			amount = 40
 		}
 	}

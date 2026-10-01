@@ -1,0 +1,23 @@
+[12:36:51][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/MIRA.mod line: 7
+[12:36:51][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_1862018480.mod line: 8
+[12:36:51][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_2829179259.mod line: 7
+[12:36:51][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3157816605.mod line: 6
+[12:36:51][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3310177852.mod line: 6
+[12:36:51][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3322324112.mod line: 8
+[12:36:51][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3405989555.mod line: 6
+[12:36:51][no_game_date][dlc.cpp:218]: Invalid supported_version in  file: mod/ugc_3686435343.mod line: 8
+[12:37:19][1936.01.01.12][equipment_effects.cpp:814]: 'common/scripted_effects/touhou_vanilla_military.txt:4651: create_equipment_variant': '星莲船试做型' - Modular type 'lotus_equipment_0' appears to not have been unlocked for TEM as no chassis variant exists. Unlocked the tech before creating any variants to avoid bugs.
+[12:37:19][1936.01.01.12][equipment_effects.cpp:814]: 'common/scripted_effects/touhou_vanilla_military.txt:4651: create_equipment_variant': '星莲船试做型' - Invalid module setup. 此设计缺少一个或多个必要的模块：
+   甲板空间1
+   引擎
+   装甲
+[12:37:19][1936.01.01.12][equipment_effects.cpp:814]: 'common/scripted_effects/touhou_vanilla_military.txt:4685: create_equipment_variant': '星莲船正式型' - Modular type 'lotus_equipment_1' appears to not have been unlocked for TEM as no chassis variant exists. Unlocked the tech before creating any variants to avoid bugs.
+[12:37:19][1936.01.01.12][equipment_effects.cpp:814]: 'common/scripted_effects/touhou_vanilla_military.txt:4685: create_equipment_variant': '星莲船正式型' - Invalid module setup. 此设计缺少一个或多个必要的模块：
+   甲板空间1
+   引擎
+   装甲
+[12:37:19][1936.01.01.12][equipment_effects.cpp:814]: 'common/scripted_effects/touhou_vanilla_military.txt:4719: create_equipment_variant': '星莲船完成型' - Modular type 'lotus_equipment_2' appears to not have been unlocked for TEM as no chassis variant exists. Unlocked the tech before creating any variants to avoid bugs.
+[12:37:19][1936.01.01.12][equipment_effects.cpp:814]: 'common/scripted_effects/touhou_vanilla_military.txt:4719: create_equipment_variant': '星莲船完成型' - Invalid module setup. 此设计缺少一个或多个必要的模块：
+   甲板空间1
+   引擎
+   装甲

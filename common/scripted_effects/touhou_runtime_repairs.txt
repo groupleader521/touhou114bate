@@ -1,0 +1,34 @@
+touhou_check_runtime_repairs = {
+	if = {
+		limit = {
+			original_tag = ALI
+			NOT = { has_dynamic_modifier = { modifier = touhou_doll_production_line_cost } }
+		}
+		add_dynamic_modifier = { modifier = touhou_doll_production_line_cost }
+	}
+	# Explicit pulses dispatch only when the old save still needs its focus tree repaired.
+	if = {
+		limit = {
+			has_variable = touhou_var_fantasy_consumer_goods_expected_value
+			OR = {
+				has_focus_tree = touhou_ALI_focus
+				has_focus_tree = touhou_BLQ_focus
+				has_focus_tree = touhou_DES_focus
+				has_focus_tree = touhou_DLD_focus
+				has_focus_tree = touhou_EVI_focus
+				has_focus_tree = touhou_HAK_focus
+				has_focus_tree = touhou_HEL_focus
+				has_focus_tree = touhou_HUM_focus
+				has_focus_tree = touhou_KAP_focus
+				has_focus_tree = touhou_MLS_focus
+				has_focus_tree = touhou_OPP_focus
+				has_focus_tree = touhou_RAB_focus
+				has_focus_tree = touhou_SSS_focus
+				has_focus_tree = touhou_TEM_focus
+				has_focus_tree = touhou_TEN_focus
+				has_focus_tree = touhou_VAM_focus
+			}
+		}
+		country_event = { id = touhou_save_recovery.2 }
+	}
+}

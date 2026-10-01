@@ -1,572 +1,1085 @@
 touhou_trump_card = {
-	#决议有三种可见方式，第一种国家本身的特色，第二种征服获得，第三种外交或傀儡。
-
-	#扶持人类卫队
 	touhou_human_defense_project = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = HUM
 				AND = {
 					AND = {
 						controls_state = 1105
-						HUM = { exists = no }
-					}	
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+						HUM = {
+							exists = no
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					HUM = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					HUM = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = human_army }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_human_army
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-		
 		complete_effect = {
-			set_technology =  { human_army = 1 }
+			set_country_flag = touhou_project_unlocked_human_army
+			set_technology = {
+				infantry_weapons = 1
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#研究歌利亚
 	touhou_ALI_goelia_project = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
-		available = {
-			#has_idea = alice_tank
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
 		}
-
+		available = {
+		}
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				AND = {
 					controls_state = 1094
-					ALI = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					ALI = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					ALI = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					ALI = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = goliath_0 }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_goliath_0
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-				
 		complete_effect = {
-			set_technology =  { goliath_0 = 1 }
+			set_country_flag = touhou_project_unlocked_goliath_0
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#装备神风人偶
 	touhou_ALI_suicide_puppet_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = ALI
 				AND = {
 					controls_state = 1094
-					ALI = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					ALI = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					ALI = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					ALI = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = suicide_puppet_craft_1 }
-			NOT = { has_tech = suicide_puppet_craft_2 }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_suicide_puppet_craft_1
+			}
+			NOT = {
+				has_country_flag = touhou_project_unlocked_suicide_puppet_craft_2
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-			
 		complete_effect = {
-			set_technology =  { suicide_puppet_craft_1 = 1 }
-			set_technology =  { suicide_puppet_craft_2 = 1 }
+			set_country_flag = touhou_project_unlocked_suicide_puppet_craft_1
+			touhou_sync_vanilla_military = yes
+			set_country_flag = touhou_project_unlocked_suicide_puppet_craft_2
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#启动风神计划
 	touhou_TEN_aeolus_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
-		available = {
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
 			}
-
+		}
+		available = {
+		}
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = TEN
 				AND = {
 					controls_state = 1084
-					TEN = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					TEN = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					TEN = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					TEN = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = tengu_fighter }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_tengu_fighter
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-				
 		complete_effect = {
-			set_technology =  { tengu_fighter = 1 }
+			set_country_flag = touhou_project_unlocked_tengu_fighter
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_technology = {
+					iw_small_airframe = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				set_technology = {
+					early_fighter = 1
+				}
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#训练强化鬼族
 	touhou_HEL_oni_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = HEL
 				AND = {
 					controls_state = 1096
-					HEL = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					HEL = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					HEL = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					HEL = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = oni_champion }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_oni_champion
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-				
 		complete_effect = {
-			set_technology =  { oni_champion = 1 }	
+			set_country_flag = touhou_project_unlocked_oni_champion
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				set_technology = {
+					basic_heavy_tank_chassis = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+				}
+				set_technology = {
+					basic_heavy_tank = 1
+				}
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#现代化博丽巫女
 	touhou_BLQ_boli_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = BLQ
 				AND = {
 					controls_state = 1101
-					BLQ = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					BLQ = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					BLQ = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					BLQ = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = cas_boli_fighter }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_cas_boli_fighter
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-		
 		complete_effect = {
-			set_technology =  { cas_boli_fighter = 1 }
+			set_country_flag = touhou_project_unlocked_cas_boli_fighter
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_technology = {
+					basic_small_airframe = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				set_technology = {
+					CAS1 = 1
+				}
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#掌控天道
 	touhou_DES_bomber_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = DES
 				AND = {
 					controls_state = 1099
-					DES = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					DES = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					DES = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					DES = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = desires_bomber }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_desires_bomber
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-				
 		complete_effect = {
-			set_technology =  { desires_bomber = 1 }
+			set_country_flag = touhou_project_unlocked_desires_bomber
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				set_technology = {
+					basic_large_airframe = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "By Blood Alone"
+					}
+				}
+				set_technology = {
+					strategic_bomber1 = 1
+				}
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#活用觉妖怪
 	touhou_DLD_animal_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = DLD
 				AND = {
 					controls_state = 1097
-					DLD = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					DLD = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					DLD = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					DLD = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = DLD_animal }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_DLD_animal
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-				
 		complete_effect = {
-			set_technology =  { DLD_animal = 1 }
+			set_country_flag = touhou_project_unlocked_DLD_animal
+			set_technology = {
+				infantry_weapons = 1
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#任命总教头红美铃
 	touhou_dragon_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = VAM
 				AND = {
 					controls_state = 1106
-					VAM = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					VAM = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					VAM = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					VAM = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = dragon }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_dragon
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-				
 		complete_effect = {
-			set_technology =  { dragon = 1 }
+			set_country_flag = touhou_project_unlocked_dragon
+			set_technology = {
+				tech_mountaineers = 1
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#开始狩猎
 	touhou_die_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = OPP
 				AND = {
 					controls_state = 1098
-					OPP = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					OPP = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					OPP = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					OPP = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = die }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_die
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-				
 		complete_effect = {
-			set_technology =  { die = 1 }
+			set_country_flag = touhou_project_unlocked_die
+			set_technology = {
+				motorised_infantry = 1
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#兔子先生
 	touhou_rabbit_team_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = RAB
 				AND = {
 					controls_state = 1104
-					RAB = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					RAB = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					RAB = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					RAB = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = rabbit_team }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_rabbit_team
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-				
 		complete_effect = {
-			set_technology =  { rabbit_team = 1 }
+			set_country_flag = touhou_project_unlocked_rabbit_team
+			set_technology = {
+				tech_engineers = 1
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#遨游大海
 	touhou_deep_sea_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 			OR = {
 				original_tag = KAP
 				has_tech = basic_ship_hull_submarine
 			}
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = KAP
 				AND = {
 					controls_state = 1083
-					KAP = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					KAP = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					KAP = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					KAP = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = deep_sea }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_deep_sea
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-		
 		complete_effect = {
-			set_technology =  { deep_sea = 1 }
+			set_country_flag = touhou_project_unlocked_deep_sea
+			set_technology = {
+				basic_ship_hull_submarine = 1
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#人鬼同途
 	touhou_soul_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = HAK
 				AND = {
 					controls_state = 1100
-					HAK = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					HAK = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					HAK = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					HAK = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = soul }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_soul
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-		
 		complete_effect = {
-			set_technology =  { soul = 1 }
+			set_country_flag = touhou_project_unlocked_soul
+			set_technology = {
+				tech_logistics_company = 1
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#以神之名
 	touhou_wunv_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = SSS
 				AND = {
 					controls_state = 1107
-					SSS = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					SSS = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					SSS = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					SSS = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = wunv }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_wunv
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-		
 		complete_effect = {
-			set_technology =  { wunv = 1 }
+			set_country_flag = touhou_project_unlocked_wunv
+			set_technology = {
+				tech_field_hospital = 1
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#重建星莲船
 	touhou_lotus_project_0 = {
 		icon = GFX_decision_generic_special_project
 		fire_only_once = yes
-		
-		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-
+		allowed = {
+			OR = {
+				original_tag = ALI
+				original_tag = DES
+				original_tag = HAK
+				original_tag = DLD
+				original_tag = HEL
+				original_tag = SSS
+				original_tag = OPP
+				original_tag = RAB
+				original_tag = TEM
+				original_tag = BLQ
+				original_tag = KAP
+				original_tag = TEN
+				original_tag = HUM
+				original_tag = VAM
+				original_tag = MLS
+				original_tag = EVI
+			}
+		}
 		available = {
 			OR = {
 				original_tag = TEM
-				TEM = { has_opinion = { target = ROOT value > 24 } }
+				TEM = {
+					has_opinion = {
+						target = ROOT
+						value > 24
+					}
+				}
 				controls_state = 1102
 			}
 			has_tech = basic_ship_hull_cruiser
-			has_tech = basic_ship_hull_light			
+			has_tech = basic_ship_hull_light
 			has_tech = basic_ship_hull_heavy
 			has_tech = basic_ship_hull_carrier
 		}
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			OR = {
 				original_tag = TEM
 				AND = {
 					controls_state = 1102
-					TEM = { exists = no }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					TEM = {
+						exists = no
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 				AND = {
-					TEM = { has_opinion = { target = ROOT value > 49 } }
-					NOT= { has_country_flag = touhou_country_flag_out_first_research }
+					TEM = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
 				}
 			}
-			NOT = { has_tech = lotus }
-			NOT = { has_idea = fantasy_research }
+			NOT = {
+				has_country_flag = touhou_project_unlocked_lotus
+			}
+			NOT = {
+				has_idea = fantasy_research
+			}
 		}
-		
 		complete_effect = {
-			set_technology =  { lotus = 1 }
+			set_country_flag = touhou_project_unlocked_lotus
+			set_technology = {
+				basic_ship_hull_carrier = 1
+			}
+			touhou_sync_vanilla_military = yes
 		}
 	}
-	#邀请普通的魔法使讲座
-#	touhou_magician_project_0 = {
-#		icon = GFX_decision_generic_special_project
-#		fire_only_once = yes
-#		
-#		allowed = { OR = { original_tag = ALI original_tag = DES original_tag = HAK original_tag = DLD original_tag = HEL original_tag = SSS original_tag = OPP original_tag = RAB original_tag = TEM original_tag = BLQ original_tag = KAP original_tag = TEN original_tag = HUM original_tag = VAM original_tag = MLS original_tag = EVI } }
-#
-#		available = {
-#		}
-#
-#		ai_will_do = {
-#			factor = 0
-#		}
-#
-#		visible = {
-#			OR = {
-#				original_tag = MLS
-#				AND = {
-#					controls_state = 1093
-#					MLS = { exists = no }
-#					NOT= { has_country_flag = touhou_country_flag_out_first_research }
-#				}
-#				AND = {
-#					MLS = { has_opinion = { target = ROOT value > 49 } }
-#					NOT= { has_country_flag = touhou_country_flag_out_first_research }
-#				}
-#			}
-#			NOT = { has_tech = magician }
-#			NOT = { has_idea = fantasy_research }
-#		}
-#				
-#		complete_effect = {
-#			set_technology =  { magician = 1 }
-#		}
-#	}
 }

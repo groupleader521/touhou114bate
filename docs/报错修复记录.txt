@@ -1,0 +1,62 @@
+游戏报错修复记录（2026-10-01）
+================================
+
+依据：本机游戏 1.19.3 的 logs/error.log 和 logs/text.log；修改后重新启动游戏验证。
+
+一、已修复
+
+1. 42 个飞机型号的 carrier_capable 与原版陆基原型冲突。
+   删除型号覆盖，由原版机体原型决定舰载资格；原装备数值保持。
+
+2. 国家历史中 if 后的同级 else 被解释为无效历史指令，造成科技初始化报错。
+   DLC/无 DLC 分支改为两个独立 if，正确授予底盘/机体或固定型号科技。
+
+3. add_unit_bonus 中 name 被实际引擎拒绝。
+   删除该字段，保留统计加成和国家旗标记录；原科技差额计算继续使用。
+
+4. Boss 三个线列装甲编制错误使用原版支援型超重防空单位。
+   魔界精锐改为 heavy_armor，保留线列位置，采用原版重型装甲装备需求。
+
+5. ALI 装甲师命名组仍引用引号内的 goliath_brigade。
+   引号内旧 ID 也参与转换，division_types 去重。
+
+6. 人偶生产线任务有 modifier 但缺少 days_remove。
+   删除非法直接 modifier，改用动态修正，启用条件为该任务正在进行；
+   保留原任务期间 consumer_goods_expected_value = 0.1 以及 35 天任务计时和奖励。
+
+7. 存档国策修复事件采用 MTTH 每日轮询，产生警告。
+   改为 is_triggered_only，由启动/每日 on_action 在原修复条件成立时显式触发。
+
+8. 五个制造传统决议本地化键重复。
+   在原本地化文件更新相应文本，新文件仅保留新增键。
+
+9. weatherpositions.txt 第 589 行空行。
+   清除空行，所有坐标行满足引擎要求的五列格式。
+
+二、验证
+
+静态校验：241 个脚本/UI 文件；143 个原型号均保留，总型号 145；
+逐项核对 2,108 个原装备明确数值，全部一致；0 项静态错误。
+47 项原版原型额外默认值提示仍记录在《幻想乡军事原版化校验.json》中。
+
+引擎验证：11:26:54 启动游戏，11:28:25 完成启动与 1936 年历史初始化。
+启用的 Mod 为 TouHou Into the World ~ 幻想世界入 1.19 测试版；全部已安装 DLC 启用。
+本项目上述报错全部未再出现；text.log 没有本地化重复键报错。
+新的 error.log 仅有其他 Mod 描述文件的 8 条 supported_version 警告。
+本轮覆盖加载和历史初始化，未覆盖实际开局后的生产、科研和战斗操作。
+
+三、保留证据
+
+报错修复前_error.log：修复前完整引擎报错。
+报错修复后_error.log：本轮启动完成后的完整引擎报错。
+
+剩余警告来自 mod/MIRA.mod 和以下其他 Mod 描述文件：
+ugc_1862018480.mod、ugc_2829179259.mod、ugc_3157816605.mod、ugc_3310177852.mod、
+ugc_3322324112.mod、ugc_3405989555.mod、ugc_3686435343.mod。
+它们属于本项目目录之外的其他 Mod；本轮没有修改这些描述文件。
+
+四、维护
+
+生成类修复已落实到 tools/migrate_military_system.cjs，避免下次生成重新引入。
+tools/validate_military_migration.cjs 新增了这批错误的检查。
+任务/事件运行修复位于 common/{dynamic_modifiers,on_actions,scripted_effects}/touhou_runtime_repairs.txt。

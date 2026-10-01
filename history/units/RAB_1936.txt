@@ -1,73 +1,90 @@
-﻿division_template = {
-	name = "水兔" 
-
-	regiments = {
-		touhou_demonforce_marine = { x = 0 y = 0 }
-		touhou_demonforce_marine = { x = 0 y = 1 }
-	}
-	support = {
-
-	}
-}
-
 division_template = {
-	name = "山兔" 
-
+	name = "水兔"
 	regiments = {
-		touhou_demonforce_mountaineers = { x = 0 y = 0 }
-		touhou_demonforce_mountaineers = { x = 0 y = 1 }
+		marine = {
+			x = 0
+			y = 0
+		}
+		marine = {
+			x = 0
+			y = 1
+		}
 	}
 	support = {
-
-	}
-}
-
-division_template = {
-	name = "妖怪兔小队" 
-
-	regiments = {
-		touhou_demonforce_infantry = { x = 0 y = 0 }
-	}
-	support = {
-
 	}
 }
 division_template = {
-	name = "妖怪兔中队" 
-
+	name = "山兔"
 	regiments = {
-		touhou_demonforce_infantry = { x = 0 y = 0 }
-		touhou_demonforce_infantry = { x = 0 y = 1 }
+		mountaineers = {
+			x = 0
+			y = 0
+		}
+		mountaineers = {
+			x = 0
+			y = 1
+		}
 	}
 	support = {
-
 	}
 }
 division_template = {
-	name = "妖怪兔大队" 
-
+	name = "妖怪兔小队"
 	regiments = {
-		touhou_demonforce_infantry = { x = 0 y = 0 }
-		touhou_demonforce_infantry = { x = 0 y = 1 }
-		touhou_demonforce_infantry = { x = 0 y = 2 }
-		touhou_demonforce_infantry = { x = 0 y = 3 }
+		infantry = {
+			x = 0
+			y = 0
+		}
 	}
 	support = {
-
 	}
 }
-
-##### OOB #####
+division_template = {
+	name = "妖怪兔中队"
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "妖怪兔大队"
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
+	}
+	support = {
+	}
+}
 units = {
-
-	division = { 
+	division = {
 		name = "水兔"
 		location = 13484
 		division_template = "水兔"
 		start_experience_factor = 0.2
 	}
-	
-	division = { 
+	division = {
 		name = "山兔"
 		location = 13484
 		division_template = "山兔"
@@ -75,9 +92,9 @@ units = {
 	}
 }
 air_wings = {
-	1104 = { 
+	1104 = {
 		touhou_demonforce_fighter_equipment_0 = {
-			owner = "RAB" 
+			owner = "RAB"
 			amount = 40
 		}
 	}

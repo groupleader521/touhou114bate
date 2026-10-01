@@ -1,0 +1,5 @@
+# Keep the original mission cost without the decision-only days_remove mechanism.
+touhou_doll_production_line_cost = {
+	enable = { has_active_mission = touhou_mission_doll_production_line }
+	consumer_goods_expected_value = 0.1
+}
