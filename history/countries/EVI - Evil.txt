@@ -142,4 +142,45 @@ if = {
 		}
 	}
 }
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_country_flag = touhou_historical_tank_frame_evil_armor_0
+}
 touhou_sync_vanilla_military = yes
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = touhou_tank_design_v1_evil_armor_equipment_0
+			}
+		}
+		create_equipment_variant = {
+			name = "妖精装甲装备"
+			type = medium_tank_chassis_touhou_evil_armor_0
+			allow_without_tech = yes
+			parent_version = 0
+			icon = "GFX_evil_armor_equipment_0_medium"
+			modules = {
+				engine_type_slot = touhou_tank_evil_armor_0_engine
+				suspension_type_slot = touhou_tank_evil_armor_0_suspension
+				armor_type_slot = touhou_tank_evil_armor_0_armor
+				turret_type_slot = touhou_tank_evil_armor_0_control
+				main_armament_slot = touhou_tank_weapon_evil_armor_equipment_0
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 0
+				tank_nsb_armor_upgrade = 0
+			}
+		}
+		set_country_flag = touhou_tank_design_v1_evil_armor_equipment_0
+	}
+}

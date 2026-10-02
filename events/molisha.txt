@@ -159,6 +159,8 @@ country_event = {
 							has_country_flag = touhou_tank_design_v1_touhou_magic_light_tank_equipment_1
 						}
 					}
+					set_country_flag = touhou_historical_tank_frame_magic_light_1
+					touhou_sync_tank_designer = yes
 					create_equipment_variant = {
 						name = "上海级"
 						type = light_tank_chassis_touhou_magic_light_1
@@ -386,6 +388,8 @@ country_event = {
 							has_country_flag = touhou_tank_design_v1_touhou_magic_light_tank_equipment_1
 						}
 					}
+					set_country_flag = touhou_historical_tank_frame_magic_light_1
+					touhou_sync_tank_designer = yes
 					create_equipment_variant = {
 						name = "上海级"
 						type = light_tank_chassis_touhou_magic_light_1
@@ -441,6 +445,8 @@ country_event = {
 							has_country_flag = touhou_tank_design_v1_touhou_demonforce_heavy_tank_equipment_1
 						}
 					}
+					set_country_flag = touhou_historical_tank_frame_demonforce_heavy_1
+					touhou_sync_tank_designer = yes
 					create_equipment_variant = {
 						name = "妖兽"
 						type = heavy_tank_chassis_touhou_demonforce_heavy_1

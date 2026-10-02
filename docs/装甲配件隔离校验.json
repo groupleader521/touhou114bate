@@ -1,0 +1,9 @@
+{
+  "privateModules": 213,
+  "nativeChassis": 108,
+  "rejectionChecks": 23004,
+  "spiritFrames": 6,
+  "spiritStatChecks": 66,
+  "limitation": "Exhaustive native slot/category rejection and preset/stat checks; game UI not simulated.",
+  "errors": []
+}

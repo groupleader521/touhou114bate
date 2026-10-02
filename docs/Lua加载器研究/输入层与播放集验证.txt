@@ -1,0 +1,59 @@
+Lua 构建器输入层与播放集验证
+==========================
+2026-10-02
+
+原型现在能读取启用配置、播放集备份、Mod 描述、replace_path 与 DLC 内容声明。
+它仍是外部构建工具，不更改游戏安装文件、启动器配置或当前项目的运行时内容。
+全部检查已增至 36 项，包括 4 项针对本机原版、ZIP 或加载配置的检查，均通过，无跳过。
+使用命令与最新机器报告见 tools/lua_loader/README.txt、原型验证结果.json。
+
+本机发现
+--------
+用户数据目录中的 dlc_load.json 只启用 mod/touhou114.mod，disabled_dlcs 为空。
+touhou114 声明依赖 52 Chinese Localisation；已注册描述文件中没有匹配候选，启用列表也未包含它。
+报告列为 declared-dependency-not-active，不自动下载、注册或启用它。
+这反映本机加载配置的差异，不据此断定所有文本问题都由该依赖导致。
+
+安装目录发现 31 个 DLC 描述；显式选择 installed 策略时，候选视图包含这些未显式禁用的内容。
+候选来源共 33 层：原版、31 个 DLC、当前 Mod。其中 Rocket Launcher Unit Pack 来自 ZIP。
+没有验证 DLC 所有权、授权或游戏进程实际挂载情况，报告均明确标注。
+默认策略 none 只记录 DLC 元数据，不挂载内容；默认无 --profile 的构建仍维持原版 + 本项目。
+
+已实现的行为
+------------
+1. 从 dlc_load.json 读取 enabled_mods / disabled_dlcs，只读已注册的 .mod 描述。
+2. 从 playsets_backup JSON 读取 enabled、position、steamId 或 displayName。
+3. 按已启用的同名依赖生成稳定候选顺序，记录原顺序与调整；没有启用的声明只产生诊断。
+4. 检查缺失描述、重复名称、依赖循环、不可用内容路径和播放集匹配歧义。
+5. 按虚拟路径选择高层同名文件；replace_path 排除低层对应目录，允许本层替代文件。
+6. 本地化先选择可见文件再解析键，防止已被高层整文件替换的低层旧键重新出现。
+7. 读取 Mod 或 DLC 指向的目录及 ZIP；ZIP 不解压到磁盘，实际读取条目核对大小和 CRC。
+8. 构建报告记录来源、容器与文件哈希、读取条目哈希、本地化原文来源和元数据来源。
+
+对本项目的实际产物
+----------------
+build/input-profile/input-profile.json：当前配置、来源列表、声明差异和 DLC 候选情况。
+build/active-preview/：从当前配置候选视图构建的默认显示示例，6 个产物文件，无 NSB_armor.txt。
+build/preview/：显式原版 + 本项目模式，6 个文件。
+build/merge-proof/：可选科技合并演示，7 个文件，含同虚拟路径 NSB_armor.txt 替代文件。
+三种内容预览重复构建均不重写未变化的产物。它们均未注册、未启用。
+原版科技字段保留测试继续通过；本轮没有将旧原版科技覆盖重新放回 common/。
+
+只读 ZIP 的范围
+--------------
+按 PKWARE ZIP 格式与 Node.js zlib 文档实现 ZIP32 的 Stored / Deflate 读取。
+参考：https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT
+参考：https://nodejs.org/api/zlib.html
+实现包含中央目录与本地头一致性、文件大小、CRC32、非法路径和大小写别名检查。
+实际 Rocket Launcher ZIP 的一个条目已读取并通过 CRC 校验；没有宣称逐条校验完整档案。
+ZIP64、分卷、加密、符号链接、不明确的旧文件名编码和其他压缩方法显式拒绝。
+原型限制档案 256 MiB、条目 64 MiB，不代表游戏的限制。
+
+仍未验证
+--------
+候选挂载顺序和 replace_path 模型尚未与真实冷启动日志逐项对照。
+不读取启动器 SQLite 的当前选中播放集；active 明确指 dlc_load.json 的当前启用清单。
+不重建完整授权环境、不保证所有 DLC 版本和第三方工具的播放集格式兼容。
+本地化层内仍使用明确的文件名排序规则，尚未验证引擎对所有键冲突的解析顺序。
+没有引擎对象接口、进程挂钩、运行时热载、存档迁移、联机或性能验证。
+这些边界在输入报告和构建报告中保留，输入层通过不等于游戏内显示通过。

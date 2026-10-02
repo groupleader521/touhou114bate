@@ -1,0 +1,5 @@
+{
+  "name": "Touhou Lua Overlay Preview",
+  "baseDependency": "TouHou Into the World ~ 幻想世界入 1.19 测试版",
+  "packages": ["core.lua"]
+}

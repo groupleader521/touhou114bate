@@ -3,8 +3,7 @@ equipment_modules = {
 		has_dlc = "No Step Back"
 	}
 	touhou_tank_demonforce_heavy_1_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -15,10 +14,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.5
+		gfx = touhou_tank_demonforce_heavy_1_engine
 	}
 	touhou_tank_demonforce_heavy_1_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -28,10 +27,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.75
+		gfx = touhou_tank_demonforce_heavy_1_suspension
 	}
 	touhou_tank_demonforce_heavy_1_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -41,16 +40,18 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.125
+		gfx = touhou_tank_demonforce_heavy_1_armor
 	}
 	touhou_tank_demonforce_heavy_1_control = {
-		category = tank_heavy_turret_type
-		gfx = tank_heavy_three_man_tank_turret
+		category = touhou_tank_heavy_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				touhou_tank_medium_main_armament
+				touhou_tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -61,10 +62,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.75
+		gfx = touhou_tank_demonforce_heavy_1_control
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_equipment_1 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_cannon
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -84,10 +85,10 @@ equipment_modules = {
 			steel = 2
 			chromium = 2
 		}
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_equipment_1
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_1 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_howitzer
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -107,10 +108,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_1
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_1 = {
-		category = tank_heavy_main_armament
-		gfx = tank_high_velocity_cannon_3
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -131,10 +132,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_tank
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_1
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_1 = {
-		category = tank_medium_main_armament
-		gfx = tank_anti_air_cannon_3
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -154,10 +155,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_1
 	}
 	touhou_tank_demonforce_heavy_2_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -168,10 +169,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.8
+		gfx = touhou_tank_demonforce_heavy_2_engine
 	}
 	touhou_tank_demonforce_heavy_2_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -181,10 +182,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.9
+		gfx = touhou_tank_demonforce_heavy_2_suspension
 	}
 	touhou_tank_demonforce_heavy_2_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -194,16 +195,18 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.35
+		gfx = touhou_tank_demonforce_heavy_2_armor
 	}
 	touhou_tank_demonforce_heavy_2_control = {
-		category = tank_heavy_turret_type
-		gfx = tank_heavy_three_man_tank_turret
+		category = touhou_tank_heavy_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				touhou_tank_medium_main_armament
+				touhou_tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -214,10 +217,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.9
+		gfx = touhou_tank_demonforce_heavy_2_control
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_equipment_2 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_cannon
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -237,10 +240,10 @@ equipment_modules = {
 			steel = 2
 			chromium = 2
 		}
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_equipment_2
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_2 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_howitzer
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -261,10 +264,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_2
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_2 = {
-		category = tank_heavy_main_armament
-		gfx = tank_high_velocity_cannon_3
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -286,10 +289,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_tank
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_2
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_2 = {
-		category = tank_medium_main_armament
-		gfx = tank_anti_air_cannon_3
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -309,10 +312,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_2
 	}
 	touhou_tank_demonforce_heavy_3_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -323,10 +326,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.8
+		gfx = touhou_tank_demonforce_heavy_3_engine
 	}
 	touhou_tank_demonforce_heavy_3_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -336,10 +339,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.9
+		gfx = touhou_tank_demonforce_heavy_3_suspension
 	}
 	touhou_tank_demonforce_heavy_3_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -349,16 +352,18 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.35
+		gfx = touhou_tank_demonforce_heavy_3_armor
 	}
 	touhou_tank_demonforce_heavy_3_control = {
-		category = tank_heavy_turret_type
-		gfx = tank_heavy_three_man_tank_turret
+		category = touhou_tank_heavy_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				touhou_tank_medium_main_armament
+				touhou_tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -369,10 +374,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.9
+		gfx = touhou_tank_demonforce_heavy_3_control
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_equipment_3 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_cannon
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -392,10 +397,10 @@ equipment_modules = {
 			steel = 3
 			chromium = 2
 		}
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_equipment_3
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_3 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_howitzer
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -416,10 +421,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_3
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_3 = {
-		category = tank_heavy_main_armament
-		gfx = tank_high_velocity_cannon_3
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -441,10 +446,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_tank
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_3
 	}
 	touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_3 = {
-		category = tank_medium_main_armament
-		gfx = tank_anti_air_cannon_3
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -465,10 +470,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_3
 	}
 	touhou_tank_demonforce_super_heavy_1_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -479,10 +484,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 5
+		gfx = touhou_tank_demonforce_super_heavy_1_engine
 	}
 	touhou_tank_demonforce_super_heavy_1_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -492,10 +497,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.5
+		gfx = touhou_tank_demonforce_super_heavy_1_suspension
 	}
 	touhou_tank_demonforce_super_heavy_1_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -505,10 +510,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 3.75
+		gfx = touhou_tank_demonforce_super_heavy_1_armor
 	}
 	touhou_tank_demonforce_super_heavy_1_control = {
-		category = tank_super_heavy_turret_type
-		gfx = tank_super_heavy_four_man_tank_turret
+		category = touhou_tank_super_heavy_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
@@ -516,6 +521,9 @@ equipment_modules = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
 				tank_super_heavy_main_armament
+				touhou_tank_medium_main_armament
+				touhou_tank_heavy_main_armament
+				touhou_tank_super_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -526,10 +534,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.5
+		gfx = touhou_tank_demonforce_super_heavy_1_control
 	}
 	touhou_tank_weapon_demonforce_super_heavy_tank_equipment_1 = {
-		category = tank_super_heavy_main_armament
-		gfx = tank_super_heavy_cannon
+		category = touhou_tank_super_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -549,10 +557,10 @@ equipment_modules = {
 			steel = 2
 			chromium = 3
 		}
+		gfx = touhou_tank_weapon_demonforce_super_heavy_tank_equipment_1
 	}
 	touhou_tank_weapon_demonforce_super_heavy_tank_artillery_equipment_1 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_howitzer
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -573,10 +581,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_super_heavy_tank_artillery_equipment_1
 	}
 	touhou_tank_weapon_demonforce_super_heavy_tank_destroyer_equipment_1 = {
-		category = tank_heavy_main_armament
-		gfx = tank_high_velocity_cannon_3
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -598,10 +606,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_tank
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_super_heavy_tank_destroyer_equipment_1
 	}
 	touhou_tank_weapon_demonforce_super_heavy_tank_aa_equipment_1 = {
-		category = tank_medium_main_armament
-		gfx = tank_anti_air_cannon_3
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -621,10 +629,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_demonforce_super_heavy_tank_aa_equipment_1
 	}
 	touhou_tank_magic_light_1_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -635,10 +643,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.35
+		gfx = touhou_tank_magic_light_1_engine
 	}
 	touhou_tank_magic_light_1_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -648,10 +656,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.175
+		gfx = touhou_tank_magic_light_1_suspension
 	}
 	touhou_tank_magic_light_1_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -661,10 +669,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.2625
+		gfx = touhou_tank_magic_light_1_armor
 	}
 	touhou_tank_magic_light_1_control = {
-		category = tank_light_turret_type
-		gfx = tank_light_three_man_tank_turret
+		category = touhou_tank_light_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -675,10 +683,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.175
+		gfx = touhou_tank_magic_light_1_control
 	}
 	touhou_tank_weapon_magic_light_tank_equipment_1 = {
-		category = tank_small_main_armament
-		gfx = tank_small_cannon
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -697,10 +705,10 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 2
 		}
+		gfx = touhou_tank_weapon_magic_light_tank_equipment_1
 	}
 	touhou_tank_weapon_magic_light_tank_artillery_equipment_1 = {
-		category = tank_small_main_armament
-		gfx = tank_close_support_gun
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -721,10 +729,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_light_tank_artillery_equipment_1
 	}
 	touhou_tank_weapon_magic_light_tank_destroyer_equipment_1 = {
-		category = tank_small_main_armament
-		gfx = tank_high_velocity_cannon
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -745,10 +753,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_tank
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_light_tank_destroyer_equipment_1
 	}
 	touhou_tank_weapon_magic_light_tank_aa_equipment_1 = {
-		category = tank_small_main_armament
-		gfx = tank_anti_air_cannon
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -768,10 +776,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_light_tank_aa_equipment_1
 	}
 	touhou_tank_magic_light_2_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -782,10 +790,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.425
+		gfx = touhou_tank_magic_light_2_engine
 	}
 	touhou_tank_magic_light_2_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -795,10 +803,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.2125
+		gfx = touhou_tank_magic_light_2_suspension
 	}
 	touhou_tank_magic_light_2_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -808,10 +816,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.31875
+		gfx = touhou_tank_magic_light_2_armor
 	}
 	touhou_tank_magic_light_2_control = {
-		category = tank_light_turret_type
-		gfx = tank_light_three_man_tank_turret
+		category = touhou_tank_light_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -822,10 +830,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.2125
+		gfx = touhou_tank_magic_light_2_control
 	}
 	touhou_tank_weapon_magic_light_tank_equipment_2 = {
-		category = tank_small_main_armament
-		gfx = tank_small_cannon
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -844,10 +852,10 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 2
 		}
+		gfx = touhou_tank_weapon_magic_light_tank_equipment_2
 	}
 	touhou_tank_weapon_magic_light_tank_artillery_equipment_2 = {
-		category = tank_small_main_armament
-		gfx = tank_close_support_gun
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -868,10 +876,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_light_tank_artillery_equipment_2
 	}
 	touhou_tank_weapon_magic_light_tank_destroyer_equipment_2 = {
-		category = tank_small_main_armament
-		gfx = tank_high_velocity_cannon
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -892,10 +900,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_tank
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_light_tank_destroyer_equipment_2
 	}
 	touhou_tank_weapon_magic_light_tank_aa_equipment_2 = {
-		category = tank_small_main_armament
-		gfx = tank_anti_air_cannon
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -915,10 +923,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_light_tank_aa_equipment_2
 	}
 	touhou_tank_magic_light_3_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -929,10 +937,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.425
+		gfx = touhou_tank_magic_light_3_engine
 	}
 	touhou_tank_magic_light_3_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -942,10 +950,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.2125
+		gfx = touhou_tank_magic_light_3_suspension
 	}
 	touhou_tank_magic_light_3_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -955,10 +963,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.31875
+		gfx = touhou_tank_magic_light_3_armor
 	}
 	touhou_tank_magic_light_3_control = {
-		category = tank_light_turret_type
-		gfx = tank_light_three_man_tank_turret
+		category = touhou_tank_light_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -969,10 +977,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.2125
+		gfx = touhou_tank_magic_light_3_control
 	}
 	touhou_tank_weapon_magic_light_tank_equipment_3 = {
-		category = tank_small_main_armament
-		gfx = tank_small_cannon
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -992,10 +1000,10 @@ equipment_modules = {
 			tungsten = 1
 			steel = 2
 		}
+		gfx = touhou_tank_weapon_magic_light_tank_equipment_3
 	}
 	touhou_tank_weapon_magic_light_tank_artillery_equipment_3 = {
-		category = tank_small_main_armament
-		gfx = tank_close_support_gun
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1017,10 +1025,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_light_tank_artillery_equipment_3
 	}
 	touhou_tank_weapon_magic_light_tank_destroyer_equipment_3 = {
-		category = tank_small_main_armament
-		gfx = tank_high_velocity_cannon
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1041,10 +1049,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_tank
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_light_tank_destroyer_equipment_3
 	}
 	touhou_tank_weapon_magic_light_tank_aa_equipment_3 = {
-		category = tank_small_main_armament
-		gfx = tank_anti_air_cannon
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1063,10 +1071,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_light_tank_aa_equipment_3
 	}
 	touhou_tank_magic_medium_1_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1077,10 +1085,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.7
+		gfx = touhou_tank_magic_medium_1_engine
 	}
 	touhou_tank_magic_medium_1_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1090,10 +1098,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.35
+		gfx = touhou_tank_magic_medium_1_suspension
 	}
 	touhou_tank_magic_medium_1_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1103,15 +1111,16 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.525
+		gfx = touhou_tank_magic_medium_1_armor
 	}
 	touhou_tank_magic_medium_1_control = {
-		category = tank_medium_turret_type
-		gfx = tank_medium_three_man_tank_turret
+		category = touhou_tank_medium_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
+				touhou_tank_medium_main_armament
 			}
 		}
 		add_stats = {
@@ -1122,10 +1131,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.35
+		gfx = touhou_tank_magic_medium_1_control
 	}
 	touhou_tank_weapon_magic_medium_tank_equipment_1 = {
-		category = tank_medium_main_armament
-		gfx = tank_medium_cannon
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1145,10 +1154,10 @@ equipment_modules = {
 			steel = 2
 			tungsten = 3
 		}
+		gfx = touhou_tank_weapon_magic_medium_tank_equipment_1
 	}
 	touhou_tank_weapon_magic_medium_tank_artillery_equipment_1 = {
-		category = tank_medium_main_armament
-		gfx = tank_medium_howitzer
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1170,10 +1179,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_medium_tank_artillery_equipment_1
 	}
 	touhou_tank_weapon_magic_medium_tank_destroyer_equipment_1 = {
-		category = tank_medium_main_armament
-		gfx = tank_high_velocity_cannon_2
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1194,10 +1203,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_tank
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_medium_tank_destroyer_equipment_1
 	}
 	touhou_tank_weapon_magic_medium_tank_aa_equipment_1 = {
-		category = tank_small_main_armament
-		gfx = tank_anti_air_cannon_2
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1219,10 +1228,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_medium_tank_aa_equipment_1
 	}
 	touhou_tank_magic_medium_2_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1233,10 +1242,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.875
+		gfx = touhou_tank_magic_medium_2_engine
 	}
 	touhou_tank_magic_medium_2_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1246,10 +1255,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.4375
+		gfx = touhou_tank_magic_medium_2_suspension
 	}
 	touhou_tank_magic_medium_2_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1259,15 +1268,16 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.65625
+		gfx = touhou_tank_magic_medium_2_armor
 	}
 	touhou_tank_magic_medium_2_control = {
-		category = tank_medium_turret_type
-		gfx = tank_medium_three_man_tank_turret
+		category = touhou_tank_medium_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
+				touhou_tank_medium_main_armament
 			}
 		}
 		add_stats = {
@@ -1278,10 +1288,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.4375
+		gfx = touhou_tank_magic_medium_2_control
 	}
 	touhou_tank_weapon_magic_medium_tank_equipment_2 = {
-		category = tank_medium_main_armament
-		gfx = tank_medium_cannon
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1301,10 +1311,10 @@ equipment_modules = {
 			steel = 2
 			tungsten = 3
 		}
+		gfx = touhou_tank_weapon_magic_medium_tank_equipment_2
 	}
 	touhou_tank_weapon_magic_medium_tank_artillery_equipment_2 = {
-		category = tank_medium_main_armament
-		gfx = tank_medium_howitzer
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1326,10 +1336,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_medium_tank_artillery_equipment_2
 	}
 	touhou_tank_weapon_magic_medium_tank_destroyer_equipment_2 = {
-		category = tank_medium_main_armament
-		gfx = tank_high_velocity_cannon_2
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1350,10 +1360,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_tank
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_medium_tank_destroyer_equipment_2
 	}
 	touhou_tank_weapon_magic_medium_tank_aa_equipment_2 = {
-		category = tank_small_main_armament
-		gfx = tank_anti_air_cannon_2
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1375,10 +1385,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_medium_tank_aa_equipment_2
 	}
 	touhou_tank_magic_medium_3_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1389,10 +1399,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.875
+		gfx = touhou_tank_magic_medium_3_engine
 	}
 	touhou_tank_magic_medium_3_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1402,10 +1412,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.4375
+		gfx = touhou_tank_magic_medium_3_suspension
 	}
 	touhou_tank_magic_medium_3_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1415,15 +1425,16 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.65625
+		gfx = touhou_tank_magic_medium_3_armor
 	}
 	touhou_tank_magic_medium_3_control = {
-		category = tank_medium_turret_type
-		gfx = tank_medium_three_man_tank_turret
+		category = touhou_tank_medium_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
+				touhou_tank_medium_main_armament
 			}
 		}
 		add_stats = {
@@ -1434,10 +1445,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.4375
+		gfx = touhou_tank_magic_medium_3_control
 	}
 	touhou_tank_weapon_magic_medium_tank_equipment_3 = {
-		category = tank_medium_main_armament
-		gfx = tank_medium_cannon
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1457,10 +1468,10 @@ equipment_modules = {
 			steel = 3
 			tungsten = 2
 		}
+		gfx = touhou_tank_weapon_magic_medium_tank_equipment_3
 	}
 	touhou_tank_weapon_magic_medium_tank_artillery_equipment_3 = {
-		category = tank_medium_main_armament
-		gfx = tank_medium_howitzer
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1482,10 +1493,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_medium_tank_artillery_equipment_3
 	}
 	touhou_tank_weapon_magic_medium_tank_destroyer_equipment_3 = {
-		category = tank_medium_main_armament
-		gfx = tank_high_velocity_cannon_2
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1506,10 +1517,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_tank
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_medium_tank_destroyer_equipment_3
 	}
 	touhou_tank_weapon_magic_medium_tank_aa_equipment_3 = {
-		category = tank_small_main_armament
-		gfx = tank_anti_air_cannon_2
+		category = touhou_tank_small_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1531,10 +1542,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_medium_tank_aa_equipment_3
 	}
 	touhou_tank_magic_modern_1_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1545,10 +1556,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.75
+		gfx = touhou_tank_magic_modern_1_engine
 	}
 	touhou_tank_magic_modern_1_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1558,10 +1569,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.875
+		gfx = touhou_tank_magic_modern_1_suspension
 	}
 	touhou_tank_magic_modern_1_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1571,16 +1582,18 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.3125
+		gfx = touhou_tank_magic_modern_1_armor
 	}
 	touhou_tank_magic_modern_1_control = {
-		category = tank_modern_turret_type
-		gfx = tank_modern_tank_turret
+		category = touhou_tank_modern_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				touhou_tank_medium_main_armament
+				touhou_tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -1591,10 +1604,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.875
+		gfx = touhou_tank_magic_modern_1_control
 	}
 	touhou_tank_weapon_magic_modern_tank_equipment_1 = {
-		category = tank_medium_main_armament
-		gfx = tank_medium_cannon_2
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1614,10 +1627,10 @@ equipment_modules = {
 			steel = 3
 			chromium = 3
 		}
+		gfx = touhou_tank_weapon_magic_modern_tank_equipment_1
 	}
 	touhou_tank_weapon_magic_modern_tank_artillery_equipment_1 = {
-		category = tank_medium_main_armament
-		gfx = tank_medium_howitzer_2
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1638,10 +1651,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_modern_tank_artillery_equipment_1
 	}
 	touhou_tank_weapon_magic_modern_tank_destroyer_equipment_1 = {
-		category = tank_heavy_main_armament
-		gfx = tank_high_velocity_cannon_3
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1661,10 +1674,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_tank
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_modern_tank_destroyer_equipment_1
 	}
 	touhou_tank_weapon_magic_modern_tank_aa_equipment_1 = {
-		category = tank_medium_main_armament
-		gfx = tank_anti_air_cannon_3
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1684,10 +1697,10 @@ equipment_modules = {
 		}
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
+		gfx = touhou_tank_weapon_magic_modern_tank_aa_equipment_1
 	}
 	touhou_tank_goliath_1_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1697,10 +1710,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 16
+		gfx = touhou_tank_goliath_1_engine
 	}
 	touhou_tank_goliath_1_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1710,10 +1723,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 8
+		gfx = touhou_tank_goliath_1_suspension
 	}
 	touhou_tank_goliath_1_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1723,16 +1736,18 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 12
+		gfx = touhou_tank_goliath_1_armor
 	}
 	touhou_tank_goliath_1_control = {
-		category = tank_heavy_turret_type
-		gfx = tank_heavy_three_man_tank_turret
+		category = touhou_tank_heavy_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				touhou_tank_medium_main_armament
+				touhou_tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -1743,10 +1758,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 8
+		gfx = touhou_tank_goliath_1_control
 	}
 	touhou_tank_weapon_goliath_equipment_1 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_cannon
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1763,10 +1778,10 @@ equipment_modules = {
 			steel = 2
 			chromium = 2
 		}
+		gfx = touhou_tank_weapon_goliath_equipment_1
 	}
 	touhou_tank_goliath_2_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1776,10 +1791,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 20
+		gfx = touhou_tank_goliath_2_engine
 	}
 	touhou_tank_goliath_2_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1789,10 +1804,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 10
+		gfx = touhou_tank_goliath_2_suspension
 	}
 	touhou_tank_goliath_2_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1802,16 +1817,18 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 15
+		gfx = touhou_tank_goliath_2_armor
 	}
 	touhou_tank_goliath_2_control = {
-		category = tank_heavy_turret_type
-		gfx = tank_heavy_three_man_tank_turret
+		category = touhou_tank_heavy_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				touhou_tank_medium_main_armament
+				touhou_tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -1822,10 +1839,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 10
+		gfx = touhou_tank_goliath_2_control
 	}
 	touhou_tank_weapon_goliath_equipment_2 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_cannon
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1843,10 +1860,10 @@ equipment_modules = {
 			chromium = 2
 			tungsten = 1
 		}
+		gfx = touhou_tank_weapon_goliath_equipment_2
 	}
 	touhou_tank_goliath_3_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1856,10 +1873,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 24
+		gfx = touhou_tank_goliath_3_engine
 	}
 	touhou_tank_goliath_3_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1869,10 +1886,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 12
+		gfx = touhou_tank_goliath_3_suspension
 	}
 	touhou_tank_goliath_3_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1882,16 +1899,18 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 18
+		gfx = touhou_tank_goliath_3_armor
 	}
 	touhou_tank_goliath_3_control = {
-		category = tank_heavy_turret_type
-		gfx = tank_heavy_three_man_tank_turret
+		category = touhou_tank_heavy_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				touhou_tank_medium_main_armament
+				touhou_tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -1902,10 +1921,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 12
+		gfx = touhou_tank_goliath_3_control
 	}
 	touhou_tank_weapon_goliath_equipment_3 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_cannon
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1923,10 +1942,10 @@ equipment_modules = {
 			chromium = 2
 			tungsten = 2
 		}
+		gfx = touhou_tank_weapon_goliath_equipment_3
 	}
 	touhou_tank_goliath_4_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1936,10 +1955,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 30
+		gfx = touhou_tank_goliath_4_engine
 	}
 	touhou_tank_goliath_4_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1949,10 +1968,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 15
+		gfx = touhou_tank_goliath_4_suspension
 	}
 	touhou_tank_goliath_4_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -1962,16 +1981,18 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 22.5
+		gfx = touhou_tank_goliath_4_armor
 	}
 	touhou_tank_goliath_4_control = {
-		category = tank_heavy_turret_type
-		gfx = tank_heavy_three_man_tank_turret
+		category = touhou_tank_heavy_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				touhou_tank_medium_main_armament
+				touhou_tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -1982,10 +2003,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 15
+		gfx = touhou_tank_goliath_4_control
 	}
 	touhou_tank_weapon_goliath_equipment_4 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_cannon
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2003,10 +2024,10 @@ equipment_modules = {
 			chromium = 2
 			tungsten = 2
 		}
+		gfx = touhou_tank_weapon_goliath_equipment_4
 	}
 	touhou_tank_oni_champion_0_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2016,10 +2037,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.75
+		gfx = touhou_tank_oni_champion_0_engine
 	}
 	touhou_tank_oni_champion_0_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -2029,10 +2050,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.375
+		gfx = touhou_tank_oni_champion_0_suspension
 	}
 	touhou_tank_oni_champion_0_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -2042,16 +2063,18 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.5625
+		gfx = touhou_tank_oni_champion_0_armor
 	}
 	touhou_tank_oni_champion_0_control = {
-		category = tank_heavy_turret_type
-		gfx = tank_heavy_three_man_tank_turret
+		category = touhou_tank_heavy_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				touhou_tank_medium_main_armament
+				touhou_tank_heavy_main_armament
 			}
 		}
 		add_stats = {
@@ -2062,10 +2085,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.375
+		gfx = touhou_tank_oni_champion_0_control
 	}
 	touhou_tank_weapon_oni_champion_equipment_0 = {
-		category = tank_heavy_main_armament
-		gfx = tank_heavy_cannon
+		category = touhou_tank_heavy_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2081,10 +2104,10 @@ equipment_modules = {
 			steel = 2
 			tungsten = 2
 		}
+		gfx = touhou_tank_weapon_oni_champion_equipment_0
 	}
 	touhou_tank_evil_armor_0_engine = {
-		category = tank_engine_type
-		gfx = tank_diesel_engine
+		category = touhou_tank_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2094,10 +2117,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.1
+		gfx = touhou_tank_evil_armor_0_engine
 	}
 	touhou_tank_evil_armor_0_suspension = {
-		category = tank_suspension_type
-		gfx = tank_torsion_bar_suspension
+		category = touhou_tank_suspension_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -2107,10 +2130,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.1
+		gfx = touhou_tank_evil_armor_0_suspension
 	}
 	touhou_tank_evil_armor_0_armor = {
-		category = tank_armor_type
-		gfx = tank_welded_armor
+		category = touhou_tank_armor_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
@@ -2120,15 +2143,16 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.1
+		gfx = touhou_tank_evil_armor_0_armor
 	}
 	touhou_tank_evil_armor_0_control = {
-		category = tank_medium_turret_type
-		gfx = tank_medium_three_man_tank_turret
+		category = touhou_tank_medium_turret_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
+				touhou_tank_medium_main_armament
 			}
 		}
 		add_stats = {
@@ -2139,10 +2163,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.1
+		gfx = touhou_tank_evil_armor_0_control
 	}
 	touhou_tank_weapon_evil_armor_equipment_0 = {
-		category = tank_medium_main_armament
-		gfx = tank_medium_cannon
+		category = touhou_tank_medium_main_armament
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2155,10 +2179,11 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.1
+		gfx = touhou_tank_weapon_evil_armor_equipment_0
 	}
 	touhou_tank_wakan_engine = {
 		abbreviation = "die"
-		category = tank_engine_type
+		category = touhou_tank_engine_type
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
 			build_cost_ic = 1
@@ -2167,11 +2192,11 @@ equipment_modules = {
 		}
 		multiply_stats = {
 		}
-		gfx = tank_diesel_engine
+		gfx = touhou_tank_wakan_engine
 	}
 	touhou_tank_wakan_suspension = {
 		abbreviation = "tor"
-		category = tank_suspension_type
+		category = touhou_tank_suspension_type
 		sfx = sfx_ui_sd_module_sonar
 		add_stats = {
 			build_cost_ic = 1
@@ -2180,11 +2205,11 @@ equipment_modules = {
 		dismantle_cost_ic = 2
 		multiply_stats = {
 		}
-		gfx = tank_torsion_bar_suspension
+		gfx = touhou_tank_wakan_suspension
 	}
 	touhou_tank_wakan_armor = {
 		abbreviation = "wel"
-		category = tank_armor_type
+		category = touhou_tank_armor_type
 		sfx = sfx_ui_sd_module_sonar
 		xp_cost = 8
 		add_stats = {
@@ -2199,11 +2224,11 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 1
 		}
-		gfx = tank_welded_armor
+		gfx = touhou_tank_wakan_armor
 	}
 	touhou_tank_wakan_light_control = {
 		abbreviation = "l3m"
-		category = tank_light_turret_type
+		category = touhou_tank_light_turret_type
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			build_cost_ic = 1.5
@@ -2214,15 +2239,16 @@ equipment_modules = {
 		xp_cost = 2
 		multiply_stats = {
 		}
-		gfx = tank_light_three_man_tank_turret
+		gfx = touhou_tank_wakan_light_control
 	}
 	touhou_tank_wakan_medium_control = {
 		abbreviation = "m3m"
-		category = tank_medium_turret_type
+		category = touhou_tank_medium_turret_type
 		sfx = sfx_ui_sd_module_turret
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
+				touhou_tank_medium_main_armament
 			}
 		}
 		add_stats = {
@@ -2234,11 +2260,11 @@ equipment_modules = {
 		xp_cost = 2
 		multiply_stats = {
 		}
-		gfx = tank_medium_three_man_tank_turret
+		gfx = touhou_tank_wakan_medium_control
 	}
 	touhou_tank_wakan_light_weapon_1 = {
 		abbreviation = "sc1"
-		category = tank_small_main_armament
+		category = touhou_tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			soft_attack = 10
@@ -2251,14 +2277,14 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = touhou_tank_small_main_armament
 			convert_cost_ic = 1.5
 		}
-		gfx = tank_small_cannon
+		gfx = touhou_tank_wakan_light_weapon_1
 	}
 	touhou_tank_wakan_medium_weapon_1 = {
 		abbreviation = "mc1"
-		category = tank_medium_main_armament
+		category = touhou_tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		add_stats = {
@@ -2273,18 +2299,18 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = touhou_tank_medium_main_armament
 			convert_cost_ic = 3
 		}
 		build_cost_resources = {
 			tungsten = 1
 			steel = 1
 		}
-		gfx = tank_medium_cannon
+		gfx = touhou_tank_wakan_medium_weapon_1
 	}
 	touhou_tank_wakan_light_weapon_2 = {
 		abbreviation = "sc2"
-		category = tank_small_main_armament
+		category = touhou_tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			soft_attack = 15
@@ -2297,14 +2323,14 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = touhou_tank_small_main_armament
 			convert_cost_ic = 3
 		}
-		gfx = tank_small_cannon_2
+		gfx = touhou_tank_wakan_light_weapon_2
 	}
 	touhou_tank_wakan_medium_weapon_2 = {
 		abbreviation = "mc2"
-		category = tank_medium_main_armament
+		category = touhou_tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		dismantle_cost_ic = 1
@@ -2320,7 +2346,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = touhou_tank_medium_main_armament
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -2328,11 +2354,11 @@ equipment_modules = {
 			steel = 2
 			chromium = 1
 		}
-		gfx = tank_medium_cannon_2
+		gfx = touhou_tank_wakan_medium_weapon_2
 	}
 	touhou_tank_wakan_light_weapon_3 = {
 		abbreviation = "hv1"
-		category = tank_small_main_armament
+		category = touhou_tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		add_stats = {
@@ -2346,18 +2372,18 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = touhou_tank_small_main_armament
 			convert_cost_ic = 3
 		}
 		build_cost_resources = {
 			tungsten = 2
 			steel = 2
 		}
-		gfx = tank_high_velocity_cannon
+		gfx = touhou_tank_wakan_light_weapon_3
 	}
 	touhou_tank_wakan_medium_weapon_3 = {
 		abbreviation = "hv2"
-		category = tank_medium_main_armament
+		category = touhou_tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		add_stats = {
@@ -2371,7 +2397,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 1
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = touhou_tank_medium_main_armament
 			convert_cost_ic = 5
 		}
 		build_cost_resources = {
@@ -2379,6 +2405,1619 @@ equipment_modules = {
 			chromium = 1
 			steel = 2
 		}
-		gfx = tank_high_velocity_cannon_2
+		gfx = touhou_tank_wakan_medium_weapon_3
+	}
+	touhou_tank_optional_magic_radio_1 = {
+		category = touhou_tank_radio_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 0.9
+			reliability = 0.025
+			fuel_consumption = 0.08
+		}
+		multiply_stats = {
+			breakthrough = 0.14
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.225
+		forbid_module_categories = {
+			tank_radio_module
+		}
+		gfx = touhou_tank_optional_magic_radio_1
+	}
+	touhou_tank_optional_magic_radio_2 = {
+		category = touhou_tank_radio_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1.9
+			soft_attack = 1
+			fuel_consumption = 0.12
+			reliability = -0.03
+		}
+		multiply_stats = {
+			breakthrough = 0.21
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.475
+		forbid_module_categories = {
+			tank_radio_module
+		}
+		gfx = touhou_tank_optional_magic_radio_2
+	}
+	touhou_tank_optional_magic_radio_3 = {
+		category = touhou_tank_radio_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 3.4
+			reliability = -0.055
+			fuel_consumption = 0.2
+		}
+		multiply_stats = {
+			breakthrough = 0.28
+			soft_attack = 0.08
+			defense = -0.05
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.85
+		forbid_module_categories = {
+			tank_radio_module
+		}
+		gfx = touhou_tank_optional_magic_radio_3
+	}
+	touhou_tank_optional_magic_smoke = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 3
+			breakthrough = 2.5
+			build_cost_ic = 1.4
+			reliability = -0.025
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.35
+		gfx = touhou_tank_optional_magic_smoke
+	}
+	touhou_tank_optional_magic_wet_storage = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.11
+			soft_attack = -0.6
+			build_cost_ic = 1.7
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.425
+		gfx = touhou_tank_optional_magic_wet_storage
+	}
+	touhou_tank_optional_magic_maintenance = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.065
+			breakthrough = 1
+			build_cost_ic = 2.1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 20
+		dismantle_cost_ic = 0.525
+		gfx = touhou_tank_optional_magic_maintenance
+	}
+	touhou_tank_optional_magic_secondary_mg = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 4
+			breakthrough = 1.5
+			reliability = -0.025
+			fuel_consumption = 0.08
+			build_cost_ic = 2.3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.575
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_magic_secondary_mg
+	}
+	touhou_tank_optional_magic_secondary_cannon = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 6
+			hard_attack = 1
+			breakthrough = 1.5
+			reliability = -0.07
+			build_cost_ic = 4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_magic_secondary_cannon
+	}
+	touhou_tank_optional_magic_secondary_howitzer = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 9
+			breakthrough = -1
+			reliability = -0.1
+			fuel_consumption = 0.4
+			maximum_speed = -0.25
+			build_cost_ic = 5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.25
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_magic_secondary_howitzer
+	}
+	touhou_tank_optional_magic_secondary_lance = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = -0.5
+			hard_attack = 3
+			ap_attack = 7
+			reliability = -0.08
+			build_cost_ic = 4.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.15
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_magic_secondary_lance
+	}
+	touhou_tank_optional_magic_secondary_aa = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 3
+			defense = 1
+			soft_attack = -0.5
+			fuel_consumption = 0.15
+			build_cost_ic = 3.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.875
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_magic_secondary_aa
+	}
+	touhou_tank_optional_magic_secondary_flame = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 7
+			reliability = -0.12
+			armor_value = -0.5
+			fuel_consumption = 0.25
+			build_cost_ic = 4.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.1
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_magic_secondary_flame
+	}
+	touhou_tank_optional_magic_coax = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 0.5
+			hard_attack = 1
+			build_cost_ic = 1.6
+			reliability = -0.02
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4
+		gfx = touhou_tank_optional_magic_coax
+	}
+	touhou_tank_optional_magic_stabilizer = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			breakthrough = 5
+			defense = -1
+			fuel_consumption = 0.15
+			build_cost_ic = 3.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.8
+		gfx = touhou_tank_optional_magic_stabilizer
+	}
+	touhou_tank_optional_magic_sloped_shield = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 2.8
+			fuel_consumption = 0.14
+			reliability = -0.03
+		}
+		multiply_stats = {
+			armor_value = 0.16
+			defense = -0.04
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 8
+		dismantle_cost_ic = 0.7
+		gfx = touhou_tank_optional_magic_sloped_shield
+	}
+	touhou_tank_optional_magic_skirts = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			armor_value = 1
+			defense = 3
+			fuel_consumption = 0.13
+			build_cost_ic = 2.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.6
+		gfx = touhou_tank_optional_magic_skirts
+	}
+	touhou_tank_optional_magic_extra_magazine = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 2.1
+			reliability = -0.13
+			fuel_consumption = 0.25
+		}
+		multiply_stats = {
+			soft_attack = 0.09
+			hard_attack = 0.06
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.525
+		gfx = touhou_tank_optional_magic_extra_magazine
+	}
+	touhou_tank_optional_magic_dozer = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			entrenchment = 0.5
+			maximum_speed = -0.25
+			reliability = -0.02
+			build_cost_ic = 2.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_tank_optional_magic_dozer
+	}
+	touhou_tank_optional_magic_fuel_drum = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_capacity = 60
+			fuel_consumption = -0.04
+			reliability = -0.045
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		gfx = touhou_tank_optional_magic_fuel_drum
+	}
+	touhou_tank_optional_magic_toolbox = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.012
+			breakthrough = 0.2
+			fuel_consumption = 0.05
+			build_cost_ic = 1.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.35
+		gfx = touhou_tank_optional_magic_toolbox
+	}
+	touhou_tank_optional_magic_signal_flags = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 0.25
+			breakthrough = 0.25
+			armor_value = -0.3
+			build_cost_ic = 1.1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.275
+		gfx = touhou_tank_optional_magic_signal_flags
+	}
+	touhou_tank_optional_magic_ornamental_armor = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			breakthrough = 0.25
+			reliability = 0.005
+			build_cost_ic = 1.8
+			fuel_consumption = 0.04
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.45
+		gfx = touhou_tank_optional_magic_ornamental_armor
+	}
+	touhou_tank_optional_magic_parade_lights = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 0.4
+			breakthrough = 0.3
+			reliability = -0.02
+			fuel_consumption = 0.1
+			build_cost_ic = 1.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.35
+		gfx = touhou_tank_optional_magic_parade_lights
+	}
+	touhou_tank_optional_magic_crew_comfort = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.01
+			armor_value = -0.4
+			build_cost_ic = 1.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.375
+		gfx = touhou_tank_optional_magic_crew_comfort
+	}
+	touhou_tank_optional_magic_spare_tracks = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.018
+			soft_attack = 0.4
+			maximum_speed = -0.4
+			build_cost_ic = 2.3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.575
+		gfx = touhou_tank_optional_magic_spare_tracks
+	}
+	touhou_tank_optional_magic_emergency_battery = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = -0.12
+			fuel_consumption = 0.45
+			build_cost_ic = 3
+		}
+		multiply_stats = {
+			maximum_speed = 0.08
+			soft_attack = 0.05
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		gfx = touhou_tank_optional_magic_emergency_battery
+	}
+	touhou_tank_optional_magic_cooling_fins = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.055
+			soft_attack = -0.7
+			build_cost_ic = 1.9
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.475
+		gfx = touhou_tank_optional_magic_cooling_fins
+	}
+	touhou_tank_optional_magic_seals = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.012
+			armor_value = 0.4
+			maximum_speed = -0.15
+			build_cost_ic = 1.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.375
+		gfx = touhou_tank_optional_magic_seals
+	}
+	touhou_tank_optional_wakan_radio_1 = {
+		category = touhou_tank_radio_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1
+			maximum_speed = -0.1
+		}
+		multiply_stats = {
+			defense = 0.22
+			breakthrough = -0.04
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.25
+		forbid_module_categories = {
+			tank_radio_module
+		}
+		gfx = touhou_tank_optional_wakan_radio_1
+	}
+	touhou_tank_optional_wakan_radio_2 = {
+		category = touhou_tank_radio_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 2
+			reliability = 0.04
+			maximum_speed = -0.25
+		}
+		multiply_stats = {
+			defense = 0.32
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		forbid_module_categories = {
+			tank_radio_module
+		}
+		gfx = touhou_tank_optional_wakan_radio_2
+	}
+	touhou_tank_optional_wakan_radio_3 = {
+		category = touhou_tank_radio_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 3.2
+			maximum_speed = -0.35
+			fuel_consumption = 0.15
+		}
+		multiply_stats = {
+			defense = 0.45
+			armor_value = 0.06
+			breakthrough = -0.08
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.8
+		forbid_module_categories = {
+			tank_radio_module
+		}
+		gfx = touhou_tank_optional_wakan_radio_3
+	}
+	touhou_tank_optional_wakan_smoke = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 4
+			breakthrough = 0.5
+			build_cost_ic = 1.3
+			fuel_consumption = 0.12
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.325
+		gfx = touhou_tank_optional_wakan_smoke
+	}
+	touhou_tank_optional_wakan_wet_storage = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.08
+			defense = 1
+			breakthrough = -1
+			build_cost_ic = 1.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.375
+		gfx = touhou_tank_optional_wakan_wet_storage
+	}
+	touhou_tank_optional_wakan_maintenance = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.075
+			fuel_consumption = -0.04
+			maximum_speed = -0.15
+			build_cost_ic = 1.9
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 20
+		dismantle_cost_ic = 0.475
+		gfx = touhou_tank_optional_wakan_maintenance
+	}
+	touhou_tank_optional_wakan_secondary_mg = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 2.5
+			defense = 2.5
+			breakthrough = -0.5
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_wakan_secondary_mg
+	}
+	touhou_tank_optional_wakan_secondary_cannon = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 1.5
+			hard_attack = 4
+			ap_attack = 4
+			breakthrough = -1
+			build_cost_ic = 3.9
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.975
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_wakan_secondary_cannon
+	}
+	touhou_tank_optional_wakan_secondary_howitzer = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 5
+			defense = 2
+			maximum_speed = -0.3
+			build_cost_ic = 4.3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.075
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_wakan_secondary_howitzer
+	}
+	touhou_tank_optional_wakan_secondary_lance = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 0.5
+			hard_attack = 3.5
+			ap_attack = 5
+			breakthrough = -1.5
+			build_cost_ic = 3.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.95
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_wakan_secondary_lance
+	}
+	touhou_tank_optional_wakan_secondary_aa = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 2.5
+			defense = 1.5
+			maximum_speed = -0.25
+			build_cost_ic = 3.1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.775
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_wakan_secondary_aa
+	}
+	touhou_tank_optional_wakan_secondary_flame = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 5.5
+			maximum_speed = -0.35
+			fuel_consumption = 0.2
+			build_cost_ic = 3.7
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.925
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_wakan_secondary_flame
+	}
+	touhou_tank_optional_wakan_coax = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 0.4
+			defense = 1.4
+			breakthrough = -0.2
+			build_cost_ic = 1.3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.325
+		gfx = touhou_tank_optional_wakan_coax
+	}
+	touhou_tank_optional_wakan_stabilizer = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 3
+			reliability = 0.03
+			maximum_speed = -0.3
+			build_cost_ic = 2.9
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.725
+		gfx = touhou_tank_optional_wakan_stabilizer
+	}
+	touhou_tank_optional_wakan_sloped_shield = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 3
+			maximum_speed = -0.3
+		}
+		multiply_stats = {
+			armor_value = 0.12
+			defense = 0.1
+			breakthrough = -0.07
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 8
+		dismantle_cost_ic = 0.75
+		gfx = touhou_tank_optional_wakan_sloped_shield
+	}
+	touhou_tank_optional_wakan_skirts = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			armor_value = 1.5
+			defense = 3.5
+			maximum_speed = -0.3
+			build_cost_ic = 2.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_tank_optional_wakan_skirts
+	}
+	touhou_tank_optional_wakan_extra_magazine = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 3
+			breakthrough = 2
+			reliability = -0.08
+			build_cost_ic = 1.9
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.475
+		gfx = touhou_tank_optional_wakan_extra_magazine
+	}
+	touhou_tank_optional_wakan_dozer = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			entrenchment = 0.7
+			defense = 0.5
+			maximum_speed = -0.4
+			build_cost_ic = 2.1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.525
+		gfx = touhou_tank_optional_wakan_dozer
+	}
+	touhou_tank_optional_wakan_fuel_drum = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_capacity = 80
+			maximum_speed = -0.45
+			build_cost_ic = 1.9
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.475
+		gfx = touhou_tank_optional_wakan_fuel_drum
+	}
+	touhou_tank_optional_wakan_toolbox = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.018
+			maximum_speed = -0.2
+			build_cost_ic = 1.1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.275
+		gfx = touhou_tank_optional_wakan_toolbox
+	}
+	touhou_tank_optional_wakan_signal_flags = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 0.6
+			breakthrough = -0.2
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.25
+		gfx = touhou_tank_optional_wakan_signal_flags
+	}
+	touhou_tank_optional_wakan_ornamental_armor = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 0.6
+			maximum_speed = -0.15
+			build_cost_ic = 1.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4
+		gfx = touhou_tank_optional_wakan_ornamental_armor
+	}
+	touhou_tank_optional_wakan_parade_lights = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 0.3
+			reliability = 0.005
+			build_cost_ic = 1.3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.325
+		gfx = touhou_tank_optional_wakan_parade_lights
+	}
+	touhou_tank_optional_wakan_crew_comfort = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.015
+			fuel_consumption = 0.05
+			build_cost_ic = 1.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.35
+		gfx = touhou_tank_optional_wakan_crew_comfort
+	}
+	touhou_tank_optional_wakan_spare_tracks = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 0.7
+			reliability = 0.005
+			maximum_speed = -0.3
+			build_cost_ic = 1.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.45
+		gfx = touhou_tank_optional_wakan_spare_tracks
+	}
+	touhou_tank_optional_wakan_emergency_battery = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = -0.07
+			fuel_consumption = 0.3
+			build_cost_ic = 2.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			defense = -0.08
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.625
+		gfx = touhou_tank_optional_wakan_emergency_battery
+	}
+	touhou_tank_optional_wakan_cooling_fins = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.035
+			defense = 1
+			maximum_speed = -0.3
+			build_cost_ic = 1.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.45
+		gfx = touhou_tank_optional_wakan_cooling_fins
+	}
+	touhou_tank_optional_wakan_seals = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.022
+			fuel_consumption = 0.04
+			build_cost_ic = 1.3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.325
+		gfx = touhou_tank_optional_wakan_seals
+	}
+	touhou_tank_optional_demonforce_radio_1 = {
+		category = touhou_tank_radio_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 1
+			reliability = -0.04
+		}
+		multiply_stats = {
+			breakthrough = 0.2
+			defense = -0.05
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.25
+		forbid_module_categories = {
+			tank_radio_module
+		}
+		gfx = touhou_tank_optional_demonforce_radio_1
+	}
+	touhou_tank_optional_demonforce_radio_2 = {
+		category = touhou_tank_radio_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 2.2
+			reliability = -0.065
+		}
+		multiply_stats = {
+			soft_attack = 0.07
+			breakthrough = 0.27
+			defense = -0.06
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		forbid_module_categories = {
+			tank_radio_module
+		}
+		gfx = touhou_tank_optional_demonforce_radio_2
+	}
+	touhou_tank_optional_demonforce_radio_3 = {
+		category = touhou_tank_radio_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 3.5
+			reliability = -0.1
+			fuel_consumption = 0.3
+		}
+		multiply_stats = {
+			breakthrough = 0.34
+			hard_attack = 0.09
+			defense = -0.1
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.875
+		forbid_module_categories = {
+			tank_radio_module
+		}
+		gfx = touhou_tank_optional_demonforce_radio_3
+	}
+	touhou_tank_optional_demonforce_smoke = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			defense = 1.5
+			breakthrough = 3
+			maximum_speed = 0.1
+			build_cost_ic = 1.5
+			reliability = -0.045
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.375
+		gfx = touhou_tank_optional_demonforce_smoke
+	}
+	touhou_tank_optional_demonforce_wet_storage = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.12
+			soft_attack = -1
+			breakthrough = -0.5
+			build_cost_ic = 1.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4
+		gfx = touhou_tank_optional_demonforce_wet_storage
+	}
+	touhou_tank_optional_demonforce_maintenance = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.09
+			fuel_consumption = 0.16
+			maximum_speed = -0.2
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 20
+		dismantle_cost_ic = 0.5
+		gfx = touhou_tank_optional_demonforce_maintenance
+	}
+	touhou_tank_optional_demonforce_secondary_mg = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 5
+			reliability = -0.04
+			fuel_consumption = 0.18
+			build_cost_ic = 2.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.6
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_demonforce_secondary_mg
+	}
+	touhou_tank_optional_demonforce_secondary_cannon = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 3
+			hard_attack = 4.5
+			breakthrough = 1
+			reliability = -0.09
+			maximum_speed = -0.2
+			build_cost_ic = 4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_demonforce_secondary_cannon
+	}
+	touhou_tank_optional_demonforce_secondary_howitzer = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 7
+			hard_attack = 1.5
+			reliability = -0.12
+			build_cost_ic = 4.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.125
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_demonforce_secondary_howitzer
+	}
+	touhou_tank_optional_demonforce_secondary_lance = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 1
+			hard_attack = 5
+			ap_attack = 3.5
+			maximum_speed = -0.4
+			reliability = -0.07
+			build_cost_ic = 4.1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.025
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_demonforce_secondary_lance
+	}
+	touhou_tank_optional_demonforce_secondary_aa = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 3.5
+			soft_attack = 0.5
+			reliability = -0.09
+			build_cost_ic = 3.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.85
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_demonforce_secondary_aa
+	}
+	touhou_tank_optional_demonforce_secondary_flame = {
+		category = touhou_tank_secondary_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 7.5
+			reliability = -0.1
+			defense = -1
+			fuel_consumption = 0.3
+			build_cost_ic = 4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1
+		forbid_module_categories = {
+			tank_secondary_turret
+		}
+		gfx = touhou_tank_optional_demonforce_secondary_flame
+	}
+	touhou_tank_optional_demonforce_coax = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 1.5
+			reliability = -0.025
+			fuel_consumption = 0.08
+			build_cost_ic = 1.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.45
+		gfx = touhou_tank_optional_demonforce_coax
+	}
+	touhou_tank_optional_demonforce_stabilizer = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			breakthrough = 3
+			hard_attack = 1
+			reliability = -0.04
+			build_cost_ic = 3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		gfx = touhou_tank_optional_demonforce_stabilizer
+	}
+	touhou_tank_optional_demonforce_sloped_shield = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 2.7
+			maximum_speed = -0.4
+			reliability = -0.04
+		}
+		multiply_stats = {
+			armor_value = 0.2
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 8
+		dismantle_cost_ic = 0.675
+		gfx = touhou_tank_optional_demonforce_sloped_shield
+	}
+	touhou_tank_optional_demonforce_skirts = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			armor_value = 2
+			soft_attack = 0.8
+			reliability = -0.045
+			maximum_speed = -0.25
+			build_cost_ic = 2.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.65
+		gfx = touhou_tank_optional_demonforce_skirts
+	}
+	touhou_tank_optional_demonforce_extra_magazine = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			build_cost_ic = 2
+			reliability = -0.14
+			fuel_consumption = 0.3
+		}
+		multiply_stats = {
+			soft_attack = 0.12
+			defense = -0.05
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		gfx = touhou_tank_optional_demonforce_extra_magazine
+	}
+	touhou_tank_optional_demonforce_dozer = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			entrenchment = 0.4
+			soft_attack = 0.6
+			reliability = -0.05
+			maximum_speed = -0.3
+			build_cost_ic = 2.3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.575
+		gfx = touhou_tank_optional_demonforce_dozer
+	}
+	touhou_tank_optional_demonforce_fuel_drum = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			fuel_capacity = 100
+			fuel_consumption = 0.1
+			reliability = -0.04
+			maximum_speed = -0.3
+			build_cost_ic = 2.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_tank_optional_demonforce_fuel_drum
+	}
+	touhou_tank_optional_demonforce_toolbox = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.02
+			fuel_consumption = 0.07
+			build_cost_ic = 1.3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.325
+		gfx = touhou_tank_optional_demonforce_toolbox
+	}
+	touhou_tank_optional_demonforce_signal_flags = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 0.5
+			defense = -0.3
+			build_cost_ic = 1.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.3
+		gfx = touhou_tank_optional_demonforce_signal_flags
+	}
+	touhou_tank_optional_demonforce_ornamental_armor = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			soft_attack = 0.4
+			armor_value = 0.3
+			maximum_speed = -0.35
+			build_cost_ic = 1.9
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.475
+		gfx = touhou_tank_optional_demonforce_ornamental_armor
+	}
+	touhou_tank_optional_demonforce_parade_lights = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			breakthrough = 0.3
+			fuel_consumption = 0.08
+			reliability = -0.01
+			build_cost_ic = 1.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.3
+		gfx = touhou_tank_optional_demonforce_parade_lights
+	}
+	touhou_tank_optional_demonforce_crew_comfort = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.018
+			soft_attack = -0.3
+			build_cost_ic = 1.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.3
+		gfx = touhou_tank_optional_demonforce_crew_comfort
+	}
+	touhou_tank_optional_demonforce_spare_tracks = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.025
+			fuel_consumption = 0.1
+			maximum_speed = -0.3
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		gfx = touhou_tank_optional_demonforce_spare_tracks
+	}
+	touhou_tank_optional_demonforce_emergency_battery = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = -0.15
+			fuel_consumption = 0.4
+			build_cost_ic = 2.8
+		}
+		multiply_stats = {
+			maximum_speed = 0.12
+			breakthrough = 0.06
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.7
+		gfx = touhou_tank_optional_demonforce_emergency_battery
+	}
+	touhou_tank_optional_demonforce_cooling_fins = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.06
+			fuel_consumption = 0.15
+			maximum_speed = -0.15
+			build_cost_ic = 2.1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.525
+		gfx = touhou_tank_optional_demonforce_cooling_fins
+	}
+	touhou_tank_optional_demonforce_seals = {
+		category = touhou_tank_special_module
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			armor_value = 0.6
+			reliability = 0.01
+			maximum_speed = -0.25
+			build_cost_ic = 1.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4
+		gfx = touhou_tank_optional_demonforce_seals
 	}
 }

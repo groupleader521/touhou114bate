@@ -46,7 +46,7 @@ exports.planAircraftDesigner=function({root,game,models,fixedDefinitions,vanilla
     const name=localisation.get(main.id),prefix=main.style==='magic'?'魔力':main.style==='wakan'?'灵力':main.style==='demonforce'?'妖力':main.id.startsWith('suicide')?'自爆人偶':main.id.startsWith('tengu')?'天狗':main.id.startsWith('cas_boli')?'博丽':'欲望';
     const systemNames=({magic:['御空魔力核','附魔护罩','魔力储能组件'],wakan:['御风推进符阵','护身符阵','灵力导引阵列'],demonforce:['妖翼推进组件','妖羽护甲','妖力续航器官']})[main.style]||[prefix+'推进组件',prefix+'防护组件',prefix+'续航组件'];
     const desc='原版'+({small:'小型',medium:'中型',large:'大型'})[size]+'机体原型下的'+prefix+'泛型机体。可组合对应尺寸的原版与幻想乡模块。';
-    const fields=[N('archetype',a),N('year',S(old,'year')),N('priority',S(old,'priority')||'5'),N('picture',type),N('variant_name',type+'_design'),N('derived_variant_name',type+'_design'),N('is_convertable','yes'),N('active','yes'),N('is_buildable','yes'),N('upgrades',[]),
+    const fields=[N('archetype',a),N('year',S(old,'year')),N('priority',S(old,'priority')||'5'),N('picture',type),N('variant_name',type+'_design'),N('derived_variant_name',type+'_design'),N('is_convertable','yes'),N('active','no'),N('is_buildable','yes'),N('upgrades',[]),
       structuredClone(slots(native)),N('default_modules',slots(native).value.map(n=>N(n.key,'empty'))),
       ...['lend_lease_cost','manpower','air_superiority'].map(k=>N(k,num(expected[k]||0))),
       ...Object.entries(body).map(([k,v])=>N(k,num(v))),N('resources',Object.entries(resources).filter(([,v])=>v).map(([k,v])=>N(k,num(v)))),N('can_be_produced',[N('has_tech',lic),...condition])];

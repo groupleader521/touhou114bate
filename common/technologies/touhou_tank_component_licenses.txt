@@ -1,6 +1,6 @@
 # Script-only national component licenses; no research folders or independent research nodes.
 technologies = {
-	touhou_tank_license_demonforce_heavy_1 = {
+	touhou_tank_frame_license_demonforce_heavy_1 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -15,6 +15,15 @@ technologies = {
 			heavy_tank_flame_chassis_touhou_demonforce_heavy_1
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_demonforce_heavy_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_demonforce_heavy_1_engine
 			touhou_tank_demonforce_heavy_1_suspension
 			touhou_tank_demonforce_heavy_1_armor
@@ -25,7 +34,7 @@ technologies = {
 			touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_1
 		}
 	}
-	touhou_tank_license_demonforce_heavy_2 = {
+	touhou_tank_frame_license_demonforce_heavy_2 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -40,6 +49,15 @@ technologies = {
 			heavy_tank_flame_chassis_touhou_demonforce_heavy_2
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_demonforce_heavy_2 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_demonforce_heavy_2_engine
 			touhou_tank_demonforce_heavy_2_suspension
 			touhou_tank_demonforce_heavy_2_armor
@@ -50,7 +68,7 @@ technologies = {
 			touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_2
 		}
 	}
-	touhou_tank_license_demonforce_heavy_3 = {
+	touhou_tank_frame_license_demonforce_heavy_3 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -65,6 +83,15 @@ technologies = {
 			heavy_tank_flame_chassis_touhou_demonforce_heavy_3
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_demonforce_heavy_3 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_demonforce_heavy_3_engine
 			touhou_tank_demonforce_heavy_3_suspension
 			touhou_tank_demonforce_heavy_3_armor
@@ -75,7 +102,7 @@ technologies = {
 			touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_3
 		}
 	}
-	touhou_tank_license_demonforce_super_heavy_1 = {
+	touhou_tank_frame_license_demonforce_super_heavy_1 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -91,6 +118,15 @@ technologies = {
 			super_heavy_tank_aa_chassis_touhou_demonforce_super_heavy_1_preset
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_demonforce_super_heavy_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_demonforce_super_heavy_1_engine
 			touhou_tank_demonforce_super_heavy_1_suspension
 			touhou_tank_demonforce_super_heavy_1_armor
@@ -101,7 +137,7 @@ technologies = {
 			touhou_tank_weapon_demonforce_super_heavy_tank_aa_equipment_1
 		}
 	}
-	touhou_tank_license_magic_light_1 = {
+	touhou_tank_frame_license_magic_light_1 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -116,6 +152,15 @@ technologies = {
 			light_tank_flame_chassis_touhou_magic_light_1
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_magic_light_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_magic_light_1_engine
 			touhou_tank_magic_light_1_suspension
 			touhou_tank_magic_light_1_armor
@@ -126,7 +171,7 @@ technologies = {
 			touhou_tank_weapon_magic_light_tank_aa_equipment_1
 		}
 	}
-	touhou_tank_license_magic_light_2 = {
+	touhou_tank_frame_license_magic_light_2 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -141,6 +186,15 @@ technologies = {
 			light_tank_flame_chassis_touhou_magic_light_2
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_magic_light_2 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_magic_light_2_engine
 			touhou_tank_magic_light_2_suspension
 			touhou_tank_magic_light_2_armor
@@ -151,7 +205,7 @@ technologies = {
 			touhou_tank_weapon_magic_light_tank_aa_equipment_2
 		}
 	}
-	touhou_tank_license_magic_light_3 = {
+	touhou_tank_frame_license_magic_light_3 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -166,6 +220,15 @@ technologies = {
 			light_tank_flame_chassis_touhou_magic_light_3
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_magic_light_3 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_magic_light_3_engine
 			touhou_tank_magic_light_3_suspension
 			touhou_tank_magic_light_3_armor
@@ -176,7 +239,7 @@ technologies = {
 			touhou_tank_weapon_magic_light_tank_aa_equipment_3
 		}
 	}
-	touhou_tank_license_magic_medium_1 = {
+	touhou_tank_frame_license_magic_medium_1 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -191,6 +254,15 @@ technologies = {
 			medium_tank_flame_chassis_touhou_magic_medium_1
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_magic_medium_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_magic_medium_1_engine
 			touhou_tank_magic_medium_1_suspension
 			touhou_tank_magic_medium_1_armor
@@ -201,7 +273,7 @@ technologies = {
 			touhou_tank_weapon_magic_medium_tank_aa_equipment_1
 		}
 	}
-	touhou_tank_license_magic_medium_2 = {
+	touhou_tank_frame_license_magic_medium_2 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -216,6 +288,15 @@ technologies = {
 			medium_tank_flame_chassis_touhou_magic_medium_2
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_magic_medium_2 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_magic_medium_2_engine
 			touhou_tank_magic_medium_2_suspension
 			touhou_tank_magic_medium_2_armor
@@ -226,7 +307,7 @@ technologies = {
 			touhou_tank_weapon_magic_medium_tank_aa_equipment_2
 		}
 	}
-	touhou_tank_license_magic_medium_3 = {
+	touhou_tank_frame_license_magic_medium_3 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -241,6 +322,15 @@ technologies = {
 			medium_tank_flame_chassis_touhou_magic_medium_3
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_magic_medium_3 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_magic_medium_3_engine
 			touhou_tank_magic_medium_3_suspension
 			touhou_tank_magic_medium_3_armor
@@ -251,7 +341,7 @@ technologies = {
 			touhou_tank_weapon_magic_medium_tank_aa_equipment_3
 		}
 	}
-	touhou_tank_license_magic_modern_1 = {
+	touhou_tank_frame_license_magic_modern_1 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -264,6 +354,15 @@ technologies = {
 			modern_tank_destroyer_chassis_touhou_magic_modern_1
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_magic_modern_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_magic_modern_1_engine
 			touhou_tank_magic_modern_1_suspension
 			touhou_tank_magic_modern_1_armor
@@ -274,7 +373,7 @@ technologies = {
 			touhou_tank_weapon_magic_modern_tank_aa_equipment_1
 		}
 	}
-	touhou_tank_license_goliath_1 = {
+	touhou_tank_frame_license_goliath_1 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -289,6 +388,15 @@ technologies = {
 			heavy_tank_flame_chassis_touhou_goliath_1
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_goliath_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_goliath_1_engine
 			touhou_tank_goliath_1_suspension
 			touhou_tank_goliath_1_armor
@@ -296,7 +404,7 @@ technologies = {
 			touhou_tank_weapon_goliath_equipment_1
 		}
 	}
-	touhou_tank_license_goliath_2 = {
+	touhou_tank_frame_license_goliath_2 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -311,6 +419,15 @@ technologies = {
 			heavy_tank_flame_chassis_touhou_goliath_2
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_goliath_2 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_goliath_2_engine
 			touhou_tank_goliath_2_suspension
 			touhou_tank_goliath_2_armor
@@ -318,7 +435,7 @@ technologies = {
 			touhou_tank_weapon_goliath_equipment_2
 		}
 	}
-	touhou_tank_license_goliath_3 = {
+	touhou_tank_frame_license_goliath_3 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -333,6 +450,15 @@ technologies = {
 			heavy_tank_flame_chassis_touhou_goliath_3
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_goliath_3 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_goliath_3_engine
 			touhou_tank_goliath_3_suspension
 			touhou_tank_goliath_3_armor
@@ -340,7 +466,7 @@ technologies = {
 			touhou_tank_weapon_goliath_equipment_3
 		}
 	}
-	touhou_tank_license_goliath_4 = {
+	touhou_tank_frame_license_goliath_4 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -355,6 +481,15 @@ technologies = {
 			heavy_tank_flame_chassis_touhou_goliath_4
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_goliath_4 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_goliath_4_engine
 			touhou_tank_goliath_4_suspension
 			touhou_tank_goliath_4_armor
@@ -362,7 +497,7 @@ technologies = {
 			touhou_tank_weapon_goliath_equipment_4
 		}
 	}
-	touhou_tank_license_oni_champion_0 = {
+	touhou_tank_frame_license_oni_champion_0 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -377,6 +512,15 @@ technologies = {
 			heavy_tank_flame_chassis_touhou_oni_champion_0
 		}
 		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_oni_champion_0 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
 			touhou_tank_oni_champion_0_engine
 			touhou_tank_oni_champion_0_suspension
 			touhou_tank_oni_champion_0_armor
@@ -384,7 +528,7 @@ technologies = {
 			touhou_tank_weapon_oni_champion_equipment_0
 		}
 	}
-	touhou_tank_license_evil_armor_0 = {
+	touhou_tank_frame_license_evil_armor_0 = {
 		research_cost = 0
 		start_year = 1936
 		allow = {
@@ -397,6 +541,15 @@ technologies = {
 			medium_tank_destroyer_chassis_touhou_evil_armor_0
 			medium_tank_amphibious_chassis_touhou_evil_armor_0
 			medium_tank_flame_chassis_touhou_evil_armor_0
+		}
+		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_license_evil_armor_0 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
 		}
 		enable_equipment_modules = {
 			touhou_tank_evil_armor_0_engine
@@ -422,6 +575,40 @@ technologies = {
 			touhou_tank_wakan_medium_weapon_1
 		}
 	}
+	touhou_tank_frame_license_wakan_light_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			light_tank_chassis_touhou_wakan_1
+			light_tank_aa_chassis_touhou_wakan_1
+			light_tank_artillery_chassis_touhou_wakan_1
+			light_tank_destroyer_chassis_touhou_wakan_1
+			light_tank_amphibious_chassis_touhou_wakan_1
+			light_tank_flame_chassis_touhou_wakan_1
+		}
+		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_frame_license_wakan_medium_1 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			medium_tank_chassis_touhou_wakan_1
+			medium_tank_aa_chassis_touhou_wakan_1
+			medium_tank_artillery_chassis_touhou_wakan_1
+			medium_tank_destroyer_chassis_touhou_wakan_1
+			medium_tank_amphibious_chassis_touhou_wakan_1
+			medium_tank_flame_chassis_touhou_wakan_1
+		}
+		enable_equipment_modules = {
+		}
+	}
 	touhou_tank_license_wakan_2 = {
 		research_cost = 0
 		start_year = 1936
@@ -438,6 +625,40 @@ technologies = {
 			touhou_tank_wakan_medium_weapon_2
 		}
 	}
+	touhou_tank_frame_license_wakan_light_2 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			light_tank_chassis_touhou_wakan_2
+			light_tank_aa_chassis_touhou_wakan_2
+			light_tank_artillery_chassis_touhou_wakan_2
+			light_tank_destroyer_chassis_touhou_wakan_2
+			light_tank_amphibious_chassis_touhou_wakan_2
+			light_tank_flame_chassis_touhou_wakan_2
+		}
+		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_frame_license_wakan_medium_2 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			medium_tank_chassis_touhou_wakan_2
+			medium_tank_aa_chassis_touhou_wakan_2
+			medium_tank_artillery_chassis_touhou_wakan_2
+			medium_tank_destroyer_chassis_touhou_wakan_2
+			medium_tank_amphibious_chassis_touhou_wakan_2
+			medium_tank_flame_chassis_touhou_wakan_2
+		}
+		enable_equipment_modules = {
+		}
+	}
 	touhou_tank_license_wakan_3 = {
 		research_cost = 0
 		start_year = 1936
@@ -452,6 +673,529 @@ technologies = {
 			touhou_tank_wakan_medium_control
 			touhou_tank_wakan_light_weapon_3
 			touhou_tank_wakan_medium_weapon_3
+		}
+	}
+	touhou_tank_frame_license_wakan_light_3 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			light_tank_chassis_touhou_wakan_3
+			light_tank_aa_chassis_touhou_wakan_3
+			light_tank_artillery_chassis_touhou_wakan_3
+			light_tank_destroyer_chassis_touhou_wakan_3
+			light_tank_amphibious_chassis_touhou_wakan_3
+			light_tank_flame_chassis_touhou_wakan_3
+		}
+		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_frame_license_wakan_medium_3 = {
+		research_cost = 0
+		start_year = 1936
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			medium_tank_chassis_touhou_wakan_3
+			medium_tank_aa_chassis_touhou_wakan_3
+			medium_tank_artillery_chassis_touhou_wakan_3
+			medium_tank_destroyer_chassis_touhou_wakan_3
+			medium_tank_amphibious_chassis_touhou_wakan_3
+			medium_tank_flame_chassis_touhou_wakan_3
+		}
+		enable_equipment_modules = {
+		}
+	}
+	touhou_tank_optional_license_magic_radio = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_radio_1
+		}
+	}
+	touhou_tank_optional_license_magic_improved_radio = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_radio_2
+		}
+	}
+	touhou_tank_optional_license_magic_advanced_radio = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_radio_3
+		}
+	}
+	touhou_tank_optional_license_magic_base = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_smoke
+			touhou_tank_optional_magic_wet_storage
+			touhou_tank_optional_magic_sloped_shield
+			touhou_tank_optional_magic_extra_magazine
+			touhou_tank_optional_magic_fuel_drum
+			touhou_tank_optional_magic_toolbox
+			touhou_tank_optional_magic_signal_flags
+			touhou_tank_optional_magic_ornamental_armor
+			touhou_tank_optional_magic_parade_lights
+			touhou_tank_optional_magic_crew_comfort
+			touhou_tank_optional_magic_spare_tracks
+			touhou_tank_optional_magic_cooling_fins
+			touhou_tank_optional_magic_seals
+		}
+	}
+	touhou_tank_optional_license_magic_tech_maintenance_company2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_maintenance
+		}
+	}
+	touhou_tank_optional_license_magic_infantry_weapons = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_secondary_mg
+			touhou_tank_optional_magic_coax
+		}
+	}
+	touhou_tank_optional_license_magic_gw_artillery = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_secondary_cannon
+		}
+	}
+	touhou_tank_optional_license_magic_interwar_artillery = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_secondary_howitzer
+		}
+	}
+	touhou_tank_optional_license_magic_interwar_antitank = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_secondary_lance
+		}
+	}
+	touhou_tank_optional_license_magic_interwar_antiair = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_secondary_aa
+		}
+	}
+	touhou_tank_optional_license_magic_tech_engineers = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_secondary_flame
+		}
+	}
+	touhou_tank_optional_license_magic_improved_computing_machine = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_stabilizer
+		}
+	}
+	touhou_tank_optional_license_magic_armor_tech_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_skirts
+		}
+	}
+	touhou_tank_optional_license_magic_tech_engineers2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_dozer
+		}
+	}
+	touhou_tank_optional_license_magic_engine_tech_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_magic_emergency_battery
+		}
+	}
+	touhou_tank_optional_license_wakan_radio = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_radio_1
+		}
+	}
+	touhou_tank_optional_license_wakan_improved_radio = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_radio_2
+		}
+	}
+	touhou_tank_optional_license_wakan_advanced_radio = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_radio_3
+		}
+	}
+	touhou_tank_optional_license_wakan_base = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_smoke
+			touhou_tank_optional_wakan_wet_storage
+			touhou_tank_optional_wakan_sloped_shield
+			touhou_tank_optional_wakan_extra_magazine
+			touhou_tank_optional_wakan_fuel_drum
+			touhou_tank_optional_wakan_toolbox
+			touhou_tank_optional_wakan_signal_flags
+			touhou_tank_optional_wakan_ornamental_armor
+			touhou_tank_optional_wakan_parade_lights
+			touhou_tank_optional_wakan_crew_comfort
+			touhou_tank_optional_wakan_spare_tracks
+			touhou_tank_optional_wakan_cooling_fins
+			touhou_tank_optional_wakan_seals
+		}
+	}
+	touhou_tank_optional_license_wakan_tech_maintenance_company2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_maintenance
+		}
+	}
+	touhou_tank_optional_license_wakan_infantry_weapons = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_secondary_mg
+			touhou_tank_optional_wakan_coax
+		}
+	}
+	touhou_tank_optional_license_wakan_gw_artillery = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_secondary_cannon
+		}
+	}
+	touhou_tank_optional_license_wakan_interwar_artillery = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_secondary_howitzer
+		}
+	}
+	touhou_tank_optional_license_wakan_interwar_antitank = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_secondary_lance
+		}
+	}
+	touhou_tank_optional_license_wakan_interwar_antiair = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_secondary_aa
+		}
+	}
+	touhou_tank_optional_license_wakan_tech_engineers = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_secondary_flame
+		}
+	}
+	touhou_tank_optional_license_wakan_improved_computing_machine = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_stabilizer
+		}
+	}
+	touhou_tank_optional_license_wakan_armor_tech_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_skirts
+		}
+	}
+	touhou_tank_optional_license_wakan_tech_engineers2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_dozer
+		}
+	}
+	touhou_tank_optional_license_wakan_engine_tech_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_wakan_emergency_battery
+		}
+	}
+	touhou_tank_optional_license_demonforce_radio = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_radio_1
+		}
+	}
+	touhou_tank_optional_license_demonforce_improved_radio = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_radio_2
+		}
+	}
+	touhou_tank_optional_license_demonforce_advanced_radio = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_radio_3
+		}
+	}
+	touhou_tank_optional_license_demonforce_base = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_smoke
+			touhou_tank_optional_demonforce_wet_storage
+			touhou_tank_optional_demonforce_sloped_shield
+			touhou_tank_optional_demonforce_extra_magazine
+			touhou_tank_optional_demonforce_fuel_drum
+			touhou_tank_optional_demonforce_toolbox
+			touhou_tank_optional_demonforce_signal_flags
+			touhou_tank_optional_demonforce_ornamental_armor
+			touhou_tank_optional_demonforce_parade_lights
+			touhou_tank_optional_demonforce_crew_comfort
+			touhou_tank_optional_demonforce_spare_tracks
+			touhou_tank_optional_demonforce_cooling_fins
+			touhou_tank_optional_demonforce_seals
+		}
+	}
+	touhou_tank_optional_license_demonforce_tech_maintenance_company2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_maintenance
+		}
+	}
+	touhou_tank_optional_license_demonforce_infantry_weapons = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_secondary_mg
+			touhou_tank_optional_demonforce_coax
+		}
+	}
+	touhou_tank_optional_license_demonforce_gw_artillery = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_secondary_cannon
+		}
+	}
+	touhou_tank_optional_license_demonforce_interwar_artillery = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_secondary_howitzer
+		}
+	}
+	touhou_tank_optional_license_demonforce_interwar_antitank = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_secondary_lance
+		}
+	}
+	touhou_tank_optional_license_demonforce_interwar_antiair = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_secondary_aa
+		}
+	}
+	touhou_tank_optional_license_demonforce_tech_engineers = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_secondary_flame
+		}
+	}
+	touhou_tank_optional_license_demonforce_improved_computing_machine = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_stabilizer
+		}
+	}
+	touhou_tank_optional_license_demonforce_armor_tech_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_skirts
+		}
+	}
+	touhou_tank_optional_license_demonforce_tech_engineers2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_dozer
+		}
+	}
+	touhou_tank_optional_license_demonforce_engine_tech_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipment_modules = {
+			touhou_tank_optional_demonforce_emergency_battery
 		}
 	}
 }

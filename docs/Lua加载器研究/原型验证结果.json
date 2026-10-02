@@ -1,0 +1,205 @@
+{
+  "schema": 1,
+  "date": "2026-10-02T04:39:49.365Z",
+  "tests": {
+    "tests": 36,
+    "pass": 36,
+    "fail": 0,
+    "skipped": 0
+  },
+  "gameRoot": "F:\\SteamLibrary\\steamapps\\common\\Hearts of Iron IV",
+  "nativeTechnology": {
+    "file": "F:\\SteamLibrary\\steamapps\\common\\Hearts of Iron IV\\common\\technologies\\NSB_armor.txt",
+    "sha256": "e395aed44917925df8966b55af315cf1bc20a80e2336c8486250c62a151d2336",
+    "preservation": "Test compared all parsed native fields, unlocks and conditions after removing exactly the two declared description additions."
+  },
+  "modes": [
+    {
+      "mode": "preview",
+      "buildId": "debc1eb65cc507d5082f8ba35a92f332a39836bff12bd297d7dcdf7151fe0339",
+      "outputDirectory": "C:\\Users\\Administrator\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\touhou114\\tools\\lua_loader\\build\\preview",
+      "files": [
+        {
+          "file": "common/scripted_guis/touhou_lua_research_panel.txt",
+          "sha256": "73ee6a3bbafd0f396c7415f4819cf6d503e6f354483d6bf3dcb23ad4de8d6087",
+          "bytes": 600
+        },
+        {
+          "file": "descriptor.mod",
+          "sha256": "99c229adb73c48e8936d516c5b922b6985067f5f5068df58a3f73025d038d883",
+          "bytes": 151
+        },
+        {
+          "file": "gfx/interface/touhou_lua/research_hint.dds",
+          "sha256": "b5fad1d03f6b51e559c7c99a1c80fedeee03e2a8c917752bb3d01566634a556a",
+          "bytes": 9536
+        },
+        {
+          "file": "interface/touhou_lua_research_panel.gui",
+          "sha256": "2170f2e3785a2dfedcfdcbd9947699507db4d5efc24fa6ece3ab7b34c490cc8e",
+          "bytes": 815
+        },
+        {
+          "file": "interface/touhou_lua_sprite_GFX_touhou_lua_research_hint.gfx",
+          "sha256": "f13c9729e57c754fcd5d8f5bd3053e1118fb08bd9972b32c5b00f5bc2d421aaa",
+          "bytes": 138
+        },
+        {
+          "file": "localisation/replace/touhou_lua_overlay_l_simp_chinese.yml",
+          "sha256": "82654a8b0ff54ce82d666af94e4303c2d18132c03f4e56f8f13179fc31ad1ea5",
+          "bytes": 628
+        }
+      ],
+      "packageOrder": [
+        "touhou.research.core"
+      ],
+      "sourceReadCount": 265,
+      "unchangedRebuildWrites": 0,
+      "technologyReplacement": false,
+      "localisationOrigins": [
+        {
+          "language": "simp_chinese",
+          "key": "basic_medium_tank_chassis_desc",
+          "source": "vanilla",
+          "file": "localisation/simp_chinese/tank_modules_l_simp_chinese.yml"
+        }
+      ]
+    },
+    {
+      "mode": "merge-proof",
+      "buildId": "1e88100c6f68e82e51aa09646f1d27f6a3c4c1a000699e8fa9e46879eaf759a8",
+      "outputDirectory": "C:\\Users\\Administrator\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\touhou114\\tools\\lua_loader\\build\\merge-proof",
+      "files": [
+        {
+          "file": "common/scripted_guis/touhou_lua_research_panel.txt",
+          "sha256": "73ee6a3bbafd0f396c7415f4819cf6d503e6f354483d6bf3dcb23ad4de8d6087",
+          "bytes": 600
+        },
+        {
+          "file": "common/technologies/NSB_armor.txt",
+          "sha256": "2c2908287b1c3f2394e3ea4b74f14c89ded131779c861ce1595bd440fcdc8f7d",
+          "bytes": 41873
+        },
+        {
+          "file": "descriptor.mod",
+          "sha256": "44c299cd0724cff44cfaeba3b656c582ed37b34248f298bdd281485f615954d7",
+          "bytes": 147
+        },
+        {
+          "file": "gfx/interface/touhou_lua/research_hint.dds",
+          "sha256": "b5fad1d03f6b51e559c7c99a1c80fedeee03e2a8c917752bb3d01566634a556a",
+          "bytes": 9536
+        },
+        {
+          "file": "interface/touhou_lua_research_panel.gui",
+          "sha256": "2170f2e3785a2dfedcfdcbd9947699507db4d5efc24fa6ece3ab7b34c490cc8e",
+          "bytes": 815
+        },
+        {
+          "file": "interface/touhou_lua_sprite_GFX_touhou_lua_research_hint.gfx",
+          "sha256": "f13c9729e57c754fcd5d8f5bd3053e1118fb08bd9972b32c5b00f5bc2d421aaa",
+          "bytes": 138
+        },
+        {
+          "file": "localisation/replace/touhou_lua_overlay_l_simp_chinese.yml",
+          "sha256": "1ac29a58da727b730bb9657cc70339d3285a2d792a862a7e40caffd7ff0d4a94",
+          "bytes": 845
+        }
+      ],
+      "packageOrder": [
+        "touhou.research.core",
+        "touhou.research.basic",
+        "touhou.research.advanced"
+      ],
+      "sourceReadCount": 266,
+      "unchangedRebuildWrites": 0,
+      "technologyReplacement": true,
+      "localisationOrigins": [
+        {
+          "language": "simp_chinese",
+          "key": "basic_medium_tank_chassis_desc",
+          "source": "vanilla",
+          "file": "localisation/simp_chinese/tank_modules_l_simp_chinese.yml"
+        }
+      ]
+    },
+    {
+      "mode": "active-preview",
+      "buildId": "debc1eb65cc507d5082f8ba35a92f332a39836bff12bd297d7dcdf7151fe0339",
+      "outputDirectory": "C:\\Users\\Administrator\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\touhou114\\tools\\lua_loader\\build\\active-preview",
+      "files": [
+        {
+          "file": "common/scripted_guis/touhou_lua_research_panel.txt",
+          "sha256": "73ee6a3bbafd0f396c7415f4819cf6d503e6f354483d6bf3dcb23ad4de8d6087",
+          "bytes": 600
+        },
+        {
+          "file": "descriptor.mod",
+          "sha256": "99c229adb73c48e8936d516c5b922b6985067f5f5068df58a3f73025d038d883",
+          "bytes": 151
+        },
+        {
+          "file": "gfx/interface/touhou_lua/research_hint.dds",
+          "sha256": "b5fad1d03f6b51e559c7c99a1c80fedeee03e2a8c917752bb3d01566634a556a",
+          "bytes": 9536
+        },
+        {
+          "file": "interface/touhou_lua_research_panel.gui",
+          "sha256": "2170f2e3785a2dfedcfdcbd9947699507db4d5efc24fa6ece3ab7b34c490cc8e",
+          "bytes": 815
+        },
+        {
+          "file": "interface/touhou_lua_sprite_GFX_touhou_lua_research_hint.gfx",
+          "sha256": "f13c9729e57c754fcd5d8f5bd3053e1118fb08bd9972b32c5b00f5bc2d421aaa",
+          "bytes": 138
+        },
+        {
+          "file": "localisation/replace/touhou_lua_overlay_l_simp_chinese.yml",
+          "sha256": "82654a8b0ff54ce82d666af94e4303c2d18132c03f4e56f8f13179fc31ad1ea5",
+          "bytes": 628
+        }
+      ],
+      "packageOrder": [
+        "touhou.research.core"
+      ],
+      "sourceReadCount": 266,
+      "unchangedRebuildWrites": 0,
+      "technologyReplacement": false,
+      "localisationOrigins": [
+        {
+          "language": "simp_chinese",
+          "key": "basic_medium_tank_chassis_desc",
+          "source": "vanilla",
+          "file": "localisation/simp_chinese/tank_modules_l_simp_chinese.yml"
+        }
+      ]
+    }
+  ],
+  "inputProfile": {
+    "file": "C:\\Users\\Administrator\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\touhou114\\tools\\lua_loader\\build\\input-profile\\input-profile.json",
+    "mods": 1,
+    "dlcs": 31,
+    "mountedDLCs": 31,
+    "sources": 33,
+    "archives": 1,
+    "warnings": [
+      {
+        "code": "declared-dependency-not-active",
+        "mod": "TouHou Into the World ~ 幻想世界入 1.19 测试版",
+        "dependency": "52 Chinese Localisation",
+        "registeredCandidates": []
+      },
+      {
+        "code": "dlc-ownership-not-verified",
+        "message": "Only installed and not explicitly disabled descriptors are mounted; ownership and engine entitlement were not checked."
+      }
+    ],
+    "errors": [],
+    "engineOrderVerified": false,
+    "settingsAndDescriptorHashesUnchanged": true
+  },
+  "installationWrites": 0,
+  "engineVerified": false,
+  "launcherRegistered": false,
+  "runtimeHookImplemented": false
+}

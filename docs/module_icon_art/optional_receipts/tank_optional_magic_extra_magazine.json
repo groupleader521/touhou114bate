@@ -1,0 +1,6 @@
+{
+  "id": "tank_optional_magic_extra_magazine",
+  "method": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Generate ONE new fantasy game inventory module icon. Subject: three exposed violet crystals linked end to end by dangerous brass connectors. Touhou component name: 危险魔晶串联匣. Materials and palette: aged brass, dark brown wood, ivory porcelain and restrained violet crystal accents. Depict precisely the named physical object with its own recognizable outline. Modest hand-painted miniature item cutout, aged muted materials, soft dimensional shading, crisp silhouette, restrained glow only close to the object. One compact horizontal object, three-quarter view, wider than tall, centered, fully visible with generous transparent padding; must read at 56x42 pixels. Simplify details. No whole vehicle, full human character, ground, scene, frame, border, text, letters, numbers, labels or watermark. Truly transparent background. Deliver only this single isolated component.",
+  "generatedSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a0f7a0-b3b2-7b60-ba10-16778d10cff1\\exec-96b32989-92bf-42db-85b5-45e15cbe13d6.png"
+}

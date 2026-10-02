@@ -1,0 +1,6 @@
+{
+  "id": "air_optional_wakan_signal_lamp",
+  "method": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Generate ONE new fantasy game inventory module icon. Subject: a small red-and-bronze airborne prayer lantern suspended by a short ivory cord. Touhou component name: 空中祈愿灯. Materials and palette: ivory paper talismans, red binding cords, muted bronze fittings and pale cyan-blue spirit light. Depict precisely the named physical object with its own recognizable outline. Modest hand-painted miniature item cutout, aged muted materials, soft dimensional shading, crisp silhouette, restrained glow only close to the object. One compact horizontal object, three-quarter view, wider than tall, centered, fully visible with generous transparent padding; must read at 56x42 pixels. Simplify details. No whole vehicle, full human character, ground, scene, frame, border, text, letters, numbers, labels or watermark. Truly transparent background. Deliver only this single isolated component.",
+  "generatedSource": "C:\\Users\\Administrator\\.codex\\generated_images\\01a0f7a0-b3b2-7b60-ba10-16778d10cff1\\exec-6ec641d6-81fa-4716-8d71-615b540579f2.png"
+}

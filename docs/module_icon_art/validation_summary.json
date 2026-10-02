@@ -1,0 +1,19 @@
+{
+  "artwork": {
+    "artworkFamilies": 55,
+    "tankModules": 129,
+    "aircraftModules": 154,
+    "sprites": 283,
+    "nativeSpriteOverrides": 0
+  },
+  "gameplayModulesUnchanged": 283,
+  "numericChecks": 2108,
+  "validationErrors": [],
+  "ddsRoundTrip": "exact RGBA pixel match, 55 textures",
+  "engine": {
+    "startupComplete": true,
+    "projectErrors": [],
+    "unrelatedInstalledModVersionWarnings": 8,
+    "designerUiInspected": false
+  }
+}

@@ -1,0 +1,2678 @@
+# Original Touhou module artwork; native module sprites remain untouched.
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_1_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_1_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_1_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_artillery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_destroyer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_2_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_2_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_2_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_artillery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_destroyer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_3_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_3_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_3_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_heavy_3_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_artillery_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_artillery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_destroyer_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_destroyer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_heavy_tank_aa_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_super_heavy_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_super_heavy_1_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_super_heavy_1_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_demonforce_super_heavy_1_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_super_heavy_tank_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_super_heavy_tank_artillery_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_artillery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_super_heavy_tank_destroyer_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_destroyer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_demonforce_super_heavy_tank_aa_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_1_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_1_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_1_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_artillery_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_artillery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_destroyer_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_destroyer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_aa_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_2_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_2_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_2_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_artillery_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_artillery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_destroyer_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_destroyer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_aa_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_3_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_3_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_3_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_light_3_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_artillery_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_artillery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_destroyer_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_destroyer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_light_tank_aa_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_1_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_1_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_1_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_artillery_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_artillery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_destroyer_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_destroyer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_aa_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_2_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_2_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_2_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_artillery_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_artillery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_destroyer_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_destroyer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_aa_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_3_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_3_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_3_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_medium_3_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_artillery_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_artillery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_destroyer_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_destroyer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_medium_tank_aa_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_modern_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_modern_1_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_modern_1_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_magic_modern_1_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_modern_tank_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_modern_tank_artillery_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_artillery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_modern_tank_destroyer_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_destroyer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_magic_modern_tank_aa_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_1_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_1_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_1_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_goliath_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_2_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_2_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_2_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_goliath_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_3_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_3_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_3_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_3_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_goliath_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_4_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_4_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_4_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_goliath_4_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_goliath_equipment_4"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_oni_champion_0_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_oni_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_oni_champion_0_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_oni_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_oni_champion_0_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_oni_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_oni_champion_0_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_oni_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_oni_champion_equipment_0"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_oni_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_evil_armor_0_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_fairy_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_evil_armor_0_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_fairy_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_evil_armor_0_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_fairy_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_evil_armor_0_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_fairy_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_weapon_evil_armor_equipment_0"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_fairy_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_wakan_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_wakan_suspension"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_suspension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_wakan_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_wakan_light_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_wakan_medium_control"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_control.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_wakan_light_weapon_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_light_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_wakan_medium_weapon_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_medium_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_wakan_light_weapon_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_light_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_wakan_medium_weapon_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_medium_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_wakan_light_weapon_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_light_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_wakan_medium_weapon_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_medium_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_radio_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_radio_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_radio_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_radio_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_radio_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_radio_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_smoke"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_smoke.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_wet_storage"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_wet_storage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_maintenance"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_maintenance.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_secondary_mg"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_mg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_secondary_cannon"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_secondary_howitzer"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_howitzer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_secondary_lance"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_lance.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_secondary_aa"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_secondary_flame"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_flame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_coax"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_coax.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_stabilizer"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_stabilizer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_sloped_shield"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_sloped_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_skirts"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_skirts.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_extra_magazine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_extra_magazine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_dozer"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_dozer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_fuel_drum"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_fuel_drum.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_toolbox"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_toolbox.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_signal_flags"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_signal_flags.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_ornamental_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_ornamental_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_parade_lights"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_parade_lights.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_crew_comfort"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_crew_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_spare_tracks"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_spare_tracks.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_emergency_battery"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_emergency_battery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_cooling_fins"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_cooling_fins.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_magic_seals"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_seals.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_radio_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_radio_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_radio_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_radio_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_radio_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_radio_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_smoke"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_smoke.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_wet_storage"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_wet_storage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_maintenance"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_maintenance.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_secondary_mg"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_mg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_secondary_cannon"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_secondary_howitzer"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_howitzer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_secondary_lance"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_lance.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_secondary_aa"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_secondary_flame"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_flame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_coax"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_coax.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_stabilizer"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_stabilizer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_sloped_shield"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_sloped_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_skirts"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_skirts.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_extra_magazine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_extra_magazine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_dozer"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_dozer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_fuel_drum"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_fuel_drum.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_toolbox"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_toolbox.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_signal_flags"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_signal_flags.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_ornamental_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_ornamental_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_parade_lights"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_parade_lights.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_crew_comfort"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_crew_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_spare_tracks"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_spare_tracks.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_emergency_battery"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_emergency_battery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_cooling_fins"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_cooling_fins.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_wakan_seals"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_seals.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_radio_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_radio_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_radio_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_radio_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_radio_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_radio_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_smoke"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_smoke.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_wet_storage"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_wet_storage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_maintenance"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_maintenance.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_secondary_mg"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_mg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_secondary_cannon"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_secondary_howitzer"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_howitzer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_secondary_lance"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_lance.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_secondary_aa"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_aa.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_secondary_flame"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_flame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_coax"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_coax.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_stabilizer"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_stabilizer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_sloped_shield"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_sloped_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_skirts"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_skirts.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_extra_magazine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_extra_magazine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_dozer"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_dozer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_fuel_drum"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_fuel_drum.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_toolbox"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_toolbox.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_signal_flags"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_signal_flags.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_ornamental_armor"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_ornamental_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_parade_lights"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_parade_lights.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_crew_comfort"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_crew_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_spare_tracks"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_spare_tracks.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_emergency_battery"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_emergency_battery.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_cooling_fins"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_cooling_fins.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_tank_optional_demonforce_seals"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_seals.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_0_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_0_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_0_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_demonforce_fighter_equipment_0"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_1_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_1_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_demonforce_fighter_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_demonforce_CAS_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_cas.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_2_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_2_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_demonforce_fighter_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_demonforce_CAS_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_cas.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_3_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_3_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_3_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_demonforce_fighter_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_demonforce_CAS_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_cas.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_5_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_5_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_small_5_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_demonforce_jet_fighter_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_medium_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_medium_1_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_medium_1_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_demonforce_heavy_fighter_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_heavy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_medium_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_medium_2_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_medium_2_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_demonforce_heavy_fighter_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_heavy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_medium_3_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_medium_3_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_demonforce_medium_3_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_demonforce_heavy_fighter_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_heavy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_0_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_0_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_0_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_fighter_equipment_0"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_1_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_1_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_fighter_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_2_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_2_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_fighter_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_3_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_3_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_3_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_fighter_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_5_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_5_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_small_5_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_jet_fighter_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_0_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_0_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_0_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_tac_bomber_equipment_0"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_tactical.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_1_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_1_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_tac_bomber_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_tactical.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_2_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_2_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_tac_bomber_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_tactical.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_3_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_3_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_3_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_tac_bomber_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_tactical.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_4_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_4_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_medium_4_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_jet_tac_bomber_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_tactical.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_1_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_1_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_strat_bomber_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_strategic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_2_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_2_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_strat_bomber_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_strategic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_3_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_3_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_3_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_strat_bomber_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_strategic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_4_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_4_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_magic_large_4_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_magic_jet_strat_bomber_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_strategic.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_suicide_puppet_equipment_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_suicide_puppet_equipment_1_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_suicide_puppet_equipment_1_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_suicide_puppet_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_puppet_suicide.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_suicide_puppet_equipment_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_suicide_puppet_equipment_2_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_suicide_puppet_equipment_2_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_suicide_puppet_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_puppet_missile.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_tengu_fighter_equipment_0_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_tengu_fighter_equipment_0_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_tengu_fighter_equipment_0_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_tengu_fighter_equipment_0"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_tengu_weapon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_cas_boli_equipment_0_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_cas_boli_equipment_0_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_cas_boli_equipment_0_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_cas_boli_equipment_0"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_boli_weapon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_desires_equipment_0_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_desires_equipment_0_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_desires_equipment_0_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_desires_equipment_0"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_desires_weapon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_0_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_0_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_0_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_fighter_equipment_0"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_1_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_1_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_fighter_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_CAS_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_cas.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_2_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_2_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_fighter_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_CAS_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_cas.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_3_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_3_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_3_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_fighter_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_CAS_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_cas.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_5_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_5_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_small_5_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_jet_fighter_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_fighter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_0_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_0_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_0_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_tac_bomber_equipment_0"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_tactical.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_1_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_1_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_1_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_tac_bomber_equipment_1"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_tactical.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_2_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_2_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_2_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_tac_bomber_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_tactical.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_3_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_3_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_3_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_tac_bomber_equipment_3"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_tactical.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_4_engine"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_4_protection"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_wakan_medium_4_range"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_weapon_wakan_jet_tac_bomber_equipment_2"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_tactical.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_shield_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_shield_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_shield_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_sealed_cells_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_sealed_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_sealed_cells_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_sealed_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_sealed_cells_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_sealed_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_reserve_cells_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_reserve_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_reserve_cells_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_reserve_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_reserve_cells_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_reserve_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_wood_frame_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_wood_frame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_wood_frame_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_wood_frame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_wood_frame_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_wood_frame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_fairing_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_fairing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_fairing_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_fairing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_fairing_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_fairing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_thrust_assist_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_thrust_assist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_thrust_assist_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_thrust_assist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_thrust_assist_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_thrust_assist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_cooling_flaps_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_cooling_flaps.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_cooling_flaps_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_cooling_flaps.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_cooling_flaps_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_cooling_flaps.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_ballast_cage_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_ballast_cage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_ballast_cage_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_ballast_cage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_ballast_cage_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_ballast_cage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_signal_lamp_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_signal_lamp.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_signal_lamp_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_signal_lamp.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_signal_lamp_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_signal_lamp.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_comfort_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_comfort_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_comfort_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_ornament_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_ornament.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_ornament_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_ornament.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_ornament_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_ornament.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_satchel_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_satchel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_satchel_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_satchel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_satchel_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_satchel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_floats_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_floats.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_floats_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_floats.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_floats_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_floats.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_aux_light"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_light.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_aux_heavy"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_heavy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_aux_cannon"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_aux_scatter"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_scatter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_aux_bombs"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_bombs.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_aux_rockets"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_rockets.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_aux_torpedo"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_torpedo.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_aux_camera"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_camera.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_aux_mines"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_mines.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_bomb_sight"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_bomb_sight.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_navigation"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_navigation.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_intercept_eye"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_intercept_eye.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_maritime_eye"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_maritime_eye.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_false_echo"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_false_echo.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_tail_sentry"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_tail_sentry.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_paired_tail"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_paired_tail.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_magic_blind_spot"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_blind_spot.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_shield_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_shield_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_shield_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_sealed_cells_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_sealed_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_sealed_cells_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_sealed_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_sealed_cells_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_sealed_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_reserve_cells_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_reserve_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_reserve_cells_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_reserve_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_reserve_cells_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_reserve_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_wood_frame_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_wood_frame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_wood_frame_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_wood_frame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_wood_frame_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_wood_frame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_fairing_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_fairing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_fairing_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_fairing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_fairing_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_fairing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_thrust_assist_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_thrust_assist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_thrust_assist_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_thrust_assist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_thrust_assist_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_thrust_assist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_cooling_flaps_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_cooling_flaps.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_cooling_flaps_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_cooling_flaps.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_cooling_flaps_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_cooling_flaps.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_ballast_cage_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_ballast_cage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_ballast_cage_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_ballast_cage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_ballast_cage_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_ballast_cage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_signal_lamp_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_signal_lamp.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_signal_lamp_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_signal_lamp.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_signal_lamp_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_signal_lamp.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_comfort_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_comfort_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_comfort_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_ornament_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_ornament.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_ornament_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_ornament.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_ornament_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_ornament.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_satchel_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_satchel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_satchel_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_satchel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_satchel_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_satchel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_floats_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_floats.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_floats_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_floats.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_floats_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_floats.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_aux_light"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_light.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_aux_heavy"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_heavy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_aux_cannon"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_aux_scatter"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_scatter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_aux_bombs"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_bombs.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_aux_rockets"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_rockets.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_aux_torpedo"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_torpedo.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_aux_camera"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_camera.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_aux_mines"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_mines.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_bomb_sight"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_bomb_sight.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_navigation"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_navigation.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_intercept_eye"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_intercept_eye.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_maritime_eye"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_maritime_eye.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_false_echo"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_false_echo.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_tail_sentry"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_tail_sentry.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_paired_tail"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_paired_tail.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_wakan_blind_spot"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_blind_spot.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_shield_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_shield_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_shield_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_sealed_cells_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_sealed_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_sealed_cells_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_sealed_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_sealed_cells_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_sealed_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_reserve_cells_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_reserve_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_reserve_cells_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_reserve_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_reserve_cells_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_reserve_cells.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_wood_frame_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_wood_frame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_wood_frame_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_wood_frame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_wood_frame_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_wood_frame.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_fairing_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_fairing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_fairing_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_fairing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_fairing_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_fairing.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_thrust_assist_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_thrust_assist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_thrust_assist_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_thrust_assist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_thrust_assist_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_thrust_assist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_cooling_flaps_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_cooling_flaps.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_cooling_flaps_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_cooling_flaps.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_cooling_flaps_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_cooling_flaps.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_ballast_cage_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_ballast_cage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_ballast_cage_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_ballast_cage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_ballast_cage_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_ballast_cage.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_signal_lamp_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_signal_lamp.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_signal_lamp_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_signal_lamp.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_signal_lamp_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_signal_lamp.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_comfort_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_comfort_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_comfort_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_comfort.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_ornament_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_ornament.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_ornament_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_ornament.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_ornament_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_ornament.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_satchel_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_satchel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_satchel_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_satchel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_satchel_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_satchel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_floats_small"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_floats.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_floats_medium"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_floats.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_floats_large"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_floats.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_aux_light"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_light.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_aux_heavy"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_heavy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_aux_cannon"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_aux_scatter"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_scatter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_aux_bombs"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_bombs.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_aux_rockets"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_rockets.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_aux_torpedo"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_torpedo.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_aux_camera"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_camera.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_aux_mines"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_mines.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_bomb_sight"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_bomb_sight.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_navigation"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_navigation.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_intercept_eye"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_intercept_eye.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_maritime_eye"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_maritime_eye.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_false_echo"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_false_echo.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_tail_sentry"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_tail_sentry.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_paired_tail"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_paired_tail.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_touhou_air_optional_demonforce_blind_spot"
+		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_blind_spot.dds"
+		legacy_lazy_load = no
+	}
+}

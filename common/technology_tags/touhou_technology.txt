@@ -1,7 +1,0 @@
-technology_categories = {
-	magic
-	wakan
-	demonforce
-	goliath
-	mio_cat_tech_touhou_aircraft
-}

@@ -1,7 +1,9 @@
 {
-  "checks": 17,
+  "checks": 42,
   "passed": [
-    "Native GER/USA/JAP never register Touhou designs, even with all technology/style/project flags",
+    "Spirit frames require their own size/tier research and never register native tank chassis",
+    "Existing saves with old spirit preset flags register the new private chassis once",
+    "Native CHI/GER/USA/JAP never register Touhou designs, even with all technology/style/project flags",
     "No researched equipment technology yields no ordinary design",
     "Early infantry research registers only the selected magic/wakan/demonforce rifle",
     "1936 magic infantry research does not grant later rifles or other cultures",
@@ -17,7 +19,30 @@
     "Goliath project does not grant unrelated projects or later unreached Goliath tiers",
     "Changing tradition withdraws the previous component licenses without duplicating old designs",
     "Native countries receive no Touhou component licenses",
-    "Lotus project opens only its own modular hulls without creating invalid empty ship designs"
+    "Lotus project opens only its own modular hulls without creating invalid empty ship designs",
+    "Optional modules require their own native research and a researched chassis or airframe",
+    "Interwar tank development opens basic optional parts without demanding a later chassis",
+    "All tank modules require interwar development, including old-save licenses",
+    "Aviation licenses require airframe research or their own research project, not aircraft materials",
+    "Every optional module stays locked when any required research is missing",
+    "Secondary weapons wait for their own research after basic tank development",
+    "Airframe research opens basic accessories while advanced aviation parts still need research",
+    "Optional licenses switch cultures without giving unrelated culture parts",
+    "Optional parts stay closed without the matching designer DLC",
+    "Large utility airframes require their exact research tier and culture",
+    "Actual Alice starting history exposes private fighter, bomber and basic accessory menus",
+    "Custom frames cannot globally supersede native equipment or repaint its research fallback",
+    "China native research still enables a complete interwar tank using native components",
+    "China researched light/medium/heavy chassis retain their native unlocks and upgrade chains",
+    "Private component licenses never take ownership of native chassis activation",
+    "No native technology file or ID is overridden by the independent military system",
+    "Daily synchronization runs once in the receiving country and respects researched medium tiers",
+    "Private requirements and free manual refresh replace native completion hooks",
+    "Advisor research bonuses retain their rates and use disjoint native categories",
+    "All national histories enable private chassis before creating their modular stock designs",
+    "Alice, Hell and fairies retain historical armor without granting unresearched tank components",
+    "Historical chassis permission preserves research gates for new production and other frames",
+    "Authored equipment definitions do not repeat module/category count limits"
   ],
   "limitation": "AST condition checks only; engine design creation, production UI and combat are not simulated."
 }

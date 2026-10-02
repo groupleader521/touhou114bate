@@ -1,0 +1,113 @@
+坦克与飞机配件专属图标
+======================
+2026-10-02 兼容修复：装甲类别已隔离，六个附灵预设改用专用底盘；本轮不改图案或战斗数值。
+图标验证工具归一化类别、炮塔兼容规则和附灵底盘迁移后继续比对原基准；原图与纹理 SHA256 检查保持严格。
+详见《装甲配件隔离修复说明.txt》。下方纯图标轮次的玩法定义不变记录早于本次兼容修复。
+2026-10-02 新选装图标
+-------------------
+174 张原创图案：装甲 84 张、航空 90 张，对应新增 252 个选装模块。
+同一航空概念的三种尺寸共用图案；不同概念各有自己的图案。
+原有 55 张素材保留，合计 229 张图案和 535 个模块 Sprite；原版占位图归零。
+魔力：人偶、木质机械、旧黄铜、象牙瓷和紫色魔晶。
+灵力：御札、红绳、古铜、青蓝风水术式与结界。
+妖力：骨角、黑羽、黑铁、暗红活体囊和寄生组织。
+副炮、护符、茶会托盘、音乐盒、风铃、磨牙石等以实物轮廓区分。
+
+全部由内置 image_gen 逐项生成；本轮提示词与主题记录在 module_icon_art/optional_generation_plan.json。
+tools/optional_icon_subjects.cjs 保存 174 个独立的实物轮廓设计。
+最初一批过于贴近发动机参考图，除操偶中继外以具体物体提示重绘；初始提示词保留为 optional_initial_generation_plan.json。
+本轮六张分组预览：module_icon_art/optional_{tank|air}_{magic|wakan|demonforce}_icons_preview.png。
+PNG 原稿保存在 source，透明 56×42 RGBA DDS 保存在 icons，路径沿用下方说明。
+导出新素材：python tools/prepare_module_icons.py --optional
+完整导出要求全部 174 张原图存在；--partial 仅供生成中预览。
+原有 55 张导出命令保持不变；本轮导出不会重写原有纹理。
+
+本轮检查通过：174 张纹理逐像素 RGBA 回读一致；535 个 Sprite 引用完整，原版占位图与原版 Sprite 覆盖均为 0。
+535 个玩法定义移除 gfx 后与本轮接入前一致；99 个预设、原有 55 张 PNG/DDS 校验和保持不变。
+总体军事检查错误 0，国家条件检查通过；174 张原稿与图像工具实际保存文件逐一一致。
+本轮校验记录以 module_icon_art/optional_validation_summary.json 为准。
+本轮原图替换完成后额外执行 node tools/validate_optional_module_icons.cjs，核对本次接入前后的 535 个玩法定义、99 个预设与原有 55 张素材。
+此工具使用本轮保存的 optional_gameplay_before.json 作为对照；后续有意修改玩法时应建立新的对照基准。
+新增选装件的游戏设计器画面尚未逐项实测。
+以下保留 2026-10-01 的制作与引擎验证记录，旧启动日志不作为本轮加载证据。
+
+2026-10-01
+
+一、覆盖范围
+55 张原创基础图案：坦克 32 张、飞机 23 张。
+对应 129 个坦克配件和 154 个飞机配件，共 283 个独立配件显示映射。
+同一功能、同一体系的不同等级共用图案，名称和属性仍由各自模块定义决定。
+歌利亚沿用人偶机械风格；自爆人偶、天狗、博丽和欲望之灵的武器有独立图案。
+自爆人偶的推进核共用魔力装甲动力图案；其余通用航空系统按对应体系共享。
+
+二、画风与体系
+参考现有魔力人偶与扫把、灵力风雷火、妖力翼羽与兽甲装备图案。
+魔力：木质、黄铜、象牙色机件和紫色魔晶。
+灵力：符札、红绳、青蓝色灵光和风雷火术式。
+妖力：黑羽、骨角、兽甲、暗铁和暗红色能量。
+鬼族：锻铁、鬼角、熔炉、鬼面与狼牙棒。
+妖精：银色叶片、小型花形机件和绿色晶核。
+原始 PNG 由内置 image_gen 逐项生成，生成提示词保存在 module_icon_art/generation_plan.json。
+参考素材为 module_icon_art/original_style_reference.png；第一张魔力动力核作为后续配件的绘制风格参考。
+
+三、游戏接入
+原图：gfx/interface/equipmentdesigner/touhou_modules/source/*.png
+游戏纹理：gfx/interface/equipmentdesigner/touhou_modules/icons/*.dds
+DDS 为带透明通道的 56×42 像素纹理，大小与原版坦克、飞机模块图一致。
+裁去空白透明边缘后等比例缩小并保留透明边距；不改绘画内容。
+interface/zz_touhou_module_icons.gfx 为每个幻想乡配件定义 GFX_EMI_<配件ID>。
+两个 touhou_*_modules.txt 的 gfx 指向配件自己的 ID。
+完整装备预设继续使用原型号图片；配件图案只用于设计器中的模块显示。
+
+四、维护方式
+tools/module_icon_catalog.cjs 定义各图案主题和配件归类规则。
+tools/prepare_module_icons.py 负责透明检查、缩放、DDS 无损格式转换及预览汇总。
+tools/module_icon_art.cjs 将图案接入军事迁移生成器。
+原始 PNG 和游戏 DDS 均保存在本 Mod 内，可由原图重新导出纹理。
+修改生成规则后使用 tools/migrate_military_system.cjs 重新生成，生成文件仍受校验和保护。
+配件图标映射清单.json 记录全部配件到图案的对应关系以及素材 SHA256。
+预览图保存在 module_icon_art/tank_icons_preview.png 和 module_icon_art/air_icons_preview.png。
+
+五、校验范围
+检查全部配件的 gfx、唯一 Sprite、纹理路径、DDS 尺寸、透明像素和素材校验和。
+检查专属 Sprite 不与原版模块 Sprite 重名。
+继续使用原有军事校验，核对配件参数、预设装配结果与原版装备保护。
+游戏启动检查只证明素材可以加载；设计器中的实际摆放仍以游戏界面为准。
+
+六、本次检查结果
+55 张纹理均通过 PNG 到 DDS 的逐像素 RGBA 回读比对。
+283 个配件的定义移除 gfx 字段后，与本次接入前一致。
+2108 项原装备数值检查通过；原版配件 Sprite 覆盖为 0；军事校验错误为 0。
+2026-10-01 21:06:18 游戏完成启动，本 Mod 与新图标相关报错为 0。
+日志仍有 8 条其他已安装 Mod 描述文件的版本格式警告。
+本次没有逐个打开设计器检查槽位画面。
+校验汇总与启动日志保存在 module_icon_art/validation_summary.json 和 engine_*.log。
+
+七、重新导出与校验命令
+在 Mod 根目录执行，顺序如下：
+1. 使用已安装 Pillow 的 Python 导出纹理及预览：
+   python tools/prepare_module_icons.py
+   本机已验证的 Python 路径为：
+   C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+   在 PowerShell 中可使用 & 加上述带引号的路径，再传入 tools/prepare_module_icons.py。
+   预览汇总使用 Windows 字体 C:/Windows/Fonts/msyh.ttc。
+2. 重生成配件显示映射和迁移清单：
+   node tools/migrate_military_system.cjs
+3. 检查 Sprite、DDS、素材校验和与军事体系：
+   node tools/validate_military_migration.cjs
+4. 检查修改中的空白错误：
+   git -c core.safecrlf=false diff --check
+迁移和校验工具默认读取本机 F:/SteamLibrary/steamapps/common/Hearts of Iron IV。
+游戏位于其他目录时，可把实际游戏根目录作为两个 Node 命令的第一个参数传入。
+这套命令只导出现有 PNG 并更新映射，不会调用图像模型重新生成原图。
+--partial 只供生成期间检查已完成素材；最终导出应使用完整模式，要求全部 55 张原图存在。
+
+八、替换或新增图案
+替换图案：更新 source 下对应 PNG，保留透明背景，再依次执行上一节的导出、重生成和校验。
+新增图案：在 module_icon_catalog.cjs 的 assets 中增加主题，并在 assetFor 中明确配件归属。
+同时更新 generation_plan.json 中的生成记录，将新 PNG 保存到 source 后再导出。
+保持 GFX_EMI_<幻想乡配件ID> 的命名规则，图案共享通过纹理路径实现。
+完整图案目录见《配件图标目录.txt》，逐配件映射以《配件图标映射清单.json》为准。
+图案中文主题用于素材目录说明，游戏配件显示名称仍取自各模块的本地化键。
+不要直接手改已受校验和保护的生成文件；应在对应生成工具中修改规则。
+若出现 Generated file was edited，应先核对并保留手动改动，再把改动合入生成规则。

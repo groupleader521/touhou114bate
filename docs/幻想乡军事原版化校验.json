@@ -1,39 +1,62 @@
 {
-  "checkedFiles": 273,
+  "checkedFiles": 267,
   "retainedOriginalModels": 143,
-  "totalModels": 109,
+  "totalModels": 125,
   "numericChecks": 2108,
   "armor": {
     "numericChecks": 744,
-    "chassis": 17,
-    "generatedRoleTypes": 81,
+    "chassis": 23,
+    "generatedRoleTypes": 111,
     "retiredFinishedModels": 50,
-    "modules": 129,
+    "modules": 213,
     "presets": 56,
     "originalPresets": 50,
     "spiritPresets": 6,
-    "hiddenComponentLicenses": 20,
-    "slotChecks": 280
+    "hiddenComponentLicenses": 88,
+    "slotChecks": 280,
+    "isolation": {
+      "privateModules": 213,
+      "nativeChassis": 108,
+      "rejectionChecks": 23004,
+      "spiritFrames": 6,
+      "spiritStatChecks": 66,
+      "limitation": "Exhaustive native slot/category rejection and preset/stat checks; game UI not simulated.",
+      "errors": []
+    }
   },
   "aircraft": {
     "numericChecks": 692,
-    "airframes": 37,
-    "generatedRoleTypes": 88,
+    "airframes": 47,
+    "generatedRoleTypes": 98,
     "retiredFinishedModels": 43,
-    "modules": 154,
+    "modules": 322,
     "presets": 43,
-    "hiddenComponentLicenses": 37,
+    "hiddenComponentLicenses": 95,
     "slotChecks": 172,
     "missionChecks": 163,
-    "designerBlueprints": 125,
+    "designerBlueprints": 145,
     "historicalWings": 13,
-    "historicalPlanes": 460
+    "historicalPlanes": 460,
+    "isolation": {
+      "privateModules": 322,
+      "nativeFrames": 82,
+      "rejectionChecks": 26404,
+      "guiChecks": 18,
+      "utilityFrames": 10,
+      "utilityStatChecks": 170,
+      "errors": [],
+      "limitation": "Actual category, slot, stat and gate checks; game UI not simulated."
+    }
   },
   "countryUnlocks": {
-    "nativeUnlockListsChecked": 662,
+    "nativeUnlockListsChecked": 1104,
     "registeredModels": 52,
     "finishedDesigns": 49,
     "projectGatedModularHulls": 3
+  },
+  "nativeTechnologyProtection": {
+    "definitionOverrides": 0,
+    "sourceFileOverrides": 0
   },
   "nativeEquipmentProtection": {
     "definitionOverrides": 0,
@@ -42,10 +65,10 @@
   },
   "presentation": {
     "countryTechnologyMappings": 1813,
-    "retainedModelIcons": 199,
-    "spriteAliases": 5196,
-    "countryEquipmentNames": 3184,
-    "researchModelTooltips": 124
+    "retainedModelIcons": 215,
+    "spriteAliases": 4835,
+    "countryEquipmentNames": 3440,
+    "researchModelTooltips": 0
   },
   "errors": [],
   "warnings": [
@@ -75,5 +98,34 @@
     "lotus_equipment_1 additionally inherits naval_weather_penalty_factor = 1",
     "lotus_equipment_2 additionally inherits naval_dominance_factor = 300",
     "lotus_equipment_2 additionally inherits naval_weather_penalty_factor = 1"
-  ]
+  ],
+  "moduleIcons": {
+    "artworkFamilies": 229,
+    "tankModules": 213,
+    "aircraftModules": 322,
+    "sprites": 535,
+    "nativePlaceholders": 0,
+    "nativeSpriteOverrides": 0
+  },
+  "categoryIcons": {
+    "categories": 39,
+    "tank": 15,
+    "aircraft": 24
+  },
+  "optionalModules": {
+    "tankModules": 84,
+    "aircraftModules": 168,
+    "core": 45,
+    "niche": 129,
+    "flavor": 78,
+    "slotChecks": 252,
+    "flyableAssemblies": 168,
+    "nativeFrameAssemblies": 0,
+    "utilityFrameAssemblies": 26,
+    "missionAssemblyChecks": 97,
+    "missionIsolationChecks": 43,
+    "authoredConcepts": 174,
+    "distinctCultureGroups": 84,
+    "limitation": "Slot/stat/condition simulations only. Representative aircraft use a compatible high-thrust vanilla engine; early engines may require fewer parts. UI, engine creation and combat are not simulated."
+  }
 }

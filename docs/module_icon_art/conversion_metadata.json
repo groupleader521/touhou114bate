@@ -1,0 +1,882 @@
+[
+  {
+    "id": "tank_magic_engine",
+    "name": "魔力装甲动力",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "b36ee4b9ff97bc79285ed3d9be9a2a11731cac2b91d2ac312ca0f669f939b98e",
+    "textureSha256": "b5fad1d03f6b51e559c7c99a1c80fedeee03e2a8c917752bb3d01566634a556a"
+  },
+  {
+    "id": "tank_magic_suspension",
+    "name": "人偶机动关节",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_suspension.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_suspension.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "dcc8bef68cd63e9566f8b0b8c0c3576480c01d8b54d31af64c75c8382be1a8ac",
+    "textureSha256": "5c81d3d66e65a86d037124019ee97e04d61dd94a172d88ccbad27b40f6ddeb4a"
+  },
+  {
+    "id": "tank_magic_armor",
+    "name": "炼金护甲",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_armor.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_armor.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "b26a66a83d16c6458964f339c004722a3105ca7ec2fab869952096dd4c3ca215",
+    "textureSha256": "588ca145416f43a006eb416612abcdda22280494b64a7a855bf398a3f5096543"
+  },
+  {
+    "id": "tank_magic_control",
+    "name": "人偶操控座",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_control.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_control.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "954720e7bb931ed0eb5eb8a7fc0871e7784b7174e10094f22fe2f72338eff900",
+    "textureSha256": "37e0b926fab7faad0e0e1c4466f1a038f1a4271d8db3c98632bb8aa2522ebd77"
+  },
+  {
+    "id": "tank_magic_gun",
+    "name": "人偶弹幕主武器",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_gun.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_gun.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "e68284d4e29e53bb9dd62ecf95647c3e0ac4b89919f332a70920ef76b1421737",
+    "textureSha256": "ac20699c16a885cddb0dfc233663eb90f123e8d3b480c98a2cb9b22cef00b727"
+  },
+  {
+    "id": "tank_magic_artillery",
+    "name": "人偶范围轰击",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_artillery.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_artillery.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "132c646cad809aa5a941b7a952d683d99ef941d43cd79c502dcf0ee0cb5727ca",
+    "textureSha256": "9756c76adeb0248be57553910b00fbafd78dc42384cba5ce515ec6a08d6bfe13"
+  },
+  {
+    "id": "tank_magic_destroyer",
+    "name": "人偶破甲武器",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_destroyer.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_destroyer.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "cf222d7bbf927b22baa519ee4285a4e753a4ad73bf68ac81f4276ce0b2aa0116",
+    "textureSha256": "1b1d3c294f5db279f1e82171311e341f6027ffff638399d26fc4bf4f0c67ab9c"
+  },
+  {
+    "id": "tank_magic_aa",
+    "name": "人偶对空弹幕",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_aa.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_aa.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a0eafdb2da8f6160c1e31277ac859355fef964ab0fcbc825c07be7d3488c8f57",
+    "textureSha256": "3d381dc1b8601fe060373dcc175bf9a33a7d314e4baec091f2ece753da8fd7a7"
+  },
+  {
+    "id": "tank_demon_engine",
+    "name": "妖化动力核",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_demon_engine.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_engine.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a4542be3e0c161f3ac93e4fd32c0bef53d73ac3fc18e0a87e357b75eb500ca0a",
+    "textureSha256": "499cf55066c717c46263f2a61ae8484b1daf91f14ebfa3332d39a00f804f94af"
+  },
+  {
+    "id": "tank_demon_suspension",
+    "name": "妖化机动支撑",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_demon_suspension.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_suspension.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "5afbad68d3c345b552df4f0d3a028802e764abb3769b7152990980b4d5e182e3",
+    "textureSha256": "d8cacdfd07d97ba9f1692f40b5c1bbad154005f4ff885ecd928279008c56c886"
+  },
+  {
+    "id": "tank_demon_armor",
+    "name": "妖化护甲",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_demon_armor.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_armor.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "ec9efcfe3edcefee4db4648cf6d2a3388b0eb0b04be11cc3ec5e3170c256cb08",
+    "textureSha256": "532d16e036a9ccb51583b64e6fef543ebb08d3087bbe6db36020b2c992d5c0aa"
+  },
+  {
+    "id": "tank_demon_control",
+    "name": "妖力操控座",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_demon_control.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_control.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "2a8dc56dab51a09a579970f8575b86ac1b35fc5f8f837fba10ae4123fa49d00f",
+    "textureSha256": "ff830f7e534bfe6bb87de4a8fa470f9918bc473dd6ade7cc9c9f6e5eabc3df15"
+  },
+  {
+    "id": "tank_demon_gun",
+    "name": "妖力近战重击",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_demon_gun.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_gun.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "4baf4506968ac46871fc2706d87710a8e72fcf5e101f2106865b2b703d88ab42",
+    "textureSha256": "e98506f977a24518a59416f3bf45e863403ea67687fe694fd0e695258be834d1"
+  },
+  {
+    "id": "tank_demon_artillery",
+    "name": "妖力范围轰击",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_demon_artillery.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_artillery.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "8abb366340aee12d2f2b3de796bde2c7d219efa691a318240c9f10267e3b0ae4",
+    "textureSha256": "dd24c29b4408c600b3815262fe0532d0d9135c7a2e3e02b4982bbe0bd4419e1d"
+  },
+  {
+    "id": "tank_demon_destroyer",
+    "name": "妖力集中破甲",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_demon_destroyer.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_destroyer.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "812c8925187e3ea0c11c0963ac34d8a440669ba84f9fffbbb744b07822471221",
+    "textureSha256": "1dfc62f8512b41d789c3a282ffa639003a36e2bac4fd67b7d25e6ca0307471cf"
+  },
+  {
+    "id": "tank_demon_aa",
+    "name": "妖力对空武器",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_demon_aa.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_demon_aa.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "19637ecbfd5d559109bfa0b7342d5b760f0994de2690c200e6969dbc9b6f1dbd",
+    "textureSha256": "7b88085ac0dedaaa588058c444201603311f3b22b1dc341221ec31e9d748e91a"
+  },
+  {
+    "id": "tank_wakan_engine",
+    "name": "附灵装甲动力",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_wakan_engine.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_engine.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "83674a93d12bd1690366c31fd23778800270e9fcace9c12c6828f0294b9877f1",
+    "textureSha256": "36753ece8cc7043dd7c2e04baf8516e42f6be37ff20b30d64f3610dba3e1f8c9"
+  },
+  {
+    "id": "tank_wakan_suspension",
+    "name": "灵力稳定悬挂",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_wakan_suspension.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_suspension.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a5c9ae40caa85846b26525d5bab461887a74e000ceea8806f423112bc56c6089",
+    "textureSha256": "dcd011068b3b7815d184dcd5e027f2b5e0ce322e2910642f689bc6a62d8782e0"
+  },
+  {
+    "id": "tank_wakan_armor",
+    "name": "护身符阵装甲",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_wakan_armor.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_armor.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "2ea0c481d6646b53938c1f9c10a0fdc060becaeacab59abe2fe56ca7b4961ac1",
+    "textureSha256": "00054eef31c146c226923515ebce13417646ad77518ab10ba96098f68073b6d9"
+  },
+  {
+    "id": "tank_wakan_control",
+    "name": "灵力共鸣座",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_wakan_control.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_control.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "450cbc609cc389c566492835142876458d18b3a706776b68a27846ec4a854fd7",
+    "textureSha256": "9254c61a3540ee06dd4ff26ddc54fc2b1aca48bde427c55327611ea64cc66cec"
+  },
+  {
+    "id": "tank_wakan_light_gun",
+    "name": "轻型破魔炮",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_wakan_light_gun.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_light_gun.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "0b9dd68ec33127ec4d48e3e10790b08cef79c91222d143d752f1a0a426d293a1",
+    "textureSha256": "3d3a40130300231601eef8e6d7ada488aa544c762a6b8aa3ceaa4a332840f302"
+  },
+  {
+    "id": "tank_wakan_medium_gun",
+    "name": "中型附灵炮",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_wakan_medium_gun.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_wakan_medium_gun.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "4d2fb565a8af81fc00fa60a486cc3348ada41f5407b7636b2f19615df42087e0",
+    "textureSha256": "3a0cdd3203d315fe50d33a06ddcb37fbc2c74643b405e9c0f81313d47da412cd"
+  },
+  {
+    "id": "tank_oni_engine",
+    "name": "鬼铸动力",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_oni_engine.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_oni_engine.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "e90983b28a6280e12f44ef1811d1987edd860ebea88cbadaacb32d2f87f7ee57",
+    "textureSha256": "6759b46041527a958b94c82fdb6590d5256058f6eb7f247b0961772dd1d4f85c"
+  },
+  {
+    "id": "tank_oni_suspension",
+    "name": "鬼铸机动",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_oni_suspension.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_oni_suspension.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "72613f32a72e302e9ea674702cd137fff6c1b8456627b316d6ba14fdd4d75a41",
+    "textureSha256": "b0560ca9f237ba4bb0132a8c16117e4018716dd844d7251d9192bd2c60032ad5"
+  },
+  {
+    "id": "tank_oni_armor",
+    "name": "鬼铸护甲",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_oni_armor.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_oni_armor.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "5f24b0d7bda191fd2c944c6e9588597d174412c9562d95a4d1f94df3cfc6aa32",
+    "textureSha256": "841b9de7cbb8014698b8b8a9e4e804dff7f23438021601de05832e359cb7ebaf"
+  },
+  {
+    "id": "tank_oni_control",
+    "name": "鬼族操控座",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_oni_control.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_oni_control.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "0449a523d0d6afb6e71e012af63e40533761527588d869ce3c18b0f7b49cf458",
+    "textureSha256": "5005a56ea1aa99725861c3ca5b3dbf1d111f54992e743eeb8758155e18aaaef6"
+  },
+  {
+    "id": "tank_oni_gun",
+    "name": "鬼族重击武器",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_oni_gun.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_oni_gun.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "56937e65a671e340b1ed320142024400be6f89f71348fb463da2579605c284da",
+    "textureSha256": "604f498aeb853d05aca04c0e9e0e9538a1b17c5c1607fbf260ac64b4b51210b5"
+  },
+  {
+    "id": "tank_fairy_engine",
+    "name": "妖精装甲动力",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_fairy_engine.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_fairy_engine.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "22443b8e4d5f5d4825e9c190635b9529571ed727467e7feb029c4c6ca603cb09",
+    "textureSha256": "4875f59b3e6721a38b8bd2cff7c620e881d3843275d74a94ed9fdb767a881d9d"
+  },
+  {
+    "id": "tank_fairy_suspension",
+    "name": "妖精机动",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_fairy_suspension.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_fairy_suspension.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "f2789324802921d59fb8dcce0fda0294a3cdb6a8eebd13d7fec3c1d203dd6d0c",
+    "textureSha256": "ca2bb813d72b54c8efe3d97652c38732c714f82eb2a30689f03322ad8c0ed9b3"
+  },
+  {
+    "id": "tank_fairy_armor",
+    "name": "妖精护甲",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_fairy_armor.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_fairy_armor.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "dd1e755ad75c3db64f90ae5f41f93fa1fbcb5acf858f848eba32777704010d78",
+    "textureSha256": "8ef6772e2bd82538ce153fda6f64d04622a3cb5460cad8389b958c1a9e719ab5"
+  },
+  {
+    "id": "tank_fairy_control",
+    "name": "妖精操控座",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_fairy_control.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_fairy_control.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "d8545452a2191e6daab2e741a8dffbdc299491ca0da7951618b39ce573af8406",
+    "textureSha256": "756e892b21bb58a9481837a671808b49bb0681508c9837edb77285a2ea9b4db4"
+  },
+  {
+    "id": "tank_fairy_gun",
+    "name": "妖精主武器",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_fairy_gun.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_fairy_gun.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "230be6191bcaef340e15197fd7fe81c7169a0c29b87cb3f256a2d56e20e64861",
+    "textureSha256": "0d256fe7cd7786cd2986d5d9337bc078705b9472c1b471ddb365cda0059baa87"
+  },
+  {
+    "id": "air_magic_engine",
+    "name": "御空魔力核",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_magic_engine.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_engine.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "8406d96c89000149e4418861c80f9f29755e7fd94f43022f44b9a0a1b5833934",
+    "textureSha256": "13daac975acfc40895a198f6cad9a250a58850ae87225efd658514c229f42d64"
+  },
+  {
+    "id": "air_magic_protection",
+    "name": "附魔护罩",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_magic_protection.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "94fed79942639a22ca60b7bbcdd991a3198a8cf330b62c195c8eb44f0afe81e8",
+    "textureSha256": "19a0f46877af1fcdd015c9cf0d60137281dd197d53d29bc0cee2faad6db003c0"
+  },
+  {
+    "id": "air_magic_range",
+    "name": "魔力储能",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_magic_range.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a3a45ecc76fbd6621f8f8a1ca0146e4ad62ec79d9caaf9fe66d6068fa056c55f",
+    "textureSha256": "39eb35cb7b1e60ad9b83d80dc95e549125e9ee8b66cbfbc39591e2a8b4c67a65"
+  },
+  {
+    "id": "air_magic_fighter",
+    "name": "对空弹幕术式",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_magic_fighter.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_fighter.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "3a7f2fc06d67b618dfb1d71b82de72b8d4d8f1863efe6739c211c76f659d6f09",
+    "textureSha256": "a1adc5f1423c81be8e92a119556ab624e9b26cec24f1108fec3ca3b52d774c92"
+  },
+  {
+    "id": "air_magic_tactical",
+    "name": "爆裂轰击术式",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_magic_tactical.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_tactical.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "0cdcfbbf1aa5079f30f540c087b209a246c55271510b66573c8ba4e87778cd3a",
+    "textureSha256": "ebce21e2786128e8ac60a513d0d51ea5a0598de8071a9f14954994f8756c656d"
+  },
+  {
+    "id": "air_magic_strategic",
+    "name": "广域毁灭术式",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_magic_strategic.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_strategic.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "7be84e62a01fa37afa07821fc48d5ac856e6f1c77cd2ad0d0e1ab699b2f05908",
+    "textureSha256": "694eaf0489bb71a9c49fa2339fbfa7efa13df1490a965156c1e12665b947180d"
+  },
+  {
+    "id": "air_wakan_engine",
+    "name": "御风推进符阵",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_wakan_engine.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_engine.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "6c6ce2b0ad2ee073ca4a87aa226e94b353144cc045757d847e276b1efa462cf9",
+    "textureSha256": "24185ea8419e056564e9d9d8c5fddbf1babda25ac9133a900682c0824f38811a"
+  },
+  {
+    "id": "air_wakan_protection",
+    "name": "航空护身符阵",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_wakan_protection.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_protection.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c6d0f437d8b84e8fb2082f7d2c5d5b11235a967ee1aa7654fdebe50955eb5e55",
+    "textureSha256": "83955e84ecbc2e3b8aba018e5abf40f1305505e4a97e7effa7d9fb4e5ac6d7ff"
+  },
+  {
+    "id": "air_wakan_range",
+    "name": "灵力导引阵列",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_wakan_range.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_range.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "94531df574cf6a2bbd246016b1aa2024274a05efd22e0d9e835eb870c86f2362",
+    "textureSha256": "2bdf598ad64bc63398b7467793c6bc4177a8e823d107a811d85300ad3e599bd9"
+  },
+  {
+    "id": "air_wakan_fighter",
+    "name": "御风切割阵列",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_wakan_fighter.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_fighter.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "54d3fd6237d4bf4e4ec083a13227b3fa876a270ce20b762ad8da6f263fa6c5ec",
+    "textureSha256": "6ec0fc96c38e6364eacc6a5f0980821617e30c5bb1c797dbf5915c57682bae03"
+  },
+  {
+    "id": "air_wakan_cas",
+    "name": "雷击投射阵列",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_wakan_cas.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_cas.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "1beb89014b2d537f469dd4ac6a83510e70ff975fc43b5fac7a5906270618f5fb",
+    "textureSha256": "b9eb740c95b0c27de133cdf64b3f2e27b8a84ef38740b6b45faabce371c8de86"
+  },
+  {
+    "id": "air_wakan_tactical",
+    "name": "天火降击术式",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_wakan_tactical.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_wakan_tactical.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "ad6b514ebe63e058035ce96f554158dd77b2a3016a88166f5936937e51efbb21",
+    "textureSha256": "61c67918a2625d2a1ede0152d872914425b30e985f388d9224ef40abad3bf6cb"
+  },
+  {
+    "id": "air_demon_engine",
+    "name": "妖翼推进",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_demon_engine.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_engine.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "854d78dcbb4359121a4f60b41d45920186c79f77825259c36cb005fcd9e5f7f4",
+    "textureSha256": "4222422ed2e9647a1a8e3d2d7e0a198a4cb800160906cdbba92fd523190c0aa2"
+  },
+  {
+    "id": "air_demon_protection",
+    "name": "妖羽护甲",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_demon_protection.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_protection.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a25802e72a509c182fb14f0ba602c04e61abcedfcf25c683095067b2f00b7436",
+    "textureSha256": "011bd9b24e1aa28fe4b5e7d91390eca543c897d61dc349cf0ae2827883bacbaa"
+  },
+  {
+    "id": "air_demon_range",
+    "name": "妖力续航",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_demon_range.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_range.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "70e516fb0a03373eaebe555452117eba9b9cd9fd6eaabc6efb17e6c78aa526a6",
+    "textureSha256": "86d6b5676c6beb11b27d92a52b06ebc13a358f2dbc6e1b53c0b7d8adcf6f4bb2"
+  },
+  {
+    "id": "air_demon_fighter",
+    "name": "妖羽撕裂武装",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_demon_fighter.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_fighter.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "f5a14c734da87e3c206e54de74ecf03af70688821fc3a960ebc0de04fa02ef5e",
+    "textureSha256": "aadf7d9161ca80957e4814cb825935b892d1643e3d0108a6b8125547544d4221"
+  },
+  {
+    "id": "air_demon_heavy",
+    "name": "巨翼猎空武装",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_demon_heavy.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_heavy.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a9fb1caeaa29bbebc81036f4a2212ca47c82352d73bcfa3bacfba28acf008da6",
+    "textureSha256": "eb899f92c099365b4c1f5ec798de6d1f9d8e16d44ea4abf5ec54243bec761647"
+  },
+  {
+    "id": "air_demon_cas",
+    "name": "妖禽俯冲武装",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_demon_cas.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_cas.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "02a07ef734d57ec8a46a457491c894de16a9d12b4870609c2408e54bb8d33036",
+    "textureSha256": "1153f81ef0fbc4714a3668e6a9e6e3a4f720b65121c31edeaa5d56e16d4f0e47"
+  },
+  {
+    "id": "air_puppet_suicide",
+    "name": "自爆人偶触发符咒",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_puppet_suicide.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_puppet_suicide.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "25efe01656d7da7e53b566eac2b87bec06d9bbff07b9857f6b6424f09dbbb5a0",
+    "textureSha256": "ab1aa9469f460a7f70243d7ed9326cd42b6dfa20d857303b6a51ae43ebf02704"
+  },
+  {
+    "id": "air_puppet_missile",
+    "name": "自爆人偶弹头",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_puppet_missile.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_puppet_missile.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "0f61a6e93ce5fbb1f39012ded205e9b533828a24cad5f4b71efd6ece61886f4e",
+    "textureSha256": "7c27721d9d053025d220ff5f4accc01ba403d1a097ea441e7ac74e322f8fd346"
+  },
+  {
+    "id": "air_tengu_weapon",
+    "name": "天狗羽扇弹幕",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_tengu_weapon.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_tengu_weapon.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "3df52c9f4523764d062667c4eaac78e2f65328570988be82546e6e92f5a4e092",
+    "textureSha256": "e21534453c7a2421cf4134448fc997258546fa017dc18a4aa8b126dd5dd1d9e8"
+  },
+  {
+    "id": "air_boli_weapon",
+    "name": "博丽驱魔支援阵",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_boli_weapon.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_boli_weapon.dds",
+    "sourceSize": [
+      1495,
+      1052
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "8660004ad31341f5b31cd09f59ff7441d8f5a7427f06336c27fbb263ad4daf90",
+    "textureSha256": "2d45c581b62996d7895e8bc921d907514e0e24c3c6b7e39048ff8a75bbc4c604"
+  },
+  {
+    "id": "air_desires_weapon",
+    "name": "欲望能量轰击阵列",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_desires_weapon.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_desires_weapon.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "9fefa113a532752623a36da3c37dbe5c9b294b5f18e352cb6908ff755737621e",
+    "textureSha256": "0db9a88b8cb798de2fb89c46602b82e5e1c84d2190b188e0ac4b291bd667dfba"
+  }
+]

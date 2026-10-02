@@ -1,0 +1,48 @@
+历史装甲报错修复说明
+==================
+2026-10-02
+
+依据：游戏 error.log 的 11:14:06–11:14:53 记录。
+
+项目错误及修复
+--------------
+ALI 上海级和 HEL 妖力复合装甲在底盘尚未解锁时创建完整设计。
+allow_without_tech = yes 不能替代底盘科技激活；引擎报告没有基础底盘变体，随后部队找不到 version 1。
+此前静态检查只确认脚本出现 create_equipment_variant，没有检查创建前的底盘许可，漏掉了这个问题。
+
+17 个原有装甲系列各新增一个独立底盘许可，原许可只开放部件；六个附灵系列保持既有独立许可。
+所有装甲后台许可总数现在为 88。每个底盘只由一个许可的 enable_equipments 激活。
+正常研发须满足原科研条件和战间期型坦克开发；历史库存只授权其自身底盘，再创建完整设计。
+起始部队引用的设计与脚本赠送的库存均采用此顺序，库存的 producer 存在时保持在生产国作用域。
+配件仍未解锁，也没有为 ALI、HEL、EVI 赠送原版坦克科技。
+can_be_produced 保留原研发及部件许可条件，历史底盘授权不能直接开启新生产。
+
+EVI 妖精突击师由 evil_armor_brigade 转为 medium_armor，旧编制隐式使用共享妖精装备。
+旧历史设计扫描只匹配装备 ID，漏掉这一营种到妖精装甲装备的转换。
+现在显式识别 evil_armor_brigade 并为开局登记妖精装甲底盘与完整设计。
+
+日志中其他报错
+--------------
+大量 module_count_limit already exists 在 11:14:39 热重载阶段出现，包含原版 plane_airframes.txt、tank_chassis.txt 及本项目装备。
+本项目定义中的同名限制检查无重复；此次没有删掉必要的限制来掩盖热重载缓存报错。
+11:14:41 的 34 条 _economic.txt/_manpower.txt 错误和 11:14:42 的 CZE_karel_pavala_army 错误紧跟数据库热重载记录。
+这些原版源文件不在本项目中；尚需完全退出游戏后冷启动复核，不能据旧热重载日志判定仍是项目定义错误。
+8 条 supported_version 警告来自其他已安装 Mod 的描述文件；当前 dlc_load.json 仅启用 touhou114。
+
+验证
+----
+42 项国家与定义条件检查通过。新增检查覆盖全部 16 个幻想乡国家的历史创建顺序，
+ALI/HEL/EVI 的指定历史装甲、未研究部件保持关闭、新生产条件、其他底盘不开放、原版国家隔离、定义内限制不重复。
+2,108 项原装备数值、1,104 项原版解锁字段、535 个模块和 99 个预设保护检查通过。
+原版科技源文件及 ID 覆盖仍为 0，没有写入 Steam 安装目录。
+
+实机边界：尝试启动本机 hoi4.exe 做冷启动检查，但未产生新的游戏日志，未能确认进入场景；已清理本次测试进程。
+上述结果是静态与脚本执行顺序检查，不是引擎内完整设计、生产列表和 OOB 初始化的实测结果。
+本轮改动需要完全退出游戏后重新启动并开新局验证；不支持通过热重载完整迁移已出错的旧局。
+
+维护：修改 tools/armor_designer.cjs 与 tools/migrate_military_system.cjs 后运行迁移生成器。
+node tools/migrate_military_system.cjs
+node tools/check_country_equipment_conditions.cjs
+node tools/validate_military_migration.cjs
+node tools/validate_optional_module_icons.cjs
+node tools/audit_vanilla_overrides.cjs

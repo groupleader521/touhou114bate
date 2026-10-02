@@ -1,0 +1,2960 @@
+[
+  {
+    "id": "tank_optional_magic_radio_1",
+    "name": "单线操偶中继",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_radio_1.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_radio_1.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "30d40993ff9cfdc3e67f043c64085106b3867d79dd26e65710b556e7b5950336",
+    "textureSha256": "f010f471a2247f466152b06909af30489cb15f2dee77d18d0a4e562e8bcd85d2"
+  },
+  {
+    "id": "tank_optional_magic_radio_2",
+    "name": "并行操偶咒线",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_radio_2.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_radio_2.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c2effae1f3e86cfdcba2c5616664a88a5490cf04bc84ab28cb655702aa75ea7f",
+    "textureSha256": "4a0616b11737ab1f35f42fe08fb53a0571a248e9b9847b03916fd9c818915a00"
+  },
+  {
+    "id": "tank_optional_magic_radio_3",
+    "name": "分布式人偶心智匣",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_radio_3.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_radio_3.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "d021d4c75274475676e18e2fee61fd1c284c01956f5e65db6c9f6373c4a1899c",
+    "textureSha256": "ced58be456a962266f1d2cbbcb2fee256e4e924a91f0057104c19743fd2be679"
+  },
+  {
+    "id": "tank_optional_magic_smoke",
+    "name": "替身人偶投放匣",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_smoke.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_smoke.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "4c25a4bc3b779dd10918901160456345070b0ab4ec8562ba959b65a8be8bccf1",
+    "textureSha256": "9a1343f1e96a57c7861a34be869b9a1985c369f2e62e5f16a8640d5d4c8a99ad"
+  },
+  {
+    "id": "tank_optional_magic_wet_storage",
+    "name": "魔晶隔离封棺",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_wet_storage.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_wet_storage.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "922d5dde3251a7c8bf6f05d188d99fd7f5ab3103b4496cd1d626bc6487e5774e",
+    "textureSha256": "6bfcf40c8e1457a05388bfdebba0857ee8eb1ec4f3305ee1b08704e0e14a8a39"
+  },
+  {
+    "id": "tank_optional_magic_maintenance",
+    "name": "备用人格晶片",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_maintenance.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_maintenance.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "442931916bfebd9b7079150e674df2fc5cc721fbbda5745178655a0efae5217e",
+    "textureSha256": "2070631b43e8cb39abc465f94ae2ee755ddbed5f841d3dac953d32899d9a9843"
+  },
+  {
+    "id": "tank_optional_magic_secondary_mg",
+    "name": "袖珍随伴人偶群",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_secondary_mg.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_mg.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c4db83f85d2abe307fc306920ea787fc4e22b9b5ea3367851fff9f109799a3dc",
+    "textureSha256": "3267cbb443a0b2ad98d32f56c1fc68223b27a73f971db4a1313922246fcb63c2"
+  },
+  {
+    "id": "tank_optional_magic_secondary_cannon",
+    "name": "折射魔晶副炮",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_secondary_cannon.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_cannon.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c594ece61bebf67905f82a6c9b7fec6c29bd9c23fe95de051816e73478e840d8",
+    "textureSha256": "2a7fa77d1d377ad824c25f3596c785ae8b9e607e352e5eace5d0527a3c3e60eb"
+  },
+  {
+    "id": "tank_optional_magic_secondary_howitzer",
+    "name": "魔力共振爆裂器",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_secondary_howitzer.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_howitzer.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "81266091f129a1482086739b9da90956fe4e7eac47c48906c1cd41542f447b43",
+    "textureSha256": "d6930a95a714e91cd4348517760aff0f5d6706df6519e1e5109c10adef3ccbb8"
+  },
+  {
+    "id": "tank_optional_magic_secondary_lance",
+    "name": "单点坍缩魔晶针",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_secondary_lance.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_lance.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "70c2500afc44b4fbf687952370bd4fe61a6753bc4f03b8aab2a9dafd926cfee9",
+    "textureSha256": "fd59659def74758077a6ba65ccbd3e0fade6edaed380a2d9fccb43e2340ae436"
+  },
+  {
+    "id": "tank_optional_magic_secondary_aa",
+    "name": "环轨拦截人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_secondary_aa.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_aa.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "34aec0e46a8060b898015b95bdb7447e19e15ed4ebb5c9d97090d5557478a428",
+    "textureSha256": "edc619d44f666333fc616dbf90d7c1d701d94bdd7cbbb991d6a827e08feccffe"
+  },
+  {
+    "id": "tank_optional_magic_secondary_flame",
+    "name": "失控魔力泄压口",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_secondary_flame.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_secondary_flame.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "cf1dd8fd9d0978e63073758109ded90c324fa5ab0b2b6b921cec70b2a0f6d743",
+    "textureSha256": "b46c9e44ff0e5408535c1f3dfa9b5a70704e8eca9973fcceb44610f7d913d4ff"
+  },
+  {
+    "id": "tank_optional_magic_coax",
+    "name": "咒线缝合针",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_coax.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_coax.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "14e8eae80b96c3d1faddf1686d1da4bb051c4102e879ab79fff15eaf63f56e09",
+    "textureSha256": "1b3e3a9c8dc401f961582643bbaeffcd90ba6d61e805442417399a8ed5c2e42f"
+  },
+  {
+    "id": "tank_optional_magic_stabilizer",
+    "name": "动作预演人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_stabilizer.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_stabilizer.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "16c6e54d12bed5d0f1a8ade3b0eada8e9ab0bcbe03093a34dea3b1daf659c959",
+    "textureSha256": "72a400172cb13aeddd241a29a44fab73045abe2032c3003453cbaa9c6c8fdc68"
+  },
+  {
+    "id": "tank_optional_magic_sloped_shield",
+    "name": "折返魔力镜面",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_sloped_shield.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_sloped_shield.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "b632734bee851741e163112ffbbe8244b701fb016451b6be22d952277ea594fe",
+    "textureSha256": "ff535cfcf5433b009a56fadfb149eee3cd2349552220adb3fd82f7b7acb1e10c"
+  },
+  {
+    "id": "tank_optional_magic_skirts",
+    "name": "悬浮人偶护盾片",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_skirts.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_skirts.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "7e562e28a69d790f06850a756ae5519e1cfd06c7436bb108a50cc2be67c5e92c",
+    "textureSha256": "8767d78abc64d6b3552680f11eb74967f7e58402d40b60edd164c55facd1ede4"
+  },
+  {
+    "id": "tank_optional_magic_extra_magazine",
+    "name": "危险魔晶串联匣",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_extra_magazine.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_extra_magazine.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "34274027da0e61c0b1e3ad2c4922626ed6ee3b674887cf0fb55d5cdb4572bf89",
+    "textureSha256": "636ad77afe7d9644fb64bda0e523c0567a949f81aa607167e7e769669c74f8e9"
+  },
+  {
+    "id": "tank_optional_magic_dozer",
+    "name": "挖坑小人偶收纳箱",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_dozer.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_dozer.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "d7bc04eb7184a85935e82ee93204a17254c6b2129a25f60b4269906e9038380c",
+    "textureSha256": "825f01c20e6ee86de914ac3c5cf2c5ac2d899551968ea76667b0ee6854305372"
+  },
+  {
+    "id": "tank_optional_magic_fuel_drum",
+    "name": "压缩魔力瓶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_fuel_drum.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_fuel_drum.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "8bbd578f58935ed588ee98b353afb7d40785ffb329e941a40d37e229e87382bb",
+    "textureSha256": "03c195916daa97e523d687cc15c4bc2d48f2e59946fa9795d92bd775107901d2"
+  },
+  {
+    "id": "tank_optional_magic_toolbox",
+    "name": "咒线梳理小人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_toolbox.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_toolbox.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "ec2422e9815c1113e65ae56f7938bc4725df48e8bd8e693b338f40011f2cedaf",
+    "textureSha256": "55095fd081a94c6dfa009b28314fc34e21e1ab025f9c61c15a3ed1c09be02efb"
+  },
+  {
+    "id": "tank_optional_magic_signal_flags",
+    "name": "弹幕舞步谱架",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_signal_flags.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_signal_flags.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "0de52ce5c8d55b24841895f1709e7d72d8257fbdba5ca0b51292e44095cbd5ea",
+    "textureSha256": "2e0a687a095d5e1996fed29b14a0e2e216335a54ddd84a9e32c30139b87457f9"
+  },
+  {
+    "id": "tank_optional_magic_ornamental_armor",
+    "name": "操偶音乐盒",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_ornamental_armor.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_ornamental_armor.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "bb619224108fe2945a78a78797f42c5d252e03cf231baedcb2e35abac9e554ec",
+    "textureSha256": "d5a04063e309e65b425fba2b8cab476c3e8dbcd158cc47f005d18994dbb37acf"
+  },
+  {
+    "id": "tank_optional_magic_parade_lights",
+    "name": "幻影舞台投射器",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_parade_lights.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_parade_lights.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "cf392af1e96b7dda7197ca4367601e934181498a8f72479b4bcff598a9125c0d",
+    "textureSha256": "6a1af6ee98f01b2ec3d4c93e141a1d54984ee2a7aa84a9725adcd1cb8381c492"
+  },
+  {
+    "id": "tank_optional_magic_crew_comfort",
+    "name": "人偶茶会托盘",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_crew_comfort.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_crew_comfort.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "507f8008bd4fd818570fb5a59e2f94af7be26362fec1f96ee4c4c1f8ec9eff35",
+    "textureSha256": "58d76f92501594eb862c79ecfeb963bcf8b8a360a6cebee3004e5218a10bb749"
+  },
+  {
+    "id": "tank_optional_magic_spare_tracks",
+    "name": "未上弦人偶备队",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_spare_tracks.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_spare_tracks.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "ecabebb4ffbc03861cccd02167e845982712f25ca1482418d80ce3b9a9f68816",
+    "textureSha256": "b1f9ea6ca6e76b3742bc13f4b93297b43c210ad9f3da0b31d0ee4bfc0415f964"
+  },
+  {
+    "id": "tank_optional_magic_emergency_battery",
+    "name": "禁制第二魔力核",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_emergency_battery.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_emergency_battery.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "970ceeb16d90a9313f99f8fae779143fcc78e4edfc4fa7d5b24fbdd1efabdf6f",
+    "textureSha256": "76a8997e6947fcd276ba179b5469329d47dd4cae8205dfb4380566029a62509b"
+  },
+  {
+    "id": "tank_optional_magic_cooling_fins",
+    "name": "魔力泄流梳",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_cooling_fins.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_cooling_fins.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "b6553326794bbbc836f01ea79c5f1a7873051a17b9888214566a78e3b73c9942",
+    "textureSha256": "b058bc4d416a3d14ce5cd82605f9f6a2c7173928cebfe71bd69a75c97cfeb2b7"
+  },
+  {
+    "id": "tank_optional_magic_seals",
+    "name": "备用封印蜡偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_magic_seals.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_magic_seals.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "fa733f99bdde0f83a2a7499edab850a602141204851f479ca3abef115122a9df",
+    "textureSha256": "3323f5c71cd91e6816b6043b1f494304ac6fabbe4ea03cdeb6c061615bde23b4"
+  },
+  {
+    "id": "tank_optional_wakan_radio_1",
+    "name": "守阵共鸣铃",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_radio_1.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_radio_1.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "f791429efe306aa0fd8b40ecfca3e68be70b457586330a89f99a256763f5aaa7",
+    "textureSha256": "8be9ea8265a1188c248ea0beb14b32627b7578bc82be70143968803c47227800"
+  },
+  {
+    "id": "tank_optional_wakan_radio_2",
+    "name": "轮转结界钟",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_radio_2.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_radio_2.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "02f2a084ab7975670b1d5953bb81c882ffdcecdd378756b1ceb2eb05ae739a84",
+    "textureSha256": "f96daaee25e04c685d483df6f5a211222c99206794e3e398384e3d090a78d32f"
+  },
+  {
+    "id": "tank_optional_wakan_radio_3",
+    "name": "大结界阵眼",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_radio_3.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_radio_3.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "b455be933bef60d57022d56b8c2c7095124c60fc2e6e7644a744e4b486a29d16",
+    "textureSha256": "2cd9776d4781b142fdcc38c1da5e9b5b22373418e3d3639a53425d5577d8e727"
+  },
+  {
+    "id": "tank_optional_wakan_smoke",
+    "name": "折光御札障壁",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_smoke.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_smoke.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "e11b9f92a98b4586cb5a6cce10852b1661cb49fb8d2eba1085b32d631b3ddce2",
+    "textureSha256": "e44b089c527e02d78bb8266ab85e7596523a088ba8ffa2ceb8a56ed6a527bea8"
+  },
+  {
+    "id": "tank_optional_wakan_wet_storage",
+    "name": "镇暴灵力封印",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_wet_storage.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_wet_storage.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "5bcdd6ad51333326c66a71a564a478fa9b269e415038d5cb8ef6c8d99f188b5b",
+    "textureSha256": "5de27211caa5bfaf50255340c6486f588921d6e5ab603c0fcbcfd7dc6f5c57f4"
+  },
+  {
+    "id": "tank_optional_wakan_maintenance",
+    "name": "断符续接阵",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_maintenance.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_maintenance.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c09292e2165a734dd76b5f368979303ab9f352021220796edbefc337b354c5bb",
+    "textureSha256": "09cb488ae9a6f014fa7646ca4122122a009a42c7e7db5febf1b54baeb307dd57"
+  },
+  {
+    "id": "tank_optional_wakan_secondary_mg",
+    "name": "自动迎击御札环",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_secondary_mg.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_mg.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "79dfcf44da303cca512d3b366a54c08ea19876c830d5f5e020f4764589f6e6ed",
+    "textureSha256": "1f728d2389a4ec1644de7b8bade9473b06db50d94f55c3bbd8c049815ed3f2a1"
+  },
+  {
+    "id": "tank_optional_wakan_secondary_cannon",
+    "name": "贯界御札副炮",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_secondary_cannon.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_cannon.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "e3b84b564637c088b87301a20b2133d43404a1f89c8efe37eb49823c00548bf0",
+    "textureSha256": "2fa353ac2602f80b94e9bff332859aada834a5c803f55ab94382b625d6bc1d95"
+  },
+  {
+    "id": "tank_optional_wakan_secondary_howitzer",
+    "name": "连锁镇地雷符",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_secondary_howitzer.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_howitzer.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "546207d840c2e118fdde714a80deaf3f6a524001a81887dab69471f215c6e21b",
+    "textureSha256": "94735c01e93268d8d1d38a98983cde904adb488ebd34769375ccf1446892fae0"
+  },
+  {
+    "id": "tank_optional_wakan_secondary_lance",
+    "name": "破邪贯通钉",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_secondary_lance.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_lance.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "81b6ce879101c48002ac2903f1df4d53cfb6a7644705815afde1fed0390f83fa",
+    "textureSha256": "5175b99d1f9639e035a67fb838e864b026f5bec77bd73cf092c1c1487b3cf8b3"
+  },
+  {
+    "id": "tank_optional_wakan_secondary_aa",
+    "name": "落羽封空符阵",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_secondary_aa.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_aa.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "3f3e3431ce16a5f45e35a3ba3b0cd4df6f3442621c79f6aa07b7a0b79f7afff4",
+    "textureSha256": "e1a1e1d2290077779235411f6aefd5712e22d3c03dfb92fe6e4f1ce2c755bc03"
+  },
+  {
+    "id": "tank_optional_wakan_secondary_flame",
+    "name": "火行轮转符炉",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_secondary_flame.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_secondary_flame.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "5e77674d5bf5593a76630e7f6087a48687b508474e7227a0a0189806bcb7109e",
+    "textureSha256": "9298a52301428be2053346cf513bfb2031e178e6fd386764faf7693eddb5a492"
+  },
+  {
+    "id": "tank_optional_wakan_coax",
+    "name": "贴身驱邪札",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_coax.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_coax.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "43a84935ce74d118fabdbb2d2c22ba9892814822e0c83403102b7fb90620feab",
+    "textureSha256": "bc977d6a0ac13e09f710df18a5425f8a9e1202bcf5cfbb102e74fffcda31b414"
+  },
+  {
+    "id": "tank_optional_wakan_stabilizer",
+    "name": "定心阵眼",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_stabilizer.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_stabilizer.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a62b483e657dcae0fdda50ec58308f87daab6cf9ab63a72bb08c2d5f74920134",
+    "textureSha256": "cbb6567b282d98cd400ff50440ac3e2f598afb0ca75d3c231f1a0fe691bdd992"
+  },
+  {
+    "id": "tank_optional_wakan_sloped_shield",
+    "name": "层叠护身结界",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_sloped_shield.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_sloped_shield.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "5c30309cc5297ff7c6308407a4a765d3fa539571f8da6955b696596886f68795",
+    "textureSha256": "44de69ea13ccd3c0f94367b7b0c57e40d2ae2d01b278a99808fa7227084fe596"
+  },
+  {
+    "id": "tank_optional_wakan_skirts",
+    "name": "四方结界幡",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_skirts.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_skirts.dds",
+    "sourceSize": [
+      1470,
+      1070
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a798db16d4aee2512df84ad4ce2fde0b5dc88ddcab0261c0bd9f2022ec28bad8",
+    "textureSha256": "313b3da3b8df659cf449362e6ead5e1ca0d6633596f508625c49defa8b7eaacf"
+  },
+  {
+    "id": "tank_optional_wakan_extra_magazine",
+    "name": "一次性愿力符库",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_extra_magazine.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_extra_magazine.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "615f984a01c6a20dc42d77d2ff07ee171d8500a501777d6aba32a15cb3a9ba94",
+    "textureSha256": "ecf27ac0e0e070c10b8f86099926c1382aceaa528343dd400e7cae00db8f5467"
+  },
+  {
+    "id": "tank_optional_wakan_dozer",
+    "name": "镇土阵脚",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_dozer.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_dozer.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "299cf1095860fe28693204522384db8c95e8f08500de28f87754aa3b2437acf5",
+    "textureSha256": "56dd5841cdbb7b4efbfabdc3c32251327db8e223f47202f2874deb3eff0038d8"
+  },
+  {
+    "id": "tank_optional_wakan_fuel_drum",
+    "name": "蓄愿御札匣",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_fuel_drum.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_fuel_drum.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "149c017be3f25f14934417bef72027c01b0395b0e4d3f71bb1e2206b3cfa55f8",
+    "textureSha256": "3bbcce55ea711e4472d04d1c95ea828f02ffe3a1e8cc4133ee61fb5a15dff919"
+  },
+  {
+    "id": "tank_optional_wakan_toolbox",
+    "name": "御札晾晒架",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_toolbox.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_toolbox.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "6b20b321626da6aadba2e33240c0f6e78d388731b273236cf486c1e56600ea3d",
+    "textureSha256": "3bfc12f916642ba64c078870c75e7ead1b00c22f0e269d5990052ecdcd7e3696"
+  },
+  {
+    "id": "tank_optional_wakan_signal_flags",
+    "name": "祈愿签筒",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_signal_flags.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_signal_flags.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "2a6cceede1737db47fa30f22fbf510635d952ec68e29399b4a7bd875b1eb5634",
+    "textureSha256": "f20c8c9a73bf4d8596a681c75b85e5a8ff67c10f9637c3136f953813a70dc3f5"
+  },
+  {
+    "id": "tank_optional_wakan_ornamental_armor",
+    "name": "结界风铃串",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_ornamental_armor.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_ornamental_armor.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c3fc753a7f9d6b6549ceab6bb8aed7250c7d77c4c4414eb1b86a0d673f6fdaa7",
+    "textureSha256": "ce4d951328fbdf41a93b82c39ce92c5a744c024f349c0dc0eeaddf1fa57bb389"
+  },
+  {
+    "id": "tank_optional_wakan_parade_lights",
+    "name": "祭典供奉灯",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_parade_lights.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_parade_lights.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "eaa1e482d6d727191b33f19dcfdbf3777b29488e9497f4509ba4599e8e97c9ee",
+    "textureSha256": "3e20fdfb3f473673c2c28f617f42f69febb820cb6350b2cc9379668bf3abefcb"
+  },
+  {
+    "id": "tank_optional_wakan_crew_comfort",
+    "name": "静心香炉",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_crew_comfort.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_crew_comfort.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "1ccf08252eec9676996cf8dfa1ca6c58668a211af7adfd549821fc0cbdb7a033",
+    "textureSha256": "3c6a2eb506fcdbfe106e8bb885c0a0eaa51e3557a0bf4455d33d6edf4cce8664"
+  },
+  {
+    "id": "tank_optional_wakan_spare_tracks",
+    "name": "未开光符纸箱",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_spare_tracks.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_spare_tracks.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c6d67a550ca2c5dc665e877300d40ffbd8fe66e332bd920cd0a4ec4c44cc945b",
+    "textureSha256": "5f0fc6bc45caec9554a8f99a69413ebd401e379fe97c2d571d2f186c8c5a06d4"
+  },
+  {
+    "id": "tank_optional_wakan_emergency_battery",
+    "name": "焚符急行阵",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_emergency_battery.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_emergency_battery.dds",
+    "sourceSize": [
+      1456,
+      1080
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "bf2c8a58c941e0f0440e634ab2c8b51667f08d7271eb8e582488caa650311258",
+    "textureSha256": "47534b4469186573bd62400eba8000f58e8da431336b89ff356a9db4b0a82b2b"
+  },
+  {
+    "id": "tank_optional_wakan_cooling_fins",
+    "name": "散愿平衡环",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_cooling_fins.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_cooling_fins.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "8cd50d0f74e30773da5ddc913dd51ae764015c8934aac5ab34a17cdd55f86193",
+    "textureSha256": "c4bddd822c9c7d171b2c1db6352c15eacc390d0cb4f1d0e99a9775b70a23ddc8"
+  },
+  {
+    "id": "tank_optional_wakan_seals",
+    "name": "避秽净化札袋",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_wakan_seals.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_wakan_seals.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "3ce60feb6e86bdde67c799b79bea1361967d76939cc7204d4eb72c210c3ad09c",
+    "textureSha256": "747e99b6949ec3df5acc12dcd10915b44338319cc035c4e9beefdc1b9429ee1a"
+  },
+  {
+    "id": "tank_optional_demonforce_radio_1",
+    "name": "兽群统御喉",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_radio_1.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_radio_1.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "6e810737c8ef827addc8519f4fbde10f6a87f6184dcf3d5c70596ab021fd9265",
+    "textureSha256": "49d2e94156ae68d3048fb29663605806eb9c44ba6d5d70252bb2ad312b554c98"
+  },
+  {
+    "id": "tank_optional_demonforce_radio_2",
+    "name": "战意回响骨鼓",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_radio_2.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_radio_2.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "9fb56440d3b043e01b22e8569f54c55f8a294f69b79d5ef9b0ad2243fb2bf3ef",
+    "textureSha256": "9bb1a349ba527db510525ca384ada2a2e2c4513860f817c86b3f0b2b8a68e7d3"
+  },
+  {
+    "id": "tank_optional_demonforce_radio_3",
+    "name": "百兽王令冠",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_radio_3.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_radio_3.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "ccf6ac80632845fa63f8152608097017f2e69ab91e217a19f4760cc04f609349",
+    "textureSha256": "a3fa262a4b058a3f2f269d3c79918873a5883510ceebb9234f8bf6fb36a0b990"
+  },
+  {
+    "id": "tank_optional_demonforce_smoke",
+    "name": "蜕壳诱饵囊",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_smoke.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_smoke.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "e72c526387513dd165ac769edcc2b3a2e8d88be311b7d5ddc1758532810ec50a",
+    "textureSha256": "5b816ae5d9b96d145360b26d2ccf9d1b32b9b2088d953ecc87e901eb2569748c"
+  },
+  {
+    "id": "tank_optional_demonforce_wet_storage",
+    "name": "逆鳞抑制钉",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_wet_storage.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_wet_storage.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "dc4b2620a646cd376071cd6290e6c5e59b80d95fb77fbe7e35c4997b3e5ad51f",
+    "textureSha256": "f4b645c887cc2716118f81c25482fc52c5b91771cf9524000c5fdbe2624feaef"
+  },
+  {
+    "id": "tank_optional_demonforce_maintenance",
+    "name": "活体接骨囊",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_maintenance.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_maintenance.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "7abf0969eb6288907a9df74b823d3ce7349c7237a9a0c8179a1e550837544a3a",
+    "textureSha256": "70fe4853feec08abbed3f2b826003f87a382def9463d40e2116bfc463230c888"
+  },
+  {
+    "id": "tank_optional_demonforce_secondary_mg",
+    "name": "寄生飞羽巢",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_secondary_mg.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_mg.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "1f40e8d661edc2959805444e56f8b0727bec0231d80f691e61cdb69da6a050d1",
+    "textureSha256": "5723bc93c1aa26f9e1567c2647e7545e7a4ca23f4e46405211f788367120a220"
+  },
+  {
+    "id": "tank_optional_demonforce_secondary_cannon",
+    "name": "伸缩妖角副炮",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_secondary_cannon.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_cannon.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "38ce1eeb3b94ba1262499fb95e931970b6a9e4ad10a591753af8ffbf759209be",
+    "textureSha256": "9c028f32881aa42b57f7926b8b1781a1fe32e158b021dba9797e8e38f2efc80f"
+  },
+  {
+    "id": "tank_optional_demonforce_secondary_howitzer",
+    "name": "孵化爆裂妖卵",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_secondary_howitzer.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_howitzer.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "e9edc81141ee1ba49b93561d27e95d21c3f450a2569952f43d2ef35460935417",
+    "textureSha256": "e57eecf3e04e945b4056e844e3ce67b2be0cbd4467441e93ee0a5624f52c8a49"
+  },
+  {
+    "id": "tank_optional_demonforce_secondary_lance",
+    "name": "缠咬贯甲触腕",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_secondary_lance.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_lance.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "100ca828d4288065f1644c03a46cf2857daad5f55e2b7afbe0ea75b9b3b93994",
+    "textureSha256": "d6265955fdf18717ac3d73cc76e45e05012a955a4fe52a27fa0add16f54adfd7"
+  },
+  {
+    "id": "tank_optional_demonforce_secondary_aa",
+    "name": "捕风妖舌副座",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_secondary_aa.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_aa.dds",
+    "sourceSize": [
+      1451,
+      1084
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "d3b9c2d91c6912b607a291c1fdca6f4e7ec4767d5a3796b55477c6dd65f120ac",
+    "textureSha256": "8f88ef85551778180efd18105a8ccf140e35bb4e7186d1424fc0f881e3fa0855"
+  },
+  {
+    "id": "tank_optional_demonforce_secondary_flame",
+    "name": "灼息妖腺",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_secondary_flame.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_secondary_flame.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "44c7118a3e035721448a86f5914bd5aca969924c5cf11dfaf54ac7ea34cc461c",
+    "textureSha256": "211b09122aa5f663158f69195ce77b6ca838959f77606d519d1bc2142bd1c5c4"
+  },
+  {
+    "id": "tank_optional_demonforce_coax",
+    "name": "口器喷刺管",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_coax.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_coax.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "6d82643f07058161ddafda785330542889ccc275d056a480c8e95948c11ffc73",
+    "textureSha256": "e2e315b0e2fd04fd51c4fdc21b8ee7d8f9d11426fdf080abc4dfd44e1163b1cc"
+  },
+  {
+    "id": "tank_optional_demonforce_stabilizer",
+    "name": "猎食瞄准复眼",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_stabilizer.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_stabilizer.dds",
+    "sourceSize": [
+      1491,
+      1055
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c145856d46d48f6853a51d9d927d17427f310b7def4a596cb075f85ce4538892",
+    "textureSha256": "c4ab2e17d58d4ac2040f5f79af41fa53f7e1add3b3493b7c53860a120c3d6f4a"
+  },
+  {
+    "id": "tank_optional_demonforce_sloped_shield",
+    "name": "石化妖皮层",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_sloped_shield.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_sloped_shield.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "81174b3477228571ac489cd293406b3b8737f1290a06fd0131ad377888f7586a",
+    "textureSha256": "a2b45cc0fe1eed75c60d5c4a9ddc5a0f72c4f3aea6cf81a7e70b8b6631685248"
+  },
+  {
+    "id": "tank_optional_demonforce_skirts",
+    "name": "侧生护体骨刺",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_skirts.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_skirts.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "71be0ed8e344fe4a7d539263390a453ed098a7f317606ae06c858131f782dc40",
+    "textureSha256": "bd982f892ae35c1b38d995a566b9466818c76c78856143297a40f5738b57c32d"
+  },
+  {
+    "id": "tank_optional_demonforce_extra_magazine",
+    "name": "狂化营养腺",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_extra_magazine.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_extra_magazine.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "d2ca0f6308ca36b1b949b7c1192fb2da0da839c3d641f88dbf96eaa468504aa6",
+    "textureSha256": "9b8d0c9b849ebc6753880d15072e7e86c6643ee4ad82b228c447b977dc2f2fdf"
+  },
+  {
+    "id": "tank_optional_demonforce_dozer",
+    "name": "掘穴前肢",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_dozer.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_dozer.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "863558fb92b867748155ec108dadf2a9ef080c876e068d2ec0af6e3911ffad75",
+    "textureSha256": "8dc719dc70cee3a30569c09bb5575cd95a753655c5e5fd72b2a99f51d89d7e88"
+  },
+  {
+    "id": "tank_optional_demonforce_fuel_drum",
+    "name": "休眠妖力胃囊",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_fuel_drum.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_fuel_drum.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "aefab512f1854e3c298d9d8cd5ad3a52c7337c569c37bc2cb3099965b74e7ed9",
+    "textureSha256": "adde45feb073db71589a2fb8e0a3b51cff846e64e7c7137b556fe882380d15a4"
+  },
+  {
+    "id": "tank_optional_demonforce_toolbox",
+    "name": "寄生清洁虫盒",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_toolbox.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_toolbox.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "4d759e9e298ba276f1903801c91371aa1f4965bb6abda58648fbde323c6a24e7",
+    "textureSha256": "8ef22ea1a3067aa3b02b9bcbf9dfac45ff1e89208cc4f9d1e6eaac2254c8c640"
+  },
+  {
+    "id": "tank_optional_demonforce_signal_flags",
+    "name": "威吓兽牙旗",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_signal_flags.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_signal_flags.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a6ffc87651034a3ebc9974aa7bf6f49b5748d2728e188c54f0d74796f4293ac2",
+    "textureSha256": "3aa41fc7ae929a882bf89ca506ffb7dc318233d9f0dffb25110ad9e75ca1e7cf"
+  },
+  {
+    "id": "tank_optional_demonforce_ornamental_armor",
+    "name": "炫耀用第二对角",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_ornamental_armor.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_ornamental_armor.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "90c07000e6dedc47addcf297055319120d7518ac50c6d839bf407b90c4cf01a9",
+    "textureSha256": "6ce5e0e83983f95544e92ad04ddc8c7ecc2a7cd791d888647162d6cfcf5bf30d"
+  },
+  {
+    "id": "tank_optional_demonforce_parade_lights",
+    "name": "发光妖苔培养盘",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_parade_lights.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_parade_lights.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "5f3a228580dfd52f2544d366a17dbf3ab4fd4124ff89b39bb0565286dcb747a9",
+    "textureSha256": "b318602edfdd5c9c7e881b3ff37c38781e53f0536dc7d2d2e202a13f13250310"
+  },
+  {
+    "id": "tank_optional_demonforce_crew_comfort",
+    "name": "御兽磨牙石",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_crew_comfort.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_crew_comfort.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "919de139e18b0200ec57dc0356cb86f0e104b65b399b0268fee8b046d51e1925",
+    "textureSha256": "df91ecdd52a21535403cf4a8a5b373ced75b1754446a57edd80ced05882cf139"
+  },
+  {
+    "id": "tank_optional_demonforce_spare_tracks",
+    "name": "休眠替换肢囊",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_spare_tracks.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_spare_tracks.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "8f7b850f581073f4bb8a9bcefdc7b0436e48847189411b76d4ec9f0ce84c69e8",
+    "textureSha256": "eb852f29778ebf016eb53bf6b9ce9498def621e58715eb1ddf728bbb437a4ee6"
+  },
+  {
+    "id": "tank_optional_demonforce_emergency_battery",
+    "name": "狂猎催化腺",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_emergency_battery.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_emergency_battery.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a61ab24d0a7d6bd01ed47c8a63e5d1664c6e06fdad63234d0deadbeb2425f045",
+    "textureSha256": "34c0b2a206d91a7c4071746faac14faccfa68087dbd5911f9b4ca5da321bb1c5"
+  },
+  {
+    "id": "tank_optional_demonforce_cooling_fins",
+    "name": "妖血换热腮",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_cooling_fins.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_cooling_fins.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a110b2c2c0532550d9581425b7fcb3c8b411ba59aad77382b1b32e1821f253ab",
+    "textureSha256": "d1baa40b613d8ea40f5f724679e32672066c39b420d8f22fe9bdfe5a9bb591dc"
+  },
+  {
+    "id": "tank_optional_demonforce_seals",
+    "name": "蜕皮收纳囊",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/tank_optional_demonforce_seals.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_optional_demonforce_seals.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "9165764f4fff6468df6e4f0d17ecc7bfbbbd5af31d416b9c468baf8d1448f371",
+    "textureSha256": "f7c3e00fff9e0acf3ee4b846aca06e880e48fb3e50915543020eb984497e1088"
+  },
+  {
+    "id": "air_optional_magic_shield",
+    "name": "弹幕偏转镜",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_shield.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_shield.dds",
+    "sourceSize": [
+      1466,
+      1073
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "2e30d5c3066ad9d0518c143ace9e31e678fced25b60558229a90e67033c92a59",
+    "textureSha256": "b4f8af34dfb5acf10f1bbc7f543e1315f326ec6e8aa3e87b2551df387b293188"
+  },
+  {
+    "id": "air_optional_magic_sealed_cells",
+    "name": "备用操偶人格",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_sealed_cells.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_sealed_cells.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "7b0a144d57e7618e44c303729a45d07e85268ddafcfc3403acabffb745c80874",
+    "textureSha256": "b87a5b0de3eab8456b548af727748cf57559995db338eae87068424f29332d9b"
+  },
+  {
+    "id": "air_optional_magic_reserve_cells",
+    "name": "折叠魔力储瓶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_reserve_cells.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_reserve_cells.dds",
+    "sourceSize": [
+      1453,
+      1083
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "a933e2280c8db2b6d79daf2b141be284dc1da655c4d7639d445083ba94104354",
+    "textureSha256": "1bf46cfaebc32f3991b127fcd45218174213ef9f0deed49e3c2db8fac39604f2"
+  },
+  {
+    "id": "air_optional_magic_wood_frame",
+    "name": "半虚化承重咒",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_wood_frame.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_wood_frame.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "d66745706a2ce904863c12bf4945327ca20dd1adaa1c0fc1b7f42d823f785f03",
+    "textureSha256": "26e107ab1793e02e54ba6ed08c8a0496f629b08a053f6dfa229ec7296e3c1dea"
+  },
+  {
+    "id": "air_optional_magic_fairing",
+    "name": "咒线牵引翼",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_fairing.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_fairing.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "d93de4a402b562cab82a9bba5bb64eac74e28aa7bb3f9177ff71535f4bbaf191",
+    "textureSha256": "b2e464b91d362810e470d258bbd7b2de11144d48fd2f438b6395251b89cb2112"
+  },
+  {
+    "id": "air_optional_magic_thrust_assist",
+    "name": "过载御空魔晶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_thrust_assist.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_thrust_assist.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c5a3867fab23947d8a974cb40c079b3a28884f120ad701de5ed6eecf9b8510d5",
+    "textureSha256": "0d297ace5cb1b7ac218d9c8cedfdeb135cbd86a454792efe720cd8acc44b76a4"
+  },
+  {
+    "id": "air_optional_magic_cooling_flaps",
+    "name": "魔力泄压花",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_cooling_flaps.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_cooling_flaps.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "0614979557ffad7c1464f1c7e5249cc97dfea9bc89786f3ced0fc4b5132205cf",
+    "textureSha256": "a5a3bf40f69b58be937b911a37c0f380e287c679a10d7494fa3ccd0572bcf3e1"
+  },
+  {
+    "id": "air_optional_magic_ballast_cage",
+    "name": "飞行茶会吊篮",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_ballast_cage.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_ballast_cage.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "4becbc6662b2e8c68559de84b9a94591b89de801063a322d1db2d4796c7774ce",
+    "textureSha256": "de8017d1e86597ffa12411e9496b3004abae4c788be83f06b755ae3edceb6f3b"
+  },
+  {
+    "id": "air_optional_magic_signal_lamp",
+    "name": "荧光咒线结",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_signal_lamp.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_signal_lamp.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "b29a3408ef685605d6d5c92f70e9e969dcef38ec4f0b8417cc1a1d33d8d73cbc",
+    "textureSha256": "06f3dd19882476b963835b67b88247b624b8ef1934b021fa3c7c93352e90e488"
+  },
+  {
+    "id": "air_optional_magic_comfort",
+    "name": "袖珍歌唱人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_comfort.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_comfort.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "1a9b2f3e29d8a60746ade65bcf5d0fbadbcb7c11ba77c79a21f9fdcf22d60fea",
+    "textureSha256": "97f409495099524bc5a05e7e78af3757fd555085911d1c78e664c75fd5f832a4"
+  },
+  {
+    "id": "air_optional_magic_ornament",
+    "name": "幻影舞台帷幕",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_ornament.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_ornament.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "3dff03ab01de72a294f7de86c46ebfdf892711c29cd616e0460cb95a15a31696",
+    "textureSha256": "ce0d12efdc43bcb491fdbe64ed78889ef66bf77cef9b7105d3412526098c7ab8"
+  },
+  {
+    "id": "air_optional_magic_satchel",
+    "name": "未上弦飞行人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_satchel.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_satchel.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "87597878716c0a6a87bd6f9a880928aa98f001071d644e18d19873a7b168a974",
+    "textureSha256": "f62fb58ac5cf7cde1ca3a538d3f2abcba9f5ceecf840a08d7986e5667ebd8e7a"
+  },
+  {
+    "id": "air_optional_magic_floats",
+    "name": "水面倒影诱饵",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_floats.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_floats.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "ee2785f22951e2b244e9f4629d7462cf7aa22b1c0862228ccc68585e205acd88",
+    "textureSha256": "979c49624fb195bc73bd462039702327b78508034bae0af829adcfc5b4a7bed2"
+  },
+  {
+    "id": "air_optional_magic_aux_light",
+    "name": "随伴星弹人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_aux_light.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_light.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "f8c8f4d04d4ad1fb511526c1fbcb20ffd967bce6604e7d01398a51c5ee7d2c0b",
+    "textureSha256": "993f70bdc6d384610c199eeb7f2ae55e90f7744e082172d5801308de982433f8"
+  },
+  {
+    "id": "air_optional_magic_aux_heavy",
+    "name": "回旋魔晶弹幕盘",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_aux_heavy.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_heavy.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "2378a9a931325c4b1e8a54ca26cc949646fb9c3aa2ee190989e9bcb37872835a",
+    "textureSha256": "c01696e7027051393023ba1d603a0874c84dabdf181db1b1a0bf73d3a115ae62"
+  },
+  {
+    "id": "air_optional_magic_aux_cannon",
+    "name": "聚焦魔力棱镜",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_aux_cannon.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_cannon.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "7fbf68d0c1656973bd4d31152ce2036539bfb0423e47760dad5d369af04771de",
+    "textureSha256": "b8a8e4e181ed06d84f3feeb85c279e479f64085b80b03d3c75fdb5c029833759"
+  },
+  {
+    "id": "air_optional_magic_aux_scatter",
+    "name": "表演型星弹烟花",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_aux_scatter.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_scatter.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "16045a12febf97717d9155f4011c461bd46a7ec7e0acedd0aea37455487a1fcf",
+    "textureSha256": "81a434c653a14e5a4e1f6d1ebb27e2c03e76a883f6fbeacabcdb675a1872e8d0"
+  },
+  {
+    "id": "air_optional_magic_aux_bombs",
+    "name": "共振爆裂魔晶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_aux_bombs.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_bombs.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "aa653c7dcee6e90930c20b29e6a65b69ffa03b1148d966cd6cf3b08b24bd5d9a",
+    "textureSha256": "77b9dcf7d1ca89b644f5a3fc36e33343b657854fa39d4bbe3a770177b029afb1"
+  },
+  {
+    "id": "air_optional_magic_aux_rockets",
+    "name": "分裂星弹投射匣",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_aux_rockets.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_rockets.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "d3b4f87d2d04f79500a98dcbc85ac0261eef874622f2b8ef7ee9edc3c8c6afc6",
+    "textureSha256": "7a318ee41acb221c39ffcf6174cac6d245d31c953ec8dc328efd4f5e3e4d18dc"
+  },
+  {
+    "id": "air_optional_magic_aux_torpedo",
+    "name": "潜行魔晶人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_aux_torpedo.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_torpedo.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "aa2b0d016e08178d1473946247e8075623ddf76582c91b5de0fd94d90c55e09d",
+    "textureSha256": "cee4f7cb1cc8a9a4156c5d2a45ced8271bd2811e7b89d5cb7eafed811cf99aec"
+  },
+  {
+    "id": "air_optional_magic_aux_camera",
+    "name": "远视侦察人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_aux_camera.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_camera.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "04cce8942be5bb2abaf716040fede6c4aa3e85f4380ab47220aad24b3ed2f78c",
+    "textureSha256": "4968d3e731965201982366fdccc5ab7dda3220549e9bd27db68bfde3a150ec1d"
+  },
+  {
+    "id": "air_optional_magic_aux_mines",
+    "name": "休眠魔晶伏偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_aux_mines.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_aux_mines.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "d6f4409f0eec8b626681c30e0757365eeb0737141e97a52a1b222a1f1c689fc1",
+    "textureSha256": "de36da1488decda6785636a5ff53aa5eb81eff49ffe77872af8894197e8e3ac2"
+  },
+  {
+    "id": "air_optional_magic_bomb_sight",
+    "name": "轰炸预演小人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_bomb_sight.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_bomb_sight.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "b092a00813eb1185fcb10c8fb0d989cc900d49a2feea25df416761e98fbf4ce2",
+    "textureSha256": "b9a84faa6beb4fea282a54cb4835a20f7cdada9b5ba2c91846f61883889c6785"
+  },
+  {
+    "id": "air_optional_magic_navigation",
+    "name": "星图记忆人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_navigation.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_navigation.dds",
+    "sourceSize": [
+      1451,
+      1084
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "1cf2cdbadb7ba037614c89f1cc74e63a0f1987ef48cf004ca7c9cfebfabb32f2",
+    "textureSha256": "9a8345c2f306d362646c45ed8bb05cebf32df7d611799939174e304031d6328c"
+  },
+  {
+    "id": "air_optional_magic_intercept_eye",
+    "name": "咒线捕影仪",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_intercept_eye.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_intercept_eye.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "9ffd47b83e6534a093955f48b9b8c7b4fbc7a9d43177e030250c8d442283ba91",
+    "textureSha256": "cae064fe0a01aec75da982e90f8bfe40cfaadb96831faa071bb02238d5be81fd"
+  },
+  {
+    "id": "air_optional_magic_maritime_eye",
+    "name": "海面远视人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_maritime_eye.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_maritime_eye.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "0155eca35bec95820e8da5af6dfa7ff142e1a04ffead2f6ceb86bf7398b1b771",
+    "textureSha256": "d0999ac7a9a16958db064aadfee833415ec15e76d3a705f3d15d8fc91f754796"
+  },
+  {
+    "id": "air_optional_magic_false_echo",
+    "name": "幻听记忆晶片",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_false_echo.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_false_echo.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "03f89d77e16fb178ca3c7464661803b6d38b770f345f472baf897fb9203688b5",
+    "textureSha256": "14070c8b62f3d3b3828074bda867dca1eeed2e6edba2d69a00851a76e53739ad"
+  },
+  {
+    "id": "air_optional_magic_tail_sentry",
+    "name": "后向守卫人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_tail_sentry.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_tail_sentry.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "57f127871ae5dd7b0d2bcd796201453dc811e4ded8bdbfdcd6110a002541d4e5",
+    "textureSha256": "9787d96a9d5ab814afd95f731ddb54770ff7ff5acc188760d1447bbdf8477afb"
+  },
+  {
+    "id": "air_optional_magic_paired_tail",
+    "name": "双体守卫人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_paired_tail.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_paired_tail.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "2c2dc15ad3c4461da9d910d0abcc985ed9c9f543906f1c843ddc218b4f09a6a6",
+    "textureSha256": "dd5a1834c7cf53d4ca79059c64bbeaeab5f41523c5cf4d495eb7b839ad418be9"
+  },
+  {
+    "id": "air_optional_magic_blind_spot",
+    "name": "背对敌人的小人偶",
+    "style": "magic",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_magic_blind_spot.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_magic_blind_spot.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "3f3364043b4feb49f9d056e1f395af112f939af14847affebb8e9c637f44f8fd",
+    "textureSha256": "cd276552ea164533de20e76553b13be32d594bb6b47b71cd126ff0294a036af7"
+  },
+  {
+    "id": "air_optional_wakan_shield",
+    "name": "重叠守护结界",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_shield.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_shield.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "7ffe544ef9b35bc30a6b33e32c95c081f9511ccc2fecd98375841c41c4241dae",
+    "textureSha256": "c9902c7ec30840ad6b095a7f969b263b6bfc00de68fd92ed9050307281caec08"
+  },
+  {
+    "id": "air_optional_wakan_sealed_cells",
+    "name": "断界续符匣",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_sealed_cells.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_sealed_cells.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "58da2a7a1cf398a103de9fba57f8e4ee679c865334b300c547325da0cee6ad75",
+    "textureSha256": "f07c43450a2bbf0fe62f85176616c117dc8ae8c3cd61c6b4d170bdedde497334"
+  },
+  {
+    "id": "air_optional_wakan_reserve_cells",
+    "name": "顺风愿力帆",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_reserve_cells.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_reserve_cells.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "e3339a72c43bc73c37bd9bd07dfa45a7612f91724fc8c7848ac8bebbae54cbdf",
+    "textureSha256": "9e8ad65198ddb9e7612a75ded668872c38fdd5069dffa81a47fd0972fc5ba66f"
+  },
+  {
+    "id": "air_optional_wakan_wood_frame",
+    "name": "纸替身承重符",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_wood_frame.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_wood_frame.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "ffc6c40ce2996f83720b33306637e4dde1081c0812922728a9407eb213d613f8",
+    "textureSha256": "da21a11939c466315ec6b63d2d5598614c79e9c6a508a131e07ebe6578157365"
+  },
+  {
+    "id": "air_optional_wakan_fairing",
+    "name": "逆风转向符",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_fairing.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_fairing.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "43a5ccd3a055b56ef6dfac93af6aec5f2e94484358e27742e6600a769dc7e2f3",
+    "textureSha256": "06ebdf10ba46ce77286b252d477aba60de735cd0ab6457aff9d0481605ee02e4"
+  },
+  {
+    "id": "air_optional_wakan_thrust_assist",
+    "name": "焚符升力阵",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_thrust_assist.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_thrust_assist.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "2993efd8739e5ea14db9f3f3666a42017868b9ef4bcf9f9d0b13d439538042b7",
+    "textureSha256": "a5660e876aa813074791bb273f06558b58255e252dd1799b06f3b5e474cf6310"
+  },
+  {
+    "id": "air_optional_wakan_cooling_flaps",
+    "name": "散愿净心环",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_cooling_flaps.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_cooling_flaps.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "01b5346eef50c94e1d45a069a0b1a40ceb600276d1a6d0c878d426a2d008ac0f",
+    "textureSha256": "6ae967e6ffe734229adf5e4a7719ecb5dc9f13f13bdddb171b07afd1858574cb"
+  },
+  {
+    "id": "air_optional_wakan_ballast_cage",
+    "name": "浮空供奉台",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_ballast_cage.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_ballast_cage.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "3e03962cf0dff93f0504702ab093fc302cedbf3f9e814dfb171446205ada0c44",
+    "textureSha256": "fb274a92b25fd1ba30f5e049c48c8a6352d12aa381cd62edb7824c961950639f"
+  },
+  {
+    "id": "air_optional_wakan_signal_lamp",
+    "name": "空中祈愿灯",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_signal_lamp.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_signal_lamp.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "1f8cd426c279bfa7757bc2f919ada8e178e919afe4c6ffb9561511cf5df6be18",
+    "textureSha256": "c22e94c8fd40670d48c78a0f0ade56bb309552d610dd0a3fffcc609fd2cc0bb6"
+  },
+  {
+    "id": "air_optional_wakan_comfort",
+    "name": "空中静心香炉",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_comfort.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_comfort.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "e0fb687124c0a8d1c32b6828279a1fab321a6393a414a95b2d1ae852724528f8",
+    "textureSha256": "c24853957e1b8dcac9640b02c5f3dcdc79d540e1adea88ead19cc9eff8e5d601"
+  },
+  {
+    "id": "air_optional_wakan_ornament",
+    "name": "七彩祭典符幡",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_ornament.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_ornament.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "1dcf909dded8bfea771f311d21ad8333076677aa7c27c820ec0d6d57dc7a8333",
+    "textureSha256": "13565eaf8307240a54a5b9585a967225b406422513b798ab5a694656065a5483"
+  },
+  {
+    "id": "air_optional_wakan_satchel",
+    "name": "未开光御札箱",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_satchel.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_satchel.dds",
+    "sourceSize": [
+      1451,
+      1084
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "adc539710ec879a5429db14c47a91c8cf19ebd954ab297aff6b6584e039e3670",
+    "textureSha256": "2c480b3955792920551090b23039c4586ee7f2b7f61dcf0a624a51440f3f67e9"
+  },
+  {
+    "id": "air_optional_wakan_floats",
+    "name": "踏浪索敌符",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_floats.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_floats.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "34654e113e2171ae23f0e9c07c65fde0461ca9827ebd98539175d8aed643d9c1",
+    "textureSha256": "285e738241956fcff5b5c093c28eba11dd2522be0e4113994d310e0e2bac1aed"
+  },
+  {
+    "id": "air_optional_wakan_aux_light",
+    "name": "追踪御札环",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_aux_light.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_light.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "76a86d0cd1bad21c35a8a57565ffce86b81d0f99e4ace9f22550539c5a301ccc",
+    "textureSha256": "9241c946770788a8fe897bc76e9348a3afe007420a55feaa606c90abdab30802"
+  },
+  {
+    "id": "air_optional_wakan_aux_heavy",
+    "name": "雷札迎击阵",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_aux_heavy.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_heavy.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "045920627c7c4a4441f0a6e8260cd4541a8a5d4379ac393be49f651bc604c8cc",
+    "textureSha256": "1cd64a0c457c2c8a90d5c0529cc51fd5b752f4d66ca6de72205a343b4811f677"
+  },
+  {
+    "id": "air_optional_wakan_aux_cannon",
+    "name": "贯空雷符枪",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_aux_cannon.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_cannon.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "cccb044d9a2f71d13563912a6e600588ae23433c508b74aab4ff1fc2800b5983",
+    "textureSha256": "a887d97aae4713a60a08a935e44944cef7ac8eb58ad4186c532e26411337bbc1"
+  },
+  {
+    "id": "air_optional_wakan_aux_scatter",
+    "name": "散华御札花环",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_aux_scatter.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_scatter.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "5760ccb7c77f2297346700a69e5388bfed02bffa72a8f6130a42cb2ec2887338",
+    "textureSha256": "e69041c92f066f90c069de7c48e12c82bf87b6561b8989ef671ddd8c4a28607e"
+  },
+  {
+    "id": "air_optional_wakan_aux_bombs",
+    "name": "镇地连锁雷札",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_aux_bombs.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_bombs.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c9f1ddaf04025d6de9d259f87fec284cb370f4dc4fdbe7b322b3d8abba50a01b",
+    "textureSha256": "c6988c4d4e990cfe369c9bb3c6e0fa0c226e10e21d94f4b5cfdd9e620c4a761f"
+  },
+  {
+    "id": "air_optional_wakan_aux_rockets",
+    "name": "引雷御札串",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_aux_rockets.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_rockets.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "8ac81eec32db0790b45154fc6821bc93585c4d969af63706e386c0b049830182",
+    "textureSha256": "7f075b8a38b05922bf116ffeca375be39e7e8813876aedd1714c9c85bfeb0484"
+  },
+  {
+    "id": "air_optional_wakan_aux_torpedo",
+    "name": "逐水索敌符",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_aux_torpedo.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_torpedo.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "d87129363a43a501cee406a4ed166ac934737ecf73de7b73172b817e149315e9",
+    "textureSha256": "a32de32a57b9afea2957cd5b79cde1ae57cbdc3e27f9abf98d88c413a4083630"
+  },
+  {
+    "id": "air_optional_wakan_aux_camera",
+    "name": "留影索迹符",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_aux_camera.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_camera.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "56a21d3718c1539c13861ac46dc43f24a2bc362fa6557db36842bfbcf4e324d8",
+    "textureSha256": "0e7414564dafbdeb8ef6f971326b9532133cf0963a0d768d0ad022cefa862250"
+  },
+  {
+    "id": "air_optional_wakan_aux_mines",
+    "name": "漂流封水御札",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_aux_mines.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_aux_mines.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c90d6dc267f214e24a6e1f36516b9caf3ca5eb2de93e01b42f99bb9202157cee",
+    "textureSha256": "2ce61a434b96ce7eeee6e22f94fd0b9d721ad289bf9202a112f52f56b8c0f683"
+  },
+  {
+    "id": "air_optional_wakan_bomb_sight",
+    "name": "定点愿力锚",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_bomb_sight.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_bomb_sight.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "aef7def9b33dd37a75aa554232f9f0f8b9612136ad6ae8265a90c5b41df30f6c",
+    "textureSha256": "7064fe4739641fc6fea91592f6c5e5fdfc6572ca8637fe50c6f66c4f13ab6bd1"
+  },
+  {
+    "id": "air_optional_wakan_navigation",
+    "name": "归途愿力路标",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_navigation.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_navigation.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "61c51f68bbebb9d19f1b7391a1598d19047e79421413556c6ccf5c71001f4a3c",
+    "textureSha256": "9d22d4572126664fa14cbe01089b2f801c31af7dffccf9842f473b2e2845775e"
+  },
+  {
+    "id": "air_optional_wakan_intercept_eye",
+    "name": "夜空结界眼",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_intercept_eye.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_intercept_eye.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "5dab2da76f10fe00dc0ded9d9d9e4b8a971780e58c71068579726dc87c9a98bd",
+    "textureSha256": "c017ef96639bf3cc893f2fc5ea05842a7b501152ca79a2de2e48df7456e2a7ea"
+  },
+  {
+    "id": "air_optional_wakan_maritime_eye",
+    "name": "水脉探知符阵",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_maritime_eye.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_maritime_eye.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "7edacd902c8171e8863f727cb7131ff6202c9f2b54ccaede30011f656d8313a2",
+    "textureSha256": "49f6616f09cc9e0458e5ed8581fcf2b76b6cfbb097a6808bdd0b9d052c28fda9"
+  },
+  {
+    "id": "air_optional_wakan_false_echo",
+    "name": "占卜签筒",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_false_echo.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_false_echo.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "4ccdae29e8991b5a837105b410c99a767792186e4a1ed18391940cdcca3222f8",
+    "textureSha256": "4db5be6e5e9365e89902dfca54933c2db3debde0e9084a08e3b3b6fe98b6c65c"
+  },
+  {
+    "id": "air_optional_wakan_tail_sentry",
+    "name": "尾部迎击御札",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_tail_sentry.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_tail_sentry.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "bc1f18ace52a7c2f1ed8747f4e486456482eb43b9ec932d3e5451567a86014a1",
+    "textureSha256": "47f7299784092cae04e090e07e6e3815c63f55f35d00891e630385ed1fd19032"
+  },
+  {
+    "id": "air_optional_wakan_paired_tail",
+    "name": "双层尾部结界",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_paired_tail.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_paired_tail.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "9d90463e4755361435e017d13418e2222807e8bb8264b993cafe56d487fdf4ea",
+    "textureSha256": "f41cb8b5e8d83b9a380c7f440225492ad04ec0199aad6f1b8d8e3c7836ff4b76"
+  },
+  {
+    "id": "air_optional_wakan_blind_spot",
+    "name": "方向错置的守护札",
+    "style": "wakan",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_wakan_blind_spot.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_wakan_blind_spot.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "4159e3b7b1aa18374f870fe410286e23005715d332914ac922b301899b437b54",
+    "textureSha256": "1d5ab222f4b7fe0fd8a9e919f9ebe1b67a72757b18d247f99f322d4f9473309a"
+  },
+  {
+    "id": "air_optional_demonforce_shield",
+    "name": "硬化妖羽层",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_shield.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_shield.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "87bd5a0a193aa58655087f394017e1fa58e325e49747f50d8f56dec7ba9f771b",
+    "textureSha256": "bcb728154365bcd2d112403c0172cdb33fbdbf51b1e68cec05fc3d53c25a5279"
+  },
+  {
+    "id": "air_optional_demonforce_sealed_cells",
+    "name": "缝翼共生虫",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_sealed_cells.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_sealed_cells.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "3d22f024bc0eedc41e1f2a8af7f8f6d223908c5ca3a343537ef9c7708ebf9317",
+    "textureSha256": "c409808a7cf99a8813c3e7334bc8fa40b9d8da1e070a35125d556f66541ddee4"
+  },
+  {
+    "id": "air_optional_demonforce_reserve_cells",
+    "name": "休眠蓄力嗉囊",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_reserve_cells.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_reserve_cells.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "b8c99b43a42fa688eea3d625d5278c2d802838f13ce9654aaf19a3d7cf94aa1c",
+    "textureSha256": "442186f2bf6b8e2438e870e03687f764fa595f76cb099ed019802a6e72434c38"
+  },
+  {
+    "id": "air_optional_demonforce_wood_frame",
+    "name": "蜕壳轻骨术",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_wood_frame.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_wood_frame.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "6ad8c66635866e6aa4e1db084b7135d872e1c916889d03f953fdad2fc1da88b8",
+    "textureSha256": "f20e637cc0c6dc5181cb9d00b7c53b2364f2bd83c2dbd4f2fdf2b0251496d123"
+  },
+  {
+    "id": "air_optional_demonforce_fairing",
+    "name": "猎隼俯冲翼肌",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_fairing.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_fairing.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "2a396b584d3603c107ec56bf4fee950da212b3a92ea30aee7a8b81cf5144336e",
+    "textureSha256": "40483e4cd040195db3204a20776877c19f7201eb676929b2d8b6ed4de4e386ae"
+  },
+  {
+    "id": "air_optional_demonforce_thrust_assist",
+    "name": "第二对妖翼",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_thrust_assist.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_thrust_assist.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "f483bc130d16f324cfd08e696b6b4b384a435271a02877fec65e72c4ff326c5e",
+    "textureSha256": "bf8d3d8036fa7acba03aca203d258207aa1e522fe49afec047240c16f24ca446"
+  },
+  {
+    "id": "air_optional_demonforce_cooling_flaps",
+    "name": "妖血呼吸腮",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_cooling_flaps.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_cooling_flaps.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "38817b08084ae1a1544f9a328a0b0ea80fa9f9a860b856edd506041b5a27811f",
+    "textureSha256": "5a676851a2c6c5986715845f64946f2e5918253d91eed0739fb48b9bdf324d75"
+  },
+  {
+    "id": "air_optional_demonforce_ballast_cage",
+    "name": "空中磨牙架",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_ballast_cage.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_ballast_cage.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "dfa1d0595937f8589863fdafcca9a716c89157893817ffd7ec665acfb745f452",
+    "textureSha256": "c496f76e4a8ac3294d251b1bb6f2c295cfdb8c882f7a905f11d9afef644ba3ca"
+  },
+  {
+    "id": "air_optional_demonforce_signal_lamp",
+    "name": "发光妖苔羽",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_signal_lamp.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_signal_lamp.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "fc96a6bf88268ffcd1a5c429cd5dd58db469d8baaa032e6c9514355af38d80ec",
+    "textureSha256": "ac6368e3be666aceb15fdcde09fc2078146a7c45ea753de81d36d473c54f983a"
+  },
+  {
+    "id": "air_optional_demonforce_comfort",
+    "name": "安抚寄生虫",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_comfort.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_comfort.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "e6faea44b5f59cbe2789940f80763a07a61cee27714551bc3dcbc5f23a6b987a",
+    "textureSha256": "f680be0c9d3d4952f26aa709526e4bd9e0b4557f26a1e7a6b2b6cd4e6750a9a7"
+  },
+  {
+    "id": "air_optional_demonforce_ornament",
+    "name": "炫耀用长尾羽",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_ornament.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_ornament.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "3f8afb615f230dde615a880bba80c779416a344cf3f783bf9c9f7e795290bec6",
+    "textureSha256": "a0dfbb8a7cbd8e5ff480520d5260f812fac157d3a475c45c14a65ba772abf2ea"
+  },
+  {
+    "id": "air_optional_demonforce_satchel",
+    "name": "休眠妖卵袋",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_satchel.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_satchel.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "ccfca6457ef4559b4dae096d828fc1e55dec8dbe27d649fd05ea7a3cd5a328a4",
+    "textureSha256": "5a466bc61cfa772ce4cbc0ff5c947a34899bc77a107344f59eb2ad09e0a74c51"
+  },
+  {
+    "id": "air_optional_demonforce_floats",
+    "name": "水栖感知胡须",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_floats.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_floats.dds",
+    "sourceSize": [
+      1445,
+      1088
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "94a350c1789016b1acb8b47d0b52152828611c349048003be0f40f492734a9e8",
+    "textureSha256": "bf2774724ea10d769356f589cd27ae993b88f74896b2a170d571c1edddf26d0d"
+  },
+  {
+    "id": "air_optional_demonforce_aux_light",
+    "name": "噬风飞羽群",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_aux_light.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_light.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "1a29a86036367c67cfb67281177e74340e9fb572edb94c3a32f0d5c202d40027",
+    "textureSha256": "2d5825208c660ced95833fdff0262acbe87542925a0fb35c159853f1745e7d37"
+  },
+  {
+    "id": "air_optional_demonforce_aux_heavy",
+    "name": "硬羽暴射巢",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_aux_heavy.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_heavy.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "3c8b58964e6873d7ab714f396479c9cb949b3d73884e1dfca479fbb2f18c54ba",
+    "textureSha256": "6d469352bf3fecdf40130539771fd9e073995db416a392187b28ca22a6b02fcb"
+  },
+  {
+    "id": "air_optional_demonforce_aux_cannon",
+    "name": "妖骨投枪腺",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_aux_cannon.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_cannon.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "cdfa1551fa3e420cea81ab700f7da424e41fb583472c7d9c9ced15068feefe45",
+    "textureSha256": "8f944ce3d18485ef04b6ab924fb8955c30006d03ca2bc9aafc7dc42eafeea0d4"
+  },
+  {
+    "id": "air_optional_demonforce_aux_scatter",
+    "name": "散乱脱羽囊",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_aux_scatter.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_scatter.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "48513ba4848efa1d47b6102864d350b7bd65b914dc1f81c8da72b7ea8ca9cac5",
+    "textureSha256": "e00777845c185d99a70d257b38bf3c2ff59e23eb8f8e69dcb9a0c70ae1b85226"
+  },
+  {
+    "id": "air_optional_demonforce_aux_bombs",
+    "name": "孵化爆裂妖卵",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_aux_bombs.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_bombs.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "155e5e9aeccfd5f894a00a95a5f80c4db46a5a3e0b4ece921730e19289caeeac",
+    "textureSha256": "14431b605fedf805f13340727a76af221a0658e4caac00896a9074997677926d"
+  },
+  {
+    "id": "air_optional_demonforce_aux_rockets",
+    "name": "妖羽追击卵",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_aux_rockets.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_rockets.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "ed5cde488f5327cb22bb0c3b131b2a38c8914868268aa165dc711c0206930d7f",
+    "textureSha256": "7e0bcca6f3cf109272aa28a136c2cd26bf3c11d2fdcd0f9fb5625ae1894821a3"
+  },
+  {
+    "id": "air_optional_demonforce_aux_torpedo",
+    "name": "寄生水栖妖卵",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_aux_torpedo.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_torpedo.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "b1b6bec14599ccb66a71363c4d9e00850e892561a6f03229fb9d88bc9d710632",
+    "textureSha256": "57b7cfd7167bc33e297671db91f700f1d7201d4c28a6a1ae060a2749f826f920"
+  },
+  {
+    "id": "air_optional_demonforce_aux_camera",
+    "name": "猎目复眼囊",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_aux_camera.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_camera.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "706b67aaab44159fe5f05ffaa757d52a108a47e19254636f34ff5e6214bda6c4",
+    "textureSha256": "c7752685285fe76930a4b92eb7eec3a2200547aded8e48cd8cbcefb301c21852"
+  },
+  {
+    "id": "air_optional_demonforce_aux_mines",
+    "name": "沉睡水栖卵囊",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_aux_mines.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_aux_mines.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "88413f3e58e93fc20c910d1e78022a84f1bf2fc202f2973e07e6ccd3be9328c1",
+    "textureSha256": "dca655f740cf5a4959a830e874edc9e15d7a39966bd8467f9a534bdad803a90e"
+  },
+  {
+    "id": "air_optional_demonforce_bomb_sight",
+    "name": "猎地感知须",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_bomb_sight.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_bomb_sight.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "c2346cfa3d9f05007ddfea1a6e21753ad9856eff0ce495c548ef88a189751a95",
+    "textureSha256": "bd38d3904c7dbffb4acedfe5bd46c0aba0677e491e215bdb27401cc64a80353c"
+  },
+  {
+    "id": "air_optional_demonforce_navigation",
+    "name": "归巢本能印记",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_navigation.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_navigation.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "269864aa27ec804eefecedd498162ed83f3f663ad0094cd979d7dac109178a2a",
+    "textureSha256": "df1cc55c75765400d7319461919e053e9b78a14ef36dfaaa6a798bd498e46e6f"
+  },
+  {
+    "id": "air_optional_demonforce_intercept_eye",
+    "name": "夜猎妖眼簇",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_intercept_eye.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_intercept_eye.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "19bf0d70263499a3861884530e7bcae8c18459c475da50c7813875ec97eda2f8",
+    "textureSha256": "4a503e524a227ee5620289c33e773966a1794f0ebc93858792fb1e7f89c0c3c6"
+  },
+  {
+    "id": "air_optional_demonforce_maritime_eye",
+    "name": "猎海感知须群",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_maritime_eye.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_maritime_eye.dds",
+    "sourceSize": [
+      1451,
+      1084
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "617df5abceb0d046765af1901fb5f8250a445116668603eb3a1143081798763d",
+    "textureSha256": "a299637ba7c8fb422ee833022b6f82bca52120fe7ca9be434f1ab4d93fca75ea"
+  },
+  {
+    "id": "air_optional_demonforce_false_echo",
+    "name": "多余第三只眼",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_false_echo.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_false_echo.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "0fa45908741b6382c51817df9f4a7d547e502d91e9b77fa58db139bb8f07f0bc",
+    "textureSha256": "186eb21fa6edcb964f622d73b6eda34d995ee3e37ecbe7840b31201462da1b94"
+  },
+  {
+    "id": "air_optional_demonforce_tail_sentry",
+    "name": "反咬寄生尾",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_tail_sentry.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_tail_sentry.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "34121ae27c2cc7d8e54b6068cb31322a887d21b03451e74c1ef4ad09990f884d",
+    "textureSha256": "28c1c2dc3e1db8ba9fdfe1e633937dfe5cb4ddff360dd13c29445cb808132512"
+  },
+  {
+    "id": "air_optional_demonforce_paired_tail",
+    "name": "双生反咬尾",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_paired_tail.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_paired_tail.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "3658b13800fac5f990ba1d2b163cc2d6b93696a84889d812e763718888910fb9",
+    "textureSha256": "96d5c62502e993a913306efdebf0a195a41942efec9f7b14ae5f6fedd9c03f3b"
+  },
+  {
+    "id": "air_optional_demonforce_blind_spot",
+    "name": "抢食寄生尾",
+    "style": "demonforce",
+    "source": "gfx/interface/equipmentdesigner/touhou_modules/source/air_optional_demonforce_blind_spot.png",
+    "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_optional_demonforce_blind_spot.dds",
+    "sourceSize": [
+      1448,
+      1086
+    ],
+    "size": [
+      56,
+      42
+    ],
+    "sourceSha256": "5287546a73f96ca4d08ea8733476589b0b5fa806cd248e53ccd2be2073917063",
+    "textureSha256": "bb6bad50b96f0c57efb97b34f8a16f285fc1a1886928e76d6fbb20b143b9867a"
+  }
+]

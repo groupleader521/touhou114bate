@@ -8,12 +8,14 @@ const relative=f=>path.relative(root,f).replaceAll('\\','/');
 const hash=s=>crypto.createHash('sha256').update(s).digest('hex');
 const previousManifest=path.join(root,'docs/幻想乡军事原版化迁移清单.json');
 const managedOutputs=new Set();
+const changedManagedOutputs=[];
+let previousMigration;
 if(fs.existsSync(previousManifest)){
-  const previous=JSON.parse(fs.readFileSync(previousManifest,'utf8'));
+  const previous=previousMigration=JSON.parse(fs.readFileSync(previousManifest,'utf8'));
   for(const f of Object.keys(previous.outputs))managedOutputs.add(f);
   for(const [f,expected] of Object.entries(previous.outputs)){
     const target=path.join(root,f);
-    if(!fs.existsSync(target)||hash(fs.readFileSync(target,'utf8'))!==expected)throw Error('Generated file was edited; preserve/reconcile it before rerunning: '+f);
+    if(!fs.existsSync(target)||hash(fs.readFileSync(target,'utf8'))!==expected)changedManagedOutputs.push(f);
   }
 }
 let baseline;
@@ -156,6 +158,17 @@ const armor=require('./armor_designer.cjs').planArmorDesigner({root,game,models:
 const aircraft=require('./aircraft_designer.cjs').planAircraftDesigner({root,game,models:generatedModels,
   fixedDefinitions:Object.entries(outputs).filter(([f])=>f.startsWith('common/units/equipment/')).flatMap(([,s])=>P(s)[0].value),
   vanillaEq:vEq,duplicates:dup,localisation,tags,ordinaryTech,designerTech});
+const optionalModules=require('./optional_designer_modules.cjs').installOptionalDesignerModules({root,game,armor,aircraft,tags});
+require('./armor_module_isolation.cjs').installArmorIsolation({armor,game});
+require('./aircraft_module_isolation.cjs').installAircraftIsolation({aircraft,game,tags});
+const independentResearch=require('./independent_military_research.cjs').buildIndependentResearch({armor,aircraft,vanillaTech,tags});
+write('docs/特殊配件与副武器设计清单.json',JSON.stringify({date:'2026-10-02',vanillaVersion:'1.19.3',design:'Independent Touhou functions; native compatibility only',icons:'174 original transparent artwork concepts for 252 optional modules',...optionalModules},null,2)+'\n');
+write('docs/特殊配件与副武器目录.txt',require('./optional_designer_modules.cjs').optionalModuleDirectory(optionalModules));
+const moduleArt=require('./module_icon_art.cjs').installModuleArt({root,armor,aircraft});
+const categoryArt=require('./module_category_icons.cjs').installCategoryIcons({armor,aircraft});
+write('interface/zz_touhou_module_categories.gfx',categoryArt.graphics);
+write('interface/zz_touhou_module_icons.gfx',moduleArt.graphics);
+write('docs/配件图标映射清单.json',JSON.stringify(moduleArt.manifest,null,2)+'\n');
 const oldArmorIds=new Set(armor.originalModels.map(m=>m.id)),oldAircraftIds=new Set(aircraft.originalModels.map(m=>m.id));
 const retiredDesignIds=new Set([...oldArmorIds,...oldAircraftIds]),designReplacements={...armor.replacements,...aircraft.replacements};
 // Older baseline capture did not include scripts that referenced only finished model IDs.
@@ -192,60 +205,16 @@ deleted.add('common/technologies/MTG_naval.txt');
 // Native MIO groups now contain the retained models through their native archetypes.
 // The old override widened vanilla light tank groups to include heavy/super-heavy equipment.
 deleted.add('common/equipment_groups/mio_equipment_groups.txt');
-write('common/technology_tags/touhou_technology.txt',wrap('technology_categories',['magic','wakan','demonforce','goliath','mio_cat_tech_touhou_aircraft'].map(x=>N(null,x))));
-// Preserve research-bonus categories without attaching custom models to native unlock lists.
-const additions=new Map();
-for(const m of generatedModels.filter(m=>m.style!=='trump')) {
-  const legacy=ordinaryTech[m.unlock];
-  for(const id of new Set([legacy,designerTech(legacy)])){if(!additions.has(id))additions.set(id,[]);additions.get(id).push(m.id);}
-}
-const techFiles=new Map();
-for(const [id,ids] of additions) {
-  const t=vTech.get(id),file=path.relative(game,t.file).replaceAll('\\','/');
-  if(!techFiles.has(file))techFiles.set(file,P(fs.readFileSync(t.file,'utf8')));
-  const tech=techFiles.get(file).find(n=>n.key==='technologies').value.find(n=>n.key===id);
-  let categories=C(tech,'categories')[0];if(!categories){categories=N('categories',[]);tech.value.push(categories);}
-  // Existing focuses/MIO research bonuses remain useful on the shared research tree.
-  const flavor=[...new Set(ids.map(id=>generatedModels.find(m=>m.id===id)?.style).filter(x=>['magic','wakan','demonforce'].includes(x)))];
-  for(const c of flavor)if(!categories.value.some(n=>n.value===c))categories.value.push(N(null,c));
-  if(ids.some(id=>generatedModels.find(m=>m.id===id)?.archetype.includes('airframe'))&&!categories.value.some(n=>n.value==='mio_cat_tech_touhou_aircraft'))categories.value.push(N(null,'mio_cat_tech_touhou_aircraft'));
-}
-// Lotus uses its original preset modules when its national design is registered.
-// Native carrier research does not globally unlock Touhou modules either.
-// Preserve the research-bonus categories on improvements as well as model unlocks.
-// Goliath's former research stages now use native heavy/super-heavy chassis research.
-const categorySources=[...oldTech.filter(t=>group(t.key)!=='trump').map(t=>({ids:[ordinaryTech[t.key],designerTech(ordinaryTech[t.key])],categories:C(t,'categories').flatMap(n=>n.value).map(n=>n.value).filter(c=>['magic','wakan','demonforce','mio_cat_tech_touhou_aircraft'].includes(c))})),
-  ...['basic_heavy_tank','improved_heavy_tank','advanced_heavy_tank','super_heavy_tank'].map(id=>({ids:[id,designerTech(id)],categories:['magic','goliath']}))];
-for(const source of categorySources)for(const id of new Set(source.ids)){
-  const t=vTech.get(id),file=path.relative(game,t.file).replaceAll('\\','/');
-  if(!techFiles.has(file))techFiles.set(file,P(fs.readFileSync(t.file,'utf8')));
-  const tech=techFiles.get(file).find(n=>n.key==='technologies').value.find(n=>n.key===id);
-  let categories=C(tech,'categories')[0];if(!categories){categories=N('categories',[]);tech.value.push(categories);}
-  for(const c of source.categories)if(!categories.value.some(n=>n.value===c))categories.value.push(N(null,c));
-}
-// Synchronize immediately after research while retaining the original completion limits
-// around vanilla's existing template/equipment effects.
-const equipmentTooltips=new Map();
-for(const id of new Set(Object.values(ordinaryTech).flatMap(id=>[id,designerTech(id)]))){
-  const t=vTech.get(id),file=path.relative(game,t.file).replaceAll('\\','/');
-  if(!techFiles.has(file))techFiles.set(file,P(fs.readFileSync(t.file,'utf8')));
-  const tech=techFiles.get(file).find(n=>n.key==='technologies').value.find(n=>n.key===id);
-  const originalEffect=C(tech,'on_research_complete')[0],originalLimit=C(tech,'on_research_complete_limit')[0];
-  const effects=originalEffect?(originalLimit?[N('if',[N('limit',originalLimit.value),...originalEffect.value])]:originalEffect.value):[];
-  tech.value=tech.value.filter(n=>!['on_research_complete','on_research_complete_limit'].includes(n.key));
-  const displayEffects=[];
-  for(const style of ['magic','wakan','demonforce','support']){
-    const matching=generatedModels.filter(m=>m.style===style&&[ordinaryTech[m.unlock],designerTech(ordinaryTech[m.unlock])].includes(id));
-    if(!matching.length)continue;
-    const key='touhou_model_unlock_'+style+'_'+id;
-    equipmentTooltips.set(key,{technology:id,style,models:matching.map(m=>m.id),text:'幻想乡装备型号：'+matching.map(m=>'§Y$'+m.id+'$§!').join('、')});
-    displayEffects.push(N('if',[N('limit',styleLimit(style)),N('custom_effect_tooltip',key)]));
-  }
-  tech.value.push(N('on_research_complete',[...effects,...displayEffects,N('if',[N('limit',touhouLimit()),N('hidden_effect',[N('touhou_sync_vanilla_military','yes')])])]));
-}
-for(const [file,nodes] of techFiles)write(file,'# Vanilla 1.19.3 equipment/module unlock lists; national Touhou research synchronization.\n'+R(nodes));
+// Native technologies are read only: requirements are checked by independent country scripts.
+// Do not replace a whole vanilla technology file merely to attach categories or completion effects.
+const nativeTechnologyFiles=new Set(vanillaTech.map(t=>path.relative(game,t.file).replaceAll('\\','/')));
+const removedNativeTechnologyFiles=[...nativeTechnologyFiles].filter(file=>fs.existsSync(path.join(root,file))||managedOutputs.has(file)||previousMigration?.independentResearch?.removedNativeTechnologyFiles?.includes(file));
+for(const file of removedNativeTechnologyFiles)deleted.add(file);
+deleted.add('common/technology_tags/touhou_technology.txt');
+// No custom effects are attached to vanilla research tooltips; private parts describe their gates.
+const equipmentTooltips=new Map(),moduleTooltips=new Map();
 // Native 1.19 country effect: apply only the delta from vanilla research, once per country.
-// Daily and immediate synchronization also handles switching the production tradition.
+// Daily synchronization and local project/style effects handle changes without native tech hooks.
 const flat=nodes=>{const out={};function visit(ns,p=''){for(const n of ns)if(n.key){const k=p+n.key;if(Array.isArray(n.value))visit(n.value,k+'.');else if(numeric.test(n.value))out[k]=(out[k]||0)+Number(n.value);}}visit(nodes);return out;};
 const unflat=values=>{const out=[];for(const [k,v] of Object.entries(values)){const parts=k.split('.');let ns=out;for(const p of parts.slice(0,-1)){let n=ns.find(n=>n.key===p);if(!n){n=N(p,[]);ns.push(n);}ns=n.value;}ns.push(N(parts.at(-1),String(Number(v.toFixed(8)))));}return out;};
 const unitCats=u=>C(u,'categories').flatMap(n=>n.value).map(n=>n.value);
@@ -293,7 +262,11 @@ setup.push(N('touhou_sync_aircraft_designer','yes'));
 const syncScript=[N('touhou_sync_vanilla_military',[...setup,...sync])];
 write('common/scripted_effects/touhou_vanilla_military.txt','# Research deltas preserve the old technology effects without double counting vanilla bonuses.\n'+R(syncScript));
 write('common/dynamic_modifiers/touhou_vanilla_military.txt',R(dynamic));
-write('common/on_actions/touhou_vanilla_military.txt',wrap('on_actions',['on_startup','on_daily'].map(event=>N(event,[N('effect',[N('every_country',[N('limit',touhouLimit()),N('touhou_sync_vanilla_military','yes')])])]))));
+write('common/on_actions/touhou_vanilla_military.txt',wrap('on_actions',[
+ N('on_startup',[N('effect',[N('every_country',[N('limit',touhouLimit()),N('touhou_sync_vanilla_military','yes')])])]),
+ // Unlike startup, the daily pulse already has the receiving country's scope.
+ N('on_daily',[N('effect',[N('if',[N('limit',touhouLimit()),N('touhou_sync_vanilla_military','yes')])])])
+]));
 // Replace references in history, focuses, decisions, ideas, MIOs, AI and template scripts.
 // Independent conditions work in both country-history and normal effect scopes.
 // Country history interprets a sibling else as an unknown history command.
@@ -357,7 +330,10 @@ function transform(nodes,parent='') {
         out.push(N('if',[N('limit',[N('has_dlc','"'+dlc+'"')]),n]),N('if',[N('limit',[N('NOT',[N('has_dlc','"'+dlc+'"')])]),fallback]));
       }else{
         n.value.push(N('variant_name',JSON.stringify(armorPreset.name)));
-        const ensure=N('if',[N('limit',[N('NOT',[N('has_country_flag',armorPreset.flag)])]),N('create_equipment_variant',armorPreset.design),N('set_country_flag',armorPreset.flag)]);
+        const frame=!airPreset&&(armor.models.find(m=>m.id===armorPreset.type)||armor.models.find(m=>armor.aliases.some(a=>(a.id===armorPreset.type||a.presetType===armorPreset.type)&&a.base===m.id)));
+        const ensure=N('if',[N('limit',[N('NOT',[N('has_country_flag',armorPreset.flag)])]),
+          ...(frame?[N('set_country_flag',frame.historicalFlag),N('touhou_sync_tank_designer','yes')]:[]),
+          N('create_equipment_variant',armorPreset.design),N('set_country_flag',armorPreset.flag)]);
         const producer=S(n,'producer')?.replace(/^"|"$/g,'');
         out.push(N('if',[N('limit',[N('has_dlc','"'+dlc+'"')]),...(producer?[N(producer,[ensure])]:[ensure]),n]),N('if',[N('limit',[N('NOT',[N('has_dlc','"'+dlc+'"')])]),fallback]));
       }
@@ -387,7 +363,7 @@ for(const [file,s] of Object.entries(baseline.sources).filter(([f])=>f.startsWit
 }
 for(const [file,s] of Object.entries(baseline.sources)) {
   if(!file.endsWith('.txt')||deleted.has(file)||outputs[file]||file.startsWith('interface/')||file.startsWith('common/technology_tags/'))continue;
-  if(!mentions(s)&&file!=='common/decisions/touhou_switch.txt')continue;
+  if(!mentions(s)&&file!=='common/decisions/touhou_switch.txt'&&!/research_bonus|mio_cat_tech_touhou_aircraft/.test(s))continue;
   const nodes=transform(P(s).filter(n=>!(file.startsWith('history/units/')&&airOobs.has(path.basename(file,'.txt'))&&n.key==='air_wings')));
   if(file.startsWith('history/countries/')&&tags.includes(path.basename(file).slice(0,3))){
     const style=s.match(/set_country_flag\s*=\s*touhou_country_flag_(magic|wakan|demonforce)_first_research/);
@@ -398,10 +374,24 @@ for(const [file,s] of Object.entries(baseline.sources)) {
     if(list)for(const id of ['evil_armor_equipment_0','evil_artillery_equipment_0'])list.value.push(N(null,id));
   }
   if(file==='common/decisions/touhou_switch.txt')for(const category of nodes)if(Array.isArray(category.value))for(const d of category.value)if(d.key?.startsWith('touhou_research_type_change_to_'))for(const effect of C(d,'complete_effect'))effect.value.push(N('touhou_sync_vanilla_military','yes'));
+  if(file==='common/decisions/touhou_switch.txt')nodes.find(n=>n.key==='touhou_research_type').value.push(independentResearch.decision);
+  independentResearch.rewriteBonuses(nodes,file);
   if(file==='common/decisions/touhou_country_only.txt')for(const category of nodes)if(Array.isArray(category.value))for(const d of category.value)if(d.key==='touhou_mission_doll_production_line')d.value=d.value.filter(n=>n.key!=='modifier');
   // Initialize national designs after this country's original technology/style/project setup.
   if(file.startsWith('history/countries/')&&tags.includes(path.basename(file).slice(0,3))){
+    // A historical stock design may exist before its components are researched.
+    // Authorize only its chassis before creating the design; component licenses stay locked.
+    const army=nodes.find(n=>n.key==='oob')?.value.replace(/^"|"$/g,'');
+    const armySource=baseline.sources['history/units/'+army+'.txt']||'';
+    const armyTokens=new Set([...armySource.matchAll(/"(?:\\.|[^"\\])*"|#[^\r\n]*|[^\s{}=<>!#"]+/g)].filter(m=>!m[0].startsWith('#')).map(m=>m[0].replace(/^"|"$/g,'')));
+    // Fairy armor previously used the shared infantry equipment ID implicitly through its battalion.
+    if(armyTokens.has('evil_armor_brigade'))armyTokens.add('evil_armor_equipment_0');
+    const historicalArmor=armor.presets.filter(p=>p.oldModel&&armyTokens.has(p.oldModel));
+    const historicalFrames=[...new Set(historicalArmor.map(p=>armor.models.find(m=>m.id===p.type)||armor.models.find(m=>armor.aliases.some(a=>(a.id===p.type||a.presetType===p.type)&&a.base===m.id))))];
+    if(historicalFrames.some(m=>!m?.historicalFlag))throw Error('Historical chassis authorization missing '+file);
+    if(historicalFrames.length)nodes.push(N('if',[N('limit',[N('has_dlc','"No Step Back"')]),...historicalFrames.map(m=>N('set_country_flag',m.historicalFlag))]));
     nodes.push(N('touhou_sync_vanilla_military','yes'));
+    if(historicalArmor.length)nodes.push(N('if',[N('limit',[N('has_dlc','"No Step Back"')]),...historicalArmor.map(p=>N('if',[N('limit',[N('NOT',[N('has_country_flag',p.flag)])]),N('create_equipment_variant',p.design),N('set_country_flag',p.flag)]))]));
     const air=airOobs.get(nodes.find(n=>n.key==='oob')?.value.replace(/^"|"$/g,''));
     if(air)nodes.push(N('if',[N('limit',[N('has_dlc','"By Blood Alone"')]),...air.presets.map(p=>N('if',[N('limit',[N('NOT',[N('has_country_flag',p.flag)])]),N('create_equipment_variant',p.design),N('set_country_flag',p.flag)])),N('set_air_oob','"'+air.stem+'_bba"')]),N('if',[N('limit',[N('NOT',[N('has_dlc','"By Blood Alone"')])]),N('set_air_oob','"'+air.stem+'_legacy"')]));
   }
@@ -462,15 +452,28 @@ const newLocKeys=new Set(presentation.localisation.keys());
 const mergedLoc=loc.filter(line=>!newLocKeys.has(line.match(/^ ([^:]+):/)?.[1]));
 mergedLoc.push(...[...presentation.localisation].map(([key,value])=>' '+key+':0 "'+value+'"'));
 mergedLoc.push(...[...equipmentTooltips].map(([key,t])=>' '+key+':0 "'+t.text+'"'));
+mergedLoc.push(...[...moduleTooltips].map(([key,t])=>' '+key+':0 "'+t.text+'"'));
+mergedLoc.push(...[...independentResearch.localisation].map(([key,t])=>' '+key+':0 '+JSON.stringify(t).replaceAll('\\\\n','\\n')));
 write('localisation/simp_chinese/touhou_vanilla_military_l_simp_chinese.yml',mergedLoc.join('\n')+'\n');
 write('interface/zz_touhou_military_presentation.gfx','# Native IDs with the original Touhou technology and equipment illustrations.\n'+R(presentation.graphics));
 const equipmentRoleChanges={touhou_boss_army:{unit:'heavy_armor',reason:'Native super-heavy AA is a support company; boss front-line armor must use a native regimental armor unit.'}};
-const armorManifest={originalModels:armor.originalModels,models:armor.models,replacements:armor.replacements,aliases:armor.aliases,presets:armor.presets,licenses:armor.licenses,modules:armor.modules,allocated:armor.allocated};
-const aircraftManifest={originalModels:aircraft.originalModels,models:aircraft.models,replacements:aircraft.replacements,aliases:aircraft.aliases,presets:aircraft.presets,licenses:aircraft.licenses,modules:aircraft.modules};
-const manifest={vanillaVersion:'1.19.3',original:{technologies:268,units:90,archetypes:61,models:143},models:generatedModels,armor:armorManifest,aircraft:aircraftManifest,units:unitMap,archetypes:archetypeMap,technologies:ordinaryTech,bonuses,equipmentRoleChanges,countryRegistrations,presentation:{...presentation.manifest,equipmentTooltips:Object.fromEntries(equipmentTooltips)},deleted:[...deleted],outputs:Object.fromEntries(Object.entries(outputs).map(([f,s])=>[f,hash(s)]))};
+const armorManifest={originalModels:armor.originalModels,models:armor.models,replacements:armor.replacements,aliases:armor.aliases,presets:armor.presets,licenses:armor.licenses,modules:armor.modules,allocated:armor.allocated,isolation:armor.isolation};
+const aircraftManifest={originalModels:aircraft.originalModels,models:aircraft.models,replacements:aircraft.replacements,aliases:aircraft.aliases,presets:aircraft.presets,licenses:aircraft.licenses,modules:aircraft.modules,isolation:aircraft.isolation};
+const manifest={vanillaVersion:'1.19.3',original:{technologies:268,units:90,archetypes:61,models:143},models:generatedModels,armor:armorManifest,aircraft:aircraftManifest,moduleIcons:moduleArt.manifest,categoryIcons:categoryArt.records,units:unitMap,archetypes:archetypeMap,technologies:ordinaryTech,bonuses,equipmentRoleChanges,countryRegistrations,independentResearch:{...independentResearch.manifest,removedNativeTechnologyFiles},presentation:{...presentation.manifest,equipmentTooltips:Object.fromEntries(equipmentTooltips),moduleTooltips:Object.fromEntries(moduleTooltips)},deleted:[...deleted],outputs:Object.fromEntries(Object.entries(outputs).map(([f,s])=>[f,hash(s)]))};
 write('docs/飞机模块化迁移清单.json',JSON.stringify(aircraftManifest,null,2)+'\n');
 write('docs/装甲模块化迁移清单.json',JSON.stringify(armorManifest,null,2)+'\n');
 write('docs/幻想乡军事原版化迁移清单.json',JSON.stringify(manifest,null,2)+'\n');
-for(const [file,s] of Object.entries(outputs)){const target=path.resolve(root,file);if(!target.startsWith(root+path.sep))throw Error('Unsafe target');fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,s);}
+// Recover interrupted writes only when the current bytes equal this run's regenerated result.
+// Unrelated manual edits still fail before any generated output is replaced.
+for(const file of changedManagedOutputs){
+ const target=path.resolve(root,file);
+ const matchesNew=outputs[file]!==undefined&&fs.existsSync(target)&&hash(fs.readFileSync(target,'utf8'))===hash(outputs[file]);
+ if(!matchesNew&&!(deleted.has(file)&&!fs.existsSync(target)))throw Error('Generated file was edited; preserve/reconcile it before rerunning: '+file);
+}
+for(const file of Object.keys(outputs))if(nativeTechnologyFiles.has(file))throw Error('Refusing to generate native technology override '+file);
+for(const [file,s] of Object.entries(outputs)){
+ const target=path.resolve(root,file);if(!target.startsWith(root+path.sep))throw Error('Unsafe target');fs.mkdirSync(path.dirname(target),{recursive:true});
+ for(let attempt=0;;attempt++){try{fs.writeFileSync(target,s);break;}catch(error){if(attempt>=2||!['UNKNOWN','EBUSY','EPERM'].includes(error.code))throw error;Atomics.wait(new Int32Array(new SharedArrayBuffer(4)),0,0,100);}}
+}
 for(const file of deleted){const target=path.resolve(root,file);if(!target.startsWith(root+path.sep))throw Error('Unsafe deletion');if(fs.existsSync(target))fs.unlinkSync(target);}
 console.log(JSON.stringify({written:Object.keys(outputs).length,removed:deleted.size,models:generatedModels.length,unitBonusTransitions:bonuses.length,countryModifiers:dynamic.length},null,2));

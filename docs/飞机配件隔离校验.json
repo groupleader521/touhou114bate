@@ -1,0 +1,10 @@
+{
+  "privateModules": 322,
+  "nativeFrames": 82,
+  "rejectionChecks": 26404,
+  "guiChecks": 18,
+  "utilityFrames": 10,
+  "utilityStatChecks": 170,
+  "errors": [],
+  "limitation": "Actual category, slot, stat and gate checks; game UI not simulated."
+}

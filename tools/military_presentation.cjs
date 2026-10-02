@@ -26,6 +26,10 @@ exports.buildMilitaryPresentation=function({root,game,oldTech,models,ordinaryTec
   }
   function alias(key,source,suffix='') {if(source)loc.set(key,'$'+source+'$'+suffix);}
   function styleOf(id){return id.startsWith('touhou_magic_')?'magic':id.startsWith('touhou_wakan_')?'wakan':id.startsWith('touhou_demonforce_')?'demonforce':'support';}
+  // The engine also uses these research sprite keys as native equipment fallback icons.
+  const sharedDesignerVisuals=new Set(models.filter(m=>m.armorChassis||m.airframe||m.presetDesign).flatMap(m=>{
+    const legacy=m.researchSource||ordinaryTech[m.unlock];return legacy?[legacy,designerTech(legacy)]:[];
+  }));
   // Country prefixes are the same native mechanism used by GER/SOV tech artwork and names.
   for(const tag of tags) {
     const candidates=new Map();
@@ -46,8 +50,9 @@ exports.buildMilitaryPresentation=function({root,game,oldTech,models,ordinaryTec
     for(const {t,id,source,desc,icon} of candidates.values()) {
       const suffix=id.endsWith('_tank_chassis')?'底盘':id.endsWith('_airframe')?'机体':'';
       alias(tag+'_'+id,source,suffix);alias(tag+'_'+id+'_desc',desc);
-      const texture=icon?addIcon('GFX_'+tag+'_'+id+'_medium',icon):null;
-      research.push({tag,id,style:countryStyles[tag],original:t.key,nameSource:source,descriptionSource:desc,texture});
+      const nativeVisual=sharedDesignerVisuals.has(id);
+      const texture=icon&&!nativeVisual?addIcon('GFX_'+tag+'_'+id+'_medium',icon):null;
+      research.push({tag,id,style:countryStyles[tag],original:t.key,nameSource:source,descriptionSource:desc,texture,nativeVisual});
       // A technology's display aliases must never be copied onto the vanilla equipment it unlocks.
       // Retained Touhou models below own their own labels and images through their distinct model IDs.
     }
@@ -57,7 +62,7 @@ exports.buildMilitaryPresentation=function({root,game,oldTech,models,ordinaryTec
     const name=localisation.has(model.id)?model.id:source;
     const short=localisation.has(model.id+'_short')?model.id+'_short':name;
     if(!localisation.has(model.id))alias(model.id,source);
-    const icon=originalSprites.get('GFX_'+model.id+'_medium')||iconSource(model.unlock);
+    const icon=originalSprites.get('GFX_'+model.id+'_medium')||originalSprites.get('GFX_'+model.displaySource+'_medium')||iconSource(model.unlock);
     const texture=addIcon('GFX_'+model.id+'_medium',icon);
     // Archetype defaults no longer point at custom graphics, so every retained model needs a direct sprite.
     equipment.push({id:model.id,presetDesign:!!model.presetDesign,original:model.unlock,nameSource:name,shortNameSource:short,descriptionSource:desc,texture});
@@ -68,5 +73,5 @@ exports.buildMilitaryPresentation=function({root,game,oldTech,models,ordinaryTec
   }
   const allSprites=[...sprites].map(([name,n])=>({name,texture:clean(S(n,'texturefile')||S(n,'textureFile'))}));
   for(const {name,texture} of allSprites)if(!texture||!fs.existsSync(path.join(root,texture.replaceAll('//','/')))&&!fs.existsSync(path.join(game,texture.replaceAll('//','/'))))throw Error('Missing illustration file '+name+' -> '+texture);
-  return {localisation:loc,graphics:[N('spriteTypes',[...sprites.values()])],manifest:{research,equipment,nativeEquipment:[],sharedTechnologyEquipmentIds,sprites:allSprites}};
+  return {localisation:loc,graphics:[N('spriteTypes',[...sprites.values()])],manifest:{research,equipment,nativeEquipment:[],sharedTechnologyEquipmentIds,sharedDesignerVisuals:[...sharedDesignerVisuals],sprites:allSprites}};
 };

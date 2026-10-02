@@ -4,7 +4,7 @@ equipments = {
 		year = 1943
 		priority = 130
 		visual_level = 0
-		active = yes
+		active = no
 		is_buildable = yes
 		upgrades = {
 			tank_nsb_engine_upgrade
@@ -60,70 +60,6 @@ equipments = {
 				}
 			}
 			has_tech = touhou_tank_license_demonforce_super_heavy_1
-		}
-		module_slots = {
-			turret_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_super_heavy_turret_type
-				}
-			}
-			main_armament_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_small_main_armament
-				}
-			}
-			suspension_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_suspension_type
-				}
-			}
-			armor_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_armor_type
-				}
-			}
-			engine_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_engine_type
-				}
-			}
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
-				}
-			}
-			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
-				}
-			}
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
-				}
-			}
 		}
 		archetype = super_heavy_tank_artillery_chassis
 		hardness = 0.9
@@ -131,12 +67,137 @@ equipments = {
 		picture = super_heavy_tank_chassis_touhou_demonforce_super_heavy_1
 		variant_name = super_heavy_tank_artillery_chassis_touhou_demonforce_super_heavy_1_preset_design
 		derived_variant_name = super_heavy_tank_artillery_chassis_touhou_demonforce_super_heavy_1_preset_design
+		module_slots = {
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_super_heavy_turret_type
+					touhou_tank_super_heavy_turret_type
+				}
+			}
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament
+					touhou_tank_small_main_armament
+				}
+			}
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_suspension_type
+					touhou_tank_suspension_type
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armor_type
+					touhou_tank_armor_type
+				}
+			}
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+					touhou_tank_engine_type
+				}
+			}
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+					tank_secondary_turret
+					touhou_tank_special_module
+					touhou_tank_radio_module
+					touhou_tank_secondary_turret
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+					tank_radio_module
+					touhou_tank_special_module
+					touhou_tank_secondary_turret
+					touhou_tank_radio_module
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+					tank_radio_module
+					touhou_tank_special_module
+					touhou_tank_secondary_turret
+					touhou_tank_radio_module
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+					tank_radio_module
+					touhou_tank_special_module
+					touhou_tank_secondary_turret
+					touhou_tank_radio_module
+				}
+			}
+		}
+		module_count_limit = {
+			module = sloped_armor
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = touhou_tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			module = amphibious_drive
+			count < 1
+		}
+		module_count_limit = {
+			module = wet_ammo_storage
+			count < 2
+		}
+		module_count_limit = {
+			module = squeezebore_adaptor
+			count < 2
+		}
+		module_count_limit = {
+			module = armor_skirts
+			count < 2
+		}
+		module_count_limit = {
+			module = dozer_blade
+			count < 2
+		}
+		module_count_limit = {
+			module = easy_maintenance
+			count < 2
+		}
+		module_count_limit = {
+			module = auto_loader
+			count < 2
+		}
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
 	}
 	super_heavy_tank_destroyer_chassis_touhou_demonforce_super_heavy_1_preset = {
 		year = 1943
 		priority = 130
 		visual_level = 0
-		active = yes
+		active = no
 		is_buildable = yes
 		upgrades = {
 			tank_nsb_engine_upgrade
@@ -192,70 +253,6 @@ equipments = {
 				}
 			}
 			has_tech = touhou_tank_license_demonforce_super_heavy_1
-		}
-		module_slots = {
-			turret_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_super_heavy_turret_type
-				}
-			}
-			main_armament_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_small_main_armament
-				}
-			}
-			suspension_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_suspension_type
-				}
-			}
-			armor_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_armor_type
-				}
-			}
-			engine_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_engine_type
-				}
-			}
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
-				}
-			}
-			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
-				}
-			}
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_secondary_turret
-					tank_radio_module
-				}
-			}
 		}
 		archetype = super_heavy_tank_destroyer_chassis
 		hardness = 0.1
@@ -263,12 +260,137 @@ equipments = {
 		picture = super_heavy_tank_chassis_touhou_demonforce_super_heavy_1
 		variant_name = super_heavy_tank_destroyer_chassis_touhou_demonforce_super_heavy_1_preset_design
 		derived_variant_name = super_heavy_tank_destroyer_chassis_touhou_demonforce_super_heavy_1_preset_design
+		module_slots = {
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_super_heavy_turret_type
+					touhou_tank_super_heavy_turret_type
+				}
+			}
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament
+					touhou_tank_small_main_armament
+				}
+			}
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_suspension_type
+					touhou_tank_suspension_type
+				}
+			}
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armor_type
+					touhou_tank_armor_type
+				}
+			}
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+					touhou_tank_engine_type
+				}
+			}
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+					tank_secondary_turret
+					touhou_tank_special_module
+					touhou_tank_radio_module
+					touhou_tank_secondary_turret
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+					tank_radio_module
+					touhou_tank_special_module
+					touhou_tank_secondary_turret
+					touhou_tank_radio_module
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+					tank_radio_module
+					touhou_tank_special_module
+					touhou_tank_secondary_turret
+					touhou_tank_radio_module
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+					tank_radio_module
+					touhou_tank_special_module
+					touhou_tank_secondary_turret
+					touhou_tank_radio_module
+				}
+			}
+		}
+		module_count_limit = {
+			module = sloped_armor
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = touhou_tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			module = amphibious_drive
+			count < 1
+		}
+		module_count_limit = {
+			module = wet_ammo_storage
+			count < 2
+		}
+		module_count_limit = {
+			module = squeezebore_adaptor
+			count < 2
+		}
+		module_count_limit = {
+			module = armor_skirts
+			count < 2
+		}
+		module_count_limit = {
+			module = dozer_blade
+			count < 2
+		}
+		module_count_limit = {
+			module = easy_maintenance
+			count < 2
+		}
+		module_count_limit = {
+			module = auto_loader
+			count < 2
+		}
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
 	}
 	super_heavy_tank_aa_chassis_touhou_demonforce_super_heavy_1_preset = {
 		year = 1943
 		priority = 130
 		visual_level = 0
-		active = yes
+		active = no
 		is_buildable = yes
 		upgrades = {
 			tank_nsb_engine_upgrade
@@ -325,35 +447,46 @@ equipments = {
 			}
 			has_tech = touhou_tank_license_demonforce_super_heavy_1
 		}
+		archetype = super_heavy_tank_aa_chassis
+		hardness = 0.9
+		lend_lease_cost = 20
+		picture = super_heavy_tank_chassis_touhou_demonforce_super_heavy_1
+		variant_name = super_heavy_tank_aa_chassis_touhou_demonforce_super_heavy_1_preset_design
+		derived_variant_name = super_heavy_tank_aa_chassis_touhou_demonforce_super_heavy_1_preset_design
 		module_slots = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_super_heavy_turret_type
+					touhou_tank_super_heavy_turret_type
 				}
 			}
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
+					touhou_tank_small_main_armament
 				}
 			}
 			suspension_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_suspension_type
+					touhou_tank_suspension_type
 				}
 			}
 			armor_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_armor_type
+					touhou_tank_armor_type
 				}
 			}
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_engine_type
+					touhou_tank_engine_type
 				}
 			}
 			special_type_slot_1 = {
@@ -362,6 +495,9 @@ equipments = {
 					tank_special_module
 					tank_radio_module
 					tank_secondary_turret
+					touhou_tank_special_module
+					touhou_tank_radio_module
+					touhou_tank_secondary_turret
 				}
 			}
 			special_type_slot_2 = {
@@ -370,6 +506,9 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_radio_module
+					touhou_tank_special_module
+					touhou_tank_secondary_turret
+					touhou_tank_radio_module
 				}
 			}
 			special_type_slot_3 = {
@@ -378,6 +517,9 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_radio_module
+					touhou_tank_special_module
+					touhou_tank_secondary_turret
+					touhou_tank_radio_module
 				}
 			}
 			special_type_slot_4 = {
@@ -386,14 +528,55 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_radio_module
+					touhou_tank_special_module
+					touhou_tank_secondary_turret
+					touhou_tank_radio_module
 				}
 			}
 		}
-		archetype = super_heavy_tank_aa_chassis
-		hardness = 0.9
-		lend_lease_cost = 20
-		picture = super_heavy_tank_chassis_touhou_demonforce_super_heavy_1
-		variant_name = super_heavy_tank_aa_chassis_touhou_demonforce_super_heavy_1_preset_design
-		derived_variant_name = super_heavy_tank_aa_chassis_touhou_demonforce_super_heavy_1_preset_design
+		module_count_limit = {
+			module = sloped_armor
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = touhou_tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			module = amphibious_drive
+			count < 1
+		}
+		module_count_limit = {
+			module = wet_ammo_storage
+			count < 2
+		}
+		module_count_limit = {
+			module = squeezebore_adaptor
+			count < 2
+		}
+		module_count_limit = {
+			module = armor_skirts
+			count < 2
+		}
+		module_count_limit = {
+			module = dozer_blade
+			count < 2
+		}
+		module_count_limit = {
+			module = easy_maintenance
+			count < 2
+		}
+		module_count_limit = {
+			module = auto_loader
+			count < 2
+		}
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
 	}
 }

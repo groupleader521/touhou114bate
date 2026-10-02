@@ -3,8 +3,7 @@ equipment_modules = {
 		has_dlc = "By Blood Alone"
 	}
 	touhou_air_demonforce_small_0_engine = {
-		category = plane_engine_type
-		gfx = engine_1_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -16,10 +15,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.25
+		gfx = touhou_air_demonforce_small_0_engine
 	}
 	touhou_air_demonforce_small_0_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -30,10 +29,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.75
+		gfx = touhou_air_demonforce_small_0_protection
 	}
 	touhou_air_demonforce_small_0_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -44,10 +43,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.5
+		gfx = touhou_air_demonforce_small_0_range
 	}
 	touhou_air_weapon_demonforce_fighter_equipment_0 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -71,10 +70,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_demonforce_fighter_equipment_0
 	}
 	touhou_air_demonforce_small_1_engine = {
-		category = plane_engine_type
-		gfx = engine_2_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -86,10 +85,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.5
+		gfx = touhou_air_demonforce_small_1_engine
 	}
 	touhou_air_demonforce_small_1_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -100,10 +99,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.9
+		gfx = touhou_air_demonforce_small_1_protection
 	}
 	touhou_air_demonforce_small_1_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -114,10 +113,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.6
+		gfx = touhou_air_demonforce_small_1_range
 	}
 	touhou_air_weapon_demonforce_fighter_equipment_1 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -143,10 +142,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_demonforce_fighter_equipment_1
 	}
 	touhou_air_weapon_demonforce_CAS_equipment_1 = {
-		category = cas_weapon
-		gfx = bomb_locks
+		category = touhou_cas_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -171,10 +170,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_demonforce_CAS_equipment_1
 	}
 	touhou_air_demonforce_small_2_engine = {
-		category = plane_engine_type
-		gfx = engine_3_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -186,10 +185,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.5
+		gfx = touhou_air_demonforce_small_2_engine
 	}
 	touhou_air_demonforce_small_2_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -200,10 +199,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.5
+		gfx = touhou_air_demonforce_small_2_protection
 	}
 	touhou_air_demonforce_small_2_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -214,10 +213,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1
+		gfx = touhou_air_demonforce_small_2_range
 	}
 	touhou_air_weapon_demonforce_fighter_equipment_2 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -243,10 +242,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_demonforce_fighter_equipment_2
 	}
 	touhou_air_weapon_demonforce_CAS_equipment_2 = {
-		category = cas_weapon
-		gfx = bomb_locks
+		category = touhou_cas_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -272,10 +271,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_demonforce_CAS_equipment_2
 	}
 	touhou_air_demonforce_small_3_engine = {
-		category = plane_engine_type
-		gfx = engine_4_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -287,10 +286,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 4.375
+		gfx = touhou_air_demonforce_small_3_engine
 	}
 	touhou_air_demonforce_small_3_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -301,10 +300,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.625
+		gfx = touhou_air_demonforce_small_3_protection
 	}
 	touhou_air_demonforce_small_3_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -315,10 +314,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.75
+		gfx = touhou_air_demonforce_small_3_range
 	}
 	touhou_air_weapon_demonforce_fighter_equipment_3 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -345,10 +344,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_demonforce_fighter_equipment_3
 	}
 	touhou_air_weapon_demonforce_CAS_equipment_3 = {
-		category = cas_weapon
-		gfx = bomb_locks
+		category = touhou_cas_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -374,10 +373,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_demonforce_CAS_equipment_3
 	}
 	touhou_air_demonforce_small_5_engine = {
-		category = plane_jet_engine_type
-		gfx = jet_engine_1x
+		category = touhou_plane_jet_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -389,10 +388,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 7.5
+		gfx = touhou_air_demonforce_small_5_engine
 	}
 	touhou_air_demonforce_small_5_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -403,10 +402,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 4.5
+		gfx = touhou_air_demonforce_small_5_protection
 	}
 	touhou_air_demonforce_small_5_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -417,10 +416,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 3
+		gfx = touhou_air_demonforce_small_5_range
 	}
 	touhou_air_weapon_demonforce_jet_fighter_equipment_2 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -445,10 +444,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_demonforce_jet_fighter_equipment_2
 	}
 	touhou_air_demonforce_medium_1_engine = {
-		category = twin_plane_engine_type
-		gfx = engine_2_2x
+		category = touhou_twin_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -460,10 +459,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.5
+		gfx = touhou_air_demonforce_medium_1_engine
 	}
 	touhou_air_demonforce_medium_1_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -474,10 +473,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.5
+		gfx = touhou_air_demonforce_medium_1_protection
 	}
 	touhou_air_demonforce_medium_1_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -488,10 +487,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1
+		gfx = touhou_air_demonforce_medium_1_range
 	}
 	touhou_air_weapon_demonforce_heavy_fighter_equipment_1 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -515,10 +514,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_demonforce_heavy_fighter_equipment_1
 	}
 	touhou_air_demonforce_medium_2_engine = {
-		category = twin_plane_engine_type
-		gfx = engine_3_2x
+		category = touhou_twin_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -530,10 +529,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 4
+		gfx = touhou_air_demonforce_medium_2_engine
 	}
 	touhou_air_demonforce_medium_2_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -544,10 +543,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.4
+		gfx = touhou_air_demonforce_medium_2_protection
 	}
 	touhou_air_demonforce_medium_2_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -558,10 +557,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.6
+		gfx = touhou_air_demonforce_medium_2_range
 	}
 	touhou_air_weapon_demonforce_heavy_fighter_equipment_2 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -585,10 +584,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_demonforce_heavy_fighter_equipment_2
 	}
 	touhou_air_demonforce_medium_3_engine = {
-		category = twin_plane_engine_type
-		gfx = engine_4_2x
+		category = touhou_twin_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -600,10 +599,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 6.75
+		gfx = touhou_air_demonforce_medium_3_engine
 	}
 	touhou_air_demonforce_medium_3_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -614,10 +613,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 4.05
+		gfx = touhou_air_demonforce_medium_3_protection
 	}
 	touhou_air_demonforce_medium_3_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -628,10 +627,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.7
+		gfx = touhou_air_demonforce_medium_3_range
 	}
 	touhou_air_weapon_demonforce_heavy_fighter_equipment_3 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -656,10 +655,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_demonforce_heavy_fighter_equipment_3
 	}
 	touhou_air_magic_small_0_engine = {
-		category = plane_engine_type
-		gfx = engine_1_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -671,10 +670,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.0125
+		gfx = touhou_air_magic_small_0_engine
 	}
 	touhou_air_magic_small_0_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -685,10 +684,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.6075
+		gfx = touhou_air_magic_small_0_protection
 	}
 	touhou_air_magic_small_0_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -699,10 +698,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.405
+		gfx = touhou_air_magic_small_0_range
 	}
 	touhou_air_weapon_magic_fighter_equipment_0 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -726,10 +725,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_magic_fighter_equipment_0
 	}
 	touhou_air_magic_small_1_engine = {
-		category = plane_engine_type
-		gfx = engine_2_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -741,10 +740,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.6875
+		gfx = touhou_air_magic_small_1_engine
 	}
 	touhou_air_magic_small_1_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -755,10 +754,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.0125
+		gfx = touhou_air_magic_small_1_protection
 	}
 	touhou_air_magic_small_1_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -769,10 +768,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.675
+		gfx = touhou_air_magic_small_1_range
 	}
 	touhou_air_weapon_magic_fighter_equipment_1 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -796,10 +795,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_magic_fighter_equipment_1
 	}
 	touhou_air_magic_small_2_engine = {
-		category = plane_engine_type
-		gfx = engine_3_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -811,10 +810,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.1875
+		gfx = touhou_air_magic_small_2_engine
 	}
 	touhou_air_magic_small_2_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -825,10 +824,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.3125
+		gfx = touhou_air_magic_small_2_protection
 	}
 	touhou_air_magic_small_2_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -839,10 +838,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.875
+		gfx = touhou_air_magic_small_2_range
 	}
 	touhou_air_weapon_magic_fighter_equipment_2 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -866,10 +865,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_magic_fighter_equipment_2
 	}
 	touhou_air_magic_small_3_engine = {
-		category = plane_engine_type
-		gfx = engine_4_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -881,10 +880,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.9375
+		gfx = touhou_air_magic_small_3_engine
 	}
 	touhou_air_magic_small_3_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -895,10 +894,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.7625
+		gfx = touhou_air_magic_small_3_protection
 	}
 	touhou_air_magic_small_3_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -909,10 +908,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.175
+		gfx = touhou_air_magic_small_3_range
 	}
 	touhou_air_weapon_magic_fighter_equipment_3 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -937,10 +936,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_magic_fighter_equipment_3
 	}
 	touhou_air_magic_small_5_engine = {
-		category = plane_jet_engine_type
-		gfx = jet_engine_1x
+		category = touhou_plane_jet_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -952,10 +951,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 4.21875
+		gfx = touhou_air_magic_small_5_engine
 	}
 	touhou_air_magic_small_5_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -966,10 +965,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.53125
+		gfx = touhou_air_magic_small_5_protection
 	}
 	touhou_air_magic_small_5_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -980,10 +979,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.6875
+		gfx = touhou_air_magic_small_5_range
 	}
 	touhou_air_weapon_magic_jet_fighter_equipment_2 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1008,10 +1007,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_magic_jet_fighter_equipment_2
 	}
 	touhou_air_magic_medium_0_engine = {
-		category = twin_plane_engine_type
-		gfx = engine_1_2x
+		category = touhou_twin_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1023,10 +1022,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.625
+		gfx = touhou_air_magic_medium_0_engine
 	}
 	touhou_air_magic_medium_0_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1037,10 +1036,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.575
+		gfx = touhou_air_magic_medium_0_protection
 	}
 	touhou_air_magic_medium_0_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1051,10 +1050,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.05
+		gfx = touhou_air_magic_medium_0_range
 	}
 	touhou_air_weapon_magic_tac_bomber_equipment_0 = {
-		category = tac_weapon
-		gfx = medium_bomb_bay
+		category = touhou_tac_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1079,10 +1078,10 @@ equipment_modules = {
 			port_strike
 			naval_bomber
 		}
+		gfx = touhou_air_weapon_magic_tac_bomber_equipment_0
 	}
 	touhou_air_magic_medium_1_engine = {
-		category = twin_plane_engine_type
-		gfx = engine_2_2x
+		category = touhou_twin_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1094,10 +1093,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.5625
+		gfx = touhou_air_magic_medium_1_engine
 	}
 	touhou_air_magic_medium_1_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1108,10 +1107,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.9375
+		gfx = touhou_air_magic_medium_1_protection
 	}
 	touhou_air_magic_medium_1_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1122,10 +1121,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.625
+		gfx = touhou_air_magic_medium_1_range
 	}
 	touhou_air_weapon_magic_tac_bomber_equipment_1 = {
-		category = tac_weapon
-		gfx = medium_bomb_bay
+		category = touhou_tac_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1151,10 +1150,10 @@ equipment_modules = {
 			port_strike
 			naval_bomber
 		}
+		gfx = touhou_air_weapon_magic_tac_bomber_equipment_1
 	}
 	touhou_air_magic_medium_2_engine = {
-		category = twin_plane_engine_type
-		gfx = engine_3_2x
+		category = touhou_twin_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1166,10 +1165,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 3.125
+		gfx = touhou_air_magic_medium_2_engine
 	}
 	touhou_air_magic_medium_2_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1180,10 +1179,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.875
+		gfx = touhou_air_magic_medium_2_protection
 	}
 	touhou_air_magic_medium_2_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1194,10 +1193,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.25
+		gfx = touhou_air_magic_medium_2_range
 	}
 	touhou_air_weapon_magic_tac_bomber_equipment_2 = {
-		category = tac_weapon
-		gfx = medium_bomb_bay
+		category = touhou_tac_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1223,10 +1222,10 @@ equipment_modules = {
 			port_strike
 			naval_bomber
 		}
+		gfx = touhou_air_weapon_magic_tac_bomber_equipment_2
 	}
 	touhou_air_magic_medium_3_engine = {
-		category = twin_plane_engine_type
-		gfx = engine_4_2x
+		category = touhou_twin_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1238,10 +1237,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 4.0625
+		gfx = touhou_air_magic_medium_3_engine
 	}
 	touhou_air_magic_medium_3_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1252,10 +1251,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.4375
+		gfx = touhou_air_magic_medium_3_protection
 	}
 	touhou_air_magic_medium_3_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1266,10 +1265,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.625
+		gfx = touhou_air_magic_medium_3_range
 	}
 	touhou_air_weapon_magic_tac_bomber_equipment_3 = {
-		category = tac_weapon
-		gfx = medium_bomb_bay
+		category = touhou_tac_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1295,10 +1294,10 @@ equipment_modules = {
 			port_strike
 			naval_bomber
 		}
+		gfx = touhou_air_weapon_magic_tac_bomber_equipment_3
 	}
 	touhou_air_magic_medium_4_engine = {
-		category = twin_plane_jet_engine_type
-		gfx = jet_engine_2x
+		category = touhou_twin_plane_jet_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1310,10 +1309,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 4.6875
+		gfx = touhou_air_magic_medium_4_engine
 	}
 	touhou_air_magic_medium_4_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1324,10 +1323,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.8125
+		gfx = touhou_air_magic_medium_4_protection
 	}
 	touhou_air_magic_medium_4_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1338,10 +1337,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.875
+		gfx = touhou_air_magic_medium_4_range
 	}
 	touhou_air_weapon_magic_jet_tac_bomber_equipment_2 = {
-		category = tac_weapon
-		gfx = medium_bomb_bay
+		category = touhou_tac_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1367,10 +1366,10 @@ equipment_modules = {
 			port_strike
 			naval_bomber
 		}
+		gfx = touhou_air_weapon_magic_jet_tac_bomber_equipment_2
 	}
 	touhou_air_magic_large_1_engine = {
-		category = quad_large_plane_engine_type
-		gfx = engine_2_4x
+		category = touhou_quad_large_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1382,10 +1381,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.5625
+		gfx = touhou_air_magic_large_1_engine
 	}
 	touhou_air_magic_large_1_protection = {
-		category = plane_special_module_large
-		gfx = armor_plate_large
+		category = touhou_plane_special_module_large
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1396,10 +1395,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.9375
+		gfx = touhou_air_magic_large_1_protection
 	}
 	touhou_air_magic_large_1_range = {
-		category = plane_special_module_large
-		gfx = fuel_tanks_large
+		category = touhou_plane_special_module_large
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1410,10 +1409,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.625
+		gfx = touhou_air_magic_large_1_range
 	}
 	touhou_air_weapon_magic_strat_bomber_equipment_1 = {
-		category = strat_weapon
-		gfx = large_bomb_bay
+		category = touhou_strat_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1439,10 +1438,10 @@ equipment_modules = {
 			attack_logistics
 			naval_bomber
 		}
+		gfx = touhou_air_weapon_magic_strat_bomber_equipment_1
 	}
 	touhou_air_magic_large_2_engine = {
-		category = quad_large_plane_engine_type
-		gfx = engine_3_4x
+		category = touhou_quad_large_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1454,10 +1453,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 3.125
+		gfx = touhou_air_magic_large_2_engine
 	}
 	touhou_air_magic_large_2_protection = {
-		category = plane_special_module_large
-		gfx = armor_plate_large
+		category = touhou_plane_special_module_large
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1468,10 +1467,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.875
+		gfx = touhou_air_magic_large_2_protection
 	}
 	touhou_air_magic_large_2_range = {
-		category = plane_special_module_large
-		gfx = fuel_tanks_large
+		category = touhou_plane_special_module_large
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1482,10 +1481,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.25
+		gfx = touhou_air_magic_large_2_range
 	}
 	touhou_air_weapon_magic_strat_bomber_equipment_2 = {
-		category = strat_weapon
-		gfx = large_bomb_bay
+		category = touhou_strat_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1511,10 +1510,10 @@ equipment_modules = {
 			attack_logistics
 			naval_bomber
 		}
+		gfx = touhou_air_weapon_magic_strat_bomber_equipment_2
 	}
 	touhou_air_magic_large_3_engine = {
-		category = quad_large_plane_engine_type
-		gfx = engine_4_4x
+		category = touhou_quad_large_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1526,10 +1525,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 4.0625
+		gfx = touhou_air_magic_large_3_engine
 	}
 	touhou_air_magic_large_3_protection = {
-		category = plane_special_module_large
-		gfx = armor_plate_large
+		category = touhou_plane_special_module_large
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1540,10 +1539,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.4375
+		gfx = touhou_air_magic_large_3_protection
 	}
 	touhou_air_magic_large_3_range = {
-		category = plane_special_module_large
-		gfx = fuel_tanks_large
+		category = touhou_plane_special_module_large
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1554,10 +1553,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.625
+		gfx = touhou_air_magic_large_3_range
 	}
 	touhou_air_weapon_magic_strat_bomber_equipment_3 = {
-		category = strat_weapon
-		gfx = large_bomb_bay
+		category = touhou_strat_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1583,10 +1582,10 @@ equipment_modules = {
 			attack_logistics
 			naval_bomber
 		}
+		gfx = touhou_air_weapon_magic_strat_bomber_equipment_3
 	}
 	touhou_air_magic_large_4_engine = {
-		category = quad_large_plane_jet_engine_type
-		gfx = jet_engine_4x
+		category = touhou_quad_large_plane_jet_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1598,10 +1597,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 4.6875
+		gfx = touhou_air_magic_large_4_engine
 	}
 	touhou_air_magic_large_4_protection = {
-		category = plane_special_module_large
-		gfx = armor_plate_large
+		category = touhou_plane_special_module_large
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1612,10 +1611,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.8125
+		gfx = touhou_air_magic_large_4_protection
 	}
 	touhou_air_magic_large_4_range = {
-		category = plane_special_module_large
-		gfx = fuel_tanks_large
+		category = touhou_plane_special_module_large
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1626,10 +1625,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.875
+		gfx = touhou_air_magic_large_4_range
 	}
 	touhou_air_weapon_magic_jet_strat_bomber_equipment_1 = {
-		category = strat_weapon
-		gfx = large_bomb_bay
+		category = touhou_strat_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1655,10 +1654,10 @@ equipment_modules = {
 			attack_logistics
 			naval_bomber
 		}
+		gfx = touhou_air_weapon_magic_jet_strat_bomber_equipment_1
 	}
 	touhou_air_suicide_puppet_equipment_1_engine = {
-		category = plane_engine_type
-		gfx = engine_1_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1669,10 +1668,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 6.25
+		gfx = touhou_air_suicide_puppet_equipment_1_engine
 	}
 	touhou_air_suicide_puppet_equipment_1_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1683,10 +1682,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 3.75
+		gfx = touhou_air_suicide_puppet_equipment_1_protection
 	}
 	touhou_air_suicide_puppet_equipment_1_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1697,10 +1696,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.5
+		gfx = touhou_air_suicide_puppet_equipment_1_range
 	}
 	touhou_air_weapon_suicide_puppet_equipment_1 = {
-		category = kamikaze_bomber_weapon
-		gfx = fixed_explosive_charge
+		category = touhou_kamikaze_bomber_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1725,10 +1724,10 @@ equipment_modules = {
 			recon
 			naval_patrol
 		}
+		gfx = touhou_air_weapon_suicide_puppet_equipment_1
 	}
 	touhou_air_suicide_puppet_equipment_2_engine = {
-		category = plane_engine_type
-		gfx = engine_1_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1739,10 +1738,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 31.25
+		gfx = touhou_air_suicide_puppet_equipment_2_engine
 	}
 	touhou_air_suicide_puppet_equipment_2_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1753,10 +1752,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 18.75
+		gfx = touhou_air_suicide_puppet_equipment_2_protection
 	}
 	touhou_air_suicide_puppet_equipment_2_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1767,10 +1766,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 12.5
+		gfx = touhou_air_suicide_puppet_equipment_2_range
 	}
 	touhou_air_weapon_suicide_puppet_equipment_2 = {
-		category = cas_weapon
-		gfx = bomb_locks
+		category = touhou_cas_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1798,10 +1797,10 @@ equipment_modules = {
 			port_strike
 			strategic_bomber
 		}
+		gfx = touhou_air_weapon_suicide_puppet_equipment_2
 	}
 	touhou_air_tengu_fighter_equipment_0_engine = {
-		category = plane_engine_type
-		gfx = engine_1_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1813,10 +1812,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 3.125
+		gfx = touhou_air_tengu_fighter_equipment_0_engine
 	}
 	touhou_air_tengu_fighter_equipment_0_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1827,10 +1826,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.875
+		gfx = touhou_air_tengu_fighter_equipment_0_protection
 	}
 	touhou_air_tengu_fighter_equipment_0_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1841,10 +1840,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.25
+		gfx = touhou_air_tengu_fighter_equipment_0_range
 	}
 	touhou_air_weapon_tengu_fighter_equipment_0 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1869,10 +1868,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_tengu_fighter_equipment_0
 	}
 	touhou_air_cas_boli_equipment_0_engine = {
-		category = plane_engine_type
-		gfx = engine_1_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1884,10 +1883,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 3.125
+		gfx = touhou_air_cas_boli_equipment_0_engine
 	}
 	touhou_air_cas_boli_equipment_0_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1898,10 +1897,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.875
+		gfx = touhou_air_cas_boli_equipment_0_protection
 	}
 	touhou_air_cas_boli_equipment_0_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1912,10 +1911,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.25
+		gfx = touhou_air_cas_boli_equipment_0_range
 	}
 	touhou_air_weapon_cas_boli_equipment_0 = {
-		category = cas_weapon
-		gfx = bomb_locks
+		category = touhou_cas_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1939,10 +1938,10 @@ equipment_modules = {
 			naval_bomber
 			port_strike
 		}
+		gfx = touhou_air_weapon_cas_boli_equipment_0
 	}
 	touhou_air_desires_equipment_0_engine = {
-		category = quad_large_plane_engine_type
-		gfx = engine_2_4x
+		category = touhou_quad_large_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -1953,10 +1952,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 3.75
+		gfx = touhou_air_desires_equipment_0_engine
 	}
 	touhou_air_desires_equipment_0_protection = {
-		category = plane_special_module_large
-		gfx = armor_plate_large
+		category = touhou_plane_special_module_large
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1967,10 +1966,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.25
+		gfx = touhou_air_desires_equipment_0_protection
 	}
 	touhou_air_desires_equipment_0_range = {
-		category = plane_special_module_large
-		gfx = fuel_tanks_large
+		category = touhou_plane_special_module_large
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -1981,10 +1980,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.5
+		gfx = touhou_air_desires_equipment_0_range
 	}
 	touhou_air_weapon_desires_equipment_0 = {
-		category = strat_weapon
-		gfx = large_bomb_bay
+		category = touhou_strat_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2008,10 +2007,10 @@ equipment_modules = {
 			port_strike
 			naval_mines_planting
 		}
+		gfx = touhou_air_weapon_desires_equipment_0
 	}
 	touhou_air_wakan_small_0_engine = {
-		category = plane_engine_type
-		gfx = engine_1_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2023,10 +2022,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.125
+		gfx = touhou_air_wakan_small_0_engine
 	}
 	touhou_air_wakan_small_0_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2037,10 +2036,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.675
+		gfx = touhou_air_wakan_small_0_protection
 	}
 	touhou_air_wakan_small_0_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2051,10 +2050,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.45
+		gfx = touhou_air_wakan_small_0_range
 	}
 	touhou_air_weapon_wakan_fighter_equipment_0 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2078,10 +2077,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_wakan_fighter_equipment_0
 	}
 	touhou_air_wakan_small_1_engine = {
-		category = plane_engine_type
-		gfx = engine_2_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2093,10 +2092,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.875
+		gfx = touhou_air_wakan_small_1_engine
 	}
 	touhou_air_wakan_small_1_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2107,10 +2106,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.125
+		gfx = touhou_air_wakan_small_1_protection
 	}
 	touhou_air_wakan_small_1_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2121,10 +2120,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.75
+		gfx = touhou_air_wakan_small_1_range
 	}
 	touhou_air_weapon_wakan_fighter_equipment_1 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2150,10 +2149,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_wakan_fighter_equipment_1
 	}
 	touhou_air_weapon_wakan_CAS_equipment_1 = {
-		category = cas_weapon
-		gfx = bomb_locks
+		category = touhou_cas_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2184,10 +2183,10 @@ equipment_modules = {
 			interception
 			port_strike
 		}
+		gfx = touhou_air_weapon_wakan_CAS_equipment_1
 	}
 	touhou_air_wakan_small_2_engine = {
-		category = plane_engine_type
-		gfx = engine_3_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2199,10 +2198,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.5
+		gfx = touhou_air_wakan_small_2_engine
 	}
 	touhou_air_wakan_small_2_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2213,10 +2212,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.5
+		gfx = touhou_air_wakan_small_2_protection
 	}
 	touhou_air_wakan_small_2_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2227,10 +2226,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1
+		gfx = touhou_air_wakan_small_2_range
 	}
 	touhou_air_weapon_wakan_fighter_equipment_2 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2258,10 +2257,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_wakan_fighter_equipment_2
 	}
 	touhou_air_weapon_wakan_CAS_equipment_2 = {
-		category = cas_weapon
-		gfx = bomb_locks
+		category = touhou_cas_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2292,10 +2291,10 @@ equipment_modules = {
 			interception
 			port_strike
 		}
+		gfx = touhou_air_weapon_wakan_CAS_equipment_2
 	}
 	touhou_air_wakan_small_3_engine = {
-		category = plane_engine_type
-		gfx = engine_4_1x
+		category = touhou_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2307,10 +2306,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 3.375
+		gfx = touhou_air_wakan_small_3_engine
 	}
 	touhou_air_wakan_small_3_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2321,10 +2320,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.025
+		gfx = touhou_air_wakan_small_3_protection
 	}
 	touhou_air_wakan_small_3_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2335,10 +2334,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.35
+		gfx = touhou_air_wakan_small_3_range
 	}
 	touhou_air_weapon_wakan_fighter_equipment_3 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2366,10 +2365,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_wakan_fighter_equipment_3
 	}
 	touhou_air_weapon_wakan_CAS_equipment_3 = {
-		category = cas_weapon
-		gfx = bomb_locks
+		category = touhou_cas_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2400,10 +2399,10 @@ equipment_modules = {
 			interception
 			port_strike
 		}
+		gfx = touhou_air_weapon_wakan_CAS_equipment_3
 	}
 	touhou_air_wakan_small_5_engine = {
-		category = plane_jet_engine_type
-		gfx = jet_engine_1x
+		category = touhou_plane_jet_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2415,10 +2414,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 5
+		gfx = touhou_air_wakan_small_5_engine
 	}
 	touhou_air_wakan_small_5_protection = {
-		category = plane_special_module_small
-		gfx = armor_plate_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2429,10 +2428,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 3
+		gfx = touhou_air_wakan_small_5_protection
 	}
 	touhou_air_wakan_small_5_range = {
-		category = plane_special_module_small
-		gfx = fuel_tanks_small
+		category = touhou_plane_special_module_small
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2443,10 +2442,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2
+		gfx = touhou_air_wakan_small_5_range
 	}
 	touhou_air_weapon_wakan_jet_fighter_equipment_2 = {
-		category = fighter_weapon
-		gfx = light_mg_2x
+		category = touhou_fighter_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2472,10 +2471,10 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
+		gfx = touhou_air_weapon_wakan_jet_fighter_equipment_2
 	}
 	touhou_air_wakan_medium_0_engine = {
-		category = twin_plane_engine_type
-		gfx = engine_1_2x
+		category = touhou_twin_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2487,10 +2486,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.1875
+		gfx = touhou_air_wakan_medium_0_engine
 	}
 	touhou_air_wakan_medium_0_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2501,10 +2500,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.3125
+		gfx = touhou_air_wakan_medium_0_protection
 	}
 	touhou_air_wakan_medium_0_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2515,10 +2514,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.875
+		gfx = touhou_air_wakan_medium_0_range
 	}
 	touhou_air_weapon_wakan_tac_bomber_equipment_0 = {
-		category = tac_weapon
-		gfx = medium_bomb_bay
+		category = touhou_tac_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2546,10 +2545,10 @@ equipment_modules = {
 			naval_mines_planting
 			naval_mines_sweeping
 		}
+		gfx = touhou_air_weapon_wakan_tac_bomber_equipment_0
 	}
 	touhou_air_wakan_medium_1_engine = {
-		category = twin_plane_engine_type
-		gfx = engine_2_2x
+		category = touhou_twin_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2561,10 +2560,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.3125
+		gfx = touhou_air_wakan_medium_1_engine
 	}
 	touhou_air_wakan_medium_1_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2575,10 +2574,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.3875
+		gfx = touhou_air_wakan_medium_1_protection
 	}
 	touhou_air_wakan_medium_1_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2589,10 +2588,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.925
+		gfx = touhou_air_wakan_medium_1_range
 	}
 	touhou_air_weapon_wakan_tac_bomber_equipment_1 = {
-		category = tac_weapon
-		gfx = medium_bomb_bay
+		category = touhou_tac_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2620,10 +2619,10 @@ equipment_modules = {
 			naval_mines_planting
 			naval_mines_sweeping
 		}
+		gfx = touhou_air_weapon_wakan_tac_bomber_equipment_1
 	}
 	touhou_air_wakan_medium_2_engine = {
-		category = twin_plane_engine_type
-		gfx = engine_3_2x
+		category = touhou_twin_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2635,10 +2634,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.4375
+		gfx = touhou_air_wakan_medium_2_engine
 	}
 	touhou_air_wakan_medium_2_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2649,10 +2648,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.4625
+		gfx = touhou_air_wakan_medium_2_protection
 	}
 	touhou_air_wakan_medium_2_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2663,10 +2662,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 0.975
+		gfx = touhou_air_wakan_medium_2_range
 	}
 	touhou_air_weapon_wakan_tac_bomber_equipment_2 = {
-		category = tac_weapon
-		gfx = medium_bomb_bay
+		category = touhou_tac_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2694,10 +2693,10 @@ equipment_modules = {
 			naval_mines_planting
 			naval_mines_sweeping
 		}
+		gfx = touhou_air_weapon_wakan_tac_bomber_equipment_2
 	}
 	touhou_air_wakan_medium_3_engine = {
-		category = twin_plane_engine_type
-		gfx = engine_4_2x
+		category = touhou_twin_plane_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2709,10 +2708,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 2.5625
+		gfx = touhou_air_wakan_medium_3_engine
 	}
 	touhou_air_wakan_medium_3_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2723,10 +2722,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.5375
+		gfx = touhou_air_wakan_medium_3_protection
 	}
 	touhou_air_wakan_medium_3_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2737,10 +2736,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.025
+		gfx = touhou_air_wakan_medium_3_range
 	}
 	touhou_air_weapon_wakan_tac_bomber_equipment_3 = {
-		category = tac_weapon
-		gfx = medium_bomb_bay
+		category = touhou_tac_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2768,10 +2767,10 @@ equipment_modules = {
 			naval_mines_planting
 			naval_mines_sweeping
 		}
+		gfx = touhou_air_weapon_wakan_tac_bomber_equipment_3
 	}
 	touhou_air_wakan_medium_4_engine = {
-		category = twin_plane_jet_engine_type
-		gfx = jet_engine_2x
+		category = touhou_twin_plane_jet_engine_type
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_engine
 		add_stats = {
@@ -2783,10 +2782,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 3
+		gfx = touhou_air_wakan_medium_4_engine
 	}
 	touhou_air_wakan_medium_4_protection = {
-		category = plane_special_module_medium
-		gfx = armor_plate_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2797,10 +2796,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.8
+		gfx = touhou_air_wakan_medium_4_protection
 	}
 	touhou_air_wakan_medium_4_range = {
-		category = plane_special_module_medium
-		gfx = fuel_tanks_medium
+		category = touhou_plane_special_module_medium
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2811,10 +2810,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		dismantle_cost_ic = 1.2
+		gfx = touhou_air_wakan_medium_4_range
 	}
 	touhou_air_weapon_wakan_jet_tac_bomber_equipment_2 = {
-		category = tac_weapon
-		gfx = medium_bomb_bay
+		category = touhou_tac_weapon
 		abbreviation = "TH"
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
@@ -2843,5 +2842,3760 @@ equipment_modules = {
 			naval_mines_planting
 			naval_mines_sweeping
 		}
+		gfx = touhou_air_weapon_wakan_jet_tac_bomber_equipment_2
+	}
+	touhou_air_optional_magic_shield_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 2
+			air_attack = 0.5
+			weight = 1.2
+			build_cost_ic = 1.8
+			reliability = -0.025
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.45
+		gfx = touhou_air_optional_magic_shield_small
+	}
+	touhou_air_optional_magic_shield_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 4
+			air_attack = 1
+			weight = 2.4
+			build_cost_ic = 3.6
+			reliability = -0.025
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		gfx = touhou_air_optional_magic_shield_medium
+	}
+	touhou_air_optional_magic_shield_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 6
+			air_attack = 1.5
+			weight = 3.6
+			build_cost_ic = 5.4
+			reliability = -0.025
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.35
+		gfx = touhou_air_optional_magic_shield_large
+	}
+	touhou_air_optional_magic_sealed_cells_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.065
+			air_agility = 1
+			weight = 0.75
+			build_cost_ic = 2.2
+			fuel_consumption = 0.06
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_air_optional_magic_sealed_cells_small
+	}
+	touhou_air_optional_magic_sealed_cells_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.065
+			air_agility = 2
+			weight = 1.5
+			build_cost_ic = 4.4
+			fuel_consumption = 0.12
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.1
+		gfx = touhou_air_optional_magic_sealed_cells_medium
+	}
+	touhou_air_optional_magic_sealed_cells_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.065
+			air_agility = 3
+			weight = 2.25
+			build_cost_ic = 6.6
+			fuel_consumption = 0.18
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.65
+		gfx = touhou_air_optional_magic_sealed_cells_large
+	}
+	touhou_air_optional_magic_reserve_cells_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = -1
+			reliability = -0.045
+			weight = 1.5
+			build_cost_ic = 2.1
+		}
+		multiply_stats = {
+			air_range = 0.3
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.525
+		gfx = touhou_air_optional_magic_reserve_cells_small
+	}
+	touhou_air_optional_magic_reserve_cells_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = -2
+			reliability = -0.045
+			weight = 3
+			build_cost_ic = 4.2
+		}
+		multiply_stats = {
+			air_range = 0.3
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.05
+		gfx = touhou_air_optional_magic_reserve_cells_medium
+	}
+	touhou_air_optional_magic_reserve_cells_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = -3
+			reliability = -0.045
+			weight = 4.5
+			build_cost_ic = 6.3
+		}
+		multiply_stats = {
+			air_range = 0.3
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.575
+		gfx = touhou_air_optional_magic_reserve_cells_large
+	}
+	touhou_air_optional_magic_wood_frame_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = -1
+			air_defence = -2
+			reliability = -0.055
+			build_cost_ic = 2
+			fuel_consumption = 0.08
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		gfx = touhou_air_optional_magic_wood_frame_small
+	}
+	touhou_air_optional_magic_wood_frame_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = -2
+			air_defence = -4
+			reliability = -0.055
+			build_cost_ic = 4
+			fuel_consumption = 0.16
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1
+		gfx = touhou_air_optional_magic_wood_frame_medium
+	}
+	touhou_air_optional_magic_wood_frame_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = -3
+			air_defence = -6
+			reliability = -0.055
+			build_cost_ic = 6
+			fuel_consumption = 0.24
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.5
+		gfx = touhou_air_optional_magic_wood_frame_large
+	}
+	touhou_air_optional_magic_fairing_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_agility = 2
+			air_defence = -1
+			reliability = -0.02
+			weight = 0.6
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		gfx = touhou_air_optional_magic_fairing_small
+	}
+	touhou_air_optional_magic_fairing_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_agility = 4
+			air_defence = -2
+			reliability = -0.02
+			weight = 1.2
+			build_cost_ic = 4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1
+		gfx = touhou_air_optional_magic_fairing_medium
+	}
+	touhou_air_optional_magic_fairing_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_agility = 6
+			air_defence = -3
+			reliability = -0.02
+			weight = 1.8
+			build_cost_ic = 6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.5
+		gfx = touhou_air_optional_magic_fairing_large
+	}
+	touhou_air_optional_magic_thrust_assist_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 3
+			weight = 1
+			air_attack = 0.8
+			reliability = -0.09
+			fuel_consumption = 0.2
+			build_cost_ic = 3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		gfx = touhou_air_optional_magic_thrust_assist_small
+	}
+	touhou_air_optional_magic_thrust_assist_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 6
+			weight = 2
+			air_attack = 1.6
+			reliability = -0.09
+			fuel_consumption = 0.4
+			build_cost_ic = 6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.5
+		gfx = touhou_air_optional_magic_thrust_assist_medium
+	}
+	touhou_air_optional_magic_thrust_assist_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 9
+			weight = 3
+			air_attack = 2.4
+			reliability = -0.09
+			fuel_consumption = 0.6
+			build_cost_ic = 9
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 2.25
+		gfx = touhou_air_optional_magic_thrust_assist_large
+	}
+	touhou_air_optional_magic_cooling_flaps_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.055
+			weight = 0.7
+			build_cost_ic = 1.7
+		}
+		multiply_stats = {
+			air_attack = -0.04
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.425
+		gfx = touhou_air_optional_magic_cooling_flaps_small
+	}
+	touhou_air_optional_magic_cooling_flaps_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.055
+			weight = 1.4
+			build_cost_ic = 3.4
+		}
+		multiply_stats = {
+			air_attack = -0.04
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.85
+		gfx = touhou_air_optional_magic_cooling_flaps_medium
+	}
+	touhou_air_optional_magic_cooling_flaps_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.055
+			weight = 2.1
+			build_cost_ic = 5.1
+		}
+		multiply_stats = {
+			air_attack = -0.04
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.275
+		gfx = touhou_air_optional_magic_cooling_flaps_large
+	}
+	touhou_air_optional_magic_ballast_cage_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.012
+			weight = 2
+			air_agility = -1
+			build_cost_ic = 1.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.45
+		gfx = touhou_air_optional_magic_ballast_cage_small
+	}
+	touhou_air_optional_magic_ballast_cage_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.012
+			weight = 4
+			air_agility = -2
+			build_cost_ic = 3.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		gfx = touhou_air_optional_magic_ballast_cage_medium
+	}
+	touhou_air_optional_magic_ballast_cage_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.012
+			weight = 6
+			air_agility = -3
+			build_cost_ic = 5.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.35
+		gfx = touhou_air_optional_magic_ballast_cage_large
+	}
+	touhou_air_optional_magic_signal_lamp_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			night_penalty = -0.025
+			weight = 0.6
+			fuel_consumption = 0.03
+			build_cost_ic = 1.3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.325
+		gfx = touhou_air_optional_magic_signal_lamp_small
+	}
+	touhou_air_optional_magic_signal_lamp_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			night_penalty = -0.025
+			weight = 1.2
+			fuel_consumption = 0.06
+			build_cost_ic = 2.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.65
+		gfx = touhou_air_optional_magic_signal_lamp_medium
+	}
+	touhou_air_optional_magic_signal_lamp_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			night_penalty = -0.025
+			weight = 1.8
+			fuel_consumption = 0.09
+			build_cost_ic = 3.9
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.975
+		gfx = touhou_air_optional_magic_signal_lamp_large
+	}
+	touhou_air_optional_magic_comfort_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.012
+			air_agility = -0.2
+			weight = 0.7
+			build_cost_ic = 1.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4
+		gfx = touhou_air_optional_magic_comfort_small
+	}
+	touhou_air_optional_magic_comfort_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.012
+			air_agility = -0.4
+			weight = 1.4
+			build_cost_ic = 3.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.8
+		gfx = touhou_air_optional_magic_comfort_medium
+	}
+	touhou_air_optional_magic_comfort_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.012
+			air_agility = -0.6
+			weight = 2.1
+			build_cost_ic = 4.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.2
+		gfx = touhou_air_optional_magic_comfort_large
+	}
+	touhou_air_optional_magic_ornament_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 0.3
+			reliability = -0.015
+			weight = 1.2
+			build_cost_ic = 1.9
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.475
+		gfx = touhou_air_optional_magic_ornament_small
+	}
+	touhou_air_optional_magic_ornament_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 0.6
+			reliability = -0.015
+			weight = 2.4
+			build_cost_ic = 3.8
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.95
+		gfx = touhou_air_optional_magic_ornament_medium
+	}
+	touhou_air_optional_magic_ornament_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 0.9
+			reliability = -0.015
+			weight = 3.6
+			build_cost_ic = 5.7
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.425
+		gfx = touhou_air_optional_magic_ornament_large
+	}
+	touhou_air_optional_magic_satchel_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.01
+			weight = 1.2
+			build_cost_ic = 1.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.45
+		gfx = touhou_air_optional_magic_satchel_small
+	}
+	touhou_air_optional_magic_satchel_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.01
+			weight = 2.4
+			build_cost_ic = 3.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		gfx = touhou_air_optional_magic_satchel_medium
+	}
+	touhou_air_optional_magic_satchel_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.01
+			weight = 3.6
+			build_cost_ic = 5.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.35
+		gfx = touhou_air_optional_magic_satchel_large
+	}
+	touhou_air_optional_magic_floats_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 1.5
+			build_cost_ic = 2.3
+		}
+		multiply_stats = {
+			maximum_speed = -0.08
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_patrol
+				naval_bomber
+			}
+			add_stats = {
+				surface_detection = 3
+				air_defence = 1
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.575
+		gfx = touhou_air_optional_magic_floats_small
+	}
+	touhou_air_optional_magic_floats_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 3
+			build_cost_ic = 4.6
+		}
+		multiply_stats = {
+			maximum_speed = -0.08
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_patrol
+				naval_bomber
+			}
+			add_stats = {
+				surface_detection = 6
+				air_defence = 2
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.15
+		gfx = touhou_air_optional_magic_floats_medium
+	}
+	touhou_air_optional_magic_floats_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 4.5
+			build_cost_ic = 6.9
+		}
+		multiply_stats = {
+			maximum_speed = -0.08
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_patrol
+				naval_bomber
+			}
+			add_stats = {
+				surface_detection = 9
+				air_defence = 3
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.725
+		gfx = touhou_air_optional_magic_floats_large
+	}
+	touhou_air_optional_magic_aux_light = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 5
+			air_agility = 0.5
+			air_defence = -0.5
+			weight = 1
+			build_cost_ic = 2
+			fuel_consumption = 0.05
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		gfx = touhou_air_optional_magic_aux_light
+	}
+	touhou_air_optional_magic_aux_heavy = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 9
+			air_defence = 1
+			weight = 3.2
+			build_cost_ic = 3.4
+			reliability = -0.055
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.85
+		gfx = touhou_air_optional_magic_aux_heavy
+	}
+	touhou_air_optional_magic_aux_cannon = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 15
+			air_defence = -1
+			reliability = -0.075
+			weight = 4.5
+			build_cost_ic = 4.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.2
+		gfx = touhou_air_optional_magic_aux_cannon
+	}
+	touhou_air_optional_magic_aux_scatter = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 2.5
+			weight = 3
+			build_cost_ic = 3
+			reliability = -0.045
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		gfx = touhou_air_optional_magic_aux_scatter
+	}
+	touhou_air_optional_magic_aux_bombs = {
+		category = touhou_cas_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+		allow_mission_type = {
+			cas
+			attack_logistics
+			naval_bomber
+		}
+		add_stats = {
+			build_cost_ic = 2.8
+			reliability = -0.06
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 6
+				weight = 4
+				air_agility = -8
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+			}
+			add_stats = {
+				naval_strike_attack = 1
+				weight = 4
+				air_agility = -8
+			}
+			add_average_stats = {
+				naval_strike_targetting = 2
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.7
+		gfx = touhou_air_optional_magic_aux_bombs
+	}
+	touhou_air_optional_magic_aux_rockets = {
+		category = touhou_cas_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		add_stats = {
+			build_cost_ic = 3.1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 4
+				air_defence = 1
+				weight = 3
+				air_agility = -2
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.775
+		gfx = touhou_air_optional_magic_aux_rockets
+	}
+	touhou_air_optional_magic_aux_torpedo = {
+		category = touhou_nav_bomber_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			naval_bomber
+			maritime_patrol_plane
+		}
+		allow_mission_type = {
+			naval_bomber
+			port_strike
+			naval_patrol
+		}
+		add_stats = {
+			build_cost_ic = 6.2
+			reliability = -0.04
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+			}
+			add_stats = {
+				naval_strike_attack = 11
+				weight = 6
+				air_agility = -12
+			}
+			add_average_stats = {
+				naval_strike_targetting = 3
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.55
+		gfx = touhou_air_optional_magic_aux_torpedo
+	}
+	touhou_air_optional_magic_aux_camera = {
+		category = touhou_recon_camera
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = scout_plane
+		forbid_equipment_type_exact_match_for_category = {
+			fighter_weapon = scout_plane
+			cas_weapon = scout_plane
+			nav_bomber_weapon = scout_plane
+			tac_weapon = scout_plane
+			mine_warfare_offense = scout_plane
+		}
+		allow_mission_type = {
+			recon
+		}
+		add_stats = {
+			weight = 1.8
+			build_cost_ic = 2.2
+			fuel_consumption = 0.04
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				recon
+			}
+			add_stats = {
+				night_penalty = -0.06
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_air_optional_magic_aux_camera
+	}
+	touhou_air_optional_magic_aux_mines = {
+		category = touhou_mine_warfare_offense
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allow_mission_type = {
+			naval_mines_planting
+		}
+		add_stats = {
+			mines_planting = 0.018
+			weight = 3.5
+			build_cost_ic = 3.8
+			reliability = -0.02
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.95
+		gfx = touhou_air_optional_magic_aux_mines
+	}
+	touhou_air_optional_magic_bomb_sight = {
+		category = touhou_plane_special_module_bomb_sights
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_bombing = 3.5
+			weight = 1.2
+			build_cost_ic = 2.1
+			fuel_consumption = 0.05
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.525
+		gfx = touhou_air_optional_magic_bomb_sight
+	}
+	touhou_air_optional_magic_navigation = {
+		category = touhou_plane_special_module_radio_navigation
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_range = 45
+			night_penalty = -0.04
+			weight = 1.5
+			build_cost_ic = 2.3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.575
+		gfx = touhou_air_optional_magic_navigation
+	}
+	touhou_air_optional_magic_intercept_eye = {
+		category = touhou_plane_special_module_air_air_radar
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 2.2
+			build_cost_ic = 3.7
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 2
+				night_penalty = -0.1
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.925
+		gfx = touhou_air_optional_magic_intercept_eye
+	}
+	touhou_air_optional_magic_maritime_eye = {
+		category = touhou_plane_special_module_air_ground_radar
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 2.2
+			build_cost_ic = 3.4
+			fuel_consumption = 0.05
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+				naval_patrol
+			}
+			add_stats = {
+				surface_detection = 8
+				sub_detection = 1.5
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.85
+		gfx = touhou_air_optional_magic_maritime_eye
+	}
+	touhou_air_optional_magic_false_echo = {
+		category = touhou_plane_special_module_air_air_radar
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 2
+			build_cost_ic = 2.8
+			fuel_consumption = 0.03
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				night_penalty = -0.02
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.7
+		gfx = touhou_air_optional_magic_false_echo
+	}
+	touhou_air_optional_magic_tail_sentry = {
+		category = touhou_plane_special_module_defense_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 1.5
+			air_defence = 0.8
+			weight = 1.8
+			build_cost_ic = 2.3
+			fuel_consumption = 0.04
+		}
+		multiply_stats = {
+			maximum_speed = -0.035
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+				strategic_bomber
+				naval_patrol
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_agility = 0.6
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.575
+		gfx = touhou_air_optional_magic_tail_sentry
+	}
+	touhou_air_optional_magic_paired_tail = {
+		category = touhou_plane_special_module_defense_turret_x2
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_defense_turret
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 3.5
+			air_defence = 1.5
+			weight = 3.8
+			build_cost_ic = 4.3
+			fuel_consumption = 0.1
+		}
+		multiply_stats = {
+			maximum_speed = -0.07
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+				strategic_bomber
+				naval_patrol
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_agility = 1
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.075
+		gfx = touhou_air_optional_magic_paired_tail
+	}
+	touhou_air_optional_magic_blind_spot = {
+		category = touhou_plane_special_module_defense_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 0.4
+			air_defence = 0.2
+			weight = 2.3
+			build_cost_ic = 2.9
+			fuel_consumption = 0.04
+		}
+		multiply_stats = {
+			maximum_speed = -0.06
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.725
+		gfx = touhou_air_optional_magic_blind_spot
+	}
+	touhou_air_optional_wakan_shield_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 3
+			weight = 1
+			build_cost_ic = 2
+			air_agility = -1
+		}
+		multiply_stats = {
+			air_range = -0.07
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		gfx = touhou_air_optional_wakan_shield_small
+	}
+	touhou_air_optional_wakan_shield_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 6
+			weight = 2
+			build_cost_ic = 4
+			air_agility = -2
+		}
+		multiply_stats = {
+			air_range = -0.07
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1
+		gfx = touhou_air_optional_wakan_shield_medium
+	}
+	touhou_air_optional_wakan_shield_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 9
+			weight = 3
+			build_cost_ic = 6
+			air_agility = -3
+		}
+		multiply_stats = {
+			air_range = -0.07
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.5
+		gfx = touhou_air_optional_wakan_shield_large
+	}
+	touhou_air_optional_wakan_sealed_cells_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 2.5
+			reliability = 0.04
+			weight = 0.8
+			build_cost_ic = 2.1
+			fuel_consumption = 0.08
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.525
+		gfx = touhou_air_optional_wakan_sealed_cells_small
+	}
+	touhou_air_optional_wakan_sealed_cells_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 5
+			reliability = 0.04
+			weight = 1.6
+			build_cost_ic = 4.2
+			fuel_consumption = 0.16
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.05
+		gfx = touhou_air_optional_wakan_sealed_cells_medium
+	}
+	touhou_air_optional_wakan_sealed_cells_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 7.5
+			reliability = 0.04
+			weight = 2.4
+			build_cost_ic = 6.3
+			fuel_consumption = 0.24
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.575
+		gfx = touhou_air_optional_wakan_sealed_cells_large
+	}
+	touhou_air_optional_wakan_reserve_cells_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 1.3
+			build_cost_ic = 2.2
+			air_agility = -1
+		}
+		multiply_stats = {
+			air_range = 0.24
+			maximum_speed = -0.05
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_air_optional_wakan_reserve_cells_small
+	}
+	touhou_air_optional_wakan_reserve_cells_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 2.6
+			build_cost_ic = 4.4
+			air_agility = -2
+		}
+		multiply_stats = {
+			air_range = 0.24
+			maximum_speed = -0.05
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.1
+		gfx = touhou_air_optional_wakan_reserve_cells_medium
+	}
+	touhou_air_optional_wakan_reserve_cells_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 3.9
+			build_cost_ic = 6.6
+			air_agility = -3
+		}
+		multiply_stats = {
+			air_range = 0.24
+			maximum_speed = -0.05
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.65
+		gfx = touhou_air_optional_wakan_reserve_cells_large
+	}
+	touhou_air_optional_wakan_wood_frame_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = -0.7
+			air_defence = -1.5
+			reliability = -0.045
+			build_cost_ic = 1.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.45
+		gfx = touhou_air_optional_wakan_wood_frame_small
+	}
+	touhou_air_optional_wakan_wood_frame_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = -1.4
+			air_defence = -3
+			reliability = -0.045
+			build_cost_ic = 3.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		gfx = touhou_air_optional_wakan_wood_frame_medium
+	}
+	touhou_air_optional_wakan_wood_frame_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = -2.1
+			air_defence = -4.5
+			reliability = -0.045
+			build_cost_ic = 5.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.35
+		gfx = touhou_air_optional_wakan_wood_frame_large
+	}
+	touhou_air_optional_wakan_fairing_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_agility = 2.5
+			weight = 0.5
+			build_cost_ic = 2.1
+		}
+		multiply_stats = {
+			air_range = -0.06
+			maximum_speed = -0.025
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.525
+		gfx = touhou_air_optional_wakan_fairing_small
+	}
+	touhou_air_optional_wakan_fairing_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_agility = 5
+			weight = 1
+			build_cost_ic = 4.2
+		}
+		multiply_stats = {
+			air_range = -0.06
+			maximum_speed = -0.025
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.05
+		gfx = touhou_air_optional_wakan_fairing_medium
+	}
+	touhou_air_optional_wakan_fairing_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_agility = 7.5
+			weight = 1.5
+			build_cost_ic = 6.3
+		}
+		multiply_stats = {
+			air_range = -0.06
+			maximum_speed = -0.025
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.575
+		gfx = touhou_air_optional_wakan_fairing_large
+	}
+	touhou_air_optional_wakan_thrust_assist_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 2.5
+			weight = 0.8
+			reliability = -0.055
+			fuel_consumption = 0.16
+			build_cost_ic = 2.8
+		}
+		multiply_stats = {
+			air_range = -0.1
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.7
+		gfx = touhou_air_optional_wakan_thrust_assist_small
+	}
+	touhou_air_optional_wakan_thrust_assist_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 5
+			weight = 1.6
+			reliability = -0.055
+			fuel_consumption = 0.32
+			build_cost_ic = 5.6
+		}
+		multiply_stats = {
+			air_range = -0.1
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.4
+		gfx = touhou_air_optional_wakan_thrust_assist_medium
+	}
+	touhou_air_optional_wakan_thrust_assist_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 7.5
+			weight = 2.4
+			reliability = -0.055
+			fuel_consumption = 0.48
+			build_cost_ic = 8.4
+		}
+		multiply_stats = {
+			air_range = -0.1
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 2.1
+		gfx = touhou_air_optional_wakan_thrust_assist_large
+	}
+	touhou_air_optional_wakan_cooling_flaps_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.035
+			night_penalty = -0.025
+			weight = 0.8
+			build_cost_ic = 1.8
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.45
+		gfx = touhou_air_optional_wakan_cooling_flaps_small
+	}
+	touhou_air_optional_wakan_cooling_flaps_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.035
+			night_penalty = -0.025
+			weight = 1.6
+			build_cost_ic = 3.6
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		gfx = touhou_air_optional_wakan_cooling_flaps_medium
+	}
+	touhou_air_optional_wakan_cooling_flaps_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.035
+			night_penalty = -0.025
+			weight = 2.4
+			build_cost_ic = 5.4
+		}
+		multiply_stats = {
+			maximum_speed = -0.03
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.35
+		gfx = touhou_air_optional_wakan_cooling_flaps_large
+	}
+	touhou_air_optional_wakan_ballast_cage_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 0.5
+			weight = 2
+			build_cost_ic = 1.9
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.475
+		gfx = touhou_air_optional_wakan_ballast_cage_small
+	}
+	touhou_air_optional_wakan_ballast_cage_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 1
+			weight = 4
+			build_cost_ic = 3.8
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.95
+		gfx = touhou_air_optional_wakan_ballast_cage_medium
+	}
+	touhou_air_optional_wakan_ballast_cage_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 1.5
+			weight = 6
+			build_cost_ic = 5.7
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.425
+		gfx = touhou_air_optional_wakan_ballast_cage_large
+	}
+	touhou_air_optional_wakan_signal_lamp_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			night_penalty = -0.02
+			air_defence = 0.2
+			weight = 0.8
+			build_cost_ic = 1.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.375
+		gfx = touhou_air_optional_wakan_signal_lamp_small
+	}
+	touhou_air_optional_wakan_signal_lamp_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			night_penalty = -0.02
+			air_defence = 0.4
+			weight = 1.6
+			build_cost_ic = 3
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		gfx = touhou_air_optional_wakan_signal_lamp_medium
+	}
+	touhou_air_optional_wakan_signal_lamp_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			night_penalty = -0.02
+			air_defence = 0.6
+			weight = 2.4
+			build_cost_ic = 4.5
+		}
+		multiply_stats = {
+			maximum_speed = -0.02
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.125
+		gfx = touhou_air_optional_wakan_signal_lamp_large
+	}
+	touhou_air_optional_wakan_comfort_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.018
+			fuel_consumption = 0.04
+			weight = 0.6
+			build_cost_ic = 1.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.375
+		gfx = touhou_air_optional_wakan_comfort_small
+	}
+	touhou_air_optional_wakan_comfort_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.018
+			fuel_consumption = 0.08
+			weight = 1.2
+			build_cost_ic = 3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		gfx = touhou_air_optional_wakan_comfort_medium
+	}
+	touhou_air_optional_wakan_comfort_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.018
+			fuel_consumption = 0.12
+			weight = 1.8
+			build_cost_ic = 4.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.125
+		gfx = touhou_air_optional_wakan_comfort_large
+	}
+	touhou_air_optional_wakan_ornament_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 0.4
+			air_agility = -1.2
+			weight = 1
+			build_cost_ic = 1.7
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.425
+		gfx = touhou_air_optional_wakan_ornament_small
+	}
+	touhou_air_optional_wakan_ornament_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 0.8
+			air_agility = -2.4
+			weight = 2
+			build_cost_ic = 3.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.85
+		gfx = touhou_air_optional_wakan_ornament_medium
+	}
+	touhou_air_optional_wakan_ornament_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 1.2
+			air_agility = -3.6
+			weight = 3
+			build_cost_ic = 5.1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.275
+		gfx = touhou_air_optional_wakan_ornament_large
+	}
+	touhou_air_optional_wakan_satchel_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_range = 15
+			weight = 1.3
+			build_cost_ic = 1.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.375
+		gfx = touhou_air_optional_wakan_satchel_small
+	}
+	touhou_air_optional_wakan_satchel_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_range = 30
+			weight = 2.6
+			build_cost_ic = 3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		gfx = touhou_air_optional_wakan_satchel_medium
+	}
+	touhou_air_optional_wakan_satchel_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_range = 45
+			weight = 3.9
+			build_cost_ic = 4.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.125
+		gfx = touhou_air_optional_wakan_satchel_large
+	}
+	touhou_air_optional_wakan_floats_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 1.3
+			build_cost_ic = 2.4
+		}
+		multiply_stats = {
+			maximum_speed = -0.09
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_patrol
+				naval_bomber
+			}
+			add_stats = {
+				surface_detection = 2
+				sub_detection = 2
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.6
+		gfx = touhou_air_optional_wakan_floats_small
+	}
+	touhou_air_optional_wakan_floats_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 2.6
+			build_cost_ic = 4.8
+		}
+		multiply_stats = {
+			maximum_speed = -0.09
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_patrol
+				naval_bomber
+			}
+			add_stats = {
+				surface_detection = 4
+				sub_detection = 4
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.2
+		gfx = touhou_air_optional_wakan_floats_medium
+	}
+	touhou_air_optional_wakan_floats_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 3.9
+			build_cost_ic = 7.2
+		}
+		multiply_stats = {
+			maximum_speed = -0.09
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_patrol
+				naval_bomber
+			}
+			add_stats = {
+				surface_detection = 6
+				sub_detection = 6
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.8
+		gfx = touhou_air_optional_wakan_floats_large
+	}
+	touhou_air_optional_wakan_aux_light = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 3
+			air_defence = 0.5
+			weight = 1
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 2.5
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		gfx = touhou_air_optional_wakan_aux_light
+	}
+	touhou_air_optional_wakan_aux_heavy = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 5
+			weight = 2.8
+			build_cost_ic = 3.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 4
+				night_penalty = -0.06
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.8
+		gfx = touhou_air_optional_wakan_aux_heavy
+	}
+	touhou_air_optional_wakan_aux_cannon = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 8
+			air_agility = -0.5
+			weight = 3.8
+			build_cost_ic = 4.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 4
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.05
+		gfx = touhou_air_optional_wakan_aux_cannon
+	}
+	touhou_air_optional_wakan_aux_scatter = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 1.5
+			air_defence = 0.5
+			weight = 2.8
+			build_cost_ic = 2.7
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.675
+		gfx = touhou_air_optional_wakan_aux_scatter
+	}
+	touhou_air_optional_wakan_aux_bombs = {
+		category = touhou_cas_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+		allow_mission_type = {
+			cas
+			attack_logistics
+			naval_bomber
+		}
+		add_stats = {
+			build_cost_ic = 2.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 4
+				air_defence = 2
+				weight = 3.5
+				air_agility = -7
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+			}
+			add_stats = {
+				naval_strike_attack = 1
+				weight = 3.5
+			}
+			add_average_stats = {
+				naval_strike_targetting = 1
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.65
+		gfx = touhou_air_optional_wakan_aux_bombs
+	}
+	touhou_air_optional_wakan_aux_rockets = {
+		category = touhou_cas_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		add_stats = {
+			build_cost_ic = 3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 3.5
+				weight = 2.2
+				air_agility = -1
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		gfx = touhou_air_optional_wakan_aux_rockets
+	}
+	touhou_air_optional_wakan_aux_torpedo = {
+		category = touhou_nav_bomber_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			naval_bomber
+			maritime_patrol_plane
+		}
+		allow_mission_type = {
+			naval_bomber
+			port_strike
+			naval_patrol
+		}
+		add_stats = {
+			build_cost_ic = 5.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+			}
+			add_stats = {
+				naval_strike_attack = 6
+				surface_detection = 2
+				weight = 4.5
+				air_agility = -8
+			}
+			add_average_stats = {
+				naval_strike_targetting = 6
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.45
+		gfx = touhou_air_optional_wakan_aux_torpedo
+	}
+	touhou_air_optional_wakan_aux_camera = {
+		category = touhou_recon_camera
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = scout_plane
+		forbid_equipment_type_exact_match_for_category = {
+			fighter_weapon = scout_plane
+			cas_weapon = scout_plane
+			nav_bomber_weapon = scout_plane
+			tac_weapon = scout_plane
+			mine_warfare_offense = scout_plane
+		}
+		allow_mission_type = {
+			recon
+		}
+		add_stats = {
+			weight = 1.6
+			build_cost_ic = 2.1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				recon
+			}
+			add_stats = {
+				air_defence = 1
+				night_penalty = -0.025
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.525
+		gfx = touhou_air_optional_wakan_aux_camera
+	}
+	touhou_air_optional_wakan_aux_mines = {
+		category = touhou_mine_warfare_offense
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allow_mission_type = {
+			naval_mines_planting
+		}
+		add_stats = {
+			mines_planting = 0.014
+			weight = 3
+			build_cost_ic = 3.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_mines_planting
+			}
+			add_stats = {
+				air_defence = 0.5
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.875
+		gfx = touhou_air_optional_wakan_aux_mines
+	}
+	touhou_air_optional_wakan_bomb_sight = {
+		category = touhou_plane_special_module_bomb_sights
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_bombing = 1.5
+			weight = 1
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				strategic_bomber
+			}
+			add_stats = {
+				night_penalty = -0.1
+				air_bombing = 1
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		gfx = touhou_air_optional_wakan_bomb_sight
+	}
+	touhou_air_optional_wakan_navigation = {
+		category = touhou_plane_special_module_radio_navigation
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_range = 20
+			night_penalty = -0.1
+			fuel_consumption = 0.05
+			weight = 1.3
+			build_cost_ic = 2.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_air_optional_wakan_navigation
+	}
+	touhou_air_optional_wakan_intercept_eye = {
+		category = touhou_plane_special_module_air_air_radar
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 1.9
+			build_cost_ic = 3.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				night_penalty = -0.17
+				air_defence = 1
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		gfx = touhou_air_optional_wakan_intercept_eye
+	}
+	touhou_air_optional_wakan_maritime_eye = {
+		category = touhou_plane_special_module_air_ground_radar
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 2
+			build_cost_ic = 3.3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+				naval_patrol
+			}
+			add_stats = {
+				surface_detection = 4
+				sub_detection = 5
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.825
+		gfx = touhou_air_optional_wakan_maritime_eye
+	}
+	touhou_air_optional_wakan_false_echo = {
+		category = touhou_plane_special_module_air_air_radar
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 1.8
+			build_cost_ic = 2.7
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				night_penalty = -0.015
+				air_defence = 0.2
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.675
+		gfx = touhou_air_optional_wakan_false_echo
+	}
+	touhou_air_optional_wakan_tail_sentry = {
+		category = touhou_plane_special_module_defense_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 0.5
+			air_defence = 2
+			weight = 1.5
+			build_cost_ic = 2.2
+		}
+		multiply_stats = {
+			maximum_speed = -0.045
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+				strategic_bomber
+				naval_patrol
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_agility = 0.2
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_air_optional_wakan_tail_sentry
+	}
+	touhou_air_optional_wakan_paired_tail = {
+		category = touhou_plane_special_module_defense_turret_x2
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_defense_turret
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 1
+			air_defence = 4
+			weight = 3.2
+			build_cost_ic = 4.1
+		}
+		multiply_stats = {
+			maximum_speed = -0.09
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+				strategic_bomber
+				naval_patrol
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_agility = 0.4
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.025
+		gfx = touhou_air_optional_wakan_paired_tail
+	}
+	touhou_air_optional_wakan_blind_spot = {
+		category = touhou_plane_special_module_defense_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 0.1
+			air_defence = 0.5
+			weight = 2
+			build_cost_ic = 2.8
+		}
+		multiply_stats = {
+			maximum_speed = -0.065
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.7
+		gfx = touhou_air_optional_wakan_blind_spot
+	}
+	touhou_air_optional_demonforce_shield_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 2.5
+			weight = 1.5
+			build_cost_ic = 1.7
+			air_agility = -1.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.425
+		gfx = touhou_air_optional_demonforce_shield_small
+	}
+	touhou_air_optional_demonforce_shield_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 5
+			weight = 3
+			build_cost_ic = 3.4
+			air_agility = -3
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.85
+		gfx = touhou_air_optional_demonforce_shield_medium
+	}
+	touhou_air_optional_demonforce_shield_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 7.5
+			weight = 4.5
+			build_cost_ic = 5.1
+			air_agility = -4.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.275
+		gfx = touhou_air_optional_demonforce_shield_large
+	}
+	touhou_air_optional_demonforce_sealed_cells_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 1
+			reliability = 0.085
+			weight = 1
+			build_cost_ic = 2.2
+			fuel_consumption = 0.12
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_air_optional_demonforce_sealed_cells_small
+	}
+	touhou_air_optional_demonforce_sealed_cells_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 2
+			reliability = 0.085
+			weight = 2
+			build_cost_ic = 4.4
+			fuel_consumption = 0.24
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.1
+		gfx = touhou_air_optional_demonforce_sealed_cells_medium
+	}
+	touhou_air_optional_demonforce_sealed_cells_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_defence = 3
+			reliability = 0.085
+			weight = 3
+			build_cost_ic = 6.6
+			fuel_consumption = 0.36
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.65
+		gfx = touhou_air_optional_demonforce_sealed_cells_large
+	}
+	touhou_air_optional_demonforce_reserve_cells_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 2
+			build_cost_ic = 2
+			fuel_consumption = 0.1
+		}
+		multiply_stats = {
+			air_range = 0.32
+			maximum_speed = -0.07
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+		gfx = touhou_air_optional_demonforce_reserve_cells_small
+	}
+	touhou_air_optional_demonforce_reserve_cells_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 4
+			build_cost_ic = 4
+			fuel_consumption = 0.2
+		}
+		multiply_stats = {
+			air_range = 0.32
+			maximum_speed = -0.07
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1
+		gfx = touhou_air_optional_demonforce_reserve_cells_medium
+	}
+	touhou_air_optional_demonforce_reserve_cells_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 6
+			build_cost_ic = 6
+			fuel_consumption = 0.3
+		}
+		multiply_stats = {
+			air_range = 0.32
+			maximum_speed = -0.07
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.5
+		gfx = touhou_air_optional_demonforce_reserve_cells_large
+	}
+	touhou_air_optional_demonforce_wood_frame_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = -1.1
+			air_defence = -2.5
+			reliability = -0.065
+			air_agility = 0.5
+			build_cost_ic = 1.7
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.425
+		gfx = touhou_air_optional_demonforce_wood_frame_small
+	}
+	touhou_air_optional_demonforce_wood_frame_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = -2.2
+			air_defence = -5
+			reliability = -0.065
+			air_agility = 1
+			build_cost_ic = 3.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.85
+		gfx = touhou_air_optional_demonforce_wood_frame_medium
+	}
+	touhou_air_optional_demonforce_wood_frame_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = -3.3
+			air_defence = -7.5
+			reliability = -0.065
+			air_agility = 1.5
+			build_cost_ic = 5.1
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.275
+		gfx = touhou_air_optional_demonforce_wood_frame_large
+	}
+	touhou_air_optional_demonforce_fairing_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 0.8
+			build_cost_ic = 2.2
+			reliability = -0.035
+		}
+		multiply_stats = {
+			maximum_speed = 0.065
+			air_range = -0.08
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_air_optional_demonforce_fairing_small
+	}
+	touhou_air_optional_demonforce_fairing_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 1.6
+			build_cost_ic = 4.4
+			reliability = -0.035
+		}
+		multiply_stats = {
+			maximum_speed = 0.065
+			air_range = -0.08
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.1
+		gfx = touhou_air_optional_demonforce_fairing_medium
+	}
+	touhou_air_optional_demonforce_fairing_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 2.4
+			build_cost_ic = 6.6
+			reliability = -0.035
+		}
+		multiply_stats = {
+			maximum_speed = 0.065
+			air_range = -0.08
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.65
+		gfx = touhou_air_optional_demonforce_fairing_large
+	}
+	touhou_air_optional_demonforce_thrust_assist_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 4
+			weight = 2
+			air_defence = 0.5
+			reliability = -0.07
+			fuel_consumption = 0.22
+			build_cost_ic = 3.2
+		}
+		multiply_stats = {
+			maximum_speed = -0.035
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.8
+		gfx = touhou_air_optional_demonforce_thrust_assist_small
+	}
+	touhou_air_optional_demonforce_thrust_assist_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 8
+			weight = 4
+			air_defence = 1
+			reliability = -0.07
+			fuel_consumption = 0.44
+			build_cost_ic = 6.4
+		}
+		multiply_stats = {
+			maximum_speed = -0.035
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.6
+		gfx = touhou_air_optional_demonforce_thrust_assist_medium
+	}
+	touhou_air_optional_demonforce_thrust_assist_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			thrust = 12
+			weight = 6
+			air_defence = 1.5
+			reliability = -0.07
+			fuel_consumption = 0.66
+			build_cost_ic = 9.6
+		}
+		multiply_stats = {
+			maximum_speed = -0.035
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 2.4
+		gfx = touhou_air_optional_demonforce_thrust_assist_large
+	}
+	touhou_air_optional_demonforce_cooling_flaps_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.07
+			fuel_consumption = 0.12
+			weight = 1
+			build_cost_ic = 1.9
+		}
+		multiply_stats = {
+			maximum_speed = -0.045
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.475
+		gfx = touhou_air_optional_demonforce_cooling_flaps_small
+	}
+	touhou_air_optional_demonforce_cooling_flaps_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.07
+			fuel_consumption = 0.24
+			weight = 2
+			build_cost_ic = 3.8
+		}
+		multiply_stats = {
+			maximum_speed = -0.045
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.95
+		gfx = touhou_air_optional_demonforce_cooling_flaps_medium
+	}
+	touhou_air_optional_demonforce_cooling_flaps_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.07
+			fuel_consumption = 0.36
+			weight = 3
+			build_cost_ic = 5.7
+		}
+		multiply_stats = {
+			maximum_speed = -0.045
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.425
+		gfx = touhou_air_optional_demonforce_cooling_flaps_large
+	}
+	touhou_air_optional_demonforce_ballast_cage_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.018
+			weight = 2
+			build_cost_ic = 1.6
+		}
+		multiply_stats = {
+			air_attack = -0.03
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4
+		gfx = touhou_air_optional_demonforce_ballast_cage_small
+	}
+	touhou_air_optional_demonforce_ballast_cage_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.018
+			weight = 4
+			build_cost_ic = 3.2
+		}
+		multiply_stats = {
+			air_attack = -0.03
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.8
+		gfx = touhou_air_optional_demonforce_ballast_cage_medium
+	}
+	touhou_air_optional_demonforce_ballast_cage_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.018
+			weight = 6
+			build_cost_ic = 4.8
+		}
+		multiply_stats = {
+			air_attack = -0.03
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.2
+		gfx = touhou_air_optional_demonforce_ballast_cage_large
+	}
+	touhou_air_optional_demonforce_signal_lamp_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			night_penalty = -0.015
+			weight = 0.6
+			fuel_consumption = 0.05
+			build_cost_ic = 1.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.3
+		gfx = touhou_air_optional_demonforce_signal_lamp_small
+	}
+	touhou_air_optional_demonforce_signal_lamp_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			night_penalty = -0.015
+			weight = 1.2
+			fuel_consumption = 0.1
+			build_cost_ic = 2.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.6
+		gfx = touhou_air_optional_demonforce_signal_lamp_medium
+	}
+	touhou_air_optional_demonforce_signal_lamp_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			night_penalty = -0.015
+			weight = 1.8
+			fuel_consumption = 0.15
+			build_cost_ic = 3.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		gfx = touhou_air_optional_demonforce_signal_lamp_large
+	}
+	touhou_air_optional_demonforce_comfort_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.02
+			weight = 0.7
+			build_cost_ic = 1.3
+		}
+		multiply_stats = {
+			air_attack = -0.035
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.325
+		gfx = touhou_air_optional_demonforce_comfort_small
+	}
+	touhou_air_optional_demonforce_comfort_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.02
+			weight = 1.4
+			build_cost_ic = 2.6
+		}
+		multiply_stats = {
+			air_attack = -0.035
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.65
+		gfx = touhou_air_optional_demonforce_comfort_medium
+	}
+	touhou_air_optional_demonforce_comfort_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			reliability = 0.02
+			weight = 2.1
+			build_cost_ic = 3.9
+		}
+		multiply_stats = {
+			air_attack = -0.035
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.975
+		gfx = touhou_air_optional_demonforce_comfort_large
+	}
+	touhou_air_optional_demonforce_ornament_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 0.4
+			air_agility = -1.5
+			weight = 1.2
+			build_cost_ic = 1.8
+		}
+		multiply_stats = {
+			maximum_speed = -0.025
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.45
+		gfx = touhou_air_optional_demonforce_ornament_small
+	}
+	touhou_air_optional_demonforce_ornament_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 0.8
+			air_agility = -3
+			weight = 2.4
+			build_cost_ic = 3.6
+		}
+		multiply_stats = {
+			maximum_speed = -0.025
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.9
+		gfx = touhou_air_optional_demonforce_ornament_medium
+	}
+	touhou_air_optional_demonforce_ornament_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 1.2
+			air_agility = -4.5
+			weight = 3.6
+			build_cost_ic = 5.4
+		}
+		multiply_stats = {
+			maximum_speed = -0.025
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.35
+		gfx = touhou_air_optional_demonforce_ornament_large
+	}
+	touhou_air_optional_demonforce_satchel_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_range = 20
+			fuel_consumption = 0.04
+			weight = 1.4
+			build_cost_ic = 1.6
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.4
+		gfx = touhou_air_optional_demonforce_satchel_small
+	}
+	touhou_air_optional_demonforce_satchel_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_range = 40
+			fuel_consumption = 0.08
+			weight = 2.8
+			build_cost_ic = 3.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.8
+		gfx = touhou_air_optional_demonforce_satchel_medium
+	}
+	touhou_air_optional_demonforce_satchel_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_range = 60
+			fuel_consumption = 0.12
+			weight = 4.2
+			build_cost_ic = 4.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.2
+		gfx = touhou_air_optional_demonforce_satchel_large
+	}
+	touhou_air_optional_demonforce_floats_small = {
+		category = touhou_plane_special_module_small
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 1.8
+			air_agility = -1.5
+			build_cost_ic = 2.2
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_patrol
+				naval_bomber
+			}
+			add_stats = {
+				surface_detection = 4
+				sub_detection = 1
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_air_optional_demonforce_floats_small
+	}
+	touhou_air_optional_demonforce_floats_medium = {
+		category = touhou_plane_special_module_medium
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 3.6
+			air_agility = -3
+			build_cost_ic = 4.4
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_patrol
+				naval_bomber
+			}
+			add_stats = {
+				surface_detection = 8
+				sub_detection = 2
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.1
+		gfx = touhou_air_optional_demonforce_floats_medium
+	}
+	touhou_air_optional_demonforce_floats_large = {
+		category = touhou_plane_special_module_large
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 5.4
+			air_agility = -4.5
+			build_cost_ic = 6.6
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_patrol
+				naval_bomber
+			}
+			add_stats = {
+				surface_detection = 12
+				sub_detection = 3
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.65
+		gfx = touhou_air_optional_demonforce_floats_large
+	}
+	touhou_air_optional_demonforce_aux_light = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 6.5
+			weight = 1.8
+			build_cost_ic = 2.3
+			reliability = -0.025
+		}
+		multiply_stats = {
+			air_range = -0.045
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.575
+		gfx = touhou_air_optional_demonforce_aux_light
+	}
+	touhou_air_optional_demonforce_aux_heavy = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 10
+			air_agility = -1
+			weight = 3.6
+			build_cost_ic = 3.1
+			fuel_consumption = 0.12
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.775
+		gfx = touhou_air_optional_demonforce_aux_heavy
+	}
+	touhou_air_optional_demonforce_aux_cannon = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 13
+			air_agility = -3
+			reliability = -0.07
+			weight = 4.8
+			build_cost_ic = 4.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.1
+		gfx = touhou_air_optional_demonforce_aux_cannon
+	}
+	touhou_air_optional_demonforce_aux_scatter = {
+		category = touhou_fighter_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			fighter
+			heavy_fighter
+		}
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		add_stats = {
+			air_attack = 3
+			air_agility = -1
+			reliability = -0.04
+			weight = 3.3
+			build_cost_ic = 2.8
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.7
+		gfx = touhou_air_optional_demonforce_aux_scatter
+	}
+	touhou_air_optional_demonforce_aux_bombs = {
+		category = touhou_cas_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+		allow_mission_type = {
+			cas
+			attack_logistics
+			naval_bomber
+		}
+		add_stats = {
+			build_cost_ic = 2.7
+			fuel_consumption = 0.15
+			reliability = -0.08
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 7
+				weight = 5
+				air_agility = -11
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+			}
+			add_stats = {
+				naval_strike_attack = 1.5
+				weight = 5
+				air_agility = -11
+			}
+			add_average_stats = {
+				naval_strike_targetting = 1
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.675
+		gfx = touhou_air_optional_demonforce_aux_bombs
+	}
+	touhou_air_optional_demonforce_aux_rockets = {
+		category = touhou_cas_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		add_stats = {
+			build_cost_ic = 3
+			fuel_consumption = 0.1
+			reliability = -0.04
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 5
+				weight = 3.8
+				air_agility = -4
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		gfx = touhou_air_optional_demonforce_aux_rockets
+	}
+	touhou_air_optional_demonforce_aux_torpedo = {
+		category = touhou_nav_bomber_weapon
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = {
+			naval_bomber
+			maritime_patrol_plane
+		}
+		allow_mission_type = {
+			naval_bomber
+			port_strike
+			naval_patrol
+		}
+		add_stats = {
+			build_cost_ic = 5.9
+			reliability = -0.075
+			fuel_consumption = 0.12
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+			}
+			add_stats = {
+				naval_strike_attack = 12
+				weight = 6.5
+				air_agility = -14
+			}
+			add_average_stats = {
+				naval_strike_targetting = 2
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.475
+		gfx = touhou_air_optional_demonforce_aux_torpedo
+	}
+	touhou_air_optional_demonforce_aux_camera = {
+		category = touhou_recon_camera
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = scout_plane
+		forbid_equipment_type_exact_match_for_category = {
+			fighter_weapon = scout_plane
+			cas_weapon = scout_plane
+			nav_bomber_weapon = scout_plane
+			tac_weapon = scout_plane
+			mine_warfare_offense = scout_plane
+		}
+		allow_mission_type = {
+			recon
+		}
+		add_stats = {
+			weight = 2
+			build_cost_ic = 2.3
+			reliability = -0.03
+			surface_detection = 1.5
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.575
+		gfx = touhou_air_optional_demonforce_aux_camera
+	}
+	touhou_air_optional_demonforce_aux_mines = {
+		category = touhou_mine_warfare_offense
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		allow_mission_type = {
+			naval_mines_planting
+		}
+		add_stats = {
+			mines_planting = 0.025
+			weight = 4
+			build_cost_ic = 3.9
+			fuel_consumption = 0.07
+			reliability = -0.045
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.975
+		gfx = touhou_air_optional_demonforce_aux_mines
+	}
+	touhou_air_optional_demonforce_bomb_sight = {
+		category = touhou_plane_special_module_bomb_sights
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_bombing = 4
+			air_defence = -1
+			weight = 1.5
+			build_cost_ic = 2.2
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_air_optional_demonforce_bomb_sight
+	}
+	touhou_air_optional_demonforce_navigation = {
+		category = touhou_plane_special_module_radio_navigation
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_range = 60
+			weight = 1.6
+			build_cost_ic = 2.2
+		}
+		multiply_stats = {
+			air_attack = -0.03
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.55
+		gfx = touhou_air_optional_demonforce_navigation
+	}
+	touhou_air_optional_demonforce_intercept_eye = {
+		category = touhou_plane_special_module_air_air_radar
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 2.5
+			build_cost_ic = 3.5
+			reliability = -0.04
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 3
+				night_penalty = -0.07
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.875
+		gfx = touhou_air_optional_demonforce_intercept_eye
+	}
+	touhou_air_optional_demonforce_maritime_eye = {
+		category = touhou_plane_special_module_air_ground_radar
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 2.7
+			build_cost_ic = 3.5
+			reliability = -0.035
+		}
+		multiply_stats = {
+			maximum_speed = -0.025
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+				naval_patrol
+			}
+			add_stats = {
+				surface_detection = 10
+				sub_detection = 2
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.875
+		gfx = touhou_air_optional_demonforce_maritime_eye
+	}
+	touhou_air_optional_demonforce_false_echo = {
+		category = touhou_plane_special_module_air_air_radar
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_electronics
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			weight = 2.2
+			build_cost_ic = 2.9
+			air_agility = -0.4
+		}
+		multiply_stats = {
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 0.3
+				night_penalty = -0.01
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.725
+		gfx = touhou_air_optional_demonforce_false_echo
+	}
+	touhou_air_optional_demonforce_tail_sentry = {
+		category = touhou_plane_special_module_defense_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 2
+			air_defence = 0.5
+			weight = 2.2
+			build_cost_ic = 2.4
+			reliability = -0.035
+		}
+		multiply_stats = {
+			maximum_speed = -0.04
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+				strategic_bomber
+				naval_patrol
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_agility = 0.3
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.6
+		gfx = touhou_air_optional_demonforce_tail_sentry
+	}
+	touhou_air_optional_demonforce_paired_tail = {
+		category = touhou_plane_special_module_defense_turret_x2
+		abbreviation = "TH"
+		gui_category = touhou_plane_special_module_defense_turret
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 4.5
+			air_defence = 1
+			weight = 4.4
+			build_cost_ic = 4.4
+			reliability = -0.065
+		}
+		multiply_stats = {
+			maximum_speed = -0.08
+		}
+		build_cost_resources = {
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+				strategic_bomber
+				naval_patrol
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_agility = 0.5
+			}
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 1.1
+		gfx = touhou_air_optional_demonforce_paired_tail
+	}
+	touhou_air_optional_demonforce_blind_spot = {
+		category = touhou_plane_special_module_defense_turret
+		abbreviation = "TH"
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			air_attack = 0.6
+			air_defence = 0.1
+			air_agility = -0.5
+			weight = 2.5
+			build_cost_ic = 3
+			fuel_consumption = 0.07
+		}
+		multiply_stats = {
+			maximum_speed = -0.055
+		}
+		build_cost_resources = {
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.75
+		gfx = touhou_air_optional_demonforce_blind_spot
 	}
 }

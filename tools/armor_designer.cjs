@@ -21,6 +21,8 @@ exports.planArmorDesigner=function({root,game,models,fixedDefinitions,vanillaEq,
     moduleNodes.push(definition);putLoc(id,name,description);moduleRecords.push({id,name,category,source,values,resources,calibrated:true});return id;
   }
   function license(id,name,condition,equipment,moduleIds){
+    // Chassis research must not bypass the foundational tank-development technology.
+    if(moduleIds.length)condition=[...condition,N('has_tech','gwtank_chassis')];
     licenseNodes.push(N(id,[N('research_cost','0'),N('start_year','1936'),N('allow',[N('always','no')]),
       ...(equipment.length?[N('enable_equipments',equipment.map(x=>N(null,x)))]:[]),N('enable_equipment_modules',moduleIds.map(x=>N(null,x)))]));
     putLoc(id,name,'由国家脚本按原版科技与制造体系开放的装甲配件许可，无独立研究节点。');
@@ -28,8 +30,8 @@ exports.planArmorDesigner=function({root,game,models,fixedDefinitions,vanillaEq,
       N('else_if',[N('limit',[N('has_tech',id),N('NOT',[N('AND',condition)])]),N('set_technology',[N(id,'0'),N('popup','no')])]));
     licenses.push({id,condition,equipment,modules:moduleIds});
   }
-  function preset({id,name,type,modules,condition,texture,oldModel,expected}){
-    const flag='touhou_tank_design_v1_'+id;
+  function preset({id,name,type,modules,condition,texture,oldModel,expected,flagVersion=1}){
+    const flag='touhou_tank_design_v'+flagVersion+'_'+id;
     const slots={...modules};for(let i=1;i<=4;i++)slots['special_type_slot_'+i]??='empty';
     const design=[N('name',JSON.stringify(name)),N('type',type),N('allow_without_tech','yes'),N('parent_version','0'),N('icon',JSON.stringify(texture)),N('modules',Object.entries(slots).map(([k,v])=>N(k,v))),N('upgrades',[N('tank_nsb_engine_upgrade','0'),N('tank_nsb_armor_upgrade','0')])];
     effects.push(N('if',[N('limit',[...condition,N('NOT',[N('has_country_flag',flag)])]),N('create_equipment_variant',design),N('set_country_flag',flag)]));
@@ -55,7 +57,7 @@ exports.planArmorDesigner=function({root,game,models,fixedDefinitions,vanillaEq,
     const condition=[N('has_dlc','"No Step Back"'),...oldCondition];
     const name=localisation.get(main.id)||'妖精装甲装备';
     const fields=[N('archetype',a),N('year',S(base,'year')),N('priority',S(base,'priority')||'2000'),N('visual_level',S(base,'visual_level')||'0'),
-      N('module_slots','inherit'),N('active','yes'),N('is_buildable','yes'),N('picture',type),N('derived_variant_name',type+'_design'),N('variant_name',type+'_design'),
+      N('module_slots','inherit'),N('active','no'),N('is_buildable','yes'),N('picture',type),N('derived_variant_name',type+'_design'),N('variant_name',type+'_design'),
       N('upgrades',[N(null,'tank_nsb_engine_upgrade'),N(null,'tank_nsb_armor_upgrade')]),
       ...Object.entries(baseStats).map(([k,v])=>N(k,num(v))),N('resources',Object.entries(resources).filter(([,v])=>v).map(([k,v])=>N(k,String(v)))),
       N('can_be_produced',[N('has_dlc','"No Step Back"'),...oldCondition,N('has_tech',lic)])];
@@ -105,9 +107,18 @@ exports.planArmorDesigner=function({root,game,models,fixedDefinitions,vanillaEq,
       preset({id:m.id,name:localisation.get(m.id)||'妖精装甲装备',type:target,modules:{...parts,main_armament_slot:weaponId},condition:[N('has_tech',lic)],texture:image,oldModel:m.id,expected:{...expected,resources:Object.fromEntries(C(fixed.get(m.id),'resources')[0].value.map(x=>[x.key,Number(x.value)]))}});
       allocated.push({oldModel:m.id,chassis:target,base:type,modules:{...parts,main_armament_slot:weaponId},expected,resources:residualResources});
     }
-    license(lic,name+'配件许可',condition,types,moduleIds);
+    // Historical stock needs an enabled chassis before the engine creates version 1.
+    // Keep chassis authorization separate so stock never grants unresearched parts.
+    const frameLicense='touhou_tank_frame_license_'+suffix,historicalFlag='touhou_historical_tank_frame_'+suffix;
+    body.frameLicense=frameLicense;body.historicalFlag=historicalFlag;
+    license(frameLicense,name+'底盘许可',[
+      ...allCountry(),N('has_dlc','"No Step Back"'),N('OR',[
+        N('AND',[...structuredClone(condition),N('has_tech','gwtank_chassis')]),N('has_country_flag',historicalFlag)
+      ])
+    ],types,[]);
+    license(lic,name+'配件许可',condition,[],moduleIds);
   }
-  // Spirit equipment had no independent tank line: provide ritual parts for existing native chassis.
+  // Spirit frames retain native stats but own distinct IDs, so ritual parts never unlock native tanks.
   function cloneSpirit(id,name,source,desc){const n=structuredClone(nativeModules.get(source));n.key=id;n.value=n.value.filter(x=>x.key!=='parent');n.value.push(N('gfx',source));moduleNodes.push(n);putLoc(id,name,desc);moduleRecords.push({id,name,category:S(n,'category'),source,calibrated:false});return id;}
   const spirit={engine_type_slot:cloneSpirit('touhou_tank_wakan_engine','附灵动力机','tank_diesel_engine','将灵力附着于机械传动系统。采用原版柴油动力数值，兼容所有坦克底盘。'),suspension_type_slot:cloneSpirit('touhou_tank_wakan_suspension','灵力稳定悬挂','tank_torsion_bar_suspension','以灵力场稳定车体，采用原版扭杆悬挂数值。'),armor_type_slot:cloneSpirit('touhou_tank_wakan_armor','护身符阵装甲','tank_welded_armor','附灵道具组成防护符阵，采用原版焊接装甲数值与资源代价。')};
   const spiritControl={light:cloneSpirit('touhou_tank_wakan_light_control','轻型灵力共鸣座','tank_light_three_man_tank_turret','采用原版轻型三人炮塔的尺寸和数值；灵力共鸣组织武器操控。'),medium:cloneSpirit('touhou_tank_wakan_medium_control','中型灵力共鸣座','tank_medium_three_man_tank_turret','采用原版中型三人炮塔的尺寸和数值。')};
@@ -116,7 +127,25 @@ exports.planArmorDesigner=function({root,game,models,fixedDefinitions,vanillaEq,
     const guns={light:cloneSpirit('touhou_tank_wakan_light_weapon_'+tier,'破魔穿甲炮 '+tier,['tank_small_cannon','tank_small_cannon_2','tank_high_velocity_cannon'][tier-1],'灵力集中于弹体完成破甲，采用对应原版小型坦克炮数值。'),medium:cloneSpirit('touhou_tank_wakan_medium_weapon_'+tier,'灵力爆破炮 '+tier,['tank_medium_cannon','tank_medium_cannon_2','tank_high_velocity_cannon_2'][tier-1],'将原灵力爆破体系装入车载炮组，采用对应原版中型坦克炮数值。')};
     const condition=[N('has_dlc','"No Step Back"'),...styleLimit('wakan'),N('OR',[N('AND',techCondition(techLevel+'_light_tank')),N('AND',techCondition(techLevel+'_medium_tank'))])];
     license(lic,'附灵装甲配件许可 '+tier,condition,[],[...Object.values(spirit),...Object.values(spiritControl),...Object.values(guns)]);
-    for(const size of ['light','medium'])preset({id:'wakan_'+size+'_'+tier,name:({light:'破魔式轻型坦克',medium:'附灵式中型坦克'}[size])+['','改良型','完全型'][tier-1],type:size+'_tank_chassis_'+tier,modules:{...spirit,turret_type_slot:spiritControl[size],main_armament_slot:guns[size]},condition:[N('has_tech',lic),...techCondition(techLevel+'_'+size+'_tank')],texture:'GFX_touhou_wakan_infantry_equipment_'+Math.min(tier,3)+'_medium'});
+    for(const size of ['light','medium']){
+      const nativeType=size+'_tank_chassis_'+tier,type=size+'_tank_chassis_touhou_wakan_'+tier,frameLicense='touhou_tank_frame_license_wakan_'+size+'_'+tier;
+      const source=vanillaEq.get(nativeType),frame=structuredClone(source);frame.key=type;
+      frame.value=frame.value.filter(n=>!['parent','picture','variant_name','derived_variant_name','can_be_produced','active','is_buildable'].includes(n.key));
+      if(tier>1)frame.value.push(N('parent',size+'_tank_chassis_touhou_wakan_'+(tier-1)));
+      const frameCondition=[N('has_dlc','"No Step Back"'),...styleLimit('wakan'),...techCondition(techLevel+'_'+size+'_tank')];
+      frame.value.push(N('active','no'),N('is_buildable','yes'),N('picture',type),N('variant_name',type+'_design'),N('derived_variant_name',type+'_design'),N('can_be_produced',[...frameCondition,N('has_tech',frameLicense)]));
+      chassisNodes.push(frame);
+      const name=({light:'破魔式轻型坦克',medium:'附灵式中型坦克'}[size])+['','改良型','完全型'][tier-1],desc='附灵专用底盘，保留对应原版底盘数值与升级规则；幻想乡配件仅能安装在专用底盘上。';
+      putLoc(type,name+'底盘',desc);putLoc(type+'_design',name,desc);
+      const art='touhou_wakan_infantry_equipment_'+tier,display=models.find(m=>m.id===art);
+      if(!display)throw Error('Missing spirit frame presentation '+art);
+      chassis.push({id:type,archetype:size+'_tank_chassis',unlock:display.unlock,researchSource:techLevel+'_'+size+'_tank',style:'wakan',armorChassis:true,license:frameLicense,sourceModel:art,displaySource:art,nativeStatSource:nativeType});
+      const types=[type];for(const d of duplicates.filter(d=>S(d,'archetype')===size+'_tank_chassis'&&S(d,'only_duplicate_archetype')!=='yes')){
+        const id=d.key+type.slice((size+'_tank_chassis').length),block=C(C(d,'for_each')[0],'hardness')[0];types.push(id);aliases.push({id,archetype:d.key,base:type,hardness:block?Number(S(block,'set')):effective(source).hardness});putLoc(id,name+'衍生底盘',desc);
+      }
+      license(frameLicense,name+'底盘许可',frameCondition,types,[]);
+      preset({id:'wakan_'+size+'_'+tier,name,type,flagVersion:2,modules:{...spirit,turret_type_slot:spiritControl[size],main_armament_slot:guns[size]},condition:[N('has_tech',lic),N('has_tech',frameLicense),...techCondition(techLevel+'_'+size+'_tank')],texture:'GFX_'+art+'_medium'});
+    }
   }
   return {originalModels:original,models:chassis,replacements,aliases,presets,licenses,modules:moduleRecords,allocated,localisation:loc,
     equipmentScript:R([N('equipments',chassisNodes)]),roleOverridesScript:R([N('equipments',roleOverrides)]),modulesScript:R([N('equipment_modules',[N('limit',[N('has_dlc','"No Step Back"')]),...moduleNodes])]),technologyScript:R([N('technologies',licenseNodes)]),

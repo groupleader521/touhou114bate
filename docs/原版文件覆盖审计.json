@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-02",
+  "nativeTechnologySourceOverrides": 0,
+  "remainingTextSourceOverrides": 12,
+  "generatedSourceOverrides": [
+    "common/script_enums.txt"
+  ],
+  "overrides": [
+    {
+      "file": "common/bookmarks/the_gathering_storm.txt",
+      "identical": false,
+      "reason": "幻想乡开局书签和默认国家。"
+    },
+    {
+      "file": "common/combat_tactics.txt",
+      "identical": false,
+      "reason": "该系统读取根目录单文件；保留幻想乡战术与反制关系。"
+    },
+    {
+      "file": "common/script_enums.txt",
+      "identical": false,
+      "reason": "该系统读取根目录单文件；原版枚举保留，仅追加专用型号的装备加成键。"
+    },
+    {
+      "file": "gfx/loadingscreens/load_1.dds",
+      "identical": false,
+      "reason": "既有加载画面；descriptor.mod 明确替换此目录。"
+    },
+    {
+      "file": "gfx/loadingscreens/load_2.dds",
+      "identical": false,
+      "reason": "既有加载画面；descriptor.mod 明确替换此目录。"
+    },
+    {
+      "file": "gfx/loadingscreens/load_3.dds",
+      "identical": false,
+      "reason": "既有加载画面；descriptor.mod 明确替换此目录。"
+    },
+    {
+      "file": "gfx/loadingscreens/load_4.dds",
+      "identical": false,
+      "reason": "既有加载画面；descriptor.mod 明确替换此目录。"
+    },
+    {
+      "file": "gfx/loadingscreens/load_5.dds",
+      "identical": false,
+      "reason": "既有加载画面；descriptor.mod 明确替换此目录。"
+    },
+    {
+      "file": "gfx/loadingscreens/load_6.dds",
+      "identical": false,
+      "reason": "既有加载画面；descriptor.mod 明确替换此目录。"
+    },
+    {
+      "file": "gfx/loadingscreens/load_7.dds",
+      "identical": false,
+      "reason": "既有加载画面；descriptor.mod 明确替换此目录。"
+    },
+    {
+      "file": "gfx/loadingscreens/load_8.dds",
+      "identical": false,
+      "reason": "既有加载画面；descriptor.mod 明确替换此目录。"
+    },
+    {
+      "file": "gfx/loadingscreens/load_9.dds",
+      "identical": false,
+      "reason": "既有加载画面；descriptor.mod 明确替换此目录。"
+    },
+    {
+      "file": "interface/frontendmainviewbg.gfx",
+      "identical": false,
+      "reason": "既有主菜单主题。"
+    },
+    {
+      "file": "localisation/english/loading_tips_l_english.yml",
+      "identical": false,
+      "reason": "既有加载提示文本。"
+    },
+    {
+      "file": "localisation/simp_chinese/loading_tips_l_simp_chinese.yml",
+      "identical": false,
+      "reason": "既有加载提示文本。"
+    },
+    {
+      "file": "map/adjacencies.csv",
+      "identical": false,
+      "reason": "幻想乡省份间特殊连接。"
+    },
+    {
+      "file": "map/buildings.txt",
+      "identical": false,
+      "reason": "幻想乡地图建筑定位。"
+    },
+    {
+      "file": "map/definition.csv",
+      "identical": false,
+      "reason": "幻想乡地图省份索引、颜色与地形属性。"
+    },
+    {
+      "file": "map/heightmap.bmp",
+      "identical": false,
+      "reason": "幻想乡地图高度。"
+    },
+    {
+      "file": "map/provinces.bmp",
+      "identical": false,
+      "reason": "幻想乡地图省份边界。"
+    },
+    {
+      "file": "map/rivers.bmp",
+      "identical": false,
+      "reason": "幻想乡地图河流。"
+    },
+    {
+      "file": "map/supply_nodes.txt",
+      "identical": false,
+      "reason": "幻想乡地图补给节点。"
+    },
+    {
+      "file": "map/terrain.bmp",
+      "identical": false,
+      "reason": "幻想乡地图地形。"
+    },
+    {
+      "file": "map/trees.bmp",
+      "identical": false,
+      "reason": "幻想乡地图树木分布。"
+    },
+    {
+      "file": "map/unitstacks.txt",
+      "identical": false,
+      "reason": "幻想乡地图单位显示位置。"
+    },
+    {
+      "file": "map/weatherpositions.txt",
+      "identical": false,
+      "reason": "幻想乡地图天气显示位置。"
+    },
+    {
+      "file": "map/world_normal.bmp",
+      "identical": false,
+      "reason": "幻想乡地图地表法线。"
+    }
+  ],
+  "errors": [],
+  "limitation": "File-path inventory; independent sprites/localization may intentionally customize Touhou presentation. No game UI execution."
+}

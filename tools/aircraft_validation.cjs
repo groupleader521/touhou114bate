@@ -48,7 +48,7 @@ exports.validateAircraft=function({root,game,manifest,eq,values,errors}){
   for(const a of air.aliases)if(!blueprints.has('equipment_designer_'+a.id))errors.push('Role aircraft designer blueprint missing '+a.id);
   for(const m of air.originalModels)if(eq.has(m.id))errors.push('Standalone aircraft remains '+m.id);
   for(const lic of air.licenses){const n=techs.get(lic.id);if(!n||C(n,'folder').length||S(C(n,'allow')[0],'always')!=='no')errors.push('Aviation license became a research node '+lic.id);for(const id of lic.modules)if(!modules.has(id))errors.push('Unknown aviation licensed module '+id);for(const id of lic.equipment)if(!eq.has(id))errors.push('Unknown aviation licensed frame '+id);}
-  for(const m of air.modules){const n=modules.get(m.id);if(nativeModules.has(m.id))errors.push('Native aircraft module override '+m.id);if(!nativeModules.has(S(n,'gfx')))errors.push('Missing aircraft module graphics '+m.id);}
+  for(const m of air.modules){const n=modules.get(m.id);if(nativeModules.has(m.id))errors.push('Native aircraft module override '+m.id);require('./module_icon_art.cjs').validateModuleIcon({root,game,kind:'aircraft',module:m,node:n,errors});}
   const baseline=JSON.parse(fs.readFileSync(path.join(root,'tools/military_migration_baseline.json'),'utf8'));
   const wingRows=ns=>ns.filter(n=>n.key==='air_wings').flatMap(n=>n.value.flatMap(state=>state.value.map(plane=>({state:state.key,type:plane.key,owner:S(plane,'owner'),amount:S(plane,'amount'),version:S(plane,'version_name')}))));
   for(const [file,source] of Object.entries(baseline.sources).filter(([f])=>f.startsWith('history/units/'))){
@@ -65,5 +65,6 @@ exports.validateAircraft=function({root,game,manifest,eq,values,errors}){
   if(S(missileFrame,'one_use_only')!=='yes'||!C(missileFrame,'forbid_mission_type').some(n=>n.value==='training'))errors.push('Original one-use strategic missile behavior lost');
   const smallPuppet=air.presets.find(p=>p.id==='suicide_puppet_equipment_1');
   if(smallPuppet.role!=='suicide'||!smallPuppet.missions.includes('naval_kamikaze'))errors.push('Original small puppet kamikaze capability lost');
-  return {numericChecks,airframes:air.models.length,generatedRoleTypes:air.aliases.length,retiredFinishedModels:air.originalModels.length,modules:air.modules.length,presets:air.presets.length,hiddenComponentLicenses:air.licenses.length,slotChecks,missionChecks,designerBlueprints:blueprints.size,historicalWings,historicalPlanes,blueprintValues:Object.fromEntries(assembled)};
+  const isolation=require('./aircraft_module_isolation.cjs').validateAircraftIsolation({root,game,manifest,eq,errors});
+  return {numericChecks,airframes:air.models.length,generatedRoleTypes:air.aliases.length,retiredFinishedModels:air.originalModels.length,modules:air.modules.length,presets:air.presets.length,hiddenComponentLicenses:air.licenses.length,slotChecks,missionChecks,designerBlueprints:blueprints.size,historicalWings,historicalPlanes,isolation,blueprintValues:Object.fromEntries(assembled)};
 };

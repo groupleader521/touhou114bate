@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-02",
+  "method": "built-in image_gen",
+  "newArtwork": 174,
+  "newTankArtwork": 84,
+  "newAircraftArtwork": 90,
+  "uniqueNewSources": 174,
+  "optionalModuleMappings": 252,
+  "totalArtwork": 229,
+  "totalModuleSprites": 535,
+  "nativePlaceholders": 0,
+  "gameplayChecks": 535,
+  "preservedPresets": 99,
+  "originalArtworkChecks": 55,
+  "receiptChecks": 174,
+  "generatorOutputChecks": 174,
+  "engineChecked": false,
+  "errors": [],
+  "compatibilityNormalization": true
+}

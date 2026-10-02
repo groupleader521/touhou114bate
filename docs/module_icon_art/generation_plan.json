@@ -1,0 +1,661 @@
+[
+  {
+    "id": "tank_magic_engine",
+    "name": "魔力装甲动力",
+    "subject": "a compact dark-wood and brass puppet clockwork cradle holding one violet crystal, two small cogs",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon, using the supplied image ONLY as a style reference for this Hearts of Iron IV Touhou mod. Asset: a magic puppet tank's propulsion core: a compact brass-and-dark-wood mechanical cradle holding one softly glowing violet crystal, with two tiny doll clockwork cogs. This is a detachable tank part, not an entire tank or character. Match the reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Horizontal object in three-quarter view, centered, entirely visible with transparent padding, maximum width greater than height. A small discreet violet glow confined to the object. No text, letters, numbers, labels, tier marks, frame, ground, scene or watermark. Truly transparent background. Deliver only this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png"
+    ]
+  },
+  {
+    "id": "tank_magic_suspension",
+    "name": "人偶机动关节",
+    "subject": "a short articulated porcelain-and-brass doll leg joint with two hinges, a small violet crystal pin, horizontal pose",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a short articulated porcelain-and-brass doll leg joint with two hinges, a small violet crystal pin, horizontal pose. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_magic_armor",
+    "name": "炼金护甲",
+    "subject": "three overlapping ivory and brass enchanted armor plates with a small violet crystal inset, compact horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: three overlapping ivory and brass enchanted armor plates with a small violet crystal inset, compact horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_magic_control",
+    "name": "人偶操控座",
+    "subject": "a small wooden puppet control cross above a compact ivory command seat, three short gold control strings and a violet gem",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a small wooden puppet control cross above a compact ivory command seat, three short gold control strings and a violet gem. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_magic_gun",
+    "name": "人偶弹幕主武器",
+    "subject": "a short brass and ivory arcane cannon barrel in a doll-machine mounting, glowing violet crystal at the breech",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a short brass and ivory arcane cannon barrel in a doll-machine mounting, glowing violet crystal at the breech. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_magic_artillery",
+    "name": "人偶范围轰击",
+    "subject": "a squat brass magical mortar and one rounded violet glowing spell shell, compact three-quarter profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a squat brass magical mortar and one rounded violet glowing spell shell, compact three-quarter profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_magic_destroyer",
+    "name": "人偶破甲武器",
+    "subject": "a slender ivory and brass lance-shaped focusing cannon with a violet crystal tip, long horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a slender ivory and brass lance-shaped focusing cannon with a violet crystal tip, long horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_magic_aa",
+    "name": "人偶对空弹幕",
+    "subject": "a compact fan of three small ivory and brass spell-cannon barrels on a puppet swivel mount, small violet gems",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact fan of three small ivory and brass spell-cannon barrels on a puppet swivel mount, small violet gems. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_demon_engine",
+    "name": "妖化动力核",
+    "subject": "a crimson pulsing organic core restrained by dark iron ribs and two black bone horns, compact horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a crimson pulsing organic core restrained by dark iron ribs and two black bone horns, compact horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_demon_suspension",
+    "name": "妖化机动支撑",
+    "subject": "a single bent beast leg with a dark clawed foot, pale bone hinge and iron brace, compact horizontal mechanical-organic part",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a single bent beast leg with a dark clawed foot, pale bone hinge and iron brace, compact horizontal mechanical-organic part. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_demon_armor",
+    "name": "妖化护甲",
+    "subject": "three overlapping dark beast carapace plates with pale horn ridges and a subtle crimson crack, compact horizontal armor segment",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: three overlapping dark beast carapace plates with pale horn ridges and a subtle crimson crack, compact horizontal armor segment. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_demon_control",
+    "name": "妖力操控座",
+    "subject": "a compact dark iron command saddle with a small horned beast skull and a crimson crystal, no person",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact dark iron command saddle with a small horned beast skull and a crimson crystal, no person. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_demon_gun",
+    "name": "妖力近战重击",
+    "subject": "a massive dark beast claw gripping a short black-iron striking ram, compact horizontal mounted weapon",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a massive dark beast claw gripping a short black-iron striking ram, compact horizontal mounted weapon. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_demon_artillery",
+    "name": "妖力范围轰击",
+    "subject": "a small black dragon-head weapon nozzle on an iron mounting with a contained orange fireball at its mouth, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a small black dragon-head weapon nozzle on an iron mounting with a contained orange fireball at its mouth, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_demon_destroyer",
+    "name": "妖力集中破甲",
+    "subject": "one long curved pale horn and dark-iron lance mounted as a piercing weapon, crimson binding, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: one long curved pale horn and dark-iron lance mounted as a piercing weapon, crimson binding, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_demon_aa",
+    "name": "妖力对空武器",
+    "subject": "a fan of five dark feather-shaped blades around a small crimson core on an iron mounting, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a fan of five dark feather-shaped blades around a small crimson core on an iron mounting, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_wakan_engine",
+    "name": "附灵装甲动力",
+    "subject": "a compact traditional metal motor wrapped in two ivory ofuda paper charms and red cord, one subtle pale-blue spirit orb",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact traditional metal motor wrapped in two ivory ofuda paper charms and red cord, one subtle pale-blue spirit orb. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_wakan_suspension",
+    "name": "灵力稳定悬挂",
+    "subject": "a short metal suspension hinge held within two pale-blue spirit rings, ivory ofuda strip and red cord, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a short metal suspension hinge held within two pale-blue spirit rings, ivory ofuda strip and red cord, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_wakan_armor",
+    "name": "护身符阵装甲",
+    "subject": "three overlapping ivory ofuda charm plates on a muted bronze armor backing, red binding and a subtle pale-blue barrier edge",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: three overlapping ivory ofuda charm plates on a muted bronze armor backing, red binding and a subtle pale-blue barrier edge. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_wakan_control",
+    "name": "灵力共鸣座",
+    "subject": "a small bronze command seat behind a circular ivory ritual talisman and two pale-blue spirit beads, no person",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a small bronze command seat behind a circular ivory ritual talisman and two pale-blue spirit beads, no person. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_wakan_light_gun",
+    "name": "轻型破魔炮",
+    "subject": "a short small bronze cannon wrapped in an ivory ofuda charm and red cord, one small pale-blue spirit bead at the breech",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a short small bronze cannon wrapped in an ivory ofuda charm and red cord, one small pale-blue spirit bead at the breech. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_wakan_medium_gun",
+    "name": "中型附灵炮",
+    "subject": "a broad medium bronze cannon with a square ivory ofuda sleeve and red bindings, pale-blue crystal at the breech",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a broad medium bronze cannon with a square ivory ofuda sleeve and red bindings, pale-blue crystal at the breech. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_oni_engine",
+    "name": "鬼铸动力",
+    "subject": "a squat iron furnace core with two stubby oni horns and a contained amber ember, thick hammered metal",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a squat iron furnace core with two stubby oni horns and a contained amber ember, thick hammered metal. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_oni_suspension",
+    "name": "鬼铸机动",
+    "subject": "a thick hammered-iron articulated brace with two sturdy pivots and one red oni cord, horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a thick hammered-iron articulated brace with two sturdy pivots and one red oni cord, horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_oni_armor",
+    "name": "鬼铸护甲",
+    "subject": "a broad hammered black-iron armor plate with a small embossed oni horn motif and muted red binding",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a broad hammered black-iron armor plate with a small embossed oni horn motif and muted red binding. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_oni_control",
+    "name": "鬼族操控座",
+    "subject": "a compact iron command saddle and a small red oni mask with two pale horns, no full character",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact iron command saddle and a small red oni mask with two pale horns, no full character. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_oni_gun",
+    "name": "鬼族重击武器",
+    "subject": "a short heavy black-iron kanabo spiked club fitted into a compact armor mounting, three-quarter horizontal view",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a short heavy black-iron kanabo spiked club fitted into a compact armor mounting, three-quarter horizontal view. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_fairy_engine",
+    "name": "妖精装甲动力",
+    "subject": "a tiny green crystal engine held in a delicate silver flower-shaped cradle with two leaf-shaped cogs",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a tiny green crystal engine held in a delicate silver flower-shaped cradle with two leaf-shaped cogs. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_fairy_suspension",
+    "name": "妖精机动",
+    "subject": "a delicate silver articulated hinge with two leaf-like supports and a small green crystal, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a delicate silver articulated hinge with two leaf-like supports and a small green crystal, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_fairy_armor",
+    "name": "妖精护甲",
+    "subject": "three small pearlescent armor plates shaped like leaves, silver edges and a subtle green glow",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: three small pearlescent armor plates shaped like leaves, silver edges and a subtle green glow. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_fairy_control",
+    "name": "妖精操控座",
+    "subject": "a small silver command seat under a green crystal flower control console, no full character",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a small silver command seat under a green crystal flower control console, no full character. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "tank_fairy_gun",
+    "name": "妖精主武器",
+    "subject": "a small silver flower-shaped cannon with a green crystal chamber and two leaf-shaped braces, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a small silver flower-shaped cannon with a green crystal chamber and two leaf-shaped braces, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_magic_engine",
+    "name": "御空魔力核",
+    "subject": "a short brown flying broom handle with a compact brass collar and a violet crystal propulsion core, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a short brown flying broom handle with a compact brass collar and a violet crystal propulsion core, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_magic_protection",
+    "name": "附魔护罩",
+    "subject": "a compact ivory and brass aircraft armor segment enclosed by one faint violet curved magical shield, no entire aircraft",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact ivory and brass aircraft armor segment enclosed by one faint violet curved magical shield, no entire aircraft. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_magic_range",
+    "name": "魔力储能",
+    "subject": "two violet crystal cells strapped into a compact brown-leather and brass holder, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: two violet crystal cells strapped into a compact brown-leather and brass holder, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_magic_fighter",
+    "name": "对空弹幕术式",
+    "subject": "an open small brown spellbook emitting three contained violet star-shaped magic bolts, compact horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: an open small brown spellbook emitting three contained violet star-shaped magic bolts, compact horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_magic_tactical",
+    "name": "爆裂轰击术式",
+    "subject": "a compact brown spellbook with a single contained orange-red explosion orb rising above it, horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact brown spellbook with a single contained orange-red explosion orb rising above it, horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_magic_strategic",
+    "name": "广域毁灭术式",
+    "subject": "a compact broad orange-red mushroom-shaped magical explosion above a small bronze spell focus, clear simple horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact broad orange-red mushroom-shaped magical explosion above a small bronze spell focus, clear simple horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_wakan_engine",
+    "name": "御风推进符阵",
+    "subject": "a compact pale-blue wind vortex around one ivory ofuda charm and a bronze propulsion ring, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact pale-blue wind vortex around one ivory ofuda charm and a bronze propulsion ring, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_wakan_protection",
+    "name": "航空护身符阵",
+    "subject": "two ivory ofuda paper charms on a small bronze aircraft armor plate with a faint pale-blue curved spirit barrier",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: two ivory ofuda paper charms on a small bronze aircraft armor plate with a faint pale-blue curved spirit barrier. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_wakan_range",
+    "name": "灵力导引阵列",
+    "subject": "two pale-blue spirit beads and a small ivory paper charm tied to a bronze guiding ring, compact horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: two pale-blue spirit beads and a small ivory paper charm tied to a bronze guiding ring, compact horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_wakan_fighter",
+    "name": "御风切割阵列",
+    "subject": "three compact curved pale-blue wind blades circling an ivory ofuda charm, strong horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: three compact curved pale-blue wind blades circling an ivory ofuda charm, strong horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_wakan_cas",
+    "name": "雷击投射阵列",
+    "subject": "a small dark-blue thunder drum with a contained yellow lightning bolt, bronze rim, compact horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a small dark-blue thunder drum with a contained yellow lightning bolt, bronze rim, compact horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_wakan_tactical",
+    "name": "天火降击术式",
+    "subject": "one contained orange fireball with a pale-blue spirit core above a small ivory ofuda strip, compact horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: one contained orange fireball with a pale-blue spirit core above a small ivory ofuda strip, compact horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_demon_engine",
+    "name": "妖翼推进",
+    "subject": "two short dark feathered wings attached to a small crimson organic core and iron brace, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: two short dark feathered wings attached to a small crimson organic core and iron brace, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_demon_protection",
+    "name": "妖羽护甲",
+    "subject": "three layered black and silver feather armor plates with a small crimson binding, compact horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: three layered black and silver feather armor plates with a small crimson binding, compact horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_demon_range",
+    "name": "妖力续航",
+    "subject": "a compact dark crimson organic energy sac protected by two dark feather ridges and an iron band, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact dark crimson organic energy sac protected by two dark feather ridges and an iron band, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_demon_fighter",
+    "name": "妖羽撕裂武装",
+    "subject": "three dark silver-edged feather blades on a compact crimson-and-bone mounting, horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: three dark silver-edged feather blades on a compact crimson-and-bone mounting, horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_demon_heavy",
+    "name": "巨翼猎空武装",
+    "subject": "two strong dark wing segments and a pale curved talon on a thick iron mounting, compact horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: two strong dark wing segments and a pale curved talon on a thick iron mounting, compact horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_demon_cas",
+    "name": "妖禽俯冲武装",
+    "subject": "a compact silver spearhead bound to two dark feathered wing segments by a crimson cord, horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact silver spearhead bound to two dark feathered wing segments by a crimson cord, horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_puppet_suicide",
+    "name": "自爆人偶触发符咒",
+    "subject": "a compact brown wooden doll bomb core wrapped in an ivory charm strip, brass winding key and one restrained orange ember",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact brown wooden doll bomb core wrapped in an ivory charm strip, brass winding key and one restrained orange ember. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_puppet_missile",
+    "name": "自爆人偶弹头",
+    "subject": "a short dark-iron pointed missile warhead wrapped in an ivory sealing charm and red cord, compact horizontal profile",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a short dark-iron pointed missile warhead wrapped in an ivory sealing charm and red cord, compact horizontal profile. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_tengu_weapon",
+    "name": "天狗羽扇弹幕",
+    "subject": "a traditional dark feather fan with an ivory handle and a short red cord, small restrained pale wind curl",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a traditional dark feather fan with an ivory handle and a short red cord, small restrained pale wind curl. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_boli_weapon",
+    "name": "博丽驱魔支援阵",
+    "subject": "an ivory gohei purification wand beside two red-and-white yin-yang orbs, compact horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: an ivory gohei purification wand beside two red-and-white yin-yang orbs, compact horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  },
+  {
+    "id": "air_desires_weapon",
+    "name": "欲望能量轰击阵列",
+    "subject": "a compact bronze Taoist energy vessel holding one dark-violet luminous orb with a small pale-blue trailing flame, horizontal silhouette",
+    "prompt": "Use case: stylized-concept. Generate ONE new game inventory module icon for this Hearts of Iron IV Touhou mod. Image 1 is ONLY the existing mod style reference; image 2 is ONLY a reference for the new icon set's painted miniature rendering, not an edit target. Subject: a compact bronze Taoist energy vessel holding one dark-violet luminous orb with a small pale-blue trailing flame, horizontal silhouette. This is one detachable module or contained spell focus, not an entire vehicle or character. Match the supplied reference's modest fantasy item cutout treatment: semi-painted miniature sprite, muted materials, soft shaded volume, strong simple silhouette that reads at 56 by 42 pixels. Three-quarter view, object wider than tall, centered, entirely visible with generous transparent padding. Keep tiny glows confined close to the object. Preserve the subject's described materials and colors. No text, legible writing, letters, numbers, labels, tier marks, border, ground, scene or watermark. Truly transparent background. Deliver ONLY this single isolated icon.",
+    "tool": "image_gen",
+    "transparent_background": true,
+    "styleReferences": [
+      "docs/module_icon_art/original_style_reference.png",
+      "gfx/interface/equipmentdesigner/touhou_modules/source/tank_magic_engine.png"
+    ]
+  }
+]

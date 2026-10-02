@@ -1,0 +1,6 @@
+{
+  "id": "tank_optional_magic_ornamental_armor",
+  "method": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Generate ONE new fantasy game inventory module icon. Subject: an open rectangular wooden music box with a brass winding key and a tiny ivory dancing doll. Touhou component name: 操偶音乐盒. Materials and palette: aged brass, dark brown wood, ivory porcelain and restrained violet crystal accents. Depict precisely the named physical object with its own recognizable outline. Modest hand-painted miniature item cutout, aged muted materials, soft dimensional shading, crisp silhouette, restrained glow only close to the object. One compact horizontal object, three-quarter view, wider than tall, centered, fully visible with generous transparent padding; must read at 56x42 pixels. Simplify details. No whole vehicle, full human character, ground, scene, frame, border, text, letters, numbers, labels or watermark. Truly transparent background. Deliver only this single isolated component.",
+  "generatedSource": "C:/Users/Administrator/.codex/generated_images/01a0f7a0-b3b2-7b60-ba10-16778d10cff1/exec-3fb4f507-1f5d-4e5d-acf8-9dcb7d7281be.png"
+}

@@ -173,258 +173,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/touhou_magic_AT_3_allies.dds"
 	}
 	SpriteType = {
-		name = "GFX_ALI_basic_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_main_battle_tank_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_main_battle_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_modern_td_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_modern_art_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_modern_spaa_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_iw_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_modern_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_basic_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_strategic_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_improved_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_strategic_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_advanced_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_jet_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_ALI_modern_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_strategic_bomber1.dds"
-	}
-	SpriteType = {
 		name = "GFX_ALI_tech_support_medium"
 		texturefile = "gfx/interface/technologies/touhou_support_equipment_1.dds"
 	}
@@ -857,98 +605,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/touhou_wakan_mechanized_equipment_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_DES_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_iw_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DES_modern_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
 		name = "GFX_HAK_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry_equipment_0.dds"
 	}
@@ -1115,158 +771,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_HAK_antitank5_medium"
 		texturefile = "gfx/interface/technologies/touhou_demonforce_AT_3_allies.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_basic_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_basic_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_basic_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_basic_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_basic_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_improved_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_improved_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_improved_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_improved_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_improved_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_advanced_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_advanced_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_advanced_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_advanced_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_advanced_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_super_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_super_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_super_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_super_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HAK_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
 	}
 	SpriteType = {
 		name = "GFX_HAK_tech_support_medium"
@@ -1553,158 +1057,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/touhou_demonforce_AT_3_allies.dds"
 	}
 	SpriteType = {
-		name = "GFX_DLD_basic_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_basic_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_basic_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_basic_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_basic_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_improved_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_improved_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_improved_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_improved_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_improved_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_advanced_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_advanced_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_advanced_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_advanced_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_advanced_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_super_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_super_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_super_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_super_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_DLD_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
-	}
-	SpriteType = {
 		name = "GFX_DLD_tech_support_medium"
 		texturefile = "gfx/interface/technologies/touhou_support_equipment_1.dds"
 	}
@@ -1987,158 +1339,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_HEL_antitank5_medium"
 		texturefile = "gfx/interface/technologies/touhou_demonforce_AT_3_allies.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_basic_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_basic_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_basic_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_basic_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_basic_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_improved_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_improved_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_improved_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_improved_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_improved_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_advanced_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_advanced_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_advanced_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_advanced_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_advanced_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_super_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_super_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_super_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_super_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HEL_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
 	}
 	SpriteType = {
 		name = "GFX_HEL_tech_support_medium"
@@ -2573,98 +1773,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/touhou_wakan_mechanized_equipment_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_SSS_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_iw_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_SSS_modern_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
 		name = "GFX_OPP_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry_equipment_0.dds"
 	}
@@ -2831,158 +1939,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_OPP_antitank5_medium"
 		texturefile = "gfx/interface/technologies/touhou_demonforce_AT_3_allies.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_basic_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_basic_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_basic_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_basic_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_basic_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_improved_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_improved_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_improved_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_improved_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_improved_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_advanced_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_advanced_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_advanced_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_advanced_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_advanced_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_super_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_super_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_super_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_super_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_OPP_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
 	}
 	SpriteType = {
 		name = "GFX_OPP_tech_support_medium"
@@ -3267,158 +2223,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_RAB_antitank5_medium"
 		texturefile = "gfx/interface/technologies/touhou_demonforce_AT_3_allies.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_basic_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_basic_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_basic_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_basic_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_basic_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_improved_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_improved_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_improved_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_improved_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_improved_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_advanced_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_advanced_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_advanced_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_advanced_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_advanced_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_super_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_super_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_super_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_super_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_RAB_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
 	}
 	SpriteType = {
 		name = "GFX_RAB_tech_support_medium"
@@ -3707,258 +2511,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_TEM_antitank5_medium"
 		texturefile = "gfx/interface/technologies/touhou_magic_AT_3_allies.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_main_battle_tank_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_main_battle_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_modern_td_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_modern_art_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_modern_spaa_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_iw_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_modern_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_basic_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_strategic_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_improved_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_strategic_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_advanced_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_jet_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEM_modern_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_strategic_bomber1.dds"
 	}
 	SpriteType = {
 		name = "GFX_TEM_tech_support_medium"
@@ -4393,98 +2945,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/touhou_wakan_mechanized_equipment_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_BLQ_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_iw_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_BLQ_modern_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
 		name = "GFX_KAP_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/touhou_demonforce_infantry_equipment_0.dds"
 	}
@@ -4651,158 +3111,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_KAP_antitank5_medium"
 		texturefile = "gfx/interface/technologies/touhou_demonforce_AT_3_allies.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_basic_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_basic_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_basic_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_basic_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_basic_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_improved_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_improved_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_improved_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_improved_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_improved_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_advanced_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_advanced_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_advanced_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_advanced_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_advanced_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_super_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_super_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_super_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_super_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_KAP_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
 	}
 	SpriteType = {
 		name = "GFX_KAP_tech_support_medium"
@@ -5087,158 +3395,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_TEN_antitank5_medium"
 		texturefile = "gfx/interface/technologies/touhou_demonforce_AT_3_allies.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_basic_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_basic_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_basic_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_basic_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_basic_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_basic_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_improved_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_improved_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_improved_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_improved_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_improved_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_improved_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_advanced_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_advanced_heavy_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_advanced_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_advanced_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_advanced_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_advanced_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_super_heavy_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_super_heavy_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_super_heavy_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_super_heavy_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_super_heavy_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_heavy_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_heavy_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_heavy_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_TEN_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter3.dds"
 	}
 	SpriteType = {
 		name = "GFX_TEN_tech_support_medium"
@@ -5673,98 +3829,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/touhou_wakan_mechanized_equipment_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_HUM_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_iw_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_HUM_modern_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
 		name = "GFX_VAM_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/touhou_magic_infantry_equipment_0.dds"
 	}
@@ -5935,258 +3999,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_VAM_antitank5_medium"
 		texturefile = "gfx/interface/technologies/touhou_magic_AT_3_allies.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_main_battle_tank_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_main_battle_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_modern_td_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_modern_art_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_modern_spaa_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_iw_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_modern_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_basic_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_strategic_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_improved_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_strategic_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_advanced_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_jet_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_VAM_modern_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_strategic_bomber1.dds"
 	}
 	SpriteType = {
 		name = "GFX_VAM_tech_support_medium"
@@ -6475,258 +4287,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_MLS_antitank5_medium"
 		texturefile = "gfx/interface/technologies/touhou_magic_AT_3_allies.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_light_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_light_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_light_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_light_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_light_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_light_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_basic_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_improved_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_medium_td_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_medium_art_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_medium_spaa_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_advanced_medium_tank.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_main_battle_tank_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_main_battle_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_modern_td_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_modern_art_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_modern_spaa_medium"
-		texturefile = "gfx/interface/technologies/goliath_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_iw_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_modern_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_basic_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_strategic_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_improved_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_strategic_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_advanced_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_strategic_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_jet_strategic_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_strategic_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_MLS_modern_large_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_magic_jet_strategic_bomber1.dds"
 	}
 	SpriteType = {
 		name = "GFX_MLS_tech_support_medium"
@@ -7159,98 +4719,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_EVI_mechanised_infantry3_medium"
 		texturefile = "gfx/interface/technologies/touhou_wakan_mechanized_equipment_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_early_fighter_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_iw_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_fighter.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_fighter1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_basic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter1.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_improved_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_fighter3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_advanced_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_fighter3.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_jet_fighter2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_supersonic_small_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_fighter2.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_CAS1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS1.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_CAS2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS2.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_CAS3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_CAS3.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_early_bomber_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_iw_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_early_bomber.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_tactical_bomber1_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_basic_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_improved_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_tactical_bomber3_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_advanced_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber3.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_jet_tactical_bomber2_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
-	}
-	SpriteType = {
-		name = "GFX_EVI_modern_medium_airframe_medium"
-		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
 	}
 	SpriteType = {
 		name = "GFX_touhou_demonforce_infantry_equipment_0_medium"
@@ -11945,6 +9413,414 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/evil_army.dds"
 	}
 	SpriteType = {
+		name = "GFX_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_light_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_medium_tank_chassis_touhou_wakan_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry1.dds"
+	}
+	SpriteType = {
+		name = "GFX_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_light_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_medium_tank_chassis_touhou_wakan_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry2.dds"
+	}
+	SpriteType = {
+		name = "GFX_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_light_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_medium_tank_chassis_touhou_wakan_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_infantry3.dds"
+	}
+	SpriteType = {
 		name = "GFX_small_plane_airframe_touhou_demonforce_small_0_medium"
 		texturefile = "gfx/interface/technologies/touhou_demonforce_early_fighter.dds"
 	}
@@ -14459,6 +12335,686 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_EVI_medium_plane_airframe_touhou_wakan_medium_4_medium"
 		texturefile = "gfx/interface/technologies/touhou_wakan_jet_tactical_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_large_plane_airframe_touhou_wakan_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_large_plane_airframe_touhou_wakan_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_large_plane_airframe_touhou_wakan_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_large_plane_airframe_touhou_wakan_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_large_plane_airframe_touhou_wakan_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_wakan_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_large_plane_airframe_touhou_demonforce_utility_0_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_large_plane_airframe_touhou_demonforce_utility_1_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_large_plane_airframe_touhou_demonforce_utility_2_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_large_plane_airframe_touhou_demonforce_utility_3_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ALI_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DES_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HAK_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DLD_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HEL_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SSS_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_OPP_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RAB_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEM_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BLQ_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KAP_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TEN_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUM_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_VAM_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MLS_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EVI_large_plane_airframe_touhou_demonforce_utility_4_medium"
+		texturefile = "gfx/interface/technologies/touhou_demonforce_heavy_fighter1.dds"
 	}
 	SpriteType = {
 		name = "GFX_touhou_demonforce_heavy_tank_equipment_1_medium"

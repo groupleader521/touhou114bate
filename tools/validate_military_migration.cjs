@@ -43,7 +43,12 @@ for(const m of manifest.models){const n=eq.get(m.id);if(!n){errors.push('Missing
   if(retired.has(a))errors.push('Retired archetype '+a);
   if(S(n,'is_archetype')==='yes')errors.push('Custom archetype retained '+m.id);
   if(!C(n,'can_be_produced').length)errors.push('Missing country/research production gate '+m.id);
-  if(S(n,'active')!==(m.modularHull||m.armorChassis||m.airframe?'yes':'no'))errors.push('Wrong national model/chassis initialization '+m.id);
+  if(S(n,'active')!==(m.modularHull?'yes':'no'))errors.push('Wrong national model/chassis initialization '+m.id);
+  if(m.armorChassis||m.airframe){
+    const parent=S(n,'parent');if(parent&&nativeEquipmentIds.has(parent))errors.push('Custom frame extends native upgrade chain '+m.id+' '+parent);
+    const plan=m.armorChassis?manifest.armor:manifest.aircraft;
+    if(!plan.licenses.some(l=>l.equipment.includes(m.id)))errors.push('Inactive custom frame has no national activation license '+m.id);
+  }
   if(!m.armorChassis&&!m.airframe&&!C(n,'can_be_produced')[0].value.some(c=>c.key==='has_country_flag'&&c.value==='touhou_registered_model_'+m.id))errors.push('Missing national production registration gate '+m.id);
   if(S(n,'carrier_capable')!==undefined&&S(n,'carrier_capable')!==(property(eq.get(a),'carrier_capable')||'no'))errors.push('Illegal carrier_capable override '+m.id);
 }
@@ -56,7 +61,7 @@ for(const folder of ['common','events','history/countries','history/units','inte
     if(n.key&&Object.keys(manifest.units).some(id=>n.key.includes('army_sub_unit_'+id+'_')))errors.push(rel+': retired unit modifier '+n.key);
     if(n.key==='has_tech'&&!tech.has(n.value))errors.push(rel+': unresolved has_tech '+n.value);
     if(n.key==='set_technology')for(const c of n.value)if(c.key&&c.key!=='popup'&&!tech.has(c.key))errors.push(rel+': unresolved set_technology '+c.key);
-    if(n.key==='enable_equipments')for(const c of n.value)if(!eq.has(c.value))errors.push(rel+': unresolved equipment unlock '+c.value);
+    if(n.key==='enable_equipments')for(const c of n.value)if(c.key===null&&typeof c.value==='string'&&!eq.has(c.value))errors.push(rel+': unresolved equipment unlock '+c.value);
     if(n.key==='create_equipment_variant'&&!eq.has(S(n,'type')))errors.push(rel+': unresolved design type '+S(n,'type'));
     if(n.key==='enable_subunits')for(const c of n.value)if(typeof c.value==='string'&&!units.has(c.value))errors.push(rel+': unresolved unit unlock '+c.value);
     if(['regiments','support'].includes(parent)&&n.key&&!units.has(n.key))errors.push(rel+': unresolved template unit '+n.key);
@@ -68,10 +73,17 @@ for(const folder of ['common','events','history/countries','history/units','inte
 }
 // Native technology equipment/module unlock lists must exactly match the installed game.
 const vanillaTechnology=new Map(h.definitions(game,'common/technologies','technologies').map(n=>[n.key,n]));
+const localTechnology=h.definitions(root,'common/technologies','technologies');
+const nativeTechnologyOverrides=localTechnology.filter(t=>vanillaTechnology.has(t.key));
+for(const t of nativeTechnologyOverrides)errors.push('Native technology definition override '+t.key);
+const nativeTechnologyFileOverrides=[...new Set([...vanillaTechnology.values()].map(t=>path.relative(game,t.file).replaceAll('\\','/')))].filter(file=>fs.existsSync(path.join(root,file)));
+for(const file of nativeTechnologyFileOverrides)errors.push('Native technology source file override '+file);
 let nativeUnlockListsChecked=0;
-for(const t of h.definitions(root,'common/technologies','technologies'))if(vanillaTechnology.has(t.key))for(const key of ['enable_equipments','enable_equipment_modules']){
-  const actual=C(t,key).flatMap(n=>n.value).map(n=>n.value),expected=C(vanillaTechnology.get(t.key),key).flatMap(n=>n.value).map(n=>n.value);
-  nativeUnlockListsChecked++;if(JSON.stringify(actual)!==JSON.stringify(expected))errors.push('Modified native '+key+' list '+t.key);
+const effectiveTechnology=new Map([...vanillaTechnology,...localTechnology.map(t=>[t.key,t])]);
+for(const t of effectiveTechnology.values())if(vanillaTechnology.has(t.key))for(const key of ['enable_equipments','enable_equipment_modules']){
+  // Render the complete blocks, including native DLC limits, without parser source offsets.
+  const actual=h.render(C(t,key)),expected=h.render(C(vanillaTechnology.get(t.key),key));
+  nativeUnlockListsChecked++;if(actual!==expected)errors.push('Modified native '+key+' list '+t.key);
 }
 const militaryEffects=h.parse(fs.readFileSync(path.join(root,'common/scripted_effects/touhou_vanilla_military.txt'),'utf8'));
 const registration=militaryEffects.find(n=>n.key==='touhou_register_country_equipment');
@@ -143,7 +155,12 @@ else {
   for(const r of presentation.research) {
     checkAlias(r.tag+'_'+r.id);
     if(r.descriptionSource)checkAlias(r.tag+'_'+r.id+'_desc');
-    if(!displaySprites.has('GFX_'+r.tag+'_'+r.id+'_medium'))errors.push('Missing original technology icon '+r.tag+' '+r.id);
+    const sprite='GFX_'+r.tag+'_'+r.id+'_medium';
+    if(r.nativeVisual){if(displaySprites.has(sprite))errors.push('Research fallback repaints native equipment '+sprite);}
+    else if(!displaySprites.has(sprite))errors.push('Missing original technology icon '+r.tag+' '+r.id);
+  }
+  for(const id of presentation.sharedDesignerVisuals||[])for(const tag of ['ALI','DES','HAK','DLD','HEL','SSS','OPP','RAB','TEM','BLQ','KAP','TEN','HUM','VAM','MLS','EVI']){
+    if(displaySprites.has('GFX_'+tag+'_'+id+'_medium'))errors.push('Shared research sprite overrides native frame fallback '+tag+' '+id);
   }
   for(const m of manifest.models){checkAlias(m.id);if(!displaySprites.has('GFX_'+m.id+'_medium'))errors.push('Missing retained model icon '+m.id);}
   for(const display of presentation.equipment){
@@ -169,6 +186,13 @@ else {
     const effect=C(localTechnologies.get(info.technology),'on_research_complete')[0];
     if(!h.render([effect]).includes('custom_effect_tooltip = '+key))errors.push('Unconnected research model tooltip '+key);
   }
+  for(const [key,info] of Object.entries(presentation.moduleTooltips||{})){
+    checkAlias(key);
+    for(const id of info.modules)if(!locValues.get(key)?.includes('$'+id+'$'))errors.push('Research tooltip omits optional module '+id);
+    const effect=C(localTechnologies.get(info.technology),'on_research_complete')[0];
+    const script=effect?h.render([effect]):'';
+    if(!script.includes('custom_effect_tooltip = '+key)||!script.includes('touhou_sync_vanilla_military = yes'))errors.push('Unconnected research module tooltip/synchronization '+key);
+  }
   if(presentation.nativeEquipment.length)errors.push('Presentation must not customize native equipment');
   for(const r of presentation.sprites)if(!fs.existsSync(path.join(root,r.texture))&&!fs.existsSync(path.join(game,r.texture)))errors.push('Missing display texture '+r.name+' '+r.texture);
 }
@@ -186,6 +210,12 @@ const aircraftResult=require('./aircraft_validation.cjs').validateAircraft({root
 numericChecks+=aircraftResult.numericChecks;
 if(aircraftResult.blueprintValues)fs.writeFileSync(path.join(root,'docs/飞机预设装配数值.json'),JSON.stringify(aircraftResult.blueprintValues,null,2)+'\n');
 delete aircraftResult.blueprintValues;
-const result={checkedFiles,retainedOriginalModels:values.regular.length+values.special.length,totalModels:localEq.length,numericChecks,armor:armorResult,aircraft:aircraftResult,countryUnlocks:{nativeUnlockListsChecked,registeredModels:registeredDesigns.length,finishedDesigns:manifest.models.filter(m=>!m.modularHull&&!m.armorChassis&&!m.airframe).length,projectGatedModularHulls:manifest.models.filter(m=>m.modularHull).length},nativeEquipmentProtection:{definitionOverrides:nativeOverrides.definitions.length,localisationOverrides:nativeOverrides.localisation.length,iconOverrides:nativeOverrides.icons.length},presentation: presentation?{countryTechnologyMappings:presentation.research.length,retainedModelIcons:presentation.equipment.length,spriteAliases:presentation.sprites.length,countryEquipmentNames:presentation.equipment.length*16,researchModelTooltips:Object.keys(presentation.equipmentTooltips||{}).length}:null,errors:[...new Set(errors)],warnings};
+const moduleIcons=require('./module_icon_art.cjs').validateAllModuleArt({root,game,manifest,errors});
+const categoryIcons=require('./module_category_icons.cjs').validateCategoryIcons({root,manifest,errors});
+const optionalModules=require('./optional_module_validation.cjs').validateOptionalModules({root,game,manifest,eq,errors});
+const result={checkedFiles,retainedOriginalModels:values.regular.length+values.special.length,totalModels:localEq.length,numericChecks,armor:armorResult,aircraft:aircraftResult,countryUnlocks:{nativeUnlockListsChecked,registeredModels:registeredDesigns.length,finishedDesigns:manifest.models.filter(m=>!m.modularHull&&!m.armorChassis&&!m.airframe).length,projectGatedModularHulls:manifest.models.filter(m=>m.modularHull).length},nativeTechnologyProtection:{definitionOverrides:nativeTechnologyOverrides.length,sourceFileOverrides:nativeTechnologyFileOverrides.length},nativeEquipmentProtection:{definitionOverrides:nativeOverrides.definitions.length,localisationOverrides:nativeOverrides.localisation.length,iconOverrides:nativeOverrides.icons.length},presentation: presentation?{countryTechnologyMappings:presentation.research.length,retainedModelIcons:presentation.equipment.length,spriteAliases:presentation.sprites.length,countryEquipmentNames:presentation.equipment.length*16,researchModelTooltips:Object.keys(presentation.equipmentTooltips||{}).length}:null,errors:[...new Set(errors)],warnings};
+result.moduleIcons=moduleIcons;
+result.categoryIcons=categoryIcons;
+result.optionalModules=optionalModules;
 fs.writeFileSync(path.join(root,'docs/幻想乡军事原版化校验.json'),JSON.stringify(result,null,2)+'\n');
 console.log(JSON.stringify(result,null,2));if(result.errors.length)process.exitCode=1;
