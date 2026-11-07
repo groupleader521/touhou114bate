@@ -1,9 +1,23 @@
 {
-  "date": "2026-10-02",
+  "nativeCombatTacticsSourceOverrides": 0,
   "nativeTechnologySourceOverrides": 0,
-  "remainingTextSourceOverrides": 12,
+  "remainingTextSourceOverrides": 25,
   "generatedSourceOverrides": [
-    "common/script_enums.txt"
+    "common/script_enums.txt",
+    "common/scripted_effects/INS_scripted_effects.txt",
+    "common/units/equipment/amphibious_mechanized.txt",
+    "common/units/equipment/anti_air.txt",
+    "common/units/equipment/anti_tank.txt",
+    "common/units/equipment/artillery.txt",
+    "common/units/equipment/convoys.txt",
+    "common/units/equipment/helicopter.txt",
+    "common/units/equipment/infantry.txt",
+    "common/units/equipment/mechanized.txt",
+    "common/units/equipment/motorized.txt",
+    "common/units/equipment/specialist_armored_vehicles.txt",
+    "common/units/equipment/support.txt",
+    "common/units/equipment/trains.txt",
+    "events/TOA_Generic_Events.txt"
   ],
   "overrides": [
     {
@@ -12,14 +26,79 @@
       "reason": "幻想乡开局书签和默认国家。"
     },
     {
-      "file": "common/combat_tactics.txt",
-      "identical": false,
-      "reason": "该系统读取根目录单文件；保留幻想乡战术与反制关系。"
-    },
-    {
       "file": "common/script_enums.txt",
       "identical": false,
       "reason": "该系统读取根目录单文件；原版枚举保留，仅追加专用型号的装备加成键。"
+    },
+    {
+      "file": "common/scripted_effects/INS_scripted_effects.txt",
+      "identical": false,
+      "reason": "已逐字与结构校验：仅增加缺失事件目标或重复宣战保护，其余原版内容保持。"
+    },
+    {
+      "file": "common/units/equipment/amphibious_mechanized.txt",
+      "identical": false,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "common/units/equipment/anti_air.txt",
+      "identical": false,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "common/units/equipment/anti_tank.txt",
+      "identical": false,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "common/units/equipment/artillery.txt",
+      "identical": false,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "common/units/equipment/convoys.txt",
+      "identical": true,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "common/units/equipment/helicopter.txt",
+      "identical": false,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "common/units/equipment/infantry.txt",
+      "identical": false,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "common/units/equipment/mechanized.txt",
+      "identical": false,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "common/units/equipment/motorized.txt",
+      "identical": false,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "common/units/equipment/specialist_armored_vehicles.txt",
+      "identical": false,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "common/units/equipment/support.txt",
+      "identical": false,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "common/units/equipment/trains.txt",
+      "identical": false,
+      "reason": "已逐字校验：仅增加有可用幻想乡替代型号时的生产过滤，其余内容与当前原版一致。"
+    },
+    {
+      "file": "events/TOA_Generic_Events.txt",
+      "identical": false,
+      "reason": "已逐字与结构校验：仅增加缺失事件目标或重复宣战保护，其余原版内容保持。"
     },
     {
       "file": "gfx/loadingscreens/load_1.dds",

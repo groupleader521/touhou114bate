@@ -1,0 +1,32 @@
+# Called only after touhou_can_spawn_makai. State transfer creates the dormant tag.
+touhou_create_makai_country_effect = {
+    set_global_flag = touhou_makai_spawned
+    681 = {
+        add_core_of = MKI
+        transfer_state_to = MKI
+    }
+    MKI = {
+        set_capital = { state = 681 remember_old_capital = no }
+        set_country_flag = touhou_god_of_makai_country_flag
+        set_research_slots = 0
+        set_politics = { ruling_party = fascism elections_allowed = no }
+        touhou_boss_get_characters_effect = yes
+        add_ideas = {
+            touhou_god_of_makai_ideas_General
+            touhou_god_of_makai_ideas_Equipment
+            touhou_god_of_makai_ideas_Military
+            touhou_god_of_makai_ideas_Land_combat
+            touhou_god_of_makai_ideas_Navy_and_Air
+        }
+        add_timed_idea = { idea = touhou_god_of_makai_ideas_speed days = 500 }
+    }
+}
+
+touhou_start_makai_invasion_effect = {
+    if = {
+        limit = { touhou_can_spawn_makai = yes }
+        touhou_create_makai_country_effect = yes
+        add_timed_idea = { idea = touhou_god_of_makai_ideas_preparation days = 360 }
+        MKI = { country_event = { id = touhou_devildom.1 } }
+    }
+}

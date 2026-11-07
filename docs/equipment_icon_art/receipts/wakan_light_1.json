@@ -1,0 +1,7 @@
+{
+  "id": "wakan_light_1",
+  "method": "built-in image_gen",
+  "generated": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b3cf-a7cb-72e1-a68b-e1a30db6bdf8\\exec-1321e719-062f-45f6-95be-72b309e7d814.png",
+  "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_light_1.png",
+  "prompt": "Use case: stylized-concept. Generate ONE transparent game equipment inventory illustration for a Touhou Hearts of Iron IV mod. Subject: an early LIGHT spirit-enchanted tank chassis, compact complete bronze tracked vehicle with a small turret and short purification cannon, ivory ofuda paper charms and red binding cords attached to actual armor plates, subtle pale-blue spirit core. Clearly a whole light tank, NOT infantry talisman alone. Muted bronze, ivory, pale blue, hand-painted strategy-game miniature style, crisp large silhouette readable at 160x100 pixels. Three-quarter side view, vehicle pointing left, horizontal composition, isolated entirely visible with 12 percent transparent margin. No people, no backdrop, no ground plane, no cast shadow outside object, no text, no numerals, no UI frame. Real transparent alpha. Single asset only."
+}

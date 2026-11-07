@@ -1,0 +1,1 @@
+# Definitions moved to zz_makai_equipment.txt so native archetypes load first.

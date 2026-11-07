@@ -1,0 +1,7 @@
+{
+  "id": "amphibious_drive",
+  "method": "built-in image_gen",
+  "generated": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b3cf-a7cb-72e1-a68b-e1a30db6bdf8\\exec-48fff364-5844-4e4f-aca3-e1fb767d3dc9.png",
+  "source": "gfx/interface/technologies/touhou_equipment_art/source/amphibious_drive.png",
+  "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One compact amphibious propulsion module: paired bronze marine propellers, short drive shaft and sealed gearbox bound with ivory ofuda and pale-blue crystals. No armor plate or vehicle."
+}

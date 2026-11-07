@@ -1,0 +1,445 @@
+{
+  "version": 2,
+  "initialUnlocks": true,
+  "startingProjects": {
+    "EVI": [
+      "sp_touhou_evil_army"
+    ]
+  },
+  "oldSaveAutoCompletion": false,
+  "projects": [
+    {
+      "id": "sp_touhou_suicide_puppet_craft_1",
+      "legacy": "suicide_puppet_craft_1",
+      "owner": "ALI",
+      "route": "magic",
+      "state": 1094,
+      "specialization": "air",
+      "name": "神风人偶",
+      "techs": [
+        "basic_small_airframe",
+        "radio"
+      ],
+      "dlc": "By Blood Alone",
+      "parent": null,
+      "equipment": "suicide_puppet_equipment_1",
+      "source": "https://thwiki.cc/东方求闻史纪/爱丽丝·玛格特洛依德/中日对照",
+      "requiredDLCs": [
+        "By Blood Alone"
+      ],
+      "lore": "原作依据：爱丽丝以魔法操纵人偶，居住于魔法森林；非想天则出现试验中「歌利亚人偶」。模组设计：将人偶工坊作为研发据点，神风与战略导弹、各级军用歌利亚是本模组的军事化分支。"
+    },
+    {
+      "id": "sp_touhou_suicide_puppet_craft_2",
+      "legacy": "suicide_puppet_craft_2",
+      "owner": "ALI",
+      "route": "magic",
+      "state": 1094,
+      "specialization": "air",
+      "name": "人偶战略导弹",
+      "techs": [
+        "experimental_rockets",
+        "radio_detection"
+      ],
+      "dlc": "Gotterdammerung",
+      "parent": "sp_touhou_suicide_puppet_craft_1",
+      "equipment": "suicide_puppet_equipment_2",
+      "source": "https://thwiki.cc/东方非想天则/爱丽丝·玛格特洛依德",
+      "requiredDLCs": [
+        "Gotterdammerung",
+        "By Blood Alone"
+      ],
+      "lore": "原作依据：爱丽丝以魔法操纵人偶，居住于魔法森林；非想天则出现试验中「歌利亚人偶」。模组设计：将人偶工坊作为研发据点，神风与战略导弹、各级军用歌利亚是本模组的军事化分支。"
+    },
+    {
+      "id": "sp_touhou_goliath_0",
+      "legacy": "goliath_0",
+      "owner": "ALI",
+      "route": "magic",
+      "state": 1094,
+      "specialization": "land",
+      "name": "人偶巨大化计划",
+      "techs": [
+        "gwtank_chassis"
+      ],
+      "dlc": "No Step Back",
+      "parent": null,
+      "equipment": "goliath_equipment_1",
+      "source": "https://thwiki.cc/东方非想天则/爱丽丝·玛格特洛依德",
+      "requiredDLCs": [
+        "No Step Back"
+      ],
+      "lore": "原作依据：爱丽丝以魔法操纵人偶，居住于魔法森林；非想天则出现试验中「歌利亚人偶」。模组设计：将人偶工坊作为研发据点，神风与战略导弹、各级军用歌利亚是本模组的军事化分支。"
+    },
+    {
+      "id": "sp_touhou_goliath_1",
+      "legacy": "goliath_1",
+      "owner": "ALI",
+      "route": "magic",
+      "state": 1094,
+      "specialization": "land",
+      "name": "歌利亚试验型",
+      "techs": [
+        "basic_heavy_tank_chassis"
+      ],
+      "dlc": "No Step Back",
+      "parent": "sp_touhou_goliath_0",
+      "equipment": "goliath_equipment_1",
+      "source": "https://thwiki.cc/东方非想天则/爱丽丝·玛格特洛依德",
+      "requiredDLCs": [
+        "No Step Back"
+      ],
+      "lore": "原作依据：爱丽丝以魔法操纵人偶，居住于魔法森林；非想天则出现试验中「歌利亚人偶」。模组设计：将人偶工坊作为研发据点，神风与战略导弹、各级军用歌利亚是本模组的军事化分支。"
+    },
+    {
+      "id": "sp_touhou_goliath_2",
+      "legacy": "goliath_2",
+      "owner": "ALI",
+      "route": "magic",
+      "state": 1094,
+      "specialization": "land",
+      "name": "歌利亚改良型",
+      "techs": [
+        "improved_heavy_tank_chassis"
+      ],
+      "dlc": "No Step Back",
+      "parent": "sp_touhou_goliath_1",
+      "equipment": "goliath_equipment_2",
+      "source": "https://thwiki.cc/东方非想天则/爱丽丝·玛格特洛依德",
+      "requiredDLCs": [
+        "No Step Back"
+      ],
+      "lore": "原作依据：爱丽丝以魔法操纵人偶，居住于魔法森林；非想天则出现试验中「歌利亚人偶」。模组设计：将人偶工坊作为研发据点，神风与战略导弹、各级军用歌利亚是本模组的军事化分支。"
+    },
+    {
+      "id": "sp_touhou_goliath_3",
+      "legacy": "goliath_3",
+      "owner": "ALI",
+      "route": "magic",
+      "state": 1094,
+      "specialization": "land",
+      "name": "歌利亚完成型",
+      "techs": [
+        "advanced_heavy_tank_chassis"
+      ],
+      "dlc": "No Step Back",
+      "parent": "sp_touhou_goliath_2",
+      "equipment": "goliath_equipment_3",
+      "source": "https://thwiki.cc/东方非想天则/爱丽丝·玛格特洛依德",
+      "requiredDLCs": [
+        "No Step Back"
+      ],
+      "lore": "原作依据：爱丽丝以魔法操纵人偶，居住于魔法森林；非想天则出现试验中「歌利亚人偶」。模组设计：将人偶工坊作为研发据点，神风与战略导弹、各级军用歌利亚是本模组的军事化分支。"
+    },
+    {
+      "id": "sp_touhou_goliath_4",
+      "legacy": "goliath_4",
+      "owner": "ALI",
+      "route": "magic",
+      "state": 1094,
+      "specialization": "land",
+      "name": "歌利亚人偶",
+      "techs": [
+        "super_heavy_tank_chassis"
+      ],
+      "dlc": "No Step Back",
+      "parent": "sp_touhou_goliath_3",
+      "equipment": "goliath_equipment_4",
+      "source": "https://thwiki.cc/东方非想天则/爱丽丝·玛格特洛依德",
+      "requiredDLCs": [
+        "No Step Back"
+      ],
+      "lore": "原作依据：爱丽丝以魔法操纵人偶，居住于魔法森林；非想天则出现试验中「歌利亚人偶」。模组设计：将人偶工坊作为研发据点，神风与战略导弹、各级军用歌利亚是本模组的军事化分支。"
+    },
+    {
+      "id": "sp_touhou_tengu_fighter",
+      "legacy": "tengu_fighter",
+      "owner": "TEN",
+      "route": "demonforce",
+      "state": 1084,
+      "specialization": "air",
+      "name": "风神之翼",
+      "techs": [
+        "basic_small_airframe",
+        "radio"
+      ],
+      "dlc": "By Blood Alone",
+      "parent": null,
+      "equipment": "tengu_fighter_equipment_0",
+      "source": "https://thwiki.cc/东方求闻史纪/天狗",
+      "requiredDLCs": [
+        "By Blood Alone"
+      ],
+      "lore": "原作依据：天狗活动于妖怪之山，具有强大的飞行能力和高度组织化社会。模组设计：风神之翼归妖力航空路线，必须控制天狗据点。"
+    },
+    {
+      "id": "sp_touhou_oni_champion",
+      "legacy": "oni_champion",
+      "owner": "HEL",
+      "route": "demonforce",
+      "state": 1096,
+      "specialization": "land",
+      "name": "妖力复合装甲",
+      "techs": [
+        "gwtank_chassis",
+        "basic_heavy_tank_chassis"
+      ],
+      "dlc": "No Step Back",
+      "parent": null,
+      "equipment": "oni_champion_equipment_0",
+      "source": "https://thwiki.cc/东方求闻口授/星熊勇仪",
+      "requiredDLCs": [
+        "No Step Back"
+      ],
+      "lore": "原作依据：星熊勇仪活动于旧地狱，以怪力乱神能力著称。模组设计：将鬼族强韧体能转化为妖力复合装甲研发，并要求重型底盘基础。"
+    },
+    {
+      "id": "sp_touhou_cas_boli_fighter",
+      "legacy": "cas_boli_fighter",
+      "owner": "BLQ",
+      "route": "wakan",
+      "state": 1101,
+      "specialization": "air",
+      "name": "现世阴阳玉",
+      "techs": [
+        "basic_small_airframe"
+      ],
+      "dlc": "By Blood Alone",
+      "parent": null,
+      "equipment": "cas_boli_equipment_0",
+      "source": "https://thwiki.cc/东方求闻史纪/博丽灵梦",
+      "requiredDLCs": [
+        "By Blood Alone"
+      ],
+      "lore": "原作依据：博丽灵梦是博丽神社巫女，能够在空中飞行并承担结界维护。模组设计：现世阴阳玉归灵力航空，必须控制博丽神社据点。"
+    },
+    {
+      "id": "sp_touhou_desires_bomber",
+      "legacy": "desires_bomber",
+      "owner": "DES",
+      "route": "wakan",
+      "state": 1099,
+      "specialization": "air",
+      "name": "诡道符咒",
+      "techs": [
+        "basic_large_airframe"
+      ],
+      "dlc": "By Blood Alone",
+      "parent": null,
+      "equipment": "desires_equipment_0",
+      "source": "https://thwiki.cc/东方求闻口授/丰聪耳神子",
+      "requiredDLCs": [
+        "By Blood Alone"
+      ],
+      "lore": "原作依据：丰聪耳神子是修道的仙人，能理解多人的话语和欲望。模组设计：诡道符咒归本项目既有灵力路线；轰炸装备和航空门槛不是原作设定。"
+    },
+    {
+      "id": "sp_touhou_evil_army",
+      "legacy": "evil_army",
+      "owner": "EVI",
+      "route": "wakan",
+      "state": 1082,
+      "specialization": "land",
+      "name": "妖精军备计划",
+      "techs": [
+        "infantry_weapons1"
+      ],
+      "dlc": null,
+      "parent": null,
+      "equipment": "evil_equipment_0",
+      "source": "https://thwiki.cc/东方求闻史纪/妖精",
+      "requiredDLCs": [],
+      "lore": "原作依据：妖精体现自然现象，具有受伤后再生的特性。模组设计：妖精军备沿用灵力路线与本模组妖精国家首都；妖精国开局已完成本项目，用于装备既有部队，其他国家仍须研发。"
+    },
+    {
+      "id": "sp_touhou_human_army",
+      "legacy": "human_army",
+      "owner": "HUM",
+      "route": "wakan",
+      "state": 1105,
+      "specialization": "land",
+      "name": "卫队装备",
+      "techs": [
+        "infantry_weapons1"
+      ],
+      "dlc": null,
+      "parent": null,
+      "equipment": "human_equipment_0",
+      "source": "https://thwiki.cc/东方求闻史纪/上白泽慧音",
+      "requiredDLCs": [],
+      "lore": "原作依据：上白泽慧音生活在人类村落并从事教育。模组设计：卫队装备需要控制人类村落，并完成步兵武器基础；归类沿用本国灵力路线。"
+    },
+    {
+      "id": "sp_touhou_DLD_animal",
+      "legacy": "DLD_animal",
+      "owner": "DLD",
+      "route": "demonforce",
+      "state": 1097,
+      "specialization": "land",
+      "name": "心灵控制器",
+      "techs": [
+        "radio",
+        "tech_support"
+      ],
+      "dlc": null,
+      "parent": null,
+      "equipment": "animal_equipment_0",
+      "source": "https://thwiki.cc/东方求闻口授/古明地觉",
+      "requiredDLCs": [],
+      "lore": "原作依据：古明地觉住在地灵殿，具有读心能力，也能理解动物。模组设计：心灵控制器借用这组能力与据点关联，实际的军用控制器不是原作器械。"
+    },
+    {
+      "id": "sp_touhou_dragon",
+      "legacy": "dragon",
+      "owner": "VAM",
+      "route": "magic",
+      "state": 1106,
+      "specialization": "land",
+      "name": "龙虎卫装备",
+      "techs": [
+        "infantry_weapons1",
+        "tech_support"
+      ],
+      "dlc": null,
+      "parent": null,
+      "equipment": "dragon_equipment_0",
+      "source": "https://thwiki.cc/东方求闻史纪/蕾米莉亚·斯卡蕾特",
+      "requiredDLCs": [],
+      "lore": "原作依据：蕾米莉亚居于红魔馆，吸血鬼具有强大身体能力。模组设计：龙虎卫装备沿用红魔馆既有魔力路线，需要本国据点与步兵、支援技术；并非制造原作的龙。"
+    },
+    {
+      "id": "sp_touhou_die",
+      "legacy": "die",
+      "owner": "OPP",
+      "route": "demonforce",
+      "state": 1098,
+      "specialization": "land",
+      "name": "收割者",
+      "techs": [
+        "motorised_infantry"
+      ],
+      "dlc": null,
+      "parent": null,
+      "equipment": "die_equipment_0",
+      "source": "https://thwiki.cc/东方求闻史纪/小野塚小町/中日对照",
+      "requiredDLCs": [],
+      "lore": "原作依据：小野塚小町是三途河摆渡人，使用大镰刀并能操纵距离。模组设计：收割者归本国妖力路线并要求机动基础，沿用本模组彼岸国家首都。"
+    },
+    {
+      "id": "sp_touhou_rabbit_team",
+      "legacy": "rabbit_team",
+      "owner": "RAB",
+      "route": "demonforce",
+      "state": 1104,
+      "specialization": "land",
+      "name": "月都参谋连用车",
+      "techs": [
+        "tech_support",
+        "radio",
+        "motorised_infantry"
+      ],
+      "dlc": null,
+      "parent": null,
+      "equipment": "rabbit_team_equipment_0",
+      "source": "https://thwiki.cc/东方求闻史纪/铃仙·优昙华院·因幡",
+      "requiredDLCs": [],
+      "lore": "原作依据：铃仙与其他兔子联系密切，活动于迷途竹林。模组设计：月都参谋连用车属于军用通信、机动支援，归本国妖力路线；原作并无该型号车辆。"
+    },
+    {
+      "id": "sp_touhou_deep_sea",
+      "legacy": "deep_sea",
+      "owner": "KAP",
+      "route": "demonforce",
+      "state": 1083,
+      "specialization": "naval",
+      "name": "便携式淡化设备",
+      "techs": [
+        "early_ship_hull_submarine"
+      ],
+      "dlc": "Man the Guns",
+      "parent": null,
+      "equipment": "deep_sea_equipment_0",
+      "source": "https://thwiki.cc/东方求闻口授/河城荷取",
+      "requiredDLCs": [
+        "Man the Guns"
+      ],
+      "lore": "原作依据：河城荷取活动于玄武涧，河童精于制作道具并拥有操纵水的能力。模组设计：海军水下设备要求河童据点及潜艇基础，沿用妖力路线。"
+    },
+    {
+      "id": "sp_touhou_soul",
+      "legacy": "soul",
+      "owner": "HAK",
+      "route": "demonforce",
+      "state": 1100,
+      "specialization": "land",
+      "name": "白玉楼移动补给站",
+      "techs": [
+        "tech_support",
+        "motorised_infantry"
+      ],
+      "dlc": null,
+      "parent": null,
+      "equipment": "soul_equipment_0",
+      "source": "https://thwiki.cc/东方求闻史纪/西行寺幽幽子",
+      "requiredDLCs": [],
+      "lore": "原作依据：幽幽子居于冥界白玉楼并管理幽灵。模组设计：移动补给站把白玉楼作为研发据点，要求支援与机动技术；军需装备是模组扩展。"
+    },
+    {
+      "id": "sp_touhou_wunv",
+      "legacy": "wunv",
+      "owner": "SSS",
+      "route": "wakan",
+      "state": 1107,
+      "specialization": "land",
+      "name": "未来医疗设备",
+      "techs": [
+        "tech_support",
+        "tech_field_hospital"
+      ],
+      "dlc": null,
+      "parent": null,
+      "equipment": "wunv_equipment_0",
+      "source": "https://thwiki.cc/东方求闻口授/东风谷早苗",
+      "requiredDLCs": [],
+      "lore": "原作依据：早苗居于守矢神社，有引发奇迹的能力。模组设计：未来医疗设备归既有灵力路线，并要求野战医院基础；不把模组医疗器械称为原作科技。"
+    },
+    {
+      "id": "sp_touhou_lotus",
+      "legacy": "lotus",
+      "owner": "TEM",
+      "route": "magic",
+      "state": 1102,
+      "specialization": "naval",
+      "name": "星莲船",
+      "techs": [
+        "early_ship_hull_carrier"
+      ],
+      "dlc": "Man the Guns",
+      "parent": null,
+      "equipment": "lotus_equipment_0",
+      "source": "https://thwiki.cc/东方求闻口授/村纱水蜜",
+      "requiredDLCs": [
+        "Man the Guns"
+      ],
+      "lore": "原作依据：村纱水蜜是船幽灵，与命莲寺有关联。模组设计：星莲船归命莲寺既有魔力路线，要求航母船体基础；海军装备性能与研发门槛由模组定义。"
+    },
+    {
+      "id": "sp_touhou_magician",
+      "legacy": "magician",
+      "owner": "MLS",
+      "route": "magic",
+      "state": 1093,
+      "specialization": "land",
+      "name": "超·极限花火",
+      "techs": [
+        "artillery2"
+      ],
+      "dlc": null,
+      "parent": null,
+      "equipment": "magician_equipment_0",
+      "source": "https://thwiki.cc/东方求闻史纪/雾雨魔理沙",
+      "requiredDLCs": [],
+      "lore": "原作依据：魔理沙住在魔法森林，擅长光与热的魔法并持续进行魔法实验。模组设计：超·极限花火以其据点和魔力路线为基础，需要火炮技术支撑。"
+    }
+  ]
+}

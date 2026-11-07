@@ -1,0 +1,1343 @@
+# Native facility projects. Route + homeland + prerequisite research are mandatory.
+sp_touhou_suicide_puppet_craft_1 = {
+	specialization = specialization_air
+	icon = GFX_small_plane_airframe_touhou_suicide_puppet_equipment_1_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "By Blood Alone"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_magic_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1094
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = basic_small_airframe
+			has_tech = radio
+		}
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+			aluminium = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_suicide_puppet_craft_1_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_suicide_puppet_craft_2 = {
+	specialization = specialization_air
+	icon = GFX_suicide_puppet_equipment_2_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "Gotterdammerung"
+		has_dlc = "By Blood Alone"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_magic_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1094
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = experimental_rockets
+			has_tech = radio_detection
+		}
+	}
+	special_project_parent = {
+		sp_touhou_suicide_puppet_craft_1
+	}
+	breakthrough_cost = {
+		specialization_air = 2
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+			aluminium = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_suicide_puppet_craft_2_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_goliath_0 = {
+	specialization = specialization_land
+	icon = GFX_heavy_tank_chassis_touhou_goliath_1_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "No Step Back"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_magic_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1094
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = gwtank_chassis
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_goliath_0_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_goliath_1 = {
+	specialization = specialization_land
+	icon = GFX_heavy_tank_chassis_touhou_goliath_1_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "No Step Back"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_magic_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1094
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = basic_heavy_tank_chassis
+		}
+	}
+	special_project_parent = {
+		sp_touhou_goliath_0
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_goliath_1_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_goliath_2 = {
+	specialization = specialization_land
+	icon = GFX_heavy_tank_chassis_touhou_goliath_2_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "No Step Back"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_magic_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1094
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = improved_heavy_tank_chassis
+		}
+	}
+	special_project_parent = {
+		sp_touhou_goliath_1
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_goliath_2_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_goliath_3 = {
+	specialization = specialization_land
+	icon = GFX_heavy_tank_chassis_touhou_goliath_3_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "No Step Back"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_magic_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1094
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = advanced_heavy_tank_chassis
+		}
+	}
+	special_project_parent = {
+		sp_touhou_goliath_2
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_goliath_3_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_goliath_4 = {
+	specialization = specialization_land
+	icon = GFX_heavy_tank_chassis_touhou_goliath_4_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "No Step Back"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_magic_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1094
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = super_heavy_tank_chassis
+		}
+	}
+	special_project_parent = {
+		sp_touhou_goliath_3
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_goliath_4_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_tengu_fighter = {
+	specialization = specialization_air
+	icon = GFX_small_plane_airframe_touhou_tengu_fighter_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "By Blood Alone"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_demonforce_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1084
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = basic_small_airframe
+			has_tech = radio
+		}
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+			aluminium = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_tengu_fighter_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_oni_champion = {
+	specialization = specialization_land
+	icon = GFX_heavy_tank_chassis_touhou_oni_champion_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "No Step Back"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_demonforce_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1096
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = gwtank_chassis
+			has_tech = basic_heavy_tank_chassis
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_oni_champion_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_cas_boli_fighter = {
+	specialization = specialization_air
+	icon = GFX_small_plane_airframe_touhou_cas_boli_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "By Blood Alone"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_wakan_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1101
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = basic_small_airframe
+		}
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+			aluminium = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_cas_boli_fighter_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_desires_bomber = {
+	specialization = specialization_air
+	icon = GFX_large_plane_airframe_touhou_desires_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "By Blood Alone"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_wakan_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1099
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = basic_large_airframe
+		}
+	}
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+			aluminium = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_desires_bomber_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_evil_army = {
+	specialization = specialization_land
+	icon = GFX_evil_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_wakan_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1082
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = infantry_weapons1
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_evil_army_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_human_army = {
+	specialization = specialization_land
+	icon = GFX_human_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_wakan_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1105
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = infantry_weapons1
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_human_army_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_DLD_animal = {
+	specialization = specialization_land
+	icon = GFX_animal_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_demonforce_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1097
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = radio
+			has_tech = tech_support
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_DLD_animal_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_dragon = {
+	specialization = specialization_land
+	icon = GFX_dragon_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_magic_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1106
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = infantry_weapons1
+			has_tech = tech_support
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_dragon_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_die = {
+	specialization = specialization_land
+	icon = GFX_die_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_demonforce_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1098
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = motorised_infantry
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_die_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_rabbit_team = {
+	specialization = specialization_land
+	icon = GFX_rabbit_team_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_demonforce_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1104
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = tech_support
+			has_tech = radio
+			has_tech = motorised_infantry
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_rabbit_team_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_deep_sea = {
+	specialization = specialization_naval
+	icon = GFX_deep_sea_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "Man the Guns"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_demonforce_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1083
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = early_ship_hull_submarine
+		}
+	}
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_deep_sea_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_soul = {
+	specialization = specialization_land
+	icon = GFX_soul_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_demonforce_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1100
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = tech_support
+			has_tech = motorised_infantry
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_soul_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_wunv = {
+	specialization = specialization_land
+	icon = GFX_wunv_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_wakan_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1107
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = tech_support
+			has_tech = tech_field_hospital
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_wunv_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_lotus = {
+	specialization = specialization_naval
+	icon = GFX_lotus_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+		has_dlc = "Man the Guns"
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_magic_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1102
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = early_ship_hull_carrier
+		}
+	}
+	breakthrough_cost = {
+		specialization_naval = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_lotus_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}
+sp_touhou_magician = {
+	specialization = specialization_land
+	icon = GFX_magician_equipment_0_medium
+	allowed = {
+		OR = {
+			original_tag = ALI
+			original_tag = DES
+			original_tag = HAK
+			original_tag = DLD
+			original_tag = HEL
+			original_tag = SSS
+			original_tag = OPP
+			original_tag = RAB
+			original_tag = TEM
+			original_tag = BLQ
+			original_tag = KAP
+			original_tag = TEN
+			original_tag = HUM
+			original_tag = VAM
+			original_tag = MLS
+			original_tag = EVI
+		}
+	}
+	available = {
+		FROM = {
+			has_country_flag = touhou_country_flag_magic_first_research
+			NOT = {
+				has_country_flag = touhou_country_flag_out_first_research
+			}
+			NOT = {
+				has_country_flag = touhou_country_flag_changing_first_research
+			}
+			controls_state = 1093
+			NOT = {
+				has_idea = fantasy_research
+			}
+			has_tech = artillery2
+		}
+	}
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	resource_cost = {
+		resources = {
+			steel = 2
+		}
+	}
+	prototype_time = sp_time.prototype.medium
+	complexity = sp_complexity.medium
+	ai_will_do = {
+		base = 1
+	}
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = sp_touhou_magician_reward
+			touhou_sync_vanilla_military = yes
+		}
+	}
+}

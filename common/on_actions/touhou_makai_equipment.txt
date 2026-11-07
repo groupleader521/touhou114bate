@@ -1,0 +1,14 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MKI = {
+				touhou_makai_sync_equipment = yes
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			touhou_makai_sync_equipment = yes
+		}
+	}
+}

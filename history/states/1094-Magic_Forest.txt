@@ -9,12 +9,12 @@ state={
 		add_core_of = ALI
 		owner = ALI
 		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-			industrial_complex = 1
-			air_base = 1
-
-		}
+	infrastructure = 1
+	arms_factory = 1
+	industrial_complex = 1
+	air_base = 1
+	rocket_site = 1
+}
 		victory_points = {
 			13417 50 
 		}

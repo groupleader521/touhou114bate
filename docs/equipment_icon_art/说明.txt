@@ -1,0 +1,18 @@
+装备图片维护
+
+43 张图片由内置 image_gen 逐张生成；生成提示词和映射见 generation_plan.json，原始调用记录见 receipts/。
+PNG 原图：gfx/interface/technologies/touhou_equipment_art/source/
+游戏纹理：gfx/interface/technologies/touhou_equipment_art/，160×100，透明 DDS。
+
+覆盖破魔轻型与附灵中型坦克、灵力与妖力大型通用机体、妖精三类装备、神风人偶、人偶战略导弹、五级歌利亚，以及原先借用其他类别图片的军事科技。
+仅修改图片及预设图标，不修改战斗数值、研究条件或原版国家的图标。
+
+转换：python tools/prepare_equipment_art.py
+应用：node tools/apply_equipment_art.cjs
+校验：node tools/check_equipment_art.cjs
+军事迁移工具会自动重新应用图片，避免重新生成后回退。
+预览：F:/Hoi4/touhou/docs/equipment_icon_art/preview_1.png 和 preview_2.png。
+备份：F:/Hoi4/touhou/backups/equipment_art/。
+
+更新后完整重启游戏。旧存档中已经保存的坦克设计可能仍记录旧图标，需要重新选择设计图标；新创建的预设已使用独立底盘图标。
+已完成静态引用、纹理和隔离校验；未执行游戏内界面验收。

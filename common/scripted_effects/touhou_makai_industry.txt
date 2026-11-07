@@ -1,0 +1,99 @@
+touhou_makai_sync_industry_compensation = {
+	if = {
+		limit = {
+			original_tag = MKI
+			exists = yes
+			has_country_flag = touhou_god_of_makai_country_flag
+			has_country_flag = touhou_makai_arrived
+		}
+		force_update_dynamic_modifier = yes
+		set_temp_variable = {
+			makai_uncompensated_output = modifier@industrial_capacity_factory
+		}
+		if = {
+			limit = {
+				has_dynamic_modifier = {
+					modifier = touhou_makai_industrial_concentration
+				}
+			}
+			subtract_from_temp_variable = {
+				makai_uncompensated_output = makai_factory_compensation
+			}
+		}
+		add_to_temp_variable = {
+			makai_uncompensated_output = 1
+		}
+		multiply_temp_variable = {
+			makai_uncompensated_output = 4
+		}
+		if = {
+			limit = {
+				check_variable = {
+					makai_uncompensated_output < 0
+				}
+			}
+			set_temp_variable = {
+				makai_uncompensated_output = 0
+			}
+		}
+		set_variable = {
+			makai_factory_compensation = makai_uncompensated_output
+		}
+		set_temp_variable = {
+			makai_uncompensated_output = modifier@industrial_capacity_dockyard
+		}
+		if = {
+			limit = {
+				has_dynamic_modifier = {
+					modifier = touhou_makai_industrial_concentration
+				}
+			}
+			subtract_from_temp_variable = {
+				makai_uncompensated_output = makai_dockyard_compensation
+			}
+		}
+		add_to_temp_variable = {
+			makai_uncompensated_output = 1
+		}
+		multiply_temp_variable = {
+			makai_uncompensated_output = 0.7
+		}
+		if = {
+			limit = {
+				check_variable = {
+					makai_uncompensated_output < 0
+				}
+			}
+			set_temp_variable = {
+				makai_uncompensated_output = 0
+			}
+		}
+		set_variable = {
+			makai_dockyard_compensation = makai_uncompensated_output
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = touhou_makai_industrial_concentration
+					}
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = touhou_makai_industrial_concentration
+			}
+		}
+		force_update_dynamic_modifier = yes
+	}
+	else_if = {
+		limit = {
+			original_tag = MKI
+			has_dynamic_modifier = {
+				modifier = touhou_makai_industrial_concentration
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = touhou_makai_industrial_concentration
+		}
+	}
+}

@@ -3752,7 +3752,6 @@ country_event = {
 add_namespace = touhou_devildom
 #前戏
 country_event = {
-	#神秘来客其一
 	id = touhou_devildom.5
 	title = touhou_devildom.5.t
 	desc = touhou_devildom.5.d
@@ -3763,61 +3762,9 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		add_timed_idea = {
-			idea = touhou_god_of_makai_ideas_preparation
-			days = 360
-		}
 		custom_effect_tooltip = touhou_devildom_coming_one_country
 		hidden_effect = {
-			if = {
-				#优先与玩家关系不密切的ai南非国家
-				limit = {
-					any_other_country = {
-						owns_state = 681
-						is_ai = yes
-						exists = yes
-						NOT = {
-							is_in_faction_with = ROOT
-						}						#优先没有与玩家结盟的国家
-						NOT = {
-							is_subject_of = ROOT
-						}						#优先不是玩家傀儡的国家
-					}
-				}
-				random_other_country = {
-					limit = {
-						owns_state = 681
-						is_ai = yes
-						exists = yes
-						NOT = {
-							is_in_faction_with = ROOT
-						}						#优先没有与玩家结盟的国家
-						NOT = {
-							is_subject_of = ROOT
-						}						#优先不是玩家傀儡的国家
-					}
-					country_event = {
-						id = touhou_devildom.1
-					}
-				}
-			}
-			else = {
-				random_other_country = {
-					limit = {
-						is_ai = yes
-						exists = yes
-						NOT = {
-							is_in_faction_with = ROOT
-						}
-						NOT = {
-							is_subject_of = ROOT
-						}
-					}
-					country_event = {
-						id = touhou_devildom.1
-					}
-				}
-			}
+			touhou_start_makai_invasion_effect = yes
 		}
 	}
 	option = {
@@ -3826,59 +3773,44 @@ country_event = {
 			base = 1
 		}
 	}
+	trigger = {
+		touhou_can_spawn_makai = yes
+	}
 }
 
 country_event = {
-	#魔界的征召
 	id = touhou_devildom.1
 	title = touhou_devildom.1.t
 	desc = touhou_devildom.1.d
 	picture = GFX_report_event_touhou_plenary_happy_end
 	is_triggered_only = yes
+	option = {
+		name = touhou_devildom.1.a
+		ai_chance = {
+			base = 1
+		}
+	}
+	trigger = {
+		original_tag = MKI
+		exists = yes
+		has_country_flag = touhou_god_of_makai_country_flag
+		NOT = {
+			has_country_flag = touhou_makai_preparation_started
+		}
+		NOT = {
+			has_country_flag = touhou_makai_arrived
+		}
+	}
 	immediate = {
+		set_country_flag = touhou_makai_preparation_started
 		hidden_effect = {
-			every_enemy_country = {
-				white_peace = ROOT
-			}
-			OVERLORD = {
-				set_autonomy = {
-					target = ROOT
-					autonomy_state = autonomy_free
-				}
-			}
-			leave_faction = yes
-			#load_focus_tree = touhou_devildom_focus
-			set_research_slots = 0
+			touhou_boss_get_characters_effect = yes
 			touhou_boss_effect_1 = yes
-			set_country_flag = touhou_god_of_makai_country_flag			#魔界国家的标志
-			set_politics = {
-				ruling_party = fascism
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 100
-			}
 			set_rule = {
 				can_not_declare_war = yes
 				can_decline_call_to_war = no
 				can_create_factions = no
 				can_join_factions = no
-			}
-			#不知道traits怎么样，反正ideas一次只能生效52个属性，1.12.10版本是这样的，所以写成了四个精神
-			add_ideas = {
-				touhou_god_of_makai_ideas_General
-				touhou_god_of_makai_ideas_Equipment
-				touhou_god_of_makai_ideas_Military
-				touhou_god_of_makai_ideas_Land_combat
-				touhou_god_of_makai_ideas_Navy_and_Air
-			}
-			add_timed_idea = {
-				idea = touhou_god_of_makai_ideas_speed
-				days = 500
-			}
-			remove_ideas = {
-				SAF_history_of_segregation
-				SAF_history_of_segregation_2
 			}
 			country_event = {
 				id = touhou_devildom.2
@@ -3892,40 +3824,22 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = touhou_devildom.1.a
-		ai_chance = {
-			base = 1
-		}
-	}
 }
 
 #第一阶段
 country_event = {
-	#主的降临
 	id = touhou_devildom.2
 	title = touhou_devildom.2.t
 	desc = touhou_devildom.2.d
 	picture = GFX_report_event_touhou_plenary_bad_end
 	is_triggered_only = yes
 	immediate = {
+		set_country_flag = touhou_makai_arrived
 		hidden_effect = {
-			set_global_flag = touhou_god_of_makai_start_global_flag			#魔界大战已经开始的flag
+			set_global_flag = touhou_god_of_makai_start_global_flag
 			touhou_boss_initialize_effect = yes
 			leave_faction = yes
 			create_faction = touhou_god_of_makai_faction
-			every_other_country = {
-				limit = {
-					OR = {
-						original_tag = ROOT
-						is_subject_of = ROOT
-						is_in_faction_with = ROOT
-					}
-				}
-				country_event = {
-					id = touhou_devildom.26
-				}
-			}
 			set_rule = {
 				can_create_factions = no
 				can_join_factions = no
@@ -3936,7 +3850,6 @@ country_event = {
 				limit = {
 					is_ai = yes
 				}
-				#load_focus_tree = touhou_devildom_focus				
 			}
 			country_event = {
 				id = touhou_devildom.3
@@ -3960,6 +3873,14 @@ country_event = {
 		name = touhou_devildom.2.a
 		ai_chance = {
 			base = 1
+		}
+	}
+	trigger = {
+		original_tag = MKI
+		exists = yes
+		has_country_flag = touhou_god_of_makai_country_flag
+		NOT = {
+			has_country_flag = touhou_makai_arrived
 		}
 	}
 }
@@ -4444,13 +4365,13 @@ country_event = {
 # }
 #第二阶段
 country_event = {
-	#第二阶段
 	id = touhou_devildom.3
 	title = touhou_devildom.3.t
 	desc = touhou_devildom.3.d
 	picture = GFX_report_event_touhou_plenary_happy_end
 	is_triggered_only = yes
 	immediate = {
+		set_country_flag = touhou_makai_stage_two
 		hidden_effect = {
 			country_event = {
 				id = touhou_devildom.4
@@ -4470,10 +4391,6 @@ country_event = {
 				touhou_god_of_makai_ideas_Military
 				touhou_god_of_makai_ideas_Land_combat
 				touhou_god_of_makai_ideas_Navy_and_Air
-			}
-			remove_ideas = {
-				SAF_history_of_segregation
-				SAF_history_of_segregation_2
 			}
 			add_ideas = {
 				touhou_god_of_makai_ideas_General_next_stage
@@ -4498,6 +4415,15 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
+	}
+	trigger = {
+		original_tag = MKI
+		exists = yes
+		has_country_flag = touhou_god_of_makai_country_flag
+		NOT = {
+			has_country_flag = touhou_makai_stage_two
+		}
+		has_country_flag = touhou_makai_arrived
 	}
 }
 
@@ -4601,13 +4527,13 @@ country_event = {
 # }
 #第三阶段及结局
 country_event = {
-	#最终阶段
 	id = touhou_devildom.4
 	title = touhou_devildom.4.t
 	desc = touhou_devildom.4.d
 	picture = GFX_report_event_touhou_plenary_happy_end
 	is_triggered_only = yes
 	immediate = {
+		set_country_flag = touhou_makai_stage_three
 		hidden_effect = {
 			touhou_boss_effect_3 = yes
 			set_rule = {
@@ -4622,10 +4548,6 @@ country_event = {
 				touhou_god_of_makai_ideas_Military_next_stage
 				touhou_god_of_makai_ideas_Land_combat_next_stage
 				touhou_god_of_makai_ideas_Navy_and_Air_next_stage
-			}
-			remove_ideas = {
-				SAF_history_of_segregation
-				SAF_history_of_segregation_2
 			}
 			add_ideas = {
 				touhou_god_of_makai_ideas_General_last_stage
@@ -4672,7 +4594,6 @@ country_event = {
 					is_ai = yes
 					exists = yes
 				}
-				# country_event = { id = touhou_devildom.432 days = 10 random_days = 40 }
 			}
 		}
 	}
@@ -4681,6 +4602,15 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
+	}
+	trigger = {
+		original_tag = MKI
+		exists = yes
+		has_country_flag = touhou_god_of_makai_country_flag
+		NOT = {
+			has_country_flag = touhou_makai_stage_three
+		}
+		has_country_flag = touhou_makai_stage_two
 	}
 }
 

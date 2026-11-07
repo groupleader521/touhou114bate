@@ -45,7 +45,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_evil_army
+			AND = {
+				is_special_project_completed = sp:sp_touhou_evil_army
+				has_country_flag = touhou_country_flag_wakan_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_evil_equipment_0
 		}
 	}
@@ -98,7 +107,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_human_army
+			AND = {
+				is_special_project_completed = sp:sp_touhou_human_army
+				has_country_flag = touhou_country_flag_wakan_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_human_equipment_0
 		}
 	}
@@ -151,7 +169,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_DLD_animal
+			AND = {
+				is_special_project_completed = sp:sp_touhou_DLD_animal
+				has_country_flag = touhou_country_flag_demonforce_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_animal_equipment_0
 		}
 	}
@@ -203,7 +230,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_dragon
+			AND = {
+				is_special_project_completed = sp:sp_touhou_dragon
+				has_country_flag = touhou_country_flag_magic_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_dragon_equipment_0
 		}
 	}
@@ -255,7 +291,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_die
+			AND = {
+				is_special_project_completed = sp:sp_touhou_die
+				has_country_flag = touhou_country_flag_demonforce_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_die_equipment_0
 		}
 	}
@@ -299,7 +344,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_rabbit_team
+			AND = {
+				is_special_project_completed = sp:sp_touhou_rabbit_team
+				has_country_flag = touhou_country_flag_demonforce_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_rabbit_team_equipment_0
 		}
 	}
@@ -357,7 +411,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_deep_sea
+			AND = {
+				is_special_project_completed = sp:sp_touhou_deep_sea
+				has_country_flag = touhou_country_flag_demonforce_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_deep_sea_equipment_0
 		}
 	}
@@ -402,7 +465,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_soul
+			AND = {
+				is_special_project_completed = sp:sp_touhou_soul
+				has_country_flag = touhou_country_flag_demonforce_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_soul_equipment_0
 		}
 	}
@@ -450,7 +522,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_wunv
+			AND = {
+				is_special_project_completed = sp:sp_touhou_wunv
+				has_country_flag = touhou_country_flag_wakan_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_wunv_equipment_0
 		}
 	}
@@ -582,7 +663,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_lotus
+			AND = {
+				is_special_project_completed = sp:sp_touhou_lotus
+				has_country_flag = touhou_country_flag_magic_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_lotus_equipment_0
 		}
 	}
@@ -723,7 +813,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_lotus
+			AND = {
+				is_special_project_completed = sp:sp_touhou_lotus
+				has_country_flag = touhou_country_flag_magic_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_lotus_equipment_1
 		}
 	}
@@ -870,7 +969,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_lotus
+			AND = {
+				is_special_project_completed = sp:sp_touhou_lotus
+				has_country_flag = touhou_country_flag_magic_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_lotus_equipment_2
 		}
 	}
@@ -922,7 +1030,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_magician
+			AND = {
+				is_special_project_completed = sp:sp_touhou_magician
+				has_country_flag = touhou_country_flag_magic_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_magician_equipment_0
 		}
 	}
@@ -972,7 +1089,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_evil_army
+			AND = {
+				is_special_project_completed = sp:sp_touhou_evil_army
+				has_country_flag = touhou_country_flag_wakan_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_country_flag = touhou_registered_model_evil_artillery_equipment_0
 		}
 	}

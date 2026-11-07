@@ -11,7 +11,7 @@
  suicide_puppet_big_equipment_desc:0 "研究神风人偶的副产物，成本高昂，必须使用机场发射，但是能在极大范围内进行高威力打击。"
  suicide_puppet_equipment_2:0 "人偶战略导弹"
  suicide_puppet_equipment_2_short:0 "人偶战略导弹"
- suicide_puppet_equipment_2_desc:0 "研究神风人偶的副产物，成本高昂，必须使用机场发射，但是能在极大范围内进行高威力打击。"
+ suicide_puppet_equipment_2_desc:0 "一次性人偶弹道导弹。由军工厂生产并储存于导弹库存，通过火箭发射场执行原版导弹打击；不能作为飞机配件安装。"
 
 
  goliath_equipment:0 "歌利亚"

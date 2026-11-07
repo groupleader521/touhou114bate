@@ -1,0 +1,7 @@
+{
+  "id": "jet_engine",
+  "method": "built-in image_gen",
+  "generated": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b3cf-a7cb-72e1-a68b-e1a30db6bdf8\\exec-9b35756c-8220-4240-9e4c-e72ac3a5f3b6.png",
+  "source": "gfx/interface/technologies/touhou_equipment_art/source/jet_engine.png",
+  "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A single detachable fantasy centrifugal jet engine, visible circular compressor intake and short tubular exhaust, bronze metal and crystal turbine, clear mechanical power unit with contained pale-blue glow, no aircraft and no weapons."
+}

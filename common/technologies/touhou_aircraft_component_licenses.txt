@@ -424,25 +424,7 @@ technologies = {
 			touhou_air_weapon_suicide_puppet_equipment_1
 		}
 	}
-	touhou_air_license_suicide_puppet_equipment_2 = {
-		allow = {
-			always = no
-		}
-		research_cost = 0
-		start_year = 1936
-		enable_equipments = {
-			small_plane_airframe_touhou_suicide_puppet_equipment_2
-			small_plane_cas_airframe_touhou_suicide_puppet_equipment_2
-			small_plane_naval_bomber_airframe_touhou_suicide_puppet_equipment_2
-			small_plane_suicide_airframe_touhou_suicide_puppet_equipment_2
-		}
-		enable_equipment_modules = {
-			touhou_air_suicide_puppet_equipment_2_engine
-			touhou_air_suicide_puppet_equipment_2_protection
-			touhou_air_suicide_puppet_equipment_2_range
-			touhou_air_weapon_suicide_puppet_equipment_2
-		}
-	}
+	
 	touhou_air_license_tengu_fighter_equipment_0 = {
 		allow = {
 			always = no

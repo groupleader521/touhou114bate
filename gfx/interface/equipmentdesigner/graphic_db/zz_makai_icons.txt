@@ -1,0 +1,138 @@
+MKI = {
+	makai_infantry_weapons = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_infantry_weapons_medium
+			}
+		}
+	}
+	makai_mechanized_transport = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_mechanized_transport_medium
+			}
+		}
+	}
+	makai_support_kit = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_support_kit_medium
+			}
+		}
+	}
+	makai_motor_transport = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_motor_transport_medium
+			}
+		}
+	}
+	makai_field_artillery = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_field_artillery_medium
+			}
+		}
+	}
+	makai_engineer_vehicle = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_engineer_vehicle_medium
+			}
+		}
+	}
+	makai_support_helicopter = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_support_helicopter_medium
+			}
+		}
+	}
+	makai_supply_train = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_supply_train_medium
+			}
+		}
+	}
+	makai_amphibious_heavy = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_amphibious_heavy_medium
+			}
+		}
+	}
+	makai_tank_destroyer = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_tank_destroyer_medium
+			}
+		}
+	}
+	makai_flame_medium = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_flame_medium_medium
+			}
+		}
+	}
+	makai_recon_light = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_recon_light_medium
+			}
+		}
+	}
+	makai_line_medium = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_line_medium_medium
+			}
+		}
+	}
+	makai_fighter = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_fighter_medium
+			}
+		}
+	}
+	makai_cas = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_cas_medium
+			}
+		}
+	}
+	makai_destroyer = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_makai_destroyer_medium
+			}
+		}
+	}
+	convoy_1 = {
+		pool = {
+			weight = 100
+			icons = {
+				GFX_MKI_convoy_1_medium
+			}
+		}
+	}
+}

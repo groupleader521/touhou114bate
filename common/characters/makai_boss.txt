@@ -1,6 +1,6 @@
 characters = {
 	TOUHOU_boss_shinki_leader = {
-		name = TOUHOU_Shinki_boss
+		name = touhou_makai_shinki
 		gender = female
 		portraits = {
 			civilian = {

@@ -1,0 +1,777 @@
+{
+  "version": 2,
+  "basis": "User-specified native battalions, modern modular equipment, strong exclusive infantry weapons",
+  "models": [
+    {
+      "id": "makai_infantry_weapons",
+      "name": "魔界·神绮式魔导步兵武器",
+      "source": "infantry_equipment_3",
+      "archetype": "infantry_equipment",
+      "category": "land",
+      "modular": false,
+      "dlc": null,
+      "modules": {},
+      "upgrades": {},
+      "texture": "gfx/interface/technologies/makai/makai_infantry_weapons.dds",
+      "factories": 34,
+      "productionLines": [
+        34
+      ]
+    },
+    {
+      "id": "makai_mechanized_transport",
+      "name": "魔界·高级机械化载具",
+      "source": "mechanized_equipment_3",
+      "archetype": "mechanized_equipment",
+      "category": "land",
+      "modular": false,
+      "dlc": null,
+      "modules": {},
+      "upgrades": {},
+      "texture": "gfx/interface/technologies/makai/makai_mechanized_transport.dds",
+      "factories": 24,
+      "productionLines": [
+        24
+      ]
+    },
+    {
+      "id": "makai_support_kit",
+      "name": "魔界·支援装备",
+      "source": "support_equipment_1",
+      "archetype": "support_equipment",
+      "category": "land",
+      "modular": false,
+      "dlc": null,
+      "modules": {},
+      "upgrades": {},
+      "texture": "gfx/interface/technologies/makai/makai_support_kit.dds",
+      "factories": 20,
+      "productionLines": [
+        20
+      ]
+    },
+    {
+      "id": "makai_motor_transport",
+      "name": "魔界·军用卡车",
+      "source": "motorized_equipment_1",
+      "archetype": "motorized_equipment",
+      "category": "land",
+      "modular": false,
+      "dlc": null,
+      "modules": {},
+      "upgrades": {},
+      "texture": "gfx/interface/technologies/makai/makai_motor_transport.dds",
+      "factories": 16,
+      "productionLines": [
+        16
+      ]
+    },
+    {
+      "id": "makai_field_artillery",
+      "name": "魔界·高级火炮",
+      "source": "artillery_equipment_3",
+      "archetype": "artillery_equipment",
+      "category": "land",
+      "modular": false,
+      "dlc": null,
+      "modules": {},
+      "upgrades": {},
+      "texture": "gfx/interface/technologies/makai/makai_field_artillery.dds",
+      "factories": 20,
+      "productionLines": [
+        20
+      ]
+    },
+    {
+      "id": "makai_engineer_vehicle",
+      "name": "魔界·装甲工程车",
+      "source": "armored_support_vehicle_1",
+      "archetype": "armored_support_vehicle",
+      "category": "land",
+      "modular": false,
+      "dlc": null,
+      "modules": {},
+      "upgrades": {},
+      "texture": "gfx/interface/technologies/makai/makai_engineer_vehicle.dds",
+      "factories": 12,
+      "productionLines": [
+        12
+      ]
+    },
+    {
+      "id": "makai_support_helicopter",
+      "name": "魔界·运输救护直升机",
+      "source": "helicopter_equipment_1",
+      "archetype": "helicopter_equipment",
+      "category": "land",
+      "modular": false,
+      "dlc": null,
+      "modules": {},
+      "upgrades": {},
+      "texture": "gfx/interface/technologies/makai/makai_support_helicopter.dds",
+      "factories": 12,
+      "productionLines": [
+        12
+      ]
+    },
+    {
+      "id": "makai_supply_train",
+      "name": "魔界·军用列车",
+      "source": "train_equipment_2",
+      "archetype": "train_equipment",
+      "category": "land",
+      "modular": false,
+      "dlc": null,
+      "modules": {},
+      "upgrades": {},
+      "texture": "gfx/interface/technologies/makai/makai_supply_train.dds",
+      "factories": 2,
+      "productionLines": [
+        2
+      ]
+    },
+    {
+      "id": "makai_amphibious_heavy",
+      "name": "魔界·神绮式两栖重坦",
+      "source": "heavy_tank_chassis_3",
+      "archetype": "heavy_tank_amphibious_chassis",
+      "category": "land",
+      "modular": true,
+      "dlc": "No Step Back",
+      "modules": {
+        "turret_type_slot": "tank_heavy_three_man_tank_turret",
+        "main_armament_slot": "tank_heavy_cannon_3",
+        "suspension_type_slot": "tank_christie_suspension",
+        "armor_type_slot": "tank_welded_armor",
+        "engine_type_slot": "tank_diesel_engine",
+        "special_type_slot_1": "tank_radio_3",
+        "special_type_slot_2": "easy_maintenance",
+        "special_type_slot_3": "auto_loader",
+        "special_type_slot_4": "amphibious_drive"
+      },
+      "upgrades": {
+        "tank_nsb_engine_upgrade": 20,
+        "tank_nsb_armor_upgrade": 10
+      },
+      "texture": "gfx/interface/technologies/makai/makai_amphibious_heavy.dds",
+      "factories": 114,
+      "productionLines": [
+        114
+      ]
+    },
+    {
+      "id": "makai_tank_destroyer",
+      "name": "魔界·神绮式自行反坦克炮",
+      "source": "modern_tank_chassis_1",
+      "archetype": "modern_tank_destroyer_chassis",
+      "category": "land",
+      "modular": true,
+      "dlc": "No Step Back",
+      "modules": {
+        "turret_type_slot": "tank_heavy_fixed_superstructure_turret",
+        "main_armament_slot": "tank_heavy_cannon_3",
+        "suspension_type_slot": "tank_christie_suspension",
+        "armor_type_slot": "tank_welded_armor",
+        "engine_type_slot": "tank_diesel_engine",
+        "special_type_slot_1": "tank_radio_3",
+        "special_type_slot_2": "stabilizer",
+        "special_type_slot_3": "auto_loader",
+        "special_type_slot_4": "easy_maintenance"
+      },
+      "upgrades": {
+        "tank_nsb_engine_upgrade": 20,
+        "tank_nsb_armor_upgrade": 10
+      },
+      "texture": "gfx/interface/technologies/makai/makai_tank_destroyer.dds",
+      "factories": 26,
+      "productionLines": [
+        26
+      ]
+    },
+    {
+      "id": "makai_flame_medium",
+      "name": "魔界·神绮式中型喷火坦克",
+      "source": "medium_tank_chassis_3",
+      "archetype": "medium_tank_flame_chassis",
+      "category": "land",
+      "modular": true,
+      "dlc": "No Step Back",
+      "modules": {
+        "turret_type_slot": "tank_medium_three_man_tank_turret",
+        "main_armament_slot": "advanced_flamethrower",
+        "suspension_type_slot": "tank_christie_suspension",
+        "armor_type_slot": "tank_welded_armor",
+        "engine_type_slot": "tank_diesel_engine",
+        "special_type_slot_1": "tank_radio_3",
+        "special_type_slot_2": "additional_machine_guns",
+        "special_type_slot_3": "wet_ammo_storage",
+        "special_type_slot_4": "easy_maintenance"
+      },
+      "upgrades": {
+        "tank_nsb_engine_upgrade": 20,
+        "tank_nsb_armor_upgrade": 10
+      },
+      "texture": "gfx/interface/technologies/makai/makai_flame_medium.dds",
+      "factories": 8,
+      "productionLines": [
+        8
+      ]
+    },
+    {
+      "id": "makai_recon_light",
+      "name": "魔界·神绮式装甲侦察坦克",
+      "source": "light_tank_chassis_3",
+      "archetype": "light_tank_chassis",
+      "category": "land",
+      "modular": true,
+      "dlc": "No Step Back",
+      "modules": {
+        "turret_type_slot": "tank_light_three_man_tank_turret",
+        "main_armament_slot": "tank_small_cannon_2",
+        "suspension_type_slot": "tank_christie_suspension",
+        "armor_type_slot": "tank_welded_armor",
+        "engine_type_slot": "tank_diesel_engine",
+        "special_type_slot_1": "tank_radio_3",
+        "special_type_slot_2": "stabilizer",
+        "special_type_slot_3": "extra_ammo_storage",
+        "special_type_slot_4": "easy_maintenance"
+      },
+      "upgrades": {
+        "tank_nsb_engine_upgrade": 20,
+        "tank_nsb_armor_upgrade": 10
+      },
+      "texture": "gfx/interface/technologies/makai/makai_recon_light.dds",
+      "factories": 12,
+      "productionLines": [
+        12
+      ]
+    },
+    {
+      "id": "makai_line_medium",
+      "name": "魔界·填线用高级中型坦克",
+      "source": "medium_tank_chassis_3",
+      "archetype": "medium_tank_chassis",
+      "category": "land",
+      "modular": true,
+      "dlc": "No Step Back",
+      "modules": {
+        "turret_type_slot": "tank_medium_three_man_tank_turret",
+        "main_armament_slot": "tank_medium_cannon_2",
+        "suspension_type_slot": "tank_christie_suspension",
+        "armor_type_slot": "tank_welded_armor",
+        "engine_type_slot": "tank_diesel_engine",
+        "special_type_slot_1": "tank_radio_3",
+        "special_type_slot_2": "stabilizer",
+        "special_type_slot_3": "auto_loader",
+        "special_type_slot_4": "easy_maintenance"
+      },
+      "upgrades": {
+        "tank_nsb_engine_upgrade": 0,
+        "tank_nsb_armor_upgrade": 10
+      },
+      "texture": "gfx/interface/technologies/makai/makai_line_medium.dds",
+      "factories": 68,
+      "productionLines": [
+        68
+      ]
+    },
+    {
+      "id": "makai_fighter",
+      "name": "魔界·制空战斗机",
+      "source": "small_plane_airframe_5",
+      "archetype": "small_plane_airframe",
+      "category": "air",
+      "modular": true,
+      "dlc": "By Blood Alone",
+      "modules": {
+        "fixed_main_weapon_slot": "aircraft_cannon_2_2x",
+        "fixed_auxiliary_weapon_slot_1": "aircraft_cannon_2_2x",
+        "engine_type_slot": "jet_engine_axial_1x",
+        "special_type_slot_1": "self_sealing_fuel_tanks_small",
+        "special_type_slot_2": "armor_plate_small",
+        "fixed_auxiliary_weapon_slot_2": "empty",
+        "fixed_auxiliary_weapon_slot_3": "empty",
+        "fixed_auxiliary_weapon_slot_4": "empty",
+        "special_type_slot_3": "air_air_radar_2",
+        "special_type_slot_4": "empty"
+      },
+      "upgrades": {},
+      "texture": "gfx/interface/technologies/makai/makai_fighter.dds",
+      "factories": 12,
+      "productionLines": [
+        12
+      ]
+    },
+    {
+      "id": "makai_cas",
+      "name": "魔界·对地攻击机",
+      "source": "small_plane_airframe_5",
+      "archetype": "small_plane_cas_airframe",
+      "category": "air",
+      "modular": true,
+      "dlc": "By Blood Alone",
+      "modules": {
+        "fixed_main_weapon_slot": "heavy_bomb_locks",
+        "fixed_auxiliary_weapon_slot_1": "rocket_rails",
+        "engine_type_slot": "jet_engine_axial_1x",
+        "special_type_slot_1": "self_sealing_fuel_tanks_small",
+        "special_type_slot_2": "armor_plate_small",
+        "fixed_auxiliary_weapon_slot_2": "empty",
+        "fixed_auxiliary_weapon_slot_3": "empty",
+        "fixed_auxiliary_weapon_slot_4": "empty",
+        "special_type_slot_3": "dive_brakes_small",
+        "special_type_slot_4": "empty"
+      },
+      "upgrades": {},
+      "texture": "gfx/interface/technologies/makai/makai_cas.dds",
+      "factories": 8,
+      "productionLines": [
+        8
+      ]
+    },
+    {
+      "id": "makai_destroyer",
+      "name": "魔界·护航驱逐舰",
+      "source": "ship_hull_light_4",
+      "archetype": "ship_hull_light",
+      "category": "naval",
+      "modular": true,
+      "dlc": "Man the Guns",
+      "modules": {
+        "fixed_ship_battery_slot": "dp_light_battery_4",
+        "fixed_ship_anti_air_slot": "ship_anti_air_4",
+        "fixed_ship_fire_control_system_slot": "ship_sonar_4",
+        "fixed_ship_radar_slot": "ship_radar_4",
+        "fixed_ship_torpedo_slot": "ship_torpedo_4",
+        "fixed_ship_engine_slot": "light_ship_engine_4",
+        "mid_1_custom_slot": "ship_depth_charge_4",
+        "rear_1_custom_slot": "empty",
+        "front_1_custom_slot": "ship_depth_charge_4",
+        "mid_2_custom_slot": "ship_anti_air_4"
+      },
+      "upgrades": {},
+      "texture": "gfx/interface/technologies/makai/makai_destroyer.dds",
+      "factories": 60,
+      "productionLines": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    }
+  ],
+  "sharedProduction": [
+    {
+      "id": "convoy_1",
+      "factories": 60,
+      "productionLines": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "readyFlag": "makai_production_ready_makai_convoy"
+    }
+  ],
+  "retiredModels": [
+    "makai_infantry_equipment_1",
+    "makai_artillery_equipment_1",
+    "makai_anti_air_equipment_1",
+    "makai_anti_tank_equipment_1",
+    "makai_support_equipment_1",
+    "makai_motorized_equipment_1",
+    "makai_fighter_equipment_1",
+    "makai_cv_fighter_equipment_1",
+    "makai_cas_equipment_1",
+    "makai_cv_cas_equipment_1",
+    "makai_nav_bomber_equipment_1",
+    "makai_cv_nav_bomber_equipment_1",
+    "makai_heavy_fighter_equipment_1",
+    "makai_tac_bomber_equipment_1",
+    "makai_strat_bomber_equipment_1",
+    "makai_destroyer_4",
+    "makai_light_cruiser_4",
+    "makai_heavy_cruiser_4",
+    "makai_battleship_4",
+    "makai_carrier_4",
+    "makai_submarine_4",
+    "makai_super_heavy_tank_equipment_1",
+    "makai_super_heavy_tank_destroyer_equipment_1",
+    "makai_super_heavy_tank_artillery_equipment_1",
+    "makai_super_heavy_tank_aa_equipment_1",
+    "makai_fighter_equipment_2",
+    "makai_cv_fighter_equipment_2",
+    "makai_cas_equipment_2",
+    "makai_cv_cas_equipment_2",
+    "makai_nav_bomber_equipment_2",
+    "makai_cv_nav_bomber_equipment_2",
+    "makai_heavy_fighter_equipment_2",
+    "makai_tac_bomber_equipment_2",
+    "makai_strat_bomber_equipment_2",
+    "makai_infantry_equipment_2",
+    "makai_artillery_equipment_2",
+    "makai_anti_air_equipment_2",
+    "makai_anti_tank_equipment_2",
+    "makai_mechanized_equipment_2",
+    "makai_modern_tank_equipment_1",
+    "makai_modern_tank_destroyer_equipment_1",
+    "makai_modern_tank_artillery_equipment_1",
+    "makai_modern_tank_aa_equipment_1",
+    "makai_fighter_equipment_3",
+    "makai_cv_fighter_equipment_3",
+    "makai_cas_equipment_3",
+    "makai_cv_cas_equipment_3",
+    "makai_nav_bomber_equipment_3",
+    "makai_cv_nav_bomber_equipment_3",
+    "makai_heavy_fighter_equipment_3",
+    "makai_tac_bomber_equipment_3",
+    "makai_strat_bomber_equipment_3",
+    "makai_infantry_equipment_3",
+    "makai_artillery_equipment_3",
+    "makai_jet_fighter_equipment_2",
+    "makai_jet_tac_bomber_equipment_2",
+    "makai_jet_strat_bomber_equipment_1",
+    "makai_anti_air_equipment_3",
+    "makai_anti_tank_equipment_3",
+    "makai_cv_fighter",
+    "makai_cv_cas",
+    "makai_naval",
+    "makai_cv_naval",
+    "makai_heavy_fighter",
+    "makai_tactical_bomber",
+    "makai_strategic_bomber",
+    "makai_light_cruiser",
+    "makai_heavy_cruiser",
+    "makai_battleship",
+    "makai_carrier",
+    "makai_submarine"
+  ],
+  "templates": [
+    {
+      "name": "魔界主力部队",
+      "kind": "elite",
+      "needs": {
+        "mechanized_equipment": 360,
+        "infantry_equipment": 960,
+        "heavy_tank_amphibious_chassis": 450,
+        "modern_tank_destroyer_chassis": 80,
+        "artillery_equipment": 12,
+        "support_equipment": 75,
+        "motorized_equipment": 35,
+        "medium_tank_flame_chassis": 15,
+        "armored_support_vehicle": 30,
+        "helicopter_equipment": 25,
+        "light_tank_chassis": 24
+      }
+    },
+    {
+      "name": "魔界准一线部队",
+      "kind": "assault",
+      "needs": {
+        "infantry_equipment": 960,
+        "heavy_tank_amphibious_chassis": 450,
+        "modern_tank_destroyer_chassis": 80,
+        "artillery_equipment": 12,
+        "support_equipment": 75,
+        "motorized_equipment": 35,
+        "medium_tank_flame_chassis": 15,
+        "armored_support_vehicle": 30,
+        "helicopter_equipment": 25,
+        "light_tank_chassis": 24
+      }
+    },
+    {
+      "name": "魔界填线部队",
+      "kind": "ordinary",
+      "needs": {
+        "infantry_equipment": 910,
+        "medium_tank_chassis": 250,
+        "artillery_equipment": 30,
+        "support_equipment": 30
+      }
+    }
+  ],
+  "reinforcement": {
+    "initialEquipment": 1,
+    "initialReserve": 0.1,
+    "reserveOnce": true,
+    "automaticEquipmentGrants": false,
+    "mode": "production_only_after_first_arrival"
+  },
+  "productionBudget": {
+    "military": 388,
+    "dockyards": 120,
+    "availableMilitary": 400,
+    "civilian": 300,
+    "availableDockyards": 120,
+    "compensation": {
+      "militaryOutputMultiplier": 5,
+      "dockyardOutputMultiplier": 1.7,
+      "referenceMilitary": 2000,
+      "referenceDockyards": 200
+    }
+  },
+  "phaseCounts": [
+    16,
+    0,
+    0,
+    0
+  ],
+  "forceBalance": {
+    "proportions": {
+      "elite": 0.15,
+      "assault": 0.3,
+      "ordinary": 0.55
+    },
+    "cycle": [
+      "assault",
+      "ordinary",
+      "elite",
+      "ordinary",
+      "assault",
+      "ordinary",
+      "ordinary",
+      "assault",
+      "ordinary",
+      "elite",
+      "ordinary",
+      "assault",
+      "ordinary",
+      "ordinary",
+      "assault",
+      "ordinary",
+      "elite",
+      "ordinary",
+      "assault",
+      "ordinary"
+    ],
+    "cursor": "makai_recruitment_cursor",
+    "eliteMultiplier": 1.8,
+    "eliteUnits": [
+      {
+        "id": "makai_guard_mechanized",
+        "source": "mechanized"
+      },
+      {
+        "id": "makai_guard_amphibious_heavy_armor",
+        "source": "amphibious_heavy_armor"
+      },
+      {
+        "id": "makai_guard_modern_tank_destroyer_brigade",
+        "source": "modern_tank_destroyer_brigade"
+      },
+      {
+        "id": "makai_guard_medium_flame_tank",
+        "source": "medium_flame_tank"
+      },
+      {
+        "id": "makai_guard_armored_engineer",
+        "source": "armored_engineer"
+      },
+      {
+        "id": "makai_guard_helicopter_field_hospital",
+        "source": "helicopter_field_hospital"
+      },
+      {
+        "id": "makai_guard_helicopter_transport",
+        "source": "helicopter_transport"
+      },
+      {
+        "id": "makai_guard_light_tank_recon",
+        "source": "light_tank_recon"
+      },
+      {
+        "id": "makai_guard_field_guns",
+        "source": "field_guns"
+      },
+      {
+        "id": "makai_guard_mot_fire_support",
+        "source": "mot_fire_support"
+      }
+    ],
+    "comparison": "Full equipment and equal experience: scaled base statistics with native technology bonus inheritance. Terrain, supply, casualties and country modifiers can change battlefield ratios. Width, manpower and equipment needs unchanged.",
+    "technologyBonuses": [
+      {
+        "id": "makai_guard_bonus_interwar_artillery",
+        "source": "interwar_artillery"
+      },
+      {
+        "id": "makai_guard_bonus_artillery2",
+        "source": "artillery2"
+      },
+      {
+        "id": "makai_guard_bonus_artillery3",
+        "source": "artillery3"
+      },
+      {
+        "id": "makai_guard_bonus_artillery5",
+        "source": "artillery5"
+      },
+      {
+        "id": "makai_guard_bonus_antitank1",
+        "source": "antitank1"
+      },
+      {
+        "id": "makai_guard_bonus_antitank3",
+        "source": "antitank3"
+      },
+      {
+        "id": "makai_guard_bonus_antitank4",
+        "source": "antitank4"
+      },
+      {
+        "id": "makai_guard_bonus_SWE_bofors_antitank_gun",
+        "source": "SWE_bofors_antitank_gun"
+      },
+      {
+        "id": "makai_guard_bonus_sp_variable_time_fuze_shells",
+        "source": "sp_variable_time_fuze_shells"
+      },
+      {
+        "id": "makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_gd_tech",
+        "source": "sp_land_large_caliber_kinetic_energy_sabot_gd_tech"
+      },
+      {
+        "id": "makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_no_gd_tech",
+        "source": "sp_land_large_caliber_kinetic_energy_sabot_no_gd_tech"
+      },
+      {
+        "id": "makai_guard_bonus_sp_advance_sabot_shells",
+        "source": "sp_advance_sabot_shells"
+      },
+      {
+        "id": "makai_guard_bonus_sp_centrifugal_jet_tech",
+        "source": "sp_centrifugal_jet_tech"
+      },
+      {
+        "id": "makai_guard_bonus_infantry_weapons2",
+        "source": "infantry_weapons2"
+      },
+      {
+        "id": "makai_guard_bonus_improved_infantry_weapons_2",
+        "source": "improved_infantry_weapons_2"
+      },
+      {
+        "id": "makai_guard_bonus_infantry_at",
+        "source": "infantry_at"
+      },
+      {
+        "id": "makai_guard_bonus_infantry_at2",
+        "source": "infantry_at2"
+      },
+      {
+        "id": "makai_guard_bonus_advanced_infantry_weapons2",
+        "source": "advanced_infantry_weapons2"
+      },
+      {
+        "id": "makai_guard_bonus_support_weapons2",
+        "source": "support_weapons2"
+      },
+      {
+        "id": "makai_guard_bonus_support_weapons3",
+        "source": "support_weapons3"
+      },
+      {
+        "id": "makai_guard_bonus_support_weapons4",
+        "source": "support_weapons4"
+      },
+      {
+        "id": "makai_guard_bonus_motorised_infantry",
+        "source": "motorised_infantry"
+      },
+      {
+        "id": "makai_guard_bonus_mechanised_infantry",
+        "source": "mechanised_infantry"
+      },
+      {
+        "id": "makai_guard_bonus_mechanised_infantry2",
+        "source": "mechanised_infantry2"
+      },
+      {
+        "id": "makai_guard_bonus_mechanised_infantry3",
+        "source": "mechanised_infantry3"
+      },
+      {
+        "id": "makai_guard_bonus_molotov_cocktails_tech",
+        "source": "molotov_cocktails_tech"
+      },
+      {
+        "id": "makai_guard_bonus_lotta_svard_tech",
+        "source": "lotta_svard_tech"
+      },
+      {
+        "id": "makai_guard_bonus_uranium_tipped_bullets",
+        "source": "uranium_tipped_bullets"
+      },
+      {
+        "id": "makai_guard_bonus_PHI_battalion_combat_teams",
+        "source": "PHI_battalion_combat_teams"
+      },
+      {
+        "id": "makai_guard_bonus_MUN_recon_in_force",
+        "source": "MUN_recon_in_force"
+      },
+      {
+        "id": "makai_guard_bonus_tech_engineers2",
+        "source": "tech_engineers2"
+      },
+      {
+        "id": "makai_guard_bonus_tech_engineers3",
+        "source": "tech_engineers3"
+      },
+      {
+        "id": "makai_guard_bonus_tech_engineers4",
+        "source": "tech_engineers4"
+      },
+      {
+        "id": "makai_guard_bonus_tech_field_hospital2",
+        "source": "tech_field_hospital2"
+      },
+      {
+        "id": "makai_guard_bonus_tech_field_hospital3",
+        "source": "tech_field_hospital3"
+      },
+      {
+        "id": "makai_guard_bonus_tech_field_hospital4",
+        "source": "tech_field_hospital4"
+      },
+      {
+        "id": "makai_guard_bonus_NORDIC_supportCollaboration_tech",
+        "source": "NORDIC_supportCollaboration_tech"
+      },
+      {
+        "id": "makai_guard_bonus_tech_logistics_company2",
+        "source": "tech_logistics_company2"
+      },
+      {
+        "id": "makai_guard_bonus_tech_logistics_company3",
+        "source": "tech_logistics_company3"
+      },
+      {
+        "id": "makai_guard_bonus_tech_logistics_company4",
+        "source": "tech_logistics_company4"
+      }
+    ],
+    "aiRoles": {
+      "elite": "makai_elite_role",
+      "assault": "makai_assault_role",
+      "ordinary": "makai_line_role"
+    }
+  }
+}

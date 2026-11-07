@@ -1,0 +1,647 @@
+[
+  {
+    "id": "wakan_light_1",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_light_1.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_light_1.dds",
+    "sourceSha256": "50e6ddbb4f0b8cfa58bbdd2ec1c56d9842d108bc1038de4eeab9811aad87d526",
+    "textureSha256": "ff17f4164b5559a2f7aabe615c15e46df9baa4973a323da8aff07a7f6f8b0e35",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "wakan_light_2",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_light_2.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_light_2.dds",
+    "sourceSha256": "10fca4e43f1ce6affb7c70d79fff64533b70ae20677e7a2ef9eddfbf7ccd7504",
+    "textureSha256": "e9054f8a286d0920bca541cca786ff382a7998152a569d039262566c5acc3347",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "wakan_light_3",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_light_3.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_light_3.dds",
+    "sourceSha256": "10f9dd18c13dd72e01d65643293d11111b2be58af81cc4efbac444d9699e5766",
+    "textureSha256": "ce699903476d63c71efc3ae9910d9093918d07074b56ea0fb78c0a7507e466b0",
+    "sourceSize": [
+      1586,
+      992
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "wakan_medium_1",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_medium_1.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_medium_1.dds",
+    "sourceSha256": "eff7894af40a29b37024ea34daea42158eb85c3969e81eefda08f7bde58d8584",
+    "textureSha256": "01bf050f1a7076b3ca74a7e6acd288028dc627764a1d62bcd10d07de9c705d92",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "wakan_medium_2",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_medium_2.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_medium_2.dds",
+    "sourceSha256": "04790e9f8a8fd709014d6006b836c8dac9805d522d3246b922d67d53e7f19194",
+    "textureSha256": "41ae6f96815e9cc68b9d0fc93ed4361cb925f2807a7456ad214d1d86ea18e509",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "wakan_medium_3",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_medium_3.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_medium_3.dds",
+    "sourceSha256": "92119fe5af0cb0b9c281ef680a9a14518899bf41acb4f599364a8f36741f7ba1",
+    "textureSha256": "08e61eb43903412eccecf8ffd99a36645e0691e7bb835569ff15b68f7a243a1b",
+    "sourceSize": [
+      1586,
+      992
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "wakan_large_0",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_large_0.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_large_0.dds",
+    "sourceSha256": "3878c82c56152fea15329d730ea33e507a0298ca6d6cffedd0df7fc76373f888",
+    "textureSha256": "44de4e81a55f2bcfd4fee29b4ff798d294b24d16d85067cb154ed336bce8d5f3",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "wakan_large_1",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_large_1.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_large_1.dds",
+    "sourceSha256": "b05f6f5a40641594d038867ca64225cf9f18b0602e301b76eafc59157609895c",
+    "textureSha256": "f606b7b119a85f23e43bebd05b83bcff84ff6fcb019aa8d2a5ea881e1ca8ec12",
+    "sourceSize": [
+      1586,
+      992
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "wakan_large_2",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_large_2.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_large_2.dds",
+    "sourceSha256": "0234ce7044611e0381f3e502d8edc228aaf4ace5b4ed5075fc3eaee12ed05a8f",
+    "textureSha256": "9bf5f57bffb2f312595f1bbe461dc77d46d5e83e853c0ac018dc2470e9ede995",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "wakan_large_3",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_large_3.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_large_3.dds",
+    "sourceSha256": "8c96f4303e76ba627e946961cb2df9d73245c00d835d7f03318216b9bb04785a",
+    "textureSha256": "588c58b5707cd1ec5306cebd81b157aec3e2852c1a9f9f89ba9bc5d8f33dbff0",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "wakan_large_4",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_large_4.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_large_4.dds",
+    "sourceSha256": "872c0011b7b78e7aef5babbfd9f5e1d61c58ccc63e6d9b92ba4e40d6871adb99",
+    "textureSha256": "eebb7248683c9ae5d4d0d6f5516decd969786d9ae49f8f8bd2e47cf246ce94b2",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "demonforce_large_0",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/demonforce_large_0.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/demonforce_large_0.dds",
+    "sourceSha256": "eeedc2d51d951ef65fde00ba96203956b7226fe98da59b8039cd0f29cc6b6a65",
+    "textureSha256": "5ff03187374b1613e8593aec54475870f9fb6eb9b94b57a2d599fffb649d8fb2",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "demonforce_large_1",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/demonforce_large_1.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/demonforce_large_1.dds",
+    "sourceSha256": "f08a8757dc133ac194d02ea389b0c4263b47154ea5a8050bde5810bbbdc5a8c0",
+    "textureSha256": "85e38ddd1c323b17ff4d95df484fe3330ee3137b5f144a255b4e6a3d1e190b93",
+    "sourceSize": [
+      1586,
+      992
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "demonforce_large_2",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/demonforce_large_2.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/demonforce_large_2.dds",
+    "sourceSha256": "e0f064249637484a9521d81e42b77a0be09bddffe09c615fd972373273b66988",
+    "textureSha256": "2fbbe26cbbf2d6ad7040578d5e59c4d75a0bf6039c4cc6ce99eb024c2a782c8f",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "demonforce_large_3",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/demonforce_large_3.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/demonforce_large_3.dds",
+    "sourceSha256": "c45ea79501b92e838c5369b99349dabb807b43c38f8fbc0109c09677b4492814",
+    "textureSha256": "558009f0ddda6196f959d5c68a8a5ed35f8ba6da6814dad2274e32effb33ca40",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "demonforce_large_4",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/demonforce_large_4.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/demonforce_large_4.dds",
+    "sourceSha256": "d7b07fbd5687548d1c9cdc6a2656cc6ece8fb9f891a6164410a15dd2c54e7623",
+    "textureSha256": "fc00323ad89eb7213e49868e3f267b48b1a9060c82ca492c56c8059396f285b8",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "fairy_infantry",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/fairy_infantry.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/fairy_infantry.dds",
+    "sourceSha256": "7a243cdd7dafb8997ea2469f81fb2956d11becc15e73b1d0fd43eb7374a5eec5",
+    "textureSha256": "1248b6756243e196bc2387d4ee860458c319af9e507aba9a6397bc71b5f49c41",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "fairy_artillery",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/fairy_artillery.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/fairy_artillery.dds",
+    "sourceSha256": "8ce3749f9dbb9598be7a91a3df52949c8e3989a0c697db690510f7c69b51ce12",
+    "textureSha256": "c5840c0e09c89957e0b0d9cb9b1a3179af44ab0dea2b9393559c8d2ece628cf0",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "fairy_armor",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/fairy_armor.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/fairy_armor.dds",
+    "sourceSha256": "06e1f23be731ecb3b8d7801aeeaccc36f62e251903b09d0203bd8de7d6b69d89",
+    "textureSha256": "712cb0b641a1db38fe5b7a6be626f37b0d48511b6704e465af52680bf0db6fc5",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "puppet_suicide",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/puppet_suicide.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/puppet_suicide.dds",
+    "sourceSha256": "9d187cf4188fa8dcd93e60e7d27ab88cbef0a2b3460fa39c3bf43be0b1fbb453",
+    "textureSha256": "765bd553d0cceade97b9a0d33706506d04d6cb891ec8493fbe305e9bc2ca6efb",
+    "sourceSize": [
+      1586,
+      992
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "puppet_missile",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/puppet_missile.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/puppet_missile.dds",
+    "sourceSha256": "5aac1b1075d831cc8f0a5c8b056d042749e1ce4ef511518e9526f1185b6d2430",
+    "textureSha256": "33c1fd4a0963e14fa62cb8c74327ef58d11dd1e4ebd8a7dfe800925be547b5fd",
+    "sourceSize": [
+      1586,
+      992
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "goliath_0",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/goliath_0.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/goliath_0.dds",
+    "sourceSha256": "66bf7f99c4e8c330d4e4db868a6891ce42b97dbe607674f1dc9252f774d08881",
+    "textureSha256": "85ddf9d917bee7f65c36c0762adb60432703c41e084ae3adeaf334089136a99b",
+    "sourceSize": [
+      1586,
+      992
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "goliath_1",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/goliath_1.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/goliath_1.dds",
+    "sourceSha256": "b6930c993aa4c8c7f0aa6f1b82b23c8a8c1ee7b087deabcab9d9bacf3c2a9048",
+    "textureSha256": "7bca084497c0535151d7af4bf53d1c86f885b85ae66122a6f4ab9924fad5dc0e",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "goliath_2",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/goliath_2.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/goliath_2.dds",
+    "sourceSha256": "a6437d128282f87ead4c47025565aaaed78fa62043587ae43954749d58e43bbb",
+    "textureSha256": "b411ed4c7f432af1928d5311882e502f8a0f73e6faefe2164a5fe4c53800559f",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "goliath_3",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/goliath_3.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/goliath_3.dds",
+    "sourceSha256": "5b0c6d03a57a4d99fa48221890896fe236fccb8ec579900f139a34d993a65e38",
+    "textureSha256": "f3a1ed72ee3f57f0a1ebad5a0b17cd9b95e6d5df09e559fdeb71985c55d6d1e8",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "goliath_4",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/goliath_4.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/goliath_4.dds",
+    "sourceSha256": "fb93d287619c04d1cac41721efe6b6f49896dd963384820fb9c8893cbb111ce2",
+    "textureSha256": "278e6b3177e35f483cd74420593cc3b4cd670cd7383e79fbc00d895460ed6700",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "transport",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/transport.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/transport.dds",
+    "sourceSha256": "5e661b8467f609b39f04797211a7eb560865b532b8beb05367e96020c7227a99",
+    "textureSha256": "f3a47fba61e101c6a7af504f43a1f1765dcc22df416993bd6d5fd29635ff5ec8",
+    "sourceSize": [
+      1935,
+      812
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "heavy_fighter",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/heavy_fighter.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/heavy_fighter.dds",
+    "sourceSha256": "e23feb5e670108b30957e895bf67ab4ce9d500b54075faf96df65be69862c15d",
+    "textureSha256": "6bf99a2fbda95405edf7fc27655017eda8edbe4d6dff4786d2f122b047030e41",
+    "sourceSize": [
+      1568,
+      1003
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "scout",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/scout.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/scout.dds",
+    "sourceSha256": "d7bd2b20872cf0c33709f60c0eaf810d12f056892c427a703de9b57154336486",
+    "textureSha256": "b0638a7a195b84203847211796551a1f65226158e484e39f1c89e04097783975",
+    "sourceSize": [
+      1568,
+      1003
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "naval_bomber",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/naval_bomber.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/naval_bomber.dds",
+    "sourceSha256": "c92c0cd18fba337f8d2eb90288a438d009a656cdce10cfb11a6e45ef5ce1235f",
+    "textureSha256": "4cf87596ffd747622731917a3d59436d5277d70cbfaa242b8c4ffe7c8140c647",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "cas",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/cas.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/cas.dds",
+    "sourceSha256": "47e00dc1d2d21ecd2f296ccf931e8d8e6a72084f33aed09f25f3d64fda7133b8",
+    "textureSha256": "e99671cd62628cd95e969c30bb4edae02b9d9dc4bbbac9b2b94a81b381ab308d",
+    "sourceSize": [
+      1568,
+      1003
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "jet_engine",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/jet_engine.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/jet_engine.dds",
+    "sourceSha256": "3c8f6c18dde5e93fe9642ae19e63f456236f608c9483cbfa04c1a07f14882ec4",
+    "textureSha256": "62cc9b195d63deffd5cdc3c587baad69e0b3db23c5ea3f9e0908130162146031",
+    "sourceSize": [
+      1568,
+      1003
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "truck",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/truck.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/truck.dds",
+    "sourceSha256": "2d7b8503e763953af14b5ddcbee0454cf3c99b06c92149340348d3778a416de8",
+    "textureSha256": "1193c846ac53a330ced2aa98d9facd84c27ffb474674dab45c3225a98ceb5899",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "mechanized",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/mechanized.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/mechanized.dds",
+    "sourceSha256": "28e5a78ba05eaaa0c5e6d61ff759db2f9e23ee432f2d7ec33928b608fbd8ebf2",
+    "textureSha256": "3108b41d2f7f87dd0e30eb99f028bb65b9d75c8ebf349806cef1208b4cc270df",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "armored_car",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/armored_car.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/armored_car.dds",
+    "sourceSha256": "819ac8b40b0d8a5d0278868228b487ff6c7c1b1728099e151841874a0d9415b4",
+    "textureSha256": "d3e7230f177f0cdfea1e294e234756e5490a6cc3f16aa46fc01ab5e82755ba9c",
+    "sourceSize": [
+      1920,
+      819
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "train",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/train.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/train.dds",
+    "sourceSha256": "45f8606ae9963061e230abaadfca4532bd2b4560dcdcd7f00f27823c11e16d72",
+    "textureSha256": "c53d061ea1fcaf9b314cbe57111169eceb2f056513a82337145f8eec37f94dea",
+    "sourceSize": [
+      1586,
+      992
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "railgun",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/railgun.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/railgun.dds",
+    "sourceSha256": "12d7c651c8e12a14832a9d535ee3f9fe5db3be39cab81728a1950b44a4798929",
+    "textureSha256": "a14e618c2f5d399554449cd57c0e2e3a18a5ca02832ab791a927788201a76180",
+    "sourceSize": [
+      1568,
+      1003
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "amphibious_drive",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/amphibious_drive.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/amphibious_drive.dds",
+    "sourceSha256": "c941f945a17add8c4b3cb0578ae607a85629fae39ddbc012ae77e9287ed6a880",
+    "textureSha256": "6aedc98c6eb9251a920ac852e7ae0a093b46a6b9df20cf8f13d373bc98cd27e9",
+    "sourceSize": [
+      1923,
+      818
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "smoke",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/smoke.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/smoke.dds",
+    "sourceSha256": "075df659cdf418260fa3537ab8ccb1231a382fa5b2faa94be4e5b98959032256",
+    "textureSha256": "16e3ab125bcf701b1836c06edac9f3e54bb66279c525bb125e815d7230be3bf9",
+    "sourceSize": [
+      1568,
+      1003
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "destroyer",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/destroyer.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/destroyer.dds",
+    "sourceSha256": "b3782cf320995756efc47f653dc10540a94e422a457b54ad1931a36d73135ed8",
+    "textureSha256": "246c6cd8c8f666ff34d5ac6e3ee90e0a57e69c0b6cb9c0ac9998184320780789",
+    "sourceSize": [
+      1586,
+      992
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "amphibious_carrier",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/amphibious_carrier.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/amphibious_carrier.dds",
+    "sourceSha256": "e5e45b8f7a9a08e7391937b3483c1fc18291c2eb727d71fadcf5074face3ed37",
+    "textureSha256": "987458a62f2626f38888ebe846c98c241e9d4eec269301c6e33adbf60fb8a8da",
+    "sourceSize": [
+      1568,
+      1003
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "light_battery",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/light_battery.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/light_battery.dds",
+    "sourceSha256": "da0b3339c806a8f444bd5a3c8857a8ae152c2969025263cdc94e1c6b8b7bcc5d",
+    "textureSha256": "1f1cd2f2991fefdb6f488eca2240155a2c4699edca538775c52bbc6405e0310f",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  },
+  {
+    "id": "heavy_battery",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/heavy_battery.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/heavy_battery.dds",
+    "sourceSha256": "fcb9d3000bdebe2b1f872217d0e75fa3443d5ca7d550592b776407933f3eb9f7",
+    "textureSha256": "0cb0a944de64c4fbbd0087cc6dd369846613b67f62c62e6e673dd0c6c8d0375d",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ]
+  }
+]

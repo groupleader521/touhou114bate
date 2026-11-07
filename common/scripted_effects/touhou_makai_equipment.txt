@@ -1,0 +1,2612 @@
+touhou_makai_ensure_force_templates = {
+	if = {
+		limit = {
+			original_tag = MKI
+			exists = yes
+			has_country_flag = touhou_god_of_makai_country_flag
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_template = "魔界主力部队"
+				}
+			}
+			division_template = {
+				name = "魔界主力部队"
+				is_locked = no
+				force_allow_recruiting = yes
+				obsolete = no
+				regiments = {
+					makai_guard_mechanized = {
+						x = 0
+						y = 0
+					}
+					makai_guard_mechanized = {
+						x = 0
+						y = 1
+					}
+					makai_guard_mechanized = {
+						x = 0
+						y = 2
+					}
+					makai_guard_mechanized = {
+						x = 0
+						y = 3
+					}
+					makai_guard_mechanized = {
+						x = 0
+						y = 4
+					}
+					makai_guard_mechanized = {
+						x = 1
+						y = 0
+					}
+					makai_guard_mechanized = {
+						x = 1
+						y = 1
+					}
+					makai_guard_mechanized = {
+						x = 1
+						y = 2
+					}
+					makai_guard_mechanized = {
+						x = 1
+						y = 3
+					}
+					makai_guard_amphibious_heavy_armor = {
+						x = 2
+						y = 0
+					}
+					makai_guard_amphibious_heavy_armor = {
+						x = 2
+						y = 1
+					}
+					makai_guard_amphibious_heavy_armor = {
+						x = 2
+						y = 2
+					}
+					makai_guard_amphibious_heavy_armor = {
+						x = 2
+						y = 3
+					}
+					makai_guard_amphibious_heavy_armor = {
+						x = 2
+						y = 4
+					}
+					makai_guard_amphibious_heavy_armor = {
+						x = 3
+						y = 0
+					}
+					makai_guard_amphibious_heavy_armor = {
+						x = 3
+						y = 1
+					}
+					makai_guard_amphibious_heavy_armor = {
+						x = 3
+						y = 2
+					}
+					makai_guard_amphibious_heavy_armor = {
+						x = 3
+						y = 3
+					}
+					makai_guard_modern_tank_destroyer_brigade = {
+						x = 4
+						y = 0
+					}
+					makai_guard_modern_tank_destroyer_brigade = {
+						x = 4
+						y = 1
+					}
+				}
+				regimental_support = {
+					makai_guard_field_guns = {
+						x = 0
+						y = 0
+					}
+					makai_guard_field_guns = {
+						x = 1
+						y = 0
+					}
+					makai_guard_mot_fire_support = {
+						x = 2
+						y = 0
+					}
+					makai_guard_mot_fire_support = {
+						x = 3
+						y = 0
+					}
+				}
+				support = {
+					makai_guard_medium_flame_tank = {
+						x = 0
+						y = 0
+					}
+					makai_guard_armored_engineer = {
+						x = 0
+						y = 1
+					}
+					makai_guard_helicopter_field_hospital = {
+						x = 0
+						y = 2
+					}
+					makai_guard_helicopter_transport = {
+						x = 0
+						y = 3
+					}
+					makai_guard_light_tank_recon = {
+						x = 0
+						y = 4
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_template = "魔界准一线部队"
+				}
+			}
+			division_template = {
+				name = "魔界准一线部队"
+				is_locked = no
+				force_allow_recruiting = yes
+				obsolete = no
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
+					infantry = {
+						x = 0
+						y = 2
+					}
+					infantry = {
+						x = 0
+						y = 3
+					}
+					infantry = {
+						x = 0
+						y = 4
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 2
+					}
+					infantry = {
+						x = 1
+						y = 3
+					}
+					amphibious_heavy_armor = {
+						x = 2
+						y = 0
+					}
+					amphibious_heavy_armor = {
+						x = 2
+						y = 1
+					}
+					amphibious_heavy_armor = {
+						x = 2
+						y = 2
+					}
+					amphibious_heavy_armor = {
+						x = 2
+						y = 3
+					}
+					amphibious_heavy_armor = {
+						x = 2
+						y = 4
+					}
+					amphibious_heavy_armor = {
+						x = 3
+						y = 0
+					}
+					amphibious_heavy_armor = {
+						x = 3
+						y = 1
+					}
+					amphibious_heavy_armor = {
+						x = 3
+						y = 2
+					}
+					amphibious_heavy_armor = {
+						x = 3
+						y = 3
+					}
+					modern_tank_destroyer_brigade = {
+						x = 4
+						y = 0
+					}
+					modern_tank_destroyer_brigade = {
+						x = 4
+						y = 1
+					}
+				}
+				regimental_support = {
+					field_guns = {
+						x = 0
+						y = 0
+					}
+					field_guns = {
+						x = 1
+						y = 0
+					}
+					mot_fire_support = {
+						x = 2
+						y = 0
+					}
+					mot_fire_support = {
+						x = 3
+						y = 0
+					}
+				}
+				support = {
+					medium_flame_tank = {
+						x = 0
+						y = 0
+					}
+					armored_engineer = {
+						x = 0
+						y = 1
+					}
+					helicopter_field_hospital = {
+						x = 0
+						y = 2
+					}
+					helicopter_transport = {
+						x = 0
+						y = 3
+					}
+					light_tank_recon = {
+						x = 0
+						y = 4
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_template = "魔界填线部队"
+				}
+			}
+			division_template = {
+				name = "魔界填线部队"
+				is_locked = no
+				force_allow_recruiting = yes
+				obsolete = no
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
+					infantry = {
+						x = 0
+						y = 2
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 2
+					}
+					infantry = {
+						x = 2
+						y = 0
+					}
+					infantry = {
+						x = 2
+						y = 1
+					}
+					infantry = {
+						x = 2
+						y = 2
+					}
+					medium_armor = {
+						x = 3
+						y = 0
+					}
+					medium_armor = {
+						x = 3
+						y = 1
+					}
+					medium_armor = {
+						x = 3
+						y = 2
+					}
+					medium_armor = {
+						x = 3
+						y = 3
+					}
+					medium_armor = {
+						x = 3
+						y = 4
+					}
+				}
+				regimental_support = {
+					field_guns = {
+						x = 0
+						y = 0
+					}
+					field_guns = {
+						x = 1
+						y = 0
+					}
+					field_guns = {
+						x = 2
+						y = 0
+					}
+				}
+				support = {
+					engineer = {
+						x = 0
+						y = 0
+					}
+					artillery = {
+						x = 0
+						y = 1
+					}
+				}
+			}
+		}
+	}
+}
+touhou_makai_modern_equipment_setup = {
+	touhou_makai_sync_resource_security = yes
+	touhou_makai_sync_industry_compensation = yes
+	if = {
+		limit = {
+			original_tag = MKI
+			exists = yes
+			has_country_flag = touhou_god_of_makai_country_flag
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = makai_modern_equipment_license
+				}
+			}
+			set_technology = {
+				makai_modern_equipment_license = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = gwtank_chassis
+				}
+			}
+			set_technology = {
+				gwtank_chassis = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = engine_tech_1
+				}
+			}
+			set_technology = {
+				engine_tech_1 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = engine_tech_2
+				}
+			}
+			set_technology = {
+				engine_tech_2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = engine_tech_3
+				}
+			}
+			set_technology = {
+				engine_tech_3 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = engine_tech_4
+				}
+			}
+			set_technology = {
+				engine_tech_4 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = armor_tech_1
+				}
+			}
+			set_technology = {
+				armor_tech_1 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = armor_tech_2
+				}
+			}
+			set_technology = {
+				armor_tech_2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = armor_tech_3
+				}
+			}
+			set_technology = {
+				armor_tech_3 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = armor_tech_4
+				}
+			}
+			set_technology = {
+				armor_tech_4 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_template = "魔界主力部队"
+			}
+			set_division_template_lock = {
+				division_template = "魔界主力部队"
+				is_locked = no
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "魔界主力部队"
+				force_allow_recruiting = yes
+			}
+		}
+		if = {
+			limit = {
+				has_template = "魔界准一线部队"
+			}
+			set_division_template_lock = {
+				division_template = "魔界准一线部队"
+				is_locked = no
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "魔界准一线部队"
+				force_allow_recruiting = yes
+			}
+		}
+		if = {
+			limit = {
+				has_template = "魔界填线部队"
+			}
+			set_division_template_lock = {
+				division_template = "魔界填线部队"
+				is_locked = no
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "魔界填线部队"
+				force_allow_recruiting = yes
+			}
+		}
+		if = {
+			limit = {
+				has_template = "魔界先遣部队"
+			}
+			set_division_template_lock = {
+				division_template = "魔界先遣部队"
+				is_locked = no
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "魔界先遣部队"
+				force_allow_recruiting = yes
+			}
+		}
+		if = {
+			limit = {
+				has_template = "魔界突击部队"
+			}
+			set_division_template_lock = {
+				division_template = "魔界突击部队"
+				is_locked = no
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "魔界突击部队"
+				force_allow_recruiting = yes
+			}
+		}
+		if = {
+			limit = {
+				has_template = "魔界精英部队"
+			}
+			set_division_template_lock = {
+				division_template = "魔界精英部队"
+				is_locked = no
+			}
+			set_division_force_allow_recruiting = {
+				division_template = "魔界精英部队"
+				force_allow_recruiting = yes
+			}
+		}
+		if = {
+			limit = {
+				has_tech = interwar_artillery
+				NOT = {
+					has_tech = makai_guard_bonus_interwar_artillery
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_interwar_artillery = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = interwar_artillery
+				}
+				has_tech = makai_guard_bonus_interwar_artillery
+			}
+			set_technology = {
+				makai_guard_bonus_interwar_artillery = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = artillery2
+				NOT = {
+					has_tech = makai_guard_bonus_artillery2
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_artillery2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = artillery2
+				}
+				has_tech = makai_guard_bonus_artillery2
+			}
+			set_technology = {
+				makai_guard_bonus_artillery2 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = artillery3
+				NOT = {
+					has_tech = makai_guard_bonus_artillery3
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_artillery3 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = artillery3
+				}
+				has_tech = makai_guard_bonus_artillery3
+			}
+			set_technology = {
+				makai_guard_bonus_artillery3 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = artillery5
+				NOT = {
+					has_tech = makai_guard_bonus_artillery5
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_artillery5 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = artillery5
+				}
+				has_tech = makai_guard_bonus_artillery5
+			}
+			set_technology = {
+				makai_guard_bonus_artillery5 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = antitank1
+				NOT = {
+					has_tech = makai_guard_bonus_antitank1
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_antitank1 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = antitank1
+				}
+				has_tech = makai_guard_bonus_antitank1
+			}
+			set_technology = {
+				makai_guard_bonus_antitank1 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = antitank3
+				NOT = {
+					has_tech = makai_guard_bonus_antitank3
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_antitank3 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = antitank3
+				}
+				has_tech = makai_guard_bonus_antitank3
+			}
+			set_technology = {
+				makai_guard_bonus_antitank3 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = antitank4
+				NOT = {
+					has_tech = makai_guard_bonus_antitank4
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_antitank4 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = antitank4
+				}
+				has_tech = makai_guard_bonus_antitank4
+			}
+			set_technology = {
+				makai_guard_bonus_antitank4 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = SWE_bofors_antitank_gun
+				NOT = {
+					has_tech = makai_guard_bonus_SWE_bofors_antitank_gun
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_SWE_bofors_antitank_gun = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = SWE_bofors_antitank_gun
+				}
+				has_tech = makai_guard_bonus_SWE_bofors_antitank_gun
+			}
+			set_technology = {
+				makai_guard_bonus_SWE_bofors_antitank_gun = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = sp_variable_time_fuze_shells
+				NOT = {
+					has_tech = makai_guard_bonus_sp_variable_time_fuze_shells
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_sp_variable_time_fuze_shells = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = sp_variable_time_fuze_shells
+				}
+				has_tech = makai_guard_bonus_sp_variable_time_fuze_shells
+			}
+			set_technology = {
+				makai_guard_bonus_sp_variable_time_fuze_shells = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = sp_land_large_caliber_kinetic_energy_sabot_gd_tech
+				NOT = {
+					has_tech = makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_gd_tech
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_gd_tech = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = sp_land_large_caliber_kinetic_energy_sabot_gd_tech
+				}
+				has_tech = makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_gd_tech
+			}
+			set_technology = {
+				makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_gd_tech = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = sp_land_large_caliber_kinetic_energy_sabot_no_gd_tech
+				NOT = {
+					has_tech = makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_no_gd_tech
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_no_gd_tech = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = sp_land_large_caliber_kinetic_energy_sabot_no_gd_tech
+				}
+				has_tech = makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_no_gd_tech
+			}
+			set_technology = {
+				makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_no_gd_tech = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = sp_advance_sabot_shells
+				NOT = {
+					has_tech = makai_guard_bonus_sp_advance_sabot_shells
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_sp_advance_sabot_shells = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = sp_advance_sabot_shells
+				}
+				has_tech = makai_guard_bonus_sp_advance_sabot_shells
+			}
+			set_technology = {
+				makai_guard_bonus_sp_advance_sabot_shells = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = sp_centrifugal_jet_tech
+				NOT = {
+					has_tech = makai_guard_bonus_sp_centrifugal_jet_tech
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_sp_centrifugal_jet_tech = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = sp_centrifugal_jet_tech
+				}
+				has_tech = makai_guard_bonus_sp_centrifugal_jet_tech
+			}
+			set_technology = {
+				makai_guard_bonus_sp_centrifugal_jet_tech = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = infantry_weapons2
+				NOT = {
+					has_tech = makai_guard_bonus_infantry_weapons2
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_infantry_weapons2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = infantry_weapons2
+				}
+				has_tech = makai_guard_bonus_infantry_weapons2
+			}
+			set_technology = {
+				makai_guard_bonus_infantry_weapons2 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = improved_infantry_weapons_2
+				NOT = {
+					has_tech = makai_guard_bonus_improved_infantry_weapons_2
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_improved_infantry_weapons_2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = improved_infantry_weapons_2
+				}
+				has_tech = makai_guard_bonus_improved_infantry_weapons_2
+			}
+			set_technology = {
+				makai_guard_bonus_improved_infantry_weapons_2 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = infantry_at
+				NOT = {
+					has_tech = makai_guard_bonus_infantry_at
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_infantry_at = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = infantry_at
+				}
+				has_tech = makai_guard_bonus_infantry_at
+			}
+			set_technology = {
+				makai_guard_bonus_infantry_at = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = infantry_at2
+				NOT = {
+					has_tech = makai_guard_bonus_infantry_at2
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_infantry_at2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = infantry_at2
+				}
+				has_tech = makai_guard_bonus_infantry_at2
+			}
+			set_technology = {
+				makai_guard_bonus_infantry_at2 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = advanced_infantry_weapons2
+				NOT = {
+					has_tech = makai_guard_bonus_advanced_infantry_weapons2
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_advanced_infantry_weapons2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = advanced_infantry_weapons2
+				}
+				has_tech = makai_guard_bonus_advanced_infantry_weapons2
+			}
+			set_technology = {
+				makai_guard_bonus_advanced_infantry_weapons2 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = support_weapons2
+				NOT = {
+					has_tech = makai_guard_bonus_support_weapons2
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_support_weapons2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = support_weapons2
+				}
+				has_tech = makai_guard_bonus_support_weapons2
+			}
+			set_technology = {
+				makai_guard_bonus_support_weapons2 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = support_weapons3
+				NOT = {
+					has_tech = makai_guard_bonus_support_weapons3
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_support_weapons3 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = support_weapons3
+				}
+				has_tech = makai_guard_bonus_support_weapons3
+			}
+			set_technology = {
+				makai_guard_bonus_support_weapons3 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = support_weapons4
+				NOT = {
+					has_tech = makai_guard_bonus_support_weapons4
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_support_weapons4 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = support_weapons4
+				}
+				has_tech = makai_guard_bonus_support_weapons4
+			}
+			set_technology = {
+				makai_guard_bonus_support_weapons4 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = motorised_infantry
+				NOT = {
+					has_tech = makai_guard_bonus_motorised_infantry
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_motorised_infantry = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = motorised_infantry
+				}
+				has_tech = makai_guard_bonus_motorised_infantry
+			}
+			set_technology = {
+				makai_guard_bonus_motorised_infantry = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = mechanised_infantry
+				NOT = {
+					has_tech = makai_guard_bonus_mechanised_infantry
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_mechanised_infantry = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = mechanised_infantry
+				}
+				has_tech = makai_guard_bonus_mechanised_infantry
+			}
+			set_technology = {
+				makai_guard_bonus_mechanised_infantry = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = mechanised_infantry2
+				NOT = {
+					has_tech = makai_guard_bonus_mechanised_infantry2
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_mechanised_infantry2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = mechanised_infantry2
+				}
+				has_tech = makai_guard_bonus_mechanised_infantry2
+			}
+			set_technology = {
+				makai_guard_bonus_mechanised_infantry2 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = mechanised_infantry3
+				NOT = {
+					has_tech = makai_guard_bonus_mechanised_infantry3
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_mechanised_infantry3 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = mechanised_infantry3
+				}
+				has_tech = makai_guard_bonus_mechanised_infantry3
+			}
+			set_technology = {
+				makai_guard_bonus_mechanised_infantry3 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = molotov_cocktails_tech
+				NOT = {
+					has_tech = makai_guard_bonus_molotov_cocktails_tech
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_molotov_cocktails_tech = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = molotov_cocktails_tech
+				}
+				has_tech = makai_guard_bonus_molotov_cocktails_tech
+			}
+			set_technology = {
+				makai_guard_bonus_molotov_cocktails_tech = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = lotta_svard_tech
+				NOT = {
+					has_tech = makai_guard_bonus_lotta_svard_tech
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_lotta_svard_tech = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = lotta_svard_tech
+				}
+				has_tech = makai_guard_bonus_lotta_svard_tech
+			}
+			set_technology = {
+				makai_guard_bonus_lotta_svard_tech = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = uranium_tipped_bullets
+				NOT = {
+					has_tech = makai_guard_bonus_uranium_tipped_bullets
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_uranium_tipped_bullets = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = uranium_tipped_bullets
+				}
+				has_tech = makai_guard_bonus_uranium_tipped_bullets
+			}
+			set_technology = {
+				makai_guard_bonus_uranium_tipped_bullets = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = PHI_battalion_combat_teams
+				NOT = {
+					has_tech = makai_guard_bonus_PHI_battalion_combat_teams
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_PHI_battalion_combat_teams = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = PHI_battalion_combat_teams
+				}
+				has_tech = makai_guard_bonus_PHI_battalion_combat_teams
+			}
+			set_technology = {
+				makai_guard_bonus_PHI_battalion_combat_teams = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = MUN_recon_in_force
+				NOT = {
+					has_tech = makai_guard_bonus_MUN_recon_in_force
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_MUN_recon_in_force = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = MUN_recon_in_force
+				}
+				has_tech = makai_guard_bonus_MUN_recon_in_force
+			}
+			set_technology = {
+				makai_guard_bonus_MUN_recon_in_force = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = tech_engineers2
+				NOT = {
+					has_tech = makai_guard_bonus_tech_engineers2
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_tech_engineers2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = tech_engineers2
+				}
+				has_tech = makai_guard_bonus_tech_engineers2
+			}
+			set_technology = {
+				makai_guard_bonus_tech_engineers2 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = tech_engineers3
+				NOT = {
+					has_tech = makai_guard_bonus_tech_engineers3
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_tech_engineers3 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = tech_engineers3
+				}
+				has_tech = makai_guard_bonus_tech_engineers3
+			}
+			set_technology = {
+				makai_guard_bonus_tech_engineers3 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = tech_engineers4
+				NOT = {
+					has_tech = makai_guard_bonus_tech_engineers4
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_tech_engineers4 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = tech_engineers4
+				}
+				has_tech = makai_guard_bonus_tech_engineers4
+			}
+			set_technology = {
+				makai_guard_bonus_tech_engineers4 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = tech_field_hospital2
+				NOT = {
+					has_tech = makai_guard_bonus_tech_field_hospital2
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_tech_field_hospital2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = tech_field_hospital2
+				}
+				has_tech = makai_guard_bonus_tech_field_hospital2
+			}
+			set_technology = {
+				makai_guard_bonus_tech_field_hospital2 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = tech_field_hospital3
+				NOT = {
+					has_tech = makai_guard_bonus_tech_field_hospital3
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_tech_field_hospital3 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = tech_field_hospital3
+				}
+				has_tech = makai_guard_bonus_tech_field_hospital3
+			}
+			set_technology = {
+				makai_guard_bonus_tech_field_hospital3 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = tech_field_hospital4
+				NOT = {
+					has_tech = makai_guard_bonus_tech_field_hospital4
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_tech_field_hospital4 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = tech_field_hospital4
+				}
+				has_tech = makai_guard_bonus_tech_field_hospital4
+			}
+			set_technology = {
+				makai_guard_bonus_tech_field_hospital4 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = NORDIC_supportCollaboration_tech
+				NOT = {
+					has_tech = makai_guard_bonus_NORDIC_supportCollaboration_tech
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_NORDIC_supportCollaboration_tech = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = NORDIC_supportCollaboration_tech
+				}
+				has_tech = makai_guard_bonus_NORDIC_supportCollaboration_tech
+			}
+			set_technology = {
+				makai_guard_bonus_NORDIC_supportCollaboration_tech = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = tech_logistics_company2
+				NOT = {
+					has_tech = makai_guard_bonus_tech_logistics_company2
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_tech_logistics_company2 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = tech_logistics_company2
+				}
+				has_tech = makai_guard_bonus_tech_logistics_company2
+			}
+			set_technology = {
+				makai_guard_bonus_tech_logistics_company2 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = tech_logistics_company3
+				NOT = {
+					has_tech = makai_guard_bonus_tech_logistics_company3
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_tech_logistics_company3 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = tech_logistics_company3
+				}
+				has_tech = makai_guard_bonus_tech_logistics_company3
+			}
+			set_technology = {
+				makai_guard_bonus_tech_logistics_company3 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				has_tech = tech_logistics_company4
+				NOT = {
+					has_tech = makai_guard_bonus_tech_logistics_company4
+				}
+			}
+			set_technology = {
+				makai_guard_bonus_tech_logistics_company4 = 1
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = tech_logistics_company4
+				}
+				has_tech = makai_guard_bonus_tech_logistics_company4
+			}
+			set_technology = {
+				makai_guard_bonus_tech_logistics_company4 = 0
+				popup = no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = makai_design_ready_makai_infantry_weapons
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·神绮式魔导步兵武器"
+				type = makai_infantry_weapons
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_infantry_weapons_medium"
+				modules = {
+				}
+				upgrades = {
+				}
+			}
+			set_country_flag = makai_design_ready_makai_infantry_weapons
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_infantry_weapons
+				NOT = {
+					has_country_flag = makai_production_ready_makai_infantry_weapons
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_infantry_weapons
+					creator = MKI
+					version_name = "魔界·神绮式魔导步兵武器"
+				}
+				requested_factories = 34
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_infantry_weapons
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = makai_design_ready_makai_mechanized_transport
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·高级机械化载具"
+				type = makai_mechanized_transport
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_mechanized_transport_medium"
+				modules = {
+				}
+				upgrades = {
+				}
+			}
+			set_country_flag = makai_design_ready_makai_mechanized_transport
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_mechanized_transport
+				NOT = {
+					has_country_flag = makai_production_ready_makai_mechanized_transport
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_mechanized_transport
+					creator = MKI
+					version_name = "魔界·高级机械化载具"
+				}
+				requested_factories = 24
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_mechanized_transport
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = makai_design_ready_makai_support_kit
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·支援装备"
+				type = makai_support_kit
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_support_kit_medium"
+				modules = {
+				}
+				upgrades = {
+				}
+			}
+			set_country_flag = makai_design_ready_makai_support_kit
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_support_kit
+				NOT = {
+					has_country_flag = makai_production_ready_makai_support_kit
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_support_kit
+					creator = MKI
+					version_name = "魔界·支援装备"
+				}
+				requested_factories = 20
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_support_kit
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = makai_design_ready_makai_motor_transport
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·军用卡车"
+				type = makai_motor_transport
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_motor_transport_medium"
+				modules = {
+				}
+				upgrades = {
+				}
+			}
+			set_country_flag = makai_design_ready_makai_motor_transport
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_motor_transport
+				NOT = {
+					has_country_flag = makai_production_ready_makai_motor_transport
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_motor_transport
+					creator = MKI
+					version_name = "魔界·军用卡车"
+				}
+				requested_factories = 16
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_motor_transport
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = makai_design_ready_makai_field_artillery
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·高级火炮"
+				type = makai_field_artillery
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_field_artillery_medium"
+				modules = {
+				}
+				upgrades = {
+				}
+			}
+			set_country_flag = makai_design_ready_makai_field_artillery
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_field_artillery
+				NOT = {
+					has_country_flag = makai_production_ready_makai_field_artillery
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_field_artillery
+					creator = MKI
+					version_name = "魔界·高级火炮"
+				}
+				requested_factories = 20
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_field_artillery
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = makai_design_ready_makai_engineer_vehicle
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·装甲工程车"
+				type = makai_engineer_vehicle
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_engineer_vehicle_medium"
+				modules = {
+				}
+				upgrades = {
+				}
+			}
+			set_country_flag = makai_design_ready_makai_engineer_vehicle
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_engineer_vehicle
+				NOT = {
+					has_country_flag = makai_production_ready_makai_engineer_vehicle
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_engineer_vehicle
+					creator = MKI
+					version_name = "魔界·装甲工程车"
+				}
+				requested_factories = 12
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_engineer_vehicle
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = makai_design_ready_makai_support_helicopter
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·运输救护直升机"
+				type = makai_support_helicopter
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_support_helicopter_medium"
+				modules = {
+				}
+				upgrades = {
+				}
+			}
+			set_country_flag = makai_design_ready_makai_support_helicopter
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_support_helicopter
+				NOT = {
+					has_country_flag = makai_production_ready_makai_support_helicopter
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_support_helicopter
+					creator = MKI
+					version_name = "魔界·运输救护直升机"
+				}
+				requested_factories = 12
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_support_helicopter
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = makai_design_ready_makai_supply_train
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·军用列车"
+				type = makai_supply_train
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_supply_train_medium"
+				modules = {
+				}
+				upgrades = {
+				}
+			}
+			set_country_flag = makai_design_ready_makai_supply_train
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_supply_train
+				NOT = {
+					has_country_flag = makai_production_ready_makai_supply_train
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_supply_train
+					creator = MKI
+					version_name = "魔界·军用列车"
+				}
+				requested_factories = 2
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_supply_train
+		}
+		if = {
+			limit = {
+				has_dlc = "No Step Back"
+				NOT = {
+					has_country_flag = makai_design_ready_makai_amphibious_heavy
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·神绮式两栖重坦"
+				type = makai_amphibious_heavy
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_amphibious_heavy_medium"
+				modules = {
+					turret_type_slot = tank_heavy_three_man_tank_turret
+					main_armament_slot = tank_heavy_cannon_3
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_diesel_engine
+					special_type_slot_1 = tank_radio_3
+					special_type_slot_2 = easy_maintenance
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = amphibious_drive
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 20
+					tank_nsb_armor_upgrade = 10
+				}
+			}
+			set_country_flag = makai_design_ready_makai_amphibious_heavy
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_amphibious_heavy
+				NOT = {
+					has_country_flag = makai_production_ready_makai_amphibious_heavy
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_amphibious_heavy
+					creator = MKI
+					version_name = "魔界·神绮式两栖重坦"
+				}
+				requested_factories = 114
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_amphibious_heavy
+		}
+		if = {
+			limit = {
+				has_dlc = "No Step Back"
+				NOT = {
+					has_country_flag = makai_design_ready_makai_tank_destroyer
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·神绮式自行反坦克炮"
+				type = makai_tank_destroyer
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_tank_destroyer_medium"
+				modules = {
+					turret_type_slot = tank_heavy_fixed_superstructure_turret
+					main_armament_slot = tank_heavy_cannon_3
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_diesel_engine
+					special_type_slot_1 = tank_radio_3
+					special_type_slot_2 = stabilizer
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = easy_maintenance
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 20
+					tank_nsb_armor_upgrade = 10
+				}
+			}
+			set_country_flag = makai_design_ready_makai_tank_destroyer
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_tank_destroyer
+				NOT = {
+					has_country_flag = makai_production_ready_makai_tank_destroyer
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_tank_destroyer
+					creator = MKI
+					version_name = "魔界·神绮式自行反坦克炮"
+				}
+				requested_factories = 26
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_tank_destroyer
+		}
+		if = {
+			limit = {
+				has_dlc = "No Step Back"
+				NOT = {
+					has_country_flag = makai_design_ready_makai_flame_medium
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·神绮式中型喷火坦克"
+				type = makai_flame_medium
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_flame_medium_medium"
+				modules = {
+					turret_type_slot = tank_medium_three_man_tank_turret
+					main_armament_slot = advanced_flamethrower
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_diesel_engine
+					special_type_slot_1 = tank_radio_3
+					special_type_slot_2 = additional_machine_guns
+					special_type_slot_3 = wet_ammo_storage
+					special_type_slot_4 = easy_maintenance
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 20
+					tank_nsb_armor_upgrade = 10
+				}
+			}
+			set_country_flag = makai_design_ready_makai_flame_medium
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_flame_medium
+				NOT = {
+					has_country_flag = makai_production_ready_makai_flame_medium
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_flame_medium
+					creator = MKI
+					version_name = "魔界·神绮式中型喷火坦克"
+				}
+				requested_factories = 8
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_flame_medium
+		}
+		if = {
+			limit = {
+				has_dlc = "No Step Back"
+				NOT = {
+					has_country_flag = makai_design_ready_makai_recon_light
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·神绮式装甲侦察坦克"
+				type = makai_recon_light
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_recon_light_medium"
+				modules = {
+					turret_type_slot = tank_light_three_man_tank_turret
+					main_armament_slot = tank_small_cannon_2
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_diesel_engine
+					special_type_slot_1 = tank_radio_3
+					special_type_slot_2 = stabilizer
+					special_type_slot_3 = extra_ammo_storage
+					special_type_slot_4 = easy_maintenance
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 20
+					tank_nsb_armor_upgrade = 10
+				}
+			}
+			set_country_flag = makai_design_ready_makai_recon_light
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_recon_light
+				NOT = {
+					has_country_flag = makai_production_ready_makai_recon_light
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_recon_light
+					creator = MKI
+					version_name = "魔界·神绮式装甲侦察坦克"
+				}
+				requested_factories = 12
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_recon_light
+		}
+		if = {
+			limit = {
+				has_dlc = "No Step Back"
+				NOT = {
+					has_country_flag = makai_design_ready_makai_line_medium
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·填线用高级中型坦克"
+				type = makai_line_medium
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_line_medium_medium"
+				modules = {
+					turret_type_slot = tank_medium_three_man_tank_turret
+					main_armament_slot = tank_medium_cannon_2
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_diesel_engine
+					special_type_slot_1 = tank_radio_3
+					special_type_slot_2 = stabilizer
+					special_type_slot_3 = auto_loader
+					special_type_slot_4 = easy_maintenance
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 0
+					tank_nsb_armor_upgrade = 10
+				}
+			}
+			set_country_flag = makai_design_ready_makai_line_medium
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_line_medium
+				NOT = {
+					has_country_flag = makai_production_ready_makai_line_medium
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_line_medium
+					creator = MKI
+					version_name = "魔界·填线用高级中型坦克"
+				}
+				requested_factories = 68
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_line_medium
+		}
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+				NOT = {
+					has_country_flag = makai_design_ready_makai_fighter
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·制空战斗机"
+				type = makai_fighter
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_fighter_medium"
+				modules = {
+					fixed_main_weapon_slot = aircraft_cannon_2_2x
+					fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+					engine_type_slot = jet_engine_axial_1x
+					special_type_slot_1 = self_sealing_fuel_tanks_small
+					special_type_slot_2 = armor_plate_small
+					fixed_auxiliary_weapon_slot_2 = empty
+					fixed_auxiliary_weapon_slot_3 = empty
+					fixed_auxiliary_weapon_slot_4 = empty
+					special_type_slot_3 = air_air_radar_2
+					special_type_slot_4 = empty
+				}
+				upgrades = {
+				}
+			}
+			set_country_flag = makai_design_ready_makai_fighter
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_fighter
+				NOT = {
+					has_country_flag = makai_production_ready_makai_fighter
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_fighter
+					creator = MKI
+					version_name = "魔界·制空战斗机"
+				}
+				requested_factories = 12
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_fighter
+		}
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+				NOT = {
+					has_country_flag = makai_design_ready_makai_cas
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·对地攻击机"
+				type = makai_cas
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_cas_medium"
+				modules = {
+					fixed_main_weapon_slot = heavy_bomb_locks
+					fixed_auxiliary_weapon_slot_1 = rocket_rails
+					engine_type_slot = jet_engine_axial_1x
+					special_type_slot_1 = self_sealing_fuel_tanks_small
+					special_type_slot_2 = armor_plate_small
+					fixed_auxiliary_weapon_slot_2 = empty
+					fixed_auxiliary_weapon_slot_3 = empty
+					fixed_auxiliary_weapon_slot_4 = empty
+					special_type_slot_3 = dive_brakes_small
+					special_type_slot_4 = empty
+				}
+				upgrades = {
+				}
+			}
+			set_country_flag = makai_design_ready_makai_cas
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_cas
+				NOT = {
+					has_country_flag = makai_production_ready_makai_cas
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_cas
+					creator = MKI
+					version_name = "魔界·对地攻击机"
+				}
+				requested_factories = 8
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_cas
+		}
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+				NOT = {
+					has_country_flag = makai_design_ready_makai_destroyer
+				}
+			}
+			create_equipment_variant = {
+				name = "魔界·护航驱逐舰"
+				type = makai_destroyer
+				parent_version = 0
+				allow_without_tech = yes
+				icon = "GFX_makai_destroyer_medium"
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery_4
+					fixed_ship_anti_air_slot = ship_anti_air_4
+					fixed_ship_fire_control_system_slot = ship_sonar_4
+					fixed_ship_radar_slot = ship_radar_4
+					fixed_ship_torpedo_slot = ship_torpedo_4
+					fixed_ship_engine_slot = light_ship_engine_4
+					mid_1_custom_slot = ship_depth_charge_4
+					rear_1_custom_slot = empty
+					front_1_custom_slot = ship_depth_charge_4
+					mid_2_custom_slot = ship_anti_air_4
+				}
+				upgrades = {
+				}
+			}
+			set_country_flag = makai_design_ready_makai_destroyer
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				has_country_flag = makai_design_ready_makai_destroyer
+				NOT = {
+					has_country_flag = makai_production_ready_makai_destroyer
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = makai_destroyer
+					creator = MKI
+					version_name = "魔界·护航驱逐舰"
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_destroyer
+		}
+		if = {
+			limit = {
+				has_country_flag = touhou_makai_arrived
+				NOT = {
+					has_country_flag = makai_production_ready_makai_convoy
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			add_equipment_production = {
+				equipment = {
+					type = convoy_1
+					creator = MKI
+				}
+				requested_factories = 5
+				efficiency = 0.8
+			}
+			set_country_flag = makai_production_ready_makai_convoy
+		}
+		touhou_makai_ensure_force_templates = yes
+	}
+}
+touhou_makai_equipment_phase_0 = {
+	touhou_makai_modern_equipment_setup = yes
+}
+touhou_makai_equipment_phase_1 = {
+	touhou_makai_modern_equipment_setup = yes
+}
+touhou_makai_equipment_phase_2 = {
+	touhou_makai_modern_equipment_setup = yes
+}
+touhou_makai_equipment_phase_3 = {
+	touhou_makai_modern_equipment_setup = yes
+}
+touhou_makai_initial_reserve = {
+	if = {
+		limit = {
+			original_tag = MKI
+			exists = yes
+			has_country_flag = touhou_god_of_makai_country_flag
+			has_country_flag = touhou_makai_arrived
+			NOT = {
+				has_country_flag = makai_initial_reserve_granted
+			}
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@infantry_equipment
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_infantry_weapons
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·神绮式魔导步兵武器"
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@mechanized_equipment
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_mechanized_transport
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·高级机械化载具"
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@support_equipment
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_support_kit
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·支援装备"
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@motorized_equipment
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_motor_transport
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·军用卡车"
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@artillery_equipment
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_field_artillery
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·高级火炮"
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@armored_support_vehicle
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_engineer_vehicle
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·装甲工程车"
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@helicopter_equipment
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_support_helicopter
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·运输救护直升机"
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@heavy_tank_amphibious_chassis
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_amphibious_heavy
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·神绮式两栖重坦"
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@modern_tank_destroyer_chassis
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_tank_destroyer
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·神绮式自行反坦克炮"
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@medium_tank_flame_chassis
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_flame_medium
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·神绮式中型喷火坦克"
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@light_tank_chassis
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_recon_light
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·神绮式装甲侦察坦克"
+		}
+		set_temp_variable = {
+			makai_supply_reserve = num_target_equipment_in_armies@medium_tank_chassis
+		}
+		multiply_temp_variable = {
+			makai_supply_reserve = 0.10
+		}
+		add_equipment_to_stockpile = {
+			type = makai_line_medium
+			amount = makai_supply_reserve
+			producer = MKI
+			variant_name = "魔界·填线用高级中型坦克"
+		}
+		set_country_flag = makai_initial_reserve_granted
+	}
+}
+touhou_makai_sync_equipment = {
+	touhou_makai_modern_equipment_setup = yes
+}

@@ -1,0 +1,11 @@
+touhou_makai_industrial_concentration = {
+	icon = GFX_goal_generic_production
+	enable = {
+		original_tag = MKI
+		exists = yes
+		has_country_flag = touhou_god_of_makai_country_flag
+		has_country_flag = touhou_makai_arrived
+	}
+	industrial_capacity_factory = makai_factory_compensation
+	industrial_capacity_dockyard = makai_dockyard_compensation
+}

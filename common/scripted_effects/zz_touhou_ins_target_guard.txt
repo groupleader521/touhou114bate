@@ -1,0 +1,1 @@
+# Guard now lives in the matching INS_scripted_effects.txt path; no duplicate effect definition.

@@ -17,7 +17,6 @@ add_ideas = {
 	huiyin_main_researcher
 	touhou_fiscal_society
 }
-set_country_flag = touhou_project_unlocked_human_army
 set_technology = {
 	infantry_weapons = 1
 }

@@ -1,0 +1,390 @@
+touhou_makai_ground_replacements = {
+	allowed = {
+		original_tag = MKI
+	}
+	enable = {
+		has_country_flag = touhou_god_of_makai_country_flag
+		has_country_flag = touhou_makai_arrived
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = infantry_equipment
+		value = 17
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = mechanized_equipment
+		value = 12
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = support_equipment
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = motorized_equipment
+		value = 8
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = artillery_equipment
+		value = 10
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = armored_support_vehicle
+		value = 6
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = helicopter_equipment
+		value = 6
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = heavy_tank_amphibious_chassis
+		value = 57
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = modern_tank_destroyer_chassis
+		value = 13
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = medium_tank_flame_chassis
+		value = 4
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = light_tank_chassis
+		value = 6
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = medium_tank_chassis
+		value = 34
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = carrier
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = capital_ship
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = submarine
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = artillery_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = artillery_equipment_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = artillery_equipment_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = helicopter_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment_0
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = infantry_equipment_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = mechanized_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = mechanized_equipment_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = mechanized_equipment_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = motorized_equipment_0
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = motorized_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = small_plane_airframe_0
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = small_plane_airframe_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = small_plane_airframe_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = small_plane_airframe_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = small_plane_airframe_4
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = small_plane_airframe_5
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = ship_hull_light_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = ship_hull_light_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = ship_hull_light_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = ship_hull_light_4
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = destroyer_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = destroyer_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = destroyer_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = destroyer_4
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = armored_support_vehicle_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = support_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_chassis_0
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_chassis_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_chassis_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_chassis_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_chassis_0
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_chassis_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_chassis_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_chassis_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = train_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = train_equipment_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = train_equipment_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = fighter_equipment_0
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = fighter_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = fighter_equipment_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = fighter_equipment_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = CAS_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = CAS_equipment_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = CAS_equipment_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = gw_tank_equipment
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_equipment_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = light_tank_equipment_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_equipment_2
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_equipment_3
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = modern_tank_destroyer_equipment_1
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = anti_air_equipment
+		value = -100
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = anti_tank_equipment
+		value = -100
+	}
+}

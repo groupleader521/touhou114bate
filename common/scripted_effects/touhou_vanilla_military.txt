@@ -1,4 +1,3 @@
-# Country-owned designs and original research deltas; native equipment unlock lists stay native.
 touhou_sync_tank_designer = {
 	if = {
 		limit = {
@@ -6886,7 +6885,16 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_goliath_0
+						AND = {
+							is_special_project_completed = sp:sp_touhou_goliath_1
+							has_country_flag = touhou_country_flag_magic_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 						OR = {
 							AND = {
 								has_dlc = "No Step Back"
@@ -6901,7 +6909,7 @@ touhou_sync_tank_designer = {
 						}
 						has_tech = gwtank_chassis
 					}
-					has_country_flag = touhou_historical_tank_frame_goliath_1
+					always = no
 				}
 				NOT = {
 					has_tech = touhou_tank_frame_license_goliath_1
@@ -6957,7 +6965,16 @@ touhou_sync_tank_designer = {
 									original_tag = MLS
 									original_tag = EVI
 								}
-								has_country_flag = touhou_project_unlocked_goliath_0
+								AND = {
+									is_special_project_completed = sp:sp_touhou_goliath_1
+									has_country_flag = touhou_country_flag_magic_first_research
+									NOT = {
+										has_country_flag = touhou_country_flag_out_first_research
+									}
+									NOT = {
+										has_country_flag = touhou_country_flag_changing_first_research
+									}
+								}
 								OR = {
 									AND = {
 										has_dlc = "No Step Back"
@@ -6972,7 +6989,7 @@ touhou_sync_tank_designer = {
 								}
 								has_tech = gwtank_chassis
 							}
-							has_country_flag = touhou_historical_tank_frame_goliath_1
+							always = no
 						}
 					}
 				}
@@ -7003,7 +7020,16 @@ touhou_sync_tank_designer = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_goliath_0
+				AND = {
+					is_special_project_completed = sp:sp_touhou_goliath_1
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					AND = {
 						has_dlc = "No Step Back"
@@ -7050,7 +7076,16 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_goliath_0
+						AND = {
+							is_special_project_completed = sp:sp_touhou_goliath_1
+							has_country_flag = touhou_country_flag_magic_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 						OR = {
 							AND = {
 								has_dlc = "No Step Back"
@@ -7114,7 +7149,16 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_goliath_0
+						AND = {
+							is_special_project_completed = sp:sp_touhou_goliath_2
+							has_country_flag = touhou_country_flag_magic_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 						OR = {
 							AND = {
 								has_dlc = "No Step Back"
@@ -7129,7 +7173,7 @@ touhou_sync_tank_designer = {
 						}
 						has_tech = gwtank_chassis
 					}
-					has_country_flag = touhou_historical_tank_frame_goliath_2
+					always = no
 				}
 				NOT = {
 					has_tech = touhou_tank_frame_license_goliath_2
@@ -7185,7 +7229,16 @@ touhou_sync_tank_designer = {
 									original_tag = MLS
 									original_tag = EVI
 								}
-								has_country_flag = touhou_project_unlocked_goliath_0
+								AND = {
+									is_special_project_completed = sp:sp_touhou_goliath_2
+									has_country_flag = touhou_country_flag_magic_first_research
+									NOT = {
+										has_country_flag = touhou_country_flag_out_first_research
+									}
+									NOT = {
+										has_country_flag = touhou_country_flag_changing_first_research
+									}
+								}
 								OR = {
 									AND = {
 										has_dlc = "No Step Back"
@@ -7200,7 +7253,7 @@ touhou_sync_tank_designer = {
 								}
 								has_tech = gwtank_chassis
 							}
-							has_country_flag = touhou_historical_tank_frame_goliath_2
+							always = no
 						}
 					}
 				}
@@ -7231,7 +7284,16 @@ touhou_sync_tank_designer = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_goliath_0
+				AND = {
+					is_special_project_completed = sp:sp_touhou_goliath_2
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					AND = {
 						has_dlc = "No Step Back"
@@ -7278,7 +7340,16 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_goliath_0
+						AND = {
+							is_special_project_completed = sp:sp_touhou_goliath_2
+							has_country_flag = touhou_country_flag_magic_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 						OR = {
 							AND = {
 								has_dlc = "No Step Back"
@@ -7342,7 +7413,16 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_goliath_0
+						AND = {
+							is_special_project_completed = sp:sp_touhou_goliath_3
+							has_country_flag = touhou_country_flag_magic_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 						OR = {
 							AND = {
 								has_dlc = "No Step Back"
@@ -7357,7 +7437,7 @@ touhou_sync_tank_designer = {
 						}
 						has_tech = gwtank_chassis
 					}
-					has_country_flag = touhou_historical_tank_frame_goliath_3
+					always = no
 				}
 				NOT = {
 					has_tech = touhou_tank_frame_license_goliath_3
@@ -7413,7 +7493,16 @@ touhou_sync_tank_designer = {
 									original_tag = MLS
 									original_tag = EVI
 								}
-								has_country_flag = touhou_project_unlocked_goliath_0
+								AND = {
+									is_special_project_completed = sp:sp_touhou_goliath_3
+									has_country_flag = touhou_country_flag_magic_first_research
+									NOT = {
+										has_country_flag = touhou_country_flag_out_first_research
+									}
+									NOT = {
+										has_country_flag = touhou_country_flag_changing_first_research
+									}
+								}
 								OR = {
 									AND = {
 										has_dlc = "No Step Back"
@@ -7428,7 +7517,7 @@ touhou_sync_tank_designer = {
 								}
 								has_tech = gwtank_chassis
 							}
-							has_country_flag = touhou_historical_tank_frame_goliath_3
+							always = no
 						}
 					}
 				}
@@ -7459,7 +7548,16 @@ touhou_sync_tank_designer = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_goliath_0
+				AND = {
+					is_special_project_completed = sp:sp_touhou_goliath_3
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					AND = {
 						has_dlc = "No Step Back"
@@ -7506,7 +7604,16 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_goliath_0
+						AND = {
+							is_special_project_completed = sp:sp_touhou_goliath_3
+							has_country_flag = touhou_country_flag_magic_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 						OR = {
 							AND = {
 								has_dlc = "No Step Back"
@@ -7570,7 +7677,16 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_goliath_0
+						AND = {
+							is_special_project_completed = sp:sp_touhou_goliath_4
+							has_country_flag = touhou_country_flag_magic_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 						OR = {
 							AND = {
 								has_dlc = "No Step Back"
@@ -7585,7 +7701,7 @@ touhou_sync_tank_designer = {
 						}
 						has_tech = gwtank_chassis
 					}
-					has_country_flag = touhou_historical_tank_frame_goliath_4
+					always = no
 				}
 				NOT = {
 					has_tech = touhou_tank_frame_license_goliath_4
@@ -7641,7 +7757,16 @@ touhou_sync_tank_designer = {
 									original_tag = MLS
 									original_tag = EVI
 								}
-								has_country_flag = touhou_project_unlocked_goliath_0
+								AND = {
+									is_special_project_completed = sp:sp_touhou_goliath_4
+									has_country_flag = touhou_country_flag_magic_first_research
+									NOT = {
+										has_country_flag = touhou_country_flag_out_first_research
+									}
+									NOT = {
+										has_country_flag = touhou_country_flag_changing_first_research
+									}
+								}
 								OR = {
 									AND = {
 										has_dlc = "No Step Back"
@@ -7656,7 +7781,7 @@ touhou_sync_tank_designer = {
 								}
 								has_tech = gwtank_chassis
 							}
-							has_country_flag = touhou_historical_tank_frame_goliath_4
+							always = no
 						}
 					}
 				}
@@ -7687,7 +7812,16 @@ touhou_sync_tank_designer = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_goliath_0
+				AND = {
+					is_special_project_completed = sp:sp_touhou_goliath_4
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					AND = {
 						has_dlc = "No Step Back"
@@ -7734,7 +7868,16 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_goliath_0
+						AND = {
+							is_special_project_completed = sp:sp_touhou_goliath_4
+							has_country_flag = touhou_country_flag_magic_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 						OR = {
 							AND = {
 								has_dlc = "No Step Back"
@@ -7798,10 +7941,19 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_oni_champion
+						AND = {
+							is_special_project_completed = sp:sp_touhou_oni_champion
+							has_country_flag = touhou_country_flag_demonforce_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 						has_tech = gwtank_chassis
 					}
-					has_country_flag = touhou_historical_tank_frame_oni_champion_0
+					always = no
 				}
 				NOT = {
 					has_tech = touhou_tank_frame_license_oni_champion_0
@@ -7857,10 +8009,19 @@ touhou_sync_tank_designer = {
 									original_tag = MLS
 									original_tag = EVI
 								}
-								has_country_flag = touhou_project_unlocked_oni_champion
+								AND = {
+									is_special_project_completed = sp:sp_touhou_oni_champion
+									has_country_flag = touhou_country_flag_demonforce_first_research
+									NOT = {
+										has_country_flag = touhou_country_flag_out_first_research
+									}
+									NOT = {
+										has_country_flag = touhou_country_flag_changing_first_research
+									}
+								}
 								has_tech = gwtank_chassis
 							}
-							has_country_flag = touhou_historical_tank_frame_oni_champion_0
+							always = no
 						}
 					}
 				}
@@ -7891,7 +8052,16 @@ touhou_sync_tank_designer = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_oni_champion
+				AND = {
+					is_special_project_completed = sp:sp_touhou_oni_champion
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				has_tech = gwtank_chassis
 				NOT = {
 					has_tech = touhou_tank_license_oni_champion_0
@@ -7926,7 +8096,16 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_oni_champion
+						AND = {
+							is_special_project_completed = sp:sp_touhou_oni_champion
+							has_country_flag = touhou_country_flag_demonforce_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 						has_tech = gwtank_chassis
 					}
 				}
@@ -7978,10 +8157,22 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_evil_army
-						has_tech = gwtank_chassis
+						AND = {
+							is_special_project_completed = sp:sp_touhou_evil_army
+							has_country_flag = touhou_country_flag_wakan_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
+						OR = {
+							has_tech = gwtank_chassis
+							original_tag = EVI
+						}
 					}
-					has_country_flag = touhou_historical_tank_frame_evil_armor_0
+					always = no
 				}
 				NOT = {
 					has_tech = touhou_tank_frame_license_evil_armor_0
@@ -8037,10 +8228,22 @@ touhou_sync_tank_designer = {
 									original_tag = MLS
 									original_tag = EVI
 								}
-								has_country_flag = touhou_project_unlocked_evil_army
-								has_tech = gwtank_chassis
+								AND = {
+									is_special_project_completed = sp:sp_touhou_evil_army
+									has_country_flag = touhou_country_flag_wakan_first_research
+									NOT = {
+										has_country_flag = touhou_country_flag_out_first_research
+									}
+									NOT = {
+										has_country_flag = touhou_country_flag_changing_first_research
+									}
+								}
+								OR = {
+									has_tech = gwtank_chassis
+									original_tag = EVI
+								}
 							}
-							has_country_flag = touhou_historical_tank_frame_evil_armor_0
+							always = no
 						}
 					}
 				}
@@ -8071,8 +8274,20 @@ touhou_sync_tank_designer = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_evil_army
-				has_tech = gwtank_chassis
+				AND = {
+					is_special_project_completed = sp:sp_touhou_evil_army
+					has_country_flag = touhou_country_flag_wakan_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
+				OR = {
+					has_tech = gwtank_chassis
+					original_tag = EVI
+				}
 				NOT = {
 					has_tech = touhou_tank_license_evil_armor_0
 				}
@@ -8106,8 +8321,20 @@ touhou_sync_tank_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_evil_army
-						has_tech = gwtank_chassis
+						AND = {
+							is_special_project_completed = sp:sp_touhou_evil_army
+							has_country_flag = touhou_country_flag_wakan_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
+						OR = {
+							has_tech = gwtank_chassis
+							original_tag = EVI
+						}
 					}
 				}
 			}
@@ -10597,7 +10824,7 @@ touhou_sync_tank_designer = {
 				type = light_tank_chassis_touhou_wakan_1
 				allow_without_tech = yes
 				parent_version = 0
-				icon = "GFX_touhou_wakan_infantry_equipment_1_medium"
+				icon = "GFX_light_tank_chassis_touhou_wakan_1_medium"
 				modules = {
 					engine_type_slot = touhou_tank_wakan_engine
 					suspension_type_slot = touhou_tank_wakan_suspension
@@ -10641,7 +10868,7 @@ touhou_sync_tank_designer = {
 				type = medium_tank_chassis_touhou_wakan_1
 				allow_without_tech = yes
 				parent_version = 0
-				icon = "GFX_touhou_wakan_infantry_equipment_1_medium"
+				icon = "GFX_medium_tank_chassis_touhou_wakan_1_medium"
 				modules = {
 					engine_type_slot = touhou_tank_wakan_engine
 					suspension_type_slot = touhou_tank_wakan_suspension
@@ -10685,7 +10912,7 @@ touhou_sync_tank_designer = {
 				type = light_tank_chassis_touhou_wakan_2
 				allow_without_tech = yes
 				parent_version = 0
-				icon = "GFX_touhou_wakan_infantry_equipment_2_medium"
+				icon = "GFX_light_tank_chassis_touhou_wakan_2_medium"
 				modules = {
 					engine_type_slot = touhou_tank_wakan_engine
 					suspension_type_slot = touhou_tank_wakan_suspension
@@ -10729,7 +10956,7 @@ touhou_sync_tank_designer = {
 				type = medium_tank_chassis_touhou_wakan_2
 				allow_without_tech = yes
 				parent_version = 0
-				icon = "GFX_touhou_wakan_infantry_equipment_2_medium"
+				icon = "GFX_medium_tank_chassis_touhou_wakan_2_medium"
 				modules = {
 					engine_type_slot = touhou_tank_wakan_engine
 					suspension_type_slot = touhou_tank_wakan_suspension
@@ -10773,7 +11000,7 @@ touhou_sync_tank_designer = {
 				type = light_tank_chassis_touhou_wakan_3
 				allow_without_tech = yes
 				parent_version = 0
-				icon = "GFX_touhou_wakan_infantry_equipment_3_medium"
+				icon = "GFX_light_tank_chassis_touhou_wakan_3_medium"
 				modules = {
 					engine_type_slot = touhou_tank_wakan_engine
 					suspension_type_slot = touhou_tank_wakan_suspension
@@ -10817,7 +11044,7 @@ touhou_sync_tank_designer = {
 				type = medium_tank_chassis_touhou_wakan_3
 				allow_without_tech = yes
 				parent_version = 0
-				icon = "GFX_touhou_wakan_infantry_equipment_3_medium"
+				icon = "GFX_medium_tank_chassis_touhou_wakan_3_medium"
 				modules = {
 					engine_type_slot = touhou_tank_wakan_engine
 					suspension_type_slot = touhou_tank_wakan_suspension
@@ -18368,7 +18595,16 @@ touhou_sync_aircraft_designer = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_suicide_puppet_craft_1
+				AND = {
+					is_special_project_completed = sp:sp_touhou_suicide_puppet_craft_1
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_tech = touhou_air_license_suicide_puppet_equipment_1
 				}
@@ -18402,7 +18638,16 @@ touhou_sync_aircraft_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_suicide_puppet_craft_1
+						AND = {
+							is_special_project_completed = sp:sp_touhou_suicide_puppet_craft_1
+							has_country_flag = touhou_country_flag_magic_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 					}
 				}
 			}
@@ -18432,71 +18677,16 @@ touhou_sync_aircraft_designer = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_suicide_puppet_craft_2
-				NOT = {
-					has_tech = touhou_air_license_suicide_puppet_equipment_2
-				}
-			}
-			set_technology = {
-				touhou_air_license_suicide_puppet_equipment_2 = 1
-				popup = no
-			}
-		}
-		else_if = {
-			limit = {
-				has_tech = touhou_air_license_suicide_puppet_equipment_2
-				NOT = {
-					AND = {
-						has_dlc = "By Blood Alone"
-						OR = {
-							original_tag = ALI
-							original_tag = DES
-							original_tag = HAK
-							original_tag = DLD
-							original_tag = HEL
-							original_tag = SSS
-							original_tag = OPP
-							original_tag = RAB
-							original_tag = TEM
-							original_tag = BLQ
-							original_tag = KAP
-							original_tag = TEN
-							original_tag = HUM
-							original_tag = VAM
-							original_tag = MLS
-							original_tag = EVI
-						}
-						has_country_flag = touhou_project_unlocked_suicide_puppet_craft_2
+				AND = {
+					is_special_project_completed = sp:sp_touhou_tengu_fighter
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
 					}
 				}
-			}
-			set_technology = {
-				touhou_air_license_suicide_puppet_equipment_2 = 0
-				popup = no
-			}
-		}
-		if = {
-			limit = {
-				has_dlc = "By Blood Alone"
-				OR = {
-					original_tag = ALI
-					original_tag = DES
-					original_tag = HAK
-					original_tag = DLD
-					original_tag = HEL
-					original_tag = SSS
-					original_tag = OPP
-					original_tag = RAB
-					original_tag = TEM
-					original_tag = BLQ
-					original_tag = KAP
-					original_tag = TEN
-					original_tag = HUM
-					original_tag = VAM
-					original_tag = MLS
-					original_tag = EVI
-				}
-				has_country_flag = touhou_project_unlocked_tengu_fighter
 				NOT = {
 					has_tech = touhou_air_license_tengu_fighter_equipment_0
 				}
@@ -18530,7 +18720,16 @@ touhou_sync_aircraft_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_tengu_fighter
+						AND = {
+							is_special_project_completed = sp:sp_touhou_tengu_fighter
+							has_country_flag = touhou_country_flag_demonforce_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 					}
 				}
 			}
@@ -18560,7 +18759,16 @@ touhou_sync_aircraft_designer = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_cas_boli_fighter
+				AND = {
+					is_special_project_completed = sp:sp_touhou_cas_boli_fighter
+					has_country_flag = touhou_country_flag_wakan_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_tech = touhou_air_license_cas_boli_equipment_0
 				}
@@ -18594,7 +18802,16 @@ touhou_sync_aircraft_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_cas_boli_fighter
+						AND = {
+							is_special_project_completed = sp:sp_touhou_cas_boli_fighter
+							has_country_flag = touhou_country_flag_wakan_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 					}
 				}
 			}
@@ -18624,7 +18841,16 @@ touhou_sync_aircraft_designer = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_desires_bomber
+				AND = {
+					is_special_project_completed = sp:sp_touhou_desires_bomber
+					has_country_flag = touhou_country_flag_wakan_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_tech = touhou_air_license_desires_equipment_0
 				}
@@ -18658,7 +18884,16 @@ touhou_sync_aircraft_designer = {
 							original_tag = MLS
 							original_tag = EVI
 						}
-						has_country_flag = touhou_project_unlocked_desires_bomber
+						AND = {
+							is_special_project_completed = sp:sp_touhou_desires_bomber
+							has_country_flag = touhou_country_flag_wakan_first_research
+							NOT = {
+								has_country_flag = touhou_country_flag_out_first_research
+							}
+							NOT = {
+								has_country_flag = touhou_country_flag_changing_first_research
+							}
+						}
 					}
 				}
 			}
@@ -20293,31 +20528,6 @@ touhou_sync_aircraft_designer = {
 		}
 		if = {
 			limit = {
-				has_tech = touhou_air_license_suicide_puppet_equipment_2
-				NOT = {
-					has_country_flag = touhou_air_design_v1_suicide_puppet_equipment_2
-				}
-			}
-			create_equipment_variant = {
-				name = "人偶战略导弹"
-				type = small_plane_cas_airframe_touhou_suicide_puppet_equipment_2
-				allow_without_tech = yes
-				parent_version = 0
-				icon = "GFX_suicide_puppet_equipment_2_medium"
-				modules = {
-					fixed_main_weapon_slot = touhou_air_weapon_suicide_puppet_equipment_2
-					fixed_auxiliary_weapon_slot_1 = empty
-					engine_type_slot = touhou_air_suicide_puppet_equipment_2_engine
-					special_type_slot_1 = touhou_air_suicide_puppet_equipment_2_protection
-					special_type_slot_2 = touhou_air_suicide_puppet_equipment_2_range
-				}
-				upgrades = {
-				}
-			}
-			set_country_flag = touhou_air_design_v1_suicide_puppet_equipment_2
-		}
-		if = {
-			limit = {
 				has_tech = touhou_air_license_tengu_fighter_equipment_0
 				NOT = {
 					has_country_flag = touhou_air_design_v1_tengu_fighter_equipment_0
@@ -21541,7 +21751,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_evil_army
+				AND = {
+					is_special_project_completed = sp:sp_touhou_evil_army
+					has_country_flag = touhou_country_flag_wakan_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_evil_equipment_0
 				}
@@ -21575,7 +21794,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_human_army
+				AND = {
+					is_special_project_completed = sp:sp_touhou_human_army
+					has_country_flag = touhou_country_flag_wakan_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_human_equipment_0
 				}
@@ -21609,7 +21837,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_DLD_animal
+				AND = {
+					is_special_project_completed = sp:sp_touhou_DLD_animal
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_animal_equipment_0
 				}
@@ -21643,7 +21880,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_dragon
+				AND = {
+					is_special_project_completed = sp:sp_touhou_dragon
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_dragon_equipment_0
 				}
@@ -21677,7 +21923,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_die
+				AND = {
+					is_special_project_completed = sp:sp_touhou_die
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_die_equipment_0
 				}
@@ -21711,7 +21966,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_rabbit_team
+				AND = {
+					is_special_project_completed = sp:sp_touhou_rabbit_team
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_rabbit_team_equipment_0
 				}
@@ -21745,7 +22009,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_deep_sea
+				AND = {
+					is_special_project_completed = sp:sp_touhou_deep_sea
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_deep_sea_equipment_0
 				}
@@ -21779,7 +22052,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_soul
+				AND = {
+					is_special_project_completed = sp:sp_touhou_soul
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_soul_equipment_0
 				}
@@ -21813,7 +22095,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_wunv
+				AND = {
+					is_special_project_completed = sp:sp_touhou_wunv
+					has_country_flag = touhou_country_flag_wakan_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_wunv_equipment_0
 				}
@@ -21847,7 +22138,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_lotus
+				AND = {
+					is_special_project_completed = sp:sp_touhou_lotus
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_lotus_equipment_0
 				}
@@ -21874,7 +22174,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_lotus
+				AND = {
+					is_special_project_completed = sp:sp_touhou_lotus
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_lotus_equipment_1
 				}
@@ -21901,7 +22210,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_lotus
+				AND = {
+					is_special_project_completed = sp:sp_touhou_lotus
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_lotus_equipment_2
 				}
@@ -21928,7 +22246,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_magician
+				AND = {
+					is_special_project_completed = sp:sp_touhou_magician
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_magician_equipment_0
 				}
@@ -22557,7 +22884,16 @@ touhou_register_country_equipment = {
 					original_tag = MLS
 					original_tag = EVI
 				}
-				has_country_flag = touhou_project_unlocked_evil_army
+				AND = {
+					is_special_project_completed = sp:sp_touhou_evil_army
+					has_country_flag = touhou_country_flag_wakan_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_registered_model_evil_artillery_equipment_0
 				}
@@ -22570,6 +22906,46 @@ touhou_register_country_equipment = {
 				icon = "GFX_evil_artillery_equipment_0_medium"
 			}
 			set_country_flag = touhou_registered_model_evil_artillery_equipment_0
+		}
+		if = {
+			limit = {
+				OR = {
+					original_tag = ALI
+					original_tag = DES
+					original_tag = HAK
+					original_tag = DLD
+					original_tag = HEL
+					original_tag = SSS
+					original_tag = OPP
+					original_tag = RAB
+					original_tag = TEM
+					original_tag = BLQ
+					original_tag = KAP
+					original_tag = TEN
+					original_tag = HUM
+					original_tag = VAM
+					original_tag = MLS
+					original_tag = EVI
+				}
+				AND = {
+					is_special_project_completed = sp:sp_touhou_suicide_puppet_craft_2
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
+				NOT = {
+					has_country_flag = touhou_registered_model_suicide_puppet_equipment_2
+				}
+			}
+			set_technology = {
+				touhou_puppet_ballistic_missile_license = 1
+				popup = no
+			}
+			set_country_flag = touhou_registered_model_suicide_puppet_equipment_2
 		}
 	}
 }
@@ -22619,7 +22995,6 @@ touhou_sync_vanilla_military = {
 		limit = {
 			original_tag = EVI
 		}
-		set_country_flag = touhou_project_unlocked_evil_army
 	}
 	touhou_sync_tank_designer = yes
 	touhou_sync_aircraft_designer = yes

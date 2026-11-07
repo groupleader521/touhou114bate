@@ -1,0 +1,7 @@
+{
+  "id": "light_battery",
+  "method": "built-in image_gen",
+  "generated": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b3cf-a7cb-72e1-a68b-e1a30db6bdf8\\exec-83b3648c-99fe-47e4-960b-07375b0cd21e.png",
+  "source": "gfx/interface/technologies/touhou_equipment_art/source/light_battery.png",
+  "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One compact enclosed naval light-gun turret with a single slim barrel, ivory bronze casing and pale-blue magical aiming ring, no ship."
+}

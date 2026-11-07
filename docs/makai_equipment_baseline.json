@@ -1,0 +1,888 @@
+{
+  "version": 1,
+  "basis": "Saved original Makai battalion and technology effects; legacy finished-model definitions from the installed game. No historical NSB player design is available.",
+  "models": [
+    {
+      "id": "makai_infantry_equipment_1",
+      "source": "infantry_equipment_1",
+      "phase": 0,
+      "technology": "infantry_weapons1",
+      "category": "land",
+      "archetype": "infantry_equipment",
+      "definition": "infantry_equipment_1 = {\n\tyear = 1936\n\tis_archetype = yes\n\tpicture = archetype_infantry_equipment\n\tis_buildable = no\n\ttype = infantry\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\tactive = yes\n\treliability = 0.9\n\tmaximum_speed = 4\n\tdefense = 22\n\tbreakthrough = 3\n\thardness = 0\n\tarmor_value = 0\n\tsoft_attack = 6\n\thard_attack = 1\n\tap_attack = 4\n\tair_attack = 0\n\tlend_lease_cost = 1\n\tbuild_cost_ic = 0.50\n\tresources = {\n\t\tsteel = 2\n\t}\n\tarchetype = infantry_equipment\n\tparent = infantry_equipment_0\n\tpriority = 10\n\tvisual_level = 1\n}\n",
+      "type": "infantry"
+    },
+    {
+      "id": "makai_artillery_equipment_1",
+      "source": "artillery_equipment_1",
+      "phase": 0,
+      "technology": "gw_artillery",
+      "category": "land",
+      "archetype": "artillery_equipment",
+      "definition": "artillery_equipment_1 = {\n\tyear = 1934\n\tis_archetype = yes\n\tpicture = archetype_artillery_equipment\n\ttype = {\n\t\tartillery\n\t\tinfantry\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\treliability = 0.8\n\tmaximum_speed = 4\n\tdefense = 11\n\tbreakthrough = 10\n\thardness = 0\n\tarmor_value = 0\n\tsoft_attack = 26\n\thard_attack = 2\n\tap_attack = 5\n\tair_attack = 0\n\tlend_lease_cost = 4\n\tbuild_cost_ic = 3.5\n\tresources = {\n\t\ttungsten = 1\n\t\tsteel = 2\n\t}\n\tarchetype = artillery_equipment\n\tpriority = 50\n\tvisual_level = 0\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "artillery",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "key": null,
+          "value": "infantry",
+          "start": 21,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "id": "makai_anti_air_equipment_1",
+      "source": "anti_air_equipment_1",
+      "phase": 0,
+      "technology": "interwar_antiair",
+      "category": "land",
+      "archetype": "anti_air_equipment",
+      "definition": "anti_air_equipment_1 = {\n\tyear = 1936\n\tis_archetype = yes\n\tpicture = archetype_anti_air_equipment\n\ttype = {\n\t\tanti_air\n\t\tinfantry\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\treliability = 0.8\n\tmaximum_speed = 4\n\tdefense = 4\n\tbreakthrough = 1\n\thardness = 0\n\tarmor_value = 0\n\tsoft_attack = 3\n\thard_attack = 7\n\tap_attack = 25\n\tair_attack = 19\n\tlend_lease_cost = 3\n\tbuild_cost_ic = 4\n\tresources = {\n\t\tsteel = 2\n\t}\n\tarchetype = anti_air_equipment\n\tpriority = 80\n\tvisual_level = 0\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "anti_air",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "key": null,
+          "value": "infantry",
+          "start": 20,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "id": "makai_anti_tank_equipment_1",
+      "source": "anti_tank_equipment_1",
+      "phase": 0,
+      "technology": "interwar_antitank",
+      "category": "land",
+      "archetype": "anti_tank_equipment",
+      "definition": "anti_tank_equipment_1 = {\n\tyear = 1936\n\tis_archetype = yes\n\tpicture = archetype_anti_tank_equipment\n\ttype = {\n\t\tanti_tank\n\t\tinfantry\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\treliability = 0.8\n\tmaximum_speed = 4\n\tdefense = 4\n\tbreakthrough = 0\n\thardness = 0.1\n\tarmor_value = 0\n\tsoft_attack = 4\n\thard_attack = 20\n\tap_attack = 60\n\tair_attack = 0\n\tlend_lease_cost = 3\n\tbuild_cost_ic = 4\n\tresources = {\n\t\ttungsten = 2\n\t\tsteel = 2\n\t}\n\tarchetype = anti_tank_equipment\n\tpriority = 90\n\tvisual_level = 0\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "anti_tank",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "key": null,
+          "value": "infantry",
+          "start": 21,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "id": "makai_support_equipment_1",
+      "source": "support_equipment_1",
+      "phase": 0,
+      "technology": "tech_support",
+      "category": "land",
+      "archetype": "support_equipment",
+      "definition": "support_equipment_1 = {\n\tyear = 1918\n\tis_archetype = yes\n\tpicture = archetype_support_equipment\n\tis_buildable = no\n\ttype = {\n\t\tinfantry\n\t\tmotorized\n\t\tsupport\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\treliability = 0.8\n\tlend_lease_cost = 1\n\tbuild_cost_ic = 4\n\tresources = {\n\t\taluminium = 1\n\t\tsteel = 2\n\t}\n\tarchetype = support_equipment\n\tpriority = 20\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "infantry",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "key": null,
+          "value": "motorized",
+          "start": 20,
+          "end": 29
+        },
+        {
+          "key": null,
+          "value": "support",
+          "start": 31,
+          "end": 38
+        }
+      ]
+    },
+    {
+      "id": "makai_motorized_equipment_1",
+      "source": "motorized_equipment_1",
+      "phase": 0,
+      "technology": "motorised_infantry",
+      "category": "land",
+      "archetype": "motorized_equipment",
+      "definition": "motorized_equipment_1 = {\n\tyear = 1936\n\tis_archetype = yes\n\tpicture = archetype_motorized_equipment\n\tis_buildable = no\n\ttype = {\n\t\tmotorized\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\tmaximum_speed = 12\n\treliability = 0.8\n\thardness = 0.1\n\tbreakthrough = 5\n\tlend_lease_cost = 5\n\tbuild_cost_ic = 2.5\n\tresources = {\n\t\trubber = 1\n\t\tsteel = 1\n\t}\n\tfuel_consumption = 1.2\n\tsupply_truck = yes\n\tarchetype = motorized_equipment\n\tparent = motorized_equipment_0\n\tpriority = 30\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "motorized",
+          "start": 10,
+          "end": 19
+        }
+      ]
+    },
+    {
+      "id": "makai_fighter_equipment_1",
+      "source": "fighter_equipment_1",
+      "phase": 0,
+      "technology": "fighter1",
+      "category": "air",
+      "archetype": "small_plane_airframe",
+      "definition": "fighter_equipment_1 = {\n\tyear = 1936\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_fighter_equipment\n\tis_buildable = no\n\ttype = fighter\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 1\n\tinterface_category = interface_category_air\n\tsubstitute = cv_small_plane_airframe\n\tinterface_overview_category_index = 1\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 2\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.21\n\tbuild_cost_ic = 24\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = small_plane_airframe\n\tparent = fighter_equipment_0\n\tpriority = 10\n\tair_range = 700\n\tmaximum_speed = 500\n\tair_agility = 50\n\tair_attack = 18\n\tair_defence = 10\n\tsurface_detection = 13\n\tsub_detection = 3\n}\n",
+      "type": "fighter"
+    },
+    {
+      "id": "makai_cv_fighter_equipment_1",
+      "source": "cv_fighter_equipment_1",
+      "phase": 0,
+      "technology": "cv_fighter1",
+      "category": "air",
+      "archetype": "cv_small_plane_airframe",
+      "definition": "cv_fighter_equipment_1 = {\n\tyear = 1936\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tcarrier_capable = yes\n\tdefault_carrier_composition_weight = 1\n\tpicture = archetype_fighter_equipment\n\tis_buildable = no\n\ttype = fighter\n\tai_type = cv_fighter\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 16\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 1\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 3\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.21\n\tbuild_cost_ic = 28.4\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = cv_small_plane_airframe\n\tparent = cv_fighter_equipment_0\n\tpriority = 30\n\tair_range = 560\n\tmaximum_speed = 450\n\tair_agility = 50\n\tair_attack = 18\n\tair_defence = 11\n\tsurface_detection = 18\n\tsub_detection = 4\n}\n",
+      "type": "fighter"
+    },
+    {
+      "id": "makai_cas_equipment_1",
+      "source": "CAS_equipment_1",
+      "phase": 0,
+      "technology": "CAS1",
+      "category": "air",
+      "archetype": "small_plane_cas_airframe",
+      "definition": "CAS_equipment_1 = {\n\tyear = 1936\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_CAS_equipment\n\tis_buildable = no\n\ttype = cas\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = {\n\t\tcas\n\t\tnaval_bomber\n\t\tport_strike\n\t\tattack_logistics\n\t}\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 2\n\tinterface_category = interface_category_air\n\tsubstitute = cv_small_plane_cas_airframe\n\tinterface_overview_category_index = 0\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 3\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.26\n\tbuild_cost_ic = 22\n\tresources = {\n\t\taluminium = 2\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = small_plane_cas_airframe\n\tvariant_name = {\n\t\tsmall_plane_cas_airframe_1 = CAS_equipment_1\n\t\tsmall_plane_cas_airframe_2 = CAS_equipment_2\n\t\tsmall_plane_cas_airframe_3 = CAS_equipment_3\n\t}\n\tpriority = 40\n\tupgrades = {\n\t\tplane_cas_upgrade\n\t\tplane_range_upgrade\n\t\tplane_engine_upgrade\n\t\tplane_reliability_upgrade\n\t}\n\tair_range = 700\n\tmaximum_speed = 390\n\tair_agility = 35\n\tair_attack = 6\n\tair_defence = 14\n\tair_ground_attack = 8\n\tsurface_detection = 5\n\tsub_detection = 5\n}\n",
+      "type": "cas"
+    },
+    {
+      "id": "makai_cv_cas_equipment_1",
+      "source": "cv_CAS_equipment_1",
+      "phase": 0,
+      "technology": "cv_CAS1",
+      "category": "air",
+      "archetype": "cv_small_plane_cas_airframe",
+      "definition": "cv_CAS_equipment_1 = {\n\tyear = 1936\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tcarrier_capable = yes\n\tdefault_carrier_composition_weight = 1\n\tpicture = archetype_CAS_equipment\n\tis_buildable = no\n\ttype = cas\n\tai_type = cv_cas\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = {\n\t\tcas\n\t\tnaval_bomber\n\t\tport_strike\n\t\tattack_logistics\n\t\tnaval_patrol\n\t}\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 17\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 0\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 4\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.26\n\tbuild_cost_ic = 26.4\n\tresources = {\n\t\taluminium = 2\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = cv_small_plane_cas_airframe\n\tvariant_name = {\n\t\tcv_small_plane_cas_airframe_1 = cv_CAS_equipment_1\n\t\tcv_small_plane_cas_airframe_2 = cv_CAS_equipment_2\n\t\tcv_small_plane_cas_airframe_3 = cv_CAS_equipment_3\n\t}\n\tpriority = 50\n\tair_range = 400\n\tmaximum_speed = 351\n\tair_agility = 35\n\tair_attack = 6\n\tair_defence = 14\n\tair_ground_attack = 8\n\tupgrades = {\n\t\tplane_cas_upgrade\n\t\tcv_plane_range_upgrade\n\t\tplane_engine_upgrade\n\t\tplane_reliability_upgrade\n\t}\n\tsurface_detection = 10\n\tsub_detection = 7.5\n}\n",
+      "type": "cas"
+    },
+    {
+      "id": "makai_nav_bomber_equipment_1",
+      "source": "nav_bomber_equipment_1",
+      "phase": 0,
+      "technology": "naval_bomber1",
+      "category": "air",
+      "archetype": "small_plane_naval_bomber_airframe",
+      "definition": "nav_bomber_equipment_1 = {\n\tyear = 1936\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_heavy_fighter_equipment\n\tis_buildable = no\n\ttype = naval_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = {\n\t\tnaval_bomber\n\t\tport_strike\n\t\tnaval_mines_planting\n\t\tnaval_mines_sweeping\n\t\tnaval_patrol\n\t}\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 3\n\tinterface_category = interface_category_air\n\tsubstitute = cv_small_plane_naval_bomber_airframe\n\tinterface_overview_category_index = 2\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 15\n\tnaval_strike_targetting = 7.5\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.28\n\tbuild_cost_ic = 26\n\tresources = {\n\t\taluminium = 2\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = small_plane_naval_bomber_airframe\n\tvariant_name = {\n\t\tsmall_plane_naval_bomber_airframe_1 = nav_bomber_equipment_1\n\t\tsmall_plane_naval_bomber_airframe_2 = nav_bomber_equipment_2\n\t\tsmall_plane_naval_bomber_airframe_3 = nav_bomber_equipment_3\n\t}\n\tpriority = 60\n\tair_range = 850\n\tmaximum_speed = 230\n\tair_agility = 30\n\tair_attack = 6\n\tair_defence = 12\n\tupgrades = {\n\t\tplane_naval_upgrade\n\t\tplane_range_upgrade\n\t\tplane_engine_upgrade\n\t\tplane_reliability_upgrade\n\t}\n\tsurface_detection = 15\n\tsub_detection = 10\n}\n",
+      "type": "naval_bomber"
+    },
+    {
+      "id": "makai_cv_nav_bomber_equipment_1",
+      "source": "cv_nav_bomber_equipment_1",
+      "phase": 0,
+      "technology": "cv_naval_bomber1",
+      "category": "air",
+      "archetype": "cv_small_plane_naval_bomber_airframe",
+      "definition": "cv_nav_bomber_equipment_1 = {\n\tyear = 1936\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tcarrier_capable = yes\n\tdefault_carrier_composition_weight = 1\n\tpicture = archetype_heavy_fighter_equipment\n\tis_buildable = no\n\ttype = naval_bomber\n\tai_type = cv_naval_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = {\n\t\tnaval_bomber\n\t\tport_strike\n\t\tnaval_mines_planting\n\t\tnaval_mines_sweeping\n\t\tnaval_patrol\n\t}\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 18\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 2\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 15\n\tnaval_strike_targetting = 7.5\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.28\n\tbuild_cost_ic = 31.2\n\tresources = {\n\t\taluminium = 2\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = cv_small_plane_naval_bomber_airframe\n\tvariant_name = {\n\t\tcv_small_plane_naval_bomber_airframe_1 = cv_nav_bomber_equipment_1\n\t\tcv_small_plane_naval_bomber_airframe_2 = cv_nav_bomber_equipment_2\n\t\tcv_small_plane_naval_bomber_airframe_3 = cv_nav_bomber_equipment_3\n\t}\n\tpriority = 70\n\tair_range = 680\n\tmaximum_speed = 207\n\tair_agility = 30\n\tair_attack = 6\n\tair_defence = 13\n\tupgrades = {\n\t\tcv_plane_naval_upgrade\n\t\tcv_plane_range_upgrade\n\t\tplane_engine_upgrade\n\t\tplane_reliability_upgrade\n\t}\n\tsurface_detection = 20\n\tsub_detection = 10\n}\n",
+      "type": "naval_bomber"
+    },
+    {
+      "id": "makai_heavy_fighter_equipment_1",
+      "source": "heavy_fighter_equipment_1",
+      "phase": 0,
+      "technology": "heavy_fighter1",
+      "category": "air",
+      "archetype": "medium_plane_fighter_airframe",
+      "definition": "heavy_fighter_equipment_1 = {\n\tyear = 1936\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_strat_bomber_equipment\n\tis_buildable = no\n\ttype = heavy_fighter\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\ttactical_bomber\n\t\theavy_fighter\n\t\tscout_plane\n\t}\n\tallow_mission_type = {\n\t\tair_superiority\n\t\tinterception\n\t}\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 8\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 3\n\tair_superiority = 1.25\n\treliability = 0.8\n\tnaval_strike_attack = 3\n\tnaval_strike_targetting = 6\n\tlend_lease_cost = 10\n\tmanpower = 40\n\tfuel_consumption = 0.26\n\tbuild_cost_ic = 28\n\tresources = {\n\t\taluminium = 2\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\trecon_camera\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttwin_plane_engine_type\n\t\t\t\tmedium_plane_engine_type\n\t\t\t\tquad_large_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 3\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_2x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = medium_plane_fighter_airframe\n\tai_type = heavy_fighter\n\tfor_each = {\n\t\tair_superiority = {\n\t\t\tset = 1.25\n\t\t}\n\t}\n\tvariant_name = {\n\t\tmedium_plane_fighter_airframe_1 = heavy_fighter_equipment_1\n\t\tmedium_plane_fighter_airframe_2 = heavy_fighter_equipment_2\n\t\tmedium_plane_fighter_airframe_3 = heavy_fighter_equipment_3\n\t}\n\tpriority = 100\n\tair_range = 1300\n\tmaximum_speed = 500\n\tair_agility = 25\n\tair_attack = 36\n\tair_defence = 13\n\tsurface_detection = 5\n\tsub_detection = 5\n\tupgrades = {\n\t\tplane_gun_upgrade\n\t\tplane_range_upgrade\n\t\tplane_engine_upgrade\n\t\tplane_reliability_upgrade\n\t}\n}\n",
+      "type": "heavy_fighter"
+    },
+    {
+      "id": "makai_tac_bomber_equipment_1",
+      "source": "tac_bomber_equipment_1",
+      "phase": 0,
+      "technology": "tactical_bomber1",
+      "category": "air",
+      "archetype": "medium_plane_airframe",
+      "definition": "tac_bomber_equipment_1 = {\n\tyear = 1936\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_strat_bomber_equipment\n\tis_buildable = no\n\ttype = tactical_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\ttactical_bomber\n\t\theavy_fighter\n\t\tscout_plane\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = medium_plane\n\tair_map_icon_frame = 6\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 4\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 8\n\tnaval_strike_targetting = 6\n\tlend_lease_cost = 10\n\tmanpower = 40\n\tfuel_consumption = 0.36\n\tbuild_cost_ic = 37\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\trecon_camera\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttwin_plane_engine_type\n\t\t\t\tmedium_plane_engine_type\n\t\t\t\tquad_large_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 3\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_2x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = medium_plane_airframe\n\tparent = tac_bomber_equipment_0\n\tpriority = 110\n\tair_range = 2400\n\tmaximum_speed = 430\n\tair_agility = 20\n\tair_attack = 8\n\tair_defence = 18\n\tair_bombing = 12\n\tair_ground_attack = 6\n\tsurface_detection = 30\n\tsub_detection = 7.5\n}\n",
+      "type": "tactical_bomber"
+    },
+    {
+      "id": "makai_strat_bomber_equipment_1",
+      "source": "strat_bomber_equipment_1",
+      "phase": 0,
+      "technology": "strategic_bomber1",
+      "category": "air",
+      "archetype": "large_plane_airframe",
+      "definition": "strat_bomber_equipment_1 = {\n\tyear = 1936\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_strat_bomber_equipment\n\tis_buildable = no\n\ttype = strategic_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tstrategic_bomber\n\t\tmaritime_patrol_plane\n\t}\n\tallow_mission_type = {\n\t\tstrategic_bomber\n\t\tnaval_mines_planting\n\t}\n\tgroup_by = archetype\n\tsprite = heavy_plane\n\tair_map_icon_frame = 11\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 5\n\tair_superiority = 0.01\n\treliability = 0.8\n\tnaval_strike_attack = 1.5\n\tnaval_strike_targetting = 0.6\n\tlend_lease_cost = 12\n\tmanpower = 80\n\tfuel_consumption = 0.8\n\tbuild_cost_ic = 60\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 2\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tmine_warfare_offense\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tmine_warfare_offense\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tmine_warfare_offense\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tquad_large_plane_engine_type\n\t\t\t\tlarge_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_5 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 7\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_4x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = large_plane_airframe\n\tpriority = 140\n\tair_range = 2500\n\tmaximum_speed = 400\n\tair_agility = 5\n\tair_attack = 50\n\tair_defence = 25\n\tair_bombing = 30\n\tupgrades = {\n\t\tplane_bomb_upgrade\n\t\tplane_range_upgrade\n\t\tplane_engine_upgrade\n\t\tplane_reliability_upgrade\n\t}\n\tsurface_detection = 10\n\tsub_detection = 2.5\n}\n",
+      "type": "strategic_bomber"
+    },
+    {
+      "id": "makai_destroyer_4",
+      "source": "destroyer_4",
+      "phase": 0,
+      "technology": "advanced_destroyer",
+      "category": "naval",
+      "archetype": "ship_hull_light",
+      "definition": "destroyer_4 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_buildable = no\n\ttype = {\n\t\tscreen_ship\n\t\tanti_air\n\t}\n\tinterface_category = interface_category_screen_ships\n\talias = destroyer\n\tpriority = 2000\n\tupgrades = {\n\t\tship_torpedo_upgrade\n\t\tdestroyer_engine_upgrade\n\t\tship_ASW_upgrade\n\t\tship_anti_air_upgrade\n\t}\n\tmodule_slots = inherit\n\tmodule_count_limit = {\n\t\tcategory = ship_sonar\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_ship_battery_slot = ship_light_battery_4\n\t\tfixed_ship_anti_air_slot = ship_anti_air_4\n\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_0\n\t\tfixed_ship_radar_slot = empty\n\t\tfixed_ship_engine_slot = light_ship_engine_4\n\t\tfixed_ship_torpedo_slot = ship_torpedo_4\n\t\tmid_1_custom_slot = empty\n\t\trear_1_custom_slot = ship_depth_charge_4\n\t}\n\tlg_armor_piercing = 0\n\tlg_attack = 0\n\thg_armor_piercing = 0\n\thg_attack = 0\n\ttorpedo_attack = 0\n\tsub_attack = 1\n\tanti_air_attack = 5\n\tarmor_value = 0\n\tsurface_detection = 40\n\tsub_detection = 10\n\tsurface_visibility = 10\n\tnaval_speed = 30\n\treliability = 0.92\n\tnaval_range = 2500\n\tmax_strength = 60\n\tfuel_consumption = 0\n\tbuild_cost_ic = 500\n\tresources = {\n\t\tsteel = 4\n\t\tchromium = 1\n\t}\n\tmanpower = 500\n\tnaval_dominance_factor = 20\n\tnaval_weather_penalty_factor = 1\n\tarchetype = ship_hull_light\n\tparent = destroyer_3\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "screen_ship",
+          "start": 10,
+          "end": 21
+        },
+        {
+          "key": null,
+          "value": "anti_air",
+          "start": 23,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "id": "makai_light_cruiser_4",
+      "source": "light_cruiser_4",
+      "phase": 0,
+      "technology": "advanced_light_cruiser",
+      "category": "naval",
+      "archetype": "ship_hull_cruiser",
+      "definition": "light_cruiser_4 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_buildable = no\n\ttype = {\n\t\tscreen_ship\n\t\tanti_air\n\t}\n\tinterface_category = interface_category_screen_ships\n\talias = light_cruiser\n\tpriority = 1900\n\tmodule_slots = inherit\n\tmodule_count_limit = {\n\t\tcategory = ship_sonar\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_ship_battery_slot = ship_light_medium_battery_4\n\t\tfixed_ship_anti_air_slot = ship_anti_air_4\n\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_0\n\t\tfixed_ship_radar_slot = empty\n\t\tfixed_ship_engine_slot = cruiser_ship_engine_3\n\t\tmid_1_custom_slot = ship_torpedo_4\n\t\tmid_2_custom_slot = ship_anti_air_4\n\t\trear_1_custom_slot = ship_light_medium_battery_4\n\t}\n\tlg_armor_piercing = 0\n\tlg_attack = 0\n\thg_armor_piercing = 0\n\thg_attack = 0\n\ttorpedo_attack = 2\n\tsub_attack = 8\n\tanti_air_attack = 0\n\tarmor_value = 8\n\tsurface_detection = 40\n\tsub_detection = 10\n\tsurface_visibility = 15\n\tnaval_speed = 30\n\treliability = 0.92\n\tnaval_range = 4500\n\tmax_strength = 160\n\tfuel_consumption = 20\n\tbuild_cost_ic = 2000\n\tresources = {\n\t\tsteel = 4\n\t\tchromium = 1\n\t}\n\tmanpower = 1140\n\tnaval_dominance_factor = 100\n\tnaval_weather_penalty_factor = 1\n\tvisual_level = 1\n\tarchetype = ship_hull_cruiser\n\tparent = light_cruiser_3\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "screen_ship",
+          "start": 10,
+          "end": 21
+        },
+        {
+          "key": null,
+          "value": "anti_air",
+          "start": 23,
+          "end": 31
+        }
+      ]
+    },
+    {
+      "id": "makai_heavy_cruiser_4",
+      "source": "heavy_cruiser_4",
+      "phase": 0,
+      "technology": "advanced_heavy_cruiser",
+      "category": "naval",
+      "archetype": "ship_hull_cruiser",
+      "definition": "heavy_cruiser_4 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_buildable = no\n\ttype = screen_ship\n\tinterface_category = interface_category_screen_ships\n\talias = light_cruiser\n\tpriority = 1800\n\tmodule_slots = inherit\n\tmodule_count_limit = {\n\t\tcategory = ship_sonar\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_ship_battery_slot = ship_medium_battery_4\n\t\tfixed_ship_anti_air_slot = ship_anti_air_4\n\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_0\n\t\tfixed_ship_radar_slot = empty\n\t\tfixed_ship_engine_slot = cruiser_ship_engine_2\n\t\tfront_1_custom_slot = ship_anti_air_4\n\t\tfixed_ship_secondaries_slot = ship_secondaries_1\n\t\tmid_1_custom_slot = dp_ship_secondaries_3\n\t\tmid_2_custom_slot = dp_ship_secondaries_3\n\t\trear_1_custom_slot = ship_medium_battery_4\n\t\trear_2_custom_slot = ship_anti_air_4\n\t}\n\tlg_armor_piercing = 0\n\tlg_attack = 0\n\thg_armor_piercing = 0\n\thg_attack = 0\n\ttorpedo_attack = 0\n\tsub_attack = 0\n\tanti_air_attack = 0\n\tarmor_value = 13\n\tsurface_detection = 40\n\tsub_detection = 5\n\tsurface_visibility = 15\n\tnaval_speed = 33\n\treliability = 0.92\n\tnaval_range = 5000\n\tmax_strength = 225\n\tfuel_consumption = 20\n\tbuild_cost_ic = 3400\n\tresources = {\n\t\tsteel = 5\n\t\tchromium = 1\n\t}\n\tmanpower = 2200\n\tnaval_dominance_factor = 100\n\tnaval_weather_penalty_factor = 1\n\tvisual_level = 1\n\tarchetype = ship_hull_cruiser\n\tparent = heavy_cruiser_3\n}\n",
+      "type": "screen_ship"
+    },
+    {
+      "id": "makai_battleship_4",
+      "source": "battleship_4",
+      "phase": 0,
+      "technology": "advanced_battleship",
+      "category": "naval",
+      "archetype": "ship_hull_heavy",
+      "definition": "battleship_4 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_buildable = no\n\ttype = capital_ship\n\tinterface_category = interface_category_capital_ships\n\tpriority = 1500\n\tupgrades = {\n\t\tship_reliability_upgrade\n\t\tship_engine_upgrade\n\t\tship_armor_upgrade\n\t\tship_gun_upgrade\n\t}\n\tmodule_slots = inherit\n\tmodule_count_limit = {\n\t\tcategory = ship_radar\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_ship_battery_slot = ship_heavy_battery_4\n\t\tfixed_ship_anti_air_slot = ship_anti_air_4\n\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_0\n\t\tfixed_ship_radar_slot = empty\n\t\tfixed_ship_engine_slot = heavy_ship_engine_4\n\t\tfixed_ship_secondaries_slot = dp_ship_secondaries_3\n\t\tfixed_ship_armor_slot = ship_armor_bb_3\n\t\tfront_1_custom_slot = ship_anti_air_4\n\t\tmid_1_custom_slot = ship_anti_air_4\n\t\tmid_2_custom_slot = dp_ship_secondaries_3\n\t\trear_1_custom_slot = ship_heavy_battery_4\n\t}\n\tlg_armor_piercing = 0\n\tlg_attack = 1\n\thg_armor_piercing = 0\n\thg_attack = 0\n\ttorpedo_attack = 0\n\tsub_attack = 0\n\tanti_air_attack = 0\n\tarmor_value = 40\n\tsurface_detection = 40\n\tsub_detection = 5\n\tsurface_visibility = 30\n\tnaval_speed = 26\n\treliability = 0.92\n\tnaval_range = 6000\n\tmax_strength = 550\n\tfuel_consumption = 60\n\tbuild_cost_ic = 6000\n\tresources = {\n\t\tsteel = 5\n\t\tchromium = 3\n\t}\n\tmanpower = 7400\n\tnaval_dominance_factor = 300\n\tnaval_weather_penalty_factor = 1\n\tvisual_level = 1\n\tarchetype = ship_hull_heavy\n\tparent = battleship_3\n}\n",
+      "type": "capital_ship"
+    },
+    {
+      "id": "makai_carrier_4",
+      "source": "carrier_4",
+      "phase": 0,
+      "technology": "advanced_carrier",
+      "category": "naval",
+      "archetype": "ship_hull_carrier",
+      "definition": "carrier_4 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_buildable = no\n\ttype = carrier\n\tsprite = carrier\n\tgroup_by = archetype\n\tpriority = 1000\n\tinterface_category = interface_category_capital_ships\n\tupgrades = {\n\t\tship_deckspace_upgrade\n\t\tcarrier_armor_upgrade\n\t\tship_engine_upgrade\n\t\tship_reliability_upgrade\n\t}\n\tmodule_slots = inherit\n\tmodule_count_limit = {\n\t\tcategory = ship_carrier_armor\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_ship_deck_slot_1 = ship_deck_space\n\t\tfixed_ship_deck_slot_2 = ship_deck_space\n\t\tfixed_ship_anti_air_slot = ship_anti_air_4\n\t\tfixed_ship_radar_slot = empty\n\t\tfixed_ship_engine_slot = carrier_ship_engine_1\n\t\tfixed_ship_secondaries_slot = ship_secondaries_1\n\t\tfront_1_custom_slot = ship_deck_space\n\t}\n\tlg_armor_piercing = 0\n\tlg_attack = 0\n\thg_armor_piercing = 0\n\thg_attack = 0\n\ttorpedo_attack = 0\n\tsub_attack = 0\n\tanti_air_attack = 10\n\tarmor_value = 13\n\tsurface_detection = 30\n\tsub_detection = 5\n\tsurface_visibility = 30\n\tnaval_speed = 28.5\n\treliability = 0.90\n\tnaval_range = 6000\n\tmax_strength = 400\n\tfuel_consumption = 70\n\toffensive_weapons = no\n\tbuild_cost_ic = 6000\n\tresources = {\n\t\tsteel = 5\n\t\tchromium = 2\n\t}\n\tmanpower = 6000\n\tnaval_dominance_factor = 300\n\tnaval_weather_penalty_factor = 1\n\tvisual_level = 1\n\tarchetype = ship_hull_carrier\n\tparent = carrier_3\n\tcarrier_size = 10\n}\n",
+      "type": "carrier"
+    },
+    {
+      "id": "makai_submarine_4",
+      "source": "submarine_4",
+      "phase": 0,
+      "technology": "advanced_submarine",
+      "category": "naval",
+      "archetype": "ship_hull_submarine",
+      "definition": "submarine_4 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_buildable = no\n\ttype = submarine\n\tgroup_by = archetype\n\tpriority = 2500\n\tupgrades = {\n\t\tship_reliability_upgrade\n\t\tsub_engine_upgrade\n\t\tsub_stealth_upgrade\n\t\tsub_torpedo_upgrade\n\t}\n\tinterface_category = interface_category_other_ships\n\tmodule_slots = inherit\n\tmodule_count_limit = {\n\t\tcategory = ship_radar\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_ship_torpedo_slot = ship_torpedo_sub_2\n\t\tfixed_ship_engine_slot = sub_ship_engine_1\n\t\trear_1_custom_slot = ship_torpedo_sub_2\n\t}\n\tlg_armor_piercing = 0\n\tlg_attack = 0\n\thg_armor_piercing = 0\n\thg_attack = 0\n\ttorpedo_attack = 20\n\tsub_attack = 0\n\tanti_air_attack = 0\n\tarmor_value = 0\n\tsurface_detection = 70\n\tsub_detection = 0\n\tsurface_visibility = 1\n\tsub_visibility = 10\n\tnaval_speed = 18\n\treliability = 0.80\n\tnaval_range = 3500\n\tmax_strength = 35\n\tfuel_consumption = 1\n\tbuild_cost_ic = 400\n\tresources = {\n\t\tsteel = 3\n\t\tchromium = 1\n\t}\n\tmanpower = 200\n\tnaval_dominance_factor = 9\n\tnaval_weather_penalty_factor = 1\n\tarchetype = ship_hull_submarine\n\tparent = submarine_3\n}\n",
+      "type": "submarine"
+    },
+    {
+      "id": "makai_super_heavy_tank_equipment_1",
+      "source": "super_heavy_tank_equipment_1",
+      "phase": 1,
+      "technology": "super_heavy_tank",
+      "category": "land",
+      "archetype": "super_heavy_tank_chassis",
+      "definition": "super_heavy_tank_equipment_1 = {\n\tyear = 1943\n\tis_archetype = yes\n\tis_buildable = no\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tpicture = archetype_super_heavy_tank_equipment\n\ttype = armor\n\tgroup_by = archetype\n\tinterface_category = interface_category_armor\n\tpriority = 130\n\tmodule_slots = {\n\t\tturret_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_super_heavy_turret_type\n\t\t\t}\n\t\t}\n\t\tmain_armament_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_small_main_armament\n\t\t\t}\n\t\t}\n\t\tsuspension_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_suspension_type\n\t\t\t}\n\t\t}\n\t\tarmor_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_armor_type\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t\ttank_secondary_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tmodule = stabilizer\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tmain_armament_slot = empty\n\t\tturret_type_slot = tank_super_heavy_three_man_tank_turret\n\t\tsuspension_type_slot = tank_bogie_suspension\n\t\tarmor_type_slot = tank_riveted_armor\n\t\tengine_type_slot = tank_gasoline_engine\n\t}\n\tfuel_consumption = 10\n\tmaximum_speed = 4\n\tbuild_cost_ic = 100\n\treliability = 0.8\n\tarmor_value = 145\n\thardness = 0.99\n\tresources = {\n\t\tsteel = 3\n\t\tchromium = 4\n\t}\n\tlend_lease_cost = 15\n\tmanpower = 2\n\tscaled_by_reliability = {\n\t\tmax_strength = 0.5\n\t}\n\tarchetype = super_heavy_tank_chassis\n\tvisual_level = 0\n\tis_convertable = yes\n\tdefense = 10\n\tbreakthrough = 74\n\tsoft_attack = 38\n\thard_attack = 45\n\tap_attack = 146\n\tair_attack = 0\n\tupgrades = {\n\t\ttank_reliability_upgrade\n\t\ttank_engine_upgrade\n\t\ttank_armor_upgrade\n\t\ttank_gun_upgrade\n\t}\n}\n",
+      "type": "armor"
+    },
+    {
+      "id": "makai_super_heavy_tank_destroyer_equipment_1",
+      "source": "super_heavy_tank_destroyer_equipment_1",
+      "phase": 1,
+      "technology": "super_heavy_td",
+      "category": "land",
+      "archetype": "super_heavy_tank_destroyer_chassis",
+      "definition": "super_heavy_tank_destroyer_equipment_1 = {\n\tyear = 1943\n\tis_archetype = yes\n\tis_buildable = no\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tpicture = archetype_super_heavy_tank_equipment\n\ttype = {\n\t\tarmor\n\t\tanti_tank\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_armor\n\tpriority = 160\n\tmodule_slots = {\n\t\tturret_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_super_heavy_turret_type\n\t\t\t}\n\t\t}\n\t\tmain_armament_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_small_main_armament\n\t\t\t}\n\t\t}\n\t\tsuspension_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_suspension_type\n\t\t\t}\n\t\t}\n\t\tarmor_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_armor_type\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t\ttank_secondary_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tmodule = stabilizer\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tmain_armament_slot = empty\n\t\tturret_type_slot = tank_super_heavy_three_man_tank_turret\n\t\tsuspension_type_slot = tank_bogie_suspension\n\t\tarmor_type_slot = tank_riveted_armor\n\t\tengine_type_slot = tank_gasoline_engine\n\t}\n\tfuel_consumption = 5\n\tmaximum_speed = 4\n\tbuild_cost_ic = 100\n\treliability = 0.8\n\tarmor_value = 145\n\thardness = 0.99\n\tresources = {\n\t\tsteel = 3\n\t\tchromium = 4\n\t}\n\tlend_lease_cost = 20\n\tmanpower = 2\n\tscaled_by_reliability = {\n\t\tmax_strength = 0.5\n\t}\n\tarchetype = super_heavy_tank_destroyer_chassis\n\tfor_each = {\n\t\tvariant_name = {\n\t\t\tfind_and_replace = {\n\t\t\t\t\"chassis\"\n\t\t\t\t\"equipment\"\n\t\t\t}\n\t\t}\n\t}\n\tvisual_level = 0\n\tcan_convert_from = {\n\t\tsuper_heavy_tank_equipment_1\n\t}\n\tupgrades = {\n\t\ttank_reliability_upgrade\n\t\ttank_engine_upgrade\n\t\ttank_armor_upgrade\n\t\ttank_at_upgrade\n\t}\n\tdefense = 7\n\tbreakthrough = 1.8\n\tsoft_attack = 12\n\thard_attack = 70\n\tap_attack = 170\n\tair_attack = 0\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "armor",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "key": null,
+          "value": "anti_tank",
+          "start": 17,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "id": "makai_super_heavy_tank_artillery_equipment_1",
+      "source": "super_heavy_tank_artillery_equipment_1",
+      "phase": 1,
+      "technology": "super_heavy_art",
+      "category": "land",
+      "archetype": "super_heavy_tank_artillery_chassis",
+      "definition": "super_heavy_tank_artillery_equipment_1 = {\n\tyear = 1943\n\tis_archetype = yes\n\tis_buildable = no\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tpicture = archetype_super_heavy_tank_equipment\n\ttype = {\n\t\tarmor\n\t\tartillery\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_armor\n\tpriority = 140\n\tmodule_slots = {\n\t\tturret_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_super_heavy_turret_type\n\t\t\t}\n\t\t}\n\t\tmain_armament_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_small_main_armament\n\t\t\t}\n\t\t}\n\t\tsuspension_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_suspension_type\n\t\t\t}\n\t\t}\n\t\tarmor_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_armor_type\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t\ttank_secondary_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tmodule = stabilizer\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tmain_armament_slot = empty\n\t\tturret_type_slot = tank_super_heavy_three_man_tank_turret\n\t\tsuspension_type_slot = tank_bogie_suspension\n\t\tarmor_type_slot = tank_riveted_armor\n\t\tengine_type_slot = tank_gasoline_engine\n\t}\n\tfuel_consumption = 5\n\tmaximum_speed = 4\n\tbuild_cost_ic = 100\n\treliability = 0.8\n\tarmor_value = 100\n\thardness = 0.9\n\tresources = {\n\t\tsteel = 3\n\t\tchromium = 4\n\t}\n\tlend_lease_cost = 20\n\tmanpower = 2\n\tscaled_by_reliability = {\n\t\tmax_strength = 0.5\n\t}\n\tarchetype = super_heavy_tank_artillery_chassis\n\tfor_each = {\n\t\tvariant_name = {\n\t\t\tfind_and_replace = {\n\t\t\t\t\"chassis\"\n\t\t\t\t\"equipment\"\n\t\t\t}\n\t\t}\n\t\thardness = {\n\t\t\tset = 0.9\n\t\t}\n\t}\n\tvisual_level = 0\n\tcan_convert_from = {\n\t\tsuper_heavy_tank_equipment_1\n\t}\n\tupgrades = {\n\t\ttank_reliability_upgrade\n\t\ttank_engine_upgrade\n\t\ttank_armor_upgrade\n\t\ttank_art_upgrade\n\t}\n\tdefense = 7\n\tbreakthrough = 3.5\n\tsoft_attack = 85\n\thard_attack = 3\n\tap_attack = 9\n\tair_attack = 0\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "armor",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "key": null,
+          "value": "artillery",
+          "start": 17,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "id": "makai_super_heavy_tank_aa_equipment_1",
+      "source": "super_heavy_tank_aa_equipment_1",
+      "phase": 1,
+      "technology": "super_heavy_spaa",
+      "category": "land",
+      "archetype": "super_heavy_tank_aa_chassis",
+      "definition": "super_heavy_tank_aa_equipment_1 = {\n\tyear = 1943\n\tis_archetype = yes\n\tis_buildable = no\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tpicture = archetype_super_heavy_tank_equipment\n\ttype = {\n\t\tarmor\n\t\tanti_air\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_armor\n\tpriority = 150\n\tmodule_slots = {\n\t\tturret_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_super_heavy_turret_type\n\t\t\t}\n\t\t}\n\t\tmain_armament_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_small_main_armament\n\t\t\t}\n\t\t}\n\t\tsuspension_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_suspension_type\n\t\t\t}\n\t\t}\n\t\tarmor_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_armor_type\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t\ttank_secondary_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_secondary_turret\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tmodule = stabilizer\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tmain_armament_slot = empty\n\t\tturret_type_slot = tank_super_heavy_three_man_tank_turret\n\t\tsuspension_type_slot = tank_bogie_suspension\n\t\tarmor_type_slot = tank_riveted_armor\n\t\tengine_type_slot = tank_gasoline_engine\n\t}\n\tfuel_consumption = 2.5\n\tmaximum_speed = 4\n\tbuild_cost_ic = 100\n\treliability = 0.8\n\tarmor_value = 100\n\thardness = 0.9\n\tresources = {\n\t\tsteel = 3\n\t\tchromium = 4\n\t}\n\tlend_lease_cost = 20\n\tmanpower = 2\n\tscaled_by_reliability = {\n\t\tmax_strength = 0.5\n\t}\n\tarchetype = super_heavy_tank_aa_chassis\n\tfor_each = {\n\t\tvariant_name = {\n\t\t\tfind_and_replace = {\n\t\t\t\t\"chassis\"\n\t\t\t\t\"equipment\"\n\t\t\t}\n\t\t}\n\t\thardness = {\n\t\t\tset = 0.9\n\t\t}\n\t}\n\tvisual_level = 0\n\tcan_convert_from = {\n\t\tsuper_heavy_tank_equipment_1\n\t}\n\tupgrades = {\n\t\ttank_reliability_upgrade\n\t\ttank_engine_upgrade\n\t\ttank_armor_upgrade\n\t\ttank_aa_upgrade\n\t}\n\tdefense = 3.5\n\tbreakthrough = 3.5\n\tsoft_attack = 11.5\n\thard_attack = 9\n\tap_attack = 98\n\tair_attack = 50\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "armor",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "key": null,
+          "value": "anti_air",
+          "start": 17,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "id": "makai_fighter_equipment_2",
+      "source": "fighter_equipment_2",
+      "phase": 1,
+      "technology": "fighter2",
+      "category": "air",
+      "archetype": "small_plane_airframe",
+      "definition": "fighter_equipment_2 = {\n\tyear = 1940\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_fighter_equipment\n\tis_buildable = no\n\ttype = fighter\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 1\n\tinterface_category = interface_category_air\n\tsubstitute = cv_small_plane_airframe\n\tinterface_overview_category_index = 1\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 4\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.21\n\tbuild_cost_ic = 26\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = small_plane_airframe\n\tparent = fighter_equipment_1\n\tpriority = 10\n\tair_range = 1000\n\tmaximum_speed = 650\n\tair_agility = 65\n\tair_attack = 27\n\tair_defence = 12\n\tsurface_detection = 16\n\tsub_detection = 4\n}\n",
+      "type": "fighter"
+    },
+    {
+      "id": "makai_cv_fighter_equipment_2",
+      "source": "cv_fighter_equipment_2",
+      "phase": 1,
+      "technology": "cv_fighter2",
+      "category": "air",
+      "archetype": "cv_small_plane_airframe",
+      "definition": "cv_fighter_equipment_2 = {\n\tyear = 1940\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tcarrier_capable = yes\n\tdefault_carrier_composition_weight = 1\n\tpicture = archetype_fighter_equipment\n\tis_buildable = no\n\ttype = fighter\n\tai_type = cv_fighter\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 16\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 1\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 6\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.21\n\tbuild_cost_ic = 30.4\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = cv_small_plane_airframe\n\tparent = cv_fighter_equipment_1\n\tpriority = 30\n\tair_range = 800\n\tmaximum_speed = 585\n\tair_agility = 65\n\tair_attack = 27\n\tair_defence = 13\n\tsurface_detection = 22\n\tsub_detection = 4.5\n}\n",
+      "type": "fighter"
+    },
+    {
+      "id": "makai_cas_equipment_2",
+      "source": "CAS_equipment_2",
+      "phase": 1,
+      "technology": "CAS2",
+      "category": "air",
+      "archetype": "small_plane_cas_airframe",
+      "definition": "CAS_equipment_2 = {\n\tyear = 1940\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_CAS_equipment\n\tis_buildable = no\n\ttype = cas\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 2\n\tinterface_category = interface_category_air\n\tsubstitute = cv_small_plane_cas_airframe\n\tinterface_overview_category_index = 0\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 5\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.26\n\tbuild_cost_ic = 24\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = small_plane_cas_airframe\n\tvariant_name = {\n\t\tsmall_plane_cas_airframe_1 = CAS_equipment_1\n\t\tsmall_plane_cas_airframe_2 = CAS_equipment_2\n\t\tsmall_plane_cas_airframe_3 = CAS_equipment_3\n\t}\n\tparent = CAS_equipment_1\n\tpriority = 40\n\tair_range = 1000\n\tmaximum_speed = 450\n\tair_agility = 39\n\tair_attack = 10\n\tair_defence = 16\n\tair_ground_attack = 13\n\tsurface_detection = 23\n\tsub_detection = 5.5\n}\n",
+      "type": "cas"
+    },
+    {
+      "id": "makai_cv_cas_equipment_2",
+      "source": "cv_CAS_equipment_2",
+      "phase": 1,
+      "technology": "cv_CAS2",
+      "category": "air",
+      "archetype": "cv_small_plane_cas_airframe",
+      "definition": "cv_CAS_equipment_2 = {\n\tyear = 1940\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tcarrier_capable = yes\n\tdefault_carrier_composition_weight = 1\n\tpicture = archetype_CAS_equipment\n\tis_buildable = no\n\ttype = cas\n\tai_type = cv_cas\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 17\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 0\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 7\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.26\n\tbuild_cost_ic = 28.4\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = cv_small_plane_cas_airframe\n\tvariant_name = {\n\t\tcv_small_plane_cas_airframe_1 = cv_CAS_equipment_1\n\t\tcv_small_plane_cas_airframe_2 = cv_CAS_equipment_2\n\t\tcv_small_plane_cas_airframe_3 = cv_CAS_equipment_3\n\t}\n\tparent = cv_CAS_equipment_1\n\tpriority = 50\n\tair_range = 640\n\tmaximum_speed = 405\n\tair_agility = 39\n\tair_attack = 10\n\tair_defence = 16\n\tair_ground_attack = 13\n\tsurface_detection = 20\n\tsub_detection = 10\n}\n",
+      "type": "cas"
+    },
+    {
+      "id": "makai_nav_bomber_equipment_2",
+      "source": "nav_bomber_equipment_2",
+      "phase": 1,
+      "technology": "naval_bomber2",
+      "category": "air",
+      "archetype": "small_plane_naval_bomber_airframe",
+      "definition": "nav_bomber_equipment_2 = {\n\tyear = 1940\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_heavy_fighter_equipment\n\tis_buildable = no\n\ttype = naval_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 3\n\tinterface_category = interface_category_air\n\tsubstitute = cv_small_plane_naval_bomber_airframe\n\tinterface_overview_category_index = 2\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 20\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.28\n\tbuild_cost_ic = 28\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = small_plane_naval_bomber_airframe\n\tvariant_name = {\n\t\tsmall_plane_naval_bomber_airframe_1 = nav_bomber_equipment_1\n\t\tsmall_plane_naval_bomber_airframe_2 = nav_bomber_equipment_2\n\t\tsmall_plane_naval_bomber_airframe_3 = nav_bomber_equipment_3\n\t}\n\tparent = nav_bomber_equipment_1\n\tpriority = 60\n\tair_range = 930\n\tmaximum_speed = 300\n\tair_agility = 35\n\tair_attack = 10\n\tair_defence = 14\n\tsurface_detection = 25\n\tsub_detection = 15\n}\n",
+      "type": "naval_bomber"
+    },
+    {
+      "id": "makai_cv_nav_bomber_equipment_2",
+      "source": "cv_nav_bomber_equipment_2",
+      "phase": 1,
+      "technology": "cv_naval_bomber2",
+      "category": "air",
+      "archetype": "cv_small_plane_naval_bomber_airframe",
+      "definition": "cv_nav_bomber_equipment_2 = {\n\tyear = 1940\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tcarrier_capable = yes\n\tdefault_carrier_composition_weight = 1\n\tpicture = archetype_heavy_fighter_equipment\n\tis_buildable = no\n\ttype = naval_bomber\n\tai_type = cv_naval_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 18\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 2\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 20\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.28\n\tbuild_cost_ic = 33.2\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = cv_small_plane_naval_bomber_airframe\n\tvariant_name = {\n\t\tcv_small_plane_naval_bomber_airframe_1 = cv_nav_bomber_equipment_1\n\t\tcv_small_plane_naval_bomber_airframe_2 = cv_nav_bomber_equipment_2\n\t\tcv_small_plane_naval_bomber_airframe_3 = cv_nav_bomber_equipment_3\n\t}\n\tparent = cv_nav_bomber_equipment_1\n\tpriority = 70\n\tair_range = 744\n\tmaximum_speed = 270\n\tair_agility = 35\n\tair_attack = 10\n\tair_defence = 15\n\tsurface_detection = 25\n\tsub_detection = 15\n}\n",
+      "type": "naval_bomber"
+    },
+    {
+      "id": "makai_heavy_fighter_equipment_2",
+      "source": "heavy_fighter_equipment_2",
+      "phase": 1,
+      "technology": "heavy_fighter2",
+      "category": "air",
+      "archetype": "medium_plane_fighter_airframe",
+      "definition": "heavy_fighter_equipment_2 = {\n\tyear = 1940\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_strat_bomber_equipment\n\tis_buildable = no\n\ttype = heavy_fighter\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\ttactical_bomber\n\t\theavy_fighter\n\t\tscout_plane\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 8\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 3\n\tair_superiority = 1.25\n\treliability = 0.8\n\tnaval_strike_attack = 6\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 10\n\tmanpower = 40\n\tfuel_consumption = 0.26\n\tbuild_cost_ic = 30\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\trecon_camera\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttwin_plane_engine_type\n\t\t\t\tmedium_plane_engine_type\n\t\t\t\tquad_large_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 3\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_2x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = medium_plane_fighter_airframe\n\tai_type = heavy_fighter\n\tfor_each = {\n\t\tair_superiority = {\n\t\t\tset = 1.25\n\t\t}\n\t}\n\tvariant_name = {\n\t\tmedium_plane_fighter_airframe_1 = heavy_fighter_equipment_1\n\t\tmedium_plane_fighter_airframe_2 = heavy_fighter_equipment_2\n\t\tmedium_plane_fighter_airframe_3 = heavy_fighter_equipment_3\n\t}\n\tparent = heavy_fighter_equipment_1\n\tpriority = 100\n\tair_range = 1700\n\tmaximum_speed = 550\n\tair_agility = 30\n\tair_attack = 46\n\tair_defence = 15\n\tsurface_detection = 18\n\tsub_detection = 3.5\n}\n",
+      "type": "heavy_fighter"
+    },
+    {
+      "id": "makai_tac_bomber_equipment_2",
+      "source": "tac_bomber_equipment_2",
+      "phase": 1,
+      "technology": "tactical_bomber2",
+      "category": "air",
+      "archetype": "medium_plane_airframe",
+      "definition": "tac_bomber_equipment_2 = {\n\tyear = 1940\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_strat_bomber_equipment\n\tis_buildable = no\n\ttype = tactical_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\ttactical_bomber\n\t\theavy_fighter\n\t\tscout_plane\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = medium_plane\n\tair_map_icon_frame = 6\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 4\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 12\n\tnaval_strike_targetting = 6\n\tlend_lease_cost = 10\n\tmanpower = 40\n\tfuel_consumption = 0.36\n\tbuild_cost_ic = 39\n\tresources = {\n\t\taluminium = 4\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\trecon_camera\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttwin_plane_engine_type\n\t\t\t\tmedium_plane_engine_type\n\t\t\t\tquad_large_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 3\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_2x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = medium_plane_airframe\n\tparent = tac_bomber_equipment_1\n\tpriority = 110\n\tair_range = 2500\n\tmaximum_speed = 440\n\tair_agility = 25\n\tair_attack = 13\n\tair_defence = 21\n\tair_bombing = 14\n\tair_ground_attack = 10\n\tsurface_detection = 40\n\tsub_detection = 10\n}\n",
+      "type": "tactical_bomber"
+    },
+    {
+      "id": "makai_strat_bomber_equipment_2",
+      "source": "strat_bomber_equipment_2",
+      "phase": 1,
+      "technology": "strategic_bomber2",
+      "category": "air",
+      "archetype": "large_plane_airframe",
+      "definition": "strat_bomber_equipment_2 = {\n\tyear = 1940\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_strat_bomber_equipment\n\tis_buildable = no\n\ttype = strategic_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tstrategic_bomber\n\t\tmaritime_patrol_plane\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = heavy_plane\n\tair_map_icon_frame = 11\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 5\n\tair_superiority = 0.01\n\treliability = 0.8\n\tnaval_strike_attack = 1.5\n\tnaval_strike_targetting = 0.6\n\tlend_lease_cost = 12\n\tmanpower = 80\n\tfuel_consumption = 0.8\n\tbuild_cost_ic = 62\n\tresources = {\n\t\taluminium = 4\n\t\trubber = 2\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tmine_warfare_offense\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tmine_warfare_offense\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tmine_warfare_offense\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tquad_large_plane_engine_type\n\t\t\t\tlarge_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_5 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 7\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_4x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = large_plane_airframe\n\tparent = strat_bomber_equipment_1\n\tpriority = 140\n\tair_range = 3500\n\tmaximum_speed = 450\n\tair_agility = 7\n\tair_attack = 100\n\tair_defence = 35\n\tair_bombing = 45\n\tsurface_detection = 10\n\tsub_detection = 2.5\n}\n",
+      "type": "strategic_bomber"
+    },
+    {
+      "id": "makai_infantry_equipment_2",
+      "source": "infantry_equipment_2",
+      "phase": 1,
+      "technology": "improved_infantry_weapons",
+      "category": "land",
+      "archetype": "infantry_equipment",
+      "definition": "infantry_equipment_2 = {\n\tyear = 1939\n\tis_archetype = yes\n\tpicture = archetype_infantry_equipment\n\tis_buildable = no\n\ttype = infantry\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\tactive = yes\n\treliability = 0.9\n\tmaximum_speed = 4\n\tdefense = 28\n\tbreakthrough = 4\n\thardness = 0\n\tarmor_value = 0\n\tsoft_attack = 9\n\thard_attack = 1.5\n\tap_attack = 5\n\tair_attack = 0\n\tlend_lease_cost = 1\n\tbuild_cost_ic = 0.58\n\tresources = {\n\t\tsteel = 3\n\t}\n\tarchetype = infantry_equipment\n\tparent = infantry_equipment_1\n\tpriority = 10\n\tvisual_level = 2\n}\n",
+      "type": "infantry"
+    },
+    {
+      "id": "makai_artillery_equipment_2",
+      "source": "artillery_equipment_2",
+      "phase": 1,
+      "technology": "artillery1",
+      "category": "land",
+      "archetype": "artillery_equipment",
+      "definition": "artillery_equipment_2 = {\n\tyear = 1939\n\tis_archetype = yes\n\tpicture = archetype_artillery_equipment\n\ttype = {\n\t\tartillery\n\t\tinfantry\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\treliability = 0.8\n\tmaximum_speed = 4\n\tdefense = 15\n\tbreakthrough = 13\n\thardness = 0\n\tarmor_value = 0\n\tsoft_attack = 30\n\thard_attack = 3\n\tap_attack = 7\n\tair_attack = 0\n\tlend_lease_cost = 4\n\tbuild_cost_ic = 4\n\tresources = {\n\t\ttungsten = 1\n\t\tsteel = 2\n\t}\n\tarchetype = artillery_equipment\n\tparent = artillery_equipment_1\n\tpriority = 50\n\tvisual_level = 1\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "artillery",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "key": null,
+          "value": "infantry",
+          "start": 21,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "id": "makai_anti_air_equipment_2",
+      "source": "anti_air_equipment_2",
+      "phase": 1,
+      "technology": "antiair2",
+      "category": "land",
+      "archetype": "anti_air_equipment",
+      "definition": "anti_air_equipment_2 = {\n\tyear = 1940\n\tis_archetype = yes\n\tpicture = archetype_anti_air_equipment\n\ttype = {\n\t\tanti_air\n\t\tinfantry\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\treliability = 0.8\n\tmaximum_speed = 4\n\tdefense = 4\n\tbreakthrough = 1\n\thardness = 0\n\tarmor_value = 0\n\tsoft_attack = 3.5\n\thard_attack = 11\n\tap_attack = 60\n\tair_attack = 25\n\tlend_lease_cost = 3\n\tbuild_cost_ic = 5\n\tresources = {\n\t\tsteel = 2\n\t}\n\tarchetype = anti_air_equipment\n\tparent = anti_air_equipment_1\n\tpriority = 80\n\tvisual_level = 1\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "anti_air",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "key": null,
+          "value": "infantry",
+          "start": 20,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "id": "makai_anti_tank_equipment_2",
+      "source": "anti_tank_equipment_2",
+      "phase": 1,
+      "technology": "antitank2",
+      "category": "land",
+      "archetype": "anti_tank_equipment",
+      "definition": "anti_tank_equipment_2 = {\n\tyear = 1940\n\tis_archetype = yes\n\tpicture = archetype_anti_tank_equipment\n\ttype = {\n\t\tanti_tank\n\t\tinfantry\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\treliability = 0.8\n\tmaximum_speed = 4\n\tdefense = 4\n\tbreakthrough = 0\n\thardness = 0.1\n\tarmor_value = 0\n\tsoft_attack = 4\n\thard_attack = 22\n\tap_attack = 90\n\tair_attack = 0\n\tlend_lease_cost = 3\n\tbuild_cost_ic = 5\n\tresources = {\n\t\ttungsten = 2\n\t\tchromium = 1\n\t\tsteel = 2\n\t}\n\tarchetype = anti_tank_equipment\n\tparent = anti_tank_equipment_1\n\tpriority = 90\n\tvisual_level = 1\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "anti_tank",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "key": null,
+          "value": "infantry",
+          "start": 21,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "id": "makai_mechanized_equipment_2",
+      "source": "mechanized_equipment_2",
+      "phase": 2,
+      "technology": "mechanised_infantry2",
+      "category": "land",
+      "archetype": "mechanized_equipment",
+      "definition": "mechanized_equipment_2 = {\n\tyear = 1942\n\tis_archetype = yes\n\tpicture = archetype_motorized_equipment\n\tis_buildable = no\n\ttype = {\n\t\tmechanized\n\t}\n\tupgrades = {\n\t\ttank_reliability_upgrade\n\t\ttank_engine_upgrade\n\t\ttank_armor_upgrade\n\t\tmech_cost_upgrade\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\tmaximum_speed = 10\n\treliability = 0.8\n\tdefense = 30\n\tbreakthrough = 8\n\thardness = 0.70\n\tarmor_value = 15\n\tap_attack = 16\n\tair_attack = 0\n\tlend_lease_cost = 5\n\tbuild_cost_ic = 10\n\tresources = {\n\t\tsteel = 3\n\t\trubber = 1\n\t}\n\tfuel_consumption = 2.4\n\tsupply_truck = no\n\tarchetype = mechanized_equipment\n\tparent = mechanized_equipment_1\n\tpriority = 40\n\tvisual_level = 1\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "mechanized",
+          "start": 10,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "id": "makai_modern_tank_equipment_1",
+      "source": "modern_tank_equipment_1",
+      "phase": 2,
+      "technology": "main_battle_tank",
+      "category": "land",
+      "archetype": "modern_tank_chassis",
+      "definition": "modern_tank_equipment_1 = {\n\tyear = 1945\n\tis_archetype = yes\n\tis_buildable = no\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tpicture = archetype_modern_tank_equipment\n\ttype = armor\n\tgroup_by = archetype\n\tinterface_category = interface_category_armor\n\tpriority = 170\n\tmodule_slots = {\n\t\tturret_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_light_turret_type\n\t\t\t\ttank_medium_turret_type\n\t\t\t\ttank_heavy_turret_type\n\t\t\t\ttank_modern_turret_type\n\t\t\t}\n\t\t}\n\t\tmain_armament_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_small_main_armament\n\t\t\t}\n\t\t}\n\t\tsuspension_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_suspension_type\n\t\t\t}\n\t\t}\n\t\tarmor_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_armor_type\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tmodule = stabilizer\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tmain_armament_slot = empty\n\t\tturret_type_slot = tank_modern_tank_turret\n\t\tsuspension_type_slot = tank_bogie_suspension\n\t\tarmor_type_slot = tank_riveted_armor\n\t\tengine_type_slot = tank_gasoline_engine\n\t}\n\tfuel_consumption = 5\n\tmaximum_speed = 10\n\tbuild_cost_ic = 28\n\treliability = 0.8\n\tarmor_value = 130\n\thardness = 0.98\n\tresources = {\n\t\tsteel = 3\n\t\tchromium = 4\n\t}\n\tlend_lease_cost = 14\n\tmanpower = 2\n\tscaled_by_reliability = {\n\t\tmax_strength = 0.5\n\t}\n\tarchetype = modern_tank_chassis\n\tvisual_level = 0\n\tis_convertable = yes\n\tdefense = 10\n\tbreakthrough = 84\n\tsoft_attack = 40\n\thard_attack = 32\n\tap_attack = 131\n\tair_attack = 0\n\tupgrades = {\n\t\ttank_reliability_upgrade\n\t\ttank_engine_upgrade\n\t\ttank_armor_upgrade\n\t\ttank_gun_upgrade\n\t}\n}\n",
+      "type": "armor"
+    },
+    {
+      "id": "makai_modern_tank_destroyer_equipment_1",
+      "source": "modern_tank_destroyer_equipment_1",
+      "phase": 2,
+      "technology": "modern_td",
+      "category": "land",
+      "archetype": "modern_tank_destroyer_chassis",
+      "definition": "modern_tank_destroyer_equipment_1 = {\n\tyear = 1945\n\tis_archetype = yes\n\tis_buildable = no\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tpicture = archetype_modern_tank_equipment\n\ttype = {\n\t\tarmor\n\t\tanti_tank\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_armor\n\tpriority = 200\n\tmodule_slots = {\n\t\tturret_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_light_turret_type\n\t\t\t\ttank_medium_turret_type\n\t\t\t\ttank_heavy_turret_type\n\t\t\t\ttank_modern_turret_type\n\t\t\t}\n\t\t}\n\t\tmain_armament_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_small_main_armament\n\t\t\t}\n\t\t}\n\t\tsuspension_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_suspension_type\n\t\t\t}\n\t\t}\n\t\tarmor_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_armor_type\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tmodule = stabilizer\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tmain_armament_slot = empty\n\t\tturret_type_slot = tank_modern_tank_turret\n\t\tsuspension_type_slot = tank_bogie_suspension\n\t\tarmor_type_slot = tank_riveted_armor\n\t\tengine_type_slot = tank_gasoline_engine\n\t}\n\tfuel_consumption = 2.5\n\tmaximum_speed = 10\n\tbuild_cost_ic = 28\n\treliability = 0.8\n\tarmor_value = 130\n\thardness = 0.98\n\tresources = {\n\t\tsteel = 3\n\t\tchromium = 4\n\t}\n\tlend_lease_cost = 13\n\tmanpower = 2\n\tscaled_by_reliability = {\n\t\tmax_strength = 0.5\n\t}\n\tarchetype = modern_tank_destroyer_chassis\n\tfor_each = {\n\t\tvariant_name = {\n\t\t\tfind_and_replace = {\n\t\t\t\t\"chassis\"\n\t\t\t\t\"equipment\"\n\t\t\t}\n\t\t}\n\t}\n\tvisual_level = 0\n\tcan_convert_from = {\n\t\tmodern_tank_equipment_1\n\t}\n\tupgrades = {\n\t\ttank_reliability_upgrade\n\t\ttank_engine_upgrade\n\t\ttank_armor_upgrade\n\t\ttank_at_upgrade\n\t}\n\tdefense = 8\n\tbreakthrough = 2\n\tsoft_attack = 10\n\thard_attack = 42\n\tap_attack = 165\n\tair_attack = 0\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "armor",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "key": null,
+          "value": "anti_tank",
+          "start": 17,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "id": "makai_modern_tank_artillery_equipment_1",
+      "source": "modern_tank_artillery_equipment_1",
+      "phase": 2,
+      "technology": "modern_art",
+      "category": "land",
+      "archetype": "modern_tank_artillery_chassis",
+      "definition": "modern_tank_artillery_equipment_1 = {\n\tyear = 1945\n\tis_archetype = yes\n\tis_buildable = no\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tpicture = archetype_modern_tank_equipment\n\ttype = {\n\t\tarmor\n\t\tartillery\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_armor\n\tpriority = 180\n\tmodule_slots = {\n\t\tturret_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_light_turret_type\n\t\t\t\ttank_medium_turret_type\n\t\t\t\ttank_heavy_turret_type\n\t\t\t\ttank_modern_turret_type\n\t\t\t}\n\t\t}\n\t\tmain_armament_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_small_main_armament\n\t\t\t}\n\t\t}\n\t\tsuspension_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_suspension_type\n\t\t\t}\n\t\t}\n\t\tarmor_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_armor_type\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tmodule = stabilizer\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tmain_armament_slot = empty\n\t\tturret_type_slot = tank_modern_tank_turret\n\t\tsuspension_type_slot = tank_bogie_suspension\n\t\tarmor_type_slot = tank_riveted_armor\n\t\tengine_type_slot = tank_gasoline_engine\n\t}\n\tfuel_consumption = 2.5\n\tmaximum_speed = 10\n\tbuild_cost_ic = 28\n\treliability = 0.8\n\tarmor_value = 90\n\thardness = 0.85\n\tresources = {\n\t\tsteel = 3\n\t\tchromium = 4\n\t}\n\tlend_lease_cost = 13\n\tmanpower = 2\n\tscaled_by_reliability = {\n\t\tmax_strength = 0.5\n\t}\n\tarchetype = modern_tank_artillery_chassis\n\tfor_each = {\n\t\tvariant_name = {\n\t\t\tfind_and_replace = {\n\t\t\t\t\"chassis\"\n\t\t\t\t\"equipment\"\n\t\t\t}\n\t\t}\n\t\thardness = {\n\t\t\tset = 0.85\n\t\t}\n\t}\n\tvisual_level = 0\n\tcan_convert_from = {\n\t\tmodern_tank_equipment_1\n\t}\n\tupgrades = {\n\t\ttank_reliability_upgrade\n\t\ttank_engine_upgrade\n\t\ttank_armor_upgrade\n\t\ttank_art_upgrade\n\t}\n\tdefense = 8\n\tbreakthrough = 4\n\tsoft_attack = 80\n\thard_attack = 3\n\tap_attack = 10\n\tair_attack = 0\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "armor",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "key": null,
+          "value": "artillery",
+          "start": 17,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "id": "makai_modern_tank_aa_equipment_1",
+      "source": "modern_tank_aa_equipment_1",
+      "phase": 2,
+      "technology": "modern_spaa",
+      "category": "land",
+      "archetype": "modern_tank_aa_chassis",
+      "definition": "modern_tank_aa_equipment_1 = {\n\tyear = 1945\n\tis_archetype = yes\n\tis_buildable = no\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tpicture = archetype_modern_tank_equipment\n\ttype = {\n\t\tarmor\n\t\tanti_air\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_armor\n\tpriority = 190\n\tmodule_slots = {\n\t\tturret_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_light_turret_type\n\t\t\t\ttank_medium_turret_type\n\t\t\t\ttank_heavy_turret_type\n\t\t\t\ttank_modern_turret_type\n\t\t\t}\n\t\t}\n\t\tmain_armament_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_small_main_armament\n\t\t\t}\n\t\t}\n\t\tsuspension_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_suspension_type\n\t\t\t}\n\t\t}\n\t\tarmor_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_armor_type\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\ttank_special_module\n\t\t\t\ttank_radio_module\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tmodule = stabilizer\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tmain_armament_slot = empty\n\t\tturret_type_slot = tank_modern_tank_turret\n\t\tsuspension_type_slot = tank_bogie_suspension\n\t\tarmor_type_slot = tank_riveted_armor\n\t\tengine_type_slot = tank_gasoline_engine\n\t}\n\tfuel_consumption = 1.25\n\tmaximum_speed = 10\n\tbuild_cost_ic = 28\n\treliability = 0.8\n\tarmor_value = 90\n\thardness = 0.85\n\tresources = {\n\t\tsteel = 3\n\t\tchromium = 4\n\t}\n\tlend_lease_cost = 13\n\tmanpower = 2\n\tscaled_by_reliability = {\n\t\tmax_strength = 0.5\n\t}\n\tarchetype = modern_tank_aa_chassis\n\tfor_each = {\n\t\tvariant_name = {\n\t\t\tfind_and_replace = {\n\t\t\t\t\"chassis\"\n\t\t\t\t\"equipment\"\n\t\t\t}\n\t\t}\n\t\thardness = {\n\t\t\tset = 0.85\n\t\t}\n\t}\n\tvisual_level = 0\n\tcan_convert_from = {\n\t\tmodern_tank_equipment_1\n\t}\n\tupgrades = {\n\t\ttank_reliability_upgrade\n\t\ttank_engine_upgrade\n\t\ttank_armor_upgrade\n\t\ttank_aa_upgrade\n\t}\n\tdefense = 4\n\tbreakthrough = 4\n\tsoft_attack = 9\n\thard_attack = 7.5\n\tap_attack = 100\n\tair_attack = 50\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "armor",
+          "start": 10,
+          "end": 15
+        },
+        {
+          "key": null,
+          "value": "anti_air",
+          "start": 17,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "id": "makai_fighter_equipment_3",
+      "source": "fighter_equipment_3",
+      "phase": 2,
+      "technology": "fighter3",
+      "category": "air",
+      "archetype": "small_plane_airframe",
+      "definition": "fighter_equipment_3 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_fighter_equipment\n\tis_buildable = no\n\ttype = fighter\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 1\n\tinterface_category = interface_category_air\n\tsubstitute = cv_small_plane_airframe\n\tinterface_overview_category_index = 1\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 6\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.21\n\tbuild_cost_ic = 28\n\tresources = {\n\t\taluminium = 4\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = small_plane_airframe\n\tparent = fighter_equipment_2\n\tpriority = 10\n\tair_range = 1200\n\tmaximum_speed = 720\n\tair_agility = 80\n\tair_attack = 32\n\tair_defence = 14\n\tsurface_detection = 20\n\tsub_detection = 5\n}\n",
+      "type": "fighter"
+    },
+    {
+      "id": "makai_cv_fighter_equipment_3",
+      "source": "cv_fighter_equipment_3",
+      "phase": 2,
+      "technology": "cv_fighter3",
+      "category": "air",
+      "archetype": "cv_small_plane_airframe",
+      "definition": "cv_fighter_equipment_3 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tcarrier_capable = yes\n\tdefault_carrier_composition_weight = 1\n\tpicture = archetype_fighter_equipment\n\tis_buildable = no\n\ttype = fighter\n\tai_type = cv_fighter\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 16\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 1\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 8\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.21\n\tbuild_cost_ic = 32.4\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = cv_small_plane_airframe\n\tparent = cv_fighter_equipment_2\n\tpriority = 30\n\tair_range = 960\n\tmaximum_speed = 648\n\tair_agility = 80\n\tair_attack = 32\n\tair_defence = 15\n\tsurface_detection = 25\n\tsub_detection = 5\n}\n",
+      "type": "fighter"
+    },
+    {
+      "id": "makai_cas_equipment_3",
+      "source": "CAS_equipment_3",
+      "phase": 2,
+      "technology": "CAS3",
+      "category": "air",
+      "archetype": "small_plane_cas_airframe",
+      "definition": "CAS_equipment_3 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_CAS_equipment\n\tis_buildable = no\n\ttype = cas\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 2\n\tinterface_category = interface_category_air\n\tsubstitute = cv_small_plane_cas_airframe\n\tinterface_overview_category_index = 0\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 10\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.26\n\tbuild_cost_ic = 26\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = small_plane_cas_airframe\n\tvariant_name = {\n\t\tsmall_plane_cas_airframe_1 = CAS_equipment_1\n\t\tsmall_plane_cas_airframe_2 = CAS_equipment_2\n\t\tsmall_plane_cas_airframe_3 = CAS_equipment_3\n\t}\n\tparent = CAS_equipment_2\n\tpriority = 40\n\tair_range = 1200\n\tmaximum_speed = 550\n\tair_agility = 44\n\tair_attack = 14\n\tair_defence = 20\n\tair_ground_attack = 18\n\tsurface_detection = 27\n\tsub_detection = 6.5\n}\n",
+      "type": "cas"
+    },
+    {
+      "id": "makai_cv_cas_equipment_3",
+      "source": "cv_CAS_equipment_3",
+      "phase": 2,
+      "technology": "cv_CAS3",
+      "category": "air",
+      "archetype": "cv_small_plane_cas_airframe",
+      "definition": "cv_CAS_equipment_3 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tcarrier_capable = yes\n\tdefault_carrier_composition_weight = 1\n\tpicture = archetype_CAS_equipment\n\tis_buildable = no\n\ttype = cas\n\tai_type = cv_cas\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 17\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 0\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 13\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.26\n\tbuild_cost_ic = 30.4\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = cv_small_plane_cas_airframe\n\tvariant_name = {\n\t\tcv_small_plane_cas_airframe_1 = cv_CAS_equipment_1\n\t\tcv_small_plane_cas_airframe_2 = cv_CAS_equipment_2\n\t\tcv_small_plane_cas_airframe_3 = cv_CAS_equipment_3\n\t}\n\tparent = cv_CAS_equipment_2\n\tpriority = 50\n\tair_range = 800\n\tmaximum_speed = 495\n\tair_agility = 44\n\tair_attack = 14\n\tair_defence = 20\n\tair_ground_attack = 18\n\tsurface_detection = 30\n\tsub_detection = 15\n}\n",
+      "type": "cas"
+    },
+    {
+      "id": "makai_nav_bomber_equipment_3",
+      "source": "nav_bomber_equipment_3",
+      "phase": 2,
+      "technology": "naval_bomber3",
+      "category": "air",
+      "archetype": "small_plane_naval_bomber_airframe",
+      "definition": "nav_bomber_equipment_3 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_heavy_fighter_equipment\n\tis_buildable = no\n\ttype = naval_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 3\n\tinterface_category = interface_category_air\n\tsubstitute = cv_small_plane_naval_bomber_airframe\n\tinterface_overview_category_index = 2\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 25\n\tnaval_strike_targetting = 12.5\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.28\n\tbuild_cost_ic = 30\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = small_plane_naval_bomber_airframe\n\tvariant_name = {\n\t\tsmall_plane_naval_bomber_airframe_1 = nav_bomber_equipment_1\n\t\tsmall_plane_naval_bomber_airframe_2 = nav_bomber_equipment_2\n\t\tsmall_plane_naval_bomber_airframe_3 = nav_bomber_equipment_3\n\t}\n\tparent = nav_bomber_equipment_2\n\tpriority = 60\n\tair_range = 1100\n\tmaximum_speed = 400\n\tair_agility = 40\n\tair_attack = 14\n\tair_defence = 16\n\tsurface_detection = 35\n\tsub_detection = 18\n}\n",
+      "type": "naval_bomber"
+    },
+    {
+      "id": "makai_cv_nav_bomber_equipment_3",
+      "source": "cv_nav_bomber_equipment_3",
+      "phase": 2,
+      "technology": "cv_naval_bomber3",
+      "category": "air",
+      "archetype": "cv_small_plane_naval_bomber_airframe",
+      "definition": "cv_nav_bomber_equipment_3 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tcarrier_capable = yes\n\tdefault_carrier_composition_weight = 1\n\tpicture = archetype_heavy_fighter_equipment\n\tis_buildable = no\n\ttype = naval_bomber\n\tai_type = cv_naval_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 18\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 2\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 25\n\tnaval_strike_targetting = 12.5\n\tlend_lease_cost = 8\n\tmanpower = 20\n\tfuel_consumption = 0.28\n\tbuild_cost_ic = 35.2\n\tresources = {\n\t\taluminium = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = cv_small_plane_naval_bomber_airframe\n\tvariant_name = {\n\t\tcv_small_plane_naval_bomber_airframe_1 = cv_nav_bomber_equipment_1\n\t\tcv_small_plane_naval_bomber_airframe_2 = cv_nav_bomber_equipment_2\n\t\tcv_small_plane_naval_bomber_airframe_3 = cv_nav_bomber_equipment_3\n\t}\n\tparent = cv_nav_bomber_equipment_2\n\tpriority = 70\n\tair_range = 880\n\tmaximum_speed = 360\n\tair_agility = 40\n\tair_attack = 14\n\tair_defence = 17\n\tsurface_detection = 35\n\tsub_detection = 18\n}\n",
+      "type": "naval_bomber"
+    },
+    {
+      "id": "makai_heavy_fighter_equipment_3",
+      "source": "heavy_fighter_equipment_3",
+      "phase": 2,
+      "technology": "heavy_fighter3",
+      "category": "air",
+      "archetype": "medium_plane_fighter_airframe",
+      "definition": "heavy_fighter_equipment_3 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_strat_bomber_equipment\n\tis_buildable = no\n\ttype = heavy_fighter\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\ttactical_bomber\n\t\theavy_fighter\n\t\tscout_plane\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = light_plane\n\tair_map_icon_frame = 8\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 3\n\tair_superiority = 1.25\n\treliability = 0.8\n\tnaval_strike_attack = 9\n\tnaval_strike_targetting = 10\n\tlend_lease_cost = 10\n\tmanpower = 40\n\tfuel_consumption = 0.26\n\tbuild_cost_ic = 32\n\tresources = {\n\t\taluminium = 4\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\trecon_camera\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttwin_plane_engine_type\n\t\t\t\tmedium_plane_engine_type\n\t\t\t\tquad_large_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 3\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_2x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = medium_plane_fighter_airframe\n\tai_type = heavy_fighter\n\tfor_each = {\n\t\tair_superiority = {\n\t\t\tset = 1.25\n\t\t}\n\t}\n\tvariant_name = {\n\t\tmedium_plane_fighter_airframe_1 = heavy_fighter_equipment_1\n\t\tmedium_plane_fighter_airframe_2 = heavy_fighter_equipment_2\n\t\tmedium_plane_fighter_airframe_3 = heavy_fighter_equipment_3\n\t}\n\tparent = heavy_fighter_equipment_2\n\tpriority = 100\n\tair_range = 2000\n\tmaximum_speed = 600\n\tair_agility = 33\n\tair_attack = 54\n\tair_defence = 18\n\tsurface_detection = 21\n\tsub_detection = 4\n}\n",
+      "type": "heavy_fighter"
+    },
+    {
+      "id": "makai_tac_bomber_equipment_3",
+      "source": "tac_bomber_equipment_3",
+      "phase": 2,
+      "technology": "tactical_bomber3",
+      "category": "air",
+      "archetype": "medium_plane_airframe",
+      "definition": "tac_bomber_equipment_3 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_strat_bomber_equipment\n\tis_buildable = no\n\ttype = tactical_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\ttactical_bomber\n\t\theavy_fighter\n\t\tscout_plane\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = medium_plane\n\tair_map_icon_frame = 6\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 4\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 15\n\tnaval_strike_targetting = 6\n\tlend_lease_cost = 10\n\tmanpower = 40\n\tfuel_consumption = 0.36\n\tbuild_cost_ic = 41\n\tresources = {\n\t\taluminium = 5\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\trecon_camera\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_offense\n\t\t\t\trecon_camera\n\t\t\t\ttac_weapon\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\ttwin_plane_engine_type\n\t\t\t\tmedium_plane_engine_type\n\t\t\t\tquad_large_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tmine_warfare_defense\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_medium\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 3\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_2x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = medium_plane_airframe\n\tparent = tac_bomber_equipment_2\n\tpriority = 110\n\tair_range = 3000\n\tmaximum_speed = 480\n\tair_agility = 30\n\tair_attack = 20\n\tair_defence = 24\n\tair_bombing = 16\n\tair_ground_attack = 15\n\tsurface_detection = 50\n\tsub_detection = 12.5\n}\n",
+      "type": "tactical_bomber"
+    },
+    {
+      "id": "makai_strat_bomber_equipment_3",
+      "source": "strat_bomber_equipment_3",
+      "phase": 2,
+      "technology": "strategic_bomber3",
+      "category": "air",
+      "archetype": "large_plane_airframe",
+      "definition": "strat_bomber_equipment_3 = {\n\tyear = 1944\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_strat_bomber_equipment\n\tis_buildable = no\n\ttype = strategic_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tstrategic_bomber\n\t\tmaritime_patrol_plane\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = heavy_plane\n\tair_map_icon_frame = 11\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 5\n\tair_superiority = 0.01\n\treliability = 0.8\n\tnaval_strike_attack = 1.5\n\tnaval_strike_targetting = 0.6\n\tlend_lease_cost = 12\n\tmanpower = 80\n\tfuel_consumption = 0.8\n\tbuild_cost_ic = 64\n\tresources = {\n\t\taluminium = 5\n\t\trubber = 2\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tmine_warfare_offense\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tmine_warfare_offense\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tstrat_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tmine_warfare_offense\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tquad_large_plane_engine_type\n\t\t\t\tlarge_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_3 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_4 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_5 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t\tplane_special_module_defense_turret_x2\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_large\n\t\t\t\tmine_warfare_defense\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 7\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_4x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tarchetype = large_plane_airframe\n\tparent = strat_bomber_equipment_2\n\tpriority = 140\n\tair_range = 5000\n\tmaximum_speed = 500\n\tair_agility = 10\n\tair_attack = 150\n\tair_defence = 50\n\tair_bombing = 60\n\tsurface_detection = 10\n\tsub_detection = 2.5\n}\n",
+      "type": "strategic_bomber"
+    },
+    {
+      "id": "makai_infantry_equipment_3",
+      "source": "infantry_equipment_3",
+      "phase": 2,
+      "technology": "advanced_infantry_weapons",
+      "category": "land",
+      "archetype": "infantry_equipment",
+      "definition": "infantry_equipment_3 = {\n\tyear = 1942\n\tis_archetype = yes\n\tpicture = archetype_infantry_equipment\n\tis_buildable = no\n\ttype = infantry\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\tactive = yes\n\treliability = 0.8\n\tmaximum_speed = 4\n\tdefense = 34\n\tbreakthrough = 5\n\thardness = 0\n\tarmor_value = 0\n\tsoft_attack = 12\n\thard_attack = 2\n\tap_attack = 10\n\tair_attack = 0\n\tlend_lease_cost = 1\n\tbuild_cost_ic = 0.69\n\tresources = {\n\t\tsteel = 4\n\t}\n\tarchetype = infantry_equipment\n\tparent = infantry_equipment_2\n\tpriority = 10\n\tvisual_level = 3\n}\n",
+      "type": "infantry"
+    },
+    {
+      "id": "makai_artillery_equipment_3",
+      "source": "artillery_equipment_3",
+      "phase": 2,
+      "technology": "artillery4",
+      "category": "land",
+      "archetype": "artillery_equipment",
+      "definition": "artillery_equipment_3 = {\n\tyear = 1942\n\tis_archetype = yes\n\tpicture = archetype_artillery_equipment\n\ttype = {\n\t\tartillery\n\t\tinfantry\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\treliability = 0.8\n\tmaximum_speed = 4\n\tdefense = 19\n\tbreakthrough = 16\n\thardness = 0\n\tarmor_value = 0\n\tsoft_attack = 34\n\thard_attack = 4\n\tap_attack = 9\n\tair_attack = 0\n\tlend_lease_cost = 4\n\tbuild_cost_ic = 4.5\n\tresources = {\n\t\ttungsten = 1\n\t\tsteel = 3\n\t}\n\tarchetype = artillery_equipment\n\tparent = artillery_equipment_2\n\tpriority = 50\n\tvisual_level = 2\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "artillery",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "key": null,
+          "value": "infantry",
+          "start": 21,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "id": "makai_jet_fighter_equipment_2",
+      "source": "jet_fighter_equipment_2",
+      "phase": 3,
+      "technology": "jet_fighter2",
+      "category": "air",
+      "archetype": "jet_fighter_equipment",
+      "definition": "jet_fighter_equipment_2 = {\n\tyear = 1950\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_fighter_equipment\n\tis_buildable = no\n\ttype = fighter\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tfighter\n\t\tinterceptor\n\t\tcas\n\t\tnaval_bomber\n\t\tsuicide\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = jet_plane\n\tair_map_icon_frame = 4\n\tinterface_category = interface_category_air\n\tsubstitute = cv_small_plane_airframe\n\tinterface_overview_category_index = 1\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 5\n\tnaval_strike_targetting = 1\n\tlend_lease_cost = 8\n\tmanpower = 40\n\tfuel_consumption = 0.42\n\tbuild_cost_ic = 32\n\tresources = {\n\t\taluminium = 3\n\t\ttungsten = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = {\n\t\tfixed_main_weapon_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tfixed_auxiliary_weapon_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\trecon_camera\n\t\t\t\tfighter_weapon\n\t\t\t\tcas_weapon\n\t\t\t\tnav_bomber_weapon\n\t\t\t\tkamikaze_bomber_weapon\n\t\t\t}\n\t\t}\n\t\tengine_type_slot = {\n\t\t\trequired = yes\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_engine_type\n\t\t\t\ttwin_plane_engine_type\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_1 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t\tspecial_type_slot_2 = {\n\t\t\trequired = no\n\t\t\tallowed_module_categories = {\n\t\t\t\tplane_special_module_small\n\t\t\t\tplane_special_module_bomb_sights\n\t\t\t\tplane_special_module_radio_navigation\n\t\t\t\tplane_special_module_air_ground_radar\n\t\t\t\tplane_special_module_air_air_radar\n\t\t\t\tplane_special_module_defense_turret\n\t\t\t}\n\t\t}\n\t}\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 2\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_1x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tonly_duplicate_archetype = yes\n\tarchetype = jet_fighter_equipment\n\tparent = jet_fighter_equipment_1\n\tpriority = 20\n\tair_range = 2200\n\tmaximum_speed = 1100\n\tair_agility = 72\n\tair_attack = 40\n\tair_defence = 18\n\tsurface_detection = 15\n\tsub_detection = 4\n}\n",
+      "type": "fighter"
+    },
+    {
+      "id": "makai_jet_tac_bomber_equipment_2",
+      "source": "jet_tac_bomber_equipment_2",
+      "phase": 3,
+      "technology": "jet_tactical_bomber2",
+      "category": "air",
+      "archetype": "jet_tac_bomber_equipment",
+      "definition": "jet_tac_bomber_equipment_2 = {\n\tyear = 1950\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_strat_bomber_equipment\n\tis_buildable = no\n\ttype = tactical_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\ttactical_bomber\n\t\theavy_fighter\n\t\tscout_plane\n\t}\n\tallow_mission_type = training\n\tgroup_by = archetype\n\tsprite = medium_plane\n\tair_map_icon_frame = 7\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 4\n\tair_superiority = 1\n\treliability = 0.8\n\tnaval_strike_attack = 15\n\tnaval_strike_targetting = 6\n\tlend_lease_cost = 10\n\tmanpower = 80\n\tfuel_consumption = 0.72\n\tbuild_cost_ic = 48\n\tresources = {\n\t\taluminium = 3\n\t\ttungsten = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = none\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 3\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_2x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tonly_duplicate_archetype = yes\n\tarchetype = jet_tac_bomber_equipment\n\tparent = jet_tac_bomber_equipment_1\n\tpriority = 120\n\tair_range = 5000\n\tmaximum_speed = 1000\n\tair_agility = 57\n\tair_attack = 22\n\tair_defence = 28\n\tair_bombing = 20\n\tair_ground_attack = 20\n\tsurface_detection = 30\n\tsub_detection = 10\n}\n",
+      "type": "tactical_bomber"
+    },
+    {
+      "id": "makai_jet_strat_bomber_equipment_1",
+      "source": "jet_strat_bomber_equipment_1",
+      "phase": 3,
+      "technology": "jet_strategic_bomber1",
+      "category": "air",
+      "archetype": "jet_strat_bomber_equipment",
+      "definition": "jet_strat_bomber_equipment_1 = {\n\tyear = 1950\n\tcan_be_produced = {\n\t\tif = {\n\t\t\tlimit = {\n\t\t\t\thas_dlc = \"Arms Against Tyranny\"\n\t\t\t}\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions_aat\n\t\t\t}\n\t\t}\n\t\telse = {\n\t\t\tNOT = {\n\t\t\t\thas_idea = BUL_army_restrictions\n\t\t\t}\n\t\t}\n\t}\n\tis_archetype = yes\n\tis_convertable = yes\n\tpicture = archetype_strat_bomber_equipment\n\tis_buildable = no\n\ttype = strategic_bomber\n\ttype_override = fixed_main_weapon_slot\n\tallowed_types = {\n\t\tstrategic_bomber\n\t\tmaritime_patrol_plane\n\t}\n\tallow_mission_type = {\n\t\tstrategic_bomber\n\t\tnaval_mines_planting\n\t}\n\tgroup_by = archetype\n\tsprite = heavy_plane\n\tair_map_icon_frame = 10\n\tinterface_category = interface_category_air\n\tinterface_overview_category_index = 5\n\tair_superiority = 0.01\n\treliability = 0.8\n\tnaval_strike_attack = 1.5\n\tnaval_strike_targetting = 0.6\n\tlend_lease_cost = 12\n\tmanpower = 160\n\tfuel_consumption = 1.6\n\tbuild_cost_ic = 80\n\tresources = {\n\t\taluminium = 3\n\t\ttungsten = 3\n\t\trubber = 1\n\t}\n\tmodule_slots = none\n\tmodule_count_limit = {\n\t\tcategory = plane_special_module_defense_turret\n\t\tcount < 7\n\t}\n\tdefault_modules = {\n\t\tfixed_main_weapon_slot = empty\n\t\tfixed_auxiliary_weapon_slot_1 = empty\n\t\tengine_type_slot = engine_1_4x\n\t\tspecial_type_slot_1 = empty\n\t\tspecial_type_slot_2 = empty\n\t}\n\tonly_duplicate_archetype = yes\n\tarchetype = jet_strat_bomber_equipment\n\tpriority = 150\n\tair_range = 7000\n\tmaximum_speed = 920\n\tair_agility = 14\n\tair_attack = 100\n\tair_defence = 54\n\tair_bombing = 64\n\tupgrades = {\n\t\tplane_bomb_upgrade\n\t\tplane_range_upgrade\n\t\tplane_engine_upgrade\n\t\tplane_reliability_upgrade\n\t}\n\tsurface_detection = 10\n\tsub_detection = 2.5\n}\n",
+      "type": "strategic_bomber"
+    },
+    {
+      "id": "makai_anti_air_equipment_3",
+      "source": "anti_air_equipment_3",
+      "phase": 3,
+      "technology": "antiair5",
+      "category": "land",
+      "archetype": "anti_air_equipment",
+      "definition": "anti_air_equipment_3 = {\n\tyear = 1943\n\tis_archetype = yes\n\tpicture = archetype_anti_air_equipment\n\ttype = {\n\t\tanti_air\n\t\tinfantry\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\treliability = 0.8\n\tmaximum_speed = 4\n\tdefense = 4\n\tbreakthrough = 1\n\thardness = 0\n\tarmor_value = 0\n\tsoft_attack = 4\n\thard_attack = 15\n\tap_attack = 88\n\tair_attack = 32\n\tlend_lease_cost = 3\n\tbuild_cost_ic = 6\n\tresources = {\n\t\tsteel = 3\n\t}\n\tarchetype = anti_air_equipment\n\tparent = anti_air_equipment_2\n\tpriority = 80\n\tvisual_level = 2\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "anti_air",
+          "start": 10,
+          "end": 18
+        },
+        {
+          "key": null,
+          "value": "infantry",
+          "start": 20,
+          "end": 28
+        }
+      ]
+    },
+    {
+      "id": "makai_anti_tank_equipment_3",
+      "source": "anti_tank_equipment_3",
+      "phase": 3,
+      "technology": "antitank5",
+      "category": "land",
+      "archetype": "anti_tank_equipment",
+      "definition": "anti_tank_equipment_3 = {\n\tyear = 1943\n\tis_archetype = yes\n\tpicture = archetype_anti_tank_equipment\n\ttype = {\n\t\tanti_tank\n\t\tinfantry\n\t}\n\tgroup_by = archetype\n\tinterface_category = interface_category_land\n\treliability = 0.8\n\tmaximum_speed = 4\n\tdefense = 4\n\tbreakthrough = 0\n\thardness = 0.1\n\tarmor_value = 0\n\tsoft_attack = 4\n\thard_attack = 30\n\tap_attack = 125\n\tair_attack = 0\n\tlend_lease_cost = 3\n\tbuild_cost_ic = 6\n\tresources = {\n\t\ttungsten = 2\n\t\tchromium = 1\n\t\tsteel = 3\n\t}\n\tarchetype = anti_tank_equipment\n\tparent = anti_tank_equipment_2\n\tpriority = 90\n\tvisual_level = 2\n}\n",
+      "type": [
+        {
+          "key": null,
+          "value": "anti_tank",
+          "start": 10,
+          "end": 19
+        },
+        {
+          "key": null,
+          "value": "infantry",
+          "start": 21,
+          "end": 29
+        }
+      ]
+    }
+  ],
+  "originalUnit": "touhou_boss_army = {\n\tsprite = heavy_armor\n\tmap_icon_category = armored\n\tpriority = 2520\n\tai_priority = 2520\n\tactive = no\n\ttype = {\n\t\tarmor\n\t}\n\tgroup = armor\n\tcategories = {\n\t\tcategory_tanks\n\t\tcategory_front_line\n\t\tcategory_all_armor\n\t\tcategory_army\n\t}\n\tcombat_width = 2\n\tneed = {\n\t\tsuper_heavy_tank_aa_chassis = 10\n\t}\n\tmanpower = 500\n\tmax_organisation = 50\n\tmaximum_speed = 2\n\tdefault_morale = 0.3\n\tmax_strength = 30\n\ttraining_time = 90\n\tweight = 1.75\n\tsupply_consumption = 0.1\n\tsuppression = 2.5\n\tsoft_attack = 7\n\thard_attack = 9\n\tAIR_ATTACK = -0.9\n\tdefense = 20\n\tbreakthrough = 20\n\texperience_loss_factor = -0.05\n\tinitiative = 0.02\n\tcan_be_parachuted = yes\n\tforest = {\n\t\tattack = 0.35\n\t}\n\thills = {\n\t\tattack = 0.35\n\t}\n\tmountain = {\n\t\tattack = 0.35\n\t}\n\tjungle = {\n\t\tattack = 0.35\n\t}\n\tmarsh = {\n\t\tattack = 0.35\n\t}\n\turban = {\n\t\tattack = 0.35\n\t}\n\triver = {\n\t\tattack = 0.35\n\t}\n\tamphibious = {\n\t\tattack = 0.35\n\t}\n\tdesert = {\n\t\tattack = 0.35\n\t}\n\tfort = {\n\t\tattack = 1\n\t}\n}\n",
+  "sourceHashes": {
+    "common/units/equipment/amphibious_mechanized.txt": "81446c5e3b9b373b36693ae95faced779f85170e42ae59033fa2305f417456f3",
+    "common/units/equipment/anti_air.txt": "3f3606e69c3a6de005d7ee4e4c8ffb707de078196c31c6a75be815a1042ffb26",
+    "common/units/equipment/anti_tank.txt": "6bfce3b8e7b4eeaf07a7da4c1d50cf85d7353d529a753bc75e28526c7c5ee2cb",
+    "common/units/equipment/armored_car.txt": "3d098bb15d890013064d38910df8b3efec2fa4a5e15c2294d61c69c7784be898",
+    "common/units/equipment/artillery.txt": "c2288032e61a461af7b3fdb6765f72d256a502f5050567f51e25798bb690cd54",
+    "common/units/equipment/ballistic_missiles.txt": "432989281b7a47e25cd2b709e919954e8650332212367547650f2ba6ce8c583a",
+    "common/units/equipment/convoys.txt": "28d9aa495fd3e9054f7f7879939f2757a6f8349bb206089cc6ab028f9077c9dd",
+    "common/units/equipment/emplacement_gun_ammo.txt": "ebacdf56a2dfd9be6fb8bbbcf1b07de611822ed8ec7b24a2c375f024b3ac777e",
+    "common/units/equipment/floating_harbor.txt": "dd49bd5649ef1e26b36ecb5d4e445e3989c9192b7306cefe7f80fafb854da429",
+    "common/units/equipment/guided_missiles.txt": "93d4086309a7bbdb3016ab7667f195b3348f7d9504f9b97348c2214f428deb78",
+    "common/units/equipment/helicopter.txt": "cb2e28e453a33648de57a2c3934ab3d9e14d8a5bbe61bbf64c19b3fa93b93d70",
+    "common/units/equipment/infantry.txt": "0b2b15df8618b68ceb4892510c965f0d8618b365937fd8e12581a6d512e01cf1",
+    "common/units/equipment/intercontinental_bomber.txt": "65a9c3c023cb5ab7c6d0cd9abd8bba03e714e22ccef1cf02e00b5603dbc73352",
+    "common/units/equipment/mechanized.txt": "6f89e16244898146ac39afa975c7d1ebd43d9e853f2e4682ba9fe98318f19e8b",
+    "common/units/equipment/mothership.txt": "69360b09c0a3f3a59a114cf4d69dd1425dacc98a33fe7b779f98897aec027496",
+    "common/units/equipment/motorized.txt": "b25c3797280f471b89a43da5b02e135091cf205acdf37c09d547a88df52d5128",
+    "common/units/equipment/nuclear_missiles.txt": "ffefd87305fbf4f4b4f640d3720b31a53e828822c8366192b2429ca10e10cf7f",
+    "common/units/equipment/plane_airframes.txt": "6bf753c2bd7ac5a79520b43b12331e0e84cd122d997378676d3facf78fa9b05a",
+    "common/units/equipment/quad_engine_airframe.txt": "1bf361dc1eb34de87af642b3a10fe8c89cbc25ae46bf5df4a4b37ea484e73cd1",
+    "common/units/equipment/railway_gun.txt": "ade3bb4f09bf4c58f6d7b02f2799d89d2bed3948f59659fcabdb215bcaff5540",
+    "common/units/equipment/repair_ships.txt": "0054e569d59c3c399a2062676faea544d391efc99d6b455fb0c6ccf85c4354f3",
+    "common/units/equipment/sam_missile.txt": "bcd451661658585fce25eb18472e6aadd298851300309a189c81d4f8ba022d6b",
+    "common/units/equipment/ship_hull_carrier.txt": "9e75265675448584e5186f753f822f9c21e6db829e6e97fb559c39440f6330ec",
+    "common/units/equipment/ship_hull_cruiser.txt": "ba00626c08b4e82e44a71fb6551a05f5e89e67b2dc0d3bcbe18a142453dece57",
+    "common/units/equipment/ship_hull_heavy.txt": "8ddcb8c014540851e93cca86415d208135512e0233ad1f8567ab868cdd7e789d",
+    "common/units/equipment/ship_hull_light.txt": "a544882655fbb70907dce347c023085db49e80defe3fbdd1edd0dad1686801da",
+    "common/units/equipment/ship_hull_submarine.txt": "4be7fcdff830adb006d879aa9bd0ba565cd08bc50c7abdc535d525e0abf8e590",
+    "common/units/equipment/specialist_armored_vehicles.txt": "cd151e22fa93fc14a4bdaa1bb1bab0480a9da72ac0be301c74f96a611bea21ff",
+    "common/units/equipment/super_heavy_railway_gun.txt": "14c14da045bfec86db68da1ed29f69b59c2de54649a17362e0868399d4ef1597",
+    "common/units/equipment/support_ships.txt": "c651efa1e979484f498a7485d8d345a117c4c55f67f96dc9bd6c57adc7fdcd0d",
+    "common/units/equipment/support.txt": "fd41d5223c62cf955d650bbad0b1adecfae6be9e1cc43904fb0118fb5d3e5385",
+    "common/units/equipment/tank_chassis.txt": "ad420e0bffc41a062a9457d67c18d59a91f0d8972ef6985e22e443eadd4983bf",
+    "common/units/equipment/trains.txt": "cebdda7ebe259c806c918d9bbd245ad9ee202672517a8dfd32f65c098dfa80cd",
+    "common/units/equipment/x_plane_airframes.txt": "0747e1a834d4c44eeee593bc0d5cbd7f636be6f34be89be53b19f83afcd08f8a",
+    "common/units/equipment/x_tank_chassis.txt": "847194cf28e16dbe9f08a863c0d7541ec34d8c591d54d70b3211f74ae696ca65"
+  }
+}

@@ -1,0 +1,19 @@
+# Dormant until the invasion transfers state 681. Do not assign any starting state.
+capital = 681
+set_research_slots = 0
+set_stability = 1
+set_war_support = 1
+add_manpower = 20000000
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+set_popularities = { fascism = 100 }
+set_politics = { ruling_party = fascism elections_allowed = no }
+recruit_character = TOUHOU_boss_shinki_leader
+# Basic logistics no longer inherited from the former host country.
+set_technology = {
+    infantry_weapons = 1
+    tech_trucks = 1
+    tech_support = 1
+    tech_recon = 1
+    fuel_silos = 1
+}

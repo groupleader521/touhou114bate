@@ -1,0 +1,125 @@
+touhou_makai_fixed_force_roles = {
+	allowed = {
+		original_tag = MKI
+	}
+	enable = {
+		has_country_flag = touhou_god_of_makai_country_flag
+		has_tech = makai_modern_equipment_license
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = role_ratio
+		id = makai_elite_role
+		value = 15
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = makai_assault_role
+		value = 30
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = makai_line_role
+		value = 55
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -1000
+	}
+	ai_strategy = {
+		type = template_prio
+		id = armor
+		value = -100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = -1000
+	}
+	ai_strategy = {
+		type = template_prio
+		id = garrison
+		value = -100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -1000
+	}
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = -100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = -1000
+	}
+	ai_strategy = {
+		type = template_prio
+		id = mountaineers
+		value = -100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = -1000
+	}
+	ai_strategy = {
+		type = template_prio
+		id = marines
+		value = -100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = -1000
+	}
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = rangers_role
+		value = -1000
+	}
+	ai_strategy = {
+		type = template_prio
+		id = rangers_role
+		value = -100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mega_heavy_breakthrough_role
+		value = -1000
+	}
+	ai_strategy = {
+		type = template_prio
+		id = mega_heavy_breakthrough_role
+		value = -100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = super_heavy_breakthrough_role
+		value = -1000
+	}
+	ai_strategy = {
+		type = template_prio
+		id = super_heavy_breakthrough_role
+		value = -100
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = hq_role
+		value = -1000
+	}
+	ai_strategy = {
+		type = template_prio
+		id = hq_role
+		value = -100
+	}
+}

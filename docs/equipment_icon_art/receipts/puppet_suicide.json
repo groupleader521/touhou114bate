@@ -1,0 +1,7 @@
+{
+  "id": "puppet_suicide",
+  "method": "built-in image_gen",
+  "generated": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b3cf-a7cb-72e1-a68b-e1a30db6bdf8\\exec-87c0299e-5bb0-4e74-a52a-595783dc4f78.png",
+  "source": "gfx/interface/technologies/touhou_equipment_art/source/puppet_suicide.png",
+  "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One flying suicide puppet drone: small ivory porcelain doll-shaped unmanned flying construct with blue dress-like armor, compact swept wooden wings and a single round sealed explosive core. Clearly a winged doll drone, not a missile."
+}

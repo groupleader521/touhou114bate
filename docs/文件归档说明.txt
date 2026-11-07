@@ -1,0 +1,24 @@
+固定外置目录说明
+================
+外置根目录：F:/Hoi4/touhou
+这是固定外置目录，不按日期归档，不增加日期或批次层。
+
+已外置文件按模组原相对路径直接移至外置根目录，准确数量与大小以清单为准：
+25 份历史日志、238 张图标预览、6 份 PSD／表格／Word 开发原稿，
+以及已停用的幻想乡战术表和英、俄、简中三份专用战术本地化。
+清单：F:/Hoi4/touhou/external-files.json，记录原路径、现路径、大小和 SHA256。
+
+例如 docs/装甲分类修复后_error.log 位于：
+F:/Hoi4/touhou/docs/装甲分类修复后_error.log
+历史文档中的已外置文件按此规则查找。
+
+正式运行资源、工具依赖的 PNG 原图、JSON 清单和基准仍留在项目。
+prepare_module_icons.py 的预览输出到 F:/Hoi4/touhou/docs/module_icon_art；
+DDS 正式纹理和转换元数据维持项目原路径。
+
+未来文件使用稳定用途名称，校验报告更新固定文件，不添加日期后缀。
+完整维护规则见项目根目录 AGENTS.md。
+
+战斗战术已恢复使用游戏原版。模组内不得重新生成 common/combat_tactics.txt；
+旧表保存在 F:/Hoi4/touhou/common/combat_tactics.txt，仅供恢复参考，不由游戏加载。
+tools/audit_vanilla_overrides.cjs 会检查战术表覆盖是否重新出现。

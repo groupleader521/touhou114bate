@@ -916,7 +916,7 @@ news_event = {#被遗忘者联盟
 		name = nstouhou.52.a
 	}
 }
-news_event = {#试炼开始
+news_event = {
 	id = nstouhou.53
 	title = nstouhou.53.t
 	desc = nstouhou.53.d
@@ -924,9 +924,23 @@ news_event = {#试炼开始
 	is_triggered_only = yes
 	immediate = {
 		FROM = {
-			declare_war_on = {
-				target = ROOT
-				type = annex_everything
+			if = {
+				limit = {
+					exists = yes
+					ROOT = {
+						exists = yes
+					}
+					NOT = {
+						tag = ROOT
+					}
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+				declare_war_on = {
+					target = ROOT
+					type = annex_everything
+				}
 			}
 		}
 	}

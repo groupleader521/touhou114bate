@@ -1,0 +1,28 @@
+ideas = {
+	country = {
+		touhou_makai_resource_security = {
+			picture = air_war_plans_division_focus
+			allowed = {
+				original_tag = MKI
+			}
+			allowed_civil_war = {
+				has_country_flag = touhou_god_of_makai_country_flag
+			}
+			removal_cost = -1
+			modifier = {
+				equipment_conversion_speed = 1
+				equipment_upgrade_xp_cost = -0.8
+				production_factory_efficiency_gain_factor = 1
+				production_factory_max_efficiency_factor = 1
+				production_factory_start_efficiency_factor = 1
+				production_lack_of_resource_penalty_factor = -5
+				country_resource_coal = 90000
+			}
+			cancel = {
+				NOT = {
+					has_country_flag = touhou_god_of_makai_country_flag
+				}
+			}
+		}
+	}
+}

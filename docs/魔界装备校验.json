@@ -1,0 +1,318 @@
+{
+  "version": 2,
+  "models": 16,
+  "templates": 3,
+  "loadouts": 24,
+  "moduleSlots": 66,
+  "designerStats": {
+    "makai_amphibious_heavy": {
+      "soft_attack": 30.6,
+      "hard_attack": 40,
+      "ap_attack": 170,
+      "armor_value": 130,
+      "maximum_speed": 6.3,
+      "reliability": 0.591,
+      "air_attack": 0,
+      "build_cost_ic": 39.375
+    },
+    "makai_tank_destroyer": {
+      "soft_attack": 30.6,
+      "hard_attack": 41.6,
+      "ap_attack": 170,
+      "armor_value": 117,
+      "maximum_speed": 9,
+      "reliability": 0.784,
+      "air_attack": 0,
+      "build_cost_ic": 29.45
+    },
+    "makai_flame_medium": {
+      "soft_attack": 13,
+      "armor_value": 97.5,
+      "maximum_speed": 8.1,
+      "reliability": 0.894,
+      "build_cost_ic": 16.815
+    },
+    "makai_recon_light": {
+      "soft_attack": 15,
+      "hard_attack": 15.6,
+      "ap_attack": 50,
+      "armor_value": 65,
+      "maximum_speed": 9.36,
+      "reliability": 0.784,
+      "build_cost_ic": 17.1
+    },
+    "makai_line_medium": {
+      "soft_attack": 32.64,
+      "hard_attack": 20.8,
+      "ap_attack": 90,
+      "armor_value": 97.5,
+      "maximum_speed": 5.34,
+      "reliability": 1.169,
+      "air_attack": 0,
+      "build_cost_ic": 19.475
+    },
+    "makai_fighter": {
+      "maximum_speed": 1530,
+      "reliability": 0.8,
+      "air_attack": 48,
+      "thrust": 30,
+      "weight": 22,
+      "build_cost_ic": 54
+    },
+    "makai_cas": {
+      "maximum_speed": 1530,
+      "reliability": 0.8,
+      "thrust": 30,
+      "weight": 10,
+      "build_cost_ic": 40
+    },
+    "makai_destroyer": {
+      "armor_value": 0,
+      "reliability": 0.92,
+      "build_cost_ic": 2346
+    }
+  },
+  "engineTested": false,
+  "unitIcons": {
+    "icons": 44,
+    "units": 11,
+    "variantsPerUnit": 4,
+    "missing": []
+  },
+  "equipmentArt": {
+    "assets": 17,
+    "activeModels": 16,
+    "designerPools": 17,
+    "convoyCountryOnly": true,
+    "size": [
+      160,
+      100
+    ],
+    "alphaAndHashesValidated": true,
+    "engineTested": false
+  },
+  "resources": {
+    "resourceShortagePenaltyFactor": -5,
+    "coal": 90000,
+    "method": "MKI national spirit replaces the old equipment spirit without stacking its -500% shortage modifier",
+    "requiresMio": false,
+    "engineTested": false
+  },
+  "runtimeFixes": {
+    "trainWagonMapping": true,
+    "nativeEventTargetGuard": true,
+    "duplicateWarGuard": true,
+    "otherNativeBehaviorPreserved": true,
+    "engineTested": false
+  },
+  "aiTemplatePolicy": {
+    "roles": 3,
+    "exactTargetTemplates": true,
+    "country": "MKI",
+    "fieldConversion": false,
+    "xpTemplateEditing": false,
+    "engineTested": false
+  },
+  "errors": [],
+  "scenarios": 74,
+  "productionIsolation": true,
+  "automaticEquipmentGrants": false,
+  "productionBudget": {
+    "military": 388,
+    "dockyards": 120,
+    "availableMilitary": 400,
+    "civilian": 300,
+    "availableDockyards": 120,
+    "compensation": {
+      "militaryOutputMultiplier": 5,
+      "dockyardOutputMultiplier": 1.7,
+      "referenceMilitary": 2000,
+      "referenceDockyards": 200
+    }
+  },
+  "forceBalance": {
+    "statChecks": 4050,
+    "technologyScaling": true,
+    "spawning": [
+      {
+        "controlledStates": 1,
+        "total": 589,
+        "elite": 88,
+        "assault": 177,
+        "ordinary": 324,
+        "phases": [
+          {
+            "effect": "touhou_boss_get_army_effect_1",
+            "spawned": 205
+          },
+          {
+            "effect": "touhou_boss_get_army_effect",
+            "spawned": 77
+          },
+          {
+            "effect": "touhou_boss_get_army_effect_2",
+            "spawned": 227
+          },
+          {
+            "effect": "touhou_boss_get_army_effect_3",
+            "spawned": 80
+          }
+        ]
+      },
+      {
+        "controlledStates": 2,
+        "total": 598,
+        "elite": 90,
+        "assault": 179,
+        "ordinary": 329,
+        "phases": [
+          {
+            "effect": "touhou_boss_get_army_effect_1",
+            "spawned": 210
+          },
+          {
+            "effect": "touhou_boss_get_army_effect",
+            "spawned": 79
+          },
+          {
+            "effect": "touhou_boss_get_army_effect_2",
+            "spawned": 229
+          },
+          {
+            "effect": "touhou_boss_get_army_effect_3",
+            "spawned": 80
+          }
+        ]
+      },
+      {
+        "controlledStates": 9,
+        "total": 661,
+        "elite": 99,
+        "assault": 199,
+        "ordinary": 363,
+        "phases": [
+          {
+            "effect": "touhou_boss_get_army_effect_1",
+            "spawned": 245
+          },
+          {
+            "effect": "touhou_boss_get_army_effect",
+            "spawned": 93
+          },
+          {
+            "effect": "touhou_boss_get_army_effect_2",
+            "spawned": 243
+          },
+          {
+            "effect": "touhou_boss_get_army_effect_3",
+            "spawned": 80
+          }
+        ]
+      }
+    ],
+    "rounding": "Each complete group of 20 has exactly 3 elite, 6 assault, 11 ordinary. Every cumulative prefix differs from the ideal by at most one division.",
+    "engineTested": false
+  },
+  "industryCompensation": {
+    "cases": [
+      {
+        "stage": 1,
+        "extra": 0,
+        "oldMilitary": 4000,
+        "newMilitary": 4000,
+        "oldNaval": 1200,
+        "newNaval": 1224
+      },
+      {
+        "stage": 2,
+        "extra": 0,
+        "oldMilitary": 5000,
+        "newMilitary": 5000,
+        "oldNaval": 1300,
+        "newNaval": 1326
+      },
+      {
+        "stage": 3,
+        "extra": 0,
+        "oldMilitary": 6000,
+        "newMilitary": 6000,
+        "oldNaval": 1400,
+        "newNaval": 1427.9999999999998
+      },
+      {
+        "stage": 1,
+        "extra": 0.2,
+        "oldMilitary": 4400,
+        "newMilitary": 4399.999999999998,
+        "oldNaval": 1240,
+        "newNaval": 1264.8
+      },
+      {
+        "stage": 2,
+        "extra": 0.2,
+        "oldMilitary": 5400,
+        "newMilitary": 5399.999999999998,
+        "oldNaval": 1340,
+        "newNaval": 1366.8000000000002
+      },
+      {
+        "stage": 3,
+        "extra": 0.2,
+        "oldMilitary": 6400,
+        "newMilitary": 6399.999999999998,
+        "oldNaval": 1440,
+        "newNaval": 1468.8
+      },
+      {
+        "stage": 1,
+        "extra": 0.65,
+        "oldMilitary": 5300,
+        "newMilitary": 5300.000000000001,
+        "oldNaval": 1330,
+        "newNaval": 1356.6
+      },
+      {
+        "stage": 2,
+        "extra": 0.65,
+        "oldMilitary": 6300,
+        "newMilitary": 6300.000000000001,
+        "oldNaval": 1430,
+        "newNaval": 1458.6000000000001
+      },
+      {
+        "stage": 3,
+        "extra": 0.65,
+        "oldMilitary": 7300,
+        "newMilitary": 7299.999999999997,
+        "oldNaval": 1530,
+        "newNaval": 1560.6
+      },
+      {
+        "stage": 1,
+        "extra": -0.25,
+        "oldMilitary": 3500,
+        "newMilitary": 3500,
+        "oldNaval": 1150,
+        "newNaval": 1172.9999999999998
+      },
+      {
+        "stage": 2,
+        "extra": -0.25,
+        "oldMilitary": 4500,
+        "newMilitary": 4500,
+        "oldNaval": 1250,
+        "newNaval": 1275
+      },
+      {
+        "stage": 3,
+        "extra": -0.25,
+        "oldMilitary": 5500,
+        "newMilitary": 5500,
+        "oldNaval": 1350,
+        "newNaval": 1377
+      }
+    ],
+    "repeatedUpdatesStable": true
+  },
+  "idempotent": true
+}

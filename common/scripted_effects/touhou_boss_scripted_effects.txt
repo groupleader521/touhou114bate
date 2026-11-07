@@ -5,272 +5,509 @@ touhou_boss_effect_1 = {
 	}
 }
 touhou_boss_get_tech_effect_1 = {
-	set_technology = {
-		infantry_weapons1 = 1
+	if = {
+		limit = {
+			original_tag = MKI
+		}
+		set_technology = {
+			infantry_weapons1 = 1
+		}
+		set_technology = {
+			infantry_weapons2 = 1
+		}
+		set_technology = {
+			support_weapons = 1
+		}
+		set_technology = {
+			support_weapons2 = 1
+		}
+		set_technology = {
+			gw_artillery = 1
+		}
+		set_technology = {
+			interwar_artillery = 1
+		}
+		set_technology = {
+			tech_support = 1
+		}
+		set_technology = {
+			motorised_infantry = 1
+		}
+		set_technology = {
+			tech_engineers = 1
+		}
+		set_technology = {
+			tech_signal_company = 1
+		}
+		set_technology = {
+			tech_field_hospital = 1
+		}
+		set_technology = {
+			tech_logistics_company = 1
+		}
+		set_technology = {
+			tech_maintenance_company = 1
+		}
+		set_technology = {
+			advanced_fire_control_system = 1
+		}
+		set_technology = {
+			improved_sonar = 1
+		}
+		set_technology = {
+			improved_submarine_snorkel = 1
+		}
+		set_technology = {
+			transport = 1
+		}
+		set_technology = {
+			tank_landing_craft = 1
+		}
 	}
-	set_technology = {
-		infantry_weapons2 = 1
-	}
-	set_technology = {
-		support_weapons = 1
-	}
-	set_technology = {
-		support_weapons2 = 1
-	}
-	set_technology = {
-		gw_artillery = 1
-	}
-	set_technology = {
-		interwar_artillery = 1
-	}
-	set_technology = {
-		interwar_antiair = 1
-	}
-	set_technology = {
-		interwar_antitank = 1
-	}
-	set_technology = {
-		tech_support = 1
-	}
-	set_technology = {
-		motorised_infantry = 1
-	}
-	set_technology = {
-		tech_engineers = 1
-	}
-	set_technology = {
-		tech_signal_company = 1
-	}
-	set_technology = {
-		tech_field_hospital = 1
-	}
-	set_technology = {
-		tech_logistics_company = 1
-	}
-	set_technology = {
-		tech_maintenance_company = 1
-	}
-	set_technology = {
-		fighter1 = 1
-	}
-	set_technology = {
-		cv_fighter1 = 1
-	}
-	set_technology = {
-		CAS1 = 1
-	}
-	set_technology = {
-		cv_CAS1 = 1
-	}
-	set_technology = {
-		naval_bomber1 = 1
-	}
-	set_technology = {
-		cv_naval_bomber1 = 1
-	}
-	set_technology = {
-		heavy_fighter1 = 1
-	}
-	set_technology = {
-		tactical_bomber1 = 1
-	}
-	set_technology = {
-		strategic_bomber1 = 1
-	}
-	set_technology = {
-		advanced_fire_control_system = 1
-	}
-	set_technology = {
-		improved_sonar = 1
-	}
-	set_technology = {
-		improved_submarine_snorkel = 1
-	}
-	set_technology = {
-		advanced_ship_hull_light = 1
-	}
-	set_technology = {
-		advanced_ship_hull_cruiser = 1
-	}
-	set_technology = {
-		advanced_ship_hull_heavy = 1
-	}
-	set_technology = {
-		advanced_ship_hull_carrier = 1
-	}
-	set_technology = {
-		advanced_ship_hull_submarine = 1
-	}
-	set_technology = {
-		advanced_destroyer = 1
-	}
-	set_technology = {
-		advanced_light_cruiser = 1
-	}
-	set_technology = {
-		advanced_heavy_cruiser = 1
-	}
-	set_technology = {
-		advanced_battleship = 1
-	}
-	set_technology = {
-		advanced_carrier = 1
-	}
-	set_technology = {
-		advanced_submarine = 1
-	}
-	set_technology = {
-		transport = 1
-	}
-	set_technology = {
-		landing_craft = 1
-	}
-	set_technology = {
-		tank_landing_craft = 1
+	else = {
+		set_technology = {
+			infantry_weapons1 = 1
+		}
+		set_technology = {
+			infantry_weapons2 = 1
+		}
+		set_technology = {
+			support_weapons = 1
+		}
+		set_technology = {
+			support_weapons2 = 1
+		}
+		set_technology = {
+			gw_artillery = 1
+		}
+		set_technology = {
+			interwar_artillery = 1
+		}
+		set_technology = {
+			interwar_antiair = 1
+		}
+		set_technology = {
+			interwar_antitank = 1
+		}
+		set_technology = {
+			tech_support = 1
+		}
+		set_technology = {
+			motorised_infantry = 1
+		}
+		set_technology = {
+			tech_engineers = 1
+		}
+		set_technology = {
+			tech_signal_company = 1
+		}
+		set_technology = {
+			tech_field_hospital = 1
+		}
+		set_technology = {
+			tech_logistics_company = 1
+		}
+		set_technology = {
+			tech_maintenance_company = 1
+		}
+		set_technology = {
+			fighter1 = 1
+		}
+		set_technology = {
+			cv_fighter1 = 1
+		}
+		set_technology = {
+			CAS1 = 1
+		}
+		set_technology = {
+			cv_CAS1 = 1
+		}
+		set_technology = {
+			naval_bomber1 = 1
+		}
+		set_technology = {
+			cv_naval_bomber1 = 1
+		}
+		set_technology = {
+			heavy_fighter1 = 1
+		}
+		set_technology = {
+			tactical_bomber1 = 1
+		}
+		set_technology = {
+			strategic_bomber1 = 1
+		}
+		set_technology = {
+			advanced_fire_control_system = 1
+		}
+		set_technology = {
+			improved_sonar = 1
+		}
+		set_technology = {
+			improved_submarine_snorkel = 1
+		}
+		set_technology = {
+			advanced_ship_hull_light = 1
+		}
+		set_technology = {
+			advanced_ship_hull_cruiser = 1
+		}
+		set_technology = {
+			advanced_ship_hull_heavy = 1
+		}
+		set_technology = {
+			advanced_ship_hull_carrier = 1
+		}
+		set_technology = {
+			advanced_ship_hull_submarine = 1
+		}
+		set_technology = {
+			advanced_destroyer = 1
+		}
+		set_technology = {
+			advanced_light_cruiser = 1
+		}
+		set_technology = {
+			advanced_heavy_cruiser = 1
+		}
+		set_technology = {
+			advanced_battleship = 1
+		}
+		set_technology = {
+			advanced_carrier = 1
+		}
+		set_technology = {
+			advanced_submarine = 1
+		}
+		set_technology = {
+			transport = 1
+		}
+		set_technology = {
+			landing_craft = 1
+		}
+		set_technology = {
+			tank_landing_craft = 1
+		}
 	}
 }
 touhou_boss_get_army_effect_1 = {
-	division_template = {
-		name = "魔界先遣部队"
-		is_locked = yes
-		force_allow_recruiting = no
-		regiments = {
-			infantry = {
-				x = 0
-				y = 0
-			}
-			infantry = {
-				x = 0
-				y = 1
-			}
-			infantry = {
-				x = 0
-				y = 2
-			}
-			infantry = {
-				x = 0
-				y = 3
-			}
-			infantry = {
-				x = 0
-				y = 4
-			}
-			infantry = {
-				x = 1
-				y = 0
-			}
-			infantry = {
-				x = 1
-				y = 1
-			}
-			infantry = {
-				x = 1
-				y = 2
-			}
-			infantry = {
-				x = 1
-				y = 3
-			}
-			infantry = {
-				x = 1
-				y = 4
-			}
-			artillery_brigade = {
-				x = 2
-				y = 0
-			}
-			artillery_brigade = {
-				x = 2
-				y = 1
-			}
-			artillery_brigade = {
-				x = 2
-				y = 2
-			}
-			artillery_brigade = {
-				x = 2
-				y = 3
-			}
-			artillery_brigade = {
-				x = 2
-				y = 4
-			}
-			artillery_brigade = {
-				x = 3
-				y = 0
-			}
-			artillery_brigade = {
-				x = 3
-				y = 1
-			}
-			anti_air_brigade = {
-				x = 3
-				y = 2
-			}
-			anti_tank_brigade = {
-				x = 4
-				y = 0
-			}
-			anti_tank_brigade = {
-				x = 4
-				y = 1
-			}
-			anti_tank_brigade = {
-				x = 4
-				y = 2
-			}
-			anti_tank_brigade = {
-				x = 4
-				y = 3
-			}
-			anti_tank_brigade = {
-				x = 4
-				y = 4
-			}
-		}
-		support = {
-			engineer = {
-				x = 0
-				y = 0
-			}
-			signal_company = {
-				x = 0
-				y = 1
-			}
-			field_hospital = {
-				x = 0
-				y = 2
-			}
-			logistics_company = {
-				x = 0
-				y = 3
-			}
-			maintenance_company = {
-				x = 0
-				y = 4
-			}
-		}
-	}
-	capital_scope = {
-		create_unit = {
-			division = "name = \"魔界先遣部队\" division_template = \"魔界先遣部队\" start_experience_factor = 0.5"
-			owner = ROOT
-			count = 200
-		}
-	}
-	every_state = {
+	if = {
 		limit = {
-			is_controlled_by_ROOT_or_subject = yes
+			original_tag = MKI
 		}
-		create_unit = {
-			division = "name = \"魔界先遣部队\" division_template = \"魔界先遣部队\" start_experience_factor = 0.5"
-			owner = ROOT
-			count = 5
+		touhou_makai_modern_equipment_setup = yes
+		capital_scope = {
+			for_loop_effect = {
+				start = 0
+				end = 200
+				value = makai_spawn_index
+				ROOT = {
+					add_to_variable = {
+						makai_recruitment_cursor = 1
+					}
+					if = {
+						limit = {
+							check_variable = {
+								makai_recruitment_cursor > 20
+							}
+						}
+						set_variable = {
+							makai_recruitment_cursor = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 3
+								}
+								check_variable = {
+									makai_recruitment_cursor = 10
+								}
+								check_variable = {
+									makai_recruitment_cursor = 17
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.5 start_equipment_factor = 1 force_equipment_variants = { makai_mechanized_transport = { owner = MKI creator = MKI version_name = \"魔界·高级机械化载具\" } makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 1
+								}
+								check_variable = {
+									makai_recruitment_cursor = 5
+								}
+								check_variable = {
+									makai_recruitment_cursor = 8
+								}
+								check_variable = {
+									makai_recruitment_cursor = 12
+								}
+								check_variable = {
+									makai_recruitment_cursor = 15
+								}
+								check_variable = {
+									makai_recruitment_cursor = 19
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界准一线部队\" division_template = \"魔界准一线部队\" start_experience_factor = 0.5 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else = {
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界填线部队\" division_template = \"魔界填线部队\" start_experience_factor = 0.5 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_line_medium = { owner = MKI creator = MKI version_name = \"魔界·填线用高级中型坦克\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } } "
+						count = 1
+					}
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			for_loop_effect = {
+				start = 0
+				end = 5
+				value = makai_spawn_index
+				ROOT = {
+					add_to_variable = {
+						makai_recruitment_cursor = 1
+					}
+					if = {
+						limit = {
+							check_variable = {
+								makai_recruitment_cursor > 20
+							}
+						}
+						set_variable = {
+							makai_recruitment_cursor = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 3
+								}
+								check_variable = {
+									makai_recruitment_cursor = 10
+								}
+								check_variable = {
+									makai_recruitment_cursor = 17
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.5 start_equipment_factor = 1 force_equipment_variants = { makai_mechanized_transport = { owner = MKI creator = MKI version_name = \"魔界·高级机械化载具\" } makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 1
+								}
+								check_variable = {
+									makai_recruitment_cursor = 5
+								}
+								check_variable = {
+									makai_recruitment_cursor = 8
+								}
+								check_variable = {
+									makai_recruitment_cursor = 12
+								}
+								check_variable = {
+									makai_recruitment_cursor = 15
+								}
+								check_variable = {
+									makai_recruitment_cursor = 19
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界准一线部队\" division_template = \"魔界准一线部队\" start_experience_factor = 0.5 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else = {
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界填线部队\" division_template = \"魔界填线部队\" start_experience_factor = 0.5 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_line_medium = { owner = MKI creator = MKI version_name = \"魔界·填线用高级中型坦克\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } } "
+						count = 1
+					}
+				}
+			}
+		}
+	}
+	else = {
+		division_template = {
+			name = "魔界先遣部队"
+			is_locked = yes
+			force_allow_recruiting = no
+			regiments = {
+				infantry = {
+					x = 0
+					y = 0
+				}
+				infantry = {
+					x = 0
+					y = 1
+				}
+				infantry = {
+					x = 0
+					y = 2
+				}
+				infantry = {
+					x = 0
+					y = 3
+				}
+				infantry = {
+					x = 0
+					y = 4
+				}
+				infantry = {
+					x = 1
+					y = 0
+				}
+				infantry = {
+					x = 1
+					y = 1
+				}
+				infantry = {
+					x = 1
+					y = 2
+				}
+				infantry = {
+					x = 1
+					y = 3
+				}
+				infantry = {
+					x = 1
+					y = 4
+				}
+				artillery_brigade = {
+					x = 2
+					y = 0
+				}
+				artillery_brigade = {
+					x = 2
+					y = 1
+				}
+				artillery_brigade = {
+					x = 2
+					y = 2
+				}
+				artillery_brigade = {
+					x = 2
+					y = 3
+				}
+				artillery_brigade = {
+					x = 2
+					y = 4
+				}
+				artillery_brigade = {
+					x = 3
+					y = 0
+				}
+				artillery_brigade = {
+					x = 3
+					y = 1
+				}
+				anti_air_brigade = {
+					x = 3
+					y = 2
+				}
+				anti_tank_brigade = {
+					x = 4
+					y = 0
+				}
+				anti_tank_brigade = {
+					x = 4
+					y = 1
+				}
+				anti_tank_brigade = {
+					x = 4
+					y = 2
+				}
+				anti_tank_brigade = {
+					x = 4
+					y = 3
+				}
+				anti_tank_brigade = {
+					x = 4
+					y = 4
+				}
+			}
+			support = {
+				engineer = {
+					x = 0
+					y = 0
+				}
+				signal_company = {
+					x = 0
+					y = 1
+				}
+				field_hospital = {
+					x = 0
+					y = 2
+				}
+				logistics_company = {
+					x = 0
+					y = 3
+				}
+				maintenance_company = {
+					x = 0
+					y = 4
+				}
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"魔界先遣部队\" division_template = \"魔界先遣部队\" start_experience_factor = 0.5"
+				owner = ROOT
+				count = 200
+			}
+		}
+		every_state = {
+			limit = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			create_unit = {
+				division = "name = \"魔界先遣部队\" division_template = \"魔界先遣部队\" start_experience_factor = 0.5"
+				owner = ROOT
+				count = 5
+			}
 		}
 	}
 }
 touhou_boss_initialize_effect = {
 	hidden_effect = {
+		touhou_boss_get_industry_effect = yes
 		set_cosmetic_tag = TOUHOU_DEVILDOM
 		every_state = {
 			add_core_of = ROOT
@@ -279,69 +516,96 @@ touhou_boss_initialize_effect = {
 		touhou_boss_get_tech_effect = yes
 		touhou_boss_update_tech_effect = yes
 		touhou_boss_get_army_effect = yes
-		touhou_boss_get_industry_effect = yes
 	}
 }
 touhou_boss_get_tech_effect = {
-	set_technology = {
-		super_heavy_tank = 1
+	if = {
+		limit = {
+			original_tag = MKI
+		}
+		set_technology = {
+			tech_support = 1
+		}
+		set_technology = {
+			motorised_infantry = 1
+		}
+		set_technology = {
+			tech_engineers = 1
+		}
+		set_technology = {
+			tech_signal_company = 1
+		}
+		set_technology = {
+			tech_field_hospital = 1
+		}
+		set_technology = {
+			tech_logistics_company = 1
+		}
+		set_technology = {
+			tech_maintenance_company = 1
+		}
 	}
-	set_technology = {
-		super_heavy_td = 1
-	}
-	set_technology = {
-		super_heavy_art = 1
-	}
-	set_technology = {
-		super_heavy_spaa = 1
-	}
-	set_technology = {
-		tech_support = 1
-	}
-	set_technology = {
-		motorised_infantry = 1
-	}
-	set_technology = {
-		tech_engineers = 1
-	}
-	set_technology = {
-		tech_signal_company = 1
-	}
-	set_technology = {
-		tech_field_hospital = 1
-	}
-	set_technology = {
-		tech_logistics_company = 1
-	}
-	set_technology = {
-		tech_maintenance_company = 1
-	}
-	set_technology = {
-		fighter2 = 1
-	}
-	set_technology = {
-		cv_fighter2 = 1
-	}
-	set_technology = {
-		CAS2 = 1
-	}
-	set_technology = {
-		cv_CAS2 = 1
-	}
-	set_technology = {
-		naval_bomber2 = 1
-	}
-	set_technology = {
-		cv_naval_bomber2 = 1
-	}
-	set_technology = {
-		heavy_fighter2 = 1
-	}
-	set_technology = {
-		tactical_bomber2 = 1
-	}
-	set_technology = {
-		strategic_bomber2 = 1
+	else = {
+		set_technology = {
+			super_heavy_tank = 1
+		}
+		set_technology = {
+			super_heavy_td = 1
+		}
+		set_technology = {
+			super_heavy_art = 1
+		}
+		set_technology = {
+			super_heavy_spaa = 1
+		}
+		set_technology = {
+			tech_support = 1
+		}
+		set_technology = {
+			motorised_infantry = 1
+		}
+		set_technology = {
+			tech_engineers = 1
+		}
+		set_technology = {
+			tech_signal_company = 1
+		}
+		set_technology = {
+			tech_field_hospital = 1
+		}
+		set_technology = {
+			tech_logistics_company = 1
+		}
+		set_technology = {
+			tech_maintenance_company = 1
+		}
+		set_technology = {
+			fighter2 = 1
+		}
+		set_technology = {
+			cv_fighter2 = 1
+		}
+		set_technology = {
+			CAS2 = 1
+		}
+		set_technology = {
+			cv_CAS2 = 1
+		}
+		set_technology = {
+			naval_bomber2 = 1
+		}
+		set_technology = {
+			cv_naval_bomber2 = 1
+		}
+		set_technology = {
+			heavy_fighter2 = 1
+		}
+		set_technology = {
+			tactical_bomber2 = 1
+		}
+		set_technology = {
+			strategic_bomber2 = 1
+		}
 	}
 }
 touhou_boss_update_tech_effect = {
@@ -389,152 +653,346 @@ touhou_boss_update_tech_effect = {
 	}
 }
 touhou_boss_get_army_effect = {
-	division_template = {
-		name = "魔界突击部队"
-		is_locked = yes
-		force_allow_recruiting = no
-		regiments = {
-			heavy_armor = {
-				x = 0
-				y = 0
-			}
-			heavy_armor = {
-				x = 0
-				y = 1
-			}
-			heavy_armor = {
-				x = 0
-				y = 2
-			}
-			heavy_armor = {
-				x = 0
-				y = 3
-			}
-			heavy_armor = {
-				x = 0
-				y = 4
-			}
-			heavy_armor = {
-				x = 1
-				y = 0
-			}
-			heavy_armor = {
-				x = 1
-				y = 1
-			}
-			heavy_armor = {
-				x = 1
-				y = 2
-			}
-			heavy_armor = {
-				x = 1
-				y = 3
-			}
-			heavy_armor = {
-				x = 1
-				y = 4
-			}
-		}
-		support = {
-			engineer = {
-				x = 0
-				y = 0
-			}
-			signal_company = {
-				x = 0
-				y = 1
-			}
-			field_hospital = {
-				x = 0
-				y = 2
-			}
-			logistics_company = {
-				x = 0
-				y = 3
-			}
-			maintenance_company = {
-				x = 0
-				y = 4
-			}
-		}
-	}
-	capital_scope = {
-		create_unit = {
-			division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
-			owner = ROOT
-			count = 75
-		}
-	}
-	every_state = {
+	if = {
 		limit = {
-			is_controlled_by_ROOT_or_subject = yes
+			original_tag = MKI
 		}
-		create_unit = {
-			division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
-			owner = ROOT
-			count = 2
+		touhou_makai_modern_equipment_setup = yes
+		capital_scope = {
+			for_loop_effect = {
+				start = 0
+				end = 75
+				value = makai_spawn_index
+				ROOT = {
+					add_to_variable = {
+						makai_recruitment_cursor = 1
+					}
+					if = {
+						limit = {
+							check_variable = {
+								makai_recruitment_cursor > 20
+							}
+						}
+						set_variable = {
+							makai_recruitment_cursor = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 3
+								}
+								check_variable = {
+									makai_recruitment_cursor = 10
+								}
+								check_variable = {
+									makai_recruitment_cursor = 17
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_mechanized_transport = { owner = MKI creator = MKI version_name = \"魔界·高级机械化载具\" } makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 1
+								}
+								check_variable = {
+									makai_recruitment_cursor = 5
+								}
+								check_variable = {
+									makai_recruitment_cursor = 8
+								}
+								check_variable = {
+									makai_recruitment_cursor = 12
+								}
+								check_variable = {
+									makai_recruitment_cursor = 15
+								}
+								check_variable = {
+									makai_recruitment_cursor = 19
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界准一线部队\" division_template = \"魔界准一线部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else = {
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界填线部队\" division_template = \"魔界填线部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_line_medium = { owner = MKI creator = MKI version_name = \"魔界·填线用高级中型坦克\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } } "
+						count = 1
+					}
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			for_loop_effect = {
+				start = 0
+				end = 2
+				value = makai_spawn_index
+				ROOT = {
+					add_to_variable = {
+						makai_recruitment_cursor = 1
+					}
+					if = {
+						limit = {
+							check_variable = {
+								makai_recruitment_cursor > 20
+							}
+						}
+						set_variable = {
+							makai_recruitment_cursor = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 3
+								}
+								check_variable = {
+									makai_recruitment_cursor = 10
+								}
+								check_variable = {
+									makai_recruitment_cursor = 17
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_mechanized_transport = { owner = MKI creator = MKI version_name = \"魔界·高级机械化载具\" } makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 1
+								}
+								check_variable = {
+									makai_recruitment_cursor = 5
+								}
+								check_variable = {
+									makai_recruitment_cursor = 8
+								}
+								check_variable = {
+									makai_recruitment_cursor = 12
+								}
+								check_variable = {
+									makai_recruitment_cursor = 15
+								}
+								check_variable = {
+									makai_recruitment_cursor = 19
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界准一线部队\" division_template = \"魔界准一线部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else = {
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界填线部队\" division_template = \"魔界填线部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_line_medium = { owner = MKI creator = MKI version_name = \"魔界·填线用高级中型坦克\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } } "
+						count = 1
+					}
+				}
+			}
+		}
+		touhou_makai_initial_reserve = yes
+	}
+	else = {
+		division_template = {
+			name = "魔界突击部队"
+			is_locked = yes
+			force_allow_recruiting = no
+			regiments = {
+				heavy_armor = {
+					x = 0
+					y = 0
+				}
+				heavy_armor = {
+					x = 0
+					y = 1
+				}
+				heavy_armor = {
+					x = 0
+					y = 2
+				}
+				heavy_armor = {
+					x = 0
+					y = 3
+				}
+				heavy_armor = {
+					x = 0
+					y = 4
+				}
+				heavy_armor = {
+					x = 1
+					y = 0
+				}
+				heavy_armor = {
+					x = 1
+					y = 1
+				}
+				heavy_armor = {
+					x = 1
+					y = 2
+				}
+				heavy_armor = {
+					x = 1
+					y = 3
+				}
+				heavy_armor = {
+					x = 1
+					y = 4
+				}
+			}
+			support = {
+				engineer = {
+					x = 0
+					y = 0
+				}
+				signal_company = {
+					x = 0
+					y = 1
+				}
+				field_hospital = {
+					x = 0
+					y = 2
+				}
+				logistics_company = {
+					x = 0
+					y = 3
+				}
+				maintenance_company = {
+					x = 0
+					y = 4
+				}
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
+				owner = ROOT
+				count = 75
+			}
+		}
+		every_state = {
+			limit = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			create_unit = {
+				division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
+				owner = ROOT
+				count = 2
+			}
 		}
 	}
 }
 touhou_boss_get_characters_effect = {
-	add_country_leader_role = {
-		character = TOUHOU_boss_shinki_leader
-		country_leader = {
-			expire = "11054.1.1"
-			ideology = rexism
+	if = {
+		limit = {
+			NOT = {
+				has_character = TOUHOU_boss_shinki_leader
+			}
 		}
-		promote_leader = yes
-	}
-	add_country_leader_role = {
-		character = TOUHOU_boss_shinki_leader
-		country_leader = {
-			expire = "11054.1.1"
-			ideology = nazism
+		generate_character = {
+			token_base = TOUHOU_boss_shinki_leader
+			name = touhou_makai_shinki
+			gender = female
+			portraits = {
+				civilian = {
+					large = GFX_old_Shinki
+				}
+			}
+			country_leader = {
+				expire = "11054.1.1"
+				ideology = fascism_ideology
+			}
 		}
-		promote_leader = yes
 	}
-	add_country_leader_role = {
-		character = TOUHOU_boss_shinki_leader
-		country_leader = {
-			expire = "11054.1.1"
-			ideology = gen_nazism
+	if = {
+		limit = {
+			has_character = TOUHOU_boss_shinki_leader
 		}
-		promote_leader = yes
-	}
-	add_country_leader_role = {
-		character = TOUHOU_boss_shinki_leader
-		country_leader = {
-			expire = "11054.1.1"
+		TOUHOU_boss_shinki_leader = {
+			set_character_name = touhou_makai_shinki
+			set_portraits = {
+				civilian = {
+					large = GFX_old_Shinki
+				}
+			}
+		}
+		if = {
+			limit = {
+				TOUHOU_boss_shinki_leader = {
+					NOT = {
+						has_ideology = fascism_ideology
+					}
+				}
+			}
+			add_country_leader_role = {
+				character = TOUHOU_boss_shinki_leader
+				country_leader = {
+					expire = "11054.1.1"
+					ideology = fascism_ideology
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = fascism
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 100
+		}
+		add_stability = 1
+		add_war_support = 1
+		promote_character = {
+			character = TOUHOU_boss_shinki_leader
 			ideology = fascism_ideology
 		}
-		promote_leader = yes
 	}
-	add_country_leader_role = {
-		character = TOUHOU_boss_shinki_leader
-		country_leader = {
-			expire = "11054.1.1"
-			ideology = falangism
-		}
-		promote_leader = yes
-	}
-	set_politics = {
-		ruling_party = fascism
-	}
-	add_popularity = {
-		ideology = fascism
-		popularity = 100
-	}
-	add_stability = 1
-	add_war_support = 1
 }
 touhou_boss_get_industry_effect = {
 	add_offsite_building = {
 		type = arms_factory
-		level = 2000
+		level = 400
+	}
+	add_offsite_building = {
+		type = industrial_complex
+		level = 300
 	}
 	add_offsite_building = {
 		type = dockyard
-		level = 200
+		level = 120
 	}
 }
 touhou_boss_effect_2 = {
@@ -546,68 +1004,99 @@ touhou_boss_effect_2 = {
 	}
 }
 touhou_boss_get_tech_effect_2 = {
-	set_technology = {
-		mechanised_infantry2 = 1
+	if = {
+		limit = {
+			original_tag = MKI
+		}
+		set_technology = {
+			mechanised_infantry2 = 1
+		}
+		set_technology = {
+			tech_support = 1
+		}
+		set_technology = {
+			motorised_infantry = 1
+		}
+		set_technology = {
+			tech_engineers = 1
+		}
+		set_technology = {
+			tech_signal_company = 1
+		}
+		set_technology = {
+			tech_field_hospital = 1
+		}
+		set_technology = {
+			tech_logistics_company = 1
+		}
+		set_technology = {
+			tech_maintenance_company = 1
+		}
 	}
-	set_technology = {
-		main_battle_tank = 1
-	}
-	set_technology = {
-		modern_td = 1
-	}
-	set_technology = {
-		modern_art = 1
-	}
-	set_technology = {
-		modern_spaa = 1
-	}
-	set_technology = {
-		tech_support = 1
-	}
-	set_technology = {
-		motorised_infantry = 1
-	}
-	set_technology = {
-		tech_engineers = 1
-	}
-	set_technology = {
-		tech_signal_company = 1
-	}
-	set_technology = {
-		tech_field_hospital = 1
-	}
-	set_technology = {
-		tech_logistics_company = 1
-	}
-	set_technology = {
-		tech_maintenance_company = 1
-	}
-	set_technology = {
-		fighter3 = 1
-	}
-	set_technology = {
-		cv_fighter3 = 1
-	}
-	set_technology = {
-		CAS3 = 1
-	}
-	set_technology = {
-		cv_CAS3 = 1
-	}
-	set_technology = {
-		naval_bomber3 = 1
-	}
-	set_technology = {
-		cv_naval_bomber3 = 1
-	}
-	set_technology = {
-		heavy_fighter3 = 1
-	}
-	set_technology = {
-		tactical_bomber3 = 1
-	}
-	set_technology = {
-		strategic_bomber3 = 1
+	else = {
+		set_technology = {
+			mechanised_infantry2 = 1
+		}
+		set_technology = {
+			main_battle_tank = 1
+		}
+		set_technology = {
+			modern_td = 1
+		}
+		set_technology = {
+			modern_art = 1
+		}
+		set_technology = {
+			modern_spaa = 1
+		}
+		set_technology = {
+			tech_support = 1
+		}
+		set_technology = {
+			motorised_infantry = 1
+		}
+		set_technology = {
+			tech_engineers = 1
+		}
+		set_technology = {
+			tech_signal_company = 1
+		}
+		set_technology = {
+			tech_field_hospital = 1
+		}
+		set_technology = {
+			tech_logistics_company = 1
+		}
+		set_technology = {
+			tech_maintenance_company = 1
+		}
+		set_technology = {
+			fighter3 = 1
+		}
+		set_technology = {
+			cv_fighter3 = 1
+		}
+		set_technology = {
+			CAS3 = 1
+		}
+		set_technology = {
+			cv_CAS3 = 1
+		}
+		set_technology = {
+			naval_bomber3 = 1
+		}
+		set_technology = {
+			cv_naval_bomber3 = 1
+		}
+		set_technology = {
+			heavy_fighter3 = 1
+		}
+		set_technology = {
+			tactical_bomber3 = 1
+		}
+		set_technology = {
+			strategic_bomber3 = 1
+		}
 	}
 }
 touhou_boss_update_tech_effect_2 = {
@@ -655,139 +1144,394 @@ touhou_boss_update_tech_effect_2 = {
 	}
 }
 touhou_boss_get_army_effect_2 = {
-	division_template = {
-		name = "魔界主力部队"
-		is_locked = yes
-		force_allow_recruiting = no
-		regiments = {
-			mechanized = {
-				x = 0
-				y = 0
-			}
-			mechanized = {
-				x = 0
-				y = 1
-			}
-			mechanized = {
-				x = 0
-				y = 2
-			}
-			mechanized = {
-				x = 0
-				y = 3
-			}
-			mechanized = {
-				x = 0
-				y = 4
-			}
-			mechanized = {
-				x = 1
-				y = 0
-			}
-			mechanized = {
-				x = 1
-				y = 1
-			}
-			mechanized = {
-				x = 1
-				y = 2
-			}
-			mechanized = {
-				x = 1
-				y = 3
-			}
-			modern_tank_destroyer_brigade = {
-				x = 1
-				y = 4
-			}
-			modern_tank_destroyer_brigade = {
-				x = 2
-				y = 0
-			}
-			modern_tank_destroyer_brigade = {
-				x = 2
-				y = 1
-			}
-			modern_tank_destroyer_brigade = {
-				x = 2
-				y = 2
-			}
-			modern_tank_destroyer_brigade = {
-				x = 2
-				y = 3
-			}
-			modern_tank_destroyer_brigade = {
-				x = 2
-				y = 4
-			}
-			modern_sp_artillery_brigade = {
-				x = 3
-				y = 0
-			}
-			modern_sp_artillery_brigade = {
-				x = 3
-				y = 1
-			}
-			modern_sp_artillery_brigade = {
-				x = 3
-				y = 2
-			}
-			modern_sp_artillery_brigade = {
-				x = 3
-				y = 3
-			}
-			modern_sp_artillery_brigade = {
-				x = 3
-				y = 4
-			}
-			modern_sp_anti_air_brigade = {
-				x = 4
-				y = 0
-			}
-		}
-		support = {
-			engineer = {
-				x = 0
-				y = 0
-			}
-			signal_company = {
-				x = 0
-				y = 1
-			}
-			field_hospital = {
-				x = 0
-				y = 2
-			}
-			logistics_company = {
-				x = 0
-				y = 3
-			}
-			maintenance_company = {
-				x = 0
-				y = 4
-			}
-		}
-	}
-	capital_scope = {
-		create_unit = {
-			division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75"
-			owner = ROOT
-			count = 150
-		}
-		create_unit = {
-			division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
-			owner = ROOT
-			count = 75
-		}
-	}
-	every_state = {
+	if = {
 		limit = {
-			is_controlled_by_ROOT_or_subject = yes
+			original_tag = MKI
 		}
-		create_unit = {
-			division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75"
-			owner = ROOT
-			count = 2
+		touhou_makai_modern_equipment_setup = yes
+		capital_scope = {
+			for_loop_effect = {
+				start = 0
+				end = 150
+				value = makai_spawn_index
+				ROOT = {
+					add_to_variable = {
+						makai_recruitment_cursor = 1
+					}
+					if = {
+						limit = {
+							check_variable = {
+								makai_recruitment_cursor > 20
+							}
+						}
+						set_variable = {
+							makai_recruitment_cursor = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 3
+								}
+								check_variable = {
+									makai_recruitment_cursor = 10
+								}
+								check_variable = {
+									makai_recruitment_cursor = 17
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_mechanized_transport = { owner = MKI creator = MKI version_name = \"魔界·高级机械化载具\" } makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 1
+								}
+								check_variable = {
+									makai_recruitment_cursor = 5
+								}
+								check_variable = {
+									makai_recruitment_cursor = 8
+								}
+								check_variable = {
+									makai_recruitment_cursor = 12
+								}
+								check_variable = {
+									makai_recruitment_cursor = 15
+								}
+								check_variable = {
+									makai_recruitment_cursor = 19
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界准一线部队\" division_template = \"魔界准一线部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else = {
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界填线部队\" division_template = \"魔界填线部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_line_medium = { owner = MKI creator = MKI version_name = \"魔界·填线用高级中型坦克\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } } "
+						count = 1
+					}
+				}
+			}
+			for_loop_effect = {
+				start = 0
+				end = 75
+				value = makai_spawn_index
+				ROOT = {
+					add_to_variable = {
+						makai_recruitment_cursor = 1
+					}
+					if = {
+						limit = {
+							check_variable = {
+								makai_recruitment_cursor > 20
+							}
+						}
+						set_variable = {
+							makai_recruitment_cursor = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 3
+								}
+								check_variable = {
+									makai_recruitment_cursor = 10
+								}
+								check_variable = {
+									makai_recruitment_cursor = 17
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_mechanized_transport = { owner = MKI creator = MKI version_name = \"魔界·高级机械化载具\" } makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 1
+								}
+								check_variable = {
+									makai_recruitment_cursor = 5
+								}
+								check_variable = {
+									makai_recruitment_cursor = 8
+								}
+								check_variable = {
+									makai_recruitment_cursor = 12
+								}
+								check_variable = {
+									makai_recruitment_cursor = 15
+								}
+								check_variable = {
+									makai_recruitment_cursor = 19
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界准一线部队\" division_template = \"魔界准一线部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else = {
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界填线部队\" division_template = \"魔界填线部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_line_medium = { owner = MKI creator = MKI version_name = \"魔界·填线用高级中型坦克\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } } "
+						count = 1
+					}
+				}
+			}
+		}
+		every_state = {
+			limit = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			for_loop_effect = {
+				start = 0
+				end = 2
+				value = makai_spawn_index
+				ROOT = {
+					add_to_variable = {
+						makai_recruitment_cursor = 1
+					}
+					if = {
+						limit = {
+							check_variable = {
+								makai_recruitment_cursor > 20
+							}
+						}
+						set_variable = {
+							makai_recruitment_cursor = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 3
+								}
+								check_variable = {
+									makai_recruitment_cursor = 10
+								}
+								check_variable = {
+									makai_recruitment_cursor = 17
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_mechanized_transport = { owner = MKI creator = MKI version_name = \"魔界·高级机械化载具\" } makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 1
+								}
+								check_variable = {
+									makai_recruitment_cursor = 5
+								}
+								check_variable = {
+									makai_recruitment_cursor = 8
+								}
+								check_variable = {
+									makai_recruitment_cursor = 12
+								}
+								check_variable = {
+									makai_recruitment_cursor = 15
+								}
+								check_variable = {
+									makai_recruitment_cursor = 19
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界准一线部队\" division_template = \"魔界准一线部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else = {
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界填线部队\" division_template = \"魔界填线部队\" start_experience_factor = 0.75 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_line_medium = { owner = MKI creator = MKI version_name = \"魔界·填线用高级中型坦克\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } } "
+						count = 1
+					}
+				}
+			}
+		}
+	}
+	else = {
+		division_template = {
+			name = "魔界主力部队"
+			is_locked = yes
+			force_allow_recruiting = no
+			regiments = {
+				mechanized = {
+					x = 0
+					y = 0
+				}
+				mechanized = {
+					x = 0
+					y = 1
+				}
+				mechanized = {
+					x = 0
+					y = 2
+				}
+				mechanized = {
+					x = 0
+					y = 3
+				}
+				mechanized = {
+					x = 0
+					y = 4
+				}
+				mechanized = {
+					x = 1
+					y = 0
+				}
+				mechanized = {
+					x = 1
+					y = 1
+				}
+				mechanized = {
+					x = 1
+					y = 2
+				}
+				mechanized = {
+					x = 1
+					y = 3
+				}
+				modern_tank_destroyer_brigade = {
+					x = 1
+					y = 4
+				}
+				modern_tank_destroyer_brigade = {
+					x = 2
+					y = 0
+				}
+				modern_tank_destroyer_brigade = {
+					x = 2
+					y = 1
+				}
+				modern_tank_destroyer_brigade = {
+					x = 2
+					y = 2
+				}
+				modern_tank_destroyer_brigade = {
+					x = 2
+					y = 3
+				}
+				modern_tank_destroyer_brigade = {
+					x = 2
+					y = 4
+				}
+				modern_sp_artillery_brigade = {
+					x = 3
+					y = 0
+				}
+				modern_sp_artillery_brigade = {
+					x = 3
+					y = 1
+				}
+				modern_sp_artillery_brigade = {
+					x = 3
+					y = 2
+				}
+				modern_sp_artillery_brigade = {
+					x = 3
+					y = 3
+				}
+				modern_sp_artillery_brigade = {
+					x = 3
+					y = 4
+				}
+				modern_sp_anti_air_brigade = {
+					x = 4
+					y = 0
+				}
+			}
+			support = {
+				engineer = {
+					x = 0
+					y = 0
+				}
+				signal_company = {
+					x = 0
+					y = 1
+				}
+				field_hospital = {
+					x = 0
+					y = 2
+				}
+				logistics_company = {
+					x = 0
+					y = 3
+				}
+				maintenance_company = {
+					x = 0
+					y = 4
+				}
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75"
+				owner = ROOT
+				count = 150
+			}
+			create_unit = {
+				division = "name = \"魔界突击部队\" division_template = \"魔界突击部队\" start_experience_factor = 0.75"
+				owner = ROOT
+				count = 75
+			}
+		}
+		every_state = {
+			limit = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			create_unit = {
+				division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 0.75"
+				owner = ROOT
+				count = 2
+			}
 		}
 	}
 }
@@ -800,47 +1544,75 @@ touhou_boss_effect_3 = {
 	}
 }
 touhou_boss_get_tech_effect_3 = {
-	set_technology = {
-		super_heavy_tank = 1
+	if = {
+		limit = {
+			original_tag = MKI
+		}
+		set_technology = {
+			tech_support = 1
+		}
+		set_technology = {
+			motorised_infantry = 1
+		}
+		set_technology = {
+			tech_engineers = 1
+		}
+		set_technology = {
+			tech_signal_company = 1
+		}
+		set_technology = {
+			tech_field_hospital = 1
+		}
+		set_technology = {
+			tech_logistics_company = 1
+		}
+		set_technology = {
+			tech_maintenance_company = 1
+		}
 	}
-	set_technology = {
-		super_heavy_td = 1
-	}
-	set_technology = {
-		super_heavy_art = 1
-	}
-	set_technology = {
-		super_heavy_spaa = 1
-	}
-	set_technology = {
-		tech_support = 1
-	}
-	set_technology = {
-		motorised_infantry = 1
-	}
-	set_technology = {
-		tech_engineers = 1
-	}
-	set_technology = {
-		tech_signal_company = 1
-	}
-	set_technology = {
-		tech_field_hospital = 1
-	}
-	set_technology = {
-		tech_logistics_company = 1
-	}
-	set_technology = {
-		tech_maintenance_company = 1
-	}
-	set_technology = {
-		jet_fighter2 = 1
-	}
-	set_technology = {
-		jet_tactical_bomber2 = 1
-	}
-	set_technology = {
-		jet_strategic_bomber1 = 1
+	else = {
+		set_technology = {
+			super_heavy_tank = 1
+		}
+		set_technology = {
+			super_heavy_td = 1
+		}
+		set_technology = {
+			super_heavy_art = 1
+		}
+		set_technology = {
+			super_heavy_spaa = 1
+		}
+		set_technology = {
+			tech_support = 1
+		}
+		set_technology = {
+			motorised_infantry = 1
+		}
+		set_technology = {
+			tech_engineers = 1
+		}
+		set_technology = {
+			tech_signal_company = 1
+		}
+		set_technology = {
+			tech_field_hospital = 1
+		}
+		set_technology = {
+			tech_logistics_company = 1
+		}
+		set_technology = {
+			tech_maintenance_company = 1
+		}
+		set_technology = {
+			jet_fighter2 = 1
+		}
+		set_technology = {
+			jet_tactical_bomber2 = 1
+		}
+		set_technology = {
+			jet_strategic_bomber1 = 1
+		}
 	}
 }
 touhou_boss_update_tech_effect_3 = {
@@ -882,140 +1654,230 @@ touhou_boss_update_tech_effect_3 = {
 	}
 }
 touhou_boss_get_army_effect_3 = {
-	division_template = {
-		name = "魔界精英部队"
-		is_locked = yes
-		force_allow_recruiting = no
-		regiments = {
-			heavy_armor = {
-				x = 0
-				y = 0
-			}
-			heavy_armor = {
-				x = 0
-				y = 1
-			}
-			heavy_armor = {
-				x = 0
-				y = 2
-			}
-			heavy_armor = {
-				x = 0
-				y = 3
-			}
-			heavy_armor = {
-				x = 0
-				y = 4
-			}
-			heavy_armor = {
-				x = 1
-				y = 0
-			}
-			heavy_armor = {
-				x = 1
-				y = 1
-			}
-			heavy_armor = {
-				x = 1
-				y = 2
-			}
-			heavy_armor = {
-				x = 1
-				y = 3
-			}
-			heavy_armor = {
-				x = 1
-				y = 4
-			}
-			heavy_armor = {
-				x = 2
-				y = 0
-			}
-			heavy_armor = {
-				x = 2
-				y = 1
-			}
-			heavy_armor = {
-				x = 2
-				y = 2
-			}
-			heavy_armor = {
-				x = 2
-				y = 3
-			}
-			heavy_armor = {
-				x = 2
-				y = 4
-			}
-			heavy_armor = {
-				x = 3
-				y = 0
-			}
-			heavy_armor = {
-				x = 3
-				y = 1
-			}
-			heavy_armor = {
-				x = 3
-				y = 2
-			}
-			heavy_armor = {
-				x = 3
-				y = 3
-			}
-			heavy_armor = {
-				x = 3
-				y = 4
-			}
-			heavy_armor = {
-				x = 4
-				y = 0
-			}
-			heavy_armor = {
-				x = 4
-				y = 1
-			}
-			heavy_armor = {
-				x = 4
-				y = 2
-			}
-			heavy_armor = {
-				x = 4
-				y = 3
-			}
-			heavy_armor = {
-				x = 4
-				y = 4
-			}
+	if = {
+		limit = {
+			original_tag = MKI
 		}
-		support = {
-			engineer = {
-				x = 0
-				y = 0
-			}
-			signal_company = {
-				x = 0
-				y = 1
-			}
-			field_hospital = {
-				x = 0
-				y = 2
-			}
-			logistics_company = {
-				x = 0
-				y = 3
-			}
-			maintenance_company = {
-				x = 0
-				y = 4
+		touhou_makai_modern_equipment_setup = yes
+		capital_scope = {
+			for_loop_effect = {
+				start = 0
+				end = 80
+				value = makai_spawn_index
+				ROOT = {
+					add_to_variable = {
+						makai_recruitment_cursor = 1
+					}
+					if = {
+						limit = {
+							check_variable = {
+								makai_recruitment_cursor > 20
+							}
+						}
+						set_variable = {
+							makai_recruitment_cursor = 1
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 3
+								}
+								check_variable = {
+									makai_recruitment_cursor = 10
+								}
+								check_variable = {
+									makai_recruitment_cursor = 17
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界主力部队\" division_template = \"魔界主力部队\" start_experience_factor = 1 start_equipment_factor = 1 force_equipment_variants = { makai_mechanized_transport = { owner = MKI creator = MKI version_name = \"魔界·高级机械化载具\" } makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else_if = {
+					limit = {
+						ROOT = {
+							OR = {
+								check_variable = {
+									makai_recruitment_cursor = 1
+								}
+								check_variable = {
+									makai_recruitment_cursor = 5
+								}
+								check_variable = {
+									makai_recruitment_cursor = 8
+								}
+								check_variable = {
+									makai_recruitment_cursor = 12
+								}
+								check_variable = {
+									makai_recruitment_cursor = 15
+								}
+								check_variable = {
+									makai_recruitment_cursor = 19
+								}
+							}
+						}
+					}
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界准一线部队\" division_template = \"魔界准一线部队\" start_experience_factor = 1 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_amphibious_heavy = { owner = MKI creator = MKI version_name = \"魔界·神绮式两栖重坦\" } makai_tank_destroyer = { owner = MKI creator = MKI version_name = \"魔界·神绮式自行反坦克炮\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } makai_motor_transport = { owner = MKI creator = MKI version_name = \"魔界·军用卡车\" } makai_flame_medium = { owner = MKI creator = MKI version_name = \"魔界·神绮式中型喷火坦克\" } makai_engineer_vehicle = { owner = MKI creator = MKI version_name = \"魔界·装甲工程车\" } makai_support_helicopter = { owner = MKI creator = MKI version_name = \"魔界·运输救护直升机\" } makai_recon_light = { owner = MKI creator = MKI version_name = \"魔界·神绮式装甲侦察坦克\" } } "
+						count = 1
+					}
+				}
+				else = {
+					create_unit = {
+						owner = ROOT
+						division = "name = \"魔界填线部队\" division_template = \"魔界填线部队\" start_experience_factor = 1 start_equipment_factor = 1 force_equipment_variants = { makai_infantry_weapons = { owner = MKI creator = MKI version_name = \"魔界·神绮式魔导步兵武器\" } makai_line_medium = { owner = MKI creator = MKI version_name = \"魔界·填线用高级中型坦克\" } makai_field_artillery = { owner = MKI creator = MKI version_name = \"魔界·高级火炮\" } makai_support_kit = { owner = MKI creator = MKI version_name = \"魔界·支援装备\" } } "
+						count = 1
+					}
+				}
 			}
 		}
 	}
-	capital_scope = {
-		create_unit = {
-			division = "name = \"魔界精英部队\" division_template = \"魔界精英部队\" start_experience_factor = 1"
-			owner = ROOT
-			count = 80
+	else = {
+		division_template = {
+			name = "魔界精英部队"
+			is_locked = yes
+			force_allow_recruiting = no
+			regiments = {
+				heavy_armor = {
+					x = 0
+					y = 0
+				}
+				heavy_armor = {
+					x = 0
+					y = 1
+				}
+				heavy_armor = {
+					x = 0
+					y = 2
+				}
+				heavy_armor = {
+					x = 0
+					y = 3
+				}
+				heavy_armor = {
+					x = 0
+					y = 4
+				}
+				heavy_armor = {
+					x = 1
+					y = 0
+				}
+				heavy_armor = {
+					x = 1
+					y = 1
+				}
+				heavy_armor = {
+					x = 1
+					y = 2
+				}
+				heavy_armor = {
+					x = 1
+					y = 3
+				}
+				heavy_armor = {
+					x = 1
+					y = 4
+				}
+				heavy_armor = {
+					x = 2
+					y = 0
+				}
+				heavy_armor = {
+					x = 2
+					y = 1
+				}
+				heavy_armor = {
+					x = 2
+					y = 2
+				}
+				heavy_armor = {
+					x = 2
+					y = 3
+				}
+				heavy_armor = {
+					x = 2
+					y = 4
+				}
+				heavy_armor = {
+					x = 3
+					y = 0
+				}
+				heavy_armor = {
+					x = 3
+					y = 1
+				}
+				heavy_armor = {
+					x = 3
+					y = 2
+				}
+				heavy_armor = {
+					x = 3
+					y = 3
+				}
+				heavy_armor = {
+					x = 3
+					y = 4
+				}
+				heavy_armor = {
+					x = 4
+					y = 0
+				}
+				heavy_armor = {
+					x = 4
+					y = 1
+				}
+				heavy_armor = {
+					x = 4
+					y = 2
+				}
+				heavy_armor = {
+					x = 4
+					y = 3
+				}
+				heavy_armor = {
+					x = 4
+					y = 4
+				}
+			}
+			support = {
+				engineer = {
+					x = 0
+					y = 0
+				}
+				signal_company = {
+					x = 0
+					y = 1
+				}
+				field_hospital = {
+					x = 0
+					y = 2
+				}
+				logistics_company = {
+					x = 0
+					y = 3
+				}
+				maintenance_company = {
+					x = 0
+					y = 4
+				}
+			}
+		}
+		capital_scope = {
+			create_unit = {
+				division = "name = \"魔界精英部队\" division_template = \"魔界精英部队\" start_experience_factor = 1"
+				owner = ROOT
+				count = 80
+			}
 		}
 	}
 }

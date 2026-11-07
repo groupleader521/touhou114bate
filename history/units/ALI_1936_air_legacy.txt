@@ -1,12 +1,1 @@
-air_wings = {
-	1094 = {
-		CAS_equipment_1 = {
-			owner = "ALI"
-			amount = 10
-		}
-		CAS_equipment_1 = {
-			owner = "ALI"
-			amount = 10
-		}
-	}
-}
+# Strategic dolls are ballistic missiles in ALI starting stock, not airport wings.

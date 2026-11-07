@@ -39,7 +39,7 @@ ideas = {
 					build_cost_ic = 1
 					instant = yes
 				}
-				small_plane_cas_airframe_touhou_suicide_puppet_equipment_2 = {
+				suicide_puppet_equipment_2 = {
 					build_cost_ic = 10
 					instant = yes
 				}
@@ -147,7 +147,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_suicide_puppet_craft_1
+				AND = {
+					is_special_project_completed = sp:sp_touhou_suicide_puppet_craft_1
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = ALI
 					NOT = {
@@ -202,7 +211,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_suicide_puppet_craft_2
+				AND = {
+					is_special_project_completed = sp:sp_touhou_suicide_puppet_craft_2
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = ALI
 					NOT = {
@@ -223,7 +241,7 @@ ideas = {
 			cost = 10
 			removal_cost = 10
 			equipment_bonus = {
-				small_plane_cas_airframe_touhou_suicide_puppet_equipment_2 = {
+				suicide_puppet_equipment_2 = {
 					build_cost_ic = -10
 					instant = yes
 				}
@@ -256,7 +274,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_goliath_0
+				AND = {
+					is_special_project_completed = sp:sp_touhou_goliath_0
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 			}
 			cancel = {
 			}
@@ -317,7 +344,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_goliath_0
+				AND = {
+					is_special_project_completed = sp:sp_touhou_goliath_0
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				NOT = {
 					has_country_flag = touhou_country_flag_out_first_research
 				}
@@ -383,7 +419,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_tengu_fighter
+				AND = {
+					is_special_project_completed = sp:sp_touhou_tengu_fighter
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = TEN
 					NOT = {
@@ -437,7 +482,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_oni_champion
+				AND = {
+					is_special_project_completed = sp:sp_touhou_oni_champion
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = HEL
 					NOT = {
@@ -491,7 +545,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_cas_boli_fighter
+				AND = {
+					is_special_project_completed = sp:sp_touhou_cas_boli_fighter
+					has_country_flag = touhou_country_flag_wakan_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = BLQ
 					NOT = {
@@ -545,7 +608,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_desires_bomber
+				AND = {
+					is_special_project_completed = sp:sp_touhou_desires_bomber
+					has_country_flag = touhou_country_flag_wakan_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = DES
 					NOT = {
@@ -599,7 +671,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_DLD_animal
+				AND = {
+					is_special_project_completed = sp:sp_touhou_DLD_animal
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = DLD
 					NOT = {
@@ -653,7 +734,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_dragon
+				AND = {
+					is_special_project_completed = sp:sp_touhou_dragon
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = VAM
 					NOT = {
@@ -707,7 +797,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_die
+				AND = {
+					is_special_project_completed = sp:sp_touhou_die
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = OPP
 					NOT = {
@@ -761,7 +860,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_rabbit_team
+				AND = {
+					is_special_project_completed = sp:sp_touhou_rabbit_team
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = RAB
 					NOT = {
@@ -815,7 +923,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_deep_sea
+				AND = {
+					is_special_project_completed = sp:sp_touhou_deep_sea
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = KAP
 					NOT = {
@@ -869,7 +986,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_soul
+				AND = {
+					is_special_project_completed = sp:sp_touhou_soul
+					has_country_flag = touhou_country_flag_demonforce_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = HAK
 					NOT = {
@@ -923,7 +1049,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_wunv
+				AND = {
+					is_special_project_completed = sp:sp_touhou_wunv
+					has_country_flag = touhou_country_flag_wakan_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = SSS
 					NOT = {
@@ -978,7 +1113,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_lotus
+				AND = {
+					is_special_project_completed = sp:sp_touhou_lotus
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = TEM
 					NOT = {
@@ -1040,7 +1184,16 @@ ideas = {
 				}
 			}
 			available = {
-				has_country_flag = touhou_project_unlocked_magician
+				AND = {
+					is_special_project_completed = sp:sp_touhou_magician
+					has_country_flag = touhou_country_flag_magic_first_research
+					NOT = {
+						has_country_flag = touhou_country_flag_out_first_research
+					}
+					NOT = {
+						has_country_flag = touhou_country_flag_changing_first_research
+					}
+				}
 				OR = {
 					original_tag = MLS
 					NOT = {

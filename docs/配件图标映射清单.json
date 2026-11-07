@@ -1,7 +1,7 @@
 {
   "artworkCount": 229,
   "tankModules": 213,
-  "aircraftModules": 322,
+  "aircraftModules": 318,
   "assets": [
     {
       "id": "tank_magic_engine",
@@ -4450,34 +4450,6 @@
       "asset": "air_puppet_suicide",
       "sprite": "GFX_EMI_touhou_air_weapon_suicide_puppet_equipment_1",
       "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_puppet_suicide.dds"
-    },
-    {
-      "kind": "aircraft",
-      "module": "touhou_air_suicide_puppet_equipment_2_engine",
-      "asset": "tank_magic_engine",
-      "sprite": "GFX_EMI_touhou_air_suicide_puppet_equipment_2_engine",
-      "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
-    },
-    {
-      "kind": "aircraft",
-      "module": "touhou_air_suicide_puppet_equipment_2_protection",
-      "asset": "air_magic_protection",
-      "sprite": "GFX_EMI_touhou_air_suicide_puppet_equipment_2_protection",
-      "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
-    },
-    {
-      "kind": "aircraft",
-      "module": "touhou_air_suicide_puppet_equipment_2_range",
-      "asset": "air_magic_range",
-      "sprite": "GFX_EMI_touhou_air_suicide_puppet_equipment_2_range",
-      "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
-    },
-    {
-      "kind": "aircraft",
-      "module": "touhou_air_weapon_suicide_puppet_equipment_2",
-      "asset": "air_puppet_missile",
-      "sprite": "GFX_EMI_touhou_air_weapon_suicide_puppet_equipment_2",
-      "texture": "gfx/interface/equipmentdesigner/touhou_modules/icons/air_puppet_missile.dds"
     },
     {
       "kind": "aircraft",

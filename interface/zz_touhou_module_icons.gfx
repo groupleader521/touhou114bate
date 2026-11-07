@@ -1540,26 +1540,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_puppet_suicide.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_EMI_touhou_air_suicide_puppet_equipment_2_engine"
-		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/tank_magic_engine.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_touhou_air_suicide_puppet_equipment_2_protection"
-		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_protection.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_touhou_air_suicide_puppet_equipment_2_range"
-		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_magic_range.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_touhou_air_weapon_suicide_puppet_equipment_2"
-		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_puppet_missile.dds"
-		legacy_lazy_load = no
-	}
+	
+	
+	
+	
 	spriteType = {
 		name = "GFX_EMI_touhou_air_tengu_fighter_equipment_0_engine"
 		texturefile = "gfx/interface/equipmentdesigner/touhou_modules/icons/air_demon_engine.dds"

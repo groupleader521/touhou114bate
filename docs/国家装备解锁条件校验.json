@@ -1,6 +1,7 @@
 {
-  "checks": 42,
+  "checks": 44,
   "passed": [
+    "EVI starts with fairy infantry, artillery and armor from its project without ordinary technology grants",
     "Spirit frames require their own size/tier research and never register native tank chassis",
     "Existing saves with old spirit preset flags register the new private chassis once",
     "Native CHI/GER/USA/JAP never register Touhou designs, even with all technology/style/project flags",
@@ -22,7 +23,7 @@
     "Lotus project opens only its own modular hulls without creating invalid empty ship designs",
     "Optional modules require their own native research and a researched chassis or airframe",
     "Interwar tank development opens basic optional parts without demanding a later chassis",
-    "All tank modules require interwar development, including old-save licenses",
+    "Tank modules require interwar development except EVI fairy components backed by its completed project",
     "Aviation licenses require airframe research or their own research project, not aircraft materials",
     "Every optional module stays locked when any required research is missing",
     "Secondary weapons wait for their own research after basic tank development",
@@ -31,7 +32,7 @@
     "Optional parts stay closed without the matching designer DLC",
     "Large utility airframes require their exact research tier and culture",
     "Actual Alice starting history exposes private fighter, bomber and basic accessory menus",
-    "Custom frames cannot globally supersede native equipment or repaint its research fallback",
+    "Custom frames stay country-activated and research artwork stays confined to Touhou countries",
     "China native research still enables a complete interwar tank using native components",
     "China researched light/medium/heavy chassis retain their native unlocks and upgrade chains",
     "Private component licenses never take ownership of native chassis activation",
@@ -40,7 +41,8 @@
     "Private requirements and free manual refresh replace native completion hooks",
     "Advisor research bonuses retain their rates and use disjoint native categories",
     "All national histories enable private chassis before creating their modular stock designs",
-    "Alice, Hell and fairies retain historical armor without granting unresearched tank components",
+    "Alice retains ordinary armor, EVI receives its completed fairy project armor, and Hell remains locked",
+    "Old project flags cannot unlock equipment and completed projects still require their route",
     "Historical chassis permission preserves research gates for new production and other frames",
     "Authored equipment definitions do not repeat module/category count limits"
   ],

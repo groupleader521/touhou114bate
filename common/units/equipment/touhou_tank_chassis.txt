@@ -1,4 +1,3 @@
-# Native tank archetypes; blank modular chassis. Load before native x_* role duplication.
 equipments = {
 	heavy_tank_chassis_touhou_demonforce_heavy_1 = {
 		archetype = heavy_tank_chassis
@@ -2262,7 +2261,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_goliath_0
+			AND = {
+				is_special_project_completed = sp:sp_touhou_goliath_1
+				has_country_flag = touhou_country_flag_magic_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			OR = {
 				AND = {
 					has_dlc = "No Step Back"
@@ -2460,7 +2468,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_goliath_0
+			AND = {
+				is_special_project_completed = sp:sp_touhou_goliath_2
+				has_country_flag = touhou_country_flag_magic_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			OR = {
 				AND = {
 					has_dlc = "No Step Back"
@@ -2658,7 +2675,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_goliath_0
+			AND = {
+				is_special_project_completed = sp:sp_touhou_goliath_3
+				has_country_flag = touhou_country_flag_magic_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			OR = {
 				AND = {
 					has_dlc = "No Step Back"
@@ -2856,7 +2882,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_goliath_0
+			AND = {
+				is_special_project_completed = sp:sp_touhou_goliath_4
+				has_country_flag = touhou_country_flag_magic_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			OR = {
 				AND = {
 					has_dlc = "No Step Back"
@@ -3055,7 +3090,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_oni_champion
+			AND = {
+				is_special_project_completed = sp:sp_touhou_oni_champion
+				has_country_flag = touhou_country_flag_demonforce_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_tech = touhou_tank_license_oni_champion_0
 		}
 		module_slots = {
@@ -3240,7 +3284,16 @@ equipments = {
 				original_tag = MLS
 				original_tag = EVI
 			}
-			has_country_flag = touhou_project_unlocked_evil_army
+			AND = {
+				is_special_project_completed = sp:sp_touhou_evil_army
+				has_country_flag = touhou_country_flag_wakan_first_research
+				NOT = {
+					has_country_flag = touhou_country_flag_out_first_research
+				}
+				NOT = {
+					has_country_flag = touhou_country_flag_changing_first_research
+				}
+			}
 			has_tech = touhou_tank_license_evil_armor_0
 		}
 		module_slots = {

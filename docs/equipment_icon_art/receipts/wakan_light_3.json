@@ -1,0 +1,7 @@
+{
+  "id": "wakan_light_3",
+  "method": "built-in image_gen",
+  "generated": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b3cf-a7cb-72e1-a68b-e1a30db6bdf8\\exec-01ece830-6b3f-4afa-a3f5-773911ce5ee4.png",
+  "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_light_3.png",
+  "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A whole compact light spirit-enchanted tracked tank with real armored hull, turret and slender purification cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 3: advanced angular hull, protected tracks, long cannon and crystal shield emitter. Distinct tank silhouette, never a loose infantry talisman."
+}

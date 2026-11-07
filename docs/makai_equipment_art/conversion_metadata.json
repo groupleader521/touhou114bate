@@ -1,0 +1,325 @@
+[
+  {
+    "id": "makai_infantry_weapons",
+    "source": "gfx/interface/technologies/makai/source/makai_infantry_weapons.png",
+    "texture": "gfx/interface/technologies/makai/makai_infantry_weapons.dds",
+    "sourceSha256": "1733be473bb789a7710499cd95ace6025ab2e6e309d5338ef4e1c35fc8880639",
+    "textureSha256": "cbe5588b438b3114fae6da468dbff42a12f187f2774d3efbfd76300bfa5e4b5c",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_mechanized_transport",
+    "source": "gfx/interface/technologies/makai/source/makai_mechanized_transport.png",
+    "texture": "gfx/interface/technologies/makai/makai_mechanized_transport.dds",
+    "sourceSha256": "a1369303ff990091fdae2c1772d50f1c14bc4a2eca52c8987a8b66670475edd8",
+    "textureSha256": "c4e25d3d2f6832c003b7f7af4313e45511194272e41c8f10fcb16d7e764e433e",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_support_kit",
+    "source": "gfx/interface/technologies/makai/source/makai_support_kit.png",
+    "texture": "gfx/interface/technologies/makai/makai_support_kit.dds",
+    "sourceSha256": "282da133fb9c26c29c93b8309204cc9c1e14c4111647fef11df3a105b1697e64",
+    "textureSha256": "d2c889d9be6b489b5e9a3ea591d7c2e121ea5e7bc6f8627b9aa6c8a5df64f01d",
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_motor_transport",
+    "source": "gfx/interface/technologies/makai/source/makai_motor_transport.png",
+    "texture": "gfx/interface/technologies/makai/makai_motor_transport.dds",
+    "sourceSha256": "6d7fd3b6817f41e9744e6b86fc84530ca9b7cc29501745a2239058f9712b3569",
+    "textureSha256": "52fda35ed6d6e0adf61ff9cfa9a04726650ef20aa3f41e24e3f16601aebe9e48",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_field_artillery",
+    "source": "gfx/interface/technologies/makai/source/makai_field_artillery.png",
+    "texture": "gfx/interface/technologies/makai/makai_field_artillery.dds",
+    "sourceSha256": "8f4a8e9e5ce45e9bb3e1227d261951880424cb882b828742655b28d285e29b5e",
+    "textureSha256": "9dd7333a9ddbc70c5dbb3c6399d7ff4c8a5abe7ecb97b0fd5c127e0a24f656c2",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_engineer_vehicle",
+    "source": "gfx/interface/technologies/makai/source/makai_engineer_vehicle.png",
+    "texture": "gfx/interface/technologies/makai/makai_engineer_vehicle.dds",
+    "sourceSha256": "af48523f8cbe1df5a911e272a4d45011e2bef395cd64166fa98aed83e6299875",
+    "textureSha256": "0319db14e8228f7cef39647dc2fe5d4bda5ef844aaae8e081269ce75ed1ada67",
+    "sourceSize": [
+      1717,
+      916
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_support_helicopter",
+    "source": "gfx/interface/technologies/makai/source/makai_support_helicopter.png",
+    "texture": "gfx/interface/technologies/makai/makai_support_helicopter.dds",
+    "sourceSha256": "d239e14281c6c2e563720d43cc65f26390d51e2782d8be1465c4bd3cd76b0da7",
+    "textureSha256": "5a120c3a00212204e6e5cfd6abd157cfaac3e6fa7fe619fc8c221af2fba00583",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_supply_train",
+    "source": "gfx/interface/technologies/makai/source/makai_supply_train.png",
+    "texture": "gfx/interface/technologies/makai/makai_supply_train.dds",
+    "sourceSha256": "085e3d98edfce98e6c33a07371367a67c32b44b9dda371ba71cc37259468a8c7",
+    "textureSha256": "43f31eaa4e40ac3f48827f9e8be810007e72a5ff218c4ef83d91c522dfcc46c1",
+    "sourceSize": [
+      2172,
+      724
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_amphibious_heavy",
+    "source": "gfx/interface/technologies/makai/source/makai_amphibious_heavy.png",
+    "texture": "gfx/interface/technologies/makai/makai_amphibious_heavy.dds",
+    "sourceSha256": "90caa6ef6ad3f22de8e35f764b3678b1ced29a55d96f5c16d70701c696b72def",
+    "textureSha256": "bbda77742f53b758acd8674cb09e8cedcfaba816399de17f33d28d044f7678ac",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_tank_destroyer",
+    "source": "gfx/interface/technologies/makai/source/makai_tank_destroyer.png",
+    "texture": "gfx/interface/technologies/makai/makai_tank_destroyer.dds",
+    "sourceSha256": "178844de5fb51b1162e5aae02516f6a7c1b34110fd481c21fe2f01e74fbf5142",
+    "textureSha256": "2df4a2c5344b40c5adea7810a78de23191963ac358f86a7df0a362d846fc85ce",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_flame_medium",
+    "source": "gfx/interface/technologies/makai/source/makai_flame_medium.png",
+    "texture": "gfx/interface/technologies/makai/makai_flame_medium.dds",
+    "sourceSha256": "313df1eb59d3286b1d578bfd81eb8ccd0da83d7fda4917fb7ad39e233b8884c3",
+    "textureSha256": "3b34eac95fbb3a61e0b17c14af2e11f72c5eaefd8286ee4092ef3d8efc3ae950",
+    "sourceSize": [
+      1672,
+      941
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_recon_light",
+    "source": "gfx/interface/technologies/makai/source/makai_recon_light.png",
+    "texture": "gfx/interface/technologies/makai/makai_recon_light.dds",
+    "sourceSha256": "28922b61beb950970b39dea340f3da6b71da37909f073a9a436098cc45aec920",
+    "textureSha256": "7292bcbcddd09797afc3612dcd86c9bd3f41ed117fd8db2c2ff3ef2facaa918c",
+    "sourceSize": [
+      1570,
+      1002
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_line_medium",
+    "source": "gfx/interface/technologies/makai/source/makai_line_medium.png",
+    "texture": "gfx/interface/technologies/makai/makai_line_medium.dds",
+    "sourceSha256": "d3480e6fb68d16687bbb851d20265fbd47a8fa80a854a1c59fa2ebc31002e744",
+    "textureSha256": "a2e7465bcc9c1c8205d3cd753f98f3e8748695ee52ffec77156bc077e2f4d854",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_fighter",
+    "source": "gfx/interface/technologies/makai/source/makai_fighter.png",
+    "texture": "gfx/interface/technologies/makai/makai_fighter.dds",
+    "sourceSha256": "89807cf9736707d583fa0229c97daf3e6563d3646702bdd5f19220ac0ff459fe",
+    "textureSha256": "5d38bb564b9cf22bdbb8dcdb82a3543a14592ffbdad8ea98423581c343dfed4f",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_cas",
+    "source": "gfx/interface/technologies/makai/source/makai_cas.png",
+    "texture": "gfx/interface/technologies/makai/makai_cas.dds",
+    "sourceSha256": "8cc6dd8ef0dbdd6c30673ac1c7e40c54861cc077fa7099479368be5f9816660e",
+    "textureSha256": "f17753870d637eb999f68a0f388c768291dbdc9c4afab50f7f53468e8eed58b4",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_destroyer",
+    "source": "gfx/interface/technologies/makai/source/makai_destroyer.png",
+    "texture": "gfx/interface/technologies/makai/makai_destroyer.dds",
+    "sourceSha256": "5feb0bcc7ed9aeb3a6d64ffe41c09095a3420763b1caba0717cb5074155b7386",
+    "textureSha256": "27bc2f46743868266da2c21212538fe5231bf1bb6d2ca95dff94c086c2d90615",
+    "sourceSize": [
+      2172,
+      724
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  },
+  {
+    "id": "makai_convoy_art",
+    "source": "gfx/interface/technologies/makai/source/makai_convoy_art.png",
+    "texture": "gfx/interface/technologies/makai/makai_convoy_art.dds",
+    "sourceSha256": "7df3620990f159812e5a93f874608bc3f054e2dbc376f8a8aede78365b8f0ffe",
+    "textureSha256": "0d4d758d66315a3b31f13aeec6d90b1ca855f7d4a3448143977b4d882824f113",
+    "sourceSize": [
+      1983,
+      793
+    ],
+    "size": [
+      160,
+      100
+    ],
+    "alpha": [
+      0,
+      255
+    ]
+  }
+]

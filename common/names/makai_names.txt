@@ -1,0 +1,7 @@
+# Names for randomly generated Makai officers and operatives.
+MKI = {
+	male = { names = { Yuki Mai Sara Louise Yumeko } }
+	female = { names = { Yuki Mai Sara Louise Yumeko Alice } }
+	surnames = { Margatroid Makai Hokkai Pandemonium } 
+	callsigns = { }
+}

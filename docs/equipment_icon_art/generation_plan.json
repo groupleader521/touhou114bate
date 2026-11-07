@@ -1,0 +1,558 @@
+[
+  {
+    "id": "wakan_light_1",
+    "name": "破魔轻型坦克 1",
+    "subject": "A whole compact light spirit-enchanted tracked tank with real armored hull, turret and slender purification cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 1: early riveted hull, small simple turret. Distinct tank silhouette, never a loose infantry talisman.",
+    "models": [
+      "light_tank_chassis_touhou_wakan_1"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Generate ONE transparent game equipment inventory illustration for a Touhou Hearts of Iron IV mod. Subject: an early LIGHT spirit-enchanted tank chassis, compact complete bronze tracked vehicle with a small turret and short purification cannon, ivory ofuda paper charms and red binding cords attached to actual armor plates, subtle pale-blue spirit core. Clearly a whole light tank, NOT infantry talisman alone. Muted bronze, ivory, pale blue, hand-painted strategy-game miniature style, crisp large silhouette readable at 160x100 pixels. Three-quarter side view, vehicle pointing left, horizontal composition, isolated entirely visible with 12 percent transparent margin. No people, no backdrop, no ground plane, no cast shadow outside object, no text, no numerals, no UI frame. Real transparent alpha. Single asset only.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_light_1.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_light_1.dds"
+  },
+  {
+    "id": "wakan_light_2",
+    "name": "破魔轻型坦克 2",
+    "subject": "A whole compact light spirit-enchanted tracked tank with real armored hull, turret and slender purification cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 2: improved sloped hull, longer cannon, layered talisman armor. Distinct tank silhouette, never a loose infantry talisman.",
+    "models": [
+      "light_tank_chassis_touhou_wakan_2"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A whole compact light spirit-enchanted tracked tank with real armored hull, turret and slender purification cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 2: improved sloped hull, longer cannon, layered talisman armor. Distinct tank silhouette, never a loose infantry talisman.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_light_2.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_light_2.dds"
+  },
+  {
+    "id": "wakan_light_3",
+    "name": "破魔轻型坦克 3",
+    "subject": "A whole compact light spirit-enchanted tracked tank with real armored hull, turret and slender purification cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 3: advanced angular hull, protected tracks, long cannon and crystal shield emitter. Distinct tank silhouette, never a loose infantry talisman.",
+    "models": [
+      "light_tank_chassis_touhou_wakan_3"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A whole compact light spirit-enchanted tracked tank with real armored hull, turret and slender purification cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 3: advanced angular hull, protected tracks, long cannon and crystal shield emitter. Distinct tank silhouette, never a loose infantry talisman.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_light_3.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_light_3.dds"
+  },
+  {
+    "id": "wakan_medium_1",
+    "name": "附灵中型坦克 1",
+    "subject": "A whole broad medium spirit-enchanted tracked tank with real armored hull, turret and large spirit howitzer cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 1: early riveted hull, small simple turret. Distinct tank silhouette, never a loose infantry talisman.",
+    "models": [
+      "medium_tank_chassis_touhou_wakan_1"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A whole broad medium spirit-enchanted tracked tank with real armored hull, turret and large spirit howitzer cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 1: early riveted hull, small simple turret. Distinct tank silhouette, never a loose infantry talisman.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_medium_1.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_medium_1.dds"
+  },
+  {
+    "id": "wakan_medium_2",
+    "name": "附灵中型坦克 2",
+    "subject": "A whole broad medium spirit-enchanted tracked tank with real armored hull, turret and large spirit howitzer cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 2: improved sloped hull, longer cannon, layered talisman armor. Distinct tank silhouette, never a loose infantry talisman.",
+    "models": [
+      "medium_tank_chassis_touhou_wakan_2"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A whole broad medium spirit-enchanted tracked tank with real armored hull, turret and large spirit howitzer cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 2: improved sloped hull, longer cannon, layered talisman armor. Distinct tank silhouette, never a loose infantry talisman.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_medium_2.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_medium_2.dds"
+  },
+  {
+    "id": "wakan_medium_3",
+    "name": "附灵中型坦克 3",
+    "subject": "A whole broad medium spirit-enchanted tracked tank with real armored hull, turret and large spirit howitzer cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 3: advanced angular hull, protected tracks, long cannon and crystal shield emitter. Distinct tank silhouette, never a loose infantry talisman.",
+    "models": [
+      "medium_tank_chassis_touhou_wakan_3"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A whole broad medium spirit-enchanted tracked tank with real armored hull, turret and large spirit howitzer cannon; ivory ofuda paper seals, red bindings, muted bronze and pale-blue spirit energy. Generation 3: advanced angular hull, protected tracks, long cannon and crystal shield emitter. Distinct tank silhouette, never a loose infantry talisman.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_medium_3.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_medium_3.dds"
+  },
+  {
+    "id": "wakan_large_0",
+    "name": "灵力大型通用机体 0",
+    "subject": "One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. Bronze and ivory shrine flying ark with pale-blue spirit propulsion, ofuda seals and red cords; a visible enclosed fuselage, not a fireball. Generation 0: primitive wooden framework and two propulsion pods.",
+    "models": [
+      "large_plane_airframe_touhou_wakan_utility_0"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. Bronze and ivory shrine flying ark with pale-blue spirit propulsion, ofuda seals and red cords; a visible enclosed fuselage, not a fireball. Generation 0: primitive wooden framework and two propulsion pods.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_large_0.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_large_0.dds"
+  },
+  {
+    "id": "wakan_large_1",
+    "name": "灵力大型通用机体 1",
+    "subject": "One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. Bronze and ivory shrine flying ark with pale-blue spirit propulsion, ofuda seals and red cords; a visible enclosed fuselage, not a fireball. Generation 1: reinforced fuselage and four propulsion pods.",
+    "models": [
+      "large_plane_airframe_touhou_wakan_utility_1"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. Bronze and ivory shrine flying ark with pale-blue spirit propulsion, ofuda seals and red cords; a visible enclosed fuselage, not a fireball. Generation 1: reinforced fuselage and four propulsion pods.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_large_1.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_large_1.dds"
+  },
+  {
+    "id": "wakan_large_2",
+    "name": "灵力大型通用机体 2",
+    "subject": "One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. Bronze and ivory shrine flying ark with pale-blue spirit propulsion, ofuda seals and red cords; a visible enclosed fuselage, not a fireball. Generation 2: enclosed streamlined body and broad reinforced wings.",
+    "models": [
+      "large_plane_airframe_touhou_wakan_utility_2"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. Bronze and ivory shrine flying ark with pale-blue spirit propulsion, ofuda seals and red cords; a visible enclosed fuselage, not a fireball. Generation 2: enclosed streamlined body and broad reinforced wings.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_large_2.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_large_2.dds"
+  },
+  {
+    "id": "wakan_large_3",
+    "name": "灵力大型通用机体 3",
+    "subject": "One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. Bronze and ivory shrine flying ark with pale-blue spirit propulsion, ofuda seals and red cords; a visible enclosed fuselage, not a fireball. Generation 3: advanced swept wings, multiple power cores and armored cargo body.",
+    "models": [
+      "large_plane_airframe_touhou_wakan_utility_3"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. Bronze and ivory shrine flying ark with pale-blue spirit propulsion, ofuda seals and red cords; a visible enclosed fuselage, not a fireball. Generation 3: advanced swept wings, multiple power cores and armored cargo body.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_large_3.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_large_3.dds"
+  },
+  {
+    "id": "wakan_large_4",
+    "name": "灵力大型通用机体 4",
+    "subject": "One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. Bronze and ivory shrine flying ark with pale-blue spirit propulsion, ofuda seals and red cords; a visible enclosed fuselage, not a fireball. Generation 4: futuristic swept wings with two large jet-like magical thrust nacelles.",
+    "models": [
+      "large_plane_airframe_touhou_wakan_utility_4"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. Bronze and ivory shrine flying ark with pale-blue spirit propulsion, ofuda seals and red cords; a visible enclosed fuselage, not a fireball. Generation 4: futuristic swept wings with two large jet-like magical thrust nacelles.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/wakan_large_4.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/wakan_large_4.dds"
+  },
+  {
+    "id": "demonforce_large_0",
+    "name": "妖力大型通用机体 0",
+    "subject": "One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. A huge dark feathered and horned beast-aircraft hybrid, deep crimson core, broad armored body and powerful load-bearing wings, not a small hunting bird. Generation 0: primitive wooden framework and two propulsion pods.",
+    "models": [
+      "large_plane_airframe_touhou_demonforce_utility_0"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. A huge dark feathered and horned beast-aircraft hybrid, deep crimson core, broad armored body and powerful load-bearing wings, not a small hunting bird. Generation 0: primitive wooden framework and two propulsion pods.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/demonforce_large_0.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/demonforce_large_0.dds"
+  },
+  {
+    "id": "demonforce_large_1",
+    "name": "妖力大型通用机体 1",
+    "subject": "One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. A huge dark feathered and horned beast-aircraft hybrid, deep crimson core, broad armored body and powerful load-bearing wings, not a small hunting bird. Generation 1: reinforced fuselage and four propulsion pods.",
+    "models": [
+      "large_plane_airframe_touhou_demonforce_utility_1"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. A huge dark feathered and horned beast-aircraft hybrid, deep crimson core, broad armored body and powerful load-bearing wings, not a small hunting bird. Generation 1: reinforced fuselage and four propulsion pods.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/demonforce_large_1.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/demonforce_large_1.dds"
+  },
+  {
+    "id": "demonforce_large_2",
+    "name": "妖力大型通用机体 2",
+    "subject": "One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. A huge dark feathered and horned beast-aircraft hybrid, deep crimson core, broad armored body and powerful load-bearing wings, not a small hunting bird. Generation 2: enclosed streamlined body and broad reinforced wings.",
+    "models": [
+      "large_plane_airframe_touhou_demonforce_utility_2"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. A huge dark feathered and horned beast-aircraft hybrid, deep crimson core, broad armored body and powerful load-bearing wings, not a small hunting bird. Generation 2: enclosed streamlined body and broad reinforced wings.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/demonforce_large_2.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/demonforce_large_2.dds"
+  },
+  {
+    "id": "demonforce_large_3",
+    "name": "妖力大型通用机体 3",
+    "subject": "One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. A huge dark feathered and horned beast-aircraft hybrid, deep crimson core, broad armored body and powerful load-bearing wings, not a small hunting bird. Generation 3: advanced swept wings, multiple power cores and armored cargo body.",
+    "models": [
+      "large_plane_airframe_touhou_demonforce_utility_3"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. A huge dark feathered and horned beast-aircraft hybrid, deep crimson core, broad armored body and powerful load-bearing wings, not a small hunting bird. Generation 3: advanced swept wings, multiple power cores and armored cargo body.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/demonforce_large_3.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/demonforce_large_3.dds"
+  },
+  {
+    "id": "demonforce_large_4",
+    "name": "妖力大型通用机体 4",
+    "subject": "One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. A huge dark feathered and horned beast-aircraft hybrid, deep crimson core, broad armored body and powerful load-bearing wings, not a small hunting bird. Generation 4: futuristic swept wings with two large jet-like magical thrust nacelles.",
+    "models": [
+      "large_plane_airframe_touhou_demonforce_utility_4"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete LARGE fantasy flying platform with broad cargo-carrying body and massive wings, visibly larger and bulkier than a fighter. A huge dark feathered and horned beast-aircraft hybrid, deep crimson core, broad armored body and powerful load-bearing wings, not a small hunting bird. Generation 4: futuristic swept wings with two large jet-like magical thrust nacelles.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/demonforce_large_4.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/demonforce_large_4.dds"
+  },
+  {
+    "id": "fairy_infantry",
+    "name": "妖精步兵武器",
+    "subject": "A compact fairy infantry rifle with leaf-shaped silver receiver, green crystal chamber and small detachable ammunition pouch; weapon equipment, no full character.",
+    "models": [
+      "evil_equipment_0"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A compact fairy infantry rifle with leaf-shaped silver receiver, green crystal chamber and small detachable ammunition pouch; weapon equipment, no full character.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/fairy_infantry.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/fairy_infantry.dds"
+  },
+  {
+    "id": "fairy_artillery",
+    "name": "妖精火炮",
+    "subject": "A complete fairy field artillery piece on two leaf-shaped wheels with split trail, silver barrel and bright green crystal chamber.",
+    "models": [
+      "evil_artillery_equipment_0"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A complete fairy field artillery piece on two leaf-shaped wheels with split trail, silver barrel and bright green crystal chamber.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/fairy_artillery.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/fairy_artillery.dds"
+  },
+  {
+    "id": "fairy_armor",
+    "name": "妖精装甲",
+    "subject": "A complete small fairy armored tracked vehicle, silver leaf-shaped turret and armor plates, green crystal engine and short leaf cannon.",
+    "models": [
+      "medium_tank_chassis_touhou_evil_armor_0",
+      "evil_armor_equipment_0"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A complete small fairy armored tracked vehicle, silver leaf-shaped turret and armor plates, green crystal engine and short leaf cannon.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/fairy_armor.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/fairy_armor.dds"
+  },
+  {
+    "id": "puppet_suicide",
+    "name": "神风人偶",
+    "subject": "One flying suicide puppet drone: small ivory porcelain doll-shaped unmanned flying construct with blue dress-like armor, compact swept wooden wings and a single round sealed explosive core. Clearly a winged doll drone, not a missile.",
+    "models": [
+      "small_plane_airframe_touhou_suicide_puppet_equipment_1",
+      "suicide_puppet_equipment_1"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One flying suicide puppet drone: small ivory porcelain doll-shaped unmanned flying construct with blue dress-like armor, compact swept wooden wings and a single round sealed explosive core. Clearly a winged doll drone, not a missile.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/puppet_suicide.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/puppet_suicide.dds"
+  },
+  {
+    "id": "puppet_missile",
+    "name": "人偶战略导弹",
+    "subject": "One long strategic missile, pointed ivory nose, blue and brass cylindrical body, four small tail fins and contained rear magical propulsion nozzle. Puppet command seal at mid-body, no humanoid limbs, no aircraft wings, no launch scene.",
+    "models": [
+      "suicide_puppet_equipment_2"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One long strategic missile, pointed ivory nose, blue and brass cylindrical body, four small tail fins and contained rear magical propulsion nozzle. Puppet command seal at mid-body, no humanoid limbs, no aircraft wings, no launch scene.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/puppet_missile.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/puppet_missile.dds"
+  },
+  {
+    "id": "goliath_0",
+    "name": "量产型歌利亚",
+    "subject": "A complete towering Goliath combat puppet, ivory porcelain and brass armored humanoid machine with blue dress-like skirt armor, small blonde doll head, sturdy articulated legs, massive gauntlets and violet magic core. Compact economical mass-produced version, simple symmetrical armor and small core. Show entire body three-quarter view, feet visible, no other characters, no environment.",
+    "models": [
+      "modern_tank_chassis_touhou_magic_modern_1",
+      "touhou_magic_modern_tank_equipment_1",
+      "touhou_magic_modern_tank_artillery_equipment_1",
+      "touhou_magic_modern_tank_destroyer_equipment_1",
+      "touhou_magic_modern_tank_aa_equipment_1"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A complete towering Goliath combat puppet, ivory porcelain and brass armored humanoid machine with blue dress-like skirt armor, small blonde doll head, sturdy articulated legs, massive gauntlets and violet magic core. Compact economical mass-produced version, simple symmetrical armor and small core. Show entire body three-quarter view, feet visible, no other characters, no environment.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/goliath_0.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/goliath_0.dds"
+  },
+  {
+    "id": "goliath_1",
+    "name": "歌利亚试作型",
+    "subject": "A complete towering Goliath combat puppet, ivory porcelain and brass armored humanoid machine with blue dress-like skirt armor, small blonde doll head, sturdy articulated legs, massive gauntlets and violet magic core. Experimental giant prototype, exposed clockwork joints, asymmetrical test armor and one oversized arm. Show entire body three-quarter view, feet visible, no other characters, no environment.",
+    "models": [
+      "heavy_tank_chassis_touhou_goliath_1",
+      "goliath_equipment_1"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A complete towering Goliath combat puppet, ivory porcelain and brass armored humanoid machine with blue dress-like skirt armor, small blonde doll head, sturdy articulated legs, massive gauntlets and violet magic core. Experimental giant prototype, exposed clockwork joints, asymmetrical test armor and one oversized arm. Show entire body three-quarter view, feet visible, no other characters, no environment.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/goliath_1.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/goliath_1.dds"
+  },
+  {
+    "id": "goliath_2",
+    "name": "歌利亚改良型",
+    "subject": "A complete towering Goliath combat puppet, ivory porcelain and brass armored humanoid machine with blue dress-like skirt armor, small blonde doll head, sturdy articulated legs, massive gauntlets and violet magic core. Improved giant, enclosed torso and reinforced shoulders, paired large gauntlets. Show entire body three-quarter view, feet visible, no other characters, no environment.",
+    "models": [
+      "heavy_tank_chassis_touhou_goliath_2",
+      "goliath_equipment_2"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A complete towering Goliath combat puppet, ivory porcelain and brass armored humanoid machine with blue dress-like skirt armor, small blonde doll head, sturdy articulated legs, massive gauntlets and violet magic core. Improved giant, enclosed torso and reinforced shoulders, paired large gauntlets. Show entire body three-quarter view, feet visible, no other characters, no environment.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/goliath_2.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/goliath_2.dds"
+  },
+  {
+    "id": "goliath_3",
+    "name": "歌利亚完成型",
+    "subject": "A complete towering Goliath combat puppet, ivory porcelain and brass armored humanoid machine with blue dress-like skirt armor, small blonde doll head, sturdy articulated legs, massive gauntlets and violet magic core. Completed giant, broad blue skirt armor, large shoulder shields and balanced heavy limbs. Show entire body three-quarter view, feet visible, no other characters, no environment.",
+    "models": [
+      "heavy_tank_chassis_touhou_goliath_3",
+      "goliath_equipment_3"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A complete towering Goliath combat puppet, ivory porcelain and brass armored humanoid machine with blue dress-like skirt armor, small blonde doll head, sturdy articulated legs, massive gauntlets and violet magic core. Completed giant, broad blue skirt armor, large shoulder shields and balanced heavy limbs. Show entire body three-quarter view, feet visible, no other characters, no environment.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/goliath_3.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/goliath_3.dds"
+  },
+  {
+    "id": "goliath_4",
+    "name": "歌利亚最终型",
+    "subject": "A complete towering Goliath combat puppet, ivory porcelain and brass armored humanoid machine with blue dress-like skirt armor, small blonde doll head, sturdy articulated legs, massive gauntlets and violet magic core. Ultimate giant, ornate gold armor edges, massive shoulder shields, floating violet command ring and great sword. Show entire body three-quarter view, feet visible, no other characters, no environment.",
+    "models": [
+      "heavy_tank_chassis_touhou_goliath_4",
+      "goliath_equipment_4"
+    ],
+    "tech": [],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A complete towering Goliath combat puppet, ivory porcelain and brass armored humanoid machine with blue dress-like skirt armor, small blonde doll head, sturdy articulated legs, massive gauntlets and violet magic core. Ultimate giant, ornate gold armor edges, massive shoulder shields, floating violet command ring and great sword. Show entire body three-quarter view, feet visible, no other characters, no environment.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/goliath_4.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/goliath_4.dds"
+  },
+  {
+    "id": "transport",
+    "name": "幻想空运机",
+    "subject": "A complete large enchanted cargo aircraft, broad enclosed fuselage, thick straight wings, twin bronze magic propellers, ivory hull and blue rune markings, clearly a transport plane with rear cargo ramp.",
+    "models": [],
+    "tech": [
+      "early_transport_plane",
+      "improved_transport_plane",
+      "strategic_airlifter",
+      "bba_early_transport_plane",
+      "bba_improved_transport_plane",
+      "bba_strategic_airlifter"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A complete large enchanted cargo aircraft, broad enclosed fuselage, thick straight wings, twin bronze magic propellers, ivory hull and blue rune markings, clearly a transport plane with rear cargo ramp.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/transport.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/transport.dds"
+  },
+  {
+    "id": "heavy_fighter",
+    "name": "幻想重型战斗机",
+    "subject": "A whole twin-engine fantasy heavy fighter aircraft, long narrow nose with forward cannons, twin nacelles, broad wings, ivory and brass hull, violet crystal engines. Not a bomber or explosion.",
+    "models": [],
+    "tech": [
+      "heavy_fighter1",
+      "heavy_fighter2",
+      "heavy_fighter3"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A whole twin-engine fantasy heavy fighter aircraft, long narrow nose with forward cannons, twin nacelles, broad wings, ivory and brass hull, violet crystal engines. Not a bomber or explosion.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/heavy_fighter.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/heavy_fighter.dds"
+  },
+  {
+    "id": "scout",
+    "name": "幻想侦察机",
+    "subject": "A whole slender enchanted reconnaissance aircraft with twin broad wings and one clearly visible camera lens underneath, ivory-brass fuselage with pale-blue magic engine, no weapons.",
+    "models": [],
+    "tech": [
+      "scout_plane1",
+      "scout_plane2"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A whole slender enchanted reconnaissance aircraft with twin broad wings and one clearly visible camera lens underneath, ivory-brass fuselage with pale-blue magic engine, no weapons.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/scout.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/scout.dds"
+  },
+  {
+    "id": "naval_bomber",
+    "name": "幻想海军轰炸机",
+    "subject": "A complete fantasy torpedo bomber aircraft, broad wings, one prominent long torpedo carried underneath, ivory-bronze hull with pale-blue enchantments.",
+    "models": [],
+    "tech": [
+      "naval_bomber1",
+      "naval_bomber2",
+      "naval_bomber3"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A complete fantasy torpedo bomber aircraft, broad wings, one prominent long torpedo carried underneath, ivory-bronze hull with pale-blue enchantments.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/naval_bomber.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/naval_bomber.dds"
+  },
+  {
+    "id": "cas",
+    "name": "幻想近距支援机",
+    "subject": "A whole rugged fantasy ground-attack aircraft, short broad wings, downward aiming small cannons and two bomb racks, bronze and ivory armor, violet engine.",
+    "models": [],
+    "tech": [
+      "CAS1",
+      "CAS2",
+      "CAS3"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A whole rugged fantasy ground-attack aircraft, short broad wings, downward aiming small cannons and two bomb racks, bronze and ivory armor, violet engine.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/cas.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/cas.dds"
+  },
+  {
+    "id": "jet_engine",
+    "name": "幻想喷气动力",
+    "subject": "A single detachable fantasy centrifugal jet engine, visible circular compressor intake and short tubular exhaust, bronze metal and crystal turbine, clear mechanical power unit with contained pale-blue glow, no aircraft and no weapons.",
+    "models": [],
+    "tech": [
+      "sp_centrifugal_jet_tech"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A single detachable fantasy centrifugal jet engine, visible circular compressor intake and short tubular exhaust, bronze metal and crystal turbine, clear mechanical power unit with contained pale-blue glow, no aircraft and no weapons.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/jet_engine.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/jet_engine.dds"
+  },
+  {
+    "id": "truck",
+    "name": "幻想运输车辆",
+    "subject": "One complete enchanted military cargo truck with four road wheels, bronze cab, ivory covered cargo bed and small pale-blue crystal engine grille. Clearly a truck, not just an engine.",
+    "models": [],
+    "tech": [
+      "tech_trucks",
+      "motorised_infantry"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete enchanted military cargo truck with four road wheels, bronze cab, ivory covered cargo bed and small pale-blue crystal engine grille. Clearly a truck, not just an engine.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/truck.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/truck.dds"
+  },
+  {
+    "id": "mechanized",
+    "name": "幻想机械化载具",
+    "subject": "One complete enchanted tracked armored personnel carrier, broad enclosed passenger hull, rear boarding door, no large tank turret, bronze ivory plates and pale-blue rune charms.",
+    "models": [],
+    "tech": [
+      "mechanised_infantry",
+      "mechanised_infantry2",
+      "mechanised_infantry3"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete enchanted tracked armored personnel carrier, broad enclosed passenger hull, rear boarding door, no large tank turret, bronze ivory plates and pale-blue rune charms.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/mechanized.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/mechanized.dds"
+  },
+  {
+    "id": "armored_car",
+    "name": "幻想装甲车",
+    "subject": "One complete six-wheeled enchanted armored reconnaissance car with small turret, bronze ivory armored body and pale-blue crystal headlamps, clearly road wheels not tracks.",
+    "models": [],
+    "tech": [
+      "armored_car1",
+      "armored_car2",
+      "armored_car3"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete six-wheeled enchanted armored reconnaissance car with small turret, bronze ivory armored body and pale-blue crystal headlamps, clearly road wheels not tracks.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/armored_car.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/armored_car.dds"
+  },
+  {
+    "id": "train",
+    "name": "幻想铁路车辆",
+    "subject": "One complete compact enchanted armored locomotive with unmistakable locomotive wheels, front cowcatcher, chimney and bronze ivory boiler, restrained blue crystal glow. No tracks or environment.",
+    "models": [],
+    "tech": [
+      "basic_train",
+      "wartime_train",
+      "armored_train"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete compact enchanted armored locomotive with unmistakable locomotive wheels, front cowcatcher, chimney and bronze ivory boiler, restrained blue crystal glow. No tracks or environment.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/train.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/train.dds"
+  },
+  {
+    "id": "railgun",
+    "name": "幻想列车炮",
+    "subject": "A whole huge enchanted artillery cannon mounted on a low long railway carriage with multiple rail-wheel bogies, long bronze barrel and ivory rune-reinforced carriage, distinctly railway artillery not a locomotive.",
+    "models": [],
+    "tech": [
+      "railway_gun"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A whole huge enchanted artillery cannon mounted on a low long railway carriage with multiple rail-wheel bogies, long bronze barrel and ivory rune-reinforced carriage, distinctly railway artillery not a locomotive.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/railgun.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/railgun.dds"
+  },
+  {
+    "id": "amphibious_drive",
+    "name": "幻想两栖驱动",
+    "subject": "One compact amphibious propulsion module: paired bronze marine propellers, short drive shaft and sealed gearbox bound with ivory ofuda and pale-blue crystals. No armor plate or vehicle.",
+    "models": [],
+    "tech": [
+      "amphibious_drive"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One compact amphibious propulsion module: paired bronze marine propellers, short drive shaft and sealed gearbox bound with ivory ofuda and pale-blue crystals. No armor plate or vehicle.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/amphibious_drive.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/amphibious_drive.dds"
+  },
+  {
+    "id": "smoke",
+    "name": "幻想舰用烟幕",
+    "subject": "A small shipboard smoke generator assembly with bronze pressure canisters and short exhaust stack, one contained curl of pale-gray smoke, ivory rune seals; not a whole warship.",
+    "models": [],
+    "tech": [
+      "smoke_generator"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A small shipboard smoke generator assembly with bronze pressure canisters and short exhaust stack, one contained curl of pale-gray smoke, ivory rune seals; not a whole warship.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/smoke.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/smoke.dds"
+  },
+  {
+    "id": "destroyer",
+    "name": "幻想驱逐舰",
+    "subject": "One complete slender enchanted destroyer warship, long narrow hull, small gun turrets and central torpedo launcher, bronze ivory navy details and pale-blue magical propulsion. Side three-quarter view, no sea or waves.",
+    "models": [],
+    "tech": [
+      "early_ship_hull_light",
+      "basic_ship_hull_light",
+      "improved_ship_hull_light",
+      "advanced_ship_hull_light"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete slender enchanted destroyer warship, long narrow hull, small gun turrets and central torpedo launcher, bronze ivory navy details and pale-blue magical propulsion. Side three-quarter view, no sea or waves.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/destroyer.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/destroyer.dds"
+  },
+  {
+    "id": "amphibious_carrier",
+    "name": "幻想两栖载具",
+    "subject": "One complete enchanted amphibious tracked transport vehicle with a boat-shaped enclosed hull, rear propellers and small tracks, bronze ivory plates and pale-blue rune seals, clearly an amphibious personnel carrier.",
+    "models": [],
+    "tech": [
+      "amphibious_mechanized_infantry",
+      "amphibious_mechanized_infantry_2"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One complete enchanted amphibious tracked transport vehicle with a boat-shaped enclosed hull, rear propellers and small tracks, bronze ivory plates and pale-blue rune seals, clearly an amphibious personnel carrier.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/amphibious_carrier.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/amphibious_carrier.dds"
+  },
+  {
+    "id": "light_battery",
+    "name": "幻想轻型舰炮",
+    "subject": "One compact enclosed naval light-gun turret with a single slim barrel, ivory bronze casing and pale-blue magical aiming ring, no ship.",
+    "models": [],
+    "tech": [
+      "basic_light_battery",
+      "improved_light_battery",
+      "advanced_light_battery",
+      "basic_dp_light_battery",
+      "improved_dp_light_battery",
+      "advanced_dp_light_battery"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One compact enclosed naval light-gun turret with a single slim barrel, ivory bronze casing and pale-blue magical aiming ring, no ship.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/light_battery.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/light_battery.dds"
+  },
+  {
+    "id": "heavy_battery",
+    "name": "幻想重型舰炮",
+    "subject": "One massive enclosed naval heavy-gun turret with three thick long barrels, broad ivory bronze armor and small pale-blue magical control crystal, no ship.",
+    "models": [],
+    "tech": [
+      "basic_heavy_battery",
+      "improved_heavy_battery",
+      "advanced_heavy_battery"
+    ],
+    "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One massive enclosed naval heavy-gun turret with three thick long barrels, broad ivory bronze armor and small pale-blue magical control crystal, no ship.",
+    "source": "gfx/interface/technologies/touhou_equipment_art/source/heavy_battery.png",
+    "texture": "gfx/interface/technologies/touhou_equipment_art/heavy_battery.dds"
+  }
+]

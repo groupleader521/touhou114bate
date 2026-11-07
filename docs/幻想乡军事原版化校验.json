@@ -1,7 +1,7 @@
 {
-  "checkedFiles": 267,
+  "checkedFiles": 309,
   "retainedOriginalModels": 143,
-  "totalModels": 125,
+  "totalModels": 262,
   "numericChecks": 2108,
   "armor": {
     "numericChecks": 744,
@@ -25,22 +25,22 @@
     }
   },
   "aircraft": {
-    "numericChecks": 692,
-    "airframes": 47,
-    "generatedRoleTypes": 98,
-    "retiredFinishedModels": 43,
-    "modules": 322,
-    "presets": 43,
-    "hiddenComponentLicenses": 95,
-    "slotChecks": 172,
-    "missionChecks": 163,
-    "designerBlueprints": 145,
-    "historicalWings": 13,
-    "historicalPlanes": 460,
+    "numericChecks": 675,
+    "airframes": 46,
+    "generatedRoleTypes": 95,
+    "retiredFinishedModels": 42,
+    "modules": 318,
+    "presets": 42,
+    "hiddenComponentLicenses": 94,
+    "slotChecks": 168,
+    "missionChecks": 157,
+    "designerBlueprints": 141,
+    "historicalWings": 11,
+    "historicalPlanes": 440,
     "isolation": {
-      "privateModules": 322,
+      "privateModules": 318,
       "nativeFrames": 82,
-      "rejectionChecks": 26404,
+      "rejectionChecks": 26076,
       "guiChecks": 18,
       "utilityFrames": 10,
       "utilityStatChecks": 170,
@@ -50,7 +50,7 @@
   },
   "countryUnlocks": {
     "nativeUnlockListsChecked": 1104,
-    "registeredModels": 52,
+    "registeredModels": 53,
     "finishedDesigns": 49,
     "projectGatedModularHulls": 3
   },
@@ -59,15 +59,17 @@
     "sourceFileOverrides": 0
   },
   "nativeEquipmentProtection": {
-    "definitionOverrides": 0,
+    "definitionOverrides": 50,
+    "approvedProductionFilterFiles": 12,
+    "unexpectedDefinitionOverrides": 0,
     "localisationOverrides": 0,
     "iconOverrides": 0
   },
   "presentation": {
-    "countryTechnologyMappings": 1813,
-    "retainedModelIcons": 215,
-    "spriteAliases": 4835,
-    "countryEquipmentNames": 3440,
+    "countryTechnologyMappings": 5549,
+    "retainedModelIcons": 214,
+    "spriteAliases": 9187,
+    "countryEquipmentNames": 3424,
     "researchModelTooltips": 0
   },
   "errors": [],
@@ -102,8 +104,8 @@
   "moduleIcons": {
     "artworkFamilies": 229,
     "tankModules": 213,
-    "aircraftModules": 322,
-    "sprites": 535,
+    "aircraftModules": 318,
+    "sprites": 531,
     "nativePlaceholders": 0,
     "nativeSpriteOverrides": 0
   },
@@ -127,5 +129,122 @@
     "authoredConcepts": 174,
     "distinctCultureGroups": 84,
     "limitation": "Slot/stat/condition simulations only. Representative aircraft use a compatible high-thrust vanilla engine; early engines may require fewer parts. UI, engine creation and combat are not simulated."
+  },
+  "makaiEquipment": {
+    "version": 2,
+    "models": 16,
+    "templates": 3,
+    "loadouts": 24,
+    "moduleSlots": 66,
+    "designerStats": {
+      "makai_amphibious_heavy": {
+        "soft_attack": 30.6,
+        "hard_attack": 40,
+        "ap_attack": 170,
+        "armor_value": 130,
+        "maximum_speed": 6.3,
+        "reliability": 0.591,
+        "air_attack": 0,
+        "build_cost_ic": 39.375
+      },
+      "makai_tank_destroyer": {
+        "soft_attack": 30.6,
+        "hard_attack": 41.6,
+        "ap_attack": 170,
+        "armor_value": 117,
+        "maximum_speed": 9,
+        "reliability": 0.784,
+        "air_attack": 0,
+        "build_cost_ic": 29.45
+      },
+      "makai_flame_medium": {
+        "soft_attack": 13,
+        "armor_value": 97.5,
+        "maximum_speed": 8.1,
+        "reliability": 0.894,
+        "build_cost_ic": 16.815
+      },
+      "makai_recon_light": {
+        "soft_attack": 15,
+        "hard_attack": 15.6,
+        "ap_attack": 50,
+        "armor_value": 65,
+        "maximum_speed": 9.36,
+        "reliability": 0.784,
+        "build_cost_ic": 17.1
+      },
+      "makai_line_medium": {
+        "soft_attack": 32.64,
+        "hard_attack": 20.8,
+        "ap_attack": 90,
+        "armor_value": 97.5,
+        "maximum_speed": 5.34,
+        "reliability": 1.169,
+        "air_attack": 0,
+        "build_cost_ic": 19.475
+      },
+      "makai_fighter": {
+        "maximum_speed": 1530,
+        "reliability": 0.8,
+        "air_attack": 48,
+        "thrust": 30,
+        "weight": 22,
+        "build_cost_ic": 54
+      },
+      "makai_cas": {
+        "maximum_speed": 1530,
+        "reliability": 0.8,
+        "thrust": 30,
+        "weight": 10,
+        "build_cost_ic": 40
+      },
+      "makai_destroyer": {
+        "armor_value": 0,
+        "reliability": 0.92,
+        "build_cost_ic": 2346
+      }
+    },
+    "engineTested": false,
+    "unitIcons": {
+      "icons": 44,
+      "units": 11,
+      "variantsPerUnit": 4,
+      "missing": []
+    },
+    "equipmentArt": {
+      "assets": 17,
+      "activeModels": 16,
+      "designerPools": 17,
+      "convoyCountryOnly": true,
+      "size": [
+        160,
+        100
+      ],
+      "alphaAndHashesValidated": true,
+      "engineTested": false
+    },
+    "resources": {
+      "resourceShortagePenaltyFactor": -5,
+      "coal": 90000,
+      "method": "MKI national spirit replaces the old equipment spirit without stacking its -500% shortage modifier",
+      "requiresMio": false,
+      "engineTested": false
+    },
+    "runtimeFixes": {
+      "trainWagonMapping": true,
+      "nativeEventTargetGuard": true,
+      "duplicateWarGuard": true,
+      "otherNativeBehaviorPreserved": true,
+      "engineTested": false
+    },
+    "aiTemplatePolicy": {
+      "roles": 3,
+      "exactTargetTemplates": true,
+      "country": "MKI",
+      "fieldConversion": false,
+      "xpTemplateEditing": false,
+      "engineTested": false
+    },
+    "errors": []
   }
 }

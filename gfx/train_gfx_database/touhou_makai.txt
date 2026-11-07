@@ -1,0 +1,16 @@
+# Private train uses the complete native military train wagon mapping.
+default = {
+	makai_supply_train = {
+		wagon_0 = train_locomotive_1_equipment_2_entity
+		wagon_1 = train_locomotive_2_equipment_2_entity
+		wagon_2 = train_coal_equipment_2_entity
+		wagon_last = wagon_2_entity
+		wagons = {
+			wagon_1_entity
+			wagon_2_entity
+			flat_wagon_entity
+			tank_wagon_entity
+			tank_wagon_2_entity
+		}
+	}
+}

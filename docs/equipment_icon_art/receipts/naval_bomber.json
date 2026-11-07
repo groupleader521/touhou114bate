@@ -1,0 +1,7 @@
+{
+  "id": "naval_bomber",
+  "method": "built-in image_gen",
+  "generated": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b3cf-a7cb-72e1-a68b-e1a30db6bdf8\\exec-6abfccce-c7b3-4996-9f4c-b6aa6a581924.png",
+  "source": "gfx/interface/technologies/touhou_equipment_art/source/naval_bomber.png",
+  "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A complete fantasy torpedo bomber aircraft, broad wings, one prominent long torpedo carried underneath, ivory-bronze hull with pale-blue enchantments."
+}

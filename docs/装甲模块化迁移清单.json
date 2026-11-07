@@ -8647,7 +8647,7 @@
           "op": "="
         }
       ],
-      "texture": "GFX_touhou_wakan_infantry_equipment_1_medium",
+      "texture": "GFX_light_tank_chassis_touhou_wakan_1_medium",
       "flag": "touhou_tank_design_v2_wakan_light_1",
       "design": [
         {
@@ -8815,7 +8815,7 @@
           "op": "="
         }
       ],
-      "texture": "GFX_touhou_wakan_infantry_equipment_1_medium",
+      "texture": "GFX_medium_tank_chassis_touhou_wakan_1_medium",
       "flag": "touhou_tank_design_v2_wakan_medium_1",
       "design": [
         {
@@ -8983,7 +8983,7 @@
           "op": "="
         }
       ],
-      "texture": "GFX_touhou_wakan_infantry_equipment_2_medium",
+      "texture": "GFX_light_tank_chassis_touhou_wakan_2_medium",
       "flag": "touhou_tank_design_v2_wakan_light_2",
       "design": [
         {
@@ -9151,7 +9151,7 @@
           "op": "="
         }
       ],
-      "texture": "GFX_touhou_wakan_infantry_equipment_2_medium",
+      "texture": "GFX_medium_tank_chassis_touhou_wakan_2_medium",
       "flag": "touhou_tank_design_v2_wakan_medium_2",
       "design": [
         {
@@ -9319,7 +9319,7 @@
           "op": "="
         }
       ],
-      "texture": "GFX_touhou_wakan_infantry_equipment_3_medium",
+      "texture": "GFX_light_tank_chassis_touhou_wakan_3_medium",
       "flag": "touhou_tank_design_v2_wakan_light_3",
       "design": [
         {
@@ -9487,7 +9487,7 @@
           "op": "="
         }
       ],
-      "texture": "GFX_touhou_wakan_infantry_equipment_3_medium",
+      "texture": "GFX_medium_tank_chassis_touhou_wakan_3_medium",
       "flag": "touhou_tank_design_v2_wakan_medium_3",
       "design": [
         {
@@ -16252,12 +16252,42 @@
                   "valueStart": 3880
                 },
                 {
-                  "key": "has_country_flag",
-                  "value": "touhou_project_unlocked_goliath_0",
-                  "start": 4258,
-                  "end": 4310,
-                  "op": "=",
-                  "valueStart": 4277
+                  "key": "AND",
+                  "value": [
+                    {
+                      "key": "is_special_project_completed",
+                      "value": "sp:sp_touhou_goliath_1",
+                      "op": "="
+                    },
+                    {
+                      "key": "has_country_flag",
+                      "value": "touhou_country_flag_magic_first_research",
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_out_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_changing_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    }
+                  ],
+                  "op": "="
                 },
                 {
                   "key": "OR",
@@ -16336,8 +16366,8 @@
               "op": "="
             },
             {
-              "key": "has_country_flag",
-              "value": "touhou_historical_tank_frame_goliath_1",
+              "key": "always",
+              "value": "no",
               "op": "="
             }
           ],
@@ -16500,12 +16530,42 @@
           "valueStart": 3880
         },
         {
-          "key": "has_country_flag",
-          "value": "touhou_project_unlocked_goliath_0",
-          "start": 4258,
-          "end": 4310,
-          "op": "=",
-          "valueStart": 4277
+          "key": "AND",
+          "value": [
+            {
+              "key": "is_special_project_completed",
+              "value": "sp:sp_touhou_goliath_1",
+              "op": "="
+            },
+            {
+              "key": "has_country_flag",
+              "value": "touhou_country_flag_magic_first_research",
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_out_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_changing_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            }
+          ],
+          "op": "="
         },
         {
           "key": "OR",
@@ -16833,12 +16893,42 @@
                   "valueStart": 5442
                 },
                 {
-                  "key": "has_country_flag",
-                  "value": "touhou_project_unlocked_goliath_0",
-                  "start": 5820,
-                  "end": 5872,
-                  "op": "=",
-                  "valueStart": 5839
+                  "key": "AND",
+                  "value": [
+                    {
+                      "key": "is_special_project_completed",
+                      "value": "sp:sp_touhou_goliath_2",
+                      "op": "="
+                    },
+                    {
+                      "key": "has_country_flag",
+                      "value": "touhou_country_flag_magic_first_research",
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_out_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_changing_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    }
+                  ],
+                  "op": "="
                 },
                 {
                   "key": "OR",
@@ -16917,8 +17007,8 @@
               "op": "="
             },
             {
-              "key": "has_country_flag",
-              "value": "touhou_historical_tank_frame_goliath_2",
+              "key": "always",
+              "value": "no",
               "op": "="
             }
           ],
@@ -17081,12 +17171,42 @@
           "valueStart": 5442
         },
         {
-          "key": "has_country_flag",
-          "value": "touhou_project_unlocked_goliath_0",
-          "start": 5820,
-          "end": 5872,
-          "op": "=",
-          "valueStart": 5839
+          "key": "AND",
+          "value": [
+            {
+              "key": "is_special_project_completed",
+              "value": "sp:sp_touhou_goliath_2",
+              "op": "="
+            },
+            {
+              "key": "has_country_flag",
+              "value": "touhou_country_flag_magic_first_research",
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_out_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_changing_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            }
+          ],
+          "op": "="
         },
         {
           "key": "OR",
@@ -17414,12 +17534,42 @@
                   "valueStart": 7012
                 },
                 {
-                  "key": "has_country_flag",
-                  "value": "touhou_project_unlocked_goliath_0",
-                  "start": 7390,
-                  "end": 7442,
-                  "op": "=",
-                  "valueStart": 7409
+                  "key": "AND",
+                  "value": [
+                    {
+                      "key": "is_special_project_completed",
+                      "value": "sp:sp_touhou_goliath_3",
+                      "op": "="
+                    },
+                    {
+                      "key": "has_country_flag",
+                      "value": "touhou_country_flag_magic_first_research",
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_out_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_changing_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    }
+                  ],
+                  "op": "="
                 },
                 {
                   "key": "OR",
@@ -17498,8 +17648,8 @@
               "op": "="
             },
             {
-              "key": "has_country_flag",
-              "value": "touhou_historical_tank_frame_goliath_3",
+              "key": "always",
+              "value": "no",
               "op": "="
             }
           ],
@@ -17662,12 +17812,42 @@
           "valueStart": 7012
         },
         {
-          "key": "has_country_flag",
-          "value": "touhou_project_unlocked_goliath_0",
-          "start": 7390,
-          "end": 7442,
-          "op": "=",
-          "valueStart": 7409
+          "key": "AND",
+          "value": [
+            {
+              "key": "is_special_project_completed",
+              "value": "sp:sp_touhou_goliath_3",
+              "op": "="
+            },
+            {
+              "key": "has_country_flag",
+              "value": "touhou_country_flag_magic_first_research",
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_out_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_changing_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            }
+          ],
+          "op": "="
         },
         {
           "key": "OR",
@@ -17995,12 +18175,42 @@
                   "valueStart": 8580
                 },
                 {
-                  "key": "has_country_flag",
-                  "value": "touhou_project_unlocked_goliath_0",
-                  "start": 8958,
-                  "end": 9010,
-                  "op": "=",
-                  "valueStart": 8977
+                  "key": "AND",
+                  "value": [
+                    {
+                      "key": "is_special_project_completed",
+                      "value": "sp:sp_touhou_goliath_4",
+                      "op": "="
+                    },
+                    {
+                      "key": "has_country_flag",
+                      "value": "touhou_country_flag_magic_first_research",
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_out_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_changing_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    }
+                  ],
+                  "op": "="
                 },
                 {
                   "key": "OR",
@@ -18079,8 +18289,8 @@
               "op": "="
             },
             {
-              "key": "has_country_flag",
-              "value": "touhou_historical_tank_frame_goliath_4",
+              "key": "always",
+              "value": "no",
               "op": "="
             }
           ],
@@ -18243,12 +18453,42 @@
           "valueStart": 8580
         },
         {
-          "key": "has_country_flag",
-          "value": "touhou_project_unlocked_goliath_0",
-          "start": 8958,
-          "end": 9010,
-          "op": "=",
-          "valueStart": 8977
+          "key": "AND",
+          "value": [
+            {
+              "key": "is_special_project_completed",
+              "value": "sp:sp_touhou_goliath_4",
+              "op": "="
+            },
+            {
+              "key": "has_country_flag",
+              "value": "touhou_country_flag_magic_first_research",
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_out_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_changing_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            }
+          ],
+          "op": "="
         },
         {
           "key": "OR",
@@ -18576,12 +18816,42 @@
                   "valueStart": 11506
                 },
                 {
-                  "key": "has_country_flag",
-                  "value": "touhou_project_unlocked_oni_champion",
-                  "start": 11884,
-                  "end": 11939,
-                  "op": "=",
-                  "valueStart": 11903
+                  "key": "AND",
+                  "value": [
+                    {
+                      "key": "is_special_project_completed",
+                      "value": "sp:sp_touhou_oni_champion",
+                      "op": "="
+                    },
+                    {
+                      "key": "has_country_flag",
+                      "value": "touhou_country_flag_demonforce_first_research",
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_out_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_changing_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    }
+                  ],
+                  "op": "="
                 },
                 {
                   "key": "has_tech",
@@ -18592,8 +18862,8 @@
               "op": "="
             },
             {
-              "key": "has_country_flag",
-              "value": "touhou_historical_tank_frame_oni_champion_0",
+              "key": "always",
+              "value": "no",
               "op": "="
             }
           ],
@@ -18756,12 +19026,42 @@
           "valueStart": 11506
         },
         {
-          "key": "has_country_flag",
-          "value": "touhou_project_unlocked_oni_champion",
-          "start": 11884,
-          "end": 11939,
-          "op": "=",
-          "valueStart": 11903
+          "key": "AND",
+          "value": [
+            {
+              "key": "is_special_project_completed",
+              "value": "sp:sp_touhou_oni_champion",
+              "op": "="
+            },
+            {
+              "key": "has_country_flag",
+              "value": "touhou_country_flag_demonforce_first_research",
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_out_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_changing_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            }
+          ],
+          "op": "="
         },
         {
           "key": "has_tech",
@@ -19021,24 +19321,65 @@
                   "valueStart": 36100
                 },
                 {
-                  "key": "has_country_flag",
-                  "value": "touhou_project_unlocked_evil_army",
-                  "start": 36478,
-                  "end": 36530,
-                  "op": "=",
-                  "valueStart": 36497
+                  "key": "AND",
+                  "value": [
+                    {
+                      "key": "is_special_project_completed",
+                      "value": "sp:sp_touhou_evil_army",
+                      "op": "="
+                    },
+                    {
+                      "key": "has_country_flag",
+                      "value": "touhou_country_flag_wakan_first_research",
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_out_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    },
+                    {
+                      "key": "NOT",
+                      "value": [
+                        {
+                          "key": "has_country_flag",
+                          "value": "touhou_country_flag_changing_first_research",
+                          "op": "="
+                        }
+                      ],
+                      "op": "="
+                    }
+                  ],
+                  "op": "="
                 },
                 {
-                  "key": "has_tech",
-                  "value": "gwtank_chassis",
+                  "key": "OR",
+                  "value": [
+                    {
+                      "key": "has_tech",
+                      "value": "gwtank_chassis",
+                      "op": "="
+                    },
+                    {
+                      "key": "original_tag",
+                      "value": "EVI",
+                      "op": "="
+                    }
+                  ],
                   "op": "="
                 }
               ],
               "op": "="
             },
             {
-              "key": "has_country_flag",
-              "value": "touhou_historical_tank_frame_evil_armor_0",
+              "key": "always",
+              "value": "no",
               "op": "="
             }
           ],
@@ -19201,16 +19542,57 @@
           "valueStart": 36100
         },
         {
-          "key": "has_country_flag",
-          "value": "touhou_project_unlocked_evil_army",
-          "start": 36478,
-          "end": 36530,
-          "op": "=",
-          "valueStart": 36497
+          "key": "AND",
+          "value": [
+            {
+              "key": "is_special_project_completed",
+              "value": "sp:sp_touhou_evil_army",
+              "op": "="
+            },
+            {
+              "key": "has_country_flag",
+              "value": "touhou_country_flag_wakan_first_research",
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_out_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            },
+            {
+              "key": "NOT",
+              "value": [
+                {
+                  "key": "has_country_flag",
+                  "value": "touhou_country_flag_changing_first_research",
+                  "op": "="
+                }
+              ],
+              "op": "="
+            }
+          ],
+          "op": "="
         },
         {
-          "key": "has_tech",
-          "value": "gwtank_chassis",
+          "key": "OR",
+          "value": [
+            {
+              "key": "has_tech",
+              "value": "gwtank_chassis",
+              "op": "="
+            },
+            {
+              "key": "original_tag",
+              "value": "EVI",
+              "op": "="
+            }
+          ],
           "op": "="
         }
       ],

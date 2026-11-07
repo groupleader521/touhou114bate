@@ -1,0 +1,7 @@
+# Shared by the invitation, normal spawn and debug spawn.
+touhou_can_spawn_makai = {
+    NOT = { has_global_flag = touhou_makai_spawned }
+    NOT = { has_global_flag = touhou_god_of_makai_start_global_flag }
+    NOT = { has_global_flag = touhou_god_of_makai_has_left_global_flag }
+    MKI = { exists = no }
+}

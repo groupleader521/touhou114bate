@@ -1,0 +1,8 @@
+# The native tank engine category has no chooser-row sprite in this game build.
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EMI_tank_engine_type"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_gasoline_engine.dds"
+		legacy_lazy_load = no
+	}
+}

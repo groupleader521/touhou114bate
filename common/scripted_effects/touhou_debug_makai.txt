@@ -1,0 +1,11 @@
+# Same country and landing state as the normal chain; skip its 360-day preparation.
+touhou_debug_summon_makai_effect = {
+    if = {
+        limit = { touhou_can_spawn_makai = yes }
+        touhou_create_makai_country_effect = yes
+        MKI = {
+            touhou_boss_get_tech_effect_1 = yes
+            country_event = { id = touhou_devildom.2 }
+        }
+    }
+}

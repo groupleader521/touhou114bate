@@ -62,35 +62,4 @@ units = {
 	}
 }
 instant_effect = {
-	if = {
-		limit = {
-			has_dlc = "No Step Back"
-		}
-		add_equipment_production = {
-			equipment = {
-				type = heavy_tank_chassis_touhou_oni_champion_0
-				creator = "HEL"
-				version = 1
-			}
-			requested_factories = 3
-			progress = 0.1
-			efficiency = 50
-		}
-	}
-	if = {
-		limit = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
-		add_equipment_production = {
-			equipment = {
-				type = heavy_tank_equipment_1
-				creator = "HEL"
-			}
-			requested_factories = 3
-			progress = 0.1
-			efficiency = 50
-		}
-	}
 }

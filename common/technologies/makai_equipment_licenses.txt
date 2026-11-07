@@ -1,0 +1,610 @@
+technologies = {
+	makai_modern_equipment_license = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		enable_equipments = {
+			makai_infantry_weapons
+			makai_mechanized_transport
+			makai_support_kit
+			makai_motor_transport
+			makai_field_artillery
+			makai_engineer_vehicle
+			makai_support_helicopter
+			makai_supply_train
+			makai_amphibious_heavy
+			makai_tank_destroyer
+			makai_flame_medium
+			makai_recon_light
+			makai_line_medium
+			makai_fighter
+			makai_cas
+			makai_destroyer
+		}
+		enable_subunits = {
+			infantry
+			mechanized
+			medium_armor
+			amphibious_heavy_armor
+			modern_tank_destroyer_brigade
+			medium_flame_tank
+			armored_engineer
+			helicopter_field_hospital
+			helicopter_transport
+			light_tank_recon
+			engineer
+			artillery
+			field_guns
+			mot_fire_support
+			makai_guard_mechanized
+			makai_guard_amphibious_heavy_armor
+			makai_guard_modern_tank_destroyer_brigade
+			makai_guard_medium_flame_tank
+			makai_guard_armored_engineer
+			makai_guard_helicopter_field_hospital
+			makai_guard_helicopter_transport
+			makai_guard_light_tank_recon
+			makai_guard_field_guns
+			makai_guard_mot_fire_support
+		}
+		enable_equipment_modules = {
+			tank_heavy_three_man_tank_turret
+			tank_heavy_cannon_3
+			tank_christie_suspension
+			tank_welded_armor
+			tank_diesel_engine
+			tank_radio_3
+			easy_maintenance
+			auto_loader
+			amphibious_drive
+			tank_heavy_fixed_superstructure_turret
+			stabilizer
+			tank_medium_three_man_tank_turret
+			advanced_flamethrower
+			additional_machine_guns
+			wet_ammo_storage
+			tank_light_three_man_tank_turret
+			tank_small_cannon_2
+			extra_ammo_storage
+			tank_medium_cannon_2
+			aircraft_cannon_2_2x
+			jet_engine_axial_1x
+			self_sealing_fuel_tanks_small
+			armor_plate_small
+			air_air_radar_2
+			heavy_bomb_locks
+			rocket_rails
+			dive_brakes_small
+			dp_light_battery_4
+			ship_anti_air_4
+			ship_sonar_4
+			ship_radar_4
+			ship_torpedo_4
+			light_ship_engine_4
+			ship_depth_charge_4
+		}
+	}
+	makai_equipment_license_0 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1931
+	}
+	makai_equipment_license_1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1931
+	}
+	makai_equipment_license_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1931
+	}
+	makai_equipment_license_3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1931
+	}
+	makai_guard_bonus_interwar_artillery = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_field_guns = {
+			soft_attack = 0.09
+		}
+	}
+	makai_guard_bonus_artillery2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_field_guns = {
+			soft_attack = 0.09
+		}
+	}
+	makai_guard_bonus_artillery3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_field_guns = {
+			soft_attack = 0.09
+		}
+	}
+	makai_guard_bonus_artillery5 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_field_guns = {
+			soft_attack = 0.09
+		}
+	}
+	makai_guard_bonus_antitank1 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_modern_tank_destroyer_brigade = {
+			hard_attack = 0.04
+			ap_attack = 0.04
+		}
+	}
+	makai_guard_bonus_antitank3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_modern_tank_destroyer_brigade = {
+			hard_attack = 0.04
+			ap_attack = 0.04
+		}
+	}
+	makai_guard_bonus_antitank4 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_modern_tank_destroyer_brigade = {
+			hard_attack = 0.04
+			ap_attack = 0.04
+		}
+	}
+	makai_guard_bonus_SWE_bofors_antitank_gun = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_modern_tank_destroyer_brigade = {
+			hard_attack = 0.04
+			ap_attack = 0.04
+		}
+	}
+	makai_guard_bonus_sp_variable_time_fuze_shells = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_field_guns = {
+			soft_attack = 0.09
+		}
+	}
+	makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_gd_tech = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_field_guns = {
+			ap_attack = 0.18
+		}
+	}
+	makai_guard_bonus_sp_land_large_caliber_kinetic_energy_sabot_no_gd_tech = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_field_guns = {
+			ap_attack = 0.18
+		}
+	}
+	makai_guard_bonus_sp_advance_sabot_shells = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_modern_tank_destroyer_brigade = {
+			ap_attack = 0.04
+		}
+	}
+	makai_guard_bonus_sp_centrifugal_jet_tech = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_helicopter_field_hospital = {
+			defense = 0.04
+			breakthrough = 0.04
+		}
+		makai_guard_helicopter_transport = {
+			defense = 0.04
+			breakthrough = 0.04
+		}
+	}
+	makai_guard_bonus_infantry_weapons2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mechanized = {
+			soft_attack = 0.08
+		}
+	}
+	makai_guard_bonus_improved_infantry_weapons_2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mechanized = {
+			soft_attack = 0.08
+		}
+	}
+	makai_guard_bonus_infantry_at = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mechanized = {
+			hard_attack = 0.2
+			ap_attack = 0.8
+		}
+		makai_guard_mot_fire_support = {
+			hard_attack = 0.27
+			ap_attack = 0.9
+		}
+	}
+	makai_guard_bonus_infantry_at2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mechanized = {
+			hard_attack = 0.2
+			ap_attack = 0.8
+		}
+		makai_guard_mot_fire_support = {
+			hard_attack = 0.27
+			ap_attack = 0.9
+		}
+	}
+	makai_guard_bonus_advanced_infantry_weapons2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mechanized = {
+			soft_attack = 0.08
+		}
+	}
+	makai_guard_bonus_support_weapons2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mot_fire_support = {
+			defense = 0.27
+			breakthrough = 0.09
+			soft_attack = 0.18
+		}
+	}
+	makai_guard_bonus_support_weapons3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mot_fire_support = {
+			defense = 0.27
+			breakthrough = 0.09
+			soft_attack = 0.18
+		}
+	}
+	makai_guard_bonus_support_weapons4 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mot_fire_support = {
+			defense = 0.27
+			breakthrough = 0.09
+			soft_attack = 0.18
+		}
+	}
+	makai_guard_bonus_motorised_infantry = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mot_fire_support = {
+			breakthrough = 0.18
+		}
+	}
+	makai_guard_bonus_mechanised_infantry = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mot_fire_support = {
+			breakthrough = 0.18
+			soft_attack = 0.09
+		}
+	}
+	makai_guard_bonus_mechanised_infantry2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mot_fire_support = {
+			breakthrough = 0.18
+			soft_attack = 0.09
+		}
+	}
+	makai_guard_bonus_mechanised_infantry3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mechanized = {
+			soft_attack = 0.27
+			hard_attack = 0.27
+		}
+		makai_guard_mot_fire_support = {
+			breakthrough = 0.18
+			soft_attack = 0.09
+		}
+	}
+	makai_guard_bonus_molotov_cocktails_tech = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mechanized = {
+			hard_attack = 0.2
+			ap_attack = 0.8
+		}
+	}
+	makai_guard_bonus_lotta_svard_tech = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_medium_flame_tank = {
+			max_strength = 4
+			max_organisation = 8
+		}
+		makai_guard_armored_engineer = {
+			max_strength = 4
+			max_organisation = 8
+		}
+		makai_guard_helicopter_field_hospital = {
+			max_strength = 4
+			max_organisation = 8
+		}
+		makai_guard_helicopter_transport = {
+			max_strength = 4
+			max_organisation = 8
+		}
+		makai_guard_light_tank_recon = {
+			max_strength = 4
+			max_organisation = 8
+		}
+		makai_guard_field_guns = {
+			max_strength = 4
+			max_organisation = 8
+		}
+		makai_guard_mot_fire_support = {
+			max_strength = 4
+			max_organisation = 8
+		}
+	}
+	makai_guard_bonus_uranium_tipped_bullets = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mechanized = {
+			hard_attack = 0.2
+			ap_attack = 0.8
+		}
+		makai_guard_modern_tank_destroyer_brigade = {
+			hard_attack = 0.12
+			ap_attack = 0.16
+		}
+	}
+	makai_guard_bonus_PHI_battalion_combat_teams = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_mechanized = {
+			hard_attack = 0.12
+			soft_attack = 0.12
+			ap_attack = 0.12
+		}
+	}
+	makai_guard_bonus_MUN_recon_in_force = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_light_tank_recon = {
+			max_strength = 4
+		}
+	}
+	makai_guard_bonus_tech_engineers2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_armored_engineer = {
+			entrenchment = 1
+		}
+	}
+	makai_guard_bonus_tech_engineers3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_armored_engineer = {
+			entrenchment = 1
+		}
+	}
+	makai_guard_bonus_tech_engineers4 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_armored_engineer = {
+			entrenchment = 1
+		}
+	}
+	makai_guard_bonus_tech_field_hospital2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_helicopter_field_hospital = {
+			casualty_trickleback = 0.12
+			experience_loss_factor = -0.08
+		}
+	}
+	makai_guard_bonus_tech_field_hospital3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_helicopter_field_hospital = {
+			casualty_trickleback = 0.12
+			experience_loss_factor = -0.08
+		}
+	}
+	makai_guard_bonus_tech_field_hospital4 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_helicopter_field_hospital = {
+			casualty_trickleback = 0.12
+			experience_loss_factor = -0.08
+		}
+	}
+	makai_guard_bonus_NORDIC_supportCollaboration_tech = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_medium_flame_tank = {
+			max_organisation = 8
+			soft_attack = 0.2
+		}
+		makai_guard_armored_engineer = {
+			max_organisation = 8
+			soft_attack = 0.2
+		}
+		makai_guard_helicopter_field_hospital = {
+			max_organisation = 8
+			soft_attack = 0.2
+		}
+		makai_guard_helicopter_transport = {
+			max_organisation = 8
+			soft_attack = 0.2
+		}
+		makai_guard_light_tank_recon = {
+			max_organisation = 8
+			soft_attack = 0.2
+		}
+		makai_guard_field_guns = {
+			max_organisation = 8
+			soft_attack = 0.2
+		}
+		makai_guard_mot_fire_support = {
+			max_organisation = 8
+			soft_attack = 0.2
+		}
+	}
+	makai_guard_bonus_tech_logistics_company2 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_helicopter_transport = {
+			supply_consumption_factor = -0.15
+		}
+	}
+	makai_guard_bonus_tech_logistics_company3 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_helicopter_transport = {
+			supply_consumption_factor = -0.15
+		}
+	}
+	makai_guard_bonus_tech_logistics_company4 = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1936
+		makai_guard_helicopter_transport = {
+			supply_consumption_factor = -0.15
+		}
+	}
+}

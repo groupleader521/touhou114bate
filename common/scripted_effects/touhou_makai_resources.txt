@@ -1,0 +1,30 @@
+touhou_makai_sync_resource_security = {
+	if = {
+		limit = {
+			original_tag = MKI
+			exists = yes
+			has_country_flag = touhou_god_of_makai_country_flag
+		}
+		if = {
+			limit = {
+				has_idea = touhou_god_of_makai_ideas_Equipment
+			}
+			remove_ideas = touhou_god_of_makai_ideas_Equipment
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = touhou_makai_resource_security
+				}
+			}
+			add_ideas = touhou_makai_resource_security
+		}
+	}
+	else_if = {
+		limit = {
+			original_tag = MKI
+			has_idea = touhou_makai_resource_security
+		}
+		remove_ideas = touhou_makai_resource_security
+	}
+}

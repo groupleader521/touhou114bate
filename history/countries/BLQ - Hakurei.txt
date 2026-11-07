@@ -36,7 +36,6 @@ if = {
 		early_fighter = 1
 	}
 }
-set_country_flag = touhou_project_unlocked_cas_boli_fighter
 if = {
 	limit = {
 		has_dlc = "By Blood Alone"

@@ -1,0 +1,117 @@
+touhou_makai_elite_role = {
+	available_for = {
+		MKI
+	}
+	role = makai_elite_role
+	front_role_override = offence
+	upgrade_prio = {
+		factor = 0
+	}
+	makai_target_elite = {
+		reinforce_prio = 2
+		upgrade_prio = {
+			factor = 1
+		}
+		enable = {
+			has_country_flag = touhou_god_of_makai_country_flag
+			has_tech = makai_modern_equipment_license
+		}
+		can_upgrade_in_field = {
+			always = no
+		}
+		target_template = {
+			regiments = {
+				makai_guard_mechanized = 9
+				makai_guard_amphibious_heavy_armor = 9
+				makai_guard_modern_tank_destroyer_brigade = 2
+			}
+			regimental_support = {
+				makai_guard_field_guns = 2
+				makai_guard_mot_fire_support = 2
+			}
+			support = {
+				makai_guard_medium_flame_tank = 1
+				makai_guard_armored_engineer = 1
+				makai_guard_helicopter_field_hospital = 1
+				makai_guard_helicopter_transport = 1
+				makai_guard_light_tank_recon = 1
+			}
+		}
+	}
+}
+touhou_makai_assault_role = {
+	available_for = {
+		MKI
+	}
+	role = makai_assault_role
+	front_role_override = offence
+	upgrade_prio = {
+		factor = 0
+	}
+	makai_target_assault = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+		}
+		enable = {
+			has_country_flag = touhou_god_of_makai_country_flag
+			has_tech = makai_modern_equipment_license
+		}
+		can_upgrade_in_field = {
+			always = no
+		}
+		target_template = {
+			regiments = {
+				infantry = 9
+				amphibious_heavy_armor = 9
+				modern_tank_destroyer_brigade = 2
+			}
+			regimental_support = {
+				field_guns = 2
+				mot_fire_support = 2
+			}
+			support = {
+				medium_flame_tank = 1
+				armored_engineer = 1
+				helicopter_field_hospital = 1
+				helicopter_transport = 1
+				light_tank_recon = 1
+			}
+		}
+	}
+}
+touhou_makai_line_role = {
+	available_for = {
+		MKI
+	}
+	role = makai_line_role
+	upgrade_prio = {
+		factor = 0
+	}
+	makai_target_ordinary = {
+		reinforce_prio = 1
+		upgrade_prio = {
+			factor = 1
+		}
+		enable = {
+			has_country_flag = touhou_god_of_makai_country_flag
+			has_tech = makai_modern_equipment_license
+		}
+		can_upgrade_in_field = {
+			always = no
+		}
+		target_template = {
+			regiments = {
+				infantry = 9
+				medium_armor = 5
+			}
+			regimental_support = {
+				field_guns = 3
+			}
+			support = {
+				engineer = 1
+				artillery = 1
+			}
+		}
+	}
+}

@@ -35,7 +35,6 @@ if = {
 		early_fighter = 1
 	}
 }
-set_country_flag = touhou_project_unlocked_lotus
 set_technology = {
 	basic_ship_hull_carrier = 1
 }

@@ -1,0 +1,7 @@
+{
+  "id": "heavy_battery",
+  "method": "built-in image_gen",
+  "generated": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b3cf-a7cb-72e1-a68b-e1a30db6bdf8\\exec-0918a018-e2e0-4d39-af1c-516b86065fc8.png",
+  "source": "gfx/interface/technologies/touhou_equipment_art/source/heavy_battery.png",
+  "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: One massive enclosed naval heavy-gun turret with three thick long barrels, broad ivory bronze armor and small pale-blue magical control crystal, no ship."
+}

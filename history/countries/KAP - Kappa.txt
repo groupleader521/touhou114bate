@@ -38,7 +38,6 @@ if = {
 		basic_heavy_tank = 1
 	}
 }
-set_country_flag = touhou_project_unlocked_deep_sea
 set_technology = {
 	basic_ship_hull_submarine = 1
 }

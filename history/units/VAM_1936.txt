@@ -50,13 +50,4 @@ units = {
 	}
 }
 instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = dragon_equipment_0
-			creator = "VAM"
-		}
-		requested_factories = 3
-		progress = 0.1
-		efficiency = 50
-	}
 }

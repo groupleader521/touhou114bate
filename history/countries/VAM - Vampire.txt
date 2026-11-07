@@ -36,7 +36,6 @@ if = {
 		early_fighter = 1
 	}
 }
-set_country_flag = touhou_project_unlocked_dragon
 set_technology = {
 	tech_mountaineers = 1
 }

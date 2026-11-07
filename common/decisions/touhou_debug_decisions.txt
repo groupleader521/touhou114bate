@@ -139,6 +139,19 @@ touhou_debug_decisions = {
 			touhou_boss_get_characters_effect = yes
         }
 	}
+    touhou_debug_summon_makai = {
+        icon = generic_research
+        available = {
+			is_ai = no
+			touhou_can_spawn_makai = yes
+		}
+        visible = { always = yes }
+        fire_only_once = no
+        cost = 0
+        complete_effect = {
+            touhou_debug_summon_makai_effect = yes
+        }
+    }
 	touhou_debug_become_boss = {
         icon = generic_research
         available = {

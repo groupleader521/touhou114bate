@@ -1,0 +1,7 @@
+{
+  "id": "scout",
+  "method": "built-in image_gen",
+  "generated": "C:\\Users\\Administrator\\.codex\\generated_images\\01a1b3cf-a7cb-72e1-a68b-e1a30db6bdf8\\exec-5efce1e0-bbc2-45ce-852c-ee93a5bf8cea.png",
+  "source": "gfx/interface/technologies/touhou_equipment_art/source/scout.png",
+  "prompt": "Use case: stylized-concept. Asset: ONE transparent inventory/research icon for a Touhou Hearts of Iron IV mod. Hand-painted strategy-game miniature, muted metal, ivory, brass and restrained magical accents; clear readable silhouette at 160x100 pixels. Three-quarter view, centered entirely visible, generous 15 percent transparent margin. Real transparent alpha, solid opaque object. No scenery, ground, backdrop, large glow halo, UI frame, text, letters, numbers or tier labels. Single subject only. Subject: A whole slender enchanted reconnaissance aircraft with twin broad wings and one clearly visible camera lens underneath, ivory-brass fuselage with pale-blue magic engine, no weapons."
+}

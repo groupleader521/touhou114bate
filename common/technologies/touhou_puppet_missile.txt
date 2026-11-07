@@ -1,0 +1,16 @@
+technologies = {
+	touhou_puppet_ballistic_missile_license = {
+		allow = {
+			always = no
+		}
+		research_cost = 0
+		start_year = 1931
+		enable_equipments = {
+			suicide_puppet_equipment_2
+		}
+		enable_building = {
+			building = rocket_site
+			level = 3
+		}
+	}
+}
